@@ -46,7 +46,7 @@ There are 2 groups of settings. One is the "global" setting, generally affecting
 | gps_type || When feature GPS is enabled, configures type of connected GPS. NMEA=0, UBLOX=1, MTK(NMEA)=2, MTK(Binary)=3 
 |}
 
-= Per-profile settings =
+== Per-profile settings ==
 
 {| 
 | pid_controller || default (0) multiwii PID controller, 1 = alternative PID controller. 
