@@ -11,10 +11,10 @@ Or you use a 3.3V adapter cable [3.3V adapter cable](http://www.hobbyking.com/ho
 For SBUS you need a hardware signal inverter. Signal goes to input pin 4, power is 5V.
 [Cheap SBUS inverter](http://www.hobbyking.com/hobbyking/store/__24523__ZYX_S_S_BUS_Connection_Cable.html)
 
-To enable SerialRX use CLI and type<br>
-"Feature SERIALRX"<br>
+To enable SerialRX use CLI and type:<br>
+"feature SERIALRX"<br>
 and then choose the type of receiver by typing one of the following lines<br>
-"Set serialrx_type = 0" for Spektrum 10bit (1024)<br>
-"Set serialrx_type = 1" for Spektrum 11bit (2048)<br>
-"Set serialrx_type = 2" for Futaba SBUS mode<br>
-"Set serialrx_type = 3" for  for Graupner SUMD<br>
+"set serialrx_type=0" for Spektrum 10bit (1024)<br>
+"set serialrx_type=1" for Spektrum 11bit (2048)<br>
+"set serialrx_type=2" for Futaba SBUS mode<br>
+"set serialrx_type=3" for  for Graupner SUMD<br>
