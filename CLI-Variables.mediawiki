@@ -9,7 +9,7 @@ There are 2 groups of settings. One is the "global" setting, generally affecting
 |-
 | midrc  || This is an important number to set in order to avoid trimming receiver/transmitter. Most standard receivers will have this at 1500, however Futaba transmitters will need this set to 1520. A way to find out if this needs to be changed, is to clear all trim/subtrim on transmitter, and connect to GUI. Note the value most channels idle at - this should be the number to choose. Once midrc is set, use subtrim on transmitter to make sure all channels (except throttle of course) are centered at midrc value. 
 |-
-| rssi_aux_channel || read PWM (1000..2000us) RSSI value from a given AUX channel. This is used for OSD when transmitting baseflight internal RSSI value. 
+| rssi_aux_channel || read PWM (1000..2000us) RSSI value from a given AUX channel. This is used for OSD when transmitting baseflight internal RSSI value. Note that AUX channels are numbered 1-4 and are mapped to RC channels using the map CLI command.
 |-
 | minthrottle and maxthrottle || These are min/max values (in us) that are sent to esc when armed. Defaults of 1150/1850 are OK for everyone, for use with AfroESC, they could be set to 1064/1864. 
 |-
@@ -30,7 +30,7 @@ There are 2 groups of settings. One is the "global" setting, generally affecting
 1 - Spektrum 11bit (2048)<br />
 2 - Futaba SBUS<br />
 3 - Graupner SUMD<br />
-Note, that SBUS will require a hardware inverter in order to connect. 
+Note, that SBUS will require a signal inverter in order to connect. 
 |-
 | vbatscale || result is Vbatt in 0.1V steps. 3.3V = ADC Vref, 4095 = 12bit adc, 110 = 11:1 voltage divider (10k:1k) x 10 for 0.1V. Adjust this slightly if reported pack voltage is different from multimeter reading. You can get current voltage by typing "status" in cli. 
 |-
