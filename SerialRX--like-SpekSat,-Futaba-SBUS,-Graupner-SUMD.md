@@ -5,7 +5,7 @@ SumD is the simplest, ground, input pin 4, 5V power. Set the receiver to SUMD wi
 ![](http://imgur.com/a2D7z0I.jpg)
 
 SpekSat connections are ground, input pin 4, 3.3V power (NOT 5V, use the 3.3V pin)
-See here where the 3.3V pin is [Rev5 pdf](http://www.abusemark.com/downloads/naze32_rev3.pdf)
+See here where the 3.3V pin is [Rev5 pdf](http://www.abusemark.com/downloads/naze32_rev3.pdf) <br>
 Or you use a 3.3V adapter cable [3.3V adapter cable](http://www.hobbyking.com/hobbyking/store/__24524__ZYX_S_DSM2_DSMJ_Satellite_Receiver_Cable.html)
 
 For SBUS you need a hardware signal inverter. Signal goes to input pin 4, power is 5V.
