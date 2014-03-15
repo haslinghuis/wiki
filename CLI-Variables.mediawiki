@@ -25,7 +25,12 @@ There are 2 groups of settings. One is the "global" setting, generally affecting
 |-
 | gps_baudrate || This is the baud rate at which GPS will run. For NMEA-type GPS (gps_type=0) this can be -1 to attempt to auto-detect baudrate. For UBLOX and MTK, firmware will attempt to configure GPS at the provided speed. 
 |-
-| serialrx_type || When feature SERIALRX is enabled, this allows connection of Spektrum or SBUS-compatible serial receiver. Currently supported values are 0 for Spektrum 10bit (1024) mode, 1 for Spektrum 11bit (2048) mode, and 2 for Futaba SBUS mode. Note, that SBUS will require a hardware inverter in order to connect. 
+| serialrx_type || When feature SERIALRX is enabled, this allows connection of Spektrum or SBUS-compatible serial receiver. Currently supported values are:<br />
+0 - Spektrum 10bit (1024)<br />
+1 - Spektrum 11bit (2048)<br />
+2 - Futaba SBUS<br />
+3 - Graupner SUMD<br />
+Note, that SBUS will require a hardware inverter in order to connect. 
 |-
 | vbatscale || result is Vbatt in 0.1V steps. 3.3V = ADC Vref, 4095 = 12bit adc, 110 = 11:1 voltage divider (10k:1k) x 10 for 0.1V. Adjust this slightly if reported pack voltage is different from multimeter reading. You can get current voltage by typing "status" in cli. 
 |-
@@ -33,7 +38,7 @@ There are 2 groups of settings. One is the "global" setting, generally affecting
 |-
 | vbatmincellvoltage || minimum voltage per cell, this triggers battery out alarms, in 0.1V units, default is 33 (3.3V)
 |-
-| align_gyro, align_acc, align_mag || When running baseflight on non-default hardware or adding support for new sensors/sensor boards, these values are used for sensor orientation. Default of zero means the driver determines alignment (and this generally means it's configured for baseflight standard hardware). Default orientation of X forward, Y right, Z up is 1. After that, the numbers are as follows, and mean sensor is rotated. CW0_DEG=1, CW90_DEG=2, CW180_DEG=3, CW270_DEG=4, CW0_DEG_FLIP=5, CW90_DEG_FLIP=6, CW180_DEG_FLIP=7, CW270_DEG_FLIP=8. This should cover all orientations. When carefully understood, these values can also be used to rotate (in 90deg steps) or flip the board. 
+| align_gyro, align_acc, align_mag || Arbitrary board rotation in degrees, to allow mounting it sideways / upside down / rotated etc
 |-
 | align_board_roll, align_board_pitch, align_board_yaw || Arbitrary board rotation in degrees, to allow mounting it sideways / upside down / rotated etc 
 |-
