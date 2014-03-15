@@ -10,15 +10,9 @@ SumD is the simplest, ground, input pin 4, 5V power. Set the receiver to SUMD wi
 (todo a pic here)
 
 To enable SerialRX use CLI and type
-
 "Feature SERIALRX"
-
 and then choose the type of receiver by typing one of the following lines
-
 "Set serialrx_type 0" for Spektrum 10bit (1024)
-
 "Set serialrx_type 1" for Spektrum 11bit (2048)
-
 "Set serialrx_type 2" for Futaba SBUS mode
-
 "Set serialrx_type 3" for  for Graupner SUMD
