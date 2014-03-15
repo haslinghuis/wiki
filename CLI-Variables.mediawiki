@@ -38,7 +38,7 @@ Note, that SBUS will require a hardware inverter in order to connect.
 |-
 | vbatmincellvoltage || minimum voltage per cell, this triggers battery out alarms, in 0.1V units, default is 33 (3.3V)
 |-
-| align_gyro, align_acc, align_mag || Arbitrary board rotation in degrees, to allow mounting it sideways / upside down / rotated etc
+| align_gyro, align_acc, align_mag || When running baseflight on non-default hardware or adding support for new sensors/sensor boards, these values are used for sensor orientation. Default of zero means the driver determines alignment (and this generally means it's configured for baseflight standard hardware). Default orientation of X forward, Y right, Z up is 1. After that, the numbers are as follows, and mean sensor is rotated. CW0_DEG=1, CW90_DEG=2, CW180_DEG=3, CW270_DEG=4, CW0_DEG_FLIP=5, CW90_DEG_FLIP=6, CW180_DEG_FLIP=7, CW270_DEG_FLIP=8. This should cover all orientations. When carefully understood, these values can also be used to rotate (in 90deg steps) or flip the board.
 |-
 | align_board_roll, align_board_pitch, align_board_yaw || Arbitrary board rotation in degrees, to allow mounting it sideways / upside down / rotated etc 
 |-
