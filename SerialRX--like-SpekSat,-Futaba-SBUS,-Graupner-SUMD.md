@@ -1,4 +1,4 @@
-SerialRX is not like PPMSUM which is still analog in time domain. SerialRX is a purely digital lossless protocol that uses 3 wires, signal, power, ground.
+SerialRX is not like PPMSUM which is still analog in time domain. SerialRX is a purely digital lossless protocol that uses 3 wires, signal, power, ground. Serialrx does use a serial port on the Naze32, means no other devices like GPS can be connected.
 
 SumD is the simplest, ground, input pin 4, 5V power. Set the receiver to SUMD with the transmitter.
 ![](http://imgur.com/W6Qnz8b.jpg)
