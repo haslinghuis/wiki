@@ -7,7 +7,8 @@ For SBUS you need a hardware signal inverter. Signal goes to input pin 4, power 
 (todo a pic and a link to inverter here)
 
 SumD is the simplest, ground, input pin 4, 5V power. Set the receiver to SUMD with the transmitter.
-![](http://imgur.com/ziqHAmH.jpg)
+![](http://imgur.com/W6Qnz8b.jpg)
+![](http://imgur.com/a2D7z0I.jpg)
 
 
 To enable SerialRX use CLI and type<br>
