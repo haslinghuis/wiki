@@ -44,3 +44,11 @@ Connect FrSky receiver as follows
 Telemetry port RXD -> Serial TX (connect directly)
 Receiver Ground -> Flight Controller Ground
 ```
+
+Video demonstration of FrSky telemetry via Softserial
+
+https://www.youtube.com/watch?v=dahGlc3Tf40
+
+Turnigy 9XR wiring details
+
+https://plus.google.com/+DominicClifton/posts/bBLiy4czD8y
