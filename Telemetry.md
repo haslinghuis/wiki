@@ -41,6 +41,6 @@ set telemetry_provider=0
 Connect FrSky receiver as follows
 
 ```
-Telemetry port RXD -> Serial RX (connect directly)
+Telemetry port RXD -> Serial TX (connect directly)
 Receiver Ground -> Flight Controller Ground
 ```
