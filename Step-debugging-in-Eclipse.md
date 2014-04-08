@@ -29,8 +29,8 @@ stop the board, flash the firmware, restart:
      poll
      reset halt
 
-A this point you can launch you debug in eclispe.
-
+A this point you can launch the debug in Eclispe.
+![](http://i.imgur.com/u7wDgxv.png)
 
 # GDB and J Link
 Here are some screenshots showing my configuration of Eclipse. (Kepler)
