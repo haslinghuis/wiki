@@ -15,6 +15,10 @@ http://uk.farnell.com/jsp/search/productdetail.jsp?sku=2144328
 
 ![](https://raw.github.com/wiki/multiwii/baseflight/images/hardware/OLIMEX ARM-JTAG ADAPTER 2144328-40.jpg)
 
+The Segger J-Link server can be obtained from here
+
+http://www.segger.com/jlink-software.html
+
 # Build with DEBUG=GDB
 
 ## Naze target (default)
