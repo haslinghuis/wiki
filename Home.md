@@ -8,6 +8,6 @@ This page is a work in progress. You can [add a new page](https://github.com/mul
 * [Telemetry](https://github.com/multiwii/baseflight/wiki/Telemetry)
 
 ## Building Baseflight from source
-The project include a uVision project file and a Makefile. Here is more information for Eclipse:
+The project include a uVision project file and a Makefile. Here is more information:
 * [Building the Project with Eclipse](https://github.com/multiwii/baseflight/wiki/Building-with-Eclipse)
 * [Debugging the Project in Eclipse with GDB](https://github.com/multiwii/baseflight/wiki/Step-debugging-in-Eclipse). You need a jtag/swd for debugging on the hardware. 
