@@ -1,3 +1,20 @@
+# Hardware
+
+Various debugging hardware solutions exist, the Segger J-Link clones are cheap and are known to work on Windows with both the Naze and Olimexino platforms.
+
+USB-MiniJTAG J-Link JTAG/SWD Debugger/Emula​tor
+
+http://www.hotmcu.com/usbminijtag-jlink-jtagswd-debuggeremula%E2%80%8Btor-p-29.html?cPath=3_25&zenid=fdefvpnod186umrhsek225dc10
+
+![](https://raw.github.com/wiki/multiwii/baseflight/images/hardware/THAOYU USB-MiniJTAG.jpg)
+
+ARM-JTAG-20-10 adapter
+
+https://www.olimex.com/Products/ARM/JTAG/ARM-JTAG-20-10/
+http://uk.farnell.com/jsp/search/productdetail.jsp?sku=2144328
+
+![](https://raw.github.com/wiki/multiwii/baseflight/images/hardware/OLIMEX ARM-JTAG ADAPTER 2144328-40.jpg)
+
 # Build with DEBUG=GDB
 
 ## Naze target (default)
