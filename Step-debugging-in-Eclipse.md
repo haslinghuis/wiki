@@ -1,5 +1,35 @@
 # Build with DEBUG=GDB
+
+## Naze target (default)
+
+### via Command line
+
+```
+make clean TARGET=NAZE
+make TARGET=NAZE DEBUG=GDB
+```
+
+### via Eclipse make target
+
+![](https://raw.github.com/wiki/multiwii/baseflight/images/eclipse-gdb-debugging/make 2 - NAZE GDB.PNG)
+
+
+### via configuration
+use this method if you want to build automatically when launching the debug configuration
+
 ![make debug](http://i.imgur.com/fA0m0xM.png)
+
+## Olimexino target
+
+### via command line
+```
+make clean TARGET=OLIMEXINO
+make TARGET=OLIMEXINO DEBUG=GDB
+```
+
+### via Eclipse make target
+
+![](https://raw.github.com/wiki/multiwii/baseflight/images/eclipse-gdb-debugging/make 1 - OLIMEXINO GDB.PNG)
 
 # GDB and OpenOCD
 
