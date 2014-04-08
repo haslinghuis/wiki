@@ -1,10 +1,13 @@
-Welcome to the baseflight wiki!
+# Welcome to the baseflight wiki!
 
-This page is a work in progress.
+This page is a work in progress. You can [add a new page](https://github.com/multiwii/baseflight/wiki/_new).
 
-Currently available Pages:
+## Baseflight Configuration:
 * [CLI Variables Reference](https://github.com/multiwii/baseflight/wiki/CLI-Variables)
-* [Building the Project with Eclipse](https://github.com/multiwii/baseflight/wiki/Building-with-Eclipse)
-* [Step-debugging in Eclipse with GDB and J-Link](https://github.com/multiwii/baseflight/wiki/Step-debugging-in-Eclipse-with-GDB-and-J-Link)
 * [SBUS/Spektrum/Graupner](https://github.com/multiwii/baseflight/wiki/SerialRX--like-SpekSat,-Futaba-SBUS,-Graupner-SUMD)
 * [Telemetry](https://github.com/multiwii/baseflight/wiki/Telemetry)
+
+## Building Baseflight from source
+The project include a uVision project file and a Makefile. Here is more information for Eclipse:
+* [Building the Project with Eclipse](https://github.com/multiwii/baseflight/wiki/Building-with-Eclipse)
+* [Debugging the Project in Eclipse with GDB](https://github.com/multiwii/baseflight/wiki/Step-debugging-in-Eclipse). You need a jtag/swd for debugging on the hardware. 
