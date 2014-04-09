@@ -2,7 +2,7 @@
 
 There are 2 groups of settings. One is the "global" setting, generally affecting things like hardware, receiver, ESC outputs, etc and "profile" setting, which can be different between 3 profiles, affecting things like PID, deadbands, servo limits, etc.
 
-NOTE: These settings always describe LATEST firmware available in SVN, and do not necessarily reflect features of pre-built firmware images.
+**NOTE**: These settings always describe LATEST firmware available in SVN, and do not necessarily reflect features of pre-built firmware images.
 
 == Global settings ==
 
