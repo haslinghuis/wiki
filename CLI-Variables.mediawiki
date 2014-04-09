@@ -22,8 +22,12 @@ There are 2 groups of settings. One is the "global" setting, generally affecting
 | retarded_arm || Disabled by default, enabling (setting to 1) allows disarming by throttle low + roll. This could be useful for non-acro tricopters, where default arming by yaw could move tail servo too much. 
 |-
 | serial_baudrate || This is the baud rate used for main serial interface - default of 115200 is probably best to leave alone. Can be changed if for example RF telemetry such as XBee is used which is limited to 57600 baud. 
+|- 
+| softserial_baudrate || This is the baud rate used for soft serial interfaces. Currently valid values are from 2400 to 19200.
 |-
-| gps_baudrate || This is the baud rate at which GPS will run. For NMEA-type GPS (gps_type=0) this can be -1 to attempt to auto-detect baudrate. For UBLOX and MTK, firmware will attempt to configure GPS at the provided speed. 
+| softserial_1/2_inverted || Controls inversion on soft serial interface. Useful for example for frsky telemetry output.
+|-
+| gps_baudrate || This is the baud rate at which GPS will run. For NMEA-type GPS, user can set a baudrate if known, otherwise FC will attempt to auto-detect the baudrate. For UBX and MTK, firmware will attempt to configure the module at specified speed using vendor commands. 
 |-
 | serialrx_type || When feature SERIALRX is enabled, this allows connection of Spektrum or SBUS-compatible serial receiver. Currently supported values are:<br />
 0 - Spektrum 10bit (1024)<br />
@@ -31,6 +35,12 @@ There are 2 groups of settings. One is the "global" setting, generally affecting
 2 - Futaba SBUS<br />
 3 - Graupner SUMD<br />
 Note, that SBUS will require a signal inverter in order to connect. 
+|-
+| telemetry_port || Choose which serial interface will be used for telemetry output. 0 = UART, 1 = SoftSerial port #1, 2 = SoftSerial port #2
+|-
+| telemetry_provider || Choose what type of telemetry to output. Currently available: 0 = FrSky D8-compatible telemetry, 1 = Graupner HoTT telemetry
+|-
+| telemetry_switch || Which aux channel to use to change serial output & baud rate (MSP / Telemetry). It disables automatic switching to Telemetry when armed.
 |-
 | vbatscale || result is Vbatt in 0.1V steps. 3.3V = ADC Vref, 4095 = 12bit adc, 110 = 11:1 voltage divider (10k:1k) x 10 for 0.1V. Adjust this slightly if reported pack voltage is different from multimeter reading. You can get current voltage by typing "status" in cli. 
 |-
@@ -43,6 +53,8 @@ Note, that SBUS will require a signal inverter in order to connect.
 | align_board_roll, align_board_pitch, align_board_yaw || Arbitrary board rotation in degrees, to allow mounting it sideways / upside down / rotated etc 
 |-
 | acc_hardware || This is used to suggest which accelerometer driver should load, or to force no accelerometer in case gyro-only flight is needed. Default (0) will attempt to auto-detect among enabled drivers. Otherwise, to force a particular device, set it to 1 for ADXL345, 2 for MPU6050 integrated accelerometer, 3 for MMA8452, 4 for BMA280, or 5 to disable accelerometer alltogether - resulting in gyro-only operation. 
+|-
+| max_angle_inclination || This setting controls max inclination (tilt) allowed in angle (level) mode. default 500 (50 degrees).
 |-
 | moron_threshold || When powering up, gyro bias is calculated. If the model is shaking/moving during this initial calibration, offsets are calculated incorrectly, and could lead to poor flying performance. This threshold (default of 32) means how much average gyro reading could differ before re-calibration is triggered. 
 |-
