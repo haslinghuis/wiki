@@ -27,7 +27,7 @@ NOTE: These settings always describe LATEST firmware source release, and do not 
 |- 
 | softserial_baudrate || This is the baud rate used for soft serial interfaces. Currently valid values are from 2400 to 19200.
 |-
-| softserial_1/2_inverted || Controls inversion on soft serial interface. Useful for example for frsky telemetry output.
+| softserial_1_inverted, softserial_2_inverted || Controls inversion on soft serial interface. Useful for example for frsky telemetry output.
 |-
 | gps_baudrate || This is the baud rate at which GPS will run. For NMEA-type GPS, user can set a baudrate if known, otherwise FC will attempt to auto-detect the baudrate. For UBX and MTK, firmware will attempt to configure the module at specified speed using vendor commands. 
 |-
