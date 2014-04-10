@@ -1,8 +1,8 @@
-# Introduction
+## Introduction
 
 baseflight project would like to maintain code quality and readability, and thus have set strict rules on code formatting, indentation, variable naming, etc. Code not following these guidelines will NOT be accepted into the project no matter how great or useful it might appear to be. Sloppy and inconsistent formatting and indentation will not be tolerated.
 
-# Indentation and formatting
+## Indentation and formatting
 
 baseflight uses [K&R indent style](http://en.wikipedia.org/wiki/Indent_style#K.26R_style) with 4 space indent, NO hard tabs (all tabs are replaced by spaces). As an example, output of "indent -kr -nut -l400" would format the code acceptable for this project. Eclipse can be used to re-format the code in the event of "indent" not being available.
 
@@ -13,7 +13,7 @@ baseflight uses [K&R indent style](http://en.wikipedia.org/wiki/Indent_style#K.2
 * blank argument list in function definition or declaration is not allowed. void foo(void); is correct, void foo(); is not. Obviously, it's ok when function is called: foo();
 * There is space between type and pointer symbol but not after it: void foo(int *bar) { int baz = *bar; } Likewise, there is space between addressof operator but not after it: int bar(12, &foo); void *bar = &foo;
 
-# Variables
+## Variables
 
 Generally, lowerCamelCase is preferred for function names, arguments, etc. For configuration variables that are user accessible via CLI or similar, all_lowercase with underscore is permitted: int gps_index;
 
@@ -21,7 +21,7 @@ structs are named with lowerCamelCase_t, adding the "_t" suffix. Named enums are
 
 Avoid global variables. Use structs to communicate between modules or threads.
 
-# file naming
+## File naming
 
 Device drivers must have drv_ prefix and avoid importing global variables from the rest of the project. pass all required data to a driver via driver-specific init struct.
 
