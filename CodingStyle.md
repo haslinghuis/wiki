@@ -63,7 +63,7 @@ File names should be short and to the point. ideally, filename would be a single
 
 ## Unintentional use of doubles instead of floats
 
-In general, using double precision floats is not necessary for this project. Therefore, avoid implicit double conversions and only use float-argument functions. Check .map file to make sure no conversions sneak in, and use -Wdouble-promotion warning with gcc (armcc already has this warning enabled). Use sinf(), cosf(), etc instead of sin(), cos().
+In general, using double precision floats is not necessary for this project. Therefore, avoid implicit double conversions and only use float-argument functions. Check .map file to make sure no conversions sneak in, and use -Wdouble-promotion warning with gcc (armcc already has this warning enabled). Use sinf(), cosf(), etc instead of sin(), cos(). Constants should be defined as "1.0f", "3.1415926f" with "f" suffix, otherwise double conversion might occur.
 
 ## Code quality
 
