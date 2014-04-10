@@ -15,7 +15,7 @@ baseflight uses [K&R indent style](http://en.wikipedia.org/wiki/Indent_style#K.2
 If your code looks like
 
              for(i=0;i<10;i++)crap(i);
-it will me deleted immediately.
+it will be deleted immediately.
 
 * Curly brace on same line for everything except function definitions
 * if/else/while/etc blocks all break to new line after condition. stuff like 
@@ -24,7 +24,7 @@ it will me deleted immediately.
 will not be tolerated. sticking all code on one line doesn't make it faster.
 * inline commenting should use C++ "//" comment notation. Space must be inserted between "//" and comment text:
 
-             // this is a valid comment".
+             // this is a valid comment
 Original C-style comments "/* */" are to be used when comment spans several lines. If possible, and when commenting on a block of code (example struct members), all the comment text must be left-aligned at some tab-multiple distance away from longest variable name.
 * blank argument list in function definition or declaration is not allowed.
 
