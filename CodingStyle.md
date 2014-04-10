@@ -1,0 +1,32 @@
+# Introduction
+
+baseflight project would like to maintain code quality and readability, and thus have set strict rules on code formatting, indentation, variable naming, etc. Code not following these guidelines will NOT be accepted into the project no matter how great or useful it might appear to be. Sloppy and inconsistent formatting and indentation will not be tolerated.
+
+# Indentation and formatting
+
+baseflight uses [K&R indent style](http://en.wikipedia.org/wiki/Indent_style#K.26R_style) with 4 space indent, NO hard tabs (all tabs are replaced by spaces). As an example, output of "indent -kr -nut -l400" would format the code acceptable for this project. Eclipse can be used to re-format the code in the event of "indent" not being available.
+
+* Spaces between operators/parameters, but not between ()'s: int x = y * 2; call(a, 10); int foo(float *bar); y = 2 * (x - z); If your code looks like "for(i=0;i<10;i++)crap(i);" it will me deleted immediately.
+* Curly brace on same line for everything except function definitions
+* if/else/while/etc blocks all break to new line after condition. stuff like if (foo) bar(); will not be tolerated. sticking all code on one line doesn't make it faster.
+* inline commenting should use C++ "//" comment notation. Space must be inserted between "//" and comment text: "// this is a valid comment". Original C-style comments "/* */" are to be used when comment spans several lines. If possible, and when commenting on a block of code (example struct members), all the comment text must be left-aligned at some tab-multiple distance away from longest variable name.
+* blank argument list in function definition or declaration is not allowed. void foo(void); is correct, void foo(); is not. Obviously, it's ok when function is called: foo();
+* There is space between type and pointer symbol but not after it: void foo(int *bar) { int baz = *bar; } Likewise, there is space between addressof operator but not after it: int bar(12, &foo); void *bar = &foo;
+
+# Variables
+
+Generally, lowerCamelCase is preferred for function names, arguments, etc. For configuration variables that are user accessible via CLI or similar, all_lowercase with underscore is permitted: int gps_index;
+
+structs are named with lowerCamelCase_t, adding the "_t" suffix. Named enums are generally UpperCamelCase without suffix.
+
+Avoid global variables. Use structs to communicate between modules or threads.
+
+# file naming
+
+Device drivers must have drv_ prefix and avoid importing global variables from the rest of the project. pass all required data to a driver via driver-specific init struct.
+
+File names should be short and to the point. ideally, filename would be a single word or two words separated by underscore, all in lower_case. Examples: data.c much_gps.c. Filenames should not be longer than 10 characters (not counting drv_ prefix, if applicable).
+
+# Code quality
+
+crap code will not be tolerated. it has to work good AND look good. hacks, direct copypaste from other projects, large blocks of uncommented code, code which depends on a particular compiler/OS, will not be accepted.
