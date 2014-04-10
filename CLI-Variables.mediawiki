@@ -33,7 +33,7 @@ NOTE: These settings always describe LATEST firmware source release, and do not 
 |-
 | gps_baudrate || This is the baud rate at which GPS will run. For NMEA-type GPS, user can set a baudrate if known, otherwise firmware will attempt to auto-detect the baudrate. When configured GPS type is UBX or MTK, firmware will attempt to configure the module at specified speed using vendor commands. 
 <br />
-0 - 112.2kbps<br />
+0 - 115.2kbps<br />
 1 - 57.6kbps<br />
 2 - 38.4kbps<br />
 3 - 19.2kbps<br />
