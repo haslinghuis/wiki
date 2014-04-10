@@ -61,6 +61,10 @@ Device drivers must have drv_ prefix and avoid importing global variables from t
 
 File names should be short and to the point. ideally, filename would be a single word or two words separated by underscore, all in lower_case. Examples: data.c much_gps.c. Filenames should not be longer than 10 characters (not counting drv_ prefix, if applicable).
 
-# Code quality
+## Unintentional use of doubles instead of floats
+
+In general, using double precision floats is not necessary for this project. Therefore, avoid implicit double conversions and only use float-argument functions. Check .map file to make sure no conversions sneak in, and use -Wdouble-promotion warning with gcc (armcc already has this warning enabled). Use sinf(), cosf(), etc instead of sin(), cos().
+
+## Code quality
 
 crap code will not be tolerated. it has to work good AND look good. hacks, direct copypaste from other projects, large blocks of uncommented code, code which depends on a particular compiler/OS, will not be accepted.
