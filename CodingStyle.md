@@ -12,6 +12,7 @@ baseflight uses [K&R indent style](http://en.wikipedia.org/wiki/Indent_style#K.2
 * inline commenting should use C++ "//" comment notation. Space must be inserted between "//" and comment text: "// this is a valid comment". Original C-style comments "/* */" are to be used when comment spans several lines. If possible, and when commenting on a block of code (example struct members), all the comment text must be left-aligned at some tab-multiple distance away from longest variable name.
 * blank argument list in function definition or declaration is not allowed. void foo(void); is correct, void foo(); is not. Obviously, it's ok when function is called: foo();
 * There is space between type and pointer symbol but not after it: void foo(int *bar) { int baz = *bar; } Likewise, there is space between addressof operator but not after it: int bar(12, &foo); void *bar = &foo;
+* Typecasting - no space between typecast and variable: (int)var;
 
 ## Variables
 
