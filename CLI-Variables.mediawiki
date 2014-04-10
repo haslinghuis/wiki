@@ -32,6 +32,12 @@ NOTE: These settings always describe LATEST firmware source release, and do not 
 | softserial_1_inverted, softserial_2_inverted || Controls inversion on soft serial interface. Useful for example for frsky telemetry output.
 |-
 | gps_baudrate || This is the baud rate at which GPS will run. For NMEA-type GPS, user can set a baudrate if known, otherwise firmware will attempt to auto-detect the baudrate. When configured GPS type is UBX or MTK, firmware will attempt to configure the module at specified speed using vendor commands. 
+<br />
+0 - 112.2kbps<br />
+1 - 57.6kbps<br />
+2 - 38.4kbps<br />
+3 - 19.2kbps<br />
+4 - 9.6kbps (not fast enough for 5Hz updates)
 |-
 | serialrx_type || When feature SERIALRX is enabled, this allows connection to several receivers which output data via digital interface resembling serial. These include Spektrum Satellite, Futaba SBUS, and Graupner SUMD. Currently supported values for this setting are:<br />
 0 - Spektrum 10bit (1024)<br />
