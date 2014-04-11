@@ -8,7 +8,7 @@ Import the project usin the wizard **Existing Code as Makefile Project**
 Adjust your build option if necessary
 ![](https://camo.githubusercontent.com/64a1d32400d6be64dd4b5d237df1e7f1b817f61b/687474703a2f2f692e696d6775722e636f6d2f6641306d30784d2e706e67)
 
-Make sure you have a valide ARM toolchain in the path
+Make sure you have a valid ARM toolchain in the path
 ![](http://i.imgur.com/dAbscJo.png)
 
 # Long version
@@ -39,10 +39,10 @@ Make sure you have a valide ARM toolchain in the path
 		+ ${workspace_loc:/${ProjName}/lib/CMSIS/CM3/CoreSupport}
 		+ ${workspace_loc:/${ProjName}/lib/CMSIS/CM3/DeviceSupport/ST/STM32F10x}
 		+ ${workspace_loc:/${ProjName}/lib/STM32F10x_StdPeriph_Driver/inc}
-	* Under *ARM Yagarto [Windows/Mac OS] Compiler > Miscallaneous* add the following item to "Other flags":
+	* Under *ARM Yagarto [Windows/Mac OS] Compiler > Miscellaneous* add the following item to "Other flags":
 		+ -fomit-frame-pointer
 * The code in the support directory is for uploading firmware to the board and is meant for your host machine. Hence, it must not be included in the build process. Just right-click on it to open its properties and choose "Exclude from build" under *C/C++ Build > Settings*
-* The last thing you need to do is adding your Toolchain to the PATH environment variable.
+* The last thing you need to do is adding your toolchain to the PATH environment variable.
 	+ Go to *Project > Properties > C/C++ Build > Environment*, add a variable named "PATH" and fill in the full path of your toolchain's binaries.
 	+ Make sure "Append variables to native environment" is selected.		   
 * Try to build the project via *Project > Build Project*.
