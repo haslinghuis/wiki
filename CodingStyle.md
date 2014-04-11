@@ -4,7 +4,7 @@ baseflight project would like to maintain code quality and readability, and thus
 
 # Indentation and formatting
 
-baseflight uses [K&R indent style](http://en.wikipedia.org/wiki/Indent_style#K.26R_style) with 4 space indent, NO hard tabs (all tabs are replaced by spaces). As an example, output of "indent -kr -nut -l400" would format the code acceptable for this project. Eclipse can be used to re-format the code in the event of "indent" not being available.
+baseflight uses [K&R indent style](http://en.wikipedia.org/wiki/Indent_style#K.26R_style) with **4 space indent, NO hard tabs** (all tabs are replaced by spaces). As an example, output of "indent -kr -nut -l400" would format the code acceptable for this project. Eclipse can be used to re-format the code in the event of "indent" not being available.
 
  * Spaces between operators/parameters, but not between ()'s: 
 
@@ -49,7 +49,7 @@ Likewise, there is space between addressof operator but not after it:
 
 ## Variables
 
-Generally, lowerCamelCase is preferred for function names, arguments, etc. For configuration variables that are user accessible via CLI or similar, all_lowercase with underscore is permitted: int gps_index;
+Generally, **lowerCamelCase is preferred** for function names, arguments, etc.For configuration variables that are user accessible via CLI or similar, all_lowercase with underscore is permitted: int gps_index;
 
 structs are named with lowerCamelCase_t, adding the "_t" suffix. Named enums are generally UpperCamelCase without suffix.
 
@@ -59,11 +59,21 @@ Avoid global variables. Use structs to communicate between modules or threads.
 
 Device drivers must have drv_ prefix and avoid importing global variables from the rest of the project. pass all required data to a driver via driver-specific init struct.
 
-File names should be short and to the point. ideally, filename would be a single word or two words separated by underscore, all in lower_case. Examples: data.c much_gps.c. Filenames should not be longer than 10 characters (not counting drv_ prefix, if applicable).
+File names should be short and to the point. ideally, filename would be a single word or two words separated by underscore, all in lower_case. Examples: 
+
+     data.c 
+     much_gps.c.
+Filenames should not be longer than 10 characters (not counting drv_ prefix, if applicable).
 
 ## Unintentional use of doubles instead of floats
 
-In general, using double precision floats is not necessary for this project. Therefore, avoid implicit double conversions and only use float-argument functions. Check .map file to make sure no conversions sneak in, and use -Wdouble-promotion warning with gcc (armcc already has this warning enabled). Use sinf(), cosf(), etc instead of sin(), cos(). Constants should be defined as "1.0f", "3.1415926f" with "f" suffix, otherwise double conversion might occur.
+In general, using double precision floats is not necessary for this project.
+Therefore, avoid implicit double conversions and only use float-argument functions. Check .map file to make sure no conversions sneak in, and use -Wdouble-promotion warning with gcc (armcc already has this warning enabled). Use sinf(), cosf(), etc instead of sin(), cos().
+Constants should be defined as :
+
+     1.0f
+     3.1415926f
+With "**f**" suffix, otherwise double conversion might occur.
 
 ## Code quality
 
