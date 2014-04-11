@@ -1,3 +1,17 @@
+# Short Version
+Install the latest Eclipse Standard/SDK and install the **C/C++ developments Tools** plugins
+![plugin eclipse](http://i.imgur.com/IdJ8ki1.png)
+
+Import the project usin the wizard **Existing Code as Makefile Project**
+![](http://i.imgur.com/XsVCwe2.png)
+
+Adjust your build option if necessary
+![](https://camo.githubusercontent.com/64a1d32400d6be64dd4b5d237df1e7f1b817f61b/687474703a2f2f692e696d6775722e636f6d2f6641306d30784d2e706e67)
+
+Make sure you have a valide ARM toolchain in the path
+![](http://i.imgur.com/dAbscJo.png)
+
+# Long version
 * First you need an ARM toolchain. Good choices are **GCC ARM Embedded** (https://launchpad.net/gcc-arm-embedded) or **Yagarto** (http://www.yagarto.de).
 * Now download Eclipse and unpack it somewhere. At the time of writing Eclipse 4.2 was the latest stable version.
 * To work with ARM projects in Eclipse you need a few plugins:
