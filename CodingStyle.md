@@ -2,6 +2,8 @@
 
 baseflight project would like to maintain code quality and readability, and thus have set strict rules on code formatting, indentation, variable naming, etc. Code not following these guidelines will NOT be accepted into the project no matter how great or useful it might appear to be. Sloppy and inconsistent formatting and indentation will not be tolerated.
 
+Current requirements for accepting pull requests are 1) working code 2) proper formatting 3) useful.
+
 # Indentation and formatting
 
 baseflight uses [K&R indent style](http://en.wikipedia.org/wiki/Indent_style#K.26R_style) with **4 space indent, NO hard tabs** (all tabs are replaced by spaces). As an example, output of "indent -kr -nut -l400" would format the code acceptable for this project. Eclipse can be used to re-format the code in the event of "indent" not being available.
