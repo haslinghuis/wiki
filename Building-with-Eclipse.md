@@ -2,7 +2,7 @@
 Install the latest Eclipse Standard/SDK and install the **C/C++ developments Tools** plugins
 ![plugin eclipse](http://i.imgur.com/IdJ8ki1.png)
 
-Import the project usin the wizard **Existing Code as Makefile Project**
+Import the project using the wizard **Existing Code as Makefile Project**
 ![](http://i.imgur.com/XsVCwe2.png)
 
 Adjust your build option if necessary
@@ -24,7 +24,7 @@ Make sure you have a valid ARM toolchain in the path
 * Import the Git project into the C project in Eclipse via *File > Import > General > File System*.
 * Activate Git via *Project > Team > Share Project*.
 * Switch to the master branch in Eclipse (*Project > Team > Switch To > master*).
-* The next thing you need to do is adjust the project configuration. There is a makefile included that works but you might want to use GNU ARM Eclipse's automatic makefile generation. Open the Project configuration and go to *C/C++ Build > Settings*
+* The next thing you need to do is adjust the project configuration. There is a Makefile included that works but you might want to use GNU ARM Eclipse's automatic Makefile generation. Open the Project configuration and go to *C/C++ Build > Settings*
 	* Under *Target Processor* choose "cortex-m3"
 	* Under *ARM Yagarto [Windows/Mac OS] Linker > General* (or whatever toolchain you chose)
 		+ Browse to the Script file *stm32_flash.ld*
