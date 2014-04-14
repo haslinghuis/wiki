@@ -54,7 +54,7 @@ Note, that SBUS will require a signal inverter in order to connect.
 |-
 | '''telemetry_switch''' || Which aux channel to use to change serial output & baud rate (MSP / Telemetry). It disables automatic switching to Telemetry when armed.
 |-
-| '''throttle_correction_value''', '''throttle_correction_angle''' || the throttle_correction_value will be maximal at the throttle_correction_angle and over, null when the copter is leveled and proportional in bewteen. The angle is set with 0.1 deg steps from 1 to 900, ie : 300 = 30.0 deg, 225 = 22.5 deg. 
+| '''throttle_correction_value''', '''throttle_correction_angle''' || the throttle_correction_value will be added to the throttle input. It will be maximal at the throttle_correction_angle and over, null when the copter is leveled and proportional in bewteen. The angle is set with 0.1 deg steps from 1 to 900, ie : 300 = 30.0 deg, 225 = 22.5 deg.
 |-
 | '''vbatscale''' || result is Vbatt in 0.1V steps. 3.3V = ADC Vref, 4095 = 12bit adc, 110 = 11:1 voltage divider (10k:1k) x 10 for 0.1V. Adjust this slightly if reported pack voltage is different from multimeter reading. You can get current voltage by typing "status" in cli. 
 |-
