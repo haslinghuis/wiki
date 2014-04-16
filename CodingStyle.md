@@ -1,10 +1,16 @@
-# Introduction
+# Guidlines
 
-baseflight project would like to maintain code quality and readability, and thus have set strict rules on code formatting, indentation, variable naming, etc. Code not following these guidelines will NOT be accepted into the project no matter how great or useful it might appear to be. Sloppy and inconsistent formatting and indentation will not be tolerated.
+ 1. **working code**
+ 2. **proper formatting**
+ 3. **useful**
 
-Current requirements for accepting pull requests are 1) working code 2) proper formatting 3) useful.
+Code not following these guidelines will not be accepted into the project no matter how great or useful it might appear to be. Sloppy and inconsistent formatting and indentation will not be tolerated.
 
-# Indentation and formatting
+#Coding style
+
+Baseflight project would like to maintain code quality and readability, and thus have set strict rules on code formatting, indentation, variable naming, etc.
+
+## Indentation and formatting
 
 baseflight uses [K&R indent style](http://en.wikipedia.org/wiki/Indent_style#K.26R_style) with **4 space indent, NO hard tabs** (all tabs are replaced by spaces). As an example, output of "indent -kr -nut -l400" would format the code acceptable for this project. Eclipse can be used to re-format the code in the event of "indent" not being available.
 
@@ -67,6 +73,13 @@ File names should be short and to the point. ideally, filename would be a single
      much_gps.c.
 Filenames should not be longer than 10 characters (not counting drv_ prefix, if applicable).
 
+
+# Code quality
+Crap code will not be tolerated. it has to work good AND look good. hacks, direct copypaste from other projects, large blocks of uncommented code.
+
+##Compiler options
+Code which depends on a particular compiler/OS, will not be accepted.
+
 ## Unintentional use of doubles instead of floats
 
 In general, using double precision floats is not necessary for this project.
@@ -76,7 +89,3 @@ Constants should be defined as :
      1.0f
      3.1415926f
 With "**f**" suffix, otherwise double conversion might occur.
-
-## Code quality
-
-crap code will not be tolerated. it has to work good AND look good. hacks, direct copypaste from other projects, large blocks of uncommented code, code which depends on a particular compiler/OS, will not be accepted.
