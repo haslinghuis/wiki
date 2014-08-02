@@ -1,17 +1,13 @@
-# Welcome to the baseflight wiki!
+# Welcome to the Cleanflight wiki!
 
-This page is a work in progress. You can [add a new page](https://github.com/multiwii/baseflight/wiki/_new).
+Much of the documentation has moved to the same place that the code is found since it is easier to keep the documentation up to date when changing the code and this helps with accepting code and documentation contributions.
 
-## Baseflight Configuration:
-* [CLI Variables Reference](https://github.com/multiwii/baseflight/wiki/CLI-Variables)
-* [SBUS/Spektrum/Graupner](https://github.com/multiwii/baseflight/wiki/SerialRX--like-SpekSat,-Futaba-SBUS,-Graupner-SUMD)
-* [Telemetry](https://github.com/multiwii/baseflight/wiki/Telemetry)
+## Current documentation
 
-## Building Baseflight from source
-The project include a uVision project file and a Makefile. Here is more information:
-* [Building the Project with Eclipse](https://github.com/multiwii/baseflight/wiki/Building-with-Eclipse)
-* [Debugging the Project with Eclipse](https://github.com/multiwii/baseflight/wiki/Debugging-in-Eclipse). You need a jtag/swd for debugging on the hardware. 
+Please reference current documentation here:
 
+https://github.com/hydra/cleanflight/tree/master/docs
 
-## Contributing to Baseflight 
- * [Coding style](https://github.com/multiwii/baseflight/wiki/CodingStyle)
+For baseflight related documentation (i.e. if not found in the main documentation) see here:
+
+https://github.com/multiwii/baseflight/wiki
