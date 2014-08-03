@@ -2,18 +2,18 @@
 
 Various debugging hardware solutions exist, the Segger J-Link clones are cheap and are known to work on Windows with both the Naze and Olimexino platforms.
 
-USB-MiniJTAG J-Link JTAG/SWD Debugger/Emula​tor
+USB-MiniJTAG J-Link JTAG/SWD Debugger/Emulator
 
 http://www.hotmcu.com/usbminijtag-jlink-jtagswd-debuggeremula%E2%80%8Btor-p-29.html?cPath=3_25&zenid=fdefvpnod186umrhsek225dc10
 
-![](https://raw.github.com/wiki/multiwii/baseflight/images/hardware/THAOYU USB-MiniJTAG.jpg)
+![](https://raw.github.com/wiki/multiwii/cleanflight/images/hardware/THAOYU USB-MiniJTAG.jpg)
 
 ARM-JTAG-20-10 adapter
 
 https://www.olimex.com/Products/ARM/JTAG/ARM-JTAG-20-10/
 http://uk.farnell.com/jsp/search/productdetail.jsp?sku=2144328
 
-![](https://raw.github.com/wiki/multiwii/baseflight/images/hardware/OLIMEX ARM-JTAG ADAPTER 2144328-40.jpg)
+![](https://raw.github.com/wiki/multiwii/cleanflight/images/hardware/OLIMEX ARM-JTAG ADAPTER 2144328-40.jpg)
 
 The Segger J-Link server can be obtained from here
 
@@ -32,7 +32,7 @@ make TARGET=NAZE DEBUG=GDB
 
 ### via Eclipse make target
 
-![](https://raw.github.com/wiki/multiwii/baseflight/images/eclipse-gdb-debugging/make 2 - NAZE GDB.PNG)
+![](https://raw.github.com/wiki/multiwii/cleanflight/images/eclipse-gdb-debugging/make 2 - NAZE GDB.PNG)
 
 
 ### via configuration
@@ -50,7 +50,7 @@ make TARGET=OLIMEXINO DEBUG=GDB
 
 ### via Eclipse make target
 
-![](https://raw.github.com/wiki/multiwii/baseflight/images/eclipse-gdb-debugging/make 1 - OLIMEXINO GDB.PNG)
+![](https://raw.github.com/wiki/multiwii/cleanflight/images/eclipse-gdb-debugging/make 1 - OLIMEXINO GDB.PNG)
 
 # GDB and OpenOCD
 
@@ -73,7 +73,7 @@ stop the board, flash the firmware, restart:
      sleep 100
      poll
      flash probe 0
-     flash write_image erase /home/user/git/baseflight/obj/baseflight_NAZE.hex 0x08000000
+     flash write_image erase /home/user/git/cleanflight/obj/cleanflight_NAZE.hex 0x08000000
      sleep 200
      soft_reset_halt
      wait_halt
@@ -89,7 +89,7 @@ Here are some screenshots showing Hydra's configuration of Eclipse (Kepler)
 
 If you use cygwin to build the binaries then be sure to have configured your common `Source Lookup Path`, `Path Mappings` first, like this:
 
-![](https://raw.github.com/wiki/multiwii/baseflight/images/eclipse-gdb-debugging/config 7.PNG)
+![](https://raw.github.com/wiki/multiwii/cleanflight/images/eclipse-gdb-debugging/config 7.PNG)
 
 
 Create a new `GDB Hardware Debugging` launch configuration from the `Run` menu
@@ -99,11 +99,11 @@ Select the appropriate .elf file (not hex file) - In these examples the target p
 
 DISABLE auto-build
 
-![](https://raw.github.com/wiki/multiwii/baseflight/images/eclipse-gdb-debugging/config 1.PNG)
+![](https://raw.github.com/wiki/multiwii/cleanflight/images/eclipse-gdb-debugging/config 1.PNG)
 
 Choose the appropriate gdb executable - ideally from the same toolchain that you use to build the executable.
 
-![](https://raw.github.com/wiki/multiwii/baseflight/images/eclipse-gdb-debugging/config 2.PNG)
+![](https://raw.github.com/wiki/multiwii/cleanflight/images/eclipse-gdb-debugging/config 2.PNG)
 
 Configure Startup as follows
 
@@ -121,9 +121,9 @@ monitor reset
 ```
 
 
-![](https://raw.github.com/wiki/multiwii/baseflight/images/eclipse-gdb-debugging/config 3.PNG)
+![](https://raw.github.com/wiki/multiwii/cleanflight/images/eclipse-gdb-debugging/config 3.PNG)
 
-![](https://raw.github.com/wiki/multiwii/baseflight/images/eclipse-gdb-debugging/config 4.PNG)
+![](https://raw.github.com/wiki/multiwii/cleanflight/images/eclipse-gdb-debugging/config 4.PNG)
 
 It may be useful to specify run commands too:
 
@@ -133,37 +133,37 @@ monitor reg pc = (0x00000004)
 continue
 ```
 
-![](https://raw.github.com/wiki/multiwii/baseflight/images/eclipse-gdb-debugging/config 13.PNG)
+![](https://raw.github.com/wiki/multiwii/cleanflight/images/eclipse-gdb-debugging/config 13.PNG)
 
 If you use cygwin an additional entry should be shown on the Source tab (not present in this screenshot)
 
-![](https://raw.github.com/wiki/multiwii/baseflight/images/eclipse-gdb-debugging/config 5.PNG)
+![](https://raw.github.com/wiki/multiwii/cleanflight/images/eclipse-gdb-debugging/config 5.PNG)
 
 Nothing to change from the defaults on the Common tab
 
-![](https://raw.github.com/wiki/multiwii/baseflight/images/eclipse-gdb-debugging/config 6.PNG)
+![](https://raw.github.com/wiki/multiwii/cleanflight/images/eclipse-gdb-debugging/config 6.PNG)
 
 Start up the J-Link server in USB mode
 
-![](https://raw.github.com/wiki/multiwii/baseflight/images/eclipse-gdb-debugging/config 9.PNG)
+![](https://raw.github.com/wiki/multiwii/cleanflight/images/eclipse-gdb-debugging/config 9.PNG)
 
 If it connects to your target device it should look like this
 
-![](https://raw.github.com/wiki/multiwii/baseflight/images/eclipse-gdb-debugging/config 10.PNG)
+![](https://raw.github.com/wiki/multiwii/cleanflight/images/eclipse-gdb-debugging/config 10.PNG)
 
 From Eclipse launch the application using the Run/Debug Configurations..., Eclipse should upload the compiled file to the target device which looks like this
  
-![](https://raw.github.com/wiki/multiwii/baseflight/images/eclipse-gdb-debugging/config 11.PNG)
+![](https://raw.github.com/wiki/multiwii/cleanflight/images/eclipse-gdb-debugging/config 11.PNG)
 
 When it's running the J-Link server should look like this.
 
-![](https://raw.github.com/wiki/multiwii/baseflight/images/eclipse-gdb-debugging/config 12.PNG)
+![](https://raw.github.com/wiki/multiwii/cleanflight/images/eclipse-gdb-debugging/config 12.PNG)
 
 Then finally you can use Eclipse debug features to inspect variables, memory, stacktrace, set breakpoints, step over code, etc.
 
-![](https://raw.github.com/wiki/multiwii/baseflight/images/eclipse-gdb-debugging/debugging.PNG)
+![](https://raw.github.com/wiki/multiwii/cleanflight/images/eclipse-gdb-debugging/debugging.PNG)
 
 If Eclipse can't find your breakpoints and they are ignored then check your path mappings (if using cygwin) or use the other debugging launcher as follows.  Note the 'Select other...' at the bottom of the configuration window.
 
-![](https://raw.github.com/wiki/multiwii/baseflight/images/eclipse-gdb-debugging/config 8 - If breakpoints do not work.PNG)
+![](https://raw.github.com/wiki/multiwii/cleanflight/images/eclipse-gdb-debugging/config 8 - If breakpoints do not work.PNG)
 
