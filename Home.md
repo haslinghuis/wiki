@@ -1,6 +1,6 @@
-# Welcome to the Cleanflight wiki!
+![Cleanflight](images/cleanflight/light-wide-1.svg)
 
-![](https://raw.github.com/wiki/hydra/cleanflight/images/cleanflight/icon_128.png)
+# Welcome to the Cleanflight wiki!
 
 Much of the documentation has moved to the same place that the code is found since it is easier to keep the documentation up to date when changing the code and this helps with accepting code and documentation contributions.
 
@@ -8,8 +8,8 @@ Much of the documentation has moved to the same place that the code is found sin
 
 Please reference current documentation here:
 
-https://github.com/hydra/cleanflight/tree/master/docs
+https://github.com/cleanflight/cleanflight/tree/master/docs
 
-For baseflight related documentation (i.e. if not found in the main documentation) see here:
+PDF manuals can be downloaded for each version, see the releases page, here:
 
-https://github.com/multiwii/baseflight/wiki
+https://github.com/cleanflight/cleanflight/releases
