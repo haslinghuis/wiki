@@ -1,4 +1,4 @@
-![Cleanflight](images/cleanflight/light-wide-1.svg)
+![Cleanflight](https://raw.githubusercontent.com/wiki/cleanflight/cleanflight/images/cleanflight/light-wide-1.svg)
 
 # Welcome to the Cleanflight wiki!
 
