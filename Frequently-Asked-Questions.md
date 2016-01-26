@@ -33,3 +33,7 @@ Therefore you can see at higher AcroPlus values and higher stick angles, the PID
 Note that near or very near centre sticks, AcroPlus has markedly less effect on normal PID control outputs. Hence, AcroPlus values in the 20's will have relatively little effect on centre stick sensitivity, but most likely will significantly increase full stick roll rates over and above your rate settings. 
 
 Hence Acro Plus can be considered a form of expontial rate multiplier, outside of the normal PID mechanisms, that should, in most quads, increase roll rates at high stick angles quite significantly. The iTerm coding changes prevent iTerm windup problems that would otherwise inevitably cause loss of control or serious bounce-back at the end of such extremely high rate rolls or flips.
+
+##What is 2khz mode?
+
+TODO 
