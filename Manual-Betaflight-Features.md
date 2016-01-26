@@ -16,7 +16,8 @@ Interpolation of Rc data during looptimes when there are no new updates. This gi
 '''set imu_dcm_ki''' = 0
  
 '''set beeper_off_flags''' = 256
-  beeper_off_flags = sum of each desired beeper turned off case
+  beeper_off_flags = sum of each desired beeper turned off
+ 
  +BEEPER_GYRO_CALIBRATED, 1
 
  +BEEPER_RX_LOST_LANDING, 2 // Beeps SOS when armed and TX is turned off or signal lost (autolanding/autodisarm)
