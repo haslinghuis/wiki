@@ -52,10 +52,10 @@ beeper_off_flags = sum of each desired beeper turned off
 
  +BEEPER_ARMED, 32768 // Warning beeps when board is armed (repeats until board is disarmed or throttle is increased)
  
-
 '''set acc_cut_hz''' = 15
  
 '''set soft_gyro_lpf_hz''' = 60
+
 
 '''set dterm_lpf_hz''' = 0
  
