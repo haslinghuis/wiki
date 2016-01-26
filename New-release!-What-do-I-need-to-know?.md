@@ -2,7 +2,7 @@ This page is meant to provide a more in depth explanation of the changelog for e
 
 # 2.3.4
 
-Softer D approach as default baseline. Goal is to eliminate more D noise which should allow for higher D values for noisier quads. Rc_smoothing disabled by default as the new gyro delta approach should smooth out D anyway.
+Softer D approach as default baseline. Goal is to eliminate more D noise which should allow for higher D values for noisier quads. Rc_smoothing disabled by default as the new gyro delta approach should smooth out D anyway. See 2.3.3 for important details.
 
 # 2.3.3
 
