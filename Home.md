@@ -7,13 +7,10 @@ The betaflight fork is from the current Cleanflight Master with possible future 
 ###Motivation
 The original intention of this project is only to improve testing of the current cleanflight and new features for those who are not familliar with github and compiling of own firmwares. 
 After a while I realised that some things in cleanflight are not being done on the most optimal way to give the maximum performance out of our machines.  My main focus is to prioritize acro flight behaviour and give that the main priority, but still maintain good and solid level modes. Also we do want to prevent advanced tuning and stick to only PID's adjustments. 
-Some parts of proccessing are not being done efficiently like acc reading when flying acro mode, which was delaying the control loop. With this firmware disabling acc is not anymore necessary.
-Also many jitter prevention have been done to maintain a steady and stable control loop and F1 targets like naze have overclocked i2c speed to be able to give same performance like standard F3 targets in terms of flight characteristics. F3 targets with i2c are also slightly overclocked to get faster communication with MPU.
 
 
 Betaflight gyro filter
 [![Filter](https://dl.dropboxusercontent.com/u/31537757/biquad_screen.png)](https://www.youtube.com/watch?v=Q2tSWU1MsVk)
-
 
 
 
@@ -38,7 +35,7 @@ https://www.youtube.com/watch?v=b0qVUa4AeDQ
 
 ##Gyro based loop implementation
 ------------------------------------------------
-Gyro update is leading the loop. The loop will start after interrupt is triggered for new gyro sample. The PID controller will always be doing the calculation of the most fresh gyro value. The sampling gyro rate of 1khz will be used and that will automatically run looptimes of 1000us. This also makes the looptime setting unnecessary. There is no need for this parameter as our gyro decides when loop will run. There is no drift between gyro and control loop and your PID tune will be consistent. No aliasing should be experienced. This also helps filters to do better job in giving clean gyro traces. 
+Gyro update is leading the loop. The loop will start after interrupt is triggered for new gyro sample. The PID controller will always be doing the calculation of the most fresh gyro value. The sampling gyro rate of 1khz will be used and that will automatically run looptimes of 1000us or 500us depending of configuration and target capabilities. This also makes the looptime setting unnecessary. There is no need for this parameter as our gyro decides when loop will run. There is no drift between gyro and control loop and your PID tune will be consistent. No aliasing should be experienced. This also helps filters to do better job in giving clean gyro traces. 
 
 ![GYRO_SYNC](https://cloud.githubusercontent.com/assets/10757508/9105588/6714334c-3c19-11e5-922c-1f70d46d29ac.png)
 
@@ -61,4 +58,5 @@ On blheli esc PWM has to be set to OFF.
 
 
 Download the latest build directly from source:
+
 http://andwho.sytes.net:8080/job/BorisB_BetaFlight/
