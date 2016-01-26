@@ -17,7 +17,7 @@ Hardware lowpass filter for gyro. Allowed values depend on the driver - For exam
 '''set imu_dcm_ki''' = 0
  
 '''set beeper_off_flags''' = 256
- beeper_off_flags = sum of each desired beeper turned off
+beeper_off_flags = sum of each desired beeper turned off
  
  +BEEPER_GYRO_CALIBRATED, 1
 
