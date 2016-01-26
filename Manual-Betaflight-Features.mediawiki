@@ -52,7 +52,7 @@ Hardware lowpass filter for gyro. Allowed values depend on the driver - For exam
  +BEEPER_ARMED, 32768 // Warning beeps when board is armed (repeats until board is disarmed or throttle is increased)
  
 
- '''set acc_cut_hz''' = 15
+'''set acc_cut_hz''' = 15
  
 '''set gyro_soft_lpf''' = ON
  
