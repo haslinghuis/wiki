@@ -6,8 +6,8 @@ Softer D approach as default baseline. Goal is to eliminate more D noise which s
 
 # 2.3.3
 
-A lot of improvements and changes in this release. Use set gyro_lpf = off to allow for 2khz mode. On F1 targets remember to also disable mag/baro/acc. **IMPORTANT: Lower your D values (to 0-5) when first enabling 2khz mode and check motor temps frequently! Some users have reported cooked motors as a result of D values that are too high.**
+A lot of improvements and changes in this release. 3D airmode is much improved. Use set gyro_lpf = off to allow for 2khz mode. On F1 targets remember to also disable mag/baro/acc. **IMPORTANT: Lower your D values (to 0-5) when first enabling 2khz mode and check motor temps frequently! Some users have reported cooked motors as a result of D values that are too high.**
 
 #2.1.6
 
-A stable release. Use this if you are just getting started with betaflight and do not want 2khz mode.
+A stable release. Use this if you are just getting started with betaflight and do not want 2khz mode or 3D airmode.
