@@ -66,4 +66,4 @@ beeper_off_flags = sum of each desired beeper turned off
 '''set dterm_lpf_hz''' = 0
  
 '''set acro_plus_factor''' = 0
- 
+Range is 0-100. If set to anything other than 0 roll and pitch rates in the GUI will be ignored. RC rate and RC expo still apply . Warning 100 results in insaine rolls and flips that may result in your ability to comprehend. Use at your own risk!
