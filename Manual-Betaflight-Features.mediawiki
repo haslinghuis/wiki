@@ -4,7 +4,8 @@ Im sure this needs to be revised but this is what I started a couple weeks ago i
 Interpolation of Rc data during looptimes when there are no new updates. This gives smoother RC input to PID controller and cleaner PIDsum
  
 '''set roll_yaw_cam_mix_degrees''' = 0
- Need feedback about proof of concept feature for mixing of roll and yaw to FPV cam angle. set rc_fpv_cam_correct_degrees = <degrees>
+ 
+Need feedback about proof of concept feature for mixing of roll and yaw to FPV cam angle. set roll_yaw_cam_mix_degrees = <degrees>
  
 '''set enable_fast_pwm''' = OFF
  
