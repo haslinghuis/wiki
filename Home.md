@@ -14,7 +14,9 @@ Also many jitter prevention have been done to maintain a steady and stable contr
 
 
 New Betaflight filter
-https://www.youtube.com/watch?v=Q2tSWU1MsVk
+[![Filter](https://dl.dropboxusercontent.com/u/31537757/biquad_screen.png)](https://www.youtube.com/watch?v=Q2tSWU1MsVk)
+
+
 
 
 ##AIR Mode
