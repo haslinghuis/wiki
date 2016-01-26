@@ -1,12 +1,13 @@
 These settings are specific to betaflight. For cleanflight CLI docs go here 
 https://github.com/cleanflight/cleanflight/blob/master/docs/Cli.md
+
 '''set rc_smoothing''' = OFF 
 Interpolation of Rc data during looptimes when there are no new updates. This gives smoother RC input to PID controller and cleaner PIDsum
  
 '''set roll_yaw_cam_mix_degrees''' = 0
 Need feedback about proof of concept feature for mixing of roll and yaw to FPV cam angle. set roll_yaw_cam_mix_degrees = <degrees>
  
-'''set enable_fast_pwm''' = OFF
+'''set enable_fast_pwm''' = OFF 
  
 '''set gyro_lpf''' = 188HZ ''Must be set to OFF to enable 2K mode''
  F1 boards must also set acc_hardware = 1 Disabling any level modes
