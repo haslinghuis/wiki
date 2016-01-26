@@ -1,5 +1,5 @@
-Im sure this needs to be revised but this is what I started a couple weeks ago in te thread.
-
+These settings are specific to betaflight. For cleanflight CLI docs go here 
+https://github.com/cleanflight/cleanflight/blob/master/docs/Cli.md
 '''set rc_smoothing''' = OFF 
 Interpolation of Rc data during looptimes when there are no new updates. This gives smoother RC input to PID controller and cleaner PIDsum
  
