@@ -12,8 +12,9 @@ After a while I realised that some things in cleanflight are not being done on t
 Some parts of proccessing are not being done efficiently like acc reading when flying acro mode, which was delaying the control loop. With this firmware disabling acc is not anymore necessary.
 Also many jitter prevention have been done to maintain a steady and stable control loop and F1 targets like naze have overclocked i2c speed to be able to give same performance like standard F3 targets in terms of flight characteristics. F3 targets with i2c are also slightly overclocked to get faster communication with MPU.
 
-https://www.youtube.com/watch?v=Q2tSWU1MsVk
 
+New Betaflight filter
+https://www.youtube.com/watch?v=Q2tSWU1MsVk
 
 
 ##AIR Mode
@@ -31,6 +32,7 @@ The feature might still be optimized based on experiences, but is looking good a
 
 Here is some visual demonstration of how to use air mode and enjoy more in air
 https://www.youtube.com/watch?v=mlEJFMNWyvQ
+
 https://www.youtube.com/watch?v=b0qVUa4AeDQ
 
 
@@ -43,7 +45,7 @@ https://cloud.githubusercontent.com/assets/10757508/9105588/6714334c-3c19-11e5-9
 ##Tools:
 Betaflight is also always being adjusted to support most current Cleanflight tools like Configurator and EzGui devices and many other MSP tools. There is no special tool needed just for betaflight.
 
-[b]Tested Boards:[/b]
+##Tested Boards:
 - Naze32 rev4, rev5 and rev6 (boards like dragonfly32, flip32 are all naze32 rev4 clones and just use naze target)
 - CC3D
 - SpracingF3 / Dodo
