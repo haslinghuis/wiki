@@ -1,10 +1,8 @@
 # Welcome to the BetaFlight wiki!
 
-## Current documentation
-
 ##Introduction
 Due to many questions about my latest Cleanflight improvements and tests here is some more central information about it. The motivation for this project is to bring the endusers closer to the development. As my main focus in cleanflight is the flight improving development. A flight test group like this is very usefull.
-The betaflight fork is from the current Cleanflight Master with possible future Cleanflight flight performance enhancements.
+The betaflight fork is from the current Cleanflight Master with possible future Cleanflight flight performance enhancements. This project also helps contributing to other open source project like raceflight.
 
 ###Motivation
 The original intention of this project is only to improve testing of the current cleanflight and new features for those who are not familliar with github and compiling of own firmwares. 
