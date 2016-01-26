@@ -13,7 +13,7 @@ Some parts of proccessing are not being done efficiently like acc reading when f
 Also many jitter prevention have been done to maintain a steady and stable control loop and F1 targets like naze have overclocked i2c speed to be able to give same performance like standard F3 targets in terms of flight characteristics. F3 targets with i2c are also slightly overclocked to get faster communication with MPU.
 
 
-New Betaflight filter
+Betaflight gyro filter
 [![Filter](https://dl.dropboxusercontent.com/u/31537757/biquad_screen.png)](https://www.youtube.com/watch?v=Q2tSWU1MsVk)
 
 
