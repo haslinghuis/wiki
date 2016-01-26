@@ -56,7 +56,6 @@ beeper_off_flags = sum of each desired beeper turned off
  
 '''set soft_gyro_lpf_hz''' = 60
 
-
 '''set dterm_lpf_hz''' = 0
  
 '''set acro_plus_factor''' = 0
