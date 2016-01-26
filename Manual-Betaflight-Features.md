@@ -1,1 +1,41 @@
-TODO
+Im sure this needs to be revised but this is what I started a couple weeks ago in te thread.
+
+set rc_smoothing = OFF 
+Interpolation of Rc data during looptimes when there are no new updates. This gives smoother RC input to PID controller and cleaner PIDsum
+ 
+set rc_fpv_cam_correct_degrees = 0
+ Need feedback about proof of concept feature for mixing of roll and yaw to FPV cam angle. set rc_fpv_cam_correct_degrees = <degrees>
+ 
+set enable_fast_pwm = OFF
+ 
+set gyro_lpf = OFF
+ Hardware lowpass filter for gyro. Allowed values depend on the driver - For example MPU6050 allows 5,10,20,42,98,188,256Hz, while MPU3050 doesn't allow 5Hz. If you have to set gyro lpf below 42Hz generally means the frame is vibrating too much, and that should be fixed first. Values outside of supported range will usually be ignored by drivers, and will configure lpf to default value of 42Hz.
+ 
+set imu_dcm_kp = 2500
+ 
+set imu_dcm_ki = 0
+ 
+set beeper_off_flags = 256
+ +/* CLI beeper_off_flags = sum of each desired beeper turned off case
+ +BEEPER_GYRO_CALIBRATED, 1
+ +BEEPER_RX_LOST_LANDING, 2 // Beeps SOS when armed and TX is turned off or signal lost (autolanding/autodisarm)
+ +BEEPER_RX_LOST, 4 // Beeps when TX is turned off or signal lost (repeat until TX is okay)
+ +BEEPER_DISARMING, 8 // Beep when disarming the board
+ +BEEPER_ARMING, 16 // Beep when arming the board
+ +BEEPER_ARMING_GPS_FIX, 32 // Beep a special tone when arming the board and GPS has fix
+ +BEEPER_BAT_CRIT_LOW, 64 // Longer warning beeps when battery is critically low (repeats)
+ +BEEPER_BAT_LOW, 128 // Warning beeps when battery is getting low (repeats)
+ +BEEPER_, 256 // when plugged into USB
+ +BEEPER_RX_SET, 512 // Beeps when aux channel is set for beep or beep sequence how many satellites has found if GPS enabled
+ +BEEPER_DISARM_REPEAT, 1024 // Beeps sounded while stick held in disarm position
+ +BEEPER_ACC_CALIBRATION, 2048 // ACC inflight calibration completed confirmation
+ +BEEPER_ACC_CALIBRATION_FAIL, 4096 // ACC inflight calibration failed
+ +BEEPER_READY_BEEP, 8192 // Ring a tone when GPS is locked and ready
+ +BEEPER_MULTI_BEEPS, 16384 // Internal value used by 'beeperConfirmationBeeps()'.
+ +BEEPER_ARMED, 32768 // Warning beeps when board is armed (repeats until board is disarmed or throttle is increased)
+ +*/
+ set acc_cut_hz = 15
+ 
+set gyro_soft_lpf = ON
+ 
+set insane_acro_factor = 0
