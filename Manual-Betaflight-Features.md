@@ -1,21 +1,21 @@
 Im sure this needs to be revised but this is what I started a couple weeks ago in te thread.
 
-[B]set rc_smoothing [/B]= OFF 
+set rc_smoothing = OFF 
 Interpolation of Rc data during looptimes when there are no new updates. This gives smoother RC input to PID controller and cleaner PIDsum
  
-[B]set rc_fpv_cam_correct_degrees[/B] = 0
+set rc_fpv_cam_correct_degrees = 0
  Need feedback about proof of concept feature for mixing of roll and yaw to FPV cam angle. set rc_fpv_cam_correct_degrees = <degrees>
  
-[B]set enable_fast_pwm[/B] = OFF
+set enable_fast_pwm = OFF
  
-[B]set gyro_lpf[/B] = OFF
+set gyro_lpf = OFF
  Hardware lowpass filter for gyro. Allowed values depend on the driver - For example MPU6050 allows 5,10,20,42,98,188,256Hz, while MPU3050 doesn't allow 5Hz. If you have to set gyro lpf below 42Hz generally means the frame is vibrating too much, and that should be fixed first. Values outside of supported range will usually be ignored by drivers, and will configure lpf to default value of 42Hz.
  
-[B]set imu_dcm_kp[/B] = 2500
+set imu_dcm_kp = 2500
  
-[B]set imu_dcm_ki [/B]= 0
+set imu_dcm_ki = 0
  
-[B]set beeper_off_flags[/B] = 256
+set beeper_off_flags = 256
  +/* CLI beeper_off_flags = sum of each desired beeper turned off case
  +BEEPER_GYRO_CALIBRATED, 1
  +BEEPER_RX_LOST_LANDING, 2 // Beeps SOS when armed and TX is turned off or signal lost (autolanding/autodisarm)
@@ -34,8 +34,8 @@ Interpolation of Rc data during looptimes when there are no new updates. This gi
  +BEEPER_MULTI_BEEPS, 16384 // Internal value used by 'beeperConfirmationBeeps()'.
  +BEEPER_ARMED, 32768 // Warning beeps when board is armed (repeats until board is disarmed or throttle is increased)
  +*/
-[B] set acc_cut_hz[/B] = 15
+ set acc_cut_hz = 15
  
-[B]set gyro_soft_lpf[/B] = ON
+set gyro_soft_lpf = ON
  
-[B]set insane_acro_factor[/B] = 0
+set insane_acro_factor = 0
