@@ -3,7 +3,8 @@ https://github.com/cleanflight/cleanflight/blob/master/docs/Cli.md
 
 The setting shown are the Defaults + possible values.
 
-'''set rc_smoothing''' = OFF  <i>[OFF,ON]</i><br />
+'''set rc_smoothing''' = OFF <br />
+<i>[OFF,ON]</i><br />
 Interpolation of Rc data during looptimes when there are no new updates. This gives smoother RC input to PID controller and cleaner PIDsum<br />
 
  
@@ -85,5 +86,5 @@ beeper_off_flags = sum of each desired beeper turned off
 <i>[0,...,255]</i>
  
 '''set acro_plus_factor''' = 0<br />
-<i>[0,...,100]</i>
+<i>[0,...,100]</i><br />
 Range is 0-100. If set to anything other than 0 roll and pitch rates in the GUI will be ignored. RC rate and RC expo still apply . Warning 100 results in insane rolls and flips that may result in your ability to comprehend. Use at your own risk!
