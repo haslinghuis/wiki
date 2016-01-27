@@ -73,7 +73,9 @@ See the "Gyro based loop implementation" description on the Wiki Home page.
 In the CLI, make the following commands, dependent on the Flight Controller type
 
 **For F3 boards**
+
 set gyro_lpf = OFF 
+
 
 **For F1 boards**
 
