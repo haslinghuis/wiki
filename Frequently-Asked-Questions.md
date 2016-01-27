@@ -85,19 +85,17 @@ Have a look at this video form more information: http://www.youtube.com/watch?v=
 In the CLI, make the following commands, dependent on the Flight Controller type
 
 **For F3 boards**
-
-set gyro_lpf = OFF 
-
+```shell
+set gyro_lpf = OFF
+```
 
 **For F1 boards**
-
+```shell
 set acc_hardware = 1
-
 set baro_hardware = 1
-
 set mag_hardware = 1
-
 set gyro_lpf = OFF 
+```
 
 ##How should I tune my Copter ?
 1. It's recommended that these step be done in Acro mode even if you are usually a Level/Horizon flyer.
@@ -168,4 +166,3 @@ Level mode angle control and stick sensitivity is different in Luxfloat from Rew
 In Luxfloat level/horizon modes, full max angle is reached at full stick. This means very low stick sensitivity in level/horizon modes at rates that are quite snappy in acro, especially if max_angle is set to a low value, like 45 degrees. The stick sensitivity does not change with changing rates. I personally can't fly level/horizon like this.
 
 In rewrite, stick sensitivity is managed differently; sensitivity depends on rates and is closer to acro sensitivity. This may result in reaching max angle before the sticks reach their full travel. I personally prefer this (it was my coding hack, I think, that made it like this). It's good both for teaching and for experienced pilots.
-
