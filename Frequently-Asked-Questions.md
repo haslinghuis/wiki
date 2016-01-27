@@ -134,21 +134,21 @@ But the D term can vary significantly depending on many different factors, and i
 
 Here is a list of FCs compiled around the end of January 2016. The opinions regarding Pros and Cons are also shown.
 
-SPRacing F3 - Hardware issues resulting in seemingly-high failure rate. Micro-connectors suck.
+**[SPRacing F3](http://seriouslypro.com/spracingf3):** Hardware issues resulting in seemingly-high failure rate. Micro-connectors suck.
 
-The Cube - Super expensive, like all TBS gear. The ESC is listed as able to run SimonK, which means it's Atmel, which means it's probably got mediocre performance.
+**[The Cube](http://www.team-blacksheep.com/products/prod:powercube_colibri):** Super expensive, like all TBS gear. The ESC is listed as able to run SimonK, which means it's Atmel, which means it's probably got mediocre performance.
 
-Dodo - No complaints personally. Now that they fixed the ESC back-feeding issue, that is. Does BLHeli passthrough work on it? If so, then this one seems pretty good to me.
+**[Dodo](http://www.rcgroups.com/forums/showthread.php?t=2439777):** No complaints personally. Now that they fixed the ESC back-feeding issue, that is. Does BLHeli passthrough work on it? If so, then this one seems pretty good to me.
 
-Moto Tornado - 5v buffers on motor outputs mean no BLHeli passthrough. Other than that, awesome FC at a good price.
+**[MotoLab TornadoFC](http://www.rcgroups.com/forums/showthread.php?t=2473157#post32330479):** 5v buffers on motor outputs mean no BLHeli passthrough. Other than that, awesome FC at a good price.
 
-Moto Cyclone - Hasn't hit the streets yet, but looks like it ticks all the boxes.
+**[MotoLab Cyclone](http://dronehitech.com/motolab-cyclone-flight-controller-announced/):** Hasn't hit the streets yet, but looks like it ticks all the boxes.
 
-XRacer F3 - No VBat pin? Don't know much about this one.
+**[XRacer F3](http://www.fpvmodel.com/x-racer-f303-flight-controller_g1106.html?u=8D1D164861E0E506):** No VBat pin? Don't know much about this one.
 
-Lux - Hasn't hit the street yet, but looks good. Doesn't have a dataflash chip, but I hate dataflash anyway.
+**[LUX](http://www.rcgroups.com/forums/showthread.php?t=2554204):** Hasn't hit the street yet, but looks good. Doesn't have a dataflash chip, but I hate dataflash anyway.
 
-KISS - Doesn't run Betaflight (yet) LOL.
+**[KISS](http://www.rcgroups.com/forums/showthread.php?t=2555204):** Doesn't run Betaflight (yet) LOL.
 
 ##What are the differences between LuxFloat and Rewrite PID Controllers ?
 
