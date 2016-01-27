@@ -35,4 +35,5 @@ Betaflight is also always being adjusted to support most current Cleanflight too
 - In case of using Blheli ESC software 14.1 or higher is required for reliable Betaflight support. (This remark doesnt mean that only blheli is supported. All other ESC's work fine....KISS.....Simonk etc).
 On blheli esc PWM has to be set to OFF.
 
+##Firmware Releases:
 Releases can be found here: https://github.com/borisbstyle/betaflight/releases or download the latest build directly from source (these are bleeding edge and may be unstable): http://andwho.sytes.net:8080/job/BorisB_BetaFlight/
