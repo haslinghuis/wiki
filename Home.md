@@ -37,3 +37,11 @@ On blheli esc PWM has to be set to OFF.
 
 ##Firmware Releases:
 Releases can be found here: https://github.com/borisbstyle/betaflight/releases or download the latest build directly from source (these are bleeding edge and may be unstable): http://andwho.sytes.net:8080/job/BorisB_BetaFlight/
+
+##More Information:
+Joshua Bardwell manages a wonderful resource regarding Copter tuning using BlackBox here: http://www.rcgroups.com/forums/showthread.php?t=2484202
+
+and he's also made an interesting & informative video about the filtering:
+http://www.youtube.com/watch?v=CpW8_fOJ7_M
+
+Aliasing and Gyro Sync Explained: http://www.youtube.com/watch?v=-lmoKal_e4s
