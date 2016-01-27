@@ -87,4 +87,4 @@ beeper_off_flags = sum of each desired beeper turned off
  
 '''set acro_plus_factor''' = 0<br />
 <i>[0,...,100]</i><br />
-Range is 0-100. If set to anything other than 0 roll and pitch rates in the GUI will be ignored. RC rate and RC expo still apply . Warning 100 results in insane rolls and flips that may result in your ability to comprehend. Use at your own risk!
+Range is 0-100. If set to anything other than 0 roll and pitch rates in the GUI will be ignored. RC rate and RC expo still apply . Warning 100 results in insane rolls and flips that may result in your inability to comprehend. Use at your own risk!
