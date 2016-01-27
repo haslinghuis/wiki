@@ -7,6 +7,7 @@
 1. How do I activate 2khz mode ?
 1. How should I tune my Copter ?
 1. What Flight Controllers are recommended to get the best out of BetaFlight ?
+1. What are the differences between LuxFloat and Rewrite PID Controllers ?
 
 ***
 
@@ -150,3 +151,21 @@ XRacer F3 - No VBat pin? Don't know much about this one.
 Lux - Hasn't hit the street yet, but looks good. Doesn't have a dataflash chip, but I hate dataflash anyway.
 
 KISS - Doesn't run Betaflight (yet) LOL.
+
+##What are the differences between LuxFloat and Rewrite PID Controllers ?
+
+According to Boris, there is literally no difference between Lux and Rewrite any more (from a flight characteristics point of view), except that they scale the numbers differently. So the actual PID gains and rates will vary between them, but the processing of gyro data is identical. The main problem with Luxfloat is that the CleanFlight Configurator GUI by default only gives you 0.1 precision, which is too big of a step for Luxfloat. It would be like trying to tune Rewrite, and only being able to use whole integers like 4.0, 5.0, 6.0. 
+
+LuxFloat uses Floating Point maths whereas Rewrite uses Integer maths. What does this mean ? Floating Point maths needs more processing power from the Flight Controller, and so F3 (and above) CPU based FCs will have a much easier time calculating the values in the PID loop since it has a dedicated Floating Point Unit (FPU) for these calculations.
+Why should this matter ? The longer the PID controller takes to process the Gyro/Accelerometer data the slower the "loop time". Faster loop times are desirable as it makes the copter more responsive to pilot commands, and also (more importantly) the ability to correct to external disturbances to the copter (like wind and propwash).
+
+From a development point of view, LuxFloat is easier to understand since ReWrite has to emulate mathematical functions using complicated routines rather than simple commands that a dedicated FPU can handle.
+
+People like Rewrite nowadays simply because it is easier to tune because it offers more functional precision in the gains. The days when Luxfloat and Rewrite flew differently (like before Luxfloat had error-seeking D term, or whatever) are gone.
+
+Level mode angle control and stick sensitivity is different in Luxfloat from Rewrite in BetaFlight
+
+In Luxfloat level/horizon modes, full max angle is reached at full stick. This means very low stick sensitivity in level/horizon modes at rates that are quite snappy in acro, especially if max_angle is set to a low value, like 45 degrees. The stick sensitivity does not change with changing rates. I personally can't fly level/horizon like this.
+
+In rewrite, stick sensitivity is managed differently; sensitivity depends on rates and is closer to acro sensitivity. This may result in reaching max angle before the sticks reach their full travel. I personally prefer this (it was my coding hack, I think, that made it like this). It's good both for teaching and for experienced pilots.
+
