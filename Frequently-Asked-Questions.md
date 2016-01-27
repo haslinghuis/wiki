@@ -70,6 +70,13 @@ See the "Gyro based loop implementation" description on the Wiki Home page.
 2kHz mode is simply a faster Gyro based loop that runs at an update rate of 2000 times a second or every 500usec.
 
 ##How do I activate 2khz mode?
-In the CLI set gyro_lpf = OFF 
+In the CLI, make the following commands, dependent on the Flight Controller type
 
-TODO 
+**For F3 boards**
+set gyro_lpf = OFF 
+
+**For F1 boards**
+set acc_hardware = 1
+set baro_hardware = 1
+set mag_hardware = 1
+set gyro_lpf = OFF 
