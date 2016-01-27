@@ -1,9 +1,16 @@
 ##Contents
 
+1. How do I install Betaflight ?
 1. What is Air Mode ?
 1. What is Acro Plus ?
+1. What is 2khz mode ?
+1. How do I activate 2khz mode ?
 
 ***
+
+##How do I install Betaflight ?
+
+There is a step-by-step guide on how to flash the flight controller with Betaflight here: http://quadquestions.com/blog/2015/12/25/betaflight_flashing/
 
 ##What is Air Mode ?
 
