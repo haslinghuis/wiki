@@ -8,6 +8,8 @@ Interpolation of Rc data during looptimes when there are no new updates. This gi
  
 '''set roll_yaw_cam_mix_degrees''' = 0
 Need feedback about proof of concept feature for mixing of roll and yaw to FPV cam angle. set roll_yaw_cam_mix_degrees = <degrees>
+<br />
+Here a good preview for this option: [https://youtu.be/gXeaINFpvow FPV camera tilt compensation]
  
 '''set enable_fast_pwm''' = OFF 
  
