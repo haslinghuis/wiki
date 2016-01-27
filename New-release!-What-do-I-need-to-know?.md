@@ -6,8 +6,8 @@ This page is meant to provide a more in depth explanation of the changelog for e
 - cleanup code to get more flash space
 - add some new targets. Lux board will get own target for example.
 - Remove old mixer. Air mode will be default with some kind of idle up method to still simulate current default mixer
+- consider to have a configurator for betaflight to bring things more centralized like flashing and documentation and make configuration easier.
 
-I would also consider to have a configurator for betaflight to bring things more centralised like flashing and documentation and make configuration easier.
 # 2.3.4
 
 Softer D approach as default baseline. Goal is to eliminate more D noise which should allow for higher D values for noisier quads. Rc_smoothing disabled by default as the new gyro delta approach should smooth out D anyway. See 2.3.3 for important details.
