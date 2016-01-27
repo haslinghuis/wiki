@@ -7,6 +7,7 @@ This page is meant to provide a more in depth explanation of the changelog for e
 - add some new targets. Lux board will get own target for example.
 - Remove old mixer. Air mode will be default with some kind of idle up method to still simulate current default mixer
 - consider to have a configurator for betaflight to bring things more centralized like flashing and documentation and make configuration easier.
+- Fix pitch/roll in 3D throttle deadband
 
 # 2.3.4
 
