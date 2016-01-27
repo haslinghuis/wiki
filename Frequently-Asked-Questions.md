@@ -5,6 +5,7 @@
 1. What is Acro Plus ?
 1. What is 2khz mode ?
 1. How do I activate 2khz mode ?
+1. How should I tune my Copter ?
 
 ***
 
@@ -86,3 +87,34 @@ set baro_hardware = 1
 set mag_hardware = 1
 
 set gyro_lpf = OFF 
+
+##How should I tune my Copter ?
+1. It's recommended that these step be done in Acro mode even if you are usually a Level/Horizon flyer.
+
+2. Start with the default P gain as provided by the installed BetaFlight firmware and lower the I and D gains (roughly 10 and 5 respectively). These are ReWrite PID controller gains. Do this on Roll, Pitch and Yaw axis.
+
+3. Increase P gain on Roll axis until you see oscillations (when you approach full throttle and you get very rapid visible and audible shakes). Then set P term to roughly 70% of the value that caused the oscillations. 
+
+4. Repeat step 3 for Pitch and Yaw axis.
+
+5. Increase I gain on Roll axis until the quad holds the desired attitude angle and does not drift. Too much I gain will make the copter unresponsive and may overshoot during fast turning.
+
+6. Repeat step 5 for Pitch and Yaw axis.
+
+6. Increase D gain ONLY to the extent that it helps reduce bounceback after flips or prop-wash. If neither is a problem, then LEAVE D LOW. At this point the Copter should be around 80-90% tuned.
+
+7. Finally, refine the relationship between P and I by looking for a tendency to pull out of or push into strong turns. Can also refine P by analysing Blackbox Logs. This may get you closer to a perfect tune.
+
+8. Once tuning is complete in Acro mode then move onto adjusted the Level/Horizon parameters to suit your flying style (if needed).
+
+**Notes:** Bounce-back oscillations could be the result of:
+
+1. D that is too low
+
+2. P that is too high
+
+3. or even P that is too low (a low P gain can cause slow, sloppy oscillations because it's not providing enough  authority to get to the intended end-state).
+
+**More info:**
+I term is usually not active enough to cause trouble, and can usually get it roughly tuned in pretty quickly.
+But the D term can vary significantly depending on many different factors, and its amplification effect means that if D term is bad, it can be very bad, and in odd and unpredictable ways, depending on how noise is presenting itself and how the P term is acting.
