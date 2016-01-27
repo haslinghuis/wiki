@@ -17,7 +17,7 @@ Here a good preview for this option: [https://youtu.be/gXeaINFpvow FPV camera ti
  F1 boards must also set acc_hardware = 1 Disabling any level modes
 Hardware lowpass filter for gyro. Allowed values depend on the driver - For example MPU6050 allows 5,10,20,42,98,188,256Hz, while MPU3050 doesn't allow 5Hz. If you have to set gyro lpf below 42Hz generally means the frame is vibrating too much, and that should be fixed first. Values outside of supported range will usually be ignored by drivers, and will configure lpf to default value of 42Hz.
 
-'''set acc_hardware''' = 0 (default on) (must be set to 1 for 2K mode)
+'''set acc_hardware''' = 0 (default on) (must be set to 1 for 2K mode on F1 targets)
 sets the accelerometer 0 means auto detect, 1 means off, 2 for ADXL345, 3 for MPU6050 integrated accelerometer, 4 for MMA8452, 5 for BMA280, 6 for LSM303DLHC, 7 for MPU6000, 8 for MPU6500
 
 '''set baro_hardware''' = 0 (default on), 1 = disabled
