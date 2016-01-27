@@ -100,21 +100,23 @@ set gyro_lpf = OFF
 ##How should I tune my Copter ?
 1. It's recommended that these step be done in Acro mode even if you are usually a Level/Horizon flyer.
 
-2. Start with the default P gain as provided by the installed BetaFlight firmware and lower the I and D gains (roughly 10 and 5 respectively). These are ReWrite PID controller gains. Do this on Roll, Pitch and Yaw axis.
+2. Start with slightly lower than default P gains as provided by the installed BetaFlight firmware. P of 4.0 on Pitch and Roll are good starting points. Lower the I and D gains as well. (roughly 10 and 5 respectively). These are ReWrite PID controller gains. Do this on the Roll and Pitch axis. For Yaw, simply decrease default P and I a little to eliminate that axis as a source of oscillations.
 
 3. Increase P gain on Roll axis until you see oscillations (when you approach full throttle and you get very rapid visible and audible shakes). Then set P term to roughly 70% of the value that caused the oscillations. 
 
-4. Repeat step 3 for Pitch and Yaw axis.
+4. Repeat step 3 for Pitch axis.
 
-5. Increase I gain on Roll axis until the quad holds the desired attitude angle and does not drift. Too much I gain will make the copter unresponsive and may overshoot during fast turning.
+5. Test to see if the quad holds the desired roll angle and does not drift by rolling the copter to a specific angle, and then punch and drop throttle several times.  The angle you gave it relative to the horizon should not change significantly.  If the angle appears to drift, increase I gain.  Too much I gain will make the copter unresponsive and may overshoot during fast turning.
 
-6. Repeat step 5 for Pitch and Yaw axis.
+6. Repeat step 5 for Pitch axis.
 
-6. Increase D gain ONLY to the extent that it helps reduce bounceback after flips or prop-wash. If neither is a problem, then LEAVE D LOW. At this point the Copter should be around 80-90% tuned.
+7. Increase D gain ONLY to the extent that it helps reduce bounceback after flips or prop-wash. If neither is a problem, then LEAVE D LOW. At this point the Copter should be around 80-90% tuned.
 
-7. Finally, refine the relationship between P and I by looking for a tendency to pull out of or push into strong turns. Can also refine P by analysing Blackbox Logs. This may get you closer to a perfect tune.
+8. For Yaw axis, the defaults are usually quite good, and I find that yaw needs the least tuning. Because yaw is inherently very different from pitch and roll, a blackbox log is usually necessary to identify remaining issues.  Most excess P oscillation comes from either roll or pitch, but if any roughness remains, look at a log to see if yaw P starts to oscillate on full throttle. If so, decrease yaw P. 
 
-8. Once tuning is complete in Acro mode then move onto adjusted the Level/Horizon parameters to suit your flying style (if needed).
+9. Finally, refine the relationship between P and I by looking for a tendency to pull out of or push into strong turns. Can also refine P by analysing Blackbox Logs. This may get you closer to a perfect tune.
+
+10. Once tuning is complete in Acro mode then move onto adjusted the Level/Horizon parameters to suit your flying style (if needed).
 
 Remember not to get too carried away trying to get the BlackBox traces to be as clean as possible. If the copter flies really well and suits your needs then just get out there and fly !
 
