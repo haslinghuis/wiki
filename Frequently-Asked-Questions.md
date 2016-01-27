@@ -98,11 +98,11 @@ set gyro_lpf = OFF
 ```
 
 ##How should I tune my Copter ?
-1. It's recommended that these step be done in Acro mode even if you are usually a Level/Horizon flyer.
+1. It's recommended that these step be done in Acro mode even if you are usually a Level/Horizon flyer.  Example PID values shown below correspond to the Rewrite PID controller (PID controller #1)
 
-2. Start with slightly lower than default P gains as provided by the installed BetaFlight firmware. P of 4.0 on Pitch and Roll are good starting points. Lower the I and D gains as well. (roughly 10 and 5 respectively). These are ReWrite PID controller gains. Do this on the Roll and Pitch axis. For Yaw, simply decrease default P and I a little to eliminate that axis as a source of oscillations.
+2. Start with slightly lower than default P gains as provided by the installed BetaFlight firmware. P of 4.0 on Pitch and Roll are good starting points. Also lower the I and D gains on pitch and roll in order to tune P with minimal interference from I and D. I of 10 and D of 5 are good starting points. For yaw, it is prudent to simply decrease default P and I a bit to eliminate that axis as a source of oscillations.
 
-3. Increase P gain on Roll axis until you see oscillations (when you approach full throttle and you get very rapid visible and audible shakes). Then set P term to roughly 70% of the value that caused the oscillations. 
+3. Over a series of flights, increase P gain on Roll axis until you see oscillations when you approach full throttle and you get very rapid visible and audible shakes. Then set P term to roughly 70% of the value that caused the oscillations. 
 
 4. Repeat step 3 for Pitch axis.
 
@@ -110,17 +110,21 @@ set gyro_lpf = OFF
 
 6. Repeat step 5 for Pitch axis.
 
-7. Increase D gain ONLY to the extent that it helps reduce bounceback after flips or prop-wash. If neither is a problem, then LEAVE D LOW. At this point the Copter should be around 80-90% tuned.
+7. Increase D gain ONLY to the extent that it helps reduce bounceback after flips/rolls or prop-wash oscillations after an abrupt descent. If neither is a problem, then LEAVE D LOW.  At this point the Copter should be around 80-90% tuned.
 
-8. For Yaw axis, the defaults are usually quite good, and I find that yaw needs the least tuning. Because yaw is inherently very different from pitch and roll, a blackbox log is usually necessary to identify remaining issues.  Most excess P oscillation comes from either roll or pitch, but if any roughness remains, look at a log to see if yaw P starts to oscillate on full throttle. If so, decrease yaw P. 
+8. The defaults are usually quite good for yaw axis, and it often needs the least tuning. Because yaw inherently has less positive control (a.k.a. authority), than pitch and roll, a wider range of values are acceptable.  Relatively high P and I values and relatively low D values are the norm because of the inherent lack of authority compared to pitch and roll. A blackbox log is usually necessary to fine-tune. Most excess P oscillation comes from either roll or pitch, but if any roughness at full throttle remains, look at a blackbox log to see if yaw P starts to oscillate on full throttle. If so, decrease yaw P. 
 
-9. Finally, refine the relationship between P and I by looking for a tendency to pull out of or push into strong turns. Can also refine P by analysing Blackbox Logs. This may get you closer to a perfect tune.
+9. Finally, refine the relationship between P and I by looking for a tendency to pull out of or push into strong turns. Can also refine P by analyzing Blackbox Logs. This may get you closer to a perfect tune.
 
-10. Once tuning is complete in Acro mode then move onto adjusted the Level/Horizon parameters to suit your flying style (if needed).
+10. Once tuning is complete in Acro mode then move onto adjusted the Level/Horizon parameters to suit your flying style if you plan to fly in angle or horizon mode.
 
 Remember not to get too carried away trying to get the BlackBox traces to be as clean as possible. If the copter flies really well and suits your needs then just get out there and fly !
 
-**Notes:** Bounce-back oscillations could be the result of:
+**Notes:** 
+
+When you look for high P term oscillation in a BB log, they do no generally look like wide sweeping arcs or jagged peaks and valleys. High P term oscillations manifest first at the very top of the throttle range and look like tight sine waves.  When these show up on BB logs, they may not always be detectable by sight or sound. By the time you can see/hear them, they are super-apparent on a BB log.  That's why the recommendation for initial tuning by sight and sound is to reach the point of visible/auditory oscillation and then drop back to 70% of that value.
+
+Bounce-back oscillations could be the result of:
 
 1. D that is too low
 
