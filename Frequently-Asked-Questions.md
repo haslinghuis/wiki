@@ -1,13 +1,13 @@
 ##Contents
 
-1. How do I install Betaflight ?
-1. What is Air Mode ?
-1. What is Acro Plus ?
-1. What is 2khz mode ?
-1. How do I activate 2khz mode ?
-1. How should I tune my Copter ?
-1. What Flight Controllers are recommended to get the best out of BetaFlight ?
-1. What are the differences between LuxFloat and Rewrite PID Controllers ?
+1. [How do I install Betaflight ?](#how-do-i-install-betaflight-)
+1. [What is Air Mode ?](#what-is-air-mode-)
+1. [What is Acro Plus ?](#what-is-acro-plus-)
+1. [What is 2khz mode ?](#what-is-2khz-mode)
+1. [How do I activate 2khz mode ?](#how-do-i-activate-2khz-mode)
+1. [How should I tune my Copter ?](#how-should-i-tune-my-copter-)
+1. [What Flight Controllers are recommended to get the best out of BetaFlight ?](#what-flight-controllers-are-recommended-to-get-the-best-out-of-betaflight-)
+1. [What are the differences between LuxFloat and Rewrite PID Controllers ?](#what-are-the-differences-between-luxfloat-and-rewrite-pid-controllers-)
 
 ***
 
