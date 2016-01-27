@@ -144,7 +144,7 @@ Here is a list of FCs compiled around the end of January 2016. The opinions rega
 
 **[The Cube](http://www.team-blacksheep.com/products/prod:powercube_colibri):** Super expensive, like all TBS gear. The ESC is listed as able to run SimonK, which means it's Atmel, which means it's probably got mediocre performance.
 
-**[Dodo](http://www.rcgroups.com/forums/showthread.php?t=2439777):** No complaints personally. Now that they fixed the ESC back-feeding issue, that is. Does BLHeli passthrough work on it? If so, then this one seems pretty good to me.
+**[Dodo](http://www.rcgroups.com/forums/showthread.php?t=2439777):** No complaints personally. Now that they fixed the ESC back-feeding issue, that is. So this seems to be a great option at the moment.
 
 **[MotoLab TornadoFC](http://www.rcgroups.com/forums/showthread.php?t=2473157#post32330479):** 5v buffers on motor outputs mean no BLHeli passthrough. Other than that, awesome FC at a good price.
 
