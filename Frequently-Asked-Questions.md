@@ -76,7 +76,11 @@ In the CLI, make the following commands, dependent on the Flight Controller type
 set gyro_lpf = OFF 
 
 **For F1 boards**
+
 set acc_hardware = 1
+
 set baro_hardware = 1
+
 set mag_hardware = 1
+
 set gyro_lpf = OFF 
