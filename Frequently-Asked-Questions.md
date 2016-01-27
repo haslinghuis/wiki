@@ -6,6 +6,7 @@
 1. What is 2khz mode ?
 1. How do I activate 2khz mode ?
 1. How should I tune my Copter ?
+1. What Flight Controllers are recommended to get the best out of BetaFlight ?
 
 ***
 
@@ -107,6 +108,8 @@ set gyro_lpf = OFF
 
 8. Once tuning is complete in Acro mode then move onto adjusted the Level/Horizon parameters to suit your flying style (if needed).
 
+Remember not to get too carried away trying to get the BlackBox traces to be as clean as possible. If the copter flies really well and suits your needs then just get out there and fly !
+
 **Notes:** Bounce-back oscillations could be the result of:
 
 1. D that is too low
@@ -118,3 +121,23 @@ set gyro_lpf = OFF
 **More info:**
 I term is usually not active enough to cause trouble, and can usually get it roughly tuned in pretty quickly.
 But the D term can vary significantly depending on many different factors, and its amplification effect means that if D term is bad, it can be very bad, and in odd and unpredictable ways, depending on how noise is presenting itself and how the P term is acting.
+
+##What Flight Controllers are recommended to get the best out of BetaFlight ?
+
+Here is a list of FCs compiled around the end of January 2016. The opinions regarding Pros and Cons are also shown.
+
+SPRacing F3 - Hardware issues resulting in seemingly-high failure rate. Micro-connectors suck.
+
+The Cube - Super expensive, like all TBS gear. The ESC is listed as able to run SimonK, which means it's Atmel, which means it's probably got mediocre performance.
+
+Dodo - No complaints personally. Now that they fixed the ESC back-feeding issue, that is. Does BLHeli passthrough work on it? If so, then this one seems pretty good to me.
+
+Moto Tornado - 5v buffers on motor outputs mean no BLHeli passthrough. Other than that, awesome FC at a good price.
+
+Moto Cyclone - Hasn't hit the streets yet, but looks like it ticks all the boxes.
+
+XRacer F3 - No VBat pin? Don't know much about this one.
+
+Lux - Hasn't hit the street yet, but looks good. Doesn't have a dataflash chip, but I hate dataflash anyway.
+
+KISS - Doesn't run Betaflight (yet) LOL.
