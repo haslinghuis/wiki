@@ -71,6 +71,13 @@ Hence Acro Plus can be considered a form of exponential rate multiplier, outside
 See the "Gyro based loop implementation" description on the Wiki Home page.
 2kHz mode is simply a faster Gyro based loop that runs at an update rate of 2000 times a second or every 500usec.
 
+Here is a great analogy:
+You are driving a car. You run on 1khz so you are only allowed to open your eyes once per second. In this time you must not only look at the road ahead but also the wheel, speedo, RPM, radio, and so on. Now close your eyes until the next time. 
+2khz let's you open your eyes and make decisions twice in the same timeframe as 1khz. 
+
+So you are heading for a collision at 60kph. 1khz will let you adjust over that distance by a factor of one. 2khz let's you adjust by a factor of two (Yea I know, but I am explaining basics). So to make a one meter horizontal adjustment in 1K would take you 6 meters the equivalent in 2k would take you 3 meters. 
+This is not gospel, just a way to explain the difference.
+
 ##How do I activate 2khz mode?
 In the CLI, make the following commands, dependent on the Flight Controller type
 
