@@ -140,9 +140,14 @@ But the D term can vary significantly depending on many different factors, and i
 
 Here is a list of FCs compiled around the end of January 2016. The opinions regarding Pros and Cons are also shown.
 
-**[SPRacing F3](http://seriouslypro.com/spracingf3):** Hardware issues resulting in seemingly-high failure rate. Micro-connectors suck.
+| Flight Controller | Processor  | Opinion                                     |
+| ----------------- | ---------- | -------------------------------------------
+| **[SPRacing F3](http://seriouslypro.com/spracingf3):**  | F3   | Hardware issues resulting in seemingly-high failure rate. Micro-connectors suck. |
+| **[The Cube](http://www.team-blacksheep.com/products/prod:powercube_colibri):**     |     |  Super expensive, like all TBS gear. The ESC is listed as able to run SimonK, which means it's Atmel, which means it's probably got mediocre performance.   |
+|      |     |     |
 
-**[The Cube](http://www.team-blacksheep.com/products/prod:powercube_colibri):** Super expensive, like all TBS gear. The ESC is listed as able to run SimonK, which means it's Atmel, which means it's probably got mediocre performance.
+
+ 
 
 **[Dodo](http://www.rcgroups.com/forums/showthread.php?t=2439777):** No complaints personally. Now that they fixed the ESC back-feeding issue, that is. So this seems to be a great option at the moment.
 
