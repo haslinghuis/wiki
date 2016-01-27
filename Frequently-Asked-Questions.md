@@ -78,6 +78,8 @@ You are driving a car. You run on 1khz so you are only allowed to open your eyes
 So you are heading for a collision at 60kph. 1khz will let you adjust over that distance by a factor of one. 2khz let's you adjust by a factor of two (Yea I know, but I am explaining basics). So to make a one meter horizontal adjustment in 1K would take you 6 meters the equivalent in 2k would take you 3 meters. 
 This is not gospel, just a way to explain the difference.
 
+Have a look at this video form more information: http://www.youtube.com/watch?v=j2YtpeHGafs
+
 ##How do I activate 2khz mode?
 In the CLI, make the following commands, dependent on the Flight Controller type
 
