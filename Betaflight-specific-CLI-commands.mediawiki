@@ -32,11 +32,14 @@ Sets the accelerometer 0 means auto detect, 1 means off, 2 for ADXL345, 3 for MP
 '''set mag_hardware''' = 0 (default on), 1 = disabled<br />
 <i>[0,...,3]</i>
  
-'''set imu_dcm_kp''' = 2500
+'''set imu_dcm_kp''' = 2500<br />
+<i>[0,...,50000]</i>
  
-'''set imu_dcm_ki''' = 0
+'''set imu_dcm_ki''' = 0<br />
+<i>[0,...,50000]</i>
  
-'''set beeper_off_flags''' = 256
+'''set beeper_off_flags''' = 256<br />
+<i>[0,...,65535]</i>
 
 beeper_off_flags = sum of each desired beeper turned off
  
@@ -72,11 +75,15 @@ beeper_off_flags = sum of each desired beeper turned off
 
  +BEEPER_ARMED, 32768 // Warning beeps when board is armed (repeats until board is disarmed or throttle is increased)
  
-'''set acc_cut_hz''' = 15
+'''set acc_lpf_hz''' = 20<br />
+<i>[0,...,200]</i>
  
-'''set soft_gyro_lpf_hz''' = 60
+'''set soft_gyro_lpf_hz''' = 60<br />
+<i>[0,...,255]</i>
  
-'''set dterm_lpf_hz''' = 0
+'''set dterm_lpf_hz''' = 0<br />
+<i>[0,...,255]</i>
  
-'''set acro_plus_factor''' = 0
+'''set acro_plus_factor''' = 0<br />
+<i>[0,...,100]</i>
 Range is 0-100. If set to anything other than 0 roll and pitch rates in the GUI will be ignored. RC rate and RC expo still apply . Warning 100 results in insane rolls and flips that may result in your ability to comprehend. Use at your own risk!
