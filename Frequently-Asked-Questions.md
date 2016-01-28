@@ -199,7 +199,8 @@ https://www.youtube.com/watch?v=hzm6H9WnCgQ
 https://www.youtube.com/watch?v=Neqzeh9f-uk
 https://www.youtube.com/watch?v=7UNg8fkV6zQ
 
-Also he has at least 100 blackbox log analysis videos where he was gracious enough to help other people out. Check out those and you can learn a lot just from him reviewing peoples footage and pointing things out. There is kind of an 'art' to it so to speak ... (and goes on to mention he doesn't really use that to tune) " - from powdermnky007 reply
+Also he has at least 100 blackbox log analysis videos where he was gracious enough to help other people out. Check out those and you can learn a lot just from him reviewing peoples footage and pointing things out. There is kind of an 'art' to it so to speak ... (and goes on to mention he doesn't really use Black Box to tune) " - from powdermnky007 reply
+
 
 b. More info: Joshua Bardwells's Blackbox Log Video Responses link:  http://www.rcgroups.com/forums/showthread.php?t=2484202
 
