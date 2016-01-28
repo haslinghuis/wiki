@@ -3,10 +3,6 @@ https://github.com/cleanflight/cleanflight/blob/master/docs/Cli.md
 
 The setting shown are the Defaults + possible values.
 
-'''set rc_smoothing''' = OFF <br />
-<i>[OFF,ON]</i><br />
-Interpolation of Rc data during looptimes when there are no new updates. This gives smoother RC input to PID controller and cleaner PIDsum<br />
-
  
 '''set roll_yaw_cam_mix_degrees''' = 0<br />
 <i>[0..50]</i><br />
@@ -16,16 +12,17 @@ Here a good preview for this option: [https://youtu.be/gXeaINFpvow FPV camera ti
  
 '''set enable_fast_pwm''' = OFF<br />
 <i>[OFF,ON]</i><br />
+This option works together with oneshot125. It is basically a fixed oneshot125 refresh rate. It decouples the motor update speed from the main pid loop. You can for example have board running @2khz but still configure the motor update to be 1khz.
  
 '''set gyro_lpf''' = 188HZ '' <br />
 <i>[OFF,188HZ,98HZ,42HZ]</i><br />
-Must be set to OFF to enable 2K mode (starting with Version 2.3.3)''
- F1 boards must also set acc_hardware = 1 Disabling any level modes
+This is the internal gyro filterinf value. The lower the value the more buffering and delay will be introduced to gyro. Must be set to OFF to enable 2K mode (starting with Version 2.3.0)''
+ (F1 boards must disable accelerometer with set acc_hardware = 1 and in case there are other sensors on board like baro and mag disable those too. set mag_hardware = 1 and set baro_hardware = 1) Disabling any level modes
 Hardware lowpass filter for gyro. Allowed values depend on the driver - For example MPU6050 allows 5,10,20,42,98,188,256Hz, while MPU3050 doesn't allow 5Hz. If you have to set gyro lpf below 42Hz generally means the frame is vibrating too much, and that should be fixed first. Values outside of supported range will usually be ignored by drivers, and will configure lpf to default value of 42Hz.
 
 '''set acc_hardware''' = 0 (default on) (must be set to 1 for 2K mode on F1 targets)<br />
 <i>[0,...,9]</i><br />
-Sets the accelerometer 0 means auto detect, 1 means off, 2 for ADXL345, 3 for MPU6050 integrated accelerometer, 4 for MMA8452, 5 for BMA280, 6 for LSM303DLHC, 7 for MPU6000, 8 for MPU6500
+Sets the accelerometer 0 means auto detect, 1 means NONE, 2 for ADXL345, 3 for MPU6050 integrated accelerometer, 4 for MMA8452, 5 for BMA280, 6 for LSM303DLHC, 7 for MPU6000, 8 for MPU6500
 
 '''set baro_hardware''' = 0 (default on), 1 = disabled<br />
 <i>[0,...,3]</i>
@@ -78,13 +75,16 @@ beeper_off_flags = sum of each desired beeper turned off
  
 '''set acc_lpf_hz''' = 20<br />
 <i>[0,...,200]</i>
+Accelerometer low pass filter. Decreasing the value might help with drift in horizon and level modes.
  
 '''set soft_gyro_lpf_hz''' = 60<br />
 <i>[0,...,255]</i>
+BiQuad Low pass filter for gyro. Works as a substitute for gyro_lpf, which is a hardware filter inside the gyro but can also work together with gyro_lpf. value of 60 gives around 20-25db reflection to frequencies above 200hz, which are usually motor/prop frequencies. The value of 60 should be fine on most multirotors. It may be possible that very noisy setups could benefit from lower values.
  
 '''set dterm_lpf_hz''' = 0<br />
 <i>[0,...,255]</i>
- 
+Biquad low pass filter for D in hz. Should not be needed. Especially not from 2.3.4 versions.
+
 '''set acro_plus_factor''' = 0<br />
 <i>[0,...,100]</i><br />
 Range is 0-100. If set to anything other than 0 roll and pitch rates in the GUI will be ignored. RC rate and RC expo still apply . Warning 100 results in insane rolls and flips that may result in your inability to comprehend. Use at your own risk!
