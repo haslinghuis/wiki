@@ -188,7 +188,7 @@ In rewrite, stick sensitivity is managed differently; sensitivity depends on rat
 
 
 
-## Is there a good resource for learning how to tune using bbox? I'm still not sure I know what I'm looking for in the logs.
+## Is there a good resource for learning how to tune using Black Box? I'm still not sure I know what I'm looking for in the Black Box logs.
 
 "I would check out joshua bardwells youtube channel. I haven't watched all these videos... I just picked them from his channel.
 
