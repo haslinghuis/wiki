@@ -9,7 +9,7 @@
 1. [How should I tune my Copter ?](#how-should-i-tune-my-copter-)
 1. [What Flight Controllers are recommended to get the best out of BetaFlight ?](#what-flight-controllers-are-recommended-to-get-the-best-out-of-betaflight-)
 1. [What are the differences between LuxFloat and Rewrite PID Controllers ?](#what-are-the-differences-between-luxfloat-and-rewrite-pid-controllers-)
-1. Is there a good resource for learning how to tune using Black Box? I'm still not sure I know what I'm looking for in the Black Box logs?
+1. [Is there a good resource for learning how to tune using Black Box? I'm still not sure I know what I'm looking for in the Black Box logs?](#is-there-a good-resource-for-learning-how-to-tune-using-Black-Box?-I'm-still-not-sure-I-know-what-I'm-looking-for-in-the-Black-Box-logs-)
 
 ***
 
@@ -150,24 +150,18 @@ Here is a list of FCs compiled around the end of January 2016. The opinions rega
 
 | Flight Controller | Processor  | Opinion                                     |
 | ----------------- | ---------- | -------------------------------------------
-| **[SPRacing F3](http://seriouslypro.com/spracingf3):**  | F3   | Hardware issues resulting in seemingly-high failure rate. Micro-connectors suck. |
-| **[The Cube](http://www.team-blacksheep.com/products/prod:powercube_colibri):**     |     |  Super expensive, like all TBS gear. The ESC is listed as able to run SimonK, which means it's Atmel, which means it's probably got mediocre performance.   |
-|      |     |     |
+| **[Naze32](http://www.getfpv.com/acro-naze32-flight-controller-rev6-w-pin-headers.html)** | F1 | Available in Full and Acro flavors. Full version has the Barometer, Magnetometer and Dataflash for Black Box logs. Rev6a has SBUS Inverter while Rev5 does not. Has been a great FC, maybe getting close to end-of-life with all the new F3 boards emerging.|
+| **[SPRacing F3](http://seriouslypro.com/spracingf3)**  | F3   | Hardware issues resulting in seemingly-high failure rate. Micro-connectors suck. |
+| **[TBS PowerCube](http://www.team-blacksheep.com/products/prod:powercube_colibri)**     |  F3   |  Super expensive, like all TBS gear. The ESC is listed as able to run SimonK, which means it's Atmel, which means it's probably got mediocre performance.   |
+| **[Dodo](http://www.rcgroups.com/forums/showthread.php?t=2439777)**  | F3   |  No complaints personally. Now that they fixed the ESC back-feeding issue, that is. So this seems to be a great option at the moment.   |
+| **[MotoLab TornadoFC](http://www.rcgroups.com/forums/showthread.php?t=2473157#post32330479)** | F3 | 5v buffers on motor outputs mean no BLHeli passthrough. Other than that, awesome FC at a good price. |
+| **[MotoLab Cyclone](http://dronehitech.com/motolab-cyclone-flight-controller-announced/)** | F3 |  Hasn't hit the streets yet, but looks like it ticks all the boxes. |
+| **[XRacer F3](http://www.fpvmodel.com/x-racer-f303-flight-controller_g1106.html?u=8D1D164861E0E506)** | F3 |  No VBat pin? Don't know much about this one. |
+| **[LUX](http://www.rcgroups.com/forums/showthread.php?t=2554204)** | F3 |  Hasn't hit the street yet, but looks good. Doesn't have a dataflash chip. |
+| **[KISS](http://www.rcgroups.com/forums/showthread.php?t=2555204)** | F3 | Doesn't run Betaflight (yet) LOL. |
 
-
- 
-
-**[Dodo](http://www.rcgroups.com/forums/showthread.php?t=2439777):** No complaints personally. Now that they fixed the ESC back-feeding issue, that is. So this seems to be a great option at the moment.
-
-**[MotoLab TornadoFC](http://www.rcgroups.com/forums/showthread.php?t=2473157#post32330479):** 5v buffers on motor outputs mean no BLHeli passthrough. Other than that, awesome FC at a good price.
-
-**[MotoLab Cyclone](http://dronehitech.com/motolab-cyclone-flight-controller-announced/):** Hasn't hit the streets yet, but looks like it ticks all the boxes.
-
-**[XRacer F3](http://www.fpvmodel.com/x-racer-f303-flight-controller_g1106.html?u=8D1D164861E0E506):** No VBat pin? Don't know much about this one.
-
-**[LUX](http://www.rcgroups.com/forums/showthread.php?t=2554204):** Hasn't hit the street yet, but looks good. Doesn't have a dataflash chip, but I hate dataflash anyway.
-
-**[KISS](http://www.rcgroups.com/forums/showthread.php?t=2555204):** Doesn't run Betaflight (yet) LOL.
+### Additional Information:
+Overview of F1 based boards: http://www.youtube.com/watch?v=7u1PcvDosBM
 
 ##What are the differences between LuxFloat and Rewrite PID Controllers ?
 
