@@ -9,7 +9,7 @@
 1. [How should I tune my Copter ?](#how-should-i-tune-my-copter-)
 1. [What Flight Controllers are recommended to get the best out of BetaFlight ?](#what-flight-controllers-are-recommended-to-get-the-best-out-of-betaflight-)
 1. [What are the differences between LuxFloat and Rewrite PID Controllers ?](#what-are-the-differences-between-luxfloat-and-rewrite-pid-controllers-)
-
+1. [Is there a good resource for learning how to tune using Black Box? I'm still not sure I know what I'm looking for in the Black Box logs ?]
 ***
 
 ##How do I install Betaflight ?
@@ -199,4 +199,3 @@ https://www.youtube.com/watch?v=Neqzeh9f-uk
 https://www.youtube.com/watch?v=7UNg8fkV6zQ
 
 Also he has at least 100 blackbox log analysis videos where he was gracious enough to help other people out. Check out those and you can learn a lot just from him reviewing peoples footage and pointing things out. There is kind of an 'art' to it so to speak."  from powdermnky007 reply
-
