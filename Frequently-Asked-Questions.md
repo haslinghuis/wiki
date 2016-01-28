@@ -191,7 +191,7 @@ In rewrite, stick sensitivity is managed differently; sensitivity depends on rat
 
 ## Is there a good resource for learning how to tune using Black Box? I'm still not sure I know what I'm looking for in the Black Box logs.
 
-1. "I would check out Joshua Bardwells youtube channel. I haven't watched all these videos... I just picked them from his channel.
+a. "I would check out Joshua Bardwells youtube channel. I haven't watched all these videos... I just picked them from his channel.
 
 Quote:
 https://www.youtube.com/watch?v=FH_m5rI6MKY
@@ -201,13 +201,13 @@ https://www.youtube.com/watch?v=7UNg8fkV6zQ
 
 Also he has at least 100 blackbox log analysis videos where he was gracious enough to help other people out. Check out those and you can learn a lot just from him reviewing peoples footage and pointing things out. There is kind of an 'art' to it so to speak ... (and goes on to mention he doesn't really use that to tune) " - from powdermnky007 reply
 
-2. More info: Joshua Bardwells's Blackbox Log Video Responses link:  http://www.rcgroups.com/forums/showthread.php?t=2484202
+b. More info: Joshua Bardwells's Blackbox Log Video Responses link:  http://www.rcgroups.com/forums/showthread.php?t=2484202
 
-3. But:  "I think that even without blackbox you can get a great tune.
+c. But:  "I think that even without blackbox you can get a great tune.
 
 People don't realise that there are 2 separate things. There are rates and there are pids. The rates is something we feel even more than PIDs. There is no auto-tuning what can know what rates your brains like.
 The rates are actually directly being interpreted in our brains to certain stick feel.
 
 Good tuning just makes that feel tighter and helps removing unnecessary oscillations. But even with oscillations it doesn't mean that it will feel bad." - Boris comment
 
-4. Battery Factor: "A while ago someone took over my pids to his quad with same setup and he said it didn't feel good. So I flew his setup and it indeed felt like PIDs were twice as low as they should be! It appeared he was using almost 2 years old (Turnigy) Nanotechs completely lost their power. Even I feel huge difference between different batteries I have." - Boris comment
+d. Battery Factor: "A while ago someone took over my pids to his quad with same setup and he said it didn't feel good. So I flew his setup and it indeed felt like PIDs were twice as low as they should be! It appeared he was using almost 2 years old (Turnigy) Nanotechs completely lost their power. Even I feel huge difference between different batteries I have." - Boris comment
