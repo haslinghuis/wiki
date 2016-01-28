@@ -210,6 +210,6 @@ The rates are actually directly being interpreted in our brains to certain stick
 
 Good tuning just makes that feel tighter and helps removing unnecessary oscillations. But even with oscillations it doesn't mean that it will feel bad." - Boris comment
 
-This is the same as my experience. PIDs Parameters are one thing, and Rate Parameters are another. Take a car as an analogy.  "PID" would be like tuning the engine, so that fuel, air, timing are correct (things in the Flight Controller).  "Rates" are like tuning the steering wheel, pedals, gear (stuff you directly touch like the Transmitter Sticks) so that the 'feel' is correct. - Kuson comment
+"This is the same as my experience. PIDs Parameters are one thing, and Rate Parameters are another. Take a car as an analogy.  "PID" would be like tuning the engine, so that fuel, air, timing are correct (things in the Flight Controller).  "Rates" are like tuning the steering wheel, pedals, gear (stuff you directly touch like the Transmitter Sticks) so that the 'feel' is correct. And adjustment of the Rates itself made a huge difference on how 'sensitive' the aircraft feels, especially to a noob like me"- Kuson comment
 
 d. Battery Factor: "A while ago someone took over my pids to his quad with same setup and he said it didn't feel good. So I flew his setup and it indeed felt like PIDs were twice as low as they should be! It appeared he was using almost 2 years old (Turnigy) Nanotechs completely lost their power. Even I feel huge difference between different batteries I have." - Boris comment
