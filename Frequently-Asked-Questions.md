@@ -2,6 +2,7 @@
 
 1. [How do I install Betaflight ?](#how-do-i-install-betaflight-)
 1. [What is Air Mode ?](#what-is-air-mode-)
+1. [How do I enable Air Mode ?](#how-do-I-enable-air-mode-)
 1. [What is Acro Plus ?](#what-is-acro-plus-)
 1. [What is 2khz mode ?](#what-is-2khz-mode)
 1. [How do I activate 2khz mode ?](#how-do-i-activate-2khz-mode)
@@ -31,6 +32,12 @@ Here is some visual demonstration of how to use air mode and enjoy more in air:
 http://www.youtube.com/watch?v=mlEJFMNWyvQ
 
 http://www.youtube.com/watch?v=b0qVUa4AeDQ
+
+##How do I enable Air Mode ? 
+
+TODO
+
+
 
 ##What is Acro Plus ?
 
