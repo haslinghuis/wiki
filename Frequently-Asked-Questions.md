@@ -9,7 +9,7 @@
 1. [How should I tune my Copter ?](#how-should-i-tune-my-copter-)
 1. [What Flight Controllers are recommended to get the best out of BetaFlight ?](#what-flight-controllers-are-recommended-to-get-the-best-out-of-betaflight-)
 1. [What are the differences between LuxFloat and Rewrite PID Controllers ?](#what-are-the-differences-between-luxfloat-and-rewrite-pid-controllers-)
-1. [Is there a good resource for learning how to tune using Black Box? I'm still not sure I know what I'm looking for in the Black Box logs ?]
+1. Is there a good resource for learning how to tune using Black Box? I'm still not sure I know what I'm looking for in the Black Box logs ?
 ***
 
 ##How do I install Betaflight ?
