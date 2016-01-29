@@ -220,3 +220,11 @@ Good tuning just makes that feel tighter and helps removing unnecessary oscillat
 "This is the same as my experience. PIDs Parameters are one thing, and Rate Parameters are another. Take a car as an analogy.  "PID" would be like tuning the engine, so that fuel, air, timing are correct (things in the Flight Controller).  "Rates" are like tuning the steering wheel, pedals, gear (stuff you directly touch like the Transmitter Sticks) so that the 'feel' is correct. And adjustment of the Rates itself made a huge difference on how 'sensitive' the aircraft feels, especially to a noob like me"- Kuson comment
 
 d. Battery Factor: "A while ago someone took over my pids to his quad with same setup and he said it didn't feel good. So I flew his setup and it indeed felt like PIDs were twice as low as they should be! It appeared he was using almost 2 years old (Turnigy) Nanotechs completely lost their power. Even I feel huge difference between different batteries I have." - Boris comment
+
+
+
+##The quadcopter behaves erratic (jitters etc), after some crashes,  as if P went up significant. What could be wrong?
+
+"When you crash your gyro can get upset. It has always been like that even from Baseflight days.
+Some gyros are more sensitive than others.
+To Recalibrate Gyros: " Disarm. Perform gyro calibration (left stick down left....right stick down) and it will be fine. You will see leds blinking and it will beep. Also when plugging your lipo in your quad, * your quad should not be moved*." - Boris comment
