@@ -36,6 +36,18 @@ http://www.youtube.com/watch?v=b0qVUa4AeDQ
 
 ##How do I enable Air Mode ? 
 
+One method is to use a 3 way switch as follows:
+
+Pos 1: Disarm (motors do not spin)
+
+Pos 2: Arm (motors start spinning at **min_throttle** value)
+
+Pos 3: Arm + Air Mode (motors keep spinning at **min_throttle** value but use the new Air Mode Mixer)
+
+The Motor Stop Feature will need to be disabled by entering this CLI Command:
+
+`feature -MOTOR_STOP`
+
 TODO
 
 
