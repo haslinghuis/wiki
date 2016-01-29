@@ -223,8 +223,9 @@ d. Battery Factor: "A while ago someone took over my pids to his quad with same 
 
 
 
-##The quadcopter behaves erratic (jitters etc), after some crashes,  as if P went up significant. What could be wrong?
+##The quadcopter behaves erratic (jitters etc), after a crash,  as if P went up significant. How to fix?
 
 "When you crash your gyro can get upset. It has always been like that even from Baseflight days.
 Some gyros are more sensitive than others.
 To Recalibrate Gyros: " Disarm. Perform gyro calibration (left stick down left....right stick down) and it will be fine. You will see leds blinking and it will beep. Also when plugging your lipo in your quad, * your quad should not be moved*." - Boris comment
+
