@@ -229,3 +229,7 @@ d. Battery Factor: "A while ago someone took over my pids to his quad with same 
 Some gyros are more sensitive than others.
 To Recalibrate Gyros: " Disarm. Perform gyro calibration (left stick down left....right stick down) and it will be fine. You will see leds blinking and it will beep. Also when plugging your lipo in your quad, * your quad should not be moved*." - Boris comment
 
+## Air Mode min_throttle value recommendation?
+
+"As low as possible min_throttle where motors do not stop spinning at all times is the most recommended one.
+I do recommend using as high as possible range for throttle like 1000-2000." - Boris comment
