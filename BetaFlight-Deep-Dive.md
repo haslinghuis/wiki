@@ -1,7 +1,11 @@
 ##Introduction
-The purpose of this page...
+The purpose of this page is to provide the reader with detailed information about the inner workings of the BetaFlight firmware. This information has been collected from sources such as:
 
+* The BetaFlight RC Groups Forum (credit will be given where possible).
+* YouTube Channels that have provided relevant content.
 
+##Contents
+1. [Gyro based loop implementation](#gyro-based-loop-implementation-)
 
 ##Gyro based loop implementation
 ------------------------------------------------
