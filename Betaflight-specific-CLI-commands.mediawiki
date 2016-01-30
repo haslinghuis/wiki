@@ -91,3 +91,6 @@ Range is 0-100. If set to anything other than 0 roll and pitch rates in the GUI 
 
 '''set yaw_jump_prevention_limit''' = 200<br />
 Description by Boris here: http://www.rcgroups.com/forums/showpost.php?p=33860926&postcount=16558
+
+'''set delta_from_gyro''' = ON<br />
+Description by Yamaford here: http://www.rcgroups.com/forums/showpost.php?p=33859758&postcount=16547
