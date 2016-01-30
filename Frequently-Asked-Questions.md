@@ -4,13 +4,14 @@
 1. [What is Air Mode ?](#what-is-air-mode-)
 1. [How do I enable Air Mode ?](#how-do-i-enable-air-mode-)
 1. [What is Acro Plus ?](#what-is-acro-plus-)
-1. [What is 2khz mode ?](#what-is-2khz-mode)
-1. [How do I activate 2khz mode ?](#how-do-i-activate-2khz-mode)
+1. [What is 2khz mode ?](#what-is-2khz-mode-)
+1. [How do I activate 2khz mode ?](#how-do-i-activate-2khz-mode-)
 1. [How should I tune my Copter ?](#how-should-i-tune-my-copter-)
 1. [What Flight Controllers are recommended to get the best out of BetaFlight ?](#what-flight-controllers-are-recommended-to-get-the-best-out-of-betaflight-)
 1. [What are the differences between LuxFloat and Rewrite PID Controllers ?](#what-are-the-differences-between-luxfloat-and-rewrite-pid-controllers-)
 1. [Is there a good resource for learning how to tune using Black Box? I'm still not sure I know what I'm looking for in the Black Box logs?](#is-there-a-good-resource-for-learning-how-to-tune-using-black-box-)
 1. [The quadcopter behaves erratic (jitters etc), after a crash, as if P went up significant. How to fix?](#the-quadcopter-behaves-erratic-)
+1. [How does yaw_jump_prevention_limit work ?](#how-does-yaw_jump_prevention_limit-work-)
 
 ***
 ##I'm a Neewbe, how do I start ?
@@ -63,6 +64,14 @@ I suggest arming on a switch, if you want to stick arm you do so at your own per
 
 If you want Airmode on permanently, tick the box and then drag the slider so it covers all the way from 1000 to 2000 and it will be on permanently. 
 
+**Using a 3-position switch, the flight procedure could be:**
+
+1. Connect Battery
+2. Arm motors (motors start spinning)
+3. Enable AirMode (no 'I' windup on ground) 
+4. Lift off & fly around (motors will never stop in flight even at lowest throttle)
+5. Just prior to landing, disable Air Mode (optional)
+6. Land and disarm motors
 
 ##What is Acro Plus ?
 
@@ -244,3 +253,21 @@ d. Battery Factor: "A while ago someone took over my pids to his quad with same 
 "When you crash your gyro can get upset. It has always been like that even from Baseflight days.
 Some gyros are more sensitive than others.
 To Recalibrate Gyros: " Disarm. Perform gyro calibration (left stick down left....right stick down) and it will be fine. You will see leds blinking and it will beep. Also when plugging your lipo in your quad, * your quad should not be moved*." - Boris comment
+
+##How does yaw_jump_prevention_limit work ?
+"First you need to know the basics of a mixer function on multirotors.
+Mixer gets PIDsum of all 3 axis and translates that into motor output.
+There is obviously a certain power available there, which is a range of max_throttle - min_throttle for each motor.
+Lets say it is typically a range of 1000 (2000-1000).
+
+So we have 4 motors determing the behaviour of quadcopter with power range of 1000 for all 3 axis mixed up scaled to the throttle.
+The yaw axis is the one what requires quite a lot of power on quadcopters but also depends of setup used. The ratio of power used for yaw to get the same rotational rate is more than one for pitch and roll.
+This means that hard yaw corrections could use too much of the entire available throttle range in each motor so the roll and pitch would not have enough of it. But also the way of how yaw works can create a lot of thrust where the quad would gain height to get a desired yaw correction during yaw stops what generate the most power.
+
+Therefore the yaw_jump_prevention_limit was introduced to give a maximum of yaw PIDsum with centered sticks. That means that during yaw correction the yaw is not able to use too much of available motor power so the roll and pitch would not be affected by much and that also the hars yaw stops would not create a lot of jump.
+
+Lowering yaw_jump_prevention_limit will result in less motor power spilled for yaw during gate clipping for example as well.
+
+You still have the full yaw control when using stick input.
+
+But anyway I am still surprised that your gear suffers from jump. I would say that small...and powerfull x quads would typically not suffer from jumps." - Boris B
