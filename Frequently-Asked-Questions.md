@@ -54,6 +54,8 @@ The Motor Stop Feature will need to be disabled by entering this CLI Command:
 
 Air Mode min_throttle value recommendation: "As low as possible min_throttle where motors do not stop spinning at all times is the most recommended one. I do recommend using as high as possible range for throttle like 1000-2000." - Boris comment
 
+**You do want min_throttle as low as possible, but a good rule of thumb is to find the throttle value (in the motors tab) at which all 4 motors spin reliably and without twitches. Then add 10 to that number and set that as min_throttle. For smaller motors (1306 3100kv motors for example), you may need to add 15 or 20 because they have less torque at very low throttle values.  As you do a low throttle flip or drop, you DON'T want the air resistance on your props to overcome the power provided at min throttle and cause the motor to bog down and stop.
+
 From a Post by teracis:
 To get airmode working all you need to do is go to the modes tab in configurator and set it to activate the same way you would with an arming switch. This is something you will need to learn so check out a tutorial rather than one of us spelling it out for you here, it will be quicker.
 I suggest arming on a switch, if you want to stick arm you do so at your own peril.
