@@ -51,4 +51,4 @@ Official CleanFlight documentation: http://github.com/cleanflight/cleanflight/wi
 
 Visit this RC Groups Forum to join http://www.rcgroups.com/forums/showthread.php?t=2464844
 
-Financial support by PayPal donation: [Donate](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=dreambb1982%40gmail%2ecom&amp;lc=NL&amp;item_name=Betaflight&amp;no_note=0&amp;currency_code=USD&amp;bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHostedGuest)
+Financial support by PayPal donation: [Donate](https://www.paypal.com/nl/cgi-bin/webscr?cmd=_flow&SESSION=FrZqX4LdihqTA-IsyvlDXY09Eq7UX4Ghxn9eIOQMOBHVPegu-iRC6CHOdQi&dispatch=5885d80a13c0db1f8e263663d3faee8d64ad11bbf4d2a5a1a0d303a50933f9b2)
