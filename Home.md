@@ -23,6 +23,9 @@ After a while I realised that some things in cleanflight are not being done on t
 * Beeper selectable for different events
 * Air mode feature
 * Acro Plus system
+* NEW Biquad Super filters for gyro and Dterm
+
+[![Filter](https://dl.dropboxusercontent.com/u/31537757/biquad_screen.png)](https://www.youtube.com/watch?v=Q2tSWU1MsVk)
 
 
 ##Tools
@@ -49,6 +52,10 @@ Official CleanFlight documentation: http://github.com/cleanflight/cleanflight/wi
 
 ##Providing feedback and contributing to this project
 
-Visit this RC Groups Forum to join the discussion http://www.rcgroups.com/forums/showthread.php?t=2464844
+Visit this RC Groups Forum to join the discussion: http://www.rcgroups.com/forums/showthread.php?t=2464844
 
-Financial support by PayPal donation: [Donate](https://www.paypal.com/nl/cgi-bin/webscr?cmd=_flow&SESSION=FrZqX4LdihqTA-IsyvlDXY09Eq7UX4Ghxn9eIOQMOBHVPegu-iRC6CHOdQi&dispatch=5885d80a13c0db1f8e263663d3faee8d64ad11bbf4d2a5a1a0d303a50933f9b2)
+Financial support by PayPal donation: 
+
+[![Donate](https://www.paypalobjects.com/en_US/NL/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/nl/cgi-bin/webscr?cmd=_flow&SESSION=FrZqX4LdihqTA-IsyvlDXY09Eq7UX4Ghxn9eIOQMOBHVPegu-iRC6CHOdQi&dispatch=5885d80a13c0db1f8e263663d3faee8d64ad11bbf4d2a5a1a0d303a50933f9b2)
+
+[Donate](https://www.paypal.com/nl/cgi-bin/webscr?cmd=_flow&SESSION=FrZqX4LdihqTA-IsyvlDXY09Eq7UX4Ghxn9eIOQMOBHVPegu-iRC6CHOdQi&dispatch=5885d80a13c0db1f8e263663d3faee8d64ad11bbf4d2a5a1a0d303a50933f9b2)
