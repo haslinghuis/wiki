@@ -96,3 +96,4 @@ Description by Boris here: http://www.rcgroups.com/forums/showpost.php?p=3386092
 '''set delta_from_gyro''' = ON<br />
 <i>[OFF,ON]</i><br />
 Description by ctzsnooze here: http://www.rcgroups.com/forums/showpost.php?p=33859758&postcount=16547
+Also here: [The delta_from_gyro setting and all about the PID Controller D values](#the-delta_from_gyro-command-and-all-about-the-PID-controller-D-values-)
