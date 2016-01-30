@@ -4,6 +4,8 @@ The purpose of this page is to provide the reader with detailed information abou
 * The BetaFlight RC Groups Forum (credit will be given where possible).
 * YouTube Channels that have provided relevant content.
 
+Grab a snack and make yourself comfortable ! ![Popcorn](http://static.rcgroups.com/forums/images/smilies/popcorn.gif)
+
 ##Contents
 1. [Gyro based loop implementation](#gyro-based-loop-implementation-)
 
