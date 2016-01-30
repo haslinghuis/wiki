@@ -1,10 +1,10 @@
 # Welcome to the BetaFlight Wiki!
 
 ##Introduction
-"Due to many questions about my latest Cleanflight improvements and tests here is some more central information about it. The motivation for this project is to bring the endusers closer to the development. As my main focus in cleanflight is the flight improving development. A flight test group like this is very usefull.
-The betaflight fork is from the current Cleanflight Master with possible future Cleanflight flight performance enhancements.
+"Due to many questions about my latest Cleanflight improvements and tests here is some more central information about it. The motivation for this project is to bring the end users closer to the development. As my main focus in Cleanflight is the flight improving development. A flight test group like this is very useful.
+The BetaFlight fork is from the current Cleanflight Master with possible future Cleanflight flight performance enhancements.
 
-This project also helps contributing to other open source project like RaceFlight." - Boris B ([lead developer](http://www.youtube.com/user/bozic1982/featured))
+This project also helps contributing to other open source project like RaceFlight." - says Boris B ([lead developer](http://www.youtube.com/user/bozic1982/featured))
 
 
 ###Warning
@@ -16,25 +16,25 @@ It's highly recommended that anyone using this firmware should take common sense
 * Perform basic operational tests on the bench, such as FailSafe tests, motor spin-up tests etc
 
 ##Motivation
-The original intention of this project is only to improve testing of the current cleanflight and new features for those who are not familliar with github and compiling of own firmwares. 
-After a while I realised that some things in cleanflight are not being done on the most optimal way to give the maximum performance out of our machines.  My main focus is to prioritize acro flight behaviour and give that the main priority, but still maintain good and solid level modes. Also we do want to prevent advanced tuning and stick to only PID's adjustments. 
+The original intention of this project is only to improve testing of the current CleanFlight and new features for those who are not familiar with GitHub and compiling of own firmwares. 
+After a while I realised that some things in CleanFlight are not being done on the most optimal way to give the maximum performance out of our machines.  My main focus is to prioritize acro flight behaviour and give that the main priority, but still maintain good and solid level modes. Also we do want to prevent advanced tuning and stick to only PID's adjustments. 
 
 ##Quick summary of main flight performing features in BetaFlight
 * Gyro sync (always the most fresh gyro data before the loop starts with minimum delay)
 * Overclocked i2c bus to speed up communication with gyro
-* Gyro FIR filter preconfigured forthe cleanest gyro traces to the pid controller
+* Gyro FIR filter preconfigured for the cleanest gyro traces to the pid controller
 * Optimized D calculations and filtering for more derivative precision
 * Optimized defaults with main focus on PID1 and PID2 (reduced amount of pid controllers for better overview)
 * On F1 targets no need to disable acc anymore to get same performance. Gyro readings get priority when in acro mode.
 * Optimized scheduling in tasks to minimize jitter to motors
-* Fast PWM support in combination with Oneshot125 (This is usefull when you want fixed refresh rate for ESC's up to 4khz)
+* Fast PWM support in combination with Oneshot125 (This is useful when you want fixed refresh rate for ESC's up to 4khz)
 * Easy to no tuning. Stock settings for PID1 and PID2 should be very well flyable on most machines. The optimised filters do good job on feeding the cleanest gyro traces to the pid controller loop, which gives better flight experience and easier tuning.
 * Cooler motors and ESC's. Better for equipment due to clean filters.
 * Quaternion logic for Level modes. More precision, less drift and faster performance!
 * Beeper selectable for different events
 * Air mode feature
 * Acro Plus system
-* ESC passtrhough programming through Cleanflight Configurator
+* ESC passthrough programming through CleanFlight Configurator
 * Baro support for Dodo
 * NEW Biquad Super filters for gyro and Dterm
 
