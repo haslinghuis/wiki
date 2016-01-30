@@ -1,8 +1,8 @@
 ##Contents
-1. [I'm a Neewbe, how do I start ?](#I'm a neewbe, how do I start-)
+1. [I'm a Neewbe, how do I start ?](#I'm-a-neewbe,-how-do-i-start-)
 1. [How do I install Betaflight ?](#how-do-i-install-betaflight-)
 1. [What is Air Mode ?](#what-is-air-mode-)
-1. [How do I enable Air Mode ?](#how-do-I-enable-air-mode-)
+1. [How do I enable Air Mode ?](#how-do-i-enable-air-mode-)
 1. [What is Acro Plus ?](#what-is-acro-plus-)
 1. [What is 2khz mode ?](#what-is-2khz-mode)
 1. [How do I activate 2khz mode ?](#how-do-i-activate-2khz-mode)
@@ -10,6 +10,7 @@
 1. [What Flight Controllers are recommended to get the best out of BetaFlight ?](#what-flight-controllers-are-recommended-to-get-the-best-out-of-betaflight-)
 1. [What are the differences between LuxFloat and Rewrite PID Controllers ?](#what-are-the-differences-between-luxfloat-and-rewrite-pid-controllers-)
 1. [Is there a good resource for learning how to tune using Black Box? I'm still not sure I know what I'm looking for in the Black Box logs?](#is-there-a good-resource-for-learning-how-to-tune-using-Black-Box?-I'm-still-not-sure-I-know-what-I'm-looking-for-in-the-Black-Box-logs-)
+1. [The quadcopter behaves erratic (jitters etc), after a crash, as if P went up significant. How to fix?](#the-quadcopter-behaves-erratic-)
 
 ***
 ##I'm a Neewbe, how do I start ?
@@ -61,8 +62,6 @@ To get airmode working all you need to do is go to the modes tab in configurator
 I suggest arming on a switch, if you want to stick arm you do so at your own peril.
 
 If you want Airmode on permanently, tick the box and then drag the slider so it covers all the way from 1000 to 2000 and it will be on permanently. 
-TODO
-
 
 
 ##What is Acro Plus ?
