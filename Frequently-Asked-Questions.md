@@ -54,6 +54,11 @@ The Motor Stop Feature will need to be disabled by entering this CLI Command:
 
 Air Mode min_throttle value recommendation: "As low as possible min_throttle where motors do not stop spinning at all times is the most recommended one. I do recommend using as high as possible range for throttle like 1000-2000." - Boris comment
 
+From a Post by teracis:
+To get airmode working all you need to do is go to the modes tab in configurator and set it to activate the same way you would with an arming switch. This is something you will need to learn so check out a tutorial rather than one of us spelling it out for you here, it will be quicker.
+I suggest arming on a switch, if you want to stick arm you do so at your own peril.
+
+If you want Airmode on permanently, tick the box and then drag the slider so it covers all the way from 1000 to 2000 and it will be on permanently. 
 TODO
 
 
