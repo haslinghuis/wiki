@@ -1,8 +1,11 @@
-# Welcome to the BetaFlight wiki!
+# Welcome to the BetaFlight Wiki!
 
 ##Introduction
-Due to many questions about my latest Cleanflight improvements and tests here is some more central information about it. The motivation for this project is to bring the endusers closer to the development. As my main focus in cleanflight is the flight improving development. A flight test group like this is very usefull.
-The betaflight fork is from the current Cleanflight Master with possible future Cleanflight flight performance enhancements. This project also helps contributing to other open source project like RaceFlight.
+"Due to many questions about my latest Cleanflight improvements and tests here is some more central information about it. The motivation for this project is to bring the endusers closer to the development. As my main focus in cleanflight is the flight improving development. A flight test group like this is very usefull.
+The betaflight fork is from the current Cleanflight Master with possible future Cleanflight flight performance enhancements.
+
+This project also helps contributing to other open source project like RaceFlight." - Boris B ([lead developer](http://www.youtube.com/user/bozic1982/featured))
+
 
 ###Warning
 By definition this firmware is Beta software and is leading-edge technology. This means that some features are experimental. While exhaustive testing is undertaken by the developers, sometimes unforeseen things can happen.
@@ -38,6 +41,9 @@ After a while I realised that some things in cleanflight are not being done on t
 [![Filter](https://dl.dropboxusercontent.com/u/31537757/biquad_screen.png)](https://www.youtube.com/watch?v=Q2tSWU1MsVk)
 
 **Note:** Besides the flight performance enhancements there are many nice features like blhelsuite passthrough to flash blheli ESC's and many more like Tornado F3 support and beeper disable configuration.
+
+##Betaflight merge to Cleanflight
+Yes I will of course keep working on this fact to get as many as possible clearly tested and proven improvements into Official Cleanflight, but you have to understand that this project was kind of pushed to far and made to squezee every little piece of performance out of the most FC's with things like overclocking. You just can't expect that overclocking will be done on official firmwares. Also official cleanfligth is getting more and more features like GPS what can decrease performance of the board. So we will have to find a middle way in there in the future to get it all to most optimal. It is very unlikely that the flight performance of current betaflight project will ever fully get into official, but we will see what future brings.
 
 ##Tools
 Betaflight is also always being adjusted to support most current Cleanflight tools like Configurator and EzGui devices and many other MSP tools. There is no special tool needed just for betaflight.
