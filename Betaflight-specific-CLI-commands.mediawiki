@@ -95,4 +95,4 @@ Description by Boris here: http://www.rcgroups.com/forums/showpost.php?p=3386092
 
 '''set delta_from_gyro''' = ON<br />
 <i>[OFF,ON]</i><br />
-Description by Yamaford here: http://www.rcgroups.com/forums/showpost.php?p=33859758&postcount=16547
+Description by ctzsnooze here: http://www.rcgroups.com/forums/showpost.php?p=33859758&postcount=16547
