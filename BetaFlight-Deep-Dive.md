@@ -7,9 +7,15 @@ The purpose of this page is to provide the reader with detailed information abou
 Grab a snack and make yourself comfortable ! ![Popcorn](http://static.rcgroups.com/forums/images/smilies/popcorn.gif)
 
 ##Contents
+1. [How Opensource Software Development Works](#how-opensource-software-development-works-)
 1. [Gyro based loop implementation](#gyro-based-loop-implementation-)
 1. [The delta_from_gyro setting and all about the PID Controller D values](#the-delta_from_gyro-command-and-all-about-the-PID-controller-D-values-)
 1. [Filtering, Aliasing and Gyro Sync explained](#filtering,-aliasing-and-gyro-sync-explained-)
+
+##How Opensource Software Development Works
+This video covers how multiple versions of the same software in the hobby exist (CleanFlight/BetaFlight/RaceFlight etc) and how developers exchange ideas and promote code between the projects.
+
+http://www.youtube.com/watch?v=kZvoei1dzNQ
 
 ##Gyro based loop implementation
 Gyro update is leading the loop. The loop will start after interrupt is triggered for new gyro sample. The PID controller will always be doing the calculation of the most fresh gyro value. The sampling gyro rate of 1khz will be used and that will automatically run looptimes of 1000us or 500us depending of configuration and target capabilities. This also makes the looptime setting unnecessary. There is no need for this parameter as our gyro decides when loop will run. There is no drift between gyro and control loop and your PID tune will be consistent. No aliasing should be experienced. This also helps filters to do better job in giving clean gyro traces. 
