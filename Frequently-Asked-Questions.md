@@ -12,6 +12,7 @@
 1. [Is there a good resource for learning how to tune using Black Box? I'm still not sure I know what I'm looking for in the Black Box logs?](#is-there-a-good-resource-for-learning-how-to-tune-using-black-box-)
 1. [The quadcopter behaves erratic (jitters etc), after a crash, as if P went up significant. How to fix?](#the-quadcopter-behaves-erratic-)
 1. [How does yaw_jump_prevention_limit work ?](#how-does-yaw_jump_prevention_limit-work-)
+1. [How should I configure the FailSafe system ?](#how-should-i-configure-the-failsafe-system-)
 
 ***
 ##I'm a Neewbe, how do I start ?
@@ -34,11 +35,19 @@ With AIR mode the copter will always think it's in the "AIR" and will always try
 
 The feature might still be optimized based on experiences of the Beta Testers, but is looking good already.
 
-Here is some visual demonstration of how to use air mode and enjoy more in air:
+### Visual demonstrations of how to use air mode and enjoy more in air
 
 http://www.youtube.com/watch?v=mlEJFMNWyvQ
 
 http://www.youtube.com/watch?v=b0qVUa4AeDQ
+
+### Black Box analysis video of Air Mode
+
+Part 1: http://www.youtube.com/watch?v=PP_De47io18
+
+Part 2: http://www.youtube.com/watch?v=goYT3PcA-dE
+
+Part 3: http://www.youtube.com/watch?v=z0ZUsdUD9iw
 
 ##How do I enable Air Mode ? 
 
@@ -225,10 +234,13 @@ In rewrite, stick sensitivity is managed differently; sensitivity depends on rat
 a. "I would check out Joshua Bardwells youtube channel. I haven't watched all these videos... I just picked them from his channel.
 
 Quote:
-https://www.youtube.com/watch?v=FH_m5rI6MKY
-https://www.youtube.com/watch?v=hzm6H9WnCgQ
-https://www.youtube.com/watch?v=Neqzeh9f-uk
-https://www.youtube.com/watch?v=7UNg8fkV6zQ
+http://www.youtube.com/watch?v=FH_m5rI6MKY
+
+http://www.youtube.com/watch?v=hzm6H9WnCgQ
+
+http://www.youtube.com/watch?v=Neqzeh9f-uk
+
+http://www.youtube.com/watch?v=7UNg8fkV6zQ
 
 Also he has at least 100 blackbox log analysis videos where he was gracious enough to help other people out. Check out those and you can learn a lot just from him reviewing peoples footage and pointing things out. There is kind of an 'art' to it so to speak ... (and goes on to mention he doesn't really use Black Box to tune) " - from powdermnky007 reply
 
@@ -271,3 +283,6 @@ Lowering yaw_jump_prevention_limit will result in less motor power spilled for y
 You still have the full yaw control when using stick input.
 
 But anyway I am still surprised that your gear suffers from jump. I would say that small...and powerfull x quads would typically not suffer from jumps." - Boris B
+
+##How should I configure the FailSafe system ?
+Take a look at this overview as it describes it well: http://www.youtube.com/watch?v=dikr9oDzQqc
