@@ -95,7 +95,7 @@ Effect of D term on P/D controller: http://www.youtube.com/watch?v=xMygUvegC80
 General explanation of D term: http://en.wikipedia.org/wiki/Derivative
 
 ##Filtering, Aliasing and Gyro Sync explained
-The following videos have been produced with BetaFlight in mind, and provide a great resource for in-depth learning.
+The following videos have been produced with BetaFlight in mind, and provide a great resource for in-depth learning of these complex subjects.
 
 Filtering Basics: http://www.youtube.com/watch?v=CpW8_fOJ7_M
 
