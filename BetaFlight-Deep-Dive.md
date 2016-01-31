@@ -9,6 +9,7 @@ Grab a snack and make yourself comfortable ! ![Popcorn](http://static.rcgroups.c
 ##Contents
 1. [Gyro based loop implementation](#gyro-based-loop-implementation-)
 1. [The delta_from_gyro setting and all about the PID Controller D values](#the-delta_from_gyro-command-and-all-about-the-PID-controller-D-values-)
+1. [Filtering, Aliasing and Gyro Sync explained](#filtering,-aliasing-and-gyro-sync-explained-)
 
 ##Gyro based loop implementation
 Gyro update is leading the loop. The loop will start after interrupt is triggered for new gyro sample. The PID controller will always be doing the calculation of the most fresh gyro value. The sampling gyro rate of 1khz will be used and that will automatically run looptimes of 1000us or 500us depending of configuration and target capabilities. This also makes the looptime setting unnecessary. There is no need for this parameter as our gyro decides when loop will run. There is no drift between gyro and control loop and your PID tune will be consistent. No aliasing should be experienced. This also helps filters to do better job in giving clean gyro traces. 
@@ -83,5 +84,19 @@ But yeah, with big stick inputs, the new Dterm approach will be smoother on Blac
 
 ###Additional information
 
-See here for more explanation:
-http://en.wikipedia.org/wiki/Derivative
+Effect of D term on P/D controller: http://www.youtube.com/watch?v=xMygUvegC80
+
+General explanation of D term: http://en.wikipedia.org/wiki/Derivative
+
+##Filtering, Aliasing and Gyro Sync explained
+The following videos have been produced with BetaFlight in mind, and provide a great resource for in-depth learning.
+
+Filtering Basics: http://www.youtube.com/watch?v=CpW8_fOJ7_M
+
+Nuhertz Spectra for analyzing copter gyro data: http://www.youtube.com/watch?v=fZm9N-WFkQk
+
+Analyzing FFT graphs for multirotor tuning: http://www.youtube.com/watch?v=nxHK-V7GCYY
+
+Aliasing and Gyro Sync Explained: http://www.youtube.com/watch?v=-lmoKal_e4s
+
+New Biquad filter in BetaFlight V2.3.x: http://www.youtube.com/watch?v=Q2tSWU1MsVk
