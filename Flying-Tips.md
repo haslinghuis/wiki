@@ -1,5 +1,5 @@
 #Introduction
-This page is a central place for the sharing of any flying tips or full tutorials. 
+Here is a central place for the sharing of Betaflight related flying tips or full tutorials, which could be invaluable for newcomers and advanced pilots alike. 
 
 #Contents
 1. [How To Fly An FPV Multirotor In Acro Mode](#how-to-fly-an-fpv-multirotor-in-acro-mode-)
