@@ -1,7 +1,7 @@
 #Introduction
 This page is here as a central place for any flying tips people would like to share. 
 
-##Contents
+#Contents
 1. [How To Fly An FPV Multirotor In Acro Mode](#how-to-fly-an-fpv-multirotor-in-acro-mode-)
 1. [Making coordinated turns in Acro mode](#making-coordinated-turns-in-acro-mode-)
 
