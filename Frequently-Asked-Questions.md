@@ -13,6 +13,8 @@
 1. [The quadcopter behaves erratic (jitters etc), after a crash, as if P went up significant. How to fix?](#the-quadcopter-behaves-erratic-)
 1. [How does yaw_jump_prevention_limit work ?](#how-does-yaw_jump_prevention_limit-work-)
 1. [How should I configure the FailSafe system ?](#how-should-i-configure-the-failsafe-system-)
+1. [What is the best practice for configuring the Throttle end points ?](#what-is-the-best-practice-for-configuring-the-throttle-end-points-)
+1. [How do I configure BLHeli ESCs via BetaFlight ?](#how-do-i-configure-blheli-escs-via-betaflight-)
 
 ***
 ##I'm a Neewbe, how do I start ?
@@ -286,3 +288,11 @@ But anyway I am still surprised that your gear suffers from jump. I would say th
 
 ##How should I configure the FailSafe system ?
 Take a look at this overview as it describes it well: http://www.youtube.com/watch?v=dikr9oDzQqc
+
+##What is the best practice for configuring the Throttle end points ?
+Part 1: http://www.youtube.com/watch?v=WFU3VewGbbA
+
+Part 2: http://www.youtube.com/watch?v=YNRl0OTKRGA
+
+##How do I configure BLHeli ESCs via BetaFlight ?
+http://www.youtube.com/watch?v=YWLk4qcQcvw
