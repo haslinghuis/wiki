@@ -295,4 +295,14 @@ Part 1: http://www.youtube.com/watch?v=WFU3VewGbbA
 Part 2: http://www.youtube.com/watch?v=YNRl0OTKRGA
 
 ##How do I configure BLHeli ESCs via BetaFlight ?
-http://www.youtube.com/watch?v=YWLk4qcQcvw
+If you are running BetaFlight, you can program and flash your BLHeli ESCs (that have BLHeli bootloader only!) directly through the flight controller, without disconnecting the signal wires or disassembling the copter at all.
+
+Follow this guide to learn more: http://www.youtube.com/watch?v=YWLk4qcQcvw
+
+PLEASE NOTE: This does not work on the following boards:
+
+| Flight Controller | Failure Reason                                      |
+| ----------------- | ----------------------------------------------------|
+| Moto Tornado | Since the 5v buffers on the motor outputs are uni-directional and do not support bi-directional communication. These buffers make the motor outputs more stable, but prevent passthrough. There is no software fix for this. The only fix would be a re-design of the board to remove the buffers or change them to bi-directional buffers. |
+| Naze32 Rev6 | Unclear why, but heard of multiple reports |
+| SPracingF3 and Dodo | This seems to be an issue that may be solved in software, as I have seen some traffic on Github relating to fixing it. So there is hope for y'all. |
