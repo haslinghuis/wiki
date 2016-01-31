@@ -1,5 +1,5 @@
 #Introduction
-This page is here as a central place for any flying tips people would like to share. 
+This page is a central place for the sharing of any flying tips or full tutorials. 
 
 #Contents
 1. [How To Fly An FPV Multirotor In Acro Mode](#how-to-fly-an-fpv-multirotor-in-acro-mode-)
@@ -9,7 +9,7 @@ This page is here as a central place for any flying tips people would like to sh
 
 #How To Fly An FPV Multirotor In Acro Mode
 
-Joshua Bardwell's excellent series of 27 lessons that use the free FPV Freerider simulator to teach a complete beginner how to fly an FPV multirotor in Acro mode (no autoleveling).
+Joshua Bardwell's excellent series of 27 lessons that use the free FPV Freerider simulator to teach a complete beginner how to fly an FPV multirotor in Acro mode (no autoleveling). A great resource for those wishing to transition from Level/Horizon modes to Acro mode.
 
 http://www.youtube.com/playlist?list=PLwoDb7WF6c8kjYXam4m3msvRbkORU41GY
 
