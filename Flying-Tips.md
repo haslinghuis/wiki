@@ -12,4 +12,5 @@ Joshua Bardwell's excellent series of 27 lessons that use the free FPV Freerider
 
 http://www.youtube.com/playlist?list=PLwoDb7WF6c8kjYXam4m3msvRbkORU41GY
 
-#Making coordinated turns in Acro mode: http://www.youtube.com/watch?v=-qYXVXiHGFA
+#Making coordinated turns in Acro mode
+http://www.youtube.com/watch?v=-qYXVXiHGFA
