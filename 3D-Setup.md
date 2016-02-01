@@ -49,9 +49,12 @@ travel
 
 3d_deadband_throttle: (typically 50) This is the throttle stick range around midrc which allows arming to occur, within this deadband the flight controller will output either 3d_deadband_high or 3d_deadband_low to the ESC. The value output (3d_deadband_high or 3d_deadband_low) is dependent on whether the throttle stick entered the deadband from a higher or lower value.
 
+max_throttle: (typically 2000) This is the maximum value the flight controller will output to the ESC.
+
+min_command: (typically 1000) This is the minimum value the flight controller will output to the ESC.
+
 TODO
-maxthrottle= max tx output (typically 2000us)
-mincommand = min tx output (typically 1000us)
+
 -Set a TX switch to control arming and set this up in the Mode tab of the configuration GUI
 
 motor_stop and stick arming do NOT work in 3D mode for obvious safety issues. Arming will only occur when the throttle stick is centered (+/- 3d_deadband_throttle) and the ARMing switch is active. The motors will immediately spin at 3d_deadband_low or _high, depending on throttle position above or below midrc. Full power reverse will be at low stick and full power normal will be 
