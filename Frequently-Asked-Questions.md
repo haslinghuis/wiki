@@ -83,6 +83,14 @@ If you want Airmode on permanently, tick the box and then drag the slider so it 
 4. Lift off & fly around (motors will never stop in flight even at lowest throttle)
 5. Just prior to landing, disable Air Mode (optional)
 6. Land and disarm motors
+Posted by BorisB: 
+Guys just a quick note.
+
+There are some people saying or complaining about their minimum throttle in airmode.
+
+Your min_check determines your lowest possible throttle value out of your TX! The lower your min_check is configured the lower throttle you can get out of your quad in air mode.
+
+If your min_check is set to 1100 and your TX goes down to 1000 that would mean that it is already giving some throttle. I use min_check a bit higher than 1000. I believe something like 1015 or 1020 
 
 ##What is Acro Plus ?
 
