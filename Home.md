@@ -1,3 +1,4 @@
+![BetaFlight](https://dl.dropboxusercontent.com/u/31537757/betaflight%20logo.jpg)
 # Welcome to the BetaFlight Wiki!
 
 ##Introduction
