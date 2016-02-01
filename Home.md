@@ -19,32 +19,6 @@ It's highly recommended that anyone using this firmware should take common sense
 The original intention of this project is only to improve testing of the current CleanFlight and new features for those who are not familiar with GitHub and compiling of own firmwares. 
 After a while I realised that some things in CleanFlight are not being done on the most optimal way to give the maximum performance out of our machines.  My main focus is to prioritize acro flight behaviour and give that the main priority, but still maintain good and solid level modes. Also we do want to prevent advanced tuning and stick to only PID's adjustments. 
 
-##Quick summary of main flight performing features in BetaFlight
-* Gyro sync (always the most fresh gyro data before the loop starts with minimum delay)
-* Overclocked i2c bus to speed up communication with gyro
-* Gyro FIR filter preconfigured for the cleanest gyro traces to the pid controller
-* Optimized D calculations and filtering for more derivative precision
-* Optimized defaults with main focus on PID1 and PID2 (reduced amount of pid controllers for better overview)
-* On F1 targets no need to disable acc anymore to get same performance. Gyro readings get priority when in acro mode.
-* Optimized scheduling in tasks to minimize jitter to motors
-* Fast PWM support in combination with Oneshot125 (This is useful when you want fixed refresh rate for ESC's up to 4khz)
-* Easy to no tuning. Stock settings for PID1 and PID2 should be very well flyable on most machines. The optimised filters do good job on feeding the cleanest gyro traces to the pid controller loop, which gives better flight experience and easier tuning.
-* Cooler motors and ESC's. Better for equipment due to clean filters.
-* Quaternion logic for Level modes. More precision, less drift and faster performance!
-* Beeper selectable for different events
-* Air mode feature
-* Acro Plus system
-* ESC passthrough programming through CleanFlight Configurator
-* Baro support for Dodo
-* NEW Biquad Super filters for gyro and Dterm
-
-[![Filter](https://dl.dropboxusercontent.com/u/31537757/biquad_screen.png)](https://www.youtube.com/watch?v=Q2tSWU1MsVk)
-
-**Note:** Besides the flight performance enhancements there are many nice features like blhelsuite passthrough to flash blheli ESC's and many more like Tornado F3 support and beeper disable configuration.
-
-##Betaflight merge to Cleanflight
-Yes I will of course keep working on this fact to get as many as possible clearly tested and proven improvements into Official Cleanflight, but you have to understand that this project was kind of pushed to far and made to squezee every little piece of performance out of the most FC's with things like overclocking. You just can't expect that overclocking will be done on official firmwares. Also official cleanfligth is getting more and more features like GPS what can decrease performance of the board. So we will have to find a middle way in there in the future to get it all to most optimal. It is very unlikely that the flight performance of current betaflight project will ever fully get into official, but we will see what future brings.
-
 ##Tools
 Betaflight is also always being adjusted to support most current Cleanflight tools like Configurator and EzGui devices and many other MSP tools. There is no special tool needed just for betaflight.
 
