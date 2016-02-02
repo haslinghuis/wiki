@@ -9,6 +9,9 @@ This page is meant to provide a more in depth explanation of the changelog for e
 - consider to have a configurator for betaflight to bring things more centralized like flashing and documentation and make configuration easier.
 - Fix pitch/roll in 3D throttle deadband
 
+# 2.3.5
+Airmode Saturation Behaviour (Same like 2.1.6 and 2.2.0. Some setups cannot deal with aggressive corrections)
+
 # 2.3.4
 
 Softer D approach as default baseline. Goal is to eliminate more D noise which should allow for higher D values for noisier quads. Rc_smoothing disabled by default as the new gyro delta approach should smooth out D anyway. See 2.3.3 for important details.
