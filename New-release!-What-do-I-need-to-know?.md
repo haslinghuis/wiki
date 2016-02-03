@@ -2,7 +2,6 @@ This page is meant to provide a more in depth explanation of the changelog for e
 
 # 2.4.0 (proposed)
 - PIDs scaled to voltage
-- oneshot42
 - cleanup code to get more flash space
 - add some new targets. Lux board will get own target for example.
 - Remove old mixer. Air mode will be default with some kind of idle up method to still simulate current default mixer
