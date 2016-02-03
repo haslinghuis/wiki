@@ -8,6 +8,7 @@ This page is meant to provide a more in depth explanation of the changelog for e
 - consider to have a configurator for betaflight to bring things more centralized like flashing and documentation and make configuration easier.
 - Fix pitch/roll in 3D throttle deadband
 - Add a serial buffer to speed up BB Log downloading
+- Try to fix CC3D bug with PPM. This is a general bug in cleanflight when using PPM and oneshot125 together on CC3D. The RC input may show glitching.
 
 # 2.3.5
 Airmode Saturation Behaviour (Same like 2.1.6 and 2.2.0. Some setups cannot deal with aggressive corrections. This version only gives solution for those who have issues with double rolls etc. Basically the mixer mechanism is changed like in 2.1.6 and 2.2.0. It might feel a bit softer than 2.3.4 in hard manouvres, but that has been proven to work on all setups in the past.
