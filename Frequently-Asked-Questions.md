@@ -1,6 +1,7 @@
 ##Contents
 1. [I'm a Neewbe, how do I start ?](#I'm-a-neewbe,-how-do-i-start-)
 1. [How do I install Betaflight ?](#how-do-i-install-betaflight-)
+1. [Why wont my FC board arm after upgrading the firmware?](#Why-wont-my-fc-board-arm-after-upgrading-the-firmware-)
 1. [What is Air Mode ?](#what-is-air-mode-)
 1. [How do I enable Air Mode ?](#how-do-i-enable-air-mode-)
 1. [What is Acro Plus ?](#what-is-acro-plus-)
@@ -25,6 +26,37 @@ Start with the **[MultiWii Wiki](http://www.multiwii.com/wiki/?title=Main_Page)*
 ##How do I install Betaflight ?
 
 There is a step-by-step guide on how to flash the flight controller with Betaflight here: http://quadquestions.com/blog/2015/12/25/betaflight_flashing/
+
+##Why wont my FC board arm after upgrading the firmware?
+Check the following:
+* Perform a full chip erase while flashing the firmware.
+* You can't arm the FC while in the CLI. The status light flashes rapidly.
+* Try calibrating the accelerometer.
+
+There is a new task scheduler present in firmware versions greater than 2.2.0 If upgrading from a version prior to this, then check to see if the FC status light is flashing. If it is then this indicates that there is not enough processing time to complete all the features that have been enabled.
+ 
+In the CLI type the _tasks_ command and check the results:
+ 
+    # tasks
+    Task list:
+    0 - SYSTEM, max = 10 us, avg = 0 us, total = 2 ms
+    1 - GYRO/PID, max = 934 us, avg = 667 us, total = 26004 ms
+    2 - ACCEL, max = 153 us, avg = 122 us, total = 974 ms
+    3 - SERIAL, max = 67 us, avg = 2 us, total = 12 ms
+    4 - BEEPER, max = 8 us, avg = 0 us, total = 3 ms
+    5 - BATTERY, max = 40173 us, avg = 1 us, total = 47 ms
+    6 - RX, max = 180 us, avg = 130 us, total = 483 ms
+    7 - COMPASS, max = 156 us, avg = 125 us, total = 41 ms
+    8 - BARO, max = 137 us, avg = 106 us, total = 273 ms
+    10 - ALTITUDE, max = 264 us, avg = 152 us, total = 165 ms
+    11 - DISPLAY, max = 130302 us, avg = 26263 us, total = 5115 ms
+
+This shows that the copter has Display, Magnetometer, Barometer & accelerometer features enabled.
+Try disabling each one in turn until the copter will arm.
+
+
+
+**Important:** Remember to save the CLI settings and exit the CLI (otherwise the board will not arm!)
 
 ##What is Air Mode ?
 
