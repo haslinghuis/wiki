@@ -51,10 +51,17 @@ In the CLI type the _tasks_ command and check the results:
     10 - ALTITUDE, max = 264 us, avg = 152 us, total = 165 ms
     11 - DISPLAY, max = 130302 us, avg = 26263 us, total = 5115 ms
 
-This shows that the copter has Display, Magnetometer, Barometer & accelerometer features enabled.
-Try disabling each one in turn until the copter will arm.
+This shows that the copter has Display, Magnetometer, Barometer & Accelerometer systems enabled.
+Try disabling **each one in turn** until the copter will arm.
 
+The list of commands to achieve this are:
 
+    feature -DISPLAY
+    set mag_hardware = 1
+    set baro_hardware = 1
+    set acc_hardware = 1
+
+Disabling the Accelerometer will force the copter into Acro mode (no self-leveling in Level and Horizon modes).
 
 **Important:** Remember to save the CLI settings and exit the CLI (otherwise the board will not arm!)
 
