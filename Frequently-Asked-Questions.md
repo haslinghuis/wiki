@@ -65,8 +65,11 @@ Disabling the Accelerometer will force the copter into Acro mode (no self-leveli
 
 **Important:** Remember to save the CLI settings and exit the CLI (otherwise the board will not arm!)
 
-Do not forget to check the Basics. Use the Receiver Tab and check that each stick moves the correct channel slider and the slider moves in the correct direction. If the wrong channel slider moves then check the channel MAP.
+Do not forget to check the Basics. 
+Use the Receiver Tab and check that each stick moves the correct channel slider and the slider moves in the correct direction. If the wrong channel slider moves then check the channel MAP.
 Also check that the stick End Point values are still correct.
+
+Is the Accelerometer Calibrated? Needs to be done once to allow arming.
 
 ##What is Air Mode ?
 
