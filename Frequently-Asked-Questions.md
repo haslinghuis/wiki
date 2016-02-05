@@ -65,6 +65,9 @@ Disabling the Accelerometer will force the copter into Acro mode (no self-leveli
 
 **Important:** Remember to save the CLI settings and exit the CLI (otherwise the board will not arm!)
 
+Do not forget to check the Basics. Use the Receiver Tab and check that each stick moves the correct channel slider and the slider moves in the correct direction. If the wrong channel slider moves then check the channel MAP.
+Also check that the stick End Point values are still correct.
+
 ##What is Air Mode ?
 
 Some users were mailing Boris about the fact their radios couldn't be configured to have Idle up switch and asking him to implement something similar in the software. Boris initially thought that this could simply just be achieved with activating the "Iterm" from zero throttle together with P and D which were already done with "pid_at_min_throttle" feature. Somehow this wasn't giving the satisfying results. It still felt weak and unresponsive. Boris was trying to wrap his head around why this was the case ! We got our P, I and D on the ground....so why isn't fully stabilizing? 
