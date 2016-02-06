@@ -72,10 +72,10 @@ Also check that the stick End Point values are still correct.
 Is the Accelerometer Calibrated? Needs to be done once to allow arming.
 
 To determine if the ACC or other sensor enabled is causing problems use the "status" command in the CLI. The "System load" must be less than 1.0. If greater than 1.0 then the processor has too many things to do.
- [code]# status
-System Uptime: 39 seconds, Voltage: 0 * 0.1V (3S battery - OK), System load: 0.05
-CPU Clock=72MHz, GYRO=MPU6050, ACC=MPU6050.n, BARO=BMP280
-Cycle Time: 1014, I2C Errors: 0, config size: 2020[/code]
+      # status
+      System Uptime: 10 seconds, Voltage: 0 * 0.1V (3S battery - OK), System load: 0.09
+      CPU Clock=72MHz, GYRO=MPU6050, ACC=MPU6050.n, BARO=BMP280
+      Cycle Time: 493, I2C Errors: 0, config size: 2020
 
 ##What is Air Mode ?
 
