@@ -71,6 +71,12 @@ Also check that the stick End Point values are still correct.
 
 Is the Accelerometer Calibrated? Needs to be done once to allow arming.
 
+To determine if the ACC or other sensor enabled is causing problems use the "status" command in the CLI. The "System load" must be less than 1.0. If greater than 1.0 then the processor has too many things to do.
+ [code]# status
+System Uptime: 39 seconds, Voltage: 0 * 0.1V (3S battery - OK), System load: 0.05
+CPU Clock=72MHz, GYRO=MPU6050, ACC=MPU6050.n, BARO=BMP280
+Cycle Time: 1014, I2C Errors: 0, config size: 2020[/code]
+
 ##What is Air Mode ?
 
 Some users were mailing Boris about the fact their radios couldn't be configured to have Idle up switch and asking him to implement something similar in the software. Boris initially thought that this could simply just be achieved with activating the "Iterm" from zero throttle together with P and D which were already done with "pid_at_min_throttle" feature. Somehow this wasn't giving the satisfying results. It still felt weak and unresponsive. Boris was trying to wrap his head around why this was the case ! We got our P, I and D on the ground....so why isn't fully stabilizing? 
