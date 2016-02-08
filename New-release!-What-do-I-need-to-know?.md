@@ -5,15 +5,15 @@ New Major Release:
 
 Pre release of 2.4.0:
 
--Added new targets SPRACINGF3MINI, ALIENFLIGHTF1, ALIENFLIGHTF3
+- Added new targets SPRACINGF3MINI, ALIENFLIGHTF1, ALIENFLIGHTF3
 
--Major sync/catch up with Cleanflight
+- Major sync/catch up with Cleanflight
 
--SD card support for SPRACINGF3MINI target with DMA usage for blackbox
--MSP version updated to support all current Configurator features
--Added serial buffering for faster VCP and UART communication
--LUX target moved 1wire to USART3
--Update cli parameters (Will be updated on Wiki). Perform a dump to see the differences.
+- SD card support for SPRACINGF3MINI target with DMA usage for blackbox
+- MSP version updated to support all current Configurator features
+- Added serial buffering for faster VCP and UART communication
+- LUX target moved 1wire to USART3
+- Update cli parameters (Will be updated on Wiki). Perform a dump to see the differences.
 -Add flexible gyro speed sampling when gyro_lpf set to off. additional parameter is gyro_sync_denom. To get 2khz       support set it to 4. denom is always a multiplier to 125us=8khz. 4 means 125*4=500us(2khz). Dont forget to check CPU usage when playing with this value.
 -Gyro update speed can now be configured through configurator. For 2khz just set to looptime 500 and it will automatically set the correct values for your board. I recommend configuring this through configurator. Bare in mind that acc, baro and mag will automatically be disabled on F1 boards when setting on faster speeds than 1khz (1000us)
 -Many SPI fixes
