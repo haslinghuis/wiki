@@ -1,5 +1,9 @@
 This page is meant to provide a more in depth explanation of the changelog for each release so that users can understand the consequences of the changes made. Please remember to read the changelog for each release first.
 
+# 2.4.0-RC3
+- Fixed Race targets
+- prevent Configurator to save wrong looptime settings
+
 # 2.4.0-RC2
 Release candidate updates:
 RC2 - Fixed 3D inverted throttle when arming
