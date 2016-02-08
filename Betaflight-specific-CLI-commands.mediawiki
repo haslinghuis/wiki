@@ -103,7 +103,8 @@ Also see "The delta_from_gyro setting and all about the PID Controller D values"
 <i>'''New 2.4.0 RC1 CLI commands'''</i>
 
 '''set pid_delta_method''' = MEASUREMENT
-
+It's the old _delta_from_gyro = OFF. Boris gave it a proper name.
+There is basically a choice between 2 types of delta
 
 '''set airmode_saturation_limit''' = 50
 
