@@ -100,16 +100,21 @@ Description by Boris here: http://www.rcgroups.com/forums/showpost.php?p=3386092
 Description by ctzsnooze here: http://www.rcgroups.com/forums/showpost.php?p=33859758&postcount=16547
 Also see "The delta_from_gyro setting and all about the PID Controller D values" on the "Betaflight Deep Dive" Wiki page and the "How does yaw_jump_prevention_limit work ?" in the FAQs.
 
-'''New 2.4.0 RC1 CLI commands'''
+<i>'''New 2.4.0 RC1 CLI commands'''</i>
 
-set pid_delta_method = MEASUREMENT
+'''set pid_delta_method''' = MEASUREMENT
 
-set dterm_lpf_hz =  0.000
 
-set airmode_saturation_limit = 50
+'''set airmode_saturation_limit''' = 50
 
-set gyro_sync_denom = 1
+Default value of 50 means that airmode will try to compensate at it's best till 50% saturation. 0 means always maximum stabilisation and 100 always limited. 0 is like version 2.3.3 and 2.3.5 and 100 would act same like pre 2.3.3 and like in 2.3.5.
 
-set vbat_pid_compensation = OFF
+'''set gyro_sync_denom''' = 1
+
+To get 2khz support set it to 4. denom is always a multiplier to 125us=8khz. 4 means 125*4=500us(2khz). Dont forget to check CPU usage when playing with this value.
+
+'''set vbat_pid_compensation''' = OFF
+
+uses maximum cell voltage as an offset. Tune your quad with a full lipo and your pids will be scaled up to 25% when voltage gets lower.
 
 
