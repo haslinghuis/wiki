@@ -6,7 +6,9 @@ New Major Release:
 Pre release of 2.4.0:
 
 -Added new targets SPRACINGF3MINI, ALIENFLIGHTF1, ALIENFLIGHTF3
+
 -Major sync/catch up with Cleanflight
+
 -SD card support for SPRACINGF3MINI target with DMA usage for blackbox
 -MSP version updated to support all current Configurator features
 -Added serial buffering for faster VCP and UART communication
