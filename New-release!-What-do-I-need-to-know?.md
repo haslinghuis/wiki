@@ -6,10 +6,10 @@ This page is meant to provide a more in depth explanation of the changelog for e
 
 # 2.4.0-RC2
 Release candidate updates:
-RC2 - Fixed 3D inverted throttle when arming
+- Fixed 3D inverted throttle when arming
 
 KNOWN ISSUES IN RC2:
-LUX and COLIBRI_RACE target not working
+- LUX and COLIBRI_RACE target not working
 
 # 2.4.0-RC1
 New Major Release:
