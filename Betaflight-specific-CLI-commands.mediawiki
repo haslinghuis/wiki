@@ -95,12 +95,12 @@ See the "What is Acro Plus" topic on the Frequently Asked Questions page.
 <i>[80,...,500]</i><br />
 Description by Boris here: http://www.rcgroups.com/forums/showpost.php?p=33860926&postcount=16558
 
-'''set delta_from_gyro''' = ON<br />
-<i>[OFF,ON]</i><br />
+<strike>'''set delta_from_gyro''' = ON<br /></strike> 
+<strike><i>[OFF,ON]</i><br /></strike>
 Description by ctzsnooze here: http://www.rcgroups.com/forums/showpost.php?p=33859758&postcount=16547
 Also see "The delta_from_gyro setting and all about the PID Controller D values" on the "Betaflight Deep Dive" Wiki page and the "How does yaw_jump_prevention_limit work ?" in the FAQs.
 
-<i>'''New 2.4.0 RC1 CLI commands'''</i>
+<u><i>'''New 2.4.0 RC1 CLI commands'''</i></u>
 
 '''set pid_delta_method''' = MEASUREMENT
 
