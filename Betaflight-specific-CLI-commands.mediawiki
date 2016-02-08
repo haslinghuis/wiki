@@ -100,6 +100,6 @@ Description by Boris here: http://www.rcgroups.com/forums/showpost.php?p=3386092
 Description by ctzsnooze here: http://www.rcgroups.com/forums/showpost.php?p=33859758&postcount=16547
 Also see "The delta_from_gyro setting and all about the PID Controller D values" on the "Betaflight Deep Dive" Wiki page and the "How does yaw_jump_prevention_limit work ?" in the FAQs.
 
-# New 2.4.0 CLI commands
+'''New 2.4.0 RC1 CLI commands'''
 
 TODO
