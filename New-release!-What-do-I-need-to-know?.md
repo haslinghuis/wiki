@@ -1,6 +1,5 @@
 This page is meant to provide a more in depth explanation of the changelog for each release so that users can understand the consequences of the changes made. Please remember to read the changelog for each release first.
-# 
-Betaflight 2.4.0-RC1
+# Betaflight 2.4.0-RC1
 New Major Release:
 
 Pre release of 2.4.0:
