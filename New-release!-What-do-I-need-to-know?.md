@@ -32,6 +32,8 @@ Pre release of 2.4.0:
 - More inflight adjustments now possible
 - Slightly different anti windup behaviour in airmode.
 - MOTOR_STOP is now overruled by AIRMODE! It acts as a Idle Up switch now. There is no point of using motor stop in airmode
+- Acro plus is on a mode.....you can enable it by switch
+
     Updates to build environment. Version number added to filename
 
 NOTES:
