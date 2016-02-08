@@ -5,26 +5,26 @@ New Major Release:
 
 Pre release of 2.4.0:
 
-    Added new targets SPRACINGF3MINI, ALIENFLIGHTF1, ALIENFLIGHTF3
-    Major sync/catch up with Cleanflight
-    SD card support for SPRACINGF3MINI target with DMA usage for blackbox
-    MSP version updated to support all current Configurator features
-    Added serial buffering for faster VCP and UART communication
-    LUX target moved 1wire to USART3
-    Update cli parameters (Will be updated on Wiki). Perform a dump to see the differences.
-    Add flexible gyro speed sampling when gyro_lpf set to off. additional parameter is gyro_sync_denom. To get 2khz support set it to 4. denom is always a multiplier to 125us=8khz. 4 means 125*4=500us(2khz). Dont forget to check CPU usage when playing with this value.
-    Gyro update speed can now be configured through configurator. For 2khz just set to looptime 500 and it will automatically set the correct values for your board. I recommend configuring this through configurator. Bare in mind that acc, baro and mag will automatically be disabled on F1 boards when setting on faster speeds than 1khz (1000us)
-    Many SPI fixes
-    Reduced profiles from 3 to 2. Moved many parameters to master profile. Only PID's, rates and few others are now part of profile. No need to reconfigure everything when using 2nd profile
-    Added PID scaling to vbat voltage. "set vbat_pid_compensation = ON". It uses maximum cell voltage as an offset. Tune your quad with a full lipo and your pids will be scaled up to 25% when voltage gets lower.
-    Fixed a bug where USB error interrupt would saturate CPU and caused a board not be able to arm on some targets
-    Mixer rework. Old airmode mixer is now default mixer. Air mode still exists as without airmode there is no Iterm on 0 throttle and there is also no Iterm scaling in acro
-    Added configurabe airmode saturation_limit. Default value of 50 means that airmode will try to compensate at it's best till 50% saturation. 0 means always maximum stabilisation and 100 always limited. 0 is like version 2.3.3 and 2.3.5 and 100 would act same like pre 2.3.3 and like in 2.3.5.
-    Improved 3D transition from negative to deadband.
-    Status option will now display CPU usage in percentage instead of load
-    More inflight adjustments now possible
-    Slightly different anti windup behaviour in airmode.
-    MOTOR_STOP is now overruled by AIRMODE! It acts as a Idle Up switch now. There is no point of using motor stop in airmode
+-Added new targets SPRACINGF3MINI, ALIENFLIGHTF1, ALIENFLIGHTF3
+-Major sync/catch up with Cleanflight
+-SD card support for SPRACINGF3MINI target with DMA usage for blackbox
+-MSP version updated to support all current Configurator features
+-Added serial buffering for faster VCP and UART communication
+-LUX target moved 1wire to USART3
+-Update cli parameters (Will be updated on Wiki). Perform a dump to see the differences.
+-Add flexible gyro speed sampling when gyro_lpf set to off. additional parameter is gyro_sync_denom. To get 2khz       support set it to 4. denom is always a multiplier to 125us=8khz. 4 means 125*4=500us(2khz). Dont forget to check CPU usage when playing with this value.
+-Gyro update speed can now be configured through configurator. For 2khz just set to looptime 500 and it will automatically set the correct values for your board. I recommend configuring this through configurator. Bare in mind that acc, baro and mag will automatically be disabled on F1 boards when setting on faster speeds than 1khz (1000us)
+-Many SPI fixes
+-Reduced profiles from 3 to 2. Moved many parameters to master profile. Only PID's, rates and few others are now part of profile. No need to reconfigure everything when using 2nd profile
+-Added PID scaling to vbat voltage. "set vbat_pid_compensation = ON". It uses maximum cell voltage as an offset. Tune your quad with a full lipo and your pids will be scaled up to 25% when voltage gets lower.
+-Fixed a bug where USB error interrupt would saturate CPU and caused a board not be able to arm on some targets
+-Mixer rework. Old airmode mixer is now default mixer. Air mode still exists as without airmode there is no Iterm on 0 throttle and there is also no Iterm scaling in acro
+-Added configurabe airmode saturation_limit. Default value of 50 means that airmode will try to compensate at it's best till 50% saturation. 0 means always maximum stabilisation and 100 always limited. 0 is like version 2.3.3 and 2.3.5 and 100 would act same like pre 2.3.3 and like in 2.3.5.
+-Improved 3D transition from negative to deadband.
+-Status option will now display CPU usage in percentage instead of load
+-More inflight adjustments now possible
+-Slightly different anti windup behaviour in airmode.
+-MOTOR_STOP is now overruled by AIRMODE! It acts as a Idle Up switch now. There is no point of using motor stop in airmode
     Updates to build environment. Version number added to filename
 
 NOTES:
