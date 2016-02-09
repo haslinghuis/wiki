@@ -1,5 +1,16 @@
 This page is meant to provide a more in depth explanation of the changelog for each release so that users can understand the consequences of the changes made. Please remember to read the changelog for each release first.
 
+# 2.4.0-RC6
+- luxfloat iterm issue
+- disable arming in negative direction for 3D
+- disable iterm windup during failsafe condition (after it failsafed)
+- 1wire passthrough
+- maybe but maybe enable auto landing failsafe features. (not a big fan of it as it requires again a lot of testing in all kind of modes) 
+
+# 2.4.0-RC5
+
+# 2.4.0-RC4
+
 # 2.4.0-RC3
 - Fixed Race targets
 - prevent Configurator to save wrong looptime settings
