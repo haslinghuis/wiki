@@ -1,6 +1,7 @@
 This page is meant to provide a more in depth explanation of the changelog for each release so that users can understand the consequences of the changes made. Please remember to read the changelog for each release first.
 
 # 2.4.0-RC6
+current issues to resolve
 - luxfloat iterm issue
 - disable arming in negative direction for 3D
 - disable iterm windup during failsafe condition (after it failsafed)
