@@ -14,12 +14,17 @@ This page is meant to provide a more in depth explanation of the changelog for e
 - Disable arming in negative direction for 3D
 
 # 2.4.0-RC5
+- Fixed 3D transitions (now tested) 
+- Added Jeti Exbus support 
+- Fixed CC3D PPM bug 
+- New level defaults
 
 # 2.4.0-RC4
+- Broken targets....went to RC5 to prevent confusion
 
 # 2.4.0-RC3
-- Fixed Race targets
-- prevent Configurator to save wrong looptime settings
+- Fixed RACE targets
+- fixed configurator from saving wrong looptime settings
 
 # 2.4.0-RC2
 Release candidate updates:
