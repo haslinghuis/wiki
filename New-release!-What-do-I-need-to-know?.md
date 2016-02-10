@@ -1,12 +1,17 @@
 This page is meant to provide a more in depth explanation of the changelog for each release so that users can understand the consequences of the changes made. Please remember to read the changelog for each release first.
+# 2.4.0-RC7
+- Fixed Blheli ESC passthrough 
+- Fixed LED_STRIP feature 
+- minor cleanups 
+- RACE targets should now always flash fine
 
 # 2.4.0-RC6
-current issues to resolve
-- luxfloat iterm issue
-- disable arming in negative direction for 3D
-- disable iterm windup during failsafe condition (after it failsafed)
-- 1wire passthrough
-- maybe but maybe enable auto landing failsafe features. (not a big fan of it as it requires again a lot of testing in all kind of modes) 
+- Fixed SPFRACINGMINI 
+- added failsafe_procedure 
+- fixed Luxfloat iterm calculation 
+- Removed Baro for CC3D to fit the code 
+- Added Iterm windup protection during failsafe and unarmed conditions 
+- Disable arming in negative direction for 3D
 
 # 2.4.0-RC5
 
