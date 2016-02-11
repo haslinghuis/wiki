@@ -18,6 +18,8 @@
 1. [How do I configure BLHeli ESCs via BetaFlight ?](#how-do-i-configure-blheli-escs-via-betaflight-)
 1. [Why does my copter flip when trying to takeoff?](#why-does-my-copter-flip-when-trying-to-takeoff-)
 1. [Will the PIDs change significantly when switching from two-blades to tri-blades?](#will-the-pids-change-significantly-when-switching-from-two-blades-to-tri-blades-)
+1. [Why do I have issues flashing my new F3 Flight Controller?](#why-do-i-have-issues-flashing-my-new-f3-flight-controller?-)
+1. [Will Betaflight code be merged back into Cleanflight?](#will-betaflight-code-be-merged-back-into-cleanflight-)
 
 ***
 ##I'm a Neewbe, how do I start ?
@@ -68,8 +70,8 @@ Disabling the Accelerometer will force the copter into Acro mode (no self-leveli
 **Important:** Remember to save the CLI settings and exit the CLI (otherwise the board will not arm!)
 
 Do not forget to check the Basics. 
-Use the Receiver Tab and check that each stick moves the correct channel slider and the slider moves in the correct direction. If the wrong channel slider moves then check the channel MAP.
-Also check that the stick End Point values are still correct.
+Use the Receiver Tab and check that each stick moves the correct channel slider and the slider moves in the correct direction. If the wrong channel slider moves, then check the channel MAP (eg AETR instead of TAER).
+Also check that the stick End Point values are still correct. For more information take a look at the Question called "What is the best practice for configuring the Throttle end points".
 
 Is the Accelerometer Calibrated? Needs to be done once to allow arming.
 
@@ -385,8 +387,14 @@ Here are some likely causes:
 * Flight control board mounted facing the wrong direction (e.g. yaw 90 degrees left but the board_align has not been configured to reflect this).
 
 ##Will the PIDs change significantly when switching from two-blades to tri-blades?
-
 Some have found they need a small reduction in P gains when going from two-blade to tris.
 The copter was still flyable with no changes, but some have experiences increased prop-wash oscillation.
  
+##Why do I have issues flashing my new F3 Flight Controller?
+Some of the new F3 boards come with a Virtual COM Port (VCP) that is used to communicate with a PC or MAC.
+Take a look at this vidoe that talks about flashing an Lumenier LUX board that has a VCP 
 
+http://www.youtube.com/watch?v=b8fMsazyxDw
+
+##Will Betaflight code be merged back into Cleanflight?
+Yes, it is the intention that this will happen gradually over time. Sometimes features from CleanFlight also get merged into BetaFlight too.
