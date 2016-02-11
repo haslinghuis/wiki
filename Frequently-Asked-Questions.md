@@ -16,6 +16,8 @@
 1. [How should I configure the FailSafe system ?](#how-should-i-configure-the-failsafe-system-)
 1. [What is the best practice for configuring the Throttle end points ?](#what-is-the-best-practice-for-configuring-the-throttle-end-points-)
 1. [How do I configure BLHeli ESCs via BetaFlight ?](#how-do-i-configure-blheli-escs-via-betaflight-)
+1. [Why does my copter flip when trying to takeoff?](#why-does-my-copter-flip-when-trying-to-takeoff-)
+1. [Will the PIDs change significantly when switching from two-blades to tri-blades?](#will-the-pids-change-significantly-when-switching-from-two-blades-to-tri-blades-)
 
 ***
 ##I'm a Neewbe, how do I start ?
@@ -371,3 +373,20 @@ PLEASE NOTE: This does not work on the following boards:
 | ----------------- | ----------------------------------------------------|
 | Moto Tornado | Since the 5v buffers on the motor outputs are uni-directional and do not support bi-directional communication. These buffers make the motor outputs more stable, but prevent passthrough. There is no software fix for this. The only fix would be a re-design of the board to remove the buffers or change them to bi-directional buffers. |
 | Naze32 **Rev6** | The Naze back-fed the ESCs from the USB port. So the ESCs would power up, see the throttle signal, initialize, and then they wouldn't go into programming mode after that. The Rev6a has fixed this issue since it was released in November 2015 |
+
+##Why does my copter flip when trying to takeoff?
+
+Here are some likely causes:
+
+* Motors plugged in to the wrong FC headers.
+* Custom mix is incorrect.
+* Motor spinning the wrong direction.
+* Props on the wrong motor.
+* Flight control board mounted facing the wrong direction (e.g. yaw 90 degrees left but the board_align has not been configured to reflect this).
+
+##Will the PIDs change significantly when switching from two-blades to tri-blades?
+
+Some have found they need a small reduction in P gains when going from two-blade to tris.
+The copter was still flyable with no changes, but some have experiences increased prop-wash oscillation.
+ 
+
