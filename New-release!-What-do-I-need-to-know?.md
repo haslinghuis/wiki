@@ -58,13 +58,17 @@ Pre release of 2.4.0:
 - More inflight adjustments now possible
 - Slightly different anti windup behaviour in airmode.
 - MOTOR_STOP is now overruled by AIRMODE! It acts as a Idle Up switch now. There is no point of using motor stop in airmode
+- Updates to build environment. Version number added to filename
 - Acro plus is on a mode.....you can enable it by switch
-
-    Updates to build environment. Version number added to filename
+- ACRO PLUS increased sensitivity
+- Added Jeti Exbus Support
+- Fixed PPM glitch bug on CC3D (PPM pin moved from 3 to 8)
+- Added failsafe_procedure configurable through the new configurator
 
 NOTES:
-Users of Vortex pro should get the corresponding OSD firmware!
-Use Cleanflight Configurator 1.2 (recommended)
+- Pre-Releases are not yet fully stable releases, but are released to get valuable feedback
+- Users of Vortex pro should get the corresponding OSD firmware!
+- Use Cleanflight Configurator 1.2 (recommended)
 
 # 2.3.5
 Airmode Saturation Behaviour (Same like 2.1.6 and 2.2.0. Some setups cannot deal with aggressive corrections. This version only gives solution for those who have issues with double rolls etc. Basically the mixer mechanism is changed like in 2.1.6 and 2.2.0. It might feel a bit softer than 2.3.4 in hard manouvres, but that has been proven to work on all setups in the past.
