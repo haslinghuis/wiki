@@ -271,7 +271,7 @@ Here is a list of FCs compiled around the end of January 2016. The opinions rega
 | **[XRacer F3](http://www.fpvmodel.com/x-racer-f303-flight-controller_g1106.html?u=8D1D164861E0E506)** | F3 | Y | No VBat pin? Don't know much about this one. |
 | **[LUX](http://www.rcgroups.com/forums/showthread.php?t=2554204)** | F3 | Y | Hasn't hit the street yet, but looks good. Doesn't have a dataflash chip. Uses the STM's Virtual Com Port which requires special procedures. Uses MPU6500 which is not ideal.|
 | **[KISS](http://www.rcgroups.com/forums/showthread.php?t=2555204)** | F3 | Y | Doesn't run Betaflight (yet) LOL. |
-| **[SPRacingF3Mini board](http://www.rcgroups.com/forums/showthread.php?t=2592215)** | F3 | Y | Just announced but Boris said he has run this board. With SD Card Socket, Race Transponder and 5V BEC. Looks good for Racing copters. |
+| **[SPRacingF3Mini board](http://www.rcgroups.com/forums/showthread.php?t=2592215)** | F3 | Y | Now supported in 2.4.0-RC6. With SD Card Socket, Race Transponder and 5V BEC. Looks good for Racing copters. |
 ### Additional Information:
 Roundup of F1 based boards: http://www.youtube.com/watch?v=7u1PcvDosBM
 
