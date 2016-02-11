@@ -391,8 +391,8 @@ Some have found they need a small reduction in P gains when going from two-blade
 The copter was still flyable with no changes, but some have experiences increased prop-wash oscillation.
  
 ##Why do I have issues flashing my new F3 Flight Controller?
-Some of the new F3 boards come with a Virtual COM Port (VCP) that is used to communicate with a PC or MAC.
-Take a look at this vidoe that talks about flashing an Lumenier LUX board that has a VCP 
+Some of the new F3 boards come with a Virtual COM Port (VCP) that is used to communicate with a PC or MAC over the USB interface.
+Take a look at this video that talks about flashing the Lumenier LUX board that has a VCP port:
 
 http://www.youtube.com/watch?v=b8fMsazyxDw
 
