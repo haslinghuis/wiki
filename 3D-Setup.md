@@ -61,7 +61,7 @@ restart of the ECS/ speed controller (signal: high-low-high). The 3D mode is now
 speed controller now s tarts only at the throttle center position. Deactivation: Teach new master
 travel.
 
-* **Simon K ESC: **
+* **Simon K ESC:**
     To program a SimonK ESC to support 3D mode, one must edit the appropiate firmware configuration file to enable the following feature :
 RC_PULS_REVERSE	= 1
     It is also recommended to disable stick calibration.
