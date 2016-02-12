@@ -358,6 +358,8 @@ But anyway I am still surprised that your gear suffers from jump. I would say th
 FailSafe is something that needs to be configured in the radio receiver and the Flight Controller.
 Take a look at this overview as it describes how this should be done: http://www.youtube.com/watch?v=dikr9oDzQqc
 
+Some additional information can be found from 6:20 onwards in this video: http://www.youtube.com/watch?v=htkw7d97bOo
+
 ##What is the best practice for configuring the Throttle end points ?
 This can be a difficult and confusing concept to grasp at first. The best way to describe the correct method is by way of the following tutorial video.
 
