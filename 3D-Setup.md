@@ -70,7 +70,7 @@ RC_CALIBRATION	= 0
 
     By default, SimonK sets the neutral throttle point (MID_RC_PULS) to halfway between minimum (STOP_RC_PULS, set to 1060), and maximum, (FULL_RC_PULSE, set to 1860) - so a value of 1460.  You can change these values as you desire, but these defaults work well.  
 MID_RC_PULS = = (STOP_RC_PULS + FULL_RC_PULS) / 2  
-
+    The most common ways to flash SimonK are using the KKFlash tool or the Chrome App "RapidFlash".  Both remove the complexity of building a compile environment for the Atmel MCU on the ESC.  The RapidFlash tool is a bit easier to use than the KKFLash tool.
 
 **Setup the following parameters in the CLI:**
 
