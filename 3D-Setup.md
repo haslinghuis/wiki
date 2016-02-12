@@ -67,7 +67,7 @@ travel.
     To program a SimonK ESC to support 3D mode, one must edit the appropriate firmware configuration file to enable the following feature :  
 RC_PULS_REVERSE	= 1  
 
-    It is also recommended to disable stick calibration.  
+    It is also recommended to disable stick calibration, as there is no way to reconfigure the mid_point at runtime.
 RC_CALIBRATION	= 0  
 
     By default, SimonK sets the neutral throttle point (MID_RC_PULS) to halfway between minimum (STOP_RC_PULS, set to 1060), and maximum, (FULL_RC_PULSE, set to 1860) - so a value of 1460.  You can change these values as you desire, but these defaults work well.  
