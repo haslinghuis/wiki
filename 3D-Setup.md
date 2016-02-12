@@ -61,6 +61,14 @@ restart of the ECS/ speed controller (signal: high-low-high). The 3D mode is now
 speed controller now s tarts only at the throttle center position. Deactivation: Teach new master
 travel.
 
+* **Simon K ESC: **
+    To program a SimonK ESC to support 3D mode, one must edit the appropiate firmware configuration file to enable the following feature :
+RC_PULS_REVERSE	= 1
+    It is also recommended to disable stick calibration.
+RC_CALIBRATION	= 0
+    By default, SimonK sets the neutral throttle point (MID_RC_PULS) to halfway between minimum (STOP_RC_PULS, set to 1060), and maximum, (FULL_RC_PULSE, set to 1860) - so a value of 1460.  You can change these values as you desire, but these defaults work well.
+MID_RC_PULS = = (STOP_RC_PULS + FULL_RC_PULS) / 2
+
 **Setup the following parameters in the CLI:**
 
 **3d_deadband_high:** This is the lowest value for positive throttle output from the flight controller to the ESC when armed, the highest value for positive throttle output from the flight controller to the ESC when armed is max_throttle. The range between 3d_deadband_high and max_throttle is the total positive throttle output range. 
