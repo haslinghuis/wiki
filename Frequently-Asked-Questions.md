@@ -217,7 +217,7 @@ set mag_hardware = 1
 set gyro_lpf = OFF 
 ```
 
-##Limitations of 2khz mode?
+##Limitations of 2kHz mode
 Note that there is a restriction on the number of available AUX channels in 2kHz mode (actually on any loop frequency greater than 1kHz).
 
 **For F3 boards**
