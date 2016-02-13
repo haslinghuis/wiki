@@ -4,6 +4,7 @@ Here is a central place for the sharing of Betaflight related flying tips or ful
 #Contents
 1. [How To Fly An FPV Multirotor In Acro Mode](#how-to-fly-an-fpv-multirotor-in-acro-mode-)
 1. [Making coordinated turns in Acro mode](#making-coordinated-turns-in-acro-mode-)
+1. [How to Fly FPV Quads](#how-to-fly-fpv-quads-)
 
 ***
 
@@ -17,3 +18,8 @@ http://www.youtube.com/playlist?list=PLwoDb7WF6c8kjYXam4m3msvRbkORU41GY
 In autolevel modes (like Level or Horizon), the flight controller attempts to maintain a fixed angle of pitch or roll which is proportional to the stick deflection. In Acro mode this assistance is not present and the pilot needs to compensate manually. This video explains how this is achieved in flight.
 
 http://www.youtube.com/watch?v=-qYXVXiHGFA
+
+#How to Fly FPV Quads
+Jack FPV is new to the hobby, but is learning fast. Follow his series of FPV videos as he teaches us how to fly in the Liftoff simulator and also in real life.
+
+http://www.youtube.com/playlist?list=PLXWuhwtHmw1w9G6j3P1Y2ZLRiiLqmFe2B
