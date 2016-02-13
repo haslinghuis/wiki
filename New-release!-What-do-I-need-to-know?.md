@@ -2,6 +2,7 @@ This page is meant to provide a more in depth explanation of the changelog for e
 
 # 2.4.0-RC8
 - Fixed Battery voltage
+- Note: AUX settings not shown in CLI with 'dump'. Type 'aux' to see these.
 
 # 2.4.0-RC7
 - Fixed Blheli ESC passthrough 
