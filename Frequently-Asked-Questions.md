@@ -260,18 +260,18 @@ But the D term can vary significantly depending on many different factors, and i
 
 Here is a list of FCs compiled around the end of January 2016. The opinions regarding Pros and Cons are also shown.
 
-| Flight Controller | Processor  | 2KHz mode | Opinion                                     |
+| Flight Controller | Processor  | 2KHz mode | Ports |Opinion                                     |
 | ----------------- | ---------- |---------- | --------------------------------------------|
-| **[Naze32](http://www.getfpv.com/acro-naze32-flight-controller-rev6-w-pin-headers.html)** | F1 | Y (disable Accelerometer, Barometer, Magnetometer) |Available in Full and Acro flavors. Full version has the Barometer, Magnetometer and Dataflash for Black Box logs. Rev6a has SBUS Inverter while Rev5 does not. Has been a great FC, maybe getting close to end-of-life with all the new F3 boards emerging. Rev6 has MPU6500 which is not ideal. Many users are experiencing issues with the rev6 - NOT RECOMMENDED.|
-| **[SPRacing F3](http://seriouslypro.com/spracingf3)**  | F3  | Y | Hardware issues resulting in seemingly-high failure rate. Micro-connectors suck. |
-| **[TBS PowerCube](http://www.team-blacksheep.com/products/prod:powercube_colibri)**     |  F3  | Y |  Super expensive, like all TBS gear. The ESC is listed as able to run SimonK, which means it's Atmel, which means it's probably got mediocre performance.   |
-| **[Dodo](http://www.rcgroups.com/forums/showthread.php?t=2439777)**  | F3 | Y |  No complaints personally. Now that they fixed the ESC back-feeding issue, that is. So this seems to be a great option at the moment. Use SPRACING hex if version 3.   |
-| **[MotoLab TornadoFC](http://www.rcgroups.com/forums/showthread.php?t=2473157#post32330479)** | F3 | Y |5v buffers on motor outputs mean no BLHeli passthrough. Uses the STM's Virtual Com Port which requires special procedures. Other than that, awesome FC at a good price. **[Detailed instructions](http://www.rcgroups.com/forums/showthread.php?t=2537379)**|
-| **[MotoLab Cyclone](http://dronehitech.com/motolab-cyclone-flight-controller-announced/)** | F3 | Y | Hasn't hit the streets yet, but looks like it ticks all the boxes. |
-| **[XRacer F3](http://www.fpvmodel.com/x-racer-f303-flight-controller_g1106.html?u=8D1D164861E0E506)** | F3 | Y | No VBat pin? Don't know much about this one. |
-| **[LUX](http://www.rcgroups.com/forums/showthread.php?t=2554204)** | F3 | Y | Hasn't hit the street yet, but looks good. Doesn't have a dataflash chip. Uses the STM's Virtual Com Port which requires special procedures. Uses MPU6500 which is not ideal.|
-| **[KISS](http://www.rcgroups.com/forums/showthread.php?t=2555204)** | F3 | Y | Doesn't run Betaflight (yet) LOL. |
-| **[SPRacingF3Mini board](http://www.rcgroups.com/forums/showthread.php?t=2592215)** | F3 | Y | Now supported in 2.4.0-RC6. With SD Card Socket, Race Transponder and 5V BEC. Looks good for Racing copters. |
+| **[Naze32](http://www.getfpv.com/acro-naze32-flight-controller-rev6-w-pin-headers.html)** | F1 | Y (disable Accelerometer, Barometer, Magnetometer) | CP21xx on UART1 |Available in Full and Acro flavors. Full version has the Barometer, Magnetometer and Dataflash for Black Box logs. Rev6a has SBUS Inverter while Rev5 does not. Has been a great FC, maybe getting close to end-of-life with all the new F3 boards emerging. Rev6 has MPU6500 which is not ideal. Many users are experiencing issues with the rev6 - NOT RECOMMENDED.|
+| **[SPRacing F3](http://seriouslypro.com/spracingf3)**  | F3  | Y |  |Hardware issues resulting in seemingly-high failure rate. Micro-connectors suck. |
+| **[TBS PowerCube](http://www.team-blacksheep.com/products/prod:powercube_colibri)**     |  F3  | Y |  | Super expensive, like all TBS gear. The ESC is listed as able to run SimonK, which means it's Atmel, which means it's probably got mediocre performance.   |
+| **[Dodo](http://www.rcgroups.com/forums/showthread.php?t=2439777)**  | F3 | Y | CP21xx on UART1 |No complaints personally. Now that they fixed the ESC back-feeding issue, that is. So this seems to be a great option at the moment. Use SPRACING hex if version 3.   |
+| **[MotoLab TornadoFC](http://www.rcgroups.com/forums/showthread.php?t=2473157#post32330479)** | F3 | Y | VCP USB, UARTs 1,2,3 | 5v buffers on motor outputs mean no BLHeli passthrough. Uses the STM's Virtual Com Port which requires special procedures. Other than that, awesome FC at a good price. **[Detailed instructions](http://www.rcgroups.com/forums/showthread.php?t=2537379)**|
+| **[MotoLab Cyclone](http://dronehitech.com/motolab-cyclone-flight-controller-announced/)** | F3 | Y |  VCP USB, UARTs 1,2,3 |Hasn't hit the streets yet, but looks like it ticks all the boxes. |
+| **[XRacer F3](http://www.fpvmodel.com/x-racer-f303-flight-controller_g1106.html?u=8D1D164861E0E506)** | F3 | Y |  |No VBat pin? Don't know much about this one. |
+| **[LUX](http://www.rcgroups.com/forums/showthread.php?t=2554204)** | F3 | Y |  VCP USB, UARTs 1,2,3 |Hasn't hit the street yet, but looks good. Doesn't have a dataflash chip. Uses the STM's Virtual Com Port which requires special procedures. Uses MPU6500 which is not ideal.|
+| **[KISS](http://www.rcgroups.com/forums/showthread.php?t=2555204)** | F3 | Y |  VCP USB| Doesn't run Betaflight (yet) LOL. |
+| **[SPRacingF3Mini board](http://www.rcgroups.com/forums/showthread.php?t=2592215)** | F3 | Y | VCP USB| Now supported in 2.4.0-RC6. With SD Card Socket, Race Transponder and 5V BEC. Looks good for Racing copters. |
 ### Additional Information:
 Roundup of F1 based boards: http://www.youtube.com/watch?v=7u1PcvDosBM
 
