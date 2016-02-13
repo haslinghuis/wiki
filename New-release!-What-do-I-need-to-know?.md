@@ -1,4 +1,8 @@
 This page is meant to provide a more in depth explanation of the changelog for each release so that users can understand the consequences of the changes made. Please remember to read the changelog for each release first.
+
+# 2.4.0-RC8
+- Fixed Battery voltage
+
 # 2.4.0-RC7
 - Fixed Blheli ESC passthrough 
 - Fixed LED_STRIP feature 
