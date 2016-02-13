@@ -102,7 +102,8 @@ Also see "The delta_from_gyro setting and all about the PID Controller D values"
 
 <u><i>'''New 2.4.0 RC1 CLI commands'''</i></u>
 
-'''set pid_delta_method''' = MEASUREMENT
+'''set pid_delta_method''' = MEASUREMENT<br />
+<i>[MEASUREMENT, ERROR]</i><br />
 
 It's the old _delta_from_gyro = OFF. Boris gave it a proper name.
 There is basically a choice between 2 types of delta
@@ -115,8 +116,17 @@ Default value of 50 means that airmode will try to compensate at it's best till 
 
 To get 2khz support set it to 4. denom is always a multiplier to 125us=8khz. 4 means 125*4=500us(2khz). Dont forget to check CPU usage when playing with this value.
 
-'''set vbat_pid_compensation''' = OFF
+'''set vbat_pid_compensation''' = OFF<br />
+<i>[ON, OFF]</i><br />
 
-uses maximum cell voltage as an offset. Tune your quad with a full lipo and your pids will be scaled up to 25% when voltage gets lower. This requires VBAT connection on FC.
+Uses maximum cell voltage as an offset. Tune your quad with a full lipo and your pids will be scaled up to 25% when voltage gets lower. This requires VBAT connection on FC.
 
+'''set blackbox_device''' = SERIAL<br />
+<i>[SERIAL, SPIFLASH, SDCARD]</i><br />
 
+New named values.
+
+'''set pid_controller =''' = MWREWRITE<br />
+<i>[MWREWRITE, LUX]</i><br />
+
+New named values. Note: all other PIDCs have been removed.
