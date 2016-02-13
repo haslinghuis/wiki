@@ -217,6 +217,17 @@ set mag_hardware = 1
 set gyro_lpf = OFF 
 ```
 
+##Limitations of 2khz mode?
+Note that there is a restriction on the number of available AUX channels in 2KHz mode.
+
+**For F3 boards**
+6 AUX channels are available
+
+**For F1 boards**
+4 AUX channels are available
+
+
+
 ##How should I tune my Copter ?
 1. It's recommended that these step be done in Acro mode even if you are usually a Level/Horizon flyer.  Example PID values shown below correspond to the Rewrite PID controller (PID controller #1)
 
