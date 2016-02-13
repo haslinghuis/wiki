@@ -260,8 +260,8 @@ But the D term can vary significantly depending on many different factors, and i
 
 Here is a list of FCs compiled around the end of January 2016. The opinions regarding Pros and Cons are also shown.
 
-| Flight Controller | Processor  | 2KHz mode | Ports | Opinion                                     |
-| ----------------- | ---------- |---------- | ------| --------------------------------------------|
+| Flight Controller | Processor | 2KHz mode | Ports   | Opinion                                     |
+| ----------------- | --------- |---------- | --------| --------------------------------------------|
 | **[Naze32](http://www.getfpv.com/acro-naze32-flight-controller-rev6-w-pin-headers.html)** | F1 | Y (disable Accelerometer, Barometer, Magnetometer) | CP21xx on UART1 |Available in Full and Acro flavors. Full version has the Barometer, Magnetometer and Dataflash for Black Box logs. Rev6a has SBUS Inverter while Rev5 does not. Has been a great FC, maybe getting close to end-of-life with all the new F3 boards emerging. Rev6 has MPU6500 which is not ideal. Many users are experiencing issues with the rev6 - NOT RECOMMENDED.|
 | **[SPRacing F3](http://seriouslypro.com/spracingf3)**  | F3  | Y |  |Hardware issues resulting in seemingly-high failure rate. Micro-connectors suck. |
 | **[TBS PowerCube](http://www.team-blacksheep.com/products/prod:powercube_colibri)**     |  F3  | Y |  | Super expensive, like all TBS gear. The ESC is listed as able to run SimonK, which means it's Atmel, which means it's probably got mediocre performance.   |
