@@ -399,6 +399,8 @@ Take a look at this video that talks about flashing the Lumenier LUX board that 
 
 http://www.youtube.com/watch?v=b8fMsazyxDw
 
+Within this FAQ, check the answer to "What Flight Controllers are recommended to get the best out of BetaFlight" for more details on which FC has VCP ports.
+
 ##Will Betaflight code be merged back into Cleanflight?
 Yes, it is the intention that this will happen gradually over time. Sometimes features from CleanFlight also get merged into BetaFlight too.
 
