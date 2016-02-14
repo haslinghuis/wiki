@@ -1,4 +1,5 @@
 ##How should I tune my Copter ?
+
 1. It's recommended that these step be done in Acro mode even if you are usually a Level/Horizon flyer.  Example PID values shown below correspond to the Rewrite PID controller (PID controller #1)
 
 2. Start with slightly lower than default P gains as provided by the installed BetaFlight firmware. P of 4.0 on Pitch and Roll are good starting points. Also lower the I and D gains on pitch and roll in order to tune P with minimal interference from I and D. I of 20 and D of 5 are good starting points. For yaw, it is prudent to decrease default P by HALF and reduce I just a bit, to eliminate that axis as a source of oscillations.  
