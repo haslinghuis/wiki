@@ -385,6 +385,9 @@ Part 1: http://www.youtube.com/watch?v=WFU3VewGbbA
 Part 2: http://www.youtube.com/watch?v=YNRl0OTKRGA
 
 ##How do I configure BLHeli ESCs via BetaFlight ?
+
+If running at 1kHz and faster BLHeli 14.2 or later is required and disable PWM in the BLHeli configuration. This is to ensure the BLHeli Firmware recognizes the OneShot125 pulses properly.
+
 If you are running BetaFlight, you can program and flash your BLHeli ESCs (that have BLHeli bootloader only!) directly through the flight controller, without disconnecting the signal wires or disassembling the copter at all.
 
 Follow this guide to learn more: http://www.youtube.com/watch?v=YWLk4qcQcvw
