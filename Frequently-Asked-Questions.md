@@ -216,6 +216,7 @@ set baro_hardware = 1
 set mag_hardware = 1
 set gyro_lpf = OFF 
 ```
+From Betaflight 2.4.0 onwards simply set looptime to 500 in the Configuration tab. CAUTION: Appropriate sensors will automatically be disabled on F1 boards.
 
 ##Limitations of 2kHz mode
 Note that there is a restriction on the number of available AUX channels in 2kHz mode (actually on any loop frequency greater than 1kHz).
@@ -275,13 +276,14 @@ Here is a list of FCs compiled around the end of January 2016. The opinions rega
 
 | Flight Controller | Processor | 2KHz mode | Ports   | Opinion                                     |
 | ----------------- | --------- |---------- | --------| --------------------------------------------|
-| **[Naze32](http://www.getfpv.com/acro-naze32-flight-controller-rev6-w-pin-headers.html)** | F1 | Y (disable Accelerometer, Barometer, Magnetometer) | CP21xx on UART1 |Available in Full and Acro flavors. Full version has the Barometer, Magnetometer and Dataflash for Black Box logs. Rev6a has SBUS Inverter while Rev5 does not. Has been a great FC, maybe getting close to end-of-life with all the new F3 boards emerging. Rev6 has MPU6500 which is not ideal. Many users are experiencing issues with the rev6 - NOT RECOMMENDED.|
+| Naze32 rev. 5 | F1 | Y (disable Accelerometer, Barometer, Magnetometer) |UARTs 1 and 2. UART 1 shared with USB  |Comes in acro and full. Full version has a barometer, magnetometer and dataflash for Blackbox. Uses relatively inconvenient pads for the receiver. A tried and tested board but now superseded by the rev. 6.|
+| **[Naze32 rev. 6](http://www.getfpv.com/acro-naze32-flight-controller-rev6-w-pin-headers.html)** | F1 | Y (disable Accelerometer, Barometer, Magnetometer)|UARTs 1 and 2. UART 1 shared with USB | Now even the acro version has a barometer and datafash. Uses through-hole instead of pads. USB connector moved to the right. Also has an SBus inverter. 6a fixes the issue with ESC calibration and 6b fixes the Spektrum sat issue. The F1 processor is starting to reach its limits and an F3 board is advised. Several users are reporting erratic behaviour and strange issues with this board that could be due to the use of the MPU6500 gyro that has a worse noise spec than the 6050.|
 | **[SPRacing F3](http://seriouslypro.com/spracingf3)**  | F3  | Y |  |Hardware issues resulting in seemingly-high failure rate. Micro-connectors suck. |
 | **[TBS PowerCube](http://www.team-blacksheep.com/products/prod:powercube_colibri)**     |  F3  | Y |  | Super expensive, like all TBS gear. The ESC is listed as able to run SimonK, which means it's Atmel, which means it's probably got mediocre performance.   |
 | **[Dodo](http://www.rcgroups.com/forums/showthread.php?t=2439777)**  | F3 | Y | CP21xx on UART1 |No complaints personally. Now that they fixed the ESC back-feeding issue, that is. So this seems to be a great option at the moment. Use SPRACING hex if version 3.   |
 | **[MotoLab TornadoFC](http://www.rcgroups.com/forums/showthread.php?t=2473157#post32330479)** | F3 | Y | VCP USB, UARTs 1,2,3 | 5v buffers on motor outputs mean no BLHeli passthrough. Uses the STM's Virtual Com Port which requires special procedures. Other than that, awesome FC at a good price. **[Detailed instructions](http://www.rcgroups.com/forums/showthread.php?t=2537379)**|
-| **[MotoLab Cyclone](http://dronehitech.com/motolab-cyclone-flight-controller-announced/)** | F3 | Y |  VCP USB, UARTs 1,2,3 |Built in 5V switching regulator. Bi-directional ESC pins for HLBeli pass-through. Looks like it ticks all the boxes. |
-| **[XRacer F3](http://www.fpvmodel.com/x-racer-f303-flight-controller_g1106.html?u=8D1D164861E0E506)** | F3 | Y |  |No VBat pin? Don't know much about this one. |
+| **[MotoLab Cyclone](http://dronehitech.com/motolab-cyclone-flight-controller-announced/)** | F3 | Y |  VCP USB, UARTs 1,2,3 |Built in 5V switching regulator. Bi-directional ESC pins for HLBeli pass-through. Uses a VCP which means an external USB to Serial device must be connected to use BLHeli passthrough until passthrough over VCP is added. Does not have on board dataflash |
+| **[XRacer F3](http://www.fpvmodel.com/x-racer-f303-flight-controller_g1106.html?u=8D1D164861E0E506)** | F3 | Y |  |One of the cheapest F3 boards available. Nice design and board layout though it lacks pins for VBat and RSSI. VBat can be added by soldering a voltage divider directly to the processor. Has more dataflash than any other board. See **[here](http://intofpv.com/t-x-racer-f3-fc-adding-vbat-hack)**
 | **[LUX](http://www.rcgroups.com/forums/showthread.php?t=2554204)** | F3 | Y |  VCP USB, UARTs 1,2,3 |Looks good. Doesn't have a dataflash chip. Uses the STM's Virtual Com Port which requires special procedures. Uses MPU6500 which is not ideal.|
 | **[KISS](http://www.rcgroups.com/forums/showthread.php?t=2555204)** | F3 | Y |  VCP USB| Doesn't run Betaflight (yet) LOL. |
 | **[SPRacingF3Mini board](http://www.rcgroups.com/forums/showthread.php?t=2592215)** | F3 | Y | VCP USB| Now supported in 2.4.0-RC6. With SD Card Socket, Race Transponder and 5V BEC. Looks good for Racing copters. |
