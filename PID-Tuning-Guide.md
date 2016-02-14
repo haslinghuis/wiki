@@ -34,7 +34,7 @@ Note: Because yaw inherently has less positive control (a.k.a. authority), than 
 
 Remember not to get too carried away trying to get the BlackBox traces to be as clean as possible. If the copter flies really well and suits your needs then just get out there and fly !
 
-** Other Notes:** 
+## Other Notes
 
 When you look for high P term oscillation in a BB log, they do not generally look like wide sweeping arcs or jagged peaks and valleys. High P term oscillations manifest first at the very top of the throttle range and look like tight sine waves.  When these show up on BB logs, they may not always be detectable by sight or sound. By the time you can see/hear them, they are super-apparent on a BB log.  That's why the recommendation for initial tuning by sight and sound is to reach the point of visible/auditory oscillation and then drop back to 70% of that value.
 
@@ -46,6 +46,5 @@ The undesirable flight characteristic called bounce-back oscillation occurs when
 
 3. or even P that is too low (a low P gain can cause slow, sloppy oscillations because it's not providing enough  authority to get to the intended end-state).
 
-**More info:**
 I term is usually not active enough to cause trouble, and can usually get it roughly tuned in pretty quickly.
 But the D term can vary significantly depending on many different factors, and its amplification effect means that if D term is bad, it can be very bad, and in odd and unpredictable ways, depending on how noise is presenting itself and how the P term is acting.
