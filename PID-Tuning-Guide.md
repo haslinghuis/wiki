@@ -1,8 +1,14 @@
-##How should I tune my Copter ?
+# How should I tune my Copter ?
 
-Introduction: In general, to achieve a good tune, we want to use AS MUCH P as possible without introducing oscillations.  In a sense P is proportional to the amount of control you have over an axis. Less P is less positive control. More P is more positive control.  The problem is that if P gets too high, it will start to overshoot the intended end state.  This causes it to constantly overcorrect -- hence, oscillations.  High quality ESCs and faster PID loop times help with this as well by allowing the flight controller to make corrections more quickly and effectively.
+## Introduction
 
-I and D are only there to pick the crumbs that P leaves behind.
+In general, to achieve a good tune, we want to use AS MUCH P as possible without introducing oscillations.  In a sense P is proportional to the amount of control you have over an axis. Less P is less positive control. More P is more positive control.  The problem is that if P gets too high, it will start to overshoot the intended end state.  This causes it to constantly overcorrect -- hence, oscillations.  High quality ESCs and faster PID loop times help with this as well by allowing the flight controller to make corrections more quickly and effectively.
+
+I and D are only there to pick the crumbs that P leaves behind:  
+
+I looks back back at accumulated error (drift) that P was unable to correct for at the time, and then adjusts for it.
+
+D looks forward to see if the axis is reaching its intended value to quickly. 
 
 1. It's essential that these step be done in Acro mode even if you are usually a Level/Horizon flyer.  Angle/Horizon modes have their own values that interfere with tuning.  Example PID values shown below correspond to the Rewrite PID controller (PID controller #1)
 
