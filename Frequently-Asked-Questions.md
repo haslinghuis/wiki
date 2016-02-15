@@ -337,6 +337,8 @@ Take a look at this overview as it describes how this should be done: http://www
 
 Some additional information can be found from 6:20 onwards in this video: http://www.youtube.com/watch?v=htkw7d97bOo
 
+NOTE: Failsafe configuration has changed in Betaflight 2.4.0 onwards and CF configurator 1.2.0. The relevant doncumentation can be found [here](https://github.com/cleanflight/cleanflight/blob/master/docs/Failsafe.md). 
+
 ##What is the best practice for configuring the Throttle end points ?
 This can be a difficult and confusing concept to grasp at first. The best way to describe the correct method is by way of the following tutorial video.
 
