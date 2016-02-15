@@ -114,7 +114,8 @@ Default value of 50 means that airmode will try to compensate at it's best till 
 
 '''set gyro_sync_denom''' = 1
 
-To get 2khz support set it to 4. denom is always a multiplier to 125us=8khz. 4 means 125*4=500us(2khz). Dont forget to check CPU usage when playing with this value.
+To get 2khz support set it to 4. denom is always a multiplier to 125us=8khz. 4 means 125*4=500us(2khz). Dont forget to check CPU usage when playing with this value. 
+It is highly recommended to use the 'looptime' box in the config GUI. This takes care of all the required settings.
 
 '''set vbat_pid_compensation''' = OFF<br />
 <i>[ON,OFF]</i><br />
