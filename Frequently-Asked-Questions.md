@@ -185,7 +185,7 @@ Note that near or very near center sticks, AcroPlus has markedly less effect on 
 
 Hence Acro Plus can be considered a form of exponential rate multiplier, outside of the normal PID mechanisms, that should, in most quads, increase roll rates at high stick angles quite significantly. The iTerm coding changes prevent iTerm windup problems that would otherwise inevitably cause loss of control or serious bounce-back at the end of such extremely high rate rolls or flips.
 
-##What is 2kHz mode?
+##What is 2kHz mode ?
 See the "Gyro based loop implementation" description on the Wiki Home page.
 2kHz mode is simply a faster Gyro based loop that runs at an update rate of 2000 times a second or every 500usec.
 
@@ -202,7 +202,7 @@ This is not gospel, just a way to explain the difference.
 
 Have a look at this video form more information: http://www.youtube.com/watch?v=j2YtpeHGafs
 
-##How do I activate 2kHz mode?
+##How do I activate 2kHz mode ?
 For betaflight version prior to 2.4.0 can use the CLI and make the following commands, dependent on the Flight Controller type:
  
 **For F3 boards**
