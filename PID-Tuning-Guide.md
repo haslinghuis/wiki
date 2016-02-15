@@ -32,7 +32,7 @@ Note: Because yaw inherently has less positive control (a.k.a. authority), than 
 
 9. Finally, refine the relationship between P and I by looking for a tendency to resist or "fall into" strong turns. Very low I values will result in an axis that drifts over time.  Low I values on an axis will allow that axis to change attitude more freely but may still hold attitude.  Higher I values on an axis will hold attitude very well, but may tend to resist movement and can add a  feeling of inertia.  Very high I values can create an overly "robotic" feeling and even oscillations.  Can also refine P by analyzing Blackbox Logs. This may get you closer to a perfect tune.
 
-10. Once tuning is complete in Acro mode then move onto adjusted the Level/Horizon parameters to suit your flying style if you plan to fly in angle or horizon mode.
+10. Once tuning is complete in Acro mode then move onto adjusted the Level/Horizon parameters to suit your flying style if you plan to fly in angle or horizon mode. (If you must.)
 
 Remember not to get too carried away trying to get the BlackBox traces to be as clean as possible. If the copter flies really well and suits your needs then just get out there and fly !
 
