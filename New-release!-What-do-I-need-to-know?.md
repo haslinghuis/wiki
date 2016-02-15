@@ -1,5 +1,12 @@
 This page is meant to provide a more in depth explanation of the changelog for each release so that users can understand the consequences of the changes made. Please remember to read the changelog for each release first.
 
+# 2.4.0-RC9
+- More improved battery voltage filtering 
+- Fixed cli AUX / servo dump - Fixed 
+- Fixed gyroADC overflow what could cause infinite flips and rolls 
+- Fixed accelerometer overflow 
+- Fixed some alienwii Led issues
+
 # 2.4.0-RC8
 - Fixed Battery voltage
 - Note: AUX settings not shown in CLI with 'dump'. Type 'aux' to see these.
