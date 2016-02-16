@@ -6,7 +6,7 @@ In general, to achieve a good tune, we want to use AS MUCH P as possible without
 
 I and D are only there to pick up the leftover bits of error that P can't handle:  
 
-I looks back back at accumulated error (drift) that P was unable to correct for at the time, and then adjusts for it. That's why adding I might correct when the Pitch of your copter changes unintentionally after throttle changes.  (BUT you need to try adding P FIRST. If your P is too low, then I has too much of a job to do because P has never quite done enough...)
+I looks back at accumulated error (drift) that P was unable to correct for at the time, and then adjusts for it. That's why adding I might correct when the Pitch of your copter changes unintentionally after throttle changes.  (BUT you need to try adding P FIRST. If your P is too low, then I has too much of a job to do because P has never quite done enough...)
 
 D looks forward to see if the axis is reaching its intended value too quickly. If you give the copter a command to stop a roll very quickly, a high P value (just like we want) might tend to overshoot just a little bit and then "bounce back". IF you see a lot of this, you might want to increase D just a bit. Adding D term can also help with the small oscillations that come right after a quick change in direction or low throttle drop (prop-wash). Very important to not use too much D. USE ONLY AS MUCH AS NECESSARY BECAUSE TOO MUCH D CAUSES NOISE. NOISE THAT REACHES THE MOTORS MAY CAUSE THEM TO HEAT UP AND POSSIBLY BURN.
 
