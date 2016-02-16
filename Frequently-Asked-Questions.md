@@ -31,7 +31,7 @@ Start with the **[MultiWii Wiki](http://www.multiwii.com/wiki/?title=Main_Page)*
 
 There is a step-by-step guide on how to flash the flight controller with Betaflight here: http://quadquestions.com/blog/2015/12/25/betaflight_flashing/
 
-##Why wont my FC board arm after upgrading the firmware?
+##Why wont my FC board arm after upgrading the firmware ?
 Check the following:
 * Perform a full chip erase while flashing the firmware.
 * You can't arm the FC while in the CLI. The status light flashes rapidly.
@@ -361,7 +361,7 @@ PLEASE NOTE: This does not work on the following boards:
 | Moto Tornado | Since the 5v buffers on the motor outputs are uni-directional and do not support bi-directional communication. These buffers make the motor outputs more stable, but prevent passthrough. There is no software fix for this. The only fix would be a re-design of the board to remove the buffers or change them to bi-directional buffers. |
 | Naze32 **Rev6** | The Naze back-fed the ESCs from the USB port. So the ESCs would power up, see the throttle signal, initialize, and then they wouldn't go into programming mode after that. The Rev6a has fixed this issue since it was released in November 2015 |
 
-##Why does my copter flip when trying to takeoff?
+##Why does my copter flip when trying to takeoff ?
 
 Here are some likely causes:
 
@@ -371,11 +371,11 @@ Here are some likely causes:
 * Props on the wrong motor.
 * Flight control board mounted facing the wrong direction (e.g. yaw 90 degrees left but the board_align has not been configured to reflect this).
 
-##Will the PIDs change significantly when switching from two-blades to tri-blades?
+##Will the PIDs change significantly when switching from two-blades to tri-blades ?
 Some have found they need a small reduction in P gains when going from two-blade to tris.
 The copter was still flyable with no changes, but some have experiences increased prop-wash oscillation.
  
-##Why do I have issues flashing my new F3 Flight Controller?
+##Why do I have issues flashing my new F3 Flight Controller ?
 Some of the new F3 boards come with a Virtual COM Port (VCP) that is used to communicate with a PC or MAC over the USB interface.
 Take a look at this video that talks about flashing the Lumenier LUX board that has a VCP port:
 
@@ -383,10 +383,10 @@ http://www.youtube.com/watch?v=b8fMsazyxDw
 
 Within this FAQ, check the answer to "What Flight Controllers are recommended to get the best out of BetaFlight" for more details on which FC has VCP ports.
 
-##Will Betaflight code be merged back into Cleanflight?
+##Will Betaflight code be merged back into Cleanflight ?
 Yes, it is the intention that this will happen gradually over time. Sometimes features from CleanFlight also get merged into BetaFlight too.
 
-##When I update to the latest version of BetaFlight do I need to recalibrate my ESCs?
+##When I update to the latest version of BetaFlight do I need to recalibrate my ESCs ?
 ESCs shouldn't need recalibration unless you changed the min/max throttle values in BetaFlight.
 
 For more information about ESC Calibration see this video: http://www.youtube.com/watch?v=o3Mg-9M0l24
