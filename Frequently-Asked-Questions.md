@@ -1,7 +1,7 @@
 ##Contents
 1. [I'm a Neewbe, how do I start ?](#I'm-a-neewbe,-how-do-i-start-)
 1. [How do I install Betaflight ?](#how-do-i-install-betaflight-)
-1. [Why wont my FC board arm after upgrading the firmware ?](#Why-wont-my-fc-board-arm-after-upgrading-the-firmware-)
+1. [Why wont my FC board arm after upgrading the firmware ?](#why-wont-my-fc-board-arm-after-upgrading-the-firmware-)
 1. [What is Air Mode ?](#what-is-air-mode-)
 1. [How do I enable Air Mode ?](#how-do-i-enable-air-mode-)
 1. [What is Acro Plus ?](#what-is-acro-plus-)
@@ -9,8 +9,8 @@
 1. [How do I activate 2khz mode ?](#how-do-i-activate-2khz-mode-)
 1. [What Flight Controllers are recommended to get the best out of BetaFlight ?](#what-flight-controllers-are-recommended-to-get-the-best-out-of-betaflight-)
 1. [What are the differences between LuxFloat and Rewrite PID Controllers ?](#what-are-the-differences-between-luxfloat-and-rewrite-pid-controllers-)
-1. [Is there a good resource for learning how to tune using Black Box? I'm still not sure I know what I'm looking for in the Black Box logs ?](#is-there-a-good-resource-for-learning-how-to-tune-using-black-box-)
-1. [The quadcopter behaves erratic (jitters etc), after a crash, as if P went up significant. How to fix ?](#the-quadcopter-behaves-erratic-)
+1. [Is there a good resource for learning how to tune using Black Box ?](#is-there-a-good-resource-for-learning-how-to-tune-using-black-box-)
+1. [Why does my copter behave erratic after a crash ?](#why-does-my-copter-behave-erratic-after-a-crash-)
 1. [How does yaw_jump_prevention_limit work ?](#how-does-yaw_jump_prevention_limit-work-)
 1. [How should I configure the FailSafe system ?](#how-should-i-configure-the-failsafe-system-)
 1. [What is the best practice for configuring the Throttle end points ?](#what-is-the-best-practice-for-configuring-the-throttle-end-points-)
@@ -19,7 +19,7 @@
 1. [Will the PIDs change significantly when switching from two-blades to tri-blades ?](#will-the-pids-change-significantly-when-switching-from-two-blades-to-tri-blades-)
 1. [Why do I have issues flashing my new F3 Flight Controller ?](#why-do-i-have-issues-flashing-my-new-f3-flight-controller-)
 1. [Will Betaflight code be merged back into Cleanflight ?](#will-betaflight-code-be-merged-back-into-cleanflight-)
-1. [When I update to the latest version of BetaFlight do I need to recalibrate my ESCs ?](#when-i-update-to-the-latest-version-of-BetaFlight-do-I-need-to-recalibrate-my-escs-)
+1. [When I update to the latest version of BetaFlight do I need to recalibrate my ESCs ?](#when-i-update-to-the-latest-version-of-betaFlight-do-I-need-to-recalibrate-my-escs-)
 
 ***
 ##I'm a Neewbe, how do I start ?
@@ -276,7 +276,7 @@ In rewrite, stick sensitivity is managed differently; sensitivity depends on rat
 
 
 
-## Is there a good resource for learning how to tune using Black Box? I'm still not sure I know what I'm looking for in the Black Box logs.
+## Is there a good resource for learning how to tune using Black Box ?
 
 a. "I would check out Joshua Bardwells youtube channel. I haven't watched all these videos... I just picked them from his channel.
 
@@ -306,8 +306,9 @@ Good tuning just makes that feel tighter and helps removing unnecessary oscillat
 d. Battery Factor: "A while ago someone took over my pids to his quad with same setup and he said it didn't feel good. So I flew his setup and it indeed felt like PIDs were twice as low as they should be! It appeared he was using almost 2 years old (Turnigy) Nanotechs completely lost their power. Even I feel huge difference between different batteries I have." - Boris comment
 
 
+##Why does my copter behave erratic after a crash ?
 
-##The quadcopter behaves erratic (jitters etc), after a crash,  as if P went up significant. How to fix?
+Some people have experienced erratic behavior (jitters etc) after a crash,  as if P went up significantly.
 
 "When you crash your gyro can get upset. It has always been like that even from Baseflight days.
 Some gyros are more sensitive than others.
