@@ -19,7 +19,7 @@
 1. [Will the PIDs change significantly when switching from two-blades to tri-blades ?](#will-the-pids-change-significantly-when-switching-from-two-blades-to-tri-blades-)
 1. [Why do I have issues flashing my new F3 Flight Controller ?](#why-do-i-have-issues-flashing-my-new-f3-flight-controller-)
 1. [Will Betaflight code be merged back into Cleanflight ?](#will-betaflight-code-be-merged-back-into-cleanflight-)
-1. [When I update to the latest version of BetaFlight do I need to recalibrate my ESCs ?](#when-i-update-to-the-latest-version-of-betaFlight-do-i-need-to-recalibrate-my-escs-)
+1. [When I update to the latest version of BetaFlight do I need to recalibrate my ESCs ?](#when-i-update-to-the-latest-version-of-betaflight-do-i-need-to-recalibrate-my-escs-)
 
 ***
 ##I'm a Neewbe, how do I start ?
