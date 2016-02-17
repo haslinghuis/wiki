@@ -117,5 +117,5 @@ http://www.rcgroups.com/forums/showpost.php?p=34028934&postcount=18514
 Effect of rc rate with static rate of 0. Full stick input
 http://www.rcgroups.com/forums/showpost.php?p=34028937&postcount=18515
 
-and to make it complete. Only effect of yaw rate...
+and to make it complete. Only effect of yaw rate
 http://www.rcgroups.com/forums/showpost.php?p=34028986&postcount=18516
