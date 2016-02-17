@@ -11,6 +11,7 @@ Grab a snack and make yourself comfortable ! ![Popcorn](http://static.rcgroups.c
 1. [Gyro based loop implementation](#gyro-based-loop-implementation-)
 1. [The delta_from_gyro setting and all about the PID Controller D values](#the-delta_from_gyro-command-and-all-about-the-PID-controller-D-values-)
 1. [Filtering, Aliasing and Gyro Sync explained](#filtering,-aliasing-and-gyro-sync-explained-)
+1. Rates / rc rate translations into deg/sec Tables
 
 ##How Opensource Software Development Works
 This video covers how multiple versions of the same software in the hobby exist (CleanFlight/BetaFlight/RaceFlight etc) and how developers exchange ideas and promote code between the projects.
@@ -106,3 +107,15 @@ Analyzing FFT graphs for multirotor tuning: http://www.youtube.com/watch?v=nxHK-
 Aliasing and Gyro Sync Explained: http://www.youtube.com/watch?v=-lmoKal_e4s
 
 New Biquad filter in BetaFlight V2.3.x: http://www.youtube.com/watch?v=Q2tSWU1MsVk
+
+##Rates / rc rate translations into deg/sec Tables
+Boris posted Tables in:
+
+Effect of rate combined with static rc rate of 100. (rc rate doesn't affect yaw). Full Stick input
+http://www.rcgroups.com/forums/showpost.php?p=34028934&postcount=18514
+
+Effect of rc rate with static rate of 0. Full stick input
+http://www.rcgroups.com/forums/showpost.php?p=34028937&postcount=18515
+
+and to make it complete. Only effect of yaw rate...
+http://www.rcgroups.com/forums/showpost.php?p=34028986&postcount=18516
