@@ -149,3 +149,7 @@ averaging samples can now be configured for dterm to remove spiking.
 I brought back the normal rates in it. Reworked it with fixed point math, but now I also added acro_plus_offset. This is the breakpoint for acro plus. That means normal rates up to offset percentage of the stick output and after that the desired acro_plus_factor kicks in.
 
 Works really well!
+
+ '''set max_aux_channels''' = 4 ?? <br />
+<i>[0,...,16]</i><br />
+Need to check what the default and maximum number of aux channels are.
