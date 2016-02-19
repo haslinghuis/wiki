@@ -2,6 +2,10 @@ This page is meant to provide a more in depth explanation of the changelog for e
 
 # 2.4.1-RC1
 - Acro Plus Rework
+- Main focus was to gain CPU performance on F1 targets and improve acro plus. It really works well now!
+You can configure your rates like you do normally and decide from where acro_plus will slowly get a nice transition. It gives a really smooth acrobatics even on default values I configured.
+
+Also amount of averaging samples can now be configured for dterm to remove spiking. 
 - Note: No hex or bin files yet just source. 
 
 # 2.4.0-RC9
