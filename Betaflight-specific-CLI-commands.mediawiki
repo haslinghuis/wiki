@@ -150,6 +150,6 @@ I brought back the normal rates in it. Reworked it with fixed point math, but no
 
 Works really well!
 
- '''set max_aux_channels''' = 4 ?? <br />
+'''set max_aux_channels''' = 4 ?? <br />
 <i>[0,...,16]</i><br />
 Need to check what the default and maximum number of aux channels are.
