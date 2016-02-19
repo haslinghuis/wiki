@@ -21,7 +21,7 @@ This page is meant to provide a more in depth explanation of the changelog for e
 - Fixed gyroADC overflow what could cause infinite flips and rolls 
 - Fixed accelerometer overflow 
 - Fixed some alienwii Led issues
-- Note: Changing "rate profile selection" on AUX switches is reported to NOT work.
+- Note: Changing "rate profile selection" on AUX switches is removed.
 
 # 2.4.0-RC8
 - Fixed Battery voltage
