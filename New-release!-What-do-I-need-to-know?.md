@@ -1,12 +1,19 @@
 This page is meant to provide a more in depth explanation of the changelog for each release so that users can understand the consequences of the changes made. Please remember to read the changelog for each release first.
 
-# 2.4.1-RC1
-- Acro Plus Rework
-- Main focus was to gain CPU performance on F1 targets and improve acro plus. It really works well now!
-You can configure your rates like you do normally and decide from where acro_plus will slowly get a nice transition. It gives a really smooth acrobatics even on default values I configured.
+# 2.4.1-RC2
+- Fixed typo in cli for acro_plus_offset
 
-Also amount of averaging samples can now be configured for dterm to remove spiking. 
-- Note: No hex or bin files yet just source. 
+# 2.4.1-RC1
+- Release 2.4 patch 1 pre-release:
+
+- Replaced many of float math by fixed point math. This will especially improve performance on F1 boards
+- Improved Acro Plus
+- Added acro_plus_offset cli parameter. Tells the percentage stick input where acro_plus will start working and will have a smooth transition from there on
+- Added back PID3 (for experimental purposes watch out with defaulf pids on this one)
+- Added more options for Dterm averaging (dterm_average_count range: 2-12)
+- Improved filtering for accelerometer
+- Configurable max AUX channels. (cli option: max_aux_channels)
+- Some cleanups
 
 # 2.4.0-RC9
 - More improved battery voltage filtering 
