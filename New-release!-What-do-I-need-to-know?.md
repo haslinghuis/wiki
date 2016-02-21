@@ -9,6 +9,7 @@ This page is meant to provide a more in depth explanation of the changelog for e
 # 2.4.1-RC1
 - Release 2.4 patch 1 pre-release:
 
+
 - Replaced many of float math by fixed point math. This will especially improve performance on F1 boards
 - Improved Acro Plus
 - Added acro_plus_offset cli parameter. Tells the percentage stick input where acro_plus will start working and will have a smooth transition from there on
@@ -17,6 +18,13 @@ This page is meant to provide a more in depth explanation of the changelog for e
 - Improved filtering for accelerometer
 - Configurable max AUX channels. (cli option: max_aux_channels)
 - Some cleanups
+- Fixed PPM + oneshot125 in SPF3MINI
+- Better anti spool up protection without AIRMODE and smoother motors on Idle
+- Added rateprofiles again
+- Removed GTUNE on all targets due to a lot of inconsistancy in results. This also provides more flash space on 128k targets
+- Fixed incorrect cycletime reporting. It turns out that the cycletime reported in configurator was not the real one since 2.2
+- Much more improved jitter. Due to wrong cycleTime reporting the jitter numbers were underrated and there was much more jitter. Due to new jitter buffering the cycletimes are rock solid with healthy CPU state. This may also provide better tuning results on fast refresh rates.
+
 
 # 2.4.0-RC9
 - More improved battery voltage filtering 
