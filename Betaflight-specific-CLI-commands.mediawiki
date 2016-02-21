@@ -46,11 +46,11 @@ Sets the accelerometer 0 means auto detect, 1 means NONE, 2 for ADXL345, 3 for M
 
 beeper_off_flags = sum of each desired beeper turned off
  
- BEEPER_GYRO_CALIBRATED, 1
+BEEPER_GYRO_CALIBRATED, 1
 
- BEEPER_RX_LOST_LANDING, 2 // Beeps SOS when armed and TX is turned off or signal lost (autolanding/autodisarm)
+BEEPER_RX_LOST_LANDING, 2 // Beeps SOS when armed and TX is turned off or signal lost (autolanding/autodisarm)
 
- BEEPER_RX_LOST, 4 // Beeps when TX is turned off or signal lost (repeat until TX is okay)
+BEEPER_RX_LOST, 4 // Beeps when TX is turned off or signal lost (repeat until TX is okay)
 
  +BEEPER_DISARMING, 8 // Beep when disarming the board
 
