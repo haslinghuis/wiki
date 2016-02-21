@@ -230,7 +230,7 @@ Note that there is a restriction on the number of available AUX channels in 2kHz
 
 4 AUX channels are available
 
-For Betaflight 2.4.1 onwards the number of Aux channels is selectable with the set 
+For Betaflight 2.4.1 onwards the number of Aux channels is selectable with the set max_aux_channels (see the CLI commands section of wiki).
 
 
 
