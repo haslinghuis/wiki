@@ -217,7 +217,7 @@ set baro_hardware = 1
 set mag_hardware = 1
 set gyro_lpf = OFF 
 ```
-From Betaflight 2.4.0 onwards you should NOT use CLI but rather set looptime to 500 in the Configuration tab. CAUTION: Appropriate sensors will automatically be disabled on F1 boards.
+For Betaflight 2.4.0 onwards you should NOT use CLI but rather set looptime to 500 in the Configuration tab. CAUTION: Appropriate sensors will automatically be disabled on F1 boards.
 
 ##Limitations of 2kHz mode
 Note that there is a restriction on the number of available AUX channels in 2kHz mode (actually on any loop frequency greater than 1kHz).
@@ -229,6 +229,8 @@ Note that there is a restriction on the number of available AUX channels in 2kHz
 **For F1 boards**
 
 4 AUX channels are available
+
+For Betaflight 2.4.1 onwards the number of Aux channels is selectable with the set 
 
 
 
