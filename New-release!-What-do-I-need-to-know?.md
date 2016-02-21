@@ -1,5 +1,8 @@
 This page is meant to provide a more in depth explanation of the changelog for each release so that users can understand the consequences of the changes made. Please remember to read the changelog for each release first.
 
+# 2.4.1-RC3
+- Fix oneshot kills RX_PPM
+
 # 2.4.1-RC2
 - Fixed typo in cli for acro_plus_offset
 
