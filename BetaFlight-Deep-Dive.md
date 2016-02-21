@@ -11,7 +11,7 @@ Grab a snack and make yourself comfortable ! ![Popcorn](http://static.rcgroups.c
 1. [Gyro based loop implementation](#gyro-based-loop-implementation-)
 1. [The delta_from_gyro setting and all about the PID Controller D values](#the-delta_from_gyro-command-and-all-about-the-PID-controller-D-values-)
 1. [Filtering, Aliasing and Gyro Sync explained](#filtering,-aliasing-and-gyro-sync-explained-)
-1. Rates / rc rate translations into deg/sec Tables
+1. [Rates / rc rate translations into deg/sec Tables](#Rates / rc rate translations into deg/sec Tables)
 
 ##How Opensource Software Development Works
 This video covers how multiple versions of the same software in the hobby exist (CleanFlight/BetaFlight/RaceFlight etc) and how developers exchange ideas and promote code between the projects.
