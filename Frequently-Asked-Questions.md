@@ -27,7 +27,7 @@
 1. [My PID D gain value is small after tuning in 2khz mode is that normal ?](#my-pid-d-gain-value-is-small-after-tuning-in-2khz-mode-is-that-normal-)
 1. [Why are the accelerometer Black Box traces so bad in 2KHz mode ?](#why-are-the-accelerometer-black-box-traces-so-bad-in-2khz-mode-)
 1. [How do I get vbat_pid_compensation system working ?](#how-do-i-get-vbat_pid_compensation-system-working-)
-1. [With vbat_pid_compensation if I tune my quad on 4S and then fly on 3S would there be issues ?](#with-vbat_pid_compensation-if-i-tune-my-quad-on-4s-and-then-fly-on-3s-would-there-be-issues-)
+1. [With vbat_pid_compensation are there issues moving from 3S to 4S batteries ?](#with-vbat_pid_compensation-are-there-issues-moving-from-3s-to-4s-batteries-)
 
 ***
 ##I'm a Neewbe, how do I start ?
@@ -453,5 +453,5 @@ It also disables itself when voltage completely drops below 2 cells
 
 **Note:** This requires VBAT connection on the FC (LiPo pack voltage).
 
-##With vbat_pid_compensation if I tune my quad on 4S and then fly on 3S would there be issues ?
+##With vbat_pid_compensation are there issues moving from 3S to 4S batteries ?
 There won't be a problem, the cell count is calculated and the PID adjustments are based on the Cell voltage.
