@@ -70,9 +70,9 @@ Disabling the Accelerometer will force the copter into Acro mode (no self-leveli
 
 **Important:** Remember to save the CLI settings and exit the CLI (otherwise the board will not arm!)
 
-* Move from PID controller LuxFloat to MW
-Disable soft serial 
-
+One other method to free-up the CPU is to:
+* Move from PID controller LuxFloat to MWREWRITE as the later requires less CPU power.
+* Disable soft serial.
 
 Do not forget to check the Basics. 
 Use the Receiver Tab and check that each stick moves the correct channel slider and the slider moves in the correct direction. If the wrong channel slider moves, then check the channel MAP (eg AETR instead of TAER).
@@ -398,4 +398,3 @@ Yes, it is the intention that this will happen gradually over time. Sometimes fe
 ESCs shouldn't need recalibration unless you changed the min/max throttle values in BetaFlight.
 
 For more information about ESC Calibration see this video: http://www.youtube.com/watch?v=o3Mg-9M0l24
-
