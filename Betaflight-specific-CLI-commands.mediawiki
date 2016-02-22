@@ -114,6 +114,7 @@ Uses maximum cell voltage as an offset. Tune your quad with a full lipo and your
 
 Also good when you have old and new lipos. The old ones with more voltage droop will automatically get more PID adjustments.
 It also disables itself when voltage completely drops below 2 cells.
+The cell count is calculated and the PID adjustments are based on the Cell voltage. Therefore moving from 3S to 4S is not a problem.
 
 Note: This requires VBAT connection on FC.
 
