@@ -28,6 +28,7 @@ For V2.4.0- also see the set gyro_sync_denom CLI command below.
 '''set acc_hardware''' = 0 (default on) (must be set to 1 for 2K mode on F1 targets)<br />
 <i>[0,...,9] (from 2.4.0 [AUTO,NONE,...])</i><br />
 Sets the accelerometer 0 means auto detect, 1 means NONE, 2 for ADXL345, 3 for MPU6050 integrated accelerometer, 4 for MMA8452, 5 for BMA280, 6 for LSM303DLHC, 7 for MPU6000, 8 for MPU6500
+**NB** - In the configurator, if you disable the accelerometer, the gyro icon goes dark too.  The gyro has not been disabled.  An issue has been filed [here](https://github.com/cleanflight/cleanflight-configurator/issues/313)
 
 '''set baro_hardware''' = 0 (default on), 1 = disabled<br />
 <i>[0,...,3] (from 2.4.0 [AUTO,NONE,...])</i>
