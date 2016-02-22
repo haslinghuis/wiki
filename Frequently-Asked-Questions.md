@@ -459,7 +459,7 @@ Voltage scaling from full lipo to empty is limited to 25%. Should be enough as w
 Also good when you have old and new lipos. The old ones with more voltage droop will automatically get more PID adjustments.
 It also disables itself when voltage completely drops below 2 cells
 
-**Note:** This requires VBAT connection on the FC (LiPo pack voltage).
+**Note:** This requires VBAT connection on the FC (LiPo pack voltage) and VBAT Feature Enabled.
 
 ##With vbat_pid_compensation are there issues moving from 3S to 4S batteries ?
 There won't be a problem, the cell count is calculated and the PID adjustments are based on the Cell voltage.
@@ -470,4 +470,4 @@ TODO
 - FC Settings?
 - Which FCs does this work on and how fast can they run the PID controller/Gyro readings?
 - Which ESCs and on which Motors?
-- Running Looptime at 250usec and OneShot125. How to prevent 'no pulses' at max throttle.
+- Running Looptime at 250usec (4kHz) and OneShot125. How to prevent 'no pulses' at max throttle.
