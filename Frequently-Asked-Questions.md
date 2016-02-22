@@ -44,6 +44,8 @@ Check the following:
 * Perform a full chip erase while flashing the firmware.
 * You can't arm the FC while in the CLI. The status light flashes rapidly.
 * Try calibrating the accelerometer.
+* Check RX basics (see below)
+* Reduce the amount of aux channels to reduce time for task RX
 * If the status light flashes slowly then the CPU could be over-taxed (see below).
 
 There is a new task scheduler present in firmware versions greater than 2.2.0 If upgrading from a version prior to this, then check to see if the FC status light is flashing. If it is then this indicates that there is not enough processing time to complete all the features that have been enabled.
