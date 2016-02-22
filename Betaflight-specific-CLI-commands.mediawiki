@@ -110,7 +110,12 @@ It is highly recommended to use the 'looptime' box in the config GUI. This takes
 '''set vbat_pid_compensation''' = OFF<br />
 <i>[ON,OFF]</i><br />
 
-Uses maximum cell voltage as an offset. Tune your quad with a full lipo and your pids will be scaled up to 25% when voltage gets lower. This requires VBAT connection on FC.
+Uses maximum cell voltage as an offset. Tune your quad with a full lipo and your pids will be scaled up to 25% when voltage gets lower. 
+
+Also good when you have old and new lipos. The old ones with more voltage droop will automatically get more PID adjustments.
+It also disables itself when voltage completely drops below 2 cells.
+
+Note: This requires VBAT connection on FC.
 
 '''set blackbox_device''' = SERIAL<br />
 <i>[SERIAL,SPIFLASH,SDCARD]</i><br />
