@@ -28,7 +28,7 @@
 1. [Why are the accelerometer Black Box traces so bad in 2KHz mode ?](#why-are-the-accelerometer-black-box-traces-so-bad-in-2khz-mode-)
 1. [How do I get vbat_pid_compensation system working ?](#how-do-i-get-vbat_pid_compensation-system-working-)
 1. [With vbat_pid_compensation are there issues moving from 3S to 4S batteries ?](#with-vbat_pid_compensation-are-there-issues-moving-from-3s-to-4s-batteries-)
-1. [How can I run the PID controller faster than 2kHz ?](#How can I run the PID controller faster than 2kHz-)
+1. [How can I run the PID controller faster than 2kHz ?](#How-can-I-run-the-PID-controller-faster-than-2kHz-)
 
 ***
 ##I'm a Neewbe, how do I start ?
