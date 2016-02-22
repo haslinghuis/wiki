@@ -36,6 +36,7 @@ Check the following:
 * Perform a full chip erase while flashing the firmware.
 * You can't arm the FC while in the CLI. The status light flashes rapidly.
 * Try calibrating the accelerometer.
+* If the status light flashes slowly then the CPU could be over-taxed (see below).
 
 There is a new task scheduler present in firmware versions greater than 2.2.0 If upgrading from a version prior to this, then check to see if the FC status light is flashing. If it is then this indicates that there is not enough processing time to complete all the features that have been enabled.
  
@@ -61,13 +62,17 @@ Try disabling **each one in turn** until the copter will arm.
 The list of commands to achieve this are:
 
     feature -DISPLAY
-    set mag_hardware = 1
-    set baro_hardware = 1
-    set acc_hardware = 1
+    set mag_hardware = NONE
+    set baro_hardware = NONE
+    set acc_hardware = NONE
 
 Disabling the Accelerometer will force the copter into Acro mode (no self-leveling in Level and Horizon modes).
 
 **Important:** Remember to save the CLI settings and exit the CLI (otherwise the board will not arm!)
+
+* Move from PID controller LuxFloat to MW
+Disable soft serial 
+
 
 Do not forget to check the Basics. 
 Use the Receiver Tab and check that each stick moves the correct channel slider and the slider moves in the correct direction. If the wrong channel slider moves, then check the channel MAP (eg AETR instead of TAER).
@@ -393,3 +398,4 @@ Yes, it is the intention that this will happen gradually over time. Sometimes fe
 ESCs shouldn't need recalibration unless you changed the min/max throttle values in BetaFlight.
 
 For more information about ESC Calibration see this video: http://www.youtube.com/watch?v=o3Mg-9M0l24
+
