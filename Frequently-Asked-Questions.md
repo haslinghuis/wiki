@@ -28,7 +28,7 @@
 1. [Why are the accelerometer Black Box traces so bad in 2KHz mode ?](#why-are-the-accelerometer-black-box-traces-so-bad-in-2khz-mode-)
 1. [How do I get vbat_pid_compensation system working ?](#how-do-i-get-vbat_pid_compensation-system-working-)
 1. [With vbat_pid_compensation are there issues moving from 3S to 4S batteries ?](#with-vbat_pid_compensation-are-there-issues-moving-from-3s-to-4s-batteries-)
-
+1. [How can I run the PID controller faster than 2kHz ?](#How can I run the PID controller faster than 2kHz-)
 ***
 ##I'm a Neewbe, how do I start ?
 A little history. This all started with OpenSource MultiWii code based on Arduino 8-bit boards. When the 32-bit STM32 processors become available the MutliWii code was ported to the STM32 and was called BaseFlight. Due to politics others forked the BaseFlight code to CleanFlight. More recently Boris decided that he could possibly make improvements on the way the PID control loop works and forked an Experimental version as BetaFlight.
@@ -462,3 +462,11 @@ It also disables itself when voltage completely drops below 2 cells
 
 ##With vbat_pid_compensation are there issues moving from 3S to 4S batteries ?
 There won't be a problem, the cell count is calculated and the PID adjustments are based on the Cell voltage.
+
+##How can I run the PID controller faster than 2kHz ?
+
+TODO
+- FC Settings?
+- Which FCs does this work on and how fast can they run the PID controller/Gyro readings?
+- Which ESCs and on which Motors?
+- Running Looptime at 250usec and OneShot125. How to prevent 'no pulses' at max throttle.
