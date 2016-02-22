@@ -468,6 +468,17 @@ There won't be a problem, the cell count is calculated and the PID adjustments a
 
 TODO
 - FC Settings?
+to change the refresh rate, one way is go into the CLI and change the Gyro denominator setting.
+For 2khz (500usec), set it = 4
+for 2.6khz (375usec), set it = 3
+for 4 khz (250usec), set it = 2 (iffy depending on ESCs)
+for 8 khz (125usec)  set it = 1 (not recommended)
+Or just set the Looptime in the Config GUI. Note that only 5 looptimes are supported, 1000, 500, 375, 250 & 125usec.
+
 - Which FCs does this work on and how fast can they run the PID controller/Gyro readings?
+
 - Which ESCs and on which Motors?
+Not all ESCs can accept a faster refresh rate. This can also depend on the motor kv rating. Since not many have run looptimes this fast it is best to read threads in RCG on the ESCs you are using to see what refresh rates and motor kv may work.
+
 - Running Looptime at 250usec (4kHz) and OneShot125. How to prevent 'no pulses' at max throttle.
+Since OneShot125 has a maximum pulse width or 250usec this will not work if the looptime is also 250usec. The FC will never set a logic low to have a gap between pulses if max_throttle = 2000usec (OneShot pulse width = throttle output/8). One way to get around this is set the max_throttle to a lower value and Cal the ESCs to this value. Max_throttle = 1850usec should work (one person used this and it works). This allows 150usec gap between pulse at max_throttle.
