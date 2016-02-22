@@ -424,10 +424,13 @@ Since flashing 2.4.0 and rebooting from configurator with a battery plugged in s
 Answer: This can happen in any firmware with battery plugged in. It can happen in 1 out of 100 times or every time. Thats not a bug....thats how OneShot works.
 The ESC would interpret a small pulse during power up and down as a signal and spin motors.
 It is really a short pulse what couldn't really harm anything but still can scare the s**t out of you !
+
 It is also highly recommended to always use a Current Limiter when the LiPo is connected and the Config Gui is opened. This can prevent burning ESCs and motors. See: http://www.rcgroups.com/forums/showthread.php?t=2327875
 
 ##If the accelerometer is disabled and FailSafe Activates what happens to the copter ?
 It cannot do self-leveling without the accelerometer sensor activated, so it won't Self-Level it will just tumble to the ground.
+
+It is recommended to setup Fail Safe to disarm (shut off motors) immediately upon entering Stage 2 and allow copter to Drop if the Accelerometer is disabled.
 
 ##Why does my Flight Controller beep lots of times when powering up ?
 Does anyone know what this error code is: 5 shorts beeps/flashes - 2 long beeps/flashes.
