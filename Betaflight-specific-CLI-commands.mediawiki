@@ -90,6 +90,50 @@ Description by Boris here: http://www.rcgroups.com/forums/showpost.php?p=3386092
 Description by ctzsnooze here: http://www.rcgroups.com/forums/showpost.php?p=33859758&postcount=16547
 Also see "The delta_from_gyro setting and all about the PID Controller D values" on the "Betaflight Deep Dive" Wiki page and the "How does yaw_jump_prevention_limit work ?" in the FAQs.
 
+ 
+
+'''status'''<br />
+
+The status command is used to give a brief overview of the health of the Flight Controller.  One of the most useful readings is the CPU percentage.
+
+Here is an example output from the status command that shows the CPU at 100%
+This will more than likely mean the Flight Controller will not arm.
+ 
+  System Uptime: 46 seconds, Voltage: 149 * 0.1V (4S battery - OK), CPU:100%
+  CPU Clock=72MHz, GYRO=MPU6050, ACC=MPU6050.n, BARO=MS5611, MAG=HMC5883
+  Cycle Time: 988, I2C Errors: 0, config size: 1316
+
+Here is another example output from the status command that shows the CPU at 37%
+This gives plenty of CPU head-room for other Flight Controller features to be enabled if desired.
+ System Uptime: 104 seconds, Voltage: 1 * 0.1V (1S battery - NOT PRESENT), CPU:37%
+ CPU Clock=72MHz, GYRO=MPU6500, ACC=MPU6500
+ Cycle Time: 365, I2C Errors: 1, config size: 1316
+
+See the '''tasks''' command for details on how the CPU percentage usage can be lowered.
+
+ 
+'''tasks'''<br />
+Used in conjunction with the '''status''' command to determine the general health of the copter.
+Here is an example output that shows too many features running which will give rise to 100% CPU usage:
+ Task list:
+ 0 - SYSTEM, max = 10 us, avg = 0 us, total = 1 ms
+ 1 - GYRO/PID, max = 1039 us, avg = 722 us, total = 19987 ms
+ 2 - ACCEL, max = 151 us, avg = 120 us, total = 672 ms
+ 3 - SERIAL, max = 141 us, avg = 2 us, total = 17 ms
+ 4 - BEEPER, max = 8 us, avg = 0 us, total = 2 ms
+ 5 - BATTERY, max = 40085 us, avg = 15 us, total = 51 ms
+ 6 - RX, max = 159 us, avg = 128 us, total = 205 ms
+ 7 - COMPASS, max = 160 us, avg = 124 us, total = 24 ms
+ 8 - BARO, max = 137 us, avg = 105 us, total = 183 ms
+ 10 - ALTITUDE, max = 281 us, avg = 163 us, total = 122 ms
+ 11 - DISPLAY, max = 130010 us, avg = 32784 us, total = 4391 ms
+
+If the CPU load is 100% then disable Magnetometer, Barometer, LEDstrip and Display then try again.
+
+Are you running LuxFloat? If so, change to MWREWRITE.
+
+Also reduce the amount of AUX channels to reduce time for task RX.
+ 
 <u><i>'''New 2.4.0  CLI commands'''</i></u>
 
 '''set pid_delta_method''' = MEASUREMENT<br />
