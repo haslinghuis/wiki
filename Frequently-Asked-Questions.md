@@ -20,6 +20,14 @@
 1. [Why do I have issues flashing my new F3 Flight Controller ?](#why-do-i-have-issues-flashing-my-new-f3-flight-controller-)
 1. [Will Betaflight code be merged back into Cleanflight ?](#will-betaflight-code-be-merged-back-into-cleanflight-)
 1. [When I update to the latest version of BetaFlight do I need to recalibrate my ESCs ?](#when-i-update-to-the-latest-version-of-betaflight-do-i-need-to-recalibrate-my-escs-)
+1. [Why do my motors spin-up on the bench when I arm the copter in AirMode ?](#why-do-my-motors-spin-up-on-the-bench-when-i-arm-the-copter-in-airmode-)
+1. [Why do my motors spin briefly when rebooting the Flight Controller ?](#why-do-my-motors-spin-briefly-when-rebooting-the-flight-controller-)
+1. [If the accelerometer is disabled and FailSafe Activates what happens to the copter ?](#if-the-accelerometer-is-disabled-and-failsafe-activates-what-happens-to-the-copter-)
+1. [Why does my Flight Controller beep lots of times when powering up ?](#why-does-my-flight-controller-beep-lots-of-times-when-powering-up-)
+1. [My PID D gain value is small after tuning in 2khz mode is that normal ?](#my-pid-d-gain-value-is-small-after-tuning-in-2khz-mode-is-that-normal-)
+1. [Why are the accelerometer Black Box traces so bad in 2KHz mode ?](#why-are-the-accelerometer-black-box-traces-so-bad-in-2khz-mode-)
+1. [How do I get vbat_pid_compensation system working ?](#how-do-i-get-vbat_pid_compensation-system-working-)
+1. [With vbat_pid_compensation if I tune my quad on 4S and then fly on 3S would there be issues ?](#with-vbat_pid_compensation-if-i-tune-my-quad-on-4s-and-then-fly-on-3s-would-there-be-issues-)
 
 ***
 ##I'm a Neewbe, how do I start ?
@@ -398,3 +406,52 @@ Yes, it is the intention that this will happen gradually over time. Sometimes fe
 ESCs shouldn't need recalibration unless you changed the min/max throttle values in BetaFlight.
 
 For more information about ESC Calibration see this video: http://www.youtube.com/watch?v=o3Mg-9M0l24
+
+##Why do my motors spin-up on the bench when I arm the copter in AirMode ?
+With props off on the bench, I arm the quad and the motors start. After increasing throttle a small amount then back to minimum I notice the motors increase in speed.
+They don't go to max or anything, but they climb noticeable. 
+Now if I was in Angle/Horizon with the accelerometer enabled I could understand that the quad was tying to level itself. But in Acro mode why should the throttle change on its own ?
+I'm guessing this is an Airmode effect. But just wanted to understand a little more about why.
+
+Answer: That is the flight controller trying to correct for changes in aspect, mainly due to fact your quad shakes slightly when the motors spin, the sensors pick it up and then the flight controller tries to correct, it can't because you don't have props on. All perfectly normal.
+
+##Why do my motors spin briefly when rebooting the Flight Controller ?
+Since flashing 2.4.0 and rebooting from configurator with a battery plugged in spins up the motors briefly. I'm fairly sure that didn't happen in 2.1.6, not sure about 2.3.5.
+
+Answer: This can happen in any firmware with battery plugged in. It can happen in 1 out of 100 times or every time. Thats not a bug....thats how OneShot works.
+The ESC would interpret a small pulse during power up and down as a signal and spin motors.
+It is really a short pulse what couldn't really harm anything but still can scare the s**t out of you !
+
+##If the accelerometer is disabled and FailSafe Activates what happens to the copter ?
+It cannot do self-leveling without the accelerometer sensor activated, so it won't Self-Level it will just tumble to the ground.
+
+##Why does my Flight Controller beep lots of times when powering up ?
+Does anyone know what this error code is: 5 shorts beeps/flashes - 2 long beeps/flashes.
+Cant find it in any docs. 
+
+Answer: That code means "ACC missing". This could be the result of a copter crash that has damaged the accelerometer. In most cases a new Flight Controller will be needed since the accelerometer is needed during the power-up stage of the FC (even if you use Acro mode only).
+
+##My PID D gain value is small after tuning in 2khz mode is that normal ?
+The latest 2KHz versions of Betaflight seem to be enhancing the influence of P, to the point where you can fly with good P gains and very little D. It's also good practice to keep the D gains low so that the motors don't get too hot with all the rapid speed changes.
+
+##Why are the accelerometer Black Box traces so bad in 2KHz mode ?
+With my quad on the ground, 1Khz, no props, motor-stop, the accelerometer traces are smooth x=0 y=0 z=1. There is just the tiny amount of noise you would expect from the chip itself.
+On 2Khz, the data in BlackBox is nonsense, eratic X=7G, 3G, 5G all over the place. The quad is stationary on the ground, the motors aren't spinning, is this aliasing ?
+
+Answer: Yes, this is really effects of aliasing what you are seeing there. Acc has nothing to do with 2khz....it is same with any gyro rate. We are just undersampling it on 2khz.
+If you use Level/Horizon modes then just stick with 1khz or get some very fast F3 target....one that will do full sampled acc even on faster rates.
+
+##How do I get vbat_pid_compensation system working ?
+
+    set vbat_pid_compensation = ON
+
+Tune your quad with a full lipo....your PIDs will then be scaled to that reference voltage.
+Voltage scaling from full lipo to empty is limited to 25%. Should be enough as we fly to 3.3v usually.
+
+Also good when you have old and new lipos. The old ones with more voltage droop will automatically get more PID adjustments.
+It also disables itself when voltage completely drops below 2 cells
+
+**Note:** This requires VBAT connection on the FC (LiPo pack voltage).
+
+##With vbat_pid_compensation if I tune my quad on 4S and then fly on 3S would there be issues ?
+There won't be a problem, the cell count is calculated and the PID adjustments are based on the Cell voltage.
