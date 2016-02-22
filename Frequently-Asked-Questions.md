@@ -400,7 +400,7 @@ http://www.youtube.com/watch?v=b8fMsazyxDw
 Within this FAQ, check the answer to "What Flight Controllers are recommended to get the best out of BetaFlight" for more details on which FC has VCP ports.
 
 ##Will Betaflight code be merged back into Cleanflight ?
-Yes, it is the intention that this will happen gradually over time. Sometimes features from CleanFlight also get merged into BetaFlight too.
+Yes, it is the intention that this will happen gradually over time. Sometimes features from CleanFlight also get merged into BetaFlight too. This code merge (in both directions) has already started happening from BetaFlight V2.4.0 and CleanFlight V1.12 onwards.
 
 ##When I update to the latest version of BetaFlight do I need to recalibrate my ESCs ?
 ESCs shouldn't need recalibration unless you changed the min/max throttle values in BetaFlight.
