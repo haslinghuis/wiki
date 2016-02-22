@@ -155,6 +155,7 @@ If you want Airmode on permanently, tick the box and then drag the slider so it 
 4. Lift off & fly around (motors will never stop in flight even at lowest throttle)
 5. Just prior to landing, disable Air Mode (optional)
 6. Land and disarm motors
+
 Posted by BorisB: 
 Guys just a quick note.
 
