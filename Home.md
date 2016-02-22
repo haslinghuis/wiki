@@ -34,9 +34,8 @@ Betaflight is also always being adjusted to support most current Cleanflight too
 - CC3D
 - SpracingF3 / Dodo
 - Sparky
-- Motolab Tornado F3
+- Motolab TornadoFC (F3) / CycloneFC (F3) / MotoF3
 - Colibri Race / The cube
-- Motolab Cyclone F3
 - SpracingF3 Mini
 
 ##Additional Remarks
