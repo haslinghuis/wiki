@@ -25,6 +25,7 @@ This page is meant to provide a more in depth explanation of the changelog for e
 - Fixed incorrect cycletime reporting. It turns out that the cycletime reported in configurator was not the real one since 2.2
 - Much more improved jitter. Due to wrong cycleTime reporting the jitter numbers were underrated and there was much more jitter. Due to new jitter buffering the cycletimes are rock solid with healthy CPU state. This may also provide better tuning results on fast refresh rates.
 
+NOTE! Due to removal of GTUNE loading old settings will result in swapping AIRMODE switch with ACROPLUS....make sure you check that in the modes tab!
 
 # 2.4.0-RC9
 - More improved battery voltage filtering 
