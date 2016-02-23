@@ -459,6 +459,14 @@ Voltage scaling from full lipo to empty is limited to 25%. Should be enough as w
 Also good when you have old and new lipos. The old ones with more voltage droop will automatically get more PID adjustments.
 It also disables itself when voltage completely drops below 2 cells
 
+Forum Question from eL_Verde: I tried your PID voltage compensation. It felt good, but I think for me, and my setup, that 25% plus over gain when the voltage is low is a little high.. Can I mod this value for 20% or 15%?? 
+Boris' Answer:
+voltage gain is adjustable
+max voltage = 1
+min voltage (default 3,3) = min adjustment. It is even more than 25%!
+When you raise min voltage up you will get less compensation
+I also think that vbat compensations helps against prop wash as the motor gives more constant power during power dips. Those are the main reason of prop wash weird oscillations besides air effect 
+
 **Note:** This requires VBAT connection on the FC (LiPo pack voltage) and VBAT Feature Enabled.
 
 ##With vbat_pid_compensation are there issues moving from 3S to 4S batteries ?
