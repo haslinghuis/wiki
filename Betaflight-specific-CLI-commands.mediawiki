@@ -175,9 +175,12 @@ Note: This requires VBAT connection on FC.
 New named values.
 
 '''set pid_controller =''' = MWREWRITE<br />
-<i>[MWREWRITE,LUX]</i><br />
+<i>[MWREWRITE,LUX,MW23]</i><br />
 
-New named values. Note: all other PIDCs have been removed.
+New named values. 
+Note: all other PIDCs have been removed.
+V2.4.0 has only MWREWRITE & LUX
+MW23 is added back in V2.4.1
 
 <u><i>'''New 2.4.1 RC2 CLI commands'''</i></u>
 
