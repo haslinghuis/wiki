@@ -50,3 +50,5 @@ The undesirable flight characteristic called bounce-back oscillation occurs when
 
 I term is usually not active enough to cause trouble, and can usually get it roughly tuned in pretty quickly.
 But the D term can vary significantly depending on many different factors, and its amplification effect means that if D term is bad, it can be very bad, and in odd and unpredictable ways, depending on how noise is presenting itself and how the P term is acting.
+
+For more information see the FAQ page [here](https://github.com/borisbstyle/betaflight/wiki/Frequently-Asked-Questions#is-there-a-good-resource-for-learning-how-to-tune-using-black-box-)
