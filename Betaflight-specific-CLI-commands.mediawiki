@@ -14,6 +14,12 @@ Here a good preview for this option: [https://youtu.be/gXeaINFpvow FPV camera ti
 <i>[OFF,ON]</i><br />
 This option works together with oneshot125. It is basically a fixed oneshot125 refresh rate. It decouples the motor update speed from the main pid loop. You can for example have board running @2khz but still configure the motor update to be 1khz.
  
+'''motor_pwm_rate''' = ??<br />
+<i>[???]</i><br />
+TODO
+Add correct description. Current CLI.MD Doc states that a value above 500 sets the outputs for Brushed motors.
+Is this still correct? 
+
 '''set gyro_lpf''' = 188HZ '' <br />
 <i>[OFF,188HZ,98HZ,42HZ]</i><br />
 This is the internal gyro filtering value. The lower the value the more buffering and delay will be introduced to gyro. Must be set to OFF to enable 2K mode (starting with Version 2.3.0)(starting with Version 2.4 this is automatically set to OFF if 500 looptime is selected in the GUI)''
