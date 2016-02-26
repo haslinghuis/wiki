@@ -477,7 +477,7 @@ I also think that vbat compensations helps against prop wash as the motor gives 
 There won't be a problem, the cell count is calculated and the PID adjustments are based on the Cell voltage.
 
 ##How can I run the PID controller faster than 2kHz ?
-
+Instructions for ßF versions up to 2.4.1
 TODO
 - FC Settings?
 to change the refresh rate, one way is go into the CLI and change the Gyro denominator setting.
@@ -498,3 +498,10 @@ Not all ESCs can accept a faster refresh rate. This can also depend on the motor
 Since OneShot125 has a maximum pulse width or 250usec this will not work if the looptime is also 250usec. The FC will never set a logic low to have a gap between pulses if max_throttle = 2000usec (OneShot pulse width = throttle output/8). One way to get around this is set the max_throttle to a lower value and Cal the ESCs to this value. Max_throttle = 1850usec should work (one person used this and it works). This allows 150/8 = 18.75usec gap between pulse at max_throttle.
 
 So far OneShot42 is not supported in ßF YET but would allow 4kHz refresh rates. Check MultiShot, RaceFlight & BLHeli_S firmware.
+
+For ßF V2.5.0 (build 216)
+Set looptime in config GUI.
+OneShot42 and MultiShot now supported. Read the Change Log on build 216 for details.
+
+TODO
+Add details.
