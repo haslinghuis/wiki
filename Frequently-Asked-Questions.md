@@ -495,7 +495,7 @@ Not all ESCs can accept a faster refresh rate. This can also depend on the motor
 
 - Running Looptime at 250usec (4kHz) and OneShot125. How to prevent 'no pulses' at max throttle.
 
-Since OneShot125 has a maximum pulse width or 250usec this will not work if the looptime is also 250usec. The FC will never set a logic low to have a gap between pulses if max_throttle = 2000usec (OneShot pulse width = throttle output/8). One way to get around this is set the max_throttle to a lower value and Cal the ESCs to this value. Max_throttle = 1850usec should work (one person used this and it works). This allows 150/8 = 18.75usec gap between pulse at max_throttle.
+Since OneShot125 has a maximum pulse width or 250usec this will not work if the looptime is also 250usec. The FC will never set a logic low to have a gap between pulses if max_throttle = 2000usec (OneShot pulse width = throttle output/8). One way to get around this is set the max_throttle to a lower value and Cal the ESCs to this value. Max_throttle = 1850usec should work (one person used this and it works). This allows 150/8 = 18.75usec gap between pulse at max_throttle. This is being called the "Short Cal" of ESCs in the forum threads.
 
 So far OneShot42 is not supported in ßF YET but would allow 4kHz refresh rates. Check MultiShot, RaceFlight & BLHeli_S firmware.
 
