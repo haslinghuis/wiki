@@ -204,3 +204,11 @@ Works really well!
 '''set max_aux_channels''' = 4 ?? <br />
 <i>[0,...,16]</i><br />
 Need to check what the default and maximum number of aux channels are.
+
+<u><i>'''New 2.5.01 RC1 CLI commands'''</i></u>
+Currently no release but available as Build 216.
+
+Note: Set the Looptime in the Config GUI and all setting will be taken care of so not need to go into the CLI and tweak settings.
+
+TODO
+add the new CLI commands/settings.
