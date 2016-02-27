@@ -1,5 +1,13 @@
 This page is meant to provide a more in depth explanation of the changelog for each release so that users can understand the consequences of the changes made. Please remember to read the changelog for each release first.
 
+# 2.5.0-RC2
+
+- Improved performance on all targets. 
+- Automatic fast_pwm calculation on faster looptimes. 
+- Removed emf_avoidance on F1 targets. 
+- Improved Acc readings on faster looptimes. 
+- Fix for Dodo jitter on 4k (baro should be disabled there and is now automatically)
+
 # 2.5.0-RC1
 Pre-Release RC1
 
@@ -24,6 +32,8 @@ Pre-Release RC1
 - Reworked task manager (cli option "tasks"). It shows more information about processes
 
 NOTE: Use configurator for configuring looptimes. F1/F3 targets can easily use looptime 250 (4KHZ), motor update speed will be 2khz. F3 Targets like LUX_RACE, Cyclone and COLIBRI_RACE can use 8khz (125us looptime)
+
+When upgrading from 2.4.1 and pasting dump FAILSAFE mode can be enabled on arm. re-check and reconfigure your Modes tab
 
 # 2.4.1-RC3
 - Fix oneshot kills RX_PPM
