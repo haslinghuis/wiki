@@ -14,11 +14,14 @@ Here a good preview for this option: [https://youtu.be/gXeaINFpvow FPV camera ti
 <i>[OFF,ON]</i><br />
 This option works together with oneshot125. It is basically a fixed oneshot125 refresh rate. It decouples the motor update speed from the main pid loop. You can for example have board running @2khz but still configure the motor update to be 1khz.
  
-'''motor_pwm_rate''' = ??<br />
+'''set motor_pwm_rate''' = ??<br />
 <i>[???]</i><br />
 TODO
 Add correct description. Current CLI.MD Doc states that a value above 500 sets the outputs for Brushed motors.
 Is this still correct? 
+Seems that at least in ßF V2.5.0 this is the frequency in Hz of the ESC output refresh when set enable_fast_pwm = ON.
+This is being used to obtain higher PID loop rates than output rates to ESCs.
+NEEDS Verification!
 
 '''set gyro_lpf''' = 188HZ '' <br />
 <i>[OFF,188HZ,98HZ,42HZ]</i><br />
