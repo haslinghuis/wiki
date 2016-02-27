@@ -29,7 +29,7 @@
 1. [How do I get vbat_pid_compensation system working ?](#how-do-i-get-vbat_pid_compensation-system-working-)
 1. [With vbat_pid_compensation are there issues moving from 3S to 4S batteries ?](#with-vbat_pid_compensation-are-there-issues-moving-from-3s-to-4s-batteries-)
 1. [How can I run the PID controller faster than 2kHz ?](#how-can-i-run-the-pid-controller-faster-than-2khz-)
-
+1. [What is OneShot125, OneShot42 and MultiShot and how do these relate to max_throttle and Looptime ?](What is OneShot125, OneShot42 and MultiShot and how do these relate to max_throttle and Looptime)
 ***
 ##I'm a Neewbe, how do I start ?
 A little history. This all started with OpenSource MultiWii code based on Arduino 8-bit boards. When the 32-bit STM32 processors become available the MutliWii code was ported to the STM32 and was called BaseFlight. Due to politics others forked the BaseFlight code to CleanFlight. More recently Boris decided that he could possibly make improvements on the way the PID control loop works and forked an Experimental version as BetaFlight.
@@ -499,9 +499,12 @@ Since OneShot125 has a maximum pulse width or 250usec this will not work if the 
 
 So far OneShot42 is not supported in ßF YET but would allow 4kHz refresh rates. Check MultiShot, RaceFlight & BLHeli_S firmware.
 
-For ßF V2.5.0 (build 216)
+For ßF V2.5.0 RC1
 Set looptime in config GUI.
-OneShot42 and MultiShot now supported. Read the Change Log on build 216 for details.
+OneShot42 and MultiShot now supported
 
 TODO
 Add details.
+##What is OneShot125, OneShot42 and MultiShot and how do these relate to max_throttle and Looptime ?
+
+TODO
