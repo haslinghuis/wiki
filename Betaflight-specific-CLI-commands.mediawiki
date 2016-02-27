@@ -206,9 +206,24 @@ Works really well!
 Need to check what the default and maximum number of aux channels are.
 
 <u><i>'''New 2.5.01 RC1 CLI commands'''</i></u>
-Currently no release but available as Build 216.
 
-Note: Set the Looptime in the Config GUI and all setting will be taken care of so not need to go into the CLI and tweak settings.
+Note: Use configurator for configuring looptimes.
 
 TODO
 add the new CLI commands/settings.
+
+'''set use_oneshot42''' = OFF<br />
+<i>[OFF,ON]</i><br />
+Enable OneShot42. Feature OneShot125 must be active.
+
+'''set use_multishot ''' = OFF<br />
+<i>[OFF,ON]</i><br />
+Enable MultiShot. Feature OneShot125 must be active.
+
+'''set sbus_inversion ''' = OFF ?? <br />
+<i>[OFF,ON]</i><br />
+SBUS inversion ONLY ON F3 TARGETS.
+
+'''set frsky_vfas_cell_voltage ''' = OFF ?? <br />
+<i>[OFF,ON]</i><br />
+Configurable VFAS cell voltage / battery voltage.
