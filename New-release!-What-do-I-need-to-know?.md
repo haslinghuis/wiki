@@ -1,7 +1,29 @@
 This page is meant to provide a more in depth explanation of the changelog for each release so that users can understand the consequences of the changes made. Please remember to read the changelog for each release first.
 
 # 2.5.0-RC1
-Currently no release yet but available as Build 216.
+Pre-Release RC1
+
+- Scheduler rework for more spread processing and faster looptimes
+- Decreased motor jitter due to inverted order for main task
+- Removed rcCommand throttle to min_check dependancy. Throttle is not anymore constrained to min_check
+- Without airmode less low throttle authority
+- Rateprofile cleanup
+- Restored original Mode order
+- Configurable VFAS cell voltage / battery voltage (set "frsky_vfas_cell_voltage= ON/OFF")
+- Better D averaging method
+- Oneshot42 Implementation (When oneshot feature enabled type "set use_oneshot42 = ON")
+- Multishot Implementation (When oneshot125 feature enabled type "set use_multishot = ON")
+- Fast PWM support for all fast PWM famillies oneshot125, oneshot42, multishot
+- Remove Iterm reset from AIRMODE (Moved to ACROPLUS)
+- Fixed cli dump hickup
+- Improved Auto settings configuration with configurator looptime parameter
+- Enabled Faster looptimes on all targets due to spread processing. SPI targets can now go up to 8khz cycletime with motor update speed @4khz
+- Improved MW23 Pid controller (fixed scaling to cycletime)
+- Added SBUS inversion cli command ("set sbus_inversion = ON" ONLY ON F3 TARGETS)
+- Increased max_aux_channel defaults to 6
+- Reworked task manager (cli option "tasks"). It shows more information about processes
+
+NOTE: Use configurator for configuring looptimes. F1/F3 targets can easily use looptime 250 (4KHZ), motor update speed will be 2khz. F3 Targets like LUX_RACE, Cyclone and COLIBRI_RACE can use 8khz (125us looptime)
 
 # 2.4.1-RC3
 - Fix oneshot kills RX_PPM
