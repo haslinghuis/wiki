@@ -12,16 +12,15 @@ Here a good preview for this option: [https://youtu.be/gXeaINFpvow FPV camera ti
  
 '''set enable_fast_pwm''' = OFF<br />
 <i>[OFF,ON]</i><br />
-This option works together with oneshot125. It is basically a fixed oneshot125 refresh rate. It decouples the motor update speed from the main pid loop. You can for example have board running @2khz but still configure the motor update to be 1khz.
+This option works together with oneshot125. It is basically a fixed oneshot125 refresh rate as set with "motor_pwm_rate". It decouples the motor update speed from the main pid loop. You can for example have board running @8khz but still configure the motor update to be 1khz.
  
-'''set motor_pwm_rate''' = ??<br />
-<i>[???]</i><br />
-TODO
-Add correct description. Current CLI.MD Doc states that a value above 500 sets the outputs for Brushed motors.
-Is this still correct? 
-Seems that at least in ßF V2.5.0 this is the frequency in Hz of the ESC output refresh when set enable_fast_pwm = ON.
+'''set motor_pwm_rate''' = 400<br />
+<i>[0,...,8000]</i><br />
+When enable_fast_pwm = ON this is the refresh rate of the outputs to the ESCs in Hz.
 This is being used to obtain higher PID loop rates than output rates to ESCs.
-NEEDS Verification!
+
+With enable_fast_pwm = ON the "normal" PWM or whatever-shot brushless signal is sent at the configured motor_pwm_rate.
+When enable_fast_pwm = OFF and motor_pwm_rate > 500 then outputs are 0-100% PWM form brushed motors.
 
 '''set gyro_lpf''' = 188HZ '' <br />
 <i>[OFF,188HZ,98HZ,42HZ]</i><br />
@@ -29,8 +28,7 @@ This is the internal gyro filtering value. The lower the value the more bufferin
  (F1 boards must disable accelerometer with set acc_hardware = 1 and in case there are other sensors on board like baro and mag disable those too. set mag_hardware = 1 and set baro_hardware = 1) Disabling any level modes
 Hardware lowpass filter for gyro. Allowed values depend on the driver - For example MPU6050 allows 5,10,20,42,98,188,256Hz, while MPU3050 doesn't allow 5Hz. If you have to set gyro lpf below 42Hz generally means the frame is vibrating too much, and that should be fixed first. Values outside of supported range will usually be ignored by drivers, and will configure lpf to default value of 42Hz.
 
-For V2.4.0- also see the set gyro_sync_denom CLI command below.
-
+For V2.4.0 and above- see the set gyro_sync_denom CLI command below.
 
 <u>(starting with Version 2.4 the following hardware is automatically set to NONE  on F1 boards if 500 looptime is selected in the GUI)</U>
 
