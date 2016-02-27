@@ -510,6 +510,9 @@ Add details.
 
 TODO
 
+With the Standard ESC calibration to min_command = 1000 and max_throttle = 2000.
+OneShot125 will send pulses to the ESCs that are 1/8th the Standard values of 1000 to 2000 or 125 to 250usec.
+
  Originally Posted by HIGHOCTANE32 View Post
 Once you wrap your head around and think about looptimes and ESC pulses(whether the be 1000-2000us pwm, or 125-250uS oneshot or whatever as time(which they are) it all makes a lot more sense. Trying to sync a gyro rate that updates every 125us (8khz) or even 250uS with a ESC signal pulse that can be 250uS long..you can see the problem. Oneshot 42 and multi shot further shorten the ESC signal pulses, like oneshot 125 did, but even shorter, so the signal pulse can be completed faster than the gyro/PID update. Not a scientific explanation but hopefullt that makes sense.
 But I agree if josh doesn't already have a video on it he needs one 
