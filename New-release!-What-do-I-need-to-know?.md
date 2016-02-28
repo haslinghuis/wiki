@@ -1,5 +1,11 @@
 This page is meant to provide a more in depth explanation of the changelog for each release so that users can understand the consequences of the changes made. Please remember to read the changelog for each release first.
 
+# 2.5.0-RC3
+- Fixed issue with fast_pwm rates above 4k 
+- renamed the feature to set forced_motor_pwm = . forced_motor_pwm applies to all ESC protocols....oneshot125, oneshot42 and multishot. 
+- Auto configuration via looptime will choose a highest safest fixed value. 
+- Also chirping bug on idle with fixed pwm rate is resolved
+
 # 2.5.0-RC2
 
 - Improved performance on all targets. 
