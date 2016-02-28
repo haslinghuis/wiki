@@ -230,4 +230,6 @@ SBUS inversion ONLY ON F3 TARGETS.
 Configurable VFAS cell voltage / battery voltage.
 
 <u><i>'''New 2.5.01 RC2 CLI commands'''</i></u>
-'''set forced_motor_pwm = <hz>'''
+'''set forced_motor_pwm = OFF'''<br />
+<i>[OFF,ON]</i><br />
+Replaces set enable_fast_pwm.
