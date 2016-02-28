@@ -228,3 +228,6 @@ SBUS inversion ONLY ON F3 TARGETS.
 '''set frsky_vfas_cell_voltage ''' = OFF ?? <br />
 <i>[OFF,ON]</i><br />
 Configurable VFAS cell voltage / battery voltage.
+
+<u><i>'''New 2.5.01 RC2 CLI commands'''</i></u>
+'''set forced_motor_pwm = <hz>'''
