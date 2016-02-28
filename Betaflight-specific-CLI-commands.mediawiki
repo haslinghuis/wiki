@@ -206,9 +206,9 @@ Works really well!
 <i>[0,...,16]</i><br />
 Need to check what the default and maximum number of aux channels are.
 
-<u><i>'''New 2.5.01 RC1 CLI commands'''</i></u>
+<u><i>'''New 2.5.0 RC1 CLI commands'''</i></u>
 
-Note: Use configurator for configuring looptimes.
+Note: Use configurator to set looptimes and all needed CLI values will be automatically set for proper operation.
 
 TODO
 add the new CLI commands/settings.
@@ -233,4 +233,5 @@ Configurable VFAS cell voltage / battery voltage.
 
 '''set forced_motor_pwm = OFF'''<br />
 <i>[OFF,ON]</i><br />
-Replaces set enable_fast_pwm.
+Replaces set enable_fast_pwm. This is automatically set to proper values when LOOPTIME is set using the Config GUI.
+Also see "set motor_pwm_rate" above.
