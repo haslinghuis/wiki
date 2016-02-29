@@ -104,8 +104,9 @@ To determine if the ACC or other sensor enabled is causing problems use the "sta
 
 ##Why is the Gyro light turned off and the 3D Model not moving ?
 
-This is a side effect of the accelerometer being disabled.  The 3d model depends on the accelerometer to rotate properly.  The gyro light being off is just a glitch in the configurator.  Neither of these are anything to worry about, it is perfectly normal.  When you change your looptime in the configurator to a faster speed than the defaults, the accelerometer will automatically be disabled on some targets to achieve the faster speed.
+This is a side effect of the accelerometer being disabled.  When connected to the Flight Controller via USB, the 3D model in Cleanflight Configurator depends on the accelerometer to rotate properly when the copter is moved around.  The gyro light being off is just a glitch in the configurator.  Neither of these are anything to worry about, it is perfectly normal.
 
+When you change your looptime in the configurator (or via CLI command) to a faster speed than the defaults, Betaflight will automatically disable the accelerometer on some targets to free up processing power and allow the faster Looptime.
 
 ##What is Air Mode ?
 
@@ -524,7 +525,3 @@ OneShot125 will send pulses to the ESCs that are 1/8th the Standard values of 10
 Once you wrap your head around and think about looptimes and ESC pulses(whether the be 1000-2000us pwm, or 125-250uS oneshot or whatever as time(which they are) it all makes a lot more sense. Trying to sync a gyro rate that updates every 125us (8khz) or even 250uS with a ESC signal pulse that can be 250uS long..you can see the problem. Oneshot 42 and multi shot further shorten the ESC signal pulses, like oneshot 125 did, but even shorter, so the signal pulse can be completed faster than the gyro/PID update. Not a scientific explanation but hopefullt that makes sense.
 But I agree if josh doesn't already have a video on it he needs one 
 
-##Why does the quad model not move in Cleanflight anymore? 
-
-If you disable accelerometer, then the pictured quad in cleanflight will no longer move with your quad movements when plugged in via USB.
-If you lower looptime on F1 targets, beta flight may automatically disable acc, to free up processing power. 
