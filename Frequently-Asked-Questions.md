@@ -102,7 +102,6 @@ To determine if the ACC or other sensor enabled is causing problems use the "sta
 
 
 ##Why is the Gyro light turned off and the 3D Model not moving ?
-##Why is the Gyro light turned off and the 3D Model not moving ?
 
 This is a side effect of the accelerometer being disabled.  The 3d model depends on the accelerometer to rotate properly.  The gyro light being off is just a glitch in the configurator.  Neither of these are anything to worry about, it is perfectly normal.  When you change your looptime in the configurator to a faster speed than the defaults, the accelerometer will automatically be disabled on some targets to achieve the faster speed.
 
