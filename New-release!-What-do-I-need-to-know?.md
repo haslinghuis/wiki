@@ -16,16 +16,14 @@ This page is meant to provide a more in depth explanation of the changelog for e
 - Also chirping bug on idle with fixed pwm rate is resolved
 
 # 2.5.0-RC2
-
-- Improved performance on all targets. 
-- Automatic fast_pwm calculation on faster looptimes. 
-- Removed emf_avoidance on F1 targets. 
-- Improved Acc readings on faster looptimes. 
+- Improved performance on all targets
+- Automatic fast_pwm calculation on faster looptimes
+- Removed emf_avoidance on F1 targets
+- Improved Acc readings on faster looptimes
 - Fix for Dodo jitter on 4k (baro should be disabled there and is now automatically)
 
 # 2.5.0-RC1
 Pre-Release RC1
-
 - Scheduler rework for more spread processing and faster looptimes
 - Decreased motor jitter due to inverted order for main task
 - Removed rcCommand throttle to min_check dependancy. Throttle is not anymore constrained to min_check
@@ -168,13 +166,10 @@ I restored the original mixer behaviour:...
 When mixer comes to the conclusion that desired PIDsum cannot be achived with the current motor powers it has to do something else than just mixing. This is what I mean with saturation scenarios."
 
 # 2.3.4
-
 Softer D approach as default baseline. Goal is to eliminate more D noise which should allow for higher D values for noisier quads. Rc_smoothing disabled by default as the new gyro delta approach should smooth out D anyway. See 2.3.3 for important details.
 
 # 2.3.3
-
 A lot of improvements and changes in this release. 3D airmode is much improved. Use set gyro_lpf = off to allow for 2khz mode. On F1 targets remember to also disable mag/baro/acc. **IMPORTANT: Lower your D values (to 0-5) when first enabling 2khz mode and check motor temps frequently! Some users have reported cooked motors as a result of D values that are too high.**
 
 #2.1.6
-
 A stable release. Use this if you are just getting started with betaflight and do not want 2khz mode or 3D airmode.
