@@ -8,7 +8,7 @@ The BetaFlight fork is from the current Cleanflight Master with possible future 
 This project also helps contributing to other open source project like RaceFlight." - says Boris B ([lead developer](http://www.youtube.com/user/bozic1982/featured))
 
 
-###Warning
+##Warning
 By definition this firmware is Beta software and is leading-edge technology. This means that some features are experimental. While exhaustive testing is undertaken by the developers, sometimes unforeseen things can happen.
 
 It's highly recommended that anyone using this firmware should take common sense precautions such as:
