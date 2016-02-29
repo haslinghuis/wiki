@@ -31,7 +31,7 @@
 1. [With vbat_pid_compensation are there issues moving from 3S to 4S batteries ?](#with-vbat_pid_compensation-are-there-issues-moving-from-3s-to-4s-batteries-)
 1. [How can I run the PID controller faster than 2kHz ?](#how-can-i-run-the-pid-controller-faster-than-2khz-)
 1. [What is OneShot125, OneShot42 and MultiShot and how do these relate to max_throttle and Looptime ?](#what-is-oneshot125-oneshot42-and-multishot-and-how-do-these-relate-to-max_throttle-and-looptime-)
-1. [Why does the quad model not move in Cleanflight anymore?](##Why does the quad model not move in Cleanflight anymore?  
+1. [Why does the quad model not move in Cleanflight anymore?](##Why-does-the-quad-model-not-move-in-Cleanflight-anymore?  
 
 ***
 ##I'm a Neewbe, how do I start ?
