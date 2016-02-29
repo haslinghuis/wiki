@@ -2,6 +2,7 @@
 1. [I'm a Neewbe, how do I start ?](#I'm-a-neewbe,-how-do-i-start-)
 1. [How do I install Betaflight ?](#how-do-i-install-betaflight-)
 1. [Why wont my FC board arm after upgrading the firmware ?](#why-wont-my-fc-board-arm-after-upgrading-the-firmware-)
+1. [Why is my Gyro light turned off and my 3D Model not moving ?](#why-is-my-gyro-light-turned-off-and-my-3d-model-not-moving-)
 1. [What is Air Mode ?](#what-is-air-mode-)
 1. [How do I enable Air Mode ?](#how-do-i-enable-air-mode-)
 1. [What is Acro Plus ?](#what-is-acro-plus-)
@@ -98,6 +99,11 @@ To determine if the ACC or other sensor enabled is causing problems use the "sta
       System Uptime: 40 seconds, Voltage: 0 * 0.1V (3S battery - OK), CPU:8%
       CPU Clock=72MHz, GYRO=MPU6050, ACC=MPU6050.n, BARO=BMP280
       Cycle Time: 491, I2C Errors: 0, config size: 1308
+
+
+##Why is my Gyro light turned off and my 3D Model not moving ?
+
+This is a side effect of the accelerometer being disabled.  The 3d model depends on the accelerometer to rotate properly.  The gyro light being off is just a glitch in the configurator.  Neither of these are anything to worry about, it is perfectly normal.  When you change your looptime in the configurator to a faster speed than the defaults, the accelerometer will automatically be disabled on some targets to achieve the faster speed.
 
 
 ##What is Air Mode ?
