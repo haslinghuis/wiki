@@ -15,7 +15,7 @@ Joshua Bardwell's excellent series of 27 lessons that use the free FPV Freerider
 http://www.youtube.com/playlist?list=PLwoDb7WF6c8kjYXam4m3msvRbkORU41GY
 
 #Making coordinated turns in Acro mode
-In autolevel modes (like Level or Horizon), the flight controller attempts to maintain a fixed angle of pitch or roll which is proportional to the stick deflection. In Acro mode this assistance is not present and the pilot needs to compensate manually. This video explains how this is achieved in flight.
+In autolevel modes (Angle or Horizon), the flight controller attempts to maintain a fixed angle of pitch or roll which is proportional to the stick deflection. In Acro mode this assistance is not present and the pilot needs to compensate manually. This video explains how this is achieved in flight.
 
 http://www.youtube.com/watch?v=-qYXVXiHGFA
 
