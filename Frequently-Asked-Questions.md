@@ -31,7 +31,6 @@
 1. [With vbat_pid_compensation are there issues moving from 3S to 4S batteries ?](#with-vbat_pid_compensation-are-there-issues-moving-from-3s-to-4s-batteries-)
 1. [How can I run the PID controller faster than 2kHz ?](#how-can-i-run-the-pid-controller-faster-than-2khz-)
 1. [What is OneShot125, OneShot42 and MultiShot and how do these relate to max_throttle and Looptime ?](#what-is-oneshot125-oneshot42-and-multishot-and-how-do-these-relate-to-max_throttle-and-looptime-)
-1. [Why does the quad model not move in Cleanflight anymore?](##Why-does-the-quad-model-not-move-in-Cleanflight-anymore-)  
 
 ***
 ##I'm a Neewbe, how do I start ?
@@ -101,12 +100,11 @@ To determine if the ACC or other sensor enabled is causing problems use the "sta
       CPU Clock=72MHz, GYRO=MPU6050, ACC=MPU6050.n, BARO=BMP280
       Cycle Time: 491, I2C Errors: 0, config size: 1308
 
-
 ##Why is the Gyro light turned off and the 3D Model not moving ?
 
-This is a side effect of the accelerometer being disabled.  When connected to the Flight Controller via USB, the 3D model in Cleanflight Configurator depends on the accelerometer to rotate properly when the copter is moved around.  The gyro light being off is just a glitch in the configurator.  Neither of these are anything to worry about, it is perfectly normal.
+This is a side effect of the accelerometer being disabled.  When connected to the Flight Controller via USB, the 3D model in Cleanflight Configurator depends on the accelerometer to rotate properly when the multirotor is moved around.  The gyro light being off is just a glitch in the Configurator.  Neither of these are anything to worry about, it is perfectly normal.
 
-When you change your looptime in the configurator (or via CLI command) to a faster speed than the defaults, Betaflight will automatically disable the accelerometer on some targets to free up processing power and allow the faster Looptime.
+When you change your looptime in the Configurator (or via CLI command) to a faster speed than the defaults, Betaflight will automatically disable the accelerometer on some targets to free up processing power and allow the faster looptime.
 
 ##What is Air Mode ?
 
@@ -367,7 +365,7 @@ Take a look at this overview as it describes how this should be done: http://www
 
 Some additional information can be found from 6:20 onwards in this video: http://www.youtube.com/watch?v=htkw7d97bOo
 
-NOTE: Failsafe configuration has changed in Betaflight 2.4.0 onwards and CF configurator 1.2.0. The relevant documentation can be found [here](https://github.com/cleanflight/cleanflight/blob/master/docs/Failsafe.md). 
+NOTE: Failsafe configuration has changed in Betaflight 2.4.0 onwards and CF Configurator 1.2.0. The relevant documentation can be found [here](https://github.com/cleanflight/cleanflight/blob/master/docs/Failsafe.md). 
 
 ##What is the best practice for configuring the Throttle end points ?
 This can be a difficult and confusing concept to grasp at first. The best way to describe the correct method is by way of the following tutorial video.
@@ -430,7 +428,7 @@ I'm guessing this is an Airmode effect. But just wanted to understand a little m
 Answer: That is the flight controller trying to correct for changes in aspect, mainly due to fact your quad shakes slightly when the motors spin, the sensors pick it up and then the flight controller tries to correct, it can't because you don't have props on. All perfectly normal.
 
 ##Why do my motors spin briefly when rebooting the Flight Controller ?
-Since flashing 2.4.0 and rebooting from configurator with a battery plugged in spins up the motors briefly. I'm fairly sure that didn't happen in 2.1.6, not sure about 2.3.5.
+Since flashing 2.4.0 and rebooting from Configurator with a battery plugged in spins up the motors briefly. I'm fairly sure that didn't happen in 2.1.6, not sure about 2.3.5.
 
 Answer: This can happen in any firmware with battery plugged in. It can happen in 1 out of 100 times or every time. Thats not a bug....thats how OneShot works.
 The ESC would interpret a small pulse during power up and down as a signal and spin motors.
@@ -514,6 +512,7 @@ OneShot42 and MultiShot now supported
 
 TODO
 Add details.
+
 ##What is OneShot125 OneShot42 and MultiShot and how do these relate to max_throttle and Looptime ?
 
 TODO
