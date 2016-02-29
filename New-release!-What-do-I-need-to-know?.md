@@ -1,5 +1,13 @@
 This page is meant to provide a more in depth explanation of the changelog for each release so that users can understand the consequences of the changes made. Please remember to read the changelog for each release first.
 
+# 2.5.0-RC4
+- Reworked motor task into a separate task within the scheduler 
+- It will automatically choose the most optimal motor update rate. 
+- Overclocked F1 targets except of CC3D 
+- Fixed timing scaling on overclocked targets 
+- Auto Config updated 
+- Fixed broken servos 
+
 # 2.5.0-RC3
 - Fixed issue with fast_pwm rates above 4k 
 - renamed the feature to set forced_motor_pwm = . forced_motor_pwm applies to all ESC protocols....oneshot125, oneshot42 and multishot. 
