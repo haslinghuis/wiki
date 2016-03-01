@@ -36,9 +36,16 @@
 ##I'm a Neewbe, how do I start ?
 A little history. This all started with OpenSource MultiWii code based on Arduino 8-bit boards. When the 32-bit STM32 processors become available the MutliWii code was ported to the STM32 and was called BaseFlight. Due to politics others forked the BaseFlight code to CleanFlight. More recently Boris decided that he could possibly make improvements on the way the PID control loop works and forked an Experimental version as BetaFlight.
 Therefore documentation on ßF and CF tends to only show what is new or changed and the documentation of previous Firmware must be read.
-Start with the **[MultiWii Wiki](http://www.multiwii.com/wiki/?title=Main_Page)**, then the **[Naze32 Manual](http://www.abusemark.com/downloads/naze32_rev2.pdf)**, the CF docs in Github an finally the ßF Github docs and this Wiki.
+
+Start with the following video that gives a very comprehensive guide on Betaflight and the best practice approach for it's configuration:
+http://www.youtube.com/watch?v=xSzO6HP6yzs
+
+Also take a look at the **[MultiWii Wiki](http://www.multiwii.com/wiki/?title=Main_Page)**, then the **[Naze32 Manual](http://www.abusemark.com/downloads/naze32_rev2.pdf)**, the CF docs in Github an finally the ßF Github docs and this Wiki.
 
 ##How do I install Betaflight ?
+
+Start with the following video that gives a very comprehensive guide on Betaflight and the best practice approach for it's configuration:
+http://www.youtube.com/watch?v=xSzO6HP6yzs
 
 There is a step-by-step guide on how to flash the flight controller with Betaflight here: http://quadquestions.com/blog/2015/12/25/betaflight_flashing/
 
@@ -523,4 +530,3 @@ OneShot125 will send pulses to the ESCs that are 1/8th the Standard values of 10
  Originally Posted by HIGHOCTANE32 View Post
 Once you wrap your head around and think about looptimes and ESC pulses(whether the be 1000-2000us pwm, or 125-250uS oneshot or whatever as time(which they are) it all makes a lot more sense. Trying to sync a gyro rate that updates every 125us (8khz) or even 250uS with a ESC signal pulse that can be 250uS long..you can see the problem. Oneshot 42 and multi shot further shorten the ESC signal pulses, like oneshot 125 did, but even shorter, so the signal pulse can be completed faster than the gyro/PID update. Not a scientific explanation but hopefullt that makes sense.
 But I agree if josh doesn't already have a video on it he needs one 
-
