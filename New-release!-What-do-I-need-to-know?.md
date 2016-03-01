@@ -1,5 +1,14 @@
 This page is meant to provide a more in depth explanation of the changelog for each release so that users can understand the consequences of the changes made. Please remember to read the changelog for each release first.
 
+# 2.5.0-RC5
+- Fixed non working blackbox and accelerometer (also model in configurator) 
+- More efficient scheduler 
+- Added attitude task 
+- Fixed arming issues for stick armers 
+- Fixed broken transponder for SPF3MINI 
+- Added experimental gyro_lpf value 
+- Changed some defaults
+
 # 2.5.0-RC4
 - Reworked motor task into a separate task within the scheduler 
 - It will automatically choose the most optimal motor update rate. 
@@ -7,7 +16,7 @@ This page is meant to provide a more in depth explanation of the changelog for e
 - Fixed timing scaling on overclocked targets 
 - Auto Config updated 
 - Fixed broken servos 
-- Note: BlackBox and a few other features including the 'quad' graphic in the config GUI got disabled accidentally in this code. Should be fixed in RC5
+- Note: BlackBox and a few other features including the 'quad' graphic in the config GUI got disabled accidentally in this code. Stick Arming also broken. Fixed in RC5
 
 # 2.5.0-RC3
 - Fixed issue with fast_pwm rates above 4k 
