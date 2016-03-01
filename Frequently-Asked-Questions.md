@@ -1,5 +1,5 @@
 ##Contents
-1. [I'm a Neewbe, how do I start ?](#I'm-a-neewbe,-how-do-i-start-)
+1. [I'm a Neewbe, how do I start ?](#im-a-neewbe-how-do-i-start-)
 1. [How do I install Betaflight ?](#how-do-i-install-betaflight-)
 1. [Why wont my FC board arm after upgrading the firmware ?](#why-wont-my-fc-board-arm-after-upgrading-the-firmware-)
 1. [Why is the Gyro light turned off and the 3D Model not moving ?](#why-is-the-gyro-light-turned-off-and-the-3d-model-not-moving-)
@@ -33,7 +33,7 @@
 1. [What is OneShot125, OneShot42 and MultiShot and how do these relate to max_throttle and Looptime ?](#what-is-oneshot125-oneshot42-and-multishot-and-how-do-these-relate-to-max_throttle-and-looptime-)
 
 ***
-##I'm a Neewbe, how do I start ?
+##Im a Neewbe how do I start ?
 A little history. This all started with OpenSource MultiWii code based on Arduino 8-bit boards. When the 32-bit STM32 processors become available the MutliWii code was ported to the STM32 and was called BaseFlight. Due to politics others forked the BaseFlight code to CleanFlight. More recently Boris decided that he could possibly make improvements on the way the PID control loop works and forked an Experimental version as BetaFlight.
 Therefore documentation on ßF and CF tends to only show what is new or changed and the documentation of previous Firmware must be read.
 
