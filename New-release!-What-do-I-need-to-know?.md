@@ -7,7 +7,7 @@ This page is meant to provide a more in depth explanation of the changelog for e
 - Fixed timing scaling on overclocked targets 
 - Auto Config updated 
 - Fixed broken servos 
-- Note: BlackBox and a few other features got disabled accidentally in this code. Should be fixed in RC5
+- Note: BlackBox and a few other features including the 'quad' graphic in the config GUI got disabled accidentally in this code. Should be fixed in RC5
 
 # 2.5.0-RC3
 - Fixed issue with fast_pwm rates above 4k 
