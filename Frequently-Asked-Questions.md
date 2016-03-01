@@ -42,6 +42,9 @@ http://www.youtube.com/watch?v=xSzO6HP6yzs
 
 Also take a look at the **[MultiWii Wiki](http://www.multiwii.com/wiki/?title=Main_Page)**, then the **[Naze32 Manual](http://www.abusemark.com/downloads/naze32_rev2.pdf)**, the CF docs in Github an finally the ßF Github docs and this Wiki.
 
+Videos on Cleanflight throttle parameter configuration (RC input verse outputs to ESCs):
+http://www.rcgroups.com/forums/showpost.php?p=34144329&postcount=20469
+
 ##How do I install Betaflight ?
 
 Start with the following video that gives a very comprehensive guide on Betaflight and the best practice approach for it's configuration:
