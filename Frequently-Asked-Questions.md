@@ -523,17 +523,19 @@ OneShot42 and MultiShot now supported
 2 examples of auto config
 
 looptime 125
-always 8khz gyro sampling (gyro_sync_denom = 1)
-when just oneshot125:
-pid_process_denom =3
-when use_oneshot42 or use_multishit
-pid_process_denom = 2
+
+- always 8khz gyro sampling (gyro_sync_denom = 1)
+- when just oneshot125:
+- pid_process_denom =3
+- when use_oneshot42 or use_multishit
+- pid_process_denom = 2
 
 looptime 250
-always 4k gyro sampling (gyro_sync_denom = 2)
-pid_process_denom = 2
-on f1 boards with luxfloar
-pid_process_denom = 3
+
+- always 4k gyro sampling (gyro_sync_denom = 2)
+- pid_process_denom = 2
+- on f1 boards with luxfloar
+- pid_process_denom = 3
 
 etc....
 
