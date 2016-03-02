@@ -30,6 +30,7 @@ Hardware lowpass filter for gyro. Allowed values depend on the driver - For exam
 
 Boris said:
 
+gyro_lpf = OFF basically still means there is a little bit of filtering on the gyro.
 When setting it to EXPERIMENTAL it will remove any possible filtering and give raw data, which is extremely noisy. I don't recommend it. I just added it to be there in case someone wants to play with it. 
 
 For V2.4.0 and above- see the set gyro_sync_denom CLI command below.
