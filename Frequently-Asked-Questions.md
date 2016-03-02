@@ -516,7 +516,7 @@ Since OneShot125 has a maximum pulse width or 250usec this will not work if the 
 
 So far OneShot42 is not supported in ßF YET but would allow 4kHz refresh rates. Check MultiShot, RaceFlight & BLHeli_S firmware.
 
-For ßF V2.5.0 RC1
+For ßF V2.5.0 RC6
 Set looptime in config GUI.
 OneShot42 and MultiShot now supported
 
@@ -540,7 +540,7 @@ looptime 250
 etc....
 
 motor update speed = pid speed
-calculation of motor speed is than
+calculation of motor speed is then
 
 motor update interval us= 125 * gyro_sync_denom * pid_process_denom 
 
