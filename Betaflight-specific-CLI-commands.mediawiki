@@ -146,6 +146,10 @@ Are you running LuxFloat? If so, change to MWREWRITE.
 
 Also reduce the amount of AUX channels to reduce time for task RX.
  
+Notes copied from Forum:
+- ATTITUDE is as it says acc calculations. 
+- ACCEL is only sampling of accelerometer and filtering and ATTITUDE is real processing of it, which doesnt have to be fast. 100hz is more than enough! 
+
 <u><i>'''New 2.4.0  CLI commands'''</i></u>
 
 '''set pid_delta_method''' = MEASUREMENT<br />
