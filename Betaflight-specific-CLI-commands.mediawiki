@@ -35,7 +35,7 @@ When setting it to EXPERIMENTAL it will remove any possible filtering and give r
 
 For V2.4.0 and above- see the set gyro_sync_denom CLI command below.
 
-<u>(starting with Version 2.4 the following hardware is automatically set to NONE  on F1 boards if 500 looptime is selected in the GUI)</U>
+<u>(starting with Version 2.4 the following hardware is automatically set to NONE  on F1 boards if 500usec looptime is selected in the GUI)</U>
 
 
 gyro_lpf = OFF basically still means there is a little bit of filtering on the gyro. When setting it to EXPERIMENTAL it will remove any possible filtering and give raw data, which is extremely noisy. I don't recommend it. I just added it to be there in case someone wants to play with it. 
@@ -180,7 +180,7 @@ For 2khz, set it = 4
  for 8 khz (not recommended) set it = 1 
 
 Denom is always a multiplier to 125us=8khz. 4 means 125*4=500us(2khz). Dont forget to check CPU usage when playing with this value. 
-It is highly recommended to use the 'looptime' box in the config GUI. This takes care of all the required settings.
+It is highly recommended to use the 'looptime' (in microSecond) box in the config GUI. This takes care of all the required settings.
 
 '''set vbat_pid_compensation''' = OFF<br />
 <i>[ON,OFF]</i><br />
@@ -214,7 +214,6 @@ averaging samples can now be configured for dterm to remove spiking.
 
 '''set acro_plus_offset''' = 40
 
-
 I brought back the normal rates in it. Reworked it with fixed point math, but now I also added acro_plus_offset. This is the breakpoint for acro plus. That means normal rates up to offset percentage of the stick output and after that the desired acro_plus_factor kicks in.
 
 Works really well!
@@ -225,7 +224,7 @@ Need to check what the default and maximum number of aux channels are.
 
 <u><i>'''New 2.5.0 RC1 CLI commands'''</i></u>
 
-Note: Use configurator to set looptimes and all needed CLI values will be automatically set for proper operation.
+Note: Use configurator to set looptime (in microSeconds) and all needed CLI values will be automatically set for proper operation.
 
 TODO
 add the new CLI commands/settings.
@@ -250,5 +249,5 @@ Configurable VFAS cell voltage / battery voltage.
 
 '''set forced_motor_pwm = OFF'''<br />
 <i>[OFF,ON]</i><br />
-Replaces set enable_fast_pwm. This is automatically set to proper values when LOOPTIME is set using the Config GUI.
+Replaces set enable_fast_pwm. This is automatically set to proper values when LOOPTIME (microSeconds) is set using the Config GUI.
 Also see "set motor_pwm_rate" above.
