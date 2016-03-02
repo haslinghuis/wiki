@@ -520,8 +520,27 @@ For ßF V2.5.0 RC1
 Set looptime in config GUI.
 OneShot42 and MultiShot now supported
 
-TODO
-Add details.
+2 examples of auto config
+
+looptime 125
+always 8khz gyro sampling (gyro_sync_denom = 1)
+when just oneshot125:
+pid_process_denom =3
+when use_oneshot42 or use_multishit
+pid_process_denom = 2
+
+looptime 250
+always 4k gyro sampling (gyro_sync_denom = 2)
+pid_process_denom = 2
+on f1 boards with luxfloar
+pid_process_denom = 3
+
+etc....
+
+motor update speed = pid speed
+calculation of motor speed is than
+
+motor update interval us= 125 * gyro_sync_denom * pid_process_denom 
 
 ##What is OneShot125 OneShot42 and MultiShot and how do these relate to max_throttle and Looptime ?
 
