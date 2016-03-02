@@ -122,7 +122,6 @@ This gives plenty of CPU head-room for other Flight Controller features to be en
  Cycle Time: 365, I2C Errors: 1, config size: 1316
 
 See the '''tasks''' command for details on how the CPU percentage usage can be lowered.
-
  
 '''tasks'''<br />
 Used in conjunction with the '''status''' command to determine the general health of the copter.
@@ -150,6 +149,8 @@ Notes copied from Forum:
 
 - ATTITUDE is as it says acc calculations. 
 - ACCEL is only sampling of accelerometer and filtering and ATTITUDE is real processing of it, which doesnt have to be fast. 100hz is more than enough! 
+
+- When posting to the Forum please type "version", "status" and "tasks" and post all three of these CLI outputs. Version is important since it shows What ßF version and processor binary (.hex or .bin) file was loaded.
 
 <u><i>'''New 2.4.0  CLI commands'''</i></u>
 
