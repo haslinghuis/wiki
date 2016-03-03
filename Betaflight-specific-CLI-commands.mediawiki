@@ -74,12 +74,13 @@ beeper_off_flags = sum of each desired beeper turned off
  
 New in V2.5.0 Final
 
-The beeper off flags command is replaced by new textual representation using beeper command. Example:
+The beeper off flags command is replaced by new textual representation using beeper command. 
+Example:
 beeper -ALL <-----disable all beeper scenarios
 beeper ALL <------enable all
 
-    BEEPER_SILENCE = 0,             // Silence, see beeperSilence()
 
+    BEEPER_SILENCE = 0,             // Silence, see beeperSilence()
     BEEPER_GYRO_CALIBRATED,
     BEEPER_RX_LOST,                 // Beeps when TX is turned off or signal lost (repeat until TX is okay)
     BEEPER_RX_LOST_LANDING,         // Beeps SOS when armed and TX is turned off or signal lost (autolanding/autodisarm)
@@ -98,9 +99,9 @@ beeper ALL <------enable all
     BEEPER_ARMED,                   // Warning beeps when board is armed (repeats until board is disarmed or throttle is increased)
     BEEPER_SYSTEM_INIT,             // Initialisation beeps when board is powered on
     BEEPER_USB,                     // Some boards have beeper powered USB connected
-
     BEEPER_ALL,					    // Turn ON or OFF all beeper conditions
     BEEPER_PREFERENCE,              // Save prefered beeper configuration
+
 
 '''set acc_lpf_hz''' = 20<br />
 <i>[0,...,200]</i>
