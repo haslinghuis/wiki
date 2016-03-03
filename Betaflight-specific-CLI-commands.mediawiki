@@ -10,17 +10,9 @@ Need feedback about proof of concept feature for mixing of roll and yaw to FPV c
 <br />
 Here a good preview for this option: [https://youtu.be/gXeaINFpvow FPV camera tilt compensation]
  
-'''set enable_fast_pwm''' = OFF<br />
-<i>[OFF,ON]</i><br />
-This option works together with oneshot125. It is basically a fixed oneshot125 refresh rate as set with "motor_pwm_rate". It decouples the motor update speed from the main pid loop. You can for example have board running @8khz but still configure the motor update to be 1khz.
- 
 '''set motor_pwm_rate''' = 400<br />
 <i>[0,...,8000]</i><br />
-When enable_fast_pwm = ON this is the refresh rate of the outputs to the ESCs in Hz.
-This is being used to obtain higher PID loop rates than output rates to ESCs.
-
-With enable_fast_pwm = ON the "normal" PWM or whatever-shot brushless signal is sent at the configured motor_pwm_rate.
-When enable_fast_pwm = OFF and motor_pwm_rate > 500 then outputs are 0-100% PWM for brushed motors.
+This is the fixed refresh rate of the outputs to the ESCs in Hz. It is not used when using oneshot/multishot signalling
 
 '''set gyro_lpf''' = 188HZ '' <br />
 <i>[OFF,188HZ,98HZ,42HZ,EXPERIMENTAL(2.5.0)]</i><br />
