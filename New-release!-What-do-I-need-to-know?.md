@@ -1,5 +1,9 @@
 This page is meant to provide a more in depth explanation of the changelog for each release so that users can understand the consequences of the changes made. Please remember to read the changelog for each release first.
 
+# 2.5.0-RC7
+- reworked mixer saturation (smooth PID reduction)
+- Should be the finial 2.5.0 release
+
 # 2.5.0-RC6
 - Oneshot protocols always synced to pid loop now. No fixed motor rate available for oneshot125, oneshot42 or multishot, which didn't make sense anyway. When using 8k cycletime on oneshot125 PID loop / motor update will be limited to 2.6k to keep it safe. When using multishot or oneshot42 it will be increased. 
 - Added autobind for spektrum on boot 
