@@ -21,7 +21,7 @@
 1. [Why do I have issues flashing my new F3 Flight Controller ?](#why-do-i-have-issues-flashing-my-new-f3-flight-controller-)
 1. [Will Betaflight code be merged back into Cleanflight ?](#will-betaflight-code-be-merged-back-into-cleanflight-)
 1. [When I update to the latest version of BetaFlight do I need to recalibrate my ESCs ?](#when-i-update-to-the-latest-version-of-betaflight-do-i-need-to-recalibrate-my-escs-)
-1. [Why do my motors spin-up on the bench when I arm the copter in AirMode ?](#why-do-my-motors-spin-up-on-the-bench-when-i-arm-the-copter-in-airmode-)
+1. [Why do my motors keep accelerating on the bench when I arm the copter in AirMode ?](#why-do-my-motors-keep-accelerating-on-the-bench-when-i-arm-the-copter-in-airmode-)
 1. [Why do my motors spin briefly when rebooting the Flight Controller ?](#why-do-my-motors-spin-briefly-when-rebooting-the-flight-controller-)
 1. [If the accelerometer is disabled and FailSafe Activates what happens to the copter ?](#if-the-accelerometer-is-disabled-and-failsafe-activates-what-happens-to-the-copter-)
 1. [Why does my Flight Controller beep lots of times when powering up ?](#why-does-my-flight-controller-beep-lots-of-times-when-powering-up-)
@@ -430,11 +430,8 @@ ESCs shouldn't need recalibration unless you changed the min/max throttle values
 
 For more information about ESC Calibration see this video: http://www.youtube.com/watch?v=o3Mg-9M0l24
 
-##Why do my motors spin-up on the bench when I arm the copter in AirMode ?
-With props off on the bench, I arm the quad and the motors start. After increasing throttle a small amount then back to minimum I notice the motors increase in speed.
-They don't go to max or anything, but they climb noticeable. 
-Now if I was in Angle/Horizon with the accelerometer enabled I could understand that the quad was tying to level itself. But in Acro mode why should the throttle change on its own ?
-I'm guessing this is an Airmode effect. But just wanted to understand a little more about why.
+##Why do my motors keep accelerating on the bench when I arm the copter in AirMode ?
+With props off on the bench, I arm the quad and the motors start. After increasing throttle a small amount then back to minimum I notice the motors keep increasing in speed.  They don't go to max or anything, but they climb noticeably. Now if I was in Angle/Horizon with the accelerometer enabled I could understand that the quad was tying to level itself. But in Acro mode why should the throttle change on its own ? I'm guessing this is an Airmode effect. But just wanted to understand a little more about why.
 
 Answer: That is the flight controller trying to correct for changes in aspect, mainly due to fact your quad shakes slightly when the motors spin, the sensors pick it up and then the flight controller tries to correct, it can't because you don't have props on. All perfectly normal.
 
