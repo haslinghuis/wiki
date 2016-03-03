@@ -46,7 +46,6 @@ Videos on Cleanflight throttle parameter configuration (RC input verse outputs t
 http://www.rcgroups.com/forums/showpost.php?p=34144329&postcount=20469
 
 ##How do I install Betaflight ?
-
 Start with the following video that gives a very comprehensive guide on Betaflight and the best practice approach for it's configuration:
 http://www.youtube.com/watch?v=xSzO6HP6yzs
 
@@ -111,14 +110,11 @@ To determine if the ACC or other sensor enabled is causing problems use the "sta
       Cycle Time: 491, I2C Errors: 0, config size: 1308
 
 ##Why is the Gyro light turned off and the 3D Model not moving ?
-
 This is a side effect of the accelerometer being disabled.  When connected to the Flight Controller via USB, the 3D model in Cleanflight Configurator depends on the accelerometer to rotate properly when the multirotor is moved around.  The gyro light being off is just a glitch in the Configurator.  Neither of these are anything to worry about, it is perfectly normal.
 
 When you change your looptime in the Configurator (or via CLI command) to a faster speed than the defaults, Betaflight will automatically disable the accelerometer on some targets to free up processing power and allow the faster looptime.
 
-
 ##What is Air Mode ?
-
 Some users were mailing Boris about the fact their radios couldn't be configured to have Idle up switch and asking him to implement something similar in the software. Boris initially thought that this could simply just be achieved with activating the "Iterm" from zero throttle together with P and D which were already done with "pid_at_min_throttle" feature. Somehow this wasn't giving the satisfying results. It still felt weak and unresponsive. Boris was trying to wrap his head around why this was the case ! We got our P, I and D on the ground....so why isn't fully stabilizing? 
 
 After some readings in other open source projects and some of the older discussions, he realized that the key for this was in the mixer logic as someone already had a proof of concept code to improve it, which is pretty much scaling the PID's to our throttle level and stopping the stabilisation when one motor reaches min throttle. Now Boris understood why folks always preferred this Idle up switch as it was automatically gaining a little bit more stabilisation. But this is just a workaround where you loose some throttle below! The current mixer logic sounds reasonable as the early developers were always considering the low throttle values as a NON flying situation. Guess what? In 2015 we fly a lot with 0 or low throttle and especially in the mini quad scene! This has to be changed! The real answer lies in smarter mixer approach where the calculated PID output would always consider the maximum available motor output range to be able to get the desired correction.
@@ -143,7 +139,6 @@ Part 2: http://www.youtube.com/watch?v=goYT3PcA-dE
 Part 3: http://www.youtube.com/watch?v=z0ZUsdUD9iw
 
 ##How do I enable Air Mode ? 
-
 One method is to use a 3 way switch as follows:
 
 Pos 1: Disarm (motors do not spin)
@@ -185,7 +180,6 @@ Your min_check determines your lowest possible throttle value out of your TX! Th
 If your min_check is set to 1100 and your TX goes down to 1000 that would mean that it is already giving some throttle. I use min_check a bit higher than 1000. I believe something like 1015 or 1020 
 
 ##What is Acro Plus ?
-
 1. Any value of AcroPlus above 0 causes any accumulated iTerm to be reset to zero (and kept at zero) whenever your sticks are at more than 70% of full throw. When restored to less than 70% of full stick travel, iTerm is only allowed to return to 'normal' slowly, actually at 0.1% per processor loop. ITerm therefore takes about 0.5s to return to 'normal' after a flip or roll on 2kHz targets. This improves immediate post-roll/flip stability.
 
 2. Acro Plus changes stick responsiveness by modifying the way in which the PIDs affect the motors, more so at the extreme of stick movement. 
@@ -270,7 +264,6 @@ For Betaflight 2.4.1 onwards the number of Aux channels is selectable with the s
 
 
 ##What Flight Controllers are recommended to get the best out of BetaFlight ?
-
 Here is a list of FCs compiled around the end of January 2016. The opinions regarding Pros and Cons are also shown.
 
 | Flight Controller | Processor/Sensor | 2KHz mode | Ports   | Opinion                                     |
@@ -295,7 +288,6 @@ Roundup of F3 based boards: http://www.youtube.com/watch?v=StnC9Q_O1Fw
 Recommended CleanFlight/BetaFlight boards: http://www.youtube.com/watch?v=SJa_LgbwwMk
 
 ##What are the differences between LuxFloat and Rewrite PID Controllers ?
-
 According to Boris, there is literally no difference between Lux and Rewrite any more (from a flight characteristics point of view), except that they scale the numbers differently. So the actual PID gains and rates will vary between them, but the processing of gyro data is identical. The main problem with Luxfloat is that the CleanFlight Configurator GUI by default only gives you 0.1 precision, which is too big of a step for Luxfloat. It would be like trying to tune Rewrite, and only being able to use whole integers like 4.0, 5.0, 6.0. 
 
 LuxFloat uses Floating Point maths whereas Rewrite uses Integer maths. What does this mean ? Floating Point maths needs more processing power from the Flight Controller, and so F3 (and above) CPU based FCs will have a much easier time calculating the values in the PID loop since it has a dedicated Floating Point Unit (FPU) for these calculations.
@@ -311,11 +303,7 @@ In Luxfloat level/horizon modes, full max angle is reached at full stick. This m
 
 In rewrite, stick sensitivity is managed differently; sensitivity depends on rates and is closer to acro sensitivity. This may result in reaching max angle before the sticks reach their full travel. I personally prefer this (it was my coding hack, I think, that made it like this). It's good both for teaching and for experienced pilots.
 
-
-
-
 ## Is there a good resource for learning how to tune using Black Box ?
-
 a. "I would check out Joshua Bardwells youtube channel. I haven't watched all these videos... I just picked them from his channel.
 
 Quote:
@@ -343,9 +331,7 @@ Good tuning just makes that feel tighter and helps removing unnecessary oscillat
 
 d. Battery Factor: "A while ago someone took over my pids to his quad with same setup and he said it didn't feel good. So I flew his setup and it indeed felt like PIDs were twice as low as they should be! It appeared he was using almost 2 years old (Turnigy) Nanotechs completely lost their power. Even I feel huge difference between different batteries I have." - Boris comment
 
-
 ##Why does my copter behave erratic after a crash ?
-
 Some people have experienced erratic behavior (jitters etc) after a crash,  as if P went up significantly.
 
 "When you crash your gyro can get upset. It has always been like that even from Baseflight days.
@@ -386,7 +372,6 @@ Part 1: http://www.youtube.com/watch?v=WFU3VewGbbA
 Part 2: http://www.youtube.com/watch?v=YNRl0OTKRGA
 
 ##How do I configure BLHeli ESCs via BetaFlight ?
-
 If running at 1kHz and faster BLHeli 14.2 or later is required and disable PWM in the BLHeli configuration. This is to ensure the BLHeli Firmware recognizes the OneShot125 pulses properly.
 
 If you are running BetaFlight, you can program and flash your BLHeli ESCs (that have BLHeli bootloader only!) directly through the flight controller, without disconnecting the signal wires or disassembling the copter at all.
@@ -401,7 +386,6 @@ PLEASE NOTE: This does not work on the following boards:
 | Naze32 **Rev6** | The Naze back-fed the ESCs from the USB port. So the ESCs would power up, see the throttle signal, initialize, and then they wouldn't go into programming mode after that. The Rev6a has fixed this issue since it was released in November 2015 |
 
 ##Why does my copter flip when trying to takeoff ?
-
 Here are some likely causes:
 
 * Motors plugged in to the wrong FC headers.
@@ -543,7 +527,6 @@ calculation of motor speed is then
 motor update interval us= 125 * gyro_sync_denom * pid_process_denom 
 
 ##What is OneShot125 OneShot42 and MultiShot and how do these relate to max_throttle and Looptime ?
-
 TODO
 
 With the Standard ESC calibration to min_command = 1000 and max_throttle = 2000.
