@@ -3,6 +3,7 @@
 1. [How do I install Betaflight ?](#how-do-i-install-betaflight-)
 1. [Why wont my FC board arm after upgrading the firmware ?](#why-wont-my-fc-board-arm-after-upgrading-the-firmware-)
 1. [Why is the Gyro light turned off and the 3D Model not moving ?](#why-is-the-gyro-light-turned-off-and-the-3d-model-not-moving-)
+1. [Why are my motors slowly increasing speed while sitting on the ground ?](#why-are-my-motors-slowly-increasing-speed-while-sitting-on-the-ground-)
 1. [What is Air Mode ?](#what-is-air-mode-)
 1. [How do I enable Air Mode ?](#how-do-i-enable-air-mode-)
 1. [What is Acro Plus ?](#what-is-acro-plus-)
@@ -115,6 +116,12 @@ To determine if the ACC or other sensor enabled is causing problems use the "sta
 This is a side effect of the accelerometer being disabled.  When connected to the Flight Controller via USB, the 3D model in Cleanflight Configurator depends on the accelerometer to rotate properly when the multirotor is moved around.  The gyro light being off is just a glitch in the Configurator.  Neither of these are anything to worry about, it is perfectly normal.
 
 When you change your looptime in the Configurator (or via CLI command) to a faster speed than the defaults, Betaflight will automatically disable the accelerometer on some targets to free up processing power and allow the faster looptime.
+
+
+##Why are my motors slowly increasing speed while sitting on the ground ?
+
+This is a normal effect of the flight controller trying to stabilize the craft and not being able to successfully move it.  It is caused by the I term.  Everything is ok.  It will behave normally once it is in the air.
+
 
 ##What is Air Mode ?
 
