@@ -24,7 +24,7 @@ Gyro update is leading the loop. The loop will start after interrupt is triggere
 
 ![GYRO_SYNC](https://cloud.githubusercontent.com/assets/10757508/9105588/6714334c-3c19-11e5-922c-1f70d46d29ac.png)
 
-##The delta_from_gyro setting and all about the PID Controller D values
+##The delta from gyro setting and all about the PID Controller D values
 
 **Boris B wrote:**
 
@@ -109,7 +109,7 @@ Aliasing and Gyro Sync Explained: http://www.youtube.com/watch?v=-lmoKal_e4s
 
 New Biquad filter in BetaFlight V2.3.x: http://www.youtube.com/watch?v=Q2tSWU1MsVk
 
-##Rates / rc rate translations into deg/sec Tables
+##Rates rc rate translations into deg sec Tables
 Boris posted Tables in:
 
 Effect of rate combined with static rc rate of 100. (rc rate doesn't affect yaw). Full Stick input
