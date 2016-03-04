@@ -32,6 +32,8 @@
 1. [How can I run the PID controller faster than 2kHz ?](#how-can-i-run-the-pid-controller-faster-than-2khz-)
 1. [What is OneShot125, OneShot42 and MultiShot and how do these relate to max_throttle and Looptime ?](#what-is-oneshot125-oneshot42-and-multishot-and-how-do-these-relate-to-max_throttle-and-looptime-)
 1. [What cycle time can I run on what board ?](#what-cycle-time-can-i-run-on-what-board-)
+1. [How do I go about suggesting CF Configurator enhancements ?](#how-do-i-go-about-suggesting-cf-configurator-enhancements-)
+1. [How do I lower the chance of my copter producing Magic Smoke when powering on ?](#how-do-i-lower-the-chance-of-my-copter-producing-magic-smoke-when-powering-on-)
 
 ***
 ##Im a Neewbe how do I start ?
@@ -561,3 +563,19 @@ F3 i2c targets:
  With acc enabled stick to 1khz. 
 
 (From BorisB)
+
+##How do I go about suggesting CF Configurator enhancements ?
+1) On GitHub, look up the Cleanflight Git. There's a link to the Configurator.
+
+2) Click on "Issues".
+
+3) Start a new issue and preface it with "Suggestion: short summary".
+
+4) Explain the new enhancement suggestion.
+
+##How do I lower the chance of my copter producing Magic Smoke when powering on ?
+One option is to use a Current Limiter when having the LiPo connected on the bench and Testing new setups. This has saved a few ESCs and Motors for many people.
+Build and use this Limiter with a Switch in-line for easy powering On/OFF.
+http://www.rcgroups.com/forums/showthread.php?t=2327875
+
+
