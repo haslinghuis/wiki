@@ -12,6 +12,7 @@ Grab a snack and make yourself comfortable ! ![Popcorn](http://static.rcgroups.c
 1. [The delta_from_gyro setting and all about the PID Controller D values](#the-delta_from_gyro-command-and-all-about-the-PID-controller-D-values-)
 1. [Filtering, Aliasing and Gyro Sync explained](#filtering,-aliasing-and-gyro-sync-explained-)
 1. [Rates / rc rate translations into deg/sec Tables](#Rates / rc rate translations into deg/sec Tables)
+1. [Explanation of why the motor updates are now at the start of the PID loop](#explanation-of-why-the-motor-updates-are-now-at-the-start-of-the-pid-loop-)
 
 ##How Opensource Software Development Works
 This video covers how multiple versions of the same software in the hobby exist (CleanFlight/BetaFlight/RaceFlight etc) and how developers exchange ideas and promote code between the projects.
@@ -119,3 +120,84 @@ http://www.rcgroups.com/forums/showpost.php?p=34028937&postcount=18515
 
 and to make it complete. Only effect of yaw rate
 http://www.rcgroups.com/forums/showpost.php?p=34028986&postcount=18516
+
+
+##Explanation of why the motor updates are now at the start of the PID loop
+
+Boris says: Lets do some drawing of pid cycles.
+
+This is how motor write is related to sampling normally. Lets take 250us as an example as the most common FC's are naze32 spfracing etc...
+Here several cycletimes with it's motor writes. Cycletime isn't constant and it varies. "m" is the moment where motor would gets written. 0 is the moment where gyro sync trigger comes in and the PID calculations would start.
+
+Old situation:
+
+0-----------------m---->
+
+0---------------------m>
+
+0---------------m------>
+
+0-----------m---------->
+
+0------------------m--->
+
+0---------------------m>
+
+
+New situation
+
+0---------------------->m
+
+0---------------------->m
+
+0---------------------->m
+
+0---------------------->m
+
+0---------------------->m
+
+0---------------------->m
+
+Which is in sense same like this as its a loop
+
+0m---------------------->
+
+0m---------------------->
+
+0m---------------------->
+
+0m---------------------->
+
+0m---------------------->
+
+0m---------------------->
+
+In essence the jitter is caused by the gap between the start of the signal being inconsistent.
+If you send the signal after doing some sums, then it depends on how difficult the sums are as to how long into the cycle the signal is sent, therefore the time between each send varies.
+By sending the signal at the start of the cycle Boris has tied the start of the signal being sent to a fixed point, keeping the signals sent at a consistent interval
+
+Edit: to continue the ASCI... Top is motor update at loop end. Bottom is update a loop start. 0 is when the gyro updates and interrupts, F is the start of the loop. Both loops finish calculating at the same time, m is when the value is sent. 
+
+0F--------m--0F------m----0F-------m---0F-----m-----0F---------m-0F------m----0F--...
+
+0F-------------0Fm----------0Fm----------0Fm----------0Fm----------0Fm----------0Fm...
+
+I do think that you actually don't realize how much delay there is between commanding a motion to the motors and before the esc/motor/prop actually reaches desired command.
+
+The most recent tests show a delay between 20 and 38 milliseconds depending on what prop/motor you use.
+
+In other words there is no such thing like "exact same moment".
+
+Jitter on the other hand can really be more of a problem as the jitter frequency is variable and it can create some weird harmonics, which again combined with missed or overlapping oneshot signals can only make things worse.
+
+To go back to the drawing. The difference between the old situation and the new one is still matter of couple of microseconds. It is just waiting from the end of old cycle to the beginning of the new cycle.
+This time is actually free jitter buffering so why not use it! This also enables some CPU resources for the scheduler indirectly in the current scheduler architecture.
+
+You might start understanding this approach better once you would really start measuring output signals to the motors. I also have to say that it surprised me too that the jitter levels ard way above what I thought it was over different boards. The lower the looptimes were getting and the more features were enabled the bigger it was. I guess the ISR handlers were starting to get more influence. The jumps could even vary with the lengths higher than the full oneshot125 pulse.
+
+A realworld experience. A while ago I was tuning a quad and it was a naze32 f1 board where I flew looptime 1000 with acc enabled but flyijg in acro and the motors were sounding extremally rough and I was getting oscillations which I was not able to tune out properly.
+Than I disabled acc and it was suddenly all just fine with same pids.
+My cycletimes were stable in both situation.
+After measuring motor outputs or motor cycle time I found that oneshot125 signals were being overwritten and skipped.
+
+I am also coming from the world of VOIP what is completaly different than control laws, but there jitter is even much more of an issue in realtime audio/video processing. There are several ways to deal with it. Another option would be dropping motor output signals when they come to soon....before the old signal finished. That would be the only other option.
