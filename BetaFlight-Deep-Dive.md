@@ -207,3 +207,21 @@ The motor update happens at begin of the new cycletime and not the begin of new 
 
 Start GYRO/PID loop------>+125us GYRO/MOTOR----->+125us GYRO----> +125 PID/GYRO------->+125 GYRO/MOTOR (375us)
 
+Having faster motor rate than loop rate is complete nonsense as the value will still be overwritten and cause jittering.
+Thats why i am reworking the tasking at the moment.
+The ideal motor handling would be to only write motors when there are new mixer calculations available and with the time interval between the motor updates never lower than the desired period. Longer motor updates are even not bad just as long as next motor update doesnt fall into previous one.
+
+Lets say the pid controller / mixer requests full motor power on oneshot125 which is about 250us PWM interval.....if we were updating motors at 2k interval than there is in total 250us free interval where it doesnt matter when you update it. so allowed jitter period is a bit less than 250us.
+
+On 4k speed the motor update period is totally not allowed to jitter to make full throttle possible.
+
+It doesnt matter if the motor gets updated too late but should never be updated too soon.
+
+With low looptimes like now we are reaching the point where motor updates happen near the end of cycletime. So there is no such thing as delay there. It doesnt matter if you do something at the end or beginning.
+Imagine like running circles you can't tell what is begin or end. The order doesnt matter anymore.
+
+It's near the end of the cycletime where there is the most jitter. The time variations there are between 0 and 100us. Especially on low looptimes with scheduled tasking mechanism to get the maximum efficiency the end of loop cycle is really jittery.
+So when moving the motor update to the beginning of the loop you always have the constant timing. The variable delay you would have when writing the motors at the end of the loop now becomes a constant delay.
+
+Jitter is quite crucial on oneshot signals as period of 60us is almost a half oneshot signal.
+
