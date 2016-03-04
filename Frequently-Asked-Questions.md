@@ -31,7 +31,7 @@
 1. [With vbat_pid_compensation are there issues moving from 3S to 4S batteries ?](#with-vbat_pid_compensation-are-there-issues-moving-from-3s-to-4s-batteries-)
 1. [How can I run the PID controller faster than 2kHz ?](#how-can-i-run-the-pid-controller-faster-than-2khz-)
 1. [What is OneShot125, OneShot42 and MultiShot and how do these relate to max_throttle and Looptime ?](#what-is-oneshot125-oneshot42-and-multishot-and-how-do-these-relate-to-max_throttle-and-looptime-)
-1. [What cycle time can I run on what board ?] (#What-cycle-time-can-I-run-on-what-board-)
+1. [What cycle time can I run on what board ?](#what-cycle-time-can-i-run-on-what-board-)
 
 ***
 ##Im a Neewbe how do I start ?
@@ -541,7 +541,7 @@ Some info here on Oscar Liang's excellent Blog site regarding MultiShot techniqu
 
 http://blog.oscarliang.net/raceflight-multishot/
 
-##What cycle time can I run on what board?
+##What cycle time can I run on what board ?
 
 F3 i2c targets:
  250 cycletime without acc, you can enable acc mode, but watch out for CPU usage when many features enabled. Anyway I recommend going to 2.6k when using accelerometer.
