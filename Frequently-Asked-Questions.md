@@ -595,7 +595,7 @@ F3 i2c targets:
 4) Explain the new enhancement suggestion.
 
 ##How do I lower the chance of my copter producing Magic Smoke when powering on ?
-One option is to use a Current Limiter when having the LiPo connected on the bench and Testing new setups. This has saved a few ESCs and Motors for many people.
+Start by doing a continuity check with a multimeter if you have one.  A quick test for a short between the negative and positive pads on your power distribution board can save a lot of headaches.  Another option is to use a Current Limiter when having the LiPo connected on the bench and Testing new setups. This has saved a few ESCs and Motors for many people.
 Build and use this Limiter with a Switch in-line for easy powering On/OFF.
 http://www.rcgroups.com/forums/showthread.php?t=2327875
 
