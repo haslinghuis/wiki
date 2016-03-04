@@ -34,6 +34,7 @@
 1. [What cycle time can I run on what board ?](#what-cycle-time-can-i-run-on-what-board-)
 1. [How do I go about suggesting CF Configurator enhancements ?](#how-do-i-go-about-suggesting-cf-configurator-enhancements-)
 1. [How do I lower the chance of my copter producing Magic Smoke when powering on ?](#how-do-i-lower-the-chance-of-my-copter-producing-magic-smoke-when-powering-on-)
+1. [Why do we have RC Rate and also Yaw Pitch Roll Rates ?](#why-do-we-have-rc-rate-and-also-yaw-pitch-roll-rates-)
 
 ***
 ##Im a Neewbe how do I start ?
@@ -591,3 +592,11 @@ One option is to use a Current Limiter when having the LiPo connected on the ben
 Build and use this Limiter with a Switch in-line for easy powering On/OFF.
 http://www.rcgroups.com/forums/showthread.php?t=2327875
 
+##Why do we have RC Rate and also Yaw Pitch Roll Rates ?
+Deeper Question: There is still some confusion about RC rate, Pitch, Roll, Yaw rate, and Expo. I understand that P/R/Y rates are how fast the quadcopter will rotate, and i know about expos too, but what is really RC rate? I can't really gain a full understanding of it. Some say it does the same as P/R/Y, some say it's different from it, some say it's stick sensitivity. But what is stick sensivity really? Is it like expo?
+
+Answer: Think of it as fine tuning for RC Rate. It does the same thing just smaller increments and splits the axis up.
+
+Some people leave the RC Rate set to 1.0 and adjust the P/R/Y rates until the quad handles how they like (speed of flips/rolls etc). Once this has been set, the Expo values should be increased to allow for less sensitivity of the sticks nearer their center positions. This will make for smoother flight experience, and have the ability to perform fast rolls etc when the sticks move further away from the center.
+
+This is the best way to do it at the moment.
