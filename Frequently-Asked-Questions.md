@@ -611,5 +611,8 @@ This is the best way to do it at the moment.
 ##Why does it matter to prevent motor jitter ?
 
 Two reasons:
-* The motor is stop starting, this will generate heat and potentially damage/wear out components
+* The motor is stop starting, this will generate heat and potentially damage/wear out components.
 * As above your motor is stop starting, it isn't providing the thrust it is supposed to, your quad will shake/oscillate/crash and generally be unflyable.
+
+See the Deep Dive page for a more in-depth explanation.
+
