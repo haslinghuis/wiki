@@ -9,9 +9,9 @@ Grab a snack and make yourself comfortable ! ![Popcorn](http://static.rcgroups.c
 ##Contents
 1. [How Opensource Software Development Works](#how-opensource-software-development-works-)
 1. [Gyro based loop implementation](#gyro-based-loop-implementation-)
-1. [The delta_from_gyro setting and all about the PID Controller D values](#the-delta_from_gyro-command-and-all-about-the-PID-controller-D-values-)
-1. [Filtering, Aliasing and Gyro Sync explained](#filtering,-aliasing-and-gyro-sync-explained-)
-1. [Rates / rc rate translations into deg/sec Tables](#Rates / rc rate translations into deg/sec Tables)
+1. [The delta_from_gyro setting and all about the PID Controller D values](#the-delta-_-from-_-gyro-command-and-all-about-the-pid-controller-d-values-)
+1. [Filtering, Aliasing and Gyro Sync explained](#filtering-aliasing-and-gyro-sync-explained-)
+1. [Rates / rc rate translations into deg/sec Tables](#rates-rc-rate-translations-into-deg-sec-tables-)
 1. [Explanation of why the motor updates are now at the start of the PID loop](#explanation-of-why-the-motor-updates-are-now-at-the-start-of-the-pid-loop-)
 
 ##How Opensource Software Development Works
@@ -96,7 +96,7 @@ Effect of D term on P/D controller: http://www.youtube.com/watch?v=xMygUvegC80
 
 General explanation of D term: http://en.wikipedia.org/wiki/Derivative
 
-##Filtering, Aliasing and Gyro Sync explained
+##Filtering Aliasing and Gyro Sync explained
 The following videos have been produced with BetaFlight in mind, and provide a great resource for in-depth learning of these complex subjects.
 
 Filtering Basics: http://www.youtube.com/watch?v=CpW8_fOJ7_M
@@ -201,3 +201,9 @@ My cycletimes were stable in both situation.
 After measuring motor outputs or motor cycle time I found that oneshot125 signals were being overwritten and skipped.
 
 I am also coming from the world of VOIP what is completaly different than control laws, but there jitter is even much more of an issue in realtime audio/video processing. There are several ways to deal with it. Another option would be dropping motor output signals when they come to soon....before the old signal finished. That would be the only other option.
+
+Another example: The new way runs cycletime of 125us and PID loop of 375us
+The motor update happens at begin of the new cycletime and not the begin of new PID looptime! 
+
+Start GYRO/PID loop------>+125us GYRO/MOTOR----->+125us GYRO----> +125 PID/GYRO------->+125 GYRO/MOTOR (375us)
+
