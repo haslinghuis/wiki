@@ -299,3 +299,17 @@ Configurable VFAS cell voltage / battery voltage.
 <i>[OFF,ON]</i><br />
 Replaces set enable_fast_pwm. This is automatically set to proper values when LOOPTIME (microSeconds) is set using the Config GUI.
 Also see "set motor_pwm_rate" above.
+
+New 2.5.0 Final
+
+TODO
+Fill in the details of possible values and a description of what these do.
+
+'''set debug_mode = NONE'''<br />
+<i>[NONE,??]</i><br />
+
+'''set spektrum_sat_bind_autoreset = 1'''<br />
+<i>[1,??]</i><br />
+
+'''set pid_process_denom = 1'''<br />
+<i>[1,...,??]</i><br />
