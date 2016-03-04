@@ -31,6 +31,7 @@
 1. [With vbat_pid_compensation are there issues moving from 3S to 4S batteries ?](#with-vbat_pid_compensation-are-there-issues-moving-from-3s-to-4s-batteries-)
 1. [How can I run the PID controller faster than 2kHz ?](#how-can-i-run-the-pid-controller-faster-than-2khz-)
 1. [What is OneShot125, OneShot42 and MultiShot and how do these relate to max_throttle and Looptime ?](#what-is-oneshot125-oneshot42-and-multishot-and-how-do-these-relate-to-max_throttle-and-looptime-)
+1. [What cycle time can I run on what board?] (#What-cycle-time-can-I-run-on-what-board?]
 
 ***
 ##Im a Neewbe how do I start ?
@@ -539,3 +540,24 @@ But I agree if josh doesn't already have a video on it he needs one
 Some info here on Oscar Liang's excellent Blog site regarding MultiShot technique:
 
 http://blog.oscarliang.net/raceflight-multishot/
+
+##What cycle time can I run on what board?
+
+F3 i2c targets:
+ 250 cycletime without acc, you can enable acc mode, but watch out for CPU usage when many features enabled. Anyway I recommend going to 2.6k when using accelerometer.
+ Also boards with baro or mag on it even when disabled may decrease performance a bit.
+
+ F3 spi targets:
+ Not much worrying here.125us looptimes and accelerometer and everything can be on. But always check CPU to be sure
+
+ F1
+ With rewrite or mw23 250us cycle should be possible without problems on NAZE32 and all clones of it like flip32 etc when accelerometer disabled.
+ Especially the boards without fancy sensors like baro or mag should run super smooth. The boards with baro even when disabled may have a bit higher cpu times.
+ For level modes I recommend 1k mode. Those users dont neccery have to run 188hz gyro lpf....they still can set gyro_sync_denom to 8 to minimize latency by 1millisecond.
+
+ CC3D userd should stay with 375 or 500 cycletimes.
+
+ And all F1 users on luxfloat should not go lower than 500 or 375....probably even 375 is too much.
+ With acc enabled stick to 1khz. 
+
+(From BorisB)
