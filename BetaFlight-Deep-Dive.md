@@ -24,7 +24,7 @@ Gyro update is leading the loop. The loop will start after interrupt is triggere
 
 ![GYRO_SYNC](https://cloud.githubusercontent.com/assets/10757508/9105588/6714334c-3c19-11e5-922c-1f70d46d29ac.png)
 
-##The delta from gyro setting and all about the PID Controller D values
+##The delta_from_gyro setting and all about the PID Controller D values
 
 **Boris B wrote:**
 
