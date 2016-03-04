@@ -379,6 +379,19 @@ If running at 1kHz and faster BLHeli 14.2 or later is required and disable PWM i
 
 If you are running BetaFlight, you can program and flash your BLHeli ESCs (that have BLHeli bootloader only!) directly through the flight controller, without disconnecting the signal wires or disassembling the copter at all.
 
+As a rough guide to determine if your ESCs can be flashed via BetaFlight:
+
+| ESC MCU manufacturer | ESC Firmware | Bootloader Type | Flash via BetaFlight |
+| ----------------- | ------------ | --------- | ------------------------------- |
+| ATMEL | SimonK | SimonK | N |
+| ATMEL | BLHeli | SimonK | N |
+| ATMEL | BLHeli | BLHeli | Y |
+| Silabs | SimonK | SimonK | N |
+| Silabs | BLHeli | SimonK | N |
+| Silabs | BLHeli | BLHeli | Y |
+
+In general, it's all down to the ESC having BLHeli Bootloader so that ESC flashing can be done via Betaflight.
+
 Follow this guide to learn more: http://www.youtube.com/watch?v=YWLk4qcQcvw
 
 PLEASE NOTE: This does not work on the following boards:
@@ -577,5 +590,4 @@ F3 i2c targets:
 One option is to use a Current Limiter when having the LiPo connected on the bench and Testing new setups. This has saved a few ESCs and Motors for many people.
 Build and use this Limiter with a Switch in-line for easy powering On/OFF.
 http://www.rcgroups.com/forums/showthread.php?t=2327875
-
 
