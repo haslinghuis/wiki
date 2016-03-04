@@ -36,6 +36,12 @@
 1. [How do I lower the chance of my copter producing Magic Smoke when powering on ?](#how-do-i-lower-the-chance-of-my-copter-producing-magic-smoke-when-powering-on-)
 1. [Why do we have RC Rate and also Yaw Pitch Roll Rates ?](#why-do-we-have-rc-rate-and-also-yaw-pitch-roll-rates-)
 
+**If your question is not listed above then please check the following pages:**
+
+http://github.com/borisbstyle/betaflight/wiki/Betaflight-specific-CLI-commands
+
+http://github.com/borisbstyle/betaflight/wiki/BetaFlight-Deep-Dive
+
 ***
 ##Im a Neewbe how do I start ?
 A little history. This all started with OpenSource MultiWii code based on Arduino 8-bit boards. When the 32-bit STM32 processors become available the MutliWii code was ported to the STM32 and was called BaseFlight. Due to politics others forked the BaseFlight code to CleanFlight. More recently Boris decided that he could possibly make improvements on the way the PID control loop works and forked an Experimental version as BetaFlight.
