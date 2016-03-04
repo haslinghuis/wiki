@@ -35,6 +35,7 @@
 1. [How do I go about suggesting CF Configurator enhancements ?](#how-do-i-go-about-suggesting-cf-configurator-enhancements-)
 1. [How do I lower the chance of my copter producing Magic Smoke when powering on ?](#how-do-i-lower-the-chance-of-my-copter-producing-magic-smoke-when-powering-on-)
 1. [Why do we have RC Rate and also Yaw Pitch Roll Rates ?](#why-do-we-have-rc-rate-and-also-yaw-pitch-roll-rates-)
+1. [Why does it matter to prevent motor jitter ?](#why-does-it-matter-to-prevent-motor-jitter-)
 
 **If your question is not listed above then please check the following pages:**
 
@@ -606,3 +607,9 @@ Answer: Think of it as fine tuning for RC Rate. It does the same thing just smal
 Some people leave the RC Rate set to 1.0 and adjust the P/R/Y rates until the quad handles how they like (speed of flips/rolls etc). Once this has been set, the Expo values should be increased to allow for less sensitivity of the sticks nearer their center positions. This will make for smoother flight experience, and have the ability to perform fast rolls etc when the sticks move further away from the center.
 
 This is the best way to do it at the moment.
+
+##Why does it matter to prevent motor jitter ?
+
+Two reasons:
+* The motor is stop starting, this will generate heat and potentially damage/wear out components
+* As above your motor is stop starting, it isn't providing the thrust it is supposed to, your quad will shake/oscillate/crash and generally be unflyable.
