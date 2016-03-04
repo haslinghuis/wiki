@@ -1,4 +1,4 @@
-This page is meant to provide a more in depth explanation of the changelog for each release so that users can understand the consequences of the changes made. Please remember to read the changelog for each release first and read the CLI commands in this Wiki for new and changed CLI.
+This page is meant to provide a more in depth explanation of the changelog for each release so that users can understand the consequences of the changes made. Please remember to read the changelog for each release first and read the "Betaflight specific CLI commands" in this Wiki for new and changed CLI commands.
 
 # 2.5.0-RC7 Final
 - reworked mixer saturation (smooth PID reduction)
