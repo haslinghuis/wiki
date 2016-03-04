@@ -36,7 +36,8 @@
 1. [How do I lower the chance of my copter producing Magic Smoke when powering on ?](#how-do-i-lower-the-chance-of-my-copter-producing-magic-smoke-when-powering-on-)
 1. [Why do we have RC Rate and also Yaw Pitch Roll Rates ?](#why-do-we-have-rc-rate-and-also-yaw-pitch-roll-rates-)
 1. [Why does it matter to prevent motor jitter ?](#why-does-it-matter-to-prevent-motor-jitter-)
-1. [Why when I change something using CLI board crashes?](#Why-when-I-change-something-using-CLI-board-crashes-)
+1. [Why when I change something using CLI board crashes ?](#why-when-i-change-something-using-cli-board-crashes-)
+
 **If your question is not listed above then please check the following pages:**
 
 http://github.com/borisbstyle/betaflight/wiki/Betaflight-specific-CLI-commands
@@ -595,7 +596,9 @@ F3 i2c targets:
 4) Explain the new enhancement suggestion.
 
 ##How do I lower the chance of my copter producing Magic Smoke when powering on ?
-Start by doing a continuity check with a multimeter if you have one.  A quick test for a short between the negative and positive pads on your power distribution board can save a lot of headaches.  Another option is to use a Current Limiter when having the LiPo connected on the bench and Testing new setups. This has saved a few ESCs and Motors for many people.
+Start by doing a continuity check with a multimeter if you have one.  A quick test for a short between the negative and positive pads on your power distribution board can save a lot of headaches.
+
+Another option is to use a Current Limiter when having the LiPo connected on the bench and Testing new setups. This has saved a few ESCs and Motors for many people.
 Build and use this Limiter with a Switch in-line for easy powering On/OFF.
 http://www.rcgroups.com/forums/showthread.php?t=2327875
 
@@ -616,6 +619,6 @@ Two reasons:
 
 See the Deep Dive page for a more in-depth explanation.
 
-##Why when I change something using CLI board crashes?
+##Why when I change something using CLI board crashes ?
 If the FC uses the STM32's VCP then when leaving the CLI the config GUI does a "save" which re-boots the FC. Then Windows does not reestablish the USB. Check in the Device Manager to see if the Port has returned. If not then a work around is to disconnect and reconnect the USB. On some PCs/FCs this doesn't work so plug the USB into a different USB port on the PC. I keep two USB cables plugged into a Powered USB hub and just swap the USB cable to the FC and the Port comes back in the Device Manger and the Config GUI now sees to port.
 This is NOT and FC or Firmware issue but a Windows USB issues.
