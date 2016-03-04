@@ -1,6 +1,6 @@
 This page is meant to provide a more in depth explanation of the changelog for each release so that users can understand the consequences of the changes made. Please remember to read the changelog for each release first.
 
-# 2.5.0-RC7
+# 2.5.0-RC7 Final
 - reworked mixer saturation (smooth PID reduction)
 - Should be the final 2.5.0 release
 
