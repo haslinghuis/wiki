@@ -1,6 +1,15 @@
 This page is meant to provide a more in depth explanation of the changelog for each release so that users can understand the consequences of the changes made. Please remember to read the changelog for each release first and read the "Betaflight specific CLI commands" in this Wiki for new and changed CLI commands.
 
-# 2.5.0-RC7 Final
+# 2.5.1 - 
+
+2.5 Patch 1
+
+- Restored original min_check scaling. Both stick armer's and switch armer's have same throttle range.
+- Default min_check lowered to 1040 (make sure your radio can go below 1040 to be able to arm)
+- SPRACINGF3MINI cleanflight sync. Some timer cleanup (possible PPM fix with oneshot)
+- Fix for ON_USB buzzer (works only on some targets)
+
+# 2.5.0-RC7 Release 2.5
 - reworked mixer saturation (smooth PID reduction)
 - Should be the final 2.5.0 release
 
