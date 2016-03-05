@@ -314,6 +314,5 @@ Data can be seen as Debug 0-3 in the Sensors tab and logs.<br />
 <i>[1,??]</i><br />
 
 '''set pid_process_denom = 1'''<br />
-<i>[1,...,8?]</i><br />
-Determines PID and motor write frequency by dividing the gyro sample rate. This is automatically set to proper values when LOOPTIME (microSeconds) is set using the Config GUI.<br />
-Some improvement is possible at 1kHz by first setting LOOPTIME to 500 (2kHz) in GUI to automatically configure for fast sampling, then setting this to 8 to return to 1kHz.
+<i>[1,...,8]</i><br />
+Determines PID and motor write frequency by dividing the gyro sample rate. This is automatically set to proper values when LOOPTIME (microSeconds) is set using the Config GUI.
