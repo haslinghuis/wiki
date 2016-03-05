@@ -631,3 +631,5 @@ In BorisB's words from Regroups
 
 "Guys I read a lot of comments about bad defaults for MW23 pid controller. I will say it once more......there are NO defaults for MW23. The defaults are made for rewrite actually. It is not possible to have defaults for both....rewrite and MW23.
 You really have to tune that one by yourself."
+
+Reports show that default PIDS are too high. Be careful when first arming as it might have serious oscillations.
