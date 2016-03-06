@@ -125,6 +125,7 @@ See the "What is Acro Plus" topic on the Frequently Asked Questions page.
 
 '''set yaw_jump_prevention_limit''' = 200<br />
 <i>[80,...,500]</i><br />
+The maximum allowed P on Yaw stops....when stick centered basically.
 Description by Boris here: http://www.rcgroups.com/forums/showpost.php?p=33860926&postcount=16558
 
 <strike>'''set delta_from_gyro''' = ON<br /></strike> 
@@ -316,3 +317,9 @@ Data can be seen as Debug 0-3 in the Sensors tab and logs.<br />
 '''set pid_process_denom = 1'''<br />
 <i>[1,...,8]</i><br />
 Determines PID and motor write frequency by dividing the gyro sample rate. This is automatically set to proper values when LOOPTIME (microSeconds) is set using the Config GUI.
+
+<u>'''New 2.5.3'''</u>
+
+'''yaw_p_limit'''<br />
+<i>[1,...,???]</i><br />
+Sets the maximum allowed P on Yaw.
