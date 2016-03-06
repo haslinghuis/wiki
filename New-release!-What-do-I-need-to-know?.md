@@ -4,8 +4,8 @@ This page is meant to provide a more in depth explanation of the changelog for e
 # 2.5.1 - 
 2.5 Patch 2
 
-    Added piroutte protection during hard yaw manouvres. Yaw should not dominate over roll and pitch in some scenarios
-    New 1000 looptime default (gyro_sync_denom = 8 and gyro_lpf = off)
+- Added piroutte protection during hard yaw manouvres. Yaw should not dominate over roll and pitch in some scenarios
+- New 1000 looptime default (gyro_sync_denom = 8 and gyro_lpf = off)
 
 
 # 2.5.1 - 
