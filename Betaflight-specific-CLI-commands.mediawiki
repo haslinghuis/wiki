@@ -80,7 +80,7 @@ Example:
 beeper -ALL disable all beeper scenarios
 
 beeper ALL enable all
-
+Do a 'dump' in the CLI to get all the # beeper command names.
 
     BEEPER_SILENCE = 0,             // Silence, see beeperSilence()
     BEEPER_GYRO_CALIBRATED,
