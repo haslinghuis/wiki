@@ -72,7 +72,7 @@ beeper_off_flags = sum of each desired beeper turned off
  BEEPER_MULTI_BEEPS, 16384         // Internal value used by 'beeperConfirmationBeeps()'.
  BEEPER_ARMED, 32768               // Warning beeps when board is armed (repeats until board is disarmed or throttle is increased)
  
-'''New in V2.5.0 Final'''
+<u>'''New in V2.5.0 Final'''</u>
 
 The beeper off flags command is replaced by new textual representation using beeper command. 
 Example:
@@ -300,7 +300,7 @@ Configurable VFAS cell voltage / battery voltage.
 Replaces set enable_fast_pwm. This is automatically set to proper values when LOOPTIME (microSeconds) is set using the Config GUI.
 Also see "set motor_pwm_rate" above.
 
-'''New 2.5.0 Final'''
+<u>'''New 2.5.0 Final'''</u>
 
 TODO
 Fill in the details of possible values and a description of what these do.
