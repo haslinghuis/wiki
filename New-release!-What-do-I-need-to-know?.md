@@ -2,6 +2,13 @@ This page is meant to provide a more in depth explanation of the changelog for e
 
 
 # 2.5.1 - 
+2.5 patch 3
+
+- yaw_p_limit applied to all PID controllers. Before it was only applied to MW23. Changed default to 300. Removed old dynamic yaw limiter
+
+Note that upgrading from previous versions and/or pasting cli dump will overwite the default. Therefore I recommend using set yaw_p_limit = 300 for best results
+
+# 2.5.1 - 
 2.5 Patch 2
 
 - Added piroutte protection during hard yaw manouvres. Yaw should not dominate over roll and pitch in some scenarios
