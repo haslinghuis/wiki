@@ -321,5 +321,5 @@ Determines PID and motor write frequency by dividing the gyro sample rate. This 
 <u>'''New 2.5.3'''</u>
 
 '''yaw_p_limit = 300'''<br />
-<i>[1,...,300]</i><br />
+<i>[100,...,300]</i><br />
 Sets the maximum allowed P on Yaw.
