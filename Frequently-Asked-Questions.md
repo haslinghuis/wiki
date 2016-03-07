@@ -648,12 +648,12 @@ The first time I started testing the lower looptime was getting the lower I and 
 
 Iterm is more agressive though. It can even cause oscillations, which finally makes Iterm tuning easier.
 
-These are my PIDs. Not fully tuned though as I focused more on firmware testing.
-Roll 3.0   0.020   22.
-Pitch 3.5  0.025   25.
-Yaw 7.0    0.045   0.
+These are my PIDs. Not fully tuned though as I focused more on firmware testing:
+Roll 3.0   0.020   22
+Pitch 3.5  0.025   25
+Yaw 7.0    0.045   0
 
-Level (I don't really fly level but had to test it as level also has I and D).
+Level (I don't really fly level but had to test it as level also has I and D):
 Level P 9.0   I 0.005   D 0
 
 Don't forget to follow this good approach to tuning your multi-rotor:
