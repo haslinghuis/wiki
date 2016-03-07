@@ -640,3 +640,6 @@ The key takeaway is:
 * P gains need to be less than on MWREWRITE
 * YAW Rate needs to be lower than on MWREWRITE
 * Roll & Pitch Rates needs to be higher than on MWREWRITE
+
+Don't forget to follow this good approach to tuning your multi-rotor:
+http://github.com/borisbstyle/betaflight/wiki/PID-Tuning-Guide
