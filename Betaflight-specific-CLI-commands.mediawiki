@@ -29,9 +29,6 @@ For V2.4.0 and above- see the set gyro_sync_denom CLI command below.
 
 <u>(starting with Version 2.4 the following hardware is automatically set to NONE  on F1 boards if 500usec looptime is selected in the GUI)</U>
 
-
-gyro_lpf = OFF basically still means there is a little bit of filtering on the gyro. When setting it to EXPERIMENTAL it will remove any possible filtering and give raw data, which is extremely noisy. I don't recommend it. I just added it to be there in case someone wants to play with it. 
-
 '''set acc_hardware''' = 0 (default on) (must be set to 1 for 2K mode on F1 targets)<br />
 <i>[0,...,9] (from 2.4.0 [AUTO,NONE,...])</i><br />
 Sets the accelerometer 0 means auto detect, 1 means NONE, 2 for ADXL345, 3 for MPU6050 integrated accelerometer, 4 for MMA8452, 5 for BMA280, 6 for LSM303DLHC, 7 for MPU6000, 8 for MPU6500
