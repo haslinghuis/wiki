@@ -552,7 +552,7 @@ calculation of motor speed is then
 
 motor update interval us= 125 * gyro_sync_denom * pid_process_denom 
 
-Important Note: With fast Loop rates there have been reports of the Gyro Caling during Bootup much sooner and the copter could be moving due to connecting the battery. If the copter is moving during Gyro Cal then the bad things can happen. Do observe the LEDs for very fast blinking or the three beeps. If you think the copter was moving during the Gyro Cal then just do a manual gyro cal with the Stick command, Hold minimum throttle and YAW then cent Roll and minimum Pitch.
+**Important Note: With fast Loop rates there have been reports of the Gyro Caling during Bootup much sooner and the copter could be moving due to connecting the battery. If the copter is moving during Gyro Cal then the bad things can happen. Do observe the LEDs for very fast blinking or the three beeps. If you think the copter was moving during the Gyro Cal then just do a manual gyro cal with the Stick command, Hold minimum throttle and YAW then cent Roll and minimum Pitch.**
 
 ##What is OneShot125 OneShot42 and MultiShot and how do these relate to max_throttle and Looptime ?
 TODO
