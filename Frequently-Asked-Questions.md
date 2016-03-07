@@ -64,6 +64,9 @@ http://www.youtube.com/watch?v=xSzO6HP6yzs
 
 There is a step-by-step guide on how to flash the flight controller with Betaflight here: http://quadquestions.com/blog/2015/12/25/betaflight_flashing/
 
+How to flash Betaflight on CC3D video guide:
+http://www.rcgroups.com/forums/showpost.php?p=34196999&postcount=21477
+
 ##Why wont my FC board arm after upgrading the firmware ?
 Check the following:
 * Perform a full chip erase while flashing the firmware.
