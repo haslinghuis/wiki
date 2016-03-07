@@ -635,3 +635,8 @@ In BorisB's words from Regroups
 You really have to tune that one by yourself."
 
 Reports show that default PIDS are too high. Be careful when first arming as it might have serious oscillations.
+
+The key takeaway is:
+* P gains need to be less than on MWREWRITE
+* YAW Rate needs to be lower than on MWREWRITE
+* Roll & Pitch Rates needs to be higher than on MWREWRITE
