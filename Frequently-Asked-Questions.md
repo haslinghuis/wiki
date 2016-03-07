@@ -37,7 +37,7 @@
 1. [Why do we have RC Rate and also Yaw Pitch Roll Rates ?](#why-do-we-have-rc-rate-and-also-yaw-pitch-roll-rates-)
 1. [Why does it matter to prevent motor jitter ?](#why-does-it-matter-to-prevent-motor-jitter-)
 1. [Why when I change something using CLI board crashes ?](#why-when-i-change-something-using-cli-board-crashes-)
-1. [Will MW2.3 PID controller work on default PIDS ?](#Will-MW2.3-PID-controller-work-on-default-PIDS-)
+1. [Will MW2.3 PID controller work on default PIDS ?](#will-mw2.3-pid-controller-work-on-default-pids-)
 
 **If your question is not listed above then please check the following pages:**
 
