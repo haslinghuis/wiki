@@ -663,5 +663,17 @@ Yaw 7.0    0.045   0
 Level (I don't really fly level but had to test it as level also has I and D):  
 Level P 9.0   I 0.005   D 0
 
+Updated advice and settings for 2.5.3 from Boris B:
+suggest the following PIDs are manually entered as stock for MW23:
+Roll   2.5   0.020   20
+Pitch  3.5   0.025   25
+Yaw    6.5   0.045   0
+Additionally:
+Rates about .7 as a start
+RC Rate 1
+rc yaw expo 0.2
+
+Angle and Horizon modes still need some work
+
 Don't forget to follow this good approach to tuning your multi-rotor:
 http://github.com/borisbstyle/betaflight/wiki/PID-Tuning-Guide
