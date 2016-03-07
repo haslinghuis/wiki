@@ -98,6 +98,7 @@ beeper ALL enable all
  beeper  SYSTEM_INIT
  beeper  ON_USB
 
+Note: A copy paste from the CLI does not work and gives "Invalid" due to too many spaces between 'beeper' and the name. Just delete the extra space so there is only one space before hitting 'enter'.
 
 '''set acc_lpf_hz''' = 20<br />
 <i>[0,...,200]</i>
