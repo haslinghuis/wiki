@@ -354,6 +354,9 @@ Some people have experienced erratic behavior (jitters etc) after a crash,  as i
 Some gyros are more sensitive than others.
 To Recalibrate Gyros: " Disarm. Perform gyro calibration (left stick down left....right stick down) and it will be fine. You will see leds blinking and it will beep. Also when plugging your lipo in your quad, * your quad should not be moved*." - Boris comment
 
+If you fly in Auto-level modes (Angle or Horizon) then the Accelerometer can easily get upset and gives False readings. The Accelerometer can also get upset if there are excessive vibrations or during fast Aerobatic moves. 
+Not much you can do except wait for the accelerometer readings to settle down. This is easily seen if you raun a minimOSD with the Artificial Horizon displayed.
+
 ##How does yaw_jump_prevention_limit work ?
 "First you need to know the basics of a mixer function on multirotors.
 Mixer gets PIDsum of all 3 axis and translates that into motor output.
