@@ -641,7 +641,7 @@ The key takeaway is:
 * YAW Rate needs to be lower than on MWREWRITE
 * Roll & Pitch Rates needs to be higher than on MWREWRITE
 
- Originally Posted by Boris B
+- Originally Posted by Boris B
 D is quite tolerant it appears. I scaled it to the looptime which wasnt there in the first place.
 
 The first time I started testing the lower looptime was getting the lower I and D was needed. Now it is normalized to looptime ~2000 to give values close to original multiwii..
