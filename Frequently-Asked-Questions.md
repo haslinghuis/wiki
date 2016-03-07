@@ -641,5 +641,20 @@ The key takeaway is:
 * YAW Rate needs to be lower than on MWREWRITE
 * Roll & Pitch Rates needs to be higher than on MWREWRITE
 
+ Originally Posted by Boris B
+D is quite tolerant it appears. I scaled it to the looptime which wasnt there in the first place.
+
+The first time I started testing the lower looptime was getting the lower I and D was needed. Now it is normalized to looptime ~2000 to give values close to original multiwii..
+
+Iterm is more agressive though. It can even cause oscillations, which finally makes Iterm tuning easier.
+
+These are my PIDs. Not fully tuned though as I focused more on firmware testing:
+Roll 3,0 0.020 22
+Pitch 3,5 0,025 25
+Yaw 7.0 0.045 0
+
+Level (i dont really fly level but had to test it as level also has I and D):
+Level P 9.0 I 0.005 D 0
+
 Don't forget to follow this good approach to tuning your multi-rotor:
 http://github.com/borisbstyle/betaflight/wiki/PID-Tuning-Guide
