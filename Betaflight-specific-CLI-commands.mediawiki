@@ -192,6 +192,7 @@ There is basically a choice between 2 types of delta
 '''set airmode_saturation_limit''' = 50
 
 Default value of 50 means that airmode will try to compensate at it's best till 50% saturation. 0 means always maximum stabilisation and 100 always limited. 0 is like version 2.3.3 and 2.3.4 and 100 would act same like pre 2.3.3 and like in 2.3.5.
+2.5 has no limit....works as 2.3.3 and 2.3.4.
 
 '''set gyro_sync_denom''' = 1
 
