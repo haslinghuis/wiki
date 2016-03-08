@@ -1,21 +1,21 @@
 This page is meant to provide a more in depth explanation of the changelog for each release so that users can understand the consequences of the changes made. Please remember to read the changelog for each release first and read the "Betaflight specific CLI commands" in this Wiki for new and changed CLI commands.
 
 
-# 2.5 - 
+# 2.5.3 - 
 2.5 patch 3
 
 - yaw_p_limit applied to all PID controllers. Before it was only applied to MW23. Changed default to 300. Removed old dynamic yaw limiter
 
 Note that upgrading from previous versions and/or pasting cli dump will overwite the default. Therefore I recommend using set yaw_p_limit = 300 for best results
 
-# 2.5 - 
+# 2.5.2 - 
 2.5 Patch 2
 
 - Added piroutte protection during hard yaw manouvres. Yaw should not dominate over roll and pitch in some scenarios
 - New 1000 looptime default (gyro_sync_denom = 8 and gyro_lpf = off)
 
 
-# 2.5 - 
+# 2.5.1 - 
 2.5 Patch 1
 
 - Restored original min_check scaling. Both stick armer's and switch armer's have same throttle range.
