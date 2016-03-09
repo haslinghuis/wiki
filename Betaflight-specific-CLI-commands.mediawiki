@@ -316,6 +316,11 @@ Determines PID and motor write frequency by dividing the gyro sample rate. This 
 
 <u>'''New 2.5.3'''</u>
 
-'''yaw_p_limit = 300'''<br />
+'''set yaw_p_limit = 300'''<br />
 <i>[100,...,300]</i><br />
 Sets the maximum allowed P on Yaw.
+
+'''set acro_plus_offset = 40''''''<br />
+<i>[1,...,89]</i><br />
+TODO
+add description of what this does here and in the Acro Plus FAQ.
