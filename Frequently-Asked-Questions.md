@@ -230,6 +230,10 @@ Note that near or very near center sticks, AcroPlus has markedly less effect on 
 
 Hence Acro Plus can be considered a form of exponential rate multiplier, outside of the normal PID mechanisms, that should, in most quads, increase roll rates at high stick angles quite significantly. The iTerm coding changes prevent iTerm windup problems that would otherwise inevitably cause loss of control or serious bounce-back at the end of such extremely high rate rolls or flips.
 
+
+**TODO**
+Re-write explanation to include the two possible factor (CLI commands) set acro_plus_factor and set acro_plus_offset. Also discuss the changes in the different Version of ßF Firmware.
+
 ##What is 2kHz mode ?
 See the "Gyro based loop implementation" description on the Wiki Home page.
 2kHz mode is simply a faster Gyro based loop that runs at an update rate of 2000 times a second or every 500usec.
