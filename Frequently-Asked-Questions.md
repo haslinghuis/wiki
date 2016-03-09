@@ -281,7 +281,8 @@ Note that there is a restriction on the number of available AUX channels in 2kHz
 
 For Betaflight 2.4.1 onwards the number of Aux channels is selectable with the set max_aux_channels (see the CLI commands section of wiki).
 
-
+**Note:**
+Some ESCs will not calibrate a 2kHz and faster Loop Rates, KISS ESCs have been reported to have this issue. The fix is to simply set Loop rate to 1kHz (1000usec looptime) then calibrate the ESCs and change back to the desired looptime.
 
 ##What Flight Controllers are recommended to get the best out of BetaFlight ?
 Here is a list of FCs compiled around the end of January 2016. The opinions regarding Pros and Cons are also shown.
