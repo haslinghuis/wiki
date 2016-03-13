@@ -116,6 +116,7 @@ One other method to free-up the CPU is to:
 Do not forget to check the Basics. 
 Use the Receiver Tab and check that each stick moves the correct channel slider and the slider moves in the correct direction. If the wrong channel slider moves, then check the channel MAP (eg AETR instead of TAER).
 Also check that the stick End Point values are still correct. For more information take a look at the Question called "What is the best practice for configuring the Throttle end points".
+Make sure your min throttle command is lower than min_check! If in the modes tab you see that the quad should be arming but isn't, use "set min_check" and make sure that that is greater than the lowest throttle value in the receiver tab.
 
 Is the Accelerometer Calibrated? Needs to be done once to allow arming.
 
