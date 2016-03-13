@@ -38,7 +38,7 @@
 1. [Why does it matter to prevent motor jitter ?](#why-does-it-matter-to-prevent-motor-jitter-)
 1. [Why when I change something using CLI board crashes ?](#why-when-i-change-something-using-cli-board-crashes-)
 1. [Will MW2.3 PID controller work on default PIDS ?](#will-mw23-pid-controller-work-on-default-pids-)
-
+1. [What is the difference between Min_check Min_command and Min_throttle ?](#What-is-the-difference-between-Min_Check-Min_command-and-Min_throttle-)
 **If your question is not listed above then please check the following pages:**
 
 http://github.com/borisbstyle/betaflight/wiki/Betaflight-specific-CLI-commands
@@ -682,3 +682,17 @@ Angle and Horizon modes still need some work
 
 Don't forget to follow this good approach to tuning your multi-rotor:
 http://github.com/borisbstyle/betaflight/wiki/PID-Tuning-Guide
+
+#What is the difference between Min_Check Min_command and Min_throttle ?
+
+From MasterZap
+
+min_check has nothing to do with ESC's ....
+
+min_command is the value sent when disarmed (or when armed and motor stop is on, i.e. when we want the motors not to spin).
+min_throttle is the value sent when armed (with motor stop off)
+
+min_check is about stick command and only matters towards your actual throttle stick. It has no effect on what is sent to the ESC. 
+
+The misunderstanding of this comes from the fact that your throttle stick doesn't even begin "working" until you are above min_check. People try explaining this with sentences like "the FC will map min_check to min_throttle", which while true, makes people believe there is this relation. There is no relation. All that is being said is "the flight controller only cares about the range above min_check up to full throttle, and will remap that range into the 0%-100% input to the flight controller, which then outputs whatever it wants to the motors"
+
