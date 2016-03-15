@@ -191,15 +191,16 @@ There is basically a choice between 2 types of delta
 
 '''set airmode_saturation_limit''' = 50
 
-Default value of 50 means that airmode will try to compensate at it's best till 50% saturation. 0 means always maximum stabilisation and 100 always limited. 0 is like version 2.3.3 and 2.3.4 and 100 would act same like pre 2.3.3 and like in 2.3.5.
-2.5 has no limit (removed)....works as 2.3.3 and 2.3.4. There is just yaw_p_limit to prevent yaw domination.
+Default value of 50 means that airmode will try to compensate at it's best till 50% saturation. 0 means always maximum stabilization and 100 always limited. 0 is like version 2.3.3 and 2.3.4 and 100 would act same like pre 2.3.3 and like in 2.3.5.
+
+2.5.x has no limit (removed)....works as 2.3.3 and 2.3.4. There is just yaw_p_limit to prevent yaw domination.
 
 '''set gyro_sync_denom''' = 1
 
 For 2khz, set it = 4
  for 2.6khz, set it = 3
- for 4 khz, set it = 2 (iffy depending on ESCs)
- for 8 khz (not recommended) set it = 1 
+ for 4 khz, set it = 2 (iffy depending on ESCs, can be used with OneShot125 if Short Cal'ed or with MultiShot & OneShot42)
+ for 8 khz (not recommended) set it = 1 (Can be used if ESCs are running MutliShot or OneShot42)
 
 Denom is always a multiplier to 125us=8khz. 4 means 125*4=500us(2khz). Dont forget to check CPU usage when playing with this value. 
 It is highly recommended to use the 'looptime' (in microSecond) box in the config GUI. This takes care of all the required settings.
