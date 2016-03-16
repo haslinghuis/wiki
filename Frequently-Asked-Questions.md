@@ -714,3 +714,9 @@ In summary, the key takeaways from this video are:
 
 * Keep a separate custom config file that just has the settings that you have invested time in getting correct for the flying experience you want (PIDs, rates, AUX switch settings etc).
 * Upgrade the FC to the desired Betaflight version then uploaded your custom config file.
+* Ensure the custom config file is up-to-date with PID & Rate values during and after tuning. This way you can compare tuning and/or restore a tune if you changed firmware versions and need to go back.
+
+Here are a few tools that are useful for making comparisons between config files:
+
+1. Notepad++ with the Compare PlugIn
+1. https://www.diffchecker.com/
