@@ -701,16 +701,16 @@ The misunderstanding of this comes from the fact that your throttle stick doesn'
 
 ##How do I keep and then restore my Betaflight Settings each time I upgrade ?
 
-First of all it is important to note that uploading a **full** settings Dump from a previous Betaflight version will likely results in your copter not flying properly, not flying at all or even damage to the components.
+First of all it is important to note that uploading a **full** settings Dump from a previous Betaflight version will likely result in your copter not flying properly, not flying at all or even damage to the components.
 
 It's also worth noting that the method of flashing Betaflight **can** be dependent of the FC board. So best to refer to the thread on the FC board you are using. The list of Boards in the FAQ have links to these threads.
-Any issues/differences in updating is typically listed in the Release Notes which are a MUST READ.
+Any issues/differences in updating are typically listed in the Release Notes which are a MUST READ.
 
 Having said all this, one approach worth considering for ensuring your settings are migrated from one Betaflight version to another is described in this video:
 
 http://www.youtube.com/watch?v=F1sjC5l0ywM
 
-In summary, the key takeaways are:
+In summary, the key takeaways from this video are:
 
 * Keep a separate custom config file that just has the settings that you have invested time in getting correct for the flying experience you want (PIDs, rates, AUX switch settings etc).
 * Upgrade the FC to the desired Betaflight version then uploaded your custom config file.
