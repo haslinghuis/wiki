@@ -247,7 +247,7 @@ Need to check what the default and maximum number of aux channels are.
  
 <u><i>'''New 2.4.2 CLI commands'''</i></u>
 
-'''set serialpassthrough''' = X <br />
+'''serialpassthrough'''<br />
 <i>[id] [baud] [mode]</i><br />
 Serial data to port forwarding.
 {| class="wikitable"
@@ -265,7 +265,7 @@ Serial data to port forwarding.
 |}
 
 If your OSD is connected to UART2 with a baudrate of 57600 and you want to connect to it with your software enter this command:
- set serialpassthrough = 1 57600
+ serialpassthrough 1 57600
 Then disconnect cleanflight configurator and connect your OSD Software to the com port.
  
 <u><i>'''New 2.5.0 RC1 CLI commands'''</i></u>
