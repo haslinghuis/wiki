@@ -477,6 +477,9 @@ So perfectly normal.
 You simply cannot make judgements on an I terms behaviour without letting that I term act the way it wants. With props off, on the bench, you just get meaninglessness.
 
 /Z
+
+A quick way to test that there isn't some other issue causing it is use the motor test page to remove the PIDs from the equation.
+
 ##Why do my motors spin briefly when rebooting the Flight Controller ?
 Since flashing 2.4.0 and rebooting from Configurator with a battery plugged in spins up the motors briefly. I'm fairly sure that didn't happen in 2.1.6, not sure about 2.3.5.
 
