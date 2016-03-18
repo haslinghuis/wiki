@@ -454,7 +454,7 @@ ESCs shouldn't need recalibration unless you changed the min/max throttle values
 
 For more information about ESC Calibration see this video: http://www.youtube.com/watch?v=o3Mg-9M0l24
 
-##Why do my motors keep accelerating on the bench without props ?
+##Why do my motors keep accelerating on the bench when I arm without props ?
 With props off on the bench, I arm the quad and the motors start. After increasing throttle a small amount then back to minimum I notice the motors keep increasing in speed.  They don't go to max or anything, but they climb noticeably. Now if I was in Angle/Horizon with the accelerometer enabled I could understand that the quad was tying to level itself. But in Acro mode why should the throttle change on its own ? I'm guessing this is an Airmode effect. But just wanted to understand a little more about why.
 
 Answer: That is the flight controller trying to correct for changes in aspect, mainly due to fact your quad shakes slightly when the motors spin, the sensors pick it up and then the flight controller tries to correct, it can't because you don't have props on. All perfectly normal.
