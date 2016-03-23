@@ -315,9 +315,14 @@ Data can be seen as Debug 0-3 in the Sensors tab and logs.<br />
 <i>[1,...,8]</i><br />
 Determines PID and motor write frequency by dividing the gyro sample rate. This is automatically set to proper values when LOOPTIME (microSeconds) is set using the Config GUI.
 
-<u>'''New 2.5.3'''</u>
+<u>'''New in 2.5.3'''</u>
 
 '''set yaw_p_limit = 300'''<br />
 <i>[100,...,300]</i><br />
 Sets the maximum allowed P on Yaw.
 
+<u>'''New in 2.5.4'''</u>
+
+'''set gyro_cal_on_first_arm = OFF'''<br />
+<i>[OFF,ON]</i><br />
+Forces a Gyro calibration upon Arming the first time after power up when set = ON.
