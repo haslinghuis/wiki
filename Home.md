@@ -37,6 +37,8 @@ Betaflight is also always being adjusted to support most current Cleanflight too
 - Motolab TornadoFC (F3) / CycloneFC (F3) / MotoF3
 - Colibri Race / The cube
 - SpracingF3 Mini
+- AfroMini
+- Lux Race
 
 ##Additional Remarks
 - In case of using Blheli ESC software 14.1 or higher is required for reliable Betaflight support. (This remark doesnt mean that only blheli is supported. All other ESC's work fine....KISS.....Simonk etc).
