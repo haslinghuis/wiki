@@ -1,6 +1,20 @@
 This page is meant to provide a more in depth explanation of the changelog for each release so that users can understand the consequences of the changes made. Please remember to read the changelog for each release first and read the "Betaflight specific CLI commands" in this Wiki for new and changed CLI commands.
 
 
+# 2.5.4 - 
+2.5 Patch 4
+
+Improved gyro calibration on faster looptimes
+Added option for gyro calibration prior arming. Gyro calibrates only prior the first arm sequence (set gyro_cal_on_first_arm = ON)
+Failsafe buzzer now only beeps when copter was armed at least once
+Iterm scaling improved on MW23
+COLIBRI_RACE added Airmode status in CORE PRO
+Fixed Beeper dump bug
+All profiles added to dump in cli
+Better configurable range for PIDs in configurator for luxfloat. Cli PID scaling stays the same
+New luxfloat Yaw default
+Added 3D mode on switch (If you want to arm in non 3D mode your ESC range needs to be symmetric)
+
 # 2.5.3 - 
 2.5 patch 3
 
