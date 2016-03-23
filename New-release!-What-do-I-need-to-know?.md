@@ -4,25 +4,30 @@ This page is meant to provide a more in depth explanation of the changelog for e
 # 2.5.4 - 
 2.5 Patch 4
 
-Improved gyro calibration on faster looptimes
+- Improved gyro calibration on faster looptimes
 
-Added option for gyro calibration prior arming. Gyro calibrates only prior the first arm sequence (set gyro_cal_on_first_arm = ON)
+- Added option for gyro calibration prior arming. Gyro calibrates only prior the first arm sequence (set gyro_cal_on_first_arm = ON)
 
-Failsafe buzzer now only beeps when copter was armed at least once
+- Failsafe buzzer now only beeps when copter was armed at least once
 
-Iterm scaling improved on MW23
+- Iterm scaling improved on MW23
 
-COLIBRI_RACE added Airmode status in CORE PRO
+- COLIBRI_RACE added Airmode status in CORE PRO
 
-Fixed Beeper dump bug
+- Fixed Beeper dump bug
 
-All profiles added to dump in cli
+- All profiles added to dump in cli
 
-Better configurable range for PIDs in configurator for Luxfloat. The 'P' and 'D' Terms in Luxfloat are now shown as 4 times higher to allow better resolution when tuning. The actual PID scaling stays the same and can be seen in the CLI.
+- Better configurable range for PIDs in configurator for Luxfloat. The 'P' and 'D' Terms in Luxfloat are now shown as 4 times higher to allow better resolution when tuning. The actual PID scaling stays the same and can be seen in the CLI.
 
-New luxfloat Yaw default
+- New luxfloat Yaw default
 
-Added 3D mode on switch (If you want to arm in non 3D mode your ESC range needs to be symmetric)
+- Added 3D mode on switch (If you want to arm in non 3D mode your ESC range needs to be symmetric)
+
+Notes from ßF thread posts:
+
+Q: ..will 2.5.4 erase the settings I have now on 2.5.3? A: No it keeps your settings. Most patches dont require erasing.
+Q: Off to test and tune! 2.5.4! A: No need for retune. It should fly the same. MW23 is the only one feel better locked in on same tune 
 
 # 2.5.3 - 
 2.5 patch 3
