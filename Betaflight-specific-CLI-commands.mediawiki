@@ -9,7 +9,9 @@ The setting shown are the Defaults + possible values.
 Need feedback about proof of concept feature for mixing of roll and yaw to FPV cam angle. set roll_yaw_cam_mix_degrees = <degrees>
 <br />
 Here a good preview for this option: [https://youtu.be/gXeaINFpvow FPV camera tilt compensation]
- 
+
+Another video on this option: [https://www.youtube.com/watch?v=gEcWxHIH378 Betaflight Camera Uptilt Compensation]
+
 '''set motor_pwm_rate''' = 400<br />
 <i>[0,...,8000]</i><br />
 This is the fixed refresh rate of the outputs to the ESCs in Hz. It is not used when using oneshot/multishot signalling
