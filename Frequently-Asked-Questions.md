@@ -685,22 +685,19 @@ The first time I started testing the lower looptime was getting the lower I and 
 Iterm is more agressive though. It can even cause oscillations, which finally makes Iterm tuning easier.
 
 These are my PIDs. Not fully tuned though as I focused more on firmware testing:  
-Roll 3.0   0.020   22  
-Pitch 3.5  0.025   25  
-Yaw 7.0    0.045   0  
+Roll 2.8   0.025   22  
+Pitch 3.5  0.035  35  
+Yaw 5.5    0.045   0  
 
 Level (I don't really fly level but had to test it as level also has I and D):  
 Level P 9.0   I 0.005   D 0
 
-Updated advice and settings for 2.5.3 from Boris B:
-suggest the following PIDs are manually entered as stock for MW23:
-Roll   2.5   0.020   20
-Pitch  3.5   0.025   25
-Yaw    6.5   0.045   0
 Additionally:
 Rates about .7 as a start
+yaw rate 0.8
 RC Rate 1
-rc yaw expo 0.2
+rc yaw expo 0.3
+rc expo 0.3
 
 Angle and Horizon modes still need some work
 
