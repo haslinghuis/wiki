@@ -18,8 +18,7 @@ Fixed Beeper dump bug
 
 All profiles added to dump in cli
 
-Better configurable range for PIDs in configurator for Luxfloat. Cli PID scaling stays the same.
-The 'P' and 'D' Terms in Luxfloat are now shown as 4 times higher to allow better resolution when tuning.
+Better configurable range for PIDs in configurator for Luxfloat. The 'P' and 'D' Terms in Luxfloat are now shown as 4 times higher to allow better resolution when tuning. The actual PID scaling stays the same and can be seen in the CLI.
 
 New luxfloat Yaw default
 
