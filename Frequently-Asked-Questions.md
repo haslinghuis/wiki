@@ -570,7 +570,7 @@ looptime 125
 - always 8khz gyro sampling (gyro_sync_denom = 1)
 - when just oneshot125:
 - pid_process_denom =3
-- when use_oneshot42 or use_multishit
+- when use_oneshot42 or use_multishot
 - pid_process_denom = 2
 
 looptime 250
