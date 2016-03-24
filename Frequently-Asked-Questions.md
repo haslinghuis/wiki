@@ -685,9 +685,13 @@ The first time I started testing the lower looptime was getting the lower I and 
 Iterm is more agressive though. It can even cause oscillations, which finally makes Iterm tuning easier.
 
 These are my PIDs. Not fully tuned though as I focused more on firmware testing:  
-Roll 2.8   0.025   22  
+Roll 3.0   0.025   22  
 Pitch 3.5  0.035  35  
-Yaw 5.5    0.045   0  
+Yaw 5.8    0.045   0  
+RC Rate 1.0
+Rates 0.7 0.8 0.8
+RC Expo 0.2
+Rc Yaw epo 0.3
 
 Level (I don't really fly level but had to test it as level also has I and D):  
 Level P 9.0   I 0.005   D 0
