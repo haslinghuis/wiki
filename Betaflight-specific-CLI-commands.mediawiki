@@ -49,6 +49,11 @@ NB - There's an issue with configurator that means the gyro icon goes dark when 
 '''set imu_dcm_ki''' = 0<br />
 <i>[0,...,50000]</i>
  
+ 
+'''set enable_buzzer_p6''' = OFF<br />
+<i>[OFF,ON]</i>
+Enables a lost buzzer on ESC Port 6 (CC3D only)
+
 '''set beeper_off_flags''' = 256<br />
 <i>[0,...,65535]</i>
 
