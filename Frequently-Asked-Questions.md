@@ -327,6 +327,36 @@ In Luxfloat level/horizon modes, full max angle is reached at full stick. This m
 
 In rewrite, stick sensitivity is managed differently; sensitivity depends on rates and is closer to acro sensitivity. This may result in reaching max angle before the sticks reach their full travel. I personally prefer this (it was my coding hack, I think, that made it like this). It's good both for teaching and for experienced pilots.
 
+New in V2.5.4
+
+The 'P' and 'D' Terms in Luxfloat are now shown as 4 times higher to allow better resolution when tuning. The actual PID scaling stays the same and can be seen in the CLI.
+
+Boris posted this in the thread about Tuning Rewrite to feel the same as Luxfloat:
+
+I was saying that if you would take some time and work out the math that you could produce same numbers with both
+Just an example to show you. You dont have to understand the code to understand this part.
+
+Luxfloat P
+Code:
+
+        // -----calculate P component
+        PTerm = RateError * P * TPA;
+
+rewrite P
+Code:
+
+        // -----calculate P component
+        PTerm = (RateError * P * TPA) / 128;
+
+The difference above is that P gain number on rewrite is higher, but is being divided by 128 in the PTerm calculation, while luxfloat uses directly the number you entered from cli. Note that RateError number is using degrees/sec in luxfloat and in rewrite its abstraction from the original gyro output, but both can produce same PTerm when right P is selected.
+
+So if you can find P component what can produce the same PTerm result you will get same behaviour.
+
+Practical translation:
+1.0 in luxfloat means exactly 4.0 in rewrite just for Pterm.
+
+This same translation formula can be done on all numbers like rates, Dterm and Iterm. 
+
 ## Is there a good resource for learning how to tune using Black Box ?
 a. "I would check out Joshua Bardwells youtube channel. I haven't watched all these videos... I just picked them from his channel.
 
