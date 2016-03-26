@@ -38,7 +38,7 @@
 1. [Why does it matter to prevent motor jitter ?](#why-does-it-matter-to-prevent-motor-jitter-)
 1. [Why when I change something using CLI board crashes ?](#why-when-i-change-something-using-cli-board-crashes-)
 1. [Will MW2.3 PID controller work on default PIDS ?](#will-mw23-pid-controller-work-on-default-pids-)
-1. [What is the difference between Min_check Min_command and Min_throttle ?](#what-is-the-difference-between-Min_Check-Min_command-and-Min_throttle-)
+1. [What is the difference between Min_check Min_command and Min_throttle ?](##what-is-the-difference-between-min_check-min_command-and-min_throttle-)
 1. [How do I keep and then restore my Betaflight Settings each time I upgrade ?](#how-do-i-keep-and-then-restore-my-betaflight-settings-each-time-i-upgrade-)
 
 **If your question is not listed above then please check the following pages:**
