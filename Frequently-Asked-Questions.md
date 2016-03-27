@@ -255,6 +255,8 @@ This is not gospel, just a way to explain the difference.
 Have a look at this video form more information: http://www.youtube.com/watch?v=j2YtpeHGafs
 
 ##How do I activate 2kHz mode ?
+For Betaflight 2.4.0 onwards you should NOT use CLI but rather set looptime to 500 in the Configuration tab of the GUI. CAUTION: Appropriate sensors will automatically be disabled on F1 boards.
+
 For betaflight version prior to 2.4.0 can use the CLI and make the following commands, dependent on the Flight Controller type:
  
 **For F3 boards**
@@ -269,7 +271,6 @@ set baro_hardware = 1
 set mag_hardware = 1
 set gyro_lpf = OFF 
 ```
-For Betaflight 2.4.0 onwards you should NOT use CLI but rather set looptime to 500 in the Configuration tab. CAUTION: Appropriate sensors will automatically be disabled on F1 boards.
 
 ##Limitations of 2kHz mode
 Note that there is a restriction on the number of available AUX channels in 2kHz mode (actually on any loop frequency greater than 1kHz).
