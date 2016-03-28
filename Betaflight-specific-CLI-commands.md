@@ -79,11 +79,13 @@ beeper_off_flags = sum of each desired beeper turned off
 <u>'''New in V2.5.0 Final'''</u>
 
 The beeper off flags command is replaced by new textual representation using beeper command. 
-Example:
-
-beeper -ALL disable all beeper scenarios
-
-beeper ALL enable all
+Examples:
+To disable all beeper scenarios:
+`beeper -ALL`
+To enable all beeper scenarios:
+`beeper ALL`
+To disable beeping while USB is connected:
+`beeper -ON_USB`
 
  # beeper
  beeper  GYRO_CALIBRATED
