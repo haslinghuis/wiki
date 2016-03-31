@@ -136,9 +136,9 @@ When you change your looptime in the Configurator (or via CLI command) to a fast
 ##What is Air Mode ?
 Some users were mailing Boris about the fact their radios couldn't be configured to have Idle up switch and asking him to implement something similar in the software. Boris initially thought that this could simply just be achieved with activating the "Iterm" from zero throttle together with P and D which were already done with "pid_at_min_throttle" feature. Somehow this wasn't giving the satisfying results. It still felt weak and unresponsive. Boris was trying to wrap his head around why this was the case ! We got our P, I and D on the ground....so why isn't fully stabilizing? 
 
-After some readings in other open source projects and some of the older discussions, he realized that the key for this was in the mixer logic as someone already had a proof of concept code to improve it, which is pretty much scaling the PID's to our throttle level and stopping the stabilisation when one motor reaches min throttle. Now Boris understood why folks always preferred this Idle up switch as it was automatically gaining a little bit more stabilisation. But this is just a workaround where you loose some throttle below! The current mixer logic sounds reasonable as the early developers were always considering the low throttle values as a NON flying situation. Guess what? In 2015 we fly a lot with 0 or low throttle and especially in the mini quad scene! This has to be changed! The real answer lies in smarter mixer approach where the calculated PID output would always consider the maximum available motor output range to be able to get the desired correction.
+After some readings in other open source projects and some of the older discussions, he realized that the key for this was in the mixer logic as someone already had a proof of concept code to improve it, which is pretty much scaling the PID's to our throttle level and stopping the stabilization when one motor reaches min throttle. Now Boris understood why folks always preferred this Idle up switch as it was automatically gaining a little bit more stabilization. But this is just a workaround where you loose some throttle below! The current mixer logic sounds reasonable as the early developers were always considering the low throttle values as a NON flying situation. Guess what? In 2015 we fly a lot with 0 or low throttle and especially in the mini quad scene! This has to be changed! The real answer lies in smarter mixer approach where the calculated PID output would always consider the maximum available motor output range to be able to get the desired correction.
 
-With AIR mode the copter will always think it's in the "AIR" and will always try to correct as fast as possible and never become weak. We of course need this stabilisation once in AIR! This has it's consequences for our ground situations which you have to be aware of. With Air mode it would mean that the motors could be spooling up after arming, but there is some protection built for that. When you arm and keep throttle stick low (below min check) it will know it is on the ground and the motors will not spool up. Once you move your throttle to higher position for more than 1 second and pitch and roll are not centered anymore it will fully activate the stabilisation with 0 throttle! So you have to be aware that if you would land very quickly after first take off that the motors now are able to spool up as the copter thinks its flying and has max ability to correct. Dont worry you can disarm now or you can keep throttle low with roll + pitch stick centered and it will still spool down or at least it will not spool up anymore.
+With AIR mode the copter will always think it's in the "AIR" and will always try to correct as fast as possible and never become weak. We of course need this stabilization once in AIR! This has it's consequences for our ground situations which you have to be aware of. With Air mode it would mean that the motors could be spooling up after arming, but there is some protection built for that. When you arm and keep throttle stick low (below min check) it will know it is on the ground and the motors will not spool up. Once you move your throttle to higher position for more than 1 second and pitch and roll are not centered anymore it will fully activate the stabilization with 0 throttle! So you have to be aware that if you would land very quickly after first take off that the motors now are able to spool up as the copter thinks its flying and has max ability to correct. Dont worry you can disarm now or you can keep throttle low with roll + pitch stick centered and it will still spool down or at least it will not spool up anymore.
 
 
 The feature might still be optimized based on experiences of the Beta Testers, but is looking good already.
@@ -189,9 +189,6 @@ If you want Airmode on permanently, tick the box and then drag the slider so it 
 5. Just prior to landing, disable Air Mode (optional)
 6. Land and disarm motors
 
-Posted by BorisB: 
-Guys just a quick note.
-
 There are some people saying or complaining about their minimum throttle in airmode.
 
 Your min_check determines your lowest possible throttle value out of your TX! The lower your min_check is configured the lower throttle you can get out of your quad in air mode.
@@ -201,7 +198,7 @@ If your min_check is set to 1100 and your TX goes down to 1000 that would mean t
 ##What is Acro Plus ?
 1. Any value of AcroPlus above 0 causes any accumulated iTerm to be reset to zero (and kept at zero) whenever your sticks are at more than 70% of full throw. When restored to less than 70% of full stick travel, iTerm is only allowed to return to 'normal' slowly, actually at 0.1% per processor loop. ITerm therefore takes about 0.5s to return to 'normal' after a flip or roll on 2kHz targets. This improves immediate post-roll/flip stability.
 
-2. Acro Plus changes stick responsiveness by modifying the way in which the PIDs affect the motors, more so at the extreme of stick movement. 
+2. AcroPlus changes stick responsiveness by modifying the way in which the PIDs affect the motors, more so at the extreme of stick movement. 
 
 Individual PID values are calculated as usual, so the PID sum value (the sum of pTerm, dTerm and iTerm) is calculated exactly the same. The maximum possible allowed limit for PID sum is unchanged at 1000. 
 
@@ -209,17 +206,17 @@ The actual PID sum value can be thought of as the actual final value sent to dri
 
 Acro Plus modifies the PID sum value, essentially in linear proportion to acroPlus/100, and in square proportion to the angle of the sticks, up to the the maximum possible total PID value of 1000.
 
-If the AcroPlus value is low, i.e. 1, there is almost no change in PID sum, regardless of stick angle. Basically the PIDs work like normal, its just that the iTerm effects described above are now fully active. As usual, stick sensitivity at 100% stick travel (i.e. maximum roll rate) is set by RC and pitch/roll rates, while centre sensitivity is set by these and the amount of applied expo.
+If the AcroPlus value is low, i.e. 1, there is almost no change in PID sum, regardless of stick angle. Basically the PIDs work like normal, its just that the iTerm effects described above are now fully active. As usual, stick sensitivity at 100% stick travel (i.e. maximum roll rate) is set by RC and pitch/roll rates, while center sensitivity is set by these and the amount of applied expo.
 
 As AcroPlus values are increased, two things happen. First, the PIDsum values that normally control the motors get progressively reduced in linear proportion to stick angle. Second, and in place of the lost PIDsum values, a simple squared multiple of stick angle goes direct to the motors.
 
 Lets consider the numeric outcomes of the current code - I hope I've got this right:
 
-If acroPlus is 100, and you are at 100% stick travel, you PID calculations keep happening but are completely ignored. Output to motors is simply set to the maximum allowed value for PID sum, i.e. 1000. So if you held your stick full right like this, the two left motors would basically go full on and the two right would go to min_throttle. PID loop would not constrain or control this at all. Your quad will rotate as fast as it possibly can. i.e. basically direct motor control around full sticks.
+If AcroPlus is 100, and you are at 100% stick travel, you PID calculations keep happening but are completely ignored. Output to motors is simply set to the maximum allowed value for PID sum, i.e. 1000. So if you held your stick full right like this, the two left motors would basically go full on and the two right would go to min_throttle. PID loop would not constrain or control this at all. Your quad will rotate as fast as it possibly can. i.e. basically direct motor control around full sticks.
 
-If acroPlus is 100, and you are at 50% sticks, it's a curious combination of the two. The normal PID sum calculation is still active, but the amount driving the motors is halved, while 25% of the maximum allowed output to the motors is added. So if your PID sum calculation at some instant was 350, the amount going to the motors would be 350 + 250 = 600, or 60% of maximum possible. The '250' part is fixed by the stick angle but the PID part will vary according to usual PID processes.
+If AcroPlus is 100, and you are at 50% sticks, it's a curious combination of the two. The normal PID sum calculation is still active, but the amount driving the motors is halved, while 25% of the maximum allowed output to the motors is added. So if your PID sum calculation at some instant was 350, the amount going to the motors would be 350 + 250 = 600, or 60% of maximum possible. The '250' part is fixed by the stick angle but the PID part will vary according to usual PID processes.
 
-If acroPlus is 100, and you are at 10% sticks, it's again a combination of the two, but at lower stick values the normal PID control mechanisms very much dominate. The drive to motors will be 90% from normal PID calculations, and only 1% of the maximum allowed output to the motors will be added to that (i.e. basically normal PID operation around center sticks).
+If AcroPlus is 100, and you are at 10% sticks, it's again a combination of the two, but at lower stick values the normal PID control mechanisms very much dominate. The drive to motors will be 90% from normal PID calculations, and only 1% of the maximum allowed output to the motors will be added to that (i.e. basically normal PID operation around center sticks).
 
 The amount of the 'direct' motor control to stick angle is stick angle % squared. Since 0.1 * 0.1 = 0.01, 10% stick angle generates only 1% of the 'direct stick control' proportion available at full stick angle. 20% stick angle generates 4% direct control, 30% -> 9%, 40% -> 16%, 50% -> 25%. Basically exponentially greater proportion of direct vs PID control.
 
@@ -249,7 +246,6 @@ So you are heading for a collision at 60kph. 1khz will let you adjust over that 
 This is not gospel, just a way to explain the difference.
 
 1KHz mode equals a LoopTime of 1000uSec
-
 2KHz mode equals a LoopTime of 500uSec
 
 Have a look at this video form more information: http://www.youtube.com/watch?v=j2YtpeHGafs
@@ -331,7 +327,7 @@ In rewrite, stick sensitivity is managed differently; sensitivity depends on rat
 Boris posted this in the thread about Tuning Rewrite to feel the same as Luxfloat:
 
 I was saying that if you would take some time and work out the math that you could produce same numbers with both
-Just an example to show you. You dont have to understand the code to understand this part.
+Just an example to show you. You don't have to understand the code to understand this part.
 
 Luxfloat P
 Code:
@@ -377,7 +373,7 @@ b. More info: Joshua Bardwells's Blackbox Log Video Responses link:  http://www.
 
 c. But:  "I think that even without blackbox you can get a great tune.
 
-People don't realise that there are 2 separate things. There are rates and there are pids. The rates is something we feel even more than PIDs. There is no auto-tuning what can know what rates your brains like.
+People don't realize that there are 2 separate things. There are rates and there are pids. The rates is something we feel even more than PIDs. There is no auto-tuning what can know what rates your brains like.
 The rates are actually directly being interpreted in our brains to certain stick feel.
 
 Good tuning just makes that feel tighter and helps removing unnecessary oscillations. But even with oscillations it doesn't mean that it will feel bad." - Boris comment
@@ -402,11 +398,11 @@ Mixer gets PIDsum of all 3 axis and translates that into motor output.
 There is obviously a certain power available there, which is a range of max_throttle - min_throttle for each motor.
 Lets say it is typically a range of 1000 (2000-1000).
 
-So we have 4 motors determing the behaviour of quadcopter with power range of 1000 for all 3 axis mixed up scaled to the throttle.
+So we have 4 motors determining the behavior of quadcopter with power range of 1000 for all 3 axis mixed up scaled to the throttle.
 The yaw axis is the one what requires quite a lot of power on quadcopters but also depends of setup used. The ratio of power used for yaw to get the same rotational rate is more than one for pitch and roll.
 This means that hard yaw corrections could use too much of the entire available throttle range in each motor so the roll and pitch would not have enough of it. But also the way of how yaw works can create a lot of thrust where the quad would gain height to get a desired yaw correction during yaw stops what generate the most power.
 
-Therefore the yaw_jump_prevention_limit was introduced to give a maximum of yaw PIDsum with centered sticks. That means that during yaw correction the yaw is not able to use too much of available motor power so the roll and pitch would not be affected by much and that also the hars yaw stops would not create a lot of jump.
+Therefore the yaw_jump_prevention_limit was introduced to give a maximum of yaw PIDsum with centered sticks. That means that during yaw correction, the yaw is not able to use too much of available motor power so the roll and pitch would not be affected as much and that also the hard yaw stops would not create a lot of jump.
 
 Lowering yaw_jump_prevention_limit will result in less motor power spilled for yaw during gate clipping for example as well.
 
@@ -470,9 +466,7 @@ Some have found they need a small reduction in P gains when going from two-blade
 The copter was still flyable with no changes, but some have experiences increased prop-wash oscillation.
  
 ##Why do I have issues flashing my new F3 Flight Controller ?
-Some of the new F3 boards come with a Virtual COM Port (VCP) that is used to communicate with a PC or MAC over the USB interface.
-Take a look at this video that talks about flashing the Lumenier LUX board that has a VCP port:
-
+Some of the new F3 boards come with a Virtual COM Port (VCP) that is used to communicate with a PC or MAC over the USB interface.  Take a look at this video that talks about flashing the Lumenier LUX board that has a VCP port:
 http://www.youtube.com/watch?v=b8fMsazyxDw
 
 Within this FAQ, check the answer to "What Flight Controllers are recommended to get the best out of BetaFlight" for more details on which FC has VCP ports.
@@ -482,7 +476,6 @@ Yes, it is the intention that this will happen gradually over time. Sometimes fe
 
 ##When I update to the latest version of BetaFlight do I need to recalibrate my ESCs ?
 ESCs shouldn't need recalibration unless you changed the min/max throttle values in BetaFlight.
-
 For more information about ESC Calibration see this video: http://www.youtube.com/watch?v=o3Mg-9M0l24
 
 ##Why do my motors keep accelerating on the bench when I arm without props ?
@@ -490,12 +483,12 @@ With props off on the bench, I arm the quad and the motors start. After increasi
 
 Answer: That is the flight controller trying to correct for changes in aspect, mainly due to fact your quad shakes slightly when the motors spin, the sensors pick it up and then the flight controller tries to correct, it can't because you don't have props on. All perfectly normal.
 
-Additional explaination:
+Additional explanation:
 
  Originally Posted by MasterZap View Post
 Sorry, but this sounds like a fundamental misunderstanding of how the I term works.
 
-Or conversely, the behavour you see on the bench is exactly expected of the I term.
+Or conversely, the behavior you see on the bench is exactly expected of the I term.
 
 Why? Because the copter isn't moving. If there is no movement, you have no gyro input. With no gyro input, there will be no positive (or negative) error signal to add to the I term.
 
@@ -505,7 +498,7 @@ Since your copter isn't flying, you are only giving it half of the error (your s
 
 So perfectly normal.
 
-You simply cannot make judgements on an I terms behaviour without letting that I term act the way it wants. With props off, on the bench, you just get meaninglessness.
+You simply cannot make judgments on an I terms behavior without letting that I term act the way it wants. With props off, on the bench, you just get meaninglessness.
 
 /Z
 
@@ -514,9 +507,7 @@ A quick way to test that there isn't some other issue causing it is use the moto
 ##Why do my motors spin briefly when rebooting the Flight Controller ?
 Since flashing 2.4.0 and rebooting from Configurator with a battery plugged in spins up the motors briefly. I'm fairly sure that didn't happen in 2.1.6, not sure about 2.3.5.
 
-Answer: This can happen in any firmware with battery plugged in. It can happen in 1 out of 100 times or every time. Thats not a bug....thats how OneShot works.
-The ESC would interpret a small pulse during power up and down as a signal and spin motors.
-It is really a short pulse what couldn't really harm anything but still can scare the s**t out of you !
+Answer: This can happen in any firmware with battery plugged in. It can happen in 1 out of 100 times or every time. Thats not a bug....that's how OneShot works.  The ESC would interpret a small pulse during power up and down as a signal and spin motors.  It is really a short pulse what couldn't really harm anything but still can scare the s**t out of you !
 
 It is also highly recommended to always use a Current Limiter when the LiPo is connected and the Config Gui is opened. This can prevent burning ESCs and motors. See: http://www.rcgroups.com/forums/showthread.php?t=2327875
 
@@ -542,7 +533,6 @@ Answer: Yes, this is really effects of aliasing what you are seeing there. Acc h
 If you use Level/Horizon modes then just stick with 1khz or get some very fast F3 target....one that will do full sampled acc even on faster rates.
 
 ##How do I get vbat_pid_compensation system working ?
-
     set vbat_pid_compensation = ON
 
 Tune your quad with a full lipo....your PIDs will then be scaled to that reference voltage.
@@ -586,15 +576,15 @@ looptime 250
 
 - always 4k gyro sampling (gyro_sync_denom = 2)
 - pid_process_denom = 2
-- on f1 boards with luxfloar
+- on f1 boards with luxfloat
 - pid_process_denom = 3
 
 etc....
 
 motor update speed = pid speed
-calculation of motor speed is then
+calculation of motor speed:  motor update interval us= 125 * gyro_sync_denom * pid_process_denom 
 
-motor update interval us= 125 * gyro_sync_denom * pid_process_denom 
+PID is always synced to motors! PID speed is immediately your motor update speed.  Gyro can run faster than PID. The benefit of that is the higher sampling reduces filtering delays and helps catching up all higher frequencies that may fold down into lower frequencies when undersampled.  Even when GYRO runs faster than PID it is still in sync, but every (pid_process_denom)th sample.
 
 ###Instructions for ßF versions up to 2.4.1
 TODO
@@ -622,78 +612,64 @@ So far OneShot42 is not supported in ßF YET but would allow 4kHz refresh rates.
 
 ##What is OneShot125 OneShot42 and MultiShot and how do these relate to max_throttle and Looptime ?
 TODO
-
 With the Standard ESC calibration to min_command = 1000 and max_throttle = 2000.
 OneShot125 will send pulses to the ESCs that are 1/8th the Standard values of 1000 to 2000 or 125 to 250usec.
 
- Originally Posted by HIGHOCTANE32 View Post
+ Originally Posted by HIGHOCTANE32
 Once you wrap your head around and think about looptimes and ESC pulses(whether the be 1000-2000us pwm, or 125-250uS oneshot or whatever as time(which they are) it all makes a lot more sense. Trying to sync a gyro rate that updates every 125us (8khz) or even 250uS with a ESC signal pulse that can be 250uS long..you can see the problem. Oneshot 42 and multi shot further shorten the ESC signal pulses, like oneshot 125 did, but even shorter, so the signal pulse can be completed faster than the gyro/PID update. Not a scientific explanation but hopefully that makes sense.
 But I agree if josh doesn't already have a video on it he needs one 
 
 Some info here on Oscar Liang's excellent Blog site regarding MultiShot technique:
-
 http://blog.oscarliang.net/raceflight-multishot/
 
 ##What cycle time can I run on what board ?
-
 F3 i2c targets:
  250 cycletime without acc, you can enable acc mode, but watch out for CPU usage when many features enabled. Anyway I recommend going to 2.6k when using accelerometer.
  Also boards with baro or mag on it even when disabled may decrease performance a bit.
 
  F3 spi targets:
- Not much worrying here.125us looptimes and accelerometer and everything can be on. But always check CPU to be sure
+ Not much worrying here. 125us looptimes and accelerometer and everything can be on. But always check CPU to be sure.
 
  F1
  With rewrite or mw23 250us cycle should be possible without problems on NAZE32 and all clones of it like flip32 etc when accelerometer disabled.
  Especially the boards without fancy sensors like baro or mag should run super smooth. The boards with baro even when disabled may have a bit higher cpu times.
- For level modes I recommend 1k mode. Those users dont neccery have to run 188hz gyro lpf....they still can set gyro_sync_denom to 8 to minimize latency by 1millisecond.
+ For level modes I recommend 1k mode. Those users don't necessary have to run 188hz gyro lpf....they still can set gyro_sync_denom to 8 to minimize latency by 1 millisecond.
 
- CC3D userd should stay with 375 or 500 cycletimes.
+ CC3D users should stay with 375 or 500 cycletimes.
 
  And all F1 users on luxfloat should not go lower than 500 or 375....probably even 375 is too much.
  With acc enabled stick to 1khz. 
-
 (From BorisB)
 
 ##How do I go about suggesting CF Configurator enhancements ?
 1) On GitHub, look up the Cleanflight Git. There's a link to the Configurator.
-
 2) Click on "Issues".
-
 3) Start a new issue and preface it with "Suggestion: short summary".
-
 4) Explain the new enhancement suggestion.
 
 ##How do I lower the chance of my copter producing Magic Smoke when powering on ?
 Start by doing a continuity check with a multimeter if you have one.  A quick test for a short between the negative and positive pads on your power distribution board can save a lot of headaches.
 
-Another option is to use a Current Limiter when having the LiPo connected on the bench and Testing new setups. This has saved a few ESCs and Motors for many people.
-Build and use this Limiter with a Switch in-line for easy powering On/OFF.
+Another option is to use a Current Limiter when having the LiPo connected on the bench and Testing new setups. This has saved a few ESCs and Motors for many people.  Build and use this Limiter with a Switch in-line for easy powering On/OFF.
 http://www.rcgroups.com/forums/showthread.php?t=2327875
 
 ##Why do we have RC Rate and also Yaw Pitch Roll Rates ?
-Deeper Question: There is still some confusion about RC rate, Pitch, Roll, Yaw rate, and Expo. I understand that P/R/Y rates are how fast the quadcopter will rotate, and i know about expos too, but what is really RC rate? I can't really gain a full understanding of it. Some say it does the same as P/R/Y, some say it's different from it, some say it's stick sensitivity. But what is stick sensivity really? Is it like expo?
+Deeper Question: There is still some confusion about RC rate, Pitch, Roll, Yaw rate, and Expo. I understand that P/R/Y rates are how fast the quadcopter will rotate, and i know about expos too, but what is really RC rate? I can't really gain a full understanding of it. Some say it does the same as P/R/Y, some say it's different from it, some say it's stick sensitivity. But what is stick sensitivity really? Is it like expo?
 
 Answer: Think of it as fine tuning for RC Rate. It does the same thing just smaller increments and splits the axis up.
 
-Some people leave the RC Rate set to 1.0 and adjust the P/R/Y rates until the quad handles how they like (speed of flips/rolls etc). Once this has been set, the Expo values should be increased to allow for less sensitivity of the sticks nearer their center positions. This will make for smoother flight experience, and have the ability to perform fast rolls etc when the sticks move further away from the center.
-
-This is the best way to do it at the moment.
+Some people leave the RC Rate set to 1.0 and adjust the P/R/Y rates until the quad handles how they like (speed of flips/rolls etc). Once this has been set, the Expo values should be increased to allow for less sensitivity of the sticks nearer their center positions. This will make for smoother flight experience, and have the ability to perform fast rolls etc when the sticks move further away from the center.  This is the best way to do it at the moment.
 
 ##Why does it matter to prevent motor jitter ?
-
 Two reasons:
 * The motor is stop starting, this will generate heat and potentially damage/wear out components.
-* As above your motor is stop starting, it isn't providing the thrust it is supposed to, your quad will shake/oscillate/crash and generally be unflyable.
-
-See the Deep Dive page for a more in-depth explanation.
+* As above your motor is stop starting, it isn't providing the thrust it is supposed to, your quad will shake/oscillate/crash and generally be unflyable.  See the Deep Dive page for a more in-depth explanation.
 
 ##Why when I change something using CLI board crashes ?
 If the FC uses the STM32's VCP then when leaving the CLI the config GUI does a "save" which re-boots the FC. Then Windows does not reestablish the USB. Check in the Device Manager to see if the Port has returned. If not then a work around is to disconnect and reconnect the USB. On some PCs/FCs this doesn't work so plug the USB into a different USB port on the PC. I keep two USB cables plugged into a Powered USB hub and just swap the USB cable to the FC and the Port comes back in the Device Manger and the Config GUI now sees to port.
 This is NOT and FC or Firmware issue but a Windows USB issues.
 
 ##Will MW23 PID controller work on default PIDS ?
-
 No! Even though Boris believes this is now the best flying PID controller, it will not fly correctly on default PIDs much like rewrite and Lux will. You need to manually tune this like the good old days.
 In BorisB's words from Regroups
 
@@ -709,11 +685,11 @@ The key takeaway is:
 
 **Originally Posted by Boris B**
 
-D is quite tolerant it appears. I scaled it to the looptime which wasnt there in the first place.
+D is quite tolerant it appears. I scaled it to the looptime which wasn't there in the first place.
 
 The first time I started testing the lower looptime was getting the lower I and D was needed. Now it is normalized to looptime ~2000 to give values close to original multiwii..
 
-Iterm is more agressive though. It can even cause oscillations, which finally makes Iterm tuning easier.
+Iterm is more aggressive though. It can even cause oscillations, which finally makes Iterm tuning easier.
 
 These are my PIDs. Not fully tuned though as I focused more on firmware testing:  
 Roll 3.0   0.025   22  
@@ -722,7 +698,7 @@ Yaw 5.8    0.045   0
 RC Rate 1.0
 Rates 0.7 0.8 0.8
 RC Expo 0.2
-Rc Yaw epo 0.3
+Rc Yaw expo 0.3
 
 Level (I don't really fly level but had to test it as level also has I and D):  
 Level P 9.0   I 0.005   D 0
@@ -740,7 +716,6 @@ Don't forget to follow this good approach to tuning your multi-rotor:
 http://github.com/borisbstyle/betaflight/wiki/PID-Tuning-Guide
 
 #What is the difference between Min_Check Min_command and Min_throttle ?
-
 From MasterZap
 
 min_check has nothing to do with ESC's ....
@@ -753,7 +728,6 @@ min_check is about stick command and only matters towards your actual throttle s
 The misunderstanding of this comes from the fact that your throttle stick doesn't even begin "working" until you are above min_check. People try explaining this with sentences like "the FC will map min_check to min_throttle", which while true, makes people believe there is this relation. There is no relation. All that is being said is "the flight controller only cares about the range above min_check up to full throttle, and will remap that range into the 0%-100% input to the flight controller, which then outputs whatever it wants to the motors"
 
 ##How do I keep and then restore my Betaflight Settings each time I upgrade ?
-
 First of all it is important to note that uploading a **full** settings Dump from a previous Betaflight version will likely result in your copter not flying properly, not flying at all or even damage to the components.
 
 It's also worth noting that the method of flashing Betaflight **can** be dependent of the FC board. So best to refer to the thread on the FC board you are using. The list of Boards in the FAQ have links to these threads.
@@ -764,7 +738,6 @@ Having said all this, one approach worth considering for ensuring your settings 
 http://www.youtube.com/watch?v=F1sjC5l0ywM
 
 In summary, the key takeaways from this video are:
-
 * Keep a separate custom config file that just has the settings that you have invested time in getting correct for the flying experience you want (PIDs, rates, AUX switch settings etc).
 * Upgrade the FC to the desired Betaflight version then uploaded your custom config file.
 * Ensure the custom config file is up-to-date with PID & Rate values during and after tuning. This way you can compare tuning and/or restore a tune if you changed firmware versions and need to go back.
