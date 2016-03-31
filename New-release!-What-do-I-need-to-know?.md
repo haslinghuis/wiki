@@ -1,5 +1,28 @@
 This page is meant to provide a more in depth explanation of the changelog for each release so that users can understand the consequences of the changes made. Please remember to read the changelog for each release first and read the "Betaflight specific CLI commands" in this Wiki for new and changed CLI commands.
 
+# 2.6.0 - 
+
+Pre-release 2.6
+
+- Improved performance of roll / yaw mixing to fpv cam feature
+- Added vbat_hysteresis configurable parameter for vbat alarms
+- Improved cli dump. "dump" = print all current active config, "dump all" = dump full config (all profiles and rates). Also no more pauses needed after pasting
+- New additional esc passthough support added for Simonk bootloaders and blheli (example for esc #1: escprog sk 1 or escprog bl 1 for blheli) See wiki for explaination, which will be added soon
+- Dterm filtering improved. Enabled by default. Dterm can now even be increased without fear for noise
+- Luxfloat pids changed to integer and increased in configurable range. All pid controllers now share same PID bank. Luxfloat pids are now scaled to be close to rewrite. See wiki for conversion.
+- Slight increase in rewrite yaw rate to match roll and pitch better. rate of 100 is now equal to 80 for example
+- Acro Plus feature is depricated and replaced by Super Expo feature, which works differently. The feature is derived from multiwii and only applied to luxfloat and rewrite. super_expo_factor determines the super rate curve
+- New optimized defaults
+- Additional thresholds for Iterm reset in super expo mode added
+- Fixed gyro calibration on arming features. Arming won't happen before gyro finished calibration
+- Changed some parameter naming conventions in cli (mainly to prevent some copy paste behaviour and to have more clear naming)
+- Improved yaw noise filtering
+- Removed D on yaw from all pid controllers. This saves the pid controller some calculations. Dterm on yaw isnt really needed
+
+TODO 
+- Add to the wiki CLI page the details of any new and renamed CLI commands.
+- Add info on the new VPC Pass-through for ESC programming.
+- Add details on Luxfloat pids change.
 
 # 2.5.4 - 
 2.5 Patch 4
