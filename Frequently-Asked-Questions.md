@@ -149,6 +149,9 @@ http://www.youtube.com/watch?v=mlEJFMNWyvQ
 
 http://www.youtube.com/watch?v=b0qVUa4AeDQ
 
+### A Joshua Bardwell video on Air mode
+https://www.youtube.com/watch?v=d2nRrVENEYM
+
 ### Black Box analysis video of Air Mode
 
 Part 1: http://www.youtube.com/watch?v=PP_De47io18
