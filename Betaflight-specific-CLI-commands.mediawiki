@@ -3,6 +3,7 @@ https://github.com/cleanflight/cleanflight/blob/master/docs/Cli.md
 
 The setting shown are the Defaults + possible values.
 
+<a href="#v260">Latest Version</a>
  
 '''set roll_yaw_cam_mix_degrees''' = 0<br />
 <i>[0..50]</i><br />
@@ -338,7 +339,7 @@ Sets the maximum allowed P on Yaw.
 <i>[OFF,ON]</i><br />
 Forces a Gyro calibration upon Arming the first time after power up when set = ON.
 
-<br/><br/>
+<br/><br/><a name="v260"/>
 <u><i>'''Changes in 2.6.0'''</i></u><br/><br/>
 <u>'''Removed:'''</u><br/>
 '''set acro_plus_factor'''<br/>
@@ -358,7 +359,7 @@ Forces a Gyro calibration upon Arming the first time after power up when set = O
 New range: <i>[0,...,12]</i><br/>
 <br/>
 <u>'''Added:'''</u><br/>
-'''escprog''' <i>[bl|sk] [#]</i><br/>
+'''escprog''' <i>[bl|sk] [#]</i><br/><a name="escprog"/>
 The first argument, <i>bl</i> or <i>sk</i>, is your ESC bootloader (bl for blheli or sk for simonk)<br/>
 The second argument is the ESC number you wish to connect to.<br/><br/>
 You can connect the ESC power at any point.<br/>
