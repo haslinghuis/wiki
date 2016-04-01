@@ -337,3 +337,51 @@ Sets the maximum allowed P on Yaw.
 '''set gyro_cal_on_first_arm = OFF'''<br />
 <i>[OFF,ON]</i><br />
 Forces a Gyro calibration upon Arming the first time after power up when set = ON.
+
+<u><i>'''Changes in 2.6.0'''</i></u><br/><br/>
+<u>'''Removed:'''</u><br/>
+'''set acro_plus_factor'''<br/>
+'''set acro_plus_offset'''<br/>
+'''set p_pitchf''' and all other float PID variables<br/>
+'''set level_horizon'''<br/>
+'''set level_angle'''<br/>
+<br/>
+<u>'''Changed:'''</u><br/>
+'''set gyro_soft_lpf = 60''' replaced with '''set gyro_lowpass_hz = 80'''<br/>
+<i>[0,...,500]</i><br/>
+<!--Only name and default changed?--><br/>
+'''set dterm_lpf_hz = 0''' replaced with '''set dterm_lowpass_hz = 70'''<br/>
+<i>[0,...,500]</i><br/>
+<!--New filter behavior?--><br/>
+'''set dterm_average_count = 4'''<br/>
+New range: <i>[0,...,12]</i><br/>
+<br/>
+<u>'''Added:'''</u><br/>
+'''escprog''' <i>[bl|sk] [#]</i><br/>
+The first argument, <i>bl</i> or <i>sk</i>, is your ESC bootloader (bl for blheli or sk for simonk)<br/>
+The second argument is the ESC number you wish to connect to.<br/><br/>
+You can connect the ESC power at any point.<br/>
+Type the command, then disconnect or close the cleanflight configurator.<br/>
+Now connect with BLHeliSuite using the appropriate (USB/Com) interface. (C or 1)<br/>
+Atmel SK interface needs confirmed, but should be option 4 or 5.<br/>
+After finishing with one ESC the board needs to be restarted before running the CLI command for the next ESC. This probably means unplugging both the battery and USB.<br/>
+
+'''set iterm_reset_degrees = 200'''<br/>
+<i>[50,...,1000]</i><br/>
+Experimental threshold for resetting iterm for pitch and roll on certain rates<br/>
+<br/>
+'''set super_expo_factor = 30'''<br/>
+<i>[1,...,100]</i><br/>
+Super Expo Factor<br/>
+<br/>
+'''set vbat_hysteresis = 1'''<br/>
+<i>[0,...,250]</i><br/>
+Hysteresis for alarm, default 1 = 0.1V<br/>
+<br/>
+'''set yaw_iterm_reset_degrees = 50'''<br/>
+<i>[25,...,1000]</i><br/>
+Experimental threshold for resetting iterm for yaw on certain rates<br/>
+<br/>
+'''set yaw_lowpass_hz = 70'''<br/>
+<i>[0,...,500]</i><br/>
+Additional yaw filter when yaw axis too noisy<br/>
