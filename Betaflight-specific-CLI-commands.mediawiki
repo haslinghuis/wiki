@@ -338,6 +338,7 @@ Sets the maximum allowed P on Yaw.
 <i>[OFF,ON]</i><br />
 Forces a Gyro calibration upon Arming the first time after power up when set = ON.
 
+<br/><br/>
 <u><i>'''Changes in 2.6.0'''</i></u><br/><br/>
 <u>'''Removed:'''</u><br/>
 '''set acro_plus_factor'''<br/>
@@ -364,7 +365,7 @@ You can connect the ESC power at any point.<br/>
 Type the command, then disconnect or close the cleanflight configurator.<br/>
 Now connect with BLHeliSuite using the appropriate (USB/Com) interface. (C or 1)<br/>
 Atmel SK interface needs confirmed, but should be option 4 or 5.<br/>
-After finishing with one ESC the board needs to be restarted before running the CLI command for the next ESC. This probably means unplugging both the battery and USB.<br/>
+After finishing with one ESC the board needs to be restarted before running the CLI command for the next ESC. This usually means unplugging both the battery and USB.<br/>
 
 '''set iterm_reset_degrees = 200'''<br/>
 <i>[50,...,1000]</i><br/>
