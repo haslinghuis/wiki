@@ -40,6 +40,7 @@
 1. [Will MW2.3 PID controller work on default PIDS ?](#will-mw23-pid-controller-work-on-default-pids-)
 1. [What is the difference between Min_check Min_command and Min_throttle ?](#what-is-the-difference-between-min_check-min_command-and-min_throttle-)
 1. [How do I keep and then restore my Betaflight Settings each time I upgrade ?](#how-do-i-keep-and-then-restore-my-betaflight-settings-each-time-i-upgrade-)
+1. [How does Super Expo work ?](#How-does-Super-Expo-work-)
 
 **If your question is not listed above then please check the following pages:**
 
@@ -749,3 +750,18 @@ Here are a few tools that are useful for making comparisons between config files
 
 1. Notepad++ with the Compare PlugIn
 1. https://www.diffchecker.com/
+
+##How does Super Expo work ?
+
+From BorisB
+
+Super expo is simillar to acro plus, but acro plus was adding more rotation rate outside the pid controller and pid controller would fight against that. That didnt really feel natural somehow.
+
+Super expo manipulates the pid controller so it does expo for you.
+It actually works as an acceleration to P based on higher stick input and deacceleration with lower stick input. That also provides more clean acro and less need for D in general.
+
+If you have your quad tuned for mid stick you have now....that pretty much stays the same and maybe even a bit softer, but it accelerates towards the full stick.
+
+Its like multiwii implementation in but uppon your current rates so you still can have snappy mid stick that what multiwii is lacking a bit.
+
+Besides that betaflight 2.6 allows much hugher D without noise so you can get it easier smooth anyway.
