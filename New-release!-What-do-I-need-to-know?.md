@@ -19,11 +19,6 @@ Pre-release 2.6
 - Improved yaw noise filtering
 - Removed D on yaw from all pid controllers. This saves the pid controller some calculations. Dterm on yaw isnt really needed
 
-TODO 
-- Add to the wiki CLI page the details of any new and renamed CLI commands.
-- Add info on the new VPC Pass-through for ESC programming.
-- Add details on Luxfloat pids change.
-
 # 2.5.4 - 
 2.5 Patch 4
 
