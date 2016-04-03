@@ -1,6 +1,6 @@
 ##Contents
 1. [I'm a Neewbe, how do I start ?](#im-a-neewbe-how-do-i-start-)
-1. [What is the relationship of min_check, max_check, and min_throttle, max_throttle with stick inputs?](#What-is-the-relationship-of-min_check,-max_check,-and min_throttle,-max_throttle-with-stick-inputs?-)
+1. [What is the relationship of min_check, max_check, and min_throttle, max_throttle with stick inputs?](#What-is-the-relationship-of-min_check,-max_check,-and min_throttle,-max_throttle-with-stick-inputs-)
 1. [How do I install Betaflight ?](#how-do-i-install-betaflight-)
 1. [Why wont my FC board arm after upgrading the firmware ?](#why-wont-my-fc-board-arm-after-upgrading-the-firmware-)
 1. [Why is the Gyro light turned off and the 3D Model not moving ?](#why-is-the-gyro-light-turned-off-and-the-3d-model-not-moving-)
@@ -67,7 +67,7 @@ In general (all channels) min_check & max_check are only for Stick commands. the
 mid_rc is telling the FC what your Stick Center value is, typically 1500 but may be 1520 on some radios. mid_rc is NOT used on throttle channel.
 
 The default max_throttle of 1850 comes from MultiWii and is a SAFE max value for ALL ESCs. from MW2.3 config.h file
-Code:
+#Code:
 
   /****************************    Motor maxthrottle    *******************************/
     /* this is the maximum value for the ESCs at full power, this value can be increased up to 2000 */
