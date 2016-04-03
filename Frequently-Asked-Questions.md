@@ -70,20 +70,26 @@ The default max_throttle of 1850 comes from MultiWii and is a SAFE max value for
  # Code:
 
  /****************************    Motor maxthrottle    *******************************/
+
  /* this is the maximum value for the ESCs at full power, this value can be increased up to 2000 */
+
  #define MAXTHROTTLE 1850
 
 DEADBAND is only removing stick center value (all channels except throttle) to eliminate stick center jitter and non-returning to exactly 1500. no more, no less. Do not use this term for anything else.
 
-Reading the MutliWii WIKI will help to understand what these values are. A link is in the ßF Wiki, FAQ: getting started.
+Reading the MutliWii WIKI and even the MultiWii code config.h file will help to understand what these values are. A link is in the ßF Wiki, FAQ: getting started.
 
 In CF and ßF the expected stick end point values are set with (I don't know in what versions these came about but were not in the original port of MW to BF code):
 Code:
 
  # rxrange
+
  rxrange 0 1000 2000
+
  rxrange 1 1000 2000
+
  rxrange 2 1000 2000
+
  rxrange 3 1000 2000
 
 These can be adjusted for radios that can not meet the standard values.
