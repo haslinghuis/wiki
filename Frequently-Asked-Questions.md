@@ -1,6 +1,6 @@
 ##Contents
 1. [I'm a Neewbe, how do I start ?](#im-a-neewbe-how-do-i-start-)
-1. [What is the relationship of min_check, max_check, and min_throttle, max_throttle with stick inputs?](#what-is-the-relationship-of-min-check-max_check-and min-throttle-max-throttle-with-stick-inputs-)
+1. [What is the relationship of min_check, max_check, and min_throttle, max_throttle with stick inputs?](#what-is-the-relationship-of-mincheck-maxcheck-and minthrottle-maxthrottle-with-stick-inputs-)
 1. [How do I install Betaflight ?](#how-do-i-install-betaflight-)
 1. [Why wont my FC board arm after upgrading the firmware ?](#why-wont-my-fc-board-arm-after-upgrading-the-firmware-)
 1. [Why is the Gyro light turned off and the 3D Model not moving ?](#why-is-the-gyro-light-turned-off-and-the-3d-model-not-moving-)
@@ -82,20 +82,22 @@ Reading the MutliWii WIKI and even the MultiWii code config.h file will help to 
 In CF and ßF the expected stick end point values are set with (I don't know in what versions these came about but were not in the original port of MW to BF code):
 Code:
 
- # rxrange
-
- rxrange 0 1000 2000
-
- rxrange 1 1000 2000
-
- rxrange 2 1000 2000
-
- rxrange 3 1000 2000
+ # rxrange  
+ rxrange 0 1000 2000  
+ rxrange 1 1000 2000  
+ rxrange 2 1000 2000  
+ rxrange 3 1000 2000  
 
 These can be adjusted for radios that can not meet the standard values.
 The FC firmware uses the mid_rc and these to calculate a stick value to hand off to the PIDC code. max_check is NOT used here.
 
 If a channel does not get to these end points then the FC will simply not see full movement, either on one side or both. This is one reason I and others and the MW Wiki and CF docs state to adjust the radios stick end points to these defaults. The other is ensuring the stick exceed the min_check, max_check thresholds so stick commands work. 
+
+
+Another explanation be joshua bardwell:
+Max and min channel values are determined by the rxrange command. They default to 1000 and 2000. Max_check and min_check are used to decide if you are entering a stick command. Here is the kicker--how do you disarm the copter if yaw is active? You would have to go full deflection and the copter would yaw like crazy. In order to address this, when the throttle is below min_check, and when stick arming is used (vs. switch arming), the yaw input is disabled. If you are using motor_stop, the motors also stop running when the throttle is below min_check. Sometimes, this behavior is referred to as a deadzone at the bottom of the throttle stick travel. Many people refer to this as Deadband but causes much confusion with stick center DEADBAND CLI settings, therefore DEADZONE is prefered
+
+You can see that there is no need for a corresponding disabling of inputs at the top of the throttle range, because you never input any stick commands that require the top of the range when you are flying. The only stick command that is input when you are flying is disarm, and that is low yaw and low throttle. So there is a dead space at the bottom of the throttle range (below min_check) but no dead space at the top of any channel range. 
 
 ##How do I install Betaflight ?
 Start with the following video that gives a very comprehensive guide on Betaflight and the best practice approach for it's configuration:
