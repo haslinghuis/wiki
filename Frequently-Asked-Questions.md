@@ -67,12 +67,9 @@ In general (all channels) min_check & max_check are only for Stick commands. the
 mid_rc is telling the FC what your Stick Center value is, typically 1500 but may be 1520 on some radios. mid_rc is NOT used on throttle channel.
 
 The default max_throttle of 1850 comes from MultiWii and is a SAFE max value for ALL ESCs. from MW2.3 config.h file
- # Code:
-
- /****************************    Motor maxthrottle    *******************************/
-
- /* this is the maximum value for the ESCs at full power, this value can be increased up to 2000 */
-
+ # Code:  
+ /****************************    Motor maxthrottle    *******************************/  
+ /* this is the maximum value for the ESCs at full power, this value can be increased up to 2000 */  
  #define MAXTHROTTLE 1850
 
 DEADBAND is only removing stick center value (all channels except throttle) to eliminate stick center jitter and non-returning to exactly 1500. no more, no less. Do not use this term for anything else.
