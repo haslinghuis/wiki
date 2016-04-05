@@ -800,4 +800,4 @@ If you have your quad tuned for mid stick you have now....that pretty much stays
 
 Its like multiwii implementation but with your current rates so you still can have snappy mid stick that what multiwii is lacking a bit.
 
-Besides that betaflight 2.6 allows much higher D without noise so you can get it easier smooth anyway.
+Besides that, betaflight 2.6 allows much higher D without noise so you can get it smooth easier anyway.
