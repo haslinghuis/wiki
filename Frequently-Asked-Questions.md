@@ -791,13 +791,13 @@ Here are a few tools that are useful for making comparisons between config files
 
 From BorisB
 
-Super expo is simillar to acro plus, but acro plus was adding more rotation rate outside the pid controller and pid controller would fight against that. That didnt really feel natural somehow.
+Super expo is similar to acro plus, but acro plus was adding more rotation rate outside the pid controller and the pid controller would fight against that. That didnt really feel natural somehow.
 
 Super expo manipulates the pid controller so it does expo for you.
 It actually works as an acceleration to P based on higher stick input and deacceleration with lower stick input. That also provides more clean acro and less need for D in general.
 
 If you have your quad tuned for mid stick you have now....that pretty much stays the same and maybe even a bit softer, but it accelerates towards the full stick.
 
-Its like multiwii implementation in but uppon your current rates so you still can have snappy mid stick that what multiwii is lacking a bit.
+Its like multiwii implementation but with your current rates so you still can have snappy mid stick that what multiwii is lacking a bit.
 
-Besides that betaflight 2.6 allows much hugher D without noise so you can get it easier smooth anyway.
+Besides that betaflight 2.6 allows much higher D without noise so you can get it easier smooth anyway.
