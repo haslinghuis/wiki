@@ -801,3 +801,10 @@ If you have your quad tuned for mid stick you have now....that pretty much stays
 Its like multiwii implementation but with your current rates so you still can have snappy mid stick that what multiwii is lacking a bit.
 
 Besides that, betaflight 2.6 allows much higher D without noise so you can get it smooth easier anyway.
+
+Another explanation from Joshua Bardwell
+
+super_expo_factor works like this. Normally, the way the PID controller works is that the stick position commands a certain angular rate, and then the difference between the actual angular rate and the target angular rate is used to calculate an error value. The P term is proportional to the error value. The larger the P term, the stronger the motors' output to achieve the commanded change in angular rate. Got all that?  
+But with super expo, the way it works is that, the more deflected your stick is, the more the P term is directly proportional to the stick position, instead of the error value. So as you deflect the stick, the PID controller says, "I don't care what the current angular rate is, or what the error is, just push so hard."   
+Here is an analogy. Normally when you drive a car, you are looking at your target speed. Say it is 55 mph. And if you are going faster than that, you back off the gas pedal, and if you are going slower than that, you push on the gas pedal. That's the way the PID controller works. But super expo is like saying, "I don't care how fast I'm going. Push the throttle to 75% and just keep it there."   
+As with the I term reset, the idea here is that, when you're commanding extreme maneuvers, you don't care about hitting an EXACT angular rate, like 1234 degrees per second. As long as the copter's behavior is reasonably predictable, you would rather let it "loosen up" a bit and just spin. If you look at Blackbox during a flip or roll, the P term is often switching signs several times. So it is trying to slow down the roll and then speed it up and then slow it down, and that's a bit silly to all be happening in the course of 0.2 seconds while you're flipping around.
