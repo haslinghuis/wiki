@@ -1,7 +1,7 @@
 ##Contents
 1. [I'm a Neewbe, how do I start ?](#im-a-neewbe-how-do-i-start-)
 1. [What is the difference between Min_check Min_command and Min_throttle ?](#what-is-the-difference-between-min_check-min_command-and-min_throttle-)
-1. [What is the relationship of min_check, max_check, and min_throttle, max_throttle with stick inputs?](#what-is-the-relationship-of-min_check-max_check-and-min_throttle-max_throttle-with-stick-inputs-)
+1. [What is the relationship of min_check, max_check and min_throttle, max_throttle with stick inputs?](#what-is-the-relationship-of-min_check,-max_check-and-min_throttle,-max_throttle-with-stick-inputs-)
 1. [How do I install Betaflight ?](#how-do-i-install-betaflight-)
 1. [Why wont my FC board arm after upgrading the firmware ?](#why-wont-my-fc-board-arm-after-upgrading-the-firmware-)
 1. [Why is the Gyro light turned off and the 3D Model not moving ?](#why-is-the-gyro-light-turned-off-and-the-3d-model-not-moving-)
