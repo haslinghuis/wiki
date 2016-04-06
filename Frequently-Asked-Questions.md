@@ -74,7 +74,7 @@ min_check is about stick command and only matters towards your actual throttle s
 
 The misunderstanding of this comes from the fact that your throttle stick doesn't even begin "working" until you are above min_check. People try explaining this with sentences like "the FC will map min_check to min_throttle", which while true, makes people believe there is this relation. There is no relation. All that is being said is "the flight controller only cares about the range above min_check up to full throttle, and will remap that range into the 0%-100% input to the flight controller, which then outputs whatever it wants to the motors"
 
-##What is the relationship of min_check, max_check, and min_throttle, max_throttle with stick inputs? 
+##What is the relationship of min_check, max_check and min_throttle, max_throttle with stick inputs? 
 In general (all channels) min_check & max_check are only for Stick commands. then ONLY on throttle channel min_check is used in the code for Arming and PID controller depending on other settings (pid_at_min_throttle, AirMode, etc).
 mid_rc is telling the FC what your Stick Center value is, typically 1500 but may be 1520 on some radios. mid_rc is NOT used on throttle channel.
 
