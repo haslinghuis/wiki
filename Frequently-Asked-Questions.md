@@ -41,7 +41,7 @@
 1. [Will MW2.3 PID controller work on default PIDS ?](#will-mw23-pid-controller-work-on-default-pids-)
 1. [How do I keep and then restore my Betaflight Settings each time I upgrade ?](#how-do-i-keep-and-then-restore-my-betaflight-settings-each-time-i-upgrade-)
 1. [What is yaw_jump_prevention_limit and what does it do ?](#what-is-yaw_jump_prevention_limit-and-what-does-it-do-)
-1. [What is yaw_iterm_reset_degrees and what does it do ?](What-is-yaw_iterm_reset_degrees-and-what-does-it-do-)
+1. [What is yaw_iterm_reset_degrees and what does it do ?](#what-is-yaw_iterm_reset_degrees-and-what-does-it-do-)
 1. [How does Super Expo work ?](#how-does-Super-Expo-work-)
 
 **If your question is not listed above then please check the following pages:**
