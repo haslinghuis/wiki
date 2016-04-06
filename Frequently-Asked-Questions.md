@@ -1,7 +1,6 @@
 ##Contents
 1. [I'm a Neewbe, how do I start ?](#im-a-neewbe-how-do-i-start-)
-1. [What is the difference between Min_check Min_command and Min_throttle ?](#what-is-the-difference-between-min_check-min_command-and-min_throttle-)
-1. [What is the relationship of min_check, max_check and min_throttle, max_throttle with stick inputs?](#what-is-the-relationship-of-min_check,-max_check-and-min_throttle,-max_throttle-with-stick-inputs-)
+1. [What is the difference between Min_check Min_command and Min_throttle and stick inputs ?](#what-is-the-difference-between-min_check-min_command-and-min_throttle-and-stick-inputs-)
 1. [How do I install Betaflight ?](#how-do-i-install-betaflight-)
 1. [Why wont my FC board arm after upgrading the firmware ?](#why-wont-my-fc-board-arm-after-upgrading-the-firmware-)
 1. [Why is the Gyro light turned off and the 3D Model not moving ?](#why-is-the-gyro-light-turned-off-and-the-3d-model-not-moving-)
@@ -62,7 +61,7 @@ Also take a look at the **[MultiWii Wiki](http://www.multiwii.com/wiki/?title=Ma
 Videos on Cleanflight throttle parameter configuration (RC input verse outputs to ESCs):
 http://www.rcgroups.com/forums/showpost.php?p=34144329&postcount=20469
 
-#What is the difference between Min_Check Min_command and Min_throttle ?
+#What is the difference between Min_Check Min_command and Min_throttle and stick inputs ?
 From MasterZap
 
 min_check has nothing to do with ESC's ....
@@ -74,7 +73,8 @@ min_check is about stick command and only matters towards your actual throttle s
 
 The misunderstanding of this comes from the fact that your throttle stick doesn't even begin "working" until you are above min_check. People try explaining this with sentences like "the FC will map min_check to min_throttle", which while true, makes people believe there is this relation. There is no relation. All that is being said is "the flight controller only cares about the range above min_check up to full throttle, and will remap that range into the 0%-100% input to the flight controller, which then outputs whatever it wants to the motors"
 
-##What is the relationship of min_check, max_check and min_throttle, max_throttle with stick inputs? 
+From waltr
+
 In general (all channels) min_check & max_check are only for Stick commands. then ONLY on throttle channel min_check is used in the code for Arming and PID controller depending on other settings (pid_at_min_throttle, AirMode, etc).
 mid_rc is telling the FC what your Stick Center value is, typically 1500 but may be 1520 on some radios. mid_rc is NOT used on throttle channel.
 
