@@ -40,8 +40,9 @@
 1. [Why when I change something using CLI board crashes ?](#why-when-i-change-something-using-cli-board-crashes-)
 1. [Will MW2.3 PID controller work on default PIDS ?](#will-mw23-pid-controller-work-on-default-pids-)
 1. [How do I keep and then restore my Betaflight Settings each time I upgrade ?](#how-do-i-keep-and-then-restore-my-betaflight-settings-each-time-i-upgrade-)
-1. [What is yaw_jump_prevention_limit and what does it do ?](#What-is-yaw_jump_prevention_limit-and-what-does-it-do-)
-1. [How does Super Expo work ?](#How-does-Super-Expo-work-)
+1. [What is yaw_jump_prevention_limit and what does it do ?](#what-is-yaw_jump_prevention_limit-and-what-does-it-do-)
+1. [What is yaw_iterm_reset_degrees and what does it do ?](What-is-yaw_iterm_reset_degrees-and-what-does-it-do-)
+1. [How does Super Expo work ?](#how-does-Super-Expo-work-)
 
 **If your question is not listed above then please check the following pages:**
 
@@ -793,6 +794,12 @@ Here are a few tools that are useful for making comparisons between config files
 From Joshua Bardwell
 
 Yaw jump prevention limit puts an upper cap on the yaw P term when the yaw stick is centered. There is a problem when you do a big yaw move and then suddenly snap to a stop where the copter has low yaw authority, so the copter cannot respond as quick as it wants to, so error grows large and the P term grows large and the motors surge like crazy at the end of the sharp yaw move. Lowering yaw_jump_prevention_limit will soften the end of sharp yaw moves, but will prevent the motors from surging and the copter from jumping. Raising yaw_jump_prevention_limit will sharpen the end of yaw moves, but will result in the motors surging if you don't have enough yaw authority. If you have a high-performance copter with great yaw authority, and if you want snappier endings to your yaw moves, raise this value as high as 500 (disabled). Remember that this only affects the end of yaw moves, because it only applies when the stick is centered.
+
+##What is yaw_iterm_reset_degrees and what does it do?
+
+From Joshua Bardwell
+
+yaw_iterm_reset_degrees determines the number of degrees above which the Iterm will reset to zero and stay there. I don't know what units "degrees" are in, but since they go from 25 to 1000, I am going to guess it's degrees per second rotation. The issue here is that, on extreme acro moves like flips and rolls, the I term can accrue error, and then at the end of the move, the I term trying to unwind that error can result in rebound or overshoot, instead of sharply stopping the move. This parameter causes the I term to zero out when the rotational rate goes over a certain value. The idea is that, in a flip or roll, you don't care about correcting for persistent bias on that axis. You just want to flip or roll close to the targetted angular rate.
 
 ##How does Super Expo work ?
 
