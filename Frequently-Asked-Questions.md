@@ -1,6 +1,7 @@
 ##Contents
 1. [I'm a Neewbe, how do I start ?](#im-a-neewbe-how-do-i-start-)
-1. [What is the relationship of min_check, max_check, and min_throttle, max_throttle with stick inputs?](#what-is-the-relationship-of-mincheck-maxcheck-and minthrottle-maxthrottle-with-stick-inputs-)
+1. [What is the difference between Min_check Min_command and Min_throttle ?](#what-is-the-difference-between-min_check-min_command-and-min_throttle-)
+1. [What is the relationship of min_check, max_check, and min_throttle, max_throttle with stick inputs?](#what-is-the-relationship-of-min_check-max_check-and-min_throttle-max_throttle-with-stick-inputs-)
 1. [How do I install Betaflight ?](#how-do-i-install-betaflight-)
 1. [Why wont my FC board arm after upgrading the firmware ?](#why-wont-my-fc-board-arm-after-upgrading-the-firmware-)
 1. [Why is the Gyro light turned off and the 3D Model not moving ?](#why-is-the-gyro-light-turned-off-and-the-3d-model-not-moving-)
@@ -39,7 +40,6 @@
 1. [Why does it matter to prevent motor jitter ?](#why-does-it-matter-to-prevent-motor-jitter-)
 1. [Why when I change something using CLI board crashes ?](#why-when-i-change-something-using-cli-board-crashes-)
 1. [Will MW2.3 PID controller work on default PIDS ?](#will-mw23-pid-controller-work-on-default-pids-)
-1. [What is the difference between Min_check Min_command and Min_throttle ?](#what-is-the-difference-between-min_check-min_command-and-min_throttle-)
 1. [How do I keep and then restore my Betaflight Settings each time I upgrade ?](#how-do-i-keep-and-then-restore-my-betaflight-settings-each-time-i-upgrade-)
 1. [How does Super Expo work ?](#How-does-Super-Expo-work-)
 
@@ -61,6 +61,18 @@ Also take a look at the **[MultiWii Wiki](http://www.multiwii.com/wiki/?title=Ma
 
 Videos on Cleanflight throttle parameter configuration (RC input verse outputs to ESCs):
 http://www.rcgroups.com/forums/showpost.php?p=34144329&postcount=20469
+
+#What is the difference between Min_Check Min_command and Min_throttle ?
+From MasterZap
+
+min_check has nothing to do with ESC's ....
+
+min_command is the value sent when disarmed (or when armed and motor stop is on, i.e. when we want the motors not to spin).
+min_throttle is the value sent when armed (with motor stop off)
+
+min_check is about stick command and only matters towards your actual throttle stick. It has no effect on what is sent to the ESC. 
+
+The misunderstanding of this comes from the fact that your throttle stick doesn't even begin "working" until you are above min_check. People try explaining this with sentences like "the FC will map min_check to min_throttle", which while true, makes people believe there is this relation. There is no relation. All that is being said is "the flight controller only cares about the range above min_check up to full throttle, and will remap that range into the 0%-100% input to the flight controller, which then outputs whatever it wants to the motors"
 
 ##What is the relationship of min_check, max_check, and min_throttle, max_throttle with stick inputs? 
 In general (all channels) min_check & max_check are only for Stick commands. then ONLY on throttle channel min_check is used in the code for Arming and PID controller depending on other settings (pid_at_min_throttle, AirMode, etc).
@@ -754,18 +766,6 @@ Angle and Horizon modes still need some work
 
 Don't forget to follow this good approach to tuning your multi-rotor:
 http://github.com/borisbstyle/betaflight/wiki/PID-Tuning-Guide
-
-#What is the difference between Min_Check Min_command and Min_throttle ?
-From MasterZap
-
-min_check has nothing to do with ESC's ....
-
-min_command is the value sent when disarmed (or when armed and motor stop is on, i.e. when we want the motors not to spin).
-min_throttle is the value sent when armed (with motor stop off)
-
-min_check is about stick command and only matters towards your actual throttle stick. It has no effect on what is sent to the ESC. 
-
-The misunderstanding of this comes from the fact that your throttle stick doesn't even begin "working" until you are above min_check. People try explaining this with sentences like "the FC will map min_check to min_throttle", which while true, makes people believe there is this relation. There is no relation. All that is being said is "the flight controller only cares about the range above min_check up to full throttle, and will remap that range into the 0%-100% input to the flight controller, which then outputs whatever it wants to the motors"
 
 ##How do I keep and then restore my Betaflight Settings each time I upgrade ?
 First of all it is important to note that uploading a **full** settings Dump from a previous Betaflight version will likely result in your copter not flying properly, not flying at all or even damage to the components.
