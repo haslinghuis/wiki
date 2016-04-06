@@ -799,19 +799,16 @@ Yaw jump prevention limit puts an upper cap on the yaw P term when the yaw stick
 
 From Joshua Bardwell
 
-yaw_iterm_reset_degrees determines the number of degrees above which the Iterm will reset to zero and stay there. I don't know what units "degrees" are in, but since they go from 25 to 1000, I am going to guess it's degrees per second rotation. The issue here is that, on extreme acro moves like flips and rolls, the I term can accrue error, and then at the end of the move, the I term trying to unwind that error can result in rebound or overshoot, instead of sharply stopping the move. This parameter causes the I term to zero out when the rotational rate goes over a certain value. The idea is that, in a flip or roll, you don't care about correcting for persistent bias on that axis. You just want to flip or roll close to the targetted angular rate.
+yaw_iterm_reset_degrees determines the number of degrees above which the Iterm will reset to zero and stay there. the units are degrees per second rotation and they go from 25 to 1000. The issue here is that, on extreme acro moves like flips and rolls, the I term can accrue error, and then at the end of the move, the I term trying to unwind that error can result in rebound or overshoot, instead of sharply stopping the move. This parameter causes the I term to zero out when the rotational rate goes over a certain value. The idea is that, in a flip or roll, you don't care about correcting for persistent bias on that axis. You just want to flip or roll close to the targetted angular rate.
 
 ##How does Super Expo work ?
 
 From BorisB
 
-Super expo is similar to acro plus, but acro plus was adding more rotation rate outside the pid controller and the pid controller would fight against that. That didnt really feel natural somehow.
-
+Super expo is similar to acro plus, but acro plus was adding more rotation rate outside the pid controller and the pid controller would fight against that. That didnt really feel natural somehow.  
 Super expo manipulates the pid controller so it does expo for you.
-It actually works as an acceleration to P based on higher stick input and deacceleration with lower stick input. That also provides more clean acro and less need for D in general.
-
-If you have your quad tuned for mid stick you have now....that pretty much stays the same and maybe even a bit softer, but it accelerates towards the full stick.
-
+It actually works as an acceleration to P based on higher stick input and deacceleration with lower stick input. That also provides more clean acro and less need for D in general.  
+If you have your quad tuned for mid stick you have now....that pretty much stays the same and maybe even a bit softer, but it accelerates towards the full stick.  
 Its like multiwii implementation but with your current rates so you still can have snappy mid stick that what multiwii is lacking a bit.
 
 Besides that, betaflight 2.6 allows much higher D without noise so you can get it smooth easier anyway.
@@ -822,3 +819,10 @@ super_expo_factor works like this. Normally, the way the PID controller works is
 But with super expo, the way it works is that, the more deflected your stick is, the more the P term is directly proportional to the stick position, instead of the error value. So as you deflect the stick, the PID controller says, "I don't care what the current angular rate is, or what the error is, just push so hard."   
 Here is an analogy. Normally when you drive a car, you are looking at your target speed. Say it is 55 mph. And if you are going faster than that, you back off the gas pedal, and if you are going slower than that, you push on the gas pedal. That's the way the PID controller works. But super expo is like saying, "I don't care how fast I'm going. Push the throttle to 75% and just keep it there."   
 As with the I term reset, the idea here is that, when you're commanding extreme maneuvers, you don't care about hitting an EXACT angular rate, like 1234 degrees per second. As long as the copter's behavior is reasonably predictable, you would rather let it "loosen up" a bit and just spin. If you look at Blackbox during a flip or roll, the P term is often switching signs several times. So it is trying to slow down the roll and then speed it up and then slow it down, and that's a bit silly to all be happening in the course of 0.2 seconds while you're flipping around.
+
+A Boris comment:
+Just one additional thing about iterm reset.
+In super expo mode the iterm is also being reset on roll and pitch above certain deg/sec (default 200)
+That is really necessary as super expo gives some P acceleration and Iterm would start to windup even more as it would think that Pterm is doing a bad job.  
+The iterm again becomes active below the threshold rate and gets to normal levels in time without you notice anything.  
+Removal of iterm during faster acro manouvres provides more connected feel as all stickyness from Iterm is removed. 
