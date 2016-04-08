@@ -43,6 +43,7 @@
 1. [What is yaw_jump_prevention_limit and what does it do ?](#what-is-yaw_jump_prevention_limit-and-what-does-it-do-)
 1. [What is yaw_iterm_reset_degrees and what does it do ?](#what-is-yaw_iterm_reset_degrees-and-what-does-it-do-)
 1. [How does Super Expo work ?](#how-does-Super-Expo-work-)
+1. [How do rates relate to pitch roll & yaw degrees/s ?](#How-do-rates-relate-to-pitch-roll-&-yaw-degrees/s-]
 
 **If your question is not listed above then please check the following pages:**
 
@@ -826,3 +827,10 @@ In super expo mode the iterm is also being reset on roll and pitch above certain
 That is really necessary as super expo gives some P acceleration and Iterm would start to windup even more as it would think that Pterm is doing a bad job.  
 The iterm again becomes active below the threshold rate and gets to normal levels in time without you notice anything.  
 Removal of iterm during faster acro manouvres provides more connected feel as all stickyness from Iterm is removed. 
+
+##How do rates relate to pitch roll & yaw degrees/s ?
+
+MadmanK has written a spreadsheet to show you pitch roll and yaw rate in Rewrite and Luxfloat to show how it relates to your rates in degrees per second.
+Only change the values in the grey boxes, and it will adjust the graphs and tables.
+
+[Rewrite/Lux rates](http://www.alibarrett.co.uk/uploads/1/4/0/0/1400361/rewrite_lux_rates.xlsx)
