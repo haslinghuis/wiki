@@ -1,5 +1,23 @@
 This page is meant to provide a more in depth explanation of the changelog for each release so that users can understand the consequences of the changes made. Please remember to read the changelog for each release first and read the "Betaflight specific CLI commands" in this Wiki for new and changed CLI commands.
 
+# 2.6.1 - 
+
+Release 2.6.1
+
+- Very long waited VCP passthrough thanks to 4712! (You do need latest blhelisuite! http://www.mediafire.com/download/9bwzbfzmfpv7j4i/BLHeliSuiteBeta144051.zip)
+- 4 way interface passthrough, which also works for simonk bootloader through blhelisuite
+- Remove old simonk passthrough
+- Cli bugfix for configuring Yaw lpf
+- Fix low throttle arming for 3D mode on switch.
+- Fix for re-arming when calibration set to be prior arming (only for switch armers due to safety reasons)
+- Fix IBUS to have 10 channels
+- Add frsky average voltage on A4
+- Fix for transponder for SPRACINGF3MINI target
+- Luxfloat has no exact same rate and PID scaling like rewrite. The defaults are now same. Makes switching between these 2 easier. Luxfloat users need to readjust rates and perhaps slightly their PID's. See wiki for more info
+- Added new targets SPRACINGF3EVO and DOGE
+- Fix for uninitialized averageSum
+- New Horizon default sensitivity (Level D is now horizon sensitivity for luxfloat and rewrite)
+
 # 2.6.0 - 
 
 Pre-release 2.6
