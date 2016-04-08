@@ -43,7 +43,7 @@
 1. [What is yaw_jump_prevention_limit and what does it do ?](#what-is-yaw_jump_prevention_limit-and-what-does-it-do-)
 1. [What is yaw_iterm_reset_degrees and what does it do ?](#what-is-yaw_iterm_reset_degrees-and-what-does-it-do-)
 1. [How does Super Expo work ?](#how-does-Super-Expo-work-)
-1. [How do rates relate to pitch roll & yaw degrees/s ?](#How-do-rates-relate-to-pitch-roll-&-yaw-degrees/s-]
+1. [How do rates relate to pitch roll & yaw degrees/s ?](#How-do-rates-relate-to-pitch-roll-&-yaw-degrees/s-)
 
 **If your question is not listed above then please check the following pages:**
 
