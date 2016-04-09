@@ -13,7 +13,7 @@ Release 2.6.1
 - Fix IBUS to have 10 channels
 - Add frsky average voltage on A4
 - Fix for transponder for SPRACINGF3MINI target
-- Luxfloat has no exact same rate and PID scaling like rewrite. The defaults are now same. Makes switching between these 2 easier. Luxfloat users need to readjust rates and perhaps slightly their PID's. See wiki for more info
+- Luxfloat now has exact same rate and PID scaling like rewrite. The defaults are now same. Makes switching between these 2 easier. Luxfloat users need to readjust rates and perhaps slightly their PID's. See wiki for more info
 - Added new targets SPRACINGF3EVO and DOGE
 - Fix for uninitialized averageSum
 - New Horizon default sensitivity (Level D is now horizon sensitivity for luxfloat and rewrite)
