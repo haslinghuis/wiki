@@ -218,9 +218,7 @@ Pos 1: Disarm (motors do not spin)
 Pos 2: Arm (motors start spinning at **min_throttle** value)  
 Pos 3: Arm + Air Mode (motors keep spinning at **min_throttle** value but use the new Air Mode Mixer)
 
-The Motor Stop Feature will need to be disabled by entering this CLI Command:  
-`feature -MOTOR_STOP`  
-Or just disable motor stop in the GUI's config Tab.
+The Motor Stop Feature can be enabled or disabled, and it will behave as it normally does when Air Mode is not active. However, once Air Mode is activated, Motor Stop will be overridden, and the motors will spin at min_throttle or above.
 
 Air Mode min_throttle value recommendation: "As low as possible min_throttle where motors do not stop spinning at all times is the most recommended one. I do recommend using as high as possible range for throttle like 1000-2000." - Boris comment
 
