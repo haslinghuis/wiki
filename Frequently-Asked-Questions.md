@@ -213,21 +213,19 @@ Part 2: http://www.youtube.com/watch?v=goYT3PcA-dE
 Part 3: http://www.youtube.com/watch?v=z0ZUsdUD9iw
 
 ##How do I enable Air Mode ? 
-One method is to use a 3 way switch as follows:
-
-Pos 1: Disarm (motors do not spin)
-
-Pos 2: Arm (motors start spinning at **min_throttle** value)
-
+One method is to use a 3 way switch as follows:  
+Pos 1: Disarm (motors do not spin)  
+Pos 2: Arm (motors start spinning at **min_throttle** value)  
 Pos 3: Arm + Air Mode (motors keep spinning at **min_throttle** value but use the new Air Mode Mixer)
 
-The Motor Stop Feature will need to be disabled by entering this CLI Command:
-
-`feature -MOTOR_STOP`
+The Motor Stop Feature will need to be disabled by entering this CLI Command:  
+`feature -MOTOR_STOP`  
+Or just disable motor stop in the GUI's config Tab.
 
 Air Mode min_throttle value recommendation: "As low as possible min_throttle where motors do not stop spinning at all times is the most recommended one. I do recommend using as high as possible range for throttle like 1000-2000." - Boris comment
 
-**You do want min_throttle as low as possible, but a good rule of thumb is to find the throttle value (in the motors tab) at which all 4 motors spin reliably and without twitches. Then add 10 to that number and set that as min_throttle. For smaller motors (1306 3100kv motors for example), you may need to add 15 or 20 because they have less torque at very low throttle values.  As you do a low throttle flip or drop, you DON'T want the air resistance on your props to overcome the power provided at min throttle and cause the motor to bog down and stop.
+**You do want min_throttle as low as possible, but a good rule of thumb is to find the throttle value (in the motors tab) at which all 4 motors spin reliably and without twitches. Then add 10 to that number and set that as min_throttle. For smaller motors (1306 3100kv motors for example), you may need to add 15 or 20 because they have less torque at very low throttle values.  As you do a low throttle flip or drop, you DON'T want the air resistance on your props to overcome the power provided at min throttle and cause the motor to bog down and stop.  
+Note: some ESCs can desync on very low min_throttle values when throttle is raised from zero rapidly. If this occurs then increase the min_throttle value another 20-40sec or until the ESCs do not desync on rapid throttle increase from zero.  
 
 From a Post by teracis:
 To get airmode working all you need to do is go to the modes tab in configurator and set it to activate the same way you would with an arming switch. This is something you will need to learn so check out a tutorial rather than one of us spelling it out for you here, it will be quicker.
@@ -237,7 +235,7 @@ If you want Airmode on permanently, tick the box and then drag the slider so it 
 
 **Using a 3-position switch, the flight procedure could be:**
 
-1. Connect Battery
+1. Connect Battery and ensure the copter DOES NO MOVE while the FC boots and does a Gyro Cal. The beeper will beep three times once the Gyro is cal'ed.  
 2. Arm motors (motors start spinning)
 3. Enable AirMode (no 'I' windup on ground) 
 4. Lift off & fly around (motors will never stop in flight even at lowest throttle)
@@ -249,6 +247,8 @@ There are some people saying or complaining about their minimum throttle in airm
 Your min_check determines your lowest possible throttle value out of your TX! The lower your min_check is configured the lower throttle you can get out of your quad in air mode.
 
 If your min_check is set to 1100 and your TX goes down to 1000 that would mean that it is already giving some throttle. I use min_check a bit higher than 1000. I believe something like 1015 or 1020 
+
+If you have difficulty with bounce or other unwanted actions upon landing then disable the "Disarm motor regardless of throttle value". What this allows is putting the aux switch to the disarm position while flying and keeps the copter armed as long as the throttle stick value stays above min_check. Then upon landing drop the throttle stick to zero (below min_check) and the copter disarms. No bounce or other issues and no need to reach for the disarm switch upon landing.
 
 ##What is Acro Plus ?
 1. Any value of AcroPlus above 0 causes any accumulated iTerm to be reset to zero (and kept at zero) whenever your sticks are at more than 70% of full throw. When restored to less than 70% of full stick travel, iTerm is only allowed to return to 'normal' slowly, actually at 0.1% per processor loop. ITerm therefore takes about 0.5s to return to 'normal' after a flip or roll on 2kHz targets. This improves immediate post-roll/flip stability.
