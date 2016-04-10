@@ -794,6 +794,9 @@ From Joshua Bardwell
 
 Yaw jump prevention limit puts an upper cap on the yaw P term when the yaw stick is centered. There is a problem when you do a big yaw move and then suddenly snap to a stop where the copter has low yaw authority, so the copter cannot respond as quick as it wants to, so error grows large and the P term grows large and the motors surge like crazy at the end of the sharp yaw move. Lowering yaw_jump_prevention_limit will soften the end of sharp yaw moves, but will prevent the motors from surging and the copter from jumping. Raising yaw_jump_prevention_limit will sharpen the end of yaw moves, but will result in the motors surging if you don't have enough yaw authority. If you have a high-performance copter with great yaw authority, and if you want snappier endings to your yaw moves, raise this value as high as 500 (disabled). Remember that this only affects the end of yaw moves, because it only applies when the stick is centered.
 
+Addition from Adam Pyschny
+A to low yaw_jump_prevention_limit can prevent yaw P from getting enough authority to prevent the quad from breaking out in tight, high speed, roll-only turns.  
+
 ##What is yaw_iterm_reset_degrees and what does it do?
 
 From Joshua Bardwell
