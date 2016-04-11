@@ -67,6 +67,6 @@ you should see the version number pop up:
 
 `arm-none-eabi-gcc (GNU Tools for ARM Embedded Processors) 4.9.3 20150529 (release) [ARM/embedded-4_9-branch revision 227977] Copyright (C) 2014 Free Software Foundation, Inc.`
 
-# Creating the hex file
+# Creating the Hex File
 
 
