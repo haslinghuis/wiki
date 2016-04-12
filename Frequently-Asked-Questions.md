@@ -585,7 +585,12 @@ The most common one seem to be error 2 where the accelerometer/gyro sensor can't
 
 Error 3, 4 and 7 could also be caused by a bad accelerometer/gyro sensor. 
 Error 5 and 6 indicates memory read/write problem of the MCU (main processor).
-In most cases a new flight controller board will be needed if the user isn't for example able to re-solder the sensor.
+In most cases a new flight controller board will be needed if the user isn't for example able to re-solder the sensor.  
+Above are Hard Faults the Processor detects upon boot-up and initialization. Additional reasons for flashing LED and/or beeping are:  
+  No signal from RX. This could be simply the TX is off or the wrong Model/binding selected or a hard fault of the RX like no power or bad cable.  
+  Accelerometer Not calibrated if the ACC is enabled (check the CLI). If acc is enabled then it must be cal'ed once and typically done in the config GUI.  
+  Copter titled too far if the Acc is enabled. 
+
 
 ##My PID D gain value is small after tuning in 2khz mode is that normal ?
 The latest 2KHz versions of Betaflight seem to be enhancing the influence of P, to the point where you can fly with good P gains and very little D. It's also good practice to keep the D gains low so that the motors don't get too hot with all the rapid speed changes.
