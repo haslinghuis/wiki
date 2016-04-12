@@ -69,4 +69,32 @@ you should see the version number pop up:
 
 # Creating the Hex File
 
+Go to: https://github.com/borisbstyle/betaflight/releases and download the latest Source code (tar.gz). The tar.gz file will allow you to edit the make file, so you can pick a target. Once the file is downloaded make sure you un pack it. 
 
+Next, open up terminal and type:
+
+`cd`
+
+Now drag or type in the directory of the betaflight folder. It should look something like this:
+
+`cd /Users/siddhakilaru1/Downloads/betaflight-2.6.0`
+
+**NOTE: You should insert the directory of your file... `/Users/siddhakilaru1/Downloads/betaflight-2.6.0` is an example **
+
+Now click enter, and type:
+
+`make`
+
+This will begin the process of making the hex file. After everything is done, go into Betaflight folder. You will see a new folder named `obj`. Inside that folder you will see you the hex file. 
+
+# Changing the Target
+
+If you want to change the target, go into the Betaflight folder and you will see a file called `Makefile`. 
+
+Inside the file you will see:
+
+`TARGET		?= NAZE `
+
+You can change `NAZE` to any of the following options:
+
+`NAZE NAZE32PRO OLIMEXINO STM32F3DISCOVERY CHEBUZZF3 $(CC3D_TARGETS) CJMCU EUSTM32F103RC SPRACINGF3 PORT103R SPARKY ALIENFLIGHTF1 ALIENFLIGHTF3 COLIBRI_RACE LUX_RACE MOTOLAB RMDO IRCFUSIONF3 AFROMINI SPRACINGF3MINI SPRACINGF3EVO DOGE`
