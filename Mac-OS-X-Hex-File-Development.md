@@ -1,6 +1,4 @@
-***Currently, this page is under construction***
-
-This page will show you how to create a hex file from the source code provided by Boris. 
+## This page will show you how to create a hex file from the source code provided by Boris. 
 
 # Prerequisites
 
