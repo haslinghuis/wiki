@@ -25,7 +25,7 @@
 1. [Why do my motors keep accelerating on the bench when I arm without props ?](#why-do-my-motors-keep-accelerating-on-the-bench-when-i-arm-without-props-)
 1. [Why do my motors spin briefly when rebooting the Flight Controller ?](#why-do-my-motors-spin-briefly-when-rebooting-the-flight-controller-)
 1. [If the accelerometer is disabled and FailSafe Activates what happens to the copter ?](#if-the-accelerometer-is-disabled-and-failsafe-activates-what-happens-to-the-copter-)
-1. [Why does my Flight Controller beep lots of times when powering up ?](#why-does-my-flight-controller-beep-lots-of-times-when-powering-up-)
+1. [Why does my Flight Controller blink/beep lots of times when powering up ?](#why-does-my-flight-controller-blinkbeep-lots-of-times-when-powering-up-)
 1. [My PID D gain value is small after tuning in 2khz mode is that normal ?](#my-pid-d-gain-value-is-small-after-tuning-in-2khz-mode-is-that-normal-)
 1. [Why are the accelerometer Black Box traces so bad in 2KHz mode ?](#why-are-the-accelerometer-black-box-traces-so-bad-in-2khz-mode-)
 1. [How do I get vbat_pid_compensation system working ?](#how-do-i-get-vbat_pid_compensation-system-working-)
@@ -569,24 +569,23 @@ It cannot do self-leveling without the accelerometer sensor activated, so it won
 
 It is recommended to setup Fail Safe to disarm (shut off motors) immediately upon entering Stage 2 and allow copter to Drop if the Accelerometer is disabled.
 
-##Why does my Flight Controller beep lots of times when powering up ?
-Does anyone know what this error code is: 5 shorts beeps/flashes - 2 long beeps/flashes.
-Cant find it in any docs. 
+##Why does my Flight Controller blink/beep lots of times when powering up ?
+5 short blink/beeps followed by any number of long blinks/beeps indicates an error code.
+Number of long blinks indicates the following error:
 
-Answer: That code means "ACC missing". This could be the result of a copter crash that has damaged the accelerometer. In most cases a new Flight Controller will be needed since the accelerometer is needed during the power-up stage of the FC (even if you use Acro mode only).
+1. ***FAILURE_DEVELOPER***: External interrupt of sensor failed to initialize.
+2. ***FAILURE_MISSING_ACC***: Accelerometer/gyro sensor is missing
+3. ***FAILURE_ACC_INIT***: Accelerometer/gyro sensor failed to initialize
+4. ***FAILURE_ACC_INCOMPATIBLE***: The found accelerometer/gyro sensor is not compatible/not the expected one
+5. ***FAILURE_INVALID_EEPROM_CONTENTS***: EEPROM/FLASH configuration content is invalid
+6. ***FAILURE_FLASH_WRITE_FAILED***: Write of configuration to EEPROM/FLASH failed
+7. ***FAILURE_GYRO_INIT_FAILED***: Gyro initialization of SPI MPU6000 accelerometer/gyro failed
 
-The short ones are the same for all error codes and should five so maybe you counted wrong, they are quite hard to count since they are so fast. Anyway the fast ones are just an indicator telling there's an error code coming (the long ones) so the long ones are the important ones.
+The most common one seem to be error 2 where the accelerometer/gyro sensor can't be found, this is caused by a bad sensor or bad connections to the sensor, could happen because of a bad crash. On most boards gyro and accelerometer is the same chip so acro flying isn't possible when the accelerometer isn't found, it's not just the accelerometer that's bad but the whole chip.
 
-Error codes are defined in system.h as following:
-
- 1- FAILURE_DEVELOPER  
- 2- FAILURE_MISSING_ACC  
- 3- FAILURE_ACC_INIT  
- 4- FAILURE_ACC_INCOMPATIBLE  
- 5- FAILURE_INVALID_EEPROM_CONTENTS  
- 6- FAILURE_FLASH_WRITE_FAILED  
- 7- FAILURE_GYRO_INIT_FAILED  
-
+Error 3, 4 and 7 could also be caused by a bad accelerometer/gyro sensor. 
+Error 5 and 6 indicates memory read/write problem of the MCU (main processor).
+In most cases a new flight controller board will be needed if the user isn't for example able to re-solder the sensor.
 
 ##My PID D gain value is small after tuning in 2khz mode is that normal ?
 The latest 2KHz versions of Betaflight seem to be enhancing the influence of P, to the point where you can fly with good P gains and very little D. It's also good practice to keep the D gains low so that the motors don't get too hot with all the rapid speed changes.
