@@ -69,7 +69,7 @@ you should see the version number pop up:
 
 # Creating the Hex File
 
-Go to: https://github.com/borisbstyle/betaflight/releases and download the latest Source code (tar.gz). The tar.gz file will allow you to edit the make file, so you can pick a target. Once the file is downloaded make sure you un pack it. 
+Go to: https://github.com/borisbstyle/betaflight/releases and download the latest Source code (tar.gz). The tar.gz file will allow you to edit the Makefile, so you can pick a target. Once the file is downloaded make sure you un pack it. 
 
 Next, open up terminal and type:
 
