@@ -575,6 +575,19 @@ Cant find it in any docs.
 
 Answer: That code means "ACC missing". This could be the result of a copter crash that has damaged the accelerometer. In most cases a new Flight Controller will be needed since the accelerometer is needed during the power-up stage of the FC (even if you use Acro mode only).
 
+The short ones are the same for all error codes and should five so maybe you counted wrong, they are quite hard to count since they are so fast. Anyway the fast ones are just an indicator telling there's an error code coming (the long ones) so the long ones are the important ones.
+
+Error codes are defined in system.h as following:
+
+ 1- FAILURE_DEVELOPER  
+ 2- FAILURE_MISSING_ACC  
+ 3- FAILURE_ACC_INIT  
+ 4- FAILURE_ACC_INCOMPATIBLE  
+ 5- FAILURE_INVALID_EEPROM_CONTENTS  
+ 6- FAILURE_FLASH_WRITE_FAILED  
+ 7- FAILURE_GYRO_INIT_FAILED  
+
+
 ##My PID D gain value is small after tuning in 2khz mode is that normal ?
 The latest 2KHz versions of Betaflight seem to be enhancing the influence of P, to the point where you can fly with good P gains and very little D. It's also good practice to keep the D gains low so that the motors don't get too hot with all the rapid speed changes.
 
