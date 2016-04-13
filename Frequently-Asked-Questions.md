@@ -79,7 +79,7 @@ The misunderstanding of this comes from the fact that your throttle stick doesn'
 From waltr
 
 In general (all channels) min_check & max_check are only for Stick commands. then ONLY on throttle channel min_check is used in the code for Arming and PID controller depending on other settings (pid_at_min_throttle, AirMode, etc).
-mid_rc is telling the FC what your Stick Center value is, typically 1500 but may be 1520 on some radios. mid_rc is NOT used on throttle channel.
+mid_rc (Note: this is incorrectly label throttle middle in the CF config GUI) is telling the FC what your Stick Center value is, typically 1500 but may be 1520 on some radios. mid_rc is NOT used on throttle channel.
 
 The default max_throttle of 1850 comes from MultiWii and is a SAFE max value for ALL ESCs.  
 Code from MW2.3 config.h file  
@@ -477,6 +477,13 @@ This can be a difficult and confusing concept to grasp at first. The best way to
 Part 1: http://www.youtube.com/watch?v=WFU3VewGbbA
 
 Part 2: http://www.youtube.com/watch?v=YNRl0OTKRGA
+
+New information concerning BLHeli Max_throttle calibration.
+
+Watch these Videos from Joshua Bardwell  
+Cleanflight BLHeli Top-End Throttle Calibration : https://www.youtube.com/watch?v=spegUYF8Dxk
+The Effect of Top-End CleanFlight BLHeli Throttle Calibration : https://www.youtube.com/watch?v=RW2XalNPpQk
+
 
 ##How do I configure BLHeli ESCs via BetaFlight ?
 If running at 1kHz and faster BLHeli 14.2 or later is required and disable PWM in the BLHeli configuration. This is to ensure the BLHeli Firmware recognizes the OneShot125 pulses properly.
