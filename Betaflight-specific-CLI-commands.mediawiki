@@ -13,10 +13,6 @@ Here a good preview for this option: [https://youtu.be/gXeaINFpvow FPV camera ti
 
 Another video on this option: [https://www.youtube.com/watch?v=gEcWxHIH378 Betaflight Camera Uptilt Compensation]
 
-'''set motor_pwm_rate''' = 400<br />
-<i>[0,...,8000]</i><br />
-This is the fixed refresh rate of the outputs to the ESCs in Hz. It is not used when using oneshot/multishot signalling
-
 '''set gyro_lpf''' = 188HZ '' <br />
 <i>[OFF,188HZ,98HZ,42HZ,EXPERIMENTAL(2.5.0)]</i><br />
 This is the internal gyro filtering value. The lower the value the more buffering and delay will be introduced to gyro. Must be set to OFF to enable 2K mode (starting with Version 2.3.0)(starting with Version 2.4 this is automatically set to OFF if 500 looptime is selected in the GUI)''
