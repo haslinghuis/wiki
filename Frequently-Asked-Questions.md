@@ -407,6 +407,13 @@ New in V2.5.4
 
 The 'P' and 'D' Terms in Luxfloat are now shown as 4 times higher to allow better resolution when tuning. The actual PID scaling stays the same and can be seen in the CLI.
 
+Additional comment from Boris on MW-rewrite verse Luxfloat:  
+There should not be any difference between both in terms of PID's and rates. Well there is one slight difference actually, which I forgot to mention and even I forgot about it.  
+rewrite still has a bit higher D range. To be exact rewrite has 2x higher delta for Dterm due to averaging summing instead of average dividing the sum. I would rather like to remove this, but dont want to cause people having to retune their rewrite. But even though with this Dterm rewrite should in theory handle bounces better....right? But that isnt the case.  
+
+I know why. Rewrite has a Dterm deadband integrated in the integer logic, which helps keeping some noise away. But the lower numbers can cause some aliasing in dterm and some lower frequencies which aren't there may be thrown into pid controller.  
+There will be some more data about this soon to confirm, but luxfloat may now become a winner certainly now where it became better tunable.  
+
 ## Is there a good resource for learning how to tune using Black Box ?
 a. "I would check out Joshua Bardwells youtube channel. I haven't watched all these videos... I just picked them from his channel.
 
