@@ -11,6 +11,7 @@
 1. [How do I activate 2khz mode ?](#how-do-i-activate-2khz-mode-)
 1. [What Flight Controllers are recommended to get the best out of BetaFlight ?](#what-flight-controllers-are-recommended-to-get-the-best-out-of-betaflight-)
 1. [What are the differences between LuxFloat and Rewrite PID Controllers ?](#what-are-the-differences-between-luxfloat-and-rewrite-pid-controllers-)
+1. [What PIDs do and how do they do it ?](#what-pids-do-and-how-do-they-do-it-)
 1. [Is there a good resource for learning how to tune using Black Box ?](#is-there-a-good-resource-for-learning-how-to-tune-using-black-box-)
 1. [Why does my copter behave erratic after a crash ?](#why-does-my-copter-behave-erratic-after-a-crash-)
 1. [How does yaw_jump_prevention_limit work ?](#how-does-yaw_jump_prevention_limit-work-)
@@ -413,6 +414,10 @@ rewrite still has a bit higher D range. To be exact rewrite has 2x higher delta 
 
 I know why. Rewrite has a Dterm deadband integrated in the integer logic, which helps keeping some noise away. But the lower numbers can cause some aliasing in dterm and some lower frequencies which aren't there may be thrown into pid controller.  
 There will be some more data about this soon to confirm, but luxfloat may now become a winner certainly now where it became better tunable.  
+
+## What PIDs do and how do they do it ?
+Here a good basic PID explaination by Bruce for those who want to learn about it. 
+https://www.youtube.com/watch?v=0vqWyramGy8  
 
 ## Is there a good resource for learning how to tune using Black Box ?
 a. "I would check out Joshua Bardwells youtube channel. I haven't watched all these videos... I just picked them from his channel.
