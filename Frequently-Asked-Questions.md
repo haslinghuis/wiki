@@ -872,4 +872,4 @@ Removal of iterm during faster acro manouvres provides more connected feel as al
 MadmanK has written a spreadsheet to show you pitch roll and yaw rate in Rewrite and Luxfloat to show how it relates to your rates in degrees per second.
 Only change the values in the grey boxes, and it will adjust the graphs and tables.
 
-[Rewrite/Lux rates](http://www.alibarrett.co.uk/uploads/1/4/0/0/1400361/rewrite_lux_rates.xlsx)
+[Rewrite/Lux rates](https://dl.dropboxusercontent.com/u/31537757/Betaflight%20Rates%20v1_4.xlsx)
