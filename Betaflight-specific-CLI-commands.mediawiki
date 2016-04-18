@@ -3,7 +3,7 @@ https://github.com/cleanflight/cleanflight/blob/master/docs/Cli.md
 
 The setting shown are the Defaults + possible values.
 
-<a href="#v260">Latest Version</a>  
+<a href="#v261">Latest Version</a>  
  
 New CLI feature is type a "get" and part of a CLI command name (example: "get acc"). The cli will return all CLI commands that have the name part with the current value plus what the valid value range or valid Names.
 Unknown on which Version this was added but is in v2.6.1  
@@ -388,6 +388,7 @@ Experimental threshold for resetting iterm for yaw on certain rates<br/>
 <i>[0,...,500]</i><br/>
 Additional yaw filter when yaw axis too noisy<br/>
 
+<br/><br/><a name="v261"/>
 <u><i>'''Changes in 2.6.1'''</i></u><br/><br/>
 <u>'''Removed:'''</u><br/>
 '''escprog''' <i>[bl|sk] [#]</i><br/><a name="escprog"/>
