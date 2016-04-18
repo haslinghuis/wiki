@@ -811,8 +811,9 @@ First of all it is important to note that uploading a **full** settings Dump fro
 It's also worth noting that the method of flashing Betaflight **can** be dependent of the FC board. So best to refer to the thread on the FC board you are using. The list of Boards in the FAQ have links to these threads.
 Any issues/differences in updating are typically listed in the Release Notes which are a MUST READ.
 
-Having said all this, one approach worth considering for ensuring your settings are migrated from one Betaflight version to another is described in this video:
+Having said all this, one approach worth considering for ensuring your settings are migrated from one Betaflight version to another is described in these videos:
 
+http://www.youtube.com/watch?v=HsxTqp76Brs
 http://www.youtube.com/watch?v=F1sjC5l0ywM
 
 In summary, the key takeaways from this video are:
