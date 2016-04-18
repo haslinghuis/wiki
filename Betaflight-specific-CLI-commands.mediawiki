@@ -387,3 +387,7 @@ Experimental threshold for resetting iterm for yaw on certain rates<br/>
 '''set yaw_lowpass_hz = 70'''<br/>
 <i>[0,...,500]</i><br/>
 Additional yaw filter when yaw axis too noisy<br/>
+
+<u><i>'''Changes in 2.6.0'''</i></u><br/><br/>
+<u>'''Removed:'''</u><br/>
+'''escprog''' <i>[bl|sk] [#]</i><br/><a name="escprog"/>
