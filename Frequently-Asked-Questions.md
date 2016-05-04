@@ -868,6 +868,9 @@ That is really necessary as super expo gives some P acceleration and Iterm would
 The iterm again becomes active below the threshold rate and gets to normal levels in time without you notice anything.  
 Removal of iterm during faster acro manouvres provides more connected feel as all stickyness from Iterm is removed. 
 
+Video explanation:
+https://www.youtube.com/watch?v=HGAa8J1Ihac
+
 ##How do rates relate to pitch roll & yaw degrees/s ?
 
 MadmanK has written a spreadsheet to show you pitch roll and yaw rate in Rewrite and Luxfloat to show how it relates to your rates in degrees per second.
