@@ -894,10 +894,9 @@ Only change the values in the grey boxes, and it will adjust the graphs and tabl
 ##Which Flight Controllers currently use SPI ?
 
 As of 5th May 2016
-Colibri Race
- Lux Race
- Motolab Cyclone
- SPRACINGF3EVO
- DOGE
- CC3D (this is F1 board though......performs slightly better than i2c F3 board on rewrite)
- Alienflight 
+Colibri Race  
+Lux Race  
+Motolab Cyclone  
+SPRACINGF3EVO  
+DOGE  
+CC3D (this is F1 board though......performs slightly better than i2c F3 board on rewrite)Alienflight 
