@@ -893,7 +893,7 @@ Only change the values in the grey boxes, and it will adjust the graphs and tabl
 
 ##Which Flight Controllers currently use SPI ?
 
-As of 5th May 2016
+As of 5th May 2016  
 Colibri Race  
 Lux Race  
 Motolab Cyclone  
