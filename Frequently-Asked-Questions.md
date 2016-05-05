@@ -45,6 +45,7 @@
 1. [What is yaw_iterm_reset_degrees and what does it do ?](#what-is-yaw_iterm_reset_degrees-and-what-does-it-do)
 1. [How does Super Expo work ?](#how-does-super-expo-work-)
 1. [How do rates relate to pitch roll & yaw degrees/s ?](#how-do-rates-relate-to-pitch-roll--yaw-degreess-)
+1. [Which Flight Controllers currently use SPI ?](#Which-Flight-Controllers-currently-use-SPI -)
 
 **If your question is not listed above then please check the following pages:**
 
@@ -889,3 +890,14 @@ MadmanK has written a spreadsheet to show you pitch roll and yaw rate in Rewrite
 Only change the values in the grey boxes, and it will adjust the graphs and tables.
 
 [Rewrite/Lux rates](https://dl.dropboxusercontent.com/u/31537757/Betaflight%20Rates%20v1_4.xlsx)
+
+##Which Flight Controllers currently use SPI ?
+
+As of 5th May 2016
+Colibri Race
+ Lux Race
+ Motolab Cyclone
+ SPRACINGF3EVO
+ DOGE
+ CC3D (this is F1 board though......performs slightly better than i2c F3 board on rewrite)
+ Alienflight 
