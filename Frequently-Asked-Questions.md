@@ -485,6 +485,7 @@ Some additional information can be found from 6:20 onwards in this video: http:/
 NOTE: Failsafe configuration has changed in Betaflight 2.4.0 onwards and CF Configurator 1.2.0. The relevant documentation can be found [here](https://github.com/cleanflight/cleanflight/blob/master/docs/Failsafe.md). 
 
 ##What is the best practice for configuring the Throttle end points ?
+Joshua's method for BLHeli 14.4 and lower.
 This can be a difficult and confusing concept to grasp at first. The best way to describe the correct method is by way of the following tutorial video.
 
 Part 1: http://www.youtube.com/watch?v=WFU3VewGbbA
@@ -497,19 +498,9 @@ Watch these Videos from Joshua Bardwell
 Cleanflight BLHeli Top-End Throttle Calibration : https://www.youtube.com/watch?v=spegUYF8Dxk
 The Effect of Top-End CleanFlight BLHeli Throttle Calibration : https://www.youtube.com/watch?v=RW2XalNPpQk
 
-The new BLHeli Firmware v14.5 has some differences in the max_throttle calibration that compensats for the top end dead zone shown in Joshua's video above. Joshua Bardwell recommends:
+The new BLHeli Firmware v14.5 has some differences in calibration from 14.4 .............
+Editing Pending verifying proper method.   
 
-    min_command=1000, max_throttle=1980.  
-    Calibrate.  
-    Confirm no ESC has PPM max >= 2020. If any ESC has PPM max >= 2020, then reduce max_throttle by 10 and repeat.  
-    If desired, perform top-end calibration, but not required, and possibly not even necessary given how BLHeli has changed its calibration logic to remove the 20us deadband.  
-
-    min_command=1000, max_throttle=2020.  
-    In BLHeliSuite, manually set all ESCs to 1000 / 2020.  
-    Using the Motors tab, find the max rpm point for each motor (top end calibration, basically). This should be less than 2020, but if it isn't, reduce max_throttle to 2000 and repeat.  
-    Manually set each ESC's max_throttle to its max rpm point.  
-
-This approach should simultaneously perform endpoint and top-end calibration, with additional resolution compared to the other approach. But I don't think it is strictly necessary, as the input resolution of BLHeli is only so high to begin with. I haven't tested this approach myself, but conceptually it makes sense. If you were going to perform top-end calibration anyway, this could basically save you the first step of doing the endpoint calibration. 
 ##How do I configure BLHeli ESCs via BetaFlight ?
 If running at 1kHz and faster BLHeli 14.2 or later is required and disable PWM in the BLHeli configuration. This is to ensure the BLHeli Firmware recognizes the OneShot125 pulses properly.
 
