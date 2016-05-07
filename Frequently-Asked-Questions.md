@@ -485,7 +485,11 @@ Some additional information can be found from 6:20 onwards in this video: http:/
 NOTE: Failsafe configuration has changed in Betaflight 2.4.0 onwards and CF Configurator 1.2.0. The relevant documentation can be found [here](https://github.com/cleanflight/cleanflight/blob/master/docs/Failsafe.md). 
 
 ##What is the best practice for configuring the Throttle end points ?
-Joshua's method for BLHeli 14.4 and lower.
+
+For KISS ESCs:  
+Just cal with max_throttle at 2000 and min_command at 1000 from the CF config Motor tabs.
+
+Joshua's method for BLHeli 14.4 and lower.  
 This can be a difficult and confusing concept to grasp at first. The best way to describe the correct method is by way of the following tutorial video.
 
 Part 1: http://www.youtube.com/watch?v=WFU3VewGbbA
@@ -499,7 +503,7 @@ Cleanflight BLHeli Top-End Throttle Calibration : https://www.youtube.com/watch?
 The Effect of Top-End CleanFlight BLHeli Throttle Calibration : https://www.youtube.com/watch?v=RW2XalNPpQk
 
 The new BLHeli Firmware v14.5 has some differences in calibration from 14.4 .............
-Editing Pending verifying proper method.   
+Info Pending the verification of the proper method.   
 
 ##How do I configure BLHeli ESCs via BetaFlight ?
 If running at 1kHz and faster BLHeli 14.2 or later is required and disable PWM in the BLHeli configuration. This is to ensure the BLHeli Firmware recognizes the OneShot125 pulses properly.
