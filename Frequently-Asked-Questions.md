@@ -508,6 +508,8 @@ Calibration procedure I currently recommend for BLHeli 14.5 is min_command=1000,
 Using max_throttle=1980 is because everybody seems to be getting 2020 as the calibrated value if they use max_throttle=2000. So the goal of using 1980 is to ensure that you calibrate below the top of the scale.
 
 Another approach I have seen suggested is to set min_command=1000, max_throttle=2000, and then manually use the Motors tab to determine the spin-up point and max rpm point for each motor, then manually set those values into the ESCs. This is a fine approach too, but a little more intensive.  
+Then compudaze posted:  
+I've had some ESCs still hit 2020 using 1980. Been using 1970 as it doesn't hit the max. Tested with LB20, RG20, UBAD30, XM20.   
 
 ##How do I configure BLHeli ESCs via BetaFlight ?
 If running at 1kHz and faster BLHeli 14.2 or later is required and disable PWM in the BLHeli configuration. This is to ensure the BLHeli Firmware recognizes the OneShot125 pulses properly.
