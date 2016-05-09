@@ -45,7 +45,7 @@ Betaflight is also always being adjusted to support most current Cleanflight too
 On blheli esc PWM has to be set to OFF.
 
 ##Firmware Releases
-Releases can be found here: https://github.com/borisbstyle/betaflight/releases or download the latest build directly from source (these are bleeding edge and may be unstable): http://andwho.sytes.net:8080/job/BorisB_BetaFlight/
+Releases can be found here: https://github.com/borisbstyle/betaflight/releases or download the latest successful build directly from source (these are bleeding edge and may be unstable): http://andwho.sytes.net:8080/job/BorisB_BetaFlight/lastSuccessfulBuild/artifact/obj/
 
 ##More Information
 
