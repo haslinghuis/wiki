@@ -391,3 +391,37 @@ Additional yaw filter when yaw axis too noisy<br/>
 <u><i>'''Changes in 2.6.1'''</i></u><br/><br/>
 <u>'''Removed:'''</u><br/>
 '''escprog''' <i>[bl|sk] [#]</i><br/><a name="escprog"/>
+
+<br/><br/><a name="v270"/>
+<u><i>'''Changes in 2.7.0'''</i></u><br/><br/>
+
+TODO: Add info on exactly what this new/changed CLI commands do and their Defualt values as well as the range of values acceptable.
+
+<br/>
+'''set super_expo_factor_yaw = ??'''<br/>
+<i>[0,...,??]</i><br/>
+
+<br/>
+'''set super_expo_yaw = ??'''<br/>
+<i>[0,...,??]</i><br/>
+
+<br/>
+'''set iterm_always_reset = ??'''<br/>
+<i>[0,...,??]</i><br/>
+Optional Iterm reset option even without super expo  
+
+<br/>
+'''set unsynced_fast_pwm = ??'''<br/>
+<i>[0,...,??]</i><br/>
+unsynced motor update speeds for fast PWM protocols up to 32k 
+
+<br/>
+'''set fast_pwm_protocol = ??'''<br/>
+<i>[ONESHOT125, ONESHOT42, MULTISHOT]</i><br/>
+configuring fast PWM protocols
+
+<br/>
+'''set iterm_reset_offset = ??'''<br/>
+<i>[0,...,??]</i><br/>
+Configurable Iterm reset offset
+
