@@ -35,22 +35,22 @@ This page is meant to provide a more in depth explanation of the changelog for e
 NOTE
 In this version the filters are optimised to provide the best possible flight characteristics. This means that some less agressive filtering is used. In case your setup is too noisy you need to adjust the filters. Here are some of the recommendations. The more filtering you use the less noise will be let into the system, but that will reduce the overall responsitivity of the pid controller and provide less stability in prop wash scenarios for example.
 
-Default / Optimal flight performance:
-gyro_lowpass = 100
-dterm_lowpass = 110
-
-Slightly noisy setup:
-gyro_lowpass = 80
-dterm_lowpass = 100
-
-Very noisy setup
-gyro_lowpass = 50
-dterm_lowpass = 100
-
-2.6.1 defaults:
-gyro_lowpass = 80
-dterm_lowpass = 70
-
+Default / Optimal flight performance:  
+gyro_lowpass = 100  
+dterm_lowpass = 110  
+  
+Slightly noisy setup:  
+gyro_lowpass = 80  
+dterm_lowpass = 100  
+  
+Very noisy setup  
+gyro_lowpass = 50  
+dterm_lowpass = 100  
+  
+2.6.1 defaults:  
+gyro_lowpass = 80  
+dterm_lowpass = 70  
+  
 Also some of the KISS24 users reported they removed some low throttle oscillations with setting gyro_lowpass to 50
   
 # 2.6.1 - 
