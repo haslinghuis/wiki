@@ -28,7 +28,8 @@ This page is meant to provide a more in depth explanation of the changelog for e
 - Increased configurable range for yaw_p_limit
 - Improved rc_expo step resolution by factor 5
 - Added support for unsynced motor update speeds for fast PWM protocols up to 32k (CLI: unsynced_fast_pwm)
-- Added new way of configuring fast PWM protocols (CLI: fast_pwm_protocol (ONESHOT125, ONESHOT42, MULTISHOT))
+- Added new way of configuring fast PWM protocols (CLI: fast_pwm_protocol (ONESHOT125, ONESHOT42, MULTISHOT))        
+**Yes this replaced "use MULTISHOT" and "use ONESHOT42"**
 - Slowed down CPU for F1 targets back to 72Mhz to have better motor timing support. Naze32 may have more difficulties running 4k.
 - Configurable Iterm reset offset (CLI: iterm_reset_offset)
 
