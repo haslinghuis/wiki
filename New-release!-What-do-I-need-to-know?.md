@@ -1,5 +1,60 @@
 This page is meant to provide a more in depth explanation of the changelog for each release so that users can understand the consequences of the changes made. Please remember to read the changelog for each release first and read the "Betaflight specific CLI commands" in this Wiki for new and changed CLI commands.
 
+# 2.7.0 -  
+
+
+
+2.7 release
+
+    Fixed MPU6000 SPI slow speed for some targets
+    Fully working SPRACINGF3 Target
+    Enable MPU6000 and MPU9250 for Colibri Race Target
+    Many code cleanups and optimalisations
+    Remove MW23 Pid controller (use rewrite or luxfloat)
+    Fix for Dterm scaling in luxfloat. It is now fully matching rewrite. Luxfloat users from 2.6.1 need to multiply their D by 2 to get the same scaling
+    Added PID configuration to blackbox header and other configuration parameters
+    Added flightmode events to blackbox logging
+    Added Optional Super Expo for yaw (CLI: super_expo_factor_yaw, super_expo_yaw)
+    Iterm reset converted to Iterm limiter in super expo mode
+    Added Optional Iterm reset option even without super expo (CLI: iterm_always_reset)
+    Enabled TPA also for Yaw axis
+    Increased default min_check value due to many misunderstandings for beginners (lower min_check still recommended)
+    Added more debugging options
+    Many code optimilisations
+    Optimilisations for offline testing
+    Change filter cutoff configurations to integers
+    Dynamic PID Implementation (P accelerator)
+    Added Task Page for OLED display
+    Slightly improved biquad coefficients precision
+    Fix for out of order PPM ISR
+    Increased configurable range for yaw_p_limit
+    Improved rc_expo step resolution by factor 5
+    Added support for unsynced motor update speeds for fast PWM protocols up to 32k (CLI: unsynced_fast_pwm)
+    Added new way of configuring fast PWM protocols (CLI: fast_pwm_protocol (ONESHOT125, ONESHOT42, MULTISHOT))
+    Slowed down CPU for F1 targets back to 72Mhz to have better motor timing support. Naze32 may have more difficulties running 4k.
+    Configurable Iterm reset offset (CLI: iterm_reset_offset)
+
+NOTE
+In this version the filters are optimised to provide the best possible flight characteristics. This means that some less agressive filtering is used. In case your setup is too noisy you need to adjust the filters. Here are some of the recommendations. The more filtering you use the less noise will be let into the system, but that will reduce the overall responsitivity of the pid controller and provide less stability in prop wash scenarios for example.
+
+Default / Optimal flight performance:
+gyro_lowpass = 100
+dterm_lowpass = 110
+
+Slightly noisy setup:
+gyro_lowpass = 80
+dterm_lowpass = 100
+
+Very noisy setup
+gyro_lowpass = 50
+dterm_lowpass = 100
+
+2.6.1 defaults:
+gyro_lowpass = 80
+dterm_lowpass = 70
+
+Also some of the KISS24 users reported they removed some low throttle oscillations with setting gyro_lowpass to 50
+  
 # 2.6.1 - 
 
 Release 2.6.1
