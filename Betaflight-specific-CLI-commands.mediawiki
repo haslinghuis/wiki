@@ -411,8 +411,8 @@ TODO: Add info on exactly what this new/changed CLI commands do and their Defual
 Optional Iterm reset option even without super expo  
 
 <br/>
-'''set unsynced_fast_pwm = ??'''<br/>
-<i>[0,...,??]</i><br/>
+'''set unsynced_fast_pwm = OFF'''<br/>
+<i>[ON,OFF]</i><br/>
 unsynced motor update speeds for fast PWM protocols up to 32k 
 
 <br/>
