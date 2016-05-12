@@ -511,6 +511,9 @@ Another approach I have seen suggested is to set min_command=1000, max_throttle=
 Then compudaze posted:  
 I've had some ESCs still hit 2020 using 1980. Been using 1970 as it doesn't hit the max. Tested with LB20, RG20, UBAD30, XM20.   
 
+New Video from Joshua Bardwell titled "BLHeli - 100% Explained".   
+https://www.youtube.com/watch?v=0Bi1XcdpnQI  
+
 ##How do I configure BLHeli ESCs via BetaFlight ?
 If running at 1kHz and faster BLHeli 14.2 or later is required and disable PWM in the BLHeli configuration. This is to ensure the BLHeli Firmware recognizes the OneShot125 pulses properly.
 
