@@ -398,16 +398,16 @@ Additional yaw filter when yaw axis too noisy<br/>
 TODO: Add info on exactly what this new/changed CLI commands do and their Defualt values as well as the range of values acceptable.
 
 <br/>
-'''set super_expo_factor_yaw = ??'''<br/>
-<i>[0,...,??]</i><br/>
+'''set super_expo_factor_yaw = 30 '''<br/>
+<i>[1-100]</i><br/>
 
 <br/>
-'''set super_expo_yaw = ??'''<br/>
-<i>[0,...,??]</i><br/>
+'''set super_expo_yaw = OFF'''<br/>
+<i>[OFF,ON,ALWAYS]</i><br/>
 
 <br/>
-'''set iterm_always_reset = ??'''<br/>
-<i>[0,...,??]</i><br/>
+'''set iterm_always_reset = OFF'''<br/>
+<i>[OFF,ON]</i><br/>
 Optional Iterm reset option even without super expo  
 
 <br/>
@@ -416,12 +416,14 @@ Optional Iterm reset option even without super expo
 unsynced motor update speeds for fast PWM protocols up to 32k 
 
 <br/>
-'''set fast_pwm_protocol = ??'''<br/>
-<i>[ONESHOT125, ONESHOT42, MULTISHOT]</i><br/>
-configuring fast PWM protocols
+'''set fast_pwm_protocol = ONESHOT125'''<br/>
+<i>[ONESHOT125,ONESHOT42,MULTISHOT]</i><br/>
+configuring fast PWM protocols 
+
+<i>Replaced use_Multishot and use_oneshot42</i>
 
 <br/>
-'''set iterm_reset_offset = ??'''<br/>
-<i>[0,...,??]</i><br/>
+'''set iterm_reset_offset = 15'''<br/>
+<i>[0-100]</i><br/>
 Configurable Iterm reset offset
 
