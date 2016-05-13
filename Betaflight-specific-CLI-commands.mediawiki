@@ -411,7 +411,7 @@ Optional Iterm reset option even without super expo
 <br/>
 '''set unsynced_fast_pwm = OFF'''<br/>
 <i>[ON,OFF]</i><br/>
-unsynced motor update speeds for fast PWM protocols up to 32k with 
+unsynced motor update speeds for fast PWM protocols up to 32k with   
 Set motor_pwm_rate = [0-32000]
 (Oneshot125 not over 4000, os42 not over 12000, ms right up to 32k) 
 
