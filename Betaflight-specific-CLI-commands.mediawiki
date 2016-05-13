@@ -3,7 +3,7 @@ https://github.com/cleanflight/cleanflight/blob/master/docs/Cli.md
 
 The setting shown are the Defaults + possible values.
 
-<a href="#v261">Latest Version</a>  
+<a href="#v270">Latest Version</a>  
  
 New CLI feature is type a "get" and part of a CLI command name (example: "get acc"). The cli will return all CLI commands that have the name part with the current value plus what the valid value range or valid Names.
 Unknown on which Version this was added but is in v2.6.1  
