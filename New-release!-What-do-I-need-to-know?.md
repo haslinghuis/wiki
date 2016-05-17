@@ -7,6 +7,8 @@ Patch 1 (2.7.1 notes):
 - Fixed Luxfloat drift
 - F1 boards defaulted to 1khz
 
+Note: If you fly rewrite no need for update. Also updating doesn't need reset configuration.
+
 # 2.7.0 -  
 
 2.7 release
