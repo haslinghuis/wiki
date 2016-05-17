@@ -1,5 +1,12 @@
 This page is meant to provide a more in depth explanation of the changelog for each release so that users can understand the consequences of the changes made. Please remember to read the changelog for each release first and read the "Betaflight specific CLI commands" in this Wiki for new and changed CLI commands.
 
+# 2.7.1 - 
+
+Patch 1 (2.7.1 notes):
+
+- Fixed Luxfloat drift
+- F1 boards defaulted to 1khz
+
 # 2.7.0 -  
 
 2.7 release
