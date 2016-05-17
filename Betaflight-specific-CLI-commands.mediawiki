@@ -421,6 +421,7 @@ Set motor_pwm_rate = [0-32000]
 configuring fast PWM protocols 
 
 <i>Replaced use_Multishot and use_oneshot42</i>
+Note: 'feature oneshot125' must be enabled to use any of these fast pwm protocols.  
 
 <br/>
 '''set iterm_reset_offset = 15'''<br/>
