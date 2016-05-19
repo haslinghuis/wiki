@@ -905,3 +905,6 @@ Motolab Cyclone
 SPRACINGF3EVO  
 DOGE  
 CC3D (this is F1 board though......performs slightly better than i2c F3 board on rewrite)Alienflight 
+
+##Which HEX target do I download and flash to my Flight Controller ?
+
