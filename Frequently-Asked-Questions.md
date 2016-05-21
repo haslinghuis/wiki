@@ -46,7 +46,7 @@
 1. [How does Super Expo work ?](#how-does-super-expo-work-)
 1. [How do rates relate to pitch roll & yaw degrees/s ?](#how-do-rates-relate-to-pitch-roll--yaw-degreess-)
 1. [Which Flight Controllers currently use SPI ?](#which-flight-controllers-currently-use-spi-)
-1  [Which HEX target do I download and flash to my Flight Controller ?](#which-hex-target-do-i-download-and-flash-to-my-flight-controller-)
+1. [Which HEX target do I download and flash to my Flight Controller ?](#which-hex-target-do-i-download-and-flash-to-my-flight-controller-)
 1. [How do I setup for reversed prop rotation ?](#how-do-i-setup-for-reversed-prop-rotation-)
 
 **If your question is not listed above then please check the following pages:**
