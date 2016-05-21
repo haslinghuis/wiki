@@ -911,4 +911,5 @@ CC3D (this is F1 board though......performs slightly better than i2c F3 board on
 
 ##How do I setup for reversed prop rotation ?
 Just change props and motor rotation in BlHeli.   
-Then change set yaw_motor_direction = -1 
+Then change set yaw_motor_direction = -1   
+Remember to cycle power to FC so new setting become properly used.
