@@ -911,10 +911,22 @@ CC3D (this is F1 board though......performs slightly better than i2c F3 board on
 
 |HEX--->| AFROMINI | ALIENFLIGHTF1 | ALIENFLIGHTF3 | CC3D_OPBL | COLIBRI_RACE | DOGE | IRCFUSIONF3 | LUX_RACE | MOTOLAB | NAZE | RMDO | SPARKY | SPRACINGF3 | SPRACINGF3EVO | SPRACINGF3MINI |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-|[AfroMini Naze 32](http://www.readymaderc.com/store/index.php?main_page=product_info&products_id=4406) | X |  |  | | | | | | | | | | | | |
-| [Alien Flight F1](http://alienflight.com/) |  | X |  | | | | | | | | | | | | |
-| [Alien Flight F3](http://alienflight.com/) |  |  | X | | | | | | | | | | | | |
-
+|[AfroMini Naze 32](http://www.readymaderc.com/store/index.php?main_page=product_info&products_id=4406)|X|||||||||||||||
+|[Alien Flight F1](http://alienflight.com/)||X||||||||||||||
+|[Alien Flight F3](http://alienflight.com/)|||X|||||||||||||
+|[OpenPilot CC3D](http://www.getfpv.com/openpilot-cc3d-flight-controller-straight-pins.html)||||X||||||||||||
+|[TBS Colibri Race](https://www.multirotorsuperstore.com/controllers/controllers-by-firmware/baseflight-cleanflight/tbs-colibri-race-flight-controller.html)|||||X|||||||||||
+|[ImmersionRC Fusion](http://www.immersionrc.com/fpv-products/vortex-250-pro/)|||||||X|||||||||
+|[Lumenier LUX](http://www.getfpv.com/lumenier-lux-flight-controller.html)||||||||X||||||||
+|[Motolab Tornado](http://impulserc.com/motolab-tornadofc-stm32f3-flight-controller)|||||||||X|||||||
+|[Motolab Cyclone](http://impulserc.com/motolab-cyclone-stm32f3-flight-controller)|||||||||X|||||||
+|[]()||||||||||||||||
+|[]()||||||||||||||||
+|[]()||||||||||||||||
+|[]()||||||||||||||||
+|[]()||||||||||||||||
+|[]()||||||||||||||||
+|[]()||||||||||||||||
 
 ##How do I setup for reversed prop rotation ?
 Just change props and motor rotation in BlHeli.   
