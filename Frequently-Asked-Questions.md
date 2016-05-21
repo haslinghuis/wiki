@@ -909,9 +909,11 @@ CC3D (this is F1 board though......performs slightly better than i2c F3 board on
 
 ##Which HEX target do I download and flash to my Flight Controller ?
 
-| AFROMINI | ALIENFLIGHTF1 | ALIENFLIGHTF3 | CC3D_OPBL | COLIBRI_RACE | DOGE | IRCFUSIONF3 | LUX_RACE | MOTOLAB | NAZE | RMDO | SPARKY | SPRACINGF3 | SPRACINGF3EVO | SPRACINGF3MINI |
-| ------------- | ------------- | ----------- | ---------- | -------------| -------------| -------------| -------------| -------------| -------------| -------------| -------------| -------------| -------------| -------------|
-
+|FC/HEX---> | AFROMINI | ALIENFLIGHTF1 | ALIENFLIGHTF3 | CC3D_OPBL | COLIBRI_RACE | DOGE | IRCFUSIONF3 | LUX_RACE | MOTOLAB | NAZE | RMDO | SPARKY | SPRACINGF3 | SPRACINGF3EVO | SPRACINGF3MINI |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|[AfroMini Naze 32](http://www.readymaderc.com/store/index.php?main_page=product_info&products_id=4406) | X |  |  | | | | | | | | | | | | |
+| [Alien Flight F1](http://alienflight.com/) |  | X |  | | | | | | | | | | | | |
+| [Alien Flight F3](http://alienflight.com/) |  |  | X | | | | | | | | | | | | |
 
 
 ##How do I setup for reversed prop rotation ?
