@@ -920,13 +920,13 @@ CC3D (this is F1 board though......performs slightly better than i2c F3 board on
 |[Lumenier LUX](http://www.getfpv.com/lumenier-lux-flight-controller.html)||||||||X||||||||
 |[Motolab Tornado](http://impulserc.com/motolab-tornadofc-stm32f3-flight-controller)|||||||||X|||||||
 |[Motolab Cyclone](http://impulserc.com/motolab-cyclone-stm32f3-flight-controller)|||||||||X|||||||
-|[]()||||||||||||||||
-|[]()||||||||||||||||
-|[]()||||||||||||||||
-|[]()||||||||||||||||
-|[]()||||||||||||||||
-|[]()||||||||||||||||
-|[]()||||||||||||||||
+|[Naze32 Acro](https://www.nextfpv.com.au/products/naze-acro-flight-controller-white-genuine)||||||||||X||||||
+|[Naze32 Full](https://www.nextfpv.com.au/products/naze-32-flight-controllerred)||||||||||X||||||
+|[RMRC Seriously Dodo](http://www.readymaderc.com/store/index.php?main_page=product_info&products_id=4221)|||||||||||X|||||
+|[Sparky](http://www.readytoflyquads.com/sparky-flight-controller)||||||||||||X||||
+|[Seriously Pro Racing F3](http://seriouslypro.com/spracingf3)|||||||||||||X|||
+|[Seriously Pro Racing F3 EVO](http://seriouslypro.com/spracingf3evo)||||||||||||||X||
+|[Seriously Pro Racing F3 Mini](http://seriouslypro.com/spracingf3mini)|||||||||||||||X|
 
 ##How do I setup for reversed prop rotation ?
 Just change props and motor rotation in BlHeli.   
