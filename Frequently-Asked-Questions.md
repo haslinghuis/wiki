@@ -46,6 +46,7 @@
 1. [How does Super Expo work ?](#how-does-super-expo-work-)
 1. [How do rates relate to pitch roll & yaw degrees/s ?](#how-do-rates-relate-to-pitch-roll--yaw-degreess-)
 1. [Which Flight Controllers currently use SPI ?](#Which-Flight-Controllers-currently-use-SPI -)
+1. [How do I setup for reversed prop rotation ?](#How-do-I-setup-for-reversed-prop-rotation -)
 
 **If your question is not listed above then please check the following pages:**
 
@@ -908,3 +909,6 @@ CC3D (this is F1 board though......performs slightly better than i2c F3 board on
 
 ##Which HEX target do I download and flash to my Flight Controller ?
 
+##How do I setup for reversed prop rotation ?
+Just change props and motor rotation in BlHeli. 
+Then change set yaw_motor_direction = -1 
