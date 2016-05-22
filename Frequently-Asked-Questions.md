@@ -917,8 +917,8 @@ Having all the Flight Controllers listed here (and their associated HEX) should 
 |HEX--->| AFROMINI | ALIENFLIGHTF1 | ALIENFLIGHTF3 | CC3D_OPBL | COLIBRI_RACE | DOGE | IRCFUSIONF3 | LUX_RACE | MOTOLAB | NAZE | RMDO | SPARKY | SPRACINGF3 | SPRACINGF3EVO | SPRACINGF3MINI |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 |[AfroMini Naze 32](http://www.readymaderc.com/store/index.php?main_page=product_info&products_id=4406)|X|||||||||||||||
-|[Flip32/Flip32 Pro](http://www.readytoflyquads.com/flight-controllers/flip-series)|X|||||||||||||||
-|[DragonFly32/mini/compact](http://www.multirotormania.com/129-dragonfly32)|X|||||||||||||||
+|[Flip32/Flip32 Pro](http://www.readytoflyquads.com/flight-controllers/flip-series)||||||||||X||||||
+|[DragonFly32/mini/compact](http://www.multirotormania.com/129-dragonfly32)||||||||||X||||||
 |[Alien Flight F1](http://alienflight.com/)||X||||||||||||||
 |[Alien Flight F3](http://alienflight.com/)|||X|||||||||||||
 |[OpenPilot CC3D](http://www.getfpv.com/openpilot-cc3d-flight-controller-straight-pins.html)||||X||||||||||||
