@@ -48,6 +48,7 @@
 1. [Which Flight Controllers currently use SPI ?](#which-flight-controllers-currently-use-spi-)
 1. [Which HEX target do I download and flash to my Flight Controller ?](#which-hex-target-do-i-download-and-flash-to-my-flight-controller-)
 1. [How do I setup for reversed prop rotation ?](#how-do-i-setup-for-reversed-prop-rotation-)
+1. [What is a recommended FC and esc setup to run at 8khz, also i see reference to 4/4 or 4/4/32 or 8/8, what are these referring to?](#what-is-a-recommended-FC-and-esc-setup-to-run-at-8khz,-also-i-see-reference-to-4/4-or-4/4/32-or-8/8,-what-are-these-referring-to-)  
 
 **If your question is not listed above then please check the following pages:**
 
@@ -939,3 +940,26 @@ Having all the Flight Controllers listed here (and their associated HEX) should 
 Just change props and motor rotation in BlHeli.   
 Then change set yaw_motor_direction = -1   
 Remember to cycle power to FC so new setting become properly used.
+
+##What is a recommended FC and esc setup to run at 8khz, also i see reference to 4/4 or 4/4/32 or 8/8, what are these referring to ?  
+First number is gyro freq (set by looptime, 1000=1K, 500=2K, 250=4K, 125=8K),
+
+Second number is PID calc freq, this is set with regards to looptime, pid denom 1=same freq as gyro,
+pid denom 2=half speed of gyro,
+and so on.
+
+Third number, its esc update rate, if no number, its the same as pid calc freq (in sync).
+
+In BF v2.7.0, you need to:
+set unsynced_fast_pwm=ON
+set fast_pwm_protocol = MULTISHOT
+Set motor_pwm_rate = 32000
+(OS125 up to 4K, OS42 up to 12K, MS up to 32K)
+
+Generally, depending on pidc, serial ports used, number of Rx aux channels, etc. The acc is disabled in most scenarios below.  
+F1's mostly run 4K/2K, if you get a $9 cc3d they run 4K/4K, ccd3d-F3 run 8K/8K.  
+F3's mostly run 4K/2K but can run lux pidc and has more serial ports.  
+F3's with spi gyro (LUX, etc) can run 8K/8K.  
+F4's (revo/etc) on raceflight can run 8K/8K, if using the 6500 or 9250 gyro(sparky2/etc), they are just now starting to run 32K/32K/32K.  
+
+All these FC can run esc up to 32K esc update rate at no extra penalty. Always check cpu usage via cli command "status", I prefer to stay under 30% cpu on BF, some get away with more.  
