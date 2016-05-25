@@ -1,5 +1,22 @@
 This page is meant to provide a more in depth explanation of the changelog for each release so that users can understand the consequences of the changes made. Please remember to read the changelog for each release first and read the "Betaflight specific CLI commands" in this Wiki for new and changed CLI commands.
 
+# 2.8.0 - 
+
+Betaflight 2.8.0
+
+Release 2.8 - RC 1
+
+- Changed Airmode Low Throttle Protection. Airmode now gets activated when stick moved above certain threshold. (CLI: set airmode_activate_throttle = ). Note that 3D users have to reconfigure their threshold to something else otherwise airmode would be always enabled.
+- Sligthly more Authority on low throttle even without Airmode
+- Added dynamic ki to dynamic PID feature. Iterm is always active at all times, but gets more ignored during fast rotation rates. This enables the possibility for increasing the iterm much more without negative side effects. This also removes the old iterm_reset option
+- Some code cleanups
+- New default PIDs
+- Added ledstrip visual beeper (CLI: ledstrip_visual_beeper)
+- yaw_jump_prevention is removed and replaced by yaw D gain! The higher the D the lower the jump_prevention limit will be.
+- Seperated fast_pwm_protocol from ONESHOT125 feature. The feature in GUI will only be green when ONESHOT125 is actually selected. Normal traditional PWM can be now selected with "set fast_pwm_protocol = OFF"
+
+TODO - edit CLI commands  
+
 # 2.7.1 - 
 
 Patch 1 (2.7.1 notes):
