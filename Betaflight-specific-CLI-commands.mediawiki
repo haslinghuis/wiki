@@ -456,3 +456,6 @@ Boris noted: Yes 0 yaw D is 400 actually. Which might be too much in most times.
 1 D step equals to 8 steps in yaw_jump_prevention reduction  
 D of 20: 400 - 160 = 340   
 
+<br/>
+'''set ledstrip_visual_beeper = ??'''<br/>
+<i>[ON,OFF??]</i><br/>
