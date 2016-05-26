@@ -14,7 +14,7 @@ Release 2.8 - RC 2
 - Seperated fast_pwm_protocol from ONESHOT125 feature. The feature in GUI will only be green when ONESHOT125 is actually selected. Normal traditional PWM can be now selected with "set fast_pwm_protocol = OFF"
 - Fix for beeper during boot. (Not beeping anymore)
 - Experimental Anti ESC desync option. FC's can be pretty rough when it comes to throttle changes towards the ESC. This option allows you to set the maximum power increment / decrement to the ESC. You can declare the maximum change within 1ms. (CLI: set anti_desync_power_step = )  
-- LUX drift bug in 22.8.0 RC1 fixed  
+- LUX drift bug in 2.8.0 RC1 fixed  
 
 TODO - edit CLI commands   
 
