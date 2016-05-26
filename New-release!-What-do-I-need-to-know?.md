@@ -2,8 +2,6 @@ This page is meant to provide a more in depth explanation of the changelog for e
 
 # 2.8.0 - RC2
 
-Betaflight 2.8.0
-
 Release 2.8 - RC 2
 
 - Changed Airmode Low Throttle Protection. Airmode now gets activated when stick moved above certain threshold. (CLI: set airmode_activate_throttle = ). Note that 3D users have to reconfigure their threshold to something else otherwise airmode would be always enabled.
