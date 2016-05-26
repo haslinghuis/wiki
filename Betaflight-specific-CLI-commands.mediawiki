@@ -428,3 +428,12 @@ configuring fast PWM protocols
 <i>[0-100]</i><br/>
 Configurable Iterm reset offset
 
+<br/><br/><a name="v280"/>
+<u><i>'''Changes in 2.8.0'''</i></u><br/><br/>
+
+TODO - add new CLI comands with explainations
+
+<br/>
+'''set anti_desync_power_step = ??'''<br/>
+<i>[0-100??]</i><br/>
+Boris noted: For those who have desync issues might try this. Very curious if this can help ESCs in some situation with hard quick motor jumps from pid controller. I flew it and it flew quite well.  
