@@ -434,6 +434,11 @@ Configurable Iterm reset offset
 TODO - add new CLI comands with explainations
 
 <br/>
+'''set airmode_activate_throttle = ??'''<br/>
+<i>[0-100??]</i><br/>
+Note that 3D users have to reconfigure their threshold to something else otherwise airmode would be always enabled.  
+
+<br/>
 '''set anti_desync_power_step = ??'''<br/>
 <i>[0-100??]</i><br/>
 Boris noted: For those who have desync issues might try this. Very curious if this can help ESCs in some situation with hard quick motor jumps from pid controller. I flew it and it flew quite well.  
