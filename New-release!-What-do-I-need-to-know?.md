@@ -17,6 +17,9 @@ Release 2.8 - RC 1
 
 TODO - edit CLI commands  
 
+Note from Boris: Oops.....guys there is indeed a small typo I did what introduced a bug in luxfloat. No big deal.
+Will solve that later.  
+
 # 2.7.1 - 
 
 Patch 1 (2.7.1 notes):
