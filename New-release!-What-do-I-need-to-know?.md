@@ -1,10 +1,10 @@
 This page is meant to provide a more in depth explanation of the changelog for each release so that users can understand the consequences of the changes made. Please remember to read the changelog for each release first and read the "Betaflight specific CLI commands" in this Wiki for new and changed CLI commands.
 
-# 2.8.0 - 
+# 2.8.0 - RC2
 
 Betaflight 2.8.0
 
-Release 2.8 - RC 1
+Release 2.8 - RC 2
 
 - Changed Airmode Low Throttle Protection. Airmode now gets activated when stick moved above certain threshold. (CLI: set airmode_activate_throttle = ). Note that 3D users have to reconfigure their threshold to something else otherwise airmode would be always enabled.
 - Sligthly more Authority on low throttle even without Airmode
