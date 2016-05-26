@@ -14,6 +14,8 @@ Release 2.8 - RC 1
 - Added ledstrip visual beeper (CLI: ledstrip_visual_beeper)
 - yaw_jump_prevention is removed and replaced by yaw D gain! The higher the D the lower the jump_prevention limit will be.
 - Seperated fast_pwm_protocol from ONESHOT125 feature. The feature in GUI will only be green when ONESHOT125 is actually selected. Normal traditional PWM can be now selected with "set fast_pwm_protocol = OFF"
+- Fix for beeper during boot. (Not beeping anymore)
+- Experimental Anti ESC desync option. FC's can be pretty rough when it comes to throttle changes towards the ESC. This option allows you to set the maximum power increment / decrement to the ESC. You can declare the maximum change within 1ms. (CLI: set anti_desync_power_step = )  
 
 TODO - edit CLI commands  
 
