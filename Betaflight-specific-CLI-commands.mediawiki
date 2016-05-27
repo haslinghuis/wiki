@@ -434,8 +434,8 @@ Configurable Iterm reset offset
 TODO - add new CLI comands with explainations
 
 <br/>
-'''set airmode_activate_throttle = ??'''<br/>
-<i>[0-100??]</i><br/>
+'''set airmode_activate_throttle = 1350'''<br/>
+<i>[1000-2000]</i><br/>
 Note that 3D users have to reconfigure their threshold to something else otherwise airmode would be always enabled.  
 
 <br/>
@@ -443,19 +443,27 @@ Note that 3D users have to reconfigure their threshold to something else otherwi
 
 
 <br/>
-'''set anti_desync_power_step = ??'''<br/>
-<i>[0-100??]</i><br/>
+'''set anti_desync_power_step = 0'''<br/>
+<i>[0-2000]</i><br/>
 Boris noted: For those who have desync issues might try this. Very curious if this can help ESCs in some situation with hard quick motor jumps from pid controller. I flew it and it flew quite well.  
 I was analysing some of the logs from folks who had desyncs or unwanted rolls or flips. In 100% of cases desync happened when PID controller was doing abrupt throttle changes. Like for example after roll or flip where the quad needs to get stopped motors would shortly pulse up and down. That abrupt stepping can now be controlled with this feature. The ESC's have the most difficulty with quick changing RPM's
 
 <br/>
-'''set yaw_D = 20'''<br/>
-<i>[0-100??]</i><br/>
+'''set d_yaw = 20'''<br/>
+<i>[0-200]</i><br/>
 As per release notes this now is what sets the yaw_jump_prevention_limit.
 Boris noted: Yes 0 yaw D is 400 actually. Which might be too much in most times.  
 1 D step equals to 8 steps in yaw_jump_prevention reduction  
 D of 20: 400 - 160 = 340   
 
 <br/>
-'''set ledstrip_visual_beeper = ??'''<br/>
-<i>[ON,OFF??]</i><br/>
+'''set ledstrip_visual_beeper = OFF'''<br/>
+<i>[ON,OFF]</i><br/>
+
+<br/>
+'''set iterm_ignore_threshold = 900'''<br/>
+<i>[50-1000]</i><br/>
+
+<br/>
+'''set yaw_iterm_ignore_threshold = 35'''<br/>
+<i>[25-1000]</i><br/>
