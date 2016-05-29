@@ -422,6 +422,7 @@ configuring fast PWM protocols
 
 <i>Replaced use_Multishot and use_oneshot42.</i>    
   Note: 'feature oneshot125' must be enabled to use any of these fast pwm protocols.  
+    
 
 <br/>
 '''set iterm_reset_offset = 15'''<br/>
@@ -473,3 +474,7 @@ D of 20: 400 - 160 = 340
 <i>[ON,OFF]</i><br/>
 - not sure is new to 2.8.0 or what it does  
 
+<br/>
+'''set fast_pwm_protocol = ONESHOT125'''<br/>
+<i>[ONESHOT125,ONESHOT42,MULTISHOT,OFF]</i><br/>
+  set fast_pwm_protocol = off for brushed or normal pwm in 2.8  
