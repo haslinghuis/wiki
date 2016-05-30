@@ -919,7 +919,7 @@ We typically just say HEX file but many targets also have a BIN file. These are 
 
 Having all the Flight Controllers listed here (and their associated HEX/BIN) should help avoid some confusion.
 
-| Flight Controller | HEX File |
+| Flight Controller | HEX/BIN File |
 |---|---|
 |[AfroMini Naze 32](http://www.readymaderc.com/store/index.php?main_page=product_info&products_id=4406)|AFROMINI|
 |[Alien Flight F1](http://alienflight.com/)|ALIENFLIGHTF1|
