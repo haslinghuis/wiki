@@ -918,23 +918,24 @@ Having all the Flight Controllers listed here (and their associated HEX) should 
 | Flight Controller | HEX File |
 |---|---|
 |[AfroMini Naze 32](http://www.readymaderc.com/store/index.php?main_page=product_info&products_id=4406)|AFROMINI|
-|[Flip32/Flip32 Pro](http://www.readytoflyquads.com/flight-controllers/flip-series)|NAZE|
-|[DragonFly32/mini/compact](http://www.multirotormania.com/129-dragonfly32)|NAZE|
 |[Alien Flight F1](http://alienflight.com/)|ALIENFLIGHTF1|
 |[Alien Flight F3](http://alienflight.com/)|ALIENFLIGHTF3|
-|[OpenPilot CC3D](http://www.getfpv.com/openpilot-cc3d-flight-controller-straight-pins.html)|CC3D_OPBL|
-|[TBS Colibri Race](https://www.multirotorsuperstore.com/controllers/controllers-by-firmware/baseflight-cleanflight/tbs-colibri-race-flight-controller.html)|COLIBRI_RACE|
+|[Flip32/Flip32 Pro](http://www.readytoflyquads.com/flight-controllers/flip-series)|NAZE|
+|[DTFc Flight Controller](http://rotorgeeks.com/index.php?route=product%2Fproduct&path=34_44&product_id=555)|DOGE|
+|[DragonFly32/mini/compact](http://www.multirotormania.com/129-dragonfly32)|NAZE|
 |[ImmersionRC Fusion](http://www.immersionrc.com/fpv-products/vortex-250-pro/)|IRCFUSIONF3|
 |[Lumenier LUX](http://www.getfpv.com/lumenier-lux-flight-controller.html)|LUX_RACE|
 |[Motolab Tornado](http://impulserc.com/motolab-tornadofc-stm32f3-flight-controller)|MOTOLAB|
 |[Motolab Cyclone](http://impulserc.com/motolab-cyclone-stm32f3-flight-controller)|MOTOLAB|
 |[Naze32 Acro](https://www.nextfpv.com.au/products/naze-acro-flight-controller-white-genuine)|NAZE|
 |[Naze32 Full](https://www.nextfpv.com.au/products/naze-32-flight-controllerred)|NAZE|
+|[OpenPilot CC3D](http://www.getfpv.com/openpilot-cc3d-flight-controller-straight-pins.html)|CC3D_OPBL|
 |[RMRC Seriously Dodo](http://www.readymaderc.com/store/index.php?main_page=product_info&products_id=4221)|RMDO|
 |[Sparky](http://www.readytoflyquads.com/sparky-flight-controller)|SPARKY|
 |[Seriously Pro Racing F3](http://seriouslypro.com/spracingf3)|SPRACINGF3|
 |[Seriously Pro Racing F3 EVO](http://seriouslypro.com/spracingf3evo)|SPRACINGF3EVO|
 |[Seriously Pro Racing F3 Mini](http://seriouslypro.com/spracingf3mini)|SPRACINGF3MINI|
+|[TBS Colibri Race](https://www.multirotorsuperstore.com/controllers/controllers-by-firmware/baseflight-cleanflight/tbs-colibri-race-flight-controller.html)|COLIBRI_RACE|
 
 ##How do I setup for reversed prop rotation ?
 Just change props and motor rotation in BlHeli.   
