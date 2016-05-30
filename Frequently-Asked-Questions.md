@@ -915,7 +915,9 @@ CC3D (this is F1 board though......performs slightly better than i2c F3 board on
 
 Sometimes it's pretty obvious which Betaflight HEX file to download and flash to your Flight Controller (like NAZE) but other times it's not (like RMDO). It's also worth noting that some of the HEX files are used with multiple FCs (like clones for instance).
 
-Having all the Flight Controllers listed here (and their associated HEX) should help avoid some confusion.
+We typically just say HEX file but many targets also have a BIN file. These are just for different Flashing software tools. Use the HEX file in the CF config GUI and when un-bricking with the ATM Flash Loaded tool. The BIN files are used with other tools like the Linix DFU flasher.
+
+Having all the Flight Controllers listed here (and their associated HEX/BIN) should help avoid some confusion.
 
 | Flight Controller | HEX File |
 |---|---|
