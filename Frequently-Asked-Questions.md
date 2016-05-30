@@ -48,7 +48,7 @@
 1. [Which Flight Controllers currently use SPI ?](#which-flight-controllers-currently-use-spi-)
 1. [Which HEX target do I download and flash to my Flight Controller ?](#which-hex-target-do-i-download-and-flash-to-my-flight-controller-)
 1. [How do I setup for reversed prop rotation ?](#how-do-i-setup-for-reversed-prop-rotation-)
-1. [What is a recommended FC and esc setup to run at 8khz, also i see reference to 4/4 or 4/4/32 or 8/8, what are these referring to?](#what-is-a-recommended-FC-and-esc-setup-to-run-at-8khz,-also-i-see-reference-to-4/4-or-4/4/32-or-8/8,-what-are-these-referring-to-)  
+1. [What is a recommended FC and esc setup to run at 8khz, also i see reference to 4/4 or 4/4/32 or 8/8, what are these referring to?](#what-is-a-recommended-fc-and-esc-setup-to-run-at-8khz-also-i-see-reference-to-4/4-or-4/4/32-or-8/8,-what-are-these-referring-to-)  
 
 **If your question is not listed above then please check the following pages:**
 
@@ -915,33 +915,33 @@ Sometimes it's pretty obvious which Betaflight HEX file to download and flash to
 
 Having all the Flight Controllers listed here (and their associated HEX) should help avoid some confusion.
 
-|HEX--->| AFROMINI | ALIENFLIGHTF1 | ALIENFLIGHTF3 | CC3D_OPBL | COLIBRI_RACE | DOGE | IRCFUSIONF3 | LUX_RACE | MOTOLAB | NAZE | RMDO | SPARKY | SPRACINGF3 | SPRACINGF3EVO | SPRACINGF3MINI |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-|[AfroMini Naze 32](http://www.readymaderc.com/store/index.php?main_page=product_info&products_id=4406)|X|||||||||||||||
-|[Flip32/Flip32 Pro](http://www.readytoflyquads.com/flight-controllers/flip-series)||||||||||X||||||
-|[DragonFly32/mini/compact](http://www.multirotormania.com/129-dragonfly32)||||||||||X||||||
-|[Alien Flight F1](http://alienflight.com/)||X||||||||||||||
-|[Alien Flight F3](http://alienflight.com/)|||X|||||||||||||
-|[OpenPilot CC3D](http://www.getfpv.com/openpilot-cc3d-flight-controller-straight-pins.html)||||X||||||||||||
-|[TBS Colibri Race](https://www.multirotorsuperstore.com/controllers/controllers-by-firmware/baseflight-cleanflight/tbs-colibri-race-flight-controller.html)|||||X|||||||||||
-|[ImmersionRC Fusion](http://www.immersionrc.com/fpv-products/vortex-250-pro/)|||||||X|||||||||
-|[Lumenier LUX](http://www.getfpv.com/lumenier-lux-flight-controller.html)||||||||X||||||||
-|[Motolab Tornado](http://impulserc.com/motolab-tornadofc-stm32f3-flight-controller)|||||||||X|||||||
-|[Motolab Cyclone](http://impulserc.com/motolab-cyclone-stm32f3-flight-controller)|||||||||X|||||||
-|[Naze32 Acro](https://www.nextfpv.com.au/products/naze-acro-flight-controller-white-genuine)||||||||||X||||||
-|[Naze32 Full](https://www.nextfpv.com.au/products/naze-32-flight-controllerred)||||||||||X||||||
-|[RMRC Seriously Dodo](http://www.readymaderc.com/store/index.php?main_page=product_info&products_id=4221)|||||||||||X|||||
-|[Sparky](http://www.readytoflyquads.com/sparky-flight-controller)||||||||||||X||||
-|[Seriously Pro Racing F3](http://seriouslypro.com/spracingf3)|||||||||||||X|||
-|[Seriously Pro Racing F3 EVO](http://seriouslypro.com/spracingf3evo)||||||||||||||X||
-|[Seriously Pro Racing F3 Mini](http://seriouslypro.com/spracingf3mini)|||||||||||||||X|
+| Flight Controller | HEX File |
+|---|---|
+|[AfroMini Naze 32](http://www.readymaderc.com/store/index.php?main_page=product_info&products_id=4406)|AFROMINI|
+|[Flip32/Flip32 Pro](http://www.readytoflyquads.com/flight-controllers/flip-series)|NAZE|
+|[DragonFly32/mini/compact](http://www.multirotormania.com/129-dragonfly32)|NAZE|
+|[Alien Flight F1](http://alienflight.com/)|ALIENFLIGHTF1|
+|[Alien Flight F3](http://alienflight.com/)|ALIENFLIGHTF3|
+|[OpenPilot CC3D](http://www.getfpv.com/openpilot-cc3d-flight-controller-straight-pins.html)|CC3D_OPBL|
+|[TBS Colibri Race](https://www.multirotorsuperstore.com/controllers/controllers-by-firmware/baseflight-cleanflight/tbs-colibri-race-flight-controller.html)|COLIBRI_RACE|
+|[ImmersionRC Fusion](http://www.immersionrc.com/fpv-products/vortex-250-pro/)|IRCFUSIONF3|
+|[Lumenier LUX](http://www.getfpv.com/lumenier-lux-flight-controller.html)|LUX_RACE|
+|[Motolab Tornado](http://impulserc.com/motolab-tornadofc-stm32f3-flight-controller)|MOTOLAB|
+|[Motolab Cyclone](http://impulserc.com/motolab-cyclone-stm32f3-flight-controller)|MOTOLAB|
+|[Naze32 Acro](https://www.nextfpv.com.au/products/naze-acro-flight-controller-white-genuine)|NAZE|
+|[Naze32 Full](https://www.nextfpv.com.au/products/naze-32-flight-controllerred)|NAZE|
+|[RMRC Seriously Dodo](http://www.readymaderc.com/store/index.php?main_page=product_info&products_id=4221)|RMDO|
+|[Sparky](http://www.readytoflyquads.com/sparky-flight-controller)|SPARKY|
+|[Seriously Pro Racing F3](http://seriouslypro.com/spracingf3)|SPRACINGF3|
+|[Seriously Pro Racing F3 EVO](http://seriouslypro.com/spracingf3evo)|SPRACINGF3EVO|
+|[Seriously Pro Racing F3 Mini](http://seriouslypro.com/spracingf3mini)|SPRACINGF3MINI|
 
 ##How do I setup for reversed prop rotation ?
 Just change props and motor rotation in BlHeli.   
 Then change set yaw_motor_direction = -1   
 Remember to cycle power to FC so new setting become properly used.
 
-##What is a recommended FC and esc setup to run at 8khz, also i see reference to 4/4 or 4/4/32 or 8/8, what are these referring to ?  
+##What is a recommended FC and esc setup to run at 8khz also i see reference to 4/4 or 4/4/32 or 8/8, what are these referring to ?  
 First number is gyro freq (set by looptime, 1000=1K, 500=2K, 250=4K, 125=8K),
 
 Second number is PID calc freq, this is set with regards to looptime, pid denom 1=same freq as gyro,
