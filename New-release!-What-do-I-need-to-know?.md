@@ -18,23 +18,6 @@ Release 2.8 - RC 3
 - Super Expo is now by default on. Your rate will be slightly faster, but will feel the same! You will like the new smoother stick feel!
 - Super Expo and Airmode are both features now! When features enabled that means that airmode or superexpo are always enabled and you won't see them in the Modes tab of the configurator! When feature disabled you still can put it on a switch. (Enable: feature SUPEREXPO and feature AIRMODE) (Disable: feature -AIRMODE and feature -SUPEREXPO)  
 
-
-# 2.8.0 - RC2
-
-Release 2.8 - RC 2
-
-- Changed Airmode Low Throttle Protection. Airmode now gets activated when stick moved above certain threshold. (CLI: set airmode_activate_throttle = ). Note that 3D users have to reconfigure their threshold to something else otherwise airmode would be always enabled.
-- Sligthly more Authority on low throttle even without Airmode
-- Added dynamic ki to dynamic PID feature. Iterm is always active at all times, but gets more ignored during fast rotation rates. This enables the possibility for increasing the iterm much more without negative side effects. This also removes the old iterm_reset option
-- Some code cleanups
-- New default PIDs
-- Added ledstrip visual beeper (CLI: ledstrip_visual_beeper)
-- yaw_jump_prevention is removed and replaced by yaw D gain! The higher the D the lower the jump_prevention limit will be.
-- Seperated fast_pwm_protocol from ONESHOT125 feature. The feature in GUI will only be green when ONESHOT125 is actually selected. Normal traditional PWM can be now selected with "set fast_pwm_protocol = OFF"
-- Fix for beeper during boot. (Not beeping anymore)
-- Experimental Anti ESC desync option. FC's can be pretty rough when it comes to throttle changes towards the ESC. This option allows you to set the maximum power increment / decrement to the ESC. You can declare the maximum change within 1ms. (CLI: set anti_desync_power_step = )  
-- LUX drift bug in 2.8.0 RC1 fixed  
-
 TODO - edit CLI commands   
 
 # 2.7.1 - 
