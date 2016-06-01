@@ -1,8 +1,18 @@
 This page is meant to provide a more in depth explanation of the changelog for each release so that users can understand the consequences of the changes made. Please remember to read the changelog for each release first and read the "Betaflight specific CLI commands" in this Wiki for new and changed CLI commands.
 
+# 2.8.0 - RC5
+
+Release 2.8 - RC5
+
+RC5 is there just with fixes
+- Fixed Level Modes
+- Prevent Iterm accumulating too much on full throttle
+- Fix Blackbox Logging for Yaw
+- When using anti desync and very high number like 10000 for example you get the old fashioned airmode_saturation_limit what also seriously can help some ESC's. (Like 2.1.6 version for example)
+
+Note: oh....when copy/pasting. Aux paste can enable 3D mode on switch function if you had super expo on switch! Watch out for that!  
+
 # 2.8.0 - RC4
-
-
 
 Release 2.8 - RC4
 
