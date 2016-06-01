@@ -10,7 +10,7 @@ RC5 is there just with fixes
 - Fix Blackbox Logging for Yaw
 - When using anti desync and very high number like 10000 for example you get the old fashioned airmode_saturation_limit what also seriously can help some ESC's. (Like 2.1.6 version for example)
 
-Note: oh....when copy/pasting. Aux paste can enable 3D mode on switch function if you had super expo on switch! Watch out for that!  
+Note from Boris: oh....when copy/pasting. Aux paste can enable 3D mode on switch function if you had super expo on switch! Watch out for that!  
 
 # 2.8.0 - RC4
 
