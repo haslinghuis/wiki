@@ -935,6 +935,7 @@ Having all the Flight Controllers listed here (and their associated HEX/BIN) sho
 |[Naze32 Full](https://www.nextfpv.com.au/products/naze-32-flight-controllerred)|NAZE|
 |[OpenPilot CC3D](http://www.getfpv.com/openpilot-cc3d-flight-controller-straight-pins.html)|CC3D_OPBL|
 |[RMRC Seriously Dodo](http://www.readymaderc.com/store/index.php?main_page=product_info&products_id=4221)|RMDO|
+|[Singularity](http://singularity.impulserc.com/)|SINGULARITY|
 |[Sparky](http://www.readytoflyquads.com/sparky-flight-controller)|SPARKY|
 |[Seriously Pro Racing F3](http://seriouslypro.com/spracingf3)|SPRACINGF3|
 |[Seriously Pro Racing F3 EVO](http://seriouslypro.com/spracingf3evo)|SPRACINGF3EVO|
