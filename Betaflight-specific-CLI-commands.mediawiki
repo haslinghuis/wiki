@@ -447,7 +447,9 @@ Note that 3D users have to reconfigure their threshold to something else otherwi
 '''set anti_desync_power_step = 0'''<br/>
 <i>[0-2000]</i><br/>
 Boris noted: For those who have desync issues might try this. Very curious if this can help ESCs in some situation with hard quick motor jumps from pid controller. I flew it and it flew quite well.  
-I was analysing some of the logs from folks who had desyncs or unwanted rolls or flips. In 100% of cases desync happened when PID controller was doing abrupt throttle changes. Like for example after roll or flip where the quad needs to get stopped motors would shortly pulse up and down. That abrupt stepping can now be controlled with this feature. The ESC's have the most difficulty with quick changing RPM's
+I was analysing some of the logs from folks who had desyncs or unwanted rolls or flips. In 100% of cases desync happened when PID controller was doing abrupt throttle changes. Like for example after roll or flip where the quad needs to get stopped motors would shortly pulse up and down. That abrupt stepping can now be controlled with this feature. The ESC's have the most difficulty with quick changing RPM's.  
+This is working directly on the motor output. It is basically the maximum allowed throttle change within 1ms.
+100 means 100 throttle steps per millisecond.
 
 <br/>
 '''set d_yaw = 20'''<br/>
