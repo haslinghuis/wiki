@@ -941,6 +941,7 @@ Having all the Flight Controllers listed here (and their associated HEX/BIN) sho
 |[Seriously Pro Racing F3 EVO](http://seriouslypro.com/spracingf3evo)|SPRACINGF3EVO|
 |[Seriously Pro Racing F3 Mini](http://seriouslypro.com/spracingf3mini)|SPRACINGF3MINI|
 |[TBS Colibri Race](https://www.multirotorsuperstore.com/controllers/controllers-by-firmware/baseflight-cleanflight/tbs-colibri-race-flight-controller.html)|COLIBRI_RACE|
+|[SINGULARITY](http://impulserc.com/codelayer-singularity-stm32f3-flight-controller)|SINGULARITY|
 
 ##How do I setup for reversed prop rotation ?
 Just change props and motor rotation in BlHeli.   
