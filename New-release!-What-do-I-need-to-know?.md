@@ -1,6 +1,6 @@
 This page is meant to provide a more in depth explanation of the changelog for each release so that users can understand the consequences of the changes made. Please remember to read the changelog for each release first and read the "Betaflight specific CLI commands" in this Wiki for new and changed CLI commands.
 
-# 2.8.0 - RC5
+# 2.8.0 - RC6
 
 Not released yet but will fix this bug:
 
