@@ -484,6 +484,10 @@ D of 20: 400 - 160 = 340
   set fast_pwm_protocol = off for brushed or normal pwm in 2.8  
 
 <br/>
-'''feature -SUPEREXPO'''<br/>
+'''feature -SUPEREXPO_RATES'''<br/>
 Disables the Super Expo feature. 
 This will allow the old rates and Expos.
+
+<br/>
+'''set rc_rate_yaw = 0'''<br/>
+<i>[0-1.0??]</i><br/>
