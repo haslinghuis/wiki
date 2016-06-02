@@ -12,6 +12,8 @@ D looks forward to see if the axis is reaching its intended value too quickly. I
 
 ## Steps 
 
+0. Make sure your motors are balanced and that your quad is as free from vibrations as practical. Trying to tune PIDs without having a clean gyro signal is like trying to build a house without having a proper foundation. [This video](https://www.youtube.com/watch?v=vjEsYei12Jw) explains an easy way to check for vibrations coming from your motors. [Adjust your lowpass filter settings](https://github.com/borisbstyle/betaflight/wiki/Gyro-filtering-recommendations) as necessary to get a clean gyro signal.
+
 1. It's essential that these step be done in Acro mode even if you are usually a Level/Horizon flyer.  Angle/Horizon modes have their own values that interfere with tuning.  Example PID values shown below correspond to the Rewrite PID controller (PID controller #1)
 
 2. Start with slightly lower than default P gains as provided by the installed BetaFlight firmware. P of 4.0 on Pitch and Roll are good starting points. Also lower the I and D gains on pitch and roll in order to tune P with minimal interference from I and D. I of 20 and D of 5 are good starting points. For yaw, it is prudent to decrease default P by HALF and reduce I just a bit, to eliminate that axis as a source of oscillations.  Yaw will be tuned last.
