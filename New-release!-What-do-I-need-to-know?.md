@@ -2,11 +2,29 @@ This page is meant to provide a more in depth explanation of the changelog for e
 
 # 2.8.0 - RC6
 
-Not released yet but will fix this bug:
+Release 2.8 ("Rates Redesign")
 
-"Guys I found the issue with multishot and synced_pwm ! I scoped it and I was doing 200hz update......oops. That happened when I decoupled oneshot125 from fast_pwm_protocols
+- Changed Airmode Low Throttle Protection. Airmode now gets activated when stick moved above certain threshold. (CLI: set airmode_activate_throttle = ). Note that 3D users have to reconfigure their threshold to something else otherwise airmode would be always enabled.
+- Sligthly more Authority on low throttle even without Airmode
+- Added dynamic ki to dynamic PID feature. Iterm windups now won't increase instability. Iterm is better smoothed in dynamic situations
+- Some code cleanups
+- New default PIDs
+- Added ledstrip visual beeper (CLI: ledstrip_visual_beeper)
+- yaw_jump_prevention is removed and replaced by yaw D gain! The higher the D the lower the jump_prevention limit will be.
+- Seperated fast_pwm_protocol from ONESHOT125 feature. The feature in GUI will only be green when ONESHOT125 is actually selected. Normal traditional PWM can be now selected with "set fast_pwm_protocol = OFF"
+- Fix for beeper during boot. (Not beeping anymore)
+- On the fly Rc Expo calculations (No more pre computed points)
+- Experimental Anti ESC desync option. FC's can be pretty rough when it comes to throttle changes towards the ESC. This option allows you to set the maximum power increment / decrement to the ESC. You can declare the maximum change within 1ms. (CLI: set anti_desync_power_step = )
+- Reworked Super Expo is now by default on as feature SUPEREXPO_RATES. You will like the new smoother stick feel! Check Rate calculator for rates. You still can disable it to get the old style rates. The new rates have smoothed mid stick so I don't recommend using the deadband anymore. Also there are no more super expo factors
+- Yaw rate is same scaling like roll and pitch. It only has the fixed Rc Rate of 1.00 (100)
+- SUPEREXPO_RATES and AIRMODE are both features now! When features enabled that means that airmode or superexpo are always enabled. When feature AIRMODE disabled it still can put on a switch. (Use feature command to enable or disable airmode)
+- Added new Target SINGULARITY (Built in VTX)
+- Added Rc Rate for Yaw! Will in the future also be added in the configurator. ("set rc_rate_yaw = ")
 
-I will release RC6 soon for that. "
+- Added rate limitations to 2000deg/sec. You cannot ever set the rates higher than the gyro can handle.
+
+- New rate calculations allows to change everything via Rates and RC Rate. You actually dont even need to use RC Expo, but you still can. Check the rate calculator!
+
 
 # 2.8.0 - RC5
 
