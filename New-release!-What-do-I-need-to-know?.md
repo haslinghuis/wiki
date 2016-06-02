@@ -2,6 +2,14 @@ This page is meant to provide a more in depth explanation of the changelog for e
 
 # 2.8.0 - RC5
 
+Not released yet but will fix this bug:
+
+"Guys I found the issue with multishot and synced_pwm ! I scoped it and I was doing 200hz update......oops. That happened when I decoupled oneshot125 from fast_pwm_protocols
+
+I will release RC6 soon for that. "
+
+# 2.8.0 - RC5
+
 Release 2.8 - RC5
 
 RC5 is there just with fixes
