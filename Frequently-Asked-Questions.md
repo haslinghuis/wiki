@@ -49,6 +49,7 @@
 1. [Which HEX target do I download and flash to my Flight Controller ?](#which-hex-target-do-i-download-and-flash-to-my-flight-controller-)
 1. [How do I setup for reversed prop rotation ?](#how-do-i-setup-for-reversed-prop-rotation-)
 1. [What is a recommended FC and esc setup to run at 8khz, also i see reference to 4/4 or 4/4/32 or 8/8, what are these referring to?](#what-is-a-recommended-fc-and-esc-setup-to-run-at-8khz-also-i-see-reference-to-4/4-or-4/4/32-or-8/8,-what-are-these-referring-to-)  
+1. [What is the difference in PIDC Iterm in ßF versions ?](#What-is-the-difference-in-PIDC-Iterm-in-ßF-versions-)
 
 **If your question is not listed above then please check the following pages:**
 
@@ -970,3 +971,20 @@ F3's with spi gyro (LUX, etc) can run 8K/8K.
 F4's (revo/etc) on raceflight can run 8K/8K, if using the 6500 or 9250 gyro(sparky2/etc), they are just now starting to run 32K/32K/32K.  
 
 All these FC can run esc up to 32K esc update rate at no extra penalty. Always check cpu usage via cli command "status", I prefer to stay under 30% cpu on BF, some get away with more.  
+
+##What is the difference in PIDC Iterm in ßF versions ? 
+By ctzsnooze:  
+Any slow pitch back type thing is iTerm related. Pitching back means that P alone was unable to retain the intended angle in FFF, and iTerm accumulated in an attempt to get there. When dropping throttle, the need for that amount of iTerm changes, and it takes a short time for the iTerm to drop back. In that sense this is a symptom of P not being quite enough, or I being too much.  
+
+However in some situations ITerm accumulation is inevitable and the challenge is how best to deal with it.  
+
+In 2.6 code was introduced that set iTerm to zero once gyros indicated a certain level of rotation. ITerm didn't start accumulating again until gyro rate fell back below the threshold. This controlled excessive iTerm gain but caused a small but unwanted step change in pitch at the time of returning back past the threshold.  
+
+In 2.7 this was changed to not reset to zero but to hold the value iTerm was at when the threshold was crossed. That also caused similar issues on return to normal as it abruptly changed whatever the newly required iTerm value would be.  
+Boris: No in 2.6 and 2.7 there was still iterm reset like in 2.6 actually, but only in super expo mode or when forced in cli. It wasn't in the normal scenario!   
+
+2.8 has code that reduces iTerm accumulation the higher the roll rate, but never arbitrarily cuts it to zero. If the threshold is lowered, high roll rate events have less impact on iTerm, but iTerm keeps working normally at low roll rate periods eg in FFF.  
+
+Could I suggest that people with this issue first try a bit more P, if that's possible, but if more P isn't ideal, maybe try reducing the iTerm ignore threshold to say 50 or maybe even 25. This has the effect of reducing iTerm during high roll events and may improve the situation without reducing iTerm's ability to otherwise keep the quad stable. If dropping the threshold means an overall inadequate I level, try increasing I at the same time.  
+
+These parameters can be varied quite a lot in attempting to find the best value. But the best solution is to have a quad where P is enough to get the angle you want mostly by itself.   
