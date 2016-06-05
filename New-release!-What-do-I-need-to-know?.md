@@ -25,6 +25,8 @@ Release 2.8 ("Rates Redesign")
 
 - New rate calculations allows to change everything via Rates and RC Rate. You actually dont even need to use RC Expo, but you still can. Check the rate calculator!
 
+Joshua Bardwell's Betaflight 2.8.0 Release Overview video
+https://www.youtube.com/watch?v=FrGaxDGx0fA
 
 # 2.8.0 - RC5
 
