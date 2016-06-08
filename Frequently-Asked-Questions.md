@@ -964,12 +964,9 @@ set unsynced_fast_pwm=ON
 set fast_pwm_protocol = MULTISHOT
 Set motor_pwm_rate = 32000
 
-Oneshot125 up to 4K (125-250μs)
-
-Oneshot42 up to 12K (42-84μs)
-
-Multishot up to 32K (5-25μs)
-
+Oneshot125 up to 4K (125-250μs)  
+Oneshot42 up to 12K (42-84μs)  
+Multishot up to 32K (5-25μs)  
 
 Generally, depending on pidc, serial ports used, number of Rx aux channels, etc. The acc is disabled in most scenarios below.  
 F1's mostly run between 2.6K - 2K, if you get a $9 cc3d they run 4K/4K, ccd3d-F3 run 8K/8K.  
