@@ -1,5 +1,8 @@
 This page is meant to provide a more in depth explanation of the changelog for each release so that users can understand the consequences of the changes made. Please remember to read the changelog for each release first and read the "Betaflight specific CLI commands" in this Wiki for new and changed CLI commands.
 
+# 2.8.1 - 
+Is in Alpha testing and should fix a few Iterm issues.
+
 # 2.8.0 - RC6
 
 Release 2.8 ("Rates Redesign")
@@ -40,49 +43,11 @@ RC5 is there just with fixes
 
 Note from Boris: oh....when copy/pasting. Aux paste can enable 3D mode on switch function if you had super expo on switch! Watch out for that!  
 
-# 2.8.0 - RC4
-
-Release 2.8 - RC4
-
-- Changed Airmode Low Throttle Protection. Airmode now gets activated when stick moved above certain threshold. (CLI: set airmode_activate_throttle = ). Note that 3D users have to reconfigure their threshold to something else otherwise airmode would be always enabled.
-- Sligthly more Authority on low throttle even without Airmode
-- Added dynamic ki to dynamic PID feature. Iterm windups now won't increase instability. Iterm is better smoothed in dynamic situations
-- Some code cleanups
-- New default PIDs
-- Added ledstrip visual beeper (CLI: ledstrip_visual_beeper)
-- yaw_jump_prevention is removed and replaced by yaw D gain! The higher the D the lower the jump_prevention limit will be.
-- Seperated fast_pwm_protocol from ONESHOT125 feature. The feature in GUI will only be green when ONESHOT125 is actually selected. Normal traditional PWM can be now selected with "set fast_pwm_protocol = OFF"
-- Fix for beeper during boot. (Not beeping anymore)
-- On the fly Rc Expo calculations (No more pre computed points)
-- Experimental Anti ESC desync option. FC's can be pretty rough when it comes to throttle changes towards the ESC. This option allows you to set the maximum power increment / decrement to the ESC. You can declare the maximum change within 1ms. (CLI: set anti_desync_power_step = )
-- Reworked Super Expo is now by default on. You will like the new smoother stick feel! Check Rate calculator for rates. You still can disable it to get the old style rates. The new rates have smoothed mid stick so I don't recommend using the deadband anymore. Also there are no more super expo factors
-- Yaw rate is same scaling like roll and pitch. It only has the fixed Rc Rate of 1.00 (100)
-- Super Expo and Airmode are both features now! When features enabled that means that airmode or superexpo are always enabled. When feature AIRMODE disabled you still can put it on a switch. (Use feature command to enable or disable airmode)
-
-- Added new Target SINGULARITY (Built in VTX)
-
 - New rate calculations allows to change everything via Rates and RC Rate. You actually dont even need to use RC Expo, but you still can. Check the rate calculator!
 
 - Rate Calculator
 https://dl.dropboxusercontent.com/u/31537757/betaflight/Betaflight%20Rates%202.8-RC4.xls
 
-# 2.8.0 - RC3
-
-Release 2.8 - RC 3
-
-- Changed Airmode Low Throttle Protection. Airmode now gets activated when stick moved above certain threshold. (CLI: set airmode_activate_throttle = ). Note that 3D users have to reconfigure their threshold to something else otherwise airmode would be always enabled.
-- Sligthly more Authority on low throttle even without Airmode
-- Added dynamic ki to dynamic PID feature. Iterm windups now won't increase instability. Iterm is better smoothed in dynamic situations
-- Some code cleanups
-- New default PIDs
-- Added ledstrip visual beeper (CLI: ledstrip_visual_beeper)
-- yaw_jump_prevention is removed and replaced by yaw D gain! The higher the D the lower the jump_prevention limit will be.
-- Seperated fast_pwm_protocol from ONESHOT125 feature. The feature in GUI will only be green when ONESHOT125 is actually selected. Normal traditional PWM can be now selected with "set fast_pwm_protocol = OFF"
-- Fix for beeper during boot. (Not beeping anymore)
-- Experimental Anti ESC desync option. FC's can be pretty rough when it comes to throttle changes towards the ESC. This option allows you to set the maximum power increment / decrement to the ESC. You can declare the maximum change within 1ms. (CLI: set anti_desync_power_step = )
-- Smoother Super Expo Curve. Center Stick has much nicer transition now.
-- Super Expo is now by default on. Your rate will be slightly faster, but will feel the same! You will like the new smoother stick feel!
-- Super Expo and Airmode are both features now! When features enabled that means that airmode or superexpo are always enabled and you won't see them in the Modes tab of the configurator! When feature disabled you still can put it on a switch. (Enable: feature SUPEREXPO and feature AIRMODE) (Disable: feature -AIRMODE and feature -SUPEREXPO)  
 
 TODO - edit CLI commands   
 
