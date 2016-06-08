@@ -965,7 +965,9 @@ set fast_pwm_protocol = MULTISHOT
 Set motor_pwm_rate = 32000
 
 Oneshot125 up to 4K (125-250μs)
+
 Oneshot42 up to 12K (42-84μs)
+
 Multishot up to 32K (5-25μs)
 
 
