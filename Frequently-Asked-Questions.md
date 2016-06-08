@@ -963,10 +963,14 @@ In BF v2.7.0, you need to:
 set unsynced_fast_pwm=ON
 set fast_pwm_protocol = MULTISHOT
 Set motor_pwm_rate = 32000
-(OS125 up to 4K, OS42 up to 12K, MS up to 32K)
+
+Oneshot125 up to 4K (125-250μs)
+Oneshot42 up to 12K (42-84μs)
+Multishot up to 32K (5-25μs)
+
 
 Generally, depending on pidc, serial ports used, number of Rx aux channels, etc. The acc is disabled in most scenarios below.  
-F1's mostly run 4K/2K, if you get a $9 cc3d they run 4K/4K, ccd3d-F3 run 8K/8K.  
+F1's mostly run between 2.6K - 2K, if you get a $9 cc3d they run 4K/4K, ccd3d-F3 run 8K/8K.  
 F3's mostly run 4K/2K but can run lux pidc and has more serial ports.  
 F3's with spi gyro (LUX, etc) can run 8K/8K.  
 F4's (revo/etc) on raceflight can run 8K/8K, if using the 6500 or 9250 gyro(sparky2/etc), they are just now starting to run 32K/32K/32K.  
