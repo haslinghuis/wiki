@@ -996,7 +996,7 @@ These parameters can be varied quite a lot in attempting to find the best value.
 
 ##How to setup blackbox record rate with onboard dataflash ?
 Be carefull when setting up blackbox record rate with onboard dataflash.
-When running at the edge of the board (like 4khz/4khz/4khz on sp3 board), there is a risk of overunning the cpu with to high rate like 1/1, even 1/2.
+When running at the edge of the board (like 4khz/4khz/4khz on sp3 board), there is a risk of overunning the cpu with too high rate like 1/1, even 1/2.
 You need to test on the ground without props and check cpu usage, so just arm, activate blackbox, and check status on the cli command.
 Keep a safe value and leave some room for cpu usage.
 1/4 should be a correct value for sp3 board at 4khz/4khz/4khz.
