@@ -3,7 +3,7 @@ This page is meant to provide a more in depth explanation of the changelog for e
 # 2.8.1 - 
 Is in Alpha testing and should fix a few Iterm issues.
 
-# 2.8.0 - RC6
+Betaflight 2.8.1 (pre release)
 
 Release 2.8 ("Rates Redesign")
 
@@ -28,26 +28,23 @@ Release 2.8 ("Rates Redesign")
 
 - New rate calculations allows to change everything via Rates and RC Rate. You actually dont even need to use RC Expo, but you still can. Check the rate calculator!
 
+- Rate Calculator  
+https://dl.dropboxusercontent.com/u/31537757/betaflight/Betaflight%20Rates%202.8.xls
+
+NOTE  
+2.8.0 VERSION HAS BEEN DEPRICATED DUE TO PROBLEMATIC ITERM TUNING. ALL ISSUES ARE SOLVED IN 2.8.1
+YOU CAN DOWNLOAD 2.8.1 PRE RELEASE BELOW ALREADY BEFORE IT IS FULLY RELEASES
+
 Joshua Bardwell's Betaflight 2.8.0 Release Overview video
 https://www.youtube.com/watch?v=FrGaxDGx0fA
 
-# 2.8.0 - RC5
-
-Release 2.8 - RC5
-
-RC5 is there just with fixes
 - Fixed Level Modes
 - Prevent Iterm accumulating too much on full throttle
 - Fix Blackbox Logging for Yaw
 - When using anti desync and very high number like 10000 for example you get the old fashioned airmode_saturation_limit what also seriously can help some ESC's. (Like 2.1.6 version for example)
 
-Note from Boris: oh....when copy/pasting. Aux paste can enable 3D mode on switch function if you had super expo on switch! Watch out for that!  
-
-- New rate calculations allows to change everything via Rates and RC Rate. You actually dont even need to use RC Expo, but you still can. Check the rate calculator!
-
-- Rate Calculator
-https://dl.dropboxusercontent.com/u/31537757/betaflight/Betaflight%20Rates%202.8-RC4.xls
-
+Note from Boris:   
+oh....when copy/pasting. Aux paste can enable 3D mode on switch function if you had super expo on switch! Watch out for that!  
 
 TODO - edit CLI commands   
 
