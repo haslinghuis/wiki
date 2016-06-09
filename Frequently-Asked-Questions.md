@@ -50,6 +50,7 @@
 1. [How do I setup for reversed prop rotation ?](#how-do-i-setup-for-reversed-prop-rotation-)
 1. [What is a recommended FC and esc setup to run at 8khz, also i see reference to 4/4 or 4/4/32 or 8/8, what are these referring to?](#what-is-a-recommended-fc-and-esc-setup-to-run-at-8khz-also-i-see-reference-to-4/4-or-4/4/32-or-8/8,-what-are-these-referring-to-)  
 1. [What is the difference in PIDC Iterm in ßF versions ?](#What-is-the-difference-in-PIDC-Iterm-in-ßF-versions-)
+1. [How to setup blackbox record rate with onboard dataflash ?](#how-to-setup-blackbox-record-rate-with-onboard-dataflash-)
 
 **If your question is not listed above then please check the following pages:**
 
@@ -992,3 +993,11 @@ Boris: No in 2.6 and 2.7 there was still iterm reset like in 2.6 actually, but o
 Could I suggest that people with this issue first try a bit more P, if that's possible, but if more P isn't ideal, maybe try reducing the iTerm ignore threshold to say 50 or maybe even 25. This has the effect of reducing iTerm during high roll events and may improve the situation without reducing iTerm's ability to otherwise keep the quad stable. If dropping the threshold means an overall inadequate I level, try increasing I at the same time.  
 
 These parameters can be varied quite a lot in attempting to find the best value. But the best solution is to have a quad where P is enough to get the angle you want mostly by itself.   
+
+##How to setup blackbox record rate with onboard dataflash ?
+Be carefull when setting up blackbox record rate with onboard dataflash.
+When running at the edge of the board (like 4khz/4khz/4khz on sp3 board), there is a risk of overunning the cpu with to high rate like 1/1, even 1/2.
+You need to test on the ground without props and check cpu usage, so just arm, activate blackbox, and check status on the cli command.
+Keep a safe value and leave some room for cpu usage.
+1/4 should be a correct value for sp3 board at 4khz/4khz/4khz.
+
