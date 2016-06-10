@@ -49,8 +49,9 @@
 1. [Which HEX target do I download and flash to my Flight Controller ?](#which-hex-target-do-i-download-and-flash-to-my-flight-controller-)
 1. [How do I setup for reversed prop rotation ?](#how-do-i-setup-for-reversed-prop-rotation-)
 1. [What is a recommended FC and esc setup to run at 8khz, also i see reference to 4/4 or 4/4/32 or 8/8, what are these referring to?](#what-is-a-recommended-fc-and-esc-setup-to-run-at-8khz-also-i-see-reference-to-4/4-or-4/4/32-or-8/8,-what-are-these-referring-to-)  
-1. [What is the difference in PIDC Iterm in ßF versions ?](#What-is-the-difference-in-PIDC-Iterm-in-ßF-versions-)
+1. [What is the difference in PIDC Iterm in ßF versions ?](#what-is-the-difference-in-PIDC-Iterm-in-ßF-versions-)
 1. [How to setup blackbox record rate with onboard dataflash ?](#how-to-setup-blackbox-record-rate-with-onboard-dataflash-)
+1. [How to setup the rates and SuperExpo in ßF 2.8.1](#how-to-setup-the-rates-and-SuperExpo-in-ßF-2.8.1-)
 
 **If your question is not listed above then please check the following pages:**
 
@@ -1001,3 +1002,7 @@ You need to test on the ground without props and check cpu usage, so just arm, a
 Keep a safe value and leave some room for cpu usage.
 1/4 should be a correct value for sp3 board at 4khz/4khz/4khz.
 
+##How to setup the rates and SuperExpo in ßF 2.8.1
+- First see the Rate calculator in the 2.8.1 Release notes and Watch Joshia's video on ßF 2.8
+
+TODO- links and explanations.
