@@ -1015,7 +1015,7 @@ Boris:
 Didn't I explain already 3 times that he just needs to enter one command to disable the feature and have old fashioned linear rate between 0 to 2000deg/sec
 The choice is there for everybody and different styles. There are no assumptions.
 
-Note: Super Expo uses floating point math and when enabled uses much more CPU cycles. This mean of F! and F3 with IIC gyros looptimes might need to be reduced.
+Note: Super Expo uses floating point math and when enabled uses much more CPU cycles. This mean on F1 and F3 with IIC gyros targets the looptime might need to be reduced.
 Boris states: There is more than just super expo.
 Just lower the looptime on F1 boards. 4k doesn't make it fly better.
 
