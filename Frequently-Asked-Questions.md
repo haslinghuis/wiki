@@ -1011,5 +1011,19 @@ RC Rate / RC yaw rate = Mid stick feel
 Rates = Far stick feel  
 Rc expo / yaw expo is actually not necessary at all.  
 
+Boris: 
+Didn't I explain already 3 times that he just needs to enter one command to disable the feature and have old fashioned linear rate between 0 to 2000deg/sec
+The choice is there for everybody and different styles. There are no assumptions.
+
+Note: Super Expo uses floating point math and when enabled uses much more CPU cycles. This mean of F! and F3 with IIC gyros looptimes might need to be reduced.
+Boris states: There is more than just super expo.
+Just lower the looptime on F1 boards. 4k doesn't make it fly better.
+
+compudaze's method:  
+what I did for 2.8 was adjust rates until my deg/sec at 2000us matched what it was for 2.7 with super expo. Then I adjusted rc rate until my deg/sec at 1750us matched what it was for 2.7 with super expo. It's not that simple though as you'll need to keep playing with the number to get it exact. just keep in mind rates more effects end stick while rc rare more effects center stick. 
+
+
+
+
 Just adjust till it feels good.
 TODO- links and explanations.
