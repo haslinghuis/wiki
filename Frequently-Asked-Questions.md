@@ -1010,6 +1010,7 @@ I have explained it many times in this thread.
 RC Rate / RC yaw rate = Mid stick feel  
 Rates = Far stick feel  
 Rc expo / yaw expo is actually not necessary at all.  
+Just adjust till it feels good.  
 
 Boris: 
 Didn't I explain already 3 times that he just needs to enter one command to disable the feature and have old fashioned linear rate between 0 to 2000deg/sec
@@ -1022,8 +1023,25 @@ Just lower the looptime on F1 boards. 4k doesn't make it fly better.
 compudaze's method:  
 what I did for 2.8 was adjust rates until my deg/sec at 2000us matched what it was for 2.7 with super expo. Then I adjusted rc rate until my deg/sec at 1750us matched what it was for 2.7 with super expo. It's not that simple though as you'll need to keep playing with the number to get it exact. just keep in mind rates more effects end stick while rc rare more effects center stick. 
 
+More from Boris:   
+Those steps really depend on chosen rc rate. Smaller rc rate = smaller rate steps.  
 
+Besides that do you really feel difference of 20-50deg/sec that much?  
 
+Actually everything you ask is in there.  
+Rc rate + rc expo added keeps the top rates, but only changes curve  
+On top of that there are rates what act as super rates where you tune mid stick and than the top rates.  
+I prefer the last one. It is the mid stick what is most important. That is what you tune / configure and use mostly. The top rates are not a "regular" flying scenario.  
 
-Just adjust till it feels good.
+The configurator is the limit at the moment as it is not all clear.
+Eventually in betaflight configuratoe or next cleanflight configurator each axis will have 3 parameters. Rc rate, super rate and rc expo. That will make all scenarios possible for anyone.  
+
+Quick summary: 
+Rc rate: linear increase of rates  
+rc expo: add expo curve to existing rate  
+(sexpo) rate: Keep same liniearity on mid stick as it is now, but curve the extremes.  
+
+Old rates:  
+rc rate and rates = equal....bot liniear. How confusing was that?  
+
 TODO- links and explanations.
