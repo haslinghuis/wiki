@@ -1004,13 +1004,12 @@ Keep a safe value and leave some room for cpu usage.
 
 ##How to setup the rates and SuperExpo in ßF 2.8.1
 - First see the Rate calculator in the 2.8.1 Release notes and Watch Joshia's video on ßF 2.8
--  Originally Posted by Boris B View Post
-I have explained it many times in this thread.
 
-RC Rate / RC yaw rate = Mid stick feel
-Rates = Far stick feel
-
-Rc expo / yaw expo is actually not necessary at all.
+Originally Posted by Boris B View Post  
+I have explained it many times in this thread.  
+RC Rate / RC yaw rate = Mid stick feel  
+Rates = Far stick feel  
+Rc expo / yaw expo is actually not necessary at all.  
 
 Just adjust till it feels good.
 TODO- links and explanations.
