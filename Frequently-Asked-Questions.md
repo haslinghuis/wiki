@@ -1,7 +1,7 @@
 ##Contents
 1. [I'm a Neewbe, how do I start ?](#im-a-neewbe-how-do-i-start-)
-1. [What is the difference between Min_check Min_command and Min_throttle and stick inputs ?](#what-is-the-difference-between-min_check-min_command-and-min_throttle-and-stick-inputs-)
 1. [How do I install Betaflight ?](#how-do-i-install-betaflight-)
+1. [What is the difference between Min_check Min_command and Min_throttle and stick inputs ?](#what-is-the-difference-between-min_check-min_command-and-min_throttle-and-stick-inputs-)
 1. [Why wont my FC board arm after upgrading the firmware ?](#why-wont-my-fc-board-arm-after-upgrading-the-firmware-)
 1. [Why is the Gyro light turned off and the 3D Model not moving ?](#why-is-the-gyro-light-turned-off-and-the-3d-model-not-moving-)
 1. [What is Air Mode ?](#what-is-air-mode-)
@@ -74,6 +74,19 @@ Fast and easy configuration  tutorial: https://youtu.be/tlfBlgcpink
 Videos on Cleanflight throttle parameter configuration (RC input verse outputs to ESCs):
 http://www.rcgroups.com/forums/showpost.php?p=34144329&postcount=20469
 
+See the next FAQ topic ("How do I install Betaflight") when you are ready.
+
+##How do I install Betaflight ?
+Start with the following video that gives a very comprehensive guide on Betaflight and the best practice approach for it's configuration:
+http://www.youtube.com/watch?v=xSzO6HP6yzs
+
+There is a step-by-step guide on how to flash the flight controller with Betaflight here: http://quadquestions.com/blog/2015/12/25/betaflight_flashing/
+
+How to flash Betaflight on CC3D video guide:
+http://www.rcgroups.com/forums/showpost.php?p=34196999&postcount=21477
+
+There is a topic on this FAQ page called "Which HEX target do I download and flash to my Flight Controller" that will help when it comes to deciding which file to use on your Flight Controller board.
+
 #What is the difference between Min_Check Min_command and Min_throttle and stick inputs ?
 From MasterZap
 
@@ -121,15 +134,6 @@ Another explanation be joshua bardwell:
 Max and min channel values are determined by the rxrange command. They default to 1000 and 2000. Max_check and min_check are used to decide if you are entering a stick command. Here is the kicker--how do you disarm the copter if yaw is active? You would have to go full deflection and the copter would yaw like crazy. In order to address this, when the throttle is below min_check, and when stick arming is used (vs. switch arming), the yaw input is disabled. If you are using motor_stop, the motors also stop running when the throttle is below min_check. Sometimes, this behavior is referred to as a deadzone at the bottom of the throttle stick travel. Many people refer to this as Deadband but causes much confusion with stick center DEADBAND CLI settings, therefore DEADZONE is prefered
 
 You can see that there is no need for a corresponding disabling of inputs at the top of the throttle range, because you never input any stick commands that require the top of the range when you are flying. The only stick command that is input when you are flying is disarm, and that is low yaw and low throttle. So there is a dead space at the bottom of the throttle range (below min_check) but no dead space at the top of any channel range. 
-
-##How do I install Betaflight ?
-Start with the following video that gives a very comprehensive guide on Betaflight and the best practice approach for it's configuration:
-http://www.youtube.com/watch?v=xSzO6HP6yzs
-
-There is a step-by-step guide on how to flash the flight controller with Betaflight here: http://quadquestions.com/blog/2015/12/25/betaflight_flashing/
-
-How to flash Betaflight on CC3D video guide:
-http://www.rcgroups.com/forums/showpost.php?p=34196999&postcount=21477
 
 ##Why wont my FC board arm after upgrading the firmware ?
 Check the following:
