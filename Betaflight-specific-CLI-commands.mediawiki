@@ -466,7 +466,8 @@ Make big jumps until you fix it, then work your way back up slowly.
 As per release notes this now is what sets the yaw_jump_prevention_limit.
 Boris noted: Yes 0 yaw D is 400 actually. Which might be too much in most times.  
 1 D step equals to 8 steps in yaw_jump_prevention reduction  
-D of 20: 400 - 160 = 240. 
+D of 20: 400 - 160 = 240.  (400 - d_yaw *8)  
+
 Increasing Yaw D reduces the yaw_jump_prevention_limit, which is a limit on motor power during yaw movements.
 Hence higher yaw D numbers mean less 'jump' and a reduction in the maximum possible yaw rate. 
 
