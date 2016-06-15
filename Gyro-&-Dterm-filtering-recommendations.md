@@ -30,7 +30,7 @@ Blackbox Gyro reading with Default 2.8 settings
 Blackbox Gyro reading with _Very Noisy_ settings from above
 ![Filtered](http://i.imgur.com/oOlGGtv.png)
 
-From ctzsnooze's post:  
+### From ctzsnooze's post:  
 The ideal value for filters is as high as you can go without getting hot motors etc. I don't think anyone can tell you how high you can go.
 
 But your particular concern was that your motors still felt a bit warm. So I'd map out what dterm cut does while leaving gyro cut where it is. The only way to find out is to do the testing. Once you know the best value for Dterm cut, ie the value where motors are coolest, keep dterm cut and gyro cut in the same proportion from then on. If, despite finding the coolest value for dterm cut, they are still warmer than you'd like, try say reducing both by 20%. If they are cool and you want crisper performance, try increasing both by 20%, and keep going up until they become clearly warmer than with a lower value.
