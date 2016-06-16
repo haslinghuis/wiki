@@ -1,6 +1,6 @@
 ### Changes in Default Filter settings
 From version 2.7 onward, the default filtering strength settings are _reduced_ in order to provide the best possible flight characteristics. You may find that after upgrading, your aircraft becomes very twitchy or uncontrollable. This can be caused if you have a noisy quad because the vibrations are now making it past the filter into the PID loop.
-##### Note: Defaults values can be different across minor and major firmware versions. Always do a CLI DUMP to see what the default values are before making changes.  
+##### Note: Defaults values can be different across minor and major firmware versions. Always do a CLI DUMP (or a get 'partial name')to see what the default values are before making changes.  
 
 ### From Boris:
 In case your setup is too noisy you need to adjust the filters. Here are some of the recommendations. The more filtering you use the less noise will be let into the system, but that will reduce the overall responsitivity of the pid controller and provide less stability in prop wash scenarios for example. Using as low as possible Dterm can help too.
