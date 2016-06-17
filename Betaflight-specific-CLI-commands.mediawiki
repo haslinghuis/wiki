@@ -521,5 +521,5 @@ Disables the Air Mode feature.
 
 <br/>
 '''set ledstrip_visual_beeper = OFF'''<br/>
-<i>[ON, OFF]</i><br/>
+<i>[ON,OFF]</i><br/>
 When set to on, and the LEDLOW mode is active (i.e. LED strip off), blink the LED strip in synch with beeping, as a visual indicator in cases where the craft is too far away for the beeper to be heard / multiple craft are flying.
