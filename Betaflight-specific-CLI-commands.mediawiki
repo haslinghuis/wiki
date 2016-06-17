@@ -483,6 +483,19 @@ Hence higher yaw D numbers mean less 'jump' and a reduction in the maximum possi
 '''set yaw_iterm_ignore_threshold = 35'''<br/>
 <i>[25-1000]</i><br/>
 
+ctzsnooze describes these two settings:
+Both "iterm_ignore_threshold" and "yaw_iterm_ignore_threshold" parameters modify iTerm behavior during fast stick inputs. When intended turn rate is zero, e.g. while hovering or in stable FFF, iTerm is 'normal' - set by PID I alone - because iTerm accumulates 'normally'. As intended turn rate (set in acro by stick angle) approaches the term_ignore_threshold value, iTerm accumulation is decreased until it is zero at, and above, the item_ignore value.  
+
+Note that with this system iTerm accumulation during uncommanded events (wind, impact, etc) is always 'normal' - the attenuation occurs only during commanded inputs.  
+
+The intent is to smoothly reduce inputs to iTerm at high commanded turn rates, e.g. during flips and rolls, so that we minimise unwanted iTerm accumulation, which we know can cause bounce back or instability immediately we stop the flip or roll.  
+
+A higher threshold value allows more iTerm accumulation during high roll rate commands, and vice versa.  
+
+If the threshold is too low, a quick push forward on the stick may not accumulate enough iTerm to lock the new desired angle. If that happens, consider increasing the threshold.  
+
+A combination of a lower threshold and a higher PID I value may be useful if you want more I to deal with really windy days (i.e. to manage low amplitude relatively low frequency uncommanded inputs more aggressively) but you don't want or are getting excessive I effects during commanded flips, rolls etc. The default value of 200 seems about right, however at this point in time the optimal value is not known with great certainty.   
+
 <br/>
 '''set dynamic_pid = ON'''<br/>
 <i>[ON,OFF]</i><br/>
