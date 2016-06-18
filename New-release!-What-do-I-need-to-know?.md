@@ -10,7 +10,7 @@ This page is meant to provide a more in depth explanation of the changelog for e
 - Increased Multishot resolution
 - Improved Saturation Handling
 
-Note: no need to do a full Erase if updating from 2.8.1 pre. Setting will be saved.
+Note: no need to do a full Erase if updating from 2.8.1 RC1. Settings will not be over written.
 
 # 2.8.1 RC1 - 
 Is in Alpha testing and should fix a few Iterm issues.
