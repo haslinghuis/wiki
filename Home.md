@@ -1,4 +1,4 @@
-![BetaFlight](https://dl.dropboxusercontent.com/u/31537757/betaflight%20logo.jpg)
+![BetaFlight](http://static.rcgroups.net/forums/attachments/6/1/0/3/7/6/a9088900-228-bf_logo.jpg)
 # Welcome to the BetaFlight Wiki!
 
 ##Introduction
