@@ -1,6 +1,18 @@
 This page is meant to provide a more in depth explanation of the changelog for each release so that users can understand the consequences of the changes made. Please remember to read the changelog for each release first and read the "Betaflight specific CLI commands" in this Wiki for new and changed CLI commands.
 
-# 2.8.1 - 
+# Patch 2.8.1 RC2 -
+
+- Fixed sensitivity in dynamic Iterm (prevent drift issues)
+- Improved Dterm math replaces dynamic Pterm
+- Some code cleanups
+- Fixed issue where "dump all" command switches from rateprofile
+- New defaults
+- Increased Multishot resolution
+- Improved Saturation Handling
+
+Note: no need to do a full Erase if updating from 2.8.1 pre. Setting will be saved.
+
+# 2.8.1 RC1 - 
 Is in Alpha testing and should fix a few Iterm issues.
 
 Betaflight 2.8.1 (pre release)
