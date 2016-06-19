@@ -2,6 +2,8 @@ This page is meant to provide a more in depth explanation of the changelog for e
 
 # Patch 2.8.1 RC2 -
 
+Patch 2.8.1 Fixes:
+
 - Fixed sensitivity in dynamic Iterm (prevent drift issues)
 - Improved Dterm math replaces dynamic Pterm
 - Some code cleanups
