@@ -1016,7 +1016,7 @@ Rates = Far stick feel
 Rc expo / yaw expo is actually not necessary at all.  
 Just adjust till it feels good.  
 
-Boris: 
+#### Boris: 
 Didn't I explain already 3 times that he just needs to enter one command to disable the feature and have old fashioned linear rate between 0 to 2000deg/sec
 The choice is there for everybody and different styles. There are no assumptions.
 
@@ -1024,10 +1024,10 @@ Note: Super Expo uses floating point math and when enabled uses much more CPU cy
 Boris states: There is more than just super expo.
 Just lower the looptime on F1 boards. 4k doesn't make it fly better.
 
-compudaze's method:  
+#### compudaze's method:  
 what I did for 2.8 was adjust rates until my deg/sec at 2000us matched what it was for 2.7 with super expo. Then I adjusted rc rate until my deg/sec at 1750us matched what it was for 2.7 with super expo. It's not that simple though as you'll need to keep playing with the number to get it exact. just keep in mind rates more effects end stick while rc rare more effects center stick. 
 
-More from Boris:   
+#### More from Boris:   
 Those steps really depend on chosen rc rate. Smaller rc rate = smaller rate steps.  
 
 Besides that do you really feel difference of 20-50deg/sec that much?  
@@ -1048,4 +1048,38 @@ rc expo: add expo curve to existing rate
 Old rates:  
 rc rate and rates = equal....bot liniear. How confusing was that?  
 
-TODO- links and explanations.
+#### Another explanation from RC Slater:
+Everyone should set everything that has the word Expo in it to 0. I know by default it is set to .10, but Boris himself has said it's unnecessary, and you should remove it.
+
+ONE caveat: if you disable superexpo_rates to get the old linear control back, then you may still want to use some expo parameters to change the curve. Other than that, leave all expos at 0 when using super expo rates. (super expo is active by default)
+
+With superexpo_rates, the rotation rate at extreme or full stick deflection is controlled by Pitch rate, roll rate, yaw rate. If you want your max flip/roll rate faster, then adjust those accordingly.
+
+If you want to adjust how sensitive your copter feels on small corrections (around mid stick) then just adjust RC Rate. NOTE that Yaw has it's own RC rate because we sometimes want to adjust that mid stick feel on yaw separately from pitch and roll.
+
+Example:
+Stock Rates are :
+Pitch Roll and Yaw Rates = .7
+RC Rate = 1.0
+RC Rate Yaw = 1.0
+
+I decide I want to roughly keep maximum rotation rate the same but make mid stick more sensitive on ALL axes (including yaw)
+
+Pitch Roll and Yaw Rates = .7
+RC Rate = 1.10
+RC Yaw Rate = 1.10
+
+Now I like my mid-stick sensitivity on pitch and roll, but want more on yaw. So...
+
+Pitch Roll and Yaw Rates = .7
+RC Rate = 1.10
+RC Rate Yaw = 1.20
+
+Now I just want to increase the maximum pitch and roll rate, but leave Yaw and all my mid-stick feel the same:
+
+Pitch Rate = .8
+Roll Rate = .8
+Yaw Rate = .7
+RC Rate = 1.10
+RC Rate Yaw = 1.20
+RC Slater is online now Send a private message to RC Slater Find More Posts by RC Slater
