@@ -948,7 +948,6 @@ Having all the Flight Controllers listed here (and their associated HEX/BIN) sho
 |[Seriously Pro Racing F3 EVO](http://seriouslypro.com/spracingf3evo)|SPRACINGF3EVO|
 |[Seriously Pro Racing F3 Mini](http://seriouslypro.com/spracingf3mini)|SPRACINGF3MINI|
 |[TBS Colibri Race](https://www.multirotorsuperstore.com/controllers/controllers-by-firmware/baseflight-cleanflight/tbs-colibri-race-flight-controller.html)|COLIBRI_RACE|
-|[SINGULARITY](http://impulserc.com/codelayer-singularity-stm32f3-flight-controller)|SINGULARITY|
 |[X-Racer F303 V1 -> 2.1](http://www.fpvmodel.com/x-racer-f303-flight-controller_g1106.html)|SPRACINGF3|
 
 ##How do I setup for reversed prop rotation ?
