@@ -14,6 +14,9 @@ Patch 2.8.1 Fixes:
 
 Note: no need to do a full Erase if updating from 2.8.1 RC1. Settings will not be over written.
 
+####Bugs:
+- There was/is a problem with airmode not overriding motor_stop when airmode is used as a feature. Fixed now and will be released eventually.
+
 # 2.8.1 RC1 - 
 Is in Alpha testing and should fix a few Iterm issues.
 
