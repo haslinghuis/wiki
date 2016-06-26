@@ -6,7 +6,9 @@ This page is meant to provide a more in depth explanation of the changelog for e
 - Fixed Airmode Feature bug when Motor Stop enabled
 - Added more Configurable options for the new Betaflight 1.3 Configurator
 - Changed the default parameters (All accessible in Configurator)
-- Default Derivative method is changed back to Measurement. To get the 2.8.1 behaviour you can change it back to Error in the new configurator. You can play with this setting to find your preferenced style. Freestyle pilot would prefer more Measurement method and racing pilots might like tigher stick feel with delta on Error. Delta from measurement will feel more smooth and natural, while delta from Error may feel a bit more robotic.
+- Default Derivative method is changed back to Measurement. To get the 2.8.1 behaviour you can change it back to Error in the new configurator. You can play with this setting to find your preferenced style. Freestyle pilot would prefer more Measurement method and racing pilots might like tigher stick feel with delta on Error. Delta from measurement will feel more smooth and natural, while delta from Error may feel a bit more robotic.  
+D from error accelerates your stick input and gives you the ultimate sharp response on the stick.
+D from measurements dampens your stick input and makes flip and roll stops much smoother.
 - New default filters. These are now all accessible in the configurator
 - Added new parameter (rc_smooth_interval_ms). Dont use it if you dont know what you are doing. 0 means disabled
 
