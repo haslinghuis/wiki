@@ -1,5 +1,18 @@
 This page is meant to provide a more in depth explanation of the changelog for each release so that users can understand the consequences of the changes made. Please remember to read the changelog for each release first and read the "Betaflight specific CLI commands" in this Wiki for new and changed CLI commands.
 
+#2.9.0 (Configurator Integration)
+
+- Fixed PID controller reset from Configurator
+- Fixed Airmode Feature bug when Motor Stop enabled
+- Added more Configurable options for the new Betaflight 1.3 Configurator
+- Changed the default parameters (All accessible in Configurator)
+- Default Derivative method is changed back to Measurement. To get the 2.8.1 behaviour you can change it back to Error in the new configurator. You can play with this setting to find your preferenced style. Freestyle pilot would prefer more Measurement method and racing pilots might like tigher stick feel with delta on Error. Delta from measurement will feel more smooth and natural, while delta from Error may feel a bit more robotic.
+- New default filters. These are now all accessible in the configurator
+- Added new parameter (rc_smooth_interval_ms). Dont use it if you dont know what you are doing. 0 means disabled
+
+Download the Betaflight Configurator for optimal Configuring experience
+https://chrome.google.com/webstore/detail/betaflight-configurator/kdaghagfopacdngbohiknlhcocjccjao?hl=en
+
 # Patch 2.8.1 RC2 -
 
 Patch 2.8.1 Fixes:
