@@ -934,6 +934,7 @@ Having all the Flight Controllers listed here (and their associated HEX/BIN) sho
 |[Flip32/Flip32 Pro](http://www.readytoflyquads.com/flight-controllers/flip-series)|NAZE|
 |[DTFc Flight Controller](http://rotorgeeks.com/index.php?route=product%2Fproduct&path=34_44&product_id=555)|DOGE|
 |[DragonFly32/mini/compact](http://www.multirotormania.com/129-dragonfly32)|NAZE|
+|[FuryF3](http://www.2dogrc.com/furyf3-board.html)|FURYF3|
 |[ImmersionRC Fusion](http://www.immersionrc.com/fpv-products/vortex-250-pro/)|IRCFUSIONF3|
 |[Lumenier LUX](http://www.getfpv.com/lumenier-lux-flight-controller.html)|LUX_RACE|
 |[Motolab Tornado](http://impulserc.com/motolab-tornadofc-stm32f3-flight-controller)|MOTOLAB|
