@@ -11,6 +11,7 @@ D from error accelerates your stick input and gives you the ultimate sharp respo
 D from measurements dampens your stick input and makes flip and roll stops much smoother.
 - New default filters. These are now all accessible in the configurator
 - Added new parameter (rc_smooth_interval_ms). Dont use it if you dont know what you are doing. 0 means disabled
+- The PIDC names changed from LUX to Float and from MWREWRITE to Interger since they have been changed so much they are basically the same and not longer use the algorithms Lux & rewrite originally used.
 
 Download the Betaflight Configurator for optimal Configuring experience
 https://chrome.google.com/webstore/detail/betaflight-configurator/kdaghagfopacdngbohiknlhcocjccjao?hl=en
