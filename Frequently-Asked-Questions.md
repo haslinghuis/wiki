@@ -428,6 +428,8 @@ rewrite still has a bit higher D range. To be exact rewrite has 2x higher delta 
 I know why. Rewrite has a Dterm deadband integrated in the integer logic, which helps keeping some noise away. But the lower numbers can cause some aliasing in dterm and some lower frequencies which aren't there may be thrown into pid controller.  
 There will be some more data about this soon to confirm, but luxfloat may now become a winner certainly now where it became better tunable.  
 
+New in ßF 2.8 and above: the PIDC names LUXFLOAT & MWREWRITE are no longer used since Boris has rewritten the code and they not longer use the same algorithm as before. The new names are FLOAT & INTEGER.
+  
 ## What PIDs do and how do they do it ?
 Here a good basic PID explaination by Bruce for those who want to learn about it. 
 https://www.youtube.com/watch?v=0vqWyramGy8  
