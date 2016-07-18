@@ -972,6 +972,8 @@ set unsynced_fast_pwm=ON
 set fast_pwm_protocol = MULTISHOT
 Set motor_pwm_rate = 32000
 
+With the New BF Configurator 1.6.4, you can make the above changes in the "Configuration Tab" and in the "ESC/Motor Features" section. You can still use the CLI commands as well.
+
 Oneshot125 up to 4K (125-250μs)  
 Oneshot42 up to 12K (42-84μs)  
 Multishot up to 32K (5-25μs)  
