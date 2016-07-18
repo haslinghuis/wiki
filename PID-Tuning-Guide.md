@@ -54,6 +54,6 @@ I term is usually not active enough to cause trouble, and can usually get it rou
 But the D term can vary significantly depending on many different factors, and its amplification effect means that if D term is bad, it can be very bad, and in odd and unpredictable ways, depending on how noise is presenting itself and how the P term is acting.
 
 For more information see these resources:
-[Joshua Bardwell's Practical PID Tuning (Betaflight / Cleanflight)](http://www.youtube.com/playlist?list=PLwoDb7WF6c8ldO8tz0IUi9FNcJdvE2Mhe)
 
-FAQ page [here](https://github.com/borisbstyle/betaflight/wiki/Frequently-Asked-Questions#is-there-a-good-resource-for-learning-how-to-tune-using-black-box-)
+* [Joshua Bardwell's Practical PID Tuning (Betaflight / Cleanflight)](http://www.youtube.com/playlist?list=PLwoDb7WF6c8ldO8tz0IUi9FNcJdvE2Mhe)
+* FAQ page located [here](https://github.com/borisbstyle/betaflight/wiki/Frequently-Asked-Questions#is-there-a-good-resource-for-learning-how-to-tune-using-black-box-)
