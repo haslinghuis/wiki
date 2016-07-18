@@ -14,7 +14,7 @@ D looks forward to see if the axis is reaching its intended value too quickly. I
 
 0. Make sure your motors are balanced and that your quad is as free from vibrations as practical. Trying to tune PIDs without having a clean gyro signal is like trying to build a house without having a proper foundation. [This video](https://www.youtube.com/watch?v=vjEsYei12Jw) explains an easy way to check for vibrations coming from your motors. [Adjust your lowpass filter settings](https://github.com/borisbstyle/betaflight/wiki/Gyro-filtering-recommendations) as necessary to get a clean gyro signal.
 
-1. It's essential that these step be done in Acro mode even if you are usually a Level/Horizon flyer.  Angle/Horizon modes have their own values that interfere with tuning.  Example PID values shown below correspond to the Rewrite PID controller (PID controller #1)
+1. It's essential that these step be done in Acro mode even if you are usually a Level/Horizon flyer.  Angle/Horizon modes have their own values that interfere with tuning.  Example PID values shown below correspond to the Rewrite PID controller (PID controller #1). Set the TPA value to 0 while performing this initial tune. TPA can be added at a later date if needed.
 
 2. Start with slightly lower than default P gains as provided by the installed BetaFlight firmware. P of 4.0 on Pitch and Roll are good starting points. Also lower the I and D gains on pitch and roll in order to tune P with minimal interference from I and D. I of 20 and D of 5 are good starting points. For yaw, it is prudent to decrease default P by HALF and reduce I just a bit, to eliminate that axis as a source of oscillations.  Yaw will be tuned last.
 
@@ -53,4 +53,7 @@ The undesirable flight characteristic called bounce-back oscillation occurs when
 I term is usually not active enough to cause trouble, and can usually get it roughly tuned in pretty quickly.
 But the D term can vary significantly depending on many different factors, and its amplification effect means that if D term is bad, it can be very bad, and in odd and unpredictable ways, depending on how noise is presenting itself and how the P term is acting.
 
-For more information see the FAQ page [here](https://github.com/borisbstyle/betaflight/wiki/Frequently-Asked-Questions#is-there-a-good-resource-for-learning-how-to-tune-using-black-box-)
+For more information see these resources:
+[Joshua Bardwell's Practical PID Tuning (Betaflight / Cleanflight)](http://www.youtube.com/playlist?list=PLwoDb7WF6c8ldO8tz0IUi9FNcJdvE2Mhe)
+
+FAQ page [here](https://github.com/borisbstyle/betaflight/wiki/Frequently-Asked-Questions#is-there-a-good-resource-for-learning-how-to-tune-using-black-box-)
