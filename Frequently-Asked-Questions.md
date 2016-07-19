@@ -1087,3 +1087,6 @@ Yaw Rate = .7
 RC Rate = 1.10
 RC Rate Yaw = 1.20
 RC Slater is online now Send a private message to RC Slater Find More Posts by RC Slater
+
+Video from Joshua Bardwell:
+https://www.youtube.com/watch?v=cttFDHkec0c
