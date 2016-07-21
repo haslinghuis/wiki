@@ -80,6 +80,9 @@ See the next FAQ topic ("How do I install Betaflight") when you are ready.
 Start with the following video that gives a very comprehensive guide on Betaflight and the best practice approach for it's configuration:
 http://www.youtube.com/watch?v=xSzO6HP6yzs
 
+New Video by Joshua Bradwell on the BetaFlight Configurator: 
+https://www.youtube.com/watch?v=VAHUZZXIn9o
+
 There is a step-by-step guide on how to flash the flight controller with Betaflight here: http://quadquestions.com/blog/2015/12/25/betaflight_flashing/
 
 How to flash Betaflight on CC3D video guide:
