@@ -1145,3 +1145,14 @@ Setup:
 Zmx v2 2300kv
 Aikon blheli_s
 Xracer v2.2 multishot sync 4/4
+
+####RCG thread on Capacitors
+http://www.rcgroups.com/forums/showthread.php?t=2657808
+
+####Post by Cheredanine
+General recommendation is a low esr 1000uf with a voltage rating of 35v if you are using on the battery connection, if you put a cap on each esc then a lower spec can be used
+
+Soft mounting can be done in a number of ways, traditionally hard mounting means nylon standoffs
+To soft mount one can use rubber or silicon o rings on the standoffs
+Or one can use rubber vibration isolation standoffs
+Or double sided sticky foam 
