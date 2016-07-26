@@ -1137,7 +1137,7 @@ I hate to say this because I know vendors with good products who have a 6500 or 
 To chime in on the 6500/9250 issue, there appears to be a couple things going on here. As Boris mentioned, there seems to be an electrical noise issue here that compounds things. The MPU 6500 is extremely sensitive to voltage fluctuations on the 3.3v supply line, which raises the noise floor of the IMU. Extra power filtering will definitely help with the problem.
 
 ###A Case:
- Originally Posted by gunadeau
+####Originally Posted by gunadeau  
 Maybe my story can help some people. I had very bad twitch issue on the yaw axis. It was untunable. I tried to softmount the FC, it helped but was not perfect. What really cured my issue was putting a 1000uf capacitor 35v 105 deg on the PDB.
 My gyro is now super clean and it fly incredibly well.
 
