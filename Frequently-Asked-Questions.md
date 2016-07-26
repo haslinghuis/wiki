@@ -1138,7 +1138,7 @@ To chime in on the 6500/9250 issue, there appears to be a couple things going on
 
 ###A Case:
 ####Originally Posted by gunadeau  
-Maybe my story can help some people. I had very bad twitch issue on the yaw axis. It was untunable. I tried to softmount the FC, it helped but was not perfect. What really cured my issue was putting a 1000uf capacitor 35v 105 deg on the PDB.
+Maybe my story can help some people. I had very bad twitch issue on the yaw axis. It was untunable. I tried to softmount the FC, it helped but was not perfect. What really cured my issue was putting a 1000uf capacitor 35v 105 deg on the PDB at the battery connector.
 My gyro is now super clean and it fly incredibly well.
 
 Setup:
