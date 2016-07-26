@@ -51,7 +51,8 @@
 1. [What is a recommended FC and esc setup to run at 8khz, also i see reference to 4/4 or 4/4/32 or 8/8, what are these referring to?](#what-is-a-recommended-fc-and-esc-setup-to-run-at-8khz-also-i-see-reference-to-4/4-or-4/4/32-or-8/8,-what-are-these-referring-to-)  
 1. [What is the difference in PIDC Iterm in ßF versions ?](#what-is-the-difference-in-PIDC-Iterm-in-ßF-versions-)
 1. [How to setup blackbox record rate with onboard dataflash ?](#how-to-setup-blackbox-record-rate-with-onboard-dataflash-)
-1. [How to setup the rates and SuperExpo in ßF 2.8.1](#how-to-setup-the-rates-and-SuperExpo-in-ßF-2.8.1-)
+1. [How to setup the rates and SuperExpo in ßF 2.8.1?](#how-to-setup-the-rates-and-SuperExpo-in-ßF-2.8.1-)
+1. [I get Yaw twitches. How do I solve this?](#I-get-Yaw-twitches.-How-do-I-solve-this-)
 
 **If your question is not listed above then please check the following pages:**
 
@@ -1013,7 +1014,7 @@ You need to test on the ground without props and check cpu usage, so just arm, a
 Keep a safe value and leave some room for cpu usage.
 1/4 should be a correct value for sp3 board at 4khz/4khz/4khz.
 
-##How to setup the rates and SuperExpo in ßF 2.8.1
+##How to setup the rates and SuperExpo in ßF 2.8.1?
 - First see the Rate calculator in the 2.8.1 Release notes and Watch Joshia's video on ßF 2.8
 
 Originally Posted by Boris B View Post  
@@ -1093,3 +1094,52 @@ RC Slater is online now Send a private message to RC Slater Find More Posts by R
 
 Video from Joshua Bardwell:
 https://www.youtube.com/watch?v=cttFDHkec0c
+
+##I get Yaw twitches. How do I solve this?
+Many people have yaw twitches and many do not. All that have this issue seem to be running FCs that use the MPU6500 gyro chip (Naze32 rev6, LUX, others) Boris B was one that did not have this issue with the 6500 gyro until he upgraded to newer, stronger motors. Many have cured this by soft mounting the FC board but this has not worked in all cases.
+
+Much discussion and experimenting is showing that this is an issue with both mechanical and electrical noise getting into the gyro and effecting the Yaw. Following is some of the discussion.
+
+###Post from Boris  
+Anyway something I want to share with you. As you all know I have been flying MPU6500 on several quads without any significant issues for a while. I knew those were a bit more sensitive, but didnt really bother me. I never had any twitches and problems like some had....until this week!
+So what happened. I was flying with my trusty CM2204 2300kv cobras on pretty much all my setups till recently. Since I swapped to 5S I experienced that those motors were not ideal for that power so I went searching for new alternative motors. That's exactly where the issues started.
+Once I replaced the motors my 2 MPU6500 quads and even my DOGE fc went completaly nuts. Totally untunable and twitchy as hell. Exact the issues that have been reported in the past. I had to detune my quads to mask the vibrations and twitches.
+Than I swapped them by cyclone (mpu6000) board and boom.....double as high pids and smooth and locked in as butter.
+
+No news. But really funny to experience these issues by myself for once the first time.  
+Originally Posted by Cheredanine View Post
+Interesting it happened on all three FC,
+
+Assume you didn't try soft mounting, what motors were you using?  
+Originally Posted by Boris  
+2 of them were soft mounted my DOGE was not. The new cobra motors I was trying out were absolutely smooth on the bench. But somehow at certain RPM the gyro would go nuts. Would love to understand that better. Just random yaw twitches etc like we have seen many times reported on those gyros.
+After putting cyclone on the exact same quads above with everything else just same absolutely smooth like on the bench. O yeah and cyclone was hardmounted!  
+I actually even tried 2 different motors. Cobra Champion serie 2205 2300kv and Brotherhobby 2205 2300 kv. There is certainly nothing wrong with the motors. There is just some kind of resonant frequency what upsets the MPU6500. And yes I switched back and fourth between my old CM2204's and CM2206 motors, which were smooth at all times.  
+Originally Posted by prokreat
+My money is on the stronger magnets messing with the 6500. 
+Originally Posted by Boris
+It really seems like that! The better the motor quality it seems to affect it more. I really wonder if this is all related to electric noise rather than vibration noise.
+
+Perhaps due to smaller factor of mpu6500 it is missing some crucial power filtering circuit.
+I know invenesense was under pressure few years ago to produce gyros with smaller form factor due to the constant huge demand from mobile phone manufacturers  
+Originally Posted by  waltr  
+There was a very short discussion about this twitch issue and adding low ESR caps and while ago in this thread. Theory here is that it is the Noise Spikes from the motors/ESCs disturbing the Gyro readings.
+
+We know soft mounting can help a lot but what about added caps to the ESC power.
+Maybe this would be good for you to try Boris now that you have a setup that causes this issue
+
+Another may be adding good caps right on the MPU6500 power/ground pins. From what I have seen on the schematics and PCB layout these de-coupling caps do not seem to be properly designed on many FC boards.
+They don't seem important but actually are very important for modern electronic devices to operate.
+It could be not a direct issue with the MPU6500 chip but with schematic and PCB layout design not done properly.
+###Post from QuadMcFly  
+To chime in on the 6500/9250 issue, there appears to be a couple things going on here. As Boris mentioned, there seems to be an electrical noise issue here that compounds things. The MPU 6500 is extremely sensitive to voltage fluctuations on the 3.3v supply line, which raises the noise floor of the IMU. Extra power filtering will definitely help with the problem.
+
+###A Case:
+ Originally Posted by gunadeau
+Maybe my story can help some people. I had very bad twitch issue on the yaw axis. It was untunable. I tried to softmount the FC, it helped but was not perfect. What really cured my issue was putting a 1000uf capacitor 35v 105 deg on the PDB.
+My gyro is now super clean and it fly incredibly well.
+
+Setup:
+Zmx v2 2300kv
+Aikon blheli_s
+Xracer v2.2 multishot sync 4/4
