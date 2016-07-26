@@ -1130,6 +1130,9 @@ Maybe this would be good for you to try Boris now that you have a setup that cau
 Another may be adding good caps right on the MPU6500 power/ground pins. From what I have seen on the schematics and PCB layout these de-coupling caps do not seem to be properly designed on many FC boards.
 They don't seem important but actually are very important for modern electronic devices to operate.
 It could be not a direct issue with the MPU6500 chip but with schematic and PCB layout design not done properly.
+
+####Originally Posted by  joshuabardwell  
+I hate to say this because I know vendors with good products who have a 6500 or a 9250, but I personally would not recommend that anyone buy an FC with a 6500 or 9250, because it is just a crap-shoot whether you are going to run into these problems. Many people fly with no problem at all. Many people who have problems are able to soft mount and fix them. But some people have problems and simply cannot fix them, and that just seems like a chance that nobody should have to take, in a world where there are very good FC's using the 6000 or 6050. If there is a "glitchy" FC that you absolutely love, such as the DTFc because of its built in PDB, or the SP3 Evo because of its transponder and built in SD card reader, then buy it with the knowledge that you might be unlucky and have glitching that you can't fix. But if you are just searching around for an FC, and you have no particular love for any board, then absolutely buy one with a 6000 or 6050 chip only.   
 ####Post from QuadMcFly  
 To chime in on the 6500/9250 issue, there appears to be a couple things going on here. As Boris mentioned, there seems to be an electrical noise issue here that compounds things. The MPU 6500 is extremely sensitive to voltage fluctuations on the 3.3v supply line, which raises the noise floor of the IMU. Extra power filtering will definitely help with the problem.
 
