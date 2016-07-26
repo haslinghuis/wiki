@@ -52,7 +52,7 @@
 1. [What is the difference in PIDC Iterm in ßF versions ?](#what-is-the-difference-in-PIDC-Iterm-in-ßF-versions-)
 1. [How to setup blackbox record rate with onboard dataflash ?](#how-to-setup-blackbox-record-rate-with-onboard-dataflash-)
 1. [How to setup the rates and SuperExpo in ßF 2.8.1?](#how-to-setup-the-rates-and-SuperExpo-in-ßF-2.8.1-)
-1. [I get Yaw twitches. How do I solve this?](#I-get-Yaw-twitches.-How-do-I-solve-this-)
+1. [I get Yaw twitches or mid-throttle oscillations. How do I solve this?](#I-get-Yaw-twitches-or-mid-throttle oscillations.-How-do-I-solve-this-)
 
 **If your question is not listed above then please check the following pages:**
 
@@ -1095,8 +1095,8 @@ RC Slater is online now Send a private message to RC Slater Find More Posts by R
 Video from Joshua Bardwell:
 https://www.youtube.com/watch?v=cttFDHkec0c
 
-##I get Yaw twitches. How do I solve this?
-Many people have yaw twitches and many do not. All that have this issue seem to be running FCs that use the MPU6500 gyro chip (Naze32 rev6, LUX, others) Boris B was one that did not have this issue with the 6500 gyro until he upgraded to newer, stronger motors. Many have cured this by soft mounting the FC board but this has not worked in all cases.
+##I get Yaw twitches or mid-throttle oscillations. How do I solve this?
+Many people have yaw twitches or oscillations at mid-throttle and many do not. All that have this issue seem to be running FCs that use the MPU6500 gyro chip (Naze32 rev6, LUX, others) and newer motors. Boris B was one that did not have this issue with the 6500 gyro until he upgraded to newer, stronger motors. Many have cured this by soft mounting the FC board but this has not worked in all cases.
 
 Much discussion and experimenting is showing that this is an issue with both mechanical and electrical noise getting into the gyro and effecting the Yaw. Following is some of the discussion.
 
