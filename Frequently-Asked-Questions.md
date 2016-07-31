@@ -49,6 +49,7 @@
 1. [Which HEX target do I download and flash to my Flight Controller ?](#which-hex-target-do-i-download-and-flash-to-my-flight-controller-)
 1. [How do I setup for reversed prop rotation ?](#how-do-i-setup-for-reversed-prop-rotation-)
 1. [What is a recommended FC and esc setup to run at 8khz, also i see reference to 4/4 or 4/4/32 or 8/8, what are these referring to?](#what-is-a-recommended-fc-and-esc-setup-to-run-at-8khz-also-i-see-reference-to-4/4-or-4/4/32-or-8/8,-what-are-these-referring-to-)  
+1. [Is PID tuning any different at different PIDC rates ?](#is-PID-tuning-any-different-at-different-PIDC-rates-)
 1. [What is the difference in PIDC Iterm in ßF versions ?](#what-is-the-difference-in-PIDC-Iterm-in-ßF-versions-)
 1. [How to setup blackbox record rate with onboard dataflash ?](#how-to-setup-blackbox-record-rate-with-onboard-dataflash-)
 1. [How to setup the rates and SuperExpo in ßF 2.8.1?](#how-to-setup-the-rates-and-SuperExpo-in-ßF-2.8.1-)
@@ -989,6 +990,23 @@ F3's with spi gyro (LUX, etc) can run 8K/8K.
 F4's (revo/etc) on raceflight can run 8K/8K, if using the 6500 or 9250 gyro(sparky2/etc), they are just now starting to run 32K/32K/32K.  
 
 All these FC can run esc up to 32K esc update rate at no extra penalty. Always check cpu usage via cli command "status", I prefer to stay under 30% cpu on BF, some get away with more.  
+
+##Is PID tuning any different at different PIDC rates ?
+
+####From Boris (31 July 2016)
+But here is the thing. There was a discussion before about whether P needs to be readjusted on higher looptimes. Some claimed to feel the difference 1k vs 8k for example and claimed retuning was needed. Were those feeling a placebo?
+The answer is not conclusive yet, but from my tests there seems to be a difference what can be explained.
+
+We already saw improved response between 1k and 8k for example. Exactly the difference you would expect around 800-1000us. Of course PID loop faster means seeing change in rotation faster.
+How does this translate to different feel or even tune?
+I was surprised to see that 8k tests showed slightly slower setpoint times vs 1k tests, while the acceleration times were pretty much same. I literally felt more loose quad on 8k.
+This can be explained by following. Due to faster PID loop the PID controller can see faster that setpoint is being reached and it will start "slowing down" slightly earlier. That's exactly why the setpoint time was faster on 1k. Is this good or bad?
+Well yes it is an advantage that 8k can start slowing down earlier and therefore you would possibly be able to increase P more with less overshoot like on 1k.
+Just wanted to point out that some who experienced slightly higher P were not crazy after all .
+
+But still these differences were extremely marginal and still nothing compared to different props or motors on same PID loop speed.
+
+Next tests would be synced vs unsynced and also 32k as some wanted to know that and also blheli tests. I think from what I have seen i can expect synced winning, but lets wait the results.   
 
 ##What is the difference in PIDC Iterm in ßF versions ? 
 By ctzsnooze:  
