@@ -1214,3 +1214,7 @@ We are flying these things on the basis that the gyro data presented to the FC i
 
 ####A report of fixing this Yaw twitch/oscillation issue:   
 http://www.rcgroups.com/forums/showpost.php?p=35385057&postcount=34964    
+
+#### Examaple of Cap:
+http://www.rcgroups.com/forums/showthread.php?t=2464844&page=2332  
+
