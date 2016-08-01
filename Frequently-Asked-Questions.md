@@ -1211,3 +1211,6 @@ The problem is that we have no 'reference' gyro to know actually what is really 
 So... unless the log is very characteristic of a gyro problem (e.g. twitches or extreme single axis oscillation) it would be exceptionally difficult to be certain what is going on without comparing gyro to a known good one. If replacing the FC or gyro chip fixes it, then that kind of points the finger at the gyro.
 
 We are flying these things on the basis that the gyro data presented to the FC is a clean and accurate representation of the true movement of the frame. The possibility that gyros have some tendency to falsely resonate and make false oscillation data at certain throttle points is not a nice thing to contemplate.   
+
+####A report of fixing this Yaw twitch/oscillation issue:   
+http://www.rcgroups.com/forums/showpost.php?p=35385057&postcount=34964    
