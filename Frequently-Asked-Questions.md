@@ -1218,3 +1218,8 @@ http://www.rcgroups.com/forums/showpost.php?p=35385057&postcount=34964
 #### Examaple of Cap:
 http://www.rcgroups.com/forums/showthread.php?t=2464844&page=2332  
 
+#### Posy by Swing3r  
+I had issues with yaw oscillation at mid throttle with Aikons + Lumenier 2206-2350KV-motors. Soft mounting helped but not fully so I also added a low ESR 1000uF 63V capacitor to my PDB (cycolone FC is powered by lipo directly) and viola, all traces of the yaw-oscillation is gone.
+
+Logs for hardmount, softmount and softmount + 1000uF cap.
+https://www.dropbox.com/sh/a4kvsilpi...h56ocCO1a?dl=0
