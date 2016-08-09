@@ -1,0 +1,1 @@
+3.0 is currently still in Alpha testing. This version has many changes in the under laying code so has its own section.
