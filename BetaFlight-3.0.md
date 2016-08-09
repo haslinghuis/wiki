@@ -67,7 +67,7 @@ to see what differs from default. This is handy to learn what the config GUI doe
 ####'''airmode_activate_throttle''' = 1350<br />
 <i>[1000..2000]</i><br />
 
-## The following CLI commands are Per PROFILE so can be different in each Profile.  
+### The following CLI commands are Per PROFILE so can be different in each Profile.  
 
 ####'''set pid_tolerance_band''' = 0<br />
 <i>[0..200]</i><br />
