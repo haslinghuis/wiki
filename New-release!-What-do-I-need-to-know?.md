@@ -1,5 +1,9 @@
 This page is meant to provide a more in depth explanation of the changelog for each release so that users can understand the consequences of the changes made. Please remember to read the changelog for each release first and read the "Betaflight specific CLI commands" in this Wiki for new and changed CLI commands.
 
+#Betaflight 3.0.0-RC5
+Please see the BetaFlight 3.0 page for release notyes and details.
+Note: work in progress so Boris' thread currently is where most info is found.
+
 #2.9.0 (Configurator Integration)
 
 - Fixed PID controller reset from Configurator
