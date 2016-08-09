@@ -16,6 +16,9 @@ Note that most are better to set using the new BetaFlight Confug GUI.
 
 ####'''set pid_tolerance_band''' = ?<br />
 <i>[?..?]</i><br />
+####'''set pid_tolerance_band_min_reduction''' = ?<br />
+<i>[?..?]</i><br />
+
 Reduces "hunting" effect from pid controller. 
 What does the pid controller do? It hunts for error all the time. Its mainly P and D what are the quickest ones. The problem is that when error is very small like in forward flight or hover where not much error needs to be corrected the pid controller gets more "relaxed" to not keep looking for perfection. The amount of pid relaxation is determined in percentage in pid_tolerance_band_min_reduction.
 You can for example remove yaw noise on this way till certain level, but you may need to retune.  
