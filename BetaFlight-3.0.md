@@ -21,5 +21,5 @@ What does the pid controller do? It hunts for error all the time. Its mainly P a
 You can for example remove yaw noise on this way till certain level, but you may need to retune.  
 
 ####'''diff'''<br />  
-to see what differs from default  
+to see what differs from default. This is handy to learn what the config GUI does with CLI settings.    
 
