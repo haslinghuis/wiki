@@ -21,16 +21,16 @@ https://github.com/betaflight/betaflight/commits/master
 
 Short Summary of changes:
 
--STM32 F4 support (working blheli passthrough)
--Full IO rework
--Major target seperations. Easy implementation for new targets
--PWM code rework
--Major code cleanups and rewrites
--More configurator integration
--New Betaflight PID controller based on deg/sec. All of the future development will all happen in this single pid controller. There is still a Legacy PID controller, which is pretty much evolved rewrite. That one will stay the same.
--The new Betaflight 2DOF PID controller has some additional extra parameters for configuring. Check out the config options in the configurator. This PID controller allowes less overshoot percentage and less Derivative needed to get the same affect.
--RC Interpolation added back with multiple options. (Use Auto for automatic rx rate configuration)
--Added "diff" cli command for easier backuping of config.
+- STM32 F4 support (working blheli passthrough)
+- Full IO rework
+- Major target seperations. Easy implementation for new targets
+- PWM code rework
+- Major code cleanups and rewrites
+- More configurator integration
+- New Betaflight PID controller based on deg/sec. All of the future development will all happen in this single pid controller. There is still a Legacy PID controller, which is pretty much evolved rewrite. That one will stay the same.
+- The new Betaflight 2DOF PID controller has some additional extra parameters for configuring. Check out the config options in the configurator. This PID controller allowes less overshoot percentage and less Derivative needed to get the same affect.
+- RC Interpolation added back with multiple options. (Use Auto for automatic rx rate configuration)
+- Added "diff" cli command for easier backuping of config.
 
 RC2 - Changed defaults / cleanup ONESHOT125 feature
 RC3 - Defaults based on feedback // yaw_axis added to interpolation // add additional config parameters // FIX PPM on KISS
