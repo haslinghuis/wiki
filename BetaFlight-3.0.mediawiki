@@ -11,8 +11,8 @@ Betaflight has 2 different goals.
 
 2) from scientific point of view it is good to keep improving and introduce new features where those who like to experiment can play with ans give valuable feedback. These are mostly burried in the cli   
 
-###New CLI commands
-Note that most are better to set using the new BetaFlight Confug GUI.
+####New CLI commands
+Note that most are better to set using the new BetaFlight Confug GUI.  
 
 '''set pid_tolerance_band''' = ?<br />
 <i>[?..?]</i><br />
