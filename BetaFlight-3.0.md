@@ -3,7 +3,7 @@
 
 Plan here to to list and explain only the differences from the previous 2.x version.
 
-From Boris:
+From Boris for those just trying 3.0:  
 Just use things available in the configurator and leave the rest on default.
 
 Betaflight has 2 different goals.
