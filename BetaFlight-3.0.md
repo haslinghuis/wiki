@@ -99,7 +99,7 @@ You can for example remove yaw noise on this way till certain level, but you may
 
 ## Discussions on using the new features:
 
-- PID control at Zero Throttle
+####PID control at Zero Throttle
 Originally Posted by MasterZap View Post
 Let me try to explain this in a clear way:
 
@@ -122,7 +122,7 @@ Clear as mud?
 
 /Z
 
-- Notch Filters
+####Notch Filters
 
 Explained by R.A.V.
 
@@ -190,6 +190,10 @@ debug[3] is only notch filtered gyro data on pitch axis.
 If the notch filter is disabled 0/1 and 2/3 will be identical.
 
 A new version of blackbox-explorer will allow to view the frequency spectrum of any recorded data. 
+
+####roll/yaw cam mix
+from FieserKiller  
+Note that its not active permanently in this version of BF any more. You have to configure it in modes tab. I've bound it to a switch so I can finally let my buddys fly my quad without crashing due to unfamiliar controls.   
 
 ## Discussions on using the New configurator
 
