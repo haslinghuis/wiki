@@ -72,6 +72,13 @@ Set to OFF if CPU loading is too high.
 ####'''airmode_activate_throttle''' = 1350<br />
 <i>[1000..2000]</i><br />
 
+####'''set yaw_rate_acceleration_limit''' = 50?<br />
+<i>[0..200?]</i><br />
+Yaw rate accel limit is the betaflight pidc replacement for yaw jump prevention. It works differently and much better. It prevents quick accelerations and decelerations of yaw axis, what were actually causing jumps.
+
+What we do with sticks is pushing the multirotors beyond their limits, but pid controller still wants to correct that and ramps up the motors what causes jerky behavior. With accel limits the pid controller has a protection to limit the acceleration and make it smoother what also helps against iterm windups we have seen getting worse on yaw axis.
+Same can also be done for roll and pitch axis what is disabled by default. It can give much smoother flight characteristics.
+
 ### The following CLI commands are Per PROFILE so can be different in each Profile.  
 
 ####'''set pid_tolerance_band''' = 0<br />
