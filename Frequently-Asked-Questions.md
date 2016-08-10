@@ -1223,3 +1223,15 @@ I had issues with yaw oscillation at mid throttle with Aikons + Lumenier 2206-23
 
 Logs for hardmount, softmount and softmount + 1000uF cap.
 https://www.dropbox.com/sh/a4kvsilpi...h56ocCO1a?dl=0
+
+#### Post by AliB
+
+I'm starting to believe the mid throttle oscillations is on more than the 6500 gyros.
+
+Both me and a friend have both had mid throttle oscillations using an Xracer f303 v3.
+He is using aikon esc, and his was completely unflyable until he soft mounted flight controller.
+
+I'm using KISS esc and mine is flyable, but there is noticeable mid level oscillations. full throttle is fine. its just around 1300-1400
+get it still even with P's down around 2.
+
+both of us are running GTINpower 2205. nice motors but powerrrr hungry  
