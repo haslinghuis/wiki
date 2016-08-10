@@ -12,7 +12,7 @@ Betaflight has 2 different goals.
 2) from scientific point of view it is good to keep improving and introduce new features where those who like to experiment can play with ans give valuable feedback. These are mostly burried in the cli   
 
 
-##Betaflight 3.0.0-RC5
+##Betaflight 3.0.0-RC6
 
 Betaflight 3.0.0-RC5 (F4 Support)
 
@@ -36,6 +36,7 @@ RC2 - Changed defaults / cleanup ONESHOT125 feature
 RC3 - Defaults based on feedback // yaw_axis added to interpolation // add additional config parameters // FIX PPM on KISS
 RC4 - Defaults based on new public tests // Fixed some wrong denom defaults for SPI targets
 *RC5 - Defaults based on new public tests // Fix for higher CPU due to filter reinitialisations // Add Sparky2 // Fixes for various targets *
+*RC6 - Defaults // rename zero throttle stabilisation to pid_at_min_throttle // CLI cleanups *  
 
 New 1.7.1 configurator supports some additional tuning parameters. Don't fotget to check tooltips for explainations!
 
