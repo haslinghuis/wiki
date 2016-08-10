@@ -93,15 +93,15 @@ You can for example remove yaw noise on this way till certain level, but you may
 ####set pid_controller = BETAFLIGHT<br />
 <i>[LEGACY, BETAFLIGHT]</i><br />
 
-####dterm_lowpass_level = HIGH<br /> 
+####set dterm_lowpass_level = HIGH<br /> 
 <i>[NORMAL, HIGH]</i><br />
-####dterm_lowpass = 100<br /> 
+####set dterm_lowpass = 100<br /> 
 <i>[0..500]</i><br />
 ####set dterm_notch_hz = 0<br /> 
 <i>[0..500]</i><br />
-####'dterm_notch_cutoff = 150<br />
+####set dterm_notch_cutoff = 150<br />
 <i>[1..500]</i><br />
-####dterm_setpoint_weight = 120<br />
+####set dterm_setpoint_weight = 120<br />
 <i>[1..200]</i><br />
 
 
