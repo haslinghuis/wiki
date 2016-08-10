@@ -47,29 +47,29 @@ The PID from 2.x versions can transfer to 3.0 as the scaling is the same, but yo
 Note that most are better to set using the new BetaFlight Confug GUI.  
 If a CLI command is not listed here then it is most likely not changed so look in the Wiki 'CLI command' page.
 If in error, missing, etc then post a note about what is wrong in Boris' thread.
- 
+Be sure you type 'help' in the CLI to see all commands.
 
 ####diff<br />  
 To see what differs from default. This is handy to learn what the config GUI does with CLI settings.    
-This is also a better output for posting your CLI since then you post only setting that are different from the defaults instead of a 'dump' which outputs everything.
+This is also a better output for posting your CLI since then you post only setting that are different from the defaults instead of a 'dump' which outputs everything. 
 
 ####feature SUPEREXPO_RATES<br />
 
-####rc_interpolation = AUTO<br />
+####set rc_interpolation = AUTO<br />
 <i>[OFF, PRESET, AUTO, MANUAL]</i><br />
 This feature can causing CPU to work harder to be able to run higher d setpoint weights and get cleaner motor outputs.
 Set to OFF if CPU loading is too high.
 
-####rc_interpolation_interval = 19<br />
+####set rc_interpolation_interval = 19<br />
 <i>[1..50]</i><br />
 
-####motor_pwm_protocol = OFF<br />
+####set motor_pwm_protocol = OFF<br />
 <i>[OFF, ONESHOT125, ONESHOT42, MULTISHOT, BRUSHED]</i><br />
 
-####zero_throttle_stabilisation = OFF<br />
+####set zero_throttle_stabilisation = OFF<br />
 <i>[ON, OFF]</i><br />
 
-####airmode_activate_throttle = 1350<br />
+####set airmode_activate_throttle = 1350<br />
 <i>[1000..2000]</i><br />
 
 ####set yaw_rate_acceleration_limit = 50?<br />
