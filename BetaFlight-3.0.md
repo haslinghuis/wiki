@@ -56,6 +56,9 @@ to see what differs from default. This is handy to learn what the config GUI doe
 
 ####'''rc_interpolation''' = AUTO<br />
 <i>[OFF, PRESET, AUTO, MANUAL]</i><br />
+This feature can causing CPU to work harder to be able to run higher d setpoint weights and get cleaner motor outputs.
+Set to OFF if CPU loading is too high.
+
 ####'''rc_interpolation_interval''' = 19<br />
 <i>[1..50]</i><br />
 
@@ -94,3 +97,27 @@ You can for example remove yaw noise on this way till certain level, but you may
 <i>[1..200]</i><br />
 
 
+## Discussions on using the new features:
+
+- PID control at Zero Throttle
+Originally Posted by MasterZap View Post
+Let me try to explain this in a clear way:
+
+As boris say, you have three things:
+
+    Motor Stop (nobody should use that in 2016, so forget it)
+    Air mode (everyone should use that )
+    Pid_at_zero_throttle
+
+
+!! BORIS - CORRECT ME IF I AM WRONG !!
+
+pid_at_zero throttle kills PID's COMPLETELY for after you just arm. The moment you spool the motors up above zero, PID's start working. Now I'm not sure if they continue to work until you disarm or not I don't know, but as you see below, that doesn't matter.
+
+I think the motivation for this "feature" is to stop people whining about motors revving on the bench, or I dunno. For me, who run an underslung battery that barely lets the quad stand, I actually WANT pid at zero throttle, or it surely tips over when I arm it. Me, I *need* stabilization on the ground!!
+
+Airmode also has a threshold for starting, and again, the moment you come over this threshold, it is on until you disarm. Plus, airmode overrides "Pid_at_zero_throttle". So even if "pid_at_zero_throttle" isn't sticky, airmode IS sticky, and since it overrides.... it makes pid_at_zero_throttle "effectively sticky". So the moment you've revved up, you will have full authority until you disarm.
+
+Clear as mud?
+
+/Z
