@@ -49,30 +49,30 @@ If a CLI command is not listed here then it is most likely not changed so look i
 If in error, missing, etc then post a note about what is wrong in Boris' thread.
  
 
-####'''diff'''<br />  
+####diff<br />  
 To see what differs from default. This is handy to learn what the config GUI does with CLI settings.    
 This is also a better output for posting your CLI since then you post only setting that are different from the defaults instead of a 'dump' which outputs everything.
 
-####'''feature SUPEREXPO_RATES'''<br />
+####feature SUPEREXPO_RATES<br />
 
-####'''rc_interpolation''' = AUTO<br />
+####rc_interpolation = AUTO<br />
 <i>[OFF, PRESET, AUTO, MANUAL]</i><br />
 This feature can causing CPU to work harder to be able to run higher d setpoint weights and get cleaner motor outputs.
 Set to OFF if CPU loading is too high.
 
-####'''rc_interpolation_interval''' = 19<br />
+####rc_interpolation_interval = 19<br />
 <i>[1..50]</i><br />
 
-####'''motor_pwm_protocol''' = OFF<br />
+####motor_pwm_protocol = OFF<br />
 <i>[OFF, ONESHOT125, ONESHOT42, MULTISHOT, BRUSHED]</i><br />
 
-####'''zero_throttle_stabilisation''' = OFF<br />
+####zero_throttle_stabilisation = OFF<br />
 <i>[ON, OFF]</i><br />
 
-####'''airmode_activate_throttle''' = 1350<br />
+####airmode_activate_throttle = 1350<br />
 <i>[1000..2000]</i><br />
 
-####'''set yaw_rate_acceleration_limit''' = 50?<br />
+####set yaw_rate_acceleration_limit = 50?<br />
 <i>[0..200?]</i><br />
 Yaw rate accel limit is the betaflight pidc replacement for yaw jump prevention. It works differently and much better. It prevents quick accelerations and decelerations of yaw axis, what were actually causing jumps.
 
@@ -81,27 +81,27 @@ Same can also be done for roll and pitch axis what is disabled by default. It ca
 
 ### The following CLI commands are Per PROFILE so can be different in each Profile.  
 
-####'''set pid_tolerance_band''' = 0<br />
+####set pid_tolerance_band = 0<br />
 <i>[0..200]</i><br />
-####'''set tolerance_band_min_reduction''' = 40<br /> ??? 
+####set tolerance_band_min_reduction = 40<br /> ??? 
 <i>[0..100]</i><br />
 
 Reduces "hunting" effect from pid controller. 
 What does the pid controller do? It hunts for error all the time. Its mainly P and D what are the quickest ones. The problem is that when error is very small like in forward flight or hover where not much error needs to be corrected the pid controller gets more "relaxed" to not keep looking for perfection. The amount of pid relaxation is determined in percentage in tolerance_band_min_reduction.
 You can for example remove yaw noise on this way till certain level, but you may need to retune.  
 
-####'''set pid_controller''' = BETAFLIGHT<br />
+####set pid_controller = BETAFLIGHT<br />
 <i>[LEGACY, BETAFLIGHT]</i><br />
 
-####'''dterm_lowpass_level''' = HIGH<br /> 
+####dterm_lowpass_level = HIGH<br /> 
 <i>[NORMAL, HIGH]</i><br />
-####'''dterm_lowpass''' = 100<br /> 
+####dterm_lowpass = 100<br /> 
 <i>[0..500]</i><br />
-####'''set dterm_notch_hz''' = 0<br /> 
+####set dterm_notch_hz = 0<br /> 
 <i>[0..500]</i><br />
-####'''dterm_notch_cutoff''' = 150<br />
+####'dterm_notch_cutoff = 150<br />
 <i>[1..500]</i><br />
-####'''dterm_setpoint_weight''' = 120<br />
+####dterm_setpoint_weight = 120<br />
 <i>[1..200]</i><br />
 
 
