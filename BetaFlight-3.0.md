@@ -193,7 +193,7 @@ A new version of blackbox-explorer will allow to view the frequency spectrum of 
 
 ## Discussions on using the New configurator
 
-- measurement and error is now the d term slider thingy.
+- ####measurement and error is now the d term slider thingy.
 all the way to the right is error, all the way to the left is measurement. can vary.
 scroll down under your PIDS.  
 BF PIDC does not use the dropdown for PID_DELTA_METHOD (or the CLI variable) but the slider instead.
