@@ -50,7 +50,8 @@ If in error, missing, etc then post a note about what is wrong in Boris' thread.
  
 
 ####'''diff'''<br />  
-to see what differs from default. This is handy to learn what the config GUI does with CLI settings.    
+To see what differs from default. This is handy to learn what the config GUI does with CLI settings.    
+This is also a better output for posting your CLI since then you post only setting that are different from the defaults instead of a 'dump' which outputs everything.
 
 ####'''feature SUPEREXPO_RATES'''<br />
 
