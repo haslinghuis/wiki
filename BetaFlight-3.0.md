@@ -121,3 +121,15 @@ Airmode also has a threshold for starting, and again, the moment you come over t
 Clear as mud?
 
 /Z
+
+- Notch Filters
+Need info. Jouhua?
+
+## Discussions on using the New configurator
+
+- measurement and error is now the d term slider thingy.
+all the way to the right is error, all the way to the left is measurement. can vary.
+scroll down under your PIDS.  
+BF PIDC does not use the dropdown for PID_DELTA_METHOD (or the CLI variable) but the slider instead.
+0 is like 2.9 measurement and 1 is like 2.9 Error.  
+
