@@ -123,7 +123,61 @@ Clear as mud?
 /Z
 
 - Notch Filters
-Need info. Jouhua?
+
+Explained by R.A.V.
+
+notch filter explanation
+
+Here's an explanation for the new notch filter in 3.0 with the new PR in mind. Maybe waltr knows best where to put something from it into the wiki.
+
+From wikipedia:
+
+Quote:
+In signal processing, a band-stop filter or band-rejection filter is a filter that passes most frequencies unaltered, but attenuates those in a specific range to very low levels. It is the opposite of a band-pass filter. A notch filter is a band-stop filter with a narrow stopband (high Q factor).
+
+The pid loop calculates an error from the current gyro rate and a set point and will command the motors to correct this error. There is a limit to how fast motors can react and it makes no sense to try to correct anything at high frequencies above 200Hz.
+This is why the lowpass filter was introduced. It will leave most frequencies below the cutoff value intact but it will already attenuate the cutoff frequency by -3dB. The attenuation will increase with higher frequency.
+Unfortunately some setups are so noisy that the attenuation will not be enough and the filter cutoff has to be set very low to 70Hz or 60Hz simply to get rid of the noise above 200Hz.
+This means that useful information between cutoff and 100Hz is lost. A lower cutoff also means a higher delay caused by the filter which is especially bad for dTerm and can cause more propwash.
+
+The notch filter is an additional filter which can be enabled for gyro data and dTerm data and will remove a lot of noise from the signal before feeding it into the lowpass filter.
+This way the cutoff value of the lowpass filter does not need to be lowered too much.
+A notch filter with a low bandwidth in combination with a lowpass filter with high cutoff will have less delay and less noise than a lowpass filter alone with low cutoff.
+
+By default the filter is disabled. It will be enabled when the center frequency is set.
+This can be adjusted with gyro_notch_hz while the cutoff frequency at the lower side can be adjusted with gyro_notch_cutoff
+For dTerm the settings are dterm_notch_hz and dterm_notch_cutoff.
+
+Center frequency should be the mean frequency of your motors, most likely somewhere between 200Hz and 300Hz.
+When setting the cutoff value you should avoid getting the filter's range below 100Hz. Keep in mind that the attenuation at this frequency is already -3dB.
+
+
+
+My very noisy copter with mean motor frequency at 250Hz runs very well with these settings:
+
+gyro_notch_hz = 250
+gyro_notch_cutoff = 130
+
+dterm_notch_hz = 250
+dterm_notch_cutoff = 130
+
+gyro_cutoff = 110
+dterm_lpf = 0
+yaw_lpf = 0
+
+This means that the notch filter will remove noise from gyro before the lowpass filter will improve the signal further.
+Because there is still some noise left in dTerm, another filter is needed. The notch filter alone is enough to remove the remaining noise in my case. It causes less latency than a lowpass filter and keeps the dTerm more in phase with pTerm.
+No filtering is required for yaw for my copter with filtered gyro.
+
+The notch filter requires some additional floating point math on each axis for gyro and dTerm so F1 targets might get slower with it enabled.
+In my opinion a properly setup notch filter can also help noise free copters, especially on dTerm.
+
+
+Without blackbox it will be very hard to determine the center motor frequency. I already looked into the current spectrum implementation of the viewer and will add an option to get the frequency easier. It does not need to be very precise though. I'd recommend to start with a center frequency of 200 - 250. Higher kv motors on 4s will create higher frequency noise than low kv on 3s.
+
+Cutoff describes the lower end of the filter response and should not be too low in order to reduce latency. I don't think anyone would need it to be lower than ~130.
+
+Here's a quick drawing of what the settings do.
 
 ## Discussions on using the New configurator
 
