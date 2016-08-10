@@ -151,8 +151,6 @@ For dTerm the settings are dterm_notch_hz and dterm_notch_cutoff.
 Center frequency should be the mean frequency of your motors, most likely somewhere between 200Hz and 300Hz.
 When setting the cutoff value you should avoid getting the filter's range below 100Hz. Keep in mind that the attenuation at this frequency is already -3dB.
 
-
-
 My very noisy copter with mean motor frequency at 250Hz runs very well with these settings:
 
 gyro_notch_hz = 250
@@ -178,6 +176,20 @@ Without blackbox it will be very hard to determine the center motor frequency. I
 Cutoff describes the lower end of the filter response and should not be too low in order to reduce latency. I don't think anyone would need it to be lower than ~130.
 
 Here's a quick drawing of what the settings do.
+
+Post by r.a.v. about a way to obtain data to evluate noise frequency for setting the Notch filter.
+For those who want to get precise noise analysis:
+You can "set debug_mode = notch" before flying. Make sure your blackbox logging rate is at least 1khz. The logging rate is based on pid-loop so 1/4 for 4k pid loop would be enough.
+
+The debug setting will log additional data to debug[0]-debug[3]:
+debug[0] is unfiltered and raw gyro data on roll axis.
+debug[1] is only notch filtered gyro data on roll axis.
+debug[2] is unfiltered and raw gyro data on pitch axis.
+debug[3] is only notch filtered gyro data on pitch axis.
+
+If the notch filter is disabled 0/1 and 2/3 will be identical.
+
+A new version of blackbox-explorer will allow to view the frequency spectrum of any recorded data. 
 
 ## Discussions on using the New configurator
 
