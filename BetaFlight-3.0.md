@@ -53,6 +53,9 @@ Be sure you type 'help' in the CLI to see all commands.
 To see what differs from default. This is handy to learn what the config GUI does with CLI settings.    
 This is also a better output for posting your CLI since then you post only setting that are different from the defaults instead of a 'dump' which outputs everything. 
 
+####diff all commented
+to see defaults
+
 ####feature SUPEREXPO_RATES<br />
 
 ####set rc_interpolation = AUTO<br />
