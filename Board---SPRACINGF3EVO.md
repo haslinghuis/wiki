@@ -26,14 +26,16 @@ The Seriously Pro Racing F3 EVO Flight Controller (SPRacingF3EVO) was designed t
 ### Features
   - Current Sensor: Ves
   - BlHeli passthrough: Yes
-  - WS2811 Led Strip: Yes
-  - Transponder: Yes
+  - WS2811 Led Strip: Yes ***
+  - Transponder: Yes ***
+
+*** You can only use Led Strip or Transponder, but not both together.
 
 ## Hardware Designs (if available)
 
 ## Manufacturers and Distributors
 
- Seriously Pro
+ [Seriously Pro](http://seriouslypro.com/)
 
 Available here: [Seriously Pro Shop](http://shop.seriouslypro.com/sp-racing-f3-evo)
 
