@@ -58,7 +58,7 @@ shows differences in all profiles and rate profiles
 to see defaults
 
 ####feature SUPEREXPO_RATES or feature -SUPEREXPO_RATES<br />
-Enables or disables the SuperExpo. If disabled as a Feature it can still be enable from a UAX (Mode tab) switch).
+Enables or disables the SuperExpo. If disabled as a Feature it can still be enable from a AUX (Mode tab) switch.
 
 ####set rc_interpolation = AUTO<br />
 <i>[OFF, PRESET, AUTO, MANUAL]</i><br />
