@@ -61,7 +61,7 @@ _(add links board descriptions here that are similar in features or function, bu
 _(add links to boards here that are similar in features or function, but use this target when flashing)_
 
 ## FAQ & Known Issues
-_(add FAQs, known issues and workarounds specifically related to this board. work in progress issues should link to the related github issue or pull request)_
+_(add FAQs, known issues and workarounds specifically related to this board. please link work in progress issues to the related github issue or pull request)_
 
 ## Other Resources
 _(add setup guides and instructional material here)_
