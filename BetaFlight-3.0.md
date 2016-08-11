@@ -111,6 +111,13 @@ You can for example remove yaw noise on this way till certain level, but you may
 
 ## Discussions on using the new features:
 
+####Betaflight 2DOF PID controller
+This is a NEW PIDC controller.  
+
+Post from Boris about this differences between the Legacy and 2DOF PIDC: 
+http://www.rcgroups.com/forums/showpost.php?p=35460572&postcount=35822
+
+
 ####PID control at Zero Throttle
 Originally Posted by MasterZap View Post
 Let me try to explain this in a clear way:
