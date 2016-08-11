@@ -70,4 +70,5 @@
  - [X_RACERSPI](/betaflight/betaflight/wiki/Board---X_RACERSPI)
  - [ZCOREF3](/betaflight/betaflight/wiki/Board---ZCOREF3)
 
- - [Template](/betaflight/betaflight/wiki/Board---Template)
+### Page Templates
+ - [New Board](/betaflight/betaflight/wiki/Board---Template)
