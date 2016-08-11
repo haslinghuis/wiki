@@ -19,16 +19,16 @@ The Seriously Pro Racing F3 EVO Flight Controller (SPRacingF3EVO) was designed t
   - Blackbox: MicroSD card slot (SD/SDHC, upto 32GB)
   - PPM/UART Shared: UART2
   - Battery Voltage Sensor: Yes
-  - Integrated Voltage Regulator: Yes, 3.3V 100mA max.
+  - Integrated Voltage Regulator: Yes (3.3V 100mA max. / 5.0V is also supplied when powering via USB)
   - Brushed Motor Mosfets: Yes
   - Buttons: No
 
 ### Features
   - PPM only: Yes
-  - RSSI: Yes, Analog and PWM
+  - RSSI: Yes (Analog/PWM)
   - Buzzer: Yes
   - Telemetry port: Yes
-  - Spektrum Satellite Receivers: Yes, Connector supplied
+  - Spektrum Satellite Receivers: Yes (Connector supplied)
   - Current Sensor: Yes
   - BlHeli passthrough: Yes
   - WS2811 Led Strip: Yes**
