@@ -46,13 +46,13 @@ Available here: [Seriously Pro Shop](http://shop.seriouslypro.com/sp-racing-f3-e
 
 ## Designers
 
-Hardware design by [Dominic Clifton](https://github.com/hydra)
+Hardware design by [Dominic Clifton](https://github.com/hydra).
 
 ## Maintainers
 
-[Cleanflight firmware](https://github.com/cleanflight/cleanflight/releases) and [GUI tools](https://chrome.google.com/webstore/detail/cleanflight-configurator/enacoimjcgeinfnnnpajinjgmkahmfgb) are maintained by [Dominic Clifton](https://github.com/hydra)
+[Cleanflight firmware](https://github.com/cleanflight/cleanflight/releases) and [GUI tools](https://chrome.google.com/webstore/detail/cleanflight-configurator/enacoimjcgeinfnnnpajinjgmkahmfgb) are maintained by [Dominic Clifton](https://github.com/hydra).
 
-[Betaflight firmware](https://github.com/betaflight/betaflight/releases) are maintained by [Boris B](https://github.com/borisbstyle)
+[Betaflight firmware](https://github.com/betaflight/betaflight/releases) and [GUI tools](https://chrome.google.com/webstore/detail/betaflight-configurator/kdaghagfopacdngbohiknlhcocjccjao) are maintained by [Boris B](https://github.com/borisbstyle).
 
 ## Similar Targets
 _(add links board descriptions here that are similar in features or function, but have a separate target)_
