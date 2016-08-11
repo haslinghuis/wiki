@@ -1,6 +1,6 @@
 `instructions: remove or replace all code comments (backticks). follow italic directions and leave or remove when updated`
 
-# KISSFC
+# TEMPLATE
 
 `tagline`
 
