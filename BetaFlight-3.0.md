@@ -217,6 +217,7 @@ The debug setting will log additional data to debug[0]-debug[3]:
 * debug[3] is only notch filtered gyro data on pitch axis.
 
 If the notch filter is disabled 0/1 and 2/3 will be identical. Otherwise you can directly see what the filter does.
+More details on phase shift for example can be found here: https://github.com/betaflight/betaflight/pull/668
 
 ####roll/yaw cam mix
 from FieserKiller  
