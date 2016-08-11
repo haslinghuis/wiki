@@ -44,6 +44,7 @@ Available here: http://shop.myairbot.com/index.php/flight-control/cleanflight-ba
 [Airbot](https://myairbot.com) and [Nathan](https://github.com/nathantsoi)
 
 ## Maintainers
+_(add your name here if you help test or contribute code for this board)_
 
 [Nathan](https://github.com/nathantsoi)
 
@@ -51,7 +52,7 @@ Available here: http://shop.myairbot.com/index.php/flight-control/cleanflight-ba
 
 _(add links board descriptions here that are similar in features or function, but have a separate target)_
 
-- SirinFPV (BFOSD)
+- [SirinFPV](/betaflight/betaflight/wiki/Board---SIRINFPV) (BFOSD)
 
 ## Variants
 
