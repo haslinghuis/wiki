@@ -57,6 +57,9 @@ _(add links board descriptions here that are similar in features or function, bu
 
 _(add links to boards here that are similar in features or function, but use this target when flashing)_
 
+## FAQ & Known Issues
+_(add FAQs, known issues and workarounds specifically related to this board. please link work in progress issues to the related github issue or pull request)_
+
 ## Other Resources
 
 Setup Guide: https://nathan.vertile.com/blog/2016/07/07/omnibus-typhoon-miniquad/
