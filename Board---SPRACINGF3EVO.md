@@ -57,4 +57,10 @@ _(add FAQs, known issues and workarounds specifically related to this board. ple
 ## Other Resources
 _(add setup guides and instructional material here)_
 
+Manual: [SPRacingF3EVO PDF manual](http://seriouslypro.com/files/SPRacingF3EVO-Manual-latest.pdf)
+
 Rcgroups Thread: [SPRacingF3EVO flight controller - CHEAP! F3/SDCard Socket/Race Transponder](http://www.rcgroups.com/forums/showthread.php?t=2641205)
+
+## Image
+
+![](http://shop.seriouslypro.com/pub/media/catalog/product/cache/1/image/e9c3970ab036de70892d86c6d221abfe/i/m/img_9310-web.jpg)
