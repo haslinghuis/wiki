@@ -1116,6 +1116,9 @@ https://www.youtube.com/watch?v=cttFDHkec0c
 ##I get Yaw twitches or mid-throttle oscillations How do I solve this?
 Many people have yaw twitches or oscillations at mid-throttle and many do not. All that have this issue seem to be running FCs that use the MPU6500 gyro chip (Naze32 rev6, LUX, others) and newer motors. Boris B was one that did not have this issue with the 6500 gyro until he upgraded to newer, stronger motors. Many have cured this by soft mounting the FC board but this has not worked in all cases.
 
+Link to a thread with data on the MPU9250 gyro:
+http://www.rcgroups.com/forums/showthread.php?t=2718308#post35460394
+
 Much discussion and experimenting is showing that this is an issue with both mechanical and electrical noise getting into the gyro and effecting the Yaw. Following is some of the discussion.
 
 ####Post from Boris  
