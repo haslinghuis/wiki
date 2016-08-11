@@ -195,11 +195,20 @@ Without blackbox it will be very hard to determine the center motor frequency. I
 
 Cutoff describes the lower end of the filter response and should not be too low in order to reduce latency. I don't think anyone would need it to be lower than ~130.
 
-Here's a quick drawing of what the settings do.
 
-Post by r.a.v. about a way to obtain data to evluate noise frequency for setting the Notch filter.
-For those who want to get precise noise analysis:
-You can "set debug_mode = notch" before flying. Make sure your blackbox logging rate is at least 1khz. The logging rate is based on pid-loop so 1/4 for 4k pid loop would be enough.
+#### How to obtain data to evaluate noise frequency for setting the Notch filter.
+1. Use this setting: "set debug_mode = notch"
+Make sure your blackbox logging rate is at least 1khz. The logging rate is based on pid-loop so 1/4 for 4k pid loop would be enough.
+2. Fly as usual
+3. Open your log in blackbox analyzer
+4. Add all debug options to your graph setup
+5. Click on debug[0]
+6. Make the graph fullscreen (next to playback options)
+7. You can now see where your motor noise is most significant
+
+Two images showing how to view the spectrum and the result of the notch filter.
+![How to view Spectrum](https://cloud.githubusercontent.com/assets/17462561/17593758/43dbdefa-5fe7-11e6-9fa5-bd8e5f54e710.jpg)
+![Filter result](https://cloud.githubusercontent.com/assets/17462561/17593764/45ec1a84-5fe7-11e6-80fd-861efeb56827.jpg)
 
 The debug setting will log additional data to debug[0]-debug[3]:
 debug[0] is unfiltered and raw gyro data on roll axis.
@@ -207,9 +216,7 @@ debug[1] is only notch filtered gyro data on roll axis.
 debug[2] is unfiltered and raw gyro data on pitch axis.
 debug[3] is only notch filtered gyro data on pitch axis.
 
-If the notch filter is disabled 0/1 and 2/3 will be identical.
-
-A new version of blackbox-explorer will allow to view the frequency spectrum of any recorded data. 
+If the notch filter is disabled 0/1 and 2/3 will be identical. Otherwise you can directly see what the filter does.
 
 ####roll/yaw cam mix
 from FieserKiller  
