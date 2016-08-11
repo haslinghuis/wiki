@@ -52,6 +52,9 @@ _(add links board descriptions here that are similar in features or function, bu
 ## Variants
 _(add links to boards here that are similar in features or function, but use this target when flashing)_
 
+## FAQ & Known Issues
+_(add FAQs, known issues and workarounds specifically related to this board. please link work in progress issues to the related github issue or pull request)_
+
 ## Other Resources
 
 Pinouts, schematics and RX wiring: http://nathan.vertile.com/blog/2016/07/29/betaflight-kiss-flight-controller/#pinout
