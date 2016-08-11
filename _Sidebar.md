@@ -1,4 +1,32 @@
+# [Home](/betaflight/betaflight/wiki)
+
+# Gettings Started
+
+ - [Installation](/betaflight/betaflight/wiki/Installing-Betaflight)
+ - [FAQ](/betaflight/betaflight/wiki/Frequently-Asked-Questions)
+ - [3D Setup](/betaflight/betaflight/wiki/3D-Setup)
+
+# Upgrading
+
+ - [Betaflight 3.0](/betaflight/betaflight/wiki/BetaFlight-3.0)
+ - [New release! What do I need to know?](/betaflight/betaflight/wiki/New-release!-What-do-I-need-to-know%3F)
+
+# Tuning and More
+
+ - [PID Tuning Guide](/betaflight/betaflight/wiki/PID-Tuning-Guide)
+ - [Rate-Calculator](/betaflight/betaflight/wiki/Rate-Calculator)
+ - [Gyro and Filters](/betaflight/betaflight/wiki/Gyro-&-Dterm-filtering-recommendations)
+ - [Flying Tips](/betaflight/betaflight/wiki/Flying-Tips)
+ - [Betaflight Deep Dive](/betaflight/betaflight/wiki/BetaFlight-Deep-Dive)
+ - [BetaFlight CLI Commands](/betaflight/betaflight/wiki/Betaflight-specific-CLI-commands)
+
+# Development
+
+ - [Known Build Environment Problems](/betaflight/betaflight/wiki/Known-Build-Environment-Problems)
+ - [Mac OS X Hex File Development](/betaflight/betaflight/wiki/Mac-OS-X-Hex-File-Development)
+
 # Boards
+
  - [AIORACERF3](/betaflight/betaflight/wiki/Board---AIORACERF3)
  - [AIR32](/betaflight/betaflight/wiki/Board---AIR32)
  - [ALIENFLIGHTF1](/betaflight/betaflight/wiki/Board---ALIENFLIGHTF1)
