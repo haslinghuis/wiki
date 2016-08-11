@@ -173,15 +173,15 @@ When setting the cutoff value you should avoid getting the filter's range below 
 
 My very noisy copter with mean motor frequency at 250Hz runs very well with these settings:
 
-gyro_notch_hz = 250
-gyro_notch_cutoff = 130
+    gyro_notch_hz = 250
+    gyro_notch_cutoff = 130
 
-dterm_notch_hz = 250
-dterm_notch_cutoff = 130
+    dterm_notch_hz = 250
+    dterm_notch_cutoff = 130
 
-gyro_cutoff = 110
-dterm_lpf = 0
-yaw_lpf = 0
+    gyro_cutoff = 110
+    dterm_lpf = 0
+    yaw_lpf = 0
 
 This means that the notch filter will remove noise from gyro before the lowpass filter will improve the signal further.
 Because there is still some noise left in dTerm, another filter is needed. The notch filter alone is enough to remove the remaining noise in my case. It causes less latency than a lowpass filter and keeps the dTerm more in phase with pTerm.
@@ -211,10 +211,10 @@ Two images showing how to view the spectrum and the result of the notch filter.
 ![Filter result](https://cloud.githubusercontent.com/assets/17462561/17593764/45ec1a84-5fe7-11e6-80fd-861efeb56827.jpg)
 
 The debug setting will log additional data to debug[0]-debug[3]:
-debug[0] is unfiltered and raw gyro data on roll axis.
-debug[1] is only notch filtered gyro data on roll axis.
-debug[2] is unfiltered and raw gyro data on pitch axis.
-debug[3] is only notch filtered gyro data on pitch axis.
+* debug[0] is unfiltered and raw gyro data on roll axis.
+* debug[1] is only notch filtered gyro data on roll axis.
+* debug[2] is unfiltered and raw gyro data on pitch axis.
+* debug[3] is only notch filtered gyro data on pitch axis.
 
 If the notch filter is disabled 0/1 and 2/3 will be identical. Otherwise you can directly see what the filter does.
 
