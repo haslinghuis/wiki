@@ -53,7 +53,7 @@
 1. [What is the difference in PIDC Iterm in ßF versions ?](#what-is-the-difference-in-PIDC-Iterm-in-ßF-versions-)
 1. [How to setup blackbox record rate with onboard dataflash ?](#how-to-setup-blackbox-record-rate-with-onboard-dataflash-)
 1. [How to setup the rates and SuperExpo in ßF 2.8.1?](#how-to-setup-the-rates-and-SuperExpo-in-ßF-2.8.1-)
-1. [I get Yaw twitches or mid-throttle oscillations. How do I solve this?](#I-get-Yaw-twitches-or-mid-throttle oscillations.-How-do-I-solve-this-)
+1. [I get Yaw twitches or mid-throttle oscillations. How do I solve this?](#i-get-yaw-twitches-or-mid-throttle oscillations-how-do-I-solve-this-)
 
 **If your question is not listed above then please check the following pages:**
 
@@ -1113,7 +1113,7 @@ RC Slater is online now Send a private message to RC Slater Find More Posts by R
 Video from Joshua Bardwell:
 https://www.youtube.com/watch?v=cttFDHkec0c
 
-##I get Yaw twitches or mid-throttle oscillations. How do I solve this?
+##I get Yaw twitches or mid-throttle oscillations How do I solve this?
 Many people have yaw twitches or oscillations at mid-throttle and many do not. All that have this issue seem to be running FCs that use the MPU6500 gyro chip (Naze32 rev6, LUX, others) and newer motors. Boris B was one that did not have this issue with the 6500 gyro until he upgraded to newer, stronger motors. Many have cured this by soft mounting the FC board but this has not worked in all cases.
 
 Much discussion and experimenting is showing that this is an issue with both mechanical and electrical noise getting into the gyro and effecting the Yaw. Following is some of the discussion.
@@ -1235,3 +1235,24 @@ I'm using KISS esc and mine is flyable, but there is noticeable mid level oscill
 get it still even with P's down around 2.
 
 both of us are running GTINpower 2205. nice motors but powerrrr hungry  
+
+#### Post by Tony Leyland
+
+On my Alien build I also experience mid-throttle "vibrations" and have tried extensive tuning on BF 2.9.0 and also soft mounting the FC with no luck.
+
+I run the following:
+EMAX 2205 2300KV
+HQ 5" Tri-blades
+KISS 24A ESCs V1.1
+Dodo V3a FC
+RC filter to the FC & RX
+Turnigy Graphene 1300
+
+I see it in the Black Box traces in particular on the Yaw axis.
+
+At first I wondered if it was the KISS ESC firmware, but have not flashed them yet - awaiting V1.3 to come out.
+
+People are saying this occurs at mid throttle but in my case I believe it to be when the copter's power system is stressed the most. That is when the copter undergoes rapid acceleration and current consumption is at it's highest amount. I can hover at high altitude at mid throttle but don't see the vibrations in the FPV feed or HD footage.
+
+I'm going to try the capacitor near the batter lead next and update you guys.
+
