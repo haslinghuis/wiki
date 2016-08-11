@@ -1,4 +1,9 @@
-`instructions: remove or replace all code comments (backticks). follow italic directions and leave or remove when updated`
+```
+Instructions: remove or replace all code comments (backticks).
+Follow italic directions and leave or remove when updated
+Add your board to the list in the sidebar, double check the whole list if you want, with:
+  find src/main/target/ -type d|xargs basename |tail -n +2
+```
 
 # TEMPLATE
 
