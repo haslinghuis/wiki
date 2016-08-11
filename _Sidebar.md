@@ -69,3 +69,5 @@
  - [VRRACE](/betaflight/betaflight/wiki/Board---VRRACE)
  - [X_RACERSPI](/betaflight/betaflight/wiki/Board---X_RACERSPI)
  - [ZCOREF3](/betaflight/betaflight/wiki/Board---ZCOREF3)
+
+ - [Template](/betaflight/betaflight/wiki/Board---Template)
