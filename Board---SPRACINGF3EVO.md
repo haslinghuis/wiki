@@ -24,7 +24,8 @@ The Seriously Pro Racing F3 EVO Flight Controller (SPRacingF3EVO) was designed t
   - Buttons: No
 
 ### Features
-  - Current Sensor: Ves
+  - Buzzer: Yes
+  - Current Sensor: Yes
   - BlHeli passthrough: Yes
   - WS2811 Led Strip: Yes ***
   - Transponder: Yes ***
