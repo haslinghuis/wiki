@@ -225,6 +225,8 @@ Note that its not active permanently in this version of BF any more. You have to
 
 ## Discussions on using the New configurator
 
+There are ? marks next to many of the setting Fields. Mouse Over these for a short Explanation of what they do.  
+
 - measurement and error is now the d term slider thingy.
 all the way to the right is error, all the way to the left is measurement. can vary.
 scroll down under your PIDS.  
