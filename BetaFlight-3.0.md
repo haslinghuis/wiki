@@ -200,7 +200,7 @@ Cutoff describes the lower end of the filter response and should not be too low 
 1. Use this setting: "set debug_mode = notch"
 Make sure your blackbox logging rate is at least 1khz. The logging rate is based on pid-loop so 1/4 for 4k pid loop would be enough.
 2. Fly as usual
-3. Open your log in blackbox analyzer
+3. Open your log in blackbox analyzer from here https://github.com/betaflight/blackbox-log-viewer
 4. Add all debug options to your graph setup
 5. Click on debug[0]
 6. Make the graph fullscreen (next to playback options)
