@@ -1,7 +1,13 @@
 ##BetaFlight 3.0  
-3.0 RC5 is out. This version has many changes in the under laying code so has its own section.  
+3.0 is out. This version has many changes in the under laying code so has its own section.  
 
 Plan here to to list and explain only the differences from the previous 2.x version.
+
+Betaflight is a genuine Open Source project with people all over the entire world contributing to the code. It is not just me!
+This 3.0 release had about 15-25 very talented developers involved working day and night for last 2 months.
+I really want to thank everyone who was involved and help me and others to learn more and to make this all happen.
+So many great ideas were born during last week that we can keep developing for upcoming months. 
+Boris
 
 From Boris for those just trying 3.0:  
 Just use things available in the configurator and leave the rest on default.
