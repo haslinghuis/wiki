@@ -1,7 +1,8 @@
 # BLUEJAYF4 (including mini)
 
 Beautifully simple STM32F4 based flightcontroller. An F4 replacement for the Naze.
-![BlueJayF4 - rev2](https://cloud.githubusercontent.com/assets/6168871/17614346/01cef75a-60a9-11e6-93f9-16248d6def11.jpg)
+
+![BlueJayF4 - rev3](https://cloud.githubusercontent.com/assets/6168871/17614562/ac35c8ee-60aa-11e6-8fd1-6457ee934784.jpg)
 
 ## Description
 
@@ -38,6 +39,18 @@ The hardware is currently closed source. It may be in the future that these will
 
 BlueJayF4 rev1, 2 and 3 - including mini.
 
+Rev3 (mini) - including accompanying PDB
+![bluejayf4-mini](https://cloud.githubusercontent.com/assets/6168871/17614560/ac145f92-60aa-11e6-8e4b-c448164bb988.jpg)
+
+Rev3 (Full Size)
+![BlueJayF4 - rev3](https://cloud.githubusercontent.com/assets/6168871/17614562/ac35c8ee-60aa-11e6-8fd1-6457ee934784.jpg)
+
+![BlueJayF4 - rev3 - bottom](https://cloud.githubusercontent.com/assets/6168871/17614561/ac33b9e6-60aa-11e6-8d12-87a02691a7c7.jpg)
+
+![soldered-pololu](https://cloud.githubusercontent.com/assets/6168871/17614559/abe4d650-60aa-11e6-8c85-93ed35a8b04f.jpg)
+
+Rev2 (Full Size)
+![BlueJayF4 - rev2](https://cloud.githubusercontent.com/assets/6168871/17614346/01cef75a-60a9-11e6-93f9-16248d6def11.jpg)
 ## FAQ & Known Issues
 
 Serial Wire Debug output is located on the bottom of the board, and provides a pin out compatible with STM32Fx discovery boards to be used as a SWD adapter:
