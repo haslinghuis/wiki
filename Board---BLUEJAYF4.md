@@ -47,8 +47,6 @@ Rev3 (Full Size)
 
 ![BlueJayF4 - rev3 - bottom](https://cloud.githubusercontent.com/assets/6168871/17614561/ac33b9e6-60aa-11e6-8d12-87a02691a7c7.jpg)
 
-![soldered-pololu](https://cloud.githubusercontent.com/assets/6168871/17614559/abe4d650-60aa-11e6-8c85-93ed35a8b04f.jpg)
-
 Rev2 (Full Size)
 ![BlueJayF4 - rev2](https://cloud.githubusercontent.com/assets/6168871/17614346/01cef75a-60a9-11e6-93f9-16248d6def11.jpg)
 ## FAQ & Known Issues
@@ -63,6 +61,7 @@ Following the picture below to perform the Rev2 resistor modification:
 ![resistor-mod](https://cloud.githubusercontent.com/assets/6168871/17614652/3daa257c-60ab-11e6-8567-ab51625e8e89.png)
 
 The rev2 onboard regulator is limited in current capacity, and has been replaced with a pololu piggy back option for greater flexibility.
+![soldered-pololu](https://cloud.githubusercontent.com/assets/6168871/17614559/abe4d650-60aa-11e6-8c85-93ed35a8b04f.jpg)
 
 ## Other Resources
 
