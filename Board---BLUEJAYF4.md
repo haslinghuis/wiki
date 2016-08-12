@@ -33,13 +33,13 @@ Two variants (in multiple revisions). The full size, 36x36mm (30.5x30.5 mounting
 
 ## Manufacturers and Distributors
 
-These boards (full and mini) are currently being manufactured in limited batches and is available at some online RC stores, and directly from the manufacturers.  
+These boards (full and mini) are currently being manufactured in limited batches and is available at some online RC stores, and directly from the manufacturer BlueJayRC.  
 
 Available here: [BlueJayRC.com](https://bluejayrc.com)
 
 ## Hardware Designs (if available)
 
-The hardware is currently closed source. It may be in the future that these will be made available.
+The hardware is currently closed source. It may be in the future that older revisions will be made publicly available.
 
 ## Variants
 
