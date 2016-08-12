@@ -18,6 +18,7 @@ Make sure you have zadig if you're using Windows to enable the DFU driver. Instr
 1. After the install completes, restart your computer (you can cheat and ensure no browser is running - but it is not guaranteed to work). The board should stay in DFU mode - IF - usb power remains during the reboot. If not, execute step 2 again.
 1. Open up the Betaflight configurator.
 1. Go to firmware flasher, select "No reboot sequence"
+1. On F4 targets disable "Full Chip Erase". Use the config reset in Configurator later. ([#200](https://github.com/betaflight/betaflight-configurator/issues/200) reports the issue.)
 1. Load Firmware [Local]
 1. Browse to and select the proper hex file. (betaflight_REVO.hex for the revo, for example)
 1. Click flash firmware.
