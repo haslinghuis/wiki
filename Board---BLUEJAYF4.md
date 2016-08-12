@@ -31,6 +31,12 @@ Two variants (in multiple revisions). The full size, 36x36mm (30.5x30.5 mounting
   - WS2811 Led Strip: Yes (on motor output Pin 6)
   - Transponder: No
 
+## Manufacturers and Distributors
+
+These boards (full and mini) are currently being manufactured in limited batches and is available at some sites, and directly from the manufacturers.  
+
+Available here: [BlueJayRC.com](https://bluejayrc.com)
+
 ## Hardware Designs (if available)
 
 The hardware is currently closed source. It may be in the future that these will be made available.
