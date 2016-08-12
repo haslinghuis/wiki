@@ -1,6 +1,7 @@
 # BLUEJAYF4 (including mini)
 
 Beautifully simple STM32F4 based flightcontroller. An F4 replacement for the Naze.
+![BlueJayF4 - rev2](https://cloud.githubusercontent.com/assets/6168871/17614346/01cef75a-60a9-11e6-93f9-16248d6def11.jpg)
 
 ## Description
 
@@ -39,6 +40,10 @@ BlueJayF4 rev1, 2 and 3 - including mini.
 
 ## FAQ & Known Issues
 
+Serial Wire Debug output is located on the bottom of the board, and provides a pin out compatible with STM32Fx discovery boards to be used as a SWD adapter:
+![bjf4-swd](https://cloud.githubusercontent.com/assets/6168871/17614348/066cf4d8-60a9-11e6-89f3-c439c5654ba2.jpg)
+
+Known Issues:
 The rev2 requires a resistor mod to prevent the issue of crashing on power up. The rev3 does not have this issue.
 The rev2 onboard regulator is limited in current capacity, and has been replaced with a pololu piggy back option for greater flexibility.
 
