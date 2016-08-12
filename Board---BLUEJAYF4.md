@@ -58,6 +58,10 @@ Serial Wire Debug output is located on the bottom of the board, and provides a p
 
 Known Issues:
 The rev2 requires a resistor mod to prevent the issue of crashing on power up. The rev3 does not have this issue.
+
+Following the picture below to perform the Rev2 resistor modification:
+![resistor-mod](https://cloud.githubusercontent.com/assets/6168871/17614652/3daa257c-60ab-11e6-8567-ab51625e8e89.png)
+
 The rev2 onboard regulator is limited in current capacity, and has been replaced with a pololu piggy back option for greater flexibility.
 
 ## Other Resources
