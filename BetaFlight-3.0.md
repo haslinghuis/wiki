@@ -144,13 +144,11 @@ Clear as mud?
 
 ####Notch Filters
 
-Explained by R.A.V.
-
-notch filter explanation
-
-A Video from Joshua Bardwell on Notch filtering:
+notch filter explanations
+A Video from Joshua Bardwell on Notch filtering:  
 https://www.youtube.com/watch?v=UQOqYOBSCc8
 
+Explained by R.A.V.  
 Here's an explanation for the new notch filter in 3.0 with the new PR in mind. Maybe waltr knows best where to put something from it into the wiki.
 
 From wikipedia:
