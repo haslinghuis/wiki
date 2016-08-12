@@ -221,6 +221,9 @@ The debug setting will log additional data to debug[0]-debug[3]:
 If the notch filter is disabled 0/1 and 2/3 will be identical. Otherwise you can directly see what the filter does.
 More details on phase shift for example can be found here: https://github.com/betaflight/betaflight/pull/668
 
+Post by ctzsnooze  
+All filters add delay. Doubling slope on an IIR LPF doubles delay since the same 1st order filter is simply applied twice. None currently are FIR. FIR were evaluated and not as good as simple IIR. Dterm is IIR, gyro cut was biquad (i think it still is). There is a recent post about the notch filter that linked to the GitHub page where the Notch was discussed before implementation. Diagrams there show delay for different filter combinations. Lots of thought has gone into current filter design. 
+
 ####roll/yaw cam mix
 from FieserKiller  
 Note that its not active permanently in this version of BF any more. You have to configure it in modes tab. I've bound it to a switch so I can finally let my buddys fly my quad without crashing due to unfamiliar controls.   
