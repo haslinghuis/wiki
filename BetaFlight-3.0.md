@@ -1,7 +1,10 @@
 ##BetaFlight 3.0  
-3.0 is out. This version has many changes in the under laying code so has its own section.  
+This is really a major release. The full detailed change list can be found in the the commit history.
+https://github.com/betaflight/betaflight/commits/master.  
 
-Plan here to to list and explain only the differences from the previous 2.x version.
+This version has many changes in the under laying code so has its own section.  
+
+Plan here to to list and explain only the differences from the previous 2.x versions.
 
 Betaflight is a genuine Open Source project with people all over the entire world contributing to the code. It is not just me!
 This 3.0 release had about 15-25 very talented developers involved working day and night for last 2 months.
@@ -18,9 +21,7 @@ Betaflight has 2 different goals.
 2) from scientific point of view it is good to keep improving and introduce new features where those who like to experiment can play with ans give valuable feedback. These are mostly burried in the cli   
 
 
-##Betaflight 3.0.0-RC6
-
-Betaflight 3.0.0-RC5 (F4 Support)
+##Betaflight 3.0.0-RC7 (F4 Support)
 
 This is really a major release. The full detailled change list can be found in the the commit history.
 https://github.com/betaflight/betaflight/commits/master
@@ -43,6 +44,7 @@ RC3 - Defaults based on feedback // yaw_axis added to interpolation // add addit
 RC4 - Defaults based on new public tests // Fixed some wrong denom defaults for SPI targets
 *RC5 - Defaults based on new public tests // Fix for higher CPU due to filter reinitialisations // Add Sparky2 // Fixes for various targets *
 *RC6 - Defaults // rename zero throttle stabilisation to pid_at_min_throttle // CLI cleanups *  
+*RC7 - Fix F4 diff/dump crashes // Fix for Sparky2 // Fix for d filter coefficients bug with higher pid denoms // Add new blackbox headers *
 
 New 1.7.1 configurator supports some additional tuning parameters. Don't fotget to check tooltips for explainations!
 
