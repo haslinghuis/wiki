@@ -144,7 +144,8 @@ Clear as mud?
 
 ####Notch Filters
 
-notch filter explanations
+notch filter explanations  
+
 A Video from Joshua Bardwell on Notch filtering:  
 https://www.youtube.com/watch?v=UQOqYOBSCc8
 
