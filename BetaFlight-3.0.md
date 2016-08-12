@@ -147,7 +147,10 @@ Clear as mud?
 notch filter explanations  
 
 A Video from Joshua Bardwell on Notch filtering:  
-https://www.youtube.com/watch?v=UQOqYOBSCc8
+https://www.youtube.com/watch?v=UQOqYOBSCc8  
+
+A short video demonstrating with and without Notch filter from Robogenisis
+https://youtu.be/ic6Np86Jsrs
 
 Explained by R.A.V.  
 Here's an explanation for the new notch filter in 3.0 with the new PR in mind. Maybe waltr knows best where to put something from it into the wiki.
