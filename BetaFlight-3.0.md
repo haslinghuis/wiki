@@ -44,7 +44,9 @@ RC3 - Defaults based on feedback // yaw_axis added to interpolation // add addit
 RC4 - Defaults based on new public tests // Fixed some wrong denom defaults for SPI targets
 *RC5 - Defaults based on new public tests // Fix for higher CPU due to filter reinitialisations // Add Sparky2 // Fixes for various targets *
 *RC6 - Defaults // rename zero throttle stabilisation to pid_at_min_throttle // CLI cleanups *  
-*RC7 - Fix F4 diff/dump crashes // Fix for Sparky2 // Fix for d filter coefficients bug with higher pid denoms // Add new blackbox headers *
+*RC7 - Fix F4 diff/dump crashes // Fix for Sparky2 // Fix for d filter coefficients bug with higher pid denoms // Add new blackbox headers * 
+
+The ones who are trying a notch filter on pre RC7 releases and using separate gyro ans pid rate/denom you must upgrade to RC7 as there was a bug in coefficient calculation. 
 
 New 1.7.1 configurator supports some additional tuning parameters. Don't fotget to check tooltips for explainations!
 
