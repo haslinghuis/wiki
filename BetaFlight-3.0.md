@@ -217,7 +217,7 @@ Make sure your blackbox logging rate is at least 1khz. The logging rate is based
 2. Fly as usual
 3. Open your log in blackbox analyzer from here https://github.com/betaflight/blackbox-log-viewer
 4. Add all debug options to your graph setup
-5. Click on debug[0]
+5. Click on debug[0]  Note: This action of clicking on the graph section traces to the right will show the analyzer screen :D 
 6. Make the graph fullscreen (next to playback options)
 7. You can now see where your motor noise is most significant
 
@@ -233,6 +233,9 @@ The debug setting will log additional data to debug[0]-debug[3]:
 
 If the notch filter is disabled 0/1 and 2/3 will be identical. Otherwise you can directly see what the filter does.
 More details on phase shift for example can be found here: https://github.com/betaflight/betaflight/pull/668
+
+Post by r.a.v.
+You can view earlier BB logs (pre BF 3.0) but the analyzer won't know at which rate it was recorded. This will probably result in a correct looking spectrum but with incorrect frequency labels. Clicking on the traces on the Graph section to the right will show the analyzer screen.
 
 Post by ctzsnooze  
 All filters add delay. Doubling slope on an IIR LPF doubles delay since the same 1st order filter is simply applied twice. None currently are FIR. FIR were evaluated and not as good as simple IIR. Dterm is IIR, gyro cut was biquad (i think it still is). There is a recent post about the notch filter that linked to the GitHub page where the Notch was discussed before implementation. Diagrams there show delay for different filter combinations. Lots of thought has gone into current filter design. 
