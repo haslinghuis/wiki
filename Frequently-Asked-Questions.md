@@ -948,6 +948,7 @@ Having all the Flight Controllers listed here (and their associated HEX/BIN) sho
 |[Lumenier LUX](http://www.getfpv.com/lumenier-lux-flight-controller.html)|LUX_RACE|
 |[Motolab Tornado](http://impulserc.com/motolab-tornadofc-stm32f3-flight-controller)|MOTOLAB|
 |[Motolab Cyclone](http://impulserc.com/motolab-cyclone-stm32f3-flight-controller)|MOTOLAB|
+|[Motolab Tempest](https://www.multirotorparts.nl/electronics/flightcontrollers/motolab-tempest-f3-flightcontroller-with-pdb.html)|MOTOLAB|
 |[Naze32 Acro](https://www.nextfpv.com.au/products/naze-acro-flight-controller-white-genuine)|NAZE|
 |[Naze32 Full](https://www.nextfpv.com.au/products/naze-32-flight-controllerred)|NAZE|
 |[OpenPilot CC3D](http://www.getfpv.com/openpilot-cc3d-flight-controller-straight-pins.html)|CC3D_OPBL|
