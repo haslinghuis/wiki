@@ -1261,3 +1261,9 @@ At first I wondered if it was the KISS ESC firmware, but have not flashed them y
 People are saying this occurs at mid throttle but in my case I believe it to be when the copter's power system is stressed the most. That is when the copter undergoes rapid acceleration and current consumption is at it's highest amount. I can hover at high altitude at mid throttle but don't see the vibrations in the FPV feed or HD footage.
 
 I'm going to try the capacitor near the batter lead next and update you guys.
+
+
+Post by fftunes   
+Just another small report of electrical noise: Friend built another all new quad with naze r6 which produced a weird high frequency hum, no matter what filters/PID etc were set to.
+
+A single cap (35v 470uf) to the pdb fixed it. 
