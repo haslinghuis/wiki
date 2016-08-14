@@ -1263,7 +1263,7 @@ People are saying this occurs at mid throttle but in my case I believe it to be 
 I'm going to try the capacitor near the batter lead next and update you guys.
 
 
-Post by fftunes   
+#### Post by fftunes   
 Just another small report of electrical noise: Friend built another all new quad with naze r6 which produced a weird high frequency hum, no matter what filters/PID etc were set to.
 
 A single cap (35v 470uf) to the pdb fixed it. 
