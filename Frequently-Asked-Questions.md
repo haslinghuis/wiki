@@ -1271,3 +1271,6 @@ A single cap (35v 470uf) to the pdb fixed it.
 #### Post by jubifly
 Had similar problems on my build. I tried both, limiting possible electrical noise with capacitors and mechanical vibrations by softmounting the FC with some rubber o-rings. Both with no luck. I then tried to remove the FC completely from fixed parts at the frame and left it hanging in the air (just the motor and rx wires) and the yaw twitches disappeared. My thoughts on that were that the rubber rings were not applicable (maybe too hard?!) for softmounting...
 Maybe try leave the FC dangling in the air and see if it still happens - just to definitely eliminate the possibility of mechaninacal noise being the issue.
+
+#### Here is a post from ctzsnooze on a better soft-mounting method.
+http://www.rcgroups.com/forums/showpost.php?p=35486733&postcount=36111
