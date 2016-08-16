@@ -94,6 +94,11 @@ Yaw rate accel limit is the betaflight pidc replacement for yaw jump prevention.
 What we do with sticks is pushing the multirotors beyond their limits, but pid controller still wants to correct that and ramps up the motors what causes jerky behavior. With accel limits the pid controller has a protection to limit the acceleration and make it smoother what also helps against iterm windups we have seen getting worse on yaw axis.
 Same can also be done for roll and pitch axis what is disabled by default. It can give much smoother flight characteristics.
 
+####set gyro_lowpass_level = HIGH<br /> 
+<i>[NORMAL, HIGH]</i><br />
+ Sets how aggressive/steep the cutoff is. Steeper cutoff adds more delay compared to less steep one.  
+Boris states: "The gyro doesnt need a very steep cut if you ask me on a descent setup, while dterm is the one what needs more filtering".  
+
 ### The following CLI commands are Per PROFILE so can be different in each Profile.  
 
 ####set pid_tolerance_band = 0<br />
@@ -110,6 +115,8 @@ You can for example remove yaw noise on this way till certain level, but you may
 
 ####set dterm_lowpass_level = HIGH<br /> 
 <i>[NORMAL, HIGH]</i><br />
+ Sets how aggressive/steep the cutoff is. Steeper cutoff adds more delay compared to less steep one.  
+
 ####set dterm_lowpass = 100<br /> 
 <i>[0..500]</i><br />
 ####set dterm_notch_hz = 0<br /> 
