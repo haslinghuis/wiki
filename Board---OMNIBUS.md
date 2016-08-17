@@ -48,7 +48,7 @@ _(add your name here if you help test or contribute code for this board)_
 
 [Nathan](https://github.com/nathantsoi)
 
-QuadroBro
+[QuadroBro](https://github.com/QuadroBro)
 
 ## Similar Targets
 
