@@ -83,6 +83,10 @@ Set to OFF if CPU loading is too high.
 
 ####set zero_throttle_stabilisation = OFF<br />
 <i>[ON, OFF]</i><br />
+NOTE: this is only in versions up to RC5. In RC6 and up it is changed to:
+####pid_at_min_throttle = OFF<br />
+<i>[ON, OFF]</i><br />
+With this OFF the PIDC does NOT respond to Sticks when Throttle values in below min_check, just like in the orignal MultiWii, BaseFlight or CleanFlight.
 
 ####set airmode_activate_throttle = 1350<br />
 <i>[1000..2000]</i><br />
