@@ -63,7 +63,9 @@ _(add links to boards here that are similar in features or function, but use thi
 ## FAQ & Known Issues
 _(add FAQs, known issues and workarounds specifically related to this board. please link work in progress issues to the related github issue or pull request)_
 
-Current Issue: throttle sticking on fast stick movements similar to issue with Kiss. May need to add zero throttle stabilisation.
+_format is reporter [name], (status): issue contents_
+
+- reporter [@QuadroBro], (unconfirmed): throttle sticking on fast stick movements similar to issue with Kiss. May need to add zero throttle stabilisation. Update: sounds like a configuration issue: "I think the issue with the quad has something to do with the idle value or min throttle."
 
 ## Other Resources
 
