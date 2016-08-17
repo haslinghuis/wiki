@@ -47,6 +47,7 @@ Available here: http://shop.myairbot.com/index.php/flight-control/cleanflight-ba
 _(add your name here if you help test or contribute code for this board)_
 
 [Nathan](https://github.com/nathantsoi)
+
 QuadroBro
 
 ## Similar Targets
