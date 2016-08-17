@@ -47,6 +47,7 @@ Available here: http://shop.myairbot.com/index.php/flight-control/cleanflight-ba
 _(add your name here if you help test or contribute code for this board)_
 
 [Nathan](https://github.com/nathantsoi)
+[QuadroBro]
 
 ## Similar Targets
 
@@ -60,6 +61,8 @@ _(add links to boards here that are similar in features or function, but use thi
 
 ## FAQ & Known Issues
 _(add FAQs, known issues and workarounds specifically related to this board. please link work in progress issues to the related github issue or pull request)_
+
+Current Issue: throttle sticking on fast stick movements similar to issue with Kiss. May need to add zero throttle stabilisation.
 
 ## Other Resources
 
