@@ -205,9 +205,9 @@ My very noisy copter with mean motor frequency at 250Hz runs very well with thes
     dterm_notch_hz = 250
     dterm_notch_cutoff = 130
 
-    gyro_cutoff = 110
-    dterm_lpf = 0
-    yaw_lpf = 0
+    gyro_lowpass = 110
+    dterm_lowpass = 0
+    yaw_lowpass = 0
 
 This means that the notch filter will remove noise from gyro before the lowpass filter will improve the signal further.
 Because there is still some noise left in dTerm, another filter is needed. The notch filter alone is enough to remove the remaining noise in my case. It causes less latency than a lowpass filter and keeps the dTerm more in phase with pTerm.
