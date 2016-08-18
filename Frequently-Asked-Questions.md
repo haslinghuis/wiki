@@ -1274,3 +1274,24 @@ Maybe try leave the FC dangling in the air and see if it still happens - just to
 
 #### Here is a post from ctzsnooze on a better soft-mounting method.
 http://www.rcgroups.com/forums/showpost.php?p=35486733&postcount=36111
+
+#### A nice conclusion on this issue from ctzsnooze 
+Lots of us have seen exactly this behaviour. I am surprised that you seem so astonished now that you find it happens to you. It happens randomly. It could happen to anyone. It just happened to happen to you. :-)
+
+It goes away with replacing the gyro chip, replacing the FC, or soft mounting the FC; these fixes work whether or not capacitors are added. Sometimes it goes away by just adding capacitors.
+
+Since soft mounting is a reliable fix, external vibration seems the likely culprit, difficult otherwise to explain how soft mounting often causes it to just disappear. Blheli-s ESCs are more commonly implicated than non-BLHeli-s ESC's and in some cases capacitors help so there may be an electrical contribution. It is far more common on yaw than the other axes. The yaw sensor within the chip must be physically different from pitch/roll since the axes relative to the layer of silicon for yaw vs pitch/roll are quite different.
+
+That's all we know for sure. How these factors actually cause the oscillation, and why it is yaw exclusive, is completely speculative.
+
+When soft mounting doesn't work it's usually because it isn't done in such a way as to effectively isolate the FC.
+
+I've seen such extreme examples as to render the quad un-flyable, and also much milder examples, so it is not an all or none thing.
+
+Although the magnitude is increased by higher yaw P it is not simple feedback oscillation, there is no threshold value of P below which it disappears. The actual oscillation frequencies are so low as to not be attenuated by the o-rings. Exactly what the o-rings block is not clear.
+
+It cannot be eliminated by filtering the gyro data - as has been pointed out before, out the primary oscillation frequency is within the range we need for to fly the quad normally.
+
+It is not a software issue in blheli or betaflight, we can be sure of that. Replacing the gyro chip doesn't change that software yet it does fix the problem.
+
+My gut feeling is that this is an inherent issue in these gyro chip themselves, and that some individual examples of these chips get it much worse than others. That's why I recommend replacing the gyro chip or the whole FC if simple soft mounting fails to solve the problem. 
