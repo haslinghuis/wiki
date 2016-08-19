@@ -139,6 +139,9 @@ This is a NEW PIDC controller.
 Post from Boris about this differences between the Legacy and 2DOF PIDC: 
 http://www.rcgroups.com/forums/showpost.php?p=35460572&postcount=35822
 
+Another post from Joshua explaining 2DOF PIDC and setpoint weight:
+http://www.rcgroups.com/forums/showpost.php?p=35520200&postcount=36404
+
 
 ####PID control at Zero Throttle
 Originally Posted by MasterZap View Post
