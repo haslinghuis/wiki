@@ -133,17 +133,30 @@ You can for example remove yaw noise on this way till certain level, but you may
 
 ## Discussions on using the new features:
 
-####Betaflight 2DOF PID controller
+###Betaflight 2DOF PID controller
 This is a NEW PIDC controller.  
 
 Post from Boris about this differences between the Legacy and 2DOF PIDC: 
 http://www.rcgroups.com/forums/showpost.php?p=35460572&postcount=35822
 
-Another post from Joshua explaining 2DOF PIDC and setpoint weight:
+Posts from Joshua explaining 2DOF PIDC and setpoint weight:
 http://www.rcgroups.com/forums/showpost.php?p=35520200&postcount=36404
 
 
-####PID control at Zero Throttle
+Betaflight 3.0's new 2 degree-of-freedom PID controller is one of its most exciting features. Let's learn what the new "setpoint weight" sliders do! I also discuss the new RC interpolation feature.
+
+Error in a PID controller can be separated into externally-induced error and error caused by moving the set-point. The 2DOF PID controller allows you to distinguish between these two types of error. In other words, it allows you to control how aggressively the PID controller responds to your stick movements.
+
+P term setpoint weight basically controls overshoot. Higher P term setpoint weight results in sharper stick response, lower P gains, and more overshoot and oscillation. Lower P term setpoint weight results in softer stick response, higher P gains, and less overshoot and oscillation.
+
+D term setpoint weight is harder to describe. Higher D term setpoint weight results in an overall much sharper and more precise flight feel. But it also makes the copter fly less smoothly, since it is responding exactly to every little wiggle and jiggle of the stick. Lower D term setpoint weight results in a smoother, more "organic feeling" flight experience, but also a softer and less precise one.
+
+A very critical point to understand is that these characteristics ONLY come into play when the PID controller is responding to your stick movements. When the sticks are not moving, or are moving slowly, the effect is less pronounced or nonexistent, and the PID controller works exactly like it used to. So you can think of P, I, and D as tuning the overall response of the copter to all inputs, including external ones like wind blowing on the copter, and the setpoint weight sliders as tuning the way the copter responds specifically to stick movements. 
+
+A video by Joshua about this is coming soon.  
+
+
+###PID control at Zero Throttle
 Originally Posted by MasterZap View Post
 Let me try to explain this in a clear way:
 
@@ -166,7 +179,7 @@ Clear as mud?
 
 /Z
 
-####Notch Filters
+###Notch Filters
 
 notch filter explanations  
 
@@ -225,7 +238,7 @@ Without blackbox it will be very hard to determine the center motor frequency. I
 Cutoff describes the lower end of the filter response and should not be too low in order to reduce latency. I don't think anyone would need it to be lower than ~130.
 
 
-#### How to obtain data to evaluate noise frequency for setting the Notch filter.
+### How to obtain data to evaluate noise frequency for setting the Notch filter.
 1. Use this setting: "set debug_mode = notch"
 Make sure your blackbox logging rate is at least 1khz. The logging rate is based on pid-loop so 1/4 for 4k pid loop would be enough.
 2. Fly as usual
@@ -254,7 +267,7 @@ You can view earlier BB logs (pre BF 3.0) but the analyzer won't know at which r
 Post by ctzsnooze  
 All filters add delay. Doubling slope on an IIR LPF doubles delay since the same 1st order filter is simply applied twice. None currently are FIR. FIR were evaluated and not as good as simple IIR. Dterm is IIR, gyro cut was biquad (i think it still is). There is a recent post about the notch filter that linked to the GitHub page where the Notch was discussed before implementation. Diagrams there show delay for different filter combinations. Lots of thought has gone into current filter design. 
 
-####roll/yaw cam mix
+###roll/yaw cam mix
 from FieserKiller  
 Note that its not active permanently in this version of BF any more. You have to configure it in modes tab. I've bound it to a switch so I can finally let my buddys fly my quad without crashing due to unfamiliar controls.   
 
@@ -267,4 +280,4 @@ all the way to the right is error, all the way to the left is measurement. can v
 scroll down under your PIDS.  
 BF PIDC does not use the dropdown for PID_DELTA_METHOD (or the CLI variable) but the slider instead.
 0 is like 2.9 measurement and 1 is like 2.9 Error.  
-
+See the 2DOF PIDC details above.
