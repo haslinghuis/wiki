@@ -139,9 +139,7 @@ This is a NEW PIDC controller.
 Post from Boris about this differences between the Legacy and 2DOF PIDC: 
 http://www.rcgroups.com/forums/showpost.php?p=35460572&postcount=35822
 
-Posts from Joshua explaining 2DOF PIDC and setpoint weight:
-http://www.rcgroups.com/forums/showpost.php?p=35520200&postcount=36404
-
+Post from Joshua explaining 2DOF PIDC and setpoint weight:
 
 Betaflight 3.0's new 2 degree-of-freedom PID controller is one of its most exciting features. Let's learn what the new "setpoint weight" sliders do! I also discuss the new RC interpolation feature.
 
