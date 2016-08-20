@@ -151,8 +151,8 @@ D term setpoint weight is harder to describe. Higher D term setpoint weight resu
 
 A very critical point to understand is that these characteristics ONLY come into play when the PID controller is responding to your stick movements. When the sticks are not moving, or are moving slowly, the effect is less pronounced or nonexistent, and the PID controller works exactly like it used to. So you can think of P, I, and D as tuning the overall response of the copter to all inputs, including external ones like wind blowing on the copter, and the setpoint weight sliders as tuning the way the copter responds specifically to stick movements. 
 
-A video by Joshua about this is coming soon.  
-
+A video by Joshua about this:  
+https://www.youtube.com/watch?v=4zncyYdAZPU
 
 ###PID control at Zero Throttle
 Originally Posted by MasterZap View Post
