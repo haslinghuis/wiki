@@ -24,11 +24,9 @@
 
  - [Known Build Environment Problems](/betaflight/betaflight/wiki/Known-Build-Environment-Problems)
  - [Mac OS X Hex File Development](/betaflight/betaflight/wiki/Mac-OS-X-Hex-File-Development)
-
-# Hardware
-
  - [Hardware developers reference](/betaflight/betaflight/wiki/Hardware-Reference)
-## Boards
+
+# Boards
 
  - [AIORACERF3](/betaflight/betaflight/wiki/Board---AIORACERF3)
  - [AIR32](/betaflight/betaflight/wiki/Board---AIR32)
