@@ -20,7 +20,7 @@ The Seriously Pro Racing F3 EVO Flight Controller (SPRacingF3EVO) was designed t
   - PPM/UART Shared: UART2
   - Battery Voltage Sensor: Yes
   - Integrated Voltage Regulator: Yes (3.3V 100mA max. / 5.0V is also supplied when powering via USB)
-  - Brushed Motor Mosfets: Yes
+  - Brushed Motor Mosfets: No
   - Buttons: No
 
 ### Features
