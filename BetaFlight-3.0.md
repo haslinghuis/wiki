@@ -134,7 +134,15 @@ You can for example remove yaw noise on this way till certain level, but you may
 <i>[1..200]</i><br />
 
 ### RC8 CLI changes
-TODO  
+ 
+####set blackbox_on_motor_test = OFF<br />
+<i>[OFF,ON]</i><br />
+New setting
+
+####set dterm_notch_hz = 260<br />
+####set dterm_notch_cutoff = 160<br />
+####set pid_at_min_throttle = ON
+New Defaults  
 
 ## Discussions on using the new features:
 
