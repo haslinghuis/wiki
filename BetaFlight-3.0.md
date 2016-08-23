@@ -42,9 +42,9 @@ Short Summary of changes:
 RC2 - Changed defaults / cleanup ONESHOT125 feature  
 RC3 - Defaults based on feedback // yaw_axis added to interpolation // add additional config parameters // FIX PPM on KISS  
 RC4 - Defaults based on new public tests // Fixed some wrong denom defaults for SPI targets  
-*RC5 - Defaults based on new public tests // Fix for higher CPU due to filter reinitialisations // Add Sparky2 // Fixes for various targets *  
-*RC6 - Defaults // rename zero throttle stabilisation to pid_at_min_throttle // CLI cleanups *  
-*RC7 - Fix F4 diff/dump crashes // Fix for Sparky2 // Fix for d filter coefficients bug with higher pid denoms // Add new blackbox headers *   
+RC5 - Defaults based on new public tests // Fix for higher CPU due to filter reinitialisations // Add Sparky2 // Fixes for various targets   
+RC6 - Defaults // rename zero throttle stabilisation to pid_at_min_throttle // CLI cleanups   
+RC7 - Fix F4 diff/dump crashes // Fix for Sparky2 // Fix for d filter coefficients bug with higher pid denoms // Add new blackbox headers    
 RC8 - Defaults (notch filter 260hz) // add "diff showdefaults" command // change some cli names // more MSP parameters // higher gpio speed for i2c gyro targets // added blackbox motor test // Improved FPV angle mix feature // Reduced PID loop busy wait // Added new Target ISHAPEDF3 // Fix PPM for Revo //  
 RC9 - Support all targets (ignore int pin on pid loop)
 
