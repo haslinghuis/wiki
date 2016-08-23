@@ -39,7 +39,7 @@ Short Summary of changes:
 - RC Interpolation added back with multiple options. (Use Auto for automatic rx rate configuration)
 - Added "diff" cli command for easier backuping of config.
 
-RC2 - Changed defaults / cleanup ONESHOT125 feature
+RC2 - Changed defaults / cleanup ONESHOT125 feature  
 RC3 - Defaults based on feedback // yaw_axis added to interpolation // add additional config parameters // FIX PPM on KISS  
 RC4 - Defaults based on new public tests // Fixed some wrong denom defaults for SPI targets  
 *RC5 - Defaults based on new public tests // Fix for higher CPU due to filter reinitialisations // Add Sparky2 // Fixes for various targets *  
