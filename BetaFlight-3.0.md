@@ -21,7 +21,7 @@ Betaflight has 2 different goals.
 2) from scientific point of view it is good to keep improving and introduce new features where those who like to experiment can play with ans give valuable feedback. These are mostly burried in the cli   
 
 
-##Betaflight 3.0.0-RC7 (F4 Support)
+##Betaflight 3.0.0-RC9 (F4 Support)
 
 This is really a major release. The full detailled change list can be found in the the commit history.
 https://github.com/betaflight/betaflight/commits/master
@@ -45,7 +45,10 @@ RC4 - Defaults based on new public tests // Fixed some wrong denom defaults for 
 *RC5 - Defaults based on new public tests // Fix for higher CPU due to filter reinitialisations // Add Sparky2 // Fixes for various targets *
 *RC6 - Defaults // rename zero throttle stabilisation to pid_at_min_throttle // CLI cleanups *  
 *RC7 - Fix F4 diff/dump crashes // Fix for Sparky2 // Fix for d filter coefficients bug with higher pid denoms // Add new blackbox headers * 
+RC8 - Defaults (notch filter 260hz) // add "diff showdefaults" command // change some cli names // more MSP parameters // higher gpio speed for i2c gyro targets // added blackbox motor test // Improved FPV angle mix feature // Reduced PID loop busy wait // Added new Target ISHAPEDF3 // Fix PPM for Revo //
+RC9 - Support all targets (ignore int pin on pid loop)
 
+New 1.7.5 configurator for RC 8 and up supports some additional tuning parameters. Don't forget to check tooltips for explanations!
 The ones who are trying a notch filter on pre RC7 releases and using separate gyro ans pid rate/denom you must upgrade to RC7 as there was a bug in coefficient calculation. 
 
 New 1.7.1 configurator supports some additional tuning parameters. Don't fotget to check tooltips for explainations!
@@ -54,7 +57,7 @@ The PID from 2.x versions can transfer to 3.0 as the scaling is the same, but yo
 
 
 ###New CLI commands
-Note that most are better to set using the new BetaFlight Confug GUI.  
+Note that most are better to set using the new BetaFlight Config GUI.  
 If a CLI command is not listed here then it is most likely not changed so look in the Wiki 'CLI command' page.
 If in error, missing, etc then post a note about what is wrong in Boris' thread.
 Be sure you type 'help' in the CLI to see all commands.
@@ -130,6 +133,8 @@ You can for example remove yaw noise on this way till certain level, but you may
 ####set dterm_setpoint_weight = 120<br />
 <i>[1..200]</i><br />
 
+### RC8 CLI changes
+TODO  
 
 ## Discussions on using the new features:
 
@@ -279,3 +284,6 @@ scroll down under your PIDS.
 BF PIDC does not use the dropdown for PID_DELTA_METHOD (or the CLI variable) but the slider instead.
 0 is like 2.9 measurement and 1 is like 2.9 Error.  
 See the 2DOF PIDC details above.
+
+- Also my blackbox logging rate is off may be a bug in running 4k/2k and on blackbox it's saying 1k is 50% when it's really 25%
+Not a bug. BB Rate is a percentage of the PID loop speed, since that's where the important data comes from.  
