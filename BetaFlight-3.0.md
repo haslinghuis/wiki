@@ -53,7 +53,7 @@ The ones who are trying a notch filter on pre RC7 releases and using separate gy
 
 Use 1.7.2 configurator for up to RC 7.  
 
-New 1.7.1 configurator supports some additional tuning parameters. Don't fotget to check tooltips for explainations!
+New 1.7.1 configurator supports some additional tuning parameters. Don't forget to check tooltips for explainations!
 
 The PID from 2.x versions can transfer to 3.0 as the scaling is the same, but you may expect that it should be possible to get higher PID's despite the same PID scaling due to new PID controller functionalities.
 
