@@ -146,6 +146,9 @@ New setting
 ####set pid_at_min_throttle = ON
 New Defaults  
 
+####set failsafe_procedure = DROP
+<i>[AUTO-LAND,DROP]</i><br />
+
 ## Discussions on using the new features:
 
 ###Betaflight 2DOF PID controller
