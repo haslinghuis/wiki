@@ -151,6 +151,10 @@ You can for example remove yaw noise on this way till certain level, but you may
 
 ## Discussions on using the new features:
 
+###Legacy PID controller
+This is a rewritten MWREWRITE PID controller that uses integer math instead of Floating point math.  
+Some may like this one better and it is also recommended to run faster PID loop rates on F1 processors.
+
 ###Betaflight 2DOF PID controller
 This is a NEW PIDC controller.  
 
