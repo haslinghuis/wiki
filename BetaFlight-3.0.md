@@ -126,7 +126,7 @@ You can for example remove yaw noise on this way till certain level, but you may
 
 ####set dterm_lowpass = 100<br /> 
 <i>[0..500]</i><br />
-####set dterm_notch_hz = 0<br /> 
+####set dterm_notch_hz = 0<br />  Set to zero disables the filter.   
 <i>[0..500]</i><br />
 ####set dterm_notch_cutoff = 150<br />
 <i>[1..500]</i><br />
