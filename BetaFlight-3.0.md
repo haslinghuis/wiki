@@ -49,7 +49,9 @@ RC8 - Defaults (notch filter 260hz) // add "diff showdefaults" command // change
 RC9 - Support all targets (ignore int pin on pid loop)
 
 New 1.7.5 configurator for RC 8 and up supports some additional tuning parameters. Don't forget to check tooltips for explanations!
-The ones who are trying a notch filter on pre RC7 releases and using separate gyro ans pid rate/denom you must upgrade to RC7 as there was a bug in coefficient calculation. 
+The ones who are trying a notch filter on pre RC7 releases and using separate gyro ans pid rate/denom you must upgrade to RC7 as there was a bug in coefficient calculation.  
+
+Use 1.7.2 configurator for up to RC 7.  
 
 New 1.7.1 configurator supports some additional tuning parameters. Don't fotget to check tooltips for explainations!
 
