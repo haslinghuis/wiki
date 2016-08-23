@@ -44,8 +44,8 @@ RC3 - Defaults based on feedback // yaw_axis added to interpolation // add addit
 RC4 - Defaults based on new public tests // Fixed some wrong denom defaults for SPI targets
 *RC5 - Defaults based on new public tests // Fix for higher CPU due to filter reinitialisations // Add Sparky2 // Fixes for various targets *
 *RC6 - Defaults // rename zero throttle stabilisation to pid_at_min_throttle // CLI cleanups *  
-*RC7 - Fix F4 diff/dump crashes // Fix for Sparky2 // Fix for d filter coefficients bug with higher pid denoms // Add new blackbox headers * 
-RC8 - Defaults (notch filter 260hz) // add "diff showdefaults" command // change some cli names // more MSP parameters // higher gpio speed for i2c gyro targets // added blackbox motor test // Improved FPV angle mix feature // Reduced PID loop busy wait // Added new Target ISHAPEDF3 // Fix PPM for Revo //
+*RC7 - Fix F4 diff/dump crashes // Fix for Sparky2 // Fix for d filter coefficients bug with higher pid denoms // Add new blackbox headers *   
+RC8 - Defaults (notch filter 260hz) // add "diff showdefaults" command // change some cli names // more MSP parameters // higher gpio speed for i2c gyro targets // added blackbox motor test // Improved FPV angle mix feature // Reduced PID loop busy wait // Added new Target ISHAPEDF3 // Fix PPM for Revo //  
 RC9 - Support all targets (ignore int pin on pid loop)
 
 New 1.7.5 configurator for RC 8 and up supports some additional tuning parameters. Don't forget to check tooltips for explanations!
