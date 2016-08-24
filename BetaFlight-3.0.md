@@ -80,7 +80,7 @@ Enables or disables the SuperExpo. If disabled as a Feature it can still be enab
 
 ####set rc_interpolation = AUTO<br />
 <i>[OFF, PRESET, AUTO, MANUAL]</i><br />
-This feature can causing CPU to work harder to be able to run higher d setpoint weights and get cleaner motor outputs.
+This feature can cause the CPU to work harder to be able to run higher d setpoint weights and get cleaner motor outputs.
 Set to OFF if CPU loading is too high.
 
 ####set rc_interpolation_interval = 19<br />
