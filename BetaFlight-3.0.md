@@ -80,11 +80,11 @@ Enables or disables the SuperExpo. If disabled as a Feature it can still be enab
 
 ####set rc_interpolation = AUTO<br />
 <i>[OFF, PRESET, AUTO, MANUAL]</i><br />
-This feature can cause the CPU to work harder to be able to run higher d setpoint weights and get cleaner motor outputs.
-Set to OFF if CPU loading is too high.
+This feature can cause the CPU to work harder to be able to run higher d setpoint weights and get cleaner motor outputs. Set to OFF if CPU loading is too high.  
 
 ####set rc_interpolation_interval = 19<br />
 <i>[1..50]</i><br />
+Note: Auto rc interpolation detects rx speed based on the reported speed by rx itself. But some receivers like also X4RS can report 9ms interval while it is actually 18ms on roll and pitch when using more channels than 8.  
 
 ####set motor_pwm_protocol = OFF<br />
 <i>[OFF, ONESHOT125, ONESHOT42, MULTISHOT, BRUSHED]</i><br />
