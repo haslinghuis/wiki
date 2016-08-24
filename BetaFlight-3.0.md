@@ -47,8 +47,11 @@ RC6 - Defaults // rename zero throttle stabilisation to pid_at_min_throttle // C
 RC7 - Fix F4 diff/dump crashes // Fix for Sparky2 // Fix for d filter coefficients bug with higher pid denoms // Add new blackbox headers    
 RC8 - Defaults (notch filter 260hz) // add "diff showdefaults" command // change some cli names // more MSP parameters // higher gpio speed for i2c gyro targets // added blackbox motor test // Improved FPV angle mix feature // Reduced PID loop busy wait // Added new Target ISHAPEDF3 // Fix PPM for Revo //  
 RC9 - Support all targets (ignore int pin on pid loop)
+RC10 - Defaults // Cleanups // Drop betaflight PIDc from OPBL CC3D target (use hex for full support)  
 
-New 1.7.5 configurator for RC 8 and up supports some additional tuning parameters. Don't forget to check tooltips for explanations!
+New 1.7.6 configurator (RC10) supports some additional tuning parameters. Don't forget to check tooltips for explainations!
+
+1.7.5 configurator for RC 8 and up supports some additional tuning parameters. Don't forget to check tooltips for explanations!
 The ones who are trying a notch filter on pre RC7 releases and using separate gyro ans pid rate/denom you must upgrade to RC7 as there was a bug in coefficient calculation.  
 
 Use 1.7.2 configurator for up to RC 7.  
