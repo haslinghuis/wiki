@@ -55,6 +55,7 @@
  - [OMNIBUSF4](/betaflight/betaflight/wiki/Board---OMNIBUSF4)
  - [PIKOBLX](/betaflight/betaflight/wiki/Board---PIKOBLX)
  - [PORT103R](/betaflight/betaflight/wiki/Board---PORT103R)
+ - [RCEXPLORERF3](/betaflight/betaflight/wiki/Board---RCEXPLORERF3)
  - [REVO](/betaflight/betaflight/wiki/Board---REVO)
  - [REVONANO](/betaflight/betaflight/wiki/Board---REVONANO)
  - [RMDO](/betaflight/betaflight/wiki/Board---RMDO)
