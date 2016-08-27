@@ -49,11 +49,11 @@ RC8 - Defaults (notch filter 260hz) // add "diff showdefaults" command // change
 RC9 - Support all targets (ignore int pin on pid loop)   
 RC10 - Defaults // Cleanups // Drop betaflight PIDc from OPBL CC3D target (use hex for full support)   
 RC11 - Fix for dterm setpoint range // sparky i2c fix  
+RC12 - Removed Sonar for naze32 to free some flash space // Removed feature super expo. Super expo is active when srates are set // Increased linear rate range. rc_rate higher than 2.0 will become stronger and 255 will give full linear 2000deg/sec // Redefined EXPO like in 2.8.0 RC4 rc_expo is now power expo! // Improved efficiency in rate code // rate cleanup // BlHeli passthrough fixes for F4 // New target RCEXPLORER   
 
-New 1.7.7 configurator (RC11)
-
+New 1.7.8 configurator (RC12)  
+1.7.7 configurator (RC11)
 1.7.6 configurator (RC10) supports some additional tuning parameters. Don't forget to check tooltips for explainations!
-
 1.7.5 configurator for RC 8 and up supports some additional tuning parameters. Don't forget to check tooltips for explanations!
 The ones who are trying a notch filter on pre RC7 releases and using separate gyro ans pid rate/denom you must upgrade to RC7 as there was a bug in coefficient calculation.  
 
@@ -80,6 +80,9 @@ to see defaults
 
 ####feature SUPEREXPO_RATES or feature -SUPEREXPO_RATES<br />
 Enables or disables the SuperExpo. If disabled as a Feature it can still be enable from a AUX (Mode tab) switch.
+
+RC12- Removed feature super expo. Super expo is active when srates are set
+TODO --- describe this.   
 
 ####set rc_interpolation = AUTO<br />
 <i>[OFF, PRESET, AUTO, MANUAL]</i><br />
