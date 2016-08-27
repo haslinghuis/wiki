@@ -82,7 +82,14 @@ to see defaults
 Enables or disables the SuperExpo. If disabled as a Feature it can still be enable from a AUX (Mode tab) switch.
 
 RC12- Removed feature super expo. Super expo is active when srates are set
-TODO --- describe this.   
+This means that if you used rc expo you may need to readjust it. Just lower it.
+Super expo feature is removed. Needs some cleanups though in the cli, but it is actually not there anymore. Superexpo is automatically active when you use srates (old rate). When 0 it is disabled.  
+The ones who like to have linear rates without super expo can now increase rc rate. All rc rates above 2.0 are now having much higher incremental. 2.18 is I believe already 1000deg/sec and 2.55 is 2000deg/sec.
+Than you can add some rc expo.  
+This new solution offers more flexible rate behavior for everyone.  
+Also when you don't use rc expo now cpu usage will be lower as it the calculation is not performed anymore. Same for srates. If you don't use them than super expo calculations are not performed.  
+
+The current configurator doesn't display these rates properly, but that will happen soon when configurator gets an update. Probably next week.    
 
 ####set rc_interpolation = AUTO<br />
 <i>[OFF, PRESET, AUTO, MANUAL]</i><br />
