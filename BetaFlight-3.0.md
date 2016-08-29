@@ -167,6 +167,15 @@ You can for example remove yaw noise on this way till certain level, but you may
 ####set failsafe_procedure = DROP
 <i>[AUTO-LAND,DROP]</i><br />
 
+###Changes in RC12 CLI 
+Rc rate will be represented in deg/sec on the new configurator. Thats your max stick reflection.  
+Also expo and other stuff will eventually be showed correctly with proper naming.  
+
+Rc Rate= linear rate without curves. Configurable up to 2000deg/sec  
+Srate= super expo rate like it was already, but now doesnt need a feature for being activated. Set it to 0 and super expo is disabled. You can now even have super expo on one axis and not on another for example
+rc expo = new expo what needs lower numbers with smoother curve and more center feel configurability. Usefull particularly for linear rates.  
+
+
 ## Discussions on using the new features:
 
 ###Legacy PID controller
