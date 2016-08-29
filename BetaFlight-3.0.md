@@ -326,7 +326,9 @@ from FieserKiller
 Note that its not active permanently in this version of BF any more. You have to configure it in modes tab. I've bound it to a switch so I can finally let my buddys fly my quad without crashing due to unfamiliar controls.   
 
 ###Tuning Tips
-just a quick question. How high can I go with D on pitch? Got some HQ Durables today and found out that my 5x4x3 tune doesn't work out for them. Using KISS24 escs and the KISSFC running BF 3.0. I can lower my P on Pitch but than it doesn't lock as good as it does with a higher P gain. But with a high P gain I nearly have to set my Ds to like 40. Is this good? and btw also using lumenier rx2206s. Thanks Thomas.
+
+#### How high can I go with D on pitch?  
+ Got some HQ Durables today and found out that my 5x4x3 tune doesn't work out for them. Using KISS24 escs and the KISSFC running BF 3.0. I can lower my P on Pitch but than it doesn't lock as good as it does with a higher P gain. But with a high P gain I nearly have to set my Ds to like 40. Is this good? and btw also using lumenier rx2206s. Thanks Thomas.  
 Boris' Answer:    
 If its just the bounce:  
 You could try lower p setpoint weight.  
