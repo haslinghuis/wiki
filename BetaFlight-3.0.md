@@ -335,6 +335,8 @@ You could try lower p setpoint weight.
 But you could also try test dterm setpoint of 0.  
 See if the above 2 can remove the need for more D.  
 But high D is not an issue at all if the motors dont heat up and if it all still sounds smooth.  
+Thomas' Reply:  
+Set dterm setpoint to 0 and no bounce back at all. Gonna try to go higher on P on Pitch and lower the D on pitch to get the feel I want!   
 
 ## Discussions on using the New configurator
 
