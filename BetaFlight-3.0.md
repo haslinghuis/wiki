@@ -183,6 +183,9 @@ A tip of tuning super expo rates.
 Configure rc rate for how you want your mid stick to feel and than just add more or less srates to change transition and max stick reflection.
 Good thing about srates is that it kind of tries to keep the same mid stick while the extremes do change. Its like inverted expo idea.  
 
+Post by ctzsnooze explaining these settings:  
+http://www.rcgroups.com/forums/showpost.php?p=35602942&postcount=37292  
+
 ## Discussions on using the new features:
 
 ###Legacy PID controller
