@@ -352,5 +352,7 @@ BF PIDC does not use the dropdown for PID_DELTA_METHOD (or the CLI variable) but
 0 is like 2.9 measurement and 1 is like 2.9 Error.  
 See the 2DOF PIDC details above.
 
-- Also my blackbox logging rate is off may be a bug in running 4k/2k and on blackbox it's saying 1k is 50% when it's really 25%
+- Also my blackbox logging rate is off may be a bug in running 4k/2k and on blackbox it's saying 1k is 50% when it's really 25%.  
 Not a bug. BB Rate is a percentage of the PID loop speed, since that's where the important data comes from.  
+
+- The OSD Tab is ONLY for FC boards that have a integrated OSD chips. One such FC is the omnibus.  
