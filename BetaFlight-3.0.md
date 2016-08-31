@@ -356,3 +356,49 @@ See the 2DOF PIDC details above.
 Not a bug. BB Rate is a percentage of the PID loop speed, since that's where the important data comes from.  
 
 - The OSD Tab is ONLY for FC boards that have a integrated OSD chips. One such FC is the omnibus.  
+
+#####A list of Tool Tips from the Config.  
+Note: these are extracted from the the file messages.json in the GitHub\betaflight-configurator\_locales\en  
+This is not a complete list.
+
+featureBLACKBOXTip
+Configure via the BlackBox tab after enabling.
+
+featureFAILSAFEOldTip
+Apply Failsafe settings on RX signal loss
+
+featureFAILSAFETip
+<strong>Note:</strong> When Stage 2 is DISABLED, the fallback setting <strong>Auto</strong> is used instead of the user settings for all flightchannels (Roll, Pitch, Yaw and Throttle).
+
+featureGPSTip
+Configure port scenario first
+
+featureONESHOT125Tip
+Disconnect flight battery and remove props before enabling.
+
+featureSOFTSERIALTip
+Configure ports on the Ports tab after enabling.
+
+featureTRANSPONDERTip
+Configure via the Race Transponder tab after enabling.
+
+pidTuningDeltaTip
+<b>Derivative from Error</b> provides more direct stick response and is mostly prefered for Racing.<br><br><b>Derivative from Measurement</b> provides smoother stick response what is more usefull for freestyling
+
+pidTuningFilterTip
+<b>Gyro Soft Filter:</b> Lowpass filter for gyro. Use lower value for more filtering.<br><b>D Term Filter:</b> Lowpass filter for Dterm. Can affect D tuning. Use lower value for more filtering. <br><b>Yaw Filter:</b> Filters yaw output. It can help on setups with noisy yaw axis.
+
+pidTuningPidControllerTip
+<b>Legacy vs Betaflight (float):</b> PID scaling and PID logic is exactly the same. Not necessarily retune needed. Legacy is old betaflight evolved rewrite, which is basic PID controller based on integer math. Betaflight PID controller uses floating point math and has many new features specifically designed for multirotor applications <br> <b>Float vs Integer:</b> PID scaling and PID logic is exactly the same. No retune needed. F1 boards have no onboard FPU and floating point math increases CPU load and integer math will improve performance, but float math might gain slightly more precision.
+
+pidTuningPidTuningTip
+<b>Proportional:</b> You will notice a very strong resistant force to any attempts to move the MultiRotor<br><b>Integral:</b> Increase the ability to hold overall initial position and reduce drift, but also increase the delay in returning to initial position.<br><b>Derivative:</b> Improves the speed at which deviations are recovered, but increases noise<br><b>Rates and Expo</b>: Determine your stick feel based on these parameters. Use the graph and live 3D model to find your favourite rate setting
+
+pidTuningProfileTip
+Up to 3 (2 for some controllers) different profiles can be stored on the flight controller. The profiles include all the settings on this tab. Once in the field, simple stick commands (see online instructions) can be used to switch between the profiles.
+
+pidTuningRateProfileTip
+Up to 3 different rateprofiles per profile can be stored on the flight controller. The rateprofiles include the settings for 'RC Rate', 'Rate', 'RC Expo', 'Throttle', and 'TPA'. Switching between rateprofiles is possible in-flight, by setting up a 3 position switch for 'Rate Profile Selection' on the 'Adjustments' tab.
+
+pidTuningRatesTip
+Play with the rates and see how those affect the stick curve 
