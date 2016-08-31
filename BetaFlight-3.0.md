@@ -171,12 +171,20 @@ You can for example remove yaw noise on this way till certain level, but you may
 Rc rate will be represented in deg/sec on the new configurator. Thats your max stick reflection.  
 Also expo and other stuff will eventually be showed correctly with proper naming.  
 
+####set rate_accel_limit = 0
+<i>[0..1000]<i>
+Increasing can help decrease Bounce back on low power copters.  
+####set yaw_rate_accel_limit = 220
+<i>[0..1000]<i>  
+ 
 ####rc_rate, rc_rate_yaw   
 linear rate without curves. Configurable up to 2000deg/sec  
 ####roll_srate, pitch_srate, yaw_srate   
 super expo rate like it was already, but now doesnt need a feature for being activated. Set it to 0 and super expo is disabled. You can now even have super expo on one axis and not on another for example
 ####rc expo  
 new expo what needs lower numbers with smoother curve and more center feel configurability. Usefull particularly for linear rates.  
+
+Note: The Srates replace the old rates for Roll, Pitch & Yaw so still can be adjusted with Apps that use MSP like MWOSD.
 
 A tip of tuning super expo rates.  
 
