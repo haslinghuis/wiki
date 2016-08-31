@@ -1,4 +1,4 @@
-# AIORACERF3
+# MICROSCISKY
 
 F1 brushed flight controller with integrated DSM receiver.
 
