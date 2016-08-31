@@ -383,16 +383,18 @@ featureTRANSPONDERTip
 Configure via the Race Transponder tab after enabling.
 
 pidTuningDeltaTip
-<b>Derivative from Error</b>  
+<b>Derivative from Error</b>   
 provides more direct stick response and is mostly prefered for Racing.<br><br><b>Derivative from Measurement</b> provides smoother stick response what is more usefull for freestyling
 
 pidTuningFilterTip
-<b>Gyro Soft Filter:</b>  
+<b>Gyro Soft Filter:</b>   
 Lowpass filter for gyro. Use lower value for more filtering.<br><b>D Term Filter:</b> Lowpass filter for Dterm. Can affect D tuning. Use lower value for more filtering. <br><b>Yaw Filter:</b> Filters yaw output. It can help on setups with noisy yaw axis.
 
 pidTuningPidControllerTip
-<b>Legacy vs Betaflight (float):</b>  
-PID scaling and PID logic is exactly the same. Not necessarily retune needed. Legacy is old betaflight evolved rewrite, which is basic PID controller based on integer math. Betaflight PID controller uses floating point math and has many new features specifically designed for multirotor applications <br> <b>Float vs Integer:</b> PID scaling and PID logic is exactly the same. No retune needed. F1 boards have no onboard FPU and floating point math increases CPU load and integer math will improve performance, but float math might gain slightly more precision.
+<b>Legacy vs Betaflight (float):</b>   
+PID scaling and PID logic is exactly the same. Not necessarily retune needed. Legacy is old betaflight evolved rewrite, which is basic PID controller based on integer math. Betaflight PID controller uses floating point math and has many new features specifically designed for multirotor applications <br>   
+<b>Float vs Integer:</b>   
+PID scaling and PID logic is exactly the same. No retune needed. F1 boards have no onboard FPU and floating point math increases CPU load and integer math will improve performance, but float math might gain slightly more precision.
 
 pidTuningPidTuningTip
 <b>Proportional:</b>   
