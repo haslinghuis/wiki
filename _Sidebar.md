@@ -62,7 +62,7 @@
  - [SINGULARITY](/betaflight/betaflight/wiki/Board---SINGULARITY)
  - [SIRINFPV](/betaflight/betaflight/wiki/Board---SIRINFPV)
  - [SPARKY](/betaflight/betaflight/wiki/Board---SPARKY)
- - [SPARKY2](https://github.com/TauLabs/TauLabs/wiki/Sparky2 ---SPARKY2)
+ - [SPARKY2](https://github.com/TauLabs/TauLabs/wiki/Sparky2)
  - [SPRACINGF3](/betaflight/betaflight/wiki/Board---SPRACINGF3)
  - [SPRACINGF3EVO](/betaflight/betaflight/wiki/Board---SPRACINGF3EVO)
  - [SPRACINGF3MINI](/betaflight/betaflight/wiki/Board---SPRACINGF3MINI)
