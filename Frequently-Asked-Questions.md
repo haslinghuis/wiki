@@ -49,11 +49,13 @@
 1. [Which HEX target do I download and flash to my Flight Controller ?](#which-hex-target-do-i-download-and-flash-to-my-flight-controller-)
 1. [How do I setup for reversed prop rotation ?](#how-do-i-setup-for-reversed-prop-rotation-)
 1. [What is a recommended FC and esc setup to run at 8khz, also i see reference to 4/4 or 4/4/32 or 8/8, what are these referring to?](#what-is-a-recommended-fc-and-esc-setup-to-run-at-8khz-also-i-see-reference-to-4/4-or-4/4/32-or-8/8,-what-are-these-referring-to-)  
-1. [Is PID tuning any different at different PIDC rates ?](#is-PID-tuning-any-different-at-different-PIDC-rates-)
-1. [What is the difference in PIDC Iterm in ßF versions ?](#what-is-the-difference-in-PIDC-Iterm-in-ßF-versions-)
-1. [How to setup blackbox record rate with onboard dataflash ?](#how-to-setup-blackbox-record-rate-with-onboard-dataflash-)
-1. [How to setup the rates and SuperExpo in ßF 2.8.1?](#how-to-setup-the-rates-and-SuperExpo-in-ßF-2.8.1-)
-1. [I get Yaw twitches or mid-throttle oscillations. How do I solve this?](#i-get-yaw-twitches-or-mid-throttle oscillations-how-do-I-solve-this-)
+1. [Is PID tuning any different at different PIDC rates ?](#is-PID-tuning-any-different-at-different-PIDC-rates-)  
+1. [What is the difference in PIDC Iterm in ßF versions ?](#what-is-the-difference-in-PIDC-Iterm-in-ßF-versions-)  
+1. [How to setup blackbox record rate with onboard dataflash ?](#how-to-setup-blackbox-record-rate-with-onboard-dataflash-)  
+1. [How to setup the rates and SuperExpo in ßF 2.8.1?](#how-to-setup-the-rates-and-SuperExpo-in-ßF-2.8.1-)  
+1. [What is the story on the different Rates and Expos?](#what-is-the-story-on-the-different-Rates-and-Expos-)  
+1. [I get Yaw twitches or mid-throttle oscillations. How do I solve this?](#i-get-yaw-twitches-or-mid-throttle oscillations-how-do-I-solve-this-)  
+
 
 **If your question is not listed above then please check the following pages:**
 
@@ -1116,6 +1118,31 @@ RC Slater is online now Send a private message to RC Slater Find More Posts by R
 Video from Joshua Bardwell:
 https://www.youtube.com/watch?v=cttFDHkec0c
 
+##What is the story on the different Rates and Expos?
+Thanks to joshuabardwell for this write up.
+
+Let's have a little history lesson.
+
+There used to be MultiWii. MultiWii had RC rate and Expo. That was it. RC rate set the speed of rotation for stick travel. Expo adjusted the center-stick softeness vs. full-stick speed.
+
+MultiWii didn't spin fast enough at full stick deflection for the new breed of crazy LOS Aerobatic pilots (Warthox), so the Pitch/Roll rate was added. In MW2.3 PID controller, the P/R rate relaxed the PIDs as stick deflection increased, allowing the copter to spin much faster. So P/R rates were kind of like a "super expo" on top of the normal RC and Expo functions. The effect of P/R rates was to increase the maximum rotation rate at extreme stick deflection.
+
+Fast forward to CleanFlight. Cleanflight had several PID controllers. It had the MW2.3 PID controller, so Cleanflight also had the RC Rate, P/R rate, and Expo functions. But Cleanflight also had Luxfloat and Rewrite, and those PID controllers didn't have the "super expo" like function. They simply used a linear rate curve with expo function, like the original MW PID controller. So what are they supposed to do with the P/R rate parameter in the GUI? Well... they just added it to RC rate, basically. The actual effect was not quite linear, because the scaling factor for P/R rate was not the same as RC rate. So adding, say, 0.5 of P/R rate did not result in the same degrees per second as adding 0.5 of RC rate. But the key thing to know is that, in Luxfloat and Rewrite, the P/R rate parameters had no special "super expo" like effect. They simply linearly increased the rate "curve", which was actually a line. And then the expo curve was applied on top of that.
+
+Now we move to Betaflight. Betaflight continued to play with the PID controllers, as Boris' attention shifted around. For a while, Luxfloat was Boris' favorite, and then Rewrite. Eventually, Boris realized that the "super expo" effect of MW2.3 was actually pretty cool in some circumstances. Possibly this realization was the result of Boris playing with KISS--the timing would be correct for that. That's when Boris implemented "super expo" in Betaflight.
+
+At this time, there was some inconsistency in the GUI parameters. If you were using feature super-expo, then the P/R rate parameters worked like in MW2.3, with a big increase in full-stick rate. If you were NOT using feature super-expo, then the P/R parameters worked like in Luxfloat and Rewrite, with a linear increase in rates. And all of this was still interacting with the original Expo function of course.
+
+You can see that this arrangement is both confusing and unnecessary. If you want a linear rate function, there is no need to have two parameters (RC and P/R). You can just use RC and Expo and be done. The only reason why both RC and P/R ever affected the linear rate function is because Cleanflight had several PID controllers, and some of them (Luxfloat and Rewrite) had a linear rate function and others (MW2.3) had a super-expo rate function. But in Betaflight 3.0, MW2.3 PID controller is now gone, so there is no need for a duplicate, conflicting definition of the P/R rate function.
+
+So the Betaflight 3.0 RC12 rates really represents the ultimate resolution of all this nonsense. There is no more "super expo" function. There is just three parameters.
+
+1. RC rate affects the linear rate multiplier. The rate "curve" is a straight line, and the slope of the line is determined by RC rate.
+
+2. Expo applies a bicubic (standard expo curve) function to the rate curve.
+
+3. P/R rate (now known as S.Rate) performs the "super expo" function similar to how MW2.3 did it, although a lot has changed under the hood in the way the rates are actually implemented.   
+
 ##I get Yaw twitches or mid-throttle oscillations How do I solve this?
 Many people have yaw twitches or oscillations at mid-throttle and many do not. All that have this issue seem to be running FCs that use the MPU6500 gyro chip (Naze32 rev6, LUX, others) and newer motors. Boris B was one that did not have this issue with the 6500 gyro until he upgraded to newer, stronger motors. Many have cured this by soft mounting the FC board but this has not worked in all cases.
 
@@ -1295,3 +1322,5 @@ It cannot be eliminated by filtering the gyro data - as has been pointed out bef
 It is not a software issue in blheli or betaflight, we can be sure of that. Replacing the gyro chip doesn't change that software yet it does fix the problem.
 
 My gut feeling is that this is an inherent issue in these gyro chip themselves, and that some individual examples of these chips get it much worse than others. That's why I recommend replacing the gyro chip or the whole FC if simple soft mounting fails to solve the problem. 
+
+
