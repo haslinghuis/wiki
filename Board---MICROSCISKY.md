@@ -32,19 +32,13 @@ F1 brushed flight controller with integrated DSM receiver.
 Available here: [Banggood](http://www.banggood.com/Micro-Scisky-32bits-Brushed-Flight-Control-Board-Based-On-Naze-32-For-Quadcopters-p-1002341.html),
 [HobbyKing](http://www.hobbyking.com/hobbyking/store/__86503__Quanum_Pico_32bit_Brushed_Flight_Control_Board.html?strSearch=quanum%20micro)
 
-## Designers
-_(add your name here if you contributed to the design of this board)_
-
-## Maintainers
-_(add your name here if you help test or contribute code for this board)_
-
 ## Similar Targets
-_(add links board descriptions here that are similar in features or function, but have a separate target)_
+None
 
 ## Variants
-_(add links to boards here that are similar in features or function, but use this target when flashing)_
+None
 
 ## Other Resources
-_(add setup guides and instructional material here)_
+http://community.micro-motor-warehouse.com/t/how-to-set-up-scisky-fc-step-by-step/1224
 
 Rcgroups Thread: `link goes here`
