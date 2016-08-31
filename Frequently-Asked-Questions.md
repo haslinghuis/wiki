@@ -1137,11 +1137,15 @@ You can see that this arrangement is both confusing and unnecessary. If you want
 
 So the Betaflight 3.0 RC12 rates really represents the ultimate resolution of all this nonsense. There is no more "super expo" function. There is just three parameters.
 
-1. RC rate affects the linear rate multiplier. The rate "curve" is a straight line, and the slope of the line is determined by RC rate.
+1. RC rate affects the linear rate multiplier. The rate "curve" is a straight line, and the slope of the line is determined by RC rate. RC rate makes the base line steeper.  
 
 2. Expo applies a bicubic (standard expo curve) function to the rate curve.
+Expo changes the line by making the center-stick less responsive, but leaves the end-points alone.  
 
 3. P/R rate (now known as S.Rate) performs the "super expo" function similar to how MW2.3 did it, although a lot has changed under the hood in the way the rates are actually implemented.   
+S.Rates changes the line by leaving the center-stick alone, and makes the end-points steeper.
+
+You can achieve more or less the same curve with both expo and s.rates, it just depends whether you would prefer to think about tuning the center-stick first, and then pushing out the full-deflection rates from there, or whether you would prefer to think about tuning the full-deflection rates, and then softening the center-stick from there. 
 
 ##I get Yaw twitches or mid-throttle oscillations How do I solve this?
 Many people have yaw twitches or oscillations at mid-throttle and many do not. All that have this issue seem to be running FCs that use the MPU6500 gyro chip (Naze32 rev6, LUX, others) and newer motors. Boris B was one that did not have this issue with the 6500 gyro until he upgraded to newer, stronger motors. Many have cured this by soft mounting the FC board but this has not worked in all cases.
