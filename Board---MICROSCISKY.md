@@ -1,6 +1,6 @@
 # AIORACERF3
 
-F1 brushed flight controller with integrated Spektrum receiver.
+F1 brushed flight controller with integrated DSM receiver.
 
 ## Description
 
@@ -29,9 +29,7 @@ F1 brushed flight controller with integrated Spektrum receiver.
 
 ## Manufacturers and Distributors
 
-`name of manufacturers and distributors for this specific board, variants go below`
-
-Available here: [Banggood](http://www.banggood.com/Micro-Scisky-32bits-Brushed-Flight-Control-Board-Based-On-Naze-32-For-Quadcopters-p-1002341.html)
+Available here: [Banggood](http://www.banggood.com/Micro-Scisky-32bits-Brushed-Flight-Control-Board-Based-On-Naze-32-For-Quadcopters-p-1002341.html),
 [HobbyKing](http://www.hobbyking.com/hobbyking/store/__86503__Quanum_Pico_32bit_Brushed_Flight_Control_Board.html?strSearch=quanum%20micro)
 
 ## Designers
