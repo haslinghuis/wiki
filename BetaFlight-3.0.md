@@ -168,15 +168,20 @@ You can for example remove yaw noise on this way till certain level, but you may
 <i>[AUTO-LAND,DROP]</i><br />
 
 ###Changes in RC12 CLI 
-Rc rate will be represented in deg/sec on the new configurator. Thats your max stick reflection.  
+Rc rate will be represented in deg/sec on the new configurator. That is your max stick reflection.  
 Also expo and other stuff will eventually be showed correctly with proper naming.  
 
-####set rate_accel_limit = 0
-<i>[0..1000]<i>
+####set rate_accel_limit = 0  
+<i>[0..1000]<i>  
 Increasing can help decrease Bounce back on low power copters.  
-####set yaw_rate_accel_limit = 220
+####set yaw_rate_accel_limit = 220  
 <i>[0..1000]<i>  
  
+####set accum_threshold = 130  
+<i>[15..1000]<i>
+####set yaw_accum_threshold = 32  
+<i>[15..1000]<i>   
+
 ####rc_rate, rc_rate_yaw   
 linear rate without curves. Configurable up to 2000deg/sec  
 ####roll_srate, pitch_srate, yaw_srate   
