@@ -182,6 +182,12 @@ Increasing can help decrease Bounce back on low power copters.
 ####set yaw_accum_threshold = 32  
 <i>[15..1000]<i>   
 
+####set iterm_throttle_gain = 0  
+<i>[0..200]<i>  
+
+####set zero_cross_allowance = 2   
+<i>[0..50]<i> 
+
 ####rc_rate, rc_rate_yaw   
 linear rate without curves. Configurable up to 2000deg/sec  
 ####roll_srate, pitch_srate, yaw_srate   
