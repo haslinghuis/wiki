@@ -186,6 +186,8 @@ Good thing about srates is that it kind of tries to keep the same mid stick whil
 Post by ctzsnooze explaining these settings:  
 http://www.rcgroups.com/forums/showpost.php?p=35602942&postcount=37292  
 
+Note: See the FAQ "What is the story on the different Rates and Expos?" for an in depth explanation on the history of Rates and Expos.  
+
 ## Discussions on using the new features:
 
 ###Legacy PID controller
