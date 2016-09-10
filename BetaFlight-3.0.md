@@ -50,7 +50,11 @@ RC9 - Support all targets (ignore int pin on pid loop)
 RC10 - Defaults // Cleanups // Drop betaflight PIDc from OPBL CC3D target (use hex for full support)   
 RC11 - Fix for dterm setpoint range // sparky i2c fix  
 RC12 - Removed Sonar for naze32 to free some flash space // Removed feature super expo. Super expo is active when srates are set // Increased linear rate range. rc_rate higher than 2.0 will become stronger and 255 will give full linear 2000deg/sec // Redefined EXPO like in 2.8.0 RC4 rc_expo is now power expo! // Improved efficiency in rate code // rate cleanup // BlHeli passthrough fixes for F4 // New target RCEXPLORER   
+RC13 - Fix drastically rc expo curve around center // Fix anglemix mode in configurator // added forcing into DFU mode for F1 and F3 through cli command dfu // Fix faulty baro detection // Fix broken LEDSTRIP west indicator
+RC14 - disable yaw filter by default // repurpose pterm setpoint weight to apply only on super rates // improve gyro debugging // fix beeper for sparky2  
 
+New 1.8.0 configurator supports some additional tuning parameters. Don't forget to check tool tips for explanations!
+New blackbox 2.5.5 supports all new parameters   
 New 1.7.8 configurator (RC12)  
 1.7.7 configurator (RC11)
 1.7.6 configurator (RC10) supports some additional tuning parameters. Don't forget to check tooltips for explainations!
@@ -206,6 +210,13 @@ Post by ctzsnooze explaining these settings:
 http://www.rcgroups.com/forums/showpost.php?p=35602942&postcount=37292  
 
 Note: See the FAQ "What is the story on the different Rates and Expos?" for an in depth explanation on the history of Rates and Expos.  
+
+###Changes & new in RC13 CLI
+command dfu   
+forcing into DFU mode for F1 and F3  
+
+###Changes & new in RC14 CLI 
+repurpose pterm setpoint weight to apply only on super rates  
 
 ## Discussions on using the new features:
 
