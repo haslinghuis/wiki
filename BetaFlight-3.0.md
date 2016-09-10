@@ -51,19 +51,19 @@ RC10 - Defaults // Cleanups // Drop betaflight PIDc from OPBL CC3D target (use h
 RC11 - Fix for dterm setpoint range // sparky i2c fix  
 RC12 - Removed Sonar for naze32 to free some flash space // Removed feature super expo. Super expo is active when srates are set // Increased linear rate range. rc_rate higher than 2.0 will become stronger and 255 will give full linear 2000deg/sec // Redefined EXPO like in 2.8.0 RC4 rc_expo is now power expo! // Improved efficiency in rate code // rate cleanup // BlHeli passthrough fixes for F4 // New target RCEXPLORER   
 RC13 - Fix drastically rc expo curve around center // Fix anglemix mode in configurator // added forcing into DFU mode for F1 and F3 through cli command dfu // Fix faulty baro detection // Fix broken LEDSTRIP west indicator
-RC14 - disable yaw filter by default // repurpose pterm setpoint weight to apply only on super rates // improve gyro debugging // fix beeper for sparky2  
+RC14 - disable yaw filter by default // repurpose pterm setpoint weight to apply only on super rates // improve gyro debugging // fix beeper for sparky2    
 
-New 1.8.0 configurator supports some additional tuning parameters. Don't forget to check tool tips for explanations!
+New 1.8.0 configurator (RC14) supports some additional tuning parameters. Don't forget to check tool tips for explanations!   
 New blackbox 2.5.5 supports all new parameters   
-New 1.7.8 configurator (RC12)  
-1.7.7 configurator (RC11)
-1.7.6 configurator (RC10) supports some additional tuning parameters. Don't forget to check tooltips for explainations!
-1.7.5 configurator for RC 8 and up supports some additional tuning parameters. Don't forget to check tooltips for explanations!
+1.7.8 configurator (RC12)   
+1.7.7 configurator (RC11)  
+1.7.6 configurator (RC10) supports some additional tuning parameters. Don't forget to check tooltips for explainations!  
+1.7.5 configurator for RC 8 and up supports some additional tuning parameters. Don't forget to check tooltips for explanations!  
 The ones who are trying a notch filter on pre RC7 releases and using separate gyro ans pid rate/denom you must upgrade to RC7 as there was a bug in coefficient calculation.  
 
 Use 1.7.2 configurator for up to RC 7.  
 
-New 1.7.1 configurator supports some additional tuning parameters. Don't forget to check tooltips for explainations!
+1.7.1 configurator supports some additional tuning parameters. Don't forget to check tooltips for explainations!
 
 The PID from 2.x versions can transfer to 3.0 as the scaling is the same, but you may expect that it should be possible to get higher PID's despite the same PID scaling due to new PID controller functionalities.
 
