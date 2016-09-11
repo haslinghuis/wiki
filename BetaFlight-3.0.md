@@ -21,8 +21,8 @@ Betaflight has 2 different goals.
 2) from scientific point of view it is good to keep improving and introduce new features where those who like to experiment can play with ans give valuable feedback. These are mostly burried in the cli   
 
 
-##Betaflight 3.0.0-RC9 (F4 Support)
-
+##Betaflight 3.0.0-RC14 (F4 Support)
+####Final Release   
 This is really a major release. The full detailled change list can be found in the the commit history.
 https://github.com/betaflight/betaflight/commits/master
 
@@ -32,12 +32,16 @@ Short Summary of changes:
 - Full IO rework
 - Major target seperations. Easy implementation for new targets
 - PWM code rework
+- Added OSD integration
 - Major code cleanups and rewrites
 - More configurator integration
 - New Betaflight PID controller based on deg/sec. All of the future development will all happen in this single pid controller. There is still a Legacy PID controller, which is pretty much evolved rewrite. That one will stay the same.
 - The new Betaflight 2DOF PID controller has some additional extra parameters for configuring. Check out the config options in the configurator. This PID controller allowes less overshoot percentage and less Derivative needed to get the same affect.
 - RC Interpolation added back with multiple options. (Use Auto for automatic rx rate configuration)
 - Added "diff" cli command for easier backuping of config.
+- Removed Super expo as it is a part of Super Rates and enabled by default.
+- Increased linear rate range. rc_rate higher than 2.0 will become stronger and 255 will give full linear 2000deg/sec. Use configurator rate tool to see visual representation of rates.
+- Smoother RC EXPO curve (Use rate tool in configurator for optimal rate tuning)
 
 RC2 - Changed defaults / cleanup ONESHOT125 feature  
 RC3 - Defaults based on feedback // yaw_axis added to interpolation // add additional config parameters // FIX PPM on KISS  
@@ -54,7 +58,8 @@ RC13 - Fix drastically rc expo curve around center // Fix anglemix mode in confi
 RC14 - disable yaw filter by default // repurpose pterm setpoint weight to apply only on super rates // improve gyro debugging // fix beeper for sparky2    
 
 New 1.8.0 configurator (RC14) supports some additional tuning parameters. Don't forget to check tool tips for explanations!   
-New blackbox 2.5.5 supports all new parameters   
+New blackbox 2.5.6 supports all new parameters   
+
 1.7.8 configurator (RC12)   
 1.7.7 configurator (RC11)  
 1.7.6 configurator (RC10) supports some additional tuning parameters. Don't forget to check tooltips for explainations!  
