@@ -586,6 +586,24 @@ Within this FAQ, check the answer to "What Flight Controllers are recommended to
 ##Will Betaflight code be merged back into Cleanflight ?
 Yes, it is the intention that this will happen gradually over time. Sometimes features from CleanFlight also get merged into BetaFlight too. This code merge (in both directions) has already started happening from BetaFlight V2.4.0 and CleanFlight V1.12 onwards.
 
+Question posted and Boris' answer after the 3.0.0 Released:
+Q by Ede2016- Does this mean from now on BetaFlight and CleanFlight are independent from each other?
+A from Boris- That was the initial scope of this project, but you can understand that this all is done in free time. And maintaining multiple versions is really time consuming and not efficient....well actually impossible.
+
+Due to a lot of changes in betaflight it is not that easy to just merge things back easily. Betaflight is completaly open source and all code is available for other open source projects like cleanflight. There are actually some developers who are continously working on merging things back and fourth, but even those are struggling as divergion is getting bigger and bigger.
+
+Also the scope of cleanflight is very wide and betaflight primary only focuses on acro and level performance.
+
+Three main open source branches and their focus:
+- Cleanflight (wide focus area)
+- iNav (Autonomous modes like GPS etc)
+- Betaflight (Mainly Acro and level performance)
+
+But they all work together and share things.
+
+But you can imagine also other aspects of merging things back is that you cant simply tell the users after upgrade "your multirotor will fly completaly different and you have to fully change your rates / pids"   
+
+I thought the idea was that BetaFlight is for all the Beta testers (a lot by now) and CleanFlight should be for "normal" pilots who can wait a few months for updates - after they are beta tested and stable.
 ##When I update to the latest version of BetaFlight do I need to recalibrate my ESCs ?
 ESCs shouldn't need recalibration unless you changed the min/max throttle values in BetaFlight.
 For more information about ESC Calibration see this video: http://www.youtube.com/watch?v=o3Mg-9M0l24
