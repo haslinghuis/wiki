@@ -55,7 +55,7 @@
 1. [How to setup the rates and SuperExpo in ßF 2.8.1?](#how-to-setup-the-rates-and-SuperExpo-in-ßF-2.8.1-)  
 1. [What is the story on the different Rates and Expos?](#what-is-the-story-on-the-different-Rates-and-Expos-)  
 1. [I get Yaw twitches or mid-throttle oscillations. How do I solve this?](#i-get-yaw-twitches-or-mid-throttle oscillations-how-do-I-solve-this-)  
-
+1. [Is there a way to download blackbox logs through a terminal client?](#Is-there-a-way-to-download-blackbox-logs-through-a-terminal-client-) 
 
 **If your question is not listed above then please check the following pages:**
 
@@ -1344,5 +1344,16 @@ It cannot be eliminated by filtering the gyro data - as has been pointed out bef
 It is not a software issue in blheli or betaflight, we can be sure of that. Replacing the gyro chip doesn't change that software yet it does fix the problem.
 
 My gut feeling is that this is an inherent issue in these gyro chip themselves, and that some individual examples of these chips get it much worse than others. That's why I recommend replacing the gyro chip or the whole FC if simple soft mounting fails to solve the problem. 
+
+##Is there a way to download blackbox logs through a terminal client? 
+Thanks to dropax for asking this and working out the answer.  
+
+Some code digging reveals a CLI command "flash_read" which is only enabled for sparky2:
+added "#define USE_FLASH_TOOLS" in spracingF3/target.h, compiled and flashed board.
+Set PuTTY to log all session output to file, connect, type "#" to enter CLI, "flash_info" to get usedSize, "flash_read 0 'usedSize'" and the show begins. 11 minutes later close PuTTY and find a nice 8MB log on the harddrive.
+Blackbox viewer is robust enough to not care about the initial "talk" in the logfile.
+
+One thing that caught me at first was the flow control setting in PuTTY, has to be "none", got trucated logs with the default.   
+Not as convinient like hitting some buttons in configurator but it will save me sooo much time, big thanks to whoever added this handy piece of code.   
 
 
