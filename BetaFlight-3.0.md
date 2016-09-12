@@ -214,6 +214,9 @@ Good thing about srates is that it kind of tries to keep the same mid stick whil
 Post by ctzsnooze explaining these settings:  
 http://www.rcgroups.com/forums/showpost.php?p=35602942&postcount=37292  
 
+Post by Boris showing Old verse New rates with and without using SRATE settings:  
+http://www.rcgroups.com/forums/showpost.php?p=35704903&postcount=38205   
+
 Note: See the FAQ "What is the story on the different Rates and Expos?" for an in depth explanation on the history of Rates and Expos.  
 
 ###Changes & new in RC13 CLI
