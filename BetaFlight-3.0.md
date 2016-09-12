@@ -193,6 +193,8 @@ Increasing can help decrease Bounce back on low power copters.
 
 ####set iterm_throttle_gain = 0  
 <i>[0..200]<i>  
+Joshua Bardwell's comment:   
+iterm_throttle_gain came from a suggestion I made to increase I gain roughly as the derivative of the throttle position. I noticed that I was having to increase I gain significantly higher--maybe 20 points or so--to keep pitch consistent on throttle punch and chops. So I proposed that the I term be artificially boosted when the throttle was moving quickly. iterm_throttle_gain controls the strength of this parameter. 
 
 ####set zero_cross_allowance = 2   
 <i>[0..50]<i> 
