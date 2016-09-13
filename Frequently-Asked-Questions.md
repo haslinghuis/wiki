@@ -1356,7 +1356,6 @@ Blackbox viewer is robust enough to not care about the initial "talk" in the log
 One thing that caught me at first was the flow control setting in PuTTY, has to be "none", got trucated logs with the default.   
 Not as convinient like hitting some buttons in configurator but it will save me sooo much time, big thanks to whoever added this handy piece of code.   
 
-I think [this](https://github.com/cleanflight/cleanflight/commit/3eb28f16eaa5d4f4a085bcb87f334ba85d3ace84 )   
- is the initial commit to cleanflight and [this](https://github.com/betaflight/betaflight/commit/3eb28f16eaa5d4f4a085bcb87f334ba85d3ace84#diff-34076ed1dbe02400da4a39189fe5c250) to betaflight, date is 01/28/2015 for both. So my thanks go to thenickdude, the flash and blackbox guru.
+I think [this](https://github.com/cleanflight/cleanflight/commit/3eb28f16eaa5d4f4a085bcb87f334ba85d3ace84 ) is the initial commit to cleanflight and [this](https://github.com/betaflight/betaflight/commit/3eb28f16eaa5d4f4a085bcb87f334ba85d3ace84#diff-34076ed1dbe02400da4a39189fe5c250) to betaflight, date is 01/28/2015 for both. So my thanks go to thenickdude, the flash and blackbox guru.
 
-Since it's only enabled for the "brand new" sparky2 target (08/06/2016) I think it is only meant for dubugging purpose. After the download the serial port seems to hang up and I have to reboot the FC but the time savings are totally worth the hassle.  
+Since it's only enabled for the "brand new" sparky2 target (08/06/2016) I think it is only meant for debugging purpose. After the download the serial port seems to hang up and I have to reboot the FC but the time savings are totally worth the hassle.  
