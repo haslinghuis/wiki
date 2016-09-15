@@ -288,6 +288,10 @@ https://www.youtube.com/watch?v=UQOqYOBSCc8
 A short video demonstrating with and without Notch filter from Robogenisis
 https://youtu.be/ic6Np86Jsrs
 
+A discussion of how to and when to setup LPF & Notch filters:
+[What filters should we add when?](http://www.rcgroups.com/forums/showpost.php?p=35727622&postcount=38376)  
+[... when trying to reduce dterm vibrations, how do you decide when to i) increasing dterm filtering, and ii) simply reducing dterm gains somewhat?](http://www.rcgroups.com/forums/showpost.php?p=35728426&postcount=38380)  
+
 Explained by R.A.V.  
 Here's an explanation for the new notch filter in 3.0 with the new PR in mind. Maybe waltr knows best where to put something from it into the wiki.
 
