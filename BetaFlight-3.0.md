@@ -120,7 +120,7 @@ With this OFF the PIDC does NOT respond to Sticks when Throttle values in below 
 
 ####set airmode_activate_throttle = 1350<br />
 <i>[1000..2000]</i><br />
-That is the THRESHOLD (ACTIVATION) at which Airmode gets turned on the FIRST time the throttle hits this value. Airmode is then ON until DisArmed.  
+That is the THRESHOLD (ACTIVATION) at which Airmode gets turned on the FIRST time the throttle hits this value. Airmode is then ON until DisArmed. This is to keep AirMode OFF while still on the ground. Once throttle goes up AirMode is enabled.  
 
 ####set yaw_rate_acceleration_limit = 50?<br />
 <i>[0..200?]</i><br />
