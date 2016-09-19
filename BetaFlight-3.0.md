@@ -371,6 +371,9 @@ You can view earlier BB logs (pre BF 3.0) but the analyzer won't know at which r
 Post by ctzsnooze  
 All filters add delay. Doubling slope on an IIR LPF doubles delay since the same 1st order filter is simply applied twice. None currently are FIR. FIR were evaluated and not as good as simple IIR. Dterm is IIR, gyro cut was biquad (i think it still is). There is a recent post about the notch filter that linked to the GitHub page where the Notch was discussed before implementation. Diagrams there show delay for different filter combinations. Lots of thought has gone into current filter design. 
 
+Another post by ctzsnooze on using the Filters available in 3.0
+http://www.rcgroups.com/forums/showpost.php?p=35764414&postcount=38600
+
 ###roll/yaw cam mix
 from FieserKiller  
 Note that its not active permanently in this version of BF any more. You have to configure it in modes tab. I've bound it to a switch so I can finally let my buddys fly my quad without crashing due to unfamiliar controls.   
