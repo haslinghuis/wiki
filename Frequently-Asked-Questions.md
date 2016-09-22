@@ -1363,6 +1363,10 @@ MotoLab Cyclone boards have plenty of space around the holes, intentionally, no 
 
 I can't stress enough that just over drilling isn't enough. The board can and will slide on the o ring until one hole stops with the edge of that hole wedged on a bolt. Beveling the top and bottom of the hole allows re-centering and is essential with a yaw issue of his kind. I use a cheap conical grinding stone to make the bevel.   
 
+#### A solution by airmaxx23
+http://www.rcgroups.com/forums/showpost.php?p=35785741&postcount=38781
+So, great news, this completely took care of my yaw shake. I didn't change anything else prior to trying it either. Just in case someone wants to print up some of these standoffs I can put them on Thingiverse or if you want to draw them up they're 6mm outer diameter and 2.9mm inner.   
+
 ##Is there a way to download blackbox logs through a terminal client? 
 Thanks to dropax for asking this and working out the answer.  
 
