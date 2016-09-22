@@ -1359,6 +1359,9 @@ My conceptual model is that the hardware PWM system in BLHeli-S ESCs causes some
 
 It is also possible that there is an issue in BLHeli-S code that causes the problem. By that I mean there may be a throttle point where output is not linear. I have noticed that by spooling motors in motors tab very slowly and listening carefully there are some throttle points where the motors lose their smoothness. This non smoothness at certain points is also the case on non BLHeli-s ESCs. It could be that all four motors together at these points somehow encourage positive feedback. To rule this out someone needs to thrust test in such a way to validate linear proportional motor output in the affected range. But to date no-one has done that test or identified any specific ESC firmware issue. FWIW, I disable all dithering in BLHeli-S. Maybe give that a try. 
 #### But the most important thing is a truly functional soft mounting. Not some half-hearted bunch of o rings
+MotoLab Cyclone boards have plenty of space around the holes, intentionally, no problem there. It's a totally different situation with a Dodo, which has components very close to the holes. Especially tough if the FC bolts need to keep going up for structural reasons like on many small frames, in which case you have no option but to enlarge the holes. 
+
+I can't stress enough that just over drilling isn't enough. The board can and will slide on the o ring until one hole stops with the edge of that hole wedged on a bolt. Beveling the top and bottom of the hole allows re-centering and is essential with a yaw issue of his kind. I use a cheap conical grinding stone to make the bevel.   
 
 ##Is there a way to download blackbox logs through a terminal client? 
 Thanks to dropax for asking this and working out the answer.  
