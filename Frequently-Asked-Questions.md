@@ -1345,7 +1345,7 @@ It is not a software issue in blheli or betaflight, we can be sure of that. Repl
 
 My gut feeling is that this is an inherent issue in these gyro chip themselves, and that some individual examples of these chips get it much worse than others. That's why I recommend replacing the gyro chip or the whole FC if simple soft mounting fails to solve the problem. 
 
-another post by ctzsnooze (22 Sept 2016)   
+#### another post by ctzsnooze (22 Sept 2016)   
 
 When you guys say you are soft mounting, be aware you need to over drill the holes to 4mm and ideally bevel the top and bottom of the hole so that the FC 'floats' in all axes. You need to check for free movement. If you don't drill out the holes the bolt holes will stick on yaw on the bolts and transmit vibrations directly. Also you can't have anything stiff pushing on the FC, ideally all wires to/from it need to be very fine silicone.
 
@@ -1357,7 +1357,8 @@ In both cases, proper soft mounting fixed it. Without the soft mounting I also c
 
 My conceptual model is that the hardware PWM system in BLHeli-S ESCs causes some kind of very specific noise at certain throttle points that deeply affects the yaw sensor part of some gyro chips.
 
-It is also possible that there is an issue in BLHeli-S code that causes the problem. By that I mean there may be a throttle point where output is not linear. I have noticed that by spooling motors in motors tab very slowly and listening carefully there are some throttle points where the motors lose their smoothness. This non smoothness at certain points is also the case on non BLHeli-s ESCs. It could be that all four motors together at these points somehow encourage positive feedback. To rule this out someone needs to thrust test in such a way to validate linear proportional motor output in the affected range. But to date no-one has done that test or identified any specific ESC firmware issue. FWIW, I disable all dithering in BLHeli-S. Maybe give that a try. ####But the most important thing is a truly functional soft mounting. Not some half-hearted bunch of o rings
+It is also possible that there is an issue in BLHeli-S code that causes the problem. By that I mean there may be a throttle point where output is not linear. I have noticed that by spooling motors in motors tab very slowly and listening carefully there are some throttle points where the motors lose their smoothness. This non smoothness at certain points is also the case on non BLHeli-s ESCs. It could be that all four motors together at these points somehow encourage positive feedback. To rule this out someone needs to thrust test in such a way to validate linear proportional motor output in the affected range. But to date no-one has done that test or identified any specific ESC firmware issue. FWIW, I disable all dithering in BLHeli-S. Maybe give that a try. 
+#### But the most important thing is a truly functional soft mounting. Not some half-hearted bunch of o rings
 
 ##Is there a way to download blackbox logs through a terminal client? 
 Thanks to dropax for asking this and working out the answer.  
