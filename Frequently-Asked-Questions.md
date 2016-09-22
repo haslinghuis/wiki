@@ -1366,6 +1366,11 @@ I can't stress enough that just over drilling isn't enough. The board can and wi
 #### A solution by airmaxx23
 http://www.rcgroups.com/forums/showpost.php?p=35785741&postcount=38781
 So, great news, this completely took care of my yaw shake. I didn't change anything else prior to trying it either. Just in case someone wants to print up some of these standoffs I can put them on Thingiverse or if you want to draw them up they're 6mm outer diameter and 2.9mm inner.   
+Here you go, 8mm, 10mm and 12mm. I can print them in orange, red, black, blue or clear if anyone needs them.
+http://www.thingiverse.com/thing:1785455  
+
+Another possible solution:
+http://www.rcgroups.com/forums/showpost.php?p=35786828&postcount=38790
 
 ##Is there a way to download blackbox logs through a terminal client? 
 Thanks to dropax for asking this and working out the answer.  
