@@ -1369,8 +1369,15 @@ So, great news, this completely took care of my yaw shake. I didn't change anyth
 Here you go, 8mm, 10mm and 12mm. I can print them in orange, red, black, blue or clear if anyone needs them.
 http://www.thingiverse.com/thing:1785455  
 
-Another possible solution:
+Another possible solution:   
 http://www.rcgroups.com/forums/showpost.php?p=35786828&postcount=38790
+
+Post by scripto23:   
+I've got another data point to add to the gyro noise/twitching debate. I have the Spracingf3 evo with the 9250 gyro. On a brand new build it was literally unflyable, I don't mean it flew like crap, I mean I couldn't get it off the ground because it was twitching like a stuck pig.
+
+Read through the relevant part in the amazing wiki (thanks waltr) tried soft mounting (already had a capacitor on the pdb) and managed to get it in the air, but still had very bad micro oscillations at anything above 1/3 throttle on ALL axis; visible on FPV and blackbox logs. I tried every combination of PIDs, nothing helped. I finally changed the FC to the spracingf3 with the 6050 gyro and all traces of micro oscillations were completely gone.
+
+It seems some people have no problems, some people have mild problems, and some like me are left with severe issues. The boards with these gyros are completely hit or miss. I sincerely doubt the quality control (or lack thereof) for this part.   
 
 ##Is there a way to download blackbox logs through a terminal client? 
 Thanks to dropax for asking this and working out the answer.  
