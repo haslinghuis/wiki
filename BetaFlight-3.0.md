@@ -2,6 +2,9 @@
 This is really a major release. The full detailed change list can be found in the the commit history.
 https://github.com/betaflight/betaflight/commits/master.  
 
+Here is a 3.0.0 Release overview video by joshuabardwell:   
+https://www.youtube.com/watch?v=Fz1IcxWpZfg   
+
 Betaflight is a genuine Open Source project with people all over the entire world contributing to the code. It is not just me!
 This 3.0 release had about 15-25 very talented developers involved working day and night for last 2 months.
 I really want to thank everyone who was involved and help me and others to learn more and to make this all happen.
