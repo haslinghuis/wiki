@@ -184,9 +184,11 @@ You can for example remove yaw noise on this way till certain level, but you may
 Rc rate will be represented in deg/sec on the new configurator. That is your max stick reflection.  
 Also expo and other stuff will eventually be showed correctly with proper naming.  
 
-####set rate_accel_limit = 0  
-<i>[0..1000]<i>  
+####set rate_accel_limit = 220  
+<i>[0..1000]<i>  See "yaw_rate_acceleration_limit" above for description  
 Increasing can help decrease Bounce back on low power copters.  
+Supposedly lowering that value will allow less harsh yaw acceleration, i think Boris mentioned it long ago.
+
 ####set yaw_rate_accel_limit = 220  
 <i>[0..1000]<i>  
  
