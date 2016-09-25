@@ -142,7 +142,7 @@ Boris states: "The gyro doesnt need a very steep cut if you ask me on a descent 
 
 ####set pid_tolerance_band = 0<br />
 <i>[0..200]</i><br />  
-####set tolerance_band_min_reduction = 40<br /> ??? 
+####set tolerance_band_min_reduction = 40<br />
 <i>[0..100]</i><br />
 
 Reduces "hunting" effect from pid controller. 
@@ -166,7 +166,7 @@ You can for example remove yaw noise on this way till certain level, but you may
 <i>[1..200]</i><br />
 
 ###Changes in RC8 CLI 
- New setting
+ New settings  
 ####set blackbox_on_motor_test = OFF<br />
 <i>[OFF,ON]</i><br />
 
@@ -464,3 +464,7 @@ Up to 3 different rateprofiles per profile can be stored on the flight controlle
 
 pidTuningRatesTip
 Play with the rates and see how those affect the stick curve 
+
+## Notes on new Black Box Viewer
+If you open a Betaflight Log, then the logo shown is the Betaflight Logo and the colour scheme is orange; if you open an iNav log, then the logo changes to iNav and the colour scheme is blue; if you open a Cleanflight log (or if it can't tell what kind of firmware you were running e.g. an old version of Betaflight perhaps) then the logo shows the Cleanflight logo and the colour scheme is green....
+Some features are automatically disabled depending upon the firmware you are running that creates the log.  
