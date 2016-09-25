@@ -126,8 +126,9 @@ With this OFF the PIDC does NOT respond to Sticks when Throttle values in below 
 That is the THRESHOLD (ACTIVATION) at which Airmode gets turned on the FIRST time the throttle hits this value. Airmode is then ON until DisArmed. This is to keep AirMode OFF while still on the ground. Once throttle goes above this setting AirMode is enabled through the entire throttle range.  
 
 ####set yaw_rate_acceleration_limit = 50?<br />
-<i>[0..200?]</i><br />
-Yaw rate accel limit is the betaflight pidc replacement for yaw jump prevention. It works differently and much better. It prevents quick accelerations and decelerations of yaw axis, what were actually causing jumps.
+<i>[0..200?]</i><br /> Changed to rate_accel_limit in RC12  
+
+Yaw rate accel limit is the betaflight (2DOF) PIDC replacement for yaw jump prevention. It works differently and much better. It prevents quick accelerations and decelerations of yaw axis, what were actually causing jumps. For the Legacy PIDC use "d_yaw".   
 
 What we do with sticks is pushing the multirotors beyond their limits, but pid controller still wants to correct that and ramps up the motors what causes jerky behavior. With accel limits the pid controller has a protection to limit the acceleration and make it smoother what also helps against iterm windups we have seen getting worse on yaw axis.
 Same can also be done for roll and pitch axis what is disabled by default. It can give much smoother flight characteristics.
@@ -140,7 +141,7 @@ Boris states: "The gyro doesnt need a very steep cut if you ask me on a descent 
 ### The following CLI commands are Per PROFILE so can be different in each Profile.  
 
 ####set pid_tolerance_band = 0<br />
-<i>[0..200]</i><br />
+<i>[0..200]</i><br />  
 ####set tolerance_band_min_reduction = 40<br /> ??? 
 <i>[0..100]</i><br />
 
@@ -184,14 +185,14 @@ You can for example remove yaw noise on this way till certain level, but you may
 Rc rate will be represented in deg/sec on the new configurator. That is your max stick reflection.  
 Also expo and other stuff will eventually be showed correctly with proper naming.  
 
-####set rate_accel_limit = 220  
-<i>[0..1000]<i>  See "yaw_rate_acceleration_limit" above for description  
+####set rate_accel_limit = 0  
+<i>[0..1000]<i>  
 Increasing can help decrease Bounce back on low power copters.  
-Supposedly lowering that value will allow less harsh yaw acceleration, i think Boris mentioned it long ago.
 
 ####set yaw_rate_accel_limit = 220  
 <i>[0..1000]<i>  
- 
+Name changed.  See "yaw_rate_acceleration_limit" above for description.  
+
 ####set accum_threshold = 130  
 <i>[15..1000]<i>
 ####set yaw_accum_threshold = 32  
