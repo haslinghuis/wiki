@@ -1379,6 +1379,27 @@ Read through the relevant part in the amazing wiki (thanks waltr) tried soft mou
 
 It seems some people have no problems, some people have mild problems, and some like me are left with severe issues. The boards with these gyros are completely hit or miss. I sincerely doubt the quality control (or lack thereof) for this part.   
 
+####More from Boris's thread (7Oct2016):
+ Posted by mikenxzz:
+I have a problem with strong magnet motors (Tornado T2 2206), where straight after arming, at idle, the motors vibrate a lot.
+ Reply by ctzsnooze:
+Yeah I have a build that does this exact same thing with Tornado T2 2206 2600 motors, but not with SunnySky 2204 2300's on the same frame. It only happens briefly while waiting for me to take off, then I never see it in flight. Odd, never seen it before. Haven't blackboxed it yet doesn't trouble me enough. Suspect some BLHeli setting like startup power needs to be changed a fraction.
+ Boris's reply:
+It happens I have been analyzing several different motor /prop combos and their vibration to determine some better general default filters. I do see a lot of variance in there especially on light and torquee setups.
+The differences are vibrations over different throttle ranges.
+For tornado motor default 3.0 causes some low throttle vibrations between 100hz and 230hz. But the most vibration comes around 400hz on upper throttle section.
+The lowpass filters are not strong enough to completely remove that noise even when cascaded. The only thing what helps is the notch filter on gyro as that one can cut really deep on that specific range.
+I use double gyro notch with really great results with practically almost no delay penalty. Just some information loss.
+Notch 1 180hz and cutoff 80hz
+Notch 2 400hz and cutoff 300hz
+
+Dterm notch is default values.
+
+That's why I will add second notch option in 3.0.1 patch.
+
+But I also have great success with several different de-noising filters i have been experimenting with.
+Savitzky golay does an excellent job, but its too expensive in terms of cpu. 
+
 ##Is there a way to download blackbox logs through a terminal client? 
 Thanks to dropax for asking this and working out the answer.  
 
