@@ -1400,6 +1400,10 @@ That's why I will add second notch option in 3.0.1 patch.
 But I also have great success with several different de-noising filters i have been experimenting with.
 Savitzky golay does an excellent job, but its too expensive in terms of cpu. 
 
+Its the nowadays motors what really cause more microvibrations than the older ones
+Certain escs will pronounce this noise more.
+Not sure why blheli_s seems most sensitive of all at the moment.   
+
 ##Is there a way to download blackbox logs through a terminal client? 
 Thanks to dropax for asking this and working out the answer.  
 
