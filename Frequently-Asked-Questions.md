@@ -1404,6 +1404,25 @@ Its the nowadays motors what really cause more microvibrations than the older on
 Certain escs will pronounce this noise more.
 Not sure why blheli_s seems most sensitive of all at the moment.   
 
+####Another solution by Race Miata (posted in the BLHeli_S thread):
+Regarding mid-throttle twitch, I tried all sorts of tuning, filters, FC mounting methods without much luck because of those super torquey 2306 motors. So far what works best for me is to
+
+1. meticulously spin-balance each entire rotor assembly (motor plus prop). I'm talking about less than 0.002g of imbalance with the entire rotor assembly,
+
+2. hard-mount FC (not surprised because just like for onboard vids soft-mounting the cam never works for me to reduce jello but instead hard-mounting the cam works the best once I balance the props, AND
+
+3. sandwich electrical tape between motors and frame to absorb high frequency vibes from the motors after rotor assemblies have been meticulously balanced. The reason for the meticulous balancing is that if motor is not super-hard mounted to the frame then vibes may be amplified.
+
+Hard-mount-FC with shock-isolating motors work much more effectively to isolate high frequency vibes from the motors to the FC than soft-mounting FC because high frequency vibes travel thru' hard body (hint: entire frame) very well. By the time it gets to the FC, no amount of soft-mounting the FC can work effectively. There's just not enough mass with the FC for soft-mounting it to work effectively. OTOH, when the vibe-isolating means is further upstream towards the source the whole frame adds to the mass downstream of the vibe-isolating means to effectively absorb the vibes. If you're a race car tuning geek like I do, think sprung weight vs unsprung weight. It's always desirable to have the most of the car's weight as sprung weight as opposed to unsprung weight for the suspension to work best.
+
+At this point there's still some mid-throttle twitch as shown in the following vid but with it toned down I don't have to dumb down my PID/filter tuning to compromise responsiveness and prop-wash handling. At least it's much more pleasant to cruise around near mid-throttle now. Before (see my earlier Multistar 250 vids), I hated to use mid-throttle so much I just tried my best to do 0-1 throttle just to avoid using part-throttle.
+
+My Multistar250 with Spin-Balancing and Vibration-Absorption Motor Mounts (2 min 40 sec)
+https://www.youtube.com/watch?v=rXB9Rl7vLDI
+
+Comments on this by AILERON8:
+Isolating vibration at its source before it's amplified is standard practice in just about every mechanical and aeronautical engineering handbook that's ever been written. Yet for some reason most folks in this hobby are so laser focused on a software-based filter or FC enhancement of some sort they're blinded to what should be an obvious solution. Dampening the motor vibration, stiffening the frame, or even placing a sensor near or on the motors (utilizing the active feedback signal within the FC software for an automated/enhanced filter) are going to have a much more pronounced effect on noise reduction than all the software filtering in the world.   
+
 ##Is there a way to download blackbox logs through a terminal client? 
 Thanks to dropax for asking this and working out the answer.  
 
