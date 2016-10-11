@@ -939,13 +939,15 @@ Only change the values in the grey boxes, and it will adjust the graphs and tabl
 ##Which Flight Controllers currently use SPI ?
   
   
-As of 5th May 2016  
+As of 11th Oct 2016  
 Colibri Race  
 Lux Race  
 Motolab Cyclone  
 SPRACINGF3EVO  
 DOGE  
-CC3D (this is F1 board though......performs slightly better than i2c F3 board on rewrite)Alienflight 
+CC3D (this is F1 board though......performs slightly better than i2c F3 board on rewrite)
+Alienflight 
+XRacer F303 (v3.1 only, prior versions use I2C)
 
 ##Which HEX target do I download and flash to my Flight Controller ?
 
