@@ -34,4 +34,4 @@ The STM32 VCP driver can be downloaded here --> http://www.st.com/web/en/catalog
 
 **NOTE:** Once you download and run the installation it has not installed the driver, merely unpacked the choice of drivers. Locate the installation directory and then run the EXE file pertaining to your system.
 
-e.g. C:\Program Files (x86)\STMicroelectronics\Software\Virtual comport driver\Win8\ <- will have two files present. One for 64 bit systems and one for 32 bit systems.
+e.g. C:\Program Files (x86)\STMicroelectronics\Software\Virtual comport driver\Win8\ <- will have two files present. One for 64 bit systems (dpinst_amd64.exe) and one for 32 bit systems (dpinst_x86.exe).
