@@ -58,7 +58,12 @@ _(add links board descriptions here that are similar in features or function, bu
 
 ## Variants
 
-_(add links to boards here that are similar in features or function, but use this target when flashing)_
+OMNIBUS AIO F3 PRO - http://shop.myairbot.com/index.php/omnibus-prov1-72.html
+
+Diffrences:
+  - Added Current Sensor
+  - Added Power Filter
+  - SBEC instead of LDO
 
 ## FAQ & Known Issues
 _(add FAQs, known issues and workarounds specifically related to this board. please link work in progress issues to the related github issue or pull request)_
@@ -73,5 +78,7 @@ Setup Guide: https://nathan.vertile.com/blog/2016/07/07/omnibus-typhoon-miniquad
 Rcgroups Thread: http://www.rcgroups.com/forums/showthread.php?t=2711617
 
 ## Image
-
+OMNIBUS AIO F3
 ![](http://shop.myairbot.com/media/catalog/product/cache/1/image/54b2359dd2430bcca06ee462d488eb40/o/m/omnibusf3-v1.1-3.jpg)
+OMNIBUS AIO F3 PRO
+![](http://shop.myairbot.com/media/catalog/product/cache/1/image/54b2359dd2430bcca06ee462d488eb40/o/m/omnibusf3-pro-4_1.jpg)
