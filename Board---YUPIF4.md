@@ -1,10 +1,10 @@
-# YupiF4
+# YuPiF4
 
 An high quality flight controller for the most demanding pilotes.
 
 ## Description
 
-The YupiF4 is a 36x36mm (30.5x30.5 mounting holes) board with an F4 microcontroller.
+The YuPiF4 is a 36x36mm (30.5x30.5 mounting holes) board with an F4 microcontroller.
 
 ## MCU, Sensors and Features
 
