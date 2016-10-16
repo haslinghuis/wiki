@@ -1,4 +1,4 @@
-# YuPiF4
+# YuPiF4 by RcNet
 
 An high quality flight controller for the most demanding pilotes.
 
