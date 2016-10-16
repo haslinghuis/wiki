@@ -38,3 +38,5 @@ Website : http://www.yupif4.com/
 ## Hardware Designs (if available)
 
 The hardware is currently closed source.
+
+![YuPiF4 - Logo](http://www.yupif4.com/imgs/YuPiF4.jpg)
