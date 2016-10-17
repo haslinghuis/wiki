@@ -29,6 +29,9 @@ The YuPiF4 is a 36x36mm (30.5x30.5 mounting holes) board with an F4 microcontrol
   - WS2811 Led Strip: Yes (on motor output Pin 5)
   - Transponder: No
 
+## Designers and Maintainers
+[RcNet](https://github.com/ted-rcnet) and [FaduF](https://github.com/Faduf)
+
 ## Manufacturers and Distributors
 
 This board is currently in the prototype phase. Only small batches were manufactured for testing.
