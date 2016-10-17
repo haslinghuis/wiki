@@ -70,7 +70,7 @@
  - [STM32F429DISCO](/betaflight/betaflight/wiki/Board---STM32F429DISCO)
  - [VRRACE](/betaflight/betaflight/wiki/Board---VRRACE)
  - [X_RACERSPI](/betaflight/betaflight/wiki/Board---X_RACERSPI)
- - [YupiF4](/betaflight/betaflight/wiki/Board---YUPIF4)
+ - [YuPiF4](/betaflight/betaflight/wiki/Board---YUPIF4)
  - [ZCOREF3](/betaflight/betaflight/wiki/Board---ZCOREF3)
 
 ### Page Templates
