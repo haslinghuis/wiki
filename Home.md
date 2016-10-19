@@ -5,7 +5,7 @@
 "Due to many questions about my latest Cleanflight improvements and tests here is some more central information about it. The motivation for this project is to bring the end users closer to the development. As my main focus in Cleanflight is the flight improving development. A flight test group like this is very useful.
 The BetaFlight fork is from the current Cleanflight Master with possible future Cleanflight flight performance enhancements.
 
-This project also helps contributing to other open source project like RaceFlight." - says Boris B ([lead developer](http://www.youtube.com/user/bozic1982/featured))
+This project also helps by contributing to other open source projects like iNav." - says Boris B ([lead developer](http://www.youtube.com/user/bozic1982/featured))
 
 
 ##Warning
