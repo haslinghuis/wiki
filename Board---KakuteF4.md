@@ -19,7 +19,7 @@
   - MCU: STM32F405RGT6
   - IMU: MPU9250 (SPI)
   - IMU Interrupt: Yes
-  - BARO: No
+  - BARO: Yes(optional)
   - VCP: Yes
   - Hardware UARTS: 3
   - OSD: No
@@ -32,7 +32,7 @@
 
 ### Features
 
-  - Current Sensor: Not implemented
+  - Current Sensor: implemented
   - BlHeli passthrough: No (due to buffered outputs)
   - WS2811 Led Strip: implemented
   - Transponder: No
