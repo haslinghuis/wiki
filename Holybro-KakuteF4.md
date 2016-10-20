@@ -5,7 +5,7 @@ Add your board to the list in the sidebar, double check the whole list if you wa
   find src/main/target/ -type d|xargs basename |tail -n +2
 ```
 
-# TEMPLATE
+# Kakute F4
 
 `tagline`
 
