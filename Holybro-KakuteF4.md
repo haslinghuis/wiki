@@ -10,7 +10,7 @@ Add your board to the list in the sidebar, double check the whole list if you wa
 `Quality Flight Controller`
 
 ## Description
-![](http://holybro-test-images.b0.upaiyun.com/201609/180/IMG_3436.JPG)
+
 `what is special about this board?`
 
 ## MCU, Sensors and Features
@@ -67,3 +67,6 @@ _(add FAQs, known issues and workarounds specifically related to this board. ple
 _(add setup guides and instructional material here)_
 
 Rcgroups Thread: `link goes here`
+
+
+![](http://holybro-test-images.b0.upaiyun.com/201609/180/IMG_3436.JPG)
