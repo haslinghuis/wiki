@@ -16,7 +16,7 @@ Add your board to the list in the sidebar, double check the whole list if you wa
 ## MCU, Sensors and Features
 
 ### Hardware
-_(update to match the target)_
+
   - MCU: STM32F405RGT6
   - IMU: MPU9250 (SPI)
   - IMU Interrupt: Yes
@@ -35,7 +35,7 @@ _(update to match the target)_
 _(update to match the target)_
   - Current Sensor: Not implemented
   - BlHeli passthrough: No (due to buffered outputs)
-  - WS2811 Led Strip: Not implemented
+  - WS2811 Led Strip: implemented
   - Transponder: No
 
 ## Hardware Designs (if available)
