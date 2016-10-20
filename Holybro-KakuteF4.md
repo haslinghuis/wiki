@@ -11,7 +11,7 @@ Add your board to the list in the sidebar, double check the whole list if you wa
 
 ## Description
 
-`what is special about this board?`
+`The full size, 35x35mm (30.5x30.5 mounting holes)`
 
 ## MCU, Sensors and Features
 
@@ -40,25 +40,12 @@ Add your board to the list in the sidebar, double check the whole list if you wa
 
 ## Hardware Designs (if available)
 
-`schematics, etc.`
+`The hardware is currently closed source.`
 
 ## Manufacturers and Distributors
 
 `www.holybro.com`
 
-Available here: `link to purchase`
-
-## Designers
-_(add your name here if you contributed to the design of this board)_
-
-## Maintainers
-_(add your name here if you help test or contribute code for this board)_
-
-## Similar Targets
-_(add links board descriptions here that are similar in features or function, but have a separate target)_
-
-## Variants
-_(add links to boards here that are similar in features or function, but use this target when flashing)_
 
 ## FAQ & Known Issues
 _(add FAQs, known issues and workarounds specifically related to this board. please link work in progress issues to the related github issue or pull request)_
