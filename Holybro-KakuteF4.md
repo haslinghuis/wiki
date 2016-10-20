@@ -7,7 +7,7 @@ Add your board to the list in the sidebar, double check the whole list if you wa
 
 # Kakute F4
 
-`tagline`
+`Quality Flight Controller`
 
 ## Description
 
@@ -32,7 +32,7 @@ Add your board to the list in the sidebar, double check the whole list if you wa
   - Buttons: 1 - DFU
 
 ### Features
-_(update to match the target)_
+
   - Current Sensor: Not implemented
   - BlHeli passthrough: No (due to buffered outputs)
   - WS2811 Led Strip: implemented
