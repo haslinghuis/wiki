@@ -8,6 +8,8 @@
 
 `The full size, 35x35mm (30.5x30.5 mounting holes)`
 
+![](https://github.com/jamming/betaflight/blob/kakutef4/img/kakutef4-top45.jpg?raw=true)
+
 ## MCU, Sensors and Features
 
 ### Hardware
