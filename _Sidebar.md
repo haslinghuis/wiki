@@ -46,6 +46,7 @@
  - [FURYF4](/betaflight/betaflight/wiki/Board---FURYF4)
  - [IRCFUSIONF3](/betaflight/betaflight/wiki/Board---IRCFUSIONF3)
  - [KISSFC](/betaflight/betaflight/wiki/Board---KISSFC)
+ - [KAKUTEF4](/betaflight/betaflight/wiki/Board---KAKUTEF4)
  - [LUX_RACE](/betaflight/betaflight/wiki/Board---LUX_RACE)
  - [MICROSCISKY](/betaflight/betaflight/wiki/Board---MICROSCISKY)
  - [MOTOLAB](/betaflight/betaflight/wiki/Board---MOTOLAB)
@@ -72,7 +73,7 @@
  - [X_RACERSPI](/betaflight/betaflight/wiki/Board---X_RACERSPI)
  - [YuPiF4](/betaflight/betaflight/wiki/Board---YUPIF4)
  - [ZCOREF3](/betaflight/betaflight/wiki/Board---ZCOREF3)
- - [KAKUTEF4](/betaflight/betaflight/wiki/Board---KAKUTEF4)
+ 
 
 ### Page Templates
  - [New Board](/betaflight/betaflight/wiki/Board---Template)
