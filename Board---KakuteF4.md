@@ -10,6 +10,8 @@
 
 ![](https://github.com/jamming/betaflight/blob/kakutef4/img/kakutef4-top45.jpg?raw=true)
 
+![](https://github.com/jamming/betaflight/blob/kakutef4/img/kakutef4-bottom45.jpg?raw=true)
+
 ## MCU, Sensors and Features
 
 ### Hardware
