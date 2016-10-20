@@ -44,7 +44,7 @@ Add your board to the list in the sidebar, double check the whole list if you wa
 
 ## Manufacturers and Distributors
 
-`holybro.com`
+`www.holybro.com`
 
 Available here: `link to purchase`
 
