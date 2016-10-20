@@ -17,18 +17,18 @@ Add your board to the list in the sidebar, double check the whole list if you wa
 
 ### Hardware
 _(update to match the target)_
-  - MCU: STM32F3
-  - IMU: MPU6050 (SPI)
+  - MCU: STM32F405RGT6
+  - IMU: MPU9250 (SPI)
   - IMU Interrupt: Yes
   - BARO: No
   - VCP: Yes
   - Hardware UARTS: 3
   - OSD: No
-  - Blackbox: No
-  - PPM/UART Shared: UART2
+  - Blackbox: Yes
+  - PPM/UART Shared: UART6
   - Battery Voltage Sensor: Yes, directly connected, no wiring necessary
-  - Integrated Voltage Regulator: Yes, unknown voltage limit
-  - Brushed Motor Mosfets: Yes
+  - Integrated Voltage Regulator: Yes, 7v~42v
+  - Brushed Motor Mosfets: No
   - Buttons: 1 - DFU
 
 ### Features
@@ -44,7 +44,7 @@ _(update to match the target)_
 
 ## Manufacturers and Distributors
 
-`name of manufacturers and distributors for this specific board, variants go below`
+`holybro.com`
 
 Available here: `link to purchase`
 
