@@ -68,5 +68,3 @@ _(add setup guides and instructional material here)_
 
 Rcgroups Thread: `link goes here`
 
-
-![](http://holybro-test-images.b0.upaiyun.com/201609/180/IMG_3436.JPG)
