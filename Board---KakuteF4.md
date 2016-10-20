@@ -2,15 +2,15 @@
 
 # Kakute F4
 
-`Quality Flight Controller`
-
-## Description
-
-`The full size, 35x35mm (30.5x30.5 mounting holes)`
+`KakuteF4 is a popular design Flight Controller for DIY FPV racing drone.`
 
 ![](https://github.com/jamming/betaflight/blob/kakutef4/img/kakutef4-top45.jpg?raw=true)
 
 ![](https://github.com/jamming/betaflight/blob/kakutef4/img/kakutef4-bottom45.jpg?raw=true)
+
+## Description
+
+`The full size, 35x35mm (30.5x30.5 mounting holes)`
 
 ## MCU, Sensors and Features
 
@@ -47,7 +47,11 @@
 
 
 ## FAQ & Known Issues
-_(add FAQs, known issues and workarounds specifically related to this board. please link work in progress issues to the related github issue or pull request)_
+Pin Map
+
+![](https://github.com/jamming/betaflight/blob/kakutef4/img/Kakutef4-top.jpg?raw=true)
+
+![](https://github.com/jamming/betaflight/blob/kakutef4/img/Kakutef4-bottom.jpg?raw=true)
 
 ## Other Resources
 _(add setup guides and instructional material here)_
