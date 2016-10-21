@@ -2,7 +2,7 @@
 
 # Kakute F4
 
-`KakuteF4 is a popular design Flight Controller for DIY FPV racing drone.`
+`Kakute F4 is a fantastic and popular flight controller designed for FPV racing drone DIY.`
 
 ![](https://github.com/jamming/betaflight/blob/kakutef4/img/kakutef4-top45.jpg?raw=true)
 
