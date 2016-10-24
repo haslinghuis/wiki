@@ -23,6 +23,15 @@ Betaflight has 2 different goals.
 
 2) from scientific point of view it is good to keep improving and introduce new features where those who like to experiment can play with ans give valuable feedback. These are mostly burried in the cli   
 
+###Betaflight 3.0.1 (3.0 patch 1)
+
+- Finalized OSD Code. (More OSD configuration options)
+- Changed Relaxation Parameter to act as transition (Helps better against bounce backs on higher rates with high setpoint weight)
+- Fixed non working Baro for some boards
+- Added second notch for gyro (set gyro_notch1_hz and set gyro_notch2_hz, also available in the new 1.8.3 configurator)
+- Added configurable pidSum limit
+- New filter defaults (notch filters enabled by default)
+- Added BEEBRAIN target
 
 ##Betaflight 3.0.0-RC14 (F4 Support)
 ####Final Release   
