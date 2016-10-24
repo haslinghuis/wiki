@@ -2,7 +2,7 @@
 
 AlienWii is now AlienFlight. This targets supports various variants of brushed and brushless flight controllers. The designs for them are released partially for public use at:
 
-http://www.alienflight.com
+http://www.alienflightng.com
 
 All published designs are flight tested by various people. The intention here is to make these flight controllers available and enable skilled users or RC vendors to build this designs.
 
