@@ -33,7 +33,7 @@
 ### Features
 
   - Current Sensor: implemented
-  - BlHeli passthrough: No (due to buffered outputs)
+  - BlHeli passthrough: YES
   - WS2811 Led Strip: implemented
   - Transponder: No
 
