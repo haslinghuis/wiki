@@ -271,6 +271,49 @@ A very critical point to understand is that these characteristics ONLY come into
 A video by Joshua about this:  
 https://www.youtube.com/watch?v=4zncyYdAZPU
 
+####Not sure where new info on using the "setpoint weight" sliders and Tuning the newest BetaFlight PIDC (2DOF) should go but for now adding it here. These are Posts from people that have successfully used these to 'tune' out bad behavior.
+Maybe this should go into a New FAQ. Post in Boris' thread suggestions.
+
+#####General explanation from ctzsnooze:  
+When flying through turbulent air the quad gets lots of external inputs. If the buffeting effect results in errors between your set roll rate and what the gyros report, then the PID system has to make corrections. Most PID systems 'under-correct' external influences simply because 'over-correction' will cause oscillation. When tuning, we aim to get the magnitude of the under-correction to be as small as possible. A very highly tuned quad sits just under the point of self-oscillation all the time. Mostly we don't tune as high as that because it won't tolerate dodgy props and we might get hot motors - however with the new filtering options we can sometimes up-tune without such a problem.
+
+I takes time to build up and let go. So when flying at medium speed through slightly bumpy air and noticing you have a 'wandering line', more I will usually help. But too much I may mean that once you leave one bank of moving air and enter the next, the accumulated iTerm correction will be going the opposite way and will take some time - about half a second - to 'let go'. So adding more iTerm won't always solve the problem. I certainly won't fix fast buffeting, it is too slow, and 'too much' I may not be helpful even for slow wandering lines.
+
+D on the other hand responds immediately to sudden changes, and responds faster as the buffeting becomes faster. It does very little or nothing for slow drifting behaviours (thats what I is for).
+
+P is good for any speed of buffeting but mostly when the angular deviations are larger, rather than small fast deviations for which D is more effective.
+
+If the quad is well tuned and has crisp roll stops, it should fly well in wind as well.
+
+If your filtering is heavy, the props are relatively heavy for the motors, and the quad already has issues in prop wash or with wobble, then it probably won't handle wind buffeting very well either.
+
+If you fly very fast through very turbulent air you need super responsive P and D and responsive lightweight props. The more 'aerodynamic' the quad the better. You may want to push P and D higher than 'normal', and maybe see if you can run with slightly higher filters - i.e. re-tune more aggressively. That tune might put you at risk of hotter motors or other oscillations and demand clean props, so it might not be your 'everyday' tune, but it should generally handle wind that little bit better than a less highly tuned machine.
+
+#####Post from QuadMcFly:  
+Well I had an interesting experience trying to tune these silly 5x4.5x3HBN props on my primary acro quad. Mostly I just wanted to see if I could. The key ended up being kind of counter-intuitive.
+
+Basically I had to screw with the set-point sliders in 3.0.1 to compensate for the slow transition speed of the props, but it was exactly backwards from what I thought. The D set-point slider had to get put almost all the way to the left, and the Transition set-point slider all the way to the right, so essentially that basically equals almost the old "measurement" D calculation method. Then I was able to get my P gains back up to make up for the smoothing of the measurement method and get some snap back. I had to jack D way up too, to get rid of prop wash and it's still not gone entirely, but it's looking pretty darn good! Oh, also my I gains are quite high on both roll and pitch.﻿ I'm pretty pleased with the results! Still a tiny bit of prop wash at high throttle, but I think I can get rid of it with a tiny bit of TPA without sacrificing too much stick feel. Right now my TPA is at 0.  
+
+####Posts from the "BB log video response" thread by Woody_99:  
+- problem: Need just a little help with fine tuning a couple of my X quads.
+(130 and 250 size. BF 3.01)
+On a hard, high throttle 180 turn, I get some shaking on both of them.
+Been raising D, and it seems to be helping, but is that the direction I should be going? Motors aren't hot.
+From what I've been able to comprehend, that seems to be right, but wanted to double check that I'm on the right track.
+- suggestion: Yes, raising 'D's should be correct to suppress prop wash as long as motors do not get hot.
+Do run a BB Log to check for oscillations and other bad things.
+
+ßF 3.0.x is still quite new but in Boris' thread there is discussion on the two sliders in the PID Tab. Seems adjusting these can really help eliminate prop wash and help a copter fly the best. Not many people have posted about these so not much is known on how to adjust them. 
+- Result: Raised D just a couple more points on both quads. Propwash was better, but still there.
+Instead or raising D any further, I thought I would give the top slider a try. 1st adjustment on the 130 and the propwash is totally gone.
+250 quad, I made the same 1st adjustment. Better still, but still slightly present. Made a second adjustment, and now the shakes are gone from the 2nd quad too. (from memory, slider is in the 2.30 and 2.40 range)
+
+Could be just a placebo effect, because I have no clue what the slider does, but both quads are better than ever.
+Motors are slightly above ambient temp, so I think I'm set.
+Wish I could say the same for my batteries. Flies so nice I was really pushing them today.
+
+
+
 ###PID control at Zero Throttle
 Originally Posted by MasterZap View Post
 Let me try to explain this in a clear way:
