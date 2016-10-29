@@ -26,7 +26,7 @@ Betaflight has 2 different goals.
 ###Betaflight 3.0.1 (3.0 patch 1)
 
 - Finalized OSD Code. (More OSD configuration options)
-- Changed Relaxation Parameter to act as transition (Helps better against bounce backs on higher rates with high setpoint weight)
+- Changed Relaxation Parameter to act as transition (Helps better against bounce backs on higher rates with high setpoint weight). Config's two sliders are now Dterm Setpoint and Dterm Transistion. See addition to the 2DOF PIDC description.   
 - Fixed non working Baro for some boards
 - Added second notch for gyro (set gyro_notch1_hz and set gyro_notch2_hz, also available in the new 1.8.3 configurator)
 - Added configurable pidSum limit
@@ -268,8 +268,18 @@ D term setpoint weight is harder to describe. Higher D term setpoint weight resu
 
 A very critical point to understand is that these characteristics ONLY come into play when the PID controller is responding to your stick movements. When the sticks are not moving, or are moving slowly, the effect is less pronounced or nonexistent, and the PID controller works exactly like it used to. So you can think of P, I, and D as tuning the overall response of the copter to all inputs, including external ones like wind blowing on the copter, and the setpoint weight sliders as tuning the way the copter responds specifically to stick movements. 
 
-A video by Joshua about this:  
+A video by Joshua about this (note: for 3.0):  
 https://www.youtube.com/watch?v=4zncyYdAZPU
+
+###V3.0.1   
+Dterm setpoint: 0= Measurement, 1 = error. Everything above 1 is more error / more stick derivative. 2 = 2 times error
+Second slider used to be P setpoint as originally described in 2DOF pid controllers and in release candidates, but I didn't find it as useful as I would like so it has been repurposed to be transition for the first slider.
+When going into the roll its error and when returning from roll back to center stick it will be transitioned more into measurement to smooth it out.
+Here it means D setpoint transition of 1 means no transition at all. Its fully error from setpoint weight. When lower than 1 it will soften the transition on returning stick slowly to measurement.
+
+For example if you liked the smoothness of measurement on quick stick inputs etc, but you also like the responsitivity of error, which makes it more robotic than you can find a middle way now. Still high stick response, but without losing the smoothness on stick returns.
+I personally fly 2.0 setpoint with 0.3 transition. 0.3 is like exponential curve on stick returns. It will help slow down the rotational rate faster instead at the last moment to prevent bumpyness.
+
 
 ####Not sure where new info on using the "setpoint weight" sliders and Tuning the newest BetaFlight PIDC (2DOF) should go but for now adding it here. These are Posts from people that have successfully used these to 'tune' out bad behavior.
 Maybe this should go into a New FAQ. Post in Boris' thread suggestions.
