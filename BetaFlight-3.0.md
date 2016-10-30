@@ -315,8 +315,9 @@ Do run a BB Log to check for oscillations and other bad things.
 
 ßF 3.0.x is still quite new but in Boris' thread there is discussion on the two sliders in the PID Tab. Seems adjusting these can really help eliminate prop wash and help a copter fly the best. Not many people have posted about these so not much is known on how to adjust them. 
 - Result: Raised D just a couple more points on both quads. Propwash was better, but still there.
-Instead or raising D any further, I thought I would give the top slider a try. 1st adjustment on the 130 and the propwash is totally gone.
-250 quad, I made the same 1st adjustment. Better still, but still slightly present. Made a second adjustment, and now the shakes are gone from the 2nd quad too. (from memory, slider is in the 2.30 and 2.40 range)
+Instead or raising D any further, I thought I would give the top slider (Setpoint Weight) a try. 1st adjustment on the 130 and the propwash is totally gone at a Setpoint Weight of 2.36.
+250 quad, I made the same 1st adjustment. Better still, but still slightly present. Made a second adjustment, and now the shakes are gone from the 2nd quad too. Setpoint Weight at 2.46.  
+Both have the Setpoint transition at 0.3.
 
 Could be just a placebo effect, because I have no clue what the slider does, but both quads are better than ever.
 Motors are slightly above ambient temp, so I think I'm set.
