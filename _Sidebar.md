@@ -44,6 +44,7 @@
  - [F4BY](/betaflight/betaflight/wiki/Board---F4BY)
  - [FURYF3](/betaflight/betaflight/wiki/Board---FURYF3)
  - [FURYF4](/betaflight/betaflight/wiki/Board---FURYF4)
+ - [FURYF7](/betaflight/betaflight/wiki/Board---FURYF7)
  - [IRCFUSIONF3](/betaflight/betaflight/wiki/Board---IRCFUSIONF3)
  - [KISSFC](/betaflight/betaflight/wiki/Board---KISSFC)
  - [KAKUTEF4](/betaflight/betaflight/wiki/Board---KAKUTEF4)
