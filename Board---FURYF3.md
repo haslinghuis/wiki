@@ -1,3 +1,5 @@
+# **Overview**
+
 The Fury F3 Flight controller has been designed from the ground up by quad pilots & builders
 who want a better flight controller. We have taken into account all of the things that we like
 about other flight controller hardware and wish that other flight controllers featured and
