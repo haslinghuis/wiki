@@ -48,8 +48,7 @@ standard”
 * SPI Gyro connection (this is a faster communication protocol then SP (which most other F3
 boards have)
 * Optional MS561 Barometer on bottom of board for easy foam covering isolation.
-* On-Board MicroSD Card Support for blackbox data logging (no fuss easy Data logging so
-* that you can get the perfect tune.
+* On-Board MicroSD Card Support for blackbox data logging (no fuss easy Data logging so that you can get the perfect tune.
 * Voltage monitoring (built in Voltage divider)
 * Current monitoring (with external current sensor)
 * RSSI monitoring (if your receiver of choice has an output)
