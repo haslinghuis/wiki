@@ -8,6 +8,8 @@ you do not have proficient soldering skills that you find someone in your area t
 your build. MultiGP is a good place to find like-minded quad builders. Go to MultiGP.com for
 more info
 
+**Available here:  http://www.2dogrc.com/furyf3-board.html**
+
 # **Board Features**
 * F3 processor (allows you to run high loop times and gives you 3x dedicated UART outputs
 for things such as GPS, OSDs, Telemetry, etc.)
