@@ -46,6 +46,6 @@ or 6500. There is no need to soft mount the controller)
 
 # **Board Layout**
 
-![](http://i.imgur.com/vfF04cL.jpg)
+![](http://i.imgur.com/BG6KWYo.jpg)
 
-![](http://i.imgur.com/bw0L0R8.jpg)
+![](http://i.imgur.com/Uz3TXHv.jpg)
