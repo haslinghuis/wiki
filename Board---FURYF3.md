@@ -51,3 +51,6 @@ boards have)
 * Direct mounting option for a Pololu switching regulator for up to 6S lipo operation.
 * Thoughtful, easy-to-build layout
 * Edge launch pins for a low profile build, also better for direct soldering.
+
+# **Manual**
+https://quadquestions.com/uploads/furyf3manual.pdf
