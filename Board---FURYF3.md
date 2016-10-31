@@ -9,6 +9,9 @@ your build. MultiGP is a good place to find like-minded quad builders. Go to Mul
 more info
 
 **Available here:  http://www.2dogrc.com/furyf3-board.html**
+**RCGroups Thread:  https://www.rcgroups.com/forums/showthread.php?t=2628430**
+**Facebook Group:  https://www.facebook.com/groups/1391468950869052/**
+**Website:  http://www.furyflightcontrol.com/**
 
 # **Board Features**
 * F3 processor (allows you to run high loop times and gives you 3x dedicated UART outputs
