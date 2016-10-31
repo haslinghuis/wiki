@@ -1,4 +1,27 @@
+The Fury F3 Flight controller has been designed from the ground up by quad pilots & builders
+who want a better flight controller. We have taken into account all of the things that we like
+about other flight controller hardware and wish that other flight controllers featured and
+combined them into a board that is well designed for ease of installation and use.
 
+Good soldering skills are required to use the Fury F3 Flight controller. We recommend that if
+you do not have proficient soldering skills that you find someone in your area to help you with
+your build. MultiGP is a good place to find like-minded quad builders. Go to MultiGP.com for
+more info
+
+# **Board Features**
+* F3 processor (allows you to run high loop times and gives you 3x dedicated UART outputs
+for things such as GPS, OSDs, Telemetry, etc.)
+* MPU6000 gyro- This is a favorite gyro amongst many FPV pilots at the time of writing. It’s
+low noise floor and high reliability rate makes it a top choice which is why it is on this flight
+controller.
+* Large Solder Pads on edge of board
+* USB connector
+* Spektrum Receiver connector port (additional connector is recommended but not required
+if using Spektrum Hardware.
+* 3v3 output for I2C connections
+* Buzzer connection availability
+* Led connection availability
+* Current sensor connections av
 
 # **Board Specifications:**
 * 5V input
