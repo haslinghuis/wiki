@@ -56,3 +56,9 @@ boards have)
 
 # **Manual**
 https://quadquestions.com/uploads/furyf3manual.pdf
+
+# **Board Layout**
+
+![](http://i.imgur.com/MJ3Oibe.jpg)
+
+![](http://i.imgur.com/nale6a2.jpg)
