@@ -1433,6 +1433,9 @@ Just another data point! I'm putting caps on all my builds from now on
 
 Edit: I should add that I was using a kiss fc first and then a cyclone (which I'm still using now). So mid throttle oscillations can definitely happen on setups without the 6500 gyro.   
 
+####Good before and after BB example of soft mounting:
+https://www.rcgroups.com/forums/showpost.php?p=36091829&postcount=2453   
+
 
 ##Is there a way to download blackbox logs through a terminal client? 
 Thanks to dropax for asking this and working out the answer.  
