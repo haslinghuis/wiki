@@ -14,7 +14,8 @@ Pins are remapped using the resources command line interface command.
 
 Where MOTOR is the function, 1 is the motor index (1 based e.g. 1...4 on a quad) and A1 is Port A pin 1 or more commonly referred to as PA1 in STM datasheet documentation.
 
-Where a function does not require an index (i.e. there is only 1 possible pin assignment), e.g. BEEPER, SONAR_ECHO or SONAR_TRIGGER then the index <b>must</b> be omitted e.g. <b>resource BEEPER B6</b>
+Where a function does not require an index (i.e. there is only 1 possible pin assignment), e.g. BEEPER, SONAR_ECHO or SONAR_TRIGGER then the index <b>must</b> be omitted 
+e.g. <b><pre>resource BEEPER B6</pre></b>
 
 <b>resource</b> on its own will list all the available configurable options, and their current setting. This is the output to be added to the <b>dump</b> for use in backing up and restoring configuration.
 
