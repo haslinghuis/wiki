@@ -10,15 +10,15 @@ The IO remapping allows you to configure the pins on the MCU to be utilised for 
 
 Pins are remapped using the resources command line interface command.
 
-**`resource [function name] [index] [pin]`** e.g. **`resource MOTOR 1 A1`**
+<b>resource [function name] [index] [pin]</b> e.g. <b>resource MOTOR 1 A1</b>
 
 Where MOTOR is the function, 1 is the motor index (1 based e.g. 1...4 on a quad) and A1 is Port A pin 1 or more commonly referred to as PA1 in STM datasheet documentation.
 
-Where a function does not require an index (i.e. there is only 1 possible pin assignment), e.g. BEEPER, SONAR_ECHO or SONAR_TRIGGER then the index **must** be omitted e.g. **`resource BEEPER B6`**
+Where a function does not require an index (i.e. there is only 1 possible pin assignment), e.g. BEEPER, SONAR_ECHO or SONAR_TRIGGER then the index <b>must</b> be omitted e.g. <b>resource BEEPER B6</b>
 
-**`resource`** on its own will list all the available configurable options, and their current setting. This is the output to be added to the **`dump`** for use in backing up and restoring configuration.
+<b>resource</b> on its own will list all the available configurable options, and their current setting. This is the output to be added to the <b>dump</b> for use in backing up and restoring configuration.
 
-**`resource list`** will list all pins and their current assignments, including all those in use by system components and **not** configurable by the user. Note for any adjustments made a save and reboot is required in order for those changes to be visible here. Consider this command the output of the currently active state.
+<b>resource list</b> will list all pins and their current assignments, including all those in use by system components and <b>not</b> configurable by the user. Note for any adjustments made a save and reboot is required in order for those changes to be visible here. Consider this command the output of the currently active state.
 
  
 New CLI feature is type a "get" and part of a CLI command name (example: "get acc"). The cli will return all CLI commands that have the name part with the current value plus what the valid value range or valid Names.
