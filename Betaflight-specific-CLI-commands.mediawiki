@@ -5,7 +5,7 @@ The setting shown are the Defaults + possible values.
 
 <a href="#v270">Latest Version</a>  
 
-<h3>Resource Remapping</h3>
+<h3>Resource Remapping (v3.1)</h3>
 The IO remapping allows you to configure the pins on the MCU to be utilised for various functions. This is the starting framework - more work can be done.
 
 Pins are remapped using the resources command line interface command.
