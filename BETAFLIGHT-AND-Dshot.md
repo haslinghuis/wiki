@@ -8,6 +8,10 @@ BetaFlight development code for Dshot can be found here:
 http://andwho.sytes.net:8080/job/BorisB_BetaFlight/
 Just remember that this is very Experimental code and may have serious limitations.
 
+Some known limitations are:
+- BLHeli pass-through does not work if FC is set to DSHOT. Must change output to OneShot to use the pass0through.
+- on some Targets BB logging, and a few other feature do NOT work yet.
+
 ###Starting with a post by mxracer33x in the Dshot thread:
 
 Scouring the BF and Dshot threads has resulted in the following lists. The information posted herein is all provided on an AS-IS basis.
