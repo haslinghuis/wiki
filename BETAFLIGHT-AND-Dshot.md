@@ -32,7 +32,7 @@ UPDATED 11-7-2016 @ 9:30am PST
 - LUX_RACE
 - BETAFLIGHTF3
 - FLIP32F4
-
+- FURY F4
 ####Intermittent FC Reports:
 - KOMBINI
 - SPracingF3
@@ -67,6 +67,7 @@ UPDATED 11-7-2016 @ 9:30am PST
 - FLIP32F4 & Racerstar25A - 150, 300
 - LUXFC & Luminier 30A - 300
 - LUXFC & v2 Racestar/Cicada 30A - 150
+- FURY F4 & KISS24 - 600
 
 Components tried and are not currently working:
 
