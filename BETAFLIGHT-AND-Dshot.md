@@ -43,7 +43,7 @@ UPDATED 11-7-2016 @ 9:30am PST
 
 ####BLheli-S::
 - Racestar v1 30A
-- Racestar v2 20A & Cicada 20A - 150
+- Racestar v2 20A & Cicada 20A - 300
 - Racestar v2 30A & Cicada 30A - 150
 - Racerstar 25a - 300
 - Aikon SEMF 30A v2 - 150
@@ -70,6 +70,7 @@ UPDATED 11-7-2016 @ 9:30am PST
 - LUXFC & Luminier 30A - 300
 - LUXFC & v2 Racestar/Cicada 30A - 150
 - FURY F4 & KISS24 - 600
+- FURY F4 & v2 Racestar/Cicada 20a - 150, 300
 
 Components tried and are not currently working:
 
