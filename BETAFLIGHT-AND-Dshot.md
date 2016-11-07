@@ -4,8 +4,11 @@ Dshot is new and currently code is being developed and tested. Since there are m
 The Official Thread for Dshot is: https://www.rcgroups.com/forums/showthread.php?t=2756129
 Please Read this thread for details of how it works and up to date info.
 
+BetaFlight development code for Dshot can be found here:
+http://andwho.sytes.net:8080/job/BorisB_BetaFlight/
+Just remember that this is very Experimental code and may have serious limitations.
 
-##Starting with a post by mxracer33x in the Dshot thread:
+###Starting with a post by mxracer33x in the Dshot thread:
 
 Scouring the BF and Dshot threads has resulted in the following lists. The information posted herein is all provided on an AS-IS basis.
 It has been derived from posts on this forum, and direct correspondences with users.
@@ -39,9 +42,10 @@ UPDATED 11-7-2016 @ 9:30am PST
 - SPracingF3
 
 ####ESCs supporting Dshot:
-- KISS 24 - 150, 300, 600
+- KISS 24 - 150, 300, 600 See the Dshot thread (link above) for ESC code.
 
-####BLheli-S::
+####BLheli-S:
+
 - Racestar v1 30A
 - Racestar v2 20A & Cicada 20A - 300
 - Racestar v2 30A & Cicada 30A - 150
