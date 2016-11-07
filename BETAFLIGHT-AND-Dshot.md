@@ -33,12 +33,14 @@ UPDATED 11-7-2016 @ 9:30am PST
 - BETAFLIGHTF3
 - FLIP32F4
 - FURY F4
+
 ####Intermittent FC Reports:
 - KOMBINI
 - SPracingF3
 
 ####ESCs supporting Dshot:
 - KISS 24 - 150, 300, 600
+
 ####BLheli-S::
 - Racestar v1 30A
 - Racestar v2 20A & Cicada 20A - 150
