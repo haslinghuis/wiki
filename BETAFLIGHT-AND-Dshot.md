@@ -10,7 +10,7 @@ Just remember that this is very Experimental code and may have serious limitatio
 
 Some known limitations are:
 - BLHeli pass-through does not work if FC is set to DSHOT. Must change output to OneShot to use the pass0through.
-- on some Targets BB logging, and a few other feature do NOT work yet.
+- on some Targets BB logging, and a few other features do NOT work yet.
 
 ###Starting with a post by mxracer33x in the Dshot thread:
 
