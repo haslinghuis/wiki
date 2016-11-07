@@ -1,4 +1,5 @@
-# Dshot is new and currently code is being developed and tested. Since there are many dependencies and not all current hardware works this is to help keep track.
+# Dshot & BetaFlight   
+Dshot is new and currently code is being developed and tested. Since there are many dependencies and not all current hardware works this is to help keep track.
 
 The Official Thread for Dshot is: https://www.rcgroups.com/forums/showthread.php?t=2756129
 Please Read this thread for details of how it works and up to date info.
