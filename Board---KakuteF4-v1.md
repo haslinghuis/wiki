@@ -1,12 +1,12 @@
 
 
-# Kakute F4
+# KakuteF4-V1
 
-`Kakute F4 is a fantastic and popular flight controller designed for FPV racing drone DIY.`
+`KakuteF4-v1 is a fantastic and popular flight controller designed for FPV racing drone DIY.`
 
-![](https://github.com/jamming/betaflight/blob/development/kakutef4-top45.jpg?raw=true)
+![](https://github.com/jamming/raceflight_community/blob/master/kakutef4-v1-top.jpg?raw=true)
 
-![](https://github.com/jamming/betaflight/blob/kakutef4/img/kakutef4-bottom45.jpg?raw=true)
+![](https://github.com/jamming/raceflight_community/blob/master/kakutef4-v1-bottom.jpg?raw=true)
 
 ## Description
 
@@ -17,7 +17,7 @@
 ### Hardware
 
   - MCU: STM32F405RGT6
-  - IMU: MPU9250 (SPI)
+  - IMU: ICM20689 (SPI)
   - IMU Interrupt: Yes
   - BARO: Yes(optional)
   - VCP: Yes
@@ -32,7 +32,7 @@
 
 ### Features
 
-  - Current Sensor: implemented
+  - Current Sensor: NO
   - BlHeli passthrough: YES
   - WS2811 Led Strip: implemented
   - Transponder: No
@@ -49,9 +49,9 @@
 ## FAQ & Known Issues
 Pin Map
 
-![](https://github.com/jamming/betaflight/blob/development/Kakutef4-top.jpg?raw=true)
+![](https://github.com/jamming/raceflight_community/blob/master/kakutef4-v1-top-ORG.jpg?raw=true)
 
-![](https://github.com/jamming/betaflight/blob/kakutef4/img/Kakutef4-bottom.jpg?raw=true)
+![](https://github.com/jamming/raceflight_community/blob/master/kakutef4-v1-bottom-ORG.jpg?raw=true)
 
 ## Other Resources
 _(add setup guides and instructional material here)_
