@@ -23,23 +23,20 @@ Example from built 668 for MotoLab:
 motor_pwm_protocol = ONESHOT42
 Allowed values: OFF, ONESHOT125, ONESHOT42, MULTISHOT, BRUSHED
 
-###Starting with a post by mxracer33x in the Dshot thread:
+###Starting with a post from the Dshot thread:
 
 Scouring the BF and Dshot threads has resulted in the following lists. The information posted herein is all provided on an AS-IS basis.
-It has been derived from posts on this forum, and direct correspondences with users.
-
-If you have more info, please PM me with all the details you can, and Ill edit list accordingly.
+It has been derived from posts on this forum (RCGroups/BEtaflight & DSHOT threads), and direct correspondences with users.
 
 USE THE FOLLOWING INFORMATION AT YOUR OWN RISK
 
 BETAFLIGHT AND Dshot -
 
-BEtaflight may not be able to support all Targets ( or specific boards) due to the design of each one differing on the DMA pinout. Look below to find what may or may not be working.
+Betaflight may not be able to support all Targets ( or specific boards) due to the design of each one differing on the DMA pinout. Look below to find what may or may not be working.
 
 DSHOT on BLHELI-S ESCs will oinly support Dshot150 & 300 Heres why
 https://www.rcgroups.com/forums/show...&postcount=376
 
-UPDATED 11-7-2016 @ 9:30am PST
 
 ####Flight Controllers Supporting Dshot on Betaflight 3.1 Alphas:
 - BLUEJAYF4
