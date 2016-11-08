@@ -11,6 +11,7 @@ Just remember that this is very Experimental code and may have serious limitatio
 Some known limitations are:
 - BLHeli pass-through does not work if FC is set to DSHOT. Must change output to OneShot to use the pass-through.
 - on some Targets BB logging, and a few other features do NOT work yet.
+- 3D mode not yet working
 
 ####A quick way to determine IF the hex flashed supports Dshot:  
 Go to the CLI and type "get pwm". All settings with 'pwm' in the name will be shown with all options.
