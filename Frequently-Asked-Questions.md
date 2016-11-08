@@ -56,6 +56,7 @@
 1. [What is the story on the different Rates and Expos ?](#what-is-the-story-on-the-different-Rates-and-Expos-)  
 1. [I get Yaw twitches or mid-throttle oscillations. How do I solve this?](#i-get-yaw-twitches-or-mid-throttle oscillations-how-do-I-solve-this-)  
 1. [Is there a way to download blackbox logs through a terminal client ?](#Is-there-a-way-to-download-blackbox-logs-through-a-terminal-client-)  
+1. [Why do LED strips not work?](#Why-do-LED-strips-not-work-)
 
 **If your question is not listed above then please check the following pages:**
 
@@ -1451,3 +1452,9 @@ Not as convinient like hitting some buttons in configurator but it will save me 
 I think [this](https://github.com/cleanflight/cleanflight/commit/3eb28f16eaa5d4f4a085bcb87f334ba85d3ace84 ) is the initial commit to cleanflight and [this](https://github.com/betaflight/betaflight/commit/3eb28f16eaa5d4f4a085bcb87f334ba85d3ace84#diff-34076ed1dbe02400da4a39189fe5c250) to betaflight, date is 01/28/2015 for both. So my thanks go to thenickdude, the flash and blackbox guru.
 
 Since it's only enabled for the "brand new" sparky2 target (08/06/2016) I think it is only meant for debugging purpose. After the download the serial port seems to hang up and I have to reboot the FC but the time savings are totally worth the hassle.  
+
+##Why do LED strips not work?
+Many LED strips do NOT work when power at 5.0V since the FC's serial output is only 3.3V logic and the LED chips never see a valid logic high. Lowering the LED Voltage by at least a diode drop makes them work.
+Two working solutions are: 
+Add a silicon diode, 1N4002, in series with the 5V to the LED strip.
+Power the LED strip from a regulator adjusted to about 4.7V. May need to adjust a little lower if still not working.
