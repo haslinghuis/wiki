@@ -49,6 +49,7 @@ UPDATED 11-7-2016 @ 9:30am PST
 - KISS 24 - 150, 300, 600 See the Dshot thread (link above) for ESC code.
 
 ####BLheli-S:
+Firmware in Github here: https://github.com/bitdump/BLHeli
 
 - Racestar v1 30A
 - Racestar v2 20A & Cicada 20A - 300
