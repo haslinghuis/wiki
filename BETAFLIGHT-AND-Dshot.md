@@ -37,7 +37,7 @@ BETAFLIGHT AND DSHOT -
 Betaflight may not be able to support all Targets ( or specific boards) due to the design of each one differing on the DMA pinout. Look below to find what may or may not be working.
 
 DSHOT on BLHELI-S ESCs will likely only support Dshot150 & 300.
-Here is why: https://www.rcgroups.com/forums/show...&postcount=376
+Here is why: https://www.rcgroups.com/forums/showpost.php?p=36025232&postcount=376
 
 
 ####Flight Controllers Supporting Dshot on Betaflight 3.1 Alphas:
