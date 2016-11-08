@@ -12,6 +12,14 @@ Some known limitations are:
 - BLHeli pass-through does not work if FC is set to DSHOT. Must change output to OneShot to use the pass-through.
 - on some Targets BB logging, and a few other features do NOT work yet.
 
+####A quick way to determine IF the hex flashed supports Dshot:  
+Go to the CLI and type "get pwm". All settings with 'pwm' in the name will be shown with all options.
+If DSHOT150, DSHOT300, DSHOT600 is NOT in the list then this firmware does NOT support Dshot.
+Example from built 668 for MotoLab: 
+
+motor_pwm_protocol = ONESHOT42
+Allowed values: OFF, ONESHOT125, ONESHOT42, MULTISHOT, BRUSHED
+
 ###Starting with a post by mxracer33x in the Dshot thread:
 
 Scouring the BF and Dshot threads has resulted in the following lists. The information posted herein is all provided on an AS-IS basis.
