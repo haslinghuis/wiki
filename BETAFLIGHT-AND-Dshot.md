@@ -71,7 +71,8 @@ Firmware in Github here: https://github.com/bitdump/BLHeli
 - Racestar v2 20A & Cicada 20A - 300
 - Racestar v2 30A & Cicada 30A - 150
 - Racerstar 25a - 300
-- Aikon SEMF 30A v2 - 150
+- Aikon SEMF v1 30A - 300
+- Aikon SEMF v2 30A - 150, 300
 - Lumenier 30A
 - TBS 25 - 300
 - DYS XS30 (with Signal cap removed) https://www.rcgroups.com/forums/show...&postcount=836
@@ -86,7 +87,7 @@ Firmware in Github here: https://github.com/bitdump/BLHeli
 - OMNIBUS (with blackbox SD feature off) & KISS24
 - OMNIBUSF4 & KISS24
 - REVO & KISS24
-- REVO & AIKON 30A
+- REVO & AIKON 30A (v1 & v2)
 - REVO + Racestar v2 20a (G_H_30) - 300
 - BLUEJAYF4 & KISS24
 - BlueJayF4 & Aikon Semf 30
