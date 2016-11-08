@@ -8,12 +8,14 @@ BetaFlight development code for Dshot can be found here:
 http://andwho.sytes.net:8080/job/BorisB_BetaFlight/
 Just remember that this is very Experimental code and may have serious limitations.
 
-Some known limitations are:
+Some known limitations are (
+Note: these may or may not affect all working targets):
 - BLHeli pass-through does not work if FC is set to DSHOT. Must change output to OneShot to use the pass-through.
-- on some Targets BB logging, and a few other features do NOT work yet.
-- 3D mode not yet working
+- BB logging  not working 
+- 3D mode not yet working, developer's plan is to get the basics working well the get 3D working.
 - A bug affecting Spektrum Sats, shows 988 on channels in receiver tab of Betaflight (soon to be looked at)
 - PPM not working on some FC targets (limited testing due to most users using Sbus or Spektrum)
+- LEDs not working  
 
 ####A quick way to determine IF the hex flashed supports Dshot:  
 Go to the CLI and type "get pwm". All settings with 'pwm' in the name will be shown with all options.
