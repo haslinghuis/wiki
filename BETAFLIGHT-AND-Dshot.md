@@ -75,6 +75,7 @@ Firmware in Github here: https://github.com/bitdump/BLHeli
 - Lumenier 30A
 - TBS 25 - 300
 - DYS XS30 (with Signal cap removed) https://www.rcgroups.com/forums/show...&postcount=836
+- ZTW polaris (A_H_20 16.42)
 
 
 ####Combos (FC & ESC) working:
@@ -98,6 +99,7 @@ Firmware in Github here: https://github.com/bitdump/BLHeli
 - FURY F4 & KISS24 - 600
 - FURY F4 & v2 Racestar/Cicada 20a - 150, 300
 - AIRBOT F3 & Cicada 20A - 150, 300 (Airbot F3 uses SPRACING F3 target)
+- SPRACINGF3 on build 669 & ZTW polaris (A_H_20 16.42) - 300
 
 Components tried and are not currently working:
 
