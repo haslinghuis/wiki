@@ -2,7 +2,7 @@
 Dshot is new and currently code is being developed and tested. Since there are many dependencies and not all current hardware works this is to help keep track.
 
 The Official Thread for Dshot is: https://www.rcgroups.com/forums/showthread.php?t=2756129
-Please Read this thread for details of how it works and up to date info.
+Please Read this thread for details of how it works and up to date info. The First Post of this thread has all the needed Links to code and other info.  
 
 BetaFlight development code for Dshot can be found here:
 http://andwho.sytes.net:8080/job/BorisB_BetaFlight/
@@ -16,7 +16,7 @@ Some known limitations are:
 
 ####A quick way to determine IF the hex flashed supports Dshot:  
 Go to the CLI and type "get pwm". All settings with 'pwm' in the name will be shown with all options.
-If DSHOT150, DSHOT300, DSHOT600 is NOT in the list then this firmware does NOT support Dshot.
+If DSHOT150, DSHOT300, DSHOT600 is NOT in the list for the "motor_pwm_protocol" then this firmware does NOT support Dshot.
 Example from built 668 for MotoLab: 
 
 motor_pwm_protocol = ONESHOT42
