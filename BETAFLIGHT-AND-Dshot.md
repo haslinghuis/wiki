@@ -68,7 +68,7 @@ Firmware in Github here: https://github.com/bitdump/BLHeli
 - OMNIBUS (with blackbox SD feature off) & KISS24
 - OMNIBUSF4 & KISS24
 - REVO & KISS24
-- REvo & AIKON 30A
+- REVO & AIKON 30A
 - BLUEJAYF4 & KISS24
 - BlueJayF4 & Aikon Semf 30
 - BlueJayF4 & v2 Racestar/Cicada 20a
@@ -80,10 +80,13 @@ Firmware in Github here: https://github.com/bitdump/BLHeli
 - LUXFC & v2 Racestar/Cicada 30A - 150
 - FURY F4 & KISS24 - 600
 - FURY F4 & v2 Racestar/Cicada 20a - 150, 300
+- REVO + Racestar v2 20a (G_H_30) - 300
 
 Components tried and are not currently working:
 
-DYS XS20
-DYS XS30 with signal cap left on
+- DYS XS20
+- DYS XS30 with signal cap left on
 
 Components that will NOT likely ever work:
+- Naze32 and clones
+- All FCs with STM32F1
