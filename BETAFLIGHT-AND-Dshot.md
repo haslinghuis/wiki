@@ -13,6 +13,7 @@ Some known limitations are:
 - on some Targets BB logging, and a few other features do NOT work yet.
 - 3D mode not yet working
 - A bug affecting Spektrum Sats, shows 988 on channels in receiver tab of Betaflight (soon to be looked at)
+- PPM not working on some FC targets (limited testing due to most users using Sbus or Spektrum)
 
 ####A quick way to determine IF the hex flashed supports Dshot:  
 Go to the CLI and type "get pwm". All settings with 'pwm' in the name will be shown with all options.
