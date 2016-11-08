@@ -16,7 +16,7 @@ Note: these may or may not affect all working targets):
 - A bug affecting Spektrum Sats, shows 988 on channels in receiver tab of Betaflight (soon to be looked at)
 - PPM not working on some FC targets (limited testing due to most users using Sbus or Spektrum)
 - LEDs not working  
-- The 'target.c' source files show that Dshot in F3 processors only support Quads. F4 processors seems to support Hex copters.
+- The 'target.c' source files show that only Quad copters are supported in most targets and some targets support Hex copters.
 
 ####A quick way to determine IF the hex flashed supports Dshot:  
 Go to the CLI and type "get pwm". All settings with 'pwm' in the name will be shown with all options.
