@@ -52,9 +52,10 @@ Here is why: https://www.rcgroups.com/forums/showpost.php?p=36025232&postcount=3
 - FURY F4
 - Airbot F3 (spracingf3)
 
+
 ####Intermittent FC Reports:
 - KOMBINI
-- SPracingF3
+- SPracingF3 - Report of Spec Sat not working with build 667.
 
 ####FC targets under development/consideration:
 - MotoLab   
@@ -77,7 +78,7 @@ Firmware in Github here: https://github.com/bitdump/BLHeli
 - TBS 25 - 300
 - DYS XS30 (with Signal cap removed) https://www.rcgroups.com/forums/showpost.php?p=36133930&postcount=836
 - ZTW polaris (A_H_20 16.42)
-
+- Multistar BLHeli_S 30A - 150, 300
 
 ####Combos (FC & ESC) working:
 
