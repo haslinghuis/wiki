@@ -31,6 +31,10 @@ Dshot now uses the CLI command " digital_idle_offset" and the old 'min_throttle'
 Do type "get idle" to see if this exists and what the valid values are.
 - This need to be confirmed
 
+####ESC Cal and min/max throttle
+ßF firmware with Dshot does Not use the min_throttle or max_throttle setting, these are ignored.
+
+
 ###Starting with a post from the Dshot thread:
 
 Scouring the BF and Dshot threads has resulted in the following lists. The information posted herein is all provided on an AS-IS basis.
