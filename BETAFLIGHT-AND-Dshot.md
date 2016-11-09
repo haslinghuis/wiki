@@ -27,7 +27,8 @@ motor_pwm_protocol = ONESHOT42
 Allowed values: OFF, ONESHOT125, ONESHOT42, MULTISHOT, BRUSHED
 
 ####Setting Min Throttle with Dshot   
-Dshot now uses the CLI command "Digital Idle" and the old 'min_throttle' setting is ignored.
+Dshot now uses the CLI command " digital_idle_offset" and the old 'min_throttle' setting is ignored.
+Do type "get idle" to see if this exists and what the valid values are.
 - This need to be confirmed
 
 ###Starting with a post from the Dshot thread:
