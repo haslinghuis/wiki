@@ -947,7 +947,7 @@ Motolab Cyclone
 SPRACINGF3EVO  
 DOGE  
 CC3D (this is F1 board though......performs slightly better than i2c F3 board on rewrite)
-Alienflight 
+Alienflight F3 V2, F4
 XRacer F303 (v3.1 only, prior versions use I2C)
 
 ##Which HEX target do I download and flash to my Flight Controller ?
