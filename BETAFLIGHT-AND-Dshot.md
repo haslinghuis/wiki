@@ -74,6 +74,9 @@ Here is why: https://www.rcgroups.com/forums/showpost.php?p=36025232&postcount=3
 - KOMBINI
 - SPracingF3 - Report of Spec Sat not working with build 667.
 
+####FC Targets with DSHOT code added but in need of testing:
+- IMPULSERCF3 
+
 ####FC targets under development/consideration:
 - MotoLab   
 Boris' comment:  
