@@ -82,6 +82,7 @@ Firmware in Github here: https://github.com/bitdump/BLHeli
 - Racestar v1 30A
 - Racestar v2 20A & Cicada 20A - 150, 300
 - Racerstar 25a - 300
+- Racerstar v2 35A - 150, 300
 - Aikon SEMF v1 30A - 300 (BLHeli_S 16.43)
 - Aikon SEMF v2 30A - 150, 300
 - Lumenier 30A
@@ -113,6 +114,7 @@ Firmware in Github here: https://github.com/bitdump/BLHeli
 - AIRBOT F3 & Cicada 20A - 150, 300 (Airbot F3 uses SPRACING F3 target)
 - SPRACINGF3 on build 669 & ZTW polaris (A_H_20 16.42) - 300
 - Dodo with SPRACINGF3 hex & Cicada v1 20A (G_L_30) - 150
+- X-Racer f303 v3 & Racerstar v2 35a (2s-6s) - 150, 300
 
 Components tried and are not currently working:
 
