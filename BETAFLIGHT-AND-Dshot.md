@@ -52,7 +52,7 @@ Here is why: https://www.rcgroups.com/forums/showpost.php?p=36025232&postcount=3
 - FLIP32F4
 - FURY F4
 - Airbot F3 (spracingf3)
-
+- Dodo (spracingf3)
 
 ####Intermittent FC Reports:
 - KOMBINI
@@ -69,6 +69,7 @@ I had many requests for MOTOLAB but that one doesn't have DMA available on all m
 ####BLheli-S:
 Firmware in Github here: https://github.com/bitdump/BLHeli
 
+- Cicada v1 20A - 150
 - Racestar v1 30A
 - Racestar v2 20A & Cicada 20A - 300
 - Racestar v2 30A & Cicada 30A - 150
@@ -103,6 +104,7 @@ Firmware in Github here: https://github.com/bitdump/BLHeli
 - FURY F4 & v2 Racestar/Cicada 20a - 150, 300
 - AIRBOT F3 & Cicada 20A - 150, 300 (Airbot F3 uses SPRACING F3 target)
 - SPRACINGF3 on build 669 & ZTW polaris (A_H_20 16.42) - 300
+- Dodo with SPRACINGF3 hex & Cicada v1 20A (G_L_30) - 150
 
 Components tried and are not currently working:
 
