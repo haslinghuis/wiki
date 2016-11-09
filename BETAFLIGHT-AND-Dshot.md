@@ -29,7 +29,6 @@ Allowed values: OFF, ONESHOT125, ONESHOT42, MULTISHOT, BRUSHED
 ####Setting Min Throttle with Dshot   
 Dshot now uses the CLI command " digital_idle_offset" and the old 'min_throttle' setting is ignored.
 Do type "get idle" to see if this exists and what the valid values are.
-- This need to be confirmed
 
 ####ESC Cal and min/max throttle
 ßF firmware with Dshot does Not use the min_throttle or max_throttle setting, these are ignored.
