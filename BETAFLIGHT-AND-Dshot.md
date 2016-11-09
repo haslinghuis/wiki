@@ -53,6 +53,7 @@ Here is why: https://www.rcgroups.com/forums/showpost.php?p=36025232&postcount=3
 - FURY F4
 - Airbot F3 (spracingf3)
 - Dodo (spracingf3)
+- X-Racer V2.1 (spracingf3 #670)
 
 ####Intermittent FC Reports:
 - KOMBINI
@@ -74,7 +75,7 @@ Firmware in Github here: https://github.com/bitdump/BLHeli
 - Racestar v2 20A & Cicada 20A - 300
 - Racestar v2 30A & Cicada 30A - 150
 - Racerstar 25a - 300
-- Aikon SEMF v1 30A - 300
+- Aikon SEMF v1 30A - 300 (BLHeli_S 16.43)
 - Aikon SEMF v2 30A - 150, 300
 - Lumenier 30A
 - TBS 25 - 300
