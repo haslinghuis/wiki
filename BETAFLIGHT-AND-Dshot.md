@@ -26,6 +26,10 @@ Example from built 668 for MotoLab that does Not support Dshot:
 motor_pwm_protocol = ONESHOT42
 Allowed values: OFF, ONESHOT125, ONESHOT42, MULTISHOT, BRUSHED
 
+####Setting Min Throttle with Dshot   
+Dshot now uses the CLI command "Digital Idle" and the old 'min_throttle' setting is ignored.
+- This need to be confirmed
+
 ###Starting with a post from the Dshot thread:
 
 Scouring the BF and Dshot threads has resulted in the following lists. The information posted herein is all provided on an AS-IS basis.
