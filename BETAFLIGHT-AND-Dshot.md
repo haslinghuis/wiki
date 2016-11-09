@@ -77,8 +77,7 @@ Firmware in Github here: https://github.com/bitdump/BLHeli
 
 - Cicada v1 20A - 150
 - Racestar v1 30A
-- Racestar v2 20A & Cicada 20A - 300
-- Racestar v2 30A & Cicada 30A - 150
+- Racestar v2 20A & Cicada 20A - 150, 300
 - Racerstar 25a - 300
 - Aikon SEMF v1 30A - 300 (BLHeli_S 16.43)
 - Aikon SEMF v2 30A - 150, 300
