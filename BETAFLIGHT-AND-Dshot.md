@@ -34,6 +34,11 @@ Do type "get idle" to see if this exists and what the valid values are.
 ßF firmware with Dshot does Not use the min_throttle or max_throttle setting, these are ignored.
 Just ensure that in the ESCs (BLHeli Suite) that PPM_MIN_THROTTLE is set to 1000 and PPM_MAX_THROTTLE is set to 2000.
 
+####Max esc update speed supported by different dshot versions:
+dshot150: 8khz max
+dshot300: 16khz max
+dshot600: 32khz max
+
 ###Starting with a post from the Dshot thread:
 
 Scouring the BF and Dshot threads has resulted in the following lists. The information posted herein is all provided on an AS-IS basis.
@@ -47,6 +52,8 @@ Betaflight may not be able to support all Targets ( or specific boards) due to t
 
 DSHOT on BLHELI-S ESCs will likely only support Dshot150 & 300.
 Here is why: https://www.rcgroups.com/forums/showpost.php?p=36025232&postcount=376
+
+
 
 
 ####Flight Controllers Supporting Dshot on Betaflight 3.1 Alphas:
