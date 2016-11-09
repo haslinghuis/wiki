@@ -1454,7 +1454,8 @@ I think [this](https://github.com/cleanflight/cleanflight/commit/3eb28f16eaa5d4f
 Since it's only enabled for the "brand new" sparky2 target (08/06/2016) I think it is only meant for debugging purpose. After the download the serial port seems to hang up and I have to reboot the FC but the time savings are totally worth the hassle.  
 
 ##Why do LED strips not work?
-Many LED strips do NOT work when power at 5.0V since the FC's serial output is only 3.3V logic and the LED chips never see a valid logic high. Lowering the LED Voltage by at least a diode drop makes them work.
+One possible reason:
+Many LED strips do NOT work when power at over 5V since the FC's serial output is only 3.3V logic and the LED chips never see a valid logic high. Lowering the LED Voltage by at least a diode drop makes them work.
 Two working solutions are: 
 Add a silicon diode, 1N4002, in series with the 5V to the LED strip.
 Power the LED strip from a regulator adjusted to about 4.7V. May need to adjust a little lower if still not working.
