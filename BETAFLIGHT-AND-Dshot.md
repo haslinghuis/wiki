@@ -129,6 +129,7 @@ Components tried and are not currently working:
 - DYS XS30 with signal cap left on
 - AIKON v2 20A
 - DALRC 25A
+- LittleBee-S 20A
 
 Components that will NOT likely ever work:
 - Naze32 and clones
