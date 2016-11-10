@@ -134,7 +134,7 @@ Firmware in Github here: https://github.com/bitdump/BLHeli
 - DTFC (DOGE) (build 682) & Cicada v2 20A (G_H_30) - 300
 - IMPULSERCF3 & ZTW polaris 30A
 
-Components tried and are not currently working:
+####Components tried and are not currently working:
 
 - DYS XS20
 - DYS XS30 with signal cap left on
@@ -144,6 +144,6 @@ Components tried and are not currently working:
 - Littlebee 30a blheli_s
 - Spedix 25a blheli_s
 
-Components that will NOT likely ever work:
+####Components that will NOT likely ever work:
 - Naze32 and clones
 - All FCs with STM32F1
