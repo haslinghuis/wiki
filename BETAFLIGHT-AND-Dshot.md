@@ -133,13 +133,14 @@ Firmware in Github here: https://github.com/bitdump/BLHeli
 - X-Racer f303 v3 & Racerstar v2 35a (2s-6s) - 150, 300
 - DTFC (DOGE) (build 682) & Cicada v2 20A (G_H_30) - 300
 - IMPULSERCF3 & ZTW polaris 30A
+
 Components tried and are not currently working:
 
 - DYS XS20
 - DYS XS30 with signal cap left on
 - AIKON v2 20A
 - DALRC 25A
-- LittleBee-S 20A
+- LittleBee-S 20A blheli_s
 - Littlebee 30a blheli_s
 - Spedix 25a blheli_s
 
