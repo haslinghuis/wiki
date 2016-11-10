@@ -69,13 +69,14 @@ Here is why: https://www.rcgroups.com/forums/showpost.php?p=36025232&postcount=3
 - Airbot F3 (spracingf3)
 - Dodo (spracingf3)
 - X-Racer V2.1 (spracingf3 #670)
+- DTFC (DOGE) (build 682)
 
 ####Intermittent FC Reports:
 - KOMBINI
 - SPracingF3 - Report of Spec Sat not working with build 667.
 
 ####FC Targets with DSHOT code added but in need of testing:
-- DTFC (DOGE) 
+
 - IMPULSERCF3 
 - MOTOLAB - Locked out Comm port when Dshot150 enabled. Short Boot pins to re-flash (build #683).
 Boris' comment:  
@@ -129,6 +130,7 @@ Firmware in Github here: https://github.com/bitdump/BLHeli
 - SPRACINGF3 on build 669 & ZTW polaris (A_H_20 16.42) - 300
 - Dodo with SPRACINGF3 hex & Cicada v1 20A (G_L_30) - 150
 - X-Racer f303 v3 & Racerstar v2 35a (2s-6s) - 150, 300
+- DTFC (DOGE) (build 682) & Cicada v2 20A (G_H_30) - 300
 
 Components tried and are not currently working:
 
