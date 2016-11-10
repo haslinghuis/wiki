@@ -75,7 +75,7 @@ Here is why: https://www.rcgroups.com/forums/showpost.php?p=36025232&postcount=3
 - IMPULSERCF3 
 
 ####Intermittent FC Reports:
-- KOMBINI
+- KOMBINI - reported not to connect to config.
 
 ####FC Targets with DSHOT code added but in need of testing:
 
