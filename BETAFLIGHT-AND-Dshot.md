@@ -13,8 +13,8 @@ Note: these may or may not affect all working targets):
 - BLHeli pass-through does not work if FC is set to DSHOT. Must change output to OneShot to use the pass-through.
 - BB logging  not working 
 - 3D mode not yet working, developer's plan is to get the basics working well the get 3D working.
-- A bug affecting Spektrum Sats, shows 988 on channels in receiver tab of Betaflight (soon to be looked at)
-   Fixed on SPRF3
+- A bug affecting Spektrum Sats, shows 988 on channels in receiver tab of Betaflight (soon to be looked at).
+   Fixed on SPRF3, may be fixed on other targets.
 - PPM not working on some FC targets (limited testing due to most users using Sbus or Spektrum)
 - LEDs not working  
 - The 'target.c' source files show that only Quad copters are supported in most targets and some targets support Hex copters.
