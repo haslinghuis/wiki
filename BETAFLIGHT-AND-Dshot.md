@@ -80,6 +80,11 @@ Here is why: https://www.rcgroups.com/forums/showpost.php?p=36025232&postcount=3
 - MOTOLAB   
 Boris' comment:  
 I had many requests for MOTOLAB but that one doesn't have DMA available on all motors. It may be that we will assign one of the motors to PPM pin so you can resolder it. Not great, but better than nothing I guess?
+- SPARKY2
+- SPRACINGF3EVO
+- RMDO
+- FURYF3
+- SOULF4
 
 ####ESCs supporting Dshot:
 - KISS 24 - 150, 300, 600 See the Dshot thread (link above) for ESC code.
