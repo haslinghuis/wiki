@@ -77,7 +77,7 @@ Here is why: https://www.rcgroups.com/forums/showpost.php?p=36025232&postcount=3
 ####FC Targets with DSHOT code added but in need of testing:
 - DTFC (DOGE) 
 - IMPULSERCF3 
-- MOTOLAB   
+- MOTOLAB - Locked out Comm port when Dshot150 enabled. Short Boot pins to re-flash (build #683).
 Boris' comment:  
 I had many requests for MOTOLAB but that one doesn't have DMA available on all motors. It may be that we will assign one of the motors to PPM pin so you can resolder it. Not great, but better than nothing I guess?
 - SPARKY2
