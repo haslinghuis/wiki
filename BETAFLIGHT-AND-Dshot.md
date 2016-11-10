@@ -75,6 +75,7 @@ Here is why: https://www.rcgroups.com/forums/showpost.php?p=36025232&postcount=3
 - SPracingF3 - Report of Spec Sat not working with build 667.
 
 ####FC Targets with DSHOT code added but in need of testing:
+- DTFC (DOGE) 
 - IMPULSERCF3 
 - MOTOLAB   
 Boris' comment:  
