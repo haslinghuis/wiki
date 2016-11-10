@@ -72,14 +72,13 @@ Here is why: https://www.rcgroups.com/forums/showpost.php?p=36025232&postcount=3
 - X-Racer V2.1 (spracingf3 #670)
 - DTFC (DOGE) (build 682)
 - SPracingF3 - Spektrum Sat now working
+- IMPULSERCF3 
 
 ####Intermittent FC Reports:
 - KOMBINI
 
-
 ####FC Targets with DSHOT code added but in need of testing:
 
-- IMPULSERCF3 
 - MOTOLAB - Locked out Comm port when Dshot150 enabled. Short Boot pins to re-flash (build #683).
 Boris' comment:  
 I had many requests for MOTOLAB but that one doesn't have DMA available on all motors. It may be that we will assign one of the motors to PPM pin so you can resolder it. Not great, but better than nothing I guess?
@@ -105,7 +104,7 @@ Firmware in Github here: https://github.com/bitdump/BLHeli
 - Lumenier 30A
 - TBS 25 - 300
 - DYS XS30 (with Signal cap removed) https://www.rcgroups.com/forums/showpost.php?p=36133930&postcount=836
-- ZTW polaris (A_H_20 16.42)
+- ZTW polaris 30A (A_H_20 16.42) - 300
 - Multistar BLHeli_S 30A - 150, 300
 
 ####Combos (FC & ESC) working:
@@ -133,7 +132,7 @@ Firmware in Github here: https://github.com/bitdump/BLHeli
 - Dodo with SPRACINGF3 hex & Cicada v1 20A (G_L_30) - 150
 - X-Racer f303 v3 & Racerstar v2 35a (2s-6s) - 150, 300
 - DTFC (DOGE) (build 682) & Cicada v2 20A (G_H_30) - 300
-
+- IMPULSERCF3 & ZTW polaris 30A
 Components tried and are not currently working:
 
 - DYS XS20
