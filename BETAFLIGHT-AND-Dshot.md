@@ -121,6 +121,7 @@ Firmware in Github here: https://github.com/bitdump/BLHeli
 - BlueJayF4 & Aikon Semf 30
 - BlueJayF4 & v2 Racestar/Cicada 20a
 - BlueJayF4 & v2 Racestar/Cicada 30a (1 report of BJF4 and Racestar v2 30a not working)
+- BlueJayF4 & DYS XS30 (Cap off) - 300 (was working on build 667, may need rework on 689)
 - Xracer 3.1 SPI & v2 Racestar/Cicada 20a - 150, 300
 - FLIP32F4 & Racerstar25A - 150, 300
 - LUXFC & Luminier 30A - 300
