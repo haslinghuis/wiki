@@ -83,7 +83,7 @@ Here is why: https://www.rcgroups.com/forums/showpost.php?p=36025232&postcount=3
 Boris' comment:  
 I had many requests for MOTOLAB but that one doesn't have DMA available on all motors. It may be that we will assign one of the motors to PPM pin so you can resolder it. Not great, but better than nothing I guess?
 - SPARKY2
-- SPRACINGF3EVO
+- SPRACINGF3EVO - Locked out Comm port when Dshot150 enabled. Short Boot pins to re-flash (build #687).
 - RMDO
 - FURYF3
 - SOULF4
