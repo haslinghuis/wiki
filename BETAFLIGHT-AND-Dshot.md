@@ -131,6 +131,8 @@ Components tried and are not currently working:
 - AIKON v2 20A
 - DALRC 25A
 - LittleBee-S 20A
+- Littlebee 30a blheli_s
+- Spedix 25a blheli_s
 
 Components that will NOT likely ever work:
 - Naze32 and clones
