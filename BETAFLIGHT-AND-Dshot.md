@@ -71,10 +71,11 @@ Here is why: https://www.rcgroups.com/forums/showpost.php?p=36025232&postcount=3
 - Dodo (spracingf3)
 - X-Racer V2.1 (spracingf3 #670)
 - DTFC (DOGE) (build 682)
+- SPracingF3 - Spektrum Sat now working
 
 ####Intermittent FC Reports:
 - KOMBINI
-- SPracingF3 - Report of Spec Sat not working with build 667.
+
 
 ####FC Targets with DSHOT code added but in need of testing:
 
