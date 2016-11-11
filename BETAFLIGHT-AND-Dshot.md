@@ -2,7 +2,7 @@
 Dshot is new and currently code is being developed and tested. Since there are many dependencies and not all current hardware works this is to help keep track.
 
 The Official Thread for Dshot is: https://www.rcgroups.com/forums/showthread.php?t=2756129
-Please Read this thread for details of how it works and up to date info. The First Post of this thread has all the needed Links to code and other info.  
+Please Read this thread for details of how it works and up to date info. The First Post of this thread has all the needed Links to code and other info. A good article on Dshot and ESC protocols is here: https://blck.mn/2016/11/dshot-the-new-kid-on-the-block/  
 
 BetaFlight development code for Dshot can be found here:
 http://andwho.sytes.net:8080/job/BorisB_BetaFlight/
