@@ -73,6 +73,7 @@ Here is why: https://www.rcgroups.com/forums/showpost.php?p=36025232&postcount=3
 - DTFC (DOGE) (build 682)
 - SPracingF3 - Spektrum Sat now working
 - IMPULSERCF3 
+- DTFc - Build #389 - working on the bench
 
 ####Intermittent FC Reports:
 - KOMBINI - reported not to connect to config.
