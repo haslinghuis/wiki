@@ -142,8 +142,8 @@ Firmware in Github here: https://github.com/bitdump/BLHeli
 - DYS XS30 with signal cap left on
 - AIKON v2 20A
 - DALRC 25A
-- LittleBee-S 20A blheli_s
-- Littlebee 30a blheli_s
+- LittleBee_S 20A
+- Littlebee_S 30A
 - Spedix 25a blheli_s
 
 ####Components that will NOT likely ever work:
