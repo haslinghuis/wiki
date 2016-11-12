@@ -142,7 +142,7 @@ Firmware in Github here: https://github.com/bitdump/BLHeli
 - DYS XS30 with signal cap left on
 - AIKON v2 20A
 - DALRC 25A
-- LittleBee_S 20A
+- LittleBee_S 20A - one report of removing to Cap from the signal line makes this work. https://www.rcgroups.com/forums/showpost.php?p=36176663&postcount=1271
 - Littlebee_S 30A
 - Spedix 25a blheli_s
 
