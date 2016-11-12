@@ -100,13 +100,14 @@ Firmware in Github here: https://github.com/bitdump/BLHeli
 - Racestar v2 20A & Cicada 20A - 150, 300
 - Racerstar 25a - 300
 - Racerstar v2 35A - 150, 300
-- Aikon SEMF v1 30A - 300 (BLHeli_S 16.43)
+- Aikon SEMF v1 30A - 150, 300, 600 (BLHeli_S 16.43)
 - Aikon SEMF v2 30A - 150, 300
 - Lumenier 30A
 - TBS 25 - 300
 - DYS XS30A (with Signal cap removed) - 300 (16.42) https://www.rcgroups.com/forums/showpost.php?p=36133930&postcount=836
 - ZTW polaris 30A (A_H_20 16.42) - 300
 - Multistar BLHeli_S 30A - 150, 300
+- FVT Littlebee 20A-S (with cap removed) 150, 300, 600
 
 ####Combos (FC & ESC) working:
 
@@ -116,7 +117,7 @@ Firmware in Github here: https://github.com/bitdump/BLHeli
 - OMNIBUS (with blackbox SD feature off) & KISS24
 - OMNIBUSF4 & KISS24
 - REVO & KISS24
-- REVO & AIKON 30A (v1 & v2)
+- REVO & AIKON 30A (v1 (150, 300, 600) & v2)
 - REVO + Racestar v2 20a (G_H_30) - 300
 - BLUEJAYF4 & KISS24
 - BlueJayF4 & Aikon Semf 30
@@ -134,7 +135,7 @@ Firmware in Github here: https://github.com/bitdump/BLHeli
 - Dodo with SPRACINGF3 hex & Cicada v1 20A (G_L_30) - 150
 - X-Racer f303 v3 & Racerstar v2 35a (2s-6s) - 150, 300
 - DTFC (DOGE) (build 682) & Cicada v2 20A (G_H_30) - 300
-- DTFC (DOGE) & Littlebee 20A-S with cap removed (A_H_15) - 300
+- DTFC (DOGE) & Littlebee 20A-S with cap removed (A_H_15) - 300, 600
 - IMPULSERCF3 & ZTW polaris 30A
 
 ####Components tried and are not currently working:
