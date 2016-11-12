@@ -134,6 +134,7 @@ Firmware in Github here: https://github.com/bitdump/BLHeli
 - Dodo with SPRACINGF3 hex & Cicada v1 20A (G_L_30) - 150
 - X-Racer f303 v3 & Racerstar v2 35a (2s-6s) - 150, 300
 - DTFC (DOGE) (build 682) & Cicada v2 20A (G_H_30) - 300
+- DTFC (DOGE) & Littlebee 20A-S with cap removed (A_H_15) - 300
 - IMPULSERCF3 & ZTW polaris 30A
 
 ####Components tried and are not currently working:
