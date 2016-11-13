@@ -5,7 +5,7 @@ The setting shown are the Defaults + possible values.
 
 <a href="#v270">Latest Version</a>  
 
-<h3>Resource Remapping (v3.1)</h3>
+<h3>Resource Remapping Command (v3.1)</h3>
 The IO remapping allows you to configure the pins on the MCU to be utilised for various functions. This is the starting framework - more work can be done.
 
 Pins are remapped using the resources command line interface command.
@@ -21,7 +21,7 @@ e.g. <b><pre>resource BEEPER B6</pre></b>
 
 <b>resource list</b> will list all pins and their current assignments, including all those in use by system components and <b>not</b> configurable by the user. Note for any adjustments made a save and reboot is required in order for those changes to be visible here. Consider this command the output of the currently active state.
 
- 
+<h3>GET command</h3>
 New CLI feature is type a "get" and part of a CLI command name (example: "get acc"). The cli will return all CLI commands that have the name part with the current value plus what the valid value range or valid Names.
 Unknown on which Version this was added but is in v2.6.1  
 This is a very handy feature and allows easy to find variable names that can then be copy/pasted from the CLI display to the command line entry box.  
