@@ -97,7 +97,7 @@ Firmware in Github here: https://github.com/bitdump/BLHeli
 
 - Cicada v1 20A - 150
 - Racestar v1 30A
-- Racestar v2 20A & Cicada 20A - 150, 300, 600
+- Racestar v2 20A & Cicada 20A - 150, 300, 600 (BLHeli_S 16.43)
 - Racerstar 25a - 300
 - Racerstar v2 35A - 150, 300
 - Aikon SEMF v1 30A - 150, 300, 600 (BLHeli_S 16.43)
@@ -131,7 +131,7 @@ https://www.rcgroups.com/forums/showpost.php?p=36181966&postcount=40934
 - LUXFC & Luminier 30A - 300
 - LUXFC & v2 Racestar/Cicada 30A - 150
 - FURY F4 & KISS24 - 600
-- FURY F4 & v2 Racestar/Cicada 20a - 150, 300, 600
+- FURY F4 & v2 Racestar/Cicada 20a - 150, 300, 600 (BLHeli_S 16.43)
 - AIRBOT F3 & Cicada 20A - 150, 300 (Airbot F3 uses SPRACING F3 target)
 - SPRACINGF3 on build 669 & ZTW polaris (A_H_20 16.42) - 300
 - Dodo with SPRACINGF3 hex & Cicada v1 20A (G_L_30) - 150
