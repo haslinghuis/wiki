@@ -107,7 +107,9 @@ Firmware in Github here: https://github.com/bitdump/BLHeli
 - DYS XS30A (with Signal cap removed) - 300 (16.42) https://www.rcgroups.com/forums/showpost.php?p=36133930&postcount=836
 - ZTW polaris 30A (A_H_20 16.42) - 300
 - Multistar BLHeli_S 30A - 150, 300
-- FVT Littlebee 20A-S (with cap removed) 150, 300, 600
+- FVT Littlebee 20A-S (with cap removed) - 150, 300, 600
+- LittleBee_S 20A  (A-H-15 16.42)- (with Cap removed) - 150, 300, 600   
+https://www.rcgroups.com/forums/showpost.php?p=36181966&postcount=40934
 
 ####Combos (FC & ESC) working:
 
@@ -144,7 +146,6 @@ Firmware in Github here: https://github.com/bitdump/BLHeli
 - DYS XS30 with signal cap left on
 - AIKON v2 20A
 - DALRC 25A
-- LittleBee_S 20A - one report of removing to Cap from the signal line makes this work. https://www.rcgroups.com/forums/showpost.php?p=36176663&postcount=1271
 - Littlebee_S 30A
 - Spedix 25a blheli_s
 
