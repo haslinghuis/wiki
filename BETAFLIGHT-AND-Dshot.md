@@ -84,7 +84,7 @@ Here is why: https://www.rcgroups.com/forums/showpost.php?p=36025232&postcount=3
 Boris' comment:  
 I had many requests for MOTOLAB but that one doesn't have DMA available on all motors. It may be that we will assign one of the motors to PPM pin so you can resolder it. Not great, but better than nothing I guess?
 - SPARKY2
-- SPRACINGF3EVO - Locked out Comm port when Dshot150 enabled. Short Boot pins to re-flash (build #687).
+- SPRACINGF3EVO - Locked out Comm port fixed (build 708?). Must move MOTOR 4 to new pin assignment (CLI = resource MOTOR 4 A06). Then solde ESC for motor #4 to motor output #5, fixes DMA conflict with motor outputs 2 and 4. See: https://github.com/betaflight/betaflight/wiki/Betaflight-specific-CLI-commands#resource-remapping-command-v31
 - RMDO
 - FURYF3
 - SOULF4
