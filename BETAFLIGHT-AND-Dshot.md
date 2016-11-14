@@ -103,8 +103,8 @@ Firmware in Github here: https://github.com/bitdump/BLHeli
 - Racestar v2 20A & Cicada 20A - 150, 300, 600? (BLHeli_S 16.43)
 - Racerstar 25a - 300
 - Racerstar v2 35A - 150, 300
-- Aikon SEMF v1 30A - 150, 300, 600 (BLHeli_S 16.43)
-- Aikon SEMF v2 30A - 150, 300
+- Aikon SEFM v2 30A - 150, 300, 600 (BLHeli_S 16.43) (25)
+- Aikon SEFM v1 30A - 150, 300 (15)
 - Lumenier 30A
 - TBS 25 - 300
 - DYS XS30A (with Signal cap removed) - 300 (16.42) https://www.rcgroups.com/forums/showpost.php?p=36133930&postcount=836
@@ -125,7 +125,7 @@ https://www.rcgroups.com/forums/showpost.php?p=36181966&postcount=40934
 - REVO & AIKON 30A (v1 (150, 300, 600) & v2)
 - REVO + Racestar v2 20a (G_H_30) - 300
 - BLUEJAYF4 & KISS24
-- BlueJayF4 & Aikon Semf 30
+- BlueJayF4 & Aikon SEFM 30
 - BlueJayF4 & v2 Racestar/Cicada 20a
 - BlueJayF4 & v2 Racestar/Cicada 30a (1 report of BJF4 and Racestar v2 30a not working)
 - BlueJayF4 & DYS XS30 (Cap off) - 300 (was working on build 667, may need rework on 689)
