@@ -40,6 +40,8 @@ Just ensure that in the ESCs (BLHeli Suite) that PPM_MIN_THROTTLE is set to 1000
 - dshot300: 16khz max
 - dshot600: 32khz max
 
+Note: When DSHOT is enabled Unsyced PWM is disabled. DHSOT always runs at the PID loop rate.
+
 ###Starting with a post from the Dshot thread:
 
 Scouring the BF and Dshot threads has resulted in the following lists. The information posted herein is all provided on an AS-IS basis.
