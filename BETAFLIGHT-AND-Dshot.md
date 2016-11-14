@@ -146,7 +146,7 @@ https://www.rcgroups.com/forums/showpost.php?p=36181966&postcount=40934
 - DYS XS20
 - DYS XS30 with signal cap left on
 - AIKON v2 20A
-- DALRC 25A
+- DALRC BS25A
 - Littlebee_S 30A
 - Spedix 25a blheli_s
 
