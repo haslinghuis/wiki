@@ -1437,6 +1437,38 @@ Edit: I should add that I was using a kiss fc first and then a cyclone (which I'
 ####Good before and after BB example of soft mounting:
 https://www.rcgroups.com/forums/showpost.php?p=36091829&postcount=2453   
 
+####Another Discussion on Oscillation issues:
+vini3019:  
+Just want to share with you guys some of my thinks...
+
+Recently I was fighting very hard against mid throttle "side effects" like mid throttle oscillations and yaw twitches (not talking about cases where the issue remains with zero PIDs). I realized that all those issues started when I switched to "over powered " builds where the motors were stronger, props lighter, frames lighter and smaller (with less inertia). I remember that when I was runnig Sunnysky 2204 for example, it was very easy to tune. I was able to push P and D very high without any problems. Yes, those motors are relatively weak with lower torque and slow acceleration. Then I switched to Cobra 2204/2206 and here it started (mid throttle oscillations) but it still was tunable. Today I am running Cobra Champion 2205 2300 and it becomes realy hard to deal with those side effects with just try to tune them out. Trying several ways to solve this issue I realised that there are two most effective ways:
+1. Slightly heavier props but still efficient like HQ5x4x4 instead of HQ5x4x3
+2. Mechanical damping for FC (soft mounting). And I found it useful not only for sensitive gyros.
+Assuming usage of low ESR capacitors as a good practics any way.
+
+So if I try to analyze all this inputs, I can see that increased mid range torque and higher acceleration speed of the motors combined with the light props, more precise, air mode mid throttle authority and power full ESCs and high discharge batteries can provide destabilization in existing PID controller not only at high throttle but also in mid throttle and fast throttle transitions.
+
+Now how heavier props and soft mounting helps to prevent those issues?
+From my point of view they act as a mechanical damper in close loop system like PID controller.
+
+So if our build has good matching between motors benefits and frame inertia/weight, there will be good chance that we will not get side effects. But what happens when we have over powered build where there is not enough "built in" mechanical damping factor? As I can see the existing PID controller not always can deals with it adequately.
+
+I think it is possible to add an optional dynamic software damper to the PID controller.
+We already have one called TPA , but this one acts only at high throttle and it very simple and linear.
+
+My suggestion is to think about some configurable, non linear P attenuator for desirable throttle range. The user can be able to define the start and stop throttle points to apply P attenuator and also the attenuation factor. Some similar to how the notch filter works.
+
+By this way we will be able to control mid throttle side effects without detuning our quads and possibly deal better with prop wash.
+
+That do you think? 
+
+Boris' Answer:  
+I am not sure what you already tried, but if you use low noise gyro like MPU6000/MPU6050 the noise is really easy to solve.
+
+There is really no need of lowering your P's as you suggest just for that. You technically dont even need TPA in that case.
+
+The notch default filters in 3.0.1 should deal with low and mid throttle vibrations in most cases.
+On few of my quads I also have the Cobra champion serie motors like you and had terrible time tuning those without notch filters before.   
 
 ##Is there a way to download blackbox logs through a terminal client? 
 Thanks to dropax for asking this and working out the answer.  
