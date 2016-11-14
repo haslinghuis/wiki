@@ -88,6 +88,7 @@ I had many requests for MOTOLAB but that one doesn't have DMA available on all m
 - RMDO
 - FURYF3
 - SOULF4
+- RACEBASE
 
 ####ESCs supporting Dshot:
 - KISS 24 - 150, 300, 600 See the Dshot thread (link above) for ESC code.
