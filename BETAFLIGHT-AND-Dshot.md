@@ -99,6 +99,7 @@ I had many requests for MOTOLAB but that one doesn't have DMA available on all m
 Firmware in Github here: https://github.com/bitdump/BLHeli
 
 - Cicada v1 20A - 150
+- Cicada v1 30A - 150 & 300
 - Racestar v1 30A
 - Racestar v2 20A & Cicada 20A - 150, 300, 600? (BLHeli_S 16.43)
 - Racerstar 25a - 300
@@ -143,6 +144,7 @@ https://www.rcgroups.com/forums/showpost.php?p=36181966&postcount=40934
 - DTFC (DOGE) (build 682) & Cicada v2 20A (G_H_30) - 300
 - DTFC (DOGE) & Littlebee 20A-S with cap removed (A_H_15) - 300, 600
 - IMPULSERCF3 & ZTW polaris 30A
+- Fury F4 & Cicada V1 - 150 & 300
 
 ####Components tried and are not currently working:
 
