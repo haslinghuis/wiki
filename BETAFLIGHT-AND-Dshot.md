@@ -121,6 +121,7 @@ https://www.rcgroups.com/forums/showpost.php?p=36181966&postcount=40934
 - KISSFC & TBS25 - 300
 - OMNIBUS (with blackbox SD feature off) & KISS24
 - OMNIBUSF4 & KISS24
+- OMNIBUSF4 & AIKON SEFM 30A (V2 C-H-25 using DS600)(BLheli_S 16.43)
 - REVO & KISS24
 - REVO & AIKON 30A (v1 (150, 300, 600) & v2)
 - REVO + Racestar v2 20a (G_H_30) - 300
