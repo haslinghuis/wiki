@@ -103,8 +103,8 @@ Firmware in Github here: https://github.com/bitdump/BLHeli
 - Racestar v2 20A & Cicada 20A - 150, 300, 600? (BLHeli_S 16.43)
 - Racerstar 25a - 300
 - Racerstar v2 35A - 150, 300
-- Aikon SEFM v2 30A - 150, 300, 600 (BLHeli_S 16.43) (25)
-- Aikon SEFM v1 30A - 150, 300 (15)
+- Aikon SEFM v2 30A - 150, 300, 600 (BLHeli_S 16.43) (C-H-25)
+- Aikon SEFM v1 30A - 150, 300 (C-H-15)
 - Lumenier 30A
 - TBS 25 - 300
 - DYS XS30A (with Signal cap removed) - 300 (16.42) https://www.rcgroups.com/forums/showpost.php?p=36133930&postcount=836
