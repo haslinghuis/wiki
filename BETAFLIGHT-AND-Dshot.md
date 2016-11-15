@@ -152,7 +152,7 @@ https://www.rcgroups.com/forums/showpost.php?p=36181966&postcount=40934
 - DYS XS30 with signal cap left on
 - AIKON v2 20A
 - DALRC BS25A (The featured DSHOT BS25A ESC will be available on the later production , for current version in order 
-  to support Dshot you have to modeify the filter circuit of the input signal.)
+  to support Dshot you have to modeify the filter circuit of the input signal. https://www.rcgroups.com/forums/showthread.php?t=2777858)
 - Littlebee_S 30A
 - Spedix 25a blheli_s
 
