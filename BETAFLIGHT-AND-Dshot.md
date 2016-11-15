@@ -76,6 +76,7 @@ Here is why: https://www.rcgroups.com/forums/showpost.php?p=36025232&postcount=3
 - SPracingF3 - Spektrum Sat now working. PPM not working.
 - IMPULSERCF3 
 - DTFc - Build #389 - working on the bench
+- RACEBASE FC
 
 ####Intermittent FC Reports:
 - KOMBINI - reported not to connect to config.
