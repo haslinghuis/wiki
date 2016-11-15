@@ -116,6 +116,7 @@ Firmware in Github here: https://github.com/bitdump/BLHeli
 - FVT Littlebee 20A-S (with signal cap removed) - 150, 300, 600
 - LittleBee_S 20A  (A-H-15 16.42)- (with signal cap removed) - 150, 300, 600   
 https://www.rcgroups.com/forums/showpost.php?p=36181966&postcount=40934
+- Spedix ES 20 lite (with signal cap removed) - 150, 300, 600 https://www.rcgroups.com/forums/showpost.php?p=36203466&postcount=1509
 
 ####Combos (FC & ESC) working:
 
