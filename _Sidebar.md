@@ -11,14 +11,15 @@
  - [Betaflight 3.0](/betaflight/betaflight/wiki/BetaFlight-3.0)
  - [New release! What do I need to know?](/betaflight/betaflight/wiki/New-release!-What-do-I-need-to-know%3F)
  - [Dshot & BetaFlight](/betaflight/betaflight/wiki/BetaFlight and Dshot)
+
 # Tuning and More
 
  - [PID Tuning Guide](/betaflight/betaflight/wiki/PID-Tuning-Guide)
  - [Rate-Calculator](/betaflight/betaflight/wiki/Rate-Calculator)
  - [Gyro and Filters](/betaflight/betaflight/wiki/Gyro-&-Dterm-filtering-recommendations)
  - [Flying Tips](/betaflight/betaflight/wiki/Flying-Tips)
- - [Betaflight Deep Dive](/betaflight/betaflight/wiki/BetaFlight-Deep-Dive)
- - [BetaFlight CLI Commands](/betaflight/betaflight/wiki/Betaflight-specific-CLI-commands)
+ - [Deep Dive](/betaflight/betaflight/wiki/BetaFlight-Deep-Dive)
+ - [CLI Commands](/betaflight/betaflight/wiki/Betaflight-specific-CLI-commands)
 
 # Development
 
