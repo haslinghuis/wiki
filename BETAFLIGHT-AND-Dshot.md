@@ -3,6 +3,7 @@ Dshot is new and currently code is being developed and tested. Since there are m
 
 The Official Thread for Dshot is: https://www.rcgroups.com/forums/showthread.php?t=2756129
 Please Read this thread for details of how it works and up to date info. The First Post of this thread has all the needed Links to code and other info. A good article on Dshot and ESC protocols is here: https://blck.mn/2016/11/dshot-the-new-kid-on-the-block/  
+In the Dshot thread is this post on how to re-Flash ESCs & FC: https://www.rcgroups.com/forums/showpost.php?p=36200950&postcount=1468
 
 BetaFlight development code for Dshot can be found here:
 http://andwho.sytes.net:8080/job/BorisB_BetaFlight/
