@@ -108,12 +108,12 @@ Firmware in Github here: https://github.com/bitdump/BLHeli
 - Aikon SEFM v2 30A - 150, 300, 600 (BLHeli_S 16.43) (C-H-25)
 - Aikon SEFM v1 30A - 150, 300 (C-H-15)
 - Lumenier 30A
-- TBS 25 - 300
+- TBS 25 - 300 (600 with signal cap removed)
 - DYS XS30A (with Signal cap removed) - 300 (16.42) https://www.rcgroups.com/forums/showpost.php?p=36133930&postcount=836
 - ZTW polaris 30A (A_H_20 16.42) - 300, 600
 - Multistar BLHeli_S 30A - 150, 300
-- FVT Littlebee 20A-S (with cap removed) - 150, 300, 600
-- LittleBee_S 20A  (A-H-15 16.42)- (with Cap removed) - 150, 300, 600   
+- FVT Littlebee 20A-S (with signal cap removed) - 150, 300, 600
+- LittleBee_S 20A  (A-H-15 16.42)- (with signal cap removed) - 150, 300, 600   
 https://www.rcgroups.com/forums/showpost.php?p=36181966&postcount=40934
 
 ####Combos (FC & ESC) working:
