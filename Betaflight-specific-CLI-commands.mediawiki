@@ -8,6 +8,7 @@ The setting shown are the Defaults + possible values.
 <h3>Resource Remapping</h3>
 From betaflight v3.1 there is a new command to map resources. No more custom motor mixes just to move a motor pin.
 
+
 [/betaflight/betaflight/wiki/Betaflight-resource-remapping Resource Mapping] goes into further details on how to use this new command.
 
 <h3>GET command</h3>
