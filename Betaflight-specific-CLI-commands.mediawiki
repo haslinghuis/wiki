@@ -6,7 +6,8 @@ The setting shown are the Defaults + possible values.
 <a href="#v270">Latest Version</a>  
 
 <h3>Resource Remapping Command (available in v3.1)</h3>
-<b>Note, this is only newly available in v3.1 of Betaflight.</b>
+
+*Note, this command is only newly available in v3.1 of Betaflight.*
 
 The IO remapping allows you to configure the pins on the MCU to be utilised for various functions. This is the starting framework - more work can be done.
 
