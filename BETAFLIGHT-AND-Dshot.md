@@ -99,7 +99,7 @@ I had many requests for MOTOLAB but that one doesn't have DMA available on all m
 - KISS 24 - 150, 300, 600 See the Dshot thread (link above) for ESC code.
 
 ####BLheli-S:
-Firmware in Github here: https://github.com/bitdump/BLHeli
+Firmware in Github here: https://github.com/bitdump/BLHeli    
 Post with links to signal cap removing: https://www.rcgroups.com/forums/showpost.php?p=32752606&postcount=1  
 
 - Cicada v1 20A - 150
