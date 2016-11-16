@@ -76,7 +76,7 @@ Here is why: https://www.rcgroups.com/forums/showpost.php?p=36025232&postcount=3
 - Dodo (spracingf3)
 - X-Racer V2.1 (spracingf3 #670)
 - DTFC (DOGE) (build 682)
-- SPracingF3 - Spektrum Sat now working. PPM not working.
+- SPracingF3 - Spektrum Sat now working. PPM now working since build #713.
 - IMPULSERCF3 
 - DTFc - Build #389 - working on the bench
 - RACEBASE FC
@@ -110,6 +110,7 @@ Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36209787&postcount=1
 - Racestar v2 20A & Cicada 20A - 150, 300, 600 (BLHeli_S 16.43)
 - Racerstar 25a - 300
 - Racerstar v2 35A - 150, 300
+- Racerstar MS35A - 600
 - Aikon 20A/Spedix 20A (are these the same?)    
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36182572&postcount=1319
 - Aikon SEFM v2 30A - 150, 300, 600 (BLHeli_S 16.43) (C-H-25)
