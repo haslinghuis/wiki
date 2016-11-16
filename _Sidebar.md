@@ -19,6 +19,7 @@
  - [Gyro and Filters](/betaflight/betaflight/wiki/Gyro-&-Dterm-filtering-recommendations)
  - [Flying Tips](/betaflight/betaflight/wiki/Flying-Tips)
  - [Deep Dive](/betaflight/betaflight/wiki/BetaFlight-Deep-Dive)
+ - [Resource Remapping](/betaflight/betaflight/wiki/Betaflight-resource-remapping)
  - [CLI Commands](/betaflight/betaflight/wiki/Betaflight-specific-CLI-commands)
 
 # Development
