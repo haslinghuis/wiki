@@ -66,7 +66,7 @@ Here is why: https://www.rcgroups.com/forums/showpost.php?p=36025232&postcount=3
 - BLUEJAYF4
 - REVO (and clones)
 - OMNIBUS
-- OMNIBUSPRO
+- OMNIBUSPRO (Blheli Configurator Hangs on read in 3.1, failed flash in 3.01)
 - KISSFC
 - LUX_RACE
 - BETAFLIGHTF3
