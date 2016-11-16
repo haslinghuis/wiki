@@ -19,6 +19,7 @@ Note: these may or may not affect all working targets):
 - PPM not working on some FC targets (limited testing due to most users using Sbus or Spektrum)
 - LEDs not working  
 - The 'target.c' source files show that only Quad copters are supported in most targets and some targets support Hex copters.
+- Some targets do not work if a Custom mixer is enabled. 
 
 ####A quick way to determine IF the hex flashed supports Dshot:  
 Go to the CLI and type "get pwm". All settings with 'pwm' in the name will be shown with all options.
