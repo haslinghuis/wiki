@@ -102,6 +102,7 @@ Firmware in Github here: https://github.com/bitdump/BLHeli
 
 - Cicada v1 20A - 150
 - Cicada v1 30A - 150 & 300
+- Racerstar v1 20a - 600
 - Racestar v1 30A
 - Racestar v2 20A & Cicada 20A - 150, 300, 600? (BLHeli_S 16.43)
 - Racerstar 25a - 300
