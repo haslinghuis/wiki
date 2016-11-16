@@ -111,7 +111,7 @@ Firmware in Github here: https://github.com/bitdump/BLHeli
 - Aikon SEFM v2 30A - 150, 300, 600 (BLHeli_S 16.43) (C-H-25)
 - Aikon SEFM v1 30A - 150, 300 (C-H-15)
 - Lumenier 30A
-- TBS 25 - 300 (600 with signal cap removed)
+- TBS 25 - 300 (600 with signal cap removed) Instructions:https://www.rcgroups.com/forums/showpost.php?p=36209076&postcount=1548
 - DYS XS30A (with Signal cap removed) - 300 (16.42) https://www.rcgroups.com/forums/showpost.php?p=36133930&postcount=836
 - ZTW polaris 30A (A_H_20 16.42) - 300, 600
 - Multistar BLHeli_S 30A - 150, 300
