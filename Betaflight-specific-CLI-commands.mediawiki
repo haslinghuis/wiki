@@ -8,7 +8,7 @@ The setting shown are the Defaults + possible values.
 <h3>Resource Remapping</h3>
 From betaflight v3.1 there is a new command to map resources. No more custom motor mixes just to move a motor pin.
 
-[Resource Remapping](/betaflight/betaflight/wiki/Betaflight-resource-remapping) goes into further details on how to use this new command.
+[/betaflight/betaflight/wiki/Betaflight-resource-remapping Resource Mapping] goes into further details on how to use this new command.
 
 <h3>GET command</h3>
 New CLI feature is type a "get" and part of a CLI command name (example: "get acc"). The cli will return all CLI commands that have the name part with the current value plus what the valid value range or valid Names.
