@@ -106,7 +106,7 @@ Firmware in Github here: https://github.com/bitdump/BLHeli
 - Racerstar v1 20a - 600   
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36209787&postcount=1569
 - Racestar v1 30A
-- Racestar v2 20A & Cicada 20A - 150, 300, 600? (BLHeli_S 16.43)
+- Racestar v2 20A & Cicada 20A - 150, 300, 600 (BLHeli_S 16.43)
 - Racerstar 25a - 300
 - Racerstar v2 35A - 150, 300
 - Aikon 20A/Spedix 20A (are these the same?)    
@@ -142,6 +142,7 @@ Cap removal: https://nathan.vertile.com/blog/2016/11/14/flash-blheli_s-with-dsho
 - REVO & KISS24
 - REVO & AIKON 30A (v1 (150, 300, 600) & v2)
 - REVO + Racestar v2 20a (G_H_30) - 300
+- REVO + Racestar v2 20a (G_H_30) - 300, 600
 - BLUEJAYF4 & KISS24
 - BlueJayF4 & Aikon SEFM 30
 - BlueJayF4 & v2 Racestar/Cicada 20a
