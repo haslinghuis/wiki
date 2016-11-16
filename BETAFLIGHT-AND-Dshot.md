@@ -120,6 +120,7 @@ Firmware in Github here: https://github.com/bitdump/BLHeli
 https://www.rcgroups.com/forums/showpost.php?p=36181966&postcount=40934
 - Spedix ES 20 lite (with signal cap removed) - 150, 300, 600 https://www.rcgroups.com/forums/showpost.php?p=36203466&postcount=1509
 - Spedix ES30 HV (with signal cap removed) - 600 https://www.rcgroups.com/forums/showpost.php?p=36205800&postcount=1527  
+- BumpBee_S (with signal cap removed) - 600 https://nathan.vertile.com/blog/2016/11/14/flash-blheli_s-with-dshot/#flashing  
 
 ####Combos (FC & ESC) working:
 
