@@ -100,6 +100,7 @@ I had many requests for MOTOLAB but that one doesn't have DMA available on all m
 
 ####BLheli-S:
 Firmware in Github here: https://github.com/bitdump/BLHeli
+Post with links to signal cap removing: https://www.rcgroups.com/forums/showpost.php?p=32752606&postcount=1  
 
 - Cicada v1 20A - 150
 - Cicada v1 30A - 150 & 300
