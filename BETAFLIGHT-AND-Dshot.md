@@ -153,6 +153,7 @@ https://nathan.vertile.com/blog/2016/11/14/flash-blheli_s-with-dshot/#flashing
 - FURY F4 & v2 Racestar/Cicada 20a - 150, 300, 600 (BLHeli_S 16.43)
 - AIRBOT F3 & Cicada 20A - 150, 300 (Airbot F3 uses SPRACING F3 target)
 - SPRACINGF3 on build 669 & ZTW polaris (A_H_20 16.42) - 300
+- SPRACINGF3 on build 713 & Racerstar MS35A (A_H_20 16.43) - 600
 - Dodo with SPRACINGF3 hex & Cicada v1 20A (G_L_30) - 150
 - X-Racer f303 v3 & Racerstar v2 35a (2s-6s) - 150, 300
 - DTFC (DOGE) (build 682) & Cicada v2 20A (G_H_30) - 300
