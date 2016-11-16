@@ -11,7 +11,7 @@ Pins are remapped using the resources command line interface command.
 Where MOTOR is the function, 1 is the motor index (1 based e.g. 1-4 on a quad) and A1 is Port A pin 1 or more commonly referred to as PA1 in STM datasheet documentation. 
 
 To remove a mapping, use <b>NONE</b> in place of PIN, e.g. 
-<b><pre>resource MOTOR 1 NONE</pre></b>
+<b><pre>resource MOTOR 5 NONE</pre></b>
 
 Where a function does not require an index (i.e. there is only 1 possible pin assignment), e.g. BEEPER, SONAR_ECHO or SONAR_TRIGGER then the index <b>must</b> be omitted 
 e.g. <b><pre>resource BEEPER B6</pre></b>
