@@ -110,17 +110,23 @@ Firmware in Github here: https://github.com/bitdump/BLHeli
 - Racerstar v2 35A - 150, 300
 - Aikon SEFM v2 30A - 150, 300, 600 (BLHeli_S 16.43) (C-H-25)
 - Aikon SEFM v1 30A - 150, 300 (C-H-15)
+- AIKON SEFM 20A (with signal cap removed) - 150, 300, 600
 - Lumenier 30A
-- TBS 25 - 300 (600 with signal cap removed) Instructions:https://www.rcgroups.com/forums/showpost.php?p=36209076&postcount=1548
-- DYS XS30A (with Signal cap removed) - 300 (16.42) https://www.rcgroups.com/forums/showpost.php?p=36133930&postcount=836
+- TBS 25 - 300 (600 with signal cap removed)   
+Instructions:  https://www.rcgroups.com/forums/showpost.php?p=36209076&postcount=1548
+- DYS XS30A (with Signal cap removed) - 300 (16.42)  
+https://www.rcgroups.com/forums/showpost.php?p=36133930&postcount=836
 - ZTW polaris 30A (A_H_20 16.42) - 300, 600
 - Multistar BLHeli_S 30A - 150, 300
 - FVT Littlebee 20A-S (with signal cap removed) - 150, 300, 600
 - LittleBee_S 20A  (A-H-15 16.42)- (with signal cap removed) - 150, 300, 600   
 https://www.rcgroups.com/forums/showpost.php?p=36181966&postcount=40934
-- Spedix ES 20 lite (with signal cap removed) - 150, 300, 600 https://www.rcgroups.com/forums/showpost.php?p=36203466&postcount=1509
-- Spedix ES30 HV (with signal cap removed) - 600 https://www.rcgroups.com/forums/showpost.php?p=36205800&postcount=1527  
-- BumpBee_S (with signal cap removed) - 600 https://nathan.vertile.com/blog/2016/11/14/flash-blheli_s-with-dshot/#flashing  
+- Spedix ES 20 lite (with signal cap removed) - 150, 300, 600   
+https://www.rcgroups.com/forums/showpost.php?p=36203466&postcount=1509
+- Spedix ES30 HV (with signal cap removed) - 600   
+https://www.rcgroups.com/forums/showpost.php?p=36205800&postcount=1527  
+- BumpBee_S (with signal cap removed) - 600   
+https://nathan.vertile.com/blog/2016/11/14/flash-blheli_s-with-dshot/#flashing  
 
 ####Combos (FC & ESC) working:
 
