@@ -111,12 +111,15 @@ Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36209787&postcount=1
 - Racerstar 25a - 300
 - Racerstar v2 35A - 150, 300
 - Racerstar MS35A - 600
-- Aikon 20A/Spedix 20A (are these the same?)    
-Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36182572&postcount=1319
+- Aikon 20A/Spedix 20A 
+Cap removal for both: https://www.rcgroups.com/forums/showpost.php?p=36182572&postcount=1319
 - Aikon SEFM v2 30A - 150, 300, 600 (BLHeli_S 16.43) (C-H-25)
+Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36214609&postcount=1614
 - Aikon SEFM v1 30A - 150, 300 (C-H-15)
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36213821&postcount=1611
+Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36214609&postcount=1614
 - AIKON SEFM 20A (with signal cap removed) - 150, 300, 600
+Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36214609&postcount=1614
 - Lumenier 30A
 - TBS 25 - 300 (600 with signal cap removed)   
 Cap removal:   https://www.rcgroups.com/forums/showpost.php?p=36209076&postcount=1548
