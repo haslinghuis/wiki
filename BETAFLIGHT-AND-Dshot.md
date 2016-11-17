@@ -80,6 +80,7 @@ Here is why: https://www.rcgroups.com/forums/showpost.php?p=36025232&postcount=3
 - IMPULSERCF3 
 - DTFc - Build #389 - working on the bench
 - RACEBASE FC
+- YuPi F4
 
 ####Intermittent FC Reports:
 - KOMBINI - reported not to connect to config.
@@ -175,6 +176,7 @@ https://www.rcgroups.com/forums/showpost.php?p=36216745&postcount=1645
 - DTFC (DOGE) & Littlebee 20A-S with cap removed (A_H_15) - 300, 600
 - IMPULSERCF3 & ZTW polaris 30A
 - Fury F4 & Cicada V1 - 150 & 300
+- YuPi F4 & Aikon SEFM 30
 
 ####Components tried and are not currently working:
 
