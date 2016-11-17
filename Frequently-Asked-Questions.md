@@ -1470,6 +1470,13 @@ There is really no need of lowering your P's as you suggest just for that. You t
 The notch default filters in 3.0.1 should deal with low and mid throttle vibrations in most cases.
 On few of my quads I also have the Cobra champion serie motors like you and had terrible time tuning those without notch filters before.   
 
+####Another Post on curing oscillations from linklemming:
+https://www.rcgroups.com/forums/showpost.php?p=36220137&postcount=41113
+Later comment:   
+I just stuck three squarish (~15mm) pieces of electrical tape on the frame underneath the motors, used an exacto knife to cut holes in the tape for the screws and remounted the motors making sure not to tighten them down too much.
+
+I really doubted it would be as effective as it was since vibes can still come thru the mounting screws but it fixed the issue.   
+
 ##Is there a way to download blackbox logs through a terminal client? 
 Thanks to dropax for asking this and working out the answer.  
 
