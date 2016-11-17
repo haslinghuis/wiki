@@ -111,6 +111,7 @@ Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36209787&postcount=1
 - Racerstar 25a - 300
 - Racerstar v2 35A - 150, 300
 - Racerstar MS35A - 600
+- Racerstart 4in1 20A V1 - 150 (one motor twitching), 300 (all running smooth), 600 (grinding noise) bench testing only so far   - This may need the signal cap(s) removed.  
 - Aikon 20A/Spedix 20A 
 Cap removal for both: https://www.rcgroups.com/forums/showpost.php?p=36182572&postcount=1319
 - Aikon SEFM v2 30A - 150, 300, 600 (BLHeli_S 16.43) (C-H-25)
