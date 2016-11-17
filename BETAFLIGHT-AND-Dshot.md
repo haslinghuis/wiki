@@ -136,6 +136,11 @@ Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36203466&postcount=1
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36205800&postcount=1527  
 - BumpBee_S (with signal cap removed) - 600   
 Cap removal: https://nathan.vertile.com/blog/2016/11/14/flash-blheli_s-with-dshot/#flashing  
+- BeeRotor BLS20A (with signal cap removed) - 600
+Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36217144&postcount=1654   
+
+Generic instructions on how to find signal input and cap on any BLHeli ESC:
+https://www.rcgroups.com/forums/showpost.php?p=36216745&postcount=1645   
 
 ####Combos (FC & ESC) working:
 
