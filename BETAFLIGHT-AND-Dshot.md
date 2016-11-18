@@ -84,7 +84,7 @@ Here is why: https://www.rcgroups.com/forums/showpost.php?p=36025232&postcount=3
 - YuPi F4
 
 ####Intermittent FC Reports:
-- KOMBINI - reported not to connect to config.
+- KOMBINI - reported not to connect to config (still on #721).
 
 ####FC Targets with DSHOT code added but in need of testing:
 
