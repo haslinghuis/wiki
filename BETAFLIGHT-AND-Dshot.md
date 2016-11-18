@@ -105,7 +105,7 @@ Firmware in Github here: https://github.com/bitdump/BLHeli
 
 - Cicada v1 20A - 150
 - Cicada v1 30A - 150 & 300
-- Racerstar v1 20a - 600   
+- Racerstar v2 30a - 600   
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36209787&postcount=1569
 - Racestar v1 30A
 - Racestar v2 20A & Cicada 20A - 150, 300, 600 (BLHeli_S 16.43)
