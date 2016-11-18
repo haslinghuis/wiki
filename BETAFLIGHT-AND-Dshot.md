@@ -74,6 +74,7 @@ Here is why: https://www.rcgroups.com/forums/showpost.php?p=36025232&postcount=3
 - FURY F4
 - Airbot F3 (spracingf3)
 - Dodo (spracingf3)
+- Dodo (RMDO)
 - X-Racer V2.1 (spracingf3 #670)
 - DTFC (DOGE) (build 682)
 - SPracingF3 - Spektrum Sat now working. PPM now working since build #713.
@@ -92,7 +93,6 @@ Boris' comment:
 I had many requests for MOTOLAB but that one doesn't have DMA available on all motors. It may be that we will assign one of the motors to PPM pin so you can resolder it. Not great, but better than nothing I guess?
 - SPARKY2
 - SPRACINGF3EVO - Locked out Comm port fixed (build 708?). Must move MOTOR 4 to new pin assignment (CLI = resource MOTOR 4 A06). Then solde ESC for motor #4 to motor output #5, fixes DMA conflict with motor outputs 2 and 4. See: https://github.com/betaflight/betaflight/wiki/Betaflight-specific-CLI-commands#resource-remapping-command-v31
-- RMDO
 - FURYF3
 - SOULF4
 - RACEBASE
@@ -109,6 +109,7 @@ Firmware in Github here: https://github.com/bitdump/BLHeli
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36209787&postcount=1569
 - Racestar v1 30A
 - Racestar v2 20A & Cicada 20A - 150, 300, 600 (BLHeli_S 16.43)
+- Racestar v2 12A - 150, 300, 600 (BLHeli_S 16.43)
 - Racerstar 25a - 300
 - Racerstar v2 35A - 150, 300
 - Racerstar MS35A - 600
@@ -171,6 +172,7 @@ https://www.rcgroups.com/forums/showpost.php?p=36216745&postcount=1645
 - SPRACINGF3 on build 669 & ZTW polaris (A_H_20 16.42) - 300
 - SPRACINGF3 on build 713 & Racerstar MS35A (A_H_20 16.43) - 600
 - Dodo with SPRACINGF3 hex & Cicada v1 20A (G_L_30) - 150
+- Dodo with RMDO hex & Racerstar RS12A V2 (G_H_30) - 300
 - X-Racer f303 v3 & Racerstar v2 35a (2s-6s) - 150, 300
 - DTFC (DOGE) (build 682) & Cicada v2 20A (G_H_30) - 300
 - DTFC (DOGE) & Littlebee 20A-S with cap removed (A_H_15) - 300, 600
