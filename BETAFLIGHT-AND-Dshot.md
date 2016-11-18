@@ -142,6 +142,8 @@ Cap removal: https://nathan.vertile.com/blog/2016/11/14/flash-blheli_s-with-dsho
 - BeeRotor BLS20A (with signal cap removed) - 600
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36217144&postcount=1654   
 - Xrotor mini 30A BL_S - 300, Not working on 600   
+- DALRC BS25A (with signal cap removed) - 150, 300??   
+Cap removal: https://www.rcgroups.com/forums/showthread.php?t=2777858#post36223562   
 
 Generic instructions on how to find signal input and cap on any BLHeli ESC:
 https://www.rcgroups.com/forums/showpost.php?p=36216745&postcount=1645   
