@@ -147,6 +147,7 @@ Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36181966&postcount=4
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36230015&postcount=1745
 - Spedix ES 20 lite (with signal cap removed) - 150, 300, 600   
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36203466&postcount=1509
+- Spedix 25a (with signal cap removed) - 150, 300, 600   
 - Spedix ES30 HV 16.43 (with signal cap removed) - 600   
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36205800&postcount=1527  
 - BumpBee_S (with signal cap removed) - 600   
@@ -201,7 +202,6 @@ These should be removed since If an ESC works and an FC works then together they
 - DYS XS20
 - DYS XS30 with signal cap left on
 - AIKON v2 20A - ?? is this the same ESC as listed as working above ??
-- Spedix 25a blheli_s - ??
 
 ####Components that will NOT likely ever work:
 - Naze32 and clones
