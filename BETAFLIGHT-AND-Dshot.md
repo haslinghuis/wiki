@@ -97,7 +97,7 @@ The new Betaflight 3.1 code has the "resource" CLI command . To use Dshot, you'l
 
 3.0.1 Build #721: Bench tested -     Do the following to setup for Dshot.
 
-`In Port Tab Set Port2 to Serial- save              ; Must use a serial port    `   
+`In Port Tab Set UART2 to SerialRX- save              ; Must use a serial port    `   
 `In Config Tab Set RX to Serial (SBUS, etc)- save   ; Do NOT set ESC to DSHOT yet, leave as OneShot125    `   
 `In CLI type:                                           `   
 `resource ppm none                                  ; Disables use of PPM    `   
