@@ -89,7 +89,8 @@ Now found that some BLHeli_S ESC will run on DSHOT600 with modifications. See li
 - MOTOLAB - 
 Boris' comment:  
 I had many requests for MOTOLAB but that one doesn't have DMA available on all motors. It may be that we will assign one of the motors to PPM pin so you can resolder it. Not great, but better than nothing I guess?   
-The new Betaflight code has the "resource" CLI command. To use Dshot, you'll move the motor 1 signal to the PPM pin and enter "resource motor 1 PA7" or something to that effect.     
+The new Betaflight code has the "resource" CLI command. To use Dshot, you'll move the motor 1 signal to the PPM pin and enter "resource motor 1 PA7" or something to that effect.  
+
 #####3.0.1 Build #721: Bench tested -     Do the following to setup for Dshot.
 
 `In Port Tab Set Port2 to Serial- save              ; Must use a serial port    `   
