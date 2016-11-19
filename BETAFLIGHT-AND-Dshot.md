@@ -192,6 +192,7 @@ These should be removed since If an ESC works and an FC works then together they
 - SPRACINGF3 on build 669 & ZTW polaris (A_H_20 16.42) - 300
 - SPRACINGF3 on build 713 & Racerstar MS35A (A_H_20 16.43) - 600
 - Dodo with SPRACINGF3 hex & Cicada v1 20A (G_L_30) - 150
+- Dodo with SPRACINGF3 hex (#721) &  Kiss ESCs with Dshot600
 - Dodo with RMDO hex & Racerstar RS12A V2 (G_H_30) - 300
 - X-Racer f303 v3 & Racerstar v2 35a (2s-6s) - 150, 300
 - DTFC (DOGE) (build 682) & Cicada v2 20A (G_H_30) - 300
