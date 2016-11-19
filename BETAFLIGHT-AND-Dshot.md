@@ -13,11 +13,12 @@ Some known limitations are (
 Note: these may or may not affect all working targets):
 - BLHeli pass-through does not work if FC is set to DSHOT. Must change output to OneShot to use the pass-through. Also, some ESC that have a signal filter cap may not work until the cap is removed.   
 Note: should be fixed on most Targets.
-- BB logging  not working 
+- BB logging  not working. Seems to work on REVO but unable to download to a file, erase worked.
 - 3D mode not yet working, developer's plan is to get the basics working well the get 3D working.
 - A bug affecting Spektrum Sats, shows 988 on channels in receiver tab of Betaflight (soon to be looked at).
-   Fixed on SPRF3, may be fixed on other targets.
-- PPM not working on some FC targets (limited testing due to most users using Sbus or Spektrum)
+   Fixed on SPRF3 & REVO, may be fixed on other targets.
+- PPM not working on some FC targets (limited testing due to most users using Sbus or Spektrum)   
+   Note: Some targets need motor re-mapped to PPM pin so then PPM can not be used.
 - LEDs not working  
 - The 'target.c' source files show that only Quad copters are supported in most targets and some targets support Hex copters.
 - Some targets do not work if a Custom mixer is enabled. Instead use the new "resource" CLI command instead. Just be aware that not all outputs (pins) can be assigned a DMA channel for Dshot.  
@@ -92,7 +93,7 @@ Now found that some BLHeli_S ESC will run on DSHOT600 with modifications. See li
 - Seriously Pro Mini - locks up when Dshot selected.
 - MOTOLAB - Boris' comment:  
 I had many requests for MOTOLAB but that one doesn't have DMA available on all motors. It may be that we will assign one of the motors to PPM pin so you can resolder it. Not great, but better than nothing I guess?   
-The new Betaflight 3.1 code has the "resource" CLI command . To use Dshot, you'll move the motor 1 signal to the PPM pin, then.  
+The new Betaflight 3.1 code has the "resource" CLI command . To use Dshot, you'll need move the motor 1 signal to the PPM pin.  
 
 3.0.1 Build #721: Bench tested -     Do the following to setup for Dshot.
 
