@@ -134,6 +134,8 @@ Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36133930&postcount=8
 - FVT Littlebee 20A-S (with signal cap removed) - 150, 300, 600
 - LittleBee_S 20A  (A-H-15 16.42)- (with signal cap removed) - 150, 300, 600   
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36181966&postcount=40934
+- Littlebee_S 30A (with signal cap removed) - 600
+Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36230015&postcount=1745
 - Spedix ES 20 lite (with signal cap removed) - 150, 300, 600   
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36203466&postcount=1509
 - Spedix ES30 HV 16.43 (with signal cap removed) - 600   
@@ -145,6 +147,7 @@ Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36217144&postcount=1
 - Xrotor mini 30A BL_S - 300, Not working on 600   
 - DALRC BS25A (with signal cap removed) - 150, 300??   
 Cap removal: https://www.rcgroups.com/forums/showthread.php?t=2777858#post36223562   
+https://www.rcgroups.com/forums/showthread.php?t=2777858
 
 Generic instructions on how to find signal input and cap on any BLHeli ESC:
 https://www.rcgroups.com/forums/showpost.php?p=36216745&postcount=1645   
@@ -189,9 +192,6 @@ https://www.rcgroups.com/forums/showpost.php?p=36216745&postcount=1645
 - DYS XS20
 - DYS XS30 with signal cap left on
 - AIKON v2 20A
-- DALRC BS25A (The featured DSHOT BS25A ESC will be available on the later production , for current version in order 
-  to support Dshot you have to modeify the filter circuit of the input signal. https://www.rcgroups.com/forums/showthread.php?t=2777858)
-- Littlebee_S 30A
 - Spedix 25a blheli_s
 
 ####Components that will NOT likely ever work:
