@@ -85,7 +85,10 @@ Now found that some BLHeli_S ESC will run on DSHOT600 with modifications. See li
 - KOMBINI - reported not to connect to config (still on #721).
 
 ####FC Targets with DSHOT code added but in need of testing:
-
+- FURYF3
+- SOULF4
+- RACEBASE
+- SPARKY2
 - MOTOLAB - Boris' comment:  
 I had many requests for MOTOLAB but that one doesn't have DMA available on all motors. It may be that we will assign one of the motors to PPM pin so you can resolder it. Not great, but better than nothing I guess?   
 The new Betaflight 3.1 code has the "resource" CLI command . To use Dshot, you'll move the motor 1 signal to the PPM pin, then.  
@@ -100,12 +103,9 @@ The new Betaflight 3.1 code has the "resource" CLI command . To use Dshot, you'l
 `save                                               ; reboots    `   
 `In Config Tab set to desired DSHOT protocol- save    `    
  
+- SPRACINGF3EVO - Locked out Comm port fixed (build 708?). Must move MOTOR 4 to new pin assignment (CLI = resource MOTOR 4 A06). Then solder ESC for motor #4 to motor output #5, fixes DMA conflict with motor outputs 2 and 4. 
 
-- SPARKY2
-- SPRACINGF3EVO - Locked out Comm port fixed (build 708?). Must move MOTOR 4 to new pin assignment (CLI = resource MOTOR 4 A06). Then solde ESC for motor #4 to motor output #5, fixes DMA conflict with motor outputs 2 and 4. See: https://github.com/betaflight/betaflight/wiki/Betaflight-specific-CLI-commands#resource-remapping-command-v31
-- FURYF3
-- SOULF4
-- RACEBASE
+See: [CLI resource command](https://github.com/betaflight/betaflight/wiki/Betaflight-specific-CLI-commands#resource-remapping-command-v31)
 
 ####ESCs supporting Dshot:
 - KISS 24 - 150, 300, 600 See the Dshot thread (link above) for ESC code.
