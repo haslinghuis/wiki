@@ -84,10 +84,10 @@ Now found that some BLHeli_S ESC will run on DSHOT600 with modifications. See li
 
 ####Intermittent FC Reports:
 - KOMBINI - reported not to connect to config (still on #721).
+- SOULF4 - works with REVO firmware
 
 ####FC Targets with DSHOT code added but in need of testing:
 - FURYF3
-- SOULF4
 - RACEBASE
 - SPARKY2
 - Seriously Pro Mini - locks up when Dshot selected.
