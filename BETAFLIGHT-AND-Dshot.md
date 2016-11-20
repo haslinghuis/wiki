@@ -33,7 +33,7 @@ Allowed values: OFF, ONESHOT125, ONESHOT42, MULTISHOT, BRUSHED
 
 ####Setting Min Throttle with Dshot   
 Dshot now uses the CLI command " digital_idle_offset" and the old 'min_throttle' setting is ignored.
-Do type "get idle" to see if this exists and what the valid values are. To set this correctly this value needs to be double whatever the difference is between min command (which should be 1000) and whatever value your min was set at when using multishot / oneshot. For example if your min throttle when using multishot was 1040 (difference here between min command and min throttle is 40) then you should set your digital idle offset to 80. Or if your min throttle pre dshot was 1055 (difference between min command and min throttle is here is 55) then you set digital idle offset to 110. You can play with these values a little but if you experience motor/prop stalls during flight this number should be raised.
+Do type "get idle" to see if this exists and what the valid values are. To set this correctly this value needs to be double whatever the difference is between min command (which should be 1000) and whatever value your min throttle  was set at when using multishot / oneshot. For example if your min throttle when using multishot was 1040 (difference here between min command and min throttle is 40) then you should set your digital idle offset to 80. Or if your min throttle pre dshot was 1055 (difference between min command and min throttle is here is 55) then you set digital idle offset to 110. You can play with these values a little but if you experience motor/prop stalls during flight this number should be raised.
 
 ####ESC Cal and min/max throttle
 ßF firmware with Dshot does Not use the min_throttle or max_throttle setting, these are ignored.
