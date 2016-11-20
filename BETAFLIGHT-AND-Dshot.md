@@ -81,6 +81,7 @@ Now found that some BLHeli_S ESC will run on DSHOT600 with modifications. See li
 - DTFc - Build #389 - working on the bench
 - RACEBASE FC
 - YuPi F4
+- Colibri Race v2.0  
 
 ####Intermittent FC Reports:
 - KOMBINI - reported not to connect to config (still on #721).
