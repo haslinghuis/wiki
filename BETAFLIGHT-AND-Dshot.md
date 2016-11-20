@@ -201,6 +201,7 @@ These should be removed since If an ESC works and an FC works then together they
 - IMPULSERCF3 & ZTW polaris 30A
 - Fury F4 & Cicada V1 - 150 & 300
 - YuPi F4 & Aikon SEFM 30
+- MotoLab cyclone (build 730) & Kiss24A - 600
 
 ####Components tried and are not currently working:
 - DYS XS20
