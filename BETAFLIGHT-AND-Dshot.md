@@ -142,7 +142,7 @@ Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36214609&postcount=1
 - Lumenier 30A
 - TBS 25 - 300 (600 with signal cap removed)   
 Cap removal:   https://www.rcgroups.com/forums/showpost.php?p=36209076&postcount=1548
-- DYS XS30A (with Signal cap removed) - 300 (16.42)    
+- DYS XS30A (with Signal cap removed) - 300 (16.42) - 600 (16.43)   
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36133930&postcount=836   
 https://www.rcgroups.com/forums/showpost.php?p=36245544&postcount=1848   
 - ZTW polaris 30A (A_H_20 16.42) - 300, 600
@@ -186,7 +186,7 @@ These should be removed since If an ESC works and an FC works then together they
 - BlueJayF4 & Aikon SEFM 30
 - BlueJayF4 & v2 Racestar/Cicada 20a
 - BlueJayF4 & v2 Racestar/Cicada 30a (1 report of BJF4 and Racestar v2 30a not working)
-- BlueJayF4 & DYS XS30 (Cap off) - 300 (was working on build 667, may need rework on 689)
+- BlueJayF4 & DYS XS30 (Cap off) - 300, 600 (build #723)
 - Xracer 3.1 SPI & v2 Racestar/Cicada 20a - 150, 300
 - FLIP32F4 & Racerstar25A - 150, 300
 - LUXFC & Luminier 30A - 300
