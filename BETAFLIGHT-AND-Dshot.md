@@ -141,7 +141,8 @@ Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36214609&postcount=1
 - TBS 25 - 300 (600 with signal cap removed)   
 Cap removal:   https://www.rcgroups.com/forums/showpost.php?p=36209076&postcount=1548
 - DYS XS30A (with Signal cap removed) - 300 (16.42)    
-Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36133930&postcount=836
+Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36133930&postcount=836   
+https://www.rcgroups.com/forums/showpost.php?p=36245544&postcount=1848   
 - ZTW polaris 30A (A_H_20 16.42) - 300, 600
 - Multistar BLHeli_S 30A - 150, 300
 - FVT Littlebee 20A-S (with signal cap removed) - 150, 300, 600   
