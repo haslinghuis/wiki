@@ -38,6 +38,7 @@ Do type "get idle" to see if this exists and what the valid values are. To set t
 ####ESC Cal and min/max throttle
 ßF firmware with Dshot does Not use the min_throttle or max_throttle setting, these are ignored.
 Just ensure that in the ESCs (BLHeli Suite) that PPM_MIN_THROTTLE is set to 1000 and PPM_MAX_THROTTLE is set to 2000.
+Note: This should not be needed in BLHeli 16.43 since the PPM_MIN & MAX values are not used for Dshot.   
 
 ####Max ESC update speed supported by different dshot versions:
 - dshot150: 8khz max
