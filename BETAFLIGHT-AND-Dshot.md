@@ -81,7 +81,7 @@ Now found that some BLHeli_S ESC will run on DSHOT600 with modifications. See li
 - DTFc - Build #389 - working on the bench
 - RACEBASE FC
 - YuPi F4
-- Colibri Race v2.0  
+- Colibri Race v2.0  (build #722)
 - SOULF4 - works with SOULF4.hex, build #734 (beeper not working) - works with REVO.hex
 
 ####Intermittent FC Reports:
