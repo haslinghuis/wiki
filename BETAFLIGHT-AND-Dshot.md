@@ -119,6 +119,7 @@ See: [CLI resource command](https://github.com/betaflight/betaflight/wiki/Betafl
 ####BLheli-S:
 Firmware in Github here: https://github.com/bitdump/BLHeli    
 
+- Cicada BB2 10A - 150,300 and 600 (no mods)
 - Cicada v1 20A - 150
 - Cicada v2 20A - 150, 300, 600 (BLHeli_S 16.43)
 - Cicada v1 30A - 150 & 300
