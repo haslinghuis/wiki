@@ -1,14 +1,14 @@
-# KakuteF4-V1
+# KakuteF4-AIO
 
-`KakuteF4-v1 is a fantastic and popular flight controller designed for FPV racing drone DIY.`
+`KakuteF4-AIO is a fantastic and popular flight controller designed for FPV racing drone DIY.`
 
-![](https://github.com/jamming/raceflight_community/blob/master/kakutef4-v1-top.jpg?raw=true)
+![](https://github.com/jamming/image/blob/master/KakuteF4-AIO-top.jpg?raw=true)
 
-![](https://github.com/jamming/raceflight_community/blob/master/kakutef4-v1-bottom.jpg?raw=true)
+![](https://github.com/jamming/image/blob/master/KakuteF4-AIO-bottom.jpg?raw=true)
 
 ## Description
 
-`The full size, 35x35mm (30.5x30.5 mounting holes).KakuteF4-V1 is Designed around the STM32F4 MCU and ICM20689 IMU. The ICM20689 is the new gyro designed by Invensense, it’s low noise floor and high reliability rate makes it a top choice for FPV flight controller.F4 processor runs at 168MHz, it allows you to run high loop times.Flight logging can be writed to onboard 32 MBytes SPI flash.`
+`Board size  is 35x44.5mm with 30.5x30.5mm mounting holes.KakuteF4-AIO is designed around the STM32F4 MCU and ICM20689 IMU. The ICM20689 is the new gyro designed by Invensense, it’s low noise floor and high reliability rate makes it a top choice for FPV flight controller.F4 processor runs at 168MHz, it allows you to run high loop times.Flight logging can be writed to onboard 32 MBytes SPI flash.`
 
 ## MCU, Sensors and Features
 
@@ -17,20 +17,21 @@
   - MCU: STM32F405RGT6
   - IMU: ICM20689 (SPI)
   - IMU Interrupt: Yes
-  - BARO: Yes(optional)
+  - BARO: NO
   - VCP: Yes
   - Hardware UARTS: 3
-  - OSD: No
-  - Blackbox: Yes
+  - OSD: YES,directly configured by betaflight-configurator
+  - Blackbox: Yes,onboard 32MBytes SPI Flash
   - PPM/UART Shared: UART6
-  - Battery Voltage Sensor: Yes, directly connected, no wiring necessary
+  - Battery Voltage Sensor: Yes, onboard, no wiring necessary
+  - Battery Current Sensor: Yes, onboard, no wiring necessary
   - Integrated Voltage Regulator: Yes, 7v~42v
   - Brushed Motor Mosfets: No
   - Buttons: 1 - DFU
 
 ### Features
 
-  - Current Sensor: Sens PIN is fanouted,can be connected to extern Current Sensor
+  
   - BlHeli passthrough: YES
   - WS2811 Led Strip: implemented
   - Transponder: No
@@ -45,11 +46,9 @@
 
 
 ## FAQ & Known Issues
-Pin Map
+Here is an example wiring  for FPV drone: 
 
-![](https://github.com/jamming/raceflight_community/blob/master/kakutef4-v1-top-ORG.jpg?raw=true)
-
-![](https://github.com/jamming/raceflight_community/blob/master/kakutef4-v1-bottom-ORG1.jpg?raw=true)
+![](https://github.com/jamming/image/blob/master/KakuteF4-AIO-Wire.jpg?raw=true)
 
 ## Other Resources
 _(add setup guides and instructional material here)_
