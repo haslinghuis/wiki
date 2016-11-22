@@ -120,12 +120,14 @@ See: [CLI resource command](https://github.com/betaflight/betaflight/wiki/Betafl
 Firmware in Github here: https://github.com/bitdump/BLHeli    
 
 - Cicada v1 20A - 150
+- Cicada v2 20A - 150, 300, 600 (BLHeli_S 16.43)
 - Cicada v1 30A - 150 & 300
+- Cicada v2 30A - 300
 - Racestar v1 30A   
 - Racerstar v2 30a - 600    
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36209787&postcount=1569  
-- Racestar v2 20A & Cicada 20A - 150, 300, 600 (BLHeli_S 16.43)
 - Racestar v2 12A - 150, 300, 600 (BLHeli_S 16.43)
+- Racestar v2 20A - 150, 300, 600 (BLHeli_S 16.43)
 - Racerstar 25a - 300
 - Racerstar v2 35A - 150, 300
 - Racerstar MS35A - 600
