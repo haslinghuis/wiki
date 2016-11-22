@@ -139,8 +139,8 @@ Link: https://www.rcgroups.com/forums/showthread.php?t=2782732#post36254434
 Cap removal for both: https://www.rcgroups.com/forums/showpost.php?p=36182572&postcount=1319
 - Aikon SEFM v2 30A - 150, 300, 600 (BLHeli_S 16.43) (C-H-25)   
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36214609&postcount=1614
-- Aikon SEFM v1 30A - 150, 300 (C-H-15)   
-Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36213821&postcount=1611
+- Aikon SEFM v1 30A - (without removing cap) 150, 300 (C-H-15)   Remove cap for 600-   
+Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36213821&postcount=1611   
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36214609&postcount=1614
 - AIKON SEFM 20A (with signal cap removed) - 150, 300, 600   
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36214609&postcount=1614
