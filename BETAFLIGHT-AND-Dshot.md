@@ -95,7 +95,7 @@ Now found that some BLHeli_S ESC will run on DSHOT600 with modifications. See li
 - RACEBASE
 - SPARKY2
 - Seriously Pro Mini - locks up when Dshot selected.
-- MOTOLAB - Beeper not working    
+- MOTOLAB - (MotoF3, Tornado, Cyclone & Tempest) Beeper not working    
 Boris' comment:  
 I had many requests for MOTOLAB but that one doesn't have DMA available on all motors. It may be that we will assign one of the motors to PPM pin so you can resolder it. Not great, but better than nothing I guess?   
 The new Betaflight 3.1 code has the "resource" CLI command . To use Dshot, you'll need move the motor 1 signal to the PPM pin.  
