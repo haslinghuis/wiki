@@ -77,10 +77,10 @@ Now found that some BLHeli_S ESC will run on DSHOT600 with modifications. See li
 - Dodo (spracingf3)
 - Dodo (RMDO)
 - X-Racer V2.1 (spracingf3 #670)
+- DTFc - Build #389 - working on the bench
 - DTFC (DOGE) (build 682)
 - SPracingF3 - Spektrum Sat now working. PPM now working since build #713.
 - IMPULSERCF3 
-- DTFc - Build #389 - working on the bench
 - RACEBASE FC
 - YuPi F4
 - Colibri Race v2.0  (build #722)
