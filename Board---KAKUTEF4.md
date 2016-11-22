@@ -8,7 +8,8 @@
 
 ## Description
 
-`Board size  is 35x44.5mm with 30.5x30.5mm mounting holes.KakuteF4-AIO is designed around the STM32F4 MCU and ICM20689 IMU. The ICM20689 is the new gyro designed by Invensense, it’s low noise floor and high reliability rate makes it a top choice for FPV flight controller.F4 processor runs at 168MHz, it allows you to run high loop times.Flight logging can be writed to onboard 32 MBytes SPI flash.`
+`Board size  is 35x44.5mm with 30.5x30.5mm mounting holes.`
+`KakuteF4-AIO is designed around the STM32F4 MCU and ICM20689 IMU. 
 
 ## MCU, Sensors and Features
 
@@ -16,25 +17,27 @@
 
   - MCU: STM32F405RGT6
   - IMU: ICM20689 (SPI)
-  - IMU Interrupt: Yes
-  - BARO: NO
-  - VCP: Yes
+  - OSD: MAX7456
+  - SPI Flash: MX25L25635FMI
+  - Integrated Voltage Regulator: 7v~42v input,5V/1.25A output
+  
+### Features
+  - The ICM20689 is the new gyro designed by Invensense, it’s low noise floor and high reliability rate makes it a   top choice for FPV flight controller.
+  - F4 processor runs at 168MHz, it allows you to run high loop times.
+  - Onboard 32MBytes SPI Flash for storage of flight logging.
+  - FrSky Telemetry support for S.Port style receivers.
+  - One analog input for RSSI monitoring.
+  - BlHeli passthrough: YES.
+  - WS2811 Led Strip: implemented.
+  - VCP: Yes.
   - Hardware UARTS: 3
-  - OSD: YES,directly configured by betaflight-configurator
-  - Blackbox: Yes,onboard 32MBytes SPI Flash
+  - OSD: MAX7456,directly configured by betaflight-configurator.
   - PPM/UART Shared: UART6
   - Battery Voltage Sensor: Yes, onboard, no wiring necessary
   - Battery Current Sensor: Yes, onboard, no wiring necessary
   - Integrated Voltage Regulator: Yes, 7v~42v
-  - Brushed Motor Mosfets: No
   - Buttons: 1 - DFU
-
-### Features
-
-  
-  - BlHeli passthrough: YES
-  - WS2811 Led Strip: implemented
-  - Transponder: No
+  - CAN Bus which is very useful for talking to external devices.
 
 ## Hardware Designs (if available)
 
