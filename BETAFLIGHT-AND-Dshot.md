@@ -86,7 +86,7 @@ Now found that some BLHeli_S ESC will run on DSHOT600 with modifications. See li
 - YuPi F4
 - Colibri Race v2.0  (build #722)
 - SOULF4 - works with SOULF4.hex, build #734 (beeper not working) - works with REVO.hex
-
+- HGLRC AIO F3 v3 (SPRACINGF3.hex) - works with build #739. Build #740 Arms but no response.
 ####Intermittent FC Reports:
 - KOMBINI - reported not to connect to config (still on #721).  This FC needs to re-map the motor pin the same way as for the MotoLab FC below. Reports are that this FC has the exact same pin out as the MotoLab FCs with the exception the Sbus in UART3.
 
