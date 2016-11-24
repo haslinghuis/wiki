@@ -97,13 +97,7 @@ Now found that some BLHeli_S ESC will run on DSHOT600 with modifications. See li
 ####Intermittent FC Reports:
 - KOMBINI - reported not to connect to config (still on #721).  This FC needs to re-map the motor pin the same way as for the MotoLab FC below. Reports are that this FC has the exact same pin out as the MotoLab FCs with the exception the Sbus in UART3.
 
-####FC Targets with DSHOT code added but in need of testing:
-- FURYF3
-- RACEBASE
-- SPARKY2
-- Seriously Pro Mini - locks up when Dshot selected.
-
-####FC Target that work with Dshot but require re-mapping pins with the Resource command:   
+####FC Targets that work with Dshot but require re-mapping pins with the Resource command:   
 - MOTOLAB - (MotoF3, Tornado, Cyclone & Tempest)   
 Boris' comment:  
 I had many requests for MOTOLAB but that one doesn't have DMA available on all motors. It may be that we will assign one of the motors to PPM pin so you can resolder it. Not great, but better than nothing I guess?   
@@ -123,6 +117,12 @@ The new Betaflight 3.1 code has the "resource" CLI command . To use Dshot, you'l
 - PIKOBLX - re-map motor 1 to the PPM pin (same as MotoLab) and also disable motor 5-8 ("resource motor X none").   
 
 See: [CLI resource command](https://github.com/betaflight/betaflight/wiki/Betaflight-specific-CLI-commands#resource-remapping-command-v31)
+
+####FC Targets with DSHOT code added but in need of testing:
+- FURYF3
+- RACEBASE
+- SPARKY2
+- Seriously Pro Mini - locks up when Dshot selected. May work if motor pins are re-mapped.
 
 ####ESCs supporting Dshot:
 - KISS 24 - 150, 300, 600 See the Dshot thread (link above) for ESC code.
