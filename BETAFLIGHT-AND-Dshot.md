@@ -69,7 +69,7 @@ DSHOT on BLHELI-S ESCs will likely only support Dshot150 & 300.
 Here is why: https://www.rcgroups.com/forums/showpost.php?p=36025232&postcount=376   
 Now found that some BLHeli_S ESC will run on DSHOT600 with modifications. See list below for details.
 
-####Flight Controllers Supporting Dshot on Betaflight 3.1 Alphas:
+###Flight Controllers Supporting Dshot on Betaflight 3.1 Alphas:
 - BLUEJAYF4
 - REVO (and clones)
 - OMNIBUS
