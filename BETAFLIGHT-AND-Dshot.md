@@ -102,6 +102,8 @@ Now found that some BLHeli_S ESC will run on DSHOT600 with modifications. See li
 - RACEBASE
 - SPARKY2
 - Seriously Pro Mini - locks up when Dshot selected.
+
+####FC Target that work with Dshot but require re-mapping pins with the Resource command:   
 - MOTOLAB - (MotoF3, Tornado, Cyclone & Tempest)   
 Boris' comment:  
 I had many requests for MOTOLAB but that one doesn't have DMA available on all motors. It may be that we will assign one of the motors to PPM pin so you can resolder it. Not great, but better than nothing I guess?   
@@ -118,6 +120,7 @@ The new Betaflight 3.1 code has the "resource" CLI command . To use Dshot, you'l
 `In Config Tab set to desired DSHOT protocol- save    `    
  
 - SPRACINGF3EVO - Locked out Comm port fixed (build 708?). Must move MOTOR 4 to new pin assignment (CLI = resource MOTOR 4 A06). Then solder ESC for motor #4 to motor output #5, fixes DMA conflict with motor outputs 2 and 4. 
+- PIKOBLX - re-map motor 1 to the PPM pin (same as MotoLab) and also disable motor 5-8 ("resource motor X none").   
 
 See: [CLI resource command](https://github.com/betaflight/betaflight/wiki/Betaflight-specific-CLI-commands#resource-remapping-command-v31)
 
