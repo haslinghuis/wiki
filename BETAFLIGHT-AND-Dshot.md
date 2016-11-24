@@ -116,7 +116,8 @@ The new Betaflight 3.1 code has the "resource" CLI command . To use Dshot, you'l
 See: [CLI resource command](https://github.com/betaflight/betaflight/wiki/Betaflight-specific-CLI-commands#resource-remapping-command-v31)
 
 ####Intermittent FC Reports:
-- KOMBINI - reported not to connect to config (still on #721).  This FC needs to re-map the motor pin the same way as for the MotoLab FC. Reports are that this FC has the exact same pin out as the MotoLab FCs with the exception the Sbus in UART3.  
+- KOMBINI - reported not to connect to config (still on #721).  This FC needs to re-map the motor pin the same way as for the MotoLab FC. Reports are that this FC has the exact same pin out as the MotoLab FCs with the exception the Sbus in UART3.  Video on getting this FC working:   
+https://www.rcgroups.com/forums/showpost.php?p=36269451&postcount=1966    
 
 ####FC Targets with DSHOT code added but in need of testing:
 - FURYF3
