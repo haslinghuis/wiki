@@ -74,10 +74,10 @@ Now found that some BLHeli_S ESC will run on DSHOT600 with modifications. See li
 - BETAFLIGHTF3
 - FLIP32F4
 - FURY F4
-- Airbot F3 (spracingf3)
-- Dodo (spracingf3)
+- Airbot F3 (SPRACINGF3)
+- Dodo (SPRACINGF3)
 - Dodo (RMDO)
-- X-Racer V2.1 (spracingf3 #670)
+- X-Racer V2.1 (SPRACINGF3 #670)
 - DTFc - Build #389 - working on the bench
 - DTFC (DOGE) (build 682)
 - SPracingF3 - Spektrum Sat now working. PPM now working since build #713.
@@ -85,8 +85,8 @@ Now found that some BLHeli_S ESC will run on DSHOT600 with modifications. See li
 - RACEBASE FC
 - YuPi F4
 - Colibri Race v2.0  (build #722)
-- SOULF4 - works with SOULF4.hex, build #734 (beeper not working) - works with REVO.hex
-- HGLRC AIO F3 v3 (SPRACINGF3.hex) - works with build #739. Build #740 Arms but no response.   
+- SOULF4 - (SOULF4) build #734 (beeper not working) - works with REVO.hex
+- HGLRC AIO F3 v3 (SPRACINGF3) - works with build #739. Build #740 Arms but no response.   
 
 ####Intermittent FC Reports:
 - KOMBINI - reported not to connect to config (still on #721).  This FC needs to re-map the motor pin the same way as for the MotoLab FC below. Reports are that this FC has the exact same pin out as the MotoLab FCs with the exception the Sbus in UART3.
@@ -214,7 +214,7 @@ These should be removed since If an ESC works and an FC works then together they
 - IMPULSERCF3 & ZTW polaris 30A
 - Fury F4 & Cicada V1 - 150 & 300
 - YuPi F4 & Aikon SEFM 30
-- MotoLab cyclone (build 730) & Kiss24A - 600
+- MotoLab Cyclone (build 730) & Kiss24A - 600
 
 ####Components tried and are not currently working:
 - DYS XS20
