@@ -105,7 +105,7 @@ Now found that some BLHeli_S ESC will run on DSHOT600 with modifications. See li
 - MOTOLAB - (MotoF3, Tornado, Cyclone & Tempest)   
 Boris' comment:  
 I had many requests for MOTOLAB but that one doesn't have DMA available on all motors. It may be that we will assign one of the motors to PPM pin so you can resolder it. Not great, but better than nothing I guess?   
-The new Betaflight 3.1 code has the "resource" CLI command . To use Dshot, you'll need move the motor 1 signal to the PPM pin.  
+The new Betaflight 3.1 code has the "resource" CLI command . To use Dshot, you'll need move the motor 1 signal to the PPM pin. Can not use a PPM RX after mapping motor1 to the PPM pin. 
 
 3.1 Build #721: Bench tested -     Do the following to setup for Dshot.
 
