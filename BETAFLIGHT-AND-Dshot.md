@@ -124,7 +124,7 @@ See: [CLI resource command](https://github.com/betaflight/betaflight/wiki/Betafl
 - SPARKY2
 - Seriously Pro Mini - locks up when Dshot selected. May work if motor pins are re-mapped.
 
-####ESCs supporting Dshot:
+###ESCs supporting Dshot:
 - KISS 24 - 150, 300, 600 See the Dshot thread (link above) for ESC code.
 
 ####BLheli-S:
@@ -189,7 +189,7 @@ https://www.rcgroups.com/forums/showthread.php?t=2777858
 Generic instructions on how to find signal input and cap on any BLHeli ESC:
 https://www.rcgroups.com/forums/showpost.php?p=36216745&postcount=1645   
 
-####Combos (FC & ESC) working:   
+###Combos (FC & ESC) working:   
 These should be removed since If an ESC works and an FC works then together they should work. Therefore no need to list all these combinations.   
 
 - KISSFC & KISS 24 - 150, 300, 600
