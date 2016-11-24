@@ -132,6 +132,7 @@ Firmware in Github here: https://github.com/bitdump/BLHeli
 - Cicada v2 20A - 150, 300, 600 (BLHeli_S 16.43)
 - Cicada v1 30A - 150 & 300
 - Cicada v2 30A - 300
+- Racestat v2 6a (2-3S version) - 150, 300, 600 (BLHeli_S 16.43)
 - Racestar v1 30A   
 - Racerstar v2 30a - 600    
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36209787&postcount=1569  
@@ -221,6 +222,7 @@ These should be removed since If an ESC works and an FC works then together they
 - Fury F4 & Cicada V1 - 150 & 300
 - YuPi F4 & Aikon SEFM 30
 - MotoLab Cyclone (build 730) & Kiss24A - 600
+- PIKOBLX (build 740, move motor 1 to ppm pin and disable motors 5-8) & Racestar V2 6A (2-3S)
 
 ####Components tried and are not currently working:
 - DYS XS20
