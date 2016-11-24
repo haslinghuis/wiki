@@ -2,7 +2,7 @@
 
 ## Description
 
-`KakuteF4-AIO is a fantastic and popular flight controller designed for FPV racing drone DIY. It is designed around the STM32F4 MCU and ICM20689 IMU.The board size  is 35x44.5mm, and the mounting holes is 30.5x30.5mm.`
+`Holybro KakuteF4-AIO is a fantastic and popular flight controller designed for FPV racing drone DIY. It is designed around the STM32F4 MCU.The board size  is 35x44.5mm, and the mounting holes is 30.5x30.5mm.`
 
 ## Image of Top and Bottom
 
@@ -15,12 +15,11 @@
 ### Hardware
 
   - MCU: STM32F405RGT6
-  - IMU: ICM20689 (SPI)
+  - IMU:  (SPI)
   - OSD: MAX7456
   - SPI Flash: MX25L25635FMI
   
 ### Features
-  - The ICM20689 is the new gyro designed by Invensense, it’s low noise floor and high reliability rate makes it a   top choice for FPV flight controller.
   - F4 processor runs at 168MHz, it allows you to run high loop times.
   - Onboard 32MBytes SPI Flash for storage of flight logging.
   - FrSky Telemetry support for S.Port style receivers.
