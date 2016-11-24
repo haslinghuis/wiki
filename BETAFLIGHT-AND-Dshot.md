@@ -94,9 +94,6 @@ Now found that some BLHeli_S ESC will run on DSHOT600 with modifications. See li
 - SOULF4 - (SOULF4) build #734 (beeper not working) - works with REVO.hex
 - HGLRC AIO F3 v3 (SPRACINGF3) - works with build #739. Build #740 Arms but no response.   
 
-####Intermittent FC Reports:
-- KOMBINI - reported not to connect to config (still on #721).  This FC needs to re-map the motor pin the same way as for the MotoLab FC below. Reports are that this FC has the exact same pin out as the MotoLab FCs with the exception the Sbus in UART3.
-
 ####FC Targets that work with Dshot but require re-mapping pins with the Resource command:   
 - MOTOLAB - (MotoF3, Tornado, Cyclone & Tempest)   
 Boris' comment:  
@@ -117,6 +114,9 @@ The new Betaflight 3.1 code has the "resource" CLI command . To use Dshot, you'l
 - PIKOBLX - re-map motor 1 to the PPM pin (same as MotoLab) and also disable motor 5-8 ("resource motor X none").   
 
 See: [CLI resource command](https://github.com/betaflight/betaflight/wiki/Betaflight-specific-CLI-commands#resource-remapping-command-v31)
+
+####Intermittent FC Reports:
+- KOMBINI - reported not to connect to config (still on #721).  This FC needs to re-map the motor pin the same way as for the MotoLab FC below. Reports are that this FC has the exact same pin out as the MotoLab FCs with the exception the Sbus in UART3.  
 
 ####FC Targets with DSHOT code added but in need of testing:
 - FURYF3
