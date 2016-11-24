@@ -1,12 +1,18 @@
 # Dshot & BetaFlight   
 Dshot is new and currently code is being developed and tested. Since there are many dependencies and not all current hardware works this is to help keep track.
 
-The Official Thread for Dshot is: https://www.rcgroups.com/forums/showthread.php?t=2756129
-Please Read this thread for details of how it works and up to date info. The First Post of this thread has all the needed Links to code and other info. A good article on Dshot and ESC protocols is here: https://blck.mn/2016/11/dshot-the-new-kid-on-the-block/  
-In the Dshot thread is this post on how to re-Flash ESCs & FC: https://www.rcgroups.com/forums/showpost.php?p=36200950&postcount=1468
+The Official Thread for Dshot is: https://www.rcgroups.com/forums/showthread.php?t=2756129   
+Please Read this thread for details of how it works and up to date info. The First Post of this thread has all the needed Links to code and other info. A good article on Dshot and ESC protocols is here:   
+https://blck.mn/2016/11/dshot-the-new-kid-on-the-block/  
 
-BetaFlight development code for Dshot can be found here:
-http://andwho.sytes.net:8080/job/BorisB_BetaFlight/
+In the Dshot thread is this post on how to re-Flash ESCs & FC:   
+https://www.rcgroups.com/forums/showpost.php?p=36200950&postcount=1468   
+
+For KISS FC's and ESCs see the KISS Dshot thread:  
+https://www.rcgroups.com/forums/showthread.php?t=2780055
+
+BetaFlight development code for Dshot can be found here:   
+http://andwho.sytes.net:8080/job/BorisB_BetaFlight/   
 Just remember that this is very Experimental code and may have serious limitations.
 
 Some known limitations are (
