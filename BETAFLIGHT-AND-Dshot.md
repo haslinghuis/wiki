@@ -186,6 +186,8 @@ Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36217144&postcount=1
 - DALRC BS25A (with signal cap removed) - 150, 300??    
 Cap removal: https://www.rcgroups.com/forums/showthread.php?t=2777858#post36223562   
 https://www.rcgroups.com/forums/showthread.php?t=2777858
+- DYS XSD20A | XSD30A - New product announcement:  
+https://www.rcgroups.com/forums/showthread.php?t=2784634#post36278564  
 
 Generic instructions on how to find signal input and cap on any BLHeli ESC:
 https://www.rcgroups.com/forums/showpost.php?p=36216745&postcount=1645   
