@@ -323,7 +323,13 @@ Could be just a placebo effect, because I have no clue what the slider does, but
 Motors are slightly above ambient temp, so I think I'm set.
 Wish I could say the same for my batteries. Flies so nice I was really pushing them today.
 
+#####Boris' comment of the Dterm Sliders:   
+The sliders are pretty easy. Just use extremes and feel difference.
+Upper slider determines the stick sharpness (acceleration of stick input).
+The lower slider determines how smooth it acts on stick returns.
 
+Upper slider high: Sharpest response
+Lower slider high: sharpest response on stick returns, but also chance to most jerkiness. So smooth this out by higher transition deacceleration. 
 
 ###PID control at Zero Throttle
 Originally Posted by MasterZap View Post
