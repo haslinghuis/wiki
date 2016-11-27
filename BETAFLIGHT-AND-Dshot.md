@@ -67,7 +67,9 @@ Betaflight may not be able to support all Targets ( or specific boards) due to t
 
 DSHOT on BLHELI-S ESCs will likely only support Dshot150 & 300.
 Here is why: https://www.rcgroups.com/forums/showpost.php?p=36025232&postcount=376   
-Now found that some BLHeli_S ESC will run on DSHOT600 with modifications. See list below for details.
+Now found that some BLHeli_S ESC will run on DSHOT600 with modifications. See list below for details.  
+Rev16.5 is now posted on github (27Nov2016).   
+Dshot150, Dshot300 and Dshot600 are now supported officially.  
 
 ###Flight Controllers Supporting Dshot on Betaflight 3.1 Alphas:
 - BLUEJAYF4
