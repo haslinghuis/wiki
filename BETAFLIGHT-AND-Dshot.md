@@ -136,6 +136,8 @@ Firmware in Github here: https://github.com/bitdump/BLHeli
 - Cicada v2 20A - 150, 300, 600 (BLHeli_S 16.43)
 - Cicada v1 30A - 150 & 300
 - Cicada v2 30A - 300
+- Cicada 4n1 20a V2 - 600 with caps removed  
+Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36286446&postcount=2036   
 - Racestat v2 6a (2-3S version) - 150, 300, 600 (BLHeli_S 16.43)
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36268041&postcount=1961
 - Racestar v1 30A   
