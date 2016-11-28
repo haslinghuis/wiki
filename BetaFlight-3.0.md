@@ -331,12 +331,14 @@ The lower slider determines how smooth it acts on stick returns.
 Upper slider high: Sharpest response
 Lower slider high: sharpest response on stick returns, but also chance to most jerkiness. So smooth this out by higher transition deacceleration. 
 
-Slider Tuning Tip from Tesseract1984:  
+#####Slider Tuning Tip from Tesseract1984:  
 My freestyle setting was top slider down to 1.7 and bottom slider adjusted until bounceback is eliminated. I ended up with 0.8 (correction)
 
 Note: for my method, you quad needs to be well tuned already. No noise issues, minimal propwash (i have virtually zero since moving to dshot). If you don't sort your tune out first, you'll be chasing these sliders around trying to make sense of what it's actually doing to your tune.
 
-Tune first. Sliders last. This may be me speaking for myself and there might be a better method but this is what works for me. Oh, also, when you're tuning, don't be so afraid of using D. Keep jacking it up while maintaining motor temps until your prop wash is under control. My numbers ended up a lot higher in 3.1 over any other release.
+Tune first. Sliders last. This may be me speaking for myself and there might be a better method but this is what works for me. Oh, also, when you're tuning, don't be so afraid of using D. Keep jacking it up while maintaining motor temps until your prop wash is under control. My numbers ended up a lot higher in 3.1 over any other release.  
+And Boris' reply:  
+Yeah that's a valid statement. The sliders can even differ per prop. On bullnose props which seem a bit more bouncy in general I tend to run lower setpoint transition. On that way I don't have to sacrifice much sharpness on my tune.  
 
 ###PID control at Zero Throttle
 Originally Posted by MasterZap View Post
