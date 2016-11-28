@@ -239,8 +239,6 @@ These should be removed since If an ESC works and an FC works then together they
 - PIKOBLX (build 740, move motor 1 to ppm pin and disable motors 5-8) & Racestar V2 6A (2-3S)
 
 ####Components tried and are not currently working:
-- DYS XS20
-- DYS XS30 with signal cap left on
 - AIKON v2 20A - ?? is this the same ESC as listed as working above ??
 
 ####Components that will NOT likely ever work:
