@@ -339,6 +339,22 @@ Note: for my method, you quad needs to be well tuned already. No noise issues, m
 Tune first. Sliders last. This may be me speaking for myself and there might be a better method but this is what works for me. Oh, also, when you're tuning, don't be so afraid of using D. Keep jacking it up while maintaining motor temps until your prop wash is under control. My numbers ended up a lot higher in 3.1 over any other release.  
 And Boris' reply:  
 Yeah that's a valid statement. The sliders can even differ per prop. On bullnose props which seem a bit more bouncy in general I tend to run lower setpoint transition. On that way I don't have to sacrifice much sharpness on my tune.  
+#####MoreTuning Tip from Tesseract1984:
+Ya...I almost feel like there needs to be a blurb somewhere that post 3.0.1 you should rethink your paradigms around what are acceptable value ranges.
+
+I remember in 2.9.1 if i had D over 26 i had screwed up and usually meant starting from scratch. My D in 3.1 is now at 46 and 50 for R and P respectively and motors still come down cold. My P is also a lot higher than other releases on this same powertrain. I basically stopped pushing D up with my propwash handling was good.
+
+Yes lower the transition slider also helps with this if you are getting bounceback on move completion.
+
+So scenario 1: Propwash
+
+- Crank the D, keeping an eye on motor temps
+- Motor temps high and still have propwash? Back off on P and try working D up again
+
+Scenario 2: Behaviour on stick return
+
+- Play with sliders
+- Transition slider specifically introduces some deceleration on stick return so that stops are not as abrupt.  
 
 ###PID control at Zero Throttle
 Originally Posted by MasterZap View Post
