@@ -2,7 +2,7 @@
 
 ### Description
 The FishDroneFC F4 flight controller is an integrated flight controller and OSD and VTX specifically designed for ease of use and outstanding flight performance. The SPI-connected ICM20608 inertial motion sensor was chosen for it's high reliability, accuracy and update speed. This board has no problem running fast loop times and ESC protocols. There is an onboard barometer for altitude sensing along with an On Screen Display (OSD) chip directly connected to the main processor (MCU). This tight integration between the MCU and the OSD enables fast updates to the display and easy configuration of the OSD, which is managed straight from the BetaFlight configuration tool. You no longer need to worry about the extra hassle of configuring your OSD with a USB/UART adapter and 3rd party configuration tool, it's all built into the flight control software.
-
+***
 ### Hardware
 - MCU : STM32F405RGT6
 - IMU : ICM-20608-G (SPI)
@@ -16,8 +16,8 @@ The FishDroneFC F4 flight controller is an integrated flight controller and OSD 
 - Integrated Voltage Regulator: Yes, support for 2S-6S battery
 - Buttons : 1 - DFU
 - Brushed Motor Mosfets : No
-- UART : UART3 & UART6
-
+- UART : UART1 & UART3 & UART6
+***
 ### Features
 - All in one design
 - STM32F405 32-bit processor at 168MHz, 1Mb flash, 192kb ram
@@ -35,17 +35,22 @@ The FishDroneFC F4 flight controller is an integrated flight controller and OSD 
 - Beeper : Yes
 - Transponder: No
 
+***
 ### Manufacturers and Distributors
 
+***
 ### Hardware Designs 
 The hardware is currently closed source. It may be in the future that older revisions will be made publicly available.
+***
 
 ### Other Resources
 Rcgroups Thread : 
+***
 
 ### FAQ 
+***
 
-### Images
+### Images 
 #### (This is a test version, the official version is coming soon.)
 ![Top](https://cloud.githubusercontent.com/assets/10217966/20665049/fa097b0e-b598-11e6-9ddc-8f1ef4cedafd.png)
 ![bottom](https://cloud.githubusercontent.com/assets/10217966/20665058/019f9bf0-b599-11e6-8658-aea17a6b8e72.png)
