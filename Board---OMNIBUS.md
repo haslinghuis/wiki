@@ -42,6 +42,7 @@ Available here: http://shop.myairbot.com/index.php/flight-control/cleanflight-ba
 USA: https://www.fpv303.com 
 
 [Omnibus F3 Pro](https://www.fpv303.com/product/omnibus-f3-pro/)
+
 [Omnibus F3](https://www.fpv303.com/product/omnibus-f3)
 
 ## Designers
