@@ -177,6 +177,7 @@ https://www.rcgroups.com/forums/showpost.php?p=36245544&postcount=1848
 - FVT Littlebee 20A-S (with signal cap removed) - 150, 300, 600   
 - LittleBee_S 20A  (A-H-15 16.42)- (with signal cap removed) - 150, 300, 600    
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36181966&postcount=40934
+- MRM ZEUS-S 20A - with CAP removed (see FVT littlebee-s 20a cap removal)
 - Littlebee_S 30A (with signal cap removed) - 600   
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36230015&postcount=1745
 - Spedix ES 20 lite (with signal cap removed) - 150, 300, 600   
