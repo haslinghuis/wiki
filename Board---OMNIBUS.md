@@ -39,6 +39,11 @@ For maximum ease of use, the OmnibusF3 has an onboard voltage regulator that can
 
 Available here: http://shop.myairbot.com/index.php/flight-control/cleanflight-baseflight/omnibusv11.html
 
+USA: https://www.fpv303.com 
+
+[Omnibus F3 Pro](https://www.fpv303.com/product/omnibus-f3-pro/)
+[Omnibus F3](https://www.fpv303.com/product/omnibus-f3)
+
 ## Designers
 
 [Airbot](https://myairbot.com) and [Nathan](https://github.com/nathantsoi)
