@@ -17,6 +17,7 @@ The FishDroneFC F4 flight controller is an integrated flight controller and OSD 
 - Buttons : 1 - DFU
 - Brushed Motor Mosfets : No
 - UART : UART1 & UART3 & UART6
+
 ***
 ### Features
 - All in one design
