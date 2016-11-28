@@ -272,12 +272,12 @@ A video by Joshua about this (note: for 3.0):
 https://www.youtube.com/watch?v=4zncyYdAZPU
 
 ###V3.0.1   
-Dterm setpoint: 0= Measurement, 1 = error. Everything above 1 is more error / more stick derivative. 2 = 2 times error
-Second slider used to be P setpoint as originally described in 2DOF pid controllers and in release candidates, but I didn't find it as useful as I would like so it has been repurposed to be transition for the first slider.
-When going into the roll its error and when returning from roll back to center stick it will be transitioned more into measurement to smooth it out.
+Dterm setpoint: 0 = Measurement, 1 = error. Everything above 1 is more error / more stick derivative. 2 = 2 times error.  
+Second slider used to be P setpoint as originally described in 2DOF pid controllers and in release candidates, but I didn't find it as useful as I would like so it has been repurposed to be transition for the first slider.  
+When going into the roll its error and when returning from roll back to center stick it will be transitioned more into measurement to smooth it out.  
 Here it means D setpoint transition of 1 means no transition at all. Its fully error from setpoint weight. When lower than 1 it will soften the transition on returning stick slowly to measurement.
 
-For example if you liked the smoothness of measurement on quick stick inputs etc, but you also like the responsitivity of error, which makes it more robotic than you can find a middle way now. Still high stick response, but without losing the smoothness on stick returns.
+For example if you liked the smoothness of measurement on quick stick inputs etc, but you also like the responsitivity of error, which makes it more robotic than you can find a middle way now. Still high stick response, but without losing the smoothness on stick returns. 
 I personally fly 2.0 setpoint with 0.3 transition. 0.3 is like exponential curve on stick returns. It will help slow down the rotational rate faster instead at the last moment to prevent bumpyness.
 
 
@@ -313,7 +313,7 @@ From what I've been able to comprehend, that seems to be right, but wanted to do
 - suggestion: Yes, raising 'D's should be correct to suppress prop wash as long as motors do not get hot.
 Do run a BB Log to check for oscillations and other bad things.
 
-ßF 3.0.x is still quite new but in Boris' thread there is discussion on the two sliders in the PID Tab. Seems adjusting these can really help eliminate prop wash and help a copter fly the best. Not many people have posted about these so not much is known on how to adjust them. 
+ßF 3.0.x is still quite new but in Boris' thread there is discussion on the two sliders in the PID Tab. Seems adjusting these can really help eliminate prop wash and help a copter fly the best. Not many people have posted about these so not much is known on how to adjust them.  
 - Result: Raised D just a couple more points on both quads. Propwash was better, but still there.
 Instead or raising D any further, I thought I would give the top slider (Setpoint Weight) a try. 1st adjustment on the 130 and the propwash is totally gone at a Setpoint Weight of 2.36.
 250 quad, I made the same 1st adjustment. Better still, but still slightly present. Made a second adjustment, and now the shakes are gone from the 2nd quad too. Setpoint Weight at 2.46.  
