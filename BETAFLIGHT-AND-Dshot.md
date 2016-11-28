@@ -165,7 +165,7 @@ Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36214609&postcount=1
 - Lumenier 30A
 - TBS 25 - 300 (600 with signal cap removed)   
 Cap removal:   https://www.rcgroups.com/forums/showpost.php?p=36209076&postcount=1548
-- DYS XS20 v1.x
+- DYS XS20 v1.x  
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36297135&postcount=2068
 - DYS XS20A v2 or XSC20A
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36253268&postcount=1878
