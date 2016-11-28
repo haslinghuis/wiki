@@ -12,16 +12,23 @@ The FishDroneFC F4 flight controller is an integrated flight controller and OSD 
 - OSD : Yes, BetaFlight OSD (BFOSD)
 - VTX : Yes ( RTC6705 chip )
 - Blackbox : Yes ( 16mb Flash )
-- Receiver : PPM / RX bus
-- OutPut : 4 esc ( support oneshot,mutishot,dshot)
 - Battery Voltage Sensor: Yes, directly connected, no wiring necessary
 - Integrated Voltage Regulator: Yes, support for 2S-6S battery
 - Buttons : 1 - DFU
 - Brushed Motor Mosfets : No
-- UART : UART3 for smartport & UART6 for sbus and more rxBus receiver.
+- UART : UART3 & UART6
 
 ### Features
 - All in one design
+- STM32F405 32-bit processor at 168MHz, 1Mb flash, 192kb ram
+- ICM-20608-G MPU connected via SPI 
+- Micro USB connectivity using STM Virtual Communications Port
+- Serial or PPM input (does not support individual PWM channel input)
+- Has outputs for up to 4 ESCs
+- Tactile button for booting to STM boot loader
+- Built in inverter for SmartPort (UART3)
+- Built in inverter for SBUS input (UART6)
+- Onboard 16mb Flash
 - Current Sensor : Not implemented
 - BlHeli passthrough : Yes
 - WS2811 Led Strip : Yes
