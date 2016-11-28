@@ -11,7 +11,7 @@ https://www.rcgroups.com/forums/showpost.php?p=36200950&postcount=1468
 For KISS FC's and ESCs see the KISS Dshot thread:  
 https://www.rcgroups.com/forums/showthread.php?t=2780055
 
-BetaFlight development code for Dshot can be found here:   
+BetaFlight V3.1 development code for Dshot can be found here:   
 http://andwho.sytes.net:8080/job/BorisB_BetaFlight/   
 Just remember that this is very Experimental code and may have serious limitations.
 
