@@ -15,7 +15,7 @@ The FishDroneFC F4 flight controller is an integrated flight controller and OSD 
 - Receiver : PPM / RX bus
 - OutPut : 4 esc ( support oneshot,mutishot,dshot)
 - Battery Voltage Sensor: Yes, directly connected, no wiring necessary
-- Integrated Voltage Regulator: Yes, supports up to 6S
+- Integrated Voltage Regulator: Yes, support for 2S-6S battery
 - Buttons : 1 - DFU
 - Brushed Motor Mosfets : No
 - UART : UART3 for smartport & UART6 for sbus and more rxBus receiver.
