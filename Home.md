@@ -44,7 +44,7 @@ Betaflight is also always being adjusted to support most current Cleanflight too
 - BlueJayF4
 - Omnibus (F3), and F4
 - REVO  
-Note: Due to many New FC boards coming out and this list will never be complete. Check with the FC maker/seller for which Hex file to use.  
+Note: Due to many New FC boards coming out this list will never be complete. See the list of hex files for each BetaFlight release and check with the FC maker/seller for which Hex file to use.  
 
 ##Additional Remarks
 - In case of using Blheli ESC software 14.1 or higher is required for reliable Betaflight support. (This remark doesnt mean that only blheli is supported. All other ESC's work fine....KISS.....Simonk etc).
