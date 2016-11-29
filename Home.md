@@ -43,7 +43,7 @@ Betaflight is also always being adjusted to support most current Cleanflight too
 - AlienFlight F1/F3/F4
 - BlueJayF4
 - Omnibus (F3), and F4
-- REVO
+- REVO  
 Note: Due to many New FC boards coming out and this list will never be complete. Check with the FC maker/seller for which Hex file to use.  
 
 ##Additional Remarks
