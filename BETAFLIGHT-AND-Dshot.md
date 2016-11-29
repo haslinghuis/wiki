@@ -100,7 +100,7 @@ Dshot150, Dshot300 and Dshot600 are now supported officially.
 - MOTOLAB - (MotoF3, Tornado, Cyclone & Tempest)   
 Boris' comment:  
 I had many requests for MOTOLAB but that one doesn't have DMA available on all motors. It may be that we will assign one of the motors to PPM pin so you can resolder it. Not great, but better than nothing I guess?   
-The new Betaflight 3.1 code has the "resource" CLI command . To use Dshot, you'll need move the motor 1 signal to the PPM pin. Can not use a PPM RX after mapping motor1 to the PPM pin. 
+The new Betaflight 3.1 code has the "resource" CLI command . To use Dshot, you'll need move the motor 1 signal to the PPM pin. This is easily done with a wire soldered from the Motor1 pin to the PPM pin, do not cut an traces, just short these two pins together. Can not use a PPM RX after mapping motor1 to the PPM pin. 
 
 3.1 Build #721: Bench tested -     Do the following to setup for Dshot.
 
@@ -112,6 +112,8 @@ The new Betaflight 3.1 code has the "resource" CLI command . To use Dshot, you'l
 `save                                               ; reboots    `   
 `In Config Tab set to desired DSHOT protocol- save    `    
  
+To use BLHeli Pass-through first set to OneShot in the config tab and Save. Then in the CLI set motor 1 back to the the original processor pin with the resource command. Save.  
+
 - SPRACINGF3EVO - Locked out Comm port fixed (build 708?). Must move MOTOR 4 to new pin assignment (CLI = resource MOTOR 4 A06). Then solder ESC for motor #4 to motor output #5, fixes DMA conflict with motor outputs 2 and 4. 
 - PIKOBLX - re-map motor 1 to the PPM pin (same as MotoLab) and also disable motor 5-8 ("resource motor X none").   
 
