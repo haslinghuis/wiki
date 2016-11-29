@@ -192,7 +192,7 @@ Cap removal: https://nathan.vertile.com/blog/2016/11/14/flash-blheli_s-with-dsho
 - BeeRotor BLS20A (with signal cap removed) - 600   
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36217144&postcount=1654   
 - Xrotor mini 30A BL_S - 300, Not working on 600    
-- DALRC BS25A (with signal cap removed) - 150, 300??    
+- DALRC BS25A  16.5(with signal cap removed) - 150, 300, 600    
 Cap removal: https://www.rcgroups.com/forums/showthread.php?t=2777858#post36223562   
 https://www.rcgroups.com/forums/showthread.php?t=2777858
 - DYS XSD20A | XSD30A - New product announcement:  
