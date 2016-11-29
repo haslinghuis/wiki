@@ -45,14 +45,14 @@ Do type "get idle" to see if this exists and what the valid values are. To set t
 ####ESC Cal and min/max throttle
 ßF firmware with Dshot does Not use the min_throttle or max_throttle setting, these are ignored.
 Just ensure that in the ESCs (BLHeli Suite) that PPM_MIN_THROTTLE is set to 1000 and PPM_MAX_THROTTLE is set to 2000.
-Note: This should not be needed in BLHeli 16.43 since the PPM_MIN & MAX values are not used for Dshot.   
+Note: This should not be needed in BLHeli_S 16.43 since the PPM_MIN & MAX values are not used for Dshot.   
 
 ####Max ESC update speed supported by different dshot versions:
-- dshot150: 8khz max
-- dshot300: 16khz max
-- dshot600: 32khz max
+- dshot150: 8kHz max
+- dshot300: 16kHz max
+- dshot600: 32kHz max
 
-Note: When DSHOT is enabled Unsyced PWM is disabled. DHSOT always runs at the PID loop rate.
+Note: When DSHOT is enabled Unsyced PWM is disabled. DSHOT always runs at the PID loop rate.
 
 ###Starting with a post from the Dshot thread:
 
@@ -65,7 +65,7 @@ BETAFLIGHT AND DSHOT -
 
 Betaflight may not be able to support all Targets ( or specific boards) due to the design of each one differing on the DMA pinout. Look below to find what may or may not be working.
 
-DSHOT on BLHELI-S ESCs will likely only support Dshot150 & 300.
+DSHOT on BLHELI_S ESCs will likely only support Dshot150 & 300.
 Here is why: https://www.rcgroups.com/forums/showpost.php?p=36025232&postcount=376   
 Now found that some BLHeli_S ESC will run on DSHOT600 with modifications. See list below for details.  
 Rev16.5 is now posted on github (27Nov2016).   
