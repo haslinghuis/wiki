@@ -112,7 +112,7 @@ The new Betaflight 3.1 code has the "resource" CLI command . To use Dshot, you'l
 `save                                               ; reboots    `   
 `In Config Tab set to desired DSHOT protocol- save    `    
  
-To use BLHeli Pass-through first set to OneShot in the config tab and Save. Then in the CLI set motor 1 back to the the original processor pin, A04, with the resource command. Save.  The wire from motor1 pin to the PPM pin does not need to be removed since the PPM pin is now 'undefined' and is set to an input. BLHeli Suite can now be used to update ESC firmware and/or make changes to settings. When finished set Motor1 to the DMA channel on pin A07, Save. then select Dshot.
+To use BLHeli Pass-through first set to OneShot in the config tab and Save. Then in the CLI set motor 1 back to the the original processor pin, A04, with the resource command. Save.  The wire from motor1 pin to the PPM pin does not need to be removed since the PPM pin is 'undefined' and is set to an input. BLHeli Suite can now be used to update ESC firmware and/or make changes to settings without removing the FC from the copter. When finished set Motor1 to the DMA channel on pin A07, Save. then select Dshot.
 
 - SPRACINGF3EVO - Locked out Comm port fixed (build 708?). Must move MOTOR 4 to new pin assignment (CLI = resource MOTOR 4 A06). Then solder ESC for motor #4 to motor output #5, fixes DMA conflict with motor outputs 2 and 4. 
 - PIKOBLX - re-map motor 1 to the PPM pin (same as MotoLab) and also disable motor 5-8 ("resource motor X none").   
