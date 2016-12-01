@@ -197,6 +197,7 @@ Cap removal: https://www.rcgroups.com/forums/showthread.php?t=2777858#post362235
 https://www.rcgroups.com/forums/showthread.php?t=2777858
 - DYS XSD20A | XSD30A - New product announcement:  
 https://www.rcgroups.com/forums/showthread.php?t=2784634#post36278564  
+- Emax Lightning S 35A - 600 without mods  
 
 Generic instructions on how to find signal input and cap on any BLHeli ESC:
 https://www.rcgroups.com/forums/showpost.php?p=36216745&postcount=1645   
