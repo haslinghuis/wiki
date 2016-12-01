@@ -26,7 +26,7 @@ Note: should be fixed on most Targets but not all targets yet.
    Fixed on SPRF3 & REVO, may be fixed on other targets.
 - PPM not working on some FC targets (limited testing due to most users using Sbus or Spektrum)   
    Note: Some targets need motor re-mapped to PPM pin so then PPM can not be used.
-- LEDs not working  
+- LEDs not working or must be disabled to have all motors working due the DMA mapping conflicts.  
 - The 'target.c' source files show that only Quad copters are supported in most targets and some targets support Hex copters.
 - Some targets do not work if a Custom mixer is enabled. Instead use the new "resource" CLI command instead. Just be aware that not all outputs (pins) can be assigned a DMA channel for Dshot.  
 
