@@ -185,6 +185,7 @@ Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36230015&postcount=1
 - Spedix ES 20 lite (with signal cap removed) - 150, 300, 600   
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36203466&postcount=1509
 - Spedix 25a (with signal cap removed) - 150, 300, 600   
+Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36324412&postcount=2157   
 - Spedix ES30 HV 16.43 (with signal cap removed) - 600   
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36205800&postcount=1527  
 - BumpBee_S (with signal cap removed) - 600   
