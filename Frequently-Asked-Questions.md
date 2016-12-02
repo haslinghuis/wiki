@@ -1484,6 +1484,7 @@ Moral: It may not be what you think. In this case is was very probably a loose F
 #####Successful curing of Oscillation:
 The problem: https://www.rcgroups.com/forums/showpost.php?p=36310032&postcount=249   
 Fixed: https://www.rcgroups.com/forums/showpost.php?p=36326501&postcount=253   
+Broken: https://www.rcgroups.com/forums/showpost.php?p=36330372&postcount=255  
 
 ##Is there a way to download blackbox logs through a terminal client? 
 Thanks to dropax for asking this and working out the answer.  
