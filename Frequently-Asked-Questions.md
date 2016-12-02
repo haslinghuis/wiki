@@ -1477,6 +1477,10 @@ I just stuck three squarish (~15mm) pieces of electrical tape on the frame under
 
 I really doubted it would be as effective as it was since vibes can still come thru the mounting screws but it fixed the issue.   
 
+#####A short thread on the Frustrations of Curing Mid-throttle Oscillations.  
+https://www.rcgroups.com/forums/showthread.php?2787839-AHHAHAHA-Trouble-shooting-over-a-month-Mid-Throttle-oscillations-Finaly-Solved
+Moral: It may not be what you think. In this case is was very probably a loose FPV camera. This is a good reason to confirm the oscillation with a BB log.  
+
 ##Is there a way to download blackbox logs through a terminal client? 
 Thanks to dropax for asking this and working out the answer.  
 
