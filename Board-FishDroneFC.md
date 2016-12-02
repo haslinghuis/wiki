@@ -7,7 +7,7 @@ The FishDroneFC F4 flight controller is an integrated flight controller and OSD 
 - MCU : STM32F405RGT6
 - IMU : ICM-20608-G (SPI)
 - IMU Interrupt : Yes
-- Compass & Baro : no support it (only  design for fpv)
+- Compass & Baro : no support it (only  designed for fpv)
 - VCP : Yes
 - OSD : Yes, BetaFlight OSD (BFOSD)
 - VTX : Yes ( RTC6705 chip )
