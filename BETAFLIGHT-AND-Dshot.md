@@ -53,6 +53,10 @@ Note: This should not be needed in BLHeli_S 16.43 since the PPM_MIN & MAX values
 - dshot600: 32kHz max
 
 Note: When DSHOT is enabled Unsyced PWM is disabled. DSHOT always runs at the PID loop rate.
+####Dshot Values:  
+0 = disarmed.  
+1 to 47 = Reserved for special commands.  
+48 to 2047 = Active throttle control.  
 
 ###Starting with a post from the Dshot thread:
 
