@@ -98,9 +98,10 @@ Dshot150, Dshot300 and Dshot600 are now supported officially.
 - HGLRC AIO F3 v3 (SPRACINGF3) - works with build #739. Build #740 Arms but no response.   
 
 ####FC Targets that work with Dshot but require re-mapping pins with the Resource command:   
+
 - MOTOLAB - (MotoF3, Tornado, Cyclone & Tempest)   
 Boris' comment:  
-I had many requests for MOTOLAB but that one doesn't have DMA available on all motors. It may be that we will assign one of the motors to PPM pin so you can resolder it. Not great, but better than nothing I guess?   
+  I had many requests for MOTOLAB but that one doesn't have DMA available on all motors. It may be that we will assign one of the motors to PPM pin so you can resolder it. Not great, but better than nothing I guess?   
 The new Betaflight 3.1 code has the "resource" CLI command . To use Dshot, you'll need move the motor 1 signal to the PPM pin. This is easily done with a wire soldered from the Motor1 pin to the PPM pin, do not cut an traces, just short these two pins together. Can not use a PPM RX after mapping motor1 to the PPM pin. 
 
 3.1 Build #721: Bench tested -     Do the following to setup for Dshot.
@@ -113,14 +114,15 @@ The new Betaflight 3.1 code has the "resource" CLI command . To use Dshot, you'l
 `save                                               ; reboots    `   
 `In Config Tab set to desired DSHOT protocol- save    `    
  
-To use BLHeli Pass-through first set to OneShot in the config tab and Save. Then in the CLI set motor 1 back to the the original processor pin, A04, with the resource command. Save.  The wire from motor1 pin to the PPM pin does not need to be removed since the PPM pin is 'undefined' and is set to an input. BLHeli Suite can now be used to update ESC firmware and/or make changes to settings without removing the FC from the copter. When finished set Motor1 to the DMA channel on pin A07, Save. then select Dshot.
+  To use BLHeli Pass-through first set to OneShot in the config tab and Save. Then in the CLI set motor 1 back to the the original processor pin, A04, with the resource command. Save.  The wire from motor1 pin to the PPM pin does not need to be removed since the PPM pin is 'undefined' and is set to an input. BLHeli Suite can now be used to update ESC firmware and/or make changes to settings without removing the FC from the copter. When finished set Motor1 to the DMA channel on pin A07, Save. then select Dshot.
 
 - SPRACINGF3EVO - Locked out Comm port fixed (build 708?). Must move MOTOR 4 to new pin assignment (CLI = resource MOTOR 4 A06). Then solder ESC for motor #4 to motor output #5, fixes DMA conflict with motor outputs 2 and 4. 
 
 - PIKOBLX - Re-map motor 1 to the PPM pin (same as MotoLab) and also disable motor 5-8 ("resource motor X none").    
 
 - SPRACINGF3MINI - Must solder a wire from motor 4 Output to the PPM pin. Then use resource command to disable PPM and map motor 4 output to B04.  
-To use BLHeli Pass-through first set to OneShot in the config tab and Save. Then in the CLI set motor 4 back to the original processor pin, B09, with the resource command. Save. The wire from motor4 pin to the PPM pin does not need to be removed since the PPM pin is 'undefined' and is set to an input. BLHeli Suite can now be used to update ESC firmware and/or make changes to settings without removing the FC from the copter. When finished set Motor4 to the DMA channel on pin B04, Save. then select Dshot.  
+  To use BLHeli Pass-through first set to OneShot in the config tab and Save. Then in the CLI set motor 4 back to the original processor pin, B09, with the resource command. Save. The wire from motor4 pin to the PPM pin does not need to be removed since the PPM pin is 'undefined' and is set to an input. BLHeli Suite can now be used to update ESC firmware and/or make changes to settings without removing the FC from the copter. When finished set Motor4 to the DMA channel on pin B04, Save. then select Dshot.  
+  Tested with 3.1 Build #783. BlackBox on the internal SDCard works with MultiShot but not with DShot.  
 
 See: [CLI resource command](https://github.com/betaflight/betaflight/wiki/Betaflight-specific-CLI-commands#resource-remapping-command-v31)
 
