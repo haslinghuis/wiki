@@ -136,7 +136,6 @@ See: [CLI resource command](https://github.com/betaflight/betaflight/wiki/Betafl
 `resource ppm none  `  
 `resource motor 1 A07 `  
 `save  `  
-
 To use BLHeli type in CLI:  
 `resource motor 1 A04  `  
 `save  `  
@@ -151,8 +150,7 @@ To use BLHeli type in CLI:
 `resource motor 7 none `  
 `resource motor 8 none `  
 `save  `  
- 
-To use BLHeli type in CLI:  
+ To use BLHeli type in CLI:  
 `resource motor 1 A04  `  
 `save  `  
 
@@ -162,7 +160,6 @@ To use BLHeli type in CLI:
 `resource motor 5 none  `  
 `resource motor 4 A06 `  
 `save  `  
-
 To use BLHeli type in CLI:  
 `resource motor 1 ???  `  NEED the Default pin Number.  
 `save  `  
@@ -172,16 +169,22 @@ To use BLHeli type in CLI:
 `resource ppm none  `  
 `resource motor 4 B04 `  
 `save  `  
-
 To use BLHeli type in CLI:  
 `resource motor 1 B09  `  
 `save  `  
   Tested with 3.1 Build #783. 
 Limitation: BlackBox on the internal SDCard works with MultiShot but not with DShot.  
 
-####Intermittent FC Reports:
-- KOMBINI - reported not to connect to config (still on #721).  This FC needs to re-map the motor pin the same way as for the MotoLab FC. Reports are that this FC has the exact same pin out as the MotoLab FCs with the exception the Sbus in UART3.  Video on getting this FC working:   
-https://www.rcgroups.com/forums/showpost.php?p=36269451&postcount=1966    
+- KOMBINI - Solder a wire from Output #1 header pin to the PPM input header pin.  
+ Follow above and to re-map output type in CLI:  
+`resource ppm none  `  
+`resource motor 1 A07 `  
+`save  `  
+To use BLHeli type in CLI:  
+`resource motor 1 A04  `  
+`save  ` 
+Limitation: no LED functionality with DShot is allowed.  
+Video on getting this FC working: https://www.rcgroups.com/forums/showpost.php?p=36269451&postcount=1966    
 
 ####FC Targets with DSHOT code added but in need of testing:
 - RACEBASE
