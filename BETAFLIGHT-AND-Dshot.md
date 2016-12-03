@@ -252,7 +252,7 @@ Cap removal: https://nathan.vertile.com/blog/2016/11/14/flash-blheli_s-with-dsho
 - BeeRotor BLS20A (with signal cap removed) - 600   
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36217144&postcount=1654   
 - Xrotor mini 30A BL_S - 300, Not working on 600    
-- DALRC BS25A  16.5(with signal cap removed) - 150, 300, 600    
+- DALRC BS25A  16.5 (with signal cap removed) - 150, 300, 600    
 Cap removal: https://www.rcgroups.com/forums/showthread.php?t=2777858#post36223562   
 https://www.rcgroups.com/forums/showthread.php?t=2777858
 - DYS XSD20A | XSD30A - New product announcement:  
@@ -261,45 +261,6 @@ https://www.rcgroups.com/forums/showthread.php?t=2784634#post36278564
 
 Generic instructions on how to find signal input and cap on any BLHeli ESC:
 https://www.rcgroups.com/forums/showpost.php?p=36216745&postcount=1645   
-
-###Combos (FC & ESC) working:   
-These should be removed since If an ESC works and an FC works then together they should work. Therefore no need to list all these combinations.   
-
-- KISSFC & KISS 24 - 150, 300, 600
-- KISSFC & Racesta/CIcada 20A - 150
-- KISSFC & TBS25 - 300
-- OMNIBUS (with blackbox SD feature off) & KISS24
-- OMNIBUSF4 & KISS24
-- OMNIBUSF4 & AIKON SEFM 30A (V2 C-H-25 using DS600)(BLheli_S 16.43)
-- REVO & KISS24
-- REVO & AIKON 30A (v1 (150, 300, 600) & v2)
-- REVO + Racestar v2 20a (G_H_30) - 300
-- REVO + Racestar v2 20a (G_H_30) - 300, 600
-- BLUEJAYF4 & KISS24
-- BlueJayF4 & Aikon SEFM 30
-- BlueJayF4 & v2 Racestar/Cicada 20a
-- BlueJayF4 & v2 Racestar/Cicada 30a (1 report of BJF4 and Racestar v2 30a not working)
-- BlueJayF4 & DYS XS30 (Cap off) - 300, 600 (build #723)
-- Xracer 3.1 SPI & v2 Racestar/Cicada 20a - 150, 300
-- FLIP32F4 & Racerstar25A - 150, 300
-- LUXFC & Luminier 30A - 300
-- LUXFC & v2 Racestar/Cicada 30A - 150
-- FURY F4 & KISS24 - 600
-- FURY F4 & v2 Racestar/Cicada 20a - 150, 300, 600 (BLHeli_S 16.43)
-- AIRBOT F3 & Cicada 20A - 150, 300 (Airbot F3 uses SPRACING F3 target)
-- SPRACINGF3 on build 669 & ZTW polaris (A_H_20 16.42) - 300
-- SPRACINGF3 on build 713 & Racerstar MS35A (A_H_20 16.43) - 600
-- Dodo with SPRACINGF3 hex & Cicada v1 20A (G_L_30) - 150
-- Dodo with SPRACINGF3 hex (#721) &  Kiss ESCs with Dshot600
-- Dodo with RMDO hex & Racerstar RS12A V2 (G_H_30) - 300
-- X-Racer f303 v3 & Racerstar v2 35a (2s-6s) - 150, 300
-- DTFC (DOGE) (build 682) & Cicada v2 20A (G_H_30) - 300
-- DTFC (DOGE) & Littlebee 20A-S with cap removed (A_H_15) - 300, 600
-- IMPULSERCF3 & ZTW polaris 30A
-- Fury F4 & Cicada V1 - 150 & 300
-- YuPi F4 & Aikon SEFM 30
-- MotoLab Cyclone (build 730) & Kiss24A - 600
-- PIKOBLX (build 740, move motor 1 to ppm pin and disable motors 5-8) & Racestar V2 6A (2-3S)
 
 ####Components tried and are not currently working:
 - AIKON v2 20A - ?? is this the same ESC as listed as working above ??
