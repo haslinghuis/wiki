@@ -81,6 +81,7 @@ Dshot150, Dshot300 and Dshot600 are now supported officially.
 - LUX_RACE
 - BETAFLIGHTF3
 - FLIP32F4
+- FURY F3
 - FURY F4
 - Airbot F3 (SPRACINGF3)
 - Dodo (SPRACINGF3)
@@ -124,7 +125,6 @@ See: [CLI resource command](https://github.com/betaflight/betaflight/wiki/Betafl
 https://www.rcgroups.com/forums/showpost.php?p=36269451&postcount=1966    
 
 ####FC Targets with DSHOT code added but in need of testing:
-- FURYF3
 - RACEBASE
 - SPARKY2
 - Seriously Pro Mini - locks up when Dshot selected. May work if motor pins are re-mapped.
