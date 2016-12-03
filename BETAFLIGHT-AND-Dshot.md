@@ -103,33 +103,82 @@ Dshot150, Dshot300 and Dshot600 are now supported officially.
 - HGLRC AIO F3 v3 (SPRACINGF3) - works with build #739. Build #740 Arms but no response.   
 
 ####FC Targets that work with Dshot but require re-mapping pins with the Resource command:   
+Boris' comment:  
+  I had many requests for MOTOLAB (and other FCs) but that one doesn't have DMA available on all motors. It may be that we will assign one of the motors to PPM pin so you can resolder it. Not great, but better than nothing I guess?  
+
+- General instructions for re-mapping pins:   
+ 1- All FCs that require using the FC's PPM input pin as a motor output therefore can NOT use a PPM RX. Any of the Serial RXs that use a UART do work. Set-up Serial RX normally as needed for the FC board.  
+ 2- Check pins for the FC board below on which STM32 pins need to be re-mapped. It is a Good Idea to first type in the CLI:  
+`resource  `  
+`resource list  `  
+and copy/paste these into a Text file and save for reference of the Default pin Mappings.    
+ 3- Solder a wire from the FC's header pin that will get re-mapped as a Dshot output to the motor output header pin per FC board detail below. Do not cut any traces, just short these two pins together which then allows switching pin mapping back to use BLHeli Pass-through without removing the FC from the copter.  NOTE: Some FCs re-map a different pin to use Dshot. See FC's below for details.  
+  4- In the config tab select OneShot(42 or 125). Click Save. Leave this select until pins are re-mapped.  
+  5- In the CLI type (x = motor #, yyy = STM32 pin #):   
+`resource ppm none  `  
+`resource motor x yyy  `  
+`save  `  
+  6- Now select the DSHOT protocol of your choice.  
+
+- To switch pin mapping to use BLHeli Suite pass-through:   
+  1- Select OneShot(42 or 125) in the config tab. Click Save.   
+  2- In the CLI change Only the remapped Motor back. Type:  
+`resource motor x yyy  `  
+`save  `  
+  3- Now use BLHeli Suite to Update or change ESC setting.  
+  4- When finished re-map the motor to the pin used for Dshot.  
+
+See: [CLI resource command](https://github.com/betaflight/betaflight/wiki/Betaflight-specific-CLI-commands#resource-remapping-command-v31)    
 
 - MOTOLAB - (MotoF3, Tornado, Cyclone & Tempest)   
-Boris' comment:  
-  I had many requests for MOTOLAB but that one doesn't have DMA available on all motors. It may be that we will assign one of the motors to PPM pin so you can resolder it. Not great, but better than nothing I guess?   
-The new Betaflight 3.1 code has the "resource" CLI command . To use Dshot, you'll need move the motor 1 signal to the PPM pin. This is easily done with a wire soldered from the Motor1 pin to the PPM pin, do not cut an traces, just short these two pins together. Can not use a PPM RX after mapping motor1 to the PPM pin. 
+ 3.1 Build #721: Bench tested -
+ Solder a wire from Output #1 header pin to the PPM input header pin.
+ Follow above and to re-map output type in CLI:  
+`resource ppm none  `  
+`resource motor 1 A07 `  
+`save  `  
 
-3.1 Build #721: Bench tested -     Do the following to setup for Dshot.
-
-`In Port Tab Set UART2 to SerialRX- save              ; Must use a serial port    `   
-`In Config Tab Set RX to Serial (SBUS, etc)- save   ; Do NOT set ESC to DSHOT yet, leave as OneShot125    `   
-`In CLI type:                                           `   
-`resource ppm none                                  ; Disables use of PPM    `   
-`resource motor 1 A07                               ; Assigns motor 1 to the PPM Pin    `   
-`save                                               ; reboots    `   
-`In Config Tab set to desired DSHOT protocol- save    `    
+To use BLHeli type in CLI:  
+`resource motor 1 A04  `  
+`save  `  
  
-  To use BLHeli Pass-through first set to OneShot in the config tab and Save. Then in the CLI set motor 1 back to the the original processor pin, A04, with the resource command. Save.  The wire from motor1 pin to the PPM pin does not need to be removed since the PPM pin is 'undefined' and is set to an input. BLHeli Suite can now be used to update ESC firmware and/or make changes to settings without removing the FC from the copter. When finished set Motor1 to the DMA channel on pin A07, Save. then select Dshot.
-
-- SPRACINGF3EVO - Locked out Comm port fixed (build 708?). Must move MOTOR 4 to new pin assignment (CLI = resource MOTOR 4 A06). Then solder ESC for motor #4 to motor output #5, fixes DMA conflict with motor outputs 2 and 4. 
-
 - PIKOBLX - Re-map motor 1 to the PPM pin (same as MotoLab) and also disable motor 5-8 ("resource motor X none").    
+ Solder a wire from Output #1 header pin to the PPM input header pin.
+ Follow above and to re-map output type in CLI:  
+`resource ppm none  `  
+`resource motor 1 A07 `  
+`resource motor 5 none `  
+`resource motor 6 none `  
+`resource motor 7 none `  
+`resource motor 8 none `  
+`save  `  
+ 
+To use BLHeli type in CLI:  
+`resource motor 1 A04  `  
+`save  `  
 
-- SPRACINGF3MINI - Must solder a wire from motor 4 Output to the PPM pin. Then use resource command to disable PPM and map motor 4 output to B04.  
-  To use BLHeli Pass-through first set to OneShot in the config tab and Save. Then in the CLI set motor 4 back to the original processor pin, B09, with the resource command. Save. The wire from motor4 pin to the PPM pin does not need to be removed since the PPM pin is 'undefined' and is set to an input. BLHeli Suite can now be used to update ESC firmware and/or make changes to settings without removing the FC from the copter. When finished set Motor4 to the DMA channel on pin B04, Save. then select Dshot.  
-  Tested with 3.1 Build #783. BlackBox on the internal SDCard works with MultiShot but not with DShot.  
+- SPRACINGF3EVO -  Must move MOTOR 4 to new pin assignment (CLI = resource MOTOR 4 A06). Then solder ESC for motor #4 to motor output #5, fixes DMA conflict with motor outputs 2 and 4.  
+ Solder a wire from Output #4 header pin to Output #5 header pin.
+ Follow above and to re-map output type in CLI:  
+`resource motor 5 none  `  
+`resource motor 4 A06 `  
+`save  `  
 
-See: [CLI resource command](https://github.com/betaflight/betaflight/wiki/Betaflight-specific-CLI-commands#resource-remapping-command-v31)
+To use BLHeli type in CLI:  
+`resource motor 1 ???  `  NEED the Default pin Number.  
+`save  `  
+
+- SPRACINGF3MINI - Solder a wire from motor 4 Output to the PPM pin. Then use resource command to disable PPM and map motor 4 output to B04.  
+ Follow above and to re-map output type in CLI:  
+`resource ppm none  `  
+`resource motor 4 B04 `  
+`save  `  
+
+To use BLHeli type in CLI:  
+`resource motor 1 B09  `  
+`save  `  
+  Tested with 3.1 Build #783. 
+Limitation: BlackBox on the internal SDCard works with MultiShot but not with DShot.  
 
 ####Intermittent FC Reports:
 - KOMBINI - reported not to connect to config (still on #721).  This FC needs to re-map the motor pin the same way as for the MotoLab FC. Reports are that this FC has the exact same pin out as the MotoLab FCs with the exception the Sbus in UART3.  Video on getting this FC working:   
