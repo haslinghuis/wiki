@@ -105,7 +105,7 @@ BLHeli Rev16.5 posted on github (27Nov2016). Dshot150, Dshot300 and Dshot600 are
 Boris' comment:  
   I had many requests for MOTOLAB (and other FCs) but that one doesn't have DMA available on all motors. It may be that we will assign one of the motors to PPM pin so you can resolder it. Not great, but better than nothing I guess?  
 
-- General instructions for re-mapping pins:   
+#####General instructions for re-mapping pins:   
  1- All FCs that require using the FC's PPM input pin as a motor output therefore can NOT use a PPM RX. Any of the Serial RXs that use a UART do work. Set-up Serial RX normally as needed for the FC board.  
  2- Check pins for the FC board below on which STM32 pins need to be re-mapped. It is a Good Idea to first type in the CLI:  
 `resource  `  
@@ -119,7 +119,7 @@ and copy/paste these into a Text file and save for reference of the Default pin 
 `save  `  
   6- Now select the DSHOT protocol of your choice.  
 
-- To switch pin mapping to use BLHeli Suite pass-through:   
+#####To switch pin mapping to use BLHeli Suite pass-through:   
   1- Select OneShot(42 or 125) in the config tab. Click Save.   
   2- In the CLI change Only the remapped Motor back. Type:  
 `resource motor x yyy  `  
