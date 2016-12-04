@@ -170,7 +170,7 @@ To use BLHeli type in CLI:
 `resource motor 4 B04 `  
 `save  `  
 To use BLHeli type in CLI:  
-`resource motor 1 B09  `  
+`resource motor 4 B09  `  
 `save  `  
   Tested with 3.1 Build #783. 
 Limitation: BlackBox on the internal SDCard works with MultiShot but not with DShot.  
