@@ -161,7 +161,7 @@ To use BLHeli type in CLI:
 `resource motor 4 A06 `  
 `save  `  
 To use BLHeli type in CLI:  
-`resource motor 1 A03  `  NEED the Default pin Number checked.  
+`resource motor 4 A03  `  NEED the Default pin Number checked.  
 `save  `  
 
 - SPRACINGF3MINI - Solder a wire from motor 4 Output to the PPM pin. Then use resource command to disable PPM and map motor 4 output to B04.  
@@ -182,7 +182,7 @@ Limitation: BlackBox on the internal SDCard works with MultiShot but not with DS
 `save  `  
 To use BLHeli type in CLI:  
 `resource motor 1 A04  `  
-`save  ` 
+`save  `   
 Limitation: no LED functionality with DShot is allowed.  
 Video on getting this FC working: https://www.rcgroups.com/forums/showpost.php?p=36269451&postcount=1966    
 
