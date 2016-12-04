@@ -161,7 +161,7 @@ To use BLHeli type in CLI:
 `resource motor 4 A06 `  
 `save  `  
 To use BLHeli type in CLI:  
-`resource motor 1 ???  `  NEED the Default pin Number.  
+`resource motor 1 A03  `  NEED the Default pin Number checked.  
 `save  `  
 
 - SPRACINGF3MINI - Solder a wire from motor 4 Output to the PPM pin. Then use resource command to disable PPM and map motor 4 output to B04.  
