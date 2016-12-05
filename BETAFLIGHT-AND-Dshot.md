@@ -99,6 +99,7 @@ BLHeli Rev16.5 posted on github (27Nov2016). Dshot150, Dshot300 and Dshot600 are
 - Colibri Race v2.0  (build #722)
 - SOULF4 - (SOULF4) build #734 (beeper not working) - works with REVO.hex
 - HGLRC AIO F3 v3 (SPRACINGF3) - works with build #739. Build #740 Arms but no response.   
+- X-Racer F303 (X_RACERSPI) -
 
 ####FC Targets that work with Dshot but require re-mapping pins with the Resource command:   
 Boris' comment:  
