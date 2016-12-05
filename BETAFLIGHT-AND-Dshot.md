@@ -20,7 +20,6 @@ Note: these may or may not affect all working targets):
 - BLHeli pass-through does not work if FC is set to DSHOT. Must change output to OneShot to use the pass-through.    
 Note: should be fixed on most Targets but not all targets yet.   
 - Some ESCs that have a signal filter cap may not work until the cap is removed. 
-- BB logging  not working. Seems to work on many targets but unable to download to a file, erase worked.
 - 3D mode not yet working, developer's plan is to get the basics working well the get 3D working.
 - A bug affecting Spektrum Sats, shows 988 on channels in receiver tab of Betaflight (soon to be looked at).
    Fixed on SPRF3 & REVO, may be fixed on other targets.
@@ -29,7 +28,7 @@ Note: should be fixed on most Targets but not all targets yet.
 - LEDs not working or must be disabled to have all motors working due the DMA mapping conflicts.  
 - The 'target.c' source files show that only Quad copters are supported in most targets and some targets support Hex copters.
 - Some targets do not work if a Custom mixer is enabled. Instead use the new "resource" CLI command instead. Just be aware that not all outputs (pins) can be assigned a DMA channel for Dshot.  
-- When BB logging works it appears that the actual Dshot ESC values are sent to the BB logger. The BB log Viewer then can not show motor values below 1000.  
+- When BB logging works it appears that the actual Dshot ESC values are sent to the BB logger. The BB log Viewer then can not show motor values below 1000. A new BB log Viewer should be released when 3.1 is released.  
 
 ####A quick way to determine IF the hex flashed supports Dshot:  
 Go to the CLI and type "get pwm". All settings with 'pwm' in the name will be shown with all options.
