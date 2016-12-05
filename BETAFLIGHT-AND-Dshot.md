@@ -187,7 +187,6 @@ Limitation: no LED functionality with DShot is allowed.
 Video on getting this FC working: https://www.rcgroups.com/forums/showpost.php?p=36269451&postcount=1966    
 
 ####FC Targets with DSHOT code added but in need of testing:
-- RACEBASE
 - SPARKY2
 - Seriously Pro Mini - locks up when Dshot selected. May work if motor pins are re-mapped.
 
