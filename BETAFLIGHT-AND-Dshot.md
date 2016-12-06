@@ -197,6 +197,19 @@ Video on getting this FC working: https://www.rcgroups.com/forums/showpost.php?p
 ####BLheli-S:
 Firmware in Github here: https://github.com/bitdump/BLHeli    
 
+- Aikon 20A/Spedix 20A    
+Cap removal for both: https://www.rcgroups.com/forums/showpost.php?p=36182572&postcount=1319
+- Aikon SEFM v2 30A - 150, 300, 600 (BLHeli_S 16.43) (C-H-25)   
+Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36214609&postcount=1614
+- Aikon SEFM v1 30A - (without removing cap) 150, 300 (C-H-15)   Remove cap for 600-   
+Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36213821&postcount=1611   
+Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36214609&postcount=1614
+- AIKON SEFM 20A (with signal cap removed) - 150, 300, 600   
+Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36214609&postcount=1614
+- BeeRotor BLS20A (with signal cap removed) - 600   
+Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36217144&postcount=1654  
+- BumpBee_S (with signal cap removed) - 600   
+Cap removal: https://nathan.vertile.com/blog/2016/11/14/flash-blheli_s-with-dshot/#flashing 
 - Cicada BB2 10A - 150,300 and 600 (no mods)
 - Cicada v1 20A - 150
 - Cicada v2 20A - 150, 300, 600 (BLHeli_S 16.43)
@@ -204,6 +217,27 @@ Firmware in Github here: https://github.com/bitdump/BLHeli
 - Cicada v2 30A - 300 - 600 with cap removed 
 - Cicada 4n1 20a V2 - 600 with caps removed  
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36286446&postcount=2036   
+- DALRC BS25A  16.5 (with signal cap removed) - 150, 300, 600    
+Cap removal: https://www.rcgroups.com/forums/showthread.php?t=2777858#post36223562   
+https://www.rcgroups.com/forums/showthread.php?t=2777858
+- DYS XS20 v1.x  
+Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36297135&postcount=2068
+- DYS XS20A v2 or XSC20A
+Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36253268&postcount=1878
+- DYS XS30A (with Signal cap removed) - 300 (16.42) - 600 (16.43)   
+Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36133930&postcount=836   
+https://www.rcgroups.com/forums/showpost.php?p=36245544&postcount=1848 
+- DYS XSD20A | XSD30A - New product announcement:  
+https://www.rcgroups.com/forums/showthread.php?t=2784634#post36278564  
+- Emax Lightning S 35A - 600 without mods  
+- FVT Littlebee 20A-S (with signal cap removed) - 150, 300, 600 
+- LittleBee_S 20A  (A-H-15 16.42)- (with signal cap removed) - 150, 300, 600    
+Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36181966&postcount=40934
+- Littlebee_S 30A (with signal cap removed) - 600   
+Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36230015&postcount=1745
+- Lumenier 30A
+- MRM ZEUS-S 20A - with CAP removed (see FVT littlebee-s 20a cap removal)
+- Multistar BLHeli_S 30A - 150, 300
 - Racestat v2 6a (2-3S version) - 150, 300, 600 (BLHeli_S 16.43)
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36268041&postcount=1961
 - Racestar v1 30A   
@@ -217,50 +251,16 @@ Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36209787&postcount=1
 - Racerstar 4in1 20A V1 - 150 (one motor twitching), 300 (all running smooth), 600 (grinding noise) bench testing only so far   - This may need the signal cap(s) removed.  
 - Racerstar RS20Ax4 V2 Blheli_S 20A 2-4S 4 in 1 ESC - 300 without mod.
 Link: https://www.rcgroups.com/forums/showthread.php?t=2782732#post36254434
-- Aikon 20A/Spedix 20A    
-Cap removal for both: https://www.rcgroups.com/forums/showpost.php?p=36182572&postcount=1319
-- Aikon SEFM v2 30A - 150, 300, 600 (BLHeli_S 16.43) (C-H-25)   
-Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36214609&postcount=1614
-- Aikon SEFM v1 30A - (without removing cap) 150, 300 (C-H-15)   Remove cap for 600-   
-Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36213821&postcount=1611   
-Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36214609&postcount=1614
-- AIKON SEFM 20A (with signal cap removed) - 150, 300, 600   
-Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36214609&postcount=1614
-- Lumenier 30A
-- TBS 25 - 300 (600 with signal cap removed)   
-Cap removal:   https://www.rcgroups.com/forums/showpost.php?p=36209076&postcount=1548
-- DYS XS20 v1.x  
-Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36297135&postcount=2068
-- DYS XS20A v2 or XSC20A
-Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36253268&postcount=1878
-- DYS XS30A (with Signal cap removed) - 300 (16.42) - 600 (16.43)   
-Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36133930&postcount=836   
-https://www.rcgroups.com/forums/showpost.php?p=36245544&postcount=1848   
-- ZTW polaris 30A (A_H_20 16.42) - 300, 600
-- Multistar BLHeli_S 30A - 150, 300
-- FVT Littlebee 20A-S (with signal cap removed) - 150, 300, 600   
-- LittleBee_S 20A  (A-H-15 16.42)- (with signal cap removed) - 150, 300, 600    
-Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36181966&postcount=40934
-- MRM ZEUS-S 20A - with CAP removed (see FVT littlebee-s 20a cap removal)
-- Littlebee_S 30A (with signal cap removed) - 600   
-Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36230015&postcount=1745
 - Spedix ES 20 lite (with signal cap removed) - 150, 300, 600   
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36203466&postcount=1509
 - Spedix 25a (with signal cap removed) - 150, 300, 600   
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36324412&postcount=2157   
 - Spedix ES30 HV 16.43 (with signal cap removed) - 600   
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36205800&postcount=1527  
-- BumpBee_S (with signal cap removed) - 600   
-Cap removal: https://nathan.vertile.com/blog/2016/11/14/flash-blheli_s-with-dshot/#flashing  
-- BeeRotor BLS20A (with signal cap removed) - 600   
-Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36217144&postcount=1654   
+- TBS 25 - 300 (600 with signal cap removed)   
+Cap removal:   https://www.rcgroups.com/forums/showpost.php?p=36209076&postcount=1548
 - Xrotor mini 30A BL_S - 300, Not working on 600    
-- DALRC BS25A  16.5 (with signal cap removed) - 150, 300, 600    
-Cap removal: https://www.rcgroups.com/forums/showthread.php?t=2777858#post36223562   
-https://www.rcgroups.com/forums/showthread.php?t=2777858
-- DYS XSD20A | XSD30A - New product announcement:  
-https://www.rcgroups.com/forums/showthread.php?t=2784634#post36278564  
-- Emax Lightning S 35A - 600 without mods  
+- ZTW polaris 30A (A_H_20 16.42) - 300, 600
 
 Generic instructions on how to find signal input and cap on any BLHeli ESC:
 https://www.rcgroups.com/forums/showpost.php?p=36216745&postcount=1645   
