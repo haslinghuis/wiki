@@ -75,30 +75,30 @@ Now found that some BLHeli_S ESC will run on DSHOT600 with modifications. See li
 BLHeli Rev16.5 posted on github (27Nov2016). Dshot150, Dshot300 and Dshot600 are now supported officially.  
 
 ###Flight Controllers Supporting Dshot on Betaflight 3.1 Alphas:
+- Airbot F3 (SPRACINGF3)  
+- BETAFLIGHTF3  
 - BLUEJAYF4
-- REVO (and clones)
-- OMNIBUS
-- OMNIBUSPRO (Blheli Configurator Hangs on read in 3.1, failed flash in 3.01)
-- Omnibus F3 - build #737 works (is this OMNIBUSPRO or OMNIBUS?)
-- KISSFC
-- LUX_RACE
-- BETAFLIGHTF3
+- Colibri Race v2.0  (build #722)
+- Dodo (RMDO)  
+- Dodo (SPRACINGF3)
+- DTFc - Build #389 - working on the bench
+- DTFC (DOGE) (build 682)
 - FLIP32F4
 - FURY F3
 - FURY F4
-- Airbot F3 (SPRACINGF3)
-- Dodo (SPRACINGF3)
-- Dodo (RMDO)
-- X-Racer V2.1 (SPRACINGF3 #670)
-- DTFc - Build #389 - working on the bench
-- DTFC (DOGE) (build 682)
-- SPracingF3 - Spektrum Sat now working. PPM now working since build #713.
+- HGLRC AIO F3 v3 (SPRACINGF3) - works with build #739. Build #740 Arms but no response.  
 - IMPULSERCF3 
+- KISSFC
+- LUX_RACE
+- OMNIBUS
+- OMNIBUSPRO (Blheli Configurator Hangs on read in 3.1, failed flash in 3.01)
+- Omnibus F3 - build #737 works (is this OMNIBUSPRO or OMNIBUS?)
 - RACEBASE FC
-- YuPi F4
-- Colibri Race v2.0  (build #722)
+- REVO (and clones)
 - SOULF4 - (SOULF4) build #734 (beeper not working) - works with REVO.hex
-- HGLRC AIO F3 v3 (SPRACINGF3) - works with build #739. Build #740 Arms but no response.   
+- SPracingF3 - Spektrum Sat now working. PPM now working since build #713.
+- YuPi F4
+- X-Racer V2.1 (SPRACINGF3 #670)
 - X-Racer F303 (X_RACERSPI) -
 
 ####FC Targets that work with Dshot but require re-mapping pins with the Resource command:   
