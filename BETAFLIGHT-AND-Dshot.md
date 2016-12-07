@@ -74,7 +74,7 @@ Here is why: https://www.rcgroups.com/forums/showpost.php?p=36025232&postcount=3
 Now found that some BLHeli_S ESC will run on DSHOT600 with modifications. See list below for details.  
 BLHeli Rev16.5 posted on github (27Nov2016). Dshot150, Dshot300 and Dshot600 are now supported officially.  
 
-###Flight Controllers Supporting Dshot on Betaflight 3.1 Alphas:
+###Flight Controllers Tested to Support Dshot on Betaflight 3.1 Alphas:
 - Airbot F3 (SPRACINGF3)  
 - BETAFLIGHTF3  
 - BLUEJAYF4
