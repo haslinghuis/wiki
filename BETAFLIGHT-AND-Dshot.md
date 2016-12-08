@@ -129,7 +129,8 @@ and copy/paste these into a Text file and save for reference of the Default pin 
 
 See: [CLI resource command](https://github.com/betaflight/betaflight/wiki/Betaflight-specific-CLI-commands#resource-remapping-command-v31)    
 
-- MOTOLAB - (MotoF3, Tornado, Cyclone & Tempest)   
+- MOTOLAB - (MotoF3, Cyclone & Tempest)   
+Note: Tornado has output driver chips so can not add a wire to the output pin header. 
  3.1 Build #721: Bench tested -
  Solder a wire from Output #1 header pin to the PPM input header pin.
  Follow above and to re-map output type in CLI:  
