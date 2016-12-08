@@ -268,6 +268,7 @@ https://www.rcgroups.com/forums/showpost.php?p=36216745&postcount=1645
 
 ####Components tried and are not currently working:
 - AIKON v2 20A - ?? is this the same ESC as listed as working above ??
+- Armattan 30a - Probably need signal caps removed.  
 
 ####Components that will NOT likely ever work:
 - Naze32 and clones
