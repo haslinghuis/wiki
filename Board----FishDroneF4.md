@@ -1,11 +1,11 @@
 # FishDrone FPV Flight Controller
 
 ### Description
-The FishDroneFC F4 flight controller is an integrated flight controller and OSD and VTX specifically designed for ease of use and outstanding flight performance. The SPI-connected ICM20608 inertial motion sensor was chosen for it's high reliability, accuracy and update speed. This board has no problem running fast loop times and ESC protocols. There is an onboard barometer for altitude sensing along with an On Screen Display (OSD) chip directly connected to the main processor (MCU). This tight integration between the MCU and the OSD enables fast updates to the display and easy configuration of the OSD, which is managed straight from the BetaFlight configuration tool. You no longer need to worry about the extra hassle of configuring your OSD with a USB/UART adapter and 3rd party configuration tool, it's all built into the flight control software.
+The FishDroneTeam F4 flight controller is an integrated flight controller and OSD and VTX specifically designed for ease of use and outstanding flight performance. The SPI-connected ICM20602 inertial motion sensor was chosen for it's high reliability, accuracy and update speed. This board has no problem running fast loop times and ESC protocols. There is an onboard barometer for altitude sensing along with an On Screen Display (OSD) chip directly connected to the main processor (MCU). This tight integration between the MCU and the OSD enables fast updates to the display and easy configuration of the OSD, which is managed straight from the BetaFlight configuration tool. You no longer need to worry about the extra hassle of configuring your OSD with a USB/UART adapter and 3rd party configuration tool, it's all built into the flight control software.
 ***
 ### Hardware
 - MCU : STM32F405RGT6
-- IMU : ICM-20608-G (SPI)
+- IMU : ICM-20602 (SPI)
 - IMU Interrupt : Yes
 - Compass & Baro : no support it (only  designed for fpv)
 - VCP : Yes
@@ -22,7 +22,7 @@ The FishDroneFC F4 flight controller is an integrated flight controller and OSD 
 ### Features
 - All in one design
 - STM32F405 32-bit processor at 168MHz, 1Mb flash, 192kb ram
-- ICM-20608-G MPU connected via SPI 
+- ICM-20602 MPU connected via SPI 
 - Micro USB connectivity using STM Virtual Communications Port
 - Serial or PPM input (does not support individual PWM channel input)
 - Has outputs for up to 4 ESCs
