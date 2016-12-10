@@ -253,6 +253,7 @@ Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36209787&postcount=1
 - Racerstar MS35A - 600
 - Racerstar 4in1 20A V1 - 150 (one motor twitching), 300 (all running smooth), 600 (grinding noise) bench testing only so far   - This may need the signal cap(s) removed.  
 -- 2016-12-10: Does this actually work for flying with dshot300 as well? Would be great to know.
+Flying with dshot 300 but but clicking noises from motor. Sync problems?
 - Racerstar RS20Ax4 V2 Blheli_S 20A 2-4S 4 in 1 ESC - 300 without mod.
 Link: https://www.rcgroups.com/forums/showthread.php?t=2782732#post36254434
 - Spedix ES 20 lite (with signal cap removed) - 150, 300, 600   
