@@ -1,3 +1,7 @@
+##BetaFlight 3.1  
+Is coming but still in Alpha testing.  
+The Dshot ESC protocol is added. See [DSHOT & BetaFlight](https://github.com/betaflight/betaflight/wiki/BetaFlight%20and%20Dshot) for details and links.  
+
 ##BetaFlight 3.0  
 This is really a major release. The full detailed change list can be found in the the commit history.
 https://github.com/betaflight/betaflight/commits/master.  
