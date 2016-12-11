@@ -1,5 +1,6 @@
 ##BetaFlight 3.1  
-Is coming but still in Alpha testing with a lot of features currently broken or changed.  Do NOT flash this unless you are fully willing to test.  
+Is coming but still in Alpha testing with a lot of features currently broken or changed.  Do NOT flash this unless you are fully willing to test and work around non-functioning features.  
+
 Some new features that are documented:  
 - [Resource Command](https://github.com/betaflight/betaflight/wiki/Betaflight-resource-remapping) for re-mapping pins.  
 - The Dshot ESC protocol is added. See [DSHOT & BetaFlight](https://github.com/betaflight/betaflight/wiki/BetaFlight%20and%20Dshot) for details and links including limitations and which ESCs and FC targets may work.  
