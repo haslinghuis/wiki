@@ -1,5 +1,7 @@
 ##BetaFlight 3.1  
 Is coming but still in Alpha testing with a lot of features currently broken or changed.  Do NOT flash this unless you are fully willing to test.  
+Some new features that are documented:  
+- 
 - The Dshot ESC protocol is added. See [DSHOT & BetaFlight](https://github.com/betaflight/betaflight/wiki/BetaFlight%20and%20Dshot) for details and links including limitations and which ESCs and FC targets may work.  
 
 ##BetaFlight 3.0  
