@@ -124,8 +124,10 @@ and copy/paste these into a Text file and save for reference of the Default pin 
   2- In the CLI change Only the remapped Motor back. Type:  
 `resource motor x yyy  `  
 `save  `  
+Note: Re-mapping pin back to default may NOT be needed. Tested on MotoLab Cyclone and BLHeli works with motor 1 to A07.
   3- Now use BLHeli Suite to Update or change ESC setting.  
   4- When finished re-map the motor to the pin used for Dshot.  
+  5- Set ESC protocol to DSHOT.  
 
 See: [CLI resource command](https://github.com/betaflight/betaflight/wiki/Betaflight-specific-CLI-commands#resource-remapping-command-v31)    
 
@@ -137,9 +139,9 @@ Note: Tornado has output driver chips so can not add a wire to the output pin he
 `resource ppm none  `  
 `resource motor 1 A07 `  
 `save  `  
-To use BLHeli type in CLI:  
-`resource motor 1 A04  `  
-`save  `  
+_To use BLHeli type in CLI:  _
+_`resource motor 1 A04  `  _
+_`save  `  _
  
 - PIKOBLX - Re-map motor 1 to the PPM pin (same as MotoLab) and also disable motor 5-8 ("resource motor X none").    
  Solder a wire from Output #1 header pin to the PPM input header pin.
