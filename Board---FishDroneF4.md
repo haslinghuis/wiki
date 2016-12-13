@@ -11,7 +11,7 @@ The FishDroneTeam F4 flight controller is an integrated flight controller and OS
 - VCP : Yes
 - OSD : Yes, BetaFlight OSD (BFOSD)
 - VTX : Yes ( RTC6705 chip )
-- Blackbox : Yes ( 16mb Flash )
+- Blackbox : Yes ( 16MB Flash or TF support )
 - Battery Voltage Sensor: Yes, directly connected, no wiring necessary
 - Integrated Voltage Regulator: Yes, support for 2S-6S battery
 - Buttons : 1 - DFU
