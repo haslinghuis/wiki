@@ -199,6 +199,8 @@ Video on getting this FC working: https://www.rcgroups.com/forums/showpost.php?p
 ####BLheli-S:
 Firmware in Github here: https://github.com/bitdump/BLHeli    
 
+Note: Many of these ESC have an RC filter on the control input signal line. The cap of this RC filter must be removed to use Dshot as per the list below. It is recommended to remove the cap from any ESC even if Dshot seems to work. All other protocols to still work without this filter cap.  
+
 - Aikon 20A/Spedix 20A    
 Cap removal for both: https://www.rcgroups.com/forums/showpost.php?p=36182572&postcount=1319
 - Aikon SEFM v2 30A - 150, 300, 600 (BLHeli_S 16.43) (C-H-25)   
