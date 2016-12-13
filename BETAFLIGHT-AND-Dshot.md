@@ -274,6 +274,9 @@ Cap removal:   https://www.rcgroups.com/forums/showpost.php?p=36209076&postcount
 Generic instructions on how to find signal input and cap on any BLHeli ESC:
 https://www.rcgroups.com/forums/showpost.php?p=36216745&postcount=1645   
 
+Videos on Cap Removal:   
+BeeRotor BS20A - http://scontent.cdninstagram.com/t50.2886-16/15378420_376830535984172_2316137375807307776_n.mp4  
+
 ####Components tried and are not currently working:
 - AIKON v2 20A - ?? is this the same ESC as listed as working above ??
 - Armattan 30a - Probably need signal caps removed.  
