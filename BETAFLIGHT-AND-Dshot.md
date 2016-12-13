@@ -240,6 +240,8 @@ Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36181966&postcount=4
 - Littlebee_S 30A (with signal cap removed) - 600   
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36230015&postcount=1745
 - Lumenier 30A
+- Maverick 24A - New product announcement:  
+https://www.rcgroups.com/forums/showthread.php?2795245-Fully-compatible-with-Dshot-New-upgraded-32-bit-Maverick-24A-ESC#post36408093  
 - MRM ZEUS-S 20A - with CAP removed (see FVT littlebee-s 20a cap removal)
 - Multistar BLHeli_S 30A - 150, 300
 - Racestat v2 6a (2-3S version) - 150, 300, 600 (BLHeli_S 16.43)
