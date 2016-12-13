@@ -274,7 +274,8 @@ Cap removal:   https://www.rcgroups.com/forums/showpost.php?p=36209076&postcount
 Generic instructions on how to find signal input and cap on any BLHeli ESC:
 https://www.rcgroups.com/forums/showpost.php?p=36216745&postcount=1645   
 
-#####Cap Removal Methods: **Caution - if improper done can render the ESC unusable and have the possibility to burning the ESC upon applying power.  **
+#####Cap Removal Methods:  
+**Caution - if improper done can render the ESC unusable and have the possibility to burning the ESC upon applying power.  **
 - Method 1. Clippers - used this when there is enough room, just clipped the cap in half the clipped each end off the board  
 - Method 2. Craft knife - used when other components are too close to use clippers, for example tbs escs - slide the blade so that it is sliding along the surface of the board and in a direction away from other components and apply force, cutting the cap off the esc   
 - Method 3. Soldering iron - Heat both ends of the cap with a tinned iron. Then wipe the cap off the pads with the iron's tip. Be Careful NOT to unsolder any other parts and examine the board with a good magnifier for any solder splashes.  
