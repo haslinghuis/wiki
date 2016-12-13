@@ -1,5 +1,3 @@
-# FishDrone F4 Tower FC
-
 ### Description
 The FishDroneTeam F4 Tower Flight Controller is an integrated flight controller and OSD and VTX specifically designed for ease of use and outstanding flight performance. The SPI-connected ICM20602 inertial motion sensor was chosen for it's high reliability, accuracy and update speed. This board has no problem running fast loop times and ESC protocols. There is an onboard barometer for altitude sensing along with an On Screen Display (OSD) chip directly connected to the main processor (MCU). This tight integration between the MCU and the OSD enables fast updates to the display and easy configuration of the OSD, which is managed straight from the BetaFlight configuration tool. You no longer need to worry about the extra hassle of configuring your OSD with a USB/UART adapter and 3rd party configuration tool, it's all built into the flight control software.
 ***
