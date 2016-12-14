@@ -284,7 +284,6 @@ https://www.rcgroups.com/forums/showpost.php?p=36216745&postcount=1645
 - BeeRotor BS20A video- http://scontent.cdninstagram.com/t50.2886-16/15378420_376830535984172_2316137375807307776_n.mp4  
 
 ####Components tried and are not currently working:
-- AIKON v2 20A - ?? is this the same ESC as listed as working above ??
 - Armattan 30a - Probably need signal caps removed.  
 
 ####Components that will NOT likely ever work:
