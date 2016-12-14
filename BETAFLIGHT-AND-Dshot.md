@@ -210,6 +210,8 @@ Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36213821&postcount=1
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36214609&postcount=1614
 - AIKON SEFM 20A (with signal cap removed) - 150, 300, 600   
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36214609&postcount=1614
+- Armattan 20A and 30A - 20a v1 need cap removal, 30a need cap removal, 20a v2 will work without modification
+Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36416316&postcount=2432
 - BeeRotor BLS20A (with signal cap removed) - 600   
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36217144&postcount=1654  
 - BumpBee_S (with signal cap removed) - 600   
@@ -284,7 +286,7 @@ https://www.rcgroups.com/forums/showpost.php?p=36216745&postcount=1645
 - BeeRotor BS20A video- http://scontent.cdninstagram.com/t50.2886-16/15378420_376830535984172_2316137375807307776_n.mp4  
 
 ####Components tried and are not currently working:
-- Armattan 30a - Probably need signal caps removed.  
+NTR
 
 ####Components that will NOT likely ever work:
 - Naze32 and clones
