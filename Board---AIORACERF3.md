@@ -1,4 +1,4 @@
-Hardware
+#Hardware
 
 MCU: STM32F303CCT6
 
@@ -27,7 +27,7 @@ Voltage converter: 3.3V/500mA buck converter
 Buttons: 1 - DFU
 
 
-Features
+#Features
 
 The PWM solder pads close to the four corners, making it easier to connect the ESC signal lines.
 
@@ -55,21 +55,21 @@ Max input voltage / current sensing: 28V/90A.
 
 Back converter outputs: 5.3V/3.5A.
 
-Hardware Designs
+#Hardware Designs
 
 GPIO:
 
-Manufacturers and Distributors
+#Manufacturers and Distributors
 
 CRIUS
 
-Available here: 
+#Available here: 
 
-Designers
+#Designers
 
 Eric Liang
 
-Maintainers
+#Maintainers
 
 tianbin4279
 
@@ -77,15 +77,15 @@ lijingwei0710
 
 mikeller
 
-Similar Targets
+#Similar Targets
 
 SPRACINGF3EVO
 
-Other Resources
+#Other Resources
 
 [Manual](https://dl.dropboxusercontent.com/u/584481/AIO_RACER_F3_Manual_D20160909.pdf)
 
-Images:
+#Images:
 
 ARF3
 
