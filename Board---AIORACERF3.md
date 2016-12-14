@@ -25,9 +25,7 @@
   - The PWM solder pads close to the four corners, making it easier to connect the ESC signal lines.
   - Gyro via SPI and 8K ready.
   - Integrated Minim-OSD and FTDI debug socket.
-  - ZH 1.5-3P socket used for DSM/S.BUS. and others SRX receivers, it can be selected voltage 3.3V/5V on backside solder 
-
-pads.
+  - ZH 1.5-3P socket used for DSM/S.BUS. and others SRX receivers, it can be selected voltage 3.3V/5V on backside solder pads.
   - WS2811 LED-strip supported.
   - Optimized solder pads for optional ARPDB.
   - Dimension: 35x35x7.4mm / fixing hole spacing 30mm.
