@@ -18,7 +18,7 @@ Just remember that this is very Experimental code and may have serious limitatio
 Some known limitations are (
 Note: these may or may not affect all working targets):
 - BLHeli pass-through does not work if FC is set to DSHOT. Must change output to OneShot to use the pass-through.    
-Note: should be fixed on most Targets but not all targets yet.   
+Note: Should be fixed on most Targets but not all targets yet.   
 - Some ESCs that have a signal filter cap may not work until the cap is removed. 
 - 3D mode not yet working, developer's plan is to get the basics working well the get 3D working.
 - A bug affecting Spektrum Sats, shows 988 on channels in receiver tab of Betaflight (soon to be looked at).
