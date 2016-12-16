@@ -20,7 +20,9 @@ Note: these may or may not affect all working targets):
 - BLHeli pass-through does not work if FC is set to DSHOT. Must change output to OneShot to use the pass-through.    
 Note: Should be fixed on most Targets but not all targets yet.   
 - Some ESCs that have a signal filter cap may not work until the cap is removed. 
-- 3D mode not yet working, developer's plan is to get the basics working well the get 3D working.
+- Dshot for 3D is implemented in the latest betaflight master. I am pretty sure that betaflight code is now correct, but I haven't fully tested all escs ans didn't do any real flight testing.  
+3D implementation in DSHOT is slightly different than on analog protocols. Boris.  
+I believe KISS escs now have that implementation. I am not sure of the latest blheli_s status.
 - A bug affecting Spektrum Sats, shows 988 on channels in receiver tab of Betaflight (soon to be looked at).
    Fixed on SPRF3 & REVO, may be fixed on other targets.
 - PPM not working on some FC targets (limited testing due to most users using Sbus or Spektrum)   
