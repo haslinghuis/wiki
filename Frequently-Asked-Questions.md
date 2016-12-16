@@ -49,15 +49,15 @@
 1. [Which HEX target do I download and flash to my Flight Controller ?](#which-hex-target-do-i-download-and-flash-to-my-flight-controller-)
 1. [How do I setup for reversed prop rotation ?](#how-do-i-setup-for-reversed-prop-rotation-)
 1. [What is a recommended FC and esc setup to run at 8khz, also i see reference to 4/4 or 4/4/32 or 8/8, what are these referring to?](#what-is-a-recommended-fc-and-esc-setup-to-run-at-8khz-also-i-see-reference-to-4/4-or-4/4/32-or-8/8,-what-are-these-referring-to-)  
-1. [Is PID tuning any different at different PIDC rates ?](#is-PID-tuning-any-different-at-different-PIDC-rates-)  
-1. [What is the difference in PIDC Iterm in ßF versions ?](#what-is-the-difference-in-PIDC-Iterm-in-ßF-versions-)  
+1. [Is PID tuning any different at different PIDC rates ?](#is-pid-tuning-any-different-at-different-pidc-rates-)  
+1. [What is the difference in PIDC Iterm in bF versions ?](#what-is-the-difference-in-pidc-Iterm-in-bF-versions-)  
 1. [How to setup blackbox record rate with onboard dataflash ?](#how-to-setup-blackbox-record-rate-with-onboard-dataflash-)  
 1. [How to setup the rates and SuperExpo in ßF 2.8.1 ?](#how-to-setup-the-rates-and-SuperExpo-in-ßF-2.8.1-)  
 1. [What is the story on the different Rates and Expos ?](#what-is-the-story-on-the-different-Rates-and-Expos-)  
 1. [I get Yaw twitches or mid-throttle oscillations. How do I solve this?](#i-get-yaw-twitches-or-mid-throttle oscillations-how-do-I-solve-this-)  
-1. [Is there a way to download blackbox logs through a terminal client ?](#Is-there-a-way-to-download-blackbox-logs-through-a-terminal-client-)  
-1. [Why do LED strips not work?](#Why-do-LED-strips-not-work-)
-1. [Recently with the temps dropping, my quad has started to develop a random twitch. Anyone else experience random issues when it's 20'ish degree's F outside?](#Recently with the temps dropping, my quad has started to develop a random twitch. Anyone else experience random issues when it's 20'ish degree's F outside-)
+1. [Is there a way to download blackbox logs through a terminal client ?](#is-there-a-way-to-download-blackbox-logs-through-a-terminal-client-)  
+1. [Why do LED strips not work?](#why-do-LED-strips-not-work-)
+1. [Recently with the temps dropping, my quad has started to develop a random twitch. Anyone else experience random issues when it's 20'ish degree's F outside ?](#recently-with-the-temps-dropping,-my-quad-has-started-to-develop-a-random-twitch.-Anyone-else-experience-random-issues-when-it's-20'ish-degree's-F-outside-)
 
 **If your question is not listed above then please check the following pages:**
 
