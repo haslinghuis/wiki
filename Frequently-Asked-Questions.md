@@ -54,7 +54,7 @@
 1. [How to setup blackbox record rate with onboard dataflash ?](#how-to-setup-blackbox-record-rate-with-onboard-dataflash-)  
 1. [How to setup the rates and SuperExpo in bF 2.8.1 ?](#how-to-setup-the-rates-and-SuperExpo-in-bF-2.8.1-)  
 1. [What is the story on the different Rates and Expos ?](#what-is-the-story-on-the-different-Rates-and-Expos-)  
-1. [I get Yaw twitches or mid-throttle oscillations. How do I solve this?](#i-get-yaw-twitches-or-mid-throttle oscillations-how-do-I-solve-this-)  
+1. [I get Yaw twitches or mid-throttle oscillations. How do I solve this ?](#i-get-yaw-twitches-or-mid-throttle oscillations-how-do-I-solve-this-)  
 1. [Is there a way to download blackbox logs through a terminal client ?](#is-there-a-way-to-download-blackbox-logs-through-a-terminal-client-)  
 1. [Why do LED strips not work?](#why-do-LED-strips-not-work-)
 1. [Recently with the temps dropping, my quad has started to develop a random twitch. Anyone else experience random issues when it's 20'ish degree's F outside ?](#recently-with-the-temps-dropping,-my-quad-has-started-to-develop-a-random-twitch.-Anyone-else-experience-random-issues-when-it's-20'ish-degree's-F-outside-)
@@ -896,7 +896,7 @@ Addition from Adam Pyschny
 
 A to low yaw_jump_prevention_limit can prevent yaw P from getting enough authority to prevent the quad from breaking out in tight, high speed, roll-only turns.  
 
-##What is yaw_iterm_reset_degrees and what does it do?
+##What is yaw_iterm_reset_degrees and what does it do ?
 
 From Joshua Bardwell
 
@@ -1035,7 +1035,7 @@ But still these differences were extremely marginal and still nothing compared t
 
 Next tests would be synced vs unsynced and also 32k as some wanted to know that and also blheli tests. I think from what I have seen i can expect synced winning, but lets wait the results.   
 
-##What is the difference in PIDC Iterm in ßF versions ? 
+##What is the difference in PIDC Iterm in bF versions ? 
 By ctzsnooze:  
 Any slow pitch back type thing is iTerm related. Pitching back means that P alone was unable to retain the intended angle in FFF, and iTerm accumulated in an attempt to get there. When dropping throttle, the need for that amount of iTerm changes, and it takes a short time for the iTerm to drop back. In that sense this is a symptom of P not being quite enough, or I being too much.  
 
@@ -1059,7 +1059,7 @@ You need to test on the ground without props and check cpu usage, so just arm, a
 Keep a safe value and leave some room for cpu usage.
 1/4 should be a correct value for sp3 board at 4khz/4khz/4khz.
 
-##How to setup the rates and SuperExpo in bF 2.8.1?
+##How to setup the rates and SuperExpo in bF 2.8.1 ?
 - First see the Rate calculator in the 2.8.1 Release notes and Watch Joshia's video on ßF 2.8
 
 Originally Posted by Boris B View Post  
@@ -1140,7 +1140,7 @@ RC Slater is online now Send a private message to RC Slater Find More Posts by R
 Video from Joshua Bardwell:
 https://www.youtube.com/watch?v=cttFDHkec0c
 
-##What is the story on the different Rates and Expos?
+##What is the story on the different Rates and Expos ?
 Thanks to joshuabardwell for this write up.
 
 Let's have a little history lesson.
@@ -1169,7 +1169,7 @@ S.Rates changes the line by leaving the center-stick alone, and makes the end-po
 
 You can achieve more or less the same curve with both expo and s.rates, it just depends whether you would prefer to think about tuning the center-stick first, and then pushing out the full-deflection rates from there, or whether you would prefer to think about tuning the full-deflection rates, and then softening the center-stick from there. 
 
-##I get Yaw twitches or mid-throttle oscillations How do I solve this?
+##I get Yaw twitches or mid-throttle oscillations How do I solve this ?
 Many people have yaw twitches or oscillations at mid-throttle and many do not. All that have this issue seem to be running FCs that use the MPU6500 gyro chip (Naze32 rev6, LUX, others) and newer motors. Boris B was one that did not have this issue with the 6500 gyro until he upgraded to newer, stronger motors. Many have cured this by soft mounting the FC board but this has not worked in all cases.
 
 Link to a thread with data on the MPU9250 gyro:
