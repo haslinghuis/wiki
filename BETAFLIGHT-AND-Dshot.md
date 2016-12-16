@@ -41,13 +41,13 @@ motor_pwm_protocol = ONESHOT42
 Allowed values: OFF, ONESHOT125, ONESHOT42, MULTISHOT, BRUSHED
 
 ####Setting Min Throttle with Dshot   
-Dshot now uses the CLI command "digital_idle_percent" and the old 'min_throttle' setting is ignored.
-Do type "get idle" to see if this exists and what the valid values are. This is a percentage of throttle used in armed state. The pid controller will never push use motor output below this percentage. For example if your min throttle when using multishot was 1040 and your total throttle was 1000 (2000-1000) then you should set your digital idle offset to 4.0 as 40 is 4 percent of 1000. You can play with these values a little but if you experience motor/prop stalls during flight this number should be increased as having this value too low could be the cause of that behaviour.
+Dshot now uses the CLI command "digital_idle_percent" which adds to the 'min_throttle'.
+Do type "get idle" to see if this exists and what the valid values are. This is a percentage of throttle used in armed state. The pid controller will never push use motor output below this percentage. Test it out by arming while watching the motors tab. If the motors idle slower when using dshot, bump up the digital idle percent. I set mine to 4.000 to make my motors arm at the same speed when swapping back and forth between multi and dshot. 
 
 ####ESC Cal and min/max throttle
 ßF firmware with Dshot does Not use the min_throttle or max_throttle setting, these are ignored.
 Just ensure that in the ESCs (BLHeli Suite) that PPM_MIN_THROTTLE is set to 1000 and PPM_MAX_THROTTLE is set to 2000.
-Note: This should not be needed in BLHeli_S 16.43 since the PPM_MIN & MAX values are not used for Dshot.   
+Note: This should not be needed in BLHeli_S 16.43 and up since the PPM_MIN & MAX values are not used for Dshot.   
 
 ####Max ESC update speed supported by different dshot versions:
 - dshot150: 8kHz max
