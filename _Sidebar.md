@@ -76,7 +76,7 @@
  - [X_RACERSPI](/betaflight/betaflight/wiki/Board---X_RACERSPI)
  - [YuPiF4](/betaflight/betaflight/wiki/Board---YUPIF4)
  - [ZCOREF3](/betaflight/betaflight/wiki/Board---ZCOREF3)
- 
+ - [FishDroneF4] (/betaflight/betaflight/wiki/Board---FishDroneF4)
 
 ### Page Templates
  - [New Board](/betaflight/betaflight/wiki/Board---Template)
