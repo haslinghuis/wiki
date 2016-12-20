@@ -14,6 +14,8 @@ https://www.rcgroups.com/forums/showthread.php?t=2780055
 BetaFlight V3.1 development code for Dshot can be found here:   
 http://andwho.sytes.net:8080/job/BorisB_BetaFlight/   
 Just remember that this is very Experimental code and may have serious limitations.
+Read here to Learn exactly what firmware issues and features are being worked on:
+https://github.com/betaflight/betaflight/issues?q=is%3Aissue+is%3Aclosed+sort%3Aupdated-desc  
 
 Some known limitations are (
 Note: these may or may not affect all working targets):
