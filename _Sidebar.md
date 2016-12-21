@@ -21,6 +21,7 @@
  - [Deep Dive](/betaflight/betaflight/wiki/BetaFlight-Deep-Dive)
  - [Resource Remapping](/betaflight/betaflight/wiki/Betaflight-resource-remapping)
  - [CLI Commands](/betaflight/betaflight/wiki/Betaflight-specific-CLI-commands)
+ - [ESC Programming Pass-through](/betaflight/betaflight/wiki/Betaflight-ESC-pass-through)
 
 # Development
 
