@@ -4,6 +4,7 @@ Is coming but still in Alpha testing with a lot of features currently broken or 
 Some new features that are documented:  
 - [Resource Command](https://github.com/betaflight/betaflight/wiki/Betaflight-resource-remapping) for re-mapping pins.  
 - The Dshot ESC protocol is added. See [DSHOT & BetaFlight](https://github.com/betaflight/betaflight/wiki/BetaFlight%20and%20Dshot) for details and links including limitations and which ESCs and FC targets may work.  
+- allows to flash kiss escs with a passthrough and kiss flash loader app but not yet active on all targets.  
 
 ##BetaFlight 3.0  
 This is really a major release. The full detailed change list can be found in the the commit history.
