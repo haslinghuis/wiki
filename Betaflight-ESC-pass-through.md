@@ -1,9 +1,9 @@
 <h3>Betaflight ESC pass-through<h3>
 
-New feature for 3.1 allows to flash kiss escs with a pass-through and KISS flash loader app.
+New feature for 3.1 allows to flash kiss escs with a pass-through and KISS flash loader app.  
 Note: it is apparently not yet active on all targets. 
 
-For now you have to enable passthrough in the cli and than flash through flash loader app. Later it might be done from the app directly.
+For now you have to enable passthrough in the cli and than flash through flash loader app. Later it might be done from the app directly. [Flyduino downloads](http://kiss.flyduino.net/downloads/)  
 
 Command for esc #1:
 escprog ki 1
