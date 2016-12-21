@@ -56,4 +56,7 @@ But the D term can vary significantly depending on many different factors, and i
 For more information see these resources:
 
 * [Joshua Bardwell's Practical PID Tuning (Betaflight / Cleanflight)](http://www.youtube.com/playlist?list=PLwoDb7WF6c8ldO8tz0IUi9FNcJdvE2Mhe)
-* FAQ page located [here](https://github.com/borisbstyle/betaflight/wiki/Frequently-Asked-Questions#is-there-a-good-resource-for-learning-how-to-tune-using-black-box-)
+* FAQ page located [here](https://github.com/borisbstyle/betaflight/wiki/Frequently-Asked-Questions#is-there-a-good-resource-for-learning-how-to-tune-using-black-box-)  
+
+###Tuning the DJI Snail system  (also a good video on general Tuning)
+https://www.youtube.com/watch?v=8L2v10RS6io
