@@ -5,6 +5,9 @@ Note: it is apparently not yet active on all targets.
 
 For now you have to enable passthrough in the cli and than flash through flash loader app. Later it might be done from the app directly. [Flyduino downloads](http://kiss.flyduino.net/downloads/)  
 
+KISESC_flashloader also in First post of the Dshot thread:  
+https://www.rcgroups.com/forums/showthread.php?2756129-Dshot-testing-a-new-digital-parallel-ESC-throttle-signal  
+
 Command for esc #1:
 escprog ki 1
 
