@@ -21,7 +21,7 @@ Some known limitations are (
 Note: these may or may not affect all working targets):
 - BLHeli pass-through does not work if FC is set to DSHOT. Must change output to OneShot to use the pass-through.    
 Note: Should be fixed on most Targets but not all targets yet.   
-- New pass-through for KISS ESCs: 
+- New pass-through for KISS ESCs: [ESC Pass-through](https://github.com/betaflight/betaflight/wiki/Betaflight-ESC-pass-through)  
 - Some ESCs that have a signal filter cap may not work until the cap is removed. 
 - Dshot for 3D is implemented in the latest betaflight master. I am pretty sure that betaflight code is now correct, but I haven't fully tested all escs ans didn't do any real flight testing.  
 3D implementation in DSHOT is slightly different than on analog protocols. Boris.  
