@@ -10,7 +10,7 @@
 
  - [Betaflight 3.x](/betaflight/betaflight/wiki/BetaFlight-3.x)
  - [New release! What do I need to know?](/betaflight/betaflight/wiki/New-release!-What-do-I-need-to-know%3F)
- - [Dshot & BetaFlight](/betaflight/betaflight/wiki/BetaFlight and Dshot)
+ - [Dshot & BetaFlight 3.1](/betaflight/betaflight/wiki/BetaFlight and Dshot)
 
 # Tuning and More
 
