@@ -215,7 +215,7 @@ Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36213821&postcount=1
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36214609&postcount=1614
 - AIKON SEFM 20A (with signal cap removed) - 150, 300, 600   
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36214609&postcount=1614
-- Armattan 20A and 30A - 20a v1 need cap removal, 30a need cap removal, 20a v2 will work without modification  
+- Armattan 20A and 30A - 2v1 need cap removal, v2 (now shipping from Armattan) work without modification  
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36416316&postcount=2432
 - BeeRotor BLS20A (with signal cap removed) - 600   
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36217144&postcount=1654  
