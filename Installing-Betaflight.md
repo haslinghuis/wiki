@@ -41,7 +41,17 @@ e.g. C:\Program Files (x86)\STMicroelectronics\Software\Virtual comport driver\W
 Linux requires udev rules to allow write access to USB devices for users. An example shell command to achieve this on Ubuntu is shown here:
 
     (echo '# DFU (Internal bootloader for STM32 MCUs)'
-     echo 'SUBSYSTEM=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", MODE="0664", GROUP="plugdev"') | sudo tee /etc/udev/rules.d/45-stdfu-permissions.rules > /dev/null
+     echo 'ACTION=="add", SUBSYSTEM=="usb", ATTRS{idVendor}=="0483", MODE="0664", GROUP="plugdev"') | sudo tee /etc/udev/rules.d/45-stdfu-permissions.rules > /dev/null
+
+Reload rules using:
+
+    sudo udevadm control --reload-rules && udevadm trigger
+
+You can then test the rule using:
+
+    udevadm test $(udevadm info -q path -n /dev/ttyACM0)
+
+Ensure line "MODE 0664 /etc/udev/rules.d/45-stdfu-permissions.rules" is present
 
 This assigns the device to the plugdev group(a standard group in Ubuntu). To check that your account is in the plugdev group type groups in the shell and ensure plugdev is listed. If not you can add yourself as shown (replacing <username> with your username):
 
