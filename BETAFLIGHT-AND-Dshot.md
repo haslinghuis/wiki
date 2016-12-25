@@ -230,6 +230,7 @@ Cap removal: https://nathan.vertile.com/blog/2016/11/14/flash-blheli_s-with-dsho
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36286446&postcount=2036   
 - Cicada 35Ax4 35A - 
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36384215&postcount=2337  
+- Cobra CP30A ESC 30A BLheli_S - 600  
 - DALRC BS25A  16.5 (with signal cap removed) - 150, 300, 600    
 Cap removal: https://www.rcgroups.com/forums/showthread.php?t=2777858#post36223562   
 https://www.rcgroups.com/forums/showthread.php?t=2777858
