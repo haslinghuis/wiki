@@ -27,7 +27,8 @@ Note: Should be fixed on most Targets but not all targets yet.
 3D implementation in DSHOT is slightly different than on analog protocols. Boris.  
 I believe KISS escs now have that implementation. I am not sure of the latest blheli_s status.
 - A bug affecting Spektrum Sats, shows 988 on channels in receiver tab of Betaflight (soon to be looked at).
-   Fixed on SPRF3 & REVO, may be fixed on other targets.
+   Fixed on SPRF3 & REVO, may be fixed on other targets.  
+   Seems this is still there if BB logging is enabled.  
 - PPM not working on some FC targets (limited testing due to most users using Sbus or Spektrum)   
    Note: Some targets need motor re-mapped to PPM pin so then PPM can not be used.
 - LEDs not working or must be disabled to have all motors working due the DMA mapping conflicts.  
