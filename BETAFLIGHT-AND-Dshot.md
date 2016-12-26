@@ -47,6 +47,8 @@ Allowed values: OFF, ONESHOT125, ONESHOT42, MULTISHOT, BRUSHED
 Dshot now uses the CLI command "digital_idle_percent" which adds to the 'min_throttle'.
 Do type "get idle" to see if this exists and what the valid values are. This is a percentage of throttle used in armed state. The pid controller will never push use motor output below this percentage. Test it out by arming while watching the motors tab. If the motors idle slower when using dshot, bump up the digital idle percent. I set mine to 4.000 to make my motors arm at the same speed when swapping back and forth between multi and dshot. 
 
+digital_idle_percent = (min_throttle - min_command) / (max_throttle - min_command) * 100   
+
 ####ESC Cal and min/max throttle
 ßF firmware with Dshot does Not use the min_throttle or max_throttle setting, these are ignored.
 Just ensure that in the ESCs (BLHeli Suite) that PPM_MIN_THROTTLE is set to 1000 and PPM_MAX_THROTTLE is set to 2000.
