@@ -24,6 +24,6 @@ KIWI is a powerful STM32F4 CPU based flight controller, fast, reliability and fu
 
 # **Board Layout**
 
-![](https://flyinglemon.eu/138-thickbox_default/kiwif4-flight-controller.jpg)
+![](http://i.imgur.com/y0Z7Xz8.png)
 
 ![](https://flyinglemon.eu/137-thickbox_default/kiwif4-flight-controller.jpg)
