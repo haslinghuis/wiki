@@ -274,6 +274,8 @@ Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36209787&postcount=1
 - Racerstar 4in1 20A V1 - 150 (one motor twitching), 300 (all running smooth), 600 (grinding noise) bench testing only so far   - This may need the signal cap(s) removed. 
 - Racerstar RS20Ax4 V2 Blheli_S 20A 2-4S 4 in 1 ESC - 300 without mod.
 Link: https://www.rcgroups.com/forums/showthread.php?t=2782732#post36254434
+- Racestar RS20A v2 - 150, 300 - with cap removed 600  
+Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36503849&postcount=2672  
 - Racerstar RS30A LiteS - 600 with cap removed.  
 Cap removal: https://www.rcgroups.com/forums/showthread.php?2690769-Racerstar-Blheli_S-ESCs-%28v2-just-released%29-10-for-20a-12-for-30a-30-4in1-20a/page38  
 - Spedix ES 20 lite (with signal cap removed) - 150, 300, 600   
