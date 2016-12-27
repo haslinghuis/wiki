@@ -97,7 +97,8 @@ BLHeli Rev16.5 posted on github (27Nov2016). Dshot150, Dshot300 and Dshot600 are
 - FURY F4
 - HGLRC AIO F3 v3 (SPRACINGF3) - works with build #739. Build #740 Arms but no response.  
 - IMPULSERCF3 
-- KISSFC
+- KISSFC  
+Note: KISS FCs use a resistor to drive the throttle signal high. So it is quite sensitive to capacitance on the ESC signal.  
 - LUX_RACE
 - OMNIBUS
 - OMNIBUSPRO (Blheli Configurator Hangs on read in 3.1, failed flash in 3.01)
