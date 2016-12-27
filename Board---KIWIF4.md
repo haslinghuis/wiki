@@ -5,12 +5,11 @@ KIWI is a powerful STM32F4 CPU based flight controller, fast, reliability and fu
 # **Board Features**
 * STM32F405 processor, 170MHz
 * low noise, vibration resistant MPU6000 gyro chip on SPI-bus
-* compatible with latest Betaflight releases also can be used with Raceflight (at this time without OSD function)
 * switching step-down 5V and 600mA current output, up to 6S input (not needed external 5V regulator)
 * 12V/0.7A linear BEC for video line
 * LC filter on video line
 * 128MBit flash memory for data logging
-* OSD (only for betaflight)
+* OSD
 * USB port independent of UART ports
 * programmable, hardware SBUS inverter
 * dedicated Spektrum Satellite connector with 3.3V output
