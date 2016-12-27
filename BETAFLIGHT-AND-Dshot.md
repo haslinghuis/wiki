@@ -248,7 +248,9 @@ https://www.rcgroups.com/forums/showpost.php?p=36245544&postcount=1848
 - DYS XSD20A | XSD30A - New product announcement:  
 https://www.rcgroups.com/forums/showthread.php?t=2784634#post36278564  
 - Emax Lightning S 35A - 600 without mods  
-- FVT Littlebee 20A-S (with signal cap removed) - 150, 300, 600 
+- FVT Littlebee 20A-S (with signal cap removed) - 150, 300, 600  
+- FVT LittleBee-Spring 20Ax4 - Claims Dshot but Unknown  
+Thread: https://www.rcgroups.com/forums/showthread.php?2800280-Favourite-FVT-LittleBee-Spring-20Ax4-4-in-1-Blheli_S-ESC-w-built-in-5V-12V-BEC  
 - LittleBee_S 20A  (A-H-15 16.42)- (with signal cap removed) - 150, 300, 600    
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36181966&postcount=40934
 - Littlebee_S 30A (with signal cap removed) - 600   
