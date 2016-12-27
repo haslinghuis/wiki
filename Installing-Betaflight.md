@@ -38,16 +38,20 @@ e.g. C:\Program Files (x86)\STMicroelectronics\Software\Virtual comport driver\W
 
 ## Platform Specific: Linux
 
-Linux requires udev rules to allow write access to USB devices for users. An example shell command to achieve this on Ubuntu is shown here:
+Linux requires udev rules to allow write access to USB devices for users. The command bellow will create a template rule for you.
 
     (echo '# DFU (Internal bootloader for STM32 MCUs)'
-     echo 'ACTION=="add", SUBSYSTEM=="usb", ATTRS{idVendor}=="0483", MODE="0664", GROUP="plugdev"') | sudo tee /etc/udev/rules.d/45-stdfu-permissions.rules > /dev/null
+     echo 'ACTION=="add", SUBSYSTEM=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", MODE="0664", GROUP="plugdev"') | sudo tee /etc/udev/rules.d/45-stdfu-permissions.rules > /dev/null
 
-Reload rules using:
+Now you need to find the real product id of your FC. Type in the command bellow and plug your FC in and out. It should print a line with the product id out.
+
+    udevadm monitor --environment --udev | grep ID_MODEL_ID
+
+Now update the entry in "/etc/udev/rules.d/45-stdfu-permissions.rules" accordingly. You can add more than one rule in the file. The default product id is the FC in bootloader mode. Then reload rules using:
 
     sudo udevadm control --reload-rules && udevadm trigger
 
-You can then test the rule using:
+You can then test the rule using when your FC is plugged in:
 
     udevadm test $(udevadm info -q path -n /dev/ttyACM0)
 
