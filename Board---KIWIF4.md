@@ -1,6 +1,9 @@
 # **Overview**
 
 KIWI is a powerful STM32F4 CPU based flight controller, fast, reliability and full of awesomeness. Using low noise MPU6000 gyro on SPI bus for faster acquisition of gyro data. Board have 3 fully usable UART ports without interference in USB port (VCP) compatible with BLHELI passtrough, 128MBit flash memory, 5V up to 5S step-down and 12V linear BEC. All this things are complemented by OSD customizable directly with Betaflight Configurator.
+Board is available on:
+https://flyinglemon.eu/flight-controllers/39-kiwif4-flight-controller.html
+
 
 # **Board Features**
 * STM32F405 processor, 170MHz
