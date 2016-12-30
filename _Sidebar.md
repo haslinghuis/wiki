@@ -44,6 +44,7 @@
  - [COLIBRI](/betaflight/betaflight/wiki/Board---COLIBRI)
  - [COLIBRI_RACE](/betaflight/betaflight/wiki/Board---COLIBRI_RACE)
  - [DOGE](/betaflight/betaflight/wiki/Board---DOGE)
+ - [Elle0 - Paparazzi docs](http://wiki.paparazziuav.org/wiki/Elle0)
  - [EUSTM32F103RC](/betaflight/betaflight/wiki/Board---EUSTM32F103RC)
  - [F4BY](/betaflight/betaflight/wiki/Board---F4BY)
  - [FURYF3](/betaflight/betaflight/wiki/Board---FURYF3)
