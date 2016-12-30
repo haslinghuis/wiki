@@ -35,6 +35,7 @@
  - [AIR32](/betaflight/betaflight/wiki/Board---AIR32)
  - [ALIENFLIGHTF1](/betaflight/betaflight/wiki/Board---ALIENFLIGHTF1)
  - [ALIENFLIGHTF3](/betaflight/betaflight/wiki/Board---ALIENFLIGHTF3)
+ - [BETAFLIGHTF3](/betaflight/betaflight/wiki/Board---BETAFLIGHTF3)
  - [ALIENFLIGHTF4](/betaflight/betaflight/wiki/Board---ALIENFLIGHTF4)
  - [BLUEJAYF4](/betaflight/betaflight/wiki/Board---BLUEJAYF4)
  - [CC3D](/betaflight/betaflight/wiki/Board---CC3D)
