@@ -57,10 +57,26 @@ Rev2 (Full Size)
 ![BlueJayF4 - rev2](https://cloud.githubusercontent.com/assets/6168871/17614346/01cef75a-60a9-11e6-93f9-16248d6def11.jpg)
 ## FAQ & Known Issues
 
+### Frsky Smartport
+
+Frysky smartport (or s-port) is inverted, and half duplex. You can modify your X4R or XSR by following the procedure here [https://blck.mn/2016/06/smartport-the-frsky-x4rs-and-betaflight/](https://blck.mn/2016/06/smartport-the-frsky-x4rs-and-betaflight/) and here (for a cleaner modification thats easily switchable between inverted and non-inverted) [https://blck.mn/2016/12/smartport-frsky-x4rs-and-betaflight-part-2/](https://blck.mn/2016/12/smartport-frsky-x4rs-and-betaflight-part-2/)
+
+For rev3 users, the addition of a diode on UART1, and the use of the builds in BF3.1 or later allow direct connection of s-port without modifying your RX unit. 
+
+![](https://cloud.githubusercontent.com/assets/6168871/21573182/a800cbbc-cf35-11e6-90a5-ccdb9159eec1.png)
+
+You will need to run the following in the CLI:
+
+```set sport_halfduplex=OFF```
+
+
+### Serial Wire Debug
+
 Serial Wire Debug output is located on the bottom of the board, and provides a pin out compatible with STM32Fx discovery boards to be used as a SWD adapter:
 ![bjf4-swd](https://cloud.githubusercontent.com/assets/6168871/17614348/066cf4d8-60a9-11e6-89f3-c439c5654ba2.jpg)
 
 Known Issues:
+
 The rev2 requires a resistor mod to prevent the issue of crashing on power up. The rev3 does not have this issue.
 
 Following the picture below to perform the Rev2 resistor modification:
