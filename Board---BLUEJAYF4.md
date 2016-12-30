@@ -75,7 +75,7 @@ You will need to run the following in the CLI:
 Serial Wire Debug output is located on the bottom of the board, and provides a pin out compatible with STM32Fx discovery boards to be used as a SWD adapter:
 ![bjf4-swd](https://cloud.githubusercontent.com/assets/6168871/17614348/066cf4d8-60a9-11e6-89f3-c439c5654ba2.jpg)
 
-#Known Issues:
+# Known Issues:
 
 The rev2 requires a resistor mod to prevent the issue of crashing on power up. The rev3 does not have this issue.
 
