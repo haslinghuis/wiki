@@ -60,3 +60,6 @@ For more information see these resources:
 
 ###Tuning the DJI Snail system  (also a good video on general Tuning)
 https://www.youtube.com/watch?v=8L2v10RS6io
+
+Thread on the DJI Snail system with lots of Tuning discussion.   
+https://www.rcgroups.com/forums/showthread.php?2749559-DJI-Snail-mini-quad-propulsion-system-22-50-ESC-AND-MOTOR  
