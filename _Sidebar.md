@@ -47,6 +47,7 @@
  - [Elle0 - Paparazzi docs](http://wiki.paparazziuav.org/wiki/Elle0)
  - [EUSTM32F103RC](/betaflight/betaflight/wiki/Board---EUSTM32F103RC)
  - [F4BY](/betaflight/betaflight/wiki/Board---F4BY)
+ - [FishDroneF4] (/betaflight/betaflight/wiki/Board---FishDroneF4)
  - [FURYF3](/betaflight/betaflight/wiki/Board---FURYF3)
  - [FURYF4](/betaflight/betaflight/wiki/Board---FURYF4)
  - [FURYF7](/betaflight/betaflight/wiki/Board---FURYF7)
@@ -79,7 +80,6 @@
  - [X_RACERSPI](/betaflight/betaflight/wiki/Board---X_RACERSPI)
  - [YuPiF4](/betaflight/betaflight/wiki/Board---YUPIF4)
  - [ZCOREF3](/betaflight/betaflight/wiki/Board---ZCOREF3)
- - [FishDroneF4] (/betaflight/betaflight/wiki/Board---FishDroneF4)
 
 ### Page Templates
  - [New Board](/betaflight/betaflight/wiki/Board---Template)
