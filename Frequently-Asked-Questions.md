@@ -54,7 +54,7 @@
 1. [How to setup blackbox record rate with onboard dataflash ?](#how-to-setup-blackbox-record-rate-with-onboard-dataflash-)  
 1. [How to setup the rates and SuperExpo ?](#how-to-setup-the-rates-and-superexpo-)  
 1. [What is the story on the different Rates and Expos ?](#what-is-the-story-on-the-different-rates-and-expos-)  
-1. [I get Yaw twitches or mid throttle oscillations. How do I solve this ?](#i-get-yaw-twitches-or-mid-throttle oscillations.-how-do-I-solve-this-)  
+1. [I get Yaw twitches or mid throttle oscillations How do I solve this ?](#i-get-yaw-twitches-or-mid-throttle oscillations-how-do-I-solve-this-)  
 1. [Is there a way to download blackbox logs through a terminal client ?](#is-there-a-way-to-download-blackbox-logs-through-a-terminal-client-)  
 1. [Why do LED strips not work?](#why-do-LED-strips-not-work-)
 1. [Recently with the temps dropping, my quad has started to develop a random twitch. Anyone else experience random issues when it's 20'ish degree's F outside ?](#recently-with-the-temps-dropping,-my-quad-has-started-to-develop-a-random-twitch.-Anyone-else-experience-random-issues-when-it's-20'ish-degree's-F-outside-)
@@ -1169,7 +1169,7 @@ S.Rates changes the line by leaving the center-stick alone, and makes the end-po
 
 You can achieve more or less the same curve with both expo and s.rates, it just depends whether you would prefer to think about tuning the center-stick first, and then pushing out the full-deflection rates from there, or whether you would prefer to think about tuning the full-deflection rates, and then softening the center-stick from there. 
 
-##I get Yaw twitches or mid throttle oscillations. How do I solve this ?
+##I get Yaw twitches or mid throttle oscillations How do I solve this ?
 Many people have yaw twitches or oscillations at mid-throttle and many do not. All that have this issue seem to be running FCs that use the MPU6500 gyro chip (Naze32 rev6, LUX, others) and newer motors. Boris B was one that did not have this issue with the 6500 gyro until he upgraded to newer, stronger motors. Many have cured this by soft mounting the FC board but this has not worked in all cases.
 
 Link to a thread with data on the MPU9250 gyro:
