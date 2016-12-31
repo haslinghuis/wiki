@@ -28,7 +28,7 @@ Two variants (in multiple revisions). The full size, 36x36mm (30.5x30.5 mounting
 ### Features
   - Current Sensor: Not implemented
   - BlHeli passthrough: Yes 
-  - WS2811 Led Strip: Yes (on motor output Pin 6)
+  - WS2811 Led Strip: Yes (on motor output Pin 5)
   - Transponder: No
 
 ## Manufacturers and Distributors
