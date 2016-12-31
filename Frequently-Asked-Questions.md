@@ -1487,7 +1487,7 @@ The problem: https://www.rcgroups.com/forums/showpost.php?p=36310032&postcount=2
 Fixed: https://www.rcgroups.com/forums/showpost.php?p=36326501&postcount=253   
 Broken: https://www.rcgroups.com/forums/showpost.php?p=36330372&postcount=255  
 
-##Is there a way to download blackbox logs through a terminal client? 
+##Is there a way to download blackbox logs through a terminal client ? 
 Thanks to dropax for asking this and working out the answer.  
 
 Some code digging reveals a CLI command "flash_read" which is only enabled for sparky2:
