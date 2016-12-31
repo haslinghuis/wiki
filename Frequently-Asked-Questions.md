@@ -56,7 +56,7 @@
 1. [What is the story on the different Rates and Expos ?](#what-is-the-story-on-the-different-rates-and-expos-)  
 1. [How do I solve Yaw twitches or mid throttle oscillations ?](#how-do-i-solve-yaw-twitches-or-mid-throttle-oscillations-)  
 1. [Is there a way to download blackbox logs through a terminal client ?](#is-there-a-way-to-download-blackbox-logs-through-a-terminal-client-)  
-1. [Why do LED strips not work ?](#why-do-LED-strips-not-work-)
+1. [Why do LED strips not work ?](#why-do-led-strips-not-work-)
 1. [Recently with the temps dropping, my quad has started to develop a random twitch. Anyone else experience random issues when it's 20'ish degree's F outside ?](#recently-with-the-temps-dropping,-my-quad-has-started-to-develop-a-random-twitch.-Anyone-else-experience-random-issues-when-it's-20'ish-degree's-F-outside-)
 
 **If your question is not listed above then please check the following pages:**
