@@ -56,7 +56,7 @@
 1. [What is the story on the different Rates and Expos ?](#what-is-the-story-on-the-different-rates-and-expos-)  
 1. [How do I solve Yaw twitches or mid throttle oscillations ?](#how-do-i-solve-yaw-twitches-or-mid-throttle-oscillations-)  
 1. [Is there a way to download blackbox logs through a terminal client ?](#is-there-a-way-to-download-blackbox-logs-through-a-terminal-client-)  
-1. [Why do LED strips not work?](#why-do-LED-strips-not-work-)
+1. [Why do LED strips not work ?](#why-do-LED-strips-not-work-)
 1. [Recently with the temps dropping, my quad has started to develop a random twitch. Anyone else experience random issues when it's 20'ish degree's F outside ?](#recently-with-the-temps-dropping,-my-quad-has-started-to-develop-a-random-twitch.-Anyone-else-experience-random-issues-when-it's-20'ish-degree's-F-outside-)
 
 **If your question is not listed above then please check the following pages:**
@@ -1502,14 +1502,14 @@ I think [this](https://github.com/cleanflight/cleanflight/commit/3eb28f16eaa5d4f
 
 Since it's only enabled for the "brand new" sparky2 target (08/06/2016) I think it is only meant for debugging purpose. After the download the serial port seems to hang up and I have to reboot the FC but the time savings are totally worth the hassle.  
 
-##Why do LED strips not work?
+##Why do LED strips not work ?
 One possible reason:
 Many LED strips do NOT work when power at over 5V since the FC's serial output is only 3.3V logic and the LED chips never see a valid logic high. Lowering the LED Voltage by at least a diode drop makes them work.
 Two working solutions are: 
 Add a silicon diode, 1N4002, in series with the 5V to the LED strip.
 Power the LED strip from a regulator adjusted to about 4.7V. May need to adjust a little lower if still not working.
 
-##Recently with the temps dropping, my quad has started to develop a random twitch. Anyone else experience random issues when it's 20'ish degree's F outside?
+##Recently with the temps dropping, my quad has started to develop a random twitch. Anyone else experience random issues when it's 20'ish degree's F outside ?
 
 Excellent answer by AILERON8:
 Not twitches, but glitches in general, you bet! I used to run a mobile DJ business for 15 years, and I've performed hundreds of gigs in cold climates living and working primarily in coastal Maine. Today it's a balmy 5 deg F for example, but from all those years of experience I can tell you there are three major things that happen to electronics and hardware due to the cold, and they're not good I'm afraid to say.
