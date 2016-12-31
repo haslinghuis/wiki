@@ -1059,7 +1059,7 @@ You need to test on the ground without props and check cpu usage, so just arm, a
 Keep a safe value and leave some room for cpu usage.
 1/4 should be a correct value for sp3 board at 4khz/4khz/4khz.
 
-##How to setup the rates and SuperExpo in bF 2.8.1 ?
+##How to setup the rates and SuperExpo ?
 - First see the Rate calculator in the 2.8.1 Release notes and Watch Joshia's video on ßF 2.8
 
 Originally Posted by Boris B View Post  
