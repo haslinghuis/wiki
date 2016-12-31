@@ -58,7 +58,7 @@ Rev2 (Full Size)
 
 ## Configuration Information
 
-### Wiring Diagram (rev3 full size)
+### Wiring Diagrams
 ![Wiring Diagram](https://cloud.githubusercontent.com/assets/6168871/21576626/122c8a4e-cf8b-11e6-9ec3-800f3bd1deda.jpg)
 
 ### Frsky Smartport
