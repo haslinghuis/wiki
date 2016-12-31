@@ -53,7 +53,7 @@
 1. [What is the difference in PIDC Iterm in bF versions ?](#what-is-the-difference-in-pidc-Iterm-in-bF-versions-)  
 1. [How to setup blackbox record rate with onboard dataflash ?](#how-to-setup-blackbox-record-rate-with-onboard-dataflash-)  
 1. [How to setup the rates and SuperExpo ?](#how-to-setup-the-rates-and-superexpo-)  
-1. [What is the story on the different Rates and Expos ?](#what-is-the-story-on-the-different-Rates-and-Expos-)  
+1. [What is the story on the different Rates and Expos ?](#what-is-the-story-on-the-different-rates-and-expos-)  
 1. [I get Yaw twitches or mid-throttle oscillations. How do I solve this ?](#i-get-yaw-twitches-or-mid-throttle oscillations-how-do-I-solve-this-)  
 1. [Is there a way to download blackbox logs through a terminal client ?](#is-there-a-way-to-download-blackbox-logs-through-a-terminal-client-)  
 1. [Why do LED strips not work?](#why-do-LED-strips-not-work-)
