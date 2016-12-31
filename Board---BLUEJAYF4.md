@@ -56,7 +56,10 @@ Rev3 (Full Size)
 Rev2 (Full Size)
 ![BlueJayF4 - rev2](https://cloud.githubusercontent.com/assets/6168871/21573437/6458d622-cf38-11e6-9195-baab4166d8d4.jpg)
 
-## FAQ & Known Issues
+## Configuration Information
+
+### Wiring Diagram (rev3 full size)
+![Wiring Diagram](https://cloud.githubusercontent.com/assets/6168871/21576626/122c8a4e-cf8b-11e6-9ec3-800f3bd1deda.jpg)
 
 ### Frsky Smartport
 
