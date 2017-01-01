@@ -92,3 +92,9 @@ MID_RC_PULS = = (STOP_RC_PULS + FULL_RC_PULS) / 2
 **max_throttle:** This is the maximum value the flight controller will output to the ESC. ESC calibration should be performed after changing max_throttle.
 
 **min_command:** This is the minimum value the flight controller will output to the ESC. ESC calibration should be performed after changing min_command.
+
+Dshot Section:
+
+Currently Dshot is working with 3D and according to Boris B still requires some serious flight testing as of 01-01-2017. Updates will be here as we get a greater understanding of 3D with Dshot.
+
+It is definitely different, I'm not sure if the calibration process is still required e.t.c. but for now I'm setting up as before and then doing Dshot specific tasks on top of the original setup.
