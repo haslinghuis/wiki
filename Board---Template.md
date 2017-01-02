@@ -1,4 +1,4 @@
-
+_(This is a Basic Template to provide an outline for board info. Copy/paste this into a new board page and fill in, add or delete as needed)_
 
 # NAME
 
@@ -48,12 +48,8 @@ _(add links board descriptions here that are similar in features or function, bu
 
 ## Variants
 
-
-
 Differences:
-  - Added Current Sensor
-  - Added Power Filter
-  - SBEC instead of LDO
+
 
 ## FAQ & Known Issues
 _(add FAQs, known issues and workarounds specifically related to this board. please link work in progress issues to the related github issue or pull request)_
