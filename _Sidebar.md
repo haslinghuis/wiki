@@ -67,6 +67,7 @@
  - [REVO - LibrePilot docs](https://librepilot.atlassian.net/wiki/display/LPDOC/OpenPilot+Revolution)
  - [REVONANO](/betaflight/betaflight/wiki/Board---REVONANO)
  - [RMDO](/betaflight/betaflight/wiki/Board---RMDO)
+ - [Rotorgeeks SSD](https://github.com/betaflight/betaflight/wiki/Board---Rotorgeeks-SSD)
  - [SINGULARITY](/betaflight/betaflight/wiki/Board---SINGULARITY)
  - [SIRINFPV](/betaflight/betaflight/wiki/Board---SIRINFPV)
  - [SPARKY](/betaflight/betaflight/wiki/Board---SPARKY)
