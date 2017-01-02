@@ -45,7 +45,7 @@ _(add FAQs, known issues and workarounds specifically related to this board. ple
 ## Other Resources
 
 Pinouts, schematics and RX wiring: 
-RCGroups Thread: http://www.rcgroups.com/forums/showthread.php?t=xxxxxxx
+RCGroups Thread: http://www.rcgroups.com/forums/showthread.php?t=2805794
 
 ## Image
 
