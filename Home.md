@@ -57,7 +57,7 @@ Releases can be found here: https://github.com/borisbstyle/betaflight/releases o
 To configure Betaflight you should use the Betaflight-configurator GUI tool (Windows/OSX/Linux) that can be found here:  
 https://chrome.google.com/webstore/detail/betaflight-configurator/kdaghagfopacdngbohiknlhcocjccjao
 
-The source for it is here:  
+The latest configurator and source for it is here:  
 https://github.com/betaflight/betaflight-configurator  
 
 ##More Information
