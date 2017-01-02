@@ -1,3 +1,5 @@
+###MotoLab has four FCs that all use the same Target HEX
+
 - MotoF3- Board shape designed for the ImpulseRC Warp Quads as part of the frame.   
 - Tornado- Does not allow BLHeli Pass-through due to have 5V uni-directional drivers on the motor output pins.  
   Requires a Pololu 5V regulator mounted on the board.
