@@ -61,10 +61,10 @@ The latest configurator and source for it is here:
 https://github.com/betaflight/betaflight-configurator  
 
 Instructions (from the README.MD file in the download):    
-1. Clone the repo to any local directory or download it as zip
-2. Start Chromium or Google Chrome and go to tools -> extension
-3. Check the "Developer mode" checkbox
-4. Click on load unpacked extension and point it to the Betaflight Configurator directory (for example D:/betaflight-configurator)  
+1. Clone the repo to any local directory or download it as zip  
+2. Start Chromium or Google Chrome and go to tools -> extension  
+3. Check the "Developer mode" checkbox  
+4. Click on load unpacked extension and point it to the Betaflight Configurator directory (for example D:/betaflight-configurator)    
 Then you'll see the new configurator in your Chrome extensions.  
 
 ##More Information
