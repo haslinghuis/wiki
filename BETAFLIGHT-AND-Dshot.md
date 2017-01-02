@@ -17,8 +17,9 @@ Just remember that this is very Experimental code and may have serious limitatio
 Read here to Learn exactly what firmware issues and features are being worked on:  
 https://github.com/betaflight/betaflight/issues?q=is%3Aissue+is%3Aclosed+sort%3Aupdated-desc  
 
-Some known limitations are (
-Note: these may or may not affect all working targets):
+The Latest Development version of the Configurator is recommended. Link on [Home page](https://github.com/betaflight/betaflight/wiki).  
+
+Some known limitations are (Note: these may or may not affect all working targets):  
 - BLHeli pass-through does not work if FC is set to DSHOT. Must change output to OneShot to use the pass-through.    
 Note: Should be fixed on most Targets but not all targets yet.   
 - New pass-through for KISS ESCs: [ESC Pass-through](https://github.com/betaflight/betaflight/wiki/Betaflight-ESC-pass-through)  
