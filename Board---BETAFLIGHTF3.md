@@ -17,6 +17,7 @@ _(Fill in hardware specs and add any not listed)_
   - Blackbox: SD Card
   - PPM/UART Shared: 
   - Battery Voltage Sensor: 
+  - Current sensor: 0.5 mOhm
   - Integrated Voltage Regulator: 
   - Brushed Motor Mosfets: 
   - Buttons: 
