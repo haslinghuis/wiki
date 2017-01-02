@@ -31,10 +31,8 @@ _(add links to Manufacturers and Distributors)_
 
 ## Designers
 
-
 ## Maintainers
 _(add your name here if you help test or contribute code for this board)_
-
 
 ## Similar Targets
 
@@ -42,13 +40,6 @@ _(add links board descriptions here that are similar in features or function, bu
 
 
 ## Variants
-
-
-
-Differences:
-  - Added Current Sensor
-  - Added Power Filter
-  - SBEC instead of LDO
 
 ## FAQ & Known Issues
 _(add FAQs, known issues and workarounds specifically related to this board. please link work in progress issues to the related github issue or pull request)_
