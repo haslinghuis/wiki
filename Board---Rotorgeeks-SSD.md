@@ -51,3 +51,5 @@ RCGroups Thread: http://www.rcgroups.com/forums/showthread.php?t=2805794
 
 ![](http://rotorgeeks.com/image/cache/data/electronics/FC/RG-SSD-top.800-800x600.jpg)
 ![](http://rotorgeeks.com/image/cache/data/electronics/FC/RG-SSD-bottom.800-800x600.jpg)
+![](http://rotorgeeks.com/image/cache/data/electronics/FC/RG-SSD-top.labels.800-800x600.jpg)
+![](http://rotorgeeks.com/image/cache/data/electronics/FC/RG-SSD-bottom.labels.800-800x600.jpg)
