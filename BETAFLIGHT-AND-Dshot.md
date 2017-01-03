@@ -85,6 +85,7 @@ Now found that some BLHeli_S ESC will run on DSHOT600 with modifications. See li
 BLHeli Rev16.5 posted on github (27Nov2016). Dshot150, Dshot300 and Dshot600 are now supported officially.  
 
 ###Flight Controllers Tested to Support Dshot on Betaflight 3.1 Alphas:
+- AIORACERF3
 - Airbot F3 (SPRACINGF3)  
 - BETAFLIGHTF3  
 - BLUEJAYF4
@@ -200,6 +201,16 @@ To use BLHeli type in CLI:
 `save  `   
 Limitation: no LED functionality with DShot is allowed.  
 Video on getting this FC working: https://www.rcgroups.com/forums/showpost.php?p=36269451&postcount=1966    
+
+- AIORACERF3 -  Must move MOTOR 2 to new pin assignment since it has a DMA conflict with MOTOR 1:    
+Connect ESC for motor 2 to 'LED' pin on the board.  
+ Then re-map motor 2 output: type in CLI:    
+ `resource motor 2 A08`  
+ `save`  
+ The new mapping for motor 2 conflicts wit `LED_STRIP` and `TRANSPONDER`, so make sure these two features are disabled in the configurator.   
+To use BLHeli type in CLI:    
+`resource motor 4 A07`   
+`save`  
 
 ####FC Targets with DSHOT code added but in need of testing:
 - SPARKY2
