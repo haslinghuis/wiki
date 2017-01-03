@@ -5,6 +5,9 @@ The Official Thread for Dshot is: https://www.rcgroups.com/forums/showthread.php
 Please Read this thread for details of how it works and up to date info. The First Post of this thread has all the needed Links to code and other info. A good article on Dshot and ESC protocols is here:   
 https://blck.mn/2016/11/dshot-the-new-kid-on-the-block/  
 
+ESC Protocol videos by Joshua Barwell:  
+https://www.rcgroups.com/forums/showpost.php?p=36552970&postcount=2765  
+
 In the Dshot thread is this post on how to re-Flash ESCs & FC:   
 https://www.rcgroups.com/forums/showpost.php?p=36200950&postcount=1468   
 
