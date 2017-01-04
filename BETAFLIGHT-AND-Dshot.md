@@ -14,15 +14,15 @@ https://www.rcgroups.com/forums/showpost.php?p=36200950&postcount=1468
 For KISS FC's and ESCs see the KISS Dshot thread:  
 https://www.rcgroups.com/forums/showthread.php?t=2780055
 
-BetaFlight V3.1 development code for Dshot can be found here:   
-http://andwho.sytes.net:8080/job/BorisB_BetaFlight/   
-Just remember that this is very Experimental code and may have serious limitations.  
+BetaFlight V3.1 RC1 released: 
+https://github.com/betaflight/betaflight/wiki/BetaFlight-3.x
+Just remember that this is still Experimental code and may have serious limitations.  
 Read here to Learn exactly what firmware issues and features are being worked on:  
 https://github.com/betaflight/betaflight/issues?q=is%3Aissue+is%3Aclosed+sort%3Aupdated-desc  
 
 The Latest Development version of the Configurator is recommended. Link on [Home page](https://github.com/betaflight/betaflight/wiki).  
 
-Some known limitations are (Note: these may or may not affect all working targets):  
+Some known limitations are (Note: All should be fixed in the 3.1 RC1 release but leaving this list until full testing has been done by users):  
 - BLHeli pass-through does not work if FC is set to DSHOT. Must change output to OneShot to use the pass-through.    
 Note: Should be fixed on most Targets but not all targets yet.   
 - New pass-through for KISS ESCs: [ESC Pass-through](https://github.com/betaflight/betaflight/wiki/Betaflight-ESC-pass-through)  
