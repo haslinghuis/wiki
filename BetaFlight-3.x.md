@@ -23,8 +23,9 @@ Release notes highlights:
 - New "anti_gravity_threshold" parameter to improve stability in fast changing G forces during flight. This applies to quick throttle jumps where multirotor can go through weightless transitions. In these cases the iterm can cause unwanted effects like pitching up or yawing due to strong changes in accumulation polarities.
 - Protection against too fast motor speeds (When ONESHOT125 selected for example, max allowed pid and motor speed will be 2khz) and many more.. 
 
-NOTE: It is recommended to use configurator 1.8.5 or higher for this release
-
+NOTE- It is recommended to use:  
+- Configurator 1.8.5 or higher for this release
+- BlackBox Viewer 2.5.8
 
 ##BetaFlight 3.0  
 This is really a major release. The full detailed change list can be found in the the commit history.
