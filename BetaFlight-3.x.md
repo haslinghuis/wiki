@@ -1,10 +1,13 @@
 ##BetaFlight 3.1  
 Is coming but still in Alpha testing with a lot of features currently broken or changed.  Do NOT flash this unless you are fully willing to test and work around non-functioning features.  
 
-Some new features that are documented:  
+Some new features that are documented (or will be written up soon in the wiki):  
 - [Resource Command](https://github.com/betaflight/betaflight/wiki/Betaflight-resource-remapping) for re-mapping pins.  
 - The Dshot ESC protocol is added. See [DSHOT & BetaFlight](https://github.com/betaflight/betaflight/wiki/BetaFlight%20and%20Dshot) for details and links including limitations and which ESCs and FC targets may work.  
-- allows to flash kiss escs with a passthrough and kiss flash loader app but not yet active on all targets.  
+- allows to flash KISS escs with a pass-through and kiss flash loader app but not yet active on all targets.  
+- TBS SmartAudio is supported on all F3 and F4 targets (except for those with integrated VTX).  
+- KISS24a ESC telemetry  
+- Generic CMS (Configuration Menu System) that runs on top of multiple display devices.
 
 ##BetaFlight 3.0  
 This is really a major release. The full detailed change list can be found in the the commit history.
