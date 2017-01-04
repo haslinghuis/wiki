@@ -36,9 +36,9 @@ I believe KISS escs now have that implementation. I am not sure of the latest bl
 - PPM not working on some FC targets (limited testing due to most users using Sbus or Spektrum)   
    Note: Some targets need motor re-mapped to PPM pin so then PPM can not be used.
 - LEDs not working or must be disabled to have all motors working due the DMA mapping conflicts.  
-- The 'target.c' source files show that only Quad copters are supported in most targets and some targets support Hex copters.
+- The 'target.c' source files show that only Quad copters are supported in most targets and some targets support Hex copters. ?? Anyone trying a Hex?
 - Some targets do not work if a Custom mixer is enabled. Instead use the new "resource" CLI command instead. Just be aware that not all outputs (pins) can be assigned a DMA channel for Dshot.  
-- When BB logging works it appears that the actual Dshot ESC values are sent to the BB logger. The BB log Viewer then can not show motor values below 1000. Also some other values like Gyros are not properly displayed in the viewer. A new BB log Viewer should be ready when 3.1 is released.  
+- Use BlackBox Viewer 2.5.8 
 
 ####A quick way to determine IF the hex flashed supports Dshot:  
 Go to the CLI and type "get pwm". All settings with 'pwm' in the name will be shown with all options.
