@@ -51,7 +51,7 @@ Note: Due to many New FC boards coming out this list will never be complete. See
 On blheli esc PWM has to be set to OFF.
 
 ##Firmware Releases
-Releases can be found here: https://github.com/borisbstyle/betaflight/releases or download the latest successful build directly from source (these are bleeding edge and may be unstable): http://andwho.sytes.net:8080/job/BorisB_BetaFlight/lastSuccessfulBuild/artifact/obj/
+Releases can be found here: https://github.com/betaflight/betaflight/releases or download the latest successful build directly from source (these are bleeding edge and may be unstable): http://andwho.sytes.net:8080/job/BorisB_BetaFlight/lastSuccessfulBuild/artifact/obj/
 
 ##Configuration Tool
 To configure Betaflight you should use the Betaflight-configurator GUI tool (Windows/OSX/Linux) that can be found here:  
