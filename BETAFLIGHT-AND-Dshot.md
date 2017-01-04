@@ -45,7 +45,7 @@ Go to the CLI and type "get pwm". All settings with 'pwm' in the name will be sh
 If DSHOT150, DSHOT300, DSHOT600 is NOT in the list for the "motor_pwm_protocol" then this firmware does NOT support Dshot.
 Example from built 668 for MotoLab that does Not support Dshot: 
 
-motor_pwm_protocol = ONESHOT42
+motor_pwm_protocol = ONESHOT42  
 Allowed values: OFF, ONESHOT125, ONESHOT42, MULTISHOT, BRUSHED
 
 ####Setting Min Throttle with Dshot   
