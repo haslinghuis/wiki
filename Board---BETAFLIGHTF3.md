@@ -8,7 +8,7 @@
 ### Hardware
 _(Fill in hardware specs and add any not listed)_
   - MCU: STM32F3
-  - IMU: 
+  - IMU: MPU-6000
   - IMU Interrupt: 
   - BARO: 
   - VCP: 
