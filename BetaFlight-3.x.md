@@ -14,7 +14,7 @@ Release notes highlights:
 - Support for KISS esc telemetry (only with DSHOT)
 - Many code optimizations (higher looptimes possible)
 - Added serial esc passthrough for KISS24 and CASTLE esc's
-- New target support( now 65 targets)
+- New target support (now 65 targets)
 - Added CMS display support
 - Added CSRF support for TBS receivers and associated telemetry
 - Added additional OSD parameters like pids and power
