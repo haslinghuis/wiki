@@ -1,22 +1,20 @@
 ##Betaflight 3.1.0-RC1  
 
-@borisbstyle borisbstyle released this 3 hours ago  
-
 Betaflight 3.1.0 (Release Candidate 1)  
 
-Betaflight firmware has undergone some major changes under the hood. Hardware drivers have been optimised to improve future maintainibility, but also easier target and hardware support. The efficiency of the code has also been improved by a lot as Betaflight team reviewed each line of the code to squeeze every possible performance win out of it for flight performance purposes. The difference between the current release and previous one is over1600 code commits by various developers. Only release notes highlights are represented. For full change history github commit history can be reviewed.  
+Betaflight firmware has undergone some major changes under the hood. Hardware drivers have been optimized to improve future maintainability, but also easier target and hardware support. The efficiency of the code has also been improved by a lot as Betaflight team reviewed each line of the code to squeeze every possible performance win out of it for flight performance purposes. The difference between the current release and previous one is over 1600 code commits by various developers. Only release notes highlights are represented. For full change history github commit history can be reviewed.  
 
 Release notes highlights:
 
 - Added F7 support (ANYFCF7 as the first supported target...)
 - Dynamic IO / pin allocation
 - DSHOT support for F3 and F4 (read wiki about board supported hardware)
-- Full Floating Point Logic for flight behaviour
+- Full Floating Point Logic for flight behavior
 - Many new dynamic configurations (filters, setpoint weights etc.)
 - Support for KISS esc telemetry (only with DSHOT)
-- Many code optimalisations (higher looptimes possible)
+- Many code optimizations (higher looptimes possible)
 - Added serial esc passthrough for KISS24 and CASTLE esc's
-- New target support
+- New target support( now 65 targets)
 - Added CMS display support
 - Added CSRF support for TBS receivers and associated telemetry
 - Added additional OSD parameters like pids and power
