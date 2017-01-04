@@ -67,6 +67,10 @@ Instructions (from the README.MD file in the download):
 4. Click on load unpacked extension and point it to the Betaflight Configurator directory (for example D:/betaflight-configurator)    
 Then you'll see the new configurator in your Chrome extensions.  
 
+##BlackBox Viewer
+The Latest Viewer and source is here:   
+https://github.com/betaflight/blackbox-log-viewer  
+
 ##More Information
 
 Official CleanFlight documentation: http://github.com/cleanflight/cleanflight/wiki
