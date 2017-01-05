@@ -35,7 +35,7 @@ From betaflight v3.1 there is a new command to map resources. No more custom mot
 
 ####set digital_idle_percent = ?
 <i>[0..??]<i>  
-See [DSHOT min throttle](/betaflight/betaflight/wiki/BetaFlight and Dshot)
+See [Setting Min Throttle with Dshot](/betaflight/betaflight/wiki/BetaFlight and Dshot)
 
 ####set anti_gravity_threshold = ?  
 <i>[0..??]<i>  
