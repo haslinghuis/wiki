@@ -27,6 +27,15 @@ NOTE- It is recommended to use:
 - Configurator 1.8.5 or higher for this release
 - BlackBox Viewer 2.5.8
 
+###New CLI commands for 3.1:
+
+####Resource Remapping
+From betaflight v3.1 there is a new command to map resources. No more custom motor mixes just to move a motor pin.  
+[/betaflight/betaflight/wiki/Betaflight-resource-remapping Resource Mapping] goes into further details on how to use this new command.  
+
+####set anti_gravity_threshold = ?  
+<i>[0..??]<i> 
+
 ##BetaFlight 3.0  
 This is really a major release. The full detailed change list can be found in the the commit history.
 https://github.com/betaflight/betaflight/commits/master.  
