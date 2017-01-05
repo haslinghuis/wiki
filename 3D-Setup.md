@@ -93,8 +93,11 @@ MID_RC_PULS = = (STOP_RC_PULS + FULL_RC_PULS) / 2
 
 **min_command:** This is the minimum value the flight controller will output to the ESC. ESC calibration should be performed after changing min_command.
 
-Dshot Section:
+### ## Dshot Section:
 
 Currently Dshot is working with 3D and according to Boris B still requires some serious flight testing as of 01-01-2017. Updates will be here as we get a greater understanding of 3D with Dshot.
 
-It is definitely different, I'm not sure if the calibration process is still required e.t.c. but for now I'm setting up as before and then doing Dshot specific tasks on top of the original setup.
+Dshot is definitely different with regards to behavior in the configurator, I'm not sure if the calibration process is still required e.t.c. but for now I'm setting up as before and then doing Dshot specific tasks on top of the original setup.
+Be aware that when using Dshot and having 3D mode activated in the configurator if you go to the motor tab and then un-check the "I understand the risks..." box the configurator will tell the FC to send 1500us to the ESCs which will spin the motors forward whilst running the Dshot protocol. **As always, props off on the bench!**
+
+Some flight testing with Kiss 24A ESCs using Build #861 on a CC3D Revo F4 has been completed and no issues regarding flight performance were found as of 05-01-2017.
