@@ -8,7 +8,7 @@ Release notes highlights:
 
 - Added F7 support (ANYFCF7 as the first supported target...)
 - Dynamic IO / pin allocation
-- [DSHOT Support](/betaflight/betaflight/wiki/BetaFlight and Dshot) for F3 and F4 (read wiki about board supported hardware)
+- [DSHOT Support](/betaflight/betaflight/wiki/DSHOT ESC Protocol) for F3 and F4 (read wiki about board supported hardware)
 - Full Floating Point Logic for flight behavior
 - Many new dynamic configurations (filters, setpoint weights etc.)
 - Support for KISS esc telemetry (only with DSHOT)
@@ -35,7 +35,7 @@ From betaflight v3.1 there is a new command to map resources. No more custom mot
 
 ####set digital_idle_percent = ?
 <i>[0..??]<i>  
-See [Setting Min Throttle with Dshot](/betaflight/betaflight/wiki/BetaFlight and Dshot)
+See [Setting Min Throttle with Dshot](/betaflight/betaflight/wiki/DSHOT ESC Protocol)
 
 ####set anti_gravity_threshold = ?  
 <i>[0..??]<i>  
