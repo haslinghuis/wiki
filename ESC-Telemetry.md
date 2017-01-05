@@ -17,17 +17,19 @@ This page is intended to be a quick guide on how to set up ESC telemetry and wil
 
 **Open the Betaflight configurator (V 1.8.5 or later) and go to the Ports tab.**
 
-Find the UART that the ESC telemetry is connected to and in the column marked "Sensor Input", select ESC in the left box and leave AUTO in the right box. _115200 may be required in the right box under some circumstances but not usually._ Don't forget to hit the "save and reboot" button.
+Find the UART that the ESC telemetry is connected to and in the column marked "Sensor Input", select ESC in the left box and leave AUTO in the right box. Don't forget to hit the "save and reboot" button.
 
 **Still in Betaflight configurator, switch to the Configuration tab.**
 
 _**Make sure you are using the Dshot protocol for ESC communication!**_
 
+Under "Other Features", make sure that "ESC_SENSOR" is enabled.
+
 On the Battery Voltage section enable "VBAT" and select ESC Sensor from the drop down menu below. Configure the cell voltages as required. (Defaults should be fine)
 
 On the Current Sensor section enable "CURRENT_METER" and select ESC Sensor from the drop down menu below. Configure the scale and offset as required. (Defaults should be fine)
 
-_If connected to the configurator, current will only be reported if telemetry is sent within a few seconds of startup, this may be fixed at a later date but for now, to test, set it all up then plug in the flight controller as well as the battery, open the configurator to the configuration tab and arm via the tx within a few seconds of powering on the flight controller. PROPS OFF ON THE BENCH!_
+_To test, set it all up then plug in the flight controller as well as the battery, open the configurator to the configuration tab and arm via the tx within a few seconds of powering on the flight controller. PROPS OFF ON THE BENCH!_
 
 **Confirm that telemetry is being received by the transmitter.**
 
