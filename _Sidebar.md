@@ -1,6 +1,6 @@
 # [Home](/betaflight/betaflight/wiki)
 
-# Gettings Started
+# Getting Started
 
  - [Installation](/betaflight/betaflight/wiki/Installing-Betaflight)
  - [FAQ](/betaflight/betaflight/wiki/Frequently-Asked-Questions)
@@ -23,6 +23,7 @@
  - [CLI Commands](/betaflight/betaflight/wiki/Betaflight-specific-CLI-commands)
  - [ESC Programming Pass-through](/betaflight/betaflight/wiki/Betaflight-ESC-pass-through)
  - [Unify SmartAudio](/betaflight/betaflight/wiki/Unify-Smartaudio)
+ - [ESC-Telemetry](/betaflight/betaflight/wiki/ESC-Telemetry)
 
 # Development
 
