@@ -4,7 +4,8 @@
 
  - [Installation](/betaflight/betaflight/wiki/Installing-Betaflight)
  - [FAQ](/betaflight/betaflight/wiki/Frequently-Asked-Questions)
- - [3D Setup](/betaflight/betaflight/wiki/3D-Setup)
+ - [PID Tuning Guide](/betaflight/betaflight/wiki/PID-Tuning-Guide)
+ - [Flying Tips](/betaflight/betaflight/wiki/Flying-Tips)
 
 # Upgrading
 
@@ -12,13 +13,12 @@
  - [Betaflight 3.0.x](/betaflight/betaflight/wiki/BetaFlight-3.0.x)
  - [New release! What do I need to know?](/betaflight/betaflight/wiki/New-release!-What-do-I-need-to-know%3F)
 
-# Setup, Tuning and More
+# Setup and More
 
  - [V2.x CLI Commands](/betaflight/betaflight/wiki/Betaflight-specific-CLI-commands)
- - [PID Tuning Guide](/betaflight/betaflight/wiki/PID-Tuning-Guide)
+ - [3D Setup](/betaflight/betaflight/wiki/3D-Setup)
  - [Rate-Calculator](/betaflight/betaflight/wiki/Rate-Calculator)
  - [Gyro and Filters](/betaflight/betaflight/wiki/Gyro-&-Dterm-filtering-recommendations)
- - [Flying Tips](/betaflight/betaflight/wiki/Flying-Tips)
  - [Deep Dive](/betaflight/betaflight/wiki/BetaFlight-Deep-Dive)
  - [Resource Remapping](/betaflight/betaflight/wiki/Betaflight-resource-remapping)
  - [DSHOT ESC Protocol](/betaflight/betaflight/wiki/DSHOT ESC Protocol) 
