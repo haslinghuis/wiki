@@ -52,5 +52,7 @@ Setup Guide:
 
 Rcgroups Thread: https://www.rcgroups.com/forums/showthread.php?2795213-NEW-Betaflight-F3-Flight-Controller-OSD-PDB-SD-card-BEC-current-sensor
 
+Probably the first video about the BFF3: https://www.youtube.com/watch?v=kr16b45Lhw4
+
 ## Image
 http://www.fpvmodel.com/-pre-order-betaflight-f3-flight-controller_g1231.html
