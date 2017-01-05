@@ -21,7 +21,7 @@
  - [Flying Tips](/betaflight/betaflight/wiki/Flying-Tips)
  - [Deep Dive](/betaflight/betaflight/wiki/BetaFlight-Deep-Dive)
  - [Resource Remapping](/betaflight/betaflight/wiki/Betaflight-resource-remapping)
- - [Dshot](/betaflight/betaflight/wiki/BetaFlight and Dshot) 
+ - [DSHOT ESC Protocol](/betaflight/betaflight/wiki/DSHOT ESC Protocol) 
  - [ESC Programming Pass-through](/betaflight/betaflight/wiki/Betaflight-ESC-pass-through)
  - [Unify SmartAudio](/betaflight/betaflight/wiki/Unify-Smartaudio)
  - [ESC-Telemetry](/betaflight/betaflight/wiki/ESC-Telemetry)
