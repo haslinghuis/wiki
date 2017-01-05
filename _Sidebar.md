@@ -9,7 +9,7 @@
 # Upgrading
 
  - [Betaflight 3.1.x](/betaflight/betaflight/wiki/BetaFlight-V3.1.x)
- - [Betaflight 3.0.x](/betaflight/betaflight/wiki/BetaFlight-3.x)
+ - [Betaflight 3.0.x](/betaflight/betaflight/wiki/BetaFlight-3.0.x)
  - [New release! What do I need to know?](/betaflight/betaflight/wiki/New-release!-What-do-I-need-to-know%3F)
  - [Dshot & BetaFlight 3.1](/betaflight/betaflight/wiki/BetaFlight and Dshot)
 
