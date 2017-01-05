@@ -18,7 +18,7 @@ Release notes highlights:
 - Added CMS display support
 - Added CSRF support for TBS receivers and associated telemetry
 - Added additional OSD parameters like pids and power
-- Added unify smartaudio support
+- Added [Unify SmartAudio](/betaflight/betaflight/wiki/Unify-Smartaudio) support
 - Auto Video Format support for OSD
 - New "anti_gravity_threshold" parameter to improve stability in fast changing G forces during flight. This applies to quick throttle jumps where multirotor can go through weightless transitions. In these cases the iterm can cause unwanted effects like pitching up or yawing due to strong changes in accumulation polarities.
 - Protection against too fast motor speeds (When ONESHOT125 selected for example, max allowed pid and motor speed will be 2khz) and many more.. 
