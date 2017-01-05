@@ -27,6 +27,10 @@ NOTE- It is recommended to use:
 - Configurator 1.8.5 or higher for this release
 - BlackBox Viewer 2.5.8
 
+###Bugs and fixes:  
+- RC Expo messes with roll rates. 
+RC2 will be available very soon. It was a small polarity miscalculation caused by last cleanups, Boris.  
+ 
 ###New CLI commands for 3.1:
 
 ####Resource Remapping
