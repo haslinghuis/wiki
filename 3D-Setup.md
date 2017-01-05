@@ -1,5 +1,7 @@
 This page is under construction and will be used to outline how to set up 3D mode on a multirotor and should list out the important and easily missed steps in order to avoid incidents.
 
+**For Dshot specific information see the bottom section.**
+
 I have taken my information from this post by Hwurzburg: https://github.com/cleanflight/cleanflight/issues/1032
 As well as this pull request containing the same information: https://github.com/cleanflight/cleanflight/pull/1034
 
@@ -93,7 +95,7 @@ MID_RC_PULS = = (STOP_RC_PULS + FULL_RC_PULS) / 2
 
 **min_command:** This is the minimum value the flight controller will output to the ESC. ESC calibration should be performed after changing min_command.
 
-### ## Dshot Section:
+### Dshot Section:
 
 Currently Dshot is working with 3D and according to Boris B still requires some serious flight testing as of 01-01-2017. Updates will be here as we get a greater understanding of 3D with Dshot.
 
