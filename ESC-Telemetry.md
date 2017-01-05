@@ -16,13 +16,21 @@ This page is intended to be a quick guide on how to set up ESC telemetry and wil
 **Install the ESCs** to the quad and run a wire from all four telemetry pads on the ESCs to the RX pin of the spare hardware UART on the flight controller. It may be easier to make a loom to split a single wire from the RX pin of the UART into four wires (one for each ESC).
 
 **Open the Betaflight configurator (V 1.8.5 or later) and go to the Ports tab.**
+
 Find the UART that the ESC telemetry is connected to and in the column marked "Sensor Input", select ESC in the left box and leave AUTO in the right box. _115200 may be required in the right box under some circumstances but not usually._ Don't forget to hit the "save and reboot" button.
 
 **Still in Betaflight configurator, switch to the Configuration tab.**
+
 _**Make sure you are using the Dshot protocol for ESC communication!**_
+
 On the Battery Voltage section enable "VBAT" and select ESC Sensor from the drop down menu below. Configure the cell voltages as required. (Defaults should be fine)
+
 On the Current Sensor section enable "CURRENT_METER" and select ESC Sensor from the drop down menu below. Configure the scale and offset as required. (Defaults should be fine)
+
 _If connected to the configurator, current will only be reported if telemetry is sent within a few seconds of startup, this may be fixed at a later date but for now, to test, set it all up then plug in the flight controller as well as the battery, open the configurator to the configuration tab and arm via the tx within a few seconds of powering on the flight controller. PROPS OFF ON THE BENCH!_
 
-**Confirm that telemetry is being received by the transmitter.** If using a Taranis, don't forget to arm the quad when you "Discover Sensors" or the ESC telemetry won't be discovered.
+**Confirm that telemetry is being received by the transmitter.**
+
+If using a Taranis, don't forget to arm the quad when you "Discover Sensors" or the ESC telemetry won't be discovered.
+
 Taranis users may want to change the "FUEL" sensor from % to mAh for an accurate reading.
