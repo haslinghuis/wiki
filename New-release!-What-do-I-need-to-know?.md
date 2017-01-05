@@ -1,9 +1,9 @@
 This page is meant to provide a more in depth explanation of the changelog for each release so that users can understand the consequences of the changes made. Please remember to read the changelog for each release first and read the "Betaflight specific CLI commands" in this Wiki for new and changed CLI commands.
 
-#Betaflight 3.0.0, 3.0.1
-Please see the [Betaflight 3.0.x](/betaflight/betaflight/wiki/BetaFlight-3.0.x) page for release notes and details.
 #Betaflight 3.1
 Please see the [Betaflight 3.1.x](/betaflight/betaflight/wiki/BetaFlight-V3.1.x) page for release notes and details.  
+#Betaflight 3.0.0, 3.0.1
+Please see the [Betaflight 3.0.x](/betaflight/betaflight/wiki/BetaFlight-3.0.x) page for release notes and details.
 
 #2.9.0 (Configurator Integration)
 
