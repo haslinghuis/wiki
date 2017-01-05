@@ -31,10 +31,11 @@ NOTE- It is recommended to use:
 
 ####Resource Remapping
 From betaflight v3.1 there is a new command to map resources. No more custom motor mixes just to move a motor pin.  
-[/betaflight/betaflight/wiki/Betaflight-resource-remapping Resource Mapping] goes into further details on how to use this new command.  
+[Resource Mapping](/betaflight/betaflight/wiki/Betaflight-resource-remapping) goes into further details on how to use this new command.  
 
 ####set anti_gravity_threshold = ?  
 <i>[0..??]<i> 
+See Release Notes above for brief description.  
 
 ##BetaFlight 3.0  
 This is really a major release. The full detailed change list can be found in the the commit history.
