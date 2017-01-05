@@ -1,23 +1,19 @@
 ##Unify Smartaudio
 
 ####From teralift's post in Boris' thread:
-Targets
+- Targets  
+TBS SmartAudio is supported on all F3 and F4 targets (except for those with integrated VTX).
 
-    TBS SmartAudio is supported on all F3 and F4 targets (except for those with integrated VTX).
+- Wiring  
+Just wire the SmartAudio wire to TX of a free hardware UART port.
 
-Wiring
+- Configuration  
+As couples of previous post noted, the up to date configurator also supports easy configuration of the SmartAudio on the selected port; Ports tab, Peripherals column, SmartAudio, speed is ignored.
 
-    Just wire the SmartAudio wire to TX of a free hardware UART port.
+- Generic CMS  
+3.1 will come with the generic CMS (Configuration Menu System) that runs on top of multiple display devices;  FC-integrated OSD, I2C OLED display and external OSD (MinimOSD variants) running latest version of MWOSD. (You even can switch between OSD and OLED while in CMS.)  
 
-Configuration
-
-    As couples of previous post noted, the up to date configurator also supports easy configuration of the SmartAudio on the selected port; Ports tab, Peripherals column, SmartAudio, speed is ignored.
-
-Generic CMS
-
-    3.1 will come with the generic CMS (Configuration Menu System) that runs on top of multiple display devices;  FC-integrated OSD, I2C OLED display and external OSD (MinimOSD variants) running latest version of MWOSD. (You even can switch between OSD and OLED while in CMS.)  
-
-    This means that users of external OSDs can control SmartAudio from the CMS.
+This means that users of external OSDs can control SmartAudio from the CMS.
 
 ####From AILERON8's post in Boris' thread:
 
