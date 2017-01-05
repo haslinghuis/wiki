@@ -16,7 +16,7 @@ Release notes highlights:
 - Added [Serial ESC Pass-through](/betaflight/betaflight/wiki/Betaflight-ESC-pass-through) for KISS24 and CASTLE esc's
 - New target support (now 65 targets)
 - Added CMS display support
-- Added CSRF support for TBS receivers and associated telemetry
+- Added CRSF support for TBS receivers and associated telemetry
 - Added additional OSD parameters like pids and power
 - Added [Unify SmartAudio](/betaflight/betaflight/wiki/Unify-Smartaudio) support
 - Auto Video Format support for OSD
