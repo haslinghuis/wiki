@@ -11,9 +11,8 @@
  - [Betaflight 3.1.x](/betaflight/betaflight/wiki/BetaFlight-V3.1.x)
  - [Betaflight 3.0.x](/betaflight/betaflight/wiki/BetaFlight-3.0.x)
  - [New release! What do I need to know?](/betaflight/betaflight/wiki/New-release!-What-do-I-need-to-know%3F)
- - [Dshot & BetaFlight 3.1](/betaflight/betaflight/wiki/BetaFlight and Dshot)
 
-# Tuning and More
+# Setup, Tuning and More
 
  - [V2.x CLI Commands](/betaflight/betaflight/wiki/Betaflight-specific-CLI-commands)
  - [PID Tuning Guide](/betaflight/betaflight/wiki/PID-Tuning-Guide)
@@ -22,6 +21,7 @@
  - [Flying Tips](/betaflight/betaflight/wiki/Flying-Tips)
  - [Deep Dive](/betaflight/betaflight/wiki/BetaFlight-Deep-Dive)
  - [Resource Remapping](/betaflight/betaflight/wiki/Betaflight-resource-remapping)
+ - [Dshot](/betaflight/betaflight/wiki/BetaFlight and Dshot) 
  - [ESC Programming Pass-through](/betaflight/betaflight/wiki/Betaflight-ESC-pass-through)
  - [Unify SmartAudio](/betaflight/betaflight/wiki/Unify-Smartaudio)
  - [ESC-Telemetry](/betaflight/betaflight/wiki/ESC-Telemetry)
