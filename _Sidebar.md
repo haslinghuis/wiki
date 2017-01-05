@@ -14,13 +14,13 @@
 
 # Tuning and More
 
+ - [V2.x CLI Commands](/betaflight/betaflight/wiki/Betaflight-specific-CLI-commands)
  - [PID Tuning Guide](/betaflight/betaflight/wiki/PID-Tuning-Guide)
  - [Rate-Calculator](/betaflight/betaflight/wiki/Rate-Calculator)
  - [Gyro and Filters](/betaflight/betaflight/wiki/Gyro-&-Dterm-filtering-recommendations)
  - [Flying Tips](/betaflight/betaflight/wiki/Flying-Tips)
  - [Deep Dive](/betaflight/betaflight/wiki/BetaFlight-Deep-Dive)
  - [Resource Remapping](/betaflight/betaflight/wiki/Betaflight-resource-remapping)
- - [CLI Commands](/betaflight/betaflight/wiki/Betaflight-specific-CLI-commands)
  - [ESC Programming Pass-through](/betaflight/betaflight/wiki/Betaflight-ESC-pass-through)
  - [Unify SmartAudio](/betaflight/betaflight/wiki/Unify-Smartaudio)
  - [ESC-Telemetry](/betaflight/betaflight/wiki/ESC-Telemetry)
