@@ -33,6 +33,10 @@ NOTE- It is recommended to use:
 From betaflight v3.1 there is a new command to map resources. No more custom motor mixes just to move a motor pin.  
 [Resource Mapping](/betaflight/betaflight/wiki/Betaflight-resource-remapping) goes into further details on how to use this new command.  
 
+####set digital_idle_percent = ?
+<i>[0..??]<i>
+See [DSHOT min throttle]()
+
 ####set anti_gravity_threshold = ?  
 <i>[0..??]<i> 
 See Release Notes above for brief description.  
