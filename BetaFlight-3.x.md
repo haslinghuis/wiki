@@ -8,7 +8,7 @@ Release notes highlights:
 
 - Added F7 support (ANYFCF7 as the first supported target...)
 - Dynamic IO / pin allocation
-- DSHOT support for F3 and F4 (read wiki about board supported hardware)
+- [DSHOT Support](/betaflight/betaflight/wiki/BetaFlight and Dshot) for F3 and F4 (read wiki about board supported hardware)
 - Full Floating Point Logic for flight behavior
 - Many new dynamic configurations (filters, setpoint weights etc.)
 - Support for KISS esc telemetry (only with DSHOT)
