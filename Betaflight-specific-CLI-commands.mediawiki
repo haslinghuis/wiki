@@ -1,6 +1,8 @@
 These settings are specific to betaflight. For cleanflight CLI docs go here 
 https://github.com/cleanflight/cleanflight/blob/master/docs/Cli.md
 
+##Note: This Wiki Page covers the CLI Command changes for BetaFlight Version 2.x. The New and changed CLI commands for BetaFlight 3.x are found on the 3.x page.  
+
 The setting shown are the Defaults + possible values.
 
 <a href="#v270">Latest Version</a>  
