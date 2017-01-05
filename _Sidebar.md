@@ -22,6 +22,7 @@
  - [Resource Remapping](/betaflight/betaflight/wiki/Betaflight-resource-remapping)
  - [CLI Commands](/betaflight/betaflight/wiki/Betaflight-specific-CLI-commands)
  - [ESC Programming Pass-through](/betaflight/betaflight/wiki/Betaflight-ESC-pass-through)
+ - [Unify SmartAudio](/betaflight/betaflight/wiki/Unify-Smartaudio)
 
 # Development
 
