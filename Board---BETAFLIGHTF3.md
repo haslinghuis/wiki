@@ -27,8 +27,7 @@ _(Fill in hardware specs and add any not listed)_
 _(add list of features)_
 
 ## Manufacturers and Distributors
-
-_(add links to Manufacturers and Distributors)_
+http://www.fpvmodel.com/-pre-order-betaflight-f3-flight-controller_g1231.html
 
 ## Designers
 
@@ -54,3 +53,4 @@ Setup Guide:
 Rcgroups Thread: https://www.rcgroups.com/forums/showthread.php?2795213-NEW-Betaflight-F3-Flight-Controller-OSD-PDB-SD-card-BEC-current-sensor
 
 ## Image
+http://www.fpvmodel.com/-pre-order-betaflight-f3-flight-controller_g1231.html
