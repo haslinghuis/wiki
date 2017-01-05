@@ -13,7 +13,7 @@ Release notes highlights:
 - Many new dynamic configurations (filters, setpoint weights etc.)
 - Support for KISS esc telemetry (only with DSHOT)
 - Many code optimizations (higher looptimes possible)
-- Added serial esc passthrough for KISS24 and CASTLE esc's
+- Added [Serial ESC Pass-through](/betaflight/betaflight/wiki/Betaflight-ESC-pass-through) for KISS24 and CASTLE esc's
 - New target support (now 65 targets)
 - Added CMS display support
 - Added CSRF support for TBS receivers and associated telemetry
