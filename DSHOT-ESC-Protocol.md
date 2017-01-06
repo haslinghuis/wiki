@@ -58,12 +58,13 @@ digital_idle_percent = (min_throttle - min_command) / (max_throttle - min_comman
 Just ensure that in the ESCs (BLHeli Suite) that PPM_MIN_THROTTLE is set to 1000 and PPM_MAX_THROTTLE is set to 2000.
 Note: This should not be needed in BLHeli_S 16.43 and up since the PPM_MIN & MAX values are not used for Dshot.   
 
-####Max ESC update speed supported by different dshot versions:
+####Max ESC update speed supported by different dshot versions (Note: due to processor tasks the maximum update rate may not work- TEST without props):
 - dshot150: 8kHz max
 - dshot300: 16kHz max
 - dshot600: 32kHz max
 
-Note: When DSHOT is enabled Unsyced PWM is disabled. DSHOT always runs at the PID loop rate.
+Note: When DSHOT is enabled Unsyced PWM is disabled. DSHOT always runs at the PID loop rate.  
+
 ####Dshot Values:  
 0 = disarmed.  
 1 to 47 = Reserved for special commands.  
