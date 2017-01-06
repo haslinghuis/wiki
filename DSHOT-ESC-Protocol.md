@@ -147,7 +147,7 @@ Note: Re-mapping pin back to default may NOT be needed. Tested on MotoLab Cyclon
   4- When finished re-map the motor to the pin used for Dshot.  
   5- Set ESC protocol to DSHOT.  
 
-See: [CLI resource command](https://github.com/betaflight/betaflight/wiki/Betaflight-specific-CLI-commands#resource-remapping-command-v31)    
+See: [CLI resource command](https://github.com/betaflight/betaflight/wiki/Betaflight-resource-remapping)    
 
 - MOTOLAB - (MotoF3, Cyclone & Tempest)   
 Note: Tornado has output driver chips so can not add a wire to the output pin header. 
