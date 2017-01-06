@@ -51,4 +51,4 @@ See [Setting Min Throttle with Dshot](/betaflight/betaflight/wiki/DSHOT ESC Prot
 
 ####set gyro_use_32khz = OFF  
 <i>[OFF..ON]<i>  
-
+Only available on F4 & F7 targets.
