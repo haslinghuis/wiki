@@ -20,7 +20,7 @@ Release notes highlights:
 - Added additional OSD parameters like pids and power
 - Added [Unify SmartAudio](/betaflight/betaflight/wiki/Unify-Smartaudio) support
 - Auto Video Format support for OSD
-- New "anti_gravity_threshold" parameter to improve stability in fast changing G forces during flight. This applies to quick throttle jumps where multirotor can go through weightless transitions. In these cases the iterm can cause unwanted effects like pitching up or yawing due to strong changes in accumulation polarities.
+- New "anti_gravity_threshold" parameter in CLI
 - Protection against too fast motor speeds (When ONESHOT125 selected for example, max allowed pid and motor speed will be 2khz) and many more.. 
 - Added experimental 32khz support for gyros that support it. Usually F4 board will run fine on 32khz gyro and 16khz pid loop. 32/32 is slightly too much for CPU. F7 target is now the only one able to run 32khz/32khz flawlessly with even accelerometer enabled. and many more. To enable 32khz mode use cli setting "gyro_use_32khz = ON". (Configurator will not display correct speed until the next configurator update, but you will see the real cycletime)  
 
@@ -38,10 +38,11 @@ NOTE- You will need to use:
 From betaflight v3.1 there is a new command to map resources. No more custom motor mixes just to move a motor pin.  
 [Resource Mapping](/betaflight/betaflight/wiki/Betaflight-resource-remapping) goes into further details on how to use this new command.  
 
-####set digital_idle_percent = ?
-<i>[0..??]<i>  
+####set digital_idle_percent = 3.000
+<i>[0..20]<i>  
+Only used when a DSHOT ESC protocol is selected.  
 See [Setting Min Throttle with Dshot](/betaflight/betaflight/wiki/DSHOT ESC Protocol)
 
-####set anti_gravity_threshold = ?  
-<i>[0..??]<i>  
-See Release Notes above for brief description.  
+####set anti_gravity_threshold = 350  
+<i>[20..1000]<i>  
+ To improve stability in fast changing G forces during flight. This applies to quick throttle jumps where multirotor can go through weightless transitions. In these cases the iterm can cause unwanted effects like pitching up or yawing due to strong changes in accumulation polarities.  
