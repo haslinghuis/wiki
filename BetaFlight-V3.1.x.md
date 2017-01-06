@@ -36,9 +36,6 @@ NOTE- You will need to use:
 ###Bugs and fixes:  
 - RC2 - Fix in rc expo symmetry // fix missing baro on some targets
 - RC3 - Enable experimental 32khz support
-
-- microscisky broke between rc2 and rc3. won't arm..slow blink. CPU load says 7% but that can't be true as it is 50%+ in RC2. Boris: Yeah something got broken for those old i2c targets during the last change. Might indeed have to do with cpu calculation.   ?? is this fixed ??
-
 - RC4 - Fix non MPU INT supporting targets // Added MPU Int NAZE // Fix adjustment for setpoint // Some cleanups
 
 ###New CLI commands for 3.1:
