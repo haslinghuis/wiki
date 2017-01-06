@@ -61,10 +61,13 @@ See [Setting Min Throttle with Dshot](/betaflight/betaflight/wiki/DSHOT ESC Prot
 Note from Boris: The old value was upscaled. This is the real value now in float representation.  
 Its representing deg/sec/ms. A bit easier to swallow for human.  
 
-####set gyro_isr_update = OFF
-From mjbudden:   gyro_isr_update is an experimental feature I have added. When set on, the gyro is read and filtered in the ISR (interrupt service routine). This is "unconventional" programming practice (many would frown upon doing this), which is why the default is off.  
+####set gyro_isr_update = OFF  
+<i>[OFF..ON]<i>  
+From mjbudden:   
+gyro_isr_update is an experimental feature I have added. When set on, the gyro is read and filtered in the ISR (interrupt service routine). This is "unconventional" programming practice (many would frown upon doing this), which is why the default is off.  
 Theoretically setting it on should produce some small performance improvements, but that needs to be confirmed by flight testing. This setting should be used with caution.   
-From Boris: Might be useful on slower i2c targets like NAZE etc. Its for testing purposes. Things not mentioned in release notes and manuals are not meant to be changed generally unless you really want to be a "tester".   
+From Boris:   
+Might be useful on slower i2c targets like NAZE etc. Its for testing purposes. Things not mentioned in release notes and manuals are not meant to be changed generally unless you really want to be a "tester".   
 
 ###New RC3 CLI commands:
 
