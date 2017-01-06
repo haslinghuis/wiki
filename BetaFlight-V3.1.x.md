@@ -44,7 +44,6 @@ NOTE- You will need to use:
 (3) Type "resource list".  
 (4) At the end of the list, there is DMA section. Record which DMA resource the LED_STRIP is using.  
 (5) Type "exit".  
-
 (6) Enable Dshot, disable LED_STRIP, save & reboot.  
 (7) Goto CLI.  
 (8) Type "resource list".  
