@@ -46,3 +46,9 @@ See [Setting Min Throttle with Dshot](/betaflight/betaflight/wiki/DSHOT ESC Prot
 ####set anti_gravity_threshold = 350  
 <i>[20..1000]<i>  
  To improve stability in fast changing G forces during flight. This applies to quick throttle jumps where multirotor can go through weightless transitions. In these cases the iterm can cause unwanted effects like pitching up or yawing due to strong changes in accumulation polarities.  
+
+###New RC3 CLI commands:
+
+####set gyro_use_32khz = OFF  
+<i>[OFF..ON]<i>  
+
