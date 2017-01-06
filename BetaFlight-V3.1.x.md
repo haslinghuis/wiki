@@ -32,6 +32,9 @@ NOTE- You will need to use:
 - RC2 - Fix in rc expo symmetry // fix missing baro on some targets
 - RC3 - Enable experimental 32khz support
 
+- microscisky broke between rc2 and rc3. won't arm..slow blink. CPU load says 7% but that can't be true as it is 50%+ in RC2. Boris: Yeah something got broken for those old i2c targets during the last change. Might indeed have to do with cpu calculation.   
+
+- 
 ###New CLI commands for 3.1:
 
 ####Resource Remapping
@@ -51,6 +54,11 @@ See [Setting Min Throttle with Dshot](/betaflight/betaflight/wiki/DSHOT ESC Prot
 <i>[0..50]<i>  
 Note from Boris: The old value was upscaled. This is the real value now in float representation.  
 Its representing deg/sec/ms. A bit easier to swallow for human.  
+
+####set gyro_isr_update = OFF
+From mjbudden:   gyro_isr_update is an experimental feature I have added. When set on, the gyro is read and filtered in the ISR (interrupt service routine). This is "unconventional" programming practice (many would frown upon doing this), which is why the default is off.  
+Theoretically setting it on should produce some small performance improvements, but that needs to be confirmed by flight testing. This setting should be used with caution.   
+form Boris: Might be usefull on slower i2c targets like NAZE etc. Its for testing purposes. Things not mentioned in release notes and manuals are not meant to be changed generally unless you really want to be a "tester".   
 
 ###New RC3 CLI commands:
 
