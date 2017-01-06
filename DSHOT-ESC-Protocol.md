@@ -94,6 +94,7 @@ BLHeli Rev16.5 posted on github (27Nov2016). Dshot150, Dshot300 and Dshot600 are
 - Airbot F3 (SPRACINGF3)  
 - BETAFLIGHTF3  
 - BLUEJAYF4
+- BrainFPV RE1 (needs build from BrainFPV repo)
 - Colibri Race v2.0  (build #722)
 - Dodo (RMDO)  
 - Dodo (SPRACINGF3)
