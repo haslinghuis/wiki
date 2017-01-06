@@ -47,7 +47,7 @@ See [Setting Min Throttle with Dshot](/betaflight/betaflight/wiki/DSHOT ESC Prot
 <i>[20..1000]<i>  
  To improve stability in fast changing G forces during flight. This applies to quick throttle jumps where multirotor can go through weightless transitions. In these cases the iterm can cause unwanted effects like pitching up or yawing due to strong changes in accumulation polarities.  
 
-###set yaw_accel_limit =  20.000
+####set yaw_accel_limit =  20.000
 <i>[0..50]<i>  
 Note from Boris: The old value was upscaled. This is the real value now in float representation.  
 Its representing deg/sec/ms. A bit easier to swallow for human.  
