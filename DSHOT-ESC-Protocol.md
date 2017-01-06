@@ -60,7 +60,7 @@ Note: This should not be needed in BLHeli_S 16.43 and up since the PPM_MIN & MAX
 
 ####Max ESC update speed supported by different dshot versions:  
 #####WARNING: due to processor tasks, FC and/or ESC, the maximum update rate may not work-  
-TEST without props and a Current Limiter.  
+#####TEST without props and a Current Limiter.  
 - dshot150: 8kHz max
 - dshot300: 16kHz max
 - dshot600: 32kHz max
