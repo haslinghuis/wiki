@@ -38,6 +38,18 @@ NOTE- You will need to use:
 - RC3 - Enable experimental 32khz support
 - RC4 - Fix non MPU INT supporting targets // Added MPU Int NAZE // Fix adjustment for setpoint // Some cleanups
 
+- On BBF3 (and maybe others) the DMA channel 2 is tied to both LED and MOTOR 2. With LED enabled I can't get Motor #2 to spin regardless of Protocol selected(tried Multishot, Oneshot125, and Dshot600). Disable LED allows motor 2 to work.  To check for conflicts do the following (thanks teralift):  
+(1) Disable Dshot, enable LED_STRIP, save & reboot.  
+(2) Goto CLI.  
+(3) Type "resource list".  
+(4) At the end of the list, there is DMA section. Record which DMA resource the LED_STRIP is using.  
+(5) Type "exit".  
+
+(6) Enable Dshot, disable LED_STRIP, save & reboot.  
+(7) Goto CLI.  
+(8) Type "resource list".  
+(9) Check if any of DMA resource assigned to motors is same as the one LED_STRIP is using.   
+
 ###New CLI commands for 3.1:
 
 ####Resource Remapping
