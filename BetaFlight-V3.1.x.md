@@ -4,7 +4,7 @@ Betaflight 3.1.0 (Release Candidate 4)
 
 Betaflight firmware has undergone some major changes under the hood. Hardware drivers have been optimized to improve future maintainability, but also easier target and hardware support. The efficiency of the code has also been improved by a lot as Betaflight team reviewed each line of the code to squeeze every possible performance win out of it for flight performance purposes. The difference between the current release and previous one is over 1600 code commits by various developers. Only release notes highlights are represented. For full change history github commit history can be reviewed.  
 
-####Release notes highlights:
+####Release note highlights:
 
 - Added F7 support with already few supported targets - @sambas
 - Dynamic IO / pin allocation - @blckmn
