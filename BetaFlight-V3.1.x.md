@@ -25,7 +25,7 @@ Betaflight firmware has undergone some major changes under the hood. Hardware dr
 - Fixed JUMBO frame handling on VCP targets, so blackbox logs can be downloaded more quickly - @AndersHoglund 
 - New "anti_gravity_threshold" parameter in CLI - @borisbstyle
 - Protection against too fast motor speeds (When ONESHOT125 selected for example, max allowed pid and motor speed will be 2khz) and many more..  - @borisbstyle
-- Added experimental 32khz support for gyros that support it - @martinbudden. Usually F4 board will run fine on 32khz gyro and 16khz pid loop. 32/32 is slightly too much for CPU. F7 target is now the only one able to run 32khz/32khz flawlessly with even accelerometer enabled. and many more. To enable 32khz mode use cli setting "gyro_use_32khz = ON". (Configurator will not display correct speed until the next configurator update, but you will see the real cycletime)  
+- Added experimental 32khz support for gyros that support it - @martinbudden. 
 - Blackbox enhancements (use 2.5.8 blackbox-viewer) @GaryKeeble
 and many more.  
 
@@ -70,4 +70,5 @@ From Boris: Might be useful on slower i2c targets like NAZE etc. Its for testing
 
 ####set gyro_use_32khz = OFF  
 <i>[OFF..ON]<i>  
-Only available on F4 & F7 targets.
+Only available on F4 & F7 targets.  
+Usually F4 board will run fine on 32kHz gyro and 16kHz pid loop. 32/32 is slightly too much for CPU. F7 target is now the only one able to run 32kHz/32kHz flawlessly with even accelerometer enabled. To enable 32kHz mode use CLI setting gyro_use_32khz = ON. (Configurator will not display correct speed until the next configurator update, but you will see the real cycletime). NOTE - only flight controllers with MPU6500, MPU9250, and ICM-series (eg ICM20689) gyro support 32kHz mode.  
