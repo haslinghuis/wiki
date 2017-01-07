@@ -138,12 +138,12 @@ and copy/paste these into a Text file and save for reference of the Default pin 
 `save  `  
   6- Now select the DSHOT protocol of your choice.  
 
-#####To switch pin mapping to use BLHeli Suite pass-through:   
+#####To switch pin mapping to use BLHeli Suite pass-through:   May not be required.  
   1- Select OneShot(42 or 125) in the config tab. Click Save.   
   2- In the CLI change Only the remapped Motor back. Type:  
 `resource motor x yyy  `  
 `save  `  
-Note: Re-mapping pin back to default may NOT be needed. Tested on MotoLab Cyclone and BLHeli works with motor 1 to A07.  
+######Note: Re-mapping pin back to default may NOT be needed. 
   3- Now use BLHeli Suite to Update or change ESC setting.  
   4- When finished re-map the motor to the pin used for Dshot.  
   5- Set ESC protocol to DSHOT.  
@@ -158,9 +158,7 @@ Note: Tornado has output driver chips so can not add a wire to the output pin he
 `resource ppm none  `  
 `resource motor 1 A07 `  
 `save  `  
-To use BLHeli type in CLI:  Note: may not need to re-map pin.
-`resource motor 1 A04  `  
-`save  `  
+No re=mapping back to default or selecting a non-Dshot protocol is required to use BLHeli (tested with 3.1RC4).
  
 - PIKOBLX - Re-map motor 1 to the PPM pin (same as MotoLab) and also disable motor 5-8 ("resource motor X none").    
  Solder a wire from Output #1 header pin to the PPM input header pin.
@@ -172,7 +170,7 @@ To use BLHeli type in CLI:  Note: may not need to re-map pin.
 `resource motor 7 none `  
 `resource motor 8 none `  
 `save  `  
- To use BLHeli type in CLI:  
+ To use BLHeli type in CLI:  May not be required.
 `resource motor 1 A04  `  
 `save  `  
 
@@ -182,7 +180,7 @@ To use BLHeli type in CLI:  Note: may not need to re-map pin.
 `resource motor 5 none  `  
 `resource motor 4 A06 `  
 `save  `  
-To use BLHeli type in CLI:  
+To use BLHeli type in CLI:    May not be required.
 `resource motor 4 A03  `  NEED the Default pin Number checked.  
 `save  `  
 
@@ -191,7 +189,7 @@ To use BLHeli type in CLI:
 `resource ppm none  `  
 `resource motor 4 B04 `  
 `save  `  
-To use BLHeli type in CLI:  
+To use BLHeli type in CLI:    May not be required.
 `resource motor 4 B09  `  
 `save  `  
   Tested with 3.1 Build #783. 
@@ -202,7 +200,7 @@ Limitation: BlackBox on the internal SDCard works with MultiShot but not with DS
 `resource ppm none  `  
 `resource motor 1 A07 `  
 `save  `  
-To use BLHeli type in CLI:  
+To use BLHeli type in CLI: May not be required.  
 `resource motor 1 A04  `  
 `save  `   
 Limitation: no LED functionality with DShot is allowed.  
@@ -214,13 +212,14 @@ Connect ESC for motor 2 to 'LED' pin on the board.
  `resource motor 2 A08`  
  `save`  
  The new mapping for motor 2 conflicts wit `LED_STRIP` and `TRANSPONDER`, so make sure these two features are disabled in the configurator.   
-To use BLHeli type in CLI:    
+To use BLHeli type in CLI:  May not be required.      
 `resource motor 4 A07`   
 `save`  
 
 ####FC Targets with DSHOT code added but in need of testing:
 - SPARKY2
 - Mantis F3 (from MRM) - SPRACINGF3  
+- All other targets  
 
 ###ESCs supporting Dshot:
 - KISS 24 - 150, 300, 600 See the Dshot thread (link above) for ESC code.
