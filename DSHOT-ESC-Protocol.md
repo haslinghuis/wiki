@@ -216,6 +216,9 @@ To use BLHeli type in CLI:  May not be required.
 `resource motor 4 A07`   
 `save`  
 
+- SPRacing F3 NEO - motor 2 on pin C07 not assigned a DMA channel when Dshot is selected.
+Need a work around for this FC.  
+
 ####FC Targets with DSHOT code added but in need of testing:
 - SPARKY2
 - Mantis F3 (from MRM) - SPRACINGF3  
