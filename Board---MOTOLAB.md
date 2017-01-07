@@ -56,7 +56,7 @@ _(add FAQs, known issues and workarounds specifically related to this board. ple
 
 _format is reporter [name], (status): issue contents_
 
-To use DSHOT ESC protocol with ßF3.1 a wire needs to be soldered from the PPM pin to the motor 1 pin and a DMA channel re=mapped. See the [DSHOT & Betaflight](https://github.com/betaflight/betaflight/wiki/BetaFlight%20and%20Dshot) page.
+To use DSHOT ESC protocol with ßF3.1 a wire needs to be soldered from the PPM pin to the motor 1 pin and remapped. See the [DSHOT & Betaflight](https://github.com/betaflight/betaflight/wiki/BetaFlight%20and%20Dshot) page.
 
 ## Other Resources
 
