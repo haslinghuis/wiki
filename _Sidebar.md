@@ -20,7 +20,7 @@
  - [Rate-Calculator](/betaflight/betaflight/wiki/Rate-Calculator)
  - [Gyro and Filters](/betaflight/betaflight/wiki/Gyro-&-Dterm-filtering-recommendations)
  - [Deep Dive](/betaflight/betaflight/wiki/BetaFlight-Deep-Dive)
- - [Black Box logging and useage](/betaflight/betaflight/wiki/Black-Box-logging-and-useage) 
+ - [Black Box logging and usage](/betaflight/betaflight/wiki/Black-Box-logging-and-usage) 
  - [Resource Remapping](/betaflight/betaflight/wiki/Betaflight-resource-remapping)
  - [DSHOT ESC Protocol](/betaflight/betaflight/wiki/DSHOT ESC Protocol) 
  - [ESC Programming Pass-through](/betaflight/betaflight/wiki/Betaflight-ESC-pass-through)
