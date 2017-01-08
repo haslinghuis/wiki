@@ -29,7 +29,7 @@
   - WS2811 LED-strip supported.
   - Optimized solder pads for optional ARPDB.
   - Dimension: 35x35x7.4mm / fixing hole spacing 30mm.
-  - Supports DShot (see [this page](https://github.com/betaflight/betaflight/wiki/BetaFlight%20and%20Dshot) for setup instructions).
+  - Supports DShot (see [this page](https://github.com/betaflight/betaflight/wiki/DSHOT%20ESC%20Protocol) for setup instructions).
 
 ------------------------------------------------------------
 
