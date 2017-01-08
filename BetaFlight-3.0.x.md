@@ -382,6 +382,8 @@ Clear as mud?
 
 ###Notch Filters
 
+See: [Black-Box logging and usage](/betaflight/wiki/Black-Box-logging-and-usage) 
+
 notch filter explanations  
 
 A Video from Joshua Bardwell on Notch filtering:  
