@@ -16,7 +16,7 @@ Some features are automatically disabled depending upon the firmware you are run
 
 ### How to obtain data to evaluate noise frequency for setting the Notch filter.
 
-1. Use this CLI setting: "set debug_mode = notch"
+1. Use this CLI setting: "set debug_mode = notch"  
 Make sure your blackbox logging rate is at least 1khz. The logging rate is based on pid-loop so 1/4 for 4k pid loop would be enough.
 2. Fly as usual
 3. Open your log in blackbox viewer
