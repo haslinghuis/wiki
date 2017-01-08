@@ -221,7 +221,7 @@ Anyone with this FC can try (this is NOT TESTED and needs to be tried and report
 Move motor2's ESC signal to the PPM FC pin.
 type in CLI:  
 `resource ppm none  `  
-`resource motor 1 A03 `  
+`resource motor 2 A03 `  
 
 ####FC Targets with DSHOT code added but in need of testing:
 - SPARKY2
