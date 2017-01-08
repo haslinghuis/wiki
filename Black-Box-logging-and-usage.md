@@ -1,4 +1,8 @@
-##BlackBox Viewer
+### Black Box Logger
+RCGroups Thread with links to OpenLogger and firmware:   
+https://www.rcgroups.com/forums/showthread.php?2299805-Blackbox-flight-data-recorder-feature-for-Baseflight-Cleanflight 
+
+###BlackBox Viewer
 The Latest Viewer and source is here:   
 https://github.com/betaflight/blackbox-log-viewer  
 
