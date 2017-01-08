@@ -149,15 +149,13 @@ and copy/paste these into a Text file and save for reference of the Default pin 
 See: [CLI resource command](https://github.com/betaflight/betaflight/wiki/Betaflight-resource-remapping)    
 
 - MOTOLAB - (MotoF3, Cyclone & Tempest)   
-Note: Tornado has output driver chips so can not add a wire to the output pin header. 
- 3.1 Build #721: Bench tested -
  Solder a wire from Output #1 header pin to the PPM input header pin. [Photo of wire on a Cyclone](https://www.rcgroups.com/forums/showpost.php?p=36589146&postcount=2787)   
 Note: Adding this wire is not required if you connect signal wire from ESC #1 directly to the PPM pin.  
  Follow above and to re-map output type in CLI:  
 `resource ppm none  `  
 `resource motor 1 A07 `  
 `save  `  
-No re=mapping back to default or selecting a non-Dshot protocol is required to use BLHeli pass-through(tested with 3.1RC4).
+No remapping back to default or selecting a non-Dshot protocol is required to use BLHeli pass-through(tested with 3.1RC4).
  
 - PIKOBLX - Re-map motor 1 to the PPM pin (same as MotoLab) and also disable motor 5-8 ("resource motor X none").    
  Solder a wire from Output #1 header pin to the PPM input header pin.
