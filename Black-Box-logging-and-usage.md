@@ -15,11 +15,11 @@ If you open a Betaflight Log, then the logo shown is the Betaflight Logo and the
 Some features are automatically disabled depending upon the firmware you are running that creates the log. 
 
 ### How to obtain data to evaluate noise frequency for setting the Notch filter.
-[Black Box usage](/betaflight/wiki/Black-Box-logging-and-useage/_edit)
-1. Use this setting: "set debug_mode = notch"
+
+1. Use this CLI setting: "set debug_mode = notch"
 Make sure your blackbox logging rate is at least 1khz. The logging rate is based on pid-loop so 1/4 for 4k pid loop would be enough.
 2. Fly as usual
-3. Open your log in blackbox analyzer from here https://github.com/betaflight/blackbox-log-viewer
+3. Open your log in blackbox viewer
 4. Add all debug options to your graph setup
 5. Click on debug[0]  Note: This action of clicking on the graph section traces to the right will show the analyzer screen :D 
 6. Make the graph fullscreen (next to playback options)
