@@ -293,7 +293,7 @@ Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36209787&postcount=1
 - Racerstar v2 35A - 150, 300
 - Racerstar MS25A - 150, 300, 600 (A_H_20 BL_S16.5) - report of motor twitching with 600. May need signal cap removed.
 - Racerstar MS35A - 600
-Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36588994&postcount=2834
+Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36588994&postcount=2834   
 Before and after O'scope traces: https://www.rcgroups.com/forums/showpost.php?p=36588994&postcount=2834  
 - Racerstar 4in1 20A V1 - 150 (one motor twitching), 300 (all running smooth), 600 (grinding noise) bench testing only so far   - This may need the signal cap(s) removed. 
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36550495&postcount=178  
