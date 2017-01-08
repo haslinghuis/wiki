@@ -52,11 +52,9 @@ Differences:
 
 
 ## FAQ & Known Issues
-_(add FAQs, known issues and workarounds specifically related to this board. please link work in progress issues to the related github issue or pull request)_
 
-_format is reporter [name], (status): issue contents_
-
-To use DSHOT ESC protocol with ßF3.1 a wire needs to be soldered from the PPM pin to the motor 1 pin and remapped. See the [DSHOT & Betaflight](https://github.com/betaflight/betaflight/wiki/BetaFlight%20and%20Dshot) page.  
+To use DSHOT ESC protocol with ßF3.1 Motor1 needs to be re-mapped to the PPM pin. See the [DSHOT & Betaflight](https://github.com/betaflight/betaflight/wiki/BetaFlight%20and%20Dshot) page.  
+A wire can be soldered from the PPM pin to the motor 1 header pin or just connect ESC#1 directly to the PPM pin.
 Note: Adding this wire is not required if you connect signal wire from ESC #1 directly to the PPM pin.  
 
 Photo of wire added to a Cyclone.
