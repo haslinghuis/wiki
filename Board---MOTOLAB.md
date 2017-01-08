@@ -52,6 +52,7 @@ Differences:
 
 
 ## FAQ & Known Issues
+Note: Tornado has output driver chips so can not add a wire to the output pin header.  
 
 To use DSHOT ESC protocol with ßF3.1 Motor1 needs to be re-mapped to the PPM pin. See the [DSHOT & Betaflight](https://github.com/betaflight/betaflight/wiki/BetaFlight%20and%20Dshot) page.  
 A wire can be soldered from the PPM pin to the motor 1 header pin or just connect ESC#1 directly to the PPM pin.
