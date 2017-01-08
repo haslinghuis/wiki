@@ -1,4 +1,14 @@
-<h3>Betaflight ESC pass-through<h3>
+<h3>Betaflight BLHeli ESC pass-through<h3>
+
+1- Connect FC to computer and note COMM port number.  
+2- Open BLHeli Suite. Select Comm Port and click Connect.  
+3- In 'Select ATEM/SILBAS Interface' menu select 'SILABS BLHeli Bootloader (ClaenFlight)'.  
+4- Apply power the ESCs (through a Current Limiter).
+5- Click 'Read Setup'.
+
+Now ready to change ESC settings or Flash new firmware. 
+
+<h3>Betaflight KISS ESC pass-through<h3>
 
 New feature for 3.1 allows to flash kiss escs with a pass-through and KISS flash loader app.  
 Note: it is apparently not yet active on all targets. 
@@ -28,3 +38,9 @@ Procedure is easy:
 
 If the above command doesnt work escserial flash passthrough is not enabled yet.  
 Btw also castle escs can be flashed on the same way.  
+
+
+<h3>Current Limiter<h3>   
+Always use a Current Limiter when ever a LiPo is connected on the Bench for Testing or ESC Flashing, Calibrating or any time the Configurator is open.
+Light Bulb Current Limiter Build thread:  
+https://www.rcgroups.com/forums/showthread.php?2327875-DIY-SAVE-YOUR-ELECTRONICS!-BUILD-A-SmokeStopper%C2%99-!
