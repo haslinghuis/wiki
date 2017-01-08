@@ -153,7 +153,7 @@ See: [CLI resource command](https://github.com/betaflight/betaflight/wiki/Betafl
 - MOTOLAB - (MotoF3, Cyclone & Tempest)   
 Note: Tornado has output driver chips so can not add a wire to the output pin header. 
  3.1 Build #721: Bench tested -
- Solder a wire from Output #1 header pin to the PPM input header pin.
+ Solder a wire from Output #1 header pin to the PPM input header pin. [Photo of wire on a Cyclone](https://www.rcgroups.com/forums/showpost.php?p=36589146&postcount=2787)  
  Follow above and to re-map output type in CLI:  
 `resource ppm none  `  
 `resource motor 1 A07 `  
@@ -294,6 +294,7 @@ Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36209787&postcount=1
 - Racerstar MS25A - 150, 300, 600 (A_H_20 BL_S16.5) - report of motor twitching with 600. May need signal cap removed.
 - Racerstar MS35A - 600
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36588994&postcount=2834
+Before and after O'scope traces: https://www.rcgroups.com/forums/showpost.php?p=36588994&postcount=2834  
 - Racerstar 4in1 20A V1 - 150 (one motor twitching), 300 (all running smooth), 600 (grinding noise) bench testing only so far   - This may need the signal cap(s) removed. 
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36550495&postcount=178  
 - Racerstar RS20Ax4 V2 Blheli_S 20A 2-4S 4 in 1 ESC - 300 without mod.
