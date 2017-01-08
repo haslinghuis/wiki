@@ -55,6 +55,8 @@ To check for DMA conflicts do the following (thanks teralift):
 
 ###New CLI commands for 3.1:
 
+Note: See the [3.0.x page](/betaflight/betaflight/wiki/BetaFlight-3.0.x) for CLI commands plus other features that were new in 3.0
+
 ####Resource Remapping
 From betaflight v3.1 there is a new command to map resources. No more custom motor mixes just to move a motor pin.  
 [Resource Mapping](/betaflight/betaflight/wiki/Betaflight-resource-remapping) goes into further details on how to use this new command.  
