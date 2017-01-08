@@ -2,7 +2,7 @@
 
 1- Connect FC to computer and note COMM port number.  
 2- Open BLHeli Suite. Select Comm Port and click Connect.  
-3- In 'Select ATEM/SILBAS Interface' menu select 'SILABS BLHeli Bootloader (CleanFlight)'.  
+3- In 'Select ATEM/SILABS Interface' menu select 'SILABS BLHeli Bootloader (CleanFlight)'.  
 4- Apply power the ESCs (through a Current Limiter).  
 5- Click 'Read Setup'.  
 
