@@ -216,7 +216,12 @@ To use BLHeli type in CLI:  May not be required.
 `save`  
 
 - SPRacing F3 NEO - motor 2 on pin C07 not assigned a DMA channel when Dshot is selected.
-Need a work around for this FC.  
+Need a work around for this FC.  Probably same as other FCs by re-mapping Motor 2 to the PPM pin (A03).  
+Anyone with this FC can try (this is NOT TESTED and needs to be tried and reported):
+Move motor2's ESC signal to the PPM FC pin.
+type in CLI:  
+`resource ppm none  `  
+`resource motor 1 A03 `  
 
 ####FC Targets with DSHOT code added but in need of testing:
 - SPARKY2
