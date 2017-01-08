@@ -529,6 +529,4 @@ Up to 3 different rateprofiles per profile can be stored on the flight controlle
 pidTuningRatesTip
 Play with the rates and see how those affect the stick curve 
 
-## Notes on new Black Box Viewer
-If you open a Betaflight Log, then the logo shown is the Betaflight Logo and the colour scheme is orange; if you open an iNav log, then the logo changes to iNav and the colour scheme is blue; if you open a Cleanflight log (or if it can't tell what kind of firmware you were running e.g. an old version of Betaflight perhaps) then the logo shows the Cleanflight logo and the colour scheme is green....
-Some features are automatically disabled depending upon the firmware you are running that creates the log.  
+ 
