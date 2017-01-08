@@ -1,6 +1,6 @@
-##Betaflight 3.1.0-RC4  
+##Betaflight 3.1.0-RC5  
 
-Betaflight 3.1.0 (Release Candidate 4)  
+Betaflight 3.1.0 (Release Candidate 5)  
 
 Betaflight firmware has undergone some major changes under the hood. Hardware drivers have been optimized to improve future maintainability, but also easier target and hardware support. The efficiency of the code has also been improved by a lot as Betaflight team reviewed each line of the code to squeeze every possible performance win out of it for flight performance purposes. The difference between the current release and previous one is over 1600 code commits by various developers. Only release notes highlights are represented. For full change history github commit history can be reviewed.  
 
@@ -37,9 +37,9 @@ NOTE- You will need to use:
 - RC2 - Fix in rc expo symmetry // fix missing baro on some targets
 - RC3 - Enable experimental 32khz support
 - RC4 - Fix non MPU INT supporting targets // Added MPU Int NAZE // Fix adjustment for setpoint // Some cleanups
-
-- On BFF3 (and maybe others) the DMA channel 2 is tied to both LED and MOTOR 2. With LED enabled I can't get Motor #2 to spin regardless of Protocol selected(tried Multishot, Oneshot125, and Dshot600). Disable LED allows motor 2 to work.  
-To check for conflicts do the following (thanks teralift):  
+- RC5 - Fix more non MPU INT supporting targets // fixed RACEBASE and some SPRACINGF3 variants // Fix ledstrip on BETAFLIGHTF3 and IMPULSERCF3 // DSHOT900 and DSHOT1200 added for testing (only to be enable through cli for now)
+  
+To check for DMA conflicts do the following (thanks teralift):  
 (1) Disable Dshot, enable LED_STRIP, save & reboot.  
 (2) Goto CLI.  
 (3) Type "resource list".  
