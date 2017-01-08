@@ -42,6 +42,9 @@ NOTE- You will need to use:
 - RC4 - Fix non MPU INT supporting targets // Added MPU Int NAZE // Fix adjustment for setpoint // Some cleanups
 - RC5 - Fix more non MPU INT supporting targets // fixed RACEBASE and some SPRACINGF3 variants // Fix ledstrip on BETAFLIGHTF3 and IMPULSERCF3 // DSHOT900 and DSHOT1200 added for testing (only to be enable through cli for now)
   
+Note form Boris: Dshot900 and dshot1200 do work now but only on kiss24 that I know.
+We decided to add a lot of new stuff available from cli for testing purposes and try to only add proven things in the configurator.   
+
 To check for DMA conflicts do the following (thanks teralift):  
 (1) Disable Dshot, enable LED_STRIP, save & reboot.  
 (2) Goto CLI.  
