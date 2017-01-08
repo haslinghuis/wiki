@@ -14,16 +14,16 @@ https://www.rcgroups.com/forums/showpost.php?p=36200950&postcount=1468
 For KISS FC's and ESCs see the KISS Dshot thread:  
 https://www.rcgroups.com/forums/showthread.php?t=2780055
 
-[BetaFlight V3.1 RC1 released](/betaflight/betaflight/wiki/BetaFlight-V3.1.x)  
+[BetaFlight V3.1 RC5 released](/betaflight/betaflight/wiki/BetaFlight-V3.1.x)  
 Just remember that this is still Experimental code and may have serious limitations.  
 Read here to Learn exactly what firmware issues and features are being worked on:  
 https://github.com/betaflight/betaflight/issues?q=is%3Aissue+is%3Aclosed+sort%3Aupdated-desc  
 
 The Latest Development version of the Configurator is recommended. Link on [Home page](https://github.com/betaflight/betaflight/wiki).  
 
-Some known limitations are (Note: All should be fixed in the 3.1 RC1 release but leaving this list until full testing has been done by users):  
+Some known limitations are (Note: All should be fixed in the 3.1 release but leaving this list until full testing has been done by users):  
 - BLHeli pass-through does not work if FC is set to DSHOT. Must change output to OneShot to use the pass-through.    
-Note: Should be fixed on most Targets but not all targets yet.   
+Note: Should be fixed on most Targets.   
 - New pass-through for KISS ESCs: [ESC Pass-through](https://github.com/betaflight/betaflight/wiki/Betaflight-ESC-pass-through)  
 - Some ESCs that have a signal filter cap may not work until the cap is removed. 
 - Dshot for 3D is implemented in the latest betaflight master. I am pretty sure that betaflight code is now correct, but I haven't fully tested all escs ans didn't do any real flight testing.  
@@ -31,18 +31,16 @@ Note: Should be fixed on most Targets but not all targets yet.
 I believe KISS escs now have that implementation. I am not sure of the latest blheli_s status.
 - A bug affecting Spektrum Sats, shows 988 on channels in receiver tab of Betaflight (soon to be looked at).
    Fixed on SPRF3 & REVO, may be fixed on other targets.  
-   Seems this is still there if BB logging is enabled.  
 - PPM not working on some FC targets (limited testing due to most users using Sbus or Spektrum)   
    Note: Some targets need motor re-mapped to PPM pin so then PPM can not be used.
 - LEDs not working or must be disabled to have all motors working due the DMA mapping conflicts.  
 - The 'target.c' source files show that only Quad copters are supported in most targets and some targets support Hex copters. ?? Anyone trying a Hex?
 - Some targets do not work if a Custom mixer is enabled. Instead use the new "resource" CLI command instead. Just be aware that not all outputs (pins) can be assigned a DMA channel for Dshot.  
-- Use BlackBox Viewer 2.5.8 
 
 ####A quick way to determine IF the hex flashed supports Dshot:  
 Go to the CLI and type "get pwm". All settings with 'pwm' in the name will be shown with all options.
 If DSHOT150, DSHOT300, DSHOT600 is NOT in the list for the "motor_pwm_protocol" then this firmware does NOT support Dshot.
-Example from built 668 for MotoLab that does Not support Dshot: 
+Example for NAZE that does Not support Dshot: 
 
 motor_pwm_protocol = ONESHOT42  
 Allowed values: OFF, ONESHOT125, ONESHOT42, MULTISHOT, BRUSHED
@@ -67,7 +65,7 @@ Note: This should not be needed in BLHeli_S 16.43 and up since the PPM_MIN & MAX
 
 Note: When DSHOT is enabled Unsyced PWM is disabled. DSHOT always runs at the PID loop rate.  
 
-####Dshot Values:  
+####Dshot digital Values:  
 0 = disarmed.  
 1 to 47 = Reserved for special commands.  
 48 to 2047 = Active throttle control.  
@@ -153,12 +151,13 @@ See: [CLI resource command](https://github.com/betaflight/betaflight/wiki/Betafl
 - MOTOLAB - (MotoF3, Cyclone & Tempest)   
 Note: Tornado has output driver chips so can not add a wire to the output pin header. 
  3.1 Build #721: Bench tested -
- Solder a wire from Output #1 header pin to the PPM input header pin. [Photo of wire on a Cyclone](https://www.rcgroups.com/forums/showpost.php?p=36589146&postcount=2787)  
+ Solder a wire from Output #1 header pin to the PPM input header pin. [Photo of wire on a Cyclone](https://www.rcgroups.com/forums/showpost.php?p=36589146&postcount=2787)   
+Note: Adding this wire is not required if you connect signal wire from ESC #1 directly to the PPM pin.  
  Follow above and to re-map output type in CLI:  
 `resource ppm none  `  
 `resource motor 1 A07 `  
 `save  `  
-No re=mapping back to default or selecting a non-Dshot protocol is required to use BLHeli (tested with 3.1RC4).
+No re=mapping back to default or selecting a non-Dshot protocol is required to use BLHeli pass-through(tested with 3.1RC4).
  
 - PIKOBLX - Re-map motor 1 to the PPM pin (same as MotoLab) and also disable motor 5-8 ("resource motor X none").    
  Solder a wire from Output #1 header pin to the PPM input header pin.
