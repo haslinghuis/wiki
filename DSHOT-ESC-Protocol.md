@@ -229,7 +229,7 @@ Need to try another fix.
 - All other targets not listed above.   
 
 ###ESCs supporting Dshot:
-- KISS 24 - 150, 300, 600 See the Dshot thread (link above) for ESC code.
+- KISS 24 - 150, 300, 600, 900, 1200 See the Dshot thread (link above) for ESC code.
 
 ####BLheli-S:
 Firmware in Github here: https://github.com/bitdump/BLHeli    
