@@ -111,7 +111,7 @@ Note from sskaug: KISS FCs use a resistor to drive the throttle signal high (pul
 - Omnibus F3 - build #737 works (is this OMNIBUSPRO or OMNIBUS?)
 - RACEBASE FC
 - REVO (and clones)
-- Rotorgeeks RG SSD
+- Rotorgeeks RG SSD -Currently only a custom build. Will be added to official builds soon.
 - SOULF4 - (SOULF4) build #734 (beeper not working) - works with REVO.hex
 - SPracingF3 - Spektrum Sat now working. PPM now working since build #713.
 - YuPi F4
