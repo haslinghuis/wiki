@@ -220,6 +220,8 @@ Move motor2's ESC signal to the PPM FC pin.
 type in CLI:  
 `resource ppm none  `  
 `resource motor 2 A03 `  
+One report that this Does NOT work since the Serial RX is also on the PPM pin.  
+Need to try another fix.  
 
 ####FC Targets with DSHOT code added but in need of testing:
 - SPARKY2
