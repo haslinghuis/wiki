@@ -5,7 +5,7 @@
 TBS SmartAudio is supported on all F3 and F4 targets (except for those with integrated VTX).
 
 - Wiring  
-Just wire the SmartAudio wire to TX of a free hardware UART port.
+Just wire the SmartAudio wire of TX to a free hardware UART port.
 
 - Configuration  
 As couples of previous post noted, the up to date configurator also supports easy configuration of the SmartAudio on the selected port; Ports tab, Peripherals column, SmartAudio, speed is ignored.
