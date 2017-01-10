@@ -61,10 +61,10 @@ Note: This should not be needed in BLHeli_S 16.43 and up since the PPM_MIN & MAX
 #####TEST without props and a Current Limiter.  
 
 Theoretical speeds are a lot higher. The speed is limited in firmware to give more spreading between signals.
-- dshot150: 4kHz max
-- dshot300: 10,6kHz max (10,6khz is only available on 32khz gyro boards)
-- dshot600: 16kHz max
-- dshot1200: 32khz max
+- DSHOT150: 4kHz max
+- DSHOT300: 10,6kHz max (10,6khz is only available on 32khz gyro boards)
+- DSHOT600: 16kHz max
+- DSHOT1200: >32khz max (Currently only KISS24 supports DSHOT1200)
 
 Note: When DSHOT is enabled Unsyced PWM is disabled. DSHOT always runs at the PID loop rate.  
 
