@@ -66,6 +66,7 @@
  - [OMNIBUS](/betaflight/betaflight/wiki/Board---OMNIBUS)
  - [OMNIBUSF4](/betaflight/betaflight/wiki/Board---OMNIBUSF4)
  - [PIKOBLX](/betaflight/betaflight/wiki/Board---PIKOBLX)
+ - [PODIUM](/betaflight/betaflight/wiki/Board---PODIUM)
  - [PORT103R](/betaflight/betaflight/wiki/Board---PORT103R)
  - [RCEXPLORERF3](/betaflight/betaflight/wiki/Board---RCEXPLORERF3)
  - [REVO - LibrePilot docs](https://librepilot.atlassian.net/wiki/display/LPDOC/OpenPilot+Revolution)
