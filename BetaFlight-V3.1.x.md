@@ -17,7 +17,7 @@ Betaflight firmware has undergone some major changes under the hood. Hardware dr
 - Support for KISS esc telemetry (only with DSHOT) - @basdelfos
 - Many code optimizations (higher looptimes possible on F3 and F4) - @martinbudden and @borisbstyle
 - Added [Serial ESC Pass-through](/betaflight/betaflight/wiki/Betaflight-ESC-pass-through) for KISS24 and CASTLE esc's - @sambas
-- New target support (now 65 targets)
+- New target support (now 67 targets)
 - Added CMS display support - @jflyper
 - Added CRSF support for TBS receivers and associated telemetry - @martinbudden and @blckmn
 - Added additional OSD parameters like pids and power - @martinbudden and @rafl
