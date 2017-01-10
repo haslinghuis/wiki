@@ -33,8 +33,8 @@ Betaflight firmware has undergone some major changes under the hood. Hardware dr
 - and many more.  
 - Added new level sensitivity and level limit parameters in degrees. level_limit is the maximum allowed angle. Level_sensitivity is the max deflection on full stick @borisbstyle  
 
-NOTE- You will need to use:  
-- Configurator 1.8.7 or higher for the features in this release
+NOTE- For the features in this release you will need to use the following Versions or Higher:  
+- Configurator 1.8.7
 - BlackBox Viewer 2.5.8
 
 ###Bugs and fixes:  
