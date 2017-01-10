@@ -109,12 +109,14 @@ BLHeli Rev16.5 posted on github (27Nov2016). Dshot150, Dshot300 and Dshot600 are
 - KISSFC  
 Note from sskaug: KISS FCs use a resistor to drive the throttle signal high (pull-up). So it is quite sensitive to capacitance on the ESC signal.  
 - LUX_RACE
+- LUXV2_RACE
 - OMNIBUS
 - OMNIBUSPRO (Blheli Configurator Hangs on read in 3.1, failed flash in 3.01)
 - Omnibus F3 - build #737 works (is this OMNIBUSPRO or OMNIBUS?)
 - RACEBASE FC
 - REVO (and clones)
 - Rotorgeeks RG SSD -Currently only a custom build. Will be added to official builds soon.
+- SIRINFPV
 - SOULF4 - (SOULF4) build #734 (beeper not working) - works with REVO.hex
 - SPracingF3 - Spektrum Sat now working. PPM now working since build #713.
 - YuPi F4
