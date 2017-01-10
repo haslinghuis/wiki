@@ -1,9 +1,9 @@
-##Betaflight 3.1.0-RC5  
+##Betaflight 3.1.0-RC6  
 
 Link to Releases:  
 https://github.com/betaflight/betaflight/releases   
 
-Betaflight 3.1.0 (Release Candidate 5)  
+Betaflight 3.1.0 (Release Candidate 6)  
 
 Betaflight firmware has undergone some major changes under the hood. Hardware drivers have been optimized to improve future maintainability, but also easier target and hardware support. The efficiency of the code has also been improved by a lot as Betaflight team reviewed each line of the code to squeeze every possible performance win out of it for flight performance purposes. The difference between the current release and previous one is over 1600 code commits by various developers. Only release notes highlights are represented. For full change history github commit history can be reviewed.  
 
@@ -30,18 +30,20 @@ Betaflight firmware has undergone some major changes under the hood. Hardware dr
 - Protection against too fast motor speeds (When ONESHOT125 selected for example, max allowed pid and motor speed will be 2khz) and many more..  - @borisbstyle
 - Added experimental 32khz support for gyros that support it - @martinbudden. 
 - Blackbox enhancements (use 2.5.8 blackbox-viewer) @GaryKeeble
-and many more.  
+- and many more.  
+- Added new level sensitivity and level limit parameters in degrees. level_limit is the maximum allowed angle. Level_sensitivity is the max deflection on full stick @borisbstyle  
 
 NOTE- You will need to use:  
-- Configurator 1.8.5 or higher for the features in this release
+- Configurator 1.8.7 or higher for the features in this release
 - BlackBox Viewer 2.5.8
 
 ###Bugs and fixes:  
 - RC2 - Fix in rc expo symmetry // fix missing baro on some targets
 - RC3 - Enable experimental 32khz support
 - RC4 - Fix non MPU INT supporting targets // Added MPU Int NAZE // Fix adjustment for setpoint // Some cleanups
-- RC5 - Fix more non MPU INT supporting targets // fixed RACEBASE and some SPRACINGF3 variants // Fix ledstrip on BETAFLIGHTF3 and IMPULSERCF3 // DSHOT900 and DSHOT1200 added for testing (only to be enable through cli for now)
-  
+- RC5 - Fix more non MPU INT supporting targets // fixed RACEBASE and some SPRACINGF3 variants // Fix ledstrip on BETAFLIGHTF3 and IMPULSERCF3 // DSHOT900 and DSHOT1200 added for testing (only to be enable through cli for now)  
+- RC6 - Fix ledstrip IMPULSERCF3 // Fix DSHOT for SIRINFPV // Add PODIUMF4 // Improved CPU usage // Optimised RC interpolation // Improve DSHOT speed // Add more safety in DSHOT limits (DSHOT150 is limited to 4khz)  
+
 #####Note from Boris: Dshot900 and dshot1200 do work now but only on kiss24 that I know.
 We decided to add a lot of new stuff available from cli for testing purposes and try to only add proven things in the configurator.   
 
@@ -92,3 +94,10 @@ Might be useful on slower i2c targets like NAZE etc. Its for testing purposes. T
 <i>[OFF..ON]<i>  
 Only available on F4 & F7 targets.  
 Usually F4 board will run fine on 32kHz gyro and 16kHz pid loop. 32/32 is slightly too much for CPU. F7 target is now the only one able to run 32kHz/32kHz flawlessly with even accelerometer enabled. To enable 32kHz mode use CLI setting gyro_use_32khz = ON. (Configurator will not display correct speed until the next configurator update, but you will see the real cycletime). NOTE - only flight controllers with MPU6500, MPU9250, and ICM-series (eg ICM20689) gyro support 32kHz mode.  
+
+###New RC6 CLI commands:
+####set level_limit = ??
+ the maximum allowed angle  
+
+####set Level_sensitivity = ??
+the max deflection on full stick  
