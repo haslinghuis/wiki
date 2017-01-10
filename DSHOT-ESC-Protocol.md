@@ -49,7 +49,7 @@ Allowed values: OFF, ONESHOT125, ONESHOT42, MULTISHOT, BRUSHED
 Dshot now uses the CLI command "digital_idle_percent" which adds to the 'min_throttle'.
 Do type "get idle" to see if this exists and what the valid values are. This is a percentage of throttle used in armed state. The pid controller will never push use motor output below this percentage. Test it out by arming while watching the motors tab. If the motors idle slower when using dshot, bump up the digital idle percent. I set mine to 4.000 to make my motors arm at the same speed when swapping back and forth between multi and dshot. 
 
-digital_idle_percent = (min_throttle - min_command) / (max_throttle - min_command) * 100   
+The configurator will show the idle speed in percent also for PWM protocols.
 
 ####ESC Cal and min/max throttle
 ßF firmware with Dshot does Not use the min_throttle or max_throttle setting, these are ignored.
@@ -59,9 +59,12 @@ Note: This should not be needed in BLHeli_S 16.43 and up since the PPM_MIN & MAX
 ####Max ESC update speed supported by different dshot versions:  
 #####WARNING: due to processor tasks, FC and/or ESC, the maximum update rate may not work-  
 #####TEST without props and a Current Limiter.  
-- dshot150: 8kHz max
-- dshot300: 16kHz max
-- dshot600: 32kHz max
+
+Theoretical speeds are a lot higher. The speed is limited in firmware to give more spreading between signals.
+- dshot150: 4kHz max
+- dshot300: 10,6kHz max (10,6khz is only available on 32khz gyro boards)
+- dshot600: 16kHz max
+- dshot1200: 32khz max
 
 Note: When DSHOT is enabled Unsyced PWM is disabled. DSHOT always runs at the PID loop rate.  
 
