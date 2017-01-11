@@ -99,8 +99,10 @@ Only available on F4 & F7 targets.
 Usually F4 board will run fine on 32kHz gyro and 16kHz pid loop. 32/32 is slightly too much for CPU. F7 target is now the only one able to run 32kHz/32kHz flawlessly with even accelerometer enabled. To enable 32kHz mode use CLI setting gyro_use_32khz = ON. (Configurator will not display correct speed until the next configurator update, but you will see the real cycletime). NOTE - only flight controllers with MPU6500, MPU9250, and ICM-series (eg ICM20689) gyro support 32kHz mode.  
 
 ###New RC6 CLI commands:
-####set level_limit = ??
+####set level_limit = 70
+<i>[10..120]<i>  
  the maximum allowed angle  
 
-####set Level_sensitivity = ??
+####set Level_sensitivity = 100
+<i>[10..200]<i>  
 the max deflection on full stick  
