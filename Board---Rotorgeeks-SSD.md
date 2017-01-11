@@ -42,6 +42,8 @@ Available here: http://rotorgeeks.com/index.php?route=product/product&product_id
 _(add FAQs, known issues and workarounds specifically related to this board. please link work in progress issues to the related github issue or pull request)_
   - Voltage scale needs to be set to 119
 
+- RCGroup post on Beeper connection: https://www.rcgroups.com/forums/showpost.php?p=36610466&postcount=14  
+
 ## Other Resources
 
 Pinouts, schematics and RX wiring: 
