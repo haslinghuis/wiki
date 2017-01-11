@@ -1,9 +1,9 @@
-##Betaflight 3.1.0-RC6  
+##Betaflight 3.1.0-RC7  
 
 Link to Releases:  
 https://github.com/betaflight/betaflight/releases   
 
-Betaflight 3.1.0 (Release Candidate 6)  
+Betaflight 3.1.0 (Release Candidate 7)  
 
 Betaflight firmware has undergone some major changes under the hood. Hardware drivers have been optimized to improve future maintainability, but also easier target and hardware support. The efficiency of the code has also been improved by a lot as Betaflight team reviewed each line of the code to squeeze every possible performance win out of it for flight performance purposes. The difference between the current release and previous one is over 1600 code commits by various developers. Only release notes highlights are represented. For full change history github commit history can be reviewed.  
 
@@ -11,11 +11,13 @@ Betaflight firmware has undergone some major changes under the hood. Hardware dr
 
 - Added F7 support with already few supported targets - @sambas
 - Dynamic IO / pin allocation - @blckmn
-- [DSHOT Support](/betaflight/betaflight/wiki/DSHOT ESC Protocol) for F3 and F4 (read wiki about board supported hardware) - @blckmn
+- [DSHOT Support](/betaflight/betaflight/wiki/DSHOT ESC Protocol) for F3 and F4. DSHOT150, 300, 600, and 1200 supported (read wiki about board supported hardware) - @blckmn
 - Full Floating Point Logic for flight behavior - @borisbstyle
 - Many new dynamic configurations (filters, setpoint weights etc.) - @borisbstyle
 - Support for KISS esc telemetry (only with DSHOT) - @basdelfos
-- Many code optimizations (higher looptimes possible on F3 and F4) - @martinbudden and @borisbstyle
+- Many code optimizations (faster pid speeds possible on F3 and F4) - @martinbudden and @borisbstyle
+- Support for KISS ESC telemetry (only with DSHOT) - @basdelfos
+- Added temperature and RPM to KISS ESC telemetry - @mikeller 
 - Added [Serial ESC Pass-through](/betaflight/betaflight/wiki/Betaflight-ESC-pass-through) for KISS24 and CASTLE esc's - @sambas
 - New target support (now 67 targets)
 - Added CMS display support - @jflyper
@@ -24,6 +26,7 @@ Betaflight firmware has undergone some major changes under the hood. Hardware dr
 - Added [Unify SmartAudio](/betaflight/betaflight/wiki/Unify-Smartaudio) support - @jflyper
 - Added MSP over Smartport - @raphaelcoeffic
 - Auto Video Format support for OSD
+- Configurator enhancements - @mikeller
 - Speeded up build system, needed now there are so many targets - @AndersHoglund
 - Fixed JUMBO frame handling on VCP targets, so blackbox logs can be downloaded more quickly - @AndersHoglund 
 - New "anti_gravity_threshold" parameter in CLI - @borisbstyle
@@ -43,8 +46,9 @@ NOTE- For the features in this release you will need to use the following Versio
 - RC4 - Fix non MPU INT supporting targets // Added MPU Int NAZE // Fix adjustment for setpoint // Some cleanups
 - RC5 - Fix more non MPU INT supporting targets // fixed RACEBASE and some SPRACINGF3 variants // Fix ledstrip on BETAFLIGHTF3 and IMPULSERCF3 // DSHOT900 and DSHOT1200 added for testing (only to be enable through cli for now)  
 - RC6 - Fix ledstrip IMPULSERCF3 // Fix DSHOT for SIRINFPV // Add PODIUMF4 // Improved CPU usage // Optimised RC interpolation // Improve DSHOT speed // Add more safety in DSHOT limits (DSHOT150 is limited to 4khz)  
+- RC7 - Fix gyro detection handling for 32k mode // Improved target limitiation  
 
-#####Note from Boris: Dshot900 and dshot1200 do work now but only on kiss24 that I know.
+#####Note from Boris: dshot1200 do work now but only on kiss24 that I know.
 We decided to add a lot of new stuff available from cli for testing purposes and try to only add proven things in the configurator.   
 
 To check for DMA conflicts do the following (thanks teralift):  
