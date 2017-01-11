@@ -14,7 +14,6 @@ Betaflight firmware has undergone some major changes under the hood. Hardware dr
 - [DSHOT Support](/betaflight/betaflight/wiki/DSHOT ESC Protocol) for F3 and F4. DSHOT150, 300, 600, and 1200 supported (read wiki about board supported hardware) - @blckmn
 - Full Floating Point Logic for flight behavior - @borisbstyle
 - Many new dynamic configurations (filters, setpoint weights etc.) - @borisbstyle
-- Support for KISS esc telemetry (only with DSHOT) - @basdelfos
 - Many code optimizations (faster pid speeds possible on F3 and F4) - @martinbudden and @borisbstyle
 - Support for KISS ESC telemetry (only with DSHOT) - @basdelfos
 - Added temperature and RPM to KISS ESC telemetry - @mikeller 
