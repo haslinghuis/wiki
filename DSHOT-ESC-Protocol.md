@@ -295,7 +295,7 @@ https://www.rcgroups.com/forums/showthread.php?2795245-Fully-compatible-with-Dsh
 - Multistar BLHeli_S 30A - 150, 300
 - Racestar v2 6a (2-3S version) - 150, 300, 600 (BLHeli_S 16.43)
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36268041&postcount=1961
-- Racerstar v1 20A - 150, 300 (worked with Lux FC)
+- Racerstar v1 20A - 150, 300 (worked with Lux FC, no cap. mod)
 - Racestar v1 30A   
 - Racerstar v2 30a - 600    
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36209787&postcount=1569  
