@@ -232,6 +232,7 @@ Need to try another fix.
 Firmware in Github here: https://github.com/bitdump/BLHeli    
 
 Note: Many of these ESC have an RC filter on the control input signal line. The cap of this RC filter must be removed to use Dshot as per the list below. It is recommended to remove the cap from any ESC even if Dshot seems to work. All other protocols to still work without this filter cap.  
+Many ESCs are now being built and shipped without the signal filter Cap but it is best to check yourself if the cap is not installed.  
 
 - Aikon 20A/Spedix 20A    
 Cap removal for both: https://www.rcgroups.com/forums/showpost.php?p=36182572&postcount=1319
@@ -304,6 +305,7 @@ Link: https://www.rcgroups.com/forums/showthread.php?t=2782732#post36254434
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36503849&postcount=2672  
 - Racerstar RS30A LiteS - 600 with cap removed.  
 Cap removal: https://www.rcgroups.com/forums/showthread.php?2690769-Racerstar-Blheli_S-ESCs-%28v2-just-released%29-10-for-20a-12-for-30a-30-4in1-20a/page38  
+- RS30Ax4 v2 (4in1) - ??  
 - Spedix ES 20 lite (with signal cap removed) - 150, 300, 600   
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36203466&postcount=1509
 - Spedix 25a (with signal cap removed) - 150, 300, 600   
