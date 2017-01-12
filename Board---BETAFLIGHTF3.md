@@ -10,7 +10,7 @@ _(Fill in hardware specs and add any not listed)_
   - MCU: STM32F3
   - IMU: MPU-6000
   - IMU Interrupt: 
-  - BARO: 
+  - BARO: no
   - VCP: 
   - Hardware UARTS: 
   - OSD: uses a AB7456 chip
