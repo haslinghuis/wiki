@@ -14,28 +14,18 @@ https://www.rcgroups.com/forums/showpost.php?p=36200950&postcount=1468
 For KISS FC's and ESCs see the KISS Dshot thread:  
 https://www.rcgroups.com/forums/showthread.php?t=2780055
 
-[BetaFlight V3.1 RC5 released](/betaflight/betaflight/wiki/BetaFlight-V3.1.x)  
+[BetaFlight V3.1 RC7 released](/betaflight/betaflight/wiki/BetaFlight-V3.1.x)  
 Just remember that this is still Experimental code and may have serious limitations.  
 Read here to Learn exactly what firmware issues and features are being worked on:  
 https://github.com/betaflight/betaflight/issues?q=is%3Aissue+is%3Aclosed+sort%3Aupdated-desc  
 
 The Latest Development version of the Configurator is recommended. Link on [Home page](https://github.com/betaflight/betaflight/wiki).  
 
-Some known limitations are (Note: All should be fixed in the 3.1 release but leaving this list until full testing has been done by users):  
-- BLHeli pass-through does not work if FC is set to DSHOT. Must change output to OneShot to use the pass-through.    
-Note: Should be fixed on most Targets.   
-- New pass-through for KISS ESCs: [ESC Pass-through](https://github.com/betaflight/betaflight/wiki/Betaflight-ESC-pass-through)  
+Some known limitations are:  
+ 3.1 is up to RC7 and seems most issues are fixed. Any issues discovered should be in the 3.1.X wiki page now.
+
 - Some ESCs that have a signal filter cap may not work until the cap is removed. 
-- Dshot for 3D is implemented in the latest betaflight master. I am pretty sure that betaflight code is now correct, but I haven't fully tested all escs ans didn't do any real flight testing.  
-3D implementation in DSHOT is slightly different than on analog protocols. Boris.  
-I believe KISS escs now have that implementation. I am not sure of the latest blheli_s status.
-- A bug affecting Spektrum Sats, shows 988 on channels in receiver tab of Betaflight (soon to be looked at).
-   Fixed on SPRF3 & REVO, may be fixed on other targets.  
-- PPM not working on some FC targets (limited testing due to most users using Sbus or Spektrum)   
-   Note: Some targets need motor re-mapped to PPM pin so then PPM can not be used.
-- LEDs not working or must be disabled to have all motors working due the DMA mapping conflicts.  
-- The 'target.c' source files show that only Quad copters are supported in most targets and some targets support Hex copters. ?? Anyone trying a Hex?
-- Some targets do not work if a Custom mixer is enabled. Instead use the new "resource" CLI command instead. Just be aware that not all outputs (pins) can be assigned a DMA channel for Dshot.  
+
 
 ####A quick way to determine IF the hex flashed supports Dshot:  
 Go to the CLI and type "get pwm". All settings with 'pwm' in the name will be shown with all options.
