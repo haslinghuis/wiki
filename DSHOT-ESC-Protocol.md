@@ -293,8 +293,9 @@ Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36230015&postcount=1
 https://www.rcgroups.com/forums/showthread.php?2795245-Fully-compatible-with-Dshot-New-upgraded-32-bit-Maverick-24A-ESC#post36408093  
 - MRM ZEUS-S 20A - with CAP removed (see FVT littlebee-s 20a cap removal)
 - Multistar BLHeli_S 30A - 150, 300
-- Racestat v2 6a (2-3S version) - 150, 300, 600 (BLHeli_S 16.43)
+- Racestar v2 6a (2-3S version) - 150, 300, 600 (BLHeli_S 16.43)
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36268041&postcount=1961
+- Racerstar v1 20A - 150, 300 (worked with Lux FC)
 - Racestar v1 30A   
 - Racerstar v2 30a - 600    
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36209787&postcount=1569  
