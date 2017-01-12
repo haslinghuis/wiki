@@ -1490,6 +1490,8 @@ Broken: https://www.rcgroups.com/forums/showpost.php?p=36330372&postcount=255
 #####Testing of the new ICM20602 Gyros:  
 Boris: Oh.....for the record its not just ICM20602, but MPU6500, MPU9250 and all other ICM2xxxx devices that show exactly the same behaviour. Pretty much every 32khz supported gyro out there.
 https://www.rcgroups.com/forums/showpost.php?p=36622960&postcount=43273  
+More discussion: https://www.rcgroups.com/forums/showpost.php?p=36623357&postcount=43282  
+https://www.rcgroups.com/forums/showpost.php?p=36623562&postcount=43287  
 
 ##Is there a way to download blackbox logs through a terminal client ? 
 Thanks to dropax for asking this and working out the answer.  
