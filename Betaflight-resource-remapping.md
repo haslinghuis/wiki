@@ -22,6 +22,6 @@ e.g. <b><pre>resource BEEPER B6</pre></b>
 
 <hr>
 <center>
-<img src="https://cloud.githubusercontent.com/assets/14850998/21921215/c5d3521c-d9a9-11e6-8ed8-c53afdbda50f.jpg" width="50%"><br>
+<img src="https://cloud.githubusercontent.com/assets/14850998/21921215/c5d3521c-d9a9-11e6-8ed8-c53afdbda50f.jpg" width="70%"><br>
 How different resource command variation works
 </center>
