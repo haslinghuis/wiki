@@ -19,3 +19,9 @@ e.g. <b><pre>resource BEEPER B6</pre></b>
 <b>resource</b> on its own will list all the available configurable options, and their current setting. This is the output to be added to the <b>dump</b> for use in backing up and restoring configuration.
 
 <b>resource list</b> will list all pins and their current assignments, including all those in use by system components and <b>not</b> configurable by the user. It will also list the currently active DMA utilisation. Note for any adjustments made a save and reboot is required in order for those changes to be visible here. Consider this command the output of the currently active state.
+
+<hr>
+<center>
+<img src="https://cloud.githubusercontent.com/assets/14850998/21921215/c5d3521c-d9a9-11e6-8ed8-c53afdbda50f.jpg" width="50%"><br>
+How different resource command variation works
+</center>
