@@ -105,10 +105,11 @@ Note from sskaug: KISS FCs use a resistor to drive the throttle signal high (pul
 - Omnibus F3 - build #737 works (is this OMNIBUSPRO or OMNIBUS?)
 - RACEBASE FC
 - REVO (and clones)
-- Rotorgeeks RG SSD -Currently only a custom build. Will be added to official builds soon.
+- Rotorgeeks RG SSD - Currently only a custom build. Will be added to official builds soon.
 - SIRINFPV
 - SOULF4 - (SOULF4) build #734 (beeper not working) - works with REVO.hex
-- SPracingF3 - Spektrum Sat now working. PPM now working since build #713.
+- SPRacingF3 (Acro/Deluxe) - Spektrum Sat now working. PPM now working since build #713.
+- SPRacingF3NEO - Full hardware support on all the standard motor outputs - tested by the designer of the board.
 - YuPi F4
 - X-Racer V2.1 (SPRACINGF3 #670)
 - X-Racer F303 (X_RACERSPI) -
@@ -209,16 +210,6 @@ Connect ESC for motor 2 to 'LED' pin on the board.
 To use BLHeli type in CLI:  May not be required.      
 `resource motor 4 A07`   
 `save`  
-
-- SPRacing F3 NEO - motor 2 on pin C07 not assigned a DMA channel when Dshot is selected.
-Need a work around for this FC.  Probably same as other FCs by re-mapping Motor 2 to the PPM pin (A03).  
-Anyone with this FC can try (this is NOT TESTED and needs to be tried and reported):
-Move motor2's ESC signal to the PPM FC pin.
-type in CLI:  
-`resource ppm none  `  
-`resource motor 2 A03 `  
-One report that this Does NOT work since the Serial RX is also on the PPM pin.  
-Need to try another fix.  
 
 ####FC Targets with DSHOT code added but in need of testing:
 - SPARKY2
