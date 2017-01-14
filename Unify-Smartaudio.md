@@ -47,6 +47,9 @@ m bc ffff ppp
 where
 
 `m` : Operational mode, `F` (Freestyle) or `R` (Race).
+
 `b` : Current active band, `A` (BOSCAM A), `B` (BOSCAM B), `E` (BOSCAM E), `F` (FatShark/NewWave) or 'R' (Raceband).
+
 `ffff`: Current transmitting frequency.
-`pop`: Current RF power mode, numeric output power (`25`, `200`, `500`, `800`), or `PIR` (In-Range Pit mode) or `POR` (Out-Range Pit mode).
+
+`ppp`: Current RF power mode, numeric output power (`25`, `200`, `500`, `800`), or `PIR` (In-Range Pit mode) or `POR` (Out-Range Pit mode).
