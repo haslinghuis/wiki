@@ -306,6 +306,7 @@ Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36205800&postcount=1
 - TBS 25 - 300 (600 with signal cap removed)   
 Cap removal:   https://www.rcgroups.com/forums/showpost.php?p=36209076&postcount=1548
 - Xrotor mini 30A BL_S - 300, Not working on 600    
+- XRotor Micro BLHeli-S 30A - 300, Not working on 600   
 - ZTW polaris 30A (A_H_20 16.42) - 300, 600
 
 Generic instructions on how to find signal input and cap on any BLHeli ESC:
