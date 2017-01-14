@@ -50,6 +50,18 @@ NOTE- For the features in this release you will need to use the following Versio
 #####Note from Boris: dshot1200 do work now but only on kiss24 that I know.
 We decided to add a lot of new stuff available from cli for testing purposes and try to only add proven things in the configurator.   
 
+#####Question by Woody_99:  
+I've been flying a Naze32 on BF (3.01) for a while, and seems to be working fine for me.
+With all the code optimizations (noted in the WIKI), is the Naze still a viable option to continue with, or should I swap it out for a newer FC?  
+Answer from Boris:  
+No naze and other F1s actually got slower in 3.1.  
+3.1 is the first version where everything is floating point math. F1 lacks of floating point processor unit so it gets a lot of more to work.
+Besides that it only has 128k flash what prevents a lot of new optimizing we applied.
+All optimizations only affect f3, f4 and f7 boards.  
+
+
+from Boris:
+
 To check for DMA conflicts do the following (thanks teralift):  
 (1) Disable Dshot, enable LED_STRIP, save & reboot.  
 (2) Goto CLI.  
