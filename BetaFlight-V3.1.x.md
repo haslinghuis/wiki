@@ -47,7 +47,12 @@ NOTE- For the features in this release you will need to use the following Versio
 - RC6 - Fix ledstrip IMPULSERCF3 // Fix DSHOT for SIRINFPV // Add PODIUMF4 // Improved CPU usage // Optimised RC interpolation // Improve DSHOT speed // Add more safety in DSHOT limits (DSHOT150 is limited to 4khz)  
 - RC7 - Fix gyro detection handling for 32k mode // Improved target limitiation  
 
-#####Note from Boris: dshot1200 do work now but only on kiss24 that I know.
+####RC7 does not work on CC3D F1 at all. It flashes sucesfull but will not boot or connect to the configurator  
+Known issue, https://github.com/betaflight/betaflight/issues/2036
+Try a later Jenkins build, #943 boots and connects to BFC. Not much else tested on it though.
+http://andwho.sytes.net:8080/job/Bor...43-2d6b718.zip  
+
+#####Note from Boris: dshot1200 does work now but only on kiss24 that I know.
 We decided to add a lot of new stuff available from cli for testing purposes and try to only add proven things in the configurator.   
 
 #####Questions and Answers about 3.1 from Boris' BetaFlight thread.    
