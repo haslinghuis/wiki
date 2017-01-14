@@ -1,6 +1,9 @@
 ##Unify Smartaudio
 
-####From teralift's post in Boris' thread:
+### Setup
+
+#### From teralift's post in Boris' thread
+
 - Targets  
 TBS SmartAudio is supported on all F3 and F4 targets (except for those with integrated VTX).
 
@@ -26,3 +29,24 @@ http://www.team-blacksheep.com/tbs-u...5g8-manual.pdf
 ####Here is a tutorial by Amano13:  
 https://tmr.kiwi/betaflight-mwosd-smartaudio-cms/
 
+### Compatibility
+
+- Unify 5G8 Pro Race Edition:
+Lower frequencies are not supported.
+Power setting can be selected as 500 or 800, but will only go up to 200, as indicated on the status line.
+- The SmartAudio support was developed and tested with SmartAudio V2 devices. If you have a SmartAudio V1 device and have a problem, please report it using the issue facility in the main github repo page for Betaflight.
+
+### Status Line
+
+The status line on the top menu page of SmartAudio VTX menu indicates current status of the vtx in the following format:
+
+```
+m bc ffff ppp
+```
+
+where
+
+`m` : Operational mode, `F` (Freestyle) or `R` (Race).
+`b` : Current active band, `A` (BOSCAM A), `B` (BOSCAM B), `E` (BOSCAM E), `F` (FatShark/NewWave) or 'R' (Raceband).
+`ffff`: Current transmitting frequency.
+`pop`: Current RF power mode, numeric output power (`25`, `200`, `500`, `800`), or `PIR` (In-Range Pit mode) or `POR` (Out-Range Pit mode).
