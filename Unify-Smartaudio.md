@@ -1,6 +1,4 @@
-##Unify Smartaudio
-
-### Setup
+## Setup
 
 #### From teralift's post in Boris' thread
 
@@ -29,14 +27,14 @@ http://www.team-blacksheep.com/tbs-u...5g8-manual.pdf
 ####Here is a tutorial by Amano13:  
 https://tmr.kiwi/betaflight-mwosd-smartaudio-cms/
 
-### Compatibility
+## Compatibility
 
+- The SmartAudio support was developed and tested with SmartAudio V2 devices. If you have a SmartAudio V1 device and have a problem, please report it using the issue facility in the main github repo page for Betaflight.
 - Unify 5G8 Pro Race Edition:
 Lower frequencies are not supported.
-Power setting can be selected as 500 or 800, but will only go up to 200, as indicated on the status line.
-- The SmartAudio support was developed and tested with SmartAudio V2 devices. If you have a SmartAudio V1 device and have a problem, please report it using the issue facility in the main github repo page for Betaflight.
+Power setting can be selected as 500 or 800, but will only go up to 200, as will be indicated on the status line.
 
-### Status Line
+## Status Line
 
 The status line on the top menu page of SmartAudio VTX menu indicates current status of the vtx in the following format:
 
