@@ -50,7 +50,8 @@ NOTE- For the features in this release you will need to use the following Versio
 #####Note from Boris: dshot1200 do work now but only on kiss24 that I know.
 We decided to add a lot of new stuff available from cli for testing purposes and try to only add proven things in the configurator.   
 
-#####Question by Woody_99:  
+#####Questions and Answer about 3.1  
+######question by Woody_99:  
 I've been flying a Naze32 on BF (3.01) for a while, and seems to be working fine for me.
 With all the code optimizations (noted in the WIKI), is the Naze still a viable option to continue with, or should I swap it out for a newer FC?  
 Answer from Boris:  
@@ -59,8 +60,11 @@ No naze and other F1s actually got slower in 3.1.
 Besides that it only has 128k flash what prevents a lot of new optimizing we applied.
 All optimizations only affect f3, f4 and f7 boards.  
 
-
-from Boris:
+######question by fftunes:  
+If i run 8k/1k, will the PID loop be calculated from an average of the 8 gyro samples, or will it only use 1 sample out of 8?
+Answer from Boris:
+There is no averaging. There is IIR filtering, what works faster than averaging. Every sample it's information is taken to the next sample a bit. Btw you can enable simple averaging with chosing FIR filter style. Averaging gives a lot of delay typically.  
+It seems that a lot of guys really missed the early betaflights where all this was discussed a lot. All i can say is to read about the way how filtering works and look up about aliasing. (Filtering is explained in this Wiki)  
 
 To check for DMA conflicts do the following (thanks teralift):  
 (1) Disable Dshot, enable LED_STRIP, save & reboot.  
