@@ -35,6 +35,9 @@ The debug setting will log additional data to debug[0]-debug[3]:
 * debug[2] is unfiltered and raw gyro data on pitch axis.
 * debug[3] is only notch filtered gyro data on pitch axis.
 
+Super simple visual explanation of the gyro data sequence through the filters:  
+raw gyro->(debug gyro here)->soft lpf->(debug notch here)->notch1->notch2  
+
 If the notch filter is disabled 0/1 and 2/3 will be identical. Otherwise you can directly see what the filter does.
 More details on phase shift for example can be found here: https://github.com/betaflight/betaflight/pull/668
 
