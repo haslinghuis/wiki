@@ -55,14 +55,13 @@ We decided to add a lot of new stuff available from cli for testing purposes and
 I've been flying a Naze32 on BF (3.01) for a while, and seems to be working fine for me.
 With all the code optimizations (noted in the WIKI), is the Naze still a viable option to continue with, or should I swap it out for a newer FC?  
 Answer from Boris:  
-No naze and other F1s actually got slower in 3.1.  
-3.1 is the first version where everything is floating point math. F1 lacks of floating point processor unit so it gets a lot of more to work.
+No naze and other F1s actually got slower in 3.1. 3.1 is the first version where everything is floating point math. F1 lacks of floating point processor unit so it gets a lot of more to work.
 Besides that it only has 128k flash what prevents a lot of new optimizing we applied.
 All optimizations only affect f3, f4 and f7 boards.  
 
 ######question by fftunes:  
-If i run 8k/1k, will the PID loop be calculated from an average of the 8 gyro samples, or will it only use 1 sample out of 8?
-Answer from Boris:
+If i run 8k/1k, will the PID loop be calculated from an average of the 8 gyro samples, or will it only use 1 sample out of 8?  
+Answer from Boris:  
 There is no averaging. There is IIR filtering, what works faster than averaging. Every sample it's information is taken to the next sample a bit. Btw you can enable simple averaging with chosing FIR filter style. Averaging gives a lot of delay typically.  
 It seems that a lot of guys really missed the early betaflights where all this was discussed a lot. All i can say is to read about the way how filtering works and look up about aliasing. (Filtering is explained in this Wiki)  
 
