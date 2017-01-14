@@ -34,7 +34,8 @@ https://tmr.kiwi/betaflight-mwosd-smartaudio-cms/
 Lower frequencies are not supported.
 Power setting can be selected as 500 or 800, but will only go up to 200, as will be indicated on the status line.
 
-## Status Line
+## SmartAudio CMS guide
+### Status Line
 
 The status line on the top menu page of SmartAudio VTX menu indicates current status of the vtx in the following format:
 
