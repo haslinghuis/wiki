@@ -110,8 +110,18 @@ Specifies frequency to use while in pit mode. Requires power cycle to take effec
 - In-Range (`PIR`): Pit mode frequency is specified by band and channel set before the power cycle.
 - Out-Range (`POR`): Pit mode frequency is specified by the value of `POR FREQ`.
 
+_*WARNING*_  
+Do not change this entry to POR without VRX capable of receiving at frequency specified by the `POR FREQ` entry.
+If you do without such VRX, you will be blinded until Out-Range pit mode is cleared.
+
 #### POR FREQ
-Specifies frequency to use while in _Out-Range_ pit mode.
+Specifies frequency to use while in _Out-Range_ pit mode.  
 
 #### STATX
 Protocol statistics between Betaflight and a SmartAudio device. May help you to trouble shoot connection problems.
+
+### Trouble shooting
+#### Recovery from accidental Out-Range pit mode
+- You can cancel pit mode by button operation. Refer to the Unify manual.
+- You can use alternative CMS device such as I2C OLED to cancel the Out-Range mode.
+- You can tap or connect VIDEO OUTPUT from OSD and connect it to external display or goggle's VIDEO INPUT.
