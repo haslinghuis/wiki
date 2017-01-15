@@ -1,9 +1,9 @@
-##Betaflight 3.1.0-RC7  
+##Betaflight 3.1.0-RC8  
 
 Link to Releases:  
 https://github.com/betaflight/betaflight/releases   
 
-Betaflight 3.1.0 (Release Candidate 7)  
+Betaflight 3.1.0 (Release Candidate 8)  
 
 Betaflight firmware has undergone some major changes under the hood. Hardware drivers have been optimized to improve future maintainability, but also easier target and hardware support. The efficiency of the code has also been improved by a lot as Betaflight team reviewed each line of the code to squeeze every possible performance win out of it for flight performance purposes. The difference between the current release and previous one is over 1600 code commits by various developers. Only release notes highlights are represented. For full change history github commit history can be reviewed.  
 
@@ -46,13 +46,7 @@ NOTE- For the features in this release you will need to use the following Versio
 - RC5 - Fix more non MPU INT supporting targets // fixed RACEBASE and some SPRACINGF3 variants // Fix ledstrip on BETAFLIGHTF3 and IMPULSERCF3 // DSHOT900 and DSHOT1200 added for testing (only to be enable through cli for now)  
 - RC6 - Fix ledstrip IMPULSERCF3 // Fix DSHOT for SIRINFPV // Add PODIUMF4 // Improved CPU usage // Optimised RC interpolation // Improve DSHOT speed // Add more safety in DSHOT limits (DSHOT150 is limited to 4khz)  
 - RC7 - Fix gyro detection handling for 32k mode // Improved target limitiation  
-
-####RC7 does not work on CC3D F1 at all. It flashes sucesfull but will not boot or connect to the configurator  
-Known issue, https://github.com/betaflight/betaflight/issues/2036
-Try a later Jenkins build, #943 boots and connects to BFC. Not much else tested on it though.
-http://andwho.sytes.net:8080/job/Bor...43-2d6b718.zip  
-
-####FPV angle mix will be working in RC8. There is indeed a bug in it. I just fixed it. Boris   
+- RC8 - Fix FPV angle mix // Added RG_SSD_F3 target // SPRACINGF3NEO DSHOT optimalisations // CC3D_OPBL fix // Remove MSP from UART1 by default // Added debug for gyro calibration noise // Minor optimalisations    
 
 #####Note from Boris: dshot1200 does work now but only on kiss24 that I know.
 We decided to add a lot of new stuff available from cli for testing purposes and try to only add proven things in the configurator.   
