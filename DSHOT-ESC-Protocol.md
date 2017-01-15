@@ -168,15 +168,19 @@ No remapping back to default or selecting a non-Dshot protocol is required to us
 Link to modification details: https://www.rcgroups.com/forums/showpost.php?p=36608148&postcount=43149  
  Follow above and to re-map output type in CLI:  
 `resource ppm none  `  
-`resource motor 1 A07 `  
+`resource motor 1 A07 `
+  
 `resource motor 5 none `
+
 `resource motor 4 A01 `
+
 `resource motor 6 none `  
 `resource motor 7 none `  
 `resource motor 8 none `  
 `save  `  
 
 (Likely not required in 3.1)
+
  To use BLHeli type in CLI:  May not be required.
 `resource motor 1 A04  `  
 `save  `  
