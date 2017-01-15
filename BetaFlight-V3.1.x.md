@@ -52,6 +52,8 @@ Known issue, https://github.com/betaflight/betaflight/issues/2036
 Try a later Jenkins build, #943 boots and connects to BFC. Not much else tested on it though.
 http://andwho.sytes.net:8080/job/Bor...43-2d6b718.zip  
 
+####FPV angle mix will be working in RC8. There is indeed a bug in it. I just fixed it. Boris   
+
 #####Note from Boris: dshot1200 does work now but only on kiss24 that I know.
 We decided to add a lot of new stuff available from cli for testing purposes and try to only add proven things in the configurator.   
 
