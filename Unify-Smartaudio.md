@@ -118,7 +118,7 @@ If you do without such VRX, you will be blinded until Out-Range pit mode is clea
 Specifies frequency to use while in _Out-Range_ pit mode.  
 
 #### STATX
-Protocol statistics between Betaflight and a SmartAudio device. May help you to trouble shoot connection problems.
+Protocol statistics between a flight controller and a SmartAudio device. May help you to trouble shoot connection problems.
 
 ### Trouble shooting
 #### Recovery from accidental Out-Range pit mode
