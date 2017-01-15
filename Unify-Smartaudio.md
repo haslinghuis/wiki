@@ -79,3 +79,6 @@ This is a model used when flying alone.
 When operating in this model, left most character of the status line is `F`,
 and current power indicator matches that of power level selection menu entry.
 Changes to power takes effect immediately, but changes to band and channel must be commenced by SET.
+
+#### Switching between Freestyle and Race
+There is a OPMODEL entry in the CONFIG sub-menu. Select either `FREE` or `RACE`. A device must be power cycled for the change to take effect.
