@@ -37,6 +37,9 @@ The SmartAudio support unlocks certain capabilities of a SmartAudio device, to p
 - Unify 5G8 Pro Race Edition:
 Lower frequencies are not supported.
 Power setting can be selected as 500 or 800, but will only go up to 200, as will be indicated on the status line.
+- SPARKY2:  
+Due to the pull-up resistors, Flexi-port is not suitable for Unify 5G8 Pro, Pro HV and Pro HV Race edition.
+Main-port may be compatible (need testing).
 
 ## SmartAudio CMS guide
 
