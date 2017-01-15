@@ -162,18 +162,22 @@ Note: Adding this wire is not required if you connect signal wire from ESC #1 di
 `save  `  
 No remapping back to default or selecting a non-Dshot protocol is required to use BLHeli pass-through(tested with 3.1RC4).
  
-- PIKOBLX - Re-map motor 1 to the PPM pin (same as MotoLab) and also disable motor 5-8 ("resource motor X none").    
- Solder a wire from Output #1 header pin to the PPM input header pin.  
+- PIKOBLX - Re-map motor 1 to the PPM pin (same as MotoLab) and to allow the use of the LED pin Re-map motor 4 to motor 5 signal out, which must also be soldered as such. Also disable motor 5-8 ("resource motor X none").    
+ Solder motor 1 to the PPM input header pin.
+ Solder motor 4 to the motor 5 input header pin. 
 Link to modification details: https://www.rcgroups.com/forums/showpost.php?p=36608148&postcount=43149  
  Follow above and to re-map output type in CLI:  
 `resource ppm none  `  
 `resource motor 1 A07 `  
-`resource motor 5 none `  
+`resource motor 5 none `
+`resource motor 4 A01 `
 `resource motor 6 none `  
 `resource motor 7 none `  
 `resource motor 8 none `  
 `save  `  
- To use BLHeli type in CLI:  May not be required.  
+
+(Likely not required in 3.1)
+ To use BLHeli type in CLI:  May not be required.
 `resource motor 1 A04  `  
 `save  `  
 
