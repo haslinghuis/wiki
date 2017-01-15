@@ -75,7 +75,7 @@ If the device is in pit mode, current power indicator of the status line is eith
 Refer to TBS Unify 5G8 Pro Manual for explanation of "In-Range" and "Out-Range".
 
 #### Freestyle 
-This is a model used when flying alone.
+This is a model used when flying alone. A SmartAudio device will power up actively transmitting at band and channel with power as they were set before the power cycle.
 When operating in this model, left most character of the status line is `F`,
 and current power indicator matches that of power level selection menu entry.
 Changes to power takes effect immediately, but changes to band and channel must be commenced by SET.
