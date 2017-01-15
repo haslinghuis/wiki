@@ -1,4 +1,4 @@
-# Dshot & BetaFlight 3.1   
+## # Dshot & BetaFlight 3.1   
 Dshot is new and currently code is being developed and tested. Since there are many dependencies and not all current hardware works this is to help keep track.
 
 The Official Thread for Dshot is: https://www.rcgroups.com/forums/showthread.php?t=2756129   
@@ -169,18 +169,14 @@ Link to modification details: https://www.rcgroups.com/forums/showpost.php?p=366
  Follow above and to re-map output type in CLI:  
 `resource ppm none  `  
 `resource motor 1 A07 `
-  
 `resource motor 5 none `
-
 `resource motor 4 A01 `
-
 `resource motor 6 none `  
 `resource motor 7 none `  
 `resource motor 8 none `  
 `save  `  
 
 (Likely not required in 3.1)
-
  To use BLHeli type in CLI:  May not be required.
 `resource motor 1 A04  `  
 `save  `  
