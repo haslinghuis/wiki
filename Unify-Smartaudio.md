@@ -12,8 +12,8 @@ Just wire the SmartAudio wire to a free hardware UART (TX) port.
 As couples of previous post noted, the up to date configurator also supports easy configuration of the SmartAudio on the selected port; Ports tab, Peripherals column, SmartAudio, speed is ignored.
 
 - Generic CMS  
-3.1 will come with the generic CMS (Configuration Menu System) that runs on top of multiple display devices;  FC-integrated OSD, I2C OLED display and external OSD (MinimOSD variants) running latest version of MWOSD. (You even can switch between OSD and OLED while in CMS.)  
-
+3.1 will come with the generic CMS (Configuration Menu System) that runs on top of multiple display devices;  FC-integrated OSD, I2C OLED display and external OSD (MinimOSD variants) running latest version of MWOSD (Release 1.6.5 or later).  
+(You even can switch between OSD and OLED while in CMS.)  
 This means that users of external OSDs can control SmartAudio from the CMS.
 
 ####From AILERON8's post in Boris' thread:
