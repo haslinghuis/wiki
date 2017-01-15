@@ -51,11 +51,13 @@ where
 
 `m` : Operational model, `F` (Freestyle) or `R` (Race).
 
-`b` : Current active band, `A` (BOSCAM A), `B` (BOSCAM B), `E` (BOSCAM E), `F` (FatShark/NexWave) or 'R' (Raceband).
+`b` : Current transmitting band, `A` (BOSCAM A), `B` (BOSCAM B), `E` (BOSCAM E), `F` (FatShark/NexWave) or 'R' (Raceband).
+
+`c` : Current transmitting channel, `1` through `8`.
 
 `ffff`: Current transmitting frequency.
 
-`ppp`: Current RF power mode, numeric output power (`25`, `200`, `500`, `800`), or `PIR` (In-Range Pit mode) or `POR` (Out-Range Pit mode).
+`ppp`: Current transmitting RF power, numeric value for mW (`25`, `200`, `500`, `800`), or `PIR` (In-Range Pit mode) or `POR` (Out-Range Pit mode).
 
 Note that the status line indicates "running" status of the VTX device, and values may be different from band, channel and power setting entries below the status line.
 
