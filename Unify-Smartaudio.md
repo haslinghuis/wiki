@@ -90,3 +90,28 @@ Changes to `POWER` takes effect immediately, but changes to `BAND` and `CHAN` mu
 
 #### Switching between Freestyle and Race
 There is an `OPMODEL` entry in the `CONFIG` sub-menu. Select either `FREE` or `RACE`. A device must be power cycled for the change to take effect.
+
+### CONFIG sub-menu
+
+![SmartAudio CMS CONFIG submenu](https://cloud.githubusercontent.com/assets/14850998/21961345/de0b760a-db4a-11e6-8309-abc6227ddc7c.jpg)
+
+#### OP MODEL
+Selection between race operational model (`RACE`) and freestyle operational model (`FREE`).  
+Requires power cycle to take effect.
+
+#### FSEL MODE
+Frequency selection method. Requires power cycle to take effect.
+- Channel mode ('CHAN'): Frequency is selected by specifying band and channel.
+- Frequency mode ('FREQ': Frequency is specified by numerical value in MHz.  
+When set to frequency mode, operational model is automatically set to freestyle, and top menu will be altered to enable direct frequency adjustment.
+
+#### PIT FMODE
+Specifies frequency to use while in pit mode. Requires power cycle to take effect.
+- In-Range (`PIR`): Pit mode frequency is specified by band and channel set before the power cycle.
+- Out-Range (`POR`): Pit mode frequency is specified by the value of `POR FREQ`.
+
+#### POR FREQ
+Specifies frequency to use while in _Out-Range_ pit mode.
+
+#### STATX
+Protocol statistics between Betaflight and a SmartAudio device. May help you to trouble shoot connection problems.
