@@ -83,6 +83,7 @@ BLHeli Rev16.5 posted on github (27Nov2016). Dshot150, Dshot300 and Dshot600 are
 ###Flight Controllers Tested to Support Dshot on Betaflight 3.1 Alphas:
 - AIORACERF3
 - Airbot F3 (SPRACINGF3)  
+- ALIENFLIGHTF3
 - BETAFLIGHTF3  
 - BLUEJAYF4
 - BrainFPV RE1 (needs build from BrainFPV repo)
@@ -143,6 +144,14 @@ and copy/paste these into a Text file and save for reference of the Default pin 
   5- Set ESC protocol to DSHOT.  
 
 See: [CLI resource command](https://github.com/betaflight/betaflight/wiki/Betaflight-resource-remapping)    
+
+- ALIENFLIGHTF4  
+ Bridge the motor 2 output pad with the PPM pad at the bottom of the board. There are updated board designs available with an added DSHOT solder jumper at the bottom which is making this connection. Note: a PPM receiver can not be used in this configuration.   
+ Enter the following commands into the CLI window to re-map output:  
+`resource ppm none  `  
+`resource motor 2 A08 `  
+`save  `  
+With the bridge installed and the pin remapped BLHeli pass-through will work as usual.
 
 - MOTOLAB - (MotoF3, Cyclone & Tempest)   
  Solder a wire from Output #1 header pin to the PPM input header pin. [Photo of wire on a Cyclone](https://www.rcgroups.com/forums/showpost.php?p=36589146&postcount=2787)   
