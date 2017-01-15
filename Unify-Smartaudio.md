@@ -89,4 +89,4 @@ and current power field matches that of power level selection menu entry.
 Changes to `POWER` takes effect immediately, but changes to `BAND` and `CHAN` must be commenced by `SET`.
 
 #### Switching between Freestyle and Race
-There is a `OPMODEL` entry in the `CONFIG` sub-menu. Select either `FREE` or `RACE`. A device must be power cycled for the change to take effect.
+There is an `OPMODEL` entry in the `CONFIG` sub-menu. Select either `FREE` or `RACE`. A device must be power cycled for the change to take effect.
