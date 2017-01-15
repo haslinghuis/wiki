@@ -67,18 +67,20 @@ In Betaflight, a SmartAudio device operates in one of two operational models:
 #### Race 
 This is a model that gives minimum interferance to other pilots.
 A SmartAudio device powers up in pit mode, and remain in pit mode until transmission is commenced.
-While in the pit mode, changes to band, channel and power will not take effect until SET menu entry and associated confirmation is done (transmission commencing).
-Band, channel and powers can be modified after commencing, but they all still require SET to take effect.
 
 When operating in this model, left most character of the status line is `R`.
-If the device is in pit mode, current power indicator of the status line is either `PIR` or `POR`, until transmission is commenced.
+If the device is in pit mode, current power field of the status line is either `PIR` or `POR`, until transmission is commenced.
+
+While in the pit mode, changes to `BAND`, `CHAN` and `POWER` will not take effect until `SET` menu entry and associated confirmation is done (transmission commencing).
+`BAND`, `CHAN` and `POWER` can be modified after commencing, but they all still require `SET` to take effect.
+
 Refer to TBS Unify 5G8 Pro Manual for explanation of "In-Range" and "Out-Range".
 
 #### Freestyle 
 This is a model used when flying alone. A SmartAudio device will power up actively transmitting at band and channel with power as they were set before the power cycle.
 When operating in this model, left most character of the status line is `F`,
-and current power indicator matches that of power level selection menu entry.
-Changes to power takes effect immediately, but changes to band and channel must be commenced by SET.
+and current power field matches that of power level selection menu entry.
+Changes to `POWER` takes effect immediately, but changes to `BAND` and `CHAN` must be commenced by `SET`.
 
 #### Switching between Freestyle and Race
-There is a OPMODEL entry in the CONFIG sub-menu. Select either `FREE` or `RACE`. A device must be power cycled for the change to take effect.
+There is a `OPMODEL` entry in the `CONFIG` sub-menu. Select either `FREE` or `RACE`. A device must be power cycled for the change to take effect.
