@@ -57,20 +57,23 @@ where
 
 `ppp`: Current RF power mode, numeric output power (`25`, `200`, `500`, `800`), or `PIR` (In-Range Pit mode) or `POR` (Out-Range Pit mode).
 
+Note that the status line indicates "running" status of the VTX device, and values may be different from band, channel and power setting entries below the status line.
+
 ### Operational Models
 In Betaflight, a SmartAudio device operates in one of two operational models:
 
 #### Race 
 This is a model that gives minimum interferance to other pilots.
-A SmartAudio device powers up in pit mode, and remain in pit mode until explicitly instructed to exit from this mode.
-Changes to band and channel will not take effect until SET menu entry and associated confirmation is done (transmission commencing).
-Commencing will also take the device out of pit mode, and start transmission at the selected power.
+A SmartAudio device powers up in pit mode, and remain in pit mode until transmission is commenced.
+While in the pit mode, changes to band, channel and power will not take effect until SET menu entry and associated confirmation is done (transmission commencing).
+Band, channel and powers can be modified after commencing, but they all still require SET to take effect.
 
-When operating in this model, left most character of the status line is `R`, and current power indicator is either `PIR` or `POR`, until transmission is commenced.
+When operating in this model, left most character of the status line is `R`.
+If the device is in pit mode, current power indicator of the status line is either `PIR` or `POR`, until transmission is commenced.
 Refer to TBS Unify 5G8 Pro Manual for explanation of "In-Range" and "Out-Range".
 
 #### Freestyle 
 This is a model used when flying alone.
 When operating in this model, left most character of the status line is `F`,
 and current power indicator matches that of power level selection menu entry.
-Changes to power takes effect immediately, but changes to band and channel must be commenced by SET menu entry.
+Changes to power takes effect immediately, but changes to band and channel must be commenced by SET.
