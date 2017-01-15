@@ -39,6 +39,12 @@ Lower frequencies are not supported.
 Power setting can be selected as 500 or 800, but will only go up to 200, as will be indicated on the status line.
 
 ## SmartAudio CMS guide
+
+### The top menu
+The top menu for SmartAudio VTX looks like this.
+![SmartAudio CMS Top menu (Band/Chan mode)](https://cloud.githubusercontent.com/assets/14850998/21961195/c2639562-db46-11e6-9f98-71d54f6a879b.jpg)
+While most of the entries are intuitive, there are several things that need additional explanation.
+
 ### Status Line
 
 The status line on the top menu page of SmartAudio VTX menu indicates current status of the vtx in the following format:
