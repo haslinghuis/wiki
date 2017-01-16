@@ -4,7 +4,13 @@ Using Betaflight Configurator, select the firmware_flasher tab and press the "Lo
 
 ** Only exception to this being for the SPracingF3 flight controller, for this FC you will need to check 'Manual baud rate' and change the selection to '230400' baud.
 
-## DFU flashing under Windows - USB DFU:
+## Native USB based flight controllers (using a hardware serial bridge)
+
+Driver issues can be fixed using this handy tool: https://impulserc.blob.core.windows.net/utilities/ImpulseRC_Driver_Fixer.exe
+
+It requires .net framework v4.5. Available here: https://www.microsoft.com/en-au/download/details.aspx?id=30653
+
+### DFU flashing under Windows - USB DFU:
 Make sure you have zadig if you're using Windows to enable the DFU driver. Instructions:
 
 1. Download Zadig: http://zadig.akeo.ie/
@@ -25,7 +31,7 @@ Make sure you have zadig if you're using Windows to enable the DFU driver. Instr
 1. The board should start flashing. First indicating an erase, then flash and finally verification.
 1. Once flashed your board will reboot, but you may need to install the STM VCP driver (see below) for Betaflight Configurator to connect to the board.
 
-## Installing STMicro Virtual Com Port (VCP) Driver under Windows:
+### Installing STMicro Virtual Com Port (VCP) Driver under Windows:
 
 Many of the F4 boards (REVO, ALIENFLIGHTF4, BLUEJAYF4), and some F3 boards (SPRacingF3EVO, STM32DISCOVERY) utilise the STM32 Virtual Com Port (VCP) - a CDC serial implementation. This allows the UARTs on board to be utilised whilst the USB is connected. This requires the STM VCP driver to be installed so that the VCP to be recognised as an additional comm port on the PC. 
 **NOTE:** this is similar to installing a USB serial driver, e.g. FTDI or SiLabs
@@ -36,7 +42,7 @@ The STM32 VCP driver can be downloaded here --> http://www.st.com/web/en/catalog
 
 e.g. C:\Program Files (x86)\STMicroelectronics\Software\Virtual comport driver\Win8\ <- will have two files present. One for 64 bit systems (dpinst_amd64.exe) and one for 32 bit systems (dpinst_x86.exe).
 
-## Platform Specific: Linux
+### Platform Specific: Linux
 
 Linux requires udev rules to allow write access to USB devices for users. The command bellow will create a template rule for you.
 
