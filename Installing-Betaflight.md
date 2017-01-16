@@ -4,7 +4,7 @@ Using Betaflight Configurator, select the firmware_flasher tab and press the "Lo
 
 ** Only exception to this being for the SPracingF3 flight controller, for this FC you will need to check 'Manual baud rate' and change the selection to '230400' baud.
 
-## DFU flashing under Windows:
+## DFU flashing under Windows - USB DFU:
 Make sure you have zadig if you're using Windows to enable the DFU driver. Instructions:
 
 1. Download Zadig: http://zadig.akeo.ie/
