@@ -82,7 +82,7 @@ To check for DMA conflicts do the following (thanks teralift):
 
 ###New CLI commands for 3.1:
 
-Note: See the [3.0.x page](/betaflight/betaflight/wiki/BetaFlight-3.0.x) for CLI commands plus other features that were new in 3.0
+Note: See the [3.0.x page](/betaflight/betaflight/wiki/BetaFlight-3.0.x) for CLI commands plus other features that were new in 3.0.x  
 See the [V2.x CLI Commands](/betaflight/betaflight/wiki/Betaflight-specific-CLI-commands) page for a history of CLI command changes. This WIKI has only documented Changes from being Forked from CleanFlight. Do see the CF docs.  
 
 ####Resource Remapping
