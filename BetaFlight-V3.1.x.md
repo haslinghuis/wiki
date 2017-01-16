@@ -49,9 +49,9 @@ NOTE- For the features in this release you will need to use the following Versio
 - RC8 - Fix FPV angle mix // Added RG_SSD_F3 target // SPRACINGF3NEO DSHOT optimalisations // CC3D_OPBL fix // Remove MSP from UART1 by default // Added debug for gyro calibration noise // Minor optimalisations    
 
 #####Notes from Boris:   
-- dshot1200 does work now but only on kiss24 that I know.
+DSHOT1200 does work now but only on kiss24 that I know.
 We decided to add a lot of new stuff available from cli for testing purposes and try to only add proven things in the configurator.   
-- 
+
 #####Questions and Answers about 3.1 from Boris' BetaFlight thread.    
 ######question by Woody_99:  
 I've been flying a Naze32 on BF (3.01) for a while, and seems to be working fine for me.
