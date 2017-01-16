@@ -4,7 +4,8 @@ Using Betaflight Configurator, select the firmware_flasher tab and press the "Lo
 
 ** Only exception to this being for the SPracingF3 flight controller, for this FC you will need to check 'Manual baud rate' and change the selection to '230400' baud.
 
-## Native USB based flight controllers (using a hardware serial bridge)
+## Native USB based flight controllers 
+(Those *not* using a hardware serial bridge)
 
 Driver issues can be fixed using this handy tool: https://impulserc.blob.core.windows.net/utilities/ImpulseRC_Driver_Fixer.exe
 
