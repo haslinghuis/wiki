@@ -48,9 +48,10 @@ NOTE- For the features in this release you will need to use the following Versio
 - RC7 - Fix gyro detection handling for 32k mode // Improved target limitiation  
 - RC8 - Fix FPV angle mix // Added RG_SSD_F3 target // SPRACINGF3NEO DSHOT optimalisations // CC3D_OPBL fix // Remove MSP from UART1 by default // Added debug for gyro calibration noise // Minor optimalisations    
 
-#####Note from Boris: dshot1200 does work now but only on kiss24 that I know.
+#####Notes from Boris:   
+- dshot1200 does work now but only on kiss24 that I know.
 We decided to add a lot of new stuff available from cli for testing purposes and try to only add proven things in the configurator.   
-
+- 
 #####Questions and Answers about 3.1 from Boris' BetaFlight thread.    
 ######question by Woody_99:  
 I've been flying a Naze32 on BF (3.01) for a while, and seems to be working fine for me.
@@ -59,6 +60,8 @@ Answer from Boris:
 No naze and other F1s actually got slower in 3.1. 3.1 is the first version where everything is floating point math. F1 lacks of floating point processor unit so it gets a lot of more to work.
 Besides that it only has 128k flash what prevents a lot of new optimizing we applied.
 All optimizations only affect f3, f4 and f7 boards.  
+Instead of running new versions of betaflight or reforking it you can simply stick to the version you use now for example. There is no solution for F1 boards in the future unfortunately and every new feature will NOT be included to it. You are for example willing to give up acc, but 100 others may not. So that's not a solution.  
+I see that Softserial does fit again since latest cleanups (RC9?). There is only like 1kb left on Naze now.  
 
 ######question by fftunes:  
 If i run 8k/1k, will the PID loop be calculated from an average of the 8 gyro samples, or will it only use 1 sample out of 8?  
