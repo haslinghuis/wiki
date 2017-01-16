@@ -24,7 +24,8 @@
  - [Resource Remapping](/betaflight/betaflight/wiki/Betaflight-resource-remapping)
  - [DSHOT ESC Protocol](/betaflight/betaflight/wiki/DSHOT ESC Protocol) 
  - [ESC Programming Pass-through](/betaflight/betaflight/wiki/Betaflight-ESC-pass-through)
- - [Unify SmartAudio](/betaflight/betaflight/wiki/Unify-Smartaudio)
+ - [TBS Unify SmartAudio](/betaflight/betaflight/wiki/Unify-Smartaudio)
+ - [IRC Tramp](/betaflight/betaflight/wiki/IRC-Tramp)
  - [ESC-Telemetry](/betaflight/betaflight/wiki/ESC-Telemetry)
  - [CMS Screen Adjustment](/betaflight/betaflight/wiki/CMS-Adjusting-Screen)
 
