@@ -26,7 +26,7 @@
  - [ESC Programming Pass-through](/betaflight/betaflight/wiki/Betaflight-ESC-pass-through)
  - [Unify SmartAudio](/betaflight/betaflight/wiki/Unify-Smartaudio)
  - [ESC-Telemetry](/betaflight/betaflight/wiki/ESC-Telemetry)
- - [CMS Screen Adjustment](/betaflight/wiki/CMS-Adjusting-Screen)
+ - [CMS Screen Adjustment](/betaflight/betaflight/wiki/CMS-Adjusting-Screen)
 
 # Development
 
