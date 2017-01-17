@@ -311,7 +311,8 @@ Cap removal:https://www.rcgroups.com/forums/showpost.php?p=36654973&postcount=30
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36503849&postcount=2672  
 - Racerstar RS30A LiteS - 600 with cap removed.  
 Cap removal: https://www.rcgroups.com/forums/showthread.php?2690769-Racerstar-Blheli_S-ESCs-%28v2-just-released%29-10-for-20a-12-for-30a-30-4in1-20a/page38  
-- RS30Ax4 v2 (4in1) - ??  
+- RS30Ax4 v2 (4in1) - only Dshot300 works without HW modifications   
+More info: https://www.rcgroups.com/forums/showthread.php?2790572-Dshot-bench-test-super-smooth-motor-spining-at-1011-REVO-and-Racerstar-BLHeli_S   
 - Spedix ES 20 lite (with signal cap removed) - 150, 300, 600   
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36203466&postcount=1509
 - Spedix 25a (with signal cap removed) - 150, 300, 600   
