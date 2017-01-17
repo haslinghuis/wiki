@@ -1,5 +1,18 @@
 ## Setup
 
+- Wiring  
+Just wire the Tramp telemetry wire to a free hardware UART (TX) port.
+
+- Configuration  
+The up to date configurator supports easy configuration of the SmartAudio on the selected port.
+
+1. Goto Ports tab
+2. Select IRC Tramp from Peripherals drop down menu
+3. Speed can be left at AUTO.
+
+![Select IRC Tramp from peripherals](https://cloud.githubusercontent.com/assets/14850998/22005847/ddc6641a-dca9-11e6-8de3-64dc39ecb5cf.png)
+
+
 ## IRC Tramp CMS guide
 The top menu for IRC Tramp VTX looks like this.
 ![IRC Tramp CMS menu](https://cloud.githubusercontent.com/assets/14850998/21991074/8bd7c464-dc54-11e6-822c-53defecdc915.jpg)
