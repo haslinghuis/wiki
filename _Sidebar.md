@@ -28,6 +28,7 @@
  - [IRC Tramp](/betaflight/betaflight/wiki/IRC-Tramp)
  - [ESC-Telemetry](/betaflight/betaflight/wiki/ESC-Telemetry)
  - [CMS Screen Adjustment](/betaflight/betaflight/wiki/CMS-Adjusting-Screen)
+ - [CMS on MWOSD](https://github.com/betaflight/betaflight/wiki/CMS-on-MWOSD)
 
 # Development
 
