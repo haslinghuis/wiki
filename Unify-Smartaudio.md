@@ -9,7 +9,13 @@ TBS SmartAudio is supported on all F3 and F4 targets (except for those with inte
 Just wire the SmartAudio wire to a free hardware UART (TX) port.
 
 - Configuration  
-As couples of previous post noted, the up to date configurator also supports easy configuration of the SmartAudio on the selected port; Ports tab, Peripherals column, SmartAudio, speed is ignored.
+The up to date configurator supports easy configuration of the SmartAudio on the selected port.
+
+1. Goto Ports tab
+2. Select TBS SmartAudio from Peripherals drop down menu
+3. Speed can be left at AUTO.
+
+![Enabling SmartPort in Peripherals](https://cloud.githubusercontent.com/assets/14850998/22005655/804c7c26-dca8-11e6-80b4-3c67765dc0e3.png)
 
 - Generic CMS  
 3.1 will come with the generic CMS (Configuration Menu System) that runs on top of multiple display devices;  FC-integrated OSD, I2C OLED display and external OSD (MinimOSD variants) running latest version of MWOSD (Release 1.6.5 or later).  
