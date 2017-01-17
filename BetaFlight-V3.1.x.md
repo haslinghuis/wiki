@@ -120,11 +120,21 @@ Might be useful on slower i2c targets like NAZE etc. Its for testing purposes. T
 Only available on F4 & F7 targets.  
 Usually F4 board will run fine on 32kHz gyro and 16kHz pid loop. 32/32 is slightly too much for CPU. F7 target is now the only one able to run 32kHz/32kHz flawlessly with even accelerometer enabled. To enable 32kHz mode use CLI setting gyro_use_32khz = ON. (Configurator will not display correct speed until the next configurator update, but you will see the real cycletime). NOTE - only flight controllers with MPU6500, MPU9250, and ICM-series (eg ICM20689) gyro support 32kHz mode.  
 
-###New RC6 CLI commands:
+###New RC6 CLI commands:  
+
+Level mode has changed in 3.1 a bit. It got more parameters.  
+In the Configurator pid tab you can find 2 new level parameters.  
+It is level sensitivity and level limit.  
+Both are in degrees.
+Level sensitivity is the max angle on full stick and level limit is the limited angle.  
+So for example sensitivity of 100 means that full stick would give you tilt of 100 degrees, but if the limit is just 70 degrees last 30% of your stick will be thrown away.  
+Lowering your sensitivity will give you smoother stick control. Maybe the defaults are a bit aggressive perhaps.  
+Rc rate or any other rate or expo parameter doesn't do anything for level modes.   
+
 ####set level_limit = 70
 <i>[10..120]<i>  
- the maximum allowed angle  
+ the maximum allowed angle in degrees  
 
 ####set Level_sensitivity = 100
 <i>[10..200]<i>  
-the max deflection on full stick  
+the max deflection on full stick in degrees  
