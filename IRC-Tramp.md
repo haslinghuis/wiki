@@ -33,7 +33,7 @@ where
 
 `ffff`: Current transmitting frequency.
 
-`t`: If thermal protection is in effect, this field is '`*`', otherwise space ('` `').
+`t`: Current thermal protection status. If thermal protection is in effect, this field is '`*`', otherwise space ('` `').
 
 `ppp`: Current transmitting RF power, numeric value in mW (milli-Watt).
 
