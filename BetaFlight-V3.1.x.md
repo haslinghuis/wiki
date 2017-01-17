@@ -3,7 +3,7 @@
 Link to Releases:  
 https://github.com/betaflight/betaflight/releases   
 
-Betaflight 3.1.0 (Release Candidate 9) - 16Jan2017   
+Betaflight 3.1.0 (Release Candidate 9)   
 
 Betaflight firmware has undergone some major changes under the hood. Hardware drivers have been optimized to improve future maintainability, but also easier target and hardware support. The efficiency of the code has also been improved by a lot as Betaflight team reviewed each line of the code to squeeze every possible performance win out of it for flight performance purposes. The difference between the current release and previous one is over 1600 code commits by various developers. Only release notes highlights are represented. For full change history github commit history can be reviewed.  
 
@@ -48,7 +48,7 @@ NOTE- For the features in this release you will need to use the following Versio
 - RC6 - Fix ledstrip IMPULSERCF3 // Fix DSHOT for SIRINFPV // Add PODIUMF4 // Improved CPU usage // Optimised RC interpolation // Improve DSHOT speed // Add more safety in DSHOT limits (DSHOT150 is limited to 4khz)  
 - RC7 - Fix gyro detection handling for 32k mode // Improved target limitiation  
 - RC8 - Fix FPV angle mix // Added RG_SSD_F3 target // SPRACINGF3NEO DSHOT optimalisations // CC3D_OPBL fix // Remove MSP from UART1 by default // Added debug for gyro calibration noise // Minor optimalisations    
-- RC9 - Fix servo mixer scaling for tricopters // Add softserial for NAZE // Add IRC Tramp VTX support // Fix FPV angle mix  
+- RC9 (16Jan2017)- Fix servo mixer scaling for tricopters // Add softserial for NAZE // Add IRC Tramp VTX support // Fix FPV angle mix  
 
 #####Notes from Boris:   
 DSHOT1200 does work now but only on kiss24 that I know.
