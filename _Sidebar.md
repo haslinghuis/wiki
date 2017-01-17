@@ -55,6 +55,7 @@
  - [EUSTM32F103RC](/betaflight/betaflight/wiki/Board---EUSTM32F103RC)
  - [F4BY](/betaflight/betaflight/wiki/Board---F4BY)
  - [FishDroneF4] (/betaflight/betaflight/wiki/Board---FishDroneF4)
+ - [Flip32 F3 OSD] (/betaflight/betaflight/wiki/Board---Flip32_F3_OSD)
  - [FURYF3](/betaflight/betaflight/wiki/Board---FURYF3)
  - [FURYF4](/betaflight/betaflight/wiki/Board---FURYF4)
  - [FURYF7](/betaflight/betaflight/wiki/Board---FURYF7)
