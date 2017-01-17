@@ -1,9 +1,9 @@
-##Betaflight 3.1.0-RC8  
+##Betaflight 3.1.0-RC9  
 
 Link to Releases:  
 https://github.com/betaflight/betaflight/releases   
 
-Betaflight 3.1.0 (Release Candidate 8)  
+Betaflight 3.1.0 (Release Candidate 9) - 16Jan2017   
 
 Betaflight firmware has undergone some major changes under the hood. Hardware drivers have been optimized to improve future maintainability, but also easier target and hardware support. The efficiency of the code has also been improved by a lot as Betaflight team reviewed each line of the code to squeeze every possible performance win out of it for flight performance purposes. The difference between the current release and previous one is over 1600 code commits by various developers. Only release notes highlights are represented. For full change history github commit history can be reviewed.  
 
@@ -32,12 +32,13 @@ Betaflight firmware has undergone some major changes under the hood. Hardware dr
 - Protection against too fast motor speeds (When ONESHOT125 selected for example, max allowed pid and motor speed will be 2khz) and many more..  - @borisbstyle
 - Added experimental 32khz support for gyros that support it - @martinbudden. 
 - Blackbox enhancements (use 2.5.8 blackbox-viewer) @GaryKeeble
-- and many more.  
 - Added new level sensitivity and level limit parameters in degrees. level_limit is the maximum allowed angle. Level_sensitivity is the max deflection on full stick @borisbstyle  
+- Added IRC Tramp VTX support. Changable channel, band, power and pitmode @jflyper
+- and many more: https://github.com/betaflight/betaflight/commits/master  
 
 NOTE- For the features in this release you will need to use the following Versions or Higher:  
-- Configurator 1.8.7
-- BlackBox Viewer 2.5.8
+- Configurator 1.8.9
+- BlackBox Viewer 2.5.9
 
 ###Bugs and fixes:  
 - RC2 - Fix in rc expo symmetry // fix missing baro on some targets
@@ -47,6 +48,7 @@ NOTE- For the features in this release you will need to use the following Versio
 - RC6 - Fix ledstrip IMPULSERCF3 // Fix DSHOT for SIRINFPV // Add PODIUMF4 // Improved CPU usage // Optimised RC interpolation // Improve DSHOT speed // Add more safety in DSHOT limits (DSHOT150 is limited to 4khz)  
 - RC7 - Fix gyro detection handling for 32k mode // Improved target limitiation  
 - RC8 - Fix FPV angle mix // Added RG_SSD_F3 target // SPRACINGF3NEO DSHOT optimalisations // CC3D_OPBL fix // Remove MSP from UART1 by default // Added debug for gyro calibration noise // Minor optimalisations    
+- RC9 - Fix servo mixer scaling for tricopters // Add softserial for NAZE // Add IRC Tramp VTX support // Fix FPV angle mix  
 
 #####Notes from Boris:   
 DSHOT1200 does work now but only on kiss24 that I know.
