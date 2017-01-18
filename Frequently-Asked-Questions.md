@@ -1495,6 +1495,12 @@ https://www.rcgroups.com/forums/showpost.php?p=36623562&postcount=43287
 https://www.rcgroups.com/forums/showpost.php?p=36630278&postcount=43337  
 https://www.rcgroups.com/forums/showpost.php?p=36630822&postcount=43348  
 
+Posted by KagedMayhem: 
+I see the comments about notch filters helping with the noise issues, and the comparisons between the mpu6000 and the new icm20602 but not seeing anything about if the current iterations of Betaflight helped solve the noise problems. Is that what the notch filters are for?
+Boris:  
+You can of course make the filtering more agressive, but readings from ICM20xxx gyros can be too messy on hardmounted solutions so softmounting to make them less sensitive seems like the only solution on those, where on mpu60x0 you would mostly get away on standard mounting.   
+
+
 ##Is there a way to download blackbox logs through a terminal client ? 
 Thanks to dropax for asking this and working out the answer.  
 
