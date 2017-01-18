@@ -1,7 +1,7 @@
 ## Setup
 
 - Wiring  
-Just wire the Tramp telemetry wire to a free hardware UART (TX) port.
+Just wire the Tramp T (telemetry) wire to a free hardware UART (TX) port.
 
 - Configuration  
 The up to date configurator supports easy configuration of the SmartAudio on the selected port.
