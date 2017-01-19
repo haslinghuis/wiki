@@ -142,3 +142,10 @@ Rc rate or any other rate or expo parameter doesn't do anything for level modes.
 ####set Level_sensitivity = 100
 <i>[10..200]<i>  
 the max deflection on full stick in degrees  
+
+###New RC10 CLI commands:  
+
+####anti_gravity_gain = ??
+<i>[??..??]<i>
+Gain is the temporary iterm acceleration on rapid throttle moves.  
+Boris: Well fly and see how it goes on defaults and post some logs if you can.   
