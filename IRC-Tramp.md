@@ -22,7 +22,7 @@ While most of the entries are intuitive, there are several things that need addi
 The status line on the top menu page of Tramp VTX menu indicates current status of the vtx in the following format:
 
 ```
-t bc ffff ppp
+* bc ffff tppp
 ```
 
 where
