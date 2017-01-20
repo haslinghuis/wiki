@@ -72,7 +72,13 @@ Answer from Boris:
 There is no averaging. There is IIR filtering, what works faster than averaging. Every sample it's information is taken to the next sample a bit. Btw you can enable simple averaging with chosing FIR filter style. Averaging gives a lot of delay typically.  
 It seems that a lot of guys really missed the early betaflights where all this was discussed a lot. All i can say is to read about the way how filtering works and look up about aliasing. (Filtering is explained in this Wiki)  
 
-To check for DMA conflicts do the following (thanks teralift):  
+######Question by spikerspike97:  
+But why do my throttle and yaw rccommands have so much steps and the pitch and roll are super smooth as seen in the BB log?   
+Answer from Boris:   
+Because only roll and pitch have Derivative kick affect. Therefore only those are smoothed by default. You can enable the full smoothing in cli, but I suggest fly it like this.  
+Only reason for smoothed rc inputs is Derivative kick symptom where PIDsum can get very jerky.  
+
+######To check for DMA conflicts do the following (thanks teralift):  
 (1) Disable Dshot, enable LED_STRIP, save & reboot.  
 (2) Goto CLI.  
 (3) Type "resource list".  
