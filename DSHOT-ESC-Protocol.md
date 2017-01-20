@@ -14,7 +14,7 @@ https://www.rcgroups.com/forums/showpost.php?p=36200950&postcount=1468
 For KISS FC's and ESCs see the KISS Dshot thread:  
 https://www.rcgroups.com/forums/showthread.php?t=2780055
 
-[BetaFlight V3.1 RC8 released](/betaflight/betaflight/wiki/BetaFlight-V3.1.x)  
+[BetaFlight V3.1 RC10 released](/betaflight/betaflight/wiki/BetaFlight-V3.1.x)  
 Just remember that this is still Experimental code and may have serious limitations.  
 Read here to Learn exactly what firmware issues and features are being worked on:  
 https://github.com/betaflight/betaflight/issues?q=is%3Aissue+is%3Aclosed+sort%3Aupdated-desc  
@@ -27,7 +27,7 @@ Some known limitations are:
 - Some ESCs that have a signal filter cap may not work until the cap is removed. 
 
 
-####A quick way to determine IF the hex flashed supports Dshot:  
+####A quick way to determine IF the Firmware flashed into the FC supports Dshot:  
 Go to the CLI and type "get pwm". All settings with 'pwm' in the name will be shown with all options.
 If DSHOT150, DSHOT300, DSHOT600 is NOT in the list for the "motor_pwm_protocol" then this firmware does NOT support Dshot.
 Example for NAZE that does Not support Dshot: 
