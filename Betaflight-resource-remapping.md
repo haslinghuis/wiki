@@ -16,7 +16,9 @@ To remove a mapping, use <b>NONE</b> in place of PIN, e.g.
 Where a function does not require an index (i.e. there is only 1 possible pin assignment), e.g. BEEPER, SONAR_ECHO or SONAR_TRIGGER then the index <b>must</b> be omitted 
 e.g. <b><pre>resource BEEPER B6</pre></b>
 
-<b>resource</b> on its own will list all the available configurable options, and their current setting. This is the output to be added to the <b>dump</b> for use in backing up and restoring configuration. Note that this command will list all configured that would be allocated if used. As an example <b>resource</b> will show motors 1-8, but if your mixer is set to QuadX then only motors 1-4 will actually be used, if you change to Oct as the mixer (and reboot) then all 8 motors will be configured. 
+<b>resource</b> on its own will list all the available configurable options, and their current setting. This is the output to be added to the <b>dump</b> for use in backing up and restoring configuration. Note that this command will list all configured that would be allocated if used. 
+
+As an example <b>resource</b> will show motors 1-8, but if your mixer is set to QuadX then only motors 1-4 will actually be used, if you change to Oct as the mixer (and reboot) then all 8 motors will be configured. 
 
 <b>resource list</b> will list all pins and their current assignments, including all those in use by system components and <b>not</b> configurable by the user. It will also list the currently active DMA utilisation. Note for any adjustments made a save and reboot is required in order for those changes to be visible here. Consider this command the output of the currently active state.
 
