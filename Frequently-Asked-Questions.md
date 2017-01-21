@@ -154,6 +154,7 @@ Check the following:
 * If the status light flashes slowly then the CPU could be over-taxed (see below).
 
 There is a new task scheduler present in firmware versions greater than 2.2.0 If upgrading from a version prior to this, then check to see if the FC status light is flashing. If it is then this indicates that there is not enough processing time to complete all the features that have been enabled.
+ On newer versions on the ßF Configurator the CPU loading is displayed in the Status bar and MUST be less then 100%, preferably less than 50%. If at 100% then decrease the LOPP Rates (Gyro and/or PID), click Save and Reboot and recheck CPU loading.
  
 In the CLI type the _tasks_ command and check the results:
  
@@ -172,9 +173,9 @@ In the CLI type the _tasks_ command and check the results:
     11 - DISPLAY, max = 130302 us, avg = 26263 us, total = 5115 ms
 
 This shows that the copter has Display, Magnetometer, Barometer & Accelerometer systems enabled.
-Try disabling **each one in turn** until the copter will arm.
+Try disabling **each one in turn** until the CPU loading is under 100%.
 
-The list of commands to achieve this are:
+The list of CLI commands to achieve this are (this can be done in the newer Configurator):
 
     feature -DISPLAY
     set mag_hardware = NONE
@@ -186,13 +187,14 @@ Disabling the Accelerometer will force the copter into Acro mode (no self-leveli
 **Important:** Remember to save the CLI settings and exit the CLI (otherwise the board will not arm!)
 
 One other method to free-up the CPU is to:
-* Move from PID controller LuxFloat to MWREWRITE as the later requires less CPU power.
+* Move from PID controller LuxFloat to MWREWRITE (Pre-ßF3.0)as the later requires less CPU power. 
+* Move from PID controller BetaFlight to Legacy (ßF3.0)as the later requires less CPU power.
 * Disable soft serial.
 
 Do not forget to check the Basics. 
 Use the Receiver Tab and check that each stick moves the correct channel slider and the slider moves in the correct direction. If the wrong channel slider moves, then check the channel MAP (eg AETR instead of TAER).
-Also check that the stick End Point values are still correct. For more information take a look at the Question called "What is the best practice for configuring the Throttle end points".
-Make sure your min throttle command is lower than min_check! If in the modes tab you see that the quad should be arming but isn't, use "set min_check" and make sure that that is greater than the lowest throttle value in the receiver tab.
+Also check that the stick End Point values are still correct. Min/max stick ends points should be 1000/2000. For more information take a look at the Question called "What is the best practice for configuring the Throttle end points".
+Make sure your throttle stick's minimum value is lower than min_check! If in the modes tab you see that the quad should be arming but isn't, use "set min_check" and make sure that that is greater than the lowest throttle value in the receiver tab.
 
 Is the Accelerometer Calibrated? Needs to be done once to allow arming.
 
