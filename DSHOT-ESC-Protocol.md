@@ -22,8 +22,9 @@ https://github.com/betaflight/betaflight/issues?q=is%3Aissue+is%3Aclosed+sort%3A
 The Latest Development version of the Configurator is recommended. Link on [Home page](https://github.com/betaflight/betaflight/wiki).  
 
 Some known limitations are:  
- 3.1 is up to RC8 and seems most issues are fixed. Any issues discovered should be in the 3.1.X wiki page now.
+ 3.1 seems most issues are fixed. Any issues discovered should be in the 3.1.X wiki page now.
 
+- All STM32F1 Target do not support DSHOT
 - Some ESCs that have a signal filter cap may not work until the cap is removed. 
 
 
