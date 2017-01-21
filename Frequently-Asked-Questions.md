@@ -1487,6 +1487,9 @@ The problem: https://www.rcgroups.com/forums/showpost.php?p=36310032&postcount=2
 Fixed: https://www.rcgroups.com/forums/showpost.php?p=36326501&postcount=253   
 Broken: https://www.rcgroups.com/forums/showpost.php?p=36330372&postcount=255  
 
+#####Another post on Successful curing of yaw twitches:  
+https://www.rcgroups.com/forums/showpost.php?p=36692751&postcount=916  
+
 #####Testing of the new ICM20602 Gyros:  
 Boris: Oh.....for the record its not just ICM20602, but MPU6500, MPU9250 and all other ICM2xxxx devices that show exactly the same behaviour. Pretty much every 32khz supported gyro out there.
 https://www.rcgroups.com/forums/showpost.php?p=36622960&postcount=43273  
