@@ -1,9 +1,9 @@
 # MICROSCISKY
 
-F1 brushed flight controller with integrated DSM receiver.
+F1 brushed flight controller with a variety of integrated receivers.
 
 ## Description
-
+The Micro Scisky is a compact flightcontroller with integrated RC receiver. 
 
 ## MCU, Sensors and Features
 
@@ -18,25 +18,40 @@ F1 brushed flight controller with integrated DSM receiver.
   - Blackbox: No
   - PPM/UART Shared: UART2
   - Battery Voltage Sensor: No
-  - Integrated Voltage Regulator: No
+  - Integrated Voltage Regulator: Integrated 5V DC/DC converter
   - Brushed Motor Mosfets: Yes
-  - Buttons: None
+  - Buttons: Depending on variant/revision there can be a bind-button
 
 ### Features
 
 ## Hardware Designs (if available)
-
+None
 
 ## Manufacturers and Distributors
-
-Available here: [Banggood](http://www.banggood.com/Micro-Scisky-32bits-Brushed-Flight-Control-Board-Based-On-Naze-32-For-Quadcopters-p-1002341.html),
-[HobbyKing](http://www.hobbyking.com/hobbyking/store/__86503__Quanum_Pico_32bit_Brushed_Flight_Control_Board.html?strSearch=quanum%20micro)
+See *Variants* section down below for specific distributors.
 
 ## Similar Targets
 None
 
 ## Variants
-None
+There are currently (as of Jan 2017) three variants available sporting  different receivers. Also, the board layout varies slightly among them.
+
+* DSMX/DSM2 Compatible
+  Comes with a built-in receiver comptabile with DSMX/DSM2.
+
+  Available here: [Banggood](http://www.banggood.com/Micro-Scisky-32bits-Brushed-Flight-Control-Board-Based-On-Naze-32-For-Quadcopters-p-1002341.html),
+[HobbyKing](http://www.hobbyking.com/hobbyking/store/__86503__Quanum_Pico_32bit_Brushed_Flight_Control_Board.html?strSearch=quanum%20micro),
+[overskyrc](http://www.overskyrc.com/micro-scisky-32-bits-brushed-flight-control-board-dsmxdsm2-rx-p-661.html)
+
+* Futaba SFHSS Compatible
+  Comes with a built-in receiver compatible with Futaba FHSS.
+
+  Available here: [Bangood](http://www.banggood.com/Micro-Scisky-32bits-Brushed-Flight-Control-Board-Built-in-Futaba-SFHSS-Compatible-RX-For-DIY-Frame-p-1092126.html?rmmds=search)
+
+* Flysky Compatible
+  Comes with a built-in Fly-sky compatible receiver.
+
+  Available here: [Banggood](http://www.banggood.com/Micro-Scisky-32bits-Brushed-Flight-Control-Board-Built-in-FlySky-Compatible-RX-For-DIY-Micro-Frame-p-1093312.html?rmmds=search)
 
 ## Other Resources
 http://community.micro-motor-warehouse.com/t/how-to-set-up-scisky-fc-step-by-step/1224
