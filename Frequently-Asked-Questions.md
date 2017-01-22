@@ -1479,6 +1479,8 @@ Later comment:
 I just stuck three squarish (~15mm) pieces of electrical tape on the frame underneath the motors, used an exacto knife to cut holes in the tape for the screws and remounted the motors making sure not to tighten them down too much.
 
 I really doubted it would be as effective as it was since vibes can still come thru the mounting screws but it fixed the issue.   
+#####Motor Vibration Isolators. Printed in extra flexible NinjaFlex (softer than TPU)  
+https://www.rcgroups.com/forums/showpost.php?p=36698872&postcount=2693  
 
 #####A short thread on the Frustrations of Curing Mid-throttle Oscillations.  
 https://www.rcgroups.com/forums/showthread.php?2787839-AHHAHAHA-Trouble-shooting-over-a-month-Mid-Throttle-oscillations-Finaly-Solved
