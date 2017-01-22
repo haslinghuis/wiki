@@ -11,7 +11,7 @@ Now ready to change ESC settings or Flash new firmware.
 <h3>Betaflight KISS ESC pass-through<h3>
 
 New feature for 3.1 allows to flash kiss escs with a pass-through and KISS flash loader app.  
-Note: it is apparently not yet active on all targets. 
+Note: it is apparently not yet active on all targets.   
 The FLASH LOADER is a Chrome App and must be 'installed' in Extensions with 'Developer Mode' enabled.
 
 For now you have to enable passthrough in the cli and than flash through flash loader app. Later it might be done from the app directly. [Flyduino downloads](http://kiss.flyduino.net/downloads/)  
