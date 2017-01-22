@@ -12,7 +12,7 @@ The Micro Scisky is a compact flightcontroller with integrated RC receiver.
   - IMU: MPU6050
   - IMU Interrupt: No
   - BARO: No
-  - VCP: No
+  - VCP: CP210x (Silicon Labs)
   - Hardware UARTS: 3
   - OSD: No
   - Blackbox: No
