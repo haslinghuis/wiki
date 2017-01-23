@@ -12,7 +12,7 @@ Driver issues can be fixed using this handy tool: https://impulserc.blob.core.wi
 It requires .net framework v4.5. Available here: https://www.microsoft.com/en-au/download/details.aspx?id=30653
 
 If you are having trouble connecting to your flight controller:
-![](https://img.youtube.com/vi/m4ygG6Y5zXI/0.jpg)(https://www.youtube.com/m4ygG6Y5zXI)
+[![](https://img.youtube.com/vi/m4ygG6Y5zXI/0.jpg)](https://www.youtube.com/m4ygG6Y5zXI)
 
 ### DFU flashing under Windows - USB DFU:
 Make sure you have zadig if you're using Windows to enable the DFU driver. Instructions:
