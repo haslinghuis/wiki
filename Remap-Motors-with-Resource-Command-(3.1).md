@@ -90,6 +90,6 @@ resource motor 4 a11
 save
 ```
 
-This is just a example. Please work on your case on your own and verify the results.
+This is just an example. Please work on your case on your own and verify the results.
 
 Have fun!!!
