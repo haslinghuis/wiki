@@ -1,26 +1,23 @@
 ![BetaFlight](http://static.rcgroups.net/forums/attachments/6/1/0/3/7/6/a9088900-228-bf_logo.jpg)
 # Welcome to the BetaFlight Wiki!
 
+New to Betaflight and just want to get started see the [installation](https://github.com/betaflight/betaflight/wiki/Installing-Betaflight) section.
+
 ##Introduction
 "Due to many questions about my latest Cleanflight improvements and tests here is some more central information about it. The motivation for this project is to bring the end users closer to the development. As my main focus in Cleanflight is the flight improving development. A flight test group like this is very useful.
-The BetaFlight fork is from the current Cleanflight Master with possible future Cleanflight flight performance enhancements.
+The BetaFlight fork is from the current Cleanflight master with possible future Cleanflight flight performance enhancements.
 
 This project also helps by contributing to other open source projects like iNav." - says Boris B ([lead developer](http://www.youtube.com/user/bozic1982/featured))
-
 
 ##Warning
 By definition this firmware is Beta software and is leading-edge technology. This means that some features are experimental. While exhaustive testing is undertaken by the developers, sometimes unforeseen things can happen.
 
 It's highly recommended that anyone using this firmware should take common sense precautions such as:
 
-* *Remove all props from the Copter before powering up* - this is a must, we have seen far too many pilots with nasty photos. This is not a joke, and although continuously repeated - to the point of being annoying - pilots are still hurting themselves.
-* Perform basic operational tests on the bench, such as FailSafe tests, motor spin-up tests etc
-It used to be that Betaflight was mainly used by developers and experts. it's got so popular now that even newbies use it because they heard it's the best you can get. Which is true. But it does create a lot of noise. You notice it in this thread alone. It used to be a platform for dev's talking about some hard core theories/code. Now it's mainly users coming for help. And frankly, this thread is pretty overwhelming in regard of the amount of posts.
+* *Remove all props from the Copter before powering up* - this is a must, we have seen far too many pilots with photos of extremely nasty injuries. This is not a joke, and although continuously repeated - to the point of being annoying - pilots are still hurting themselves.
+* Perform basic operational tests on the bench, such as FailSafe tests, motor spin-up tests etc.
 
-jaapp Posted this and describes BetaFlight.
- Betaflight is not newbie safe, even though many starters use it. It is not even regular user safe because of the high frequency of (non backwards compatible) changes . If the best changes in betaflight are pushed back into cleanflight, these users are offered a stable and tested version of the firmware, with great matching documentation. They can use this so they enjoy these great improvements without going through the potential hassle of dealing with experimental code and keeping up with the changes.
-
-Meanwhile Betaflight can continue doing where it was the best in - the highly experimental features with bugs and no documentation. And the dev's don't have to focus on providing support as much as they do now.
+It used to be that Betaflight was mainly used by developers and experts. It's got so popular now that even newbies use it because they heard it's the best you can get. Which is true. But it does create a lot of noise. 
 
 ##Motivation
 The original intention of this project is only to improve testing of the current CleanFlight and new features for those who are not familiar with GitHub and compiling of own firmwares. 
