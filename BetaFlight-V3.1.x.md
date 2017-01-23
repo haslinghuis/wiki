@@ -50,6 +50,7 @@ NOTE- For the features in this release you will need to use the following Versio
 - RC8 - Fix FPV angle mix // Added RG_SSD_F3 target // SPRACINGF3NEO DSHOT optimalisations // CC3D_OPBL fix // Remove MSP from UART1 by default // Added debug for gyro calibration noise // Minor optimalisations    
 - RC9 (Build #959 - 16Jan2017)- Fix servo mixer scaling for tricopters // Add softserial for NAZE // Add IRC Tramp VTX support // Fix FPV angle mix  
 - RC10 (Build #965 - 19Jan2017)- Added anti_gravity_gain // KISSFC dshot support motor 5 and 6 // CC3D startup issue solved // new defaults for level and PID's  
+- RC11 - Fix spectrum bind PIN on BFF3 // Fix connection to some targets // Restore missing blackbox log fields  
 
 #####Notes from Boris:   
 DSHOT1200 does work now but only on kiss24 that I know.
