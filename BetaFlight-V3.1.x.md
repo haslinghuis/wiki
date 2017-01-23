@@ -2,6 +2,8 @@
 
 Link to Releases:  
 https://github.com/betaflight/betaflight/releases   
+Read here to Learn exactly what firmware issues and features are being worked on:
+https://github.com/betaflight/betaflight/issues?q=is%3Aissue+is%3Aclosed+sort%3Aupdated-desc  
 
 Betaflight 3.1.0 (Release Candidate 11)   
 
