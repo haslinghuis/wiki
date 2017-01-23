@@ -5,7 +5,7 @@ https://github.com/betaflight/betaflight/releases
 Read here to Learn exactly what firmware issues and features are being worked on:
 https://github.com/betaflight/betaflight/issues?q=is%3Aissue+is%3Aclosed+sort%3Aupdated-desc  
 
-Betaflight 3.1.0 (Release Candidate 11)   
+###Betaflight 3.1.0 (Release Candidate 11)   
 
 Betaflight firmware has undergone some major changes under the hood. Hardware drivers have been optimized to improve future maintainability, but also easier target and hardware support. The efficiency of the code has also been improved by a lot as Betaflight team reviewed each line of the code to squeeze every possible performance win out of it for flight performance purposes. The difference between the current release and previous one is over 1600 code commits by various developers. Only release notes highlights are represented. For full change history github commit history can be reviewed.  
 
