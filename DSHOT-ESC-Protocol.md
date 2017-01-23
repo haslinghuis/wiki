@@ -79,7 +79,7 @@ DSHOT on BLHELI_S ESCs will likely only support Dshot150 & 300.
 Here is why: https://www.rcgroups.com/forums/showpost.php?p=36025232&postcount=376   
 Now found that some BLHeli_S ESC will run on DSHOT600 with modifications. See list below for details.  
 [DSHOT O'scope captures](https://www.rcgroups.com/forums/showpost.php?p=36490579&postcount=2631) before and after the typical RC filter.  
-BLHeli_S Rev16.6 posted on github (10Jan2017). Dshot150, Dshot300 and Dshot600 are now supported officially. [link to BLHeli GitHub](https://github.com/bitdump/BLHeli). Check for the latest ESC firmware in BLHeli Github and BLHlei Suite and Documents.  See [BLHeli_S Knowledge Base](https://github.com/blheli-configurator/blheli-configurator/wiki/BLHeli_S-Firmware-Knowledge-Base) for more.  
+BLHeli_S Rev16.6 posted on github (10Jan2017). Dshot150, Dshot300 and Dshot600 are now supported officially. [link to BLHeli GitHub](https://github.com/bitdump/BLHeli). Check for the latest ESC firmware in BLHeli Github and BLHlei Suite and Documents.   
 
 ###Flight Controllers Tested to Support Dshot on Betaflight 3.1 Alphas:
 - AIORACERF3
@@ -234,6 +234,7 @@ To use BLHeli type in CLI:  May not be required.
 
 ####BLheli-S:
 Firmware in Github here: https://github.com/bitdump/BLHeli    
+See [BLHeli_S Knowledge Base](https://github.com/blheli-configurator/blheli-configurator/wiki/BLHeli_S-Firmware-Knowledge-Base) for Which HEX to use.  
 
 Note: Many of these ESC have an RC filter on the control input signal line. The cap of this RC filter must be removed to use Dshot as per the list below. It is recommended to remove the cap from any ESC even if Dshot seems to work. All other protocols to still work without this filter cap.  
 Many ESCs are now being built and shipped without the signal filter Cap but it is best to check yourself if the cap is not installed.  
@@ -336,7 +337,7 @@ https://www.rcgroups.com/forums/showpost.php?p=36216745&postcount=1645
 - BeeRotor BS20A video- http://scontent.cdninstagram.com/t50.2886-16/15378420_376830535984172_2316137375807307776_n.mp4  
 
 ####Components tried and are not currently working:
-NTR
+None To Report
 
 ####Components that will NOT likely ever work:
 - Naze32 and clones
