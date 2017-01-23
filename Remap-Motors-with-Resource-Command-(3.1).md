@@ -51,32 +51,32 @@ A12: MOTOR 4
 3. Rotate the drawing clock wise 90-degrees.
 
     ```
-       FRONT
+           FRONT
 3(A11)       4(A12)
 
 1(A6)        2(A7)
-       BACK
+           BACK
 ```
 
 4. Remove the old motor position label.
 
     ```
-       FRONT
+           FRONT
 A11          A12
 
 A6           A7
-       BACK
+           BACK
 ```
 This is your actual MCU pin position.
 
 5. Assign new motor position label to the MCU pins.
 
     ```
-       FRONT
+           FRONT
 4(A11)       2(A12)
 
 3(A6)        1(A7)
-       BACK
+           BACK
 ```
 This is your new mapping.
 
