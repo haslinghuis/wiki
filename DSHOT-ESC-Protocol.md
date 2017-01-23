@@ -79,7 +79,7 @@ DSHOT on BLHELI_S ESCs will likely only support Dshot150 & 300.
 Here is why: https://www.rcgroups.com/forums/showpost.php?p=36025232&postcount=376   
 Now found that some BLHeli_S ESC will run on DSHOT600 with modifications. See list below for details.  
 [DSHOT O'scope captures](https://www.rcgroups.com/forums/showpost.php?p=36490579&postcount=2631) before and after the typical RC filter.  
-BLHeli Rev16.6 posted on github (10Jan2017). Dshot150, Dshot300 and Dshot600 are now supported officially. [link to BLHeli GitHub](https://github.com/bitdump/BLHeli). Check for the latest ESC firmware in BLHeli Github and BLHlei Suite and Documents.     
+BLHeli_S Rev16.6 posted on github (10Jan2017). Dshot150, Dshot300 and Dshot600 are now supported officially. [link to BLHeli GitHub](https://github.com/bitdump/BLHeli). Check for the latest ESC firmware in BLHeli Github and BLHlei Suite and Documents.  See [BLHeli_S Knowledge Base](https://github.com/blheli-configurator/blheli-configurator/wiki/BLHeli_S-Firmware-Knowledge-Base) for more.  
 
 ###Flight Controllers Tested to Support Dshot on Betaflight 3.1 Alphas:
 - AIORACERF3
