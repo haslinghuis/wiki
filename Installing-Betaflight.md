@@ -5,11 +5,14 @@ Using Betaflight Configurator, select the firmware_flasher tab and press the "Lo
 > Only exception to this being for the SPracingF3 flight controller, for this FC you *may* need to check 'Manual baud rate' and change the selection to '230400' baud.
 
 ## Native USB based flight controllers 
-(Those *not* using a hardware serial bridge)
+Note that this is for those controllers that are *not* using a hardware serial bridge - e.g. FTDI or SiLabs CP210x
 
 Driver issues can be fixed using this handy tool: https://impulserc.blob.core.windows.net/utilities/ImpulseRC_Driver_Fixer.exe
 
 It requires .net framework v4.5. Available here: https://www.microsoft.com/en-au/download/details.aspx?id=30653
+
+If you are having trouble connecting to your flight controller:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/m4ygG6Y5zXI" frameborder="0" allowfullscreen></iframe>
 
 ### DFU flashing under Windows - USB DFU:
 Make sure you have zadig if you're using Windows to enable the DFU driver. Instructions:
