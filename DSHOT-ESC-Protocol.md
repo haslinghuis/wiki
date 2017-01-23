@@ -44,6 +44,7 @@ Do type "get idle" to see if this exists and what the valid values are. This is 
 ßF firmware with Dshot does Not use the min_throttle or max_throttle setting, these are ignored.
 Just ensure that in the ESCs (BLHeli Suite) that PPM_MIN_THROTTLE is set to 1000 and PPM_MAX_THROTTLE is set to 2000.
 Note: This should not be needed in BLHeli_S 16.43 and up since the PPM_MIN & MAX values are not used for Dshot.   
+this means that when DSHOT is use NO ESC Calibration is required. Just Select DSHOT.
 
 ####Max ESC update speed supported by different dshot versions:  
 #####WARNING: due to processor tasks, FC and/or ESC, the maximum update rate may not work-  
@@ -62,22 +63,15 @@ Note: When DSHOT is enabled Unsyced PWM is disabled. DSHOT always runs at the PI
 1 to 47 = Reserved for special commands.  
 48 to 2047 = Active throttle control.  
 
-###Starting with a post from the Dshot thread:
-
-Scouring the BF and Dshot threads has resulted in the following lists. The information posted herein is all provided on an AS-IS basis.
-It has been derived from posts on this forum (RCGroups/BEtaflight & DSHOT threads), and direct correspondences with users.
+###It all start with the Dshot thread (link above):  
+The information posted herein is all provided on an AS-IS basis.  
+It has been derived from posts on this forum (RCGroups/Boris' Betaflight, FC, DSHOT and ESC threads), and direct correspondences with users.
 
 USE THE FOLLOWING INFORMATION AT YOUR OWN RISK
 
 BETAFLIGHT AND DSHOT -
 
 Betaflight may not be able to support all Targets ( or specific boards) due to the design of each one differing on the DMA pinout. Look below to find what may or may not be working.
-
-DSHOT on BLHELI_S ESCs will likely only support Dshot150 & 300.
-Here is why: https://www.rcgroups.com/forums/showpost.php?p=36025232&postcount=376   
-Now found that some BLHeli_S ESC will run on DSHOT600 with modifications. See list below for details.  
-[DSHOT O'scope captures](https://www.rcgroups.com/forums/showpost.php?p=36490579&postcount=2631) before and after the typical RC filter.  
-BLHeli_S Rev16.6 posted on github (10Jan2017). Dshot150, Dshot300 and Dshot600 are now supported officially. [link to BLHeli GitHub](https://github.com/bitdump/BLHeli). Check for the latest ESC firmware in BLHeli Github and BLHlei Suite and Documents.   
 
 ###Flight Controllers Tested to Support Dshot on Betaflight 3.1 Alphas:
 - AIORACERF3
@@ -231,6 +225,14 @@ To use BLHeli type in CLI:  May not be required.
 - KISS 24 - 150, 300, 600, 900, 1200 See the Dshot thread (link above) for ESC code.
 
 ####BLheli-S:
+
+DSHOT on BLHELI_S ESCs will likely only support Dshot150 & 300.
+Here is why: https://www.rcgroups.com/forums/showpost.php?p=36025232&postcount=376   
+Now found that some BLHeli_S ESC will run on DSHOT600 with modifications. See list below for details.  
+[DSHOT O'scope captures](https://www.rcgroups.com/forums/showpost.php?p=36490579&postcount=2631) before and after the typical RC filter.  
+
+BLHeli_S Rev16.6 posted on github (10Jan2017). Dshot150, Dshot300 and Dshot600 are now supported officially. [link to BLHeli GitHub](https://github.com/bitdump/BLHeli). Check for the latest ESC firmware in BLHeli Github and BLHlei Suite and Documents.   
+
 Firmware in Github here: https://github.com/bitdump/BLHeli    
 See [BLHeli_S Knowledge Base](https://github.com/blheli-configurator/blheli-configurator/wiki/BLHeli_S-Firmware-Knowledge-Base) for Which HEX to use.  
 
