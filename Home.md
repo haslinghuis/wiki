@@ -13,7 +13,7 @@ By definition this firmware is Beta software and is leading-edge technology. Thi
 
 It's highly recommended that anyone using this firmware should take common sense precautions such as:
 
-* Remove all props from the Copter before powering up
+* *Remove all props from the Copter before powering up* - this is a must, we have seen far too many pilots with nasty photos. This is not a joke, and although continuously repeated - to the point of being annoying - pilots are still hurting themselves.
 * Perform basic operational tests on the bench, such as FailSafe tests, motor spin-up tests etc
 It used to be that Betaflight was mainly used by developers and experts. it's got so popular now that even newbies use it because they heard it's the best you can get. Which is true. But it does create a lot of noise. You notice it in this thread alone. It used to be a platform for dev's talking about some hard core theories/code. Now it's mainly users coming for help. And frankly, this thread is pretty overwhelming in regard of the amount of posts.
 
