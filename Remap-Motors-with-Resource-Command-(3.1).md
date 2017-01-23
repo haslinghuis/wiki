@@ -62,9 +62,9 @@ A12: MOTOR 4
 
     ```
            FRONT
-A11          A12
+A11            A12
 
-A6           A7
+A6             A7
            BACK
 ```
 This is your actual MCU pin position.
