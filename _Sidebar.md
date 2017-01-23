@@ -22,6 +22,7 @@
  - [Deep Dive](/betaflight/betaflight/wiki/BetaFlight-Deep-Dive)
  - [Black Box logging and usage](/betaflight/betaflight/wiki/Black-Box-logging-and-usage) 
  - [Resource Remapping](/betaflight/betaflight/wiki/Betaflight-resource-remapping)
+ - [Remapping Motors](/betaflight/betaflight/wiki/Remap-Motors-with-Resource-Command-(3.1))
  - [DSHOT ESC Protocol](/betaflight/betaflight/wiki/DSHOT ESC Protocol) 
  - [ESC Programming Pass-through](/betaflight/betaflight/wiki/Betaflight-ESC-pass-through)
  - [TBS Unify SmartAudio](/betaflight/betaflight/wiki/Unify-Smartaudio)
