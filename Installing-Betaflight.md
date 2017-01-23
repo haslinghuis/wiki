@@ -2,7 +2,7 @@
 
 Using Betaflight Configurator, select the firmware_flasher tab and press the "Load firmware [Local]" button, you can now browse to the folder you downloaded the Betaflight firmware to & select the correct firmware hex for your corresponding Flight Controller. Leaving all options unchecked ** (defaults) press "Flash firmware".  The Configuration tool should now erase the target and flash the selected firmware to your Flight controller. Depending on your flight controller, this may prompt the installation of DFU driver, you may see a windows popup for "installing new hardware", if this happens allow it to complete and then press the "flash firmware" button again.
 
-** Only exception to this being for the SPracingF3 flight controller, for this FC you *may* need to check 'Manual baud rate' and change the selection to '230400' baud.
+> Only exception to this being for the SPracingF3 flight controller, for this FC you *may* need to check 'Manual baud rate' and change the selection to '230400' baud.
 
 ## Native USB based flight controllers 
 (Those *not* using a hardware serial bridge)
