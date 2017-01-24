@@ -242,6 +242,8 @@ Many ESCs are now being built and shipped without the signal filter Cap but it i
 Post on testing Dshot before and after adding Large, low ESR caps to power system:  
 https://www.rcgroups.com/forums/showpost.php?p=36713066&postcount=3133  
 https://www.rcgroups.com/forums/showpost.php?p=36718584&postcount=3144  
+https://www.rcgroups.com/forums/showpost.php?p=36720323&postcount=3157  
+
 
 - Aikon 20A/Spedix 20A    
 Cap removal for both: https://www.rcgroups.com/forums/showpost.php?p=36182572&postcount=1319
