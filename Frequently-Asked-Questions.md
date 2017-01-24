@@ -1509,6 +1509,7 @@ You can of course make the filtering more agressive, but readings from ICM20xxx 
 
 #####Post on testing Dshot before and after adding Large, low ESR caps to power system:  
 https://www.rcgroups.com/forums/showpost.php?p=36713066&postcount=3133 
+https://www.rcgroups.com/forums/showpost.php?p=36718584&postcount=3144  
 
 ##Is there a way to download blackbox logs through a terminal client ? 
 Thanks to dropax for asking this and working out the answer.  
