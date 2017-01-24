@@ -1507,6 +1507,8 @@ I see the comments about notch filters helping with the noise issues, and the co
 Boris:  
 You can of course make the filtering more agressive, but readings from ICM20xxx gyros can be too messy on hardmounted solutions so softmounting to make them less sensitive seems like the only solution on those, where on mpu60x0 you would mostly get away on standard mounting.   
 
+#####Post on testing Dshot before and after adding Large, low ESR caps to power system:  
+https://www.rcgroups.com/forums/showpost.php?p=36713066&postcount=3133 
 
 ##Is there a way to download blackbox logs through a terminal client ? 
 Thanks to dropax for asking this and working out the answer.  
