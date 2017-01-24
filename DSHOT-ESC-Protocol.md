@@ -239,6 +239,9 @@ See [BLHeli_S Knowledge Base](https://github.com/blheli-configurator/blheli-conf
 Note: Many of these ESC have an RC filter on the control input signal line. The cap of this RC filter must be removed to use Dshot as per the list below. It is recommended to remove the cap from any ESC even if Dshot seems to work. All other protocols to still work without this filter cap.  
 Many ESCs are now being built and shipped without the signal filter Cap but it is best to check yourself if the cap is not installed.  
 
+Post on testing Dshot before and after adding Large, low ESR caps to power system:  
+https://www.rcgroups.com/forums/showpost.php?p=36713066&postcount=3133  
+
 - Aikon 20A/Spedix 20A    
 Cap removal for both: https://www.rcgroups.com/forums/showpost.php?p=36182572&postcount=1319
 - Aikon SEFM v2 30A - 150, 300, 600 (BLHeli_S 16.43) (C-H-25)   
