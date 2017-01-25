@@ -1,4 +1,4 @@
-##Betaflight 3.1.0-RC12  
+##Betaflight 3.1.0-Release  
 
 Link to Releases:  
 https://github.com/betaflight/betaflight/releases   
@@ -7,7 +7,7 @@ Note: Embedded links to Videos are in the Github Release Notes.
 Read here to Learn exactly what firmware issues and features are being worked on:
 https://github.com/betaflight/betaflight/issues?q=is%3Aissue+is%3Aclosed+sort%3Aupdated-desc  
 
-###Betaflight 3.1.0 (Release Candidate 12)   
+###Betaflight 3.1.0 (Release)   
 
 Betaflight firmware has undergone some major changes under the hood. Hardware drivers have been optimized to improve future maintainability, but also easier target and hardware support. The efficiency of the code has also been improved by a lot as Betaflight team reviewed each line of the code to squeeze every possible performance win out of it for flight performance purposes. The difference between the current release and previous one is over 1800 code commits by various developers. Only release notes highlights are represented. For full change history github commit history can be reviewed.  
 
@@ -22,7 +22,7 @@ Betaflight firmware has undergone some major changes under the hood. Hardware dr
 - Support for KISS ESC telemetry (only with DSHOT) - @basdelfos
 - Added temperature and RPM to KISS ESC telemetry - @mikeller 
 - Added [Serial ESC Pass-through](/betaflight/betaflight/wiki/Betaflight-ESC-pass-through) for KISS24 and CASTLE esc's - @sambas
-- New target support (now 67 targets)
+- New target support (now 72 targets on 4 MCU types)
 - Added CMS display support - @jflyper
 - Added CRSF support for TBS receivers and associated telemetry - @martinbudden and @blckmn
 - Added additional OSD parameters like pids and power - @martinbudden and @rafl
@@ -41,7 +41,7 @@ Betaflight firmware has undergone some major changes under the hood. Hardware dr
 - and many more: https://github.com/betaflight/betaflight/commits/master  
 
 NOTE- For the features in this release you will need to use the following Versions or Higher:  
-- Configurator 1.8.9
+- Configurator 1.9.0
 - BlackBox Viewer 2.5.9
 
 ###Bugs and fixes:  
@@ -56,6 +56,7 @@ NOTE- For the features in this release you will need to use the following Versio
 - RC10 (Build #965 - 19Jan2017)- Added anti_gravity_gain // KISSFC dshot support motor 5 and 6 // CC3D startup issue solved // new defaults for level and PID's  
 - RC11 - Fix spectrum bind PIN on BFF3 // Fix connection to some targets // Restore missing blackbox log fields  
 - RC12 ( -25Jan2017)- FPV angle mix applied to actual rates (also a fix) // Fix truncated blackbox logs // Redefined OSD defaults to not have PIDs by default on screen // Increased configurable filter range  
+- RC13 - reported bug where blackbox would disable itself is now resolved   
 
 #####Notes from Boris:   
 DSHOT1200 does work now but only on kiss24 that I know.
