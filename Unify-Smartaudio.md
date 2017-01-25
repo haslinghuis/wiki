@@ -38,6 +38,12 @@ https://github.com/lunohod/betaflight/blob/vtx/src/test/Unify.lua
 ####Here is a tutorial by Amano13:  
 https://tmr.kiwi/betaflight-mwosd-smartaudio-cms/
 
+####From Boris:  
+The easiest is of course to get fc with OSD. That works absolutely flawless, but
+there is a separate betaflight repository with LUA scripts
+https://github.com/betaflight/betaflight-tx-lua-scripts
+
+I am thinking to add more howto videos to github locations. So those who are willing to make nice howto videos please post it in here.
 ## User's Responsibility
 
 The SmartAudio support unlocks certain capabilities of a SmartAudio device, to provide users with maximum flexibility. Therefore, it is user's responsibility to operate the device within the limits of respective local regulations.
