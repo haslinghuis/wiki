@@ -31,7 +31,7 @@ https://github.com/betaflight/betaflight/issues/1029
 http://www.team-blacksheep.com/tbs-u...5g8-manual.pdf   
 
 ####From pafleraf
-Please grab the BF code from following PR: https://github.com/betaflight/betaflight/pull/2146
+Please grab the BF code from following PR: https://github.com/betaflight/betaflight/pull/2146  
 The script has been moved today (25Jan2017) early in the morning. It's now here: https://github.com/raphaelcoeffic/betaflight-tx-lua-scripts/blob/vtx/BFSetup.lua  
 
 ####Here is a tutorial by Amano13:  
