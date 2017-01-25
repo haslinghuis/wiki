@@ -236,8 +236,8 @@ BLHeli_S Rev16.6 posted on github (10Jan2017). Dshot150, Dshot300 and Dshot600 a
 Firmware in Github here: https://github.com/bitdump/BLHeli    
 See [BLHeli_S Knowledge Base](https://github.com/blheli-configurator/blheli-configurator/wiki/BLHeli_S-Firmware-Knowledge-Base) for Which HEX to use.  
 
-Note: Many of these ESC have an RC filter on the control input signal line. The cap of this RC filter must be removed to use Dshot as per the list below. It is recommended to remove the cap from any ESC even if Dshot seems to work. All other protocols to still work without this filter cap.  
-Many ESCs are now being built and shipped without the signal filter Cap but it is best to check yourself if the cap is not installed.  
+Note: Many of these ESC have an RC filter on the control input signal line. The cap of this RC filter must be removed to use Dshot as per the list below. It is recommended to remove the cap from any ESC even if Dshot seems to work. All other protocols will still work without this filter cap.  
+Many ESCs are now being built and shipped without the signal filter Cap but it is best to check yourself to ensure the cap is not installed.  
 
 Post on testing Dshot before and after adding Large, low ESR caps to power system:  
 https://www.rcgroups.com/forums/showpost.php?p=36713066&postcount=3133  
@@ -347,5 +347,5 @@ None To Report
 
 ####Components that will NOT likely ever work:
 - Naze32 and clones
-- All FCs with STM32F1
+- All FCs with STM32F1 processor
 - All ESCs that can not run BLHeli_S firmware (except KISS24A)
