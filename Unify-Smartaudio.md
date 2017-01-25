@@ -29,11 +29,10 @@ There is a little info on smartaudio setup in here, but you may need to do a bit
 https://github.com/betaflight/betaflight/issues/1029
 
 http://www.team-blacksheep.com/tbs-u...5g8-manual.pdf   
-Here's what I've seen. I haven't done it yet though, but I have an Atom rebuild with an BFF3 and a Unify Hv that I plan to do same thing.  
-https://translate.google.com/translate?hl=en&sl=de&u=http://copterjungle.de/betaflight-pids-und-unify-pro-ueber-frsky-taranis-einstellen/&prev=search  
 
-Here's the GitHub location for the lua script:  
-https://github.com/lunohod/betaflight/blob/vtx/src/test/Unify.lua  
+####From pafleraf
+Please grab the BF code from following PR: https://github.com/betaflight/betaflight/pull/2146
+The script has been moved today (25Jan2017) early in the morning. It's now here: https://github.com/raphaelcoeffic/betaflight-tx-lua-scripts/blob/vtx/BFSetup.lua  
 
 ####Here is a tutorial by Amano13:  
 https://tmr.kiwi/betaflight-mwosd-smartaudio-cms/
