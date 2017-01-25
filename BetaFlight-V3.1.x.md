@@ -1,11 +1,13 @@
-##Betaflight 3.1.0-RC11  
+##Betaflight 3.1.0-RC12  
 
 Link to Releases:  
 https://github.com/betaflight/betaflight/releases   
+Note: Embedded links to Videos are in the Github Release Notes.   
+
 Read here to Learn exactly what firmware issues and features are being worked on:
 https://github.com/betaflight/betaflight/issues?q=is%3Aissue+is%3Aclosed+sort%3Aupdated-desc  
 
-###Betaflight 3.1.0 (Release Candidate 11)   
+###Betaflight 3.1.0 (Release Candidate 12)   
 
 Betaflight firmware has undergone some major changes under the hood. Hardware drivers have been optimized to improve future maintainability, but also easier target and hardware support. The efficiency of the code has also been improved by a lot as Betaflight team reviewed each line of the code to squeeze every possible performance win out of it for flight performance purposes. The difference between the current release and previous one is over 1600 code commits by various developers. Only release notes highlights are represented. For full change history github commit history can be reviewed.  
 
@@ -53,6 +55,7 @@ NOTE- For the features in this release you will need to use the following Versio
 - RC9 (Build #959 - 16Jan2017)- Fix servo mixer scaling for tricopters // Add softserial for NAZE // Add IRC Tramp VTX support // Fix FPV angle mix  
 - RC10 (Build #965 - 19Jan2017)- Added anti_gravity_gain // KISSFC dshot support motor 5 and 6 // CC3D startup issue solved // new defaults for level and PID's  
 - RC11 - Fix spectrum bind PIN on BFF3 // Fix connection to some targets // Restore missing blackbox log fields  
+- RC12 - FPV angle mix applied to actual rates (also a fix) // Fix truncated blackbox logs // Redefined OSD defaults to not have PIDs by default on screen // Increased configurable filter range  
 
 #####Notes from Boris:   
 DSHOT1200 does work now but only on kiss24 that I know.
@@ -63,7 +66,7 @@ We decided to add a lot of new stuff available from cli for testing purposes and
 I've been flying a Naze32 on BF (3.01) for a while, and seems to be working fine for me.
 With all the code optimizations (noted in the WIKI), is the Naze still a viable option to continue with, or should I swap it out for a newer FC?  
 Answer from Boris:  
-No naze and other F1s actually got slower in 3.1. 3.1 is the first version where everything is floating point math. F1 lacks of floating point processor unit so it gets a lot of more to work.
+No NAZE32 and other F1s actually got slower in 3.1. 3.1 is the first version where everything is floating point math. F1 lacks of floating point processor unit so it gets a lot of more to work.
 Besides that it only has 128k flash what prevents a lot of new optimizing we applied.
 All optimizations only affect f3, f4 and f7 boards.  
 Instead of running new versions of betaflight or reforking it you can simply stick to the version you use now for example. There is no solution for F1 boards in the future unfortunately and every new feature will NOT be included to it. You are for example willing to give up acc, but 100 others may not. So that's not a solution.  
