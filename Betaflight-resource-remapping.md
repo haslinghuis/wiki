@@ -29,4 +29,4 @@ Figure: How different resource command variation works
 </center>  
 
 #### A Joshua Bardwell Video:
-https://www.youtube.com/watch?v=z5aO-3_n-Hs   
+[Resource Remapping- No more Custom Motor Mixer](https://www.youtube.com/watch?v=z5aO-3_n-Hs   )
