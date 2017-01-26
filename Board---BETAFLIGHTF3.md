@@ -28,8 +28,11 @@ _(add list of features)_
 
 ## Manufacturers and Distributors
 http://www.fpvmodel.com/-pre-order-betaflight-f3-flight-controller_g1231.html
+https://strictlyracingdrones.com/shop/electronics/betaflightf3-flight-controller/
 
 ## Designers
+ - FPVModel
+ - Boris B
 
 ## Maintainers
 _(add your name here if you help test or contribute code for this board)_
