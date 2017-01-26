@@ -26,4 +26,7 @@ As an example <b>resource</b> will show motors 1-8, but if your mixer is set to 
 <center>
 <img src="https://cloud.githubusercontent.com/assets/14850998/21921215/c5d3521c-d9a9-11e6-8ed8-c53afdbda50f.jpg" width="70%"><br>
 Figure: How different resource command variation works
-</center>
+</center>  
+
+#### A Joshua Bardwell Video:
+https://www.youtube.com/watch?v=z5aO-3_n-Hs   
