@@ -188,7 +188,6 @@ Connect ESC for motor 2 to 'LED' pin on the board.
 
 ####FC Targets with DSHOT code added but in need of testing:
 - SPARKY2
-- Mantis F3 (from MRM) - SPRACINGF3  
 - All other targets not listed above.   
 
 ###ESCs supporting Dshot:
