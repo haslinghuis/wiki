@@ -73,7 +73,7 @@ BETAFLIGHT AND DSHOT -
 
 Betaflight may not be able to support all Targets ( or specific boards) due to the design of each one differing on the DMA pinout. Look below to find what may or may not be working.
 
-###Flight Controllers Tested to Support Dshot on Betaflight 3.1 Alphas:
+###Flight Controllers Tested to Support Dshot on Betaflight 3.1 without Mods or remapping:
 - AIORACERF3
 - Airbot F3 (SPRACINGF3)  
 - ALIENFLIGHTF3
@@ -108,7 +108,7 @@ Note from sskaug: KISS FCs use a resistor to drive the throttle signal high (pul
 - X-Racer V2.1 (SPRACINGF3 #670)
 - X-Racer F303 (X_RACERSPI) -
 
-####FC Targets that work with Dshot but require re-mapping pins with the Resource command:   
+####FC Targets that work with Dshot but require hardware mod and re-mapping pins with the Resource command:   
 Boris' comment:  
   I had many requests for MOTOLAB (and other FCs) but that one doesn't have DMA available on all motors. It may be that we will assign one of the motors to PPM pin so you can resolder it. Not great, but better than nothing I guess?  
 
