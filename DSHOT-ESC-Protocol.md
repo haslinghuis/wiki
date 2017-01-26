@@ -147,9 +147,9 @@ See: [CLI resource command](https://github.com/betaflight/betaflight/wiki/Betafl
 Link to modification details: https://www.rcgroups.com/forums/showpost.php?p=36608148&postcount=43149  
  Follow above and to re-map output type in CLI:  
 `resource ppm none  `  
-`resource motor 1 A07 `
-`resource motor 5 none `
-`resource motor 4 A01 `
+`resource motor 1 A07 `  
+`resource motor 5 none `  
+`resource motor 4 A01 `  
 `resource motor 6 none `  
 `resource motor 7 none `  
 `resource motor 8 none `  
