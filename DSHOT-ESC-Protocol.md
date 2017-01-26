@@ -94,6 +94,7 @@ Betaflight may not be able to support all Targets ( or specific boards) due to t
 Note from sskaug: KISS FCs use a resistor to drive the throttle signal high (pull-up). So it is quite sensitive to capacitance on the ESC signal.  
 - LUX_RACE
 - LUXV2_RACE
+- MRM Mantis F3 - flashed with spracing f3 BF 3.1 - Dshot300
 - OMNIBUS (What about Omnibus F4? Are F3 & F4 the same thing with different processor?)
 - OMNIBUSPRO (Blheli Configurator Hangs on read in 3.1, failed flash in 3.01)
 - RACEBASE FC
