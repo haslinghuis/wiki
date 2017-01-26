@@ -117,42 +117,28 @@ Boris' comment:
 `resource  `  
 `resource list  `  
 and copy/paste these into a Text file and save for reference of the Default pin Mappings.    
- 3- Solder a wire from the FC's header pin that will get re-mapped as a Dshot output to the motor output header pin per FC board detail below. Do not cut any traces, just short these two pins together which then allows switching pin mapping back to use BLHeli Pass-through without removing the FC from the copter.  NOTE: Some FCs re-map a different pin to use Dshot. See FC's below for details.  
-  4- In the config tab select OneShot(42 or 125). Click Save. Leave this select until pins are re-mapped.  
-  5- In the CLI type (x = motor #, yyy = STM32 pin #):   
+  3- In the config tab select OneShot(42 or 125). Click Save. Leave this select until pins are re-mapped.  
+  4- In the CLI type (x = motor #, yyy = STM32 pin #):   
 `resource ppm none  `  
 `resource motor x yyy  `  
 `save  `  
-  6- Now select the DSHOT protocol of your choice.  
-
-#####To switch pin mapping to use BLHeli Suite pass-through:   May not be required.  
-  1- Select OneShot(42 or 125) in the config tab. Click Save.   
-  2- In the CLI change Only the remapped Motor back. Type:  
-`resource motor x yyy  `  
-`save  `  
-######Note: Re-mapping pin back to default may NOT be needed. 
-  3- Now use BLHeli Suite to Update or change ESC setting.  
-  4- When finished re-map the motor to the pin used for Dshot.  
-  5- Set ESC protocol to DSHOT.  
+  5- Now select the DSHOT protocol of your choice.  
 
 See: [CLI resource command](https://github.com/betaflight/betaflight/wiki/Betaflight-resource-remapping)    
 
 - ALIENFLIGHTF4  
- Bridge the motor 2 output pad with the PPM pad at the bottom of the board. There are updated board designs available with an added DSHOT solder jumper at the bottom which is making this connection. Note: a PPM receiver can not be used in this configuration.   
+ Move the motor 2 wire to the PPM pad at the bottom of the board. There are updated board designs available with an added DSHOT solder jumper at the bottom which is making this connection. In this case, you can leave the motor 2 soldered output #2. Note: a PPM receiver can not be used in this configuration.   
  Enter the following commands into the CLI window to re-map output:  
 `resource ppm none  `  
 `resource motor 2 A08 `  
 `save  `  
-With the bridge installed and the pin remapped BLHeli pass-through will work as usual.
 
 - MOTOLAB - (MotoF3, Cyclone & Tempest)   
- Solder a wire from Output #1 header pin to the PPM input header pin. [Photo of wire on a Cyclone](https://www.rcgroups.com/forums/showpost.php?p=36589146&postcount=2787)   
-Note: Adding this wire is not required if you connect signal wire from ESC #1 directly to the PPM pin.  
+ Move motor 1 from Output #1 header pin to the PPM input header pin.   
  Follow above and to re-map output type in CLI:  
 `resource ppm none  `  
 `resource motor 1 A07 `  
 `save  `  
-No remapping back to default or selecting a non-Dshot protocol is required to use BLHeli pass-through(tested with 3.1RC4).
  
 - PIKOBLX - Re-map motor 1 to the PPM pin (same as MotoLab) and to allow the use of the LED pin Re-map motor 4 to motor 5 signal out, which must also be soldered as such. Also disable motor 5-8 ("resource motor X none").    
  Solder motor 1 to the PPM input header pin.
@@ -168,41 +154,27 @@ Link to modification details: https://www.rcgroups.com/forums/showpost.php?p=366
 `resource motor 8 none `  
 `save  `  
 
-(Likely not required in 3.1)
- To use BLHeli type in CLI:  May not be required.
-`resource motor 1 A04  `  
-`save  `  
-
 
 - SPRACINGF3EVO -  Must move MOTOR 4 to new pin assignment (CLI = resource MOTOR 4 A06). Then solder ESC for motor #4 to motor output #5, fixes DMA conflict with motor outputs 2 and 4.  
- Solder a wire from Output #4 header pin to Output #5 header pin.
  Follow above and to re-map output type in CLI:  
 `resource motor 5 none  `  
 `resource motor 4 A06 `  
 `save  `  
-To use BLHeli type in CLI:    May not be required.  
-`resource motor 4 A03  `  NEED the Default pin Number checked.  
-`save  `  
 
-- SPRACINGF3MINI - Solder a wire from motor 4 Output to the PPM pin. Then use resource command to disable PPM and map motor 4 output to B04.  
+- SPRACINGF3MINI - Move motor #4 to the PPM pin. Then use resource command to disable PPM and map motor 4 output to B04.  
  Follow above and to re-map output type in CLI:  
 `resource ppm none  `  
 `resource motor 4 B04 `  
 `save  `  
-To use BLHeli type in CLI:    May not be required.  
-`resource motor 4 B09  `  
-`save  `  
-  Tested with 3.1 Build #783. 
+
 Limitation: BlackBox on the internal SDCard works with MultiShot but not with DShot.  
 
-- KOMBINI - Solder a wire from Output #1 header pin to the PPM input header pin.  
+- KOMBINI - Move motor #1 from Output #1 header pin to the PPM input header pin.  
  Follow above and to re-map output type in CLI:  
 `resource ppm none  `  
 `resource motor 1 A07 `  
 `save  `  
-To use BLHeli type in CLI: May not be required.  
-`resource motor 1 A04  `  
-`save  `   
+
 Limitation: no LED functionality with DShot is allowed.  
 Video on getting this FC working: https://www.rcgroups.com/forums/showpost.php?p=36269451&postcount=1966    
 
@@ -212,9 +184,6 @@ Connect ESC for motor 2 to 'LED' pin on the board.
  `resource motor 2 A08`  
  `save`  
  The new mapping for motor 2 conflicts wit `LED_STRIP` and `TRANSPONDER`, so make sure these two features are disabled in the configurator.   
-To use BLHeli type in CLI:  May not be required.      
-`resource motor 4 A07`   
-`save`  
 
 ####FC Targets with DSHOT code added but in need of testing:
 - SPARKY2
