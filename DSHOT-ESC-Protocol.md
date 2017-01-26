@@ -108,7 +108,7 @@ Note from sskaug: KISS FCs use a resistor to drive the throttle signal high (pul
 - X-Racer V2.1 (SPRACINGF3 #670)
 - X-Racer F303 (X_RACERSPI) -
 
-####FC Targets that work with Dshot but require hardware mod and re-mapping pins with the Resource command:   
+###FC Targets that work with Dshot but require hardware mods and re-mapping pins with the Resource command:   
 Boris' comment:  
   I had many requests for MOTOLAB (and other FCs) but that one doesn't have DMA available on all motors. It may be that we will assign one of the motors to PPM pin so you can resolder it. Not great, but better than nothing I guess?  
 
