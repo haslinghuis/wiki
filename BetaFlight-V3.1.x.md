@@ -110,11 +110,11 @@ From betaflight v3.1 there is a new command to map resources. No more custom mot
 Only used when a DSHOT ESC protocol is selected.  
 See [Setting Min Throttle with Dshot](/betaflight/betaflight/wiki/DSHOT ESC Protocol)
 
-####set anti_gravity_threshold = 350  
+####set anti_gravity_threshold = 350   - per Profile
 <i>[20..1000]<i>  
  To improve stability in fast changing G forces during flight. This applies to quick throttle jumps where multirotor can go through weightless transitions. In these cases the iterm can cause unwanted effects like pitching up or yawing due to strong changes in accumulation polarities.  
 
-####set yaw_accel_limit =  20.000
+####set yaw_accel_limit =  20.000 - per Profile
 <i>[0..50]<i>  
 Note from Boris: The old value was upscaled. This is the real value now in float representation.  
 Its representing deg/sec/ms. A bit easier to swallow for human.  
@@ -158,7 +158,7 @@ the max deflection on full stick in degrees
 
 ###New RC10 CLI commands:  
 
-####anti_gravity_gain = 4.000
+####anti_gravity_gain = 4.000 - per Profile
 <i>[1..30]<i>
 Gain is the temporary iterm acceleration on rapid throttle moves.  
 Boris: Well fly and see how it goes on defaults and post some logs if you can.   
