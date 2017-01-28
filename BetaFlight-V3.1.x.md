@@ -162,3 +162,42 @@ the max deflection on full stick in degrees
 <i>[1..30]<i>
 Gain is the temporary iterm acceleration on rapid throttle moves.  
 Boris: Well fly and see how it goes on defaults and post some logs if you can.   
+
+###Misc CLI commands that seem to be new in 3.1 
+Note: Many have no information of how to use.
+
+####rc_interpolation_channels = RP
+Allowed values: RP, RPY, RPYT
+Smoothing of RX inputs for Roll, Pitch, Yaw, Throttle.
+
+####consumption_warning_percentage = 10
+Allowed range: 0 - 100
+
+####displayport_msp_col_adjust = 0
+Allowed range: -6 - 0
+
+####displayport_msp_row_adjust = 0
+Allowed range: -3 - 0
+
+####sdcard_dma = ON
+Allowed values: OFF, ON
+A report of setting this to OFF fix a BB logging issue on the BFF3 board.
+
+####blackbox_on_motor_test = OFF
+Allowed values: OFF, ON
+
+####task_statistics = ON
+Allowed values: OFF, ON
+
+####beeper_inversion = ON
+Allowed values: OFF, ON
+
+####beeper_od = OFF
+Allowed values: OFF, ON
+
+####ledstrip_visual_beeper = OFF
+Allowed values: OFF, ON
+####debug_mode = NONE (added in 3.0)
+Allowed values: NONE, CYCLETIME, BATTERY, GYRO, ACCELEROMETER, MIXER, AIRMODE, PIDLOOP, NOTCH, RC_INTERPOLATION, VELOCITY, DFILTER, ANGLERATE, ESC_SENSOR, SCHEDULER, STACK
+Enable additional value to be sent to a BlackBox Log which is useful to measure frequency of noise before filters and other debugging.
+
