@@ -142,17 +142,12 @@ See: [CLI resource command](https://github.com/betaflight/betaflight/wiki/Betafl
 `save  `  
  
 - PIKOBLX - Re-map motor 1 to the PPM pin (same as MotoLab) and to allow the use of the LED pin Re-map motor 4 to motor 5 signal out, which must also be soldered as such. Also disable motor 5-8 ("resource motor X none").    
- Solder motor 1 to the PPM input header pin.
- Solder motor 4 to the motor 5 input header pin. 
+ Solder motor 1 to the PPM selector pin leaving the BSUS jumper 'shorted'.
+Note: RX must use SBUS since PPM pin is now reassigned to motor 1.
 Link to modification details: https://www.rcgroups.com/forums/showpost.php?p=36608148&postcount=43149  
  Follow above and to re-map output type in CLI:  
 `resource ppm none  `  
 `resource motor 1 A07 `  
-`resource motor 5 none `  
-`resource motor 4 A01 `  
-`resource motor 6 none `  
-`resource motor 7 none `  
-`resource motor 8 none `  
 `save  `  
 
 
