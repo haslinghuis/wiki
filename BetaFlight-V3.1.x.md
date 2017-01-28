@@ -158,7 +158,7 @@ the max deflection on full stick in degrees
 
 ###New RC10 CLI commands:  
 
-####anti_gravity_gain = ??
-<i>[??..??]<i>
+####anti_gravity_gain = 4.000
+<i>[1..30]<i>
 Gain is the temporary iterm acceleration on rapid throttle moves.  
 Boris: Well fly and see how it goes on defaults and post some logs if you can.   
