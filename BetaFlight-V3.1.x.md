@@ -167,7 +167,7 @@ Boris: Well fly and see how it goes on defaults and post some logs if you can.
 Note: Many have no information of how to use.
 
 ####rc_interpolation_channels = RP
-Allowed values: RP, RPY, RPYT
+Allowed values: RP, RPY, RPYT   
 Smoothing of RX inputs for Roll, Pitch, Yaw, Throttle.
 
 ####consumption_warning_percentage = 10
@@ -180,7 +180,7 @@ Allowed range: -6 - 0
 Allowed range: -3 - 0
 
 ####sdcard_dma = ON
-Allowed values: OFF, ON
+Allowed values: OFF, ON   
 A report of setting this to OFF fix a BB logging issue on the BFF3 board.
 
 ####blackbox_on_motor_test = OFF
@@ -197,7 +197,8 @@ Allowed values: OFF, ON
 
 ####ledstrip_visual_beeper = OFF
 Allowed values: OFF, ON
-####debug_mode = NONE (added in 3.0)
-Allowed values: NONE, CYCLETIME, BATTERY, GYRO, ACCELEROMETER, MIXER, AIRMODE, PIDLOOP, NOTCH, RC_INTERPOLATION, VELOCITY, DFILTER, ANGLERATE, ESC_SENSOR, SCHEDULER, STACK
+
+####debug_mode = NONE (added in 3.0)  
+Allowed values: NONE, CYCLETIME, BATTERY, GYRO, ACCELEROMETER, MIXER, AIRMODE, PIDLOOP, NOTCH, RC_INTERPOLATION, VELOCITY, DFILTER, ANGLERATE, ESC_SENSOR, SCHEDULER, STACK   
 Enable additional value to be sent to a BlackBox Log which is useful to measure frequency of noise before filters and other debugging.
 
