@@ -4,6 +4,8 @@ Starting with Betaflight v3.1.0, flight controller (FC) will have a Configuratio
 
 MWOSD Release 1.6.5.0 and later supports the CMS with CANVAS extension.
 
+[A tutorial](https://tmr.kiwi/betaflight-mwosd-smartaudio-cms/)
+
 ### FC configuration
 
 FC firmware must be built with `CMS` and `USE_MSP_DISPLAYPORT` or equivalent options, and corresponding features should be turned on in configuration if they are controlled via features.
