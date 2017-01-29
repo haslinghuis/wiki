@@ -6,7 +6,7 @@ MWOSD Release 1.6.5.0 and later supports the CMS with CANVAS extension.
 
 [A tutorial](https://tmr.kiwi/betaflight-mwosd-smartaudio-cms/)
 
-Note: Reports that scarab-osd 1.6.7 does not work but 1.6.5 does work.  
+Note: Reports that scarab-osd 1.6.7 does not work but 1.6.5 does work. Do an EEPROM Erease then flash 1.6.5.  
 
 ### FC configuration
 
