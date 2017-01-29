@@ -308,7 +308,7 @@ Cap removal:https://www.rcgroups.com/forums/showpost.php?p=36654973&postcount=30
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36503849&postcount=2672  
 - Racerstar RS30A LiteS - with cap removed.  
 Cap removal: https://www.rcgroups.com/forums/showthread.php?2690769-Racerstar-Blheli_S-ESCs-%28v2-just-released%29-10-for-20a-12-for-30a-30-4in1-20a/page38  
-- RS30Ax4 v2 (4in1) -    
+- Racerstar RS30Ax4 v2 (4in1) -    
 More info: https://www.rcgroups.com/forums/showthread.php?2790572-Dshot-bench-test-super-smooth-motor-spining-at-1011-REVO-and-Racerstar-BLHeli_S   
 - Spedix ES 20 lite - with cap removed    
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36203466&postcount=1509   
