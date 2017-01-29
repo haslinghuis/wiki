@@ -2,7 +2,7 @@
 
 --
 
-> scarab-odd (MWOSD) 1.6.7 has a bug that causes single asterisk (*) to show up at the upper left corner of the screen and goes on to silence when CMS is invoked.  
+> scarab-osd (MWOSD) 1.6.7 has a bug that causes single asterisk (*) to show up at the upper left corner of the screen and goes on to silence when CMS is invoked.  
 
 > It has been fixed with 1.6.7.1.
 
