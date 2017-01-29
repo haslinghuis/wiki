@@ -193,7 +193,7 @@ Connect ESC for motor 2 to 'LED' pin on the board.
 DSHOT on BLHELI_S ESCs is supported starting with v16.43 and Offically supported in v16.5 and Up. 
 Older ESCs with BB1 processor will likely only support Dshot150 & 300.
 Here is why: https://www.rcgroups.com/forums/showpost.php?p=36025232&postcount=376   
-Now found that some BLHeli_S ESC will run on DSHOT600 if using a BB2 processor and ensuring any input signal filtering is Removed. See list below for details.  
+Now found that all BLHeli_S ESCs will run on DSHOT600 if using a BB2 processor and any input signal filtering is Removed. See list below for details on removing filter cap.  
 [DSHOT O'scope captures](https://www.rcgroups.com/forums/showpost.php?p=36490579&postcount=2631) before and after the typical RC filter.  
 
 BLHeli_S Rev16.6 posted on github (10Jan2017).   
