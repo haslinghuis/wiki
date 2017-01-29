@@ -218,32 +218,32 @@ Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36214609&postcount=1
 - Aikon SEFM v1 30A - (C-H-15)   
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36213821&postcount=1611   
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36214609&postcount=1614
-- AIKON SEFM 20A (with signal cap removed)   
+- AIKON SEFM 20A - with cap removed   
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36214609&postcount=1614
 - Armattan 20A and 30A - 2v1 need cap removal, v2 (now shipping from Armattan) work without modification  
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36416316&postcount=2432
-- BeeRotor BLS20A (with signal cap removed)   
+- BeeRotor BLS20A - with cap removed   
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36217144&postcount=1654  
-- BumpBee_S (with signal cap removed)  
+- BumpBee_S - with cap removed  
 Cap removal: https://nathan.vertile.com/blog/2016/11/14/flash-blheli_s-with-dshot/#flashing 
 - Cicada BB2 10A - 
 - Cicada v1 20A - 
 - Cicada v2 20A - 
 - Cicada v1 30A - 
-- Cicada v2 30A - 600 with cap removed 
-- Cicada 4n1 20a V2 - 600 with caps removed  
+- Cicada v2 30A - with cap removed 
+- Cicada 4n1 20a V2 - with caps removed  
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36286446&postcount=2036   
-- Cicada 35Ax4 35A - 600 with caps removed   
+- Cicada 35Ax4 35A - with caps removed   
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36384215&postcount=2337  
 - Cobra CP30A ESC 30A BLheli_S -   
-- DALRC BS25A  16.5 (with signal cap removed) - 150, 300, 600    
+- DALRC BS25A  16.5 - with cap removed    
 Cap removal: https://www.rcgroups.com/forums/showthread.php?t=2777858#post36223562   
 https://www.rcgroups.com/forums/showthread.php?t=2777858
 - DYS XS20 v1.x  
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36297135&postcount=2068
 - DYS XS20A v2 or XSC20A
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36253268&postcount=1878
-- DYS XS30A (with Signal cap removed) - 600  
+- DYS XS30A - with cap removed  
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36133930&postcount=836   
 https://www.rcgroups.com/forums/showpost.php?p=36245544&postcount=1848  
 - DYS XSD20A | XSD30A - New product announcement:  
@@ -280,19 +280,19 @@ Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36550495&postcount=1
 - Racerstar RS20Ax4 V2 Blheli_S 20A 2-4S 4 in 1 ESC -   
 Link: https://www.rcgroups.com/forums/showthread.php?t=2782732#post36254434  
 Cap removal:https://www.rcgroups.com/forums/showpost.php?p=36654973&postcount=3006   
-- Racestar RS20A v2 - with cap removed 600   
+- Racestar RS20A v2 - with cap removed   
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36503849&postcount=2672  
 - Racerstar RS30A LiteS - with cap removed.  
 Cap removal: https://www.rcgroups.com/forums/showthread.php?2690769-Racerstar-Blheli_S-ESCs-%28v2-just-released%29-10-for-20a-12-for-30a-30-4in1-20a/page38  
 - RS30Ax4 v2 (4in1) -    
 More info: https://www.rcgroups.com/forums/showthread.php?2790572-Dshot-bench-test-super-smooth-motor-spining-at-1011-REVO-and-Racerstar-BLHeli_S   
-- Spedix ES 20 lite (with signal cap removed) -    
+- Spedix ES 20 lite - with cap removed    
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36203466&postcount=1509   
-- Spedix 25a (with signal cap removed) -    
+- Spedix 25a - with signal cap removed    
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36324412&postcount=2157    
-- Spedix ES30 HV 16.43 (with signal cap removed) -    
+- Spedix ES30 HV 16.43 - with signal cap removed    
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36205800&postcount=1527  
-- TBS 25 - with signal cap removed   
+- TBS 25 - with cap removed   
 Cap removal:   https://www.rcgroups.com/forums/showpost.php?p=36209076&postcount=1548  
 - Xrotor mini 30A BL_S - need signal cap removed    
 - XRotor Micro BLHeli-S 30A - need signal cap removed   
