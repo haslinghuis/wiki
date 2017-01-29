@@ -135,7 +135,8 @@ See: [CLI resource command](https://github.com/betaflight/betaflight/wiki/Betafl
 `save  `  
 
 - MOTOLAB - (MotoF3, Cyclone & Tempest)   
- Move motor 1 from Output #1 header pin to the PPM input header pin.   
+ Move motor 1 from Output #1 header pin to the PPM input header pin. 
+[See MOTOLAB board for wiring detail ](https://github.com/betaflight/betaflight/wiki/Board---MOTOLAB)  
  Follow above and to re-map output type in CLI:  
 `resource ppm none  `  
 `resource motor 1 A07 `  
