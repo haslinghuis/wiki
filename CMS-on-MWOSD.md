@@ -1,12 +1,21 @@
 ## BetaFlight CMS and MWOSD Canvas Mode Guide
 
+--
+
+> scarab-odd (MWOSD) 1.6.7 has a bug that causes single asterisk (*) to show up at the upper left corner of the screen and goes on to silence when CMS is invoked.  
+
+> It has been fixed with 1.6.7.1.
+
+> The 1.6.7 was available approximately between 2017-01-17 to 2017-01-29. Anyone who downloaded and flashed this version should update it to 1.6.7.1. Apologies for your inconvenience.
+
+--
+
+
 Starting with Betaflight v3.1.0, flight controller (FC) will have a Configuration Menu System that operates across number of different display devices, such as FC-integrated OSD, external OSD that understands new MSP_DISPLAYPORT message, OLED display and radio telemetry screen.
 
 MWOSD Release 1.6.5.0 and later supports the CMS with CANVAS extension.
 
 [A tutorial](https://tmr.kiwi/betaflight-mwosd-smartaudio-cms/)
-
-Note: Reports that scarab-osd 1.6.7 does not work but 1.6.5 does work. Do an EEPROM Erease then flash 1.6.5.  
 
 ### FC configuration
 
