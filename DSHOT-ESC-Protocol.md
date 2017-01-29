@@ -208,6 +208,8 @@ https://www.rcgroups.com/forums/showpost.php?p=36713066&postcount=3133
 https://www.rcgroups.com/forums/showpost.php?p=36718584&postcount=3144  
 https://www.rcgroups.com/forums/showpost.php?p=36720323&postcount=3157  
 
+Note: there are ESCs that are exactly the Same sold by different names.  
+It is good to check the pictures in the Cap removal links and compare to the ESC you have in your hand.  
 
 - Aikon 20A/Spedix 20A    
 Cap removal for both: https://www.rcgroups.com/forums/showpost.php?p=36182572&postcount=1319
