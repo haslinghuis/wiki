@@ -92,8 +92,7 @@ Answer from Boris:
 Well 50% is a good guideline, but honestly as long as it arms without issues it is fine.  
 As long as every feature works there is enough CPU power.  
 Usually on high CPU usage more less prioritized things will stop working. For example telemetry, BlackBox, current sensor or VBAT would fail first before PID loop or RX code would not be executed.  
-The only true danger with too high cpu before was that motor commands may overlap, but there is a lot of spacing in between all motor commands and it is protected as well with looptime limitations on different protocols.
-
+The only true danger with too high cpu before was that motor commands may overlap, but there is a lot of spacing in between all motor commands and it is protected as well with looptime limitations on different protocols.  
 I personally fly everything enabled except accelerometer on my rigs.  
 
 ######To check for DMA conflicts do the following (thanks teralift):  
