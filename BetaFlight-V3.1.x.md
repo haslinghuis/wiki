@@ -192,7 +192,7 @@ Allowed range: -3 - 0
 
 ####sdcard_dma = ON
 Allowed values: OFF, ON   
-A report of setting this to OFF fix a BB logging issue on the BFF3 board.
+A report of setting this to OFF fix a BB logging issue on the BFF3 board. Boris has stated that this does not need to be done and an SDcard will work better with DMA on the BFF3.
 
 ####blackbox_on_motor_test = OFF
 Allowed values: OFF, ON
