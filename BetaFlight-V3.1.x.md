@@ -85,6 +85,17 @@ Answer from Boris:
 Because only roll and pitch have Derivative kick affect. Therefore only those are smoothed by default. You can enable the full smoothing in cli, but I suggest fly it like this.  
 Only reason for smoothed rc inputs is Derivative kick symptom where PIDsum can get very jerky.  
 
+######question by Ede2016:  
+Can you please say a word about average CPU load for BF3.1.
+Do you suggest less than 50% in the configurator disarmed or armed or what's the best way to analyze which frequency is the maximum recommended?   
+Answer from Boris:   
+Well 50% is a good guideline, but honestly as long as it arms without issues it is fine.  
+As long as every feature works there is enough CPU power.  
+Usually on high CPU usage more less prioritized things will stop working. For example telemetry, BlackBox, current sensor or VBAT would fail first before PID loop or RX code would not be executed.  
+The only true danger with too high cpu before was that motor commands may overlap, but there is a lot of spacing in between all motor commands and it is protected as well with looptime limitations on different protocols.
+
+I personally fly everything enabled except accelerometer on my rigs.  
+
 ######To check for DMA conflicts do the following (thanks teralift):  
 (1) Disable Dshot, enable LED_STRIP, save & reboot.  
 (2) Goto CLI.  
