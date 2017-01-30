@@ -84,6 +84,7 @@ But why do my throttle and yaw rccommands have so much steps and the pitch and r
 Answer from Boris:   
 Because only roll and pitch have Derivative kick affect. Therefore only those are smoothed by default. You can enable the full smoothing in cli, but I suggest fly it like this.  
 Only reason for smoothed rc inputs is Derivative kick symptom where PIDsum can get very jerky.  
+Note: See the new "rc_interpolation_channels" CLI command below to smooth all channels.  
 
 ######question by Ede2016:  
 Can you please say a word about average CPU load for BF3.1.
