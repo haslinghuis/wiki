@@ -15,24 +15,25 @@ Betaflight is also always being adjusted to support most current Cleanflight too
 ##Firmware Releases
 Releases can be found here: https://github.com/betaflight/betaflight/releases or downloaded from configurator.
 
-BETA TESTING (WARNING)
-If you want to contribute to better development you can download the latest beta build directly from: http://andwho.sytes.net:8080/job/BorisB_BetaFlight/lastSuccessfulBuild/artifact/obj/
+*BETA TESTING (WARNING)*
+
+*If you want to contribute to better development you can download the latest beta build directly from:* *http://andwho.sytes.net:8080/job/BorisB_BetaFlight/lastSuccessfulBuild/artifact/obj/*
 
 ##Configuration Tool
-To configure Betaflight you should use the Betaflight-configurator GUI tool (Windows/OSX/Linux) that can be found here:  
+To configure Betaflight you should use the latest stable Betaflight-configurator GUI tool (Windows/OSX/Linux) that can be found in google chrome store:  
 https://chrome.google.com/webstore/detail/betaflight-configurator/kdaghagfopacdngbohiknlhcocjccjao
 
+*BETA TESTING*
 
-BETA TESTING (WARNING)
-If you want to contribute to better development you can download the latest beta configurator from: 
-https://github.com/betaflight/betaflight-configurator  
+*If you want to contribute to better development you can download the latest beta configurator from:*
+*https://github.com/betaflight/betaflight-configurator* 
 
-Instructions (from the README.MD file in the download):    
-1. Clone the repo to any local directory or download it as zip  
-2. Start Chromium or Google Chrome and go to tools -> extension  
-3. Check the "Developer mode" checkbox  
-4. Click on load unpacked extension and point it to the Betaflight Configurator directory (for example D:/betaflight-configurator)    
-Then you'll see the new configurator in your Chrome extensions.  
+*Instructions (from the README.MD file in the download):*    
+*1. Clone the repo to any local directory or download it as zip*  
+*2. Start Chromium or Google Chrome and go to tools -> extension*  
+*3. Check the "Developer mode" checkbox*  
+*4. Click on load unpacked extension and point it to the Betaflight Configurator directory (for example D:/betaflight-configurator)*    
+*Then you'll see the new configurator in your Chrome extensions.*
 
 ##BlackBox Viewer
 The Latest Viewer and source is here:   
