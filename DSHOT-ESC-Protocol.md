@@ -286,14 +286,14 @@ Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36230015&postcount=1
 https://www.rcgroups.com/forums/showthread.php?2795245-Fully-compatible-with-Dshot-New-upgraded-32-bit-Maverick-24A-ESC#post36408093  
 - MRM ZEUS-S 20A - with CAP removed (see FVT littlebee-s 20a cap removal)   
 - Multistar BLHeli_S 30A -   
-- Racestar v2 6a -  
+- Racerstar v2 6a -  
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36268041&postcount=1961  
 - Racerstar v1 20A -  
-- Racestar v1 30A -  
+- Racerstar v1 30A -  
 - Racerstar v2 30a -     
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36209787&postcount=1569  
-- Racestar v2 12A - 
-- Racestar v2 20A -  
+- Racerstar v2 12A - 
+- Racerstar v2 20A -  
 - Racerstar 25a -  
 - Racerstar v2 35A -    
 Cap removal:https://www.rcgroups.com/forums/showpost.php?p=36654973&postcount=3006   
@@ -305,7 +305,7 @@ Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36550495&postcount=1
 - Racerstar RS20Ax4 V2 Blheli_S 20A 2-4S 4 in 1 ESC -   
 Link: https://www.rcgroups.com/forums/showthread.php?t=2782732#post36254434  
 Cap removal:https://www.rcgroups.com/forums/showpost.php?p=36654973&postcount=3006   
-- Racestar RS20A v2 - with cap removed   
+- Racerstar RS20A v2 - with cap removed   
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36503849&postcount=2672  
 - Racerstar RS30A LiteS - with cap removed.  
 Cap removal: https://www.rcgroups.com/forums/showthread.php?2690769-Racerstar-Blheli_S-ESCs-%28v2-just-released%29-10-for-20a-12-for-30a-30-4in1-20a/page38  
