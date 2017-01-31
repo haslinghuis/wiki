@@ -157,7 +157,7 @@ Link to modification details: https://www.rcgroups.com/forums/showpost.php?p=366
 `resource motor 5 none  `  
 `resource motor 4 A06 `  
 `save  `  
-
+There also seems to be a DMA conflict with BB logging. [Github issue #2162](https://github.com/betaflight/betaflight/issues/2162)
 - SPRACINGF3MINI - Move motor #4 to the PPM pin. Then use resource command to disable PPM and map motor 4 output to B04.  
  Follow above and to re-map output type in CLI:  
 `resource ppm none  `  
