@@ -4,7 +4,7 @@
 New to Betaflight and just want to get started see the [installation](https://github.com/betaflight/betaflight/wiki/Installing-Betaflight) section.
 
 ##Introduction
-Betaflight is a Cleanflight fork started by BorisB. It used to work as a beta test platform for Cleanflight and kept pushing the envelope in terms of performance, but it eventually evoluated to a fully grown up, stable and well maintained firwmare by various developers. In fact it looks like it is the nr1 open source multirotor firmware according to Google Trends analysys around January 2017.
+Betaflight is a Cleanflight fork started by BorisB. It used to work as a beta test platform for Cleanflight and kept pushing the envelope in terms of performance, but it eventually evoluated to a fully grown up, stable and well maintained firwmare by various developers. In fact it looks like it is the number 1 open source multirotor firmware according to Google Trends analysys around January 2017.
 The name "Beta" comes from the fact as it started with goal to keep trying new things out and have quick and easy test distributions available. The name "Beta" sticked around as the brandname was strong at the moment where it got stable and there was already a lot of documentation around.
 
 This project also helps by contributing to other open source projects like iNav." - says Boris B ([lead developer](http://www.youtube.com/user/bozic1982/featured))
