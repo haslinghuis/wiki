@@ -1,3 +1,26 @@
+##Betaflight 3.1.1-Maintanence Release
+Link to Releases: 
+https://github.com/betaflight/betaflight/releases/tag/v3.1.1  
+
+####New:
+- Resource remapping command doesn't require to set it to NONE first. (you can paste your diff output now) @blckmn
+- Added KISSCC target @borisbstyle @ronlix
+- Added more OSD configurable features and warnings @jflyper @DanNixon
+- Added IBUS Telemetry @mikeller
+- Added Blackbox to CMS @DanNixon
+- Added VTX config over MSP @raphaelcoeffic
+
+####Fixed:
+- Improved Iterm windup handling @borisbstyle @martinbudden
+- Fixed "diff" output for few OSD parameters @DanNixon
+- Simplified cli on F1 and F3 targets for more flash space @mikeller
+- Fixed REVONANO target @blckmn
+- Minor Code optimalisations @borisbstyle
+- Improved default configuration (higher default idle offset and new anti windup parameters) @borisbstyle
+- Fixed OSD switch @DanNixon
+- Fixed motor mapping on RCExplorer target @blckmn
+- Improved boot issues on wrong resource mappings @blckmn
+
 ##Betaflight 3.1.0-Release  
 
 Link to Releases:  
