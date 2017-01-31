@@ -4,8 +4,8 @@
 New to Betaflight and just want to get started see the [installation](https://github.com/betaflight/betaflight/wiki/Installing-Betaflight) section.
 
 ##Introduction
-"Due to many questions about my latest Cleanflight improvements and tests here is some more central information about it. The motivation for this project is to bring the end users closer to the development. As my main focus in Cleanflight is the flight improving development. A flight test group like this is very useful.
-The BetaFlight fork is from the current Cleanflight master with possible future Cleanflight flight performance enhancements.
+Betaflight is a Cleanflight fork started by BorisB. It used to work as a beta test platform for Cleanflight and kept pushing the envelope in terms of performance, but it eventually evoluated to a fully grown up, stable and well maintained firwmare by various developers. In fact it looks like it is the nr1 open source multirotor firmware according to Google Trends analysys around January 2017.
+The name "Beta" comes from the fact as it started with goal to keep trying new things out and have quick and easy test distributions available. The name "Beta" sticked around as the brandname was strong at the moment where it got stable and there was already a lot of documentation around.
 
 This project also helps by contributing to other open source projects like iNav." - says Boris B ([lead developer](http://www.youtube.com/user/bozic1982/featured))
 
@@ -13,13 +13,18 @@ This project also helps by contributing to other open source projects like iNav.
 Betaflight is also always being adjusted to support most current Cleanflight tools like Configurator and EzGui devices and many other MSP tools. There is no special tool needed just for betaflight.
 
 ##Firmware Releases
-Releases can be found here: https://github.com/betaflight/betaflight/releases or download the latest successful build directly from source (these are bleeding edge and may be unstable): http://andwho.sytes.net:8080/job/BorisB_BetaFlight/lastSuccessfulBuild/artifact/obj/
+Releases can be found here: https://github.com/betaflight/betaflight/releases or downloaded from configurator.
+
+BETA TESTING (WARNING)
+If you want to contribute to better development you can download the latest beta build directly from: http://andwho.sytes.net:8080/job/BorisB_BetaFlight/lastSuccessfulBuild/artifact/obj/
 
 ##Configuration Tool
 To configure Betaflight you should use the Betaflight-configurator GUI tool (Windows/OSX/Linux) that can be found here:  
 https://chrome.google.com/webstore/detail/betaflight-configurator/kdaghagfopacdngbohiknlhcocjccjao
 
-The latest configurator and source for it is here:  
+
+BETA TESTING (WARNING)
+If you want to contribute to better development you can download the latest beta configurator from: 
 https://github.com/betaflight/betaflight-configurator  
 
 Instructions (from the README.MD file in the download):    
