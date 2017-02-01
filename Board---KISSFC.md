@@ -55,7 +55,7 @@ _(add links to boards here that are similar in features or function, but use thi
 ## FAQ & Known Issues
 _(add FAQs, known issues and workarounds specifically related to this board. please link work in progress issues to the related github issue or pull request)_
 
-###Remapping Motor pin with the Resource command by NarcolepticLTD:   
+###Remapping Motor pins with the Resource command by NarcolepticLTD:   
 I just swapped over from kiss firmware to BF 3.1.1 to give the new features a try (and didn't want to resolder anything). I noted in previous releases that the motor outputs had been updated to match in this target, but not sure if that carried over to 3.1.1 - anyways, for anyone curious on how to do this, I simply held down the boot loader when plugging in, released, and then flashed 3.1.1 (kiss fc target), and had no issues with the install.
 
 Once it's installed, if like me you're wired for kiss firmware and don't want to resolder/mess about, you can use the new resource remapping tools to fix the motor order. Pick quadX1234 for your mixer, and change your motor mapping in the CLI from this:
