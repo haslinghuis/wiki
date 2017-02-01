@@ -6,7 +6,7 @@ So basically, here is the checklist:
 - firmware >= 1.26
 - disconnect TNR tag on firmware == 1.26
 
-*Please note:* the firmware version included is not necessarily the one on the label. Mine reads "Batch 01" and "1.22". However, after reading the firmware version (through the serial interface), it turns out to be "1.26".
+***Please note:*** the firmware version included is not necessarily the one on the label. Mine reads "Batch 01" and "1.22". However, after reading the firmware version (through the serial interface), it turns out to be "1.26".
 
 ## Setup
 
