@@ -55,6 +55,27 @@ _(add links to boards here that are similar in features or function, but use thi
 ## FAQ & Known Issues
 _(add FAQs, known issues and workarounds specifically related to this board. please link work in progress issues to the related github issue or pull request)_
 
+###Remapping Motor pin with the Resource command by NarcolepticLTD:   
+I just swapped over from kiss firmware to BF 3.1.1 to give the new features a try (and didn't want to resolder anything). I noted in previous releases that the motor outputs had been updated to match in this target, but not sure if that carried over to 3.1.1 - anyways, for anyone curious on how to do this, I simply held down the boot loader when plugging in, released, and then flashed 3.1.1 (kiss fc target), and had no issues with the install.
+
+Once it's installed, if like me you're wired for kiss firmware and don't want to resolder/mess about, you can use the new resource remapping tools to fix the motor order. Pick quadX1234 for your mixer, and change your motor mapping in the CLI from this:
+
+`resource MOTOR 1 B14`
+`resource MOTOR 2 B00`
+`resource MOTOR 3 B15`
+`resource MOTOR 4 A08`
+
+To this:
+`resource MOTOR 1 A08`
+`resource MOTOR 2 B00`
+`resource MOTOR 3 B14`
+`resource MOTOR 4 B15`
+
+once I had that set everything checked out in the motors tab and typical props off benchtests... hover test completed. Hopefully I'll get a chance to get out and fly in the next few days and see how the new anti_gravity settings sort my pitch issues (sick of doing wheelies).
+
+Quick edit to note that I haven't yet bothered to see if telemetry will need to be remapped - I may mess with it later. 
+
+
 ## Other Resources
 
 Pinouts, schematics and RX wiring: http://nathan.vertile.com/blog/2016/07/29/betaflight-kiss-flight-controller/#pinout
