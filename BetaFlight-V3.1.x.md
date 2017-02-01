@@ -147,6 +147,7 @@ See [Setting Min Throttle with Dshot](/betaflight/betaflight/wiki/DSHOT ESC Prot
 ####set anti_gravity_threshold = 350   - per Profile
 <i>[20..1000]<i>  
  To improve stability in fast changing G forces during flight. This applies to quick throttle jumps where multirotor can go through weightless transitions. In these cases the iterm can cause unwanted effects like pitching up or yawing due to strong changes in accumulation polarities.  
+To disable anti_gravity set anti_gravity_threshold = 1000.
 
 ####set yaw_accel_limit =  20.000 - per Profile
 <i>[0..50]<i>  
@@ -196,6 +197,7 @@ the max deflection on full stick in degrees
 <i>[1..30]<i>
 Gain is the temporary iterm acceleration on rapid throttle moves.  
 Boris: Well fly and see how it goes on defaults and post some logs if you can.   
+To disable anti_gravity set anti_gravity_threshold = 1000. 
 
 ###Misc CLI commands that seem to be new in 3.1 
 Note: Many have no information of how to use.
