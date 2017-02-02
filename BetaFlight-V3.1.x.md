@@ -6,7 +6,7 @@ https://github.com/betaflight/betaflight/releases/tag/v3.1.0
 
 - Fixed scaling issue where min_throttle would affect rcCommand Throttle
 - Replaced old multiwii throttle expo by new floating point version
-- Simplified few cli commands
+- Simplified few CLI commands
 - Lowered strength for some default settings like the new anti_gravity_gain
 
 Note from Boris:   
