@@ -22,3 +22,5 @@ These boards are called differently depending on the distributor.
 
 - Use OMNIBUSF4SD target.
 - LED strip port is PWM6.
+
+RCgroups thread for the F4 Pro at <https://www.rcgroups.com/forums/showthread.php?2801694-Omnibus-f4-pro>
