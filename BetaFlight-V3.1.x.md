@@ -1,6 +1,5 @@
 ##Betaflight 3.1.3 - Maintenance Release
-Link to Release:  
-https://github.com/betaflight/betaflight/releases/tag/v3.1.3
+Link to Release: https://github.com/betaflight/betaflight/releases/tag/v3.1.3
 
 - Minor optimalisations to PID code
 - Fix for iterm anti_windup_gain axis coupling
@@ -10,8 +9,7 @@ Note from Boris:
 Update to patches keeps your settings btw. You don't have to erase it. 
 
 ##Betaflight 3.1.2 - Maintenance Release
-Link to Release:  
-https://github.com/betaflight/betaflight/releases/tag/v3.1.2  
+Link to Release: https://github.com/betaflight/betaflight/releases/tag/v3.1.2  
 
 - Fixed scaling issue where min_throttle would affect rcCommand Throttle
 - Replaced old multiwii throttle expo by new floating point version
@@ -25,8 +23,7 @@ I know they still maybe be some target related issues, but there is not much to 
 Soon there will be a list of targets divided in 2 categories. There will be a list of FULLY supported FC's where devs spend time to make it all work and there will be the list of best effort supported targets there from those we don't own or where the manufacturers don't provide enough support for it. That doesn't mean that targets will get removed, just less guaranteed support of features ! So if someone reports dshot or blackbox not working on targets he or she will have to complain to the actual shop where they got it from.   
 
 ##Betaflight 3.1.1 - Maintenance Release
-Link to Release: 
-https://github.com/betaflight/betaflight/releases/tag/v3.1.1  
+Link to Release: https://github.com/betaflight/betaflight/releases/tag/v3.1.1  
 
 ####New:
 - Resource remapping command doesn't require to set it to NONE first. (you can paste your diff output now) @blckmn
@@ -49,8 +46,7 @@ https://github.com/betaflight/betaflight/releases/tag/v3.1.1
 
 ##Betaflight 3.1.0-Release  
 
-Link to Releases:  
-https://github.com/betaflight/betaflight/releases   
+Link to Releases: https://github.com/betaflight/betaflight/releases   
 Note: Embedded links to Videos are in the Github Release Notes.   
 
 Read here to Learn exactly what firmware issues and features are being worked on:
