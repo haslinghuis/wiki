@@ -1,4 +1,4 @@
-##Betaflight 3.1.2 Maintanence Release 3.1.2
+##Betaflight 3.1.2 - Maintanence Release
 Link to Release:  
 https://github.com/betaflight/betaflight/releases/tag/v3.1.2  
 For full release info see 3.1:
