@@ -12,6 +12,15 @@ These boards are called differently depending on the distributor.
 | OMNIBUS F4 Pro (v2)  |                            |             |
 +----------------------+----------------------------+-------------+
 ```
+## OMNIBUS F4 AIO Features
+
+- SPI Gyro MPU6000
+- STM32 F405 MCU, Runs Betaflight 3.0 firmware
+- SBUS/PPM input (Pinheaders)
+- 6PWM output (1-4Pinheaders and Sh1.0 Plug, 5-6 as Pinheaders)
+- NO BARO
+- 128Mbit Flash
+
 ## OMNIBUS F4 Pro features
 
 - SPI Gyro MPU6000
@@ -24,7 +33,7 @@ These boards are called differently depending on the distributor.
 - On-Board Video Filter (can only supply 5V to VTX and Camera)
 
 ## Betaflight 3.1 specific configuration
-### OMNIBUS F4
+### OMNIBUS F4 AIO
 
 - Use OMNIBUSF4 target.
 - LED strip port is PWM5.
@@ -35,7 +44,7 @@ These boards are called differently depending on the distributor.
 - LED strip port is PWM6.
 
 ## Other Resources
-
+RCgroups thread for the F4 AIO at <https://www.rcgroups.com/forums/showthread.php?2754926-Omnibus-F4-AIO>
 RCgroups thread for the F4 Pro at <https://www.rcgroups.com/forums/showthread.php?2801694-Omnibus-f4-pro>
 
 Layouts for F4 Pro [Top](https://www.rcgroups.com/forums/showatt.php?attachmentid=9631520&d=1482680395) [Bottom](https://www.rcgroups.com/forums/showatt.php?attachmentid=9631521&d=1482680397)
