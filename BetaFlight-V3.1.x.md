@@ -1,8 +1,17 @@
-##Betaflight 3.1.2 - Maintanence Release
+##Betaflight 3.1.3 - Maintenance Release
+Link to Release:  
+https://github.com/betaflight/betaflight/releases/tag/v3.1.3
+
+- Minor optimalisations to PID code
+- Fix for iterm anti_windup_gain axis coupling
+
+Note from Boris:  
+3.1.2 would have been latest, but as we find more things that are worth releasing we bring out the new patch.
+Update to patches keeps your settings btw. You don't have to erase it. 
+
+##Betaflight 3.1.2 - Maintenance Release
 Link to Release:  
 https://github.com/betaflight/betaflight/releases/tag/v3.1.2  
-For full release info see 3.1:
-https://github.com/betaflight/betaflight/releases/tag/v3.1.0
 
 - Fixed scaling issue where min_throttle would affect rcCommand Throttle
 - Replaced old multiwii throttle expo by new floating point version
@@ -15,7 +24,7 @@ Ok here this one should be the last one. Lets move to 3.2 now!
 I know they still maybe be some target related issues, but there is not much to do about.
 Soon there will be a list of targets divided in 2 categories. There will be a list of FULLY supported FC's where devs spend time to make it all work and there will be the list of best effort supported targets there from those we don't own or where the manufacturers don't provide enough support for it. That doesn't mean that targets will get removed, just less guaranteed support of features ! So if someone reports dshot or blackbox not working on targets he or she will have to complain to the actual shop where they got it from.   
 
-##Betaflight 3.1.1-Maintanence Release
+##Betaflight 3.1.1 - Maintenance Release
 Link to Release: 
 https://github.com/betaflight/betaflight/releases/tag/v3.1.1  
 
