@@ -193,6 +193,17 @@ Usually F4 board will run fine on 32kHz gyro and 16kHz pid loop. 32/32 is slight
 32khz is added just because it can, but no new harder filtering will be defaulted to that. If you want to fly 32khz you will have to try to optimise your filters by yourself.  
 Default filtering is good enough for 8k gyro sampling, but 32khz requires more filtering depending of setup.
 I did find out that old blheli esc's for example perform well under 32khz as those are less responsive, while blheli_s and other responsive esc's with better braking really suffer from micros on 32khz.  
+#####Question from  fftunes :  
+Did someone compare mpu6500 vs ICM20x at 32k? In Felix' tests the ICM20x did not look so well...  
+Boris' answer:   
+Yes I did. Zero difference.....absolutely zero difference.  
+I fact ICM208601 seemed slightly more prone to motor frequencies hitting its resonant frequency.  
+
+I also did some more investigation about the new vs old gyros and talked even to invenesense about it.  
+This is the story:  
+The old gyros like MPU60x0 had 3 separate internal gyros. Each axis had its own gyro. That had too high power consumption for mobile phones and there was a demand for more power efficient gyro. So what did they do? They removed 2 gyros from it and made one gyro for all 3 axis to reach this low power demand and succeeded in that! They are selling millions of gyros installed on pretty much every mobile phone. But they did remove some robustness and hardware, which seems crucial for drone applications! The new gyros are also cheaper than the old ones as well, because of that.
+What we need in drone industry is better gyros and not cheaper less power hungry ones as that's not relevant for us!
+If you ask me they could make a more expensive gyro with better quality targeted for drones.   
 
 ###New RC6 CLI commands:  
 
