@@ -271,3 +271,53 @@ Allowed values: OFF, ON
 Allowed values: NONE, CYCLETIME, BATTERY, GYRO, ACCELEROMETER, MIXER, AIRMODE, PIDLOOP, NOTCH, RC_INTERPOLATION, VELOCITY, DFILTER, ANGLERATE, ESC_SENSOR, SCHEDULER, STACK   
 Enable additional value to be sent to a BlackBox Log which is useful to measure frequency of noise before filters and other debugging.
 
+###CLI Change between 3.1.0 & 3.1.3:
+
+####dump   
+no longer outputs section name.
+
+####CLI name changes:
+#####rc_interpolation  => rc_interp
+#####rc_interpolation_channels => rc_interp_ch
+#####rc_interpolation_interval => rc_interp_int
+#####roll_yaw_cam_mix_degrees => fpv_mix_degrees
+#####telemetry_switch => tlm_switch
+#####telemetry_inversion => tlm_inversion
+#####frsky_default_lattitude => frsky_default_lat
+#####frsky_default_longitude => frsky_default_long
+#####frsky_coordinates_format => frsky_gps_format
+#####hott_alarm_sound_interval => hott_alarm_int
+#####pid_values_as_telemetry => pid_in_tlm
+#####battery_capacity => bat_capacity
+#####current_meter_scale => ibat_scale
+#####current_meter_offset => ibat_offset
+#####multiwii_current_meter_output => mwii_ibat_output
+#####battery_notpresent_level => bat_detect_thresh
+#####use_consumption_alerts => use_cbat_alerts
+#####consumption_warning_percentage => cbat_alert_percent
+#####throttle_correction_value => thr_corr_value
+#####set throttle_correction_angle => thr_corr_angle
+#####servo_lowpass_freq => servo_lowpass_hz
+#####servo_lowpass_enable => servo_lowpass
+#####airmode_activate_throttle => airmode_start_throttle
+#####dterm_lowpass_type => d_lowpass_type
+#####dterm_lowpass => d_lowpass
+#####dterm_notch_hz => d_notch_hz
+#####dterm_notch_cutoff => d_notch_cut
+#####vbat_pid_compensation => vbat_pid_gain
+#####anti_gravity_threshold => anti_gravity_thresh
+#####dterm_setpoint_weight => d_setpoint_weight
+#####level_stick_sensitivity => level_sensitivity
+#####level_angle_limit => level_limit
+
+###New in 3.1.3
+
+####set anti_gravity_rate_max = 80
+
+####set iterm_windup = 50
+
+###Removed from 3.1.3
+####accum_threshold = 200
+####set yaw_accum_threshold
+
+
