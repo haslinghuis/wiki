@@ -56,5 +56,14 @@ None known
 ## FAQ & Known Issues
 No known issues yet. 
 
+The default resource mappings on all boards are for use on a quadcopter. If you want to use the board for a tricopter, you will have to manually remap the resources so you get a resource for the tail servo. This should work for the F3FC (Rcexplorer FC)
+
+resource MOTOR 1 A08
+resource MOTOR 2 B00
+resource MOTOR 3 A04
+resource MOTOR 4 NONE
+resource MOTOR 5 NONE
+resource SERVO 1 A07 
+
 ## Other Resources
 Setup guide and such available here: http://rcexplorer.se/product/f3fc-racing/
