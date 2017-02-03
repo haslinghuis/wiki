@@ -141,6 +141,12 @@ Usually on high CPU usage more less prioritized things will stop working. For ex
 The only true danger with too high cpu before was that motor commands may overlap, but there is a lot of spacing in between all motor commands and it is protected as well with looptime limitations on different protocols.  
 I personally fly everything enabled except accelerometer on my rigs.  
 
+######Question by Jerm357:
+Can anyone suggest some settings for "Angle Limit" and "Sensitivity" in 3.1.3 to get Angle mode to feel like it did in 3.0.1?  
+Answer from Boris:  
+Sensitivity 100
+Limit 70  
+
 ######To check for DMA conflicts do the following (thanks teralift):  
 (1) Disable Dshot, enable LED_STRIP, save & reboot.  
 (2) Goto CLI.  
