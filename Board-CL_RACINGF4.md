@@ -30,14 +30,20 @@ _(Fill in hardware specs and add any not listed)_
   -130A rated PDB
 
 ## Manufacturers and Distributors
-   www.clrpowered.com (website under construction at this moment)
+
+   -www.clrpowered.com (website under construction at this moment)
+
 ## Designers
- - bnn1044
+
+  -bnn1044
+
 ## Maintainers
-  - bnn1044
+
+   -bnn1044
+
 ## Similar Targets
- -99% identical to OmnibusF4SD, Same input and output, but in PDB style motor layout
- -Function and features are the same as OmnibusF4SD, added more uarts and sepreate PPM from the uart
+  -99% identical to OmnibusF4SD, Same input and output, but in PDB style motor layout
+  -Function and features are the same as OmnibusF4SD, added more uarts and sepreate PPM from the uart
 ## Variants
 
 ## Other Resources
