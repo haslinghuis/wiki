@@ -264,7 +264,8 @@ Cap removal: https://nathan.vertile.com/blog/2016/11/14/flash-blheli_s-with-dsho
 - Cicada v1 20A - 
 - Cicada v2 20A - 
 - Cicada v1 30A - 
-- Cicada v2 30A - with cap removed 
+- Cicada v2 30A - with cap removed  
+Cap removal: https://www.electricwingman.com/guides/building-fpv-racing-quadcopter.aspx
 - Cicada 4n1 20a V2 - with caps removed  
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36286446&postcount=2036   
 - Cicada 35Ax4 35A - with caps removed   
