@@ -13,7 +13,7 @@ Link to Release: https://github.com/betaflight/betaflight/releases/tag/v3.1.2
 
 - Fixed scaling issue where min_throttle would affect rcCommand Throttle
 - Replaced old multiwii throttle expo by new floating point version
-- Simplified few CLI commands
+- Simplified few CLI commands (see list below for CLI name changes)
 - Lowered strength for some default settings like the new anti_gravity_gain
 
 Note from Boris:   
@@ -313,8 +313,10 @@ no longer outputs section name.
 ###New in 3.1.3
 
 ####set anti_gravity_rate_max = 80
+Allowed range: 0 - 2000  
 
 ####set iterm_windup = 50
+Allowed range: 30 - 100  
 
 ###Removed from 3.1.3
 ####accum_threshold = 200
