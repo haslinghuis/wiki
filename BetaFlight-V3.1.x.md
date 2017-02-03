@@ -106,6 +106,9 @@ NOTE- For the features in this release you will need to use the following Versio
 - RC12 ( -25Jan2017)- FPV angle mix applied to actual rates (also a fix) // Fix truncated blackbox logs // Redefined OSD defaults to not have PIDs by default on screen // Increased configurable filter range  
 - RC13 - reported bug where blackbox would disable itself is now resolved   
 
+#####Note: With v3.1 and later, servos must be configured manually by resource cli command.Do NOT use  CHANNEL_FORWARDING. It does something really nasty.     
+[See Teralift's post here](https://www.rcgroups.com/forums/showpost.php?p=36792606&postcount=44331)
+
 #####Notes from Boris:   
 DSHOT1200 does work now but only on kiss24 that I know.
 We decided to add a lot of new stuff available from cli for testing purposes and try to only add proven things in the configurator.   
