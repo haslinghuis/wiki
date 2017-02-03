@@ -34,12 +34,10 @@ _(Fill in hardware specs and add any not listed)_
 ## Designers
  - bnn1044
 ## Maintainers
-_(add your name here if you help test or contribute code for this board)_
- -bnn1044
+  - bnn1044
 ## Similar Targets
  -99% identical to OmnibusF4SD, Same input and output, but in PDB style motor layout
-_(add links board descriptions here that are similar in features or function, but have a separate target)_
--Function and features are the same as OmnibusF4SD, added more uarts and sepreate PPM from the uart
+ -Function and features are the same as OmnibusF4SD, added more uarts and sepreate PPM from the uart
 ## Variants
 
 ## Other Resources
