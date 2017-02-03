@@ -44,6 +44,9 @@ Link to Release: https://github.com/betaflight/betaflight/releases/tag/v3.1.1
 - Fixed motor mapping on RCExplorer target @blckmn
 - Improved boot issues on wrong resource mappings @blckmn
 
+NOTE- For the features in this release you will need to use the following Versions or Higher:  
+- Configurator 1.9.1
+
 ##Betaflight 3.1.0-Release  
 
 Link to Releases: https://github.com/betaflight/betaflight/releases   
