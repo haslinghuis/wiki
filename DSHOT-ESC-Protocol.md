@@ -143,7 +143,7 @@ See: [CLI resource command](https://github.com/betaflight/betaflight/wiki/Betafl
 `resource motor 2 A08 `  
 `save  `  
 
-See: [AlienFlightNG Support](https://www.alienflightng.com/support/)    
+ See: [AlienFlightNG Support](https://www.alienflightng.com/support/)    
 
 - MOTOLAB - (MotoF3, Cyclone & Tempest)   
  Move motor 1 from Output #1 header pin to the PPM input header pin.   
