@@ -135,7 +135,7 @@ and copy/paste these into a Text file and save for reference of the Default pin 
 See: [CLI resource command](https://github.com/betaflight/betaflight/wiki/Betaflight-resource-remapping)    
 
 - ALIENFLIGHTF4  
- Move the motor 2 wire to the PPM pad at the bottom of the board. You can also directly connect the motor signal pad with the PPM pad. There are updated board designs available with an added DSHOT solder jumper at the bottom which is making this connection. In this case, you can leave the motor 2 soldered output #2. Note: a PPM receiver can not be used in this configuration.  
+ Move the motor 2 wire to the PPM pad at the bottom of the board. You can also directly connect the motor 2 signal pad with the PPM pad. There are updated board designs available with an added DSHOT solder jumper at the bottom which is making this connection. In this case, you can leave the motor 2 soldered output #2. Note: a PPM receiver can not be used in this configuration.  
  If your controller has an SDCard slot (V2.0) you also need to use the following command in addition to get motor 4 working with DSHOT:  
 `set sdcard_dma=off `  
  Enter the following commands into the CLI window to re-map output:  
