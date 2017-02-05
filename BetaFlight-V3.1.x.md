@@ -181,7 +181,8 @@ See [Setting Min Throttle with Dshot](/betaflight/betaflight/wiki/DSHOT ESC Prot
 ####set anti_gravity_threshold = 350   - per Profile
 <i>[20..1000]<i>  
  To improve stability in fast changing G forces during flight. This applies to quick throttle jumps where multirotor can go through weightless transitions. In these cases the iterm can cause unwanted effects like pitching up or yawing due to strong changes in accumulation polarities.  
-To disable anti_gravity set anti_gravity_threshold = 1000.
+To disable anti_gravity set anti_gravity_threshold = 1000.  
+See Discussion on Anti_gravity below.
 
 ####set yaw_accel_limit =  20.000 - per Profile
 <i>[0..50]<i>  
@@ -243,6 +244,7 @@ the max deflection on full stick in degrees
 Gain is the temporary iterm acceleration on rapid throttle moves.  
 Boris: Well fly and see how it goes on defaults and post some logs if you can.   
 To disable anti_gravity set anti_gravity_threshold = 1000. 
+See Discussion on Anti_gravity below.
 
 ###Misc CLI commands that seem to be new in 3.1 
 Note: Many have no information of how to use.
@@ -326,6 +328,7 @@ no longer outputs section name.
 
 ####set anti_gravity_rate_max = 80
 Allowed range: 0 - 2000  
+See Discussion on Anti_gravity below.
 
 ####set iterm_windup = 50
 Allowed range: 30 - 100  
@@ -334,4 +337,26 @@ Allowed range: 30 - 100
 ####accum_threshold = 200
 ####set yaw_accum_threshold
 
+##Discussions on new features:
 
+###Anti_gravity:
+
+####Posted by Vaflius:
+I have played with anti_gravity values a bit, but it is still very confusing. There are 3 values:  
+set anti_gravity_thresh = 350  
+set anti_gravity_gain = 3.000  
+set anti_gravity_rate_max = 80  
+
+thresh is simple - it's the sensitivity (when/if the antigravity should kick in, as maxing out thresh means to turn off the antigravity)  
+
+What's the difference between gain and rate_max?  
+
+In my testing so far (I've had quite huge pitching on throttle blips), the biggest improvement was upping gain to 5. I could not see any difference between gain=5 and gain=6, other antigravity parameters defaulted. Lowering thresh to 200 did not seem to have positive impact, nor raising rate_max to 90.  
+
+On my setup I now have:   
+set anti_gravity_thresh = 200  
+set anti_gravity_gain = 6.000  
+set anti_gravity_rate_max = 90  
+
+It's much better, however, there is little pitching up on throttle and after lowering thresh to 200 it added something like propwash on throttle punchouts/blips.  
+Has anyone tested these parameters on their quads?   
