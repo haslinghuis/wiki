@@ -25,9 +25,13 @@
 
 Cleanflight uses ARM GCC and it is a vital component to produce the hex file. First, go to https://launchpad.net/gcc-arm-embedded and click on "All downloads" on the right side of the page. Scroll down until you see `gcc-arm-none-eabi-4_9-2015q3-20150921-mac.tar.bz2`. Click on it so it downloads. 
 
-Move the file to a desired spot, for example the Documents folder. Make sure you unpack the file. The directory should look something like this, if you put it in the Documents folder. 
+Move the file to a desired spot, for example the Documents folder. Make sure you unpack the file.
+`bzip2 -d gcc-arm-none-eabi-4_9-2015q3-20150921-mac.tar.bz2`
+`tar -xf gcc-arm-none-eabi-4_9-2015q3-20150921-mac.tar`
 
-`Users/siddha/Documents/gcc-arm-none-eabi-4_9-2015q3`
+The directory should look something like this, if you put it in the Documents folder. 
+
+`/Users/siddha/Documents/gcc-arm-none-eabi-4_9-2015q3`
 
 Now open terminal and type:
 
@@ -35,9 +39,9 @@ Now open terminal and type:
 
 Next type:
 
-`export PATH=$PATH:~/Users/siddha/Documents/gcc-arm-none-eabi-4_9-2015q3`
+`export PATH=/Users/siddha/Documents/gcc-arm-none-eabi-4_9-2015q3/bin:$PATH`
 
-**NOTE: You should insert the directory of your file... `~/Users/siddha/Documents/gcc-arm-none-eabi-4_9-2015q3` is an example **
+**NOTE: You should insert the directory of your file... `/Users/siddha/Documents/gcc-arm-none-eabi-4_9-2015q3/bin` is an example **
 
 Now type CTRL + X to exit out, then type y to save. 
 
