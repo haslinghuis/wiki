@@ -11,7 +11,7 @@ KISSFC is a STM32F3 based flight controller with integrated voltage regulator, b
 ### Hardware
 
   - MCU: STM32F3
-  - IMU: MPU6050 (SPI)
+  - IMU: MPU6050
   - IMU Interrupt: Yes
   - BARO: No
   - VCP: Yes
