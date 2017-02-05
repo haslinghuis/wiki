@@ -337,7 +337,7 @@ Allowed range: 30 - 100
 ####accum_threshold = 200
 ####set yaw_accum_threshold
 
-##Discussions on new features:
+##Discussions of new features:
 
 ###Anti_gravity:
 
