@@ -39,6 +39,7 @@ SPRACINGF3
 | A3  | M8                | OK      | ?     | ?      |                        |
 
 SPRACINGF3EVO
+
 | Pin | Label             | S.Audio | Tramp | S.Port | Notes                  |
 |-----|-------------------|---------|-------|--------|------------------------|
 | A8  | LED strip         | ?       | NG    | ?      |                        |
