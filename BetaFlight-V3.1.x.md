@@ -22,6 +22,11 @@ Ok here this one should be the last one. Lets move to 3.2 now!
 I know they still maybe be some target related issues, but there is not much to do about.
 Soon there will be a list of targets divided in 2 categories. There will be a list of FULLY supported FC's where devs spend time to make it all work and there will be the list of best effort supported targets there from those we don't own or where the manufacturers don't provide enough support for it. That doesn't mean that targets will get removed, just less guaranteed support of features ! So if someone reports dshot or blackbox not working on targets he or she will have to complain to the actual shop where they got it from.   
 
+#####Note: Throttle expo works as regular expo now without even throttle mid involved.  
+This is actually a temporary situation until custom throttle curve is finished (expected in 3.2).  
+The reason for current temporary situation is because this part of code was mixing min_throttle into throttle value.  
+Maybe its best to not use it for now.  
+
 ##Betaflight 3.1.1 - Maintenance Release
 Link to Release: https://github.com/betaflight/betaflight/releases/tag/v3.1.1  
 
