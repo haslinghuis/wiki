@@ -2,15 +2,17 @@ Not for public viewing yet.
 
 List of compatible pins.
 
+---
 OMNIBUS(F3)
 
-| Pin | Label     | S.Audio | Tramp | S.Port | Note |
-|-----|-----------|---------|-------|--------|------|
-| A8  | LED strip | NG      | ?     | ?      |      |
-| B4  | PPM       | OK      | ?     | ?      |      |
-| B6  | PWM8/SCL  | OK      | ?     | ?      |      |
-| B7  | PWM7/SDA  | OK      | ?     | ?      |      |
+| Pin | Label     | S.Audio | Tramp | S.Port | Note                    |
+|-----|-----------|---------|-------|--------|-------------------------|
+| A8  | LED strip | NG      | ?     | ?      |                         |
+| B4  | PPM (*1)  | OK      | ?     | ?      | When PPM not in use     |
+| B6  | PWM8/SCL  | OK      | ?     | ?      | I2C must be de-configured? Need furthe testing. |
+| B7  | PWM7/SDA  | OK      | ?     | ?      | Ditto                        |
 
+---
 OMNIBUSF4
 
 | Pin | Label     | S.Audio | Tramp | S.Port | Note |
@@ -22,6 +24,7 @@ OMNIBUSF4
 | C8  | CH5       | OK      | ?     | ?      |      |
 | C9  | CH6       | OK      | ?     | ?      |      |
 
+---
 SPRACINGF3
 
 | Pin | Label             | S.Audio | Tramp | S.Port | Notes                  |
@@ -38,6 +41,7 @@ SPRACINGF3
 | A2  | M7                | OK      | ?     | ?      |                        |
 | A3  | M8                | OK      | ?     | ?      |                        |
 
+---
 SPRACINGF3EVO
 
 | Pin | Label             | S.Audio | Tramp | S.Port | Notes                  |
