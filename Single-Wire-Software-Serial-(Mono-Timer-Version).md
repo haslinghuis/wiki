@@ -1,3 +1,5 @@
+Not for public viewing yet.
+
 List of compatible pins for use with SmartAudio
 
 OMNIBUS(F3)
