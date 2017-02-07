@@ -24,6 +24,8 @@ Servos you assign here as 1 and 2 corresponds to servos 0 and 1 in the Servos ta
 ### Examples
 Here are some examples of assignments. If you can't find a one that fit your needs, then you have to go read the hard boiled story: [Working on your own](https://github.com/betaflight/betaflight/wiki/_new#working-on-your-own) in the later half of this page.
 
+__Target/board maintainers, please add example entries that reflect mappings based on the v3.0.1 `pwm_mapping.c`; it can cover all the mappings, not only for servo tilts__
+
 #### NAZE32 "__Shift by 2__" style assignment
 If you have a NAZE32 already setup based on "__Shift Motor Outputs by 2__" rule, and it was working prior to v3.1, here is your assignment.
 ```
@@ -37,6 +39,8 @@ resource motor 3 b8
 resource motor 4 b9
 save
 ```
+
+#### New Example Place Holder
 
 ---
 ### Working on your own
