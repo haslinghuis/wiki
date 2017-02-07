@@ -313,7 +313,7 @@ Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36209787&postcount=1
 - Racerstar 25a -  
 - Racerstar v2 35A -    
 Cap removal:https://www.rcgroups.com/forums/showpost.php?p=36654973&postcount=3006   
-- Racerstar MS25A -  (A_H_20) - need signal cap removed  
+- Racerstar MS25A -  (A_H_20) - need signal cap removed, same cap as Racerstar MS35A
 - Racerstar MS35A -  
 Cap removal with before and after O'scope traces: https://www.rcgroups.com/forums/showpost.php?p=36588994&postcount=2834  
 - Racerstar 4in1 20A V1 - need the signal cap(s) removed.   
