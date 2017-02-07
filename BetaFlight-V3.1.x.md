@@ -1,4 +1,5 @@
 ##Betaflight 3.1.4 - patch
+- No hex files, just source code: https://github.com/betaflight/betaflight/releases
 - Simplify anti gravity
 - with throttle expo fixes 
 
