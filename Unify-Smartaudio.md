@@ -116,6 +116,21 @@ It allows direct entry of arbitral frequency between 5600 and 5900MHz, by select
 
 The `NEW FREQ` allows selection of a new frequency, and `SET` will commence the transmission at the frequency. Accelerating auto repeat can be used here to prevent you from grounded when making a large change.
 
+#### Switching between band/channel mode and user frequency mode
+
+To switch from band/channel to user frequency mode:<br>
+(1) Navigate to `SA CONFIG` menu.<br>
+(2) Change `OP MODEL` to `FREE` if not already `FREE`.<br>
+(3) Change `FSEL MODE` to `USER`.<br>
+(4) Power cycle the SmartAudio device (You don't have to power cycle the FC).<br>
+(5) Navigate back to SmartAudio VTX top menu.
+
+To switch from user frequency mode to band/channel mode:<br>
+(1) Navigate to `SA CONFIG` menu.<br>
+(2) Change `FSEL MODE` to `CHAN`.<br>
+(3) Power cycle the SmartAudio device (You don't have to power cycle the FC).<br>
+(4) Navigate back to SmartAudio VTX top menu.<br>
+
 ### CONFIG sub-menu
 
 ![SmartAudio CMS CONFIG submenu](https://cloud.githubusercontent.com/assets/14850998/21961345/de0b760a-db4a-11e6-8309-abc6227ddc7c.jpg)
@@ -148,8 +163,6 @@ Specifies frequency to use while in _Out-Range_ pit mode.
 
 #### STATX
 Protocol statistics between a flight controller and a SmartAudio device. May help you to trouble shoot connection problems.
-
-### Using user frequency mode
 
 ### Trouble shooting
 #### Recovery from accidental Out-Range pit mode
