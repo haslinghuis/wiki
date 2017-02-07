@@ -113,6 +113,7 @@ NOTE- For the features in this release you will need to use the following Versio
 
 #####Note: With v3.1 and later, servos must be configured manually by resource cli command.Do NOT use  CHANNEL_FORWARDING. It does something really nasty.     
 [See Teralift's post here](https://www.rcgroups.com/forums/showpost.php?p=36792606&postcount=44331)
+[Servo mapping on a Naze32 by TeraLift](https://www.rcgroups.com/forums/showpost.php?p=36821753&postcount=44612)
 
 #####Notes from Boris:   
 DSHOT1200 does work now but only on kiss24 that I know.
