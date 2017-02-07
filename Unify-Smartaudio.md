@@ -55,8 +55,8 @@ Main-port may be compatible (need testing).
 
 ## SmartAudio CMS guide
 
-### The top menu
-The top menu for SmartAudio VTX looks like this.
+### The top menu (Band/Channel mode)
+The top menu for SmartAudio VTX in band/channel mode looks like this.
 ![SmartAudio CMS Top menu (Band/Chan mode)](https://cloud.githubusercontent.com/assets/14850998/21961195/c2639562-db46-11e6-9f98-71d54f6a879b.jpg)
 While most of the entries are intuitive, there are several things that need additional explanation.
 
@@ -106,6 +106,16 @@ Changes to `POWER` takes effect immediately, but changes to `BAND` and `CHAN` mu
 #### Switching between Freestyle and Race
 There is an `OPMODEL` entry in the `CONFIG` sub-menu. Select either `FREE` or `RACE`. A device must be power cycled for the change to take effect.
 
+### The top menu (Band/Channel mode)
+
+When a SmartAudio device is in user frequency mode, the SmartAudio CMS Top Menu looks like this.
+![SmartAudio CMS Top menu (Frequency mode)](https://cloud.githubusercontent.com/assets/14850998/22690953/7ac836ee-ed7b-11e6-8c71-139f1eb919aa.png)
+It allows direct entry of arbitral frequency between 5600 and 5900MHz, by selecting the `FREQ` entry, which will take to a submenu like this.
+
+![SmartAudio Frequency selection menu](https://cloud.githubusercontent.com/assets/14850998/22690983/a8db502a-ed7b-11e6-9570-e2f406f5d29b.png)
+
+The `NEW FREQ` allows selection of a new frequency, and `SET` will commence the transmission at the frequency. Accelerating auto repeat can be used here to prevent you from grounded when making a large change.
+
 ### CONFIG sub-menu
 
 ![SmartAudio CMS CONFIG submenu](https://cloud.githubusercontent.com/assets/14850998/21961345/de0b760a-db4a-11e6-8309-abc6227ddc7c.jpg)
@@ -114,11 +124,15 @@ There is an `OPMODEL` entry in the `CONFIG` sub-menu. Select either `FREE` or `R
 Selection between race operational model (`RACE`) and freestyle operational model (`FREE`).  
 Requires power cycle to take effect.
 
+When race operational model is selected, the frequency selection mode (`FSEL MODE`) will automatically set to `CHAN`. This is by the specification of the current hardware (Unify 5G8 Pro/Pro HV/Race).
+
 #### FSEL MODE
 Frequency selection method. Requires power cycle to take effect.
 - Channel mode ('CHAN'): Frequency is selected by specifying band and channel.
-- Frequency mode ('FREQ': Frequency is specified by numerical value in MHz.  
+- Frequency mode ('FREQ'): Frequency is specified by numerical value in MHz.  
 When set to frequency mode, operational model is automatically set to freestyle, and top menu will be altered to enable direct frequency adjustment.
+
+The Frequency mode (`FREQ`) is only available when the operational model is freestyle (`FREE`). To choose the frequency mode, first switch the operational model to free style.
 
 #### PIT FMODE
 Specifies frequency to use while in pit mode. Requires power cycle to take effect.
@@ -134,6 +148,8 @@ Specifies frequency to use while in _Out-Range_ pit mode.
 
 #### STATX
 Protocol statistics between a flight controller and a SmartAudio device. May help you to trouble shoot connection problems.
+
+### Using user frequency mode
 
 ### Trouble shooting
 #### Recovery from accidental Out-Range pit mode
