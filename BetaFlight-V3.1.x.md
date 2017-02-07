@@ -1,3 +1,7 @@
+##Betaflight 3.1.4 - patch
+- Simplify anti gravity
+- with throttle expo fixes 
+
 ##Betaflight 3.1.3 - Maintenance Release
 Link to Release: https://github.com/betaflight/betaflight/releases/tag/v3.1.3
 
