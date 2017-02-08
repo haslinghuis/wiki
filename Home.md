@@ -10,6 +10,9 @@ The name "Beta" comes from the fact it started with a goal to keep trying new th
 
 "This project also helps by contributing to other open source projects like iNav." - says Boris B ([lead developer](http://www.youtube.com/user/bozic1982/featured))
 
+3Min video of Betaflight Evolution from Baseflight->Cleanflight->Betaflight
+[![Betaflight Evolution](http://img.youtube.com/vi/-1yjOopX_9c/0.jpg)](https://www.youtube.com/watch?v=gJ4z48BRsh8)
+
 ##Tools
 Betaflight is also always being adjusted to support most current Cleanflight tools like Configurator and EzGui devices and many other MSP tools. There is no special tool needed just for Betaflight.
 
