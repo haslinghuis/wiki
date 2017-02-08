@@ -53,4 +53,4 @@ Visit this RC Groups Forum to join the discussion: http://www.rcgroups.com/forum
 
 Financial support to Boris.B by PayPal donation:
 
-[![Donate](https://www.paypalobjects.com/en_US/NL/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/nl/cgi-bin/webscr?cmd=_flow&SESSION=FrZqX4LdihqTA-IsyvlDXY09Eq7UX4Ghxn9eIOQMOBHVPegu-iRC6CHOdQi&dispatch=5885d80a13c0db1f8e263663d3faee8d64ad11bbf4d2a5a1a0d303a50933f9b2)
+[![Donate](https://www.paypalobjects.com/en_US/NL/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Z3RQMS2KT4YJU)
