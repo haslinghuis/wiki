@@ -1,3 +1,21 @@
+##Betaflight 3.1.5
+Link to Release: https://github.com/betaflight/betaflight/releases/tag/v3.1.5
+
+
+- Restore multiwii throttle expo
+- Fix Motor 6 for SIRINFPV
+- [VTX SmartAudio] Fix status string for user frequency mode
+- Fix broken standard PWM
+- Change default current meter scale for BFF3 // Enable Serial RX by default on UART2
+- Register SDCard DMA in resource list
+- Configurable starting AUX channel for CHANNEL_FOWARDING
+- Fixed for Tramp Power menu
+- Simplify anti gravity gain parameters (disabled by default)
+- Fix multiple changes through MSP for tramp
+- Fix Tramp display issue for Raceband Channel 7 (was showing F8)
+- Decouple min_throttle and max_throttle from altitude hold
+
+
 ##Betaflight 3.1.4 - patch
 - No hex files, just source code: https://github.com/betaflight/betaflight/releases/tag/v3.1.4
 - Simplify anti gravity
