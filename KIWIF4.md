@@ -56,6 +56,9 @@ _(add FAQs, known issues and workarounds specifically related to this board. ple
 
 _format is reporter [name], (status): issue contents_
 
+###Voltage and Current Scaling:  
+Flying Lemon said to use the following for scale:
+voltage 57, current 320.  
 
 ## Other Resources
 
