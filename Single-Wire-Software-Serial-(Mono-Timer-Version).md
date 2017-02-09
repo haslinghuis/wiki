@@ -8,7 +8,7 @@ OMNIBUS(F3)
 | Pin | Label     | S.Audio | Tramp | S.Port | Note                    |
 |-----|-----------|---------|-------|--------|-------------------------|
 | A8  | LED strip | NG      | ?     | ?      |                         |
-| B4  | PPM (*1)  | OK      | ?     | ?      | When PPM not in use     |
+| B4  | PPM (*1)  | OK      | ?     | OK     | When PPM not in use     |
 | B6  | PWM8/SCL  | OK      | ?     | ?      | I2C must be de-configured? Need furthe testing. |
 | B7  | PWM7/SDA  | OK      | ?     | ?      | Ditto                        |
 
