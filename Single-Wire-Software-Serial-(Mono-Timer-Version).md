@@ -17,7 +17,7 @@ OMNIBUSF4
 
 | Pin | Label     | S.Audio | Tramp | S.Port | Note |
 |-----|-----------|---------|-------|--------|------|
-| A1  | PWM5/LED strip | OK | ?     | ?      |      |
+| A1  | PWM5      | OK      | ?     | OK     |      |
 | A8  | PWM6      | OK      | ?     | ?      |      |
 | B14 | PPM       | OK      | ?     | ?      |      |
 | B15 | CH2       | OK      | ?     | ?      |      |
