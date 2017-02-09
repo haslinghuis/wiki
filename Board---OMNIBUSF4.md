@@ -51,7 +51,7 @@ These boards are called differently depending on the distributor.
 | UART1 RX | A10 | ?,?   | ?,? |                                  |
 | PWM1     | B0  | 3,3   | 1,7 |                                  |
 | PWM2     | B1  | 3,4   | 1,2 |                                  |
-| LED      | B6  | 4,1   | ?,? | J9                               |
+| LED      | B6  | 4,1   | ?,? | J9 (Not accessible with v3.1)    |
 | PPM      | B8  | 12,3  | ?,? |                                  |
 | CH2      | B9  | 12,4  | ?,? |                                  |
 | UART3 TX | B10 | ?,?   | ?,? |                                  |
