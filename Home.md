@@ -23,6 +23,9 @@ Releases can be found here: https://github.com/betaflight/betaflight/releases or
 
 *If you want to contribute to better development you can download the latest beta build directly from:* *http://andwho.sytes.net:8080/job/BorisB_BetaFlight/lastSuccessfulBuild/artifact/obj/*
 
+You can find release planning here:   
+https://github.com/betaflight/betaflight/milestones
+
 ##Configuration Tool
 To configure Betaflight you should use the latest stable Betaflight-configurator GUI tool (Windows/OSX/Linux) that can be found in google chrome store:  
 https://chrome.google.com/webstore/detail/betaflight-configurator/kdaghagfopacdngbohiknlhcocjccjao
