@@ -1,6 +1,6 @@
 _(This is a Basic Template to provide an outline for board info. Copy/paste this into a new board page and fill in, add or delete as needed)_
 
-# NAME
+# KIWI F4
 
 
 
