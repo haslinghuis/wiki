@@ -1,6 +1,11 @@
+### Software Serial List of compatible pins
+
 Not for public viewing yet.
 
 List of compatible pins.
+
+NOTE:
+- The OK means it is compatible, and does not warrant it will work when it is configured as a part of a complete system.
 
 ---
 OMNIBUS(F3)
@@ -23,6 +28,18 @@ OMNIBUSF4
 | B15 | CH2       | OK      | ?     | ?      |      |
 | C8  | CH5       | OK      | ?     | ?      |      |
 | C9  | CH6       | OK      | ?     | ?      |      |
+
+---
+OMNIBUSF4SD
+
+| Pin | Label     | S.Audio | Tramp | S.Port | Note |
+|-----|-----------|---------|-------|--------|------|
+| A1  | PWM5      | ?       | ?     | ?      |      |
+| A8  | PWM6      | OK      | ?     | OK     |      |
+| B14 | PPM       | ?       | ?     | ?      |      |
+| B15 | CH2       | ?       | ?     | ?      |      |
+| C8  | CH5       | ?       | ?     | ?      |      |
+| C9  | CH6       | ?       | ?     | ?      |      |
 
 ---
 SPRACINGF3
