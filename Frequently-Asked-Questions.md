@@ -1512,6 +1512,9 @@ https://www.rcgroups.com/forums/showpost.php?p=36713066&postcount=3133
 https://www.rcgroups.com/forums/showpost.php?p=36718584&postcount=3144  
 https://www.rcgroups.com/forums/showpost.php?p=36720323&postcount=3157  
 
+#####Post on Proper Soft Mounting by arcaine25:
+I had an issue with a 9250 gyro and enabling 32khz mode, setting 16 / 16, but discovered that the issue was the way I was "soft mounting". I tend to be a little OVER OCD, and I tightened it too much, as well as a couple other mounting mistakes made in haste. When correcting those, and mounting a little "looser" the yaw twitch went away. I am going to dedicate a 32khz mode quad today and test it all over the place... haha   
+
 ##Is there a way to download blackbox logs through a terminal client ? 
 Thanks to dropax for asking this and working out the answer.  
 
