@@ -202,8 +202,8 @@ Connect ESC for motor 2 to 'LED' pin on the board.
 - All other targets not listed above.   
 
 ###ESCs supporting Dshot:
-- KISS 24 - 150, 300, 600, 900, 1200 See the Dshot thread (link above) for ESC code.
-
+####KISS 24 
+ - 150, 300, 600, 900, 1200 See the Dshot thread (link above) for ESC code.
 KISS24 ESC Beep Codes:   
 - 1beep/second = too many dshot errors (more then 10% are bad) but it doesn't disarm it just tells
 - 2beep/second = no valid signal for at last 1/3 second, it disarmed and stopped the motor (ESC failsave)
