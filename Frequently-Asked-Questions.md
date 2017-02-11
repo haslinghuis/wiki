@@ -1491,7 +1491,9 @@ The problem: https://www.rcgroups.com/forums/showpost.php?p=36310032&postcount=2
 Fixed: https://www.rcgroups.com/forums/showpost.php?p=36326501&postcount=253   
 Broken: https://www.rcgroups.com/forums/showpost.php?p=36330372&postcount=255  
 
-#####Another post on Successful curing of yaw twitches:  
+https://www.rcgroups.com/forums/showpost.php?p=36857612&postcount=2746  
+
+#####Successful curing of yaw twitches:  
 https://www.rcgroups.com/forums/showpost.php?p=36692751&postcount=916  
 
 #####Testing of the new ICM20602 Gyros:  
@@ -1514,6 +1516,10 @@ https://www.rcgroups.com/forums/showpost.php?p=36720323&postcount=3157
 
 #####Post on Proper Soft Mounting by arcaine25:
 I had an issue with a 9250 gyro and enabling 32khz mode, setting 16 / 16, but discovered that the issue was the way I was "soft mounting". I tend to be a little OVER OCD, and I tightened it too much, as well as a couple other mounting mistakes made in haste. When correcting those, and mounting a little "looser" the yaw twitch went away. I am going to dedicate a 32khz mode quad today and test it all over the place... haha   
+
+#####Thread about Caps for Noise reduction:  
+https://www.rcgroups.com/forums/showthread.php?2830948-Capacitors-for-noise-reduction  
+
 
 ##Is there a way to download blackbox logs through a terminal client ? 
 Thanks to dropax for asking this and working out the answer.  
