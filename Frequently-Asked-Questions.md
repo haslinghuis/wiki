@@ -1172,6 +1172,16 @@ S.Rates changes the line by leaving the center-stick alone, and makes the end-po
 You can achieve more or less the same curve with both expo and s.rates, it just depends whether you would prefer to think about tuning the center-stick first, and then pushing out the full-deflection rates from there, or whether you would prefer to think about tuning the full-deflection rates, and then softening the center-stick from there. 
 
 ##How do I solve Yaw twitches or mid throttle oscillations ?
+
+####A Very Short Overview of the issue and cures:
+1- Gyro issues can happen on any of the Gyro chips used. If you see either Yaw Twitches or excessive noise on any axis (A BlackBox Log is a definitive method to see these) then first try proper Soft Mounting of the FC.
+2- Soft mounting the FC must be done properly to ensure No vibrations get to the FC board (Gyro) through the mounting.
+3- Modern ESCs (active Braking) and modern high power motors can put a lot of noise into the electrical system. Adding a high value, low ESC cap helps to prevent this noise from getting into the Gyro chip on the FC (also helps with cleaner video and preventing damaging other electronics from high Voltage spikes).
+4- There is NO one cure for any copter. Each copter build is different and requires trying the various solutions. Some only need a large cap added, other only soft mounting the FC while some require both.
+
+The following are extracted from posts about this issues with Observations, Theories, Discussions and suggested solutions. Read through all the discussion and follow the links to learn almost all there is about the issue and solutions.
+
+#####First reports of issue:  
 Many people have yaw twitches or oscillations at mid-throttle and many do not. All that have this issue seem to be running FCs that use the MPU6500 gyro chip (Naze32 rev6, LUX, others) and newer motors. Boris B was one that did not have this issue with the 6500 gyro until he upgraded to newer, stronger motors. Many have cured this by soft mounting the FC board but this has not worked in all cases.
 
 Link to a thread with data on the MPU9250 gyro:
