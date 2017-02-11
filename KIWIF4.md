@@ -56,6 +56,9 @@ _(add FAQs, known issues and workarounds specifically related to this board. ple
 
 _format is reporter [name], (status): issue contents_
 
+###Troubles Entering Bootloader Mode (DFU):
+Some devices (e.g. receivers connected to SBUS/IBUS port or devices connected to one of the UARTS) can inhibit the FC from entering USB bootloader mode. In this case the FC will not be detected by Windows/MacOS. Windows detects the FC as "Unknown Device", MacOS reports "enumeration errors". If you see some of these errors unplug all devices from the FC and flash the FC standalone.
+
 ###Voltage and Current Scaling:  
 Flying Lemon said to use the following for scale:
 voltage 57, current 320.  
