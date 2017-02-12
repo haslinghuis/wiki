@@ -50,9 +50,9 @@ Objective: To control an external PWM controlled device (Matek 5-in-1 PDB buzzer
 
 This can be accomplished by one of two ways:
 
-A. (Available for all v3.1) Use SERVO_TILT and assign AUX channel of your choice to servo 0 on the Servo tab.
-
-B. (Limited to v3.1.5 and later) Use CHANNEL_FORWARDING and set CLI variable channel_forwarding_start to your switch channel number.
+> A. (Available for all v3.1) Use SERVO_TILT and assign AUX channel of your choice to servo 0 on the Servo tab.
+> 
+> B. (Limited to v3.1.5 and later) Use CHANNEL_FORWARDING and set CLI variable channel_forwarding_start to your switch channel number.
 
 Option A is recommended if gimbal servo is not used and number of devices are less than or equal to two
 (SERVO_TILT can only control two channels).
