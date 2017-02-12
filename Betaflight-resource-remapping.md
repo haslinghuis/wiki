@@ -30,3 +30,4 @@ Figure: How different resource command variation works
 
 ###Wiki pages with examples of using the Resource Commands:   
 [Remapping Motor outputs](https://github.com/betaflight/betaflight/wiki/Remapping-Motors-with-Resource-Command-(3.1))
+[Using SERVO_TILT](https://github.com/betaflight/betaflight/wiki/SERVO_TILT-for-3.1)  
