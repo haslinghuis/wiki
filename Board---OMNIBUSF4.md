@@ -43,10 +43,10 @@ These boards are called differently depending on the distributor.
 | Label    | Pin | Timer | DMA | Default | Note                             |
 |----------|-----|-------|-----|---------|----------------------------------|
 | RSSI     | A0  |       |     |         | Not ADC capable                  |
-| PWM5     | A1  | 5,2   | ?,? | motor 5                                 |
+| PWM5     | A1  | 5,2   | ?,? | motor 5, led_strip                                 |
 | PWM4     | A2  | 2,3   | 1,1 | motor 4 |                                  |
 | PWM3     | A3  | 2,4   | 1,6 | motor 3   |                                  |
-| PWM6     | A8  | 1,1   | ?,? | motor 6, led_strip                                  |
+| PWM6     | A8  | 1,1   | ?,? | motor 6                                  |
 | UART1 TX | A9  | 1,2   | ?,? | serial_tx 1 |                                |
 | UART1 RX | A10 | 1,?   | ?,? | serial_rx 1 |                              |
 | PWM1     | B0  | 3,3   | 1,7 | motor 1 |                                  |
