@@ -8,7 +8,7 @@ NOTE:
 - The OK means it is compatible, and does not warrant it will work when it is configured as a part of a complete system.
 
 ---
-OMNIBUS(F3)
+OMNIBUS(F3) (by @jflyper)
 
 | Pin | Label     | S.Audio | Tramp | S.Port | Note                    |
 |-----|-----------|---------|-------|--------|-------------------------|
@@ -18,7 +18,7 @@ OMNIBUS(F3)
 | B7  | PWM7/SDA  | OK      | ?     | ?      | Ditto                        |
 
 ---
-OMNIBUSF4
+OMNIBUSF4 (by @jflyper)
 
 | Pin | Label     | S.Audio | Tramp | S.Port | Note |
 |-----|-----------|---------|-------|--------|------|
@@ -30,7 +30,7 @@ OMNIBUSF4
 | C9  | CH6       | OK      | ?     | ?      |      |
 
 ---
-OMNIBUSF4SD
+OMNIBUSF4SD (by @jflyper)
 
 | Pin | Label     | S.Audio | Tramp | S.Port | Note |
 |-----|-----------|---------|-------|--------|------|
@@ -42,7 +42,7 @@ OMNIBUSF4SD
 | C9  | CH6       | ?       | ?     | ?      |      |
 
 ---
-SPRACINGF3
+SPRACINGF3 (by @jflyper)
 
 | Pin | Label             | S.Audio | Tramp | S.Port | Notes                  |
 |-----|-------------------|---------|-------|--------|------------------------|
@@ -63,5 +63,19 @@ SPRACINGF3EVO
 
 | Pin | Label             | S.Audio | Tramp | S.Port | Notes                  |
 |-----|-------------------|---------|-------|--------|------------------------|
-| A8  | LED strip         | ?       | NG    | ?      |                        |
-| B1  | M8                | ?       | OK    | ?      |                        |
+| A8  | LED strip         | ?       | NG    | ?      | @pafleraf              |
+| B1  | M8                | ?       | OK    | ?      | @pafleraf              |
+
+---
+REVOLT
+
+| Pin | Label             | S.Audio | Tramp | S.Port | Notes                  |
+|-----|-------------------|---------|-------|--------|------------------------|
+| B6  | LED               | ?       | ?     | NG     | @alenl2; Need further testing            |
+| C1  | CRNT              | ?       | ?     | NG     | @alenl2; No timer?     |
+| A9  | TX1               | ?       | ?     | NG     | @alenl2; Timer conflict? (need checking) |
+| A10 | RX1               | ?       | ?     | NG     | @alenl2; Timer conflict? (need checking) |
+| B10 | TX3               | ?       | ?     | NG     | @alenl2; Timer conflict? (need checking) |
+| B11 | RX3               | ?       | ?     | NG     | @alenl2; Timer conflict? (need checking) |
+| C6  | TX6               | ?       | ?     | OK     | @alenl2                |
+| C7  | RX6               | ?       | ?     | OK     | @alenl2                |
