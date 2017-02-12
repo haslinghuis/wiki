@@ -135,6 +135,8 @@ NOTE- For the features in this release you will need to use the following Versio
 - RC12 ( -25Jan2017)- FPV angle mix applied to actual rates (also a fix) // Fix truncated blackbox logs // Redefined OSD defaults to not have PIDs by default on screen // Increased configurable filter range  
 - RC13 - reported bug where blackbox would disable itself is now resolved   
 
+-  Save blackbox file from dataflash freezes mid-download in recent versions of configurator. Configurator Issue #411 - https://github.com/betaflight/betaflight-configurator/issues/411 
+
 #####Note: With v3.1 and later, servos must be configured manually by resource cli command.Do NOT use  CHANNEL_FORWARDING. It does something really nasty.     
 [See Teralift's post here](https://www.rcgroups.com/forums/showpost.php?p=36792606&postcount=44331)   
 [Servo mapping on a Naze32 to use Servo_tilt by TeraLift](https://www.rcgroups.com/forums/showpost.php?p=36821753&postcount=44612)
