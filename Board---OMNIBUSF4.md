@@ -51,7 +51,7 @@ These boards are called differently depending on the distributor.
 | UART1 RX | A10 | 1,?   | ?,? | serial_rx 1 |                              |
 | PWM1     | B0  | 3,3   | 1,7 | motor 1 |                                  |
 | PWM2     | B1  | 3,4   | 1,2 | motor 2 |                                  |
-| LED      | B6  | 4,1   | ?,? | J9 (Not accessible with v3.1)    |
+| LED      | B6  | 4,1   | ?,? |         | J9 (Not accessible with v3.1)    |
 | PPM      | B14 | 12,3  | ?,? | ppm     |                                 |
 | CH2      | B15 | 12,4  | ?,? |                                  |
 | UART3 TX | B10 | 2,3(!)| ?,? | serial_tx 2 |                                 |
