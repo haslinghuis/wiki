@@ -83,7 +83,7 @@ Resource command above specified `servo 1`, but this number is 1-origin, servo t
 ---
 #### Example 3: SPRacing F3 EVO Controlling External Still Camera Shutter
 
-Motor 8 was used
+Motor output 8 was used
 ```
 resource servo 0 b1
 ```
