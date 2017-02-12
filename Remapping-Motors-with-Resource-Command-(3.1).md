@@ -2,6 +2,12 @@ Necessity for swapping/shifting/rotating motor positions rises from time to time
 
 With 3.1, we can easily modify motor mappings with `resource` CLI command. See [Betaflight resource mapping](https://github.com/betaflight/betaflight/wiki/Betaflight-resource-remapping) for descriptions of this command.
 
+####Videos:
+A Joshua Bardwell Video: [Resource Remapping- No more Custom Motor Mixer](https://www.youtube.com/watch?v=z5aO-3_n-Hs   )  
+Project Blue Falcon video: [Find Bad ESC output Pin and Remap Motors](https://www.youtube.com/watch?v=cEMfs_4X2VM)  
+
+###Examples: 
+
 Here, the most common case of "rotating FC or PDB" is taken as an example.
 
 Suppose you have a board with motor numbers labeled like this:
@@ -47,7 +53,7 @@ A12: MOTOR 4
 3(A11)       1(A6)
            BACK
 ```
-
+444
 3. Rotate the drawing clock wise 90-degrees.
 
     ```
