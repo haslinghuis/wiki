@@ -28,5 +28,4 @@ As an example <b>resource</b> will show motors 1-8, but if your mixer is set to 
 Figure: How different resource command variation works
 </center>  
 
-#### A Joshua Bardwell Video:
-[Resource Remapping- No more Custom Motor Mixer](https://www.youtube.com/watch?v=z5aO-3_n-Hs   )
+
