@@ -53,7 +53,7 @@ SPRACINGF3 (by @jflyper)
 | A8  | IO_1[7] LED strip | OK      | ?     | ?      |                        |
 | B0  | IO_2[5] CH7       | OK      | ?     | ?      |                        |
 | B1  | IO_2[6] CH8       | OK      | ?     | ?      |                        |
-| B8  | M5                | NG      | ?     | ?      | TIM4 crash with M3&M4  |
+| B8  | M5                | NG      | ?     | NG     | TIM4 crash with M3&M4  |
 | B9  | M6                | NG      | ?     | ?      | TIM4 crash with M3&M4  |
 | A2  | M7                | OK      | ?     | ?      |                        |
 | A3  | M8                | OK      | ?     | ?      |                        |
