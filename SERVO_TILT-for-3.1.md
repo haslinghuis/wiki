@@ -26,7 +26,8 @@ Here are some examples of assignments. If you can't find a one that fit your nee
 
 __Target/board maintainers, please add example entries that reflect mappings based on the v3.0.1 `pwm_mapping.c`; it can cover all the mappings, not only for servo tilts__
 
-#### NAZE32 "__Shift by 2__" style assignment
+---
+#### Example 1: NAZE32 "__Shift by 2__" style assignment
 If you have a NAZE32 already setup based on "__Shift Motor Outputs by 2__" rule, and it was working prior to v3.1, here is your assignment.
 ```
 resource motor 1 none
@@ -40,6 +41,46 @@ resource motor 4 b9
 save
 ```
 
+---
+#### Example 2: SPRacing F3 Controlling External PWM triggered Buzzer
+
+*This example is for controlling PWM triggered buzzer on Matek 5-in-1 PDB, but can be applied to other cases.*
+
+Objective: To control an external PWM controlled device (Matek 5-in-1 PDB buzzer), with SPRacing F3, using `IO_1[4]` (RC CH2) with AUX2 switch.
+
+This can be accomplished by one of two ways:
+
+A. (Available for all v3.1) Use SERVO_TILT and assign AUX channel of your choice to servo 0 on the Servo tab.
+
+B. (Limited to v3.1.5 and later) Use CHANNEL_FORWARDING and set CLI variable channel_forwarding_start to your switch channel number.
+
+Option A is recommended if gimbal servo is not used and number of devices are less than or equal to two
+(SERVO_TILT can only control two channels).
+
+Here's step by step for option A, controlling `IO_1[4] (RC CH2)` with AUX2:
+
+(1) BF3.1 does not configure any servo for you; you have to assign it explicitly.
+
+(1-1) Make sure you are not using PPM input (CH2 shares a timer with PPM).
+
+(1-2) Use following CLI command
+```
+resource pwm 2 none
+resource servo 1 a1
+save
+```
+
+(2) Turn on `SERVO_TILT`
+(And turn off `CHANNEL_FORWARDING` if you have it on.)
+
+(3) On Servo tab, check `A2` on `servo 0`.
+Resource command above specified `servo 1`, but this number is 1-origin, servo tab servos are 0-origin, so these are the same.
+
+(4) At this point, you should be able to confirm `servo 0` on Motor tab responding to AUX2 switch inputs.
+
+(5) And if you connect your external device to `IO_1[4]`, you should be able to confirm it is working.
+
+---
 #### New Example Place Holder
 
 ---
