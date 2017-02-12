@@ -12,9 +12,9 @@ OMNIBUS(F3) (by @jflyper)
 
 | Pin | Label     | S.Audio | Tramp | S.Port | Note                    |
 |-----|-----------|---------|-------|--------|-------------------------|
-| A8  | LED strip | NG      | ?     | ?      |                         |
+| A8  | LED strip | NG      | NG    | NG     |                         |
 | B4  | PPM (*1)  | OK      | ?     | OK     | When PPM not in use     |
-| B6  | PWM8/SCL  | OK      | ?     | ?      | I2C must be de-configured? Need furthe testing. |
+| B6  | PWM8/SCL  | OK      | OK    | OK     | I2C must be de-configured? Need furthe testing. |
 | B7  | PWM7/SDA  | OK      | ?     | ?      | Ditto                        |
 
 ---
@@ -64,7 +64,7 @@ SPRACINGF3EVO
 | Pin | Label             | S.Audio | Tramp | S.Port | Notes                  |
 |-----|-------------------|---------|-------|--------|------------------------|
 | A8  | LED strip         | ?       | NG    | ?      | @pafleraf              |
-| B1  | M8                | ?       | OK    | ?      | @pafleraf              |
+| B1  | M8                | ?       | OK    | OK     | @pafleraf              |
 
 ---
 REVOLT
