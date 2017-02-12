@@ -22,7 +22,7 @@
  - [Deep Dive](/betaflight/betaflight/wiki/BetaFlight-Deep-Dive)
  - [Black Box logging and usage](/betaflight/betaflight/wiki/Black-Box-logging-and-usage) 
  - [Resource Remapping](/betaflight/betaflight/wiki/Betaflight-resource-remapping)
- - [Remapping Motors](/betaflight/betaflight/wiki/Remap-Motors-with-Resource-Command-(3.1))
+ - [Remapping Motors](/betaflight/betaflight/wiki/Remapping-Motors-with-Resource-Command-(3.1))
  - [SERVO_TILT for 3.1](https://github.com/betaflight/betaflight/wiki/SERVO_TILT-for-3.1)
  - [CHANNEL_FORWARDING for 3.1](https://github.com/betaflight/betaflight/wiki/CHANNEL_FORWARDING-for-3.1)
  - [DSHOT ESC Protocol](/betaflight/betaflight/wiki/DSHOT ESC Protocol) 
