@@ -1,3 +1,7 @@
+## What's new
+
+- 2017-02-12 Note on compatibility of SmartAudio V1 devices (Compatibility section)
+
 ## Setup
 
 #### From teralift's post in Boris' thread
@@ -45,10 +49,14 @@ The SmartAudio support unlocks certain capabilities of a SmartAudio device, to p
 
 ## Compatibility
 
-- The SmartAudio support was developed and tested with SmartAudio V2 devices (Unify 5G8 Pro and Unify 5G8 Pro HV). If you have a SmartAudio V1 device and have a problem, please report it using the issue facility in the main github repo page for Betaflight.
+- The SmartAudio support was developed and tested with SmartAudio V2 devices (Unify 5G8 Pro and Unify 5G8 Pro HV).
+
+- The SmartAudio V1 may not be compatible with hardware UARTs (as of 2017-02-12). If you have trouble with V1 devices with hardware UARTs, please try the software serial (will be available in v3.1.6 patch release, schedule to be released on 2017-03-01).
+
 - Unify 5G8 Pro Race Edition:
 Lower frequencies are not supported.
 Power setting can be selected as 500 or 800, but will only go up to 200, as will be indicated on the status line.
+
 - SPARKY2:  
 Due to the pull-up resistors, Flexi-port is not suitable for Unify 5G8 Pro, Pro HV and Pro HV Race edition.
 Main-port may be compatible (need testing).
