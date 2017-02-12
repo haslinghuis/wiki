@@ -81,6 +81,14 @@ Resource command above specified `servo 1`, but this number is 1-origin, servo t
 (5) And if you connect your external device to `IO_1[4]`, you should be able to confirm it is working.
 
 ---
+#### Example 3: SPRacing F3 EVO Controlling External Still Camera Shutter
+
+Motor 8 was used
+```
+resource servo 0 b1
+```
+
+---
 #### New Example Place Holder
 
 ---
