@@ -1538,6 +1538,9 @@ These are the only ones I have tried and all yaw twitches are gone, they are sti
 These were just posted and look to be red silicon (softer?)  
 http://rotorgeeks.com/index.php?route=product/product&product_id=599&search=damp  
 
+Gozz -- These are the ones I recently started using too, they work very well for the size.  
+https://www.readymaderc.com/store/index.php?main_page=product_info&cPath=53_777&products_id=6306  
+
 ##Is there a way to download blackbox logs through a terminal client ? 
 Thanks to dropax for asking this and working out the answer.  
 
