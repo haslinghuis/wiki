@@ -1530,6 +1530,13 @@ I had an issue with a 9250 gyro and enabling 32khz mode, setting 16 / 16, but di
 #####Thread about Caps for Noise reduction:  
 https://www.rcgroups.com/forums/showthread.php?2830948-Capacitors-for-noise-reduction  
 
+#####Links to Soft Mounting hardware:  
+OZ -- I am using these, $4.30 for 8 shipped. They are rubber 8mm x 8mm with standard M3 male/female mounting.  
+http://www.ebay.com/itm/151873404692?_trksid=p2057872.m2749.l2649&ssPageName=STRK%3AMEBIDX%3AIT&rmvSB=true  
+These are the only ones I have tried and all yaw twitches are gone, they are stiffer than I would think would work, but working well on my revolts (SSG) and sparky2's (9250) flight controllers @ 32/16, motors are hard mounted. Since my FC & Rx does not have the standard separated CF protection plate, so I do like the stiffness over the super soft mounts (like the old QAV500 used for the clean/dirty sections).  
+
+These were just posted and look to be red silicon (softer?)  
+http://rotorgeeks.com/index.php?route=product/product&product_id=599&search=damp  
 
 ##Is there a way to download blackbox logs through a terminal client ? 
 Thanks to dropax for asking this and working out the answer.  
