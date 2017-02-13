@@ -1286,16 +1286,16 @@ We are flying these things on the basis that the gyro data presented to the FC i
 ####A report of fixing this Yaw twitch/oscillation issue:   
 http://www.rcgroups.com/forums/showpost.php?p=35385057&postcount=34964    
 
-#### Examaple of Cap:
+#### Example of Cap:
 http://www.rcgroups.com/forums/showthread.php?t=2464844&page=2332  
 
-#### Posy by Swing3r  
+#### Post by Swing3r  
 I had issues with yaw oscillation at mid throttle with Aikons + Lumenier 2206-2350KV-motors. Soft mounting helped but not fully so I also added a low ESR 1000uF 63V capacitor to my PDB (cycolone FC is powered by lipo directly) and viola, all traces of the yaw-oscillation is gone.
 
 Logs for hardmount, softmount and softmount + 1000uF cap.
 https://www.dropbox.com/sh/a4kvsilpi...h56ocCO1a?dl=0
 
-#### Post by AliB
+####Post by AliB
 
 I'm starting to believe the mid throttle oscillations is on more than the 6500 gyros.
 
@@ -1307,7 +1307,7 @@ get it still even with P's down around 2.
 
 both of us are running GTINpower 2205. nice motors but powerrrr hungry  
 
-#### Post by Tony Leyland
+####Post by Tony Leyland
 
 On my Alien build I also experience mid-throttle "vibrations" and have tried extensive tuning on BF 2.9.0 and also soft mounting the FC with no luck.
 
@@ -1328,19 +1328,19 @@ People are saying this occurs at mid throttle but in my case I believe it to be 
 I'm going to try the capacitor near the batter lead next and update you guys.
 
 
-#### Post by fftunes   
+####Post by fftunes   
 Just another small report of electrical noise: Friend built another all new quad with naze r6 which produced a weird high frequency hum, no matter what filters/PID etc were set to.
 
 A single cap (35v 470uf) to the pdb fixed it. 
 
-#### Post by jubifly
+####Post by jubifly
 Had similar problems on my build. I tried both, limiting possible electrical noise with capacitors and mechanical vibrations by softmounting the FC with some rubber o-rings. Both with no luck. I then tried to remove the FC completely from fixed parts at the frame and left it hanging in the air (just the motor and rx wires) and the yaw twitches disappeared. My thoughts on that were that the rubber rings were not applicable (maybe too hard?!) for softmounting...
 Maybe try leave the FC dangling in the air and see if it still happens - just to definitely eliminate the possibility of mechaninacal noise being the issue.
 
-#### Here is a post from ctzsnooze on a better soft-mounting method.
+####Here is a post from ctzsnooze on a better soft-mounting method.
 http://www.rcgroups.com/forums/showpost.php?p=35486733&postcount=36111
 
-#### A nice conclusion on this issue from ctzsnooze 
+####A nice conclusion on this issue from ctzsnooze 
 Lots of us have seen exactly this behaviour. I am surprised that you seem so astonished now that you find it happens to you. It happens randomly. It could happen to anyone. It just happened to happen to you. :-)
 
 It goes away with replacing the gyro chip, replacing the FC, or soft mounting the FC; these fixes work whether or not capacitors are added. Sometimes it goes away by just adding capacitors.
@@ -1379,7 +1379,7 @@ MotoLab Cyclone boards have plenty of space around the holes, intentionally, no 
 
 I can't stress enough that just over drilling isn't enough. The board can and will slide on the o ring until one hole stops with the edge of that hole wedged on a bolt. Beveling the top and bottom of the hole allows re-centering and is essential with a yaw issue of his kind. I use a cheap conical grinding stone to make the bevel.   
 
-#### A solution by airmaxx23
+####A solution by airmaxx23
 http://www.rcgroups.com/forums/showpost.php?p=35785741&postcount=38781
 So, great news, this completely took care of my yaw shake. I didn't change anything else prior to trying it either. Just in case someone wants to print up some of these standoffs I can put them on Thingiverse or if you want to draw them up they're 6mm outer diameter and 2.9mm inner.   
 Here you go, 8mm, 10mm and 12mm. I can print them in orange, red, black, blue or clear if anyone needs them.
@@ -1388,14 +1388,14 @@ http://www.thingiverse.com/thing:1785455
 Another possible solution:   
 http://www.rcgroups.com/forums/showpost.php?p=35786828&postcount=38790
 
-Post by scripto23:   
+####Post by scripto23:   
 I've got another data point to add to the gyro noise/twitching debate. I have the Spracingf3 evo with the 9250 gyro. On a brand new build it was literally unflyable, I don't mean it flew like crap, I mean I couldn't get it off the ground because it was twitching like a stuck pig.
 
 Read through the relevant part in the amazing wiki (thanks waltr) tried soft mounting (already had a capacitor on the pdb) and managed to get it in the air, but still had very bad micro oscillations at anything above 1/3 throttle on ALL axis; visible on FPV and blackbox logs. I tried every combination of PIDs, nothing helped. I finally changed the FC to the spracingf3 with the 6050 gyro and all traces of micro oscillations were completely gone.
 
 It seems some people have no problems, some people have mild problems, and some like me are left with severe issues. The boards with these gyros are completely hit or miss. I sincerely doubt the quality control (or lack thereof) for this part.   
 
-####More from Boris's thread (7Oct2016):
+####More from Boris's thread (7 Oct 2016):
  Posted by mikenxzz:
 I have a problem with strong magnet motors (Tornado T2 2206), where straight after arming, at idle, the motors vibrate a lot.
  Reply by ctzsnooze:
@@ -1436,14 +1436,14 @@ At this point there's still some mid-throttle twitch as shown in the following v
 My Multistar250 with Spin-Balancing and Vibration-Absorption Motor Mounts (2 min 40 sec)
 https://www.youtube.com/watch?v=rXB9Rl7vLDI
 
-Comments on this by AILERON8:
+####Comments on this by AILERON8:   
 Isolating vibration at its source before it's amplified is standard practice in just about every mechanical and aeronautical engineering handbook that's ever been written. Yet for some reason most folks in this hobby are so laser focused on a software-based filter or FC enhancement of some sort they're blinded to what should be an obvious solution. Dampening the motor vibration, stiffening the frame, or even placing a sensor near or on the motors (utilizing the active feedback signal within the FC software for an automated/enhanced filter) are going to have a much more pronounced effect on noise reduction than all the software filtering in the world.   
 I'd also just like to mention that I am in no way trying to imply that software-based filters in the flight controller are ineffective. Only that reducing motor vibration has great and untapped potential in my opinion   
 
-Continued Discussion:  
-AILERON8:  
+####Continued Discussion (13 Feb 2017):  
+#####AILERON8:  
 The same goes for motor soft mounting, the bolts must be isolated for the method to reach its full potential. I have yet to see a quad with fully soft-mounted motors, but I suspect it would make for the smoothest, most oscillation-free quad ever. So oscillation-free these 32khz gyro's should be all set for takeoff. Floating motors should eliminate the opportunity for resonance to develop and propagate towards the sensitive gyros. Unlike soft-mounting the FC, for motor dampening to be effective it doesn't need to eliminate frame oscillation. The goal for motor dampening is to decouple the frames' natural resonant frequency from the motor as its oscillations vary in frequency and amplitude. All motors oscillate, regardless of balancing. The frame won't oscillate if it's detached from the motors. The motor must completely float in order to achieve this effect however. Which is why I think folks will be in for a surprise when they see how well motor soft mounting can be if fully implemented. I honestly think FC soft mounting will be a thing of the past when the results start pouring-in...   
-Tesseract1984:  
+#####Tesseract1984:  
 Agreed.  
 Having tried it all (soft mount FC, caps on mains, caps on ESCs, soft mounting motors), this seems to be the ticket.  I've had varying levels of success with each option. The most useless of them all being a cap on the mains.  
 Soft-mounting motors makes the most sense. In my opinion doing it to the FC is a band-aid while doing the motors attacks the source and doesn't introduce any delay.  
@@ -1457,9 +1457,9 @@ While multi-rotor flight is still in it's infancy and we are trying new things, 
 Would love to see frames come out that have motor soft mounting built into the frame. IMO this should become an industry standard. Also had an idea a few months ago for FC screw holes to have silicon material with a hole big enough for screws.  
 Anyway, just my 2 cents. Just converted my whole fleet using tpu soft mounts and it has literally changed my quadcopter experience. My HD footage actually starting to look like I might know what I'm doing.  
 All aboard, the hype train is leaving the station!   
-AILERON8:   
+#####AILERON8:   
 I agree, too much dampening can make for a sloppy ride. I've over-dampened my FC before using an SPracingF3 board strapped to a giant piece of foam. Sure, no oscillations, but no matter how high I cranked the PIDs it felt loose and sloppy. We want the motors to float, but still let-in those low frequencies untouched. It's definitely a fine balance. One thing I don't believe motor soft mounting will solve though is electrical noise. Most of that is coming from the ESCs via damped light. Although recently Aargh80 came-up with a novel approach to minimize the latter noise using a small 270uF cap in parallel with a tiny MLCC board that can be remotely tucked anywhere in your stack or fuselage. I'd like to see a production version, even though it's not that hard to make it would be nice to have one all set to go for expediency's sake.   
-QuadMcFly:  
+#####QuadMcFly:  
 Obviously removing the vibrations at the source is much more effective than trying to remove them once they've picked up all kinds of harmonics from the frame I have put together the idea of how to do this, but small volume is too expensive to make it worth it. It involves shoulder bolts 1mm-1.5mm taller than the frame, holes for the screws 1mm-1.5mm wider than the shoulder bolts, and ninja-flex printed grommets to fit the holes. The shoulder bolts tighten against the base of the motor to prevent backing out, but still "float" on the ninja-flex grommets in the arms. there's enough tightness to prevent misalignment of the motors, but enough isolation to be very effective against high frequency vibrations. To make it even cheaper one could simply use the correct diameter heat shrink over the shoulder part of the shoulder bolts and then isolate the motors the old fashioned way. Unfortunately shoulder bolts are super expensive in small quantities.   
 
 ####Another post of fixing mid-throttle oscillations by ghall05  
@@ -1491,17 +1491,13 @@ So if our build has good matching between motors benefits and frame inertia/weig
 I think it is possible to add an optional dynamic software damper to the PID controller.
 We already have one called TPA , but this one acts only at high throttle and it very simple and linear.
 
-My suggestion is to think about some configurable, non linear P attenuator for desirable throttle range. The user can be able to define the start and stop throttle points to apply P attenuator and also the attenuation factor. Some similar to how the notch filter works.
-
-By this way we will be able to control mid throttle side effects without detuning our quads and possibly deal better with prop wash.
-
+My suggestion is to think about some configurable, non linear P attenuator for desirable throttle range. The user can be able to define the start and stop throttle points to apply P attenuator and also the attenuation factor. Some similar to how the notch filter works.  
+By this way we will be able to control mid throttle side effects without detuning our quads and possibly deal better with prop wash.  
 That do you think? 
 
 Boris' Answer:  
-I am not sure what you already tried, but if you use low noise gyro like MPU6000/MPU6050 the noise is really easy to solve.
-
-There is really no need of lowering your P's as you suggest just for that. You technically dont even need TPA in that case.
-
+I am not sure what you already tried, but if you use low noise gyro like MPU6000/MPU6050 the noise is really easy to solve.  
+There is really no need of lowering your P's as you suggest just for that. You technically dont even need TPA in that case.  
 The notch default filters in 3.0.1 should deal with low and mid throttle vibrations in most cases.
 On few of my quads I also have the Cobra champion serie motors like you and had terrible time tuning those without notch filters before.   
 
@@ -1511,6 +1507,7 @@ Later comment:
 I just stuck three squarish (~15mm) pieces of electrical tape on the frame underneath the motors, used an exacto knife to cut holes in the tape for the screws and remounted the motors making sure not to tighten them down too much.
 
 I really doubted it would be as effective as it was since vibes can still come thru the mounting screws but it fixed the issue.   
+
 #####Motor Vibration Isolators. Printed in extra flexible NinjaFlex (softer than TPU)  
 https://www.rcgroups.com/forums/showpost.php?p=36698872&postcount=2693  
 
@@ -1536,7 +1533,7 @@ https://www.rcgroups.com/forums/showpost.php?p=36623562&postcount=43287
 https://www.rcgroups.com/forums/showpost.php?p=36630278&postcount=43337  
 https://www.rcgroups.com/forums/showpost.php?p=36630822&postcount=43348  
 
-Posted by KagedMayhem: 
+#####Posted by KagedMayhem: 
 I see the comments about notch filters helping with the noise issues, and the comparisons between the mpu6000 and the new icm20602 but not seeing anything about if the current iterations of Betaflight helped solve the noise problems. Is that what the notch filters are for?
 Boris:  
 You can of course make the filtering more agressive, but readings from ICM20xxx gyros can be too messy on hardmounted solutions so softmounting to make them less sensitive seems like the only solution on those, where on mpu60x0 you would mostly get away on standard mounting.   
