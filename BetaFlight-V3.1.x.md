@@ -15,7 +15,7 @@ Link to Release: https://github.com/betaflight/betaflight/releases/tag/v3.1.5
 - Fix Tramp display issue for Raceband Channel 7 (was showing F8)
 - Decouple min_throttle and max_throttle from altitude hold
 
-Note: limit of 6 aux channels. Scheduled to be fixed on next release on 1 March 2017.   
+Note: limit of 6 aux channels. Scheduled to be fixed in next release on 1 March 2017.   
 
 ##Betaflight 3.1.4 - patch
 - No hex files, just source code: https://github.com/betaflight/betaflight/releases/tag/v3.1.4
