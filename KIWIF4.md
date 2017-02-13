@@ -61,7 +61,7 @@ Some devices (e.g. receivers connected to SBUS/IBUS port or devices connected to
 
 ###Voltage and Current Scaling:  
 Flying Lemon said to use the following for scale:
-voltage 57, current 320.  
+voltage 57, current 320. If this reads reverse current at idle and reads way too high when flying try Voltage 57 current 444 offset 11.  
 
 ## Other Resources
 
