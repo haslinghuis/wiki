@@ -1440,10 +1440,28 @@ Comments on this by AILERON8:
 Isolating vibration at its source before it's amplified is standard practice in just about every mechanical and aeronautical engineering handbook that's ever been written. Yet for some reason most folks in this hobby are so laser focused on a software-based filter or FC enhancement of some sort they're blinded to what should be an obvious solution. Dampening the motor vibration, stiffening the frame, or even placing a sensor near or on the motors (utilizing the active feedback signal within the FC software for an automated/enhanced filter) are going to have a much more pronounced effect on noise reduction than all the software filtering in the world.   
 I'd also just like to mention that I am in no way trying to imply that software-based filters in the flight controller are ineffective. Only that reducing motor vibration has great and untapped potential in my opinion   
 
-####Another post of fixing mid-throttle oscillations by ghall05  
-I've had this qav210 for a while now that's had mid throttle oscillations. Changed escs and fc and also tried some different soft mounting methods with no luck. However adding a 25v 1000uf low esr cap on the main battery connection has solved it! And this is with a hard mounted fc too.
+Continued Discussion:  
+AILERON8:  
+The same goes for motor soft mounting, the bolts must be isolated for the method to reach its full potential. I have yet to see a quad with fully soft-mounted motors, but I suspect it would make for the smoothest, most oscillation-free quad ever. So oscillation-free these 32khz gyro's should be all set for takeoff. Floating motors should eliminate the opportunity for resonance to develop and propagate towards the sensitive gyros. Unlike soft-mounting the FC, for motor dampening to be effective it doesn't need to eliminate frame oscillation. The goal for motor dampening is to decouple the frames' natural resonant frequency from the motor as its oscillations vary in frequency and amplitude. All motors oscillate, regardless of balancing. The frame won't oscillate if it's detached from the motors. The motor must completely float in order to achieve this effect however. Which is why I think folks will be in for a surprise when they see how well motor soft mounting can be if fully implemented. I honestly think FC soft mounting will be a thing of the past when the results start pouring-in...   
+Tesseract1984:  
+Agreed.  
+Having tried it all (soft mount FC, caps on mains, caps on ESCs, soft mounting motors), this seems to be the ticket.  I've had varying levels of success with each option. The most useless of them all being a cap on the mains.  
+Soft-mounting motors makes the most sense. In my opinion doing it to the FC is a band-aid while doing the motors attacks the source and doesn't introduce any delay.  
+A little anecdotal story; i once went overboard with soft mounting a LUX v1 and it actually caused problems. I not only had those rubber bobbins, but also O-rings and the lower standoffs resting on a tpu printed plate with screw holes. What this caused was a very slow wobbling oscillation akin to when I-term is too high (at least in older BetaFlight versions).  
+While multi-rotor flight is still in it's infancy and we are trying new things, yes there are a lot of hype trains. As you can see I've been on them all, but truly, this is the first one that has conclusively solved a plethora of issues including:  
+- FPV video interference  
+- HD cam jello  
+- Sporadic yaw twitch  
+- Un-tuneable D-term  
+- etc etc  
+Would love to see frames come out that have motor soft mounting built into the frame. IMO this should become an industry standard. Also had an idea a few months ago for FC screw holes to have silicon material with a hole big enough for screws.  
+Anyway, just my 2 cents. Just converted my whole fleet using tpu soft mounts and it has literally changed my quadcopter experience. My HD footage actually starting to look like I might know what I'm doing.  
+All aboard, the hype train is leaving the station!   
 
-Just another data point! I'm putting caps on all my builds from now on
+####Another post of fixing mid-throttle oscillations by ghall05  
+I've had this qav210 for a while now that's had mid throttle oscillations. Changed escs and fc and also tried some different soft mounting methods with no luck. However adding a 25v 1000uf low ESR cap on the main battery connection has solved it! And this is with a hard mounted FC too.  
+
+Just another data point! I'm putting caps on all my builds from now on. 
 
 Edit: I should add that I was using a kiss fc first and then a cyclone (which I'm still using now). So mid throttle oscillations can definitely happen on setups without the 6500 gyro.   
 
