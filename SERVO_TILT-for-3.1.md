@@ -85,7 +85,7 @@ Resource command above specified `servo 1`, but this number is 1-origin, servo t
 
 Motor output 8 was used
 ```
-resource servo 0 b1
+resource servo 1 b1
 ```
 
 ---
