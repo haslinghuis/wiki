@@ -195,7 +195,16 @@ Connect ESC for motor 2 to 'LED' pin on the board.
  Then re-map motor 2 output: type in CLI:    
  `resource motor 2 A08`  
  `save`  
- The new mapping for motor 2 conflicts wit `LED_STRIP` and `TRANSPONDER`, so make sure these two features are disabled in the configurator.   
+ The new mapping for motor 2 conflicts wit `LED_STRIP` and `TRANSPONDER`, so make sure these two features are disabled in the configurator. 
+
+- EMAX FEMTO F3 -  Motor 4 needs to be moved to the LED pad on the underside of the fc.   
+  LED_STRIP needs disabled and then motor 4 gets remapped to that pad.   
+
+ `resource LED_STRIP none`  
+ `resource motor 4 A08`  
+ `save`  
+
+  
 
 ####FC Targets with DSHOT code added but in need of testing:
 - SPARKY2
