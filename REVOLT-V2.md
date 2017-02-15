@@ -1,4 +1,4 @@
-REVOLT V2
+#REVOLT V2 OWNERS TAKE NOTE:
 
 Is not currently supported in current BetaFlight builds but can run BetaFlight now with the following instructions.
 
@@ -21,36 +21,27 @@ https://revoltfc.com/pinout-diagram.html
 
 Enjoy 
 
-_(This is a Basic Template to provide an outline for board info. Copy/paste this into a new board page and fill in, add or delete as needed)_
 
 # NAME
-Revolt V2
+
+Revolt V1 and V2
 
 ## Description
-FC designed to run RaceFlight 'closed source' firmware.
 
+FC designed to run RaceFlight 'closed source' firmware, but has a target called REVOLT in Betaflight.
 
 ## MCU, Sensors and Features
 
 ### Hardware
-_(Fill in hardware specs and add any not listed)_
-  - MCU: 
-  - IMU: 
-  - IMU Interrupt: 
-  - BARO: 
-  - VCP: 
-  - Hardware UARTS: 
-  - OSD: 
-  - Blackbox: 
-  - PPM/UART Shared: 
-  - Battery Voltage Sensor: 
-  - Integrated Voltage Regulator: 
-  - Brushed Motor Mosfets: 
-  - Buttons: 
+  - MCU: STM32F405RGT6
+  - IMU: ICM-20602
+  - Virtual Comport
+  - Blackbox 
+  - PPM/UART Shared
+  - Battery Voltage Sensor
+  - Boot Pads (no button)
 
 ### Features
-
-_(add list of features)_
 
 ## Manufacturers and Distributors
 
@@ -60,29 +51,13 @@ https://revoltfc.com/index.html
 
 
 ## Maintainers
-_(add your name here if you help test or contribute code for this board)_
-
 
 ## Similar Targets
 
-_(add links board descriptions here that are similar in features or function, but have a separate target)_
-
-
-## Variants
-
-Differences:
-
+This is a variant of the REVO, but is a cut down version, many of the pin outs of the STM MCU are the same.
 
 ## FAQ & Known Issues
-_(add FAQs, known issues and workarounds specifically related to this board. please link work in progress issues to the related github issue or pull request)_
-
-_format is reporter [name], (status): issue contents_
 
 
 ## Other Resources
 
-Setup Guide: 
-
-Rcgroups Thread: 
-
-## Image
