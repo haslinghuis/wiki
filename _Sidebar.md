@@ -78,7 +78,7 @@
  - [PORT103R](/betaflight/betaflight/wiki/Board---PORT103R)
  - [RCEXPLORERF3](/betaflight/betaflight/wiki/Board---RCEXPLORERF3)
  - [REVO - LibrePilot docs](https://librepilot.atlassian.net/wiki/display/LPDOC/OpenPilot+Revolution)
- - [REVOLT (V1 & V2)](https://github.com/betaflight/betaflight/wiki/REVOLT-V2)
+ - [REVOLT (V1 & V2)](https://github.com/betaflight/betaflight/wiki/REVOLT-(V1-&-V2))
  - [REVONANO](/betaflight/betaflight/wiki/Board---REVONANO)
  - [RMDO](/betaflight/betaflight/wiki/Board---RMDO)
  - [Rotorgeeks SSD](https://github.com/betaflight/betaflight/wiki/Board---Rotorgeeks-SSD)
