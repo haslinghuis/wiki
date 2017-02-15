@@ -1,7 +1,9 @@
 REVOLT V2
 
 Is not currently supported in current BetaFlight builds but can run BetaFlight now with the following instructions.
-  
+
+####Originally Posted by ladysman in Boris' BetaFlight thread on RCG.
+And just like that, its working. Big thanks to Blckmn for getting this working so quickly. Hopefully my pics helped.
 Blckman has noted it WILL be added to 3.1.6 build. However, if you want to test now, you must do the following to get it to function.
 
 1) Download this hex until 3.1.6 is released.
