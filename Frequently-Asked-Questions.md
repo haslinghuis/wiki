@@ -1552,7 +1552,7 @@ https://www.rcgroups.com/forums/showthread.php?2830948-Capacitors-for-noise-redu
 #####Links to Soft Mounting hardware:  
 OZ -- I am using these, $4.30 for 8 shipped. They are rubber 8mm x 8mm with standard M3 male/female mounting.  
 http://www.ebay.com/itm/151873404692?_trksid=p2057872.m2749.l2649&ssPageName=STRK%3AMEBIDX%3AIT&rmvSB=true  
-These are the only ones I have tried and all yaw twitches are gone, they are stiffer than I would think would work, but working well on my revolts (SSG) and sparky2's (9250) flight controllers @ 32/16, motors are hard mounted. Since my FC & Rx does not have the standard separated CF protection plate, so I do like the stiffness over the super soft mounts (like the old QAV500 used for the clean/dirty sections).  
+These are the only ones I have tried and all yaw twitches are gone, they are stiffer than I would think would work, but working well on my revolts (SSG) and sparky2's (9250) flight controllers @ 32/16, motors are hard mounted. 
 
 These were just posted and look to be red silicon (softer?)  
 http://rotorgeeks.com/index.php?route=product/product&product_id=599&search=damp  
