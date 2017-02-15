@@ -1,7 +1,7 @@
 REVOLT V2
 
-Is not currently supported by BetaFlight. 
-
+Is not currently supported in current BetaFlight builds but can run BetaFlight now with the following instructions.
+  
 Blckman has noted it WILL be added to 3.1.6 build. However, if you want to test now, you must do the following to get it to function.
 
 1) Download this hex until 3.1.6 is released.
@@ -22,11 +22,10 @@ Enjoy
 _(This is a Basic Template to provide an outline for board info. Copy/paste this into a new board page and fill in, add or delete as needed)_
 
 # NAME
-
-
+Revolt V2
 
 ## Description
-
+FC designed to run RaceFlight 'closed source' firmware.
 
 
 ## MCU, Sensors and Features
