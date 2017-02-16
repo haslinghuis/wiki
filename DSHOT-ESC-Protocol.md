@@ -257,7 +257,7 @@ So removing caps makes dshot more likely to work BUT the records in the wiki are
 You are then the Experimental Tester for this ESC. Here is a link to Generic instructions on how to find signal input and cap on any BLHeli ESC:  
 https://www.rcgroups.com/forums/showpost.php?p=36216745&postcount=1645    
 Another Post on finding the signal filter cap:  
-https://www.rcgroups.com/forums/showthread.php?2756129-Dshot-testing-a-new-digital-parallel-ESC-throttle-signal/page233#post36897689  
+https://www.rcgroups.com/forums/showpost.php?p=36897835&postcount=3488  
 
 #####with caps off Motors are smooth from the motor tab but I get jitter on sticks
 So dshot is fine, when you use your sticks the radio, the reciever, the wiring to the receiver, the gyro, the physical components of the quad and the PID loops are all combining, something somewhere is causing the flight controller to command the shakes you are seeing, fix the problem and stop worrying about dshot
