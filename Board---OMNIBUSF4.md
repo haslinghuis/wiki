@@ -79,3 +79,46 @@ RCgroups thread for the F4 AIO at <https://www.rcgroups.com/forums/showthread.ph
 RCgroups thread for the F4 Pro at <https://www.rcgroups.com/forums/showthread.php?2801694-Omnibus-f4-pro>
 
 Layouts for F4 Pro [Top](https://www.rcgroups.com/forums/showatt.php?attachmentid=9631520&d=1482680395) [Bottom](https://www.rcgroups.com/forums/showatt.php?attachmentid=9631521&d=1482680397)
+
+## Receiver Setup
+
+### Serial RX
+
+The UART1 RX pin is connected to 3 pins:
+  - SBUS port (via inverter), this pin is also shared with the PPM pin
+  - Spektrum sat header (no inverter)
+  - UART1 header (no inverter)
+
+### Spektrum Binding (v3.1.6+)
+
+- Configure the flight controller for your receiver by opening the BetaFlight Configurator and on the ports page, set UART1 to Serial RX and click save. Switch to the configuration tab and in the Receiver section, set the mode to SerialRX and provider to either:
+
+  - Spektrum 2048 for DSMX
+  - Spektrum 1024 for DSM2
+
+- In the CLI run:
+
+```
+set spektrum_sat_bind = 9
+set spektrum_sat_bind_autorst = 0
+save
+```
+
+- Wait for the board to reboot, then remove all power from the board (unplug the USB), wait a moment then and plug the in the USB cable.
+
+- The bind light on the receiver should be flashing.
+
+- Turn on your transmitter in bind mode.
+
+- The flashing light on the receiver should now be solid.
+
+- Turn of your transmitter.
+
+- Finally take the receiver out of bind mode by running the following in the CLI:
+
+```
+set spektrum_sat_bind = 0
+save
+```
+
+- Make sure to change to TAER channel order under the Receiver tab in the BetaFlight configurator.
