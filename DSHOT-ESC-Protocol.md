@@ -36,9 +36,11 @@ Example for NAZE that does Not support Dshot:
 motor_pwm_protocol = ONESHOT42  
 Allowed values: OFF, ONESHOT125, ONESHOT42, MULTISHOT, BRUSHED
 
-#####Note: Min_check and min_throttle are affecting the Dshot idle value so adjusting the motor idle speed is not straight forward (3.1.1 and earlier releases). Best for now is try defaults and then adjust 'digital_idle_percent' until the motors ilde at the desired speed.  
-This got fixed in 3.1.2 so now motor_idle Percent Only sets the Dshot idle speed. 
-
+##### Setting Minimum Throttle   
+Note: In Firmware 3.1.1 and earlier min_check and min_throttle are affecting the Dshot idle value so adjusting the motor idle speed is not straight forward. If running these earlier versions of firmware try defaults and then adjust 'digital_idle_percent' until the motors ilde at the desired speed.  
+This got fixed in 3.1.2 and up so now digital_idle_percent Only sets the Dshot idle speed. 
+Be aware that Dshot ESCs can run motors at much slower speeds but if idle speed is too low the motor may Stall in flight during hard maneuvers and you get a 'death roll'. If this happens increase the value of digital_idle_percent.  
+ 
 ####ESC Cal and min/max throttle
 ßF firmware with Dshot does Not use the min_throttle or max_throttle setting, these are ignored.
 Just ensure that in the ESCs (BLHeli Suite) that PPM_MIN_THROTTLE is set to 1000 and PPM_MAX_THROTTLE is set to 2000.
