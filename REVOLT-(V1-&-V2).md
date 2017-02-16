@@ -7,7 +7,7 @@ And just like that, its working. Big thanks to Blckmn for getting this working s
 Blckman has noted it WILL be added to 3.1.6 build. However, if you want to test now, you must do the following to get it to function.
 
 1) Download this hex until 3.1.6 is released.
-https://www.dropbox.com/s/xu999lo5lhbc23a/betaflight_3.2.0_REVOLT.hex?dl=0
+http://andwho.sytes.net:8080/job/BorisB_BetaFlight_Maint/
 
 2) Solder the pads on the bottom of the board to enable UART 1 for Inversion See this ![Photo.](https://static.rcgroups.net/forums/attachments/4/7/1/6/9/4/a9783283-253-Revolt_V2%20Bottom.jpg)
 
