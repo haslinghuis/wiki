@@ -21,6 +21,8 @@ https://revoltfc.com/pinout-diagram.html
 
 Enjoy 
 
+####Telemtry to FrSky XSR: 
+As far telemetry you have to do the "un-inverted XSR hack" which isn't a big deal at all. 
 
 # NAME
 
