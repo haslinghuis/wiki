@@ -40,7 +40,7 @@ FC designed to run RaceFlight 'closed source' firmware, but has a target called 
   - Virtual Com Port (VCP)
   - Blackbox 
   - PPM/UART Shared
-  - Battery Voltage Sensor
+  - Battery Voltage Sensor (VBAT)
   - Boot Pads (no button)
 
 ### Features
