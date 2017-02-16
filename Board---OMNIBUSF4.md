@@ -84,8 +84,8 @@ Layouts for F4 Pro [Top](https://www.rcgroups.com/forums/showatt.php?attachmenti
 
 ### Serial RX
 
-The UART1 RX pin is connected to 3 pins:
-  - SBUS port (via inverter), this pin is also shared with the PPM pin
+On the OMNIBUSF4, the UART1 RX pin is available for use on 3 different headers, only one of which can be used at any given time:
+  - SBUS port (via inverter), this pin is also shared with the PPM pin.
   - Spektrum sat header (no inverter)
   - UART1 header (no inverter)
 
