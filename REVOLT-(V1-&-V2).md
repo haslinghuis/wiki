@@ -37,7 +37,7 @@ FC designed to run RaceFlight 'closed source' firmware, but has a target called 
 ### Hardware
   - MCU: STM32F405RGT6
   - IMU: ICM-20602
-  - Virtual Comport
+  - Virtual Com Port (VCP)
   - Blackbox 
   - PPM/UART Shared
   - Battery Voltage Sensor
