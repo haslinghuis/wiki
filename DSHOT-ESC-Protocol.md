@@ -251,7 +251,11 @@ And the most important -
 ######Caps on or off and the wiki
 Caps on the signal line smooth the signal, removing jitter. Dshot is a rapid change of signal, it looks like jitter, the faster the signal, the more chance the caps will smooth it out, obliterating the signal. Because dshot is 16bits, some signal,values look more like jitter than others. The signal is also effected by other factors than just the caps
 
-So removing caps makes d shot more likely to work BUT the records in the wiki are not black and white, they are a record of what people have claimed to work, your quad with the same escs may not react the same. (I have 2 quads with exactly the same escs, one works fine up to dshot300 with caps on, the other needs caps off for dshot at all)
+So removing caps makes dshot more likely to work BUT the records in the wiki are not black and white, they are a record of what people have claimed to work, your quad with the same escs may not react the same. (I have 2 quads with exactly the same escs, one works fine up to dshot300 with caps on, the other needs caps off for dshot at all)
+
+######What if the ESC I have is not listed or the Picture does not match?  
+You are then the Experimental Tester for this ESC. Here is a link to Generic instructions on how to find signal input and cap on any BLHeli ESC:  
+https://www.rcgroups.com/forums/showpost.php?p=36216745&postcount=1645    
 
 ######with caps off Motors are smooth from the motor tab but I get jitter on sticks
 So dshot is fine, when you use your sticks the radio, the reciever, the wiring to the receiver, the gyro, the physical components of the quad and the PID loops are all combining, something somewhere is causing the flight controller to command the shakes you are seeing, fix the problem and stop worrying about dshot
@@ -260,7 +264,7 @@ So dshot is fine, when you use your sticks the radio, the reciever, the wiring t
 Dshot will work on blheli_s escs (and of course kiss but there is now a seperate thread for kiss) if the escs are flashed with a version of blheli_s that supports it and the caps don't interfere with the signal. Bb1 processors will not do faster speeds, but bb2 will do up to dshot600. Just because the esc doesn't overtly say it on the literature - dshot came out after many blheli_s escs - or because it is 4 in 1 or 2 in 1 or 0.5 in 1 , well perhaps not the last, but if it is blheli_s bb2 make sure the caps are removed from the signal line and it will run dshot
 
 So if you want to run dshot - TAKE THE CAPS OFF (manufacturers are starting to ship with out the caps on)
-If you don't and you have problems, then gues what?   
+If you don't and you have problems, then guess what?   
 
 #####Note: there are ESCs that are exactly the Same sold by different names.  
 It is good to check the pictures in the Cap removal links and compare to the ESC you have in your hand.  
@@ -355,8 +359,6 @@ Cap removal:   https://www.rcgroups.com/forums/showpost.php?p=36209076&postcount
 - XRotor Micro BLHeli-S 30A - need signal cap removed   
 - ZTW polaris 30A (A_H_20 16.42) -   
 
-Generic instructions on how to find signal input and cap on any BLHeli ESC:
-https://www.rcgroups.com/forums/showpost.php?p=36216745&postcount=1645   
 
 #####Cap Removal Methods:  
 *Caution - if improper done can render the ESC unusable and have the possibility to burning the ESC upon applying power. *  
