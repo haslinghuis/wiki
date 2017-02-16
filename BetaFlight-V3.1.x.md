@@ -193,6 +193,8 @@ More to the right (higher)-> More stick acceleration and more sharpy on stick. Y
 More to the left (lower)-> The accelerating and deaccelerating movements of your quad get more dampened. This results in really smoothed motion and pretty much never bouncebacks. Maybe better for freestyle.   
 Weight transition is basically gradual transition of setpoint weight from center stick to full stick.  
 But the effect of it is not really small at the moment.   
+Comment from QuadMcFly:  
+Also worth noting your set-point will likely shift depending on your specific setup, so you can't assume it will be the same on every quad. Heavy, slow transitioning props will need a lower set-point than light fast changing props. For instance I had to run quite low on 5x4.5x3HBN props, but on the Lumenier ButterCutter I'm running almost all the way to the right. Basically I just turn it down till I stop getting bounce-back or "slaps" on hard flips and rolls.   
 
 ######To check for DMA conflicts do the following (thanks teralift):  
 (1) Disable Dshot, enable LED_STRIP, save & reboot.  
