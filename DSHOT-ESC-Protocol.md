@@ -36,16 +36,8 @@ Example for NAZE that does Not support Dshot:
 motor_pwm_protocol = ONESHOT42  
 Allowed values: OFF, ONESHOT125, ONESHOT42, MULTISHOT, BRUSHED
 
-####Setting Min Throttle with Dshot   
-Dshot now uses the CLI command "digital_idle_percent" which adds to the 'min_throttle'.
-Do type "get idle" to see if this exists and what the valid values are. This is a percentage of throttle used in armed state. The pid controller will never push use motor output below this percentage. Test it out by arming while watching the motors tab. If the motors idle slower when using dshot, bump up the digital idle percent. I set mine to 4.000 to make my motors arm at the same speed when swapping back and forth between multi and dshot. 
-
-#####Note: Min_check and min_throttle are affecting the Dshot idle value so adjusting the motor idle speed is not straight forward. Best for now is try defaults and then adjust 'digital_idle_percent' until the motors ilde at the desired speed.  
-From Boris:  
-It turns out its some leftovers from the old multwii code what was planned to be ditched in 3.2. It has nothing to do with the motor protocol, but it is calculation of throttle curve! In there min_throttle is used as the lowest throttle value. So that means adjusting min_throttle was doing something similar like min_check
-https://github.com/betaflight/betafl...rves.c#L40-L50
-So that means that increasing min_throttle was raising your throttle input like min check
-Thanks for reporting. I think this is worth of bringing out 3.1.2 soon as it bothers me. 
+#####Note: Min_check and min_throttle are affecting the Dshot idle value so adjusting the motor idle speed is not straight forward (3.1.1 and earlier releases). Best for now is try defaults and then adjust 'digital_idle_percent' until the motors ilde at the desired speed.  
+This got fixed in 3.1.2 so now motor_idle Percent Only sets the Dshot idle speed. 
 
 ####ESC Cal and min/max throttle
 ßF firmware with Dshot does Not use the min_throttle or max_throttle setting, these are ignored.
