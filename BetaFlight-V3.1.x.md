@@ -185,6 +185,15 @@ Answer from Boris:
 Sensitivity 100
 Limit 70  
 
+######Someone mentioning that 3.1 was a bit more "bumpy" than 3.0.1. Is this true and what to adjust?
+Boris' answer:  
+3.1 is indeed more "from error" based. Reduce your setpoint weight to make it smoother. I think the current defaults are a bit to much for some setups. Especially on end of fast flips or rolls.   
+In case some don't remember what the setpoint weight was doing. Just a quick explanation in easy language.  
+More to the right (higher)-> More stick acceleration and more sharpy on stick. Your quad reaches faster its target and the rates feel faster, but the motors work harder and have to break faster.   
+More to the left (lower)-> The accelerating and deaccelerating movements of your quad get more dampened. This results in really smoothed motion and pretty much never bouncebacks. Maybe better for freestyle.   
+Weight transition is basically gradual transition of setpoint weight from center stick to full stick.  
+But the effect of it is not really small at the moment.   
+
 ######To check for DMA conflicts do the following (thanks teralift):  
 (1) Disable Dshot, enable LED_STRIP, save & reboot.  
 (2) Goto CLI.  
@@ -363,7 +372,10 @@ Allowed range: 0 - 2000
 See Discussion on Anti_gravity below.
 
 ####set iterm_windup = 50
-Allowed range: 30 - 100  
+Allowed range: 30 - 100   
+Boris' explanation:  
+Just a limit for how high i-term can grow, its threshold to prevent iterm to go nuts on high dynamic cases for example like fast stick inputs or some other scenarios.  
+I think the default value is pretty good from what I have seen from many setups I analyzed. I don't think you need to tune it unless you really suffer from high iterm windups.   
 
 ###Removed from 3.1.3
 ####accum_threshold = 200
