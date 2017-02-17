@@ -26,6 +26,14 @@ As far telemetry you have to do the "un-inverted XSR hack" which isn't a big dea
 [Link to the X4r/XSR hack](https://blck.mn/2016/06/smartport-the-frsky-xsr-and-betaflight/)
  the telemetry works with this XSR hack, just remember to connect your S.Port wire to TX3 pin on the Revolt v2, don't get confused with the Revolt v2 wiring diagram which shows S.Port going to Rx3 pin.
 
+####Blackbox logs download corruption fix for MAC users: 
+If you have issues downloading blackbox logs, this will fix the problem :
+https://www.rcgroups.com/forums/showpost.php?p=36811734&postcount=44503
+more details here :
+https://github.com/betaflight/betaflight-configurator/issues/411
+
+It's a temporary solution requiring you to manually install patched up version of BF configurator, next release of official BF configurator is going to fix that.
+
 # NAME
 
 Revolt V1 and V2
