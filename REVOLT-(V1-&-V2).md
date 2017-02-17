@@ -23,6 +23,8 @@ Enjoy
 
 ####Telemetry to FrSky XSR: 
 As far telemetry you have to do the "un-inverted XSR hack" which isn't a big deal at all. 
+[Link to the X4r/XSR hack](https://blck.mn/2016/06/smartport-the-frsky-xsr-and-betaflight/)
+ the telemetry works with this XSR hack, just remember to connect your S.Port wire to TX3 pin on the Revolt v2, don't get confused with the Revolt v2 wiring diagram which shows S.Port going to Rx3 pin.
 
 # NAME
 
