@@ -1,5 +1,7 @@
 #REVOLT V2 OWNERS TAKE NOTE:
 
+All of the information referring to Revolt V2 applies to Skitzo FC as well, it's identical board (just different color).
+
 Is not currently supported in current BetaFlight builds but can run BetaFlight now with the following instructions.
 
 ####Originally Posted by ladysman in Boris' BetaFlight thread on RCG.
