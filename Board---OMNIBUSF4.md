@@ -43,25 +43,25 @@ These boards are called differently depending on the distributor.
 | Label    | Pin | Timer | DMA | Default | Note                             |
 |----------|-----|-------|-----|---------|----------------------------------|
 | RSSI     | A0  |       |     |         | Not ADC capable                  |
-| PWM5     | A1  | 5,2   | ?,? | motor 5, led_strip                                 |
+| PWM5     | A1  | 5,2   | 1,4 | motor 5, led_strip                                 |
 | PWM4     | A2  | 2,3   | 1,1 | motor 4 |                                  |
 | PWM3     | A3  | 2,4   | 1,6 | motor 3   |                                  |
-| PWM6     | A8  | 1,1   | ?,? | motor 6                                  |
-| UART1 TX | A9  | 1,2   | ?,? | serial_tx 1 |                                |
-| UART1 RX | A10 | 1,?   | ?,? | serial_rx 1 |                              |
+| PWM6     | A8  | 1,1   | 2,1 | motor 6                                  |
+| UART1 TX | A9  | 1,2   | 2,2 | serial_tx 1 | Not remappable with v3.1                                |
+| UART1 RX | A10 | 1,3   | ?,? | serial_rx 1 | Not remappable with v3.1                              |
 | PWM1     | B0  | 3,3   | 1,7 | motor 1 |                                  |
 | PWM2     | B1  | 3,4   | 1,2 | motor 2 |                                  |
-| LED      | B6  | 4,1   | ?,? |         | J9 (Not accessible with v3.1)    |
-| PPM      | B14 | 12,3  | ?,? | ppm     |                                 |
-| CH2      | B15 | 12,4  | ?,? |                                  |
+| LED      | B6  | 4,1   | 1,0 |         | J9 (Not accessible with v3.1)    |
+| PPM      | B14 | 12,3  | n.a | ppm     |                                 |
+| CH2      | B15 | 12,4  | n.a |                                  |
 | UART3 TX | B10 | 2,3(!)| ?,? | serial_tx 2 |                                 |
 | UART3 RX | B11 | 2,4(!)| ?,? | serial_rx 2                                 |
 | CRNT     | C1  | ---   | 2,4 | adc_curr                                |
 | VBAT     | C2  | ---   | 2,4 | adc_batt                                 |
-| UART6 TX | C6  | ?,?   | ?,? | serial_tx 3                                 |
-| UART6 RX | C7  | ?,?   | ?,? | serial_rx 3                                 |
-| CH5      | C8  | 8,3   | ?,? |                                  |
-| CH6      | C9  | 8,4   | ?,? |                                  |
+| UART6 TX | C6  | 8,1   | 2,2 | serial_tx 3                                 |
+| UART6 RX | C7  | 8,2   | 2,3 | serial_rx 3                                 |
+| CH5      | C8  | 8,3   | 2,4 |                                  |
+| CH6      | C9  | 8,4   | 2,7 |                                  |
 
 ### OMNIBUS F4 V2 and F4 Pro
 
