@@ -2,7 +2,21 @@ _(This is a Basic Template to provide an outline for board info. Copy/paste this
 
 # KIWI F4
 
+####Telemetry to FrSky XSR: 
+As far telemetry you have to do the "un-inverted XSR hack" which isn't a big deal at all. 
+[Link to the X4r/XSR hack](https://blck.mn/2016/06/smartport-the-frsky-xsr-and-betaflight/)
+The telemetry works with this XSR hack on UART6 only (doesn't work on UART3)
 
+####Blackbox logs download corruption fix for MAC users: 
+If you have issues downloading blackbox logs (probably affects only BF3.1 and later), this will fix the problem :
+https://www.rcgroups.com/forums/showpost.php?p=36811734&postcount=44503
+more details here :
+https://github.com/betaflight/betaflight-configurator/issues/411
+
+It's a temporary solution requiring you to manually install patched up version of BF configurator, next release of official BF configurator is going to fix that.
+
+####LED signal wire
+This is undocumented in the wiring diagram but the RGB LED signal wire goes to the DATA pin on the reversed side of the FC, you need to take 5v and ground wire elsewhere on the board (ie. from the UART3/6 ports)
 
 ## Description
 
