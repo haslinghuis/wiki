@@ -1,0 +1,41 @@
+
+## Description
+
+Beautifully simple STM32F7 based flightcontroller. A F7 replacement for the Naze.
+
+## MCU, Sensors and Features
+
+### Hardware
+  - Size: 36x36mm (30.5x30.5 mounting holes)  
+  - MCU: STM32F722RET6
+  - IMU: ICM-20602 (SPI) 
+  - IMU Interrupt: Yes
+  - VCP: Yes
+  - Hardware UARTS: 3 
+  - OSD: Compatible pin-outs for MinimOSD on UART3 (stackable) 
+  - Blackbox: SD card 
+  - PPM/UART Shared: UART6
+  - Battery Voltage Sensor: Yes, directly connected, no wiring necessary (if using pololu on full size)
+  - Integrated Voltage Regulator: Pololu piggy back option 
+  - Button for putting board into DFU mode
+
+### Features
+  - Current Sensor: available as ADC input, but requires shunt circuit on PDB or battery cable.
+  - BlHeli passthrough: Yes 
+  - WS2811 Led Strip: Yes (on motor output Pin 5)
+  - Transponder: No
+
+## Manufacturers and Distributors
+
+These boards are currently available in pre-order only. Shipping is expected in the first half of 2017.  
+
+Available here: [nerofc.com](https://nerorc.com)
+
+## Configuration Information
+
+### Wiring Diagrams
+![Wiring Diagram - rev4](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/boards/nero/nero-rev1-wiring.png)
+
+# Other Resources
+
+Rcgroups Thread: https://www.rcgroups.com/forums/showthread.php?2734745
