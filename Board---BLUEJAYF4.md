@@ -60,7 +60,7 @@ Rev2 (Full Size)
 ### Wiring Diagrams
 ![Wiring Diagram - rev4](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/boards/bluejayf4/bluejayf4-rev4-wiring.png)
 
-![Wiring Diagram - rev3](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/boards/bluejayf4/bluejayf4-rev3-wiring.png)
+![Wiring Diagram - rev3](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/boards/bluejayf4/bluejayf4-rev3-wiring.jpg)
 
 ### Frsky Smartport
 
