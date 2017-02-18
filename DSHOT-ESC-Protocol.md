@@ -45,7 +45,7 @@ Be aware that Dshot ESCs can run motors at much slower speeds but if idle speed 
 ßF firmware with Dshot does Not use the min_throttle or max_throttle setting, these are ignored.
 Just ensure that in the ESCs (BLHeli Suite) that PPM_MIN_THROTTLE is set to 1000 and PPM_MAX_THROTTLE is set to 2000.  
 Note: This is not be needed in BLHeli_S 16.43 and up since the PPM_MIN & MAX values are not used for Dshot.   
-this means that when DSHOT is use NO ESC Calibration is required. Just Select DSHOT.
+This means that when DSHOT is use NO ESC Calibration is required. Just Select DSHOT.
 
 ####Max ESC update speed supported by different dshot versions:  
 #####WARNING: due to processor tasks, FC and/or ESC, the maximum update rate may not work-  
