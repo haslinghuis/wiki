@@ -76,7 +76,10 @@ You will need to run the following in the CLI:
 ### Serial Wire Debug
 
 Serial Wire Debug output is located on the bottom of the board, and provides a pin out compatible with STM32Fx discovery boards to be used as a SWD adapter:
-![bjf4-swd](https://cloud.githubusercontent.com/assets/6168871/17614348/066cf4d8-60a9-11e6-89f3-c439c5654ba2.jpg)
+
+![Wiring Diagram - rev4 SWD](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/boards/bluejayf4/bluejayf4-rev4-wiring-swd.png)
+
+![bjf4-swd-rev2](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/boards/bluejayf4/bluejayf4-rev2-wiring-swd.jpg)
 
 # Known Issues:
 
