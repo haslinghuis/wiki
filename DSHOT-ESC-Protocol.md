@@ -28,7 +28,7 @@ Some known limitations are:
 - Some ESCs that have a signal filter cap may not work until the cap is removed. 
 
 
-####A quick way to determine IF the Firmware flashed into the FC supports Dshot:  
+###A quick way to determine IF the Firmware flashed into the FC supports Dshot:  
 Go to the CLI and type "get pwm". All settings with 'pwm' in the name will be shown with all options.
 If DSHOT150, DSHOT300, DSHOT600 is NOT in the list for the "motor_pwm_protocol" then this firmware does NOT support Dshot.
 Example for NAZE that does Not support Dshot: 
@@ -36,12 +36,44 @@ Example for NAZE that does Not support Dshot:
 motor_pwm_protocol = ONESHOT42  
 Allowed values: OFF, ONESHOT125, ONESHOT42, MULTISHOT, BRUSHED
 
-##### Setting Minimum Throttle   
+### Setting Minimum Throttle   
 Note: In Firmware 3.1.1 and earlier min_check and min_throttle are affecting the Dshot idle value so adjusting the motor idle speed is not straight forward. If running these earlier versions of firmware try defaults and then adjust 'digital_idle_percent' until the motors ilde at the desired speed.  
 This got fixed in 3.1.2 and up so now digital_idle_percent Only sets the Dshot idle speed. 
 Be aware that Dshot ESCs can run motors at much slower speeds but if idle speed is too low the motor may Stall in flight during hard maneuvers and you get a 'death roll'. If this happens increase the value of digital_idle_percent.  
  
-####ESC Cal and min/max throttle
+##### Post by Cheredanine on setting up IDLE in ßF 3.1.2 and up:  
+Ok first Point - dshot does not use min and max throttle, you don't need to do that.  
+Second point - when not using min and max throttle you should calibrate from bf, not manually set in blheli.  
+   Could someone please explain if I need to type the "digital_idle_offset" command?  
+So let's deal with your question.  
+To check what value digital idle should be set to, connect to configurator, go to the motor tab, take your props off.  Click the little check box half way down the page that says you have taken your props off, you know what you are doing, you take full responsibility for your actions and you consider fingers pointless appendages anyway.  
+
+Then plug in the LiPo to the quad (USE a Current Limiter Always). Click on the master slider and use the up arrow on the keyboard to increase the master slider one point at a time until you reach a point where all 4 motors have just started to spin, I don't mean twitch, stutter or start stop, I mean the lowest value where they are spinning, it is probably about 1010, don't worry if it isn't, but I am going to use that number as an example.  
+
+You can now take the master slider back to zero and unplug the LiPo.  
+
+Take the number (for example purposes 1010) and add thirty points to it (so in the example we are now at 1040).  
+Not we need work out what percentage of the throttle range this is, I don't know your math skills so sorry if this is a little hand to mouth.  
+Subtract 1000 from it, then divide by 10  
+
+So in the example:  
+1040-1000=40  
+40/10=4  
+
+Go to the cli tab in configurator  
+Click in the box at the bottom and type:
+
+set digital_idle_percent = 4  
+
+(Replace 4 with whatever digital idle you arrived at in the calculation)
+Hit return, you will see the command processed in the back bit above,
+Then click in the box again and type
+
+save
+
+Hit return and done   
+
+###ESC Cal and min/max throttle
 ßF firmware with Dshot does Not use the min_throttle or max_throttle setting, these are ignored.
 Just ensure that in the ESCs (BLHeli Suite) that PPM_MIN_THROTTLE is set to 1000 and PPM_MAX_THROTTLE is set to 2000.  
 Note: This is not needed in BLHeli_S 16.43 and up since the PPM_MIN & MAX values are not used for Dshot.   
