@@ -1,10 +1,8 @@
-# BLUEJAYF4 (including mini)
+## Description
 
 Beautifully simple STM32F4 based flightcontroller. An F4 replacement for the Naze.
 
 ![BlueJayF4 - rev3](https://cloud.githubusercontent.com/assets/6168871/21573427/4e0d21f2-cf38-11e6-893d-73e1eb90bfd0.png)
-
-## Description
 
 Two variants (in multiple revisions). The full size, 36x36mm (30.5x30.5 mounting holes) and a 25x25mm (20x20 mounting holes) mini version.
 
@@ -12,16 +10,16 @@ Two variants (in multiple revisions). The full size, 36x36mm (30.5x30.5 mounting
 
 ### Hardware
   - MCU: STM32F405RTG6
-  - IMU: ICM-20602 (SPI) rev4, ICM-20608-G (SPI) rev3 (and mini), and MPU9250 (SPI) rev1 and rev2.
+  - IMU: ICM-20602 (SPI) rev4, ICM-20608-G (SPI) rev3 (and mini), and MPU9250 (SPI) rev1 and rev2
   - IMU Interrupt: Yes
   - BARO: Optional on full size, not available on mini.
   - VCP: Yes
   - Hardware UARTS: 3 (4 on full size with Quad motor remapping)
-  - OSD: Compatiable pinouts for MinimOSD on UART3 (stackable) on fulle size board 
-  - Blackbox: Yes (16mb rev3, 2mb rev1), SD card for rev2 and rev3 full size (no SD card on mini). 
+  - OSD: Compatible pinouts for MinimOSD on UART3 (stackable) on full size board 
+  - Blackbox: Yes (16mb rev3, 2mb rev1), SD card for rev2 and rev3 full size (no SD card on mini)
   - PPM/UART Shared: UART6
   - Battery Voltage Sensor: Yes, directly connected, no wiring necessary (if using pololu on full size), wiring required to vbat supply on PDB if using mini
-  - Integrated Voltage Regulator: Pololu piggy back option on full size rev3 and rev4.
+  - Integrated Voltage Regulator: Pololu piggy back option on full size rev3 and rev4
   - Button for putting board into DFU mode
 
 ### Features
