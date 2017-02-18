@@ -48,8 +48,8 @@ _(add FAQs, known issues and workarounds specifically related to this board. ple
 
 [Manual](http://rotorgeeks.com/download/RG_SSD_Manual.pdf)  
 
-Pinouts, schematics and RX wiring: 
-RCGroups Thread: http://www.rcgroups.com/forums/showthread.php?t=xxxxxxx
+RCG Thread:   
+https://www.rcgroups.com/forums/showthread.php?2805794-Rotorgeeks-SSD-F3-flight-controller  
 
 ## Image
 
