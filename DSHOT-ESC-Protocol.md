@@ -339,6 +339,7 @@ https://www.rcgroups.com/forums/showthread.php?t=2784634#post36278564
 - FVT Littlebee 20A-S   
 - FVT LittleBee-Spring 20Ax4 - Claims Dshot but Unknown  
 Thread: https://www.rcgroups.com/forums/showthread.php?2800280-Favourite-FVT-LittleBee-Spring-20Ax4-4-in-1-Blheli_S-ESC-w-built-in-5V-12V-BEC  
+- LB30a 4 in 1 spring edition - works with dshot600 out of the box.
 - LittleBee_S 20A  (A-H-15)-  
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36181966&postcount=40934  
 - Littlebee_S 30A  
