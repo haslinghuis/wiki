@@ -68,6 +68,7 @@
  - [KIWIF4](https://github.com/betaflight/betaflight/wiki/KIWIF4)
  - [LUX_RACE](/betaflight/betaflight/wiki/Board---LUX_RACE)
  - [NAZE](/betaflight/betaflight/wiki/Board---NAZE)
+ - [NERO](/betaflight/betaflight/wiki/Board---NERO)
  - [MICROSCISKY](/betaflight/betaflight/wiki/Board---MICROSCISKY)
  - [MOTOLAB](/betaflight/betaflight/wiki/Board---MOTOLAB)
  - [OLIMEXINO](/betaflight/betaflight/wiki/Board---OLIMEXINO)
