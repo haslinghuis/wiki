@@ -199,9 +199,10 @@ But the effect of it is not really small at the moment.
 Comment from QuadMcFly:  
 Also worth noting your set-point will likely shift depending on your specific setup, so you can't assume it will be the same on every quad. Heavy, slow transitioning props will need a lower set-point than light fast changing props. For instance I had to run quite low on 5x4.5x3HBN props, but on the Lumenier ButterCutter I'm running almost all the way to the right. Basically I just turn it down till I stop getting bounce-back or "slaps" on hard flips and rolls.   
 
-###More on SetPoint Posted by joshuabardwell  
-For setpoint transition, the wiki has a good explanation:
-- [Reference PIDC and Setpoint discussion on 3.0.x Wiki page](https://github.com/betaflight/betaflight/wiki/BetaFlight-3.0.x)  So:  
+####More on SetPoint Posted by joshuabardwell  
+For setpoint transition, the wiki has a good explanation:  
+- [Reference PIDC and Setpoint discussion on 3.0.x Wiki page](https://github.com/betaflight/betaflight/wiki/BetaFlight-3.0.x)   
+So:  
 Delta from error (high D term setpoint weight) has very sharp, immediate stick response. But may have problems with bounceback at the end of flips and rolls, and may provide less smooth flight (especially bad for some freestyle flyers). With high D term setpoint weight, the quad feels very connected and immediate, but also every. tiny. little. finger. motion. is translated instantly to quadcopter motion, which is not necessarily what every pilot wants.  
 Delta from measurement (low D term setpoint weight) has smoother and slower stick response. Quad feels less connected and immediate, but is smoother. Also, measurement is best at stopping bounceback/oscillation at the end of flips and rolls.  
 Think of entering a flip or roll as "positive" stick input, and exiting a flip or roll as "negative" stick input. When the stick is moving away from center, that's positive. When it is moving towards center, that's negative. Delta from error (high D term setpoint weight) is just as likely to cause bounce on positive stick input, in theory, but in practice, we seldom make sharp stick movements when making positive stick input. When re-centering the stick (negative stick input), the crossbar helps the stick come to a sharp stop. When making positive stick input, even when our fingers make very sharp moves, the stick does not come to as abrupt a stop (for most pilots). For some pilots, this will not be true. If you experience ringing oscillation or bounce when doing positive stick inputs, such as if you are doing a four point roll, then you may be the exception to this rule.  
@@ -214,7 +215,7 @@ Also, bear in mind that you should DEFINITELY be tuning P and D when playing wit
 ####AILERON8 comment:   
 I've been raising the setpoint transition to reduce roll/flip bounceback in general. Even if your PIDs are at default this setting has a very pronounced effect on bounce back reduction. Before utilizing this feature I left bounce back removal at the tail-end of tuning. Where as now it's the first thing I do and is easily accomplished.  
 
-######To check for DMA conflicts do the following (thanks teralift):  
+####To check for DMA conflicts do the following (thanks teralift):  
 (1) Disable Dshot, enable LED_STRIP, save & reboot.  
 (2) Goto CLI.  
 (3) Type "resource list".  
