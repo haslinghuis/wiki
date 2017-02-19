@@ -252,7 +252,14 @@ Usually F4 board will run fine on 32kHz gyro and 16kHz pid loop. 32/32 is slight
 32khz is added just because it can, but no new harder filtering will be defaulted to that. If you want to fly 32khz you will have to try to optimise your filters by yourself.  
 Default filtering is good enough for 8k gyro sampling, but 32khz requires more filtering depending of setup.
 I did find out that old blheli esc's for example perform well under 32khz as those are less responsive, while blheli_s and other responsive esc's with better braking really suffer from micros on 32khz.  
-#####Question from  fftunes :  
+#####Note from Ksyrium:   
+I have two BlueJay F4 rev 3. Initially they flew really wonky, until I learned how to properly soft mount the FC, a fully soft stack did not help to put it mildly.  
+Then one of them refused to arm on 32khz and had 50% CPU instead of 40% on the other. The fix was to set moron threshold to 100.   
+#####Note from arcaine25:  
+I want to run 32k/32k on that revolt V2, but the CPU is at 50%ish.. I know Boris said that would be fine, but I am a little OCD about things, and just don't feel like risking it. 32k/16k flies great as it is, so I couldn't imagine TOO much difference between now and 32/32.  
+While I didn't have to modify moron_threshold at all on the Revolt V2, I absolutely do have to on a Flip32 F4 with an MPU 9250. I have to set it to around 110 - 120 (i'd have to check) in order for it to work, otherwise the Gyro never cal's and it won't arm. Once I set the moron threshold, it works like a charm now that I soft mounted it correctly (previous post about it, as well as in the wiki :-) ). those M3 bobbins from RMRC are absolutely wonderful, and I ordered a bunch of them to keep on hand! Default in 3.1.5 is 48 for moron_threshold.    
+
+#####Question from  fftunes:  
 Did someone compare mpu6500 vs ICM20x at 32k? In Felix' tests the ICM20x did not look so well...  
 Boris' answer:   
 Yes I did. Zero difference.....absolutely zero difference.  
