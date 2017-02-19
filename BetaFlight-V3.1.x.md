@@ -148,8 +148,8 @@ NOTE- For the features in this release you will need to use the following Versio
 DSHOT1200 does work now but only on kiss24 that I know.
 We decided to add a lot of new stuff available from cli for testing purposes and try to only add proven things in the configurator.   
 
-#####Questions and Answers about 3.1 from Boris' BetaFlight thread.    
-######question by Woody_99:  
+###Questions and Answers about 3.1 from Boris' BetaFlight thread.    
+####question by Woody_99:  
 I've been flying a Naze32 on BF (3.01) for a while, and seems to be working fine for me.
 With all the code optimizations (noted in the WIKI), is the Naze still a viable option to continue with, or should I swap it out for a newer FC?  
 Answer from Boris:  
@@ -159,20 +159,20 @@ All optimizations only affect f3, f4 and f7 boards.
 Instead of running new versions of betaflight or reforking it you can simply stick to the version you use now for example. There is no solution for F1 boards in the future unfortunately and every new feature will NOT be included to it. You are for example willing to give up acc, but 100 others may not. So that's not a solution.  
 I see that Softserial does fit again since latest cleanups (RC9?). There is only like 1kb left on Naze now.  
 
-######question by fftunes:  
+####question by fftunes:  
 If i run 8k/1k, will the PID loop be calculated from an average of the 8 gyro samples, or will it only use 1 sample out of 8?  
 Answer from Boris:  
 There is no averaging. There is IIR filtering, what works faster than averaging. Every sample it's information is taken to the next sample a bit. Btw you can enable simple averaging with chosing FIR filter style. Averaging gives a lot of delay typically.  
 It seems that a lot of guys really missed the early betaflights where all this was discussed a lot. All i can say is to read about the way how filtering works and look up about aliasing. (Filtering is explained in this Wiki)  
 
-######Question by spikerspike97:  
+####Question by spikerspike97:  
 But why do my throttle and yaw rccommands have so much steps and the pitch and roll are super smooth as seen in the BB log?   
 Answer from Boris:   
 Because only roll and pitch have Derivative kick affect. Therefore only those are smoothed by default. You can enable the full smoothing in cli, but I suggest fly it like this.  
 Only reason for smoothed rc inputs is Derivative kick symptom where PIDsum can get very jerky.  
 Note: See the new "rc_interpolation_channels" CLI command below to smooth all channels.  
 
-######question by Ede2016:  
+####question by Ede2016:  
 Can you please say a word about average CPU load for BF3.1.
 Do you suggest less than 50% in the configurator disarmed or armed or what's the best way to analyze which frequency is the maximum recommended?   
 Answer from Boris:   
@@ -182,13 +182,13 @@ Usually on high CPU usage more less prioritized things will stop working. For ex
 The only true danger with too high cpu before was that motor commands may overlap, but there is a lot of spacing in between all motor commands and it is protected as well with looptime limitations on different protocols.  
 I personally fly everything enabled except accelerometer on my rigs.  
 
-######Question by Jerm357:
+####Question by Jerm357:
 Can anyone suggest some settings for "Angle Limit" and "Sensitivity" in 3.1.3 to get Angle mode to feel like it did in 3.0.1?  
 Answer from Boris:  
 Sensitivity 100
 Limit 70  
 
-######Someone mentioning that 3.1 was a bit more "bumpy" than 3.0.1. Is this true and what to adjust?
+####Someone mentioning that 3.1 was a bit more "bumpy" than 3.0.1. Is this true and what to adjust?
 Boris' answer:  
 3.1 is indeed more "from error" based. Reduce your setpoint weight to make it smoother. I think the current defaults are a bit to much for some setups. Especially on end of fast flips or rolls.   
 In case some don't remember what the setpoint weight was doing. Just a quick explanation in easy language.  
@@ -198,6 +198,19 @@ Weight transition is basically gradual transition of setpoint weight from center
 But the effect of it is not really small at the moment.   
 Comment from QuadMcFly:  
 Also worth noting your set-point will likely shift depending on your specific setup, so you can't assume it will be the same on every quad. Heavy, slow transitioning props will need a lower set-point than light fast changing props. For instance I had to run quite low on 5x4.5x3HBN props, but on the Lumenier ButterCutter I'm running almost all the way to the right. Basically I just turn it down till I stop getting bounce-back or "slaps" on hard flips and rolls.   
+
+###More on SetPoint Posted by joshuabardwell  
+Delta from error (high D term setpoint weight) has very sharp, immediate stick response. But may have problems with bounceback at the end of flips and rolls, and may provide less smooth flight (especially bad for some freestyle flyers). With high D term setpoint weight, the quad feels very connected and immediate, but also every. tiny. little. finger. motion. is translated instantly to quadcopter motion, which is not necessarily what every pilot wants.  
+Delta from measurement (low D term setpoint weight) has smoother and slower stick response. Quad feels less connected and immediate, but is smoother. Also, measurement is best at stopping bounceback/oscillation at the end of flips and rolls.  
+Think of entering a flip or roll as "positive" stick input, and exiting a flip or roll as "negative" stick input. When the stick is moving away from center, that's positive. When it is moving towards center, that's negative. Delta from error (high D term setpoint weight) is just as likely to cause bounce on positive stick input, in theory, but in practice, we seldom make sharp stick movements when making positive stick input. When re-centering the stick (negative stick input), the crossbar helps the stick come to a sharp stop. When making positive stick input, even when our fingers make very sharp moves, the stick does not come to as abrupt a stop (for most pilots). For some pilots, this will not be true. If you experience ringing oscillation or bounce when doing positive stick inputs, such as if you are doing a four point roll, then you may be the exception to this rule.  
+So then what is setpoint transition. Setpoint transition tries to give you the best of both worlds. When setpoint transition = 1, then NO SETPOINT TRANSITION OCCURS. The D term is calculated based on the setpoint weight, period. When setpoint transition is raised, what happens is that on positive stick input, the D term is calculated based on setpoint weight, and on negative stick input, the setpoint weight is relaxed (reduced) and the D term transitions from error to measurement. The goal here is to give you sharp, "error style" control on positive stick input, and soft, "measurement style" control on negative stick input. This means you get the advantage of error style control but without bounceback at the end of flips and rolls.  
+Here is how I think of it:  
+- 1. Set the setpoint weight based on how much error vs measurement feel you want.  
+- 2. Raise setpoint transition to fix bounceback at the end of flips and rolls.  
+If setpoint weight is low, then setpoint transition won't do anything because the setpoint can't really be reduced.  
+Also, bear in mind that you should DEFINITELY be tuning P and D when playing with these numbers. P and D interact strongly, and setpoint weight interacts strongly with D, so these three parameters are all interlinked and tuning them is NOT for amateurs. What I would suggest is starting with the default values then tuning P and D as perfectly as possible. Then adjust setpoint weight to extreme values and feel the difference. If you like the softer or sharper feel of a higher/lower setpoint weight, try re-tuning P and D around that value. Finally, adjust setpointn transition to try to tune out bounce at the end of flips and rolls (or other negative stick input.  
+####AILERON8 comment:   
+I've been raising the setpoint transition to reduce roll/flip bounceback in general. Even if your PIDs are at default this setting has a very pronounced effect on bounce back reduction. Before utilizing this feature I left bounce back removal at the tail-end of tuning. Where as now it's the first thing I do and is easily accomplished.  
 
 ######To check for DMA conflicts do the following (thanks teralift):  
 (1) Disable Dshot, enable LED_STRIP, save & reboot.  
