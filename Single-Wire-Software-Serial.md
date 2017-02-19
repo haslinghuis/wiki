@@ -79,3 +79,11 @@ REVOLT
 | B11 | RX3               | ?       | ?     | NG     | @alenl2; Timer conflict? (need checking) |
 | C6  | TX6               | ?       | ?     | OK     | @alenl2                |
 | C7  | RX6               | ?       | ?     | OK     | @alenl2                |
+
+---
+KISS (KISSFC)
+| Pin | Label             | S.Audio | Tramp | S.Port | Notes                  |
+|-----|-------------------|---------|-------|--------|------------------------|
+| A13 | PWM5              | ?       | ?     | NG     | @basdelfos     |
+| A02 | PITCH             | ?       | ?     | OK     | @basdelfos    |
+| A15 | ROLL              | ?       | ?     | OK     | @basdelfos |
