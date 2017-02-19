@@ -82,6 +82,7 @@ REVOLT
 
 ---
 KISS (KISSFC)
+
 | Pin | Label             | S.Audio | Tramp | S.Port | Notes                  |
 |-----|-------------------|---------|-------|--------|------------------------|
 | A13 | PWM5              | ?       | ?     | NG     | @basdelfos     |
