@@ -210,6 +210,7 @@ So then what is setpoint transition. Setpoint transition tries to give you the b
 Here is how I think of it:  
  1. Set the setpoint weight based on how much error vs measurement feel you want.  
  2. Raise setpoint transition to fix bounceback at the end of flips and rolls.   
+
 If setpoint weight is low, then setpoint transition won't do anything because the setpoint can't really be reduced.  
 Also, bear in mind that you should DEFINITELY be tuning P and D when playing with these numbers. P and D interact strongly, and setpoint weight interacts strongly with D, so these three parameters are all interlinked and tuning them is NOT for amateurs. What I would suggest is starting with the default values then tuning P and D as perfectly as possible. Then adjust setpoint weight to extreme values and feel the difference. If you like the softer or sharper feel of a higher/lower setpoint weight, try re-tuning P and D around that value. Finally, adjust setpointn transition to try to tune out bounce at the end of flips and rolls (or other negative stick input.  
 ####AILERON8 comment:   
