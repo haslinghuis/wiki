@@ -201,7 +201,7 @@ Also worth noting your set-point will likely shift depending on your specific se
 
 ####More on SetPoint Posted by joshuabardwell  
 For setpoint transition, the wiki has a good explanation:  
-- [Reference PIDC and Setpoint discussion on 3.0.x Wiki page](https://github.com/betaflight/betaflight/wiki/BetaFlight-3.0.x)   
+ [Reference PIDC and Setpoint discussion on 3.0.x Wiki page](https://github.com/betaflight/betaflight/wiki/BetaFlight-3.0.x)   
 So:  
 Delta from error (high D term setpoint weight) has very sharp, immediate stick response. But may have problems with bounceback at the end of flips and rolls, and may provide less smooth flight (especially bad for some freestyle flyers). With high D term setpoint weight, the quad feels very connected and immediate, but also every. tiny. little. finger. motion. is translated instantly to quadcopter motion, which is not necessarily what every pilot wants.  
 Delta from measurement (low D term setpoint weight) has smoother and slower stick response. Quad feels less connected and immediate, but is smoother. Also, measurement is best at stopping bounceback/oscillation at the end of flips and rolls.  
