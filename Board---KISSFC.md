@@ -25,7 +25,7 @@ KISSFC is a STM32F3 based flight controller with integrated voltage regulator, b
   - Buttons: 1 - DFU
 
 ### Features
-  - Current Sensor: Yes (as of BF 3.2)
+  - Current Sensor: Yes (as of BF 3.1.6)
   - BlHeli passthrough: No (due to buffered outputs)
   - WS2811 Led Strip: Yes (as of BF 3.1)
   - Transponder: No
