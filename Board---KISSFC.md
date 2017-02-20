@@ -25,10 +25,21 @@ KISSFC is a STM32F3 based flight controller with integrated voltage regulator, b
   - Buttons: 1 - DFU
 
 ### Features
-  - Current Sensor: Yes (as of BF 3.2 use PITCH pad)
+  - Current Sensor: Yes (as of BF 3.2)
   - BlHeli passthrough: No (due to buffered outputs)
-  - WS2811 Led Strip: Yes (as of BF 3.1 use PWM 5 pad)
+  - WS2811 Led Strip: Yes (as of BF 3.1)
   - Transponder: No
+
+### KISS FC Betaflight additional features pad assigments
+
+PAD ON KISS FC|FUNCTION
+---|--------
+PITCH|Current sensor
+PWM5 (Motor 5)|LED strip
+AUX1|Softserial 1
+ROLL|Softserial 2
+
+Softserial pad assignment can be changed with the `resource` command. Current sensor and LED strip assignments are hard-coded and can not be changed runtime at the moment.
 
 ## Hardware Designs (if available)
 
@@ -74,16 +85,6 @@ To this:
 once I had that set everything checked out in the motors tab and typical props off benchtests... hover test completed. Hopefully I'll get a chance to get out and fly in the next few days and see how the new anti_gravity settings sort my pitch issues (sick of doing wheelies).
 
 Quick edit to note that I haven't yet bothered to see if telemetry will need to be remapped - I may mess with it later. 
-
-###KISS FC Betaflight features pinouts###
-This is as of BF 3.1.6
-
-PAD ON KISS FC|FUNCTION
----|--------
-PITCH|Current sensor
-PWM5 (Motor 5)|LED strip
-AUX1|Softserial 1
-ROLL|Softserial 2
 
 ## Other Resources
 
