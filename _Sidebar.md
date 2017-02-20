@@ -43,6 +43,7 @@
 
  - [AIORACERF3](/betaflight/betaflight/wiki/Board---AIORACERF3)
  - [AIR32](/betaflight/betaflight/wiki/Board---AIR32)
+ - [AIRBOTF4](/betaflight/betaflight/wiki/Board---AIRBOTF4FLIP32F4)
  - [ALIENFLIGHTF1](/betaflight/betaflight/wiki/Board---ALIENFLIGHTF1)
  - [ALIENFLIGHTF3](/betaflight/betaflight/wiki/Board---ALIENFLIGHTF3)
  - [BETAFLIGHTF3](/betaflight/betaflight/wiki/Board---BETAFLIGHTF3)
@@ -59,6 +60,7 @@
  - [F4BY](/betaflight/betaflight/wiki/Board---F4BY)
  - [FishDroneF4] (/betaflight/betaflight/wiki/Board---FishDroneF4)
  - [Flip32 F3 OSD] (/betaflight/betaflight/wiki/Board---Flip32-F3-OSD)
+ - [Flip32F4](/betaflight/betaflight/wiki/Board---AIRBOTF4FLIP32F4)
  - [FURYF3](/betaflight/betaflight/wiki/Board---FURYF3)
  - [FURYF4](/betaflight/betaflight/wiki/Board---FURYF4)
  - [FURYF7](/betaflight/betaflight/wiki/Board---FURYF7)
