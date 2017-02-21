@@ -152,6 +152,8 @@ Check the following:
 * Check RX basics (see below)
 * Reduce the amount of aux channels to reduce time for task RX
 * If the status light flashes slowly then the CPU could be over-taxed (see below).
+* Gyro didn't CAL upon FC boot-up due to the copter moving. Copter MUST NOT move to cal gyro. An LED (and beeper if connected) will flash three times when Gyro Cals. If it did not cal then do a Gyro CAL stick command or increase the Moron_threshold or enable cal gyro upon Arming (new is 3.0).  
+* Copter Tilted more than the 'small_angle' setting. Increase small_angle. To Arm at any angle set this to 180.  
 
 There is a new task scheduler present in firmware versions greater than 2.2.0 If upgrading from a version prior to this, then check to see if the FC status light is flashing. If it is then this indicates that there is not enough processing time to complete all the features that have been enabled.
  On newer versions on the ßF Configurator the CPU loading is displayed in the Status bar and MUST be less then 100%, preferably less than 50%. If at 100% then decrease the LOPP Rates (Gyro and/or PID), click Save and Reboot and recheck CPU loading.
