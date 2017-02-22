@@ -21,12 +21,12 @@ https://github.com/betaflight/betaflight/issues?q=is%3Aissue+is%3Aclosed+sort%3A
 
 The Latest Development version of the Configurator is recommended. Link on [Home page](https://github.com/betaflight/betaflight/wiki).  
 
-Some known limitations are:  
+###Some known limitations are:  
  3.1 seems most issues are fixed. Any issues discovered should be in the 3.1.X wiki page now.
 
 - All STM32F1 Target do not support DSHOT
 - Some ESCs that have a signal filter cap may not work until the cap is removed. 
-
+- Some targets have a DMA conflict between a motor and the LEDs. Some have work-arounds but some do not. If no work-around is listed then disable LEDs and contact the FC designer/support.
 
 ###A quick way to determine IF the Firmware flashed into the FC supports Dshot:  
 Go to the CLI and type "get pwm". All settings with 'pwm' in the name will be shown with all options.
