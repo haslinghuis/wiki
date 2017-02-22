@@ -477,6 +477,8 @@ Good tuning just makes that feel tighter and helps removing unnecessary oscillat
 
 d. Battery Factor: "A while ago someone took over my pids to his quad with same setup and he said it didn't feel good. So I flew his setup and it indeed felt like PIDs were twice as low as they should be! It appeared he was using almost 2 years old (Turnigy) Nanotechs completely lost their power. Even I feel huge difference between different batteries I have." - Boris comment
 
+There is also a Wiki page titled "BlackBox log and Usage" with general BB info (links) and how to use BB to analyze Filters.
+
 ##Why does my copter behave erratic after a crash ?
 Some people have experienced erratic behavior (jitters etc) after a crash,  as if P went up significantly.
 
@@ -512,6 +514,8 @@ Take a look at this overview as it describes how this should be done: http://www
 Some additional information can be found from 6:20 onwards in this video: http://www.youtube.com/watch?v=htkw7d97bOo
 
 NOTE: Failsafe configuration has changed in Betaflight 2.4.0 onwards and CF Configurator 1.2.0. The relevant documentation can be found [here](https://github.com/cleanflight/cleanflight/blob/master/docs/Failsafe.md). 
+
+[Setting Up Failsafe on FrSky BeeBrain](http://fpvobsession.com/setting-up-failsafe-on-frsky-beebrain/)  
 
 ##What is the best practice for configuring the Throttle end points ?
 
