@@ -515,6 +515,7 @@ Some additional information can be found from 6:20 onwards in this video: http:/
 
 NOTE: Failsafe configuration has changed in Betaflight 2.4.0 onwards and CF Configurator 1.2.0. The relevant documentation can be found [here](https://github.com/cleanflight/cleanflight/blob/master/docs/Failsafe.md). 
 
+A good method for RX's that do NOT have a FailSafe output (no Pulses):
 [Setting Up Failsafe on FrSky BeeBrain](http://fpvobsession.com/setting-up-failsafe-on-frsky-beebrain/)  
 
 ##What is the best practice for configuring the Throttle end points ?
