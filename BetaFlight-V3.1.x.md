@@ -216,6 +216,10 @@ If setpoint weight is low, then setpoint transition won't do anything because th
 Also, bear in mind that you should DEFINITELY be tuning P and D when playing with these numbers. P and D interact strongly, and setpoint weight interacts strongly with D, so these three parameters are all interlinked and tuning them is NOT for amateurs. What I would suggest is starting with the default values then tuning P and D as perfectly as possible. Then adjust setpoint weight to extreme values and feel the difference. If you like the softer or sharper feel of a higher/lower setpoint weight, try re-tuning P and D around that value. Finally, adjust setpointn transition to try to tune out bounce at the end of flips and rolls (or other negative stick input.  
 ####AILERON8 comment:   
 I've been raising the setpoint transition to reduce roll/flip bounceback in general. Even if your PIDs are at default this setting has a very pronounced effect on bounce back reduction. Before utilizing this feature I left bounce back removal at the tail-end of tuning. Where as now it's the first thing I do and is easily accomplished.  
+####Another use of SetPoint to get a better Tune from fftunes:  
+The main issue was, it was too soft/unstable at midstick, but at the same time i could not really increase P much more or it would become excessively noisy. The result was i-term going all over the place to a degree where it caused very unreliable stick feel and even drifting.
+By increasing transition setpoint from 0.35 to 0.50 it became very solid and reliable around mid-stick and small quick moves, as well as in fast turns where i hold sticks with relatively small inputs.   
+I think after I "fixed it" with transition setpoint, I could even back off with the P's a bit again.   
 
 ####To check for DMA conflicts do the following (thanks teralift):  
 (1) Disable Dshot, enable LED_STRIP, save & reboot.  
