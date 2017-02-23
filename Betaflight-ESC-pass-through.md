@@ -34,6 +34,7 @@ Procedure is easy:
 - Select USB-uart
 - Select dshot hex file to flash
 - You can enable fast bootloader for faster flashing.
+- Connect lipo
 - Press flash and you will see led blinking on the escs.
 - Disconnect lipo and usb cable and you are now able to use dshot
 
