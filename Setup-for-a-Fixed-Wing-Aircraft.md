@@ -1,7 +1,7 @@
 Some have asked if BetaFlight can control a Fixed wing aircraft. 
 
 ###Boris' Note:  
-####I would not trust that as nobody is testing it, but it may work.
+####I would not trust this as nobody is testing it, but it may work.
 ####iNav fork puts a lot of effort in airplane modes. Its better to try them. 
 
 ####The page is to help those that wish to Experiment and Test Fixed Wing functionality with BetaFlight. 
