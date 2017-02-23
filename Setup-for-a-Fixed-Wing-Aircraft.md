@@ -1,4 +1,11 @@
-Some have asked if BetaFlight can control a Fixed wing aircraft. This Wiki Page should have all the info needed here.
+Some have asked if BetaFlight can control a Fixed wing aircraft. 
+
+###Boris' Note:  
+####I would not trust that as nobody is testing it, but it may work.
+####iNav fork puts a lot of effort in airplane modes. Its better to try them. 
+
+####The page is to help those that wish to Experiment and Test Fixed Wing functionality with BetaFlight. 
+####Do Remember that YOU are the TESTER.
 
 Reference the [Betaflight resource remapping](https://github.com/betaflight/betaflight/wiki/Betaflight-resource-remapping).
 Note: Pin re-mapping requires BetaFlight 3.1 an higher.  
