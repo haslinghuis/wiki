@@ -1,5 +1,6 @@
 ##Betaflight 3.1.6 - patch?
 - No hex files, just source code: https://github.com/betaflight/betaflight/releases/tag/v3.1.6
+- Lower F1 looptime restriction  
 
 ##Betaflight 3.1.5
 Link to Release: https://github.com/betaflight/betaflight/releases/tag/v3.1.5
