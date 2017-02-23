@@ -1,7 +1,6 @@
 ##Betaflight 3.1.5
 Link to Release: https://github.com/betaflight/betaflight/releases/tag/v3.1.5
 
-
 - Restore multiwii throttle expo
 - Fix Motor 6 for SIRINFPV
 - [VTX SmartAudio] Fix status string for user frequency mode
@@ -19,6 +18,8 @@ Notes:
  - limit of 6 aux channels. Scheduled to be fixed in next release on 1 March 2017.   
  - 1 softserial is enough. But in 3.1.6 you will be able to assign it manually through resource command.
 Also it will not be required to short TX and RX anymore for smartport on softserial.  
+
+ - Config 1.9.2 has a Spek Sat setting bug which is fixed in 1.9.3
 
 ##Betaflight 3.1.4 - patch
 - No hex files, just source code: https://github.com/betaflight/betaflight/releases/tag/v3.1.4
@@ -139,6 +140,8 @@ NOTE- For the features in this release you will need to use the following Versio
 - RC13 - reported bug where blackbox would disable itself is now resolved   
 
 -  Save blackbox file from dataflash freezes mid-download in recent versions of configurator. Configurator Issue #411 - https://github.com/betaflight/betaflight-configurator/issues/411 
+
+- Configurator seems to have a Bug when setting Spektrum Sat RX protocol. Update the Config Version 1.9.3 to fix this.
 
 #####Note: With v3.1 and later, servos must be configured manually by resource cli command.Do NOT use  CHANNEL_FORWARDING. It does something really nasty.     
 [See Teralift's post here](https://www.rcgroups.com/forums/showpost.php?p=36792606&postcount=44331)   
