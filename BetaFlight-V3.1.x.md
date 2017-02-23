@@ -18,11 +18,10 @@ Link to Release: https://github.com/betaflight/betaflight/releases/tag/v3.1.5
 - Fix Tramp display issue for Raceband Channel 7 (was showing F8)
 - Decouple min_throttle and max_throttle from altitude hold
 
-####Notes: 
+####Known Bugs/Issues:: 
  - limit of 6 aux channels. Scheduled to be fixed in next release on 1 March 2017.   
  - 1 softserial is enough. But in 3.1.6 you will be able to assign it manually through resource command.
 Also it will not be required to short TX and RX anymore for smartport on softserial.  
-
  - Config 1.9.2 has a Spek Sat setting bug which is fixed in 1.9.3
 
 ##Betaflight 3.1.4 - patch
