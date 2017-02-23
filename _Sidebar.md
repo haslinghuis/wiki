@@ -32,7 +32,7 @@
  - [ESC-Telemetry](/betaflight/betaflight/wiki/ESC-Telemetry)
  - [CMS Screen Adjustment](/betaflight/betaflight/wiki/CMS-Adjusting-Screen)
  - [CMS on MWOSD](https://github.com/betaflight/betaflight/wiki/CMS-on-MWOSD)
- - [BetaFlight on a Fixed Wing Aircraft](https://github.com/betaflight/betaflight/wiki/Setup-for-a-Fixed-Wing-Aircraft)  
+ - [Setup on a Fixed Wing Aircraft](https://github.com/betaflight/betaflight/wiki/Setup-for-a-Fixed-Wing-Aircraft)  
 
 # Development
 
