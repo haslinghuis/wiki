@@ -42,11 +42,11 @@ I'll update again after I get it installed in the plane, reversing figured out, 
 Here is a screenshot of my smix: 
 https://www.rcgroups.com/forums/showthread.php?2464844-Betaflight-Flight-Controller-Firmware-Discussion-Thread/page3040#post36958637  
 
-`# smix    `
-`smix 0 2 0 100 0 0 100 0    `
-`smix 1 3 1 100 0 0 100 0    `
-`smix 2 4 2 100 0 0 100 0    `
-`smix 3 5 7 100 0 0 100 0    `
+# smix    
+smix 0 2 0 100 0 0 100 0    
+smix 1 3 1 100 0 0 100 0    
+smix 2 4 2 100 0 0 100 0    
+smix 3 5 7 100 0 0 100 0    
 
 Part 3:  
 Well the thing about it continuing a roll for three revs after you finish a rolling maneuver is true, lol. I've set the I-terms to 0. My original understanding was that there is I term decay and I term gradually becomes less and less effective as it wound up and built up error would be forgiven after a while.  
