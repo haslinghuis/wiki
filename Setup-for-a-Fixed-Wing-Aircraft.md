@@ -41,8 +41,7 @@ I'm more interested in the applications of level mode. For people new to airplan
 I'll update again after I get it installed in the plane, reversing figured out, and a testflight in.
 Here is a screenshot of my smix: 
 https://www.rcgroups.com/forums/showthread.php?2464844-Betaflight-Flight-Controller-Firmware-Discussion-Thread/page3040#post36958637  
-
-# smix    
+   
 smix 0 2 0 100 0 0 100 0    
 smix 1 3 1 100 0 0 100 0    
 smix 2 4 2 100 0 0 100 0    
