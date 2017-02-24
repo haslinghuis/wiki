@@ -39,7 +39,7 @@ It's interesting to watch the PIDs wind-up with throttle applied. They wind up u
 I'm more interested in the applications of level mode. For people new to airplanes or for strangers who ask if they can fly, having a working level mode means hey why not. On small 3d foamies at least, what is usually a touchy aerobatic machine could be turned into what amounts to a 3 channel trainer with level mode working.
 
 I'll update again after I get it installed in the plane, reversing figured out, and a testflight in.
-Here is a screenshot of my smix: 
+Here is a screenshot of my smix:   
 https://www.rcgroups.com/forums/showthread.php?2464844-Betaflight-Flight-Controller-Firmware-Discussion-Thread/page3040#post36958637  
    
 smix 0 2 0 100 0 0 100 0    
