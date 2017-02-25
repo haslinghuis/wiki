@@ -96,6 +96,11 @@ Note: When DSHOT is enabled Unsyced PWM is disabled. DSHOT always runs at the PI
 1 to 47 = Reserved for special commands.  
 48 to 2047 = Active throttle control.  
 
+###Does Dshot work on other models besides the Quad-X, like hex and tri-copters?
+They should surely work if the FC was designed for them.
+You will need to re-map a motor to a Servo for a Tri-copter. See the SERVO_TILT wiki page for help.
+There is also info for Tri-copter setup on the MOTOLAB page.  
+
 ###It all start with the Dshot thread (link above):  
 The information posted herein is all provided on an AS-IS basis.  
 It has been derived from posts on this forum (RCGroups/Boris' Betaflight, FC, DSHOT and ESC threads), and direct correspondences with users.
