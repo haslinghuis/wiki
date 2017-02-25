@@ -66,6 +66,15 @@ https://www.rcgroups.com/forums/showpost.php?p=36589146&postcount=2787
 - Report that with the Mod and remapping to run DSHOT there is a conflict with DMA for LEDs with Motor #4.  
 Currently LEDs need to be disabled to run DSHOT. 
 
+## Tri-copter with Dshot ESCs on BF3.1:  
+Must add wire from PPM to output1 for Dshot.
+Servo must be on output 5 or 6 (Timer restriction (see Servo_tiltl wiki page).
+Re-map motor 5 to Servo 1 for follow CLI commands (servo on output 5):
+
+'resource MOTOR 5 none
+'resource servo 1 A01
+'save
+
 ## Other Resources
 
 Setup Guides: 
