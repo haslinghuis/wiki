@@ -71,9 +71,9 @@ Must add wire from PPM to output1 for Dshot.
 Servo must be on output 5 or 6 (Timer restriction (see Servo_tiltl wiki page).
 Re-map motor 5 to Servo 1 for follow CLI commands (servo on output 5):
 
-'resource MOTOR 5 none
-'resource servo 1 A01
-'save
+`resource MOTOR 5 none  `
+`resource servo 1 A01  `
+`save  `
 
 ## Other Resources
 
