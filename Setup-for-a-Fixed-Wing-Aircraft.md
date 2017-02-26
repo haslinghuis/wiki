@@ -54,3 +54,35 @@ Part 4:
 Well I've come to the conclusion that airplanes just don't need gyro stabilization, I'll keep playing with it, because it's interesting, the plane does fly. So far the only neat thing it has accomplished are hard stops for point rolls.
 I have D at 3 right now and it still has too much of a dampening effect, As you approach your desired rate it steps in and backs off the rate for you. Putting D at 0 and upping rates a little.   
 After turning up the rates and getting rid of D it's starting to make sense. Going to lower my P on ailerons and introduce D back in there and see where it's at. Flies kind of weird, I guess we'll see if it works out.   
+Part 4:  
+It is interesting to fly. I think the application is better suited to something that is less impacted by the extra 7 grams or so a Naze32 adds. It really isn't awful but you can tell it is carrying more weight. The plane I have it on is a Twisted Hobbies Crack Laser. It's an EPP plane for 3D aerobatics that has an AUW of 160-170g or so. I've been flying 3d foamies for many years now and it's the only thing that I'm pretty good at. Auto level works, I need to tune it in better though. With an airplane, especially a flat wing foamie like this one, the elevator doesn't control pitch proportional to servo travel. So it needs some tuning. It works really well for the roll axis, but it doesn't have enough authority on the pitch axis. I have to hold the stick full back to get it to nose up enough to fly, with 45 degree angle limits in place. The strength parameter of angle mode might need to have pitch and roll decoupled for this to work really well for airplanes. The weather took a turn here so it may be a few days or more before I can really mess with the settings and see if I can get it working well.  
+I need to experiment with the D-term and the D setpoint weight. The most interesting application of this is getting roll hesitations to be unnaturally crisp.  
+
+Realistically using a gyro on a plane like this is more pain than gain, but it's fun to experiment. I think the best application for these boards are quads and hopefully some experimenting will be done and helicopters will work too.
+
+The smix I'm using looks like this:  
+`# smix`   
+`smix 0 2 0 100 0 0 100 0` /*pairs PID roll with motor out 1*/   
+`smix 1 3 1 100 0 0 100 0` /*pairs PID pitch with motor out 2*/   
+`smix 2 4 2 100 0 0 100 0` /*pairs PID yaw with motor out 3*/   
+`smix 3 5 7 100 0 0 100 0` /*Attempt to pair RC Throttle to motor out 4*/   
+
+The smix is for single servo ailerons, elevator, and rudder. It's meant to run 3 servos off the first 4 outputs and an esc off the 4th. For my Naze, maybe it's the board or the code, but I can't get anything to output of motor out 4. I ended up hooking the throttle directly to the receiver and that's fine. But for dual aileron applications you'll want to use motor out 4 for another aileron. Or for when you need other things to work.  
+To understand what all the parameters of smix do, you can google cleanflight smix and it is explained well.  
+I think for flying wing smix there are video tutorials of people setting this up.  
+
+My resource setup looks like this:  
+`# resource`  
+`resource SERVO 1 A08`  
+`resource SERVO 2 A11`  
+`resource SERVO 3 B06`  
+`resource SERVO 4 B07`  
+These are the resources used by motors 1-4 typically. Interestingly, as identified in the GUI under the servos tab and in the smix commands, as you may have noticed, all the servo labels in the resource command are -1 in value compared to the values used in smix and in the servos tab. So that is one bug that could be fixed. You must use an index between 1 and 8 when resourcing a servo. I tried to resource servo 0 and servo -1 to compensate for the strangeness and it doesn't let you.    
+These resources are also only applicable to the Naze32 I'm pretty sure. Other boards are likely to have a different IO and to determine where to assign the servos can be done with the resource command. You will be able to see where motors 1-4 are resourced and just swap in the servos to these places.  
+ISSUES:  
+I've been having issues with the BF CLI by the way. Sometimes I get garbage characters in the top of the display and other weird things happen sometimes. I flashed cleanflight to my Naze and in the cleanflight CLI it's all pretty and straight. Not that betaflight doesn't work, but it looks a little weird, thought I'd say something.
+The smix only seems to work on mixer customairplane. When I use mixer custom I can't get the servos to work.
+As mentioned only the first three motor outs do anything, the fourth I couldn't get to work. The last two MAY work, I don't have pins soldered on the board right now....
+I'm not aware of a servo update frequency parameter but having one could be good for airplanes. Those with digital servos can use 200-300hz update frequencies. For future helicopter applications I know that some tail servos have a smaller centerpulse, sort of half way between oneshot and PWM.  
+
+I think that's everything I learned so far regarding betaflight and planes.  
