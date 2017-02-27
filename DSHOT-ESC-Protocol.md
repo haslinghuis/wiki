@@ -235,7 +235,12 @@ Connect ESC for motor 2 to 'LED' pin on the board.
  `resource motor 4 A08`  
  `save`  
 
-  
+  Daryoon got Dshot outputs & the LED Strip to both work:
+
+`resource ppm none  `  
+`resource motor 4 A15 `  
+`save  ` 
+
 
 ####FC Targets with DSHOT code added but in need of testing:
 - SPARKY2
