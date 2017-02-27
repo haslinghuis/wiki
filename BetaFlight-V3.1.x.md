@@ -167,7 +167,8 @@ NOTE- For the features in this release you will need to use the following Versio
 - RC12 ( -25Jan2017)- FPV angle mix applied to actual rates (also a fix) // Fix truncated blackbox logs // Redefined OSD defaults to not have PIDs by default on screen // Increased configurable filter range  
 - RC13 - reported bug where blackbox would disable itself is now resolved   
 
--  Save blackbox file from dataflash freezes mid-download in recent versions of configurator. Configurator Issue #411 - https://github.com/betaflight/betaflight-configurator/issues/411 
+-  Save blackbox file from dataflash freezes mid-download in recent versions of configurator. Configurator Issue #411 - https://github.com/betaflight/betaflight-configurator/issues/411  
+  Fixed in Configurator 1.9.3
 
 - Configurator seems to have a Bug when setting Spektrum Sat RX protocol. Update the Config Version 1.9.3 to fix this.
 
