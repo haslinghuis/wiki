@@ -1,6 +1,31 @@
-##Betaflight 3.1.6 - patch?
-- No hex files, just source code: https://github.com/betaflight/betaflight/releases/tag/v3.1.6
-- Lower F1 looptime restriction  
+##Betaflight 3.1.6 - 
+https://github.com/betaflight/betaflight/releases  
+
+New:  
+- Thanks to @jflyper Dynamic bidirectional softserial. Assigned through resource command. (NAZE users dont have to short TX and RX now to get Smartport working)
+- Updated SDK to 6.2.1 2016q4
+
+Fixes:   
+- Fixed limited max_aux for F1 and F3 to 6
+- Added 6 motor DSHOT support to XRACER target
+- Added Led Strip for KISSFC
+- Added current sensor pin for KISSFC
+- Enabled softserial for all targets
+- Fixed activation for HEADFREE mode
+- Fixed Led strip orientation for indicators
+- Fix artificial Horizon for rolling wrong way
+- Fix for 3D Dshot conversion in configurator
+- Fix led strip for KAKUTEF4
+- Fix targeted looptime
+- Fix inverted polarity DSHOT timers on F4
+- Disable DMA for SDcard for SPRACINGF3EVO
+- Softer dterm setpoint default
+- Fix filter bug for trying to filter over nyquist frequency (Not working 500hz mode)
+- Less restrictive on F1 looptime
+- Fix Spektrum bind for OmnibusF4
+
+Known issues/bugs:  
+- If your board has SDCARD blackbox and onboard Flash both available and you want to use onboard flash without inserted SDCARD you need to disable feature SDCARD, which is available from Configurator 1.9.3. Only BluejayF4 has both blackbox options available as far as it is known. (This is not just in 3.1.6, but also in previous versions)
 
 ##Betaflight 3.1.5
 Link to Release: https://github.com/betaflight/betaflight/releases/tag/v3.1.5
