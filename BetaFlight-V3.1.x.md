@@ -27,6 +27,8 @@ Fixes:
 Known issues/bugs:  
 - If your board has SDCARD blackbox and onboard Flash both available and you want to use onboard flash without inserted SDCARD you need to disable feature SDCARD, which is available from Configurator 1.9.3. Only BluejayF4 has both blackbox options available as far as it is known. (This is not just in 3.1.6, but also in previous versions)
 
+- Use Configurator 1.9.3
+
 ##Betaflight 3.1.5 - Maintenance Release 
 Link to Release: https://github.com/betaflight/betaflight/releases/tag/v3.1.5
 
