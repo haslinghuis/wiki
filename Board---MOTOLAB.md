@@ -60,7 +60,6 @@ Differences:
 A wire can be soldered from the PPM pin to the motor 1 header pin or just connect ESC#1 directly to the PPM pin.
 Note: Adding this wire is not required if you connect signal wire from ESC #1 directly to the PPM pin.  
  Move motor 1 from Output #1 header pin to the PPM input header pin.   
-[See MOTOLAB board for wiring detail ](https://github.com/betaflight/betaflight/wiki/Board---MOTOLAB)  
 
  Follow above and to re-map output type in CLI:  
 `resource ppm none  `  
