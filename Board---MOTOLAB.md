@@ -68,7 +68,7 @@ Currently LEDs need to be disabled to run DSHOT.
 
 ### Tri-copter with Dshot ESCs on BF3.1:  
 Must add wire from PPM to output1 for Dshot.
-Servo must be on output 5 or 6 (Timer restriction: see SERVO_TILT wiki page). Do NOT enable SERVO_TILT, selecting TRICOPTER directs Yaw stic to Servo 1.  
+Servo must be on output 5 or 6 (Timer restriction: see SERVO_TILT wiki page). Do NOT enable SERVO_TILT, selecting TRICOPTER directs Yaw stick to Servo 1.  
 Re-map motor 5 to Servo 1 with the following CLI commands (servo on output 5):
 
 `resource MOTOR 5 none  `   
