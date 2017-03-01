@@ -45,5 +45,5 @@ Btw also castle escs can be flashed on the same way.
 <h3>Current Limiter<h3>   
 
 ##Always use a Current Limiter when ever a LiPo is connected on the Bench for Testing or ESC Flashing, Calibrating or any time the Configurator is open.   
-Light Bulb Current Limiter Build thread:   
+Light Bulb Current Limiter Build thread, ie: The Smoke Stopper:   
 https://www.rcgroups.com/forums/showthread.php?2327875-DIY-SAVE-YOUR-ELECTRONICS!-BUILD-A-SmokeStopper%C2%99-!
