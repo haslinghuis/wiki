@@ -33,8 +33,8 @@ Procedure is easy:
 - Go to kiss flash loader app and select com port to connect.
 - Select USB-uart
 - Select dshot hex file to flash
-- You can enable fast bootloader for faster flashing.
-- Connect lipo
+- You can enable fast bootloader for faster flashing. Some report Fast not working so disable if fails.
+- Connect lipo. Do not connect before this step.
 - Press flash and you will see led blinking on the escs.
 - Disconnect lipo and usb cable and you are now able to use dshot
 
@@ -44,6 +44,6 @@ Btw also castle escs can be flashed on the same way.
 
 <h3>Current Limiter<h3>   
 
-Always use a Current Limiter when ever a LiPo is connected on the Bench for Testing or ESC Flashing, Calibrating or any time the Configurator is open.  
+##Always use a Current Limiter when ever a LiPo is connected on the Bench for Testing or ESC Flashing, Calibrating or any time the Configurator is open.   
 Light Bulb Current Limiter Build thread:   
 https://www.rcgroups.com/forums/showthread.php?2327875-DIY-SAVE-YOUR-ELECTRONICS!-BUILD-A-SmokeStopper%C2%99-!
