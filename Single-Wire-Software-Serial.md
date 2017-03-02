@@ -85,6 +85,6 @@ KISS (KISSFC)
 
 | Pin | Label             | S.Audio | Tramp | S.Port | Notes                  |
 |-----|-------------------|---------|-------|--------|------------------------|
-| A13 | PWM5              | ?       | ?     | NG     | @basdelfos     |
-| A02 | PITCH             | ?       | ?     | OK     | @basdelfos    |
+| A13 | PWM5              | OK (@alenl2)       | ?     | NG  @basdelfos/@alenl2 |    |
+| A02 | PITCH             | NG (@alenl2)       | ?     | OK  @basdelfos/@alenl2 |    |
 | A15 | ROLL              | ?       | ?     | OK     | @basdelfos |
