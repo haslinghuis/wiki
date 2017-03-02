@@ -241,9 +241,10 @@ Connect ESC for motor 2 to 'LED' pin on the board.
   `resource motor 4 A15 `  
   `save  ` 
 
+####FC Target reported NOT working
+- SPARKY2 - Oz reports:  I tried DS600 and only motors 2 & 4 will spin, 1 & 3 will not spin, I am guessing motor output 1 & 3 don't have dma's or ?  
 
 ####FC Targets with DSHOT code added but in need of testing:
-- SPARKY2
 - All other targets not listed above.   
 
 ###ESCs supporting Dshot:
