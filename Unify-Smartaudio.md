@@ -32,7 +32,7 @@ There is a little info on smartaudio setup in here, but you may need to do a bit
 
 https://github.com/betaflight/betaflight/issues/1029
 
-http://www.team-blacksheep.com/tbs-u...5g8-manual.pdf   
+http://team-blacksheep.com/tbs-unify-pro-5g8-manual.pdf   
 
 ####Here is a tutorial by Amano13:  
 https://tmr.kiwi/betaflight-mwosd-smartaudio-cms/
