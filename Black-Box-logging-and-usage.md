@@ -25,7 +25,7 @@ Do click on all the buttons to learn what they do and '?' for the Keyboard Short
 Super simple visual explanation of the gyro data sequence through the filters:  
 raw gyro->(debug gyro here)->soft lpf->(debug notch here)->notch1->notch2  
 
-###BetaFlight Ver2.X
+####BetaFlight Ver2.X
 1. Use this CLI setting: "set debug_mode = notch"  
 Make sure your blackbox logging rate is at least 1khz. The logging rate is based on pid-loop so 1/4 for 4k pid loop would be enough.
 2. Fly as usual
@@ -41,7 +41,7 @@ The debug setting will log additional data to debug[0]-debug[3]:
 * debug[2] is unfiltered and raw gyro data on pitch axis.
 * debug[3] is only notch filtered gyro data on pitch axis.
 
-###Changes were made in BetaFlight 3.0 & 3.1 along with a newer BB Viewer  
+####Changes were made in BetaFlight 3.0 & 3.1 along with a newer BB Viewer  (see debug_mode on the 3.1.x wiki page). 
 1. CLI DEBUG_MODE now ca be GYRO or NOTCH. This will log all three axis but only for Pre-LPF or Pre-Notch Filter.
 2. Still Add a Custom Graph then select the debug Pre-filter.
 3. Analysis is the same.
