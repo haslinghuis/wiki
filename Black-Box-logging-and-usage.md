@@ -22,6 +22,10 @@ Do click on all the buttons to learn what they do and '?' for the Keyboard Short
 
 ### How to obtain data to evaluate noise frequency for setting the Notch filter.
 
+Super simple visual explanation of the gyro data sequence through the filters:  
+raw gyro->(debug gyro here)->soft lpf->(debug notch here)->notch1->notch2  
+
+###BetaFlight Ver2.X
 1. Use this CLI setting: "set debug_mode = notch"  
 Make sure your blackbox logging rate is at least 1khz. The logging rate is based on pid-loop so 1/4 for 4k pid loop would be enough.
 2. Fly as usual
@@ -29,11 +33,7 @@ Make sure your blackbox logging rate is at least 1khz. The logging rate is based
 4. Add all debug options to your graph setup
 5. Click on debug[0]  Note: This action of clicking on the graph section traces to the right will show the analyzer screen :D 
 6. Make the graph fullscreen (next to playback options)
-7. You can now see where your motor noise is most significant
-
-Two images showing how to view the spectrum and the result of the notch filter.
-![How to view Spectrum](https://cloud.githubusercontent.com/assets/17462561/17593758/43dbdefa-5fe7-11e6-9fa5-bd8e5f54e710.jpg)
-![Filter result](https://cloud.githubusercontent.com/assets/17462561/17593764/45ec1a84-5fe7-11e6-80fd-861efeb56827.jpg)
+7. You can now see where your motor noise is most significant  
 
 The debug setting will log additional data to debug[0]-debug[3]:
 * debug[0] is unfiltered and raw gyro data on roll axis.
@@ -41,8 +41,14 @@ The debug setting will log additional data to debug[0]-debug[3]:
 * debug[2] is unfiltered and raw gyro data on pitch axis.
 * debug[3] is only notch filtered gyro data on pitch axis.
 
-Super simple visual explanation of the gyro data sequence through the filters:  
-raw gyro->(debug gyro here)->soft lpf->(debug notch here)->notch1->notch2  
+###Changes were made in BetaFlight 3.0 & 3.1 along with a newer BB Viewer  
+1. CLI DEBUG_MODE now ca be GYRO or NOTCH. This will log all three axis but only for Pre-LPF or Pre-Notch Filter.
+2. Still Add a Custom Graph then select the debug Pre-filter.
+3. Analysis is the same.
+
+Two images showing how to view the spectrum and the result of the notch filter.
+![How to view Spectrum](https://cloud.githubusercontent.com/assets/17462561/17593758/43dbdefa-5fe7-11e6-9fa5-bd8e5f54e710.jpg)
+![Filter result](https://cloud.githubusercontent.com/assets/17462561/17593764/45ec1a84-5fe7-11e6-80fd-861efeb56827.jpg)
 
 If the notch filter is disabled 0/1 and 2/3 will be identical. Otherwise you can directly see what the filter does.
 More details on phase shift for example can be found here: https://github.com/betaflight/betaflight/pull/668
