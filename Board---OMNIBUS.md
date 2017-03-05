@@ -62,6 +62,10 @@ _(add links board descriptions here that are similar in features or function, bu
 
 - [SirinFPV](/betaflight/betaflight/wiki/Board---SIRINFPV)
 
+## Clones that use the same Target code
+
+FlipF3 OMNIBUS
+
 ## Variants
 
 OMNIBUS AIO F3 PRO - http://shop.myairbot.com/index.php/omnibus-prov1-72.html
@@ -76,6 +80,57 @@ _(add FAQs, known issues and workarounds specifically related to this board. ple
 
 _format is reporter [name], (status): issue contents_
 
+### Setup TRICOPTER in ßF 3.1.x
+This setup is for the Flip32 F3 omnibus board using Betaflight 3.1.6  
+First you need to setup the output motor # 4 to use as the servo controller.  
+In the Cli command you want the final results to look like the following for a F3 omnibus, others just subsitute you motor assignments.  
+
+CLI
+
+`# resource`  
+`resource BEEPER 1 C15`  
+`resource MOTOR 1 B08`  
+`resource MOTOR 2 B09`  
+`resource MOTOR 3 A03`  
+`resource MOTOR 5 B07`  
+`resource MOTOR 6 B06`  
+`resource SERVO 1 A02`  
+`resource PPM 1 B04`  
+`resource LED_STRIP 1 A08`  
+
+To get to the above, use the following commands in CLI
+
+`Resource`  
+
+Record what motor 4 xx ( I.E. the xx assignment, in this case it was A02)
+
+`Resource Motor 4 none`  
+`Resource Servo 1 A02`  
+`Save`  
+
+Enable the expert mode, on main page of CleanFlight top right.  
+Go to the Servo Tab (which will show up when you enable expert mode).  
+
+On the Servo Tab
+Select the line that has Servo 0 and go across and put a "tick Mark under CH4"
+
+`Save`  
+
+Connect your Tail servo to Motor 4 output.
+(I just used the signal wire attached to signal out on Motor 4)
+Make sure your servo has 5vdc and a ground from your PDB or whatever source you wish to use.
+
+My tail servo is working correctly for the Flip F3 Omnibus.
+
+Couple of other pointers:  
+
+1. If the servo is moving in the wrong direction, make the change in your transmitter.  
+2. It appears from what I can figure out on the Servo Tab selection vs the resource of a given Servo number,
+I.E. Servo1 cli, uses Servo 0 on the Servo Tab page So on the Servo Tab page it is Servo # (resource) -1 for Servo Tab.  
+3. If you wish to assign a servo to a Aux function.. Then the tick mark would be used in the A1-Axx box. So if you wished to assign a Say Aux 4, put the tick mark in A4.  
+4. Use the save button....on each change.
+
+Regards BobFlyer
 
 ## Other Resources
 
