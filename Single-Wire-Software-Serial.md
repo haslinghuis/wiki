@@ -88,3 +88,12 @@ KISS (KISSFC)
 | A13 | PWM5              | OK (@alenl2)       | ?     | NG  @basdelfos/@alenl2 |    |
 | A02 | PITCH             | NG (@alenl2)       | ?     | OK  @basdelfos/@alenl2 |    |
 | A15 | ROLL              | ?       | ?     | OK     | @basdelfos |
+
+---
+BLUEJAYF4
+
+| Pin | Label             | S.Audio | Tramp | S.Port | Notes                  |
+|-----|-------------------|---------|-------|--------|------------------------|
+| B00 | ?                 | NG (v1) | ?     | NG     | staryk@rcg             |
+| B01 | ?                 | NG (v1) | ?     | NG     | staryk@rcg             |
+
