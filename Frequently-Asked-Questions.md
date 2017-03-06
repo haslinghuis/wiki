@@ -58,6 +58,7 @@
 1. [Is there a way to download blackbox logs through a terminal client ?](#is-there-a-way-to-download-blackbox-logs-through-a-terminal-client-)  
 1. [Why do LED strips not work ?](#why-do-led-strips-not-work-)
 1. [Recently with the temps dropping, my quad has started to develop a random twitch. Anyone else experience random issues when it's 20'ish degree's F outside ?](#recently-with-the-temps-dropping,-my-quad-has-started-to-develop-a-random-twitch.-Anyone-else-experience-random-issues-when-it's-20'ish-degree's-F-outside-)
+1. [Why can't I connect to my flight controller using MSP over UART1?]
 
 **If your question is not listed above then please check the following pages:**
 
@@ -1599,3 +1600,9 @@ Not twitches, but glitches in general, you bet! I used to run a mobile DJ busine
 - Condensation: While in the cold your components will not condensate water, but your goggles will certainly fog-up. If you're running Fatsharks with the little fans then you're pretty much all set, but for those who have no way to get rid of the fog without using your hands, I don't know what to tell you. When you bring your rig back into a warm house quickly after being in sub-freezing temps for an extended period of time, the condensation can be severe enough to permanently destroy things that shouldn't get wet. It doesn't matter how much Corrosion-X your squirt on your ESC's, FC, or PDB, they are going to get sopping wet if you don't gradually raise their temps to room temperature. Trust me on this folks… If you aren't slowly raising your temps then all it takes are a few flights before your quads start shorting, buzzing, and catching fire…
 
 - Slow Decay due to the Cold: Okay, here comes the main point. If you are flying your quads in the freezing cold on a semi-regular basis you will be shortening the life of every single component considerably. I'm not complaining to you, I'm just delivering the facts. Even if you are gradually raising the temps on your equipment when moving them from the cold, every single component and circuit is being stressed to the max from all the contraction and expansion, and you can't completely stop condensation from building. Here's the nail in the coffin!  Sadly, your LiPo is already being strained due to the cold for reasons I won't go into for brevities sake. Your pack really doesn't want to give the extra juice even though it's being forced to do so… It's a bad recipe for sure, and ironically, what happens is you will land with MUCH hotter ESC's, motors, and worst of all, LiPo's. Really watch-out, because your packs can get so hot they catch fire.  Magnets… Magnets do like the moderate cold fortunately and [actually increase increases in strength by a small amount down to around -125°C. ](https://www.kjmagnetics.com/blog.asp?p=temperature-and-neodymium-magnets)
+
+## Why can't I connect to my flight controller using MSP over UART1?
+
+Since Betaflight 3.1, MSP on UART is no longer enabled by default. To enable it, you need to build a custom version of Betaflight and flash it to your flight controller. ([Related issue](https://github.com/betaflight/betaflight/issues/2566)) 
+
+Follow the instructions under "development" on this wiki, but add `OPTIONS=USE_MSP_UART` to your make command. For example: `make CC3D OPTIONS=USE_MSP_UART`. Instead of `CC3D`, you can use [any target that Betaflight supports](#which-hex-target-do-i-download-and-flash-to-my-flight-controller-).
