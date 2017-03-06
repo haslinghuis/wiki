@@ -174,7 +174,7 @@ NOTE- For the features in this release you will need to use the following Versio
 
 - Configurator seems to have a Bug when setting Spektrum Sat RX protocol. Update the Config Version 1.9.3 to fix this.
 
-- Everyone having issues with weird freakouts,  make sure that this isn't the culprit. I have no idea if it would be the cause but just throwing this out there, as I know a lot of people don't read the changelog.  
+- Everyone having issues with weird freakouts,  make sure that this isn't the culprit. I have no idea if it would be the cause but just throwing this out there, as I know a lot of people don't read the changelog. Adamtfc  
 There is no check for the D Term Notch Filter to ensure that the cutoff frequency ('D Term Notch Filter Cutoff') is not higher than the mid frequency ('D Term Notch Filter Frequency'). WARNING: If a cutoff frequency that is higher than the mid frequency is configured, this can result in a runaway motor acceleration. (Applies to versions prior to 3.1.6 too.)  
 
 #####Note: With v3.1 and later, servos must be configured manually by resource cli command.Do NOT use  CHANNEL_FORWARDING. It does something really nasty.     
