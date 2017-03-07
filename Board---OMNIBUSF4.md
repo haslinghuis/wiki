@@ -1,12 +1,18 @@
 # OMNIBUS F4 AIO, F4 V2/V3 and F4 Pro
 
-### Special note for OMNIBUS F4 V3 users
+### Note for OMNIBUS F4 V3 users
 
 OMNIBUS F4 V3 SBUS header through-hole is connected to **UART6**, not UART1 like all others.
 
 For board identification, see
 [OMNIBUS F4 V2 & V3 : Identifying revisions](https://www.rcgroups.com/forums/showthread.php?2837385-OMNIBUS-F4-V2-Identifying-revisions)
 
+### LED strip pin assignment on F4 V2/V3 and F4 Pro.
+
+v3.1.x and earlier uses PWM5 (OMNIBUSF4 target) or PWM6 (OMNIBUSF4SD target) for LED strip, not the LED labelled pin. This was a work around for the original OMNIBUS F4 AIO having invalid pin on the designated pin. However, newer revisions of the OMNIBUS F4 family has valid (usable) pin assigned to the LED pin. Unfortunately, the pin is not ready for use with BF3.1.x, but will be in v3.2 as a default. It means the current wiring will not work unless explicitly remapped to the current pin.
+Please be advised to take a look at this page when v3.2 is released.
+
+### Board naming
 These boards are called differently depending on the distributor.
 ```
 +----------------------+----------------------------+-------------+
