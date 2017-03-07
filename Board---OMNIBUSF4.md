@@ -1,5 +1,11 @@
-# OMNIBUS F4, F4 V2 and F4 Pro
+# OMNIBUS F4 AIO, F4 V2/V3 and F4 Pro
 
+### Special note for OMNIBUS F4 V3 users
+
+OMNIBUS F4 V3 SBUS header through-hole is connected to **UART6**, not UART1 like all others.
+
+For board identification, see
+[OMNIBUS F4 V2 & V3 : Identifying revisions](https://www.rcgroups.com/forums/showthread.php?2837385-OMNIBUS-F4-V2-Identifying-revisions)
 
 These boards are called differently depending on the distributor.
 ```
