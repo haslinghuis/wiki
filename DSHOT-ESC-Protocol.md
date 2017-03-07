@@ -255,6 +255,16 @@ KISS24 ESC Beep Codes:
 - 2beep/second = no valid signal for at last 1/3 second, it disarmed and stopped the motor (ESC failsave)
 - 3beep/second = it couldn't start the motor or the motor stopped because it was blocked
 
+ - NOTE: There Seems to be an Issue with the KISS24 Firmware when running faster Loop Rates. 
+Rossbow reports: We have been doing some testing of the Kiss 24a esc's on BF and it appears the they will not run safely at 4 or 8 khz with Dshot.  
+If you want to test it take the props off and arm the quad in air mode and just let it run at idle on the bench.
+At 8khz we are seeing between 1 and 6 mins before the esc's start shutting down, it seems they may be getting too many crc errors at 8khz.  
+At 1 and 2 khz we can get 15mins or more, So be warned as you most likely will get dead ducks at 8khz.  
+I have tested 1.08a, 1.08f and 110b RC7 all with the same issue. Oneshot 42 and 125 are fine.   
+BTW its not Betaflight related, it seems the reason the Kiss FC works with the 24a esc's is because it only runs on 1khz with Kiss fw and up to 4 khz on Betaflight. The higher you go in khz the shorter the time before the esc's start to shutdown.  
+So the Kiss FC on BF fw may not show the issue because in the cold weather the flight times are short and at 4khz you may get a full 2 to 2.5min flight with no issue.   
+My advice for using these 24a esc's on BF is either run oneshot42 or run no more than 2khz on Dshot. This is not a guarantee but the best solution until a permenent fix can be found. The Kiss hardware is more than capable of running 8 + khz so I would say its just an esc fw issue.   
+
 ####BLheli-S:
 
 DSHOT on BLHELI_S ESCs is supported starting with v16.43 and Offically supported in v16.5 and Up. 
