@@ -59,7 +59,7 @@
 1. [Why do LED strips not work ?](#why-do-led-strips-not-work-)
 1. [Recently with the temps dropping, my quad has started to develop a random twitch. Anyone else experience random issues when it's 20'ish degree's F outside ?](#recently-with-the-temps-dropping,-my-quad-has-started-to-develop-a-random-twitch.-Anyone-else-experience-random-issues-when-it's-20'ish-degree's-F-outside-)
 1. [Why can't I connect to my flight controller using MSP over UART1?](#why-cant-i-connect-to-my-flight-controller-using-msp-over-uart1)
-1. [Is it possible that we can flash the Frsky receivers thru the flight controller like we now flash the ESC?](#is-it-possible-that-we-can-flash-the-Frsky-receivers-thru-the-flight-controller-like-we-now-flash-the-esc)
+1. [Is it possible that we can flash the Frsky receivers thru the flight controller like we now flash the ESC?](#is-it-possible-that-we-can-flash-the-frsky-receivers-thru-the-flight-controller-like-we-now-flash-the-esc)
 
 **If your question is not listed above then please check the following pages:**
 
