@@ -263,7 +263,9 @@ At 1 and 2 khz we can get 15mins or more, So be warned as you most likely will g
 I have tested 1.08a, 1.08f and 110b RC7 all with the same issue. Oneshot 42 and 125 are fine.   
 BTW its not Betaflight related, it seems the reason the Kiss FC works with the 24a esc's is because it only runs on 1khz with Kiss fw and up to 4 khz on Betaflight. The higher you go in khz the shorter the time before the esc's start to shutdown.  
 So the Kiss FC on BF fw may not show the issue because in the cold weather the flight times are short and at 4khz you may get a full 2 to 2.5min flight with no issue.   
-My advice for using these 24a esc's on BF is either run oneshot42 or run no more than 2khz on Dshot. This is not a guarantee but the best solution until a permenent fix can be found. The Kiss hardware is more than capable of running 8 + khz so I would say its just an esc fw issue.   
+My advice for using these 24a esc's on BF is either run oneshot42 or run no more than 2khz on Dshot. This is not a guarantee but the best solution until a permanent fix can be found. The Kiss hardware is more than capable of running 8 + khz so I would say its just an esc fw issue.   
+juuuut:  No haste I'm on it. I talked with Boris and i have a 8k setup here where I can reproduce it. seems to be some watchdog misbehavior in some throttle situations. but I think i will have a new version soon that fixes it!  
+regards, Felix   
 
 ####BLheli-S:
 
