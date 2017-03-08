@@ -12,7 +12,7 @@ D looks forward to see if the axis is reaching its intended value too quickly. I
 
 ## Steps 
 
-1. Make sure your motors are balanced and that your quad is as free from vibrations as practical. Trying to tune PIDs without having a clean gyro signal is like trying to build a house without having a proper foundation. [This video](https://www.youtube.com/watch?v=vjEsYei12Jw) explains an easy way to check for vibrations coming from your motors. [Adjust your lowpass filter settings](https://github.com/borisbstyle/betaflight/wiki/Gyro-filtering-recommendations) as necessary to get a clean gyro signal.
+1. Make sure your motors are balanced and that your quad is as free from vibrations as practical. Trying to tune PIDs without having a clean gyro signal is like trying to build a house without having a proper foundation. [This video](https://www.youtube.com/watch?v=vjEsYei12Jw) explains an easy way to check for vibrations coming from your motors. [Adjust your lowpass filter settings](https://github.com/betaflight/betaflight/wiki/Gyro-&-Dterm-filtering-recommendations) as necessary to get a clean gyro signal.
 
 2. It's essential that these step be done in Acro mode even if you are usually a Level/Horizon flyer.  Angle/Horizon modes have their own values that interfere with tuning.  Example PID values shown below correspond to the Rewrite PID controller (PID controller #1). Set the TPA value to 0 while performing this initial tune. TPA can be added at a later date if needed.
 
