@@ -266,6 +266,7 @@ So the Kiss FC on BF fw may not show the issue because in the cold weather the f
 My advice for using these 24a esc's on BF is either run oneshot42 or run no more than 2khz on Dshot. This is not a guarantee but the best solution until a permanent fix can be found. The Kiss hardware is more than capable of running 8 + khz so I would say its just an esc fw issue.   
 juuuut:  No haste I'm on it. I talked with Boris and i have a 8k setup here where I can reproduce it. seems to be some watchdog misbehavior in some throttle situations. but I think i will have a new version soon that fixes it!  
 regards, Felix   
+Alpha fix: https://www.rcgroups.com/forums/showpost.php?p=37048819&postcount=3510  
 
 ####BLheli-S:
 
