@@ -59,6 +59,7 @@ SPRACINGF3 (by @jflyper)
 | A3  | M8                | OK      | ?     | ?      |                        |
 
 Note: Some reports CH1 and CH2 not working: (https://github.com/betaflight/betaflight/issues/2532#issuecomment-284669276)
+
 ---
 SPRACINGF3EVO
 
