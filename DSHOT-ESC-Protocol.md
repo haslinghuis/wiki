@@ -360,6 +360,8 @@ https://www.rcgroups.com/forums/showpost.php?p=36245544&postcount=1848
 - DYS XSD20A | XSD30A - New product announcement:  
 https://www.rcgroups.com/forums/showthread.php?t=2784634#post36278564  
 - Emax Lightning S 35A - 
+- Flycolor Raptor BLS-02 -   
+Cap removal: https://www.rcgroups.com/forums/showpost.php?p=37070719&postcount=10  
 - FVT Littlebee 20A-S   
 - FVT LittleBee-Spring 20Ax4 - Claims Dshot but Unknown  
 Thread: https://www.rcgroups.com/forums/showthread.php?2800280-Favourite-FVT-LittleBee-Spring-20Ax4-4-in-1-Blheli_S-ESC-w-built-in-5V-12V-BEC  
