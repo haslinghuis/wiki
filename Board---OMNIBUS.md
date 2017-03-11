@@ -82,6 +82,7 @@ _format is reporter [name], (status): issue contents_
 
 ### Setup TRICOPTER in ßF 3.1.x
 This setup is for the Flip32 F3 omnibus board using Betaflight 3.1.6  
+The Servo needs an external 5V source with enough current to power the servo. The Omnibus' on-board 5V will not power a servo.  
 First you need to setup the output motor # 4 to use as the servo controller.  
 In the Cli command you want the final results to look like the following for a F3 omnibus, others just subsitute you motor assignments.  
 
