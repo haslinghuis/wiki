@@ -44,7 +44,6 @@ softsr (softsr@yahoo.de)
 ## Maintainers
 
 softsr
-
 mikeller
 
 #Images:
