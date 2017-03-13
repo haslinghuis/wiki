@@ -6,7 +6,6 @@ All in one created by Exuav (https://www.facebook.com/EXUAV/), includes: FC (F4)
 ## MCU, Sensors and Features
 
 ### Hardware
-_(Fill in hardware specs and add any not listed)_
   - MCU: STM32F405
   - IMU: ICM-20608
   - IMU Interrupt: SPI 
