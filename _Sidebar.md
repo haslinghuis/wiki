@@ -90,6 +90,7 @@
  - [Rotorgeeks SSD](https://github.com/betaflight/betaflight/wiki/Board---Rotorgeeks-SSD)
  - [SINGULARITY](/betaflight/betaflight/wiki/Board---SINGULARITY)
  - [SIRINFPV](/betaflight/betaflight/wiki/Board---SIRINFPV)
+ - [SOULF4] (/betaflight/betaflight/wiki/Board---SOULF4)
  - [SPARKY](/betaflight/betaflight/wiki/Board---SPARKY)
  - [SPARKY2 - Taulabs docs](https://github.com/TauLabs/TauLabs/wiki/Sparky2)
  - [SPRACINGF3](/betaflight/betaflight/wiki/Board---SPRACINGF3)
