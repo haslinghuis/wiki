@@ -13,7 +13,7 @@ All in one created by Exuav (https://www.facebook.com/EXUAV/), includes: FC (F4)
   - Hardware UARTS: 1
   - OSD: YES, BetaFlight OSD (STM32 controls OSD chip over SPI in DMA mode).
   - Blackbox: Yes (32GB SD Card Support)
-  - PPM/UART Shared: UART2
+  - PPM/UART Shared: UART1, UART3, UART6, SOFTSERIAL x 2
   - Battery Voltage Sensor: Yes
   - Integrated Voltage Regulator: Yes
   - Buttons: F4 Boot mode
