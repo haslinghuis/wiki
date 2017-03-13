@@ -16,9 +16,9 @@ The protocol is driven by the iBus receiver, currently either an IA6B or
 IA10. All iBus traffic is little endian. It begins with the iBus rx
 querying for a sensor on the iBus:
 
-  /---------\
- | IBUS RX | > Hello sensor at address 1, are you there?
- \---------/     [ 0x04, 0x81, 0x7A, 0xFF ]
+    /---------\
+    | IBUS RX | > Hello sensor at address 1, are you there?
+    \---------/     [ 0x04, 0x81, 0x7A, 0xFF ]
 
     0x04       - Packet Length
     0x81       - bits 7-4 Command (1000 = discover sensor)
@@ -44,9 +44,9 @@ Having learned it's address, the sensor simply echos the message back:
 On receipt of a response, the iBus rx next requests the sensor's type:
 
 
- /---------\
- | IBUS RX | > Sensor at address 1, what type are you?
- \---------/     [ 0x04, 0x91, 0x6A, 0xFF ]
+    /---------\
+    | IBUS RX | > Sensor at address 1, what type are you?
+    \---------/     [ 0x04, 0x91, 0x6A, 0xFF ]
 
     0x04       - Packet Length
     0x91       - bits 7-4 Command (1001 = request sensor type)
@@ -76,9 +76,9 @@ The iBus rx then begins a continual loop, requesting measurements from
 each sensor discovered:
 
 
- /---------\
- | IBUS RX | > Sensor at address 1, please send your measurement
- \---------/     [ 0x04, 0xA1, 0x5A, 0xFF ]
+    /---------\
+    | IBUS RX | > Sensor at address 1, please send your measurement
+    \---------/     [ 0x04, 0xA1, 0x5A, 0xFF ]
 
     0x04       - Packet Length
     0xA1       - bits 7-4 Command (1010 = request measurement)
