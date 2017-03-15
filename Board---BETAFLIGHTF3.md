@@ -12,15 +12,15 @@ _(Fill in hardware specs and add any not listed)_
   - IMU Interrupt: 
   - BARO: no
   - VCP: 
-  - Hardware UARTS: 
+  - Hardware UARTS: 3
   - OSD: uses a AB7456 chip
   - Blackbox: SD Card
   - PPM/UART Shared: 
   - Battery Voltage Sensor: 
   - Current sensor: 0.5 mOhm
-  - Integrated Voltage Regulator: 
+  - Integrated Voltage Regulator: 3A, 5V or 3V for RX and VBAT or 5V for VTX/camera with filtered AGND
   - Brushed Motor Mosfets: 
-  - Buttons: 
+  - Buttons: BOOT button
 
 ### Features
 
