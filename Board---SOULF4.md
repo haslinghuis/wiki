@@ -47,7 +47,8 @@ _(add your name here if you help test or contribute code for this board)_
 REVO F4
 
 ## FAQ & Known Issues
-Board has SWD pins broken out on it's back with the following pinout: GND SWCLK SWD NRST VDD
+* PB2/BOOT1 pin is not grounded on this board, seems to be floating, and hence board may refuse to go into DFU mode even with the boot pads shorted. This issue may me solved my running a small jumper wire from PB2 to GND.
+* Board has SWD pins broken out on it's back with the following pinout: GND SWCLK SWD NRST VDD
 
 ## Image
 
