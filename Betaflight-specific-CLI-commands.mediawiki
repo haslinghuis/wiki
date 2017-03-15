@@ -499,9 +499,9 @@ If the threshold is too low, a quick push forward on the stick may not accumulat
 A combination of a lower threshold and a higher PID I value may be useful if you want more I to deal with really windy days (i.e. to manage low amplitude relatively low frequency uncommanded inputs more aggressively) but you don't want or are getting excessive I effects during commanded flips, rolls etc. The default value of 200 seems about right, however at this point in time the optimal value is not known with great certainty.   
 
 <br/>
-'''set dynamic_pid = ON'''<br/>
-<i>[ON,OFF]</i><br/>
-- not sure is new to 2.8.0 or what it does  
+<strike>''''set dynamic_pid = ON''''<br/>
+<i>[ON,OFF]</i><br/></strike>
+- removed in 3.0.0
 
 <br/>
 '''set fast_pwm_protocol = ONESHOT125'''<br/>
