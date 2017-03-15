@@ -25,7 +25,7 @@
  - [Remapping Motors](/betaflight/betaflight/wiki/Remapping-Motors-with-Resource-Command-(3.1))
  - [SERVO_TILT for 3.1](https://github.com/betaflight/betaflight/wiki/SERVO_TILT-for-3.1)
  - [CHANNEL_FORWARDING for 3.1](https://github.com/betaflight/betaflight/wiki/CHANNEL_FORWARDING-for-3.1)
- - [DSHOT ESC Protocol](/betaflight/betaflight/wiki/DSHOT ESC Protocol) 
+ - [DSHOT ESC Protocol](/betaflight/betaflight/wiki/DSHOT-ESC-Protocol) 
  - [ESC Programming Pass-through](/betaflight/betaflight/wiki/Betaflight-ESC-pass-through)
  - [TBS Unify SmartAudio](/betaflight/betaflight/wiki/Unify-Smartaudio)
  - [IRC Tramp](/betaflight/betaflight/wiki/IRC-Tramp)
