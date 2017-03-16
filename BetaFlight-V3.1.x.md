@@ -32,7 +32,7 @@ Boris: This will be addressed in 3.1.7
 
 - Use Configurator 1.9.3
 
-##Betaflight 3.1.5 - Maintenance Release 
+## Betaflight 3.1.5 - Maintenance Release 
 Link to Release: https://github.com/betaflight/betaflight/releases/tag/v3.1.5
 
 - Restore multiwii throttle expo
@@ -48,18 +48,18 @@ Link to Release: https://github.com/betaflight/betaflight/releases/tag/v3.1.5
 - Fix Tramp display issue for Raceband Channel 7 (was showing F8)
 - Decouple min_throttle and max_throttle from altitude hold
 
-####Known Bugs/Issues:: 
+#### Known Bugs/Issues:: 
  - limit of 6 aux channels. Scheduled to be fixed in next release on 1 March 2017.   
  - 1 softserial is enough. But in 3.1.6 you will be able to assign it manually through resource command.
 Also it will not be required to short TX and RX anymore for smartport on softserial.  
  - Configurator 1.9.2 has a Spek Sat setting bug which is fixed in 1.9.3
 
-##Betaflight 3.1.4 - patch
+## Betaflight 3.1.4 - patch
 - No hex files, just source code: https://github.com/betaflight/betaflight/releases/tag/v3.1.4
 - Simplify anti gravity
 - with throttle expo fixes 
 
-##Betaflight 3.1.3 - Maintenance Release
+## Betaflight 3.1.3 - Maintenance Release
 Link to Release: https://github.com/betaflight/betaflight/releases/tag/v3.1.3
 
 - Minor optimalisations to PID code
@@ -69,7 +69,7 @@ Note from Boris:
 3.1.2 would have been latest, but as we find more things that are worth releasing we bring out the new patch.
 Update to patches keeps your settings btw. You don't have to erase it. 
 
-##Betaflight 3.1.2 - Maintenance Release
+## Betaflight 3.1.2 - Maintenance Release
 Link to Release: https://github.com/betaflight/betaflight/releases/tag/v3.1.2  
 
 - Fixed scaling issue where min_throttle would affect rcCommand Throttle
@@ -83,15 +83,15 @@ Ok here this one should be the last one. Lets move to 3.2 now!
 I know they still maybe be some target related issues, but there is not much to do about.
 Soon there will be a list of targets divided in 2 categories. There will be a list of FULLY supported FC's where devs spend time to make it all work and there will be the list of best effort supported targets there from those we don't own or where the manufacturers don't provide enough support for it. That doesn't mean that targets will get removed, just less guaranteed support of features ! So if someone reports dshot or blackbox not working on targets he or she will have to complain to the actual shop where they got it from.   
 
-#####Note: Throttle expo works as regular expo now without even throttle mid involved.  
+##### Note: Throttle expo works as regular expo now without even throttle mid involved.  
 This is actually a temporary situation until custom throttle curve is finished (expected in 3.2).  
 The reason for current temporary situation is because this part of code was mixing min_throttle into throttle value.  
 Maybe its best to not use it for now.  
 
-##Betaflight 3.1.1 - Maintenance Release
+## Betaflight 3.1.1 - Maintenance Release
 Link to Release: https://github.com/betaflight/betaflight/releases/tag/v3.1.1  
 
-####New:
+#### New:
 - Resource remapping command doesn't require to set it to NONE first. (you can paste your diff output now) @blckmn
 - Added KISSCC target @borisbstyle @ronlix
 - Added more OSD configurable features and warnings @jflyper @DanNixon
@@ -99,7 +99,7 @@ Link to Release: https://github.com/betaflight/betaflight/releases/tag/v3.1.1
 - Added Blackbox to CMS @DanNixon
 - Added VTX config over MSP @raphaelcoeffic
 
-####Fixed:
+#### Fixed:
 - Improved Iterm windup handling @borisbstyle @martinbudden
 - Fixed "diff" output for few OSD parameters @DanNixon
 - Simplified cli on F1 and F3 targets for more flash space @mikeller
@@ -113,7 +113,7 @@ Link to Release: https://github.com/betaflight/betaflight/releases/tag/v3.1.1
 NOTE- For the features in this release you will need to use the following Versions or Higher:  
 - Configurator 1.9.1
 
-##Betaflight 3.1.0-Release  
+## Betaflight 3.1.0-Release  
 
 Link to Releases: https://github.com/betaflight/betaflight/releases   
 Note: Embedded links to Videos are in the Github Release Notes.   
@@ -121,11 +121,11 @@ Note: Embedded links to Videos are in the Github Release Notes.
 Read here to Learn exactly what firmware issues and features are being worked on:
 https://github.com/betaflight/betaflight/issues?q=is%3Aissue+is%3Aclosed+sort%3Aupdated-desc  
 
-###Betaflight 3.1.0 (Release)   
+### Betaflight 3.1.0 (Release)   
 
 Betaflight firmware has undergone some major changes under the hood. Hardware drivers have been optimized to improve future maintainability, but also easier target and hardware support. The efficiency of the code has also been improved by a lot as Betaflight team reviewed each line of the code to squeeze every possible performance win out of it for flight performance purposes. The difference between the current release and previous one is over 1800 code commits by various developers. Only release notes highlights are represented. For full change history github commit history can be reviewed.  
 
-####Release note highlights:
+#### Release note highlights:
 
 - Added F7 support with already few supported targets - @sambas
 - Dynamic IO / pin allocation - @blckmn
@@ -158,7 +158,7 @@ NOTE- For the features in this release you will need to use the following Versio
 - Configurator 1.9.0
 - BlackBox Viewer 2.5.9
 
-###Bugs and fixes:  
+### Bugs and fixes:  
 - RC2 - Fix in rc expo symmetry // fix missing baro on some targets
 - RC3 - Enable experimental 32khz support
 - RC4 - Fix non MPU INT supporting targets // Added MPU Int NAZE // Fix adjustment for setpoint // Some cleanups
@@ -180,16 +180,16 @@ NOTE- For the features in this release you will need to use the following Versio
 - Everyone having issues with weird freakouts,  make sure that this isn't the culprit. I have no idea if it would be the cause but just throwing this out there, as I know a lot of people don't read the changelog. Adamtfc  
 There is no check for the D Term Notch Filter to ensure that the cutoff frequency ('D Term Notch Filter Cutoff') is not higher than the mid frequency ('D Term Notch Filter Frequency'). WARNING: If a cutoff frequency that is higher than the mid frequency is configured, this can result in a runaway motor acceleration. (Applies to versions prior to 3.1.6 too.)  
 
-#####Note: With v3.1 and later, servos must be configured manually by resource cli command.Do NOT use  CHANNEL_FORWARDING. It does something really nasty.     
+##### Note: With v3.1 and later, servos must be configured manually by resource cli command.Do NOT use  CHANNEL_FORWARDING. It does something really nasty.     
 [See Teralift's post here](https://www.rcgroups.com/forums/showpost.php?p=36792606&postcount=44331)   
 [Servo mapping on a Naze32 to use Servo_tilt by TeraLift](https://www.rcgroups.com/forums/showpost.php?p=36821753&postcount=44612)
 
-#####Notes from Boris:   
+##### Notes from Boris:   
 DSHOT1200 does work now but only on kiss24 that I know.
 We decided to add a lot of new stuff available from cli for testing purposes and try to only add proven things in the configurator.   
 
-###Questions and Answers about 3.1 from Boris' BetaFlight thread.    
-####question by Woody_99:  
+### Questions and Answers about 3.1 from Boris' BetaFlight thread.    
+#### question by Woody_99:  
 I've been flying a Naze32 on BF (3.01) for a while, and seems to be working fine for me.
 With all the code optimizations (noted in the WIKI), is the Naze still a viable option to continue with, or should I swap it out for a newer FC?  
 Answer from Boris:  
@@ -199,20 +199,20 @@ All optimizations only affect f3, f4 and f7 boards.
 Instead of running new versions of betaflight or reforking it you can simply stick to the version you use now for example. There is no solution for F1 boards in the future unfortunately and every new feature will NOT be included to it. You are for example willing to give up acc, but 100 others may not. So that's not a solution.  
 I see that Softserial does fit again since latest cleanups (RC9?). There is only like 1kb left on Naze now.  
 
-####question by fftunes:  
+#### question by fftunes:  
 If i run 8k/1k, will the PID loop be calculated from an average of the 8 gyro samples, or will it only use 1 sample out of 8?  
 Answer from Boris:  
 There is no averaging. There is IIR filtering, what works faster than averaging. Every sample it's information is taken to the next sample a bit. Btw you can enable simple averaging with chosing FIR filter style. Averaging gives a lot of delay typically.  
 It seems that a lot of guys really missed the early betaflights where all this was discussed a lot. All i can say is to read about the way how filtering works and look up about aliasing. (Filtering is explained in this Wiki)  
 
-####Question by spikerspike97:  
+#### Question by spikerspike97:  
 But why do my throttle and yaw rccommands have so much steps and the pitch and roll are super smooth as seen in the BB log?   
 Answer from Boris:   
 Because only roll and pitch have Derivative kick affect. Therefore only those are smoothed by default. You can enable the full smoothing in cli, but I suggest fly it like this.  
 Only reason for smoothed rc inputs is Derivative kick symptom where PIDsum can get very jerky.  
 Note: See the new "rc_interpolation_channels" CLI command below to smooth all channels.  
 
-####question by Ede2016:  
+#### question by Ede2016:  
 Can you please say a word about average CPU load for BF3.1.
 Do you suggest less than 50% in the configurator disarmed or armed or what's the best way to analyze which frequency is the maximum recommended?   
 Answer from Boris:   
@@ -222,13 +222,13 @@ Usually on high CPU usage more less prioritized things will stop working. For ex
 The only true danger with too high cpu before was that motor commands may overlap, but there is a lot of spacing in between all motor commands and it is protected as well with looptime limitations on different protocols.  
 I personally fly everything enabled except accelerometer on my rigs.  
 
-####Question by Jerm357:
+#### Question by Jerm357:
 Can anyone suggest some settings for "Angle Limit" and "Sensitivity" in 3.1.3 to get Angle mode to feel like it did in 3.0.1?  
 Answer from Boris:  
 Sensitivity 100
 Limit 70  
 
-####Someone mentioning that 3.1 was a bit more "bumpy" than 3.0.1. Is this true and what to adjust?
+#### Someone mentioning that 3.1 was a bit more "bumpy" than 3.0.1. Is this true and what to adjust?
 Boris' answer:  
 3.1 is indeed more "from error" based. Reduce your setpoint weight to make it smoother. I think the current defaults are a bit to much for some setups. Especially on end of fast flips or rolls.   
 In case some don't remember what the setpoint weight was doing. Just a quick explanation in easy language.  
@@ -239,7 +239,7 @@ But the effect of it is not really small at the moment.
 Comment from QuadMcFly:  
 Also worth noting your set-point will likely shift depending on your specific setup, so you can't assume it will be the same on every quad. Heavy, slow transitioning props will need a lower set-point than light fast changing props. For instance I had to run quite low on 5x4.5x3HBN props, but on the Lumenier ButterCutter I'm running almost all the way to the right. Basically I just turn it down till I stop getting bounce-back or "slaps" on hard flips and rolls.   
 
-####More on SetPoint Posted by joshuabardwell  
+#### More on SetPoint Posted by joshuabardwell  
 For setpoint transition, the wiki has a good explanation:  
  [Reference PIDC and Setpoint discussion on 3.0.x Wiki page](https://github.com/betaflight/betaflight/wiki/BetaFlight-3.0.x)   
 So:  
@@ -254,14 +254,14 @@ Here is how I think of it:
 
 If setpoint weight is low, then setpoint transition won't do anything because the setpoint can't really be reduced.  
 Also, bear in mind that you should DEFINITELY be tuning P and D when playing with these numbers. P and D interact strongly, and setpoint weight interacts strongly with D, so these three parameters are all interlinked and tuning them is NOT for amateurs. What I would suggest is starting with the default values then tuning P and D as perfectly as possible. Then adjust setpoint weight to extreme values and feel the difference. If you like the softer or sharper feel of a higher/lower setpoint weight, try re-tuning P and D around that value. Finally, adjust setpointn transition to try to tune out bounce at the end of flips and rolls (or other negative stick input.  
-####AILERON8 comment:   
+#### AILERON8 comment:   
 I've been raising the setpoint transition to reduce roll/flip bounceback in general. Even if your PIDs are at default this setting has a very pronounced effect on bounce back reduction. Before utilizing this feature I left bounce back removal at the tail-end of tuning. Where as now it's the first thing I do and is easily accomplished.  
-####Another use of SetPoint to get a better Tune from fftunes:  
+#### Another use of SetPoint to get a better Tune from fftunes:  
 The main issue was, it was too soft/unstable at midstick, but at the same time i could not really increase P much more or it would become excessively noisy. The result was i-term going all over the place to a degree where it caused very unreliable stick feel and even drifting.
 By increasing transition setpoint from 0.35 to 0.50 it became very solid and reliable around mid-stick and small quick moves, as well as in fast turns where i hold sticks with relatively small inputs.   
 I think after I "fixed it" with transition setpoint, I could even back off with the P's a bit again.   
 
-####To check for DMA conflicts do the following (thanks teralift):  
+#### To check for DMA conflicts do the following (thanks teralift):  
 (1) Disable Dshot, enable LED_STRIP, save & reboot.  
 (2) Goto CLI.  
 (3) Type "resource list".  
@@ -272,32 +272,32 @@ I think after I "fixed it" with transition setpoint, I could even back off with 
 (8) Type "resource list".  
 (9) Check if any of DMA resource assigned to motors is same as the one LED_STRIP is using.   
 
-###New CLI commands for 3.1:
+### New CLI commands for 3.1:
 
 Note: See the [3.0.x page](/betaflight/betaflight/wiki/BetaFlight-3.0.x) for CLI commands plus other features that were new in 3.0.x  
 See the [V2.x CLI Commands](/betaflight/betaflight/wiki/Betaflight-specific-CLI-commands) page for a history of CLI command changes. This WIKI has only documented Changes from being Forked from CleanFlight. Do see the CF docs.  
 
-####Resource Remapping
+#### Resource Remapping
 From betaflight v3.1 there is a new command to map resources. No more custom motor mixes just to move a motor pin.  
 [Resource Mapping](/betaflight/betaflight/wiki/Betaflight-resource-remapping) goes into further details on how to use this new command.  
 
-####set digital_idle_percent = 3.000
+#### set digital_idle_percent = 3.000
 <i>[0..20]<i>  
 Only used when a DSHOT ESC protocol is selected.  
 See [Setting Min Throttle with Dshot](/betaflight/betaflight/wiki/DSHOT ESC Protocol)
 
-####set anti_gravity_threshold = 350   - per Profile
+#### set anti_gravity_threshold = 350   - per Profile
 <i>[20..1000]<i>  
  To improve stability in fast changing G forces during flight. This applies to quick throttle jumps where multirotor can go through weightless transitions. In these cases the iterm can cause unwanted effects like pitching up or yawing due to strong changes in accumulation polarities.  
 To disable anti_gravity set anti_gravity_threshold = 1000.  
 See Discussion on Anti_gravity below.
 
-####set yaw_accel_limit =  20.000 - per Profile
+#### set yaw_accel_limit =  20.000 - per Profile
 <i>[0..50]<i>  
 Note from Boris: The old value was upscaled. This is the real value now in float representation.  
 Its representing deg/sec/ms. A bit easier to swallow for human.  
 
-####set gyro_isr_update = OFF  
+#### set gyro_isr_update = OFF  
 <i>[OFF..ON]<i>  
 From mjbudden:   
 gyro_isr_update is an experimental feature I have added. When set on, the gyro is read and filtered in the ISR (interrupt service routine). This is "unconventional" programming practice (many would frown upon doing this), which is why the default is off.  
@@ -305,23 +305,23 @@ Theoretically setting it on should produce some small performance improvements, 
 From Boris:   
 Might be useful on slower i2c targets like NAZE etc. Its for testing purposes. Things not mentioned in release notes and manuals are not meant to be changed generally unless you really want to be a "tester".   
 
-###New RC3 CLI commands:
+### New RC3 CLI commands:
 
-####set gyro_use_32khz = OFF  
+#### set gyro_use_32khz = OFF  
 <i>[OFF..ON]<i>  
 Only available on F4 & F7 targets.  
 Usually F4 board will run fine on 32kHz gyro and 16kHz pid loop. 32/32 is slightly too much for CPU. F7 target is now the only one able to run 32kHz/32kHz flawlessly with even accelerometer enabled. To enable 32kHz mode use CLI setting gyro_use_32khz = ON. (Configurator will not display correct speed until the next configurator update, but you will see the real cycletime). NOTE - only flight controllers with MPU6500, MPU9250, and ICM-series (eg ICM20689) gyro support 32kHz mode.  
 32khz is added just because it can, but no new harder filtering will be defaulted to that. If you want to fly 32khz you will have to try to optimise your filters by yourself.  
 Default filtering is good enough for 8k gyro sampling, but 32khz requires more filtering depending of setup.
 I did find out that old blheli esc's for example perform well under 32khz as those are less responsive, while blheli_s and other responsive esc's with better braking really suffer from micros on 32khz.  
-#####Note from Ksyrium:   
+##### Note from Ksyrium:   
 I have two BlueJay F4 rev 3. Initially they flew really wonky, until I learned how to properly soft mount the FC, a fully soft stack did not help to put it mildly.  
 Then one of them refused to arm on 32khz and had 50% CPU instead of 40% on the other. The fix was to set moron threshold to 100.   
-#####Note from arcaine25:  
+##### Note from arcaine25:  
 I want to run 32k/32k on that revolt V2, but the CPU is at 50%ish.. I know Boris said that would be fine, but I am a little OCD about things, and just don't feel like risking it. 32k/16k flies great as it is, so I couldn't imagine TOO much difference between now and 32/32.  
 While I didn't have to modify moron_threshold at all on the Revolt V2, I absolutely do have to on a Flip32 F4 with an MPU 9250. I have to set it to around 110 - 120 (i'd have to check) in order for it to work, otherwise the Gyro never cal's and it won't arm. Once I set the moron threshold, it works like a charm now that I soft mounted it correctly (previous post about it, as well as in the wiki :-) ). those M3 bobbins from RMRC are absolutely wonderful, and I ordered a bunch of them to keep on hand! Default in 3.1.5 is 48 for moron_threshold.    
 
-#####Question from  fftunes:  
+##### Question from  fftunes:  
 Did someone compare mpu6500 vs ICM20x at 32k? In Felix' tests the ICM20x did not look so well...  
 Boris' answer:   
 Yes I did. Zero difference.....absolutely zero difference.  
@@ -333,7 +333,7 @@ The old gyros like MPU60x0 had 3 separate internal gyros. Each axis had its own 
 What we need in drone industry is better gyros and not cheaper less power hungry ones as that's not relevant for us!
 If you ask me they could make a more expensive gyro with better quality targeted for drones.   
 
-###New RC6 CLI commands:  
+### New RC6 CLI commands:  
 
 Level mode has changed in 3.1 a bit. It got more parameters.  
 In the Configurator pid tab you can find 2 new level parameters.  
@@ -344,122 +344,122 @@ So for example sensitivity of 100 means that full stick would give you tilt of 1
 Lowering your sensitivity will give you smoother stick control. Maybe the defaults are a bit aggressive perhaps.  
 Rc rate or any other rate or expo parameter doesn't do anything for level modes.   
 
-####set level_limit = 70
+#### set level_limit = 70
 <i>[10..120]<i>  
  the maximum allowed angle in degrees  
 
-####set Level_sensitivity = 100
+#### set Level_sensitivity = 100
 <i>[10..200]<i>  
 the max deflection on full stick in degrees  
 
-###New RC10 CLI commands:  
+### New RC10 CLI commands:  
 
-####anti_gravity_gain = 4.000 - per Profile
+#### anti_gravity_gain = 4.000 - per Profile
 <i>[1..30]<i>
 Gain is the temporary iterm acceleration on rapid throttle moves.  
 Boris: Well fly and see how it goes on defaults and post some logs if you can.   
 To disable anti_gravity set anti_gravity_threshold = 1000. 
 See Discussion on Anti_gravity below.
 
-###Misc CLI commands that seem to be new in 3.1 
+### Misc CLI commands that seem to be new in 3.1 
 Note: Many have no information of how to use.
 
-####rc_interpolation_channels = RP
+#### rc_interpolation_channels = RP
 Allowed values: RP, RPY, RPYT   
 Smoothing of RX inputs for Roll, Pitch, Yaw, Throttle.
 
-####consumption_warning_percentage = 10
+#### consumption_warning_percentage = 10
 Allowed range: 0 - 100
 
-####displayport_msp_col_adjust = 0
+#### displayport_msp_col_adjust = 0
 Allowed range: -6 - 0
 
-####displayport_msp_row_adjust = 0
+#### displayport_msp_row_adjust = 0
 Allowed range: -3 - 0
 
-####sdcard_dma = ON
+#### sdcard_dma = ON
 Allowed values: OFF, ON   
 A report of setting this to OFF fix a BB logging issue on the BFF3 board. Boris has stated that this does not need to be done and an SDcard will work better with DMA on the BFF3.
 
-####blackbox_on_motor_test = OFF
+#### blackbox_on_motor_test = OFF
 Allowed values: OFF, ON
 
-####task_statistics = ON
+#### task_statistics = ON
 Allowed values: OFF, ON
 
-####beeper_inversion = ON
+#### beeper_inversion = ON
 Allowed values: OFF, ON
 
-####beeper_od = OFF
+#### beeper_od = OFF
 Allowed values: OFF, ON
 
-####ledstrip_visual_beeper = OFF
+#### ledstrip_visual_beeper = OFF
 Allowed values: OFF, ON
 
-####debug_mode = NONE (added in 3.0)  
+#### debug_mode = NONE (added in 3.0)  
 Allowed values: NONE, CYCLETIME, BATTERY, GYRO, ACCELEROMETER, MIXER, AIRMODE, PIDLOOP, NOTCH, RC_INTERPOLATION, VELOCITY, DFILTER, ANGLERATE, ESC_SENSOR, SCHEDULER, STACK   
 Enable additional value to be sent to a BlackBox Log which is useful to measure frequency of noise before filters and other debugging.
 
-###CLI Changes between 3.1.2 & 3.1.3:
+### CLI Changes between 3.1.2 & 3.1.3:
 
-####dump   
+#### dump   
 no longer outputs section name.
 
-####CLI name changes:
-#####rc_interpolation  => rc_interp
-#####rc_interpolation_channels => rc_interp_ch
-#####rc_interpolation_interval => rc_interp_int
-#####roll_yaw_cam_mix_degrees => fpv_mix_degrees
-#####telemetry_switch => tlm_switch
-#####telemetry_inversion => tlm_inversion
-#####frsky_default_lattitude => frsky_default_lat
-#####frsky_default_longitude => frsky_default_long
-#####frsky_coordinates_format => frsky_gps_format
-#####hott_alarm_sound_interval => hott_alarm_int
-#####pid_values_as_telemetry => pid_in_tlm
-#####battery_capacity => bat_capacity
-#####current_meter_scale => ibat_scale
-#####current_meter_offset => ibat_offset
-#####multiwii_current_meter_output => mwii_ibat_output
-#####battery_notpresent_level => bat_detect_thresh
-#####use_consumption_alerts => use_cbat_alerts
-#####consumption_warning_percentage => cbat_alert_percent
-#####throttle_correction_value => thr_corr_value
-#####set throttle_correction_angle => thr_corr_angle
-#####servo_lowpass_freq => servo_lowpass_hz
-#####servo_lowpass_enable => servo_lowpass
-#####airmode_activate_throttle => airmode_start_throttle
-#####dterm_lowpass_type => d_lowpass_type
-#####dterm_lowpass => d_lowpass
-#####dterm_notch_hz => d_notch_hz
-#####dterm_notch_cutoff => d_notch_cut
-#####vbat_pid_compensation => vbat_pid_gain
-#####anti_gravity_threshold => anti_gravity_thresh
-#####dterm_setpoint_weight => d_setpoint_weight
-#####level_stick_sensitivity => level_sensitivity
-#####level_angle_limit => level_limit
+#### CLI name changes:
+##### rc_interpolation  => rc_interp
+##### rc_interpolation_channels => rc_interp_ch
+##### rc_interpolation_interval => rc_interp_int
+##### roll_yaw_cam_mix_degrees => fpv_mix_degrees
+##### telemetry_switch => tlm_switch
+##### telemetry_inversion => tlm_inversion
+##### frsky_default_lattitude => frsky_default_lat
+##### frsky_default_longitude => frsky_default_long
+##### frsky_coordinates_format => frsky_gps_format
+##### hott_alarm_sound_interval => hott_alarm_int
+##### pid_values_as_telemetry => pid_in_tlm
+##### battery_capacity => bat_capacity
+##### current_meter_scale => ibat_scale
+##### current_meter_offset => ibat_offset
+##### multiwii_current_meter_output => mwii_ibat_output
+##### battery_notpresent_level => bat_detect_thresh
+##### use_consumption_alerts => use_cbat_alerts
+##### consumption_warning_percentage => cbat_alert_percent
+##### throttle_correction_value => thr_corr_value
+##### set throttle_correction_angle => thr_corr_angle
+##### servo_lowpass_freq => servo_lowpass_hz
+##### servo_lowpass_enable => servo_lowpass
+##### airmode_activate_throttle => airmode_start_throttle
+##### dterm_lowpass_type => d_lowpass_type
+##### dterm_lowpass => d_lowpass
+##### dterm_notch_hz => d_notch_hz
+##### dterm_notch_cutoff => d_notch_cut
+##### vbat_pid_compensation => vbat_pid_gain
+##### anti_gravity_threshold => anti_gravity_thresh
+##### dterm_setpoint_weight => d_setpoint_weight
+##### level_stick_sensitivity => level_sensitivity
+##### level_angle_limit => level_limit
 
-###New in 3.1.3
+### New in 3.1.3
 
-####set anti_gravity_rate_max = 80
+#### set anti_gravity_rate_max = 80
 Allowed range: 0 - 2000  
 See Discussion on Anti_gravity below.
 
-####set iterm_windup = 50
+#### set iterm_windup = 50
 Allowed range: 30 - 100   
 Boris' explanation:  
 Just a limit for how high i-term can grow, its threshold to prevent iterm to go nuts on high dynamic cases for example like fast stick inputs or some other scenarios.  
 I think the default value is pretty good from what I have seen from many setups I analyzed. I don't think you need to tune it unless you really suffer from high iterm windups.   
 
-###Removed from 3.1.3
-####accum_threshold = 200
-####set yaw_accum_threshold
+### Removed from 3.1.3
+#### accum_threshold = 200
+#### set yaw_accum_threshold
 
-##Discussions of new features:
+## Discussions of new features:
 
-###Anti_gravity:
+### Anti_gravity:
 
-####Posted by Vaflius:
+#### Posted by Vaflius:
 I have played with anti_gravity values a bit, but it is still very confusing. There are 3 values:  
 set anti_gravity_thresh = 350  
 set anti_gravity_gain = 3.000  
