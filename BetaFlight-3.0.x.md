@@ -1,5 +1,5 @@
 
-##BetaFlight 3.0  
+## BetaFlight 3.0  
 This is really a major release. The full detailed change list can be found in the the commit history.
 https://github.com/betaflight/betaflight/commits/master.  
 
@@ -24,7 +24,7 @@ Betaflight has 2 different goals.
 
 2) from scientific point of view it is good to keep improving and introduce new features where those who like to experiment can play with ans give valuable feedback. These are mostly burried in the cli   
 
-###Betaflight 3.0.1 (3.0 patch 1)
+### Betaflight 3.0.1 (3.0 patch 1)
 
 - Finalized OSD Code. (More OSD configuration options)
 - Changed Relaxation Parameter to act as transition (Helps better against bounce backs on higher rates with high setpoint weight). Config's two sliders are now Dterm Setpoint and Dterm Transistion. See addition to the 2DOF PIDC description.   
@@ -34,8 +34,8 @@ Betaflight has 2 different goals.
 - New filter defaults (notch filters enabled by default)
 - Added BEEBRAIN target
 
-##Betaflight 3.0.0-RC14 (F4 Support)
-####Final Release   
+## Betaflight 3.0.0-RC14 (F4 Support)
+#### Final Release   
 This is really a major release. The full detailled change list can be found in the the commit history.
 https://github.com/betaflight/betaflight/commits/master
 
@@ -86,21 +86,21 @@ Use 1.7.2 configurator for up to RC 7.
 The PID from 2.x versions can transfer to 3.0 as the scaling is the same, but you may expect that it should be possible to get higher PID's despite the same PID scaling due to new PID controller functionalities.
 
 
-###New CLI commands
+### New CLI commands
 Note that most are better to set using the new BetaFlight Config GUI.  
 If a CLI command is not listed here then it is most likely not changed so look in the Wiki 'CLI command' page.
 If in error, missing, etc then post a note about what is wrong in Boris' thread.
 Be sure you type 'help' in the CLI to see all commands.
 
-####diff<br />  
+#### diff<br />  
 To see what differs from default. This is handy to learn what the config GUI does with CLI settings.    
 This is also a better output for posting your CLI since then you post only setting that are different from the defaults instead of a 'dump' which outputs everything. 
-####diff all
+#### diff all
 shows differences in all profiles and rate profiles
-####diff all commented
+#### diff all commented
 to see defaults
 
-####feature SUPEREXPO_RATES or feature -SUPEREXPO_RATES<br />
+#### feature SUPEREXPO_RATES or feature -SUPEREXPO_RATES<br />
 Enables or disables the SuperExpo. If disabled as a Feature it can still be enable from a AUX (Mode tab) switch.
 
 RC12- Removed feature super expo. Super expo is active when srates are set
@@ -113,29 +113,29 @@ Also when you don't use rc expo now cpu usage will be lower as it the calculatio
 
 The current configurator doesn't display these rates properly, but that will happen soon when configurator gets an update. Probably next week.    
 
-####set rc_interpolation = AUTO<br />
+#### set rc_interpolation = AUTO<br />
 <i>[OFF, PRESET, AUTO, MANUAL]</i><br />
 This feature can cause the CPU to work harder to be able to run higher d setpoint weights and get cleaner motor outputs. Set to OFF if CPU loading is too high.  
 Note: Auto rc interpolation detects rx speed based on the reported speed by rx itself. But some receivers like also X4RS can report 9ms interval while it is actually 18ms on roll and pitch when using more channels than 8.  
 
-####set rc_interpolation_interval = 19<br />
+#### set rc_interpolation_interval = 19<br />
 <i>[1..50]</i><br />
 
-####set motor_pwm_protocol = OFF<br />
+#### set motor_pwm_protocol = OFF<br />
 <i>[OFF, ONESHOT125, ONESHOT42, MULTISHOT, BRUSHED]</i><br />
 
-####set zero_throttle_stabilisation = OFF<br />
+#### set zero_throttle_stabilisation = OFF<br />
 <i>[ON, OFF]</i><br />
 NOTE: this is only in versions up to RC5. In RC6 and up it is changed to:
-####pid_at_min_throttle = OFF<br />
+#### pid_at_min_throttle = OFF<br />
 <i>[ON, OFF]</i><br />
 With this OFF the PIDC does NOT respond to Sticks when Throttle values in below min_check, just like in the orignal MultiWii, BaseFlight or CleanFlight.
 
-####set airmode_activate_throttle = 1350<br />
+#### set airmode_activate_throttle = 1350<br />
 <i>[1000..2000]</i><br />
 That is the THRESHOLD (ACTIVATION) at which Airmode gets turned on the FIRST time the throttle hits this value. Airmode is then ON until DisArmed. This is to keep AirMode OFF while still on the ground. Once throttle goes above this setting AirMode is enabled through the entire throttle range.  
 
-####set yaw_rate_acceleration_limit = 50?<br />
+#### set yaw_rate_acceleration_limit = 50?<br />
 <i>[0..200?]</i><br /> Changed to rate_accel_limit in RC12  
 
 Yaw rate accel limit is the betaflight (2DOF) PIDC replacement for yaw jump prevention. It works differently and much better. It prevents quick accelerations and decelerations of yaw axis, what were actually causing jumps. For the Legacy PIDC use "d_yaw".   
@@ -143,84 +143,84 @@ Yaw rate accel limit is the betaflight (2DOF) PIDC replacement for yaw jump prev
 What we do with sticks is pushing the multirotors beyond their limits, but pid controller still wants to correct that and ramps up the motors what causes jerky behavior. With accel limits the pid controller has a protection to limit the acceleration and make it smoother what also helps against iterm windups we have seen getting worse on yaw axis.
 Same can also be done for roll and pitch axis what is disabled by default. It can give much smoother flight characteristics.
 
-####set gyro_lowpass_level = HIGH<br /> 
+#### set gyro_lowpass_level = HIGH<br /> 
 <i>[NORMAL, HIGH]</i><br />
  Sets how aggressive/steep the cutoff is. Steeper cutoff adds more delay compared to less steep one.  
 Boris states: "The gyro doesnt need a very steep cut if you ask me on a descent setup, while dterm is the one what needs more filtering".  
 
 ### The following CLI commands are Per PROFILE so can be different in each Profile.  
 
-####set pid_tolerance_band = 0<br />
+#### set pid_tolerance_band = 0<br />
 <i>[0..200]</i><br />  
-####set tolerance_band_min_reduction = 40<br />
+#### set tolerance_band_min_reduction = 40<br />
 <i>[0..100]</i><br />
 
 Reduces "hunting" effect from pid controller. 
 What does the pid controller do? It hunts for error all the time. Its mainly P and D what are the quickest ones. The problem is that when error is very small like in forward flight or hover where not much error needs to be corrected the pid controller gets more "relaxed" to not keep looking for perfection. The amount of pid relaxation is determined in percentage in tolerance_band_min_reduction.
 You can for example remove yaw noise on this way till certain level, but you may need to retune.  
 
-####set pid_controller = BETAFLIGHT<br />
+#### set pid_controller = BETAFLIGHT<br />
 <i>[LEGACY, BETAFLIGHT]</i><br />
 
-####set dterm_lowpass_level = HIGH<br /> 
+#### set dterm_lowpass_level = HIGH<br /> 
 <i>[NORMAL, HIGH]</i><br />
  Sets how aggressive/steep the cutoff is. Steeper cutoff adds more delay compared to less steep one.  
 
-####set dterm_lowpass = 100<br /> 
+#### set dterm_lowpass = 100<br /> 
 <i>[0..500]</i><br />
-####set dterm_notch_hz = 0<br />  Set to zero disables the filter.   
+#### set dterm_notch_hz = 0<br />  Set to zero disables the filter.   
 <i>[0..500]</i><br />
-####set dterm_notch_cutoff = 150<br />
+#### set dterm_notch_cutoff = 150<br />
 <i>[1..500]</i><br />
-####set dterm_setpoint_weight = 120<br />
+#### set dterm_setpoint_weight = 120<br />
 <i>[1..200]</i><br />
 
-###Changes in RC8 CLI 
+### Changes in RC8 CLI 
  New settings  
-####set blackbox_on_motor_test = OFF<br />
+#### set blackbox_on_motor_test = OFF<br />
 <i>[OFF,ON]</i><br />
 
-####diff showdefaults
+#### diff showdefaults
 
  New Defaults  
-####set dterm_notch_hz = 260<br />
-####set dterm_notch_cutoff = 160<br />
-####set pid_at_min_throttle = ON
+#### set dterm_notch_hz = 260<br />
+#### set dterm_notch_cutoff = 160<br />
+#### set pid_at_min_throttle = ON
 
 
-####set failsafe_procedure = DROP
+#### set failsafe_procedure = DROP
 <i>[AUTO-LAND,DROP]</i><br />
 
-###Changes in RC12 CLI 
+### Changes in RC12 CLI 
 Rc rate will be represented in deg/sec on the new configurator. That is your max stick reflection.  
 Also expo and other stuff will eventually be showed correctly with proper naming.  
 
-####set rate_accel_limit = 0  
+#### set rate_accel_limit = 0  
 <i>[0..1000]<i>  
 Increasing can help decrease Bounce back on low power copters.  
 
-####set yaw_rate_accel_limit = 220  
+#### set yaw_rate_accel_limit = 220  
 <i>[0..1000]<i>  
 Name changed.  See "yaw_rate_acceleration_limit" above for description.  
 
-####set accum_threshold = 130  
+#### set accum_threshold = 130  
 <i>[15..1000]<i>
-####set yaw_accum_threshold = 32  
+#### set yaw_accum_threshold = 32  
 <i>[15..1000]<i>   
 
-####set iterm_throttle_gain = 0  
+#### set iterm_throttle_gain = 0  
 <i>[0..200]<i>  
 Joshua Bardwell's comment:   
 iterm_throttle_gain came from a suggestion I made to increase I gain roughly as the derivative of the throttle position. I noticed that I was having to increase I gain significantly higher--maybe 20 points or so--to keep pitch consistent on throttle punch and chops. So I proposed that the I term be artificially boosted when the throttle was moving quickly. iterm_throttle_gain controls the strength of this parameter. 
 
-####set zero_cross_allowance = 2   
+#### set zero_cross_allowance = 2   
 <i>[0..50]<i> 
 
-####rc_rate, rc_rate_yaw   
+#### rc_rate, rc_rate_yaw   
 linear rate without curves. Configurable up to 2000deg/sec  
-####roll_srate, pitch_srate, yaw_srate   
+#### roll_srate, pitch_srate, yaw_srate   
 super expo rate like it was already, but now doesnt need a feature for being activated. Set it to 0 and super expo is disabled. You can now even have super expo on one axis and not on another for example
-####rc expo  
+#### rc expo  
 new expo what needs lower numbers with smoother curve and more center feel configurability. Usefull particularly for linear rates.  
 
 Note: The Srates replace the old rates for Roll, Pitch & Yaw so still can be adjusted with Apps that use MSP like MWOSD.
@@ -238,20 +238,20 @@ http://www.rcgroups.com/forums/showpost.php?p=35704903&postcount=38205
 
 Note: See the FAQ "What is the story on the different Rates and Expos?" for an in depth explanation on the history of Rates and Expos.  
 
-###Changes & new in RC13 CLI
+### Changes & new in RC13 CLI
 command dfu   
 forcing into DFU mode for F1 and F3  
 
-###Changes & new in RC14 CLI 
+### Changes & new in RC14 CLI 
 repurpose pterm setpoint weight to apply only on super rates  
 
 ## Discussions on using the new features:
 
-###Legacy PID controller
+### Legacy PID controller
 This is a rewritten MWREWRITE PID controller that uses integer math instead of Floating point math.  
 Some may like this one better and it is also recommended to run faster PID loop rates on F1 processors.
 
-###Betaflight 2DOF PID controller
+### Betaflight 2DOF PID controller
 This is a NEW PIDC controller.  
 
 Post from Boris about this differences between the Legacy and 2DOF PIDC: 
@@ -272,7 +272,7 @@ A very critical point to understand is that these characteristics ONLY come into
 A video by Joshua about this (note: for 3.0):  
 https://www.youtube.com/watch?v=4zncyYdAZPU
 
-###V3.0.1   
+### V3.0.1   
 Dterm setpoint: 0 = Measurement, 1 = error. Everything above 1 is more error / more stick derivative. 2 = 2 times error.  
 Second slider used to be P setpoint as originally described in 2DOF pid controllers and in release candidates, but I didn't find it as useful as I would like so it has been repurposed to be transition for the first slider.  
 When going into the roll its error and when returning from roll back to center stick it will be transitioned more into measurement to smooth it out.  
@@ -282,10 +282,10 @@ For example if you liked the smoothness of measurement on quick stick inputs etc
 I personally fly 2.0 setpoint with 0.3 transition. 0.3 is like exponential curve on stick returns. It will help slow down the rotational rate faster instead at the last moment to prevent bumpyness.
 
 
-####Not sure where new info on using the "setpoint weight" sliders and Tuning the newest BetaFlight PIDC (2DOF) should go but for now adding it here. These are Posts from people that have successfully used these to 'tune' out bad behavior.
+#### Not sure where new info on using the "setpoint weight" sliders and Tuning the newest BetaFlight PIDC (2DOF) should go but for now adding it here. These are Posts from people that have successfully used these to 'tune' out bad behavior.
 Maybe this should go into a New FAQ. Post in Boris' thread suggestions.
 
-#####General explanation from ctzsnooze:  
+##### General explanation from ctzsnooze:  
 When flying through turbulent air the quad gets lots of external inputs. If the buffeting effect results in errors between your set roll rate and what the gyros report, then the PID system has to make corrections. Most PID systems 'under-correct' external influences simply because 'over-correction' will cause oscillation. When tuning, we aim to get the magnitude of the under-correction to be as small as possible. A very highly tuned quad sits just under the point of self-oscillation all the time. Mostly we don't tune as high as that because it won't tolerate dodgy props and we might get hot motors - however with the new filtering options we can sometimes up-tune without such a problem.
 
 I takes time to build up and let go. So when flying at medium speed through slightly bumpy air and noticing you have a 'wandering line', more I will usually help. But too much I may mean that once you leave one bank of moving air and enter the next, the accumulated iTerm correction will be going the opposite way and will take some time - about half a second - to 'let go'. So adding more iTerm won't always solve the problem. I certainly won't fix fast buffeting, it is too slow, and 'too much' I may not be helpful even for slow wandering lines.
@@ -300,12 +300,12 @@ If your filtering is heavy, the props are relatively heavy for the motors, and t
 
 If you fly very fast through very turbulent air you need super responsive P and D and responsive lightweight props. The more 'aerodynamic' the quad the better. You may want to push P and D higher than 'normal', and maybe see if you can run with slightly higher filters - i.e. re-tune more aggressively. That tune might put you at risk of hotter motors or other oscillations and demand clean props, so it might not be your 'everyday' tune, but it should generally handle wind that little bit better than a less highly tuned machine.
 
-#####Post from QuadMcFly:  
+##### Post from QuadMcFly:  
 Well I had an interesting experience trying to tune these silly 5x4.5x3HBN props on my primary acro quad. Mostly I just wanted to see if I could. The key ended up being kind of counter-intuitive.
 
 Basically I had to screw with the set-point sliders in 3.0.1 to compensate for the slow transition speed of the props, but it was exactly backwards from what I thought. The D set-point slider had to get put almost all the way to the left, and the Transition set-point slider all the way to the right, so essentially that basically equals almost the old "measurement" D calculation method. Then I was able to get my P gains back up to make up for the smoothing of the measurement method and get some snap back. I had to jack D way up too, to get rid of prop wash and it's still not gone entirely, but it's looking pretty darn good! Oh, also my I gains are quite high on both roll and pitch.﻿ I'm pretty pleased with the results! Still a tiny bit of prop wash at high throttle, but I think I can get rid of it with a tiny bit of TPA without sacrificing too much stick feel. Right now my TPA is at 0.  
 
-####Posts from the "BB log video response" thread by Woody_99:  
+#### Posts from the "BB log video response" thread by Woody_99:  
 - problem: Need just a little help with fine tuning a couple of my X quads.
 (130 and 250 size. BF 3.01)
 On a hard, high throttle 180 turn, I get some shaking on both of them.
@@ -324,7 +324,7 @@ Could be just a placebo effect, because I have no clue what the slider does, but
 Motors are slightly above ambient temp, so I think I'm set.
 Wish I could say the same for my batteries. Flies so nice I was really pushing them today.
 
-#####Boris' comment of the Dterm Sliders:   
+##### Boris' comment of the Dterm Sliders:   
 The sliders are pretty easy. Just use extremes and feel difference.
 Upper slider determines the stick sharpness (acceleration of stick input).
 The lower slider determines how smooth it acts on stick returns.
@@ -332,7 +332,7 @@ The lower slider determines how smooth it acts on stick returns.
 Upper slider high: Sharpest response
 Lower slider high: sharpest response on stick returns, but also chance to most jerkiness. So smooth this out by higher transition deacceleration. 
 
-#####Slider Tuning Tip from Tesseract1984:  
+##### Slider Tuning Tip from Tesseract1984:  
 My freestyle setting was top slider down to 1.7 and bottom slider adjusted until bounceback is eliminated. I ended up with 0.8 (correction)
 
 Note: for my method, you quad needs to be well tuned already. No noise issues, minimal propwash (i have virtually zero since moving to dshot). If you don't sort your tune out first, you'll be chasing these sliders around trying to make sense of what it's actually doing to your tune.
@@ -340,7 +340,7 @@ Note: for my method, you quad needs to be well tuned already. No noise issues, m
 Tune first. Sliders last. This may be me speaking for myself and there might be a better method but this is what works for me. Oh, also, when you're tuning, don't be so afraid of using D. Keep jacking it up while maintaining motor temps until your prop wash is under control. My numbers ended up a lot higher in 3.1 over any other release.  
 And Boris' reply:  
 Yeah that's a valid statement. The sliders can even differ per prop. On bullnose props which seem a bit more bouncy in general I tend to run lower setpoint transition. On that way I don't have to sacrifice much sharpness on my tune.  
-#####MoreTuning Tip from Tesseract1984:
+##### MoreTuning Tip from Tesseract1984:
 Ya...I almost feel like there needs to be a blurb somewhere that post 3.0.1 you should rethink your paradigms around what are acceptable value ranges.
 
 I remember in 2.9.1 if i had D over 26 i had screwed up and usually meant starting from scratch. My D in 3.1 is now at 46 and 50 for R and P respectively and motors still come down cold. My P is also a lot higher than other releases on this same powertrain. I basically stopped pushing D up with my propwash handling was good.
@@ -357,7 +357,7 @@ Scenario 2: Behaviour on stick return
 - Play with sliders
 - Transition slider specifically introduces some deceleration on stick return so that stops are not as abrupt.  
 
-###PID control at Zero Throttle
+### PID control at Zero Throttle
 Originally Posted by MasterZap View Post
 Let me try to explain this in a clear way:
 
@@ -380,7 +380,7 @@ Clear as mud?
 
 /Z
 
-###Notch Filters
+### Notch Filters
 
 See: [Black-Box logging and usage](/betaflight/wiki/Black-Box-logging-and-usage) 
 
@@ -446,11 +446,11 @@ Cutoff describes the lower end of the filter response and should not be too low 
 
 
 
-###roll/yaw cam mix
+### roll/yaw cam mix
 from FieserKiller  
 Note that its not active permanently in this version of BF any more. You have to configure it in modes tab. I've bound it to a switch so I can finally let my buddys fly my quad without crashing due to unfamiliar controls.   
 
-###Tuning Tips
+### Tuning Tips
 
 #### How high can I go with D on pitch?  
  Got some HQ Durables today and found out that my 5x4x3 tune doesn't work out for them. Using KISS24 escs and the KISSFC running BF 3.0. I can lower my P on Pitch but than it doesn't lock as good as it does with a higher P gain. But with a high P gain I nearly have to set my Ds to like 40. Is this good? and btw also using lumenier rx2206s. Thanks Thomas.  
@@ -465,7 +465,7 @@ Set dterm setpoint to 0 and no bounce back at all. Gonna try to go higher on P o
 
 ## Discussions on using the New configurator
 
-####There are ? marks next to many of the setting Fields. Mouse Over these for a short Explanation of what they do.  
+#### There are ? marks next to many of the setting Fields. Mouse Over these for a short Explanation of what they do.  
 
 - measurement and error is now the d term slider thingy.
 all the way to the right is error, all the way to the left is measurement. can vary.
@@ -479,7 +479,7 @@ Not a bug. BB Rate is a percentage of the PID loop speed, since that's where the
 
 - The OSD Tab is ONLY for FC boards that have a integrated OSD chips. One such FC is the omnibus.  
 
-#####A list of Tool Tips from the Config.  
+##### A list of Tool Tips from the Config.  
 Note: these are extracted from the the file messages.json in the GitHub\betaflight-configurator\_locales\en  
 This is not a complete list.
 
