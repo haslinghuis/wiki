@@ -49,7 +49,7 @@ REVO F4
 ## FAQ & Known Issues
 * PB2/BOOT1 pin is not grounded on this board (with gratitude to [Dominic Clifton aka hydra](https://github.com/hydra) for pointing this out!), therefore it may refuse to go into DFU mode even with the boot pads shorted. You can solve this issue by running a small jumper wire from PB2 to GND like shown in the image below.
 ![Ground BOOT1](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/boards/soulf4/soulf4-dfu-boot1-fix.png)
-* Board has SWD pins broken out on it's back with the following pinout: GND SWCLK SWD NRST VDD
+* SWD connect pinout: GND SWCLK SWD NRST VDD
 
 ## Image
 
