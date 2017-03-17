@@ -54,7 +54,7 @@
  - [CC3D](/betaflight/betaflight/wiki/Board---CC3D)
  - [CHEBUZZF3](/betaflight/betaflight/wiki/Board---CHEBUZZF3)
  - [CJMCU](/betaflight/betaflight/wiki/Board---CJMCU)
- - [CL_RACINGF4] (/betaflight/betaflight/wiki/Board-CL_RACINGF4)
+ - [CL_RACINGF4](/betaflight/betaflight/wiki/Board-CL_RACINGF4)
  - [COLIBRI](/betaflight/betaflight/wiki/Board---COLIBRI)
  - [COLIBRI_RACE](/betaflight/betaflight/wiki/Board---COLIBRI_RACE)
  - [DOGE](/betaflight/betaflight/wiki/Board---DOGE)
