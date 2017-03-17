@@ -13,7 +13,8 @@ Four FCs that all use the same Target HEX
 
 ### Hardware
   - MCU: STM32F3
-  - IMU: ---
+  - IMU: MPU6000, SPI (Cyclone, Tempest)
+         MPU6050, IIC (MotoF3, Tornado)
   - IMU Interrupt: 
   - BARO: No
   - VCP: Yes
@@ -22,7 +23,8 @@ Four FCs that all use the same Target HEX
   - Blackbox: Serial
   - PPM/UART Shared: UART2
   - Battery Voltage Sensor: Yes
-  - Integrated Voltage Regulator: ---
+  - Integrated Voltage Regulator: Yes (MotoF3, Cyclone, Tempest)
+                                : Pololu 5V (Tornado)
   - Brushed Motor Mosfets: No
   - Buttons: None. Solder BOOT pads
 
