@@ -7,12 +7,12 @@ The purpose of this page is to provide the reader with detailed information abou
 Grab a snack and make yourself comfortable ! ![Popcorn](http://static.rcgroups.com/forums/images/smilies/popcorn.gif)
 
 ## Contents
-1. [How Opensource Software Development Works](#how-opensource-software-development-works-)
-1. [Gyro based loop implementation](#gyro-based-loop-implementation-)
-1. [The delta_from_gyro setting and all about the PID Controller D values](#the-delta-_-from-_-gyro-command-and-all-about-the-pid-controller-d-values-)
-1. [Filtering, Aliasing and Gyro Sync explained](#filtering-aliasing-and-gyro-sync-explained-)
-1. [Rates / rc rate translations into deg/sec Tables](#rates-rc-rate-translations-into-deg-sec-tables-)
-1. [Explanation of why the motor updates are now at the start of the PID loop](#explanation-of-why-the-motor-updates-are-now-at-the-start-of-the-pid-loop-)
+1. [How Opensource Software Development Works](#how-opensource-software-development-works)
+1. [Gyro based loop implementation](#gyro-based-loop-implementation)
+1. [The delta_from_gyro setting and all about the PID Controller D values](#the-delta_from_gyro-setting-and-all-about-the-pid-controller-d-values)
+1. [Filtering, Aliasing and Gyro Sync explained](#filtering-aliasing-and-gyro-sync-explained)
+1. [Rates / rc rate translations into deg/sec Tables](#rates-rc-rate-translations-into-deg-sec-tables)
+1. [Motor update](#motor-update)
 
 ## How Opensource Software Development Works
 This video covers how multiple versions of the same software in the hobby exist (CleanFlight/BetaFlight/RaceFlight etc) and how developers exchange ideas and promote code between the projects.
@@ -96,7 +96,7 @@ Effect of D term on P/D controller: http://www.youtube.com/watch?v=xMygUvegC80
 
 General explanation of D term: http://en.wikipedia.org/wiki/Derivative
 
-## Filtering Aliasing and Gyro Sync explained
+## Filtering, Aliasing and Gyro Sync explained
 The following videos have been produced with BetaFlight in mind, and provide a great resource for in-depth learning of these complex subjects.
 
 Filtering Basics: http://www.youtube.com/watch?v=CpW8_fOJ7_M
@@ -109,7 +109,7 @@ Aliasing and Gyro Sync Explained: http://www.youtube.com/watch?v=-lmoKal_e4s
 
 New Biquad filter in BetaFlight V2.3.x: http://www.youtube.com/watch?v=Q2tSWU1MsVk
 
-##Rates rc rate translations into deg sec Tables
+## Rates rc rate translations into deg sec Tables
 Boris posted Tables in:
 
 Effect of rate combined with static rc rate of 100. (rc rate doesn't affect yaw). Full Stick input
