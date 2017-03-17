@@ -14,7 +14,7 @@ Four FCs that all use the same Target HEX
 ### Hardware
   - MCU: STM32F3
   - IMU: MPU6000, SPI (Cyclone, Tempest)
-         MPU6050, IIC (MotoF3, Tornado)
+       : MPU6050, IIC (MotoF3, Tornado)
   - IMU Interrupt: 
   - BARO: No
   - VCP: Yes
