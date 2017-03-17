@@ -49,6 +49,8 @@ _(add FAQs, known issues and workarounds specifically related to this board. ple
 
 _format is reporter [name], (status): issue contents_
 
+ - The DSM2/SBUS pad is connected to RX2
+
 ## Other Resources
 
 Setup Guide: 
