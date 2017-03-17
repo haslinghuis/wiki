@@ -29,7 +29,7 @@ Beautifully simple STM32F7 based flightcontroller. A F7 replacement for the Naze
 
 These boards are currently available in pre-order only. Shipping is expected in the first half of 2017.  
 
-Available here: [nerofc.com](https://nerorc.com)
+Available here: [nerofc.com](https://nerofc.com)
 
 ## Configuration Information
 
@@ -38,4 +38,4 @@ Available here: [nerofc.com](https://nerorc.com)
 
 # Other Resources
 
-Rcgroups Thread: https://www.rcgroups.com/forums/showthread.php?2734745
+RC Groups Thread: https://www.rcgroups.com/forums/showthread.php?2734745-NERO-STM32F7-based-FC
