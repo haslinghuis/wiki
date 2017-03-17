@@ -1,4 +1,4 @@
-##Introduction
+## Introduction
 The purpose of this page is to provide the reader with detailed information about the inner workings of the BetaFlight firmware. This information has been collected from sources such as:
 
 * The BetaFlight RC Groups Forum (credit will be given where possible).
@@ -6,7 +6,7 @@ The purpose of this page is to provide the reader with detailed information abou
 
 Grab a snack and make yourself comfortable ! ![Popcorn](http://static.rcgroups.com/forums/images/smilies/popcorn.gif)
 
-##Contents
+## Contents
 1. [How Opensource Software Development Works](#how-opensource-software-development-works-)
 1. [Gyro based loop implementation](#gyro-based-loop-implementation-)
 1. [The delta_from_gyro setting and all about the PID Controller D values](#the-delta-_-from-_-gyro-command-and-all-about-the-pid-controller-d-values-)
@@ -14,17 +14,17 @@ Grab a snack and make yourself comfortable ! ![Popcorn](http://static.rcgroups.c
 1. [Rates / rc rate translations into deg/sec Tables](#rates-rc-rate-translations-into-deg-sec-tables-)
 1. [Explanation of why the motor updates are now at the start of the PID loop](#explanation-of-why-the-motor-updates-are-now-at-the-start-of-the-pid-loop-)
 
-##How Opensource Software Development Works
+## How Opensource Software Development Works
 This video covers how multiple versions of the same software in the hobby exist (CleanFlight/BetaFlight/RaceFlight etc) and how developers exchange ideas and promote code between the projects.
 
 http://www.youtube.com/watch?v=kZvoei1dzNQ
 
-##Gyro based loop implementation
+## Gyro based loop implementation
 Gyro update is leading the loop. The loop will start after interrupt is triggered for new gyro sample. The PID controller will always be doing the calculation of the most fresh gyro value. The sampling gyro rate of 1khz will be used and that will automatically run looptimes of 1000us or 500us depending of configuration and target capabilities. This also makes the looptime setting unnecessary. There is no need for this parameter as our gyro decides when loop will run. There is no drift between gyro and control loop and your PID tune will be consistent. No aliasing should be experienced. This also helps filters to do better job in giving clean gyro traces. 
 
 ![GYRO_SYNC](https://cloud.githubusercontent.com/assets/10757508/9105588/6714334c-3c19-11e5-922c-1f70d46d29ac.png)
 
-##The delta_from_gyro setting and all about the PID Controller D values
+## The delta_from_gyro setting and all about the PID Controller D values
 
 **Boris B wrote:**
 
@@ -90,13 +90,13 @@ It might be useful, purely for testing purposes, if we could select the Dterm ca
 
 But yeah, with big stick inputs, the new Dterm approach will be smoother on BlackBox during the input, and will always be out of phase with gyros so may delay responsiveness a little to Pterm during stick inputs. It could be that a small increase in P will override the loss of Dterm kick. If so it is tempting to no longer use the error seeking Dterm calculation.
 
-###Additional information
+### Additional information
 
 Effect of D term on P/D controller: http://www.youtube.com/watch?v=xMygUvegC80
 
 General explanation of D term: http://en.wikipedia.org/wiki/Derivative
 
-##Filtering Aliasing and Gyro Sync explained
+## Filtering Aliasing and Gyro Sync explained
 The following videos have been produced with BetaFlight in mind, and provide a great resource for in-depth learning of these complex subjects.
 
 Filtering Basics: http://www.youtube.com/watch?v=CpW8_fOJ7_M
