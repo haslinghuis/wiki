@@ -173,8 +173,8 @@ See: [CLI resource command](https://github.com/betaflight/betaflight/wiki/Betafl
 `resource ppm none  `  
 `resource motor 2 A08 `  
 `save  `  
-
- See: [AlienFlightNG Support](https://www.alienflightng.com/support/)    
+ 
+    See: [AlienFlightNG Support](https://www.alienflightng.com/support/)    
 
 - MOTOLAB - (MotoF3, Cyclone & Tempest)   
  Move motor 1 from Output #1 header pin to the PPM input header pin.   
@@ -187,7 +187,7 @@ See: [CLI resource command](https://github.com/betaflight/betaflight/wiki/Betafl
 - PIKOBLX - Re-map motor 1 to the PPM pin (same as MotoLab). Solder motor 1 signal to the PPM pad leaving the SBUS jumper 'shorted'.
 To allow the use of the LED pin Re-map motor 4 to motor 5 signal out a01, which must also be soldered as such.   
  
-Note: RX must use SBUS since PPM pin is now reassigned to motor 1.
+    Note: RX must use SBUS since PPM pin is now reassigned to motor 1.
 Link to modification details: https://www.rcgroups.com/forums/showpost.php?p=36608148&postcount=43149  
  Follow above and to re-map output type in CLI:  
 `resource ppm none  `  
@@ -210,7 +210,7 @@ There also seems to be a DMA conflict with BB logging. [see Github issue #2162](
 `resource motor 4 B04 `  
 `save  `  
 
-Limitation: BlackBox on the internal SDCard works with MultiShot but not with DShot.  
+    Limitation: BlackBox on the internal SDCard works with MultiShot but not with DShot.  
 
 - KOMBINI - Move motor #1 from Output #1 header pin to the PPM input header pin.  
  Follow above and to re-map output type in CLI:  
@@ -218,7 +218,7 @@ Limitation: BlackBox on the internal SDCard works with MultiShot but not with DS
 `resource motor 1 A07 `  
 `save  `  
 
-Limitation: no LED functionality with DShot is allowed.  
+    Limitation: no LED functionality with DShot is allowed.  
 Video on getting this FC working: https://www.rcgroups.com/forums/showpost.php?p=36269451&postcount=1966    
 
 - AIORACERF3 -  Must move MOTOR 2 to new pin assignment since it has a DMA conflict with MOTOR 1:    
@@ -230,12 +230,11 @@ Connect ESC for motor 2 to 'LED' pin on the board.
 
 - EMAX FEMTO F3 -  Motor 4 needs to be moved to the LED pad on the underside of the fc.   
   LED_STRIP needs disabled and then motor 4 gets remapped to that pad.   
-
  `resource LED_STRIP none`  
  `resource motor 4 A08`  
  `save`  
 
-  Daryoon got Dshot outputs & the LED Strip to both work:
+    Daryoon got Dshot outputs & the LED Strip to both work:
    Connect motor 4 to PPM pad and enter following in the CLI.   
   `resource ppm none  `  
   `resource motor 4 A15 `  
