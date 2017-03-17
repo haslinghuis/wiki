@@ -21,14 +21,14 @@ https://github.com/betaflight/betaflight/issues?q=is%3Aissue+is%3Aclosed+sort%3A
 
 The Latest Development version of the Configurator is recommended. Link on [Home page](https://github.com/betaflight/betaflight/wiki).  
 
-###Some known limitations are:  
+### Some known limitations are:  
  3.1 seems most issues are fixed. Any issues discovered should be in the 3.1.X wiki page now.
 
 - All STM32F1 Target do not support DSHOT
 - Some ESCs that have a signal filter cap may not work until the cap is removed. 
 - Some targets have a DMA conflict between a motor and the LEDs. Some have work-arounds but some do not. If no work-around is listed then disable LEDs and contact the FC designer/support.
 
-###A quick way to determine IF the Firmware flashed into the FC supports Dshot:  
+### A quick way to determine IF the Firmware flashed into the FC supports Dshot:  
 Go to the CLI and type "get pwm". All settings with 'pwm' in the name will be shown with all options.
 If DSHOT150, DSHOT300, DSHOT600 is NOT in the list for the "motor_pwm_protocol" then this firmware does NOT support Dshot.
 Example for NAZE that does Not support Dshot: 
@@ -73,15 +73,15 @@ save
 
 Hit return and done   
 
-###ESC Cal and min/max throttle
+### ESC Cal and min/max throttle
 ßF firmware with Dshot does Not use the min_throttle or max_throttle setting, these are ignored.
 Just ensure that in the ESCs (BLHeli Suite) that PPM_MIN_THROTTLE is set to 1000 and PPM_MAX_THROTTLE is set to 2000.  
 Note: This is not needed in BLHeli_S 16.43 and up since the PPM_MIN & MAX values are not used for Dshot.   
 This means that when DSHOT is use NO ESC Calibration is required. Just Select DSHOT.
 
-####Max ESC update speed supported by different dshot versions:  
-#####WARNING: due to processor tasks, FC and/or ESC, the maximum update rate may not work-  
-#####TEST without props and a Current Limiter.  
+#### Max ESC update speed supported by different dshot versions:  
+##### WARNING: due to processor tasks, FC and/or ESC, the maximum update rate may not work-  
+##### TEST without props and a Current Limiter.  
 
 Theoretical speeds are a lot higher. The speed is limited in firmware to give more spreading between signals.
 - DSHOT150: 4kHz max
@@ -91,17 +91,17 @@ Theoretical speeds are a lot higher. The speed is limited in firmware to give mo
 
 Note: When DSHOT is enabled Unsyced PWM is disabled. DSHOT always runs at the PID loop rate.  
 
-####Dshot digital Values:  
+#### Dshot digital Values:  
 0 = disarmed.  
 1 to 47 = Reserved for special commands.  
 48 to 2047 = Active throttle control.  
 
-###Does Dshot work on other models besides the Quad-X, like hex and tri-copters?
+### Does Dshot work on other models besides the Quad-X, like hex and tri-copters?
 They should surely work if the FC was designed for them.
 You will need to re-map a motor to a Servo for a Tri-copter. See the SERVO_TILT wiki page for help.
 There is also info for Tri-copter setup on the MOTOLAB page.  
 
-###It all start with the Dshot thread (link above):  
+### It all start with the Dshot thread (link above):  
 The information posted herein is all provided on an AS-IS basis.  
 It has been derived from posts on this forum (RCGroups/Boris' Betaflight, FC, DSHOT and ESC threads), and direct correspondences with users.
 
@@ -111,7 +111,7 @@ BETAFLIGHT AND DSHOT -
 
 Betaflight may not be able to support all Targets ( or specific boards) due to the design of each one differing on the DMA pinout. Look below to find what may or may not be working.
 
-###Flight Controllers Tested to Support Dshot on Betaflight 3.1 without Mods or remapping:
+### Flight Controllers Tested to Support Dshot on Betaflight 3.1 without Mods or remapping:
 - AIORACERF3
 - Airbot F3 (SPRACINGF3)  
 - ALIENFLIGHTF3
@@ -146,11 +146,11 @@ Note from sskaug: KISS FCs use a resistor to drive the throttle signal high (pul
 - X-Racer V2.1 (SPRACINGF3 #670)
 - X-Racer F303 (X_RACERSPI) -
 
-###FC Targets that work with Dshot but require hardware mods and re-mapping pins with the Resource command:   
+### FC Targets that work with Dshot but require hardware mods and re-mapping pins with the Resource command:   
 Boris' comment:  
   I had many requests for MOTOLAB (and other FCs) but that one doesn't have DMA available on all motors. It may be that we will assign one of the motors to PPM pin so you can resolder it. Not great, but better than nothing I guess?  
 
-#####General instructions for re-mapping pins:   
+##### General instructions for re-mapping pins:   
  1- All FCs that require using the FC's PPM input pin as a motor output therefore can NOT use a PPM RX. Any of the Serial RXs that use a UART do work. Set-up Serial RX normally as needed for the FC board.  
  2- Check pins for the FC board below on which STM32 pins need to be re-mapped. It is a Good Idea to first type in the CLI:  
 `resource  `  
@@ -241,14 +241,14 @@ Connect ESC for motor 2 to 'LED' pin on the board.
   `resource motor 4 A15 `  
   `save  ` 
 
-####FC Target reported NOT working
+#### FC Target reported NOT working
 - SPARKY2 - Oz reports:  I tried DS600 and only motors 2 & 4 will spin, 1 & 3 will not spin, I am guessing motor output 1 & 3 don't have dma's or ?  
 
-####FC Targets with DSHOT code added but in need of testing:
+#### FC Targets with DSHOT code added but in need of testing:
 - All other targets not listed above.   
 
-###ESCs supporting Dshot:
-####KISS 24 
+### ESCs supporting Dshot:
+#### KISS 24 
  - 150, 300, 600, 900, 1200 See the Dshot thread (link above) for ESC code.  
 KISS24 ESC Beep Codes:   
 - 1beep/second = too many dshot errors (more then 10% are bad) but it doesn't disarm it just tells
@@ -268,7 +268,7 @@ juuuut:  No haste I'm on it. I talked with Boris and i have a 8k setup here wher
 regards, Felix   
 Alpha fix: https://www.rcgroups.com/forums/showpost.php?p=37048819&postcount=3510  
 
-####BLheli-S:
+#### BLheli-S:
 
 DSHOT on BLHELI_S ESCs is supported starting with v16.43 and Offically supported in v16.5 and Up. 
 Older ESCs with BB1 processor will likely only support Dshot150 & 300.
@@ -289,37 +289,38 @@ https://www.rcgroups.com/forums/showpost.php?p=36713066&postcount=3133
 https://www.rcgroups.com/forums/showpost.php?p=36718584&postcount=3144  
 https://www.rcgroups.com/forums/showpost.php?p=36720323&postcount=3157  
 
-####An Over View from Cheredanine:  
+#### An Over View from Cheredanine:  
 Folks there are various people posting stuff that clearly don't understand or haven't read the wiki. So to straighten stuff out:
 Min and max throttle
 D shot does not use it. "I changed min throttle" - well that's nice but pointless
 
-#####Calibration
+##### Calibration
 You don't need to do it, it doesn't make any difference to dshot, claibration is about calibrating PWM pulse length, dshot is a serial protocol, not PWM, don't waste your time
 
 And the most important -
-#####Caps on or off and the wiki
+##### Caps on or off and the wiki
 Caps on the signal line smooth the signal, removing jitter. Dshot is a rapid change of signal, it looks like jitter, the faster the signal, the more chance the caps will smooth it out, obliterating the signal. Because dshot is 16bits, some signal,values look more like jitter than others. The signal is also effected by other factors than just the caps
 
 So removing caps makes dshot more likely to work BUT the records in the wiki are not black and white, they are a record of what people have claimed to work, your quad with the same escs may not react the same. (I have 2 quads with exactly the same escs, one works fine up to dshot300 with caps on, the other needs caps off for dshot at all)
 
-#####What if the ESC I have is not listed or the Picture does not match?  
+##### What if the ESC I have is not listed or the Picture does not match?  
 You are then the Experimental Tester for this ESC. Here is a link to Generic instructions on how to find signal input and cap on any BLHeli ESC:  
 https://www.rcgroups.com/forums/showpost.php?p=36216745&postcount=1645    
 Another Post on finding the signal filter cap:  
 https://www.rcgroups.com/forums/showpost.php?p=36897835&postcount=3488  
 
-#####with caps off Motors are smooth from the motor tab but I get jitter on sticks
+##### with caps off Motors are smooth from the motor tab but I get jitter on sticks
 So dshot is fine, when you use your sticks the radio, the reciever, the wiring to the receiver, the gyro, the physical components of the quad and the PID loops are all combining, something somewhere is causing the flight controller to command the shakes you are seeing, fix the problem and stop worrying about dshot
 
-#####Will dshot work with these escs ......
+##### Will dshot work with these escs ......
 Dshot will work on blheli_s escs (and of course kiss but there is now a seperate thread for kiss) if the escs are flashed with a version of blheli_s that supports it and the caps don't interfere with the signal. Bb1 processors will not do faster speeds, but bb2 will do up to dshot600. Just because the esc doesn't overtly say it on the literature - dshot came out after many blheli_s escs - or because it is 4 in 1 or 2 in 1 or 0.5 in 1 , well perhaps not the last, but if it is blheli_s bb2 make sure the caps are removed from the signal line and it will run dshot
 
 So if you want to run dshot - TAKE THE CAPS OFF (manufacturers are starting to ship with out the caps on)
 If you don't and you have problems, then guess what?   
 
-####Note: there are ESCs that are exactly the Same sold by different names.  
-It is good to check the pictures in the Cap removal links and compare to the ESC you have in your hand.  
+#### Tested BLheli ESC:s
+**Note: there are ESCs that are exactly the Same sold by different names.  
+It is good to check the pictures in the Cap removal links and compare to the ESC you have in your hand.**
 
 - Aikon 20A/Spedix 20A    
 Cap removal for both: https://www.rcgroups.com/forums/showpost.php?p=36182572&postcount=1319
@@ -415,17 +416,17 @@ Cap removal:   https://www.rcgroups.com/forums/showpost.php?p=36209076&postcount
 - ZTW polaris 30A (A_H_20 16.42) -   
 
 
-#####Cap Removal Methods:  
-*Caution - if improper done can render the ESC unusable and have the possibility to burning the ESC upon applying power. *  
+#### Cap Removal Methods:  
+**Caution - if improper done can render the ESC unusable and have the possibility to burning the ESC upon applying power.**  
 - Method 1. Clippers - used this when there is enough room, just clipped the cap in half the clipped each end off the board  
 - Method 2. Craft knife - used when other components are too close to use clippers, for example tbs escs - slide the blade so that it is sliding along the surface of the board and in a direction away from other components and apply force, cutting the cap off the esc   
 - Method 3. Soldering iron - Heat both ends of the cap with a tinned iron. Then wipe the cap off the pads with the iron's tip. Be Careful NOT to unsolder any other parts and examine the board with a good magnifier for any solder splashes.  
 - BeeRotor BS20A video- http://scontent.cdninstagram.com/t50.2886-16/15378420_376830535984172_2316137375807307776_n.mp4  
 
-####Components tried and are not currently working:
+#### Components tried and are not currently working:
 None To Report
 
-####Components that will NOT likely ever work:
+#### Components that will NOT likely ever work:
 - Naze32 and clones
 - All FCs with STM32F1 processor
 - All ESCs that can not run BLHeli_S firmware (except KISS24A)
