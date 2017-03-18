@@ -28,7 +28,7 @@ As an example <b>resource</b> will show motors 1-8, but if your mixer is set to 
 Figure: How different resource command variation works
 </center>  
 
-####Wiki pages with examples of using the Resource Commands:   
+#### Wiki pages with examples of using the Resource Commands:   
 [Remapping Motor outputs](https://github.com/betaflight/betaflight/wiki/Remapping-Motors-with-Resource-Command-(3.1))  
 [Using SERVO_TILT](https://github.com/betaflight/betaflight/wiki/SERVO_TILT-for-3.1)   
 [Using CHANNEL_FORWARDING](https://github.com/betaflight/betaflight/wiki/CHANNEL_FORWARDING-for-3.1)  
