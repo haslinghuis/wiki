@@ -158,9 +158,11 @@ Boris' comment:
 and copy/paste these into a Text file and save for reference of the Default pin Mappings.    
   3- In the config tab select OneShot(42 or 125). Click Save. Leave this select until pins are re-mapped.  
   4- In the CLI type (x = motor #, yyy = STM32 pin #):   
-`resource ppm none  `  
-`resource motor x yyy  `  
-`save  `  
+```
+resource ppm none    
+resource motor x yyy   
+save  
+```  
   5- Now select the DSHOT protocol of your choice.  
 
 See: [CLI resource command](https://github.com/betaflight/betaflight/wiki/Betaflight-resource-remapping)    
