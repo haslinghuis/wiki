@@ -2,19 +2,19 @@
 RCGroups Thread with links to OpenLogger and firmware:   
 https://www.rcgroups.com/forums/showthread.php?2299805-Blackbox-flight-data-recorder-feature-for-Baseflight-Cleanflight 
 
-###BlackBox Viewer
+### BlackBox Viewer
 The Latest Viewer and source is here:   
 https://github.com/betaflight/blackbox-log-viewer  
 
-###Videos and tutorials
+### Videos and tutorials
 Joshua Bardwell just started a new video series which he calls BlackBox 101:   
 https://www.youtube.com/playlist?list=PLwoDb7WF6c8l0-ABsIcnJt1FyhX9MBoVW   
 
-###RCG threads on learning to analyze BB logs:  
+### RCG threads on learning to analyze BB logs:  
 [Joshua's Blackbox Log Video Responses](https://www.rcgroups.com/forums/showthread.php?2484202-Blackbox-Log-Video-Responses)  
 [Blackbox log analyzation\help thread](https://www.rcgroups.com/forums/showthread.php?2386267-Blackbox-log-analyzation-help-thread)  
 
-###Notes on new Black Box Viewer
+### Notes on new Black Box Viewer
 If you open a Betaflight Log, then the logo shown is the Betaflight Logo and the colour scheme is orange; if you open an iNav log, then the logo changes to iNav and the colour scheme is blue; if you open a Cleanflight log (or if it can't tell what kind of firmware you were running e.g. an old version of Betaflight perhaps) then the logo shows the Cleanflight logo and the colour scheme is green....
 Some features are automatically disabled depending upon the firmware you are running that creates the log. 
 
@@ -25,7 +25,7 @@ Do click on all the buttons to learn what they do and '?' for the Keyboard Short
 Super simple visual explanation of the gyro data sequence through the filters:  
 raw gyro->(debug gyro here)->soft lpf->(debug notch here)->notch1->notch2  
 
-####BetaFlight Ver2.X
+#### BetaFlight Ver2.X
 1. Use this CLI setting: "set debug_mode = notch"  
 Make sure your blackbox logging rate is at least 1khz. The logging rate is based on pid-loop so 1/4 for 4k pid loop would be enough.
 2. Fly as usual
@@ -41,7 +41,7 @@ The debug setting will log additional data to debug[0]-debug[3]:
 * debug[2] is unfiltered and raw gyro data on pitch axis.
 * debug[3] is only notch filtered gyro data on pitch axis.
 
-####Changes were made in BetaFlight 3.0 & 3.1 along with a newer BB Viewer  (see debug_mode on the 3.1.x wiki page). 
+#### Changes were made in BetaFlight 3.0 & 3.1 along with a newer BB Viewer  (see debug_mode on the 3.1.x wiki page). 
 1. CLI DEBUG_MODE now ca be GYRO or NOTCH. This will log all three axis but only for Pre-LPF or Pre-Notch Filter.
 2. Still Add a Custom Graph then select the debug Pre-filter.
 3. Analysis is the same.
