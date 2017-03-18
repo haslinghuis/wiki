@@ -81,6 +81,7 @@
  - [OMNIBUS](/betaflight/betaflight/wiki/Board---OMNIBUS)
  - [OMNIBUSF4](/betaflight/betaflight/wiki/Board---OMNIBUSF4)
  - [PIKOBLX](/betaflight/betaflight/wiki/Board---PIKOBLX)
+ - [PLUM F4](/betaflight/betaflight/wiki/Board---PLUMF4)
  - [PODIUM](/betaflight/betaflight/wiki/Board---PODIUM)
  - [PORT103R](/betaflight/betaflight/wiki/Board---PORT103R)
  - [RCEXPLORERF3](/betaflight/betaflight/wiki/Board---RCEXPLORERF3)
