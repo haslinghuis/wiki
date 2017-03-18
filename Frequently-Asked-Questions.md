@@ -1,4 +1,4 @@
-##Contents
+## Contents
 1. [I'm a Neewbe, how do I start ?](#im-a-neewbe-how-do-i-start-)
 1. [How do I install Betaflight ?](#how-do-i-install-betaflight-)
 1. [What is the difference between Min_check Min_command and Min_throttle and stick inputs ?](#what-is-the-difference-between-min_check-min_command-and-min_throttle-and-stick-inputs-)
@@ -68,7 +68,7 @@ http://github.com/borisbstyle/betaflight/wiki/Betaflight-specific-CLI-commands
 http://github.com/borisbstyle/betaflight/wiki/BetaFlight-Deep-Dive
 
 ***
-##Im a Neewbe how do I start ?
+## Im a Neewbe how do I start ?
 A little history. This all started with OpenSource MultiWii code based on Arduino 8-bit boards. When the 32-bit STM32 processors become available the MutliWii code was ported to the STM32 and was called BaseFlight. Due to politics others forked the BaseFlight code to CleanFlight. More recently Boris decided that he could possibly make improvements on the way the PID control loop works and forked an Experimental version as BetaFlight.
 Therefore documentation on ßF and CF tends to only show what is new or changed and the documentation of previous Firmware must be read.
 
@@ -84,7 +84,7 @@ http://www.rcgroups.com/forums/showpost.php?p=34144329&postcount=20469
 
 See the next FAQ topic ("How do I install Betaflight") when you are ready.
 
-##How do I install Betaflight ?
+## How do I install Betaflight ?
 Start with the following video that gives a very comprehensive guide on Betaflight and the best practice approach for it's configuration:
 http://www.youtube.com/watch?v=xSzO6HP6yzs
 
@@ -98,7 +98,7 @@ http://www.rcgroups.com/forums/showpost.php?p=34196999&postcount=21477
 
 There is a topic on this FAQ page called "Which HEX target do I download and flash to my Flight Controller" that will help when it comes to deciding which file to use on your Flight Controller board.
 
-#What is the difference between Min_Check Min_command and Min_throttle and stick inputs ?
+# What is the difference between Min_Check Min_command and Min_throttle and stick inputs ?
 From MasterZap
 
 min_check has nothing to do with ESC's ....
@@ -146,7 +146,7 @@ Max and min channel values are determined by the rxrange command. They default t
 
 You can see that there is no need for a corresponding disabling of inputs at the top of the throttle range, because you never input any stick commands that require the top of the range when you are flying. The only stick command that is input when you are flying is disarm, and that is low yaw and low throttle. So there is a dead space at the bottom of the throttle range (below min_check) but no dead space at the top of any channel range. 
 
-##Why wont my FC board arm after upgrading the firmware ?
+## Why wont my FC board arm after upgrading the firmware ?
 Check the following:
 * Perform a full chip erase while flashing the firmware.
 * You can't arm the FC while in the CLI. The status light flashes rapidly.
@@ -209,12 +209,12 @@ To determine if the ACC or other sensor enabled is causing problems use the "sta
       CPU Clock=72MHz, GYRO=MPU6050, ACC=MPU6050.n, BARO=BMP280
       Cycle Time: 491, I2C Errors: 0, config size: 1308
 
-##Why is the Gyro light turned off and the 3D Model not moving ?
+## Why is the Gyro light turned off and the 3D Model not moving ?
 This is a side effect of the accelerometer being disabled.  When connected to the Flight Controller via USB, the 3D model in Cleanflight Configurator depends on the accelerometer to rotate properly when the multirotor is moved around.  The gyro light being off is just a glitch in the Configurator.  Neither of these are anything to worry about, it is perfectly normal.
 
 When you change your looptime in the Configurator (or via CLI command) to a faster speed than the defaults, Betaflight will automatically disable the accelerometer on some targets to free up processing power and allow the faster looptime.
 
-##What is Air Mode ?
+## What is Air Mode ?
 Some users were mailing Boris about the fact their radios couldn't be configured to have Idle up switch and asking him to implement something similar in the software. Boris initially thought that this could simply just be achieved with activating the "Iterm" from zero throttle together with P and D which were already done with "pid_at_min_throttle" feature. Somehow this wasn't giving the satisfying results. It still felt weak and unresponsive. Boris was trying to wrap his head around why this was the case ! We got our P, I and D on the ground....so why isn't fully stabilizing? 
 
 After some readings in other open source projects and some of the older discussions, he realized that the key for this was in the mixer logic as someone already had a proof of concept code to improve it, which is pretty much scaling the PID's to our throttle level and stopping the stabilization when one motor reaches min throttle. Now Boris understood why folks always preferred this Idle up switch as it was automatically gaining a little bit more stabilization. But this is just a workaround where you loose some throttle below! The current mixer logic sounds reasonable as the early developers were always considering the low throttle values as a NON flying situation. Guess what? In 2015 we fly a lot with 0 or low throttle and especially in the mini quad scene! This has to be changed! The real answer lies in smarter mixer approach where the calculated PID output would always consider the maximum available motor output range to be able to get the desired correction.
@@ -241,7 +241,7 @@ Part 2: http://www.youtube.com/watch?v=goYT3PcA-dE
 
 Part 3: http://www.youtube.com/watch?v=z0ZUsdUD9iw
 
-##How do I enable Air Mode ? 
+## How do I enable Air Mode ? 
 One method is to use a 3 way switch as follows:  
 Pos 1: Disarm (motors do not spin)  
 Pos 2: Arm (motors start spinning at **min_throttle** value)  
@@ -277,7 +277,7 @@ If your min_check is set to 1100 and your TX goes down to 1000 that would mean t
 
 If you have difficulty with bounce or other unwanted actions upon landing then disable the "Disarm motor regardless of throttle value". What this allows is putting the aux switch to the disarm position while flying and keeps the copter armed as long as the throttle stick value stays above min_check. Then upon landing drop the throttle stick to zero (below min_check) and the copter disarms. No bounce or other issues and no need to reach for the disarm switch upon landing.
 
-##What is Acro Plus ?
+## What is Acro Plus ?
 1. Any value of AcroPlus above 0 causes any accumulated iTerm to be reset to zero (and kept at zero) whenever your sticks are at more than 70% of full throw. When restored to less than 70% of full stick travel, iTerm is only allowed to return to 'normal' slowly, actually at 0.1% per processor loop. ITerm therefore takes about 0.5s to return to 'normal' after a flip or roll on 2kHz targets. This improves immediate post-roll/flip stability.
 
 2. AcroPlus changes stick responsiveness by modifying the way in which the PIDs affect the motors, more so at the extreme of stick movement. 
@@ -316,7 +316,7 @@ Hence Acro Plus can be considered a form of exponential rate multiplier, outside
 **TODO**
 Re-write explanation to include the two possible factor (CLI commands) set acro_plus_factor and set acro_plus_offset. Also discuss the changes in the different Version of ßF Firmware.
 
-##What is 2kHz mode ?
+## What is 2kHz mode ?
 See the "Gyro based loop implementation" description on the Wiki Home page.
 2kHz mode is simply a faster Gyro based loop that runs at an update rate of 2000 times a second or every 500usec.
 
@@ -332,7 +332,7 @@ This is not gospel, just a way to explain the difference.
 
 Have a look at this video form more information: http://www.youtube.com/watch?v=j2YtpeHGafs
 
-##How do I activate 2kHz mode ?
+## How do I activate 2kHz mode ?
 For Betaflight 2.4.0 onwards you should NOT use CLI but rather set looptime to 500 in the Configuration tab of the GUI. CAUTION: Appropriate sensors will automatically be disabled on F1 boards.
 
 For betaflight version prior to 2.4.0 can use the CLI and make the following commands, dependent on the Flight Controller type:
@@ -350,7 +350,7 @@ set mag_hardware = 1
 set gyro_lpf = OFF 
 ```
 
-##Limitations of 2kHz mode
+## Limitations of 2kHz mode
 Note that there is a restriction on the number of available AUX channels in 2kHz mode (actually on any loop frequency greater than 1kHz).
 
 **For F3 boards**
@@ -392,7 +392,7 @@ Roundup of F3 based boards: http://www.youtube.com/watch?v=StnC9Q_O1Fw
 
 Recommended CleanFlight/BetaFlight boards: http://www.youtube.com/watch?v=SJa_LgbwwMk
 
-##What are the differences between LuxFloat and Rewrite PID Controllers ?
+## What are the differences between LuxFloat and Rewrite PID Controllers ?
 According to Boris, there is literally no difference between Lux and Rewrite any more (from a flight characteristics point of view), except that they scale the numbers differently. So the actual PID gains and rates will vary between them, but the processing of gyro data is identical. The main problem with Luxfloat is that the CleanFlight Configurator GUI by default only gives you 0.1 precision, which is too big of a step for Luxfloat. It would be like trying to tune Rewrite, and only being able to use whole integers like 4.0, 5.0, 6.0. 
 
 LuxFloat uses Floating Point maths whereas Rewrite uses Integer maths. What does this mean ? Floating Point maths needs more processing power from the Flight Controller, and so F3 (and above) CPU based FCs will have a much easier time calculating the values in the PID loop since it has a dedicated Floating Point Unit (FPU) for these calculations.
@@ -491,7 +491,7 @@ To Recalibrate Gyros: " Disarm. Perform gyro calibration (left stick down left..
 If you fly in Auto-level modes (Angle or Horizon) then the Accelerometer can easily get upset and gives False readings. The Accelerometer can also get upset if there are excessive vibrations or during fast Aerobatic moves. 
 Not much you can do except wait for the accelerometer readings to settle down. This is easily seen if you raun a minimOSD with the Artificial Horizon displayed.
 
-##How does yaw_jump_prevention_limit work ?
+## How does yaw_jump_prevention_limit work ?
 "First you need to know the basics of a mixer function on multirotors.
 Mixer gets PIDsum of all 3 axis and translates that into motor output.
 There is obviously a certain power available there, which is a range of max_throttle - min_throttle for each motor.
@@ -509,7 +509,7 @@ You still have the full yaw control when using stick input.
 
 But anyway I am still surprised that your gear suffers from jump. I would say that small...and powerfull x quads would typically not suffer from jumps." - Boris B
 
-##How should I configure the FailSafe system ?
+## How should I configure the FailSafe system ?
 FailSafe is something that needs to be configured in the radio receiver and the Flight Controller.
 Take a look at this overview as it describes how this should be done: http://www.youtube.com/watch?v=dikr9oDzQqc
 
@@ -520,7 +520,7 @@ NOTE: Failsafe configuration has changed in Betaflight 2.4.0 onwards and CF Conf
 A good method for RX's that do NOT have a FailSafe output (no Pulses):
 [Setting Up Failsafe on FrSky BeeBrain](http://fpvobsession.com/setting-up-failsafe-on-frsky-beebrain/)  
 
-##What is the best practice for configuring the Throttle end points ?
+## What is the best practice for configuring the Throttle end points ?
 
 For KISS ESCs:  
 Just cal with max_throttle at 2000 and min_command at 1000 from the CF config Motor tabs.
@@ -550,7 +550,7 @@ I've had some ESCs still hit 2020 using 1980. Been using 1970 as it doesn't hit 
 New Video from Joshua Bardwell titled "BLHeli - 100% Explained".   
 https://www.youtube.com/watch?v=0Bi1XcdpnQI  
 
-##How do I configure BLHeli ESCs via BetaFlight ?
+## How do I configure BLHeli ESCs via BetaFlight ?
 If running at 1kHz and faster BLHeli 14.2 or later is required and disable PWM in the BLHeli configuration. This is to ensure the BLHeli Firmware recognizes the OneShot125 pulses properly.
 
 If you are running BetaFlight, you can program and flash your BLHeli ESCs (that have BLHeli bootloader only!) directly through the flight controller, without disconnecting the signal wires or disassembling the copter at all.
@@ -577,7 +577,7 @@ PLEASE NOTE: This does not work on the following boards:
 | Moto Tornado | Since the 5v buffers on the motor outputs are uni-directional and do not support bi-directional communication. These buffers make the motor outputs more stable, but prevent passthrough. There is no software fix for this. The only fix would be a re-design of the board to remove the buffers or change them to bi-directional buffers. |
 | Naze32 **Rev6** | The Naze back-fed the ESCs from the USB port. So the ESCs would power up, see the throttle signal, initialize, and then they wouldn't go into programming mode after that. The Rev6a has fixed this issue since it was released in November 2015 |
 
-##Why does my copter flip when trying to takeoff ?
+## Why does my copter flip when trying to takeoff ?
 Here are some likely causes:
 
 * Motors plugged in to the wrong FC headers.
@@ -586,7 +586,7 @@ Here are some likely causes:
 * Props on the wrong motor.
 * Flight control board mounted facing the wrong direction (e.g. yaw 90 degrees left but the board_align has not been configured to reflect this).
 
-##Will the PIDs change significantly when switching from two-blades to tri-blades ?
+## Will the PIDs change significantly when switching from two-blades to tri-blades ?
 Some have found they need a small reduction in P gains when going from two-blade to tris.
 The copter was still flyable with no changes, but some have experiences increased prop-wash oscillation.
  
@@ -596,10 +596,10 @@ http://www.youtube.com/watch?v=b8fMsazyxDw
 
 Within this FAQ, check the answer to "What Flight Controllers are recommended to get the best out of BetaFlight" for more details on which FC has VCP ports.
 
-##Will Betaflight code be merged back into Cleanflight ?
+## Will Betaflight code be merged back into Cleanflight ?
 Yes, it is the intention that this will happen gradually over time. Sometimes features from CleanFlight also get merged into BetaFlight too. This code merge (in both directions) has already started happening from BetaFlight V2.4.0 and CleanFlight V1.12 onwards.
 
-####Question posted and Boris' answer after the 3.0.0 Released:    
+#### Question posted and Boris' answer after the 3.0.0 Released:    
 Q by Ede2016- Does this mean from now on BetaFlight and CleanFlight are independent from each other?   
 I thought the idea was that BetaFlight is for all the Beta testers (a lot by now) and CleanFlight should be for "normal" pilots who can wait a few months for updates - after they are beta tested and stable.     
 A from Boris- That was the initial scope of this project, but you can understand that this all is done in free time. And maintaining multiple versions is really time consuming and not efficient....well actually impossible.  
@@ -617,11 +617,11 @@ But they all work together and share things.
 
 But you can imagine also other aspects of merging things back is that you cant simply tell the users after upgrade "your multirotor will fly completaly different and you have to fully change your rates / pids"   
 
-##When I update to the latest version of BetaFlight do I need to recalibrate my ESCs ?
+## When I update to the latest version of BetaFlight do I need to recalibrate my ESCs ?
 ESCs shouldn't need recalibration unless you changed the min/max throttle values in BetaFlight.
 For more information about ESC Calibration see this video: http://www.youtube.com/watch?v=o3Mg-9M0l24
 
-##Why do my motors keep accelerating on the bench when I arm without props ?
+## Why do my motors keep accelerating on the bench when I arm without props ?
 With props off on the bench, I arm the quad and the motors start. After increasing throttle a small amount then back to minimum I notice the motors keep increasing in speed.  They don't go to max or anything, but they climb noticeably. Now if I was in Angle/Horizon with the accelerometer enabled I could understand that the quad was tying to level itself. But in Acro mode why should the throttle change on its own ? I'm guessing this is an Airmode effect. But just wanted to understand a little more about why.
 
 Answer: That is the flight controller trying to correct for changes in aspect, mainly due to fact your quad shakes slightly when the motors spin, the sensors pick it up and then the flight controller tries to correct, it can't because you don't have props on. All perfectly normal.
@@ -647,19 +647,19 @@ You simply cannot make judgments on an I terms behavior without letting that I t
 
 A quick way to test that there isn't some other issue causing it is use the motor test page to remove the PIDs from the equation.
 
-##Why do my motors spin briefly when rebooting the Flight Controller ?
+##  Why do my motors spin briefly when rebooting the Flight Controller ?
 Since flashing 2.4.0 and rebooting from Configurator with a battery plugged in spins up the motors briefly. I'm fairly sure that didn't happen in 2.1.6, not sure about 2.3.5.
 
 Answer: This can happen in any firmware with battery plugged in. It can happen in 1 out of 100 times or every time. Thats not a bug....that's how OneShot works.  The ESC would interpret a small pulse during power up and down as a signal and spin motors.  It is really a short pulse what couldn't really harm anything but still can scare the s**t out of you !
 
 It is also highly recommended to always use a Current Limiter when the LiPo is connected and the Config Gui is opened. This can prevent burning ESCs and motors. See: http://www.rcgroups.com/forums/showthread.php?t=2327875
 
-##If the accelerometer is disabled and FailSafe Activates what happens to the copter ?
+## If the accelerometer is disabled and FailSafe Activates what happens to the copter ?
 It cannot do self-leveling without the accelerometer sensor activated, so it won't Self-Level it will just tumble to the ground.
 
 It is recommended to setup Fail Safe to disarm (shut off motors) immediately upon entering Stage 2 and allow copter to Drop if the Accelerometer is disabled.
 
-##Why does my Flight Controller blink/beep lots of times when powering up ?
+## Why does my Flight Controller blink/beep lots of times when powering up ?
 5 short blink/beeps followed by any number of long blinks/beeps indicates an error code.
 Number of long blinks indicates the following error:
 
@@ -683,17 +683,17 @@ Above are Hard Faults the Processor detects upon boot-up and initialization. Add
   Copter titled too far if the Acc is enabled. 
 
 
-##My PID D gain value is small after tuning in 2khz mode is that normal ?
+## My PID D gain value is small after tuning in 2khz mode is that normal ?
 The latest 2KHz versions of Betaflight seem to be enhancing the influence of P, to the point where you can fly with good P gains and very little D. It's also good practice to keep the D gains low so that the motors don't get too hot with all the rapid speed changes.
 
-##Why are the accelerometer Black Box traces so bad in 2KHz mode ?
+## Why are the accelerometer Black Box traces so bad in 2KHz mode ?
 With my quad on the ground, 1Khz, no props, motor-stop, the accelerometer traces are smooth x=0 y=0 z=1. There is just the tiny amount of noise you would expect from the chip itself.
 On 2Khz, the data in BlackBox is nonsense, eratic X=7G, 3G, 5G all over the place. The quad is stationary on the ground, the motors aren't spinning, is this aliasing ?
 
 Answer: Yes, this is really effects of aliasing what you are seeing there. Acc has nothing to do with 2khz....it is same with any gyro rate. We are just undersampling it on 2khz.
 If you use Level/Horizon modes then just stick with 1khz or get some very fast F3 target....one that will do full sampled acc even on faster rates.
 
-##How do I get vbat_pid_compensation system working ?
+## How do I get vbat_pid_compensation system working ?
     set vbat_pid_compensation = ON
 
 Tune your quad with a full lipo....your PIDs will then be scaled to that reference voltage.
@@ -715,10 +715,10 @@ I also think that vbat compensations helps against prop wash as the motor gives 
 
 **Note:** This requires VBAT connection on the FC (LiPo pack voltage) and VBAT Feature Enabled.
 
-##With vbat_pid_compensation are there issues moving from 3S to 4S batteries ?
+## With vbat_pid_compensation are there issues moving from 3S to 4S batteries ?
 There won't be a problem, the cell count is calculated and the PID adjustments are based on the Cell voltage.
 
-##How can I run the PID controller faster than 2kHz ?
+## How can I run the PID controller faster than 2kHz ?
 ### Instructions for ßF V2.5.0 RC6 and later
 Set looptime (microSeconds) in config GUI.
 OneShot42 and MultiShot now supported
@@ -747,7 +747,7 @@ calculation of motor speed:  motor update interval us= 125 * gyro_sync_denom * p
 
 PID is always synced to motors! PID speed is immediately your motor update speed.  Gyro can run faster than PID. The benefit of that is the higher sampling reduces filtering delays and helps catching up all higher frequencies that may fold down into lower frequencies when undersampled.  Even when GYRO runs faster than PID it is still in sync, but every (pid_process_denom)th sample.
 
-###Instructions for ßF versions up to 2.4.1
+### Instructions for ßF versions up to 2.4.1
 TODO
 - FC Settings?
 to change the refresh rate, one way is go into the CLI and change the Gyro denominator setting.
@@ -771,7 +771,7 @@ So far OneShot42 is not supported in ßF YET but would allow 4kHz refresh rates.
 
 **Important Note: With fast Loop rates there have been reports of the Gyro Caling during Bootup much sooner and the copter could be moving due to connecting the battery. If the copter is moving during Gyro Cal then the bad things can happen. Do observe the LEDs for very fast blinking or the three beeps. If you think the copter was moving during the Gyro Cal then just do a manual gyro cal with the Stick command, Hold minimum throttle and YAW then cent Roll and minimum Pitch.**
 
-##What is OneShot125 OneShot42 and MultiShot and how do these relate to max_throttle and Looptime ?
+## What is OneShot125 OneShot42 and MultiShot and how do these relate to max_throttle and Looptime ?
 TODO
 With the Standard ESC calibration to min_command = 1000 and max_throttle = 2000.
 OneShot125 will send pulses to the ESCs that are 1/8th the Standard values of 1000 to 2000 or 125 to 250usec.
@@ -783,7 +783,7 @@ But I agree if josh doesn't already have a video on it he needs one
 Some info here on Oscar Liang's excellent Blog site regarding MultiShot technique:
 http://blog.oscarliang.net/raceflight-multishot/
 
-##What cycle time can I run on what board ?
+## What cycle time can I run on what board ?
 F3 i2c targets:
  250 cycletime without acc, you can enable acc mode, but watch out for CPU usage when many features enabled. Anyway I recommend going to 2.6k when using accelerometer.
  Also boards with baro or mag on it even when disabled may decrease performance a bit.
@@ -802,35 +802,35 @@ F3 i2c targets:
  With acc enabled stick to 1khz. 
 (From BorisB)
 
-##How do I go about suggesting CF Configurator enhancements ?
+## How do I go about suggesting CF Configurator enhancements ?
 1) On GitHub, look up the Cleanflight Git. There's a link to the Configurator.
 2) Click on "Issues".
 3) Start a new issue and preface it with "Suggestion: short summary".
 4) Explain the new enhancement suggestion.
 
-##How do I lower the chance of my copter producing Magic Smoke when powering on ?
+## How do I lower the chance of my copter producing Magic Smoke when powering on ?
 Start by doing a continuity check with a multimeter if you have one.  A quick test for a short between the negative and positive pads on your power distribution board can save a lot of headaches.
 
 Another option is to use a Current Limiter when having the LiPo connected on the bench and Testing new setups. This has saved a few ESCs and Motors for many people.  Build and use this Limiter with a Switch in-line for easy powering On/OFF.
 http://www.rcgroups.com/forums/showthread.php?t=2327875
 
-##Why do we have RC Rate and also Yaw Pitch Roll Rates ?
+## Why do we have RC Rate and also Yaw Pitch Roll Rates ?
 Deeper Question: There is still some confusion about RC rate, Pitch, Roll, Yaw rate, and Expo. I understand that P/R/Y rates are how fast the quadcopter will rotate, and i know about expos too, but what is really RC rate? I can't really gain a full understanding of it. Some say it does the same as P/R/Y, some say it's different from it, some say it's stick sensitivity. But what is stick sensitivity really? Is it like expo?
 
 Answer: Think of it as fine tuning for RC Rate. It does the same thing just smaller increments and splits the axis up.
 
 Some people leave the RC Rate set to 1.0 and adjust the P/R/Y rates until the quad handles how they like (speed of flips/rolls etc). Once this has been set, the Expo values should be increased to allow for less sensitivity of the sticks nearer their center positions. This will make for smoother flight experience, and have the ability to perform fast rolls etc when the sticks move further away from the center.  This is the best way to do it at the moment.
 
-##Why does it matter to prevent motor jitter ?
+## Why does it matter to prevent motor jitter ?
 Two reasons:
 * The motor is stop starting, this will generate heat and potentially damage/wear out components.
 * As above your motor is stop starting, it isn't providing the thrust it is supposed to, your quad will shake/oscillate/crash and generally be unflyable.  See the Deep Dive page for a more in-depth explanation.
 
-##Why when I change something using CLI board crashes ?
+## Why when I change something using CLI board crashes ?
 If the FC uses the STM32's VCP then when leaving the CLI the config GUI does a "save" which re-boots the FC. Then Windows does not reestablish the USB. Check in the Device Manager to see if the Port has returned. If not then a work around is to disconnect and reconnect the USB. On some PCs/FCs this doesn't work so plug the USB into a different USB port on the PC. I keep two USB cables plugged into a Powered USB hub and just swap the USB cable to the FC and the Port comes back in the Device Manger and the Config GUI now sees to port.
 This is NOT and FC or Firmware issue but a Windows USB issues.
 
-##Will MW23 PID controller work on default PIDS ?
+## Will MW23 PID controller work on default PIDS ?
 No! Even though Boris believes this is now the best flying PID controller, it will not fly correctly on default PIDs much like rewrite and Lux will. You need to manually tune this like the good old days.
 In BorisB's words from Regroups
 
@@ -876,7 +876,7 @@ Angle and Horizon modes still need some work
 Don't forget to follow this good approach to tuning your multi-rotor:
 http://github.com/borisbstyle/betaflight/wiki/PID-Tuning-Guide
 
-##How do I keep and then restore my Betaflight Settings each time I upgrade ?
+## How do I keep and then restore my Betaflight Settings each time I upgrade ?
 First of all it is important to note that uploading a **full** settings Dump from a previous Betaflight version will likely result in your copter not flying properly, not flying at all or even damage to the components.
 
 It's also worth noting that the method of flashing Betaflight **can** be dependent of the FC board. So best to refer to the thread on the FC board you are using. The list of Boards in the FAQ have links to these threads.
@@ -897,7 +897,7 @@ Here are a few tools that are useful for making comparisons between config files
 1. Notepad++ with the Compare PlugIn
 1. https://www.diffchecker.com/
 
-##What is yaw_jump_prevention_limit and what does it do ?
+## What is yaw_jump_prevention_limit and what does it do ?
 
 From Joshua Bardwell
 
@@ -907,13 +907,13 @@ Addition from Adam Pyschny
 
 A to low yaw_jump_prevention_limit can prevent yaw P from getting enough authority to prevent the quad from breaking out in tight, high speed, roll-only turns.  
 
-##What is yaw_iterm_reset_degrees and what does it do ?
+## What is yaw_iterm_reset_degrees and what does it do ?
 
 From Joshua Bardwell
 
 yaw_iterm_reset_degrees determines the number of degrees above which the Iterm will reset to zero and stay there. the units are degrees per second rotation and they go from 25 to 1000. The issue here is that, on extreme acro moves like flips and rolls, the I term can accrue error, and then at the end of the move, the I term trying to unwind that error can result in rebound or overshoot, instead of sharply stopping the move. This parameter causes the I term to zero out when the rotational rate goes over a certain value. The idea is that, in a flip or roll, you don't care about correcting for persistent bias on that axis. You just want to flip or roll close to the targetted angular rate.
 
-##How does Super Expo work ?
+## How does Super Expo work ?
 
 From BorisB
 
@@ -942,27 +942,27 @@ Removal of iterm during faster acro manouvres provides more connected feel as al
 Video explanation:
 https://www.youtube.com/watch?v=HGAa8J1Ihac
 
-##How do rates relate to pitch roll & yaw degrees/s ?
+## How do rates relate to pitch roll & yaw degrees/s ?
 
 MadmanK has written a spreadsheet to show you pitch roll and yaw rate in Rewrite and Luxfloat to show how it relates to your rates in degrees per second.
 Only change the values in the grey boxes, and it will adjust the graphs and tables.
 
 [Rewrite/Lux rates](https://dl.dropboxusercontent.com/u/31537757/Betaflight%20Rates%20v1_4.xlsx)
 
-##Which Flight Controllers currently use SPI ?
+## Which Flight Controllers currently use SPI ?
   
   
 As of 11th Oct 2016  
 Colibri Race  
 Lux Race  
-Motolab Cyclone  
+Motolab Cyclone & Tempest  
 SPRACINGF3EVO  
 DOGE  
 CC3D (this is F1 board though......performs slightly better than i2c F3 board on rewrite)
 Alienflight F3 V2, F4
 XRacer F303 (v3.1 only, prior versions use I2C)
 
-##Which HEX target do I download and flash to my Flight Controller ?
+##W hich HEX target do I download and flash to my Flight Controller ?
 
 Sometimes it's pretty obvious which Betaflight HEX file to download and flash to your Flight Controller (like NAZE) but other times it's not (like RMDO). It's also worth noting that some of the HEX files are used with multiple FCs (like clones for instance).
 
@@ -996,12 +996,12 @@ Having all the Flight Controllers listed here (and their associated HEX/BIN) sho
 |[TBS Colibri Race](https://www.multirotorsuperstore.com/controllers/controllers-by-firmware/baseflight-cleanflight/tbs-colibri-race-flight-controller.html)|COLIBRI_RACE|
 |[X-Racer F303 V1 -> 2.1](http://www.fpvmodel.com/x-racer-f303-flight-controller_g1106.html)|SPRACINGF3|
 
-##How do I setup for reversed prop rotation ?
+## How do I setup for reversed prop rotation ?
 Just change props and motor rotation in BlHeli.   
 Then change set yaw_motor_direction = -1   
 Remember to cycle power to FC so new setting become properly used.
 
-##What is a recommended FC and esc setup to run at 8khz also i see reference to 4/4 or 4/4/32 or 8/8, what are these referring to ?  
+## What is a recommended FC and esc setup to run at 8khz also i see reference to 4/4 or 4/4/32 or 8/8, what are these referring to ?  
 First number is gyro freq (set by looptime, 1000=1K, 500=2K, 250=4K, 125=8K),
 
 Second number is PID calc freq, this is set with regards to looptime, pid denom 1=same freq as gyro,
@@ -1029,9 +1029,9 @@ F4's (revo/etc) on raceflight can run 8K/8K, if using the 6500 or 9250 gyro(spar
 
 All these FC can run esc up to 32K esc update rate at no extra penalty. Always check cpu usage via cli command "status", I prefer to stay under 30% cpu on BF, some get away with more.  
 
-##Is PID tuning any different at different PIDC rates ?
+## Is PID tuning any different at different PIDC rates ?
 
-####From Boris (31 July 2016)
+#### From Boris (31 July 2016)
 But here is the thing. There was a discussion before about whether P needs to be readjusted on higher looptimes. Some claimed to feel the difference 1k vs 8k for example and claimed retuning was needed. Were those feeling a placebo?
 The answer is not conclusive yet, but from my tests there seems to be a difference what can be explained.
 
@@ -1046,7 +1046,7 @@ But still these differences were extremely marginal and still nothing compared t
 
 Next tests would be synced vs unsynced and also 32k as some wanted to know that and also blheli tests. I think from what I have seen i can expect synced winning, but lets wait the results.   
 
-##What is the difference in PIDC Iterm in bF versions ? 
+## What is the difference in PIDC Iterm in bF versions ? 
 By ctzsnooze:  
 Any slow pitch back type thing is iTerm related. Pitching back means that P alone was unable to retain the intended angle in FFF, and iTerm accumulated in an attempt to get there. When dropping throttle, the need for that amount of iTerm changes, and it takes a short time for the iTerm to drop back. In that sense this is a symptom of P not being quite enough, or I being too much.  
 
@@ -1063,14 +1063,14 @@ Could I suggest that people with this issue first try a bit more P, if that's po
 
 These parameters can be varied quite a lot in attempting to find the best value. But the best solution is to have a quad where P is enough to get the angle you want mostly by itself.   
 
-##How to setup blackbox record rate with onboard dataflash ?
+## How to setup blackbox record rate with onboard dataflash ?
 Be carefull when setting up blackbox record rate with onboard dataflash.
 When running at the edge of the board (like 4khz/4khz/4khz on sp3 board), there is a risk of overunning the cpu with too high rate like 1/1, even 1/2.
 You need to test on the ground without props and check cpu usage, so just arm, activate blackbox, and check status on the cli command.
 Keep a safe value and leave some room for cpu usage.
 1/4 should be a correct value for sp3 board at 4khz/4khz/4khz.
 
-##How to setup the rates and SuperExpo ?
+## How to setup the rates and SuperExpo ?
 - First see the Rate calculator in the 2.8.1 Release notes and Watch Joshia's video on ßF 2.8
 
 Originally Posted by Boris B View Post  
@@ -1151,7 +1151,7 @@ RC Slater is online now Send a private message to RC Slater Find More Posts by R
 Video from Joshua Bardwell:
 https://www.youtube.com/watch?v=cttFDHkec0c
 
-##What is the story on the different Rates and Expos ?
+## What is the story on the different Rates and Expos ?
 Thanks to joshuabardwell for this write up.
 
 Let's have a little history lesson.
@@ -1190,7 +1190,7 @@ You can achieve more or less the same curve with both expo and s.rates, it just 
 
 The following are extracted from posts about this issues with Observations, Theories, Discussions and suggested solutions. Read through all the discussion and follow the links to learn almost all there is about the issue and solutions.
 
-#####First reports of issue:  
+##### First reports of issue:  
 Many people have yaw twitches or oscillations at mid-throttle and many do not. All that have this issue seem to be running FCs that use the MPU6500 gyro chip (Naze32 rev6, LUX, others) and newer motors. Boris B was one that did not have this issue with the 6500 gyro until he upgraded to newer, stronger motors. Many have cured this by soft mounting the FC board but this has not worked in all cases.
 
 Link to a thread with data on the MPU9250 gyro:
@@ -1198,28 +1198,28 @@ http://www.rcgroups.com/forums/showthread.php?t=2718308#post35460394
 
 Much discussion and experimenting is showing that this is an issue with both mechanical and electrical noise getting into the gyro and effecting the Yaw. Following is some of the discussion.
 
-####Post from Boris  
+#### Post from Boris  
 Anyway something I want to share with you. As you all know I have been flying MPU6500 on several quads without any significant issues for a while. I knew those were a bit more sensitive, but didnt really bother me. I never had any twitches and problems like some had....until this week!
 So what happened. I was flying with my trusty CM2204 2300kv cobras on pretty much all my setups till recently. Since I swapped to 5S I experienced that those motors were not ideal for that power so I went searching for new alternative motors. That's exactly where the issues started.
 Once I replaced the motors my 2 MPU6500 quads and even my DOGE fc went completaly nuts. Totally untunable and twitchy as hell. Exact the issues that have been reported in the past. I had to detune my quads to mask the vibrations and twitches.
 Than I swapped them by cyclone (mpu6000) board and boom.....double as high pids and smooth and locked in as butter.
 
 No news. But really funny to experience these issues by myself for once the first time.  
-####Originally Posted by Cheredanine  
+#### Originally Posted by Cheredanine  
 Interesting it happened on all three FC,
 Assume you didn't try soft mounting, what motors were you using?  
-####Originally Posted by Boris  
+#### Originally Posted by Boris  
 2 of them were soft mounted my DOGE was not. The new cobra motors I was trying out were absolutely smooth on the bench. But somehow at certain RPM the gyro would go nuts. Would love to understand that better. Just random yaw twitches etc like we have seen many times reported on those gyros.
 After putting cyclone on the exact same quads above with everything else just same absolutely smooth like on the bench. O yeah and cyclone was hardmounted!  
 I actually even tried 2 different motors. Cobra Champion serie 2205 2300kv and Brotherhobby 2205 2300 kv. There is certainly nothing wrong with the motors. There is just some kind of resonant frequency what upsets the MPU6500. And yes I switched back and fourth between my old CM2204's and CM2206 motors, which were smooth at all times.  
-####Originally Posted by prokreat  
+#### Originally Posted by prokreat  
 My money is on the stronger magnets messing with the 6500. 
-####Originally Posted by Boris  
+#### Originally Posted by Boris  
 It really seems like that! The better the motor quality it seems to affect it more. I really wonder if this is all related to electric noise rather than vibration noise.
 
 Perhaps due to smaller factor of mpu6500 it is missing some crucial power filtering circuit.
 I know invenesense was under pressure few years ago to produce gyros with smaller form factor due to the constant huge demand from mobile phone manufacturers  
-####Originally Posted by  waltr  
+#### Originally Posted by  waltr  
 There was a very short discussion about this twitch issue and adding low ESR caps and while ago in this thread. Theory here is that it is the Noise Spikes from the motors/ESCs disturbing the Gyro readings.
 
 We know soft mounting can help a lot but what about added caps to the ESC power.
@@ -1229,13 +1229,13 @@ Another may be adding good caps right on the MPU6500 power/ground pins. From wha
 They don't seem important but actually are very important for modern electronic devices to operate.
 It could be not a direct issue with the MPU6500 chip but with schematic and PCB layout design not done properly.
 
-####Originally Posted by  joshuabardwell  
+#### Originally Posted by  joshuabardwell  
 I hate to say this because I know vendors with good products who have a 6500 or a 9250, but I personally would not recommend that anyone buy an FC with a 6500 or 9250, because it is just a crap-shoot whether you are going to run into these problems. Many people fly with no problem at all. Many people who have problems are able to soft mount and fix them. But some people have problems and simply cannot fix them, and that just seems like a chance that nobody should have to take, in a world where there are very good FC's using the 6000 or 6050. If there is a "glitchy" FC that you absolutely love, such as the DTFc because of its built in PDB, or the SP3 Evo because of its transponder and built in SD card reader, then buy it with the knowledge that you might be unlucky and have glitching that you can't fix. But if you are just searching around for an FC, and you have no particular love for any board, then absolutely buy one with a 6000 or 6050 chip only.   
-####Post from QuadMcFly  
+#### Post from QuadMcFly  
 To chime in on the 6500/9250 issue, there appears to be a couple things going on here. As Boris mentioned, there seems to be an electrical noise issue here that compounds things. The MPU 6500 is extremely sensitive to voltage fluctuations on the 3.3v supply line, which raises the noise floor of the IMU. Extra power filtering will definitely help with the problem.
 
-###A Case:
-####Originally Posted by gunadeau  
+### A Case:
+#### Originally Posted by gunadeau  
 Maybe my story can help some people. I had very bad twitch issue on the yaw axis. It was untunable. I tried to softmount the FC, it helped but was not perfect. What really cured my issue was putting a 1000uf capacitor 35v 105 deg on the PDB at the battery connector.
 My gyro is now super clean and it fly incredibly well.
 
@@ -1244,10 +1244,10 @@ Zmx v2 2300kv
 Aikon blheli_s
 Xracer v2.2 multishot sync 4/4
 
-####RCG thread on Capacitors
+#### RCG thread on Capacitors
 http://www.rcgroups.com/forums/showthread.php?t=2657808
 
-####Post by Cheredanine
+#### Post by Cheredanine
 General recommendation is a low esr 1000uf with a voltage rating of 35v if you are using on the battery connection, if you put a cap on each esc then a lower spec can be used
 
 Soft mounting can be done in a number of ways, traditionally hard mounting means nylon standoffs
@@ -1255,7 +1255,7 @@ To soft mount one can use rubber or silicon o rings on the standoffs
 Or one can use rubber vibration isolation standoffs
 Or double sided sticky foam 
 
-####Post by ctzsnooze (30 july 2016)
+#### Post by ctzsnooze (30 july 2016)
 Here's my thoughts about gyro issues.
 
 The characteristic of a primary gyro problem is an anomaly in the gyro data exclusively on one axis that cannot be explained by other means.
@@ -1292,7 +1292,7 @@ So... unless the log is very characteristic of a gyro problem (e.g. twitches or 
 
 We are flying these things on the basis that the gyro data presented to the FC is a clean and accurate representation of the true movement of the frame. The possibility that gyros have some tendency to falsely resonate and make false oscillation data at certain throttle points is not a nice thing to contemplate.   
 
-####A report of fixing this Yaw twitch/oscillation issue:   
+#### A report of fixing this Yaw twitch/oscillation issue:   
 http://www.rcgroups.com/forums/showpost.php?p=35385057&postcount=34964    
 
 #### Example of Cap:
@@ -1304,7 +1304,7 @@ I had issues with yaw oscillation at mid throttle with Aikons + Lumenier 2206-23
 Logs for hardmount, softmount and softmount + 1000uF cap.
 https://www.dropbox.com/sh/a4kvsilpi...h56ocCO1a?dl=0
 
-####Post by AliB
+#### Post by AliB
 
 I'm starting to believe the mid throttle oscillations is on more than the 6500 gyros.
 
@@ -1316,7 +1316,7 @@ get it still even with P's down around 2.
 
 both of us are running GTINpower 2205. nice motors but powerrrr hungry  
 
-####Post by Tony Leyland
+#### Post by Tony Leyland
 
 On my Alien build I also experience mid-throttle "vibrations" and have tried extensive tuning on BF 2.9.0 and also soft mounting the FC with no luck.
 
@@ -1336,20 +1336,19 @@ People are saying this occurs at mid throttle but in my case I believe it to be 
 
 I'm going to try the capacitor near the batter lead next and update you guys.
 
-
-####Post by fftunes   
+#### Post by fftunes   
 Just another small report of electrical noise: Friend built another all new quad with naze r6 which produced a weird high frequency hum, no matter what filters/PID etc were set to.
 
 A single cap (35v 470uf) to the pdb fixed it. 
 
-####Post by jubifly
+#### Post by jubifly
 Had similar problems on my build. I tried both, limiting possible electrical noise with capacitors and mechanical vibrations by softmounting the FC with some rubber o-rings. Both with no luck. I then tried to remove the FC completely from fixed parts at the frame and left it hanging in the air (just the motor and rx wires) and the yaw twitches disappeared. My thoughts on that were that the rubber rings were not applicable (maybe too hard?!) for softmounting...
 Maybe try leave the FC dangling in the air and see if it still happens - just to definitely eliminate the possibility of mechaninacal noise being the issue.
 
-####Here is a post from ctzsnooze on a better soft-mounting method.
+#### Here is a post from ctzsnooze on a better soft-mounting method.
 http://www.rcgroups.com/forums/showpost.php?p=35486733&postcount=36111
 
-####A nice conclusion on this issue from ctzsnooze 
+#### A nice conclusion on this issue from ctzsnooze 
 Lots of us have seen exactly this behaviour. I am surprised that you seem so astonished now that you find it happens to you. It happens randomly. It could happen to anyone. It just happened to happen to you. :-)
 
 It goes away with replacing the gyro chip, replacing the FC, or soft mounting the FC; these fixes work whether or not capacitors are added. Sometimes it goes away by just adding capacitors.
@@ -1388,7 +1387,7 @@ MotoLab Cyclone boards have plenty of space around the holes, intentionally, no 
 
 I can't stress enough that just over drilling isn't enough. The board can and will slide on the o ring until one hole stops with the edge of that hole wedged on a bolt. Beveling the top and bottom of the hole allows re-centering and is essential with a yaw issue of his kind. I use a cheap conical grinding stone to make the bevel.   
 
-####A solution by airmaxx23
+#### A solution by airmaxx23
 http://www.rcgroups.com/forums/showpost.php?p=35785741&postcount=38781
 So, great news, this completely took care of my yaw shake. I didn't change anything else prior to trying it either. Just in case someone wants to print up some of these standoffs I can put them on Thingiverse or if you want to draw them up they're 6mm outer diameter and 2.9mm inner.   
 Here you go, 8mm, 10mm and 12mm. I can print them in orange, red, black, blue or clear if anyone needs them.
@@ -1397,14 +1396,14 @@ http://www.thingiverse.com/thing:1785455
 Another possible solution:   
 http://www.rcgroups.com/forums/showpost.php?p=35786828&postcount=38790
 
-####Post by scripto23:   
+#### Post by scripto23:   
 I've got another data point to add to the gyro noise/twitching debate. I have the Spracingf3 evo with the 9250 gyro. On a brand new build it was literally unflyable, I don't mean it flew like crap, I mean I couldn't get it off the ground because it was twitching like a stuck pig.
 
 Read through the relevant part in the amazing wiki (thanks waltr) tried soft mounting (already had a capacitor on the pdb) and managed to get it in the air, but still had very bad micro oscillations at anything above 1/3 throttle on ALL axis; visible on FPV and blackbox logs. I tried every combination of PIDs, nothing helped. I finally changed the FC to the spracingf3 with the 6050 gyro and all traces of micro oscillations were completely gone.
 
 It seems some people have no problems, some people have mild problems, and some like me are left with severe issues. The boards with these gyros are completely hit or miss. I sincerely doubt the quality control (or lack thereof) for this part.   
 
-####More from Boris's thread (7 Oct 2016):
+#### More from Boris's thread (7 Oct 2016):
  Posted by mikenxzz:
 I have a problem with strong magnet motors (Tornado T2 2206), where straight after arming, at idle, the motors vibrate a lot.
  Reply by ctzsnooze:
@@ -1429,7 +1428,7 @@ Its the nowadays motors what really cause more microvibrations than the older on
 Certain escs will pronounce this noise more.
 Not sure why blheli_s seems most sensitive of all at the moment.   
 
-####Another solution by Race Miata (posted in the BLHeli_S thread):
+#### Another solution by Race Miata (posted in the BLHeli_S thread):
 Regarding mid-throttle twitch, I tried all sorts of tuning, filters, FC mounting methods without much luck because of those super torquey 2306 motors. So far what works best for me is to
 
 1. meticulously spin-balance each entire rotor assembly (motor plus prop). I'm talking about less than 0.002g of imbalance with the entire rotor assembly,
@@ -1445,14 +1444,14 @@ At this point there's still some mid-throttle twitch as shown in the following v
 My Multistar250 with Spin-Balancing and Vibration-Absorption Motor Mounts (2 min 40 sec)
 https://www.youtube.com/watch?v=rXB9Rl7vLDI
 
-####Comments on this by AILERON8:   
+#### Comments on this by AILERON8:   
 Isolating vibration at its source before it's amplified is standard practice in just about every mechanical and aeronautical engineering handbook that's ever been written. Yet for some reason most folks in this hobby are so laser focused on a software-based filter or FC enhancement of some sort they're blinded to what should be an obvious solution. Dampening the motor vibration, stiffening the frame, or even placing a sensor near or on the motors (utilizing the active feedback signal within the FC software for an automated/enhanced filter) are going to have a much more pronounced effect on noise reduction than all the software filtering in the world.   
 I'd also just like to mention that I am in no way trying to imply that software-based filters in the flight controller are ineffective. Only that reducing motor vibration has great and untapped potential in my opinion   
 
-####Continued Discussion (13 Feb 2017):  
-#####AILERON8:  
+#### Continued Discussion (13 Feb 2017):  
+##### AILERON8:  
 The same goes for motor soft mounting, the bolts must be isolated for the method to reach its full potential. I have yet to see a quad with fully soft-mounted motors, but I suspect it would make for the smoothest, most oscillation-free quad ever. So oscillation-free these 32khz gyro's should be all set for takeoff. Floating motors should eliminate the opportunity for resonance to develop and propagate towards the sensitive gyros. Unlike soft-mounting the FC, for motor dampening to be effective it doesn't need to eliminate frame oscillation. The goal for motor dampening is to decouple the frames' natural resonant frequency from the motor as its oscillations vary in frequency and amplitude. All motors oscillate, regardless of balancing. The frame won't oscillate if it's detached from the motors. The motor must completely float in order to achieve this effect however. Which is why I think folks will be in for a surprise when they see how well motor soft mounting can be if fully implemented. I honestly think FC soft mounting will be a thing of the past when the results start pouring-in...   
-#####Tesseract1984:  
+##### Tesseract1984:  
 Agreed.  
 Having tried it all (soft mount FC, caps on mains, caps on ESCs, soft mounting motors), this seems to be the ticket.  I've had varying levels of success with each option. The most useless of them all being a cap on the mains.  
 Soft-mounting motors makes the most sense. In my opinion doing it to the FC is a band-aid while doing the motors attacks the source and doesn't introduce any delay.  
@@ -1466,22 +1465,22 @@ While multi-rotor flight is still in it's infancy and we are trying new things, 
 Would love to see frames come out that have motor soft mounting built into the frame. IMO this should become an industry standard. Also had an idea a few months ago for FC screw holes to have silicon material with a hole big enough for screws.  
 Anyway, just my 2 cents. Just converted my whole fleet using tpu soft mounts and it has literally changed my quadcopter experience. My HD footage actually starting to look like I might know what I'm doing.  
 All aboard, the hype train is leaving the station!   
-#####AILERON8:   
+##### AILERON8:   
 I agree, too much dampening can make for a sloppy ride. I've over-dampened my FC before using an SPracingF3 board strapped to a giant piece of foam. Sure, no oscillations, but no matter how high I cranked the PIDs it felt loose and sloppy. We want the motors to float, but still let-in those low frequencies untouched. It's definitely a fine balance. One thing I don't believe motor soft mounting will solve though is electrical noise. Most of that is coming from the ESCs via damped light. Although recently Aargh80 came-up with a novel approach to minimize the latter noise using a small 270uF cap in parallel with a tiny MLCC board that can be remotely tucked anywhere in your stack or fuselage. I'd like to see a production version, even though it's not that hard to make it would be nice to have one all set to go for expediency's sake.   
-#####QuadMcFly:  
+##### QuadMcFly:  
 Obviously removing the vibrations at the source is much more effective than trying to remove them once they've picked up all kinds of harmonics from the frame I have put together the idea of how to do this, but small volume is too expensive to make it worth it. It involves shoulder bolts 1mm-1.5mm taller than the frame, holes for the screws 1mm-1.5mm wider than the shoulder bolts, and ninja-flex printed grommets to fit the holes. The shoulder bolts tighten against the base of the motor to prevent backing out, but still "float" on the ninja-flex grommets in the arms. there's enough tightness to prevent misalignment of the motors, but enough isolation to be very effective against high frequency vibrations. To make it even cheaper one could simply use the correct diameter heat shrink over the shoulder part of the shoulder bolts and then isolate the motors the old fashioned way. Unfortunately shoulder bolts are super expensive in small quantities.   
 
-####Another post of fixing mid-throttle oscillations by ghall05  
+#### Another post of fixing mid-throttle oscillations by ghall05  
 I've had this qav210 for a while now that's had mid throttle oscillations. Changed escs and fc and also tried some different soft mounting methods with no luck. However adding a 25v 1000uf low ESR cap on the main battery connection has solved it! And this is with a hard mounted FC too.  
 
 Just another data point! I'm putting caps on all my builds from now on. 
 
 Edit: I should add that I was using a kiss fc first and then a cyclone (which I'm still using now). So mid throttle oscillations can definitely happen on setups without the 6500 gyro.   
 
-####Good before and after BB example of soft mounting:
+#### Good before and after BB example of soft mounting:
 https://www.rcgroups.com/forums/showpost.php?p=36091829&postcount=2453   
 
-####Another Discussion on Oscillation issues:
+#### Another Discussion on Oscillation issues:
 vini3019:  
 Just want to share with you guys some of my thinks...
 
@@ -1510,31 +1509,31 @@ There is really no need of lowering your P's as you suggest just for that. You t
 The notch default filters in 3.0.1 should deal with low and mid throttle vibrations in most cases.
 On few of my quads I also have the Cobra champion serie motors like you and had terrible time tuning those without notch filters before.   
 
-####Another Post on curing oscillations from linklemming:
+#### Another Post on curing oscillations from linklemming:
 https://www.rcgroups.com/forums/showpost.php?p=36220137&postcount=41113
 Later comment:   
 I just stuck three squarish (~15mm) pieces of electrical tape on the frame underneath the motors, used an exacto knife to cut holes in the tape for the screws and remounted the motors making sure not to tighten them down too much.
 
 I really doubted it would be as effective as it was since vibes can still come thru the mounting screws but it fixed the issue.   
 
-#####Motor Vibration Isolators. Printed in extra flexible NinjaFlex (softer than TPU)  
+##### Motor Vibration Isolators. Printed in extra flexible NinjaFlex (softer than TPU)  
 https://www.rcgroups.com/forums/showpost.php?p=36698872&postcount=2693  
 
-#####A short thread on the Frustrations of Curing Mid-throttle Oscillations.  
+##### A short thread on the Frustrations of Curing Mid-throttle Oscillations.  
 https://www.rcgroups.com/forums/showthread.php?2787839-AHHAHAHA-Trouble-shooting-over-a-month-Mid-Throttle-oscillations-Finaly-Solved
 Moral: It may not be what you think. In this case is was very probably a loose FPV camera. This is a good reason to confirm the oscillation with a BB log.  
 
-#####Successful curing of Oscillation:
+##### Successful curing of Oscillation:
 The problem: https://www.rcgroups.com/forums/showpost.php?p=36310032&postcount=249   
 Fixed: https://www.rcgroups.com/forums/showpost.php?p=36326501&postcount=253   
 Broken: https://www.rcgroups.com/forums/showpost.php?p=36330372&postcount=255  
 
 https://www.rcgroups.com/forums/showpost.php?p=36857612&postcount=2746  
 
-#####Successful curing of yaw twitches:  
+##### Successful curing of yaw twitches:  
 https://www.rcgroups.com/forums/showpost.php?p=36692751&postcount=916  
 
-#####Testing of the new ICM20602 Gyros:  
+##### Testing of the new ICM20602 Gyros:  
 Boris: Oh.....for the record its not just ICM20602, but MPU6500, MPU9250 and all other ICM2xxxx devices that show exactly the same behaviour. Pretty much every 32khz supported gyro out there.
 https://www.rcgroups.com/forums/showpost.php?p=36622960&postcount=43273  
 More discussion: https://www.rcgroups.com/forums/showpost.php?p=36623357&postcount=43282  
@@ -1542,23 +1541,23 @@ https://www.rcgroups.com/forums/showpost.php?p=36623562&postcount=43287
 https://www.rcgroups.com/forums/showpost.php?p=36630278&postcount=43337  
 https://www.rcgroups.com/forums/showpost.php?p=36630822&postcount=43348  
 
-#####Posted by KagedMayhem: 
+##### Posted by KagedMayhem: 
 I see the comments about notch filters helping with the noise issues, and the comparisons between the mpu6000 and the new icm20602 but not seeing anything about if the current iterations of Betaflight helped solve the noise problems. Is that what the notch filters are for?
 Boris:  
 You can of course make the filtering more agressive, but readings from ICM20xxx gyros can be too messy on hardmounted solutions so softmounting to make them less sensitive seems like the only solution on those, where on mpu60x0 you would mostly get away on standard mounting.   
 
-#####Post on testing Dshot before and after adding Large, low ESR caps to power system:  
+##### Post on testing Dshot before and after adding Large, low ESR caps to power system:  
 https://www.rcgroups.com/forums/showpost.php?p=36713066&postcount=3133 
 https://www.rcgroups.com/forums/showpost.php?p=36718584&postcount=3144  
 https://www.rcgroups.com/forums/showpost.php?p=36720323&postcount=3157  
 
-#####Post on Proper Soft Mounting by arcaine25:
+##### Post on Proper Soft Mounting by arcaine25:
 I had an issue with a 9250 gyro and enabling 32khz mode, setting 16 / 16, but discovered that the issue was the way I was "soft mounting". I tend to be a little OVER OCD, and I tightened it too much, as well as a couple other mounting mistakes made in haste. When correcting those, and mounting a little "looser" the yaw twitch went away. I am going to dedicate a 32khz mode quad today and test it all over the place... haha   
 
-#####Thread about Caps for Noise reduction:  
+##### Thread about Caps for Noise reduction:  
 https://www.rcgroups.com/forums/showthread.php?2830948-Capacitors-for-noise-reduction  
 
-#####Links to Soft Mounting hardware:  
+##### Links to Soft Mounting hardware:  
 OZ -- I am using these, $4.30 for 8 shipped. They are rubber 8mm x 8mm with standard M3 male/female mounting.  
 http://www.ebay.com/itm/151873404692?_trksid=p2057872.m2749.l2649&ssPageName=STRK%3AMEBIDX%3AIT&rmvSB=true  
 These are the only ones I have tried and all yaw twitches are gone, they are stiffer than I would think would work, but working well on my revolts (SSG) and sparky2's (9250) flight controllers @ 32/16, motors are hard mounted. 
@@ -1569,7 +1568,7 @@ http://rotorgeeks.com/index.php?route=product/product&product_id=599&search=damp
 Gozz -- These are the ones I recently started using too, they work very well for the size.  
 https://www.readymaderc.com/store/index.php?main_page=product_info&cPath=53_777&products_id=6306  
 
-##Is there a way to download blackbox logs through a terminal client ? 
+## Is there a way to download blackbox logs through a terminal client ? 
 Thanks to dropax for asking this and working out the answer.  
 
 Some code digging reveals a CLI command "flash_read" which is only enabled for sparky2:
@@ -1584,14 +1583,14 @@ I think [this](https://github.com/cleanflight/cleanflight/commit/3eb28f16eaa5d4f
 
 Since it's only enabled for the "brand new" sparky2 target (08/06/2016) I think it is only meant for debugging purpose. After the download the serial port seems to hang up and I have to reboot the FC but the time savings are totally worth the hassle.  
 
-##Why do LED strips not work ?
+## Why do LED strips not work ?
 One possible reason:
 Many LED strips do NOT work when power at over 5V since the FC's serial output is only 3.3V logic and the LED chips never see a valid logic high. Lowering the LED Voltage by at least a diode drop makes them work.
 Two working solutions are: 
 Add a silicon diode, 1N4002, in series with the 5V to the LED strip.
 Power the LED strip from a regulator adjusted to about 4.7V. May need to adjust a little lower if still not working.
 
-##Recently with the temps dropping, my quad has started to develop a random twitch. Anyone else experience random issues when it's 20'ish degree's F outside ?
+## Recently with the temps dropping, my quad has started to develop a random twitch. Anyone else experience random issues when it's 20'ish degree's F outside ?
 
 Excellent answer by AILERON8:
 Not twitches, but glitches in general, you bet! I used to run a mobile DJ business for 15 years, and I've performed hundreds of gigs in cold climates living and working primarily in coastal Maine. Today it's a balmy 5 deg F for example, but from all those years of experience I can tell you there are three major things that happen to electronics and hardware due to the cold, and they're not good I'm afraid to say.
