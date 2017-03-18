@@ -118,15 +118,15 @@ Betaflight may not be able to support all Targets ( or specific boards) due to t
 - BETAFLIGHTF3  
 - BLUEJAYF4
 - BrainFPV RE1 (needs build from BrainFPV repo)
-- Colibri Race v2.0  (build #722)
+- Colibri Race v2.0
 - Dodo (RMDO)  
 - Dodo (SPRACINGF3)
 - DTFc - Build #389 - working on the bench
-- DTFC (DOGE) (build 682)
+- DTFC (DOGE)
 - FLIP32F4
 - FURY F3
 - FURY F4
-- HGLRC AIO F3 v3 (SPRACINGF3) - works with build #739. Build #740 Arms but no response.  
+- HGLRC AIO F3 v3 (SPRACINGF3)  
 - IMPULSERCF3 
 - KISSFC  
 Note from sskaug: KISS FCs use a resistor to drive the throttle signal high (pull-up). So it is quite sensitive to capacitance on the ESC signal.  
@@ -139,11 +139,11 @@ Note from sskaug: KISS FCs use a resistor to drive the throttle signal high (pul
 - REVO (and clones)
 - Rotorgeeks RG SSD
 - SIRINFPV
-- SOULF4 - (SOULF4) build #734 (beeper not working) - works with REVO.hex
-- SPRacingF3 (Acro/Deluxe) - Spektrum Sat now working. PPM now working since build #713.
+- SOULF4 - (SOULF4) - works with REVO.hex
+- SPRacingF3 (Acro/Deluxe)
 - SPRacingF3NEO - Full hardware support on all the standard motor outputs - tested by the designer of the board.
 - YuPi F4
-- X-Racer V2.1 (SPRACINGF3 #670)
+- X-Racer V2.1 (SPRACINGF3)
 - X-Racer F303 (X_RACERSPI) -
 
 ### FC Targets that work with Dshot but require hardware mods and re-mapping pins with the Resource command:   
