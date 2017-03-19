@@ -153,8 +153,9 @@ You can see that there is no need for a corresponding disabling of inputs at the
 
 Videos by Joshua Bardwell:  
 Cleanflight throttle parameter configuration -
- Part 1:  
- Part 2:  
+Part 1: http://www.youtube.com/watch?v=WFU3VewGbbA  
+Part 2: http://www.youtube.com/watch?v=YNRl0OTKRGA  
+  
 ## Why wont my FC board arm after upgrading the firmware ?
 
 Check the following:
