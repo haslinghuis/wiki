@@ -167,7 +167,7 @@ save
 
 See: [CLI resource command](https://github.com/betaflight/betaflight/wiki/Betaflight-resource-remapping)    
 
-- ALIENFLIGHTF4  
+##### ALIENFLIGHTF4  
  Move the motor 2 wire to the PPM pad at the bottom of the board. You can also directly connect the motor 2 signal pad with the PPM pad. There are updated board designs available with an added DSHOT solder jumper at the bottom which is making this connection. In this case, you can leave the motor 2 soldered output #2. Note: a PPM receiver can not be used in this configuration.  
  If your controller has an SDCard slot (V2.0) you also need to use the following command in addition to get motor 4 working with DSHOT:  
 `set sdcard_dma=off `  
@@ -178,7 +178,7 @@ See: [CLI resource command](https://github.com/betaflight/betaflight/wiki/Betafl
  
     See: [AlienFlightNG Support](https://www.alienflightng.com/support/)    
 
-- MOTOLAB - (MotoF3, Cyclone & Tempest)   
+##### MOTOLAB - (MotoF3, Cyclone & Tempest)   
  Move motor 1 from Output #1 header pin to the PPM input header pin.   
 [See MOTOLAB board for wiring detail ](https://github.com/betaflight/betaflight/wiki/Board---MOTOLAB)  
  Follow above and to re-map output type in CLI:  
@@ -186,7 +186,7 @@ See: [CLI resource command](https://github.com/betaflight/betaflight/wiki/Betafl
 `resource motor 1 A07 `  
 `save  `  
  
-- PIKOBLX - Re-map motor 1 to the PPM pin (same as MotoLab). Solder motor 1 signal to the PPM pad leaving the SBUS jumper 'shorted'.
+##### PIKOBLX - Re-map motor 1 to the PPM pin (same as MotoLab). Solder motor 1 signal to the PPM pad leaving the SBUS jumper 'shorted'.
 To allow the use of the LED pin Re-map motor 4 to motor 5 signal out a01, which must also be soldered as such.   
  
     Note: RX must use SBUS since PPM pin is now reassigned to motor 1.
@@ -198,7 +198,7 @@ Link to modification details: https://www.rcgroups.com/forums/showpost.php?p=366
 `save  `  
 
 
-- SPRACINGF3EVO -  Must move MOTOR 4 to new pin assignment (CLI = resource MOTOR 4 A06). Then solder ESC for motor #4 to motor output #5, fixes DMA conflict with motor outputs 2 and 4.  
+##### SPRACINGF3EVO -  Must move MOTOR 4 to new pin assignment (CLI = resource MOTOR 4 A06). Then solder ESC for motor #4 to motor output #5, fixes DMA conflict with motor outputs 2 and 4.  
  Follow above and to re-map output type in CLI:  
 `resource motor 5 none  `  
 `resource motor 4 A06 `  
@@ -206,7 +206,7 @@ Link to modification details: https://www.rcgroups.com/forums/showpost.php?p=366
 There also seems to be a DMA conflict with BB logging. [see Github issue #2162](https://github.com/betaflight/betaflight/issues/2162) the fix seems to be disable BB logging DMA in the CLI:  
 `set sdcard_dma = OFF  `   
 
-- SPRACINGF3MINI - Move motor #4 to the PPM pin. Then use resource command to disable PPM and map motor 4 output to B04.  
+##### SPRACINGF3MINI - Move motor #4 to the PPM pin. Then use resource command to disable PPM and map motor 4 output to B04.  
  Follow above and to re-map output type in CLI:  
 `resource ppm none  `  
 `resource motor 4 B04 `  
@@ -214,7 +214,7 @@ There also seems to be a DMA conflict with BB logging. [see Github issue #2162](
 
     Limitation: BlackBox on the internal SDCard works with MultiShot but not with DShot.  
 
-- KOMBINI - Move motor #1 from Output #1 header pin to the PPM input header pin.  
+##### KOMBINI - Move motor #1 from Output #1 header pin to the PPM input header pin.  
  Follow above and to re-map output type in CLI:  
 `resource ppm none  `  
 `resource motor 1 A07 `  
@@ -223,14 +223,14 @@ There also seems to be a DMA conflict with BB logging. [see Github issue #2162](
     Limitation: no LED functionality with DShot is allowed.  
 Video on getting this FC working: https://www.rcgroups.com/forums/showpost.php?p=36269451&postcount=1966    
 
-- AIORACERF3 -  Must move MOTOR 2 to new pin assignment since it has a DMA conflict with MOTOR 1:    
+##### AIORACERF3 -  Must move MOTOR 2 to new pin assignment since it has a DMA conflict with MOTOR 1:    
 Connect ESC for motor 2 to 'LED' pin on the board.  
  Then re-map motor 2 output: type in CLI:    
  `resource motor 2 A08`  
  `save`  
  The new mapping for motor 2 conflicts wit `LED_STRIP` and `TRANSPONDER`, so make sure these two features are disabled in the configurator. 
 
-- EMAX FEMTO F3 -  Motor 4 needs to be moved to the LED pad on the underside of the fc.   
+##### EMAX FEMTO F3 -  Motor 4 needs to be moved to the LED pad on the underside of the fc.   
   LED_STRIP needs disabled and then motor 4 gets remapped to that pad.   
  `resource LED_STRIP none`  
  `resource motor 4 A08`  
