@@ -151,6 +151,10 @@ Max and min channel values are determined by the rxrange command. They default t
 
 You can see that there is no need for a corresponding disabling of inputs at the top of the throttle range, because you never input any stick commands that require the top of the range when you are flying. The only stick command that is input when you are flying is disarm, and that is low yaw and low throttle. So there is a dead space at the bottom of the throttle range (below min_check) but no dead space at the top of any channel range. 
 
+Videos by Joshua Bardwell:  
+Cleanflight throttle parameter configuration -
+ Part 1:  
+ Part 2:  
 ## Why wont my FC board arm after upgrading the firmware ?
 
 Check the following:
