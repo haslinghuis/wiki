@@ -242,7 +242,7 @@ Connect ESC for motor 2 to 'LED' pin on the board.
   `resource motor 4 A15 `  
   `save  ` 
 
-- BeeRotor F4 -  (for use with a Hexacopter) Motor 6 needs to be moved to the LED pin on the 'SC' connector.
+##### BeeRotor F4 -  (for use with a Hexacopter) Motor 6 needs to be moved to the LED pin on the 'SC' connector.
   LED_STRIP needs to be disabled, and then motor 6 gets remapped to this pin:   
  `feature -LED_STRIP`  
  `resource motor 6 B08`  
