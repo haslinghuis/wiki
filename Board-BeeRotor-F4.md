@@ -43,8 +43,8 @@ RCTimer: http://rctimer.com/product-1730.html
 
 ## Designers
 
-Eric Liang (imericliang@gmail.com)
-Michael Keller
+ - Eric Liang (imericliang@gmail.com)
+ - Michael Keller
 
 ## Maintainers
 
@@ -52,4 +52,4 @@ Michael Keller
 
 ## FAQ & Known Issues
 
-- Enabling DShot for motor 6: https://github.com/betaflight/betaflight/wiki/DSHOT-ESC-Protocol#beerotor-f4----for-use-with-a-hexacopter-motor-6-needs-to-be-moved-to-the-led-pin-on-the-sc-connector
+- Enabling DShot for motor 6: [Instructions](https://github.com/betaflight/betaflight/wiki/DSHOT-ESC-Protocol#beerotor-f4----for-use-with-a-hexacopter-motor-6-needs-to-be-moved-to-the-led-pin-on-the-sc-connector)
