@@ -1,10 +1,10 @@
-##PLUM F4
+## PLUM F4
 
-Available at: flyinglemon.eu
+Available at: Http://flyinglemon.eu/
 
 ![PLUMF4](http://flyinglemon.eu/ext_images/plum_top_s.jpg)
 
-###Board information:
+### Board information:
 
 - CPU - STM32F405RGT6
 - MPU6000 SPI gyro
