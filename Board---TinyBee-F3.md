@@ -34,7 +34,7 @@ RCTimer: http://rctimer.com/
 ## Maintainers
 
  - Hardware: Eric Liang
- - Software: Michael Keller## Designers
+ - Software: Michael Keller
 
 ## Similar Targets
 
