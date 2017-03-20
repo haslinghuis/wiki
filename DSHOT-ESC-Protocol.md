@@ -205,7 +205,8 @@ Link to modification details: https://www.rcgroups.com/forums/showpost.php?p=366
 `save  `  
 There also seems to be a DMA conflict with BB logging. [see Github issue #2162](https://github.com/betaflight/betaflight/issues/2162) the fix seems to be disable BB logging DMA in the CLI:  
 `set sdcard_dma = OFF  `   
-
+Note: SD card DMA is set to OFF on 3.1.6+ by default
+  
 ##### SPRACINGF3MINI - Move motor #4 to the PPM pin. Then use resource command to disable PPM and map motor 4 output to B04.  
  Follow above and to re-map output type in CLI:  
 `resource ppm none  `  
