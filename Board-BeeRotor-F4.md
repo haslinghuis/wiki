@@ -47,7 +47,7 @@ RCTimer: http://rctimer.com/
 
 ## Maintainers
 
- - Hardware: Eric Liang (imericliang@gmail.com)
+ - Hardware: Eric Liang
  - Software: Michael Keller
 
 ## FAQ & Known Issues
