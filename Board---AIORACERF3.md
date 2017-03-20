@@ -1,4 +1,10 @@
-#Hardware
+# AIORACERF3
+
+![AIORACERF3 Front](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/boards/aioracerf3/aioracerf3_front.jpg)
+
+![AIORACERF3 Back](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/boards/aioracerf3/aioracerf3_back.jpg)
+
+## Hardware
   - MCU: STM32F303CCT6
   - IMU: MPU9250(SPI)
   - IMU interrupt: Yes
@@ -20,8 +26,8 @@
   - RSSI Analog/PWM port: Yes
   - SWD port: Yes
 
+## Features
 
-#Features
   - The PWM solder pads close to the four corners, making it easier to connect the ESC signal lines.
   - Gyro via SPI and 8K ready.
   - Integrated Minim-OSD and FTDI debug socket.
@@ -30,17 +36,14 @@
   - Optimized solder pads for optional ARPDB.
   - Dimension: 35x35x7.4mm / fixing hole spacing 30mm.
   - Supports DShot (see [this page](https://github.com/betaflight/betaflight/wiki/DSHOT%20ESC%20Protocol) for setup instructions).
-
-------------------------------------------------------------
-
   - ARPDB designed for ARF3 FC.
   - Two types, Type-A with XT60 mounting holes and suitable for X-frame, Type-B is classic version.
   - 3 oz copper for high current.
   - Max input voltage / current sensing: 28V/90A.
   - Back converter outputs: 5.3V/3.5A.
 
+## Hardware Designs
 
-#Hardware Designs
   - GPIO
   - TX1:PA9/RX1:PA10
   - TX2:PA14/RX2:PA15
@@ -68,43 +71,25 @@
   - PWM7:PA3
   - PWM8:PA0
 
+## Manufacturers and Distributors
 
-#Manufacturers and Distributors
   - CRIUS
   - [Available here](https://www.aliexpress.com/store/product/Crius-AIO-RACER-F3-Flight-Controller-with-OSD-for-Betaflight-firmware-ARPDB-Power-Distribution-Board-Output/604349_32729982152.html?spm=2114.12010608.0.0.TuYtnD)
   - [And here](http://www.ebay.com/itm/AIO-RACER-F3-Flight-Controller-with-OSD-for-Betaflight-firmware-ARPDB-B-Board-/322266398060)
 
-#Designers
-  - Hardware design by Eric Liang
-  - imericliang@gmail.com
+## Designers
 
+RCTimer: http://rctimer.com/
 
-#Maintainers
-  - tianbin4279
-  - lijingwei0710
-  - mikeller
+## Maintainers
 
+ - Hardware: Eric Liang
+ - Software: tianbin4279 / lijingwei0710 / Michael Keller
 
-#Similar Targets
+## Similar Targets
+
   - SPRACINGF3EVO
 
+## Other Resources
 
-#Other Resources
   - [Manual](https://dl.dropboxusercontent.com/u/584481/AIO_RACER_F3_Manual_D20160909.pdf)
-
-
-#Images:
-
-  - ARF3
-
-![](https://dl.dropboxusercontent.com/u/584481/ARF3-2.jpg)
-![](https://dl.dropboxusercontent.com/u/584481/ARF3-3.jpg)
-![](https://dl.dropboxusercontent.com/u/584481/ARF3-4.jpg)
-
-  - ARPDB Type-A
-
-![](https://dl.dropboxusercontent.com/u/584481/ARPDB-A-2.jpg)
-
-  - ARPDB Type-B
-
-![](https://dl.dropboxusercontent.com/u/584481/ARPDB-B-2.jpg)
