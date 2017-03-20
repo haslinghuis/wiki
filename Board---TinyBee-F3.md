@@ -1,6 +1,8 @@
 # TinyBee F3
 
+![TinyBee F3 Front](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/boards/tinybeef3/tinybeef3_front.jpg)
 
+![TinyBee F3 Back](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/boards/tinybeef3/tinybeef3_back.jpg)
 
 ## Description
 
@@ -9,7 +11,7 @@
 ## MCU, Sensors and Features
 
 ### Hardware
-_(Fill in hardware specs and add any not listed)_
+
   - MCU: F3
   - IMU: MPU6500
   - BARO: BMP280
@@ -23,19 +25,17 @@ _(Fill in hardware specs and add any not listed)_
 
 ## Manufacturers and Distributors
 
-RCTimer
+RCTimer: http://rctimer.com/product-1731.html
 
 ## Designers
 
- Eric Liang
+RCTimer: http://rctimer.com/
 
 ## Maintainers
 
-Michael Keller
+ - Hardware: Eric Liang
+ - Software: Michael Keller## Designers
 
 ## Similar Targets
 
 SPRACINGF3MINI
-
-
-## Image
