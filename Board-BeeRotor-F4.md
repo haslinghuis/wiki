@@ -43,12 +43,12 @@ RCTimer: http://rctimer.com/product-1730.html
 
 ## Designers
 
- - Eric Liang (imericliang@gmail.com)
- - Michael Keller
+RCTimer: http://rctimer.com/
 
 ## Maintainers
 
-Michael Keller
+ - Hardware: Eric Liang (imericliang@gmail.com)
+ - Software: Michael Keller
 
 ## FAQ & Known Issues
 
