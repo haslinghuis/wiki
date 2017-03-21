@@ -50,7 +50,7 @@ _(add FAQs, known issues and workarounds specifically related to this board. ple
 _format is reporter [name], (status): issue contents_
 
  - The DSM2/SBUS pad is connected to RX2
- - LED_STRIP conflicts with motor 2 when running DShot. You'll need to remap it to another pin if you want to use it
+ - LED_STRIP conflicts with motor 2 in Betaflight 3.1.0 when using DShot. Upgrade to version 3.1.6+ to fix it
 
 ## Other Resources
 
