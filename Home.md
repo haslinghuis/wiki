@@ -47,8 +47,10 @@ The Latest Viewer and source is here:
 https://github.com/betaflight/blackbox-log-viewer  
 
 ## BetaFlight Logos
-Links to logos:  
+Links to logos (Note: The bee/wasp in the logo is different from the one that was finally adopted):  
 https://www.rcgroups.com/forums/showpost.php?p=34909081&postcount=29679
+
+Or The logo bf uses is at the top of this wiki page, just mouse right and save image as, cut the writing if you don't want it 
 
 ## More Information
 Official CleanFlight documentation: http://github.com/cleanflight/cleanflight/wiki
