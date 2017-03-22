@@ -50,6 +50,9 @@ https://github.com/betaflight/blackbox-log-viewer
 Links to logos (Note: The bee/wasp in the logo is different from the one that was finally adopted):  
 https://www.rcgroups.com/forums/showpost.php?p=34909081&postcount=29679
 
+Here the original ones designed by skaman82:  
+https://www.dropbox.com/s/viczizbjz0fwod4/Betaflight.Logos.zip?dl=0
+
 Or The logo bf uses is at the top of this wiki page, just mouse right and save image as, cut the writing if you don't want it 
 
 ## More Information
