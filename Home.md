@@ -46,6 +46,10 @@ https://chrome.google.com/webstore/detail/betaflight-configurator/kdaghagfopacdn
 The Latest Viewer and source is here:   
 https://github.com/betaflight/blackbox-log-viewer  
 
+## BetaFlight Logos
+Links to logos:  
+https://www.rcgroups.com/forums/showpost.php?p=34909081&postcount=29679
+
 ## More Information
 Official CleanFlight documentation: http://github.com/cleanflight/cleanflight/wiki
 
