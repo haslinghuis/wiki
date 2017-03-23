@@ -26,7 +26,8 @@ D looks forward to see if the axis is reaching its intended value too quickly. I
 
 7. Repeat step 6 for Pitch axis.
 
-8. Increase D gain on each axis ONLY to the extent that it helps reduce bounceback after flips/rolls or prop-wash oscillations after an abrupt descent. If neither is a problem, then LEAVE D LOW.  At this point the Copter should be around 80-90% tuned. 
+8. Increase D gain on each axis ONLY to the extent that it helps reduce bounceback after flips/rolls or prop-wash oscillations after an abrupt descent. If neither is a problem, then LEAVE D LOW.  At this point the Copter should be around 80-90% tuned.  
+Note: Too high of D term can cause motors to get hot. Do a short flight, 10-30 seconds, land and check motors. If you can hold your finger on the motors then they are not too hot.
 
 9. Yaw often requires the least tuning, but it may still introduce significant oscillation if you ignore it.  Start with the Yaw P that you chopped in half in step one and verify that you do not get significant vibrations when you do a long punch-out or fast forward flight.  Start pushing up Yaw P by .5 increments until you start to see roughness through your fpv camera when in fast forward flight or punches.  Then decrease a bit.  Fine tune by looking at Yaw P term in blackbox.  It MAY be oscillating a bit, but pull up the Yaw gyro trace to see if those P oscillations actually make it to the Gyro. If the yaw gyro looks relatively smooth, you're ok. 
 
