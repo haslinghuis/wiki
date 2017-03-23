@@ -65,7 +65,7 @@ For more information see these resources:
 4. 
 
 ## Tuning the DJI Snail system  
-This system needs very different PIDs and Defaults do not work causing extreme oscillations. The following video anf thread covers tuning this power system (also a good video on general Tuning). 
+This system needs very different PIDs and Defaults do not work causing extreme oscillations. The following video and thread covers tuning this power system (also a good video on general Tuning).   
 https://www.youtube.com/watch?v=8L2v10RS6io
 
 Thread on the DJI Snail system with lots of Tuning discussion.   
