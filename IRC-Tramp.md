@@ -51,3 +51,6 @@ Note that the status line indicates "running" status of the VTX device, and valu
 
 ### Thermal Protection
 When the thermal protection is in effect, the device will automatically regulate the RF power. Therefore, value set by `POWER` entry will not be displayed on the status line.
+
+## Modify VTX Settings (TBS Unify / TrampHV) using FrSky TARANIS Menu  
+http://www.nitbeatfpv.com/tramphv-unify-vtx-settings-taranis  
