@@ -68,7 +68,7 @@ Another fairly common issue. Read carefully the Wiki [FAQ #56](https://github.co
 ### Additional Notes for BetaFlight version 3 (3.0 & 3.1):
 1. Roll and Pitch 'P' terms can be pretty high without oscillation so increasing until oscillates then reducing may not work. 
 2. There is Dterm Setpoints, weight & threshold sliders in the config GUI. These can help refine the tune. Discussion about how to adjust these is in the 3.0.x & 3.1.x Wiki pages. If increasing D term does not help bounce back then try adjust the Setpoint sliders.
-3. Yaw tuning may require adjustment of lower yaw_acceleration and yaw_p_limit setting especially with high power, high kv motors.  
+3. Yaw tuning may require adjustment of lower yaw_accel_limit and yaw_p_limit setting especially with high power, high kv motors.  
 4. 
 
 ## Tuning the DJI Snail system  
