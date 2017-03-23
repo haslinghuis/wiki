@@ -62,7 +62,7 @@ For more information see these resources:
 The most common reason for a copter to not stop rolling (flipping) is too low of minimum throttle setting. This is basically the ESC not being able to get a motor running after commanding a motor to minimum throttle. In a BB log this shows up as a motor being Commanded to Full throttle but copter keeps rolling. First thing to try is increase the min_throttle setting (Idle % if running DSHOT protocol). 
 
 ### Yaw Twitches and Mid-Throttle Oscillations  
-Another fairly common issue. Read carefully the Wiki FAQ #56 for discussion of the issue and possible solutions.
+Another fairly common issue. Read carefully the Wiki [FAQ #56](#how-do-i-solve-yaw-twitches-or-mid-throttle-oscillations-)  for discussion of the issue and possible solutions.
 
 ### Additional Notes for BetaFlight version 3 (3.0 & 3.1):
 1. Roll and Pitch 'P' terms can be pretty high without oscillation so increasing until oscillates then reducing may not work. 
