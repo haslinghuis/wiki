@@ -504,7 +504,7 @@ d. Battery Factor: "A while ago someone took over my pids to his quad with same 
 
 There is also a Wiki page titled "BlackBox log and Usage" with general BB info (links) and how to use BB to analyze Filters.
 
-##Why does my copter behave erratic after a crash ?
+## Why does my copter behave erratic after a crash ?
 
 Some people have experienced erratic behavior (jitters etc) after a crash,  as if P went up significantly.
 
@@ -619,7 +619,7 @@ Here are some likely causes:
 Some have found they need a small reduction in P gains when going from two-blade to tris.
 The copter was still flyable with no changes, but some have experiences increased prop-wash oscillation.
  
-##Why do I have issues flashing my new F3 Flight Controller ?
+## Why do I have issues flashing my new F3 Flight Controller ?
 
 Some of the new F3 boards come with a Virtual COM Port (VCP) that is used to communicate with a PC or MAC over the USB interface.  Take a look at this video that talks about flashing the Lumenier LUX board that has a VCP port:
 http://www.youtube.com/watch?v=b8fMsazyxDw
