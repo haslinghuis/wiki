@@ -177,3 +177,6 @@ Protocol statistics between a flight controller and a SmartAudio device. May hel
 - You can cancel pit mode by button operation. Refer to the Unify manual.
 - You can use alternative CMS device such as I2C OLED to cancel the Out-Range mode.
 - You can tap or connect VIDEO OUTPUT from OSD and connect it to external display or goggle's VIDEO INPUT.
+
+## Modify VTX Settings (TBS Unify / TrampHV) using FrSky TARANIS Menu   
+http://www.nitbeatfpv.com/tramphv-unify-vtx-settings-taranis
