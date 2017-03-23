@@ -59,7 +59,7 @@ For more information see these resources:
 * FAQ page located [here](https://github.com/borisbstyle/betaflight/wiki/Frequently-Asked-Questions#is-there-a-good-resource-for-learning-how-to-tune-using-black-box-)  
 
 ### Death Rolls
-The most common reason for a copter to not stop rolling (flipping) is too low of minimum throttle setting. This is basically the ESC not being able to get a motor running after commanding a motor to minimum throttle. First try to try is increase the min_throttle (Idle % if running DSHOT protocol) setting.
+The most common reason for a copter to not stop rolling (flipping) is too low of minimum throttle setting. This is basically the ESC not being able to get a motor running after commanding a motor to minimum throttle. In a BB log this shows up as a motor being Commanded to Full throttle but copter keeps rolling. First thing to try is increase the min_throttle setting (Idle % if running DSHOT protocol). 
 
 ### Yaw Twitches and Mid-Throttle Oscillations  
 Another fairly common issue. Read carefully the Wiki FAQ #56 for discussion of the issue and possible solutions.
