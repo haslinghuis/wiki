@@ -185,6 +185,7 @@ Note: The bf script linked in this 'how to' link isn't the latest one. You need 
 https://github.com/betaflight/betaflight-tx-lua-scripts  
 
 ### Tarnis upgrading and setup
+Originally Posted by elmattbo:  
 Ensure opentx 2.2 on the radio and avoid rc11. If upgrading from 2.1 you will have to copy in the new file structure for 2.2 to the sd card - back your sd card up first.
 The early bf 3.1 releases do have SmartAudio selectable in the ports tab but don't necessarily work, so update to the latest bf.
 Install the lua scripts linked from the bf wiki (x7, x9 as appropriate) into the scripts folder on the Taranis sd card.
