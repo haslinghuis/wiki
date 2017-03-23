@@ -58,6 +58,12 @@ For more information see these resources:
 * [Joshua Bardwell's Practical PID Tuning (Betaflight / Cleanflight)](http://www.youtube.com/playlist?list=PLwoDb7WF6c8ldO8tz0IUi9FNcJdvE2Mhe)
 * FAQ page located [here](https://github.com/borisbstyle/betaflight/wiki/Frequently-Asked-Questions#is-there-a-good-resource-for-learning-how-to-tune-using-black-box-)  
 
+### Death Rolls
+The most common reason for a copter to not stop rolling (flipping) is too low of minimum throttle setting. This is basically the ESC not being able to get a motor running after commanding a motor to minimum throttle. First try to try is increase the min_throttle (Idle % if running DSHOT protocol) setting.
+
+### Yaw Twitches and Mid-Throttle Oscillations  
+Another fairly common issue. Read carefully the Wiki FAQ #56 for discussion of the issue and possible solutions.
+
 ### Additional Notes for BetaFlight version 3 (3.0 & 3.1):
 1. Roll and Pitch 'P' terms can be pretty high without oscillation so increasing until oscillates then reducing may not work. 
 2. There is Dterm Setpoints, weight & threshold sliders in the config GUI. These can help refine the tune. Discussion about how to adjust these is in the 3.0.x & 3.1.x Wiki pages. If increasing D term does not help bounce back then try adjust the Setpoint sliders.
