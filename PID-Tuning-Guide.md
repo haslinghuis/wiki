@@ -58,8 +58,16 @@ For more information see these resources:
 * [Joshua Bardwell's Practical PID Tuning (Betaflight / Cleanflight)](http://www.youtube.com/playlist?list=PLwoDb7WF6c8ldO8tz0IUi9FNcJdvE2Mhe)
 * FAQ page located [here](https://github.com/borisbstyle/betaflight/wiki/Frequently-Asked-Questions#is-there-a-good-resource-for-learning-how-to-tune-using-black-box-)  
 
-###Tuning the DJI Snail system  (also a good video on general Tuning)
+### Additional Notes for BetaFlight version 3 (3.0 & 3.1):
+1. Roll and Pitch 'P' terms can be pretty high without oscillation so increasing until oscillates then reducing may not work. 
+2. There is Dterm Setpoints, weight & threshold sliders in the config GUI. These can help refine the tune. Discussion about how to adjust these is in the 3.0.x & 3.1.x Wiki pages. If increasing D term does not help bounce back then try adjust the Setpoint sliders.
+3. Yaw tuning may require adjustment of lower yaw_acceleration and yaw_p_limit setting especially with high power, high kv motors.  
+4. 
+
+## Tuning the DJI Snail system  
+This system needs very different PIDs and Defaults do not work causing extreme oscillations. The following video anf thread covers tuning this power system (also a good video on general Tuning). 
 https://www.youtube.com/watch?v=8L2v10RS6io
 
 Thread on the DJI Snail system with lots of Tuning discussion.   
 https://www.rcgroups.com/forums/showthread.php?2749559-DJI-Snail-mini-quad-propulsion-system-22-50-ESC-AND-MOTOR  
+
