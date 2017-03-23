@@ -180,3 +180,15 @@ Protocol statistics between a flight controller and a SmartAudio device. May hel
 
 ## Modify VTX Settings (TBS Unify / TrampHV) using FrSky TARANIS Menu   
 http://www.nitbeatfpv.com/tramphv-unify-vtx-settings-taranis
+
+Note: The bf script linked in this 'how to' link isn't the latest one. You need the one linked here.   
+https://github.com/betaflight/betaflight-tx-lua-scripts  
+
+### Tarnis upgrading and setup
+Ensure opentx 2.2 on the radio and avoid rc11. If upgrading from 2.1 you will have to copy in the new file structure for 2.2 to the sd card - back your sd card up first.
+The early bf 3.1 releases do have SmartAudio selectable in the ports tab but don't necessarily work, so update to the latest bf.
+Install the lua scripts linked from the bf wiki (x7, x9 as appropriate) into the scripts folder on the Taranis sd card.
+Attach the vtx audio lead to either uart 1 or 3 tx pin (RG SSD FC - Connect to the UART available on the FC you use).
+Select tbs SmartAudio for the appropriate UART in the ports tab.
+Go to display in the Taranis and set a screen to 'scripts' it should then offer you the lua script you installed earlier.
+From the main model screen a long press of page will bring up the bf scripts and you press menu to cycle to the vtx screen. 
