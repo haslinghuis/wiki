@@ -296,6 +296,8 @@ See Discussion on Anti_gravity below.
 <i>[0..50]<i>  
 Note from Boris: The old value was upscaled. This is the real value now in float representation.  
 Its representing deg/sec/ms. A bit easier to swallow for human.  
+posted by AILERON8:  
+Yaw accel limit helps by limiting the rate of change of speed of your motors. The lower this value the less the rate of change of speed your quad is able to Yaw.  
 
 #### set gyro_isr_update = OFF  
 <i>[OFF..ON]<i>  
