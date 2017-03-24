@@ -153,6 +153,7 @@ Betaflight firmware has undergone some major changes under the hood. Hardware dr
 - Added new level sensitivity and level limit parameters in degrees. level_limit is the maximum allowed angle. Level_sensitivity is the max deflection on full stick @borisbstyle  
 - Added IRC Tramp VTX support. Changable channel, band, power and pitmode @jflyper
 - and many more: https://github.com/betaflight/betaflight/commits/master  
+- Only one PIDC the 2DOF or Betaflight now (see the 3.0.x wiki page for details)
 
 NOTE- For the features in this release you will need to use the following Versions or Higher:  
 - Configurator 1.9.0
