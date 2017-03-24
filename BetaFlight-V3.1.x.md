@@ -298,7 +298,7 @@ See Discussion on Anti_gravity below.
 Note from Boris: The old value was upscaled. This is the real value now in float representation.  
 Its representing deg/sec/ms. A bit easier to swallow for human.  
 posted by AILERON8:  
-Yaw accel limit helps by limiting the rate of change of speed of your motors. The lower this value the less the rate of change of speed your quad is able to Yaw.  
+Yaw_accel_limit helps by limiting the rate of change of speed of your motors. The lower this value the less the rate of change of speed your quad is able to Yaw.  Yaw_accel_limit prevents your props from spooling-up too quickly. This feature can be used to reduce fast yaw jumps or other rapid increases in the yaw direction. However, this feature will not prevent i-term windup, so it may not prevent yaw jumping, but it will be less severe. 
 
 ### set yaw_p_limit
 This not longer has any effect since it is Not used with the 2DOF PIDC.
