@@ -193,3 +193,5 @@ Attach the vtx audio lead to either uart 1 or 3 tx pin (RG SSD FC - Connect to t
 Select tbs SmartAudio for the appropriate UART in the ports tab.
 Go to display in the Taranis and set a screen to 'scripts' it should then offer you the lua script you installed earlier.
 From the main model screen a long press of page will bring up the bf scripts and you press menu to cycle to the vtx screen. 
+Update from elmattbo:  
+So after trying it today I found that the vtx didn't respond to changes in the lua script. Tried a power reboot after changing settings but it made no difference. I suspect I'm missing something in the set up, but it could be that the taranis reads the vtx, but doesn't write any changes. I have read that the half wave duplex (or whatever it is) communications protocol took a little figuring out for the devs so the issue may be in betaflight too.  
