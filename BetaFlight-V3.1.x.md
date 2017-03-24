@@ -300,6 +300,10 @@ Its representing deg/sec/ms. A bit easier to swallow for human.
 posted by AILERON8:  
 Yaw accel limit helps by limiting the rate of change of speed of your motors. The lower this value the less the rate of change of speed your quad is able to Yaw.  
 
+### set yaw_p_limit
+This not longer has any effect since it is Not used with the 2DOF PIDC.
+This was only used in the Legacy PIDC (available in 3.0).
+
 #### set gyro_isr_update = OFF  
 <i>[OFF..ON]<i>  
 From mjbudden:   
