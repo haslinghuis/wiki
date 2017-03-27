@@ -2,7 +2,7 @@
 https://www.youtube.com/watch?v=5wjvJAMEMz0  
 
 ## Beeper setup  
-Post be handsomejackuk:  
+Posted by handsomejackuk:  
 so i have figured out that i need to configure resources seperately in betaflight 3.16 and so far on cc3d have setup my buzzer on pin 6 as confirmed working with older versions of betaflight...
 
 `# resource`  
