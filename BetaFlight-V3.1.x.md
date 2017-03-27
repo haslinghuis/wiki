@@ -405,10 +405,10 @@ Allowed values: OFF, ON
 
 #### debug_mode = NONE (added in 3.0)  
 Allowed values: NONE, CYCLETIME, BATTERY, GYRO, ACCELEROMETER, MIXER, AIRMODE, PIDLOOP, NOTCH, RC_INTERPOLATION, VELOCITY, DFILTER, ANGLERATE, ESC_SENSOR, SCHEDULER, STACK   
-Enable additional value to be sent to a BlackBox Log which is useful to measure frequency of noise before filters and other debugging.
+Enable additional value to be sent to a BlackBox Log which is useful to measure frequency of noise before filters and other debugging. See the BlackBox Logging and Usage Wiki page for Gyro and Notch.
 
 #### pidsum_limit = 0.500
-Allowed range: 0 - 1
+Allowed range: 0 - 1  
 Mjbudden & Boris suggested reducing pidsum_limit to reduce impact spins and make for a softer yaw.  
 
 ### CLI Changes between 3.1.2 & 3.1.3:
