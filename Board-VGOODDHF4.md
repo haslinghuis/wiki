@@ -11,7 +11,6 @@ VGOODDHF4
 ## MCU, Sensors and Features
 
 ### Hardware
-_(Fill in hardware specs and add any not listed)_
   - MCU: STM32F4
   - IMU: MPU6000 (SPI)
   - IMU Interrupt: Yes
