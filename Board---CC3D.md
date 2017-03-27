@@ -19,3 +19,6 @@ so i have figured out that i need to configure resources seperately in betafligh
 `resource SERIAL_RX 3 B11`  
 `resource SERIAL_RX 11 B00`  
 
+## Flashing Cleanflight/BetaFlight to CC3D with Mainport and FTDI Video:   
+https://www.youtube.com/watch?v=5wjvJAMEMz0  
+
