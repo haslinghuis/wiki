@@ -25,6 +25,8 @@ Fixes:
 - Fix Spektrum bind for OmnibusF4
 
 Known issues/bugs:  
+- There is no check for the D Term Notch Filter to ensure that the cutoff frequency ('D Term Notch Filter Cutoff') is not higher than the mid frequency ('D Term Notch Filter Frequency'). WARNING: If a cutoff frequency that is higher than the mid frequency is configured, this can result in a runaway motor acceleration. (Applies to versions prior to 3.1.6 too.)
+
 - If your board has SDCARD blackbox and onboard Flash both available and you want to use onboard flash without inserted SDCARD you need to disable feature SDCARD, which is available from Configurator 1.9.3. Only BluejayF4 has both blackbox options available as far as it is known. (This is not just in 3.1.6, but also in previous versions)
 
 - Colibri Race target 3.1.6 on a Powercube V1 (always used that target, it's the one to use). Unfortunately after flashing no way I can connect. It doesn't boot up and the device is suddenly not being detected anymore.  
