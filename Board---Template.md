@@ -1,49 +1,52 @@
-_(This is a Basic Template to provide an outline for board info. Copy/paste this into a new board page and fill in, add or delete as needed)_
 
 # NAME
-
+VGOODDHF4
 
 
 ## Description
-
+Beautifully simple STM32F4 based flightcontroller.
 
 
 ## MCU, Sensors and Features
 
 ### Hardware
 _(Fill in hardware specs and add any not listed)_
-  - MCU: 
-  - IMU: 
-  - IMU Interrupt: 
-  - BARO: 
-  - VCP: 
-  - Hardware UARTS: 
-  - OSD: 
-  - Blackbox: 
-  - PPM/UART Shared: 
-  - Battery Voltage Sensor: 
+  - MCU: STM32F4
+  - IMU: MPU6000 (SPI)
+  - IMU Interrupt: Yes
+  - BARO: NO BARO
+  - VCP: Yes
+  - Hardware UARTS: 3
+  - OSD: Yes
+  - Blackbox: Yes(128Mbit on board flash)
+  - PPM/UART Shared:  UART1
+  - Battery Voltage Sensor:  UART1
   - Integrated Voltage Regulator: 
   - Brushed Motor Mosfets: 
-  - Buttons: 
+  - Buttons: Button for putting board into DFU mode
 
 ### Features
-
-_(add list of features)_
-
+SBUS/PPM input (Pinheaders)SBUS port (via inverter), this pin is also shared with the PPM pin.
+4PWM output
+5v 3a SBEC
+WS2811 Led Strip
+On-Board OSD (controlled by Betaflight, FC over SPI bus)
+Current Sensor Interface
+Button for putting board into DFU mode
 ## Manufacturers and Distributors
 
-_(add links to Manufacturers and Distributors)_
+
 
 ## Designers
 
 
 ## Maintainers
-_(add your name here if you help test or contribute code for this board)_
+VGOODDHF4
 
 
 ## Similar Targets
 
-_(add links board descriptions here that are similar in features or function, but have a separate target)_
+
 
 
 ## Variants
@@ -52,9 +55,6 @@ Differences:
 
 
 ## FAQ & Known Issues
-_(add FAQs, known issues and workarounds specifically related to this board. please link work in progress issues to the related github issue or pull request)_
-
-_format is reporter [name], (status): issue contents_
 
 
 ## Other Resources
