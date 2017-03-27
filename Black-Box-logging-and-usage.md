@@ -42,7 +42,7 @@ The debug setting will log additional data to debug[0]-debug[3]:
 * debug[3] is only notch filtered gyro data on pitch axis.
 
 #### Changes were made in BetaFlight 3.0 & 3.1 along with a newer BB Viewer  (see debug_mode on the 3.1.x wiki page). 
-1. CLI DEBUG_MODE now ca be GYRO or NOTCH. This will log all three axis but only for Pre-LPF or Pre-Notch Filter.
+1. CLI DEBUG_MODE now can be GYRO or NOTCH. This will log all three axis but only for Pre-LPF or Pre-Notch Filter.
 2. Still Add a Custom Graph then select the debug Pre-filter.
 3. Analysis is the same.
 
