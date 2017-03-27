@@ -49,9 +49,9 @@ VGOODDHF4
 
 
 ## Variants
-
+-99% identical to OmnibusF4
 Differences:
-
+with a 16MB flash on board for blackbox
 
 ## FAQ & Known Issues
 
