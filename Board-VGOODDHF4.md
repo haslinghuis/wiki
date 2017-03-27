@@ -5,7 +5,7 @@ VGOODDHF4
 
 ## Description
 F4chip+ OSD + 16MB Flash
-Beautifully simple STM32F4 based flightcontroller.
+- Beautifully simple STM32F4 based flightcontroller.
 
 
 ## MCU, Sensors and Features
