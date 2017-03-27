@@ -5,7 +5,7 @@ VGOODDHF4
 
 ## Description
 Beautifully simple STM32F4 based flightcontroller.
-
+F4chip+ OSD + PDB + 16MB Flash
 
 ## MCU, Sensors and Features
 
@@ -20,9 +20,8 @@ _(Fill in hardware specs and add any not listed)_
   - OSD: Yes
   - Blackbox: Yes(128Mbit on board flash)
   - PPM/UART Shared:  UART1
-  - Battery Voltage Sensor:  UART1
-  - Integrated Voltage Regulator: 
-  - Brushed Motor Mosfets: 
+  - Battery Voltage Sensor:  10:1
+  - Integrated Voltage Regulator: SBEC 5V 3A
   - Buttons: Button for putting board into DFU mode
 
 ### Features
