@@ -405,7 +405,7 @@ Allowed values: OFF, ON
 
 #### debug_mode = NONE (added in 3.0)  
 Allowed values: NONE, CYCLETIME, BATTERY, GYRO, ACCELEROMETER, MIXER, AIRMODE, PIDLOOP, NOTCH, RC_INTERPOLATION, VELOCITY, DFILTER, ANGLERATE, ESC_SENSOR, SCHEDULER, STACK   
-Enable additional value to be sent to a BlackBox Log which is useful to measure frequency of noise before filters and other debugging. See the BlackBox Logging and Usage Wiki page for Gyro and Notch.
+Enable additional value to be sent to a BlackBox Log which is useful to measure frequency of noise before filters and other debugging. See [BB logging page](https://github.com/betaflight/betaflight/wiki/Black-Box-logging-and-usage) for measuring noise and filter.
 
 #### pidsum_limit = 0.500
 Allowed range: 0 - 1  
