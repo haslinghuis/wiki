@@ -1,3 +1,7 @@
+## Flashing Cleanflight/BetaFlight to CC3D with Mainport and FTDI Video:   
+https://www.youtube.com/watch?v=5wjvJAMEMz0  
+
+## Beeper setup  
 Post be handsomejackuk:  
 so i have figured out that i need to configure resources seperately in betaflight 3.16 and so far on cc3d have setup my buzzer on pin 6 as confirmed working with older versions of betaflight...
 
@@ -19,6 +23,4 @@ so i have figured out that i need to configure resources seperately in betafligh
 `resource SERIAL_RX 3 B11`  
 `resource SERIAL_RX 11 B00`  
 
-## Flashing Cleanflight/BetaFlight to CC3D with Mainport and FTDI Video:   
-https://www.youtube.com/watch?v=5wjvJAMEMz0  
 
