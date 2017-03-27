@@ -41,3 +41,5 @@ If you really want to optimise things you need blackbox. Your motors might just 
 Note that if you change P or D upwards or change props you may have to modify the settings.
 
 On my setups 70 for gyro and 90 for dterm keep motors cool even with the most beat up props, flexy frames and oldest motors. 
+
+See [BB logging page](https://github.com/betaflight/betaflight/wiki/Black-Box-logging-and-usage) for measuring noise and filter.
