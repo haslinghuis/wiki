@@ -32,6 +32,9 @@ Known issues/bugs:
 - Colibri Race target 3.1.6 on a Powercube V1 (always used that target, it's the one to use). Unfortunately after flashing no way I can connect. It doesn't boot up and the device is suddenly not being detected anymore.  
 Boris: This will be addressed in 3.1.7  
 
+- On a CC3D the receiver goes into bind mode every time. Fixed in 3.1.7 alpha.   
+http://andwho.sytes.net:8080/job/BorisB_BetaFlight_Maint/
+
 - Use Configurator 1.9.3
 
 ## Betaflight 3.1.5 - Maintenance Release 
