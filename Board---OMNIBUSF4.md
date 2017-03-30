@@ -20,7 +20,7 @@ Those users with working LED strip on PWM6 can either migrate to the new assignm
 
 1. Migrating to the new assignment
 
-Users of the following boards can migrate (reconnect the LED strip signal wire) to the new assignment that uses the designated LED through-hole/connector.
+Users of the following boards can migrate (rewire the LED strip signal) to the new assignment that uses the designated LED through-hole/connector.
 
 - OMNIBUS F4 V2 (J9)
 - OMNIBUS F4 V3 (J9)
