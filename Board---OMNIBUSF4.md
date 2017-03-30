@@ -16,7 +16,7 @@ Please be advised to take a look at this page when v3.2 is released.
 
 The LED strip pin assignment is already changed in the master as of Mar.29, 2017.
 
-Those users with working LED strip on PWM5 or PWM6 can either migrate to the new assignment if the board supports the mapping, or explicitly assign older mapping with the `resource` CLI command.
+Those users with working LED strip on PWM6 can either migrate to the new assignment if the board supports the mapping, or explicitly assign older mapping with the `resource` CLI command.
 
 1. Migrating to the new assignment
 
@@ -28,7 +28,7 @@ Users of the following boards can migrate (reconnect the LED strip signal wire) 
 
 Notes:
 (1) Firmware is already modified to use these through-hole/connector.
-(2) The new pin (MCU PB6) has a timer collision with PPM input pin (PB8). PPM users can't use this new assignment; have to use the method 2 below.
+(2) Unfortunately, PPM users can't use this new assignment because The new pin (MCU PB6) has a timer collision with PPM input pin (PB8); these users are forced to use the remap method below.
 
 2. Explicit pin assignment remapping.
 
