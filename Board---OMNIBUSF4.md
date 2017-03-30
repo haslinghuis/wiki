@@ -12,6 +12,32 @@ For board identification, see
 v3.1.x and earlier uses PWM5 (OMNIBUSF4 target) or PWM6 (OMNIBUSF4SD target) for LED strip, not the LED labelled pin. This was a work around for the original OMNIBUS F4 AIO having invalid pin on the designated pin. However, newer revisions of the OMNIBUS F4 family has valid (usable) pin assigned to the LED pin. Unfortunately, the pin is not ready for use with BF3.1.x, but will be in v3.2 as a default. It means the current wiring will not work unless explicitly remapped to the current pin.
 Please be advised to take a look at this page when v3.2 is released.
 
+#### LED strip pin assignment is already changed in the master
+
+The LED strip pin assignment is already changed in the master as of Mar.29, 2017.
+
+Those users with working LED strip on PWM5 or PWM6 can either migrate to the new assignment if the board supports the mapping, or explicitly assign older mapping with the `resource` CLI command.
+
+1. Migrating to the new assignment
+
+Users of the following boards can migrate (reconnect the LED strip signal wire) to the new assignment that uses the designated LED through-hole/connector.
+
+- OMNIBUS F4 V2 (J9)
+- OMNIBUS F4 V3 (J9)
+- OMNIBUS F4 Pro V3 (J1)
+
+Notes:
+(1) Firmware is already modified to use these through-hole/connector.
+(2) The new pin (MCU PB6) has a timer collision with PPM input pin (PB8). PPM users can't use this new assignment; have to use the method 2 below.
+
+2. Explicit pin assignment remapping.
+
+Users who choose (or forced in PPM case) not to migrate to the new assignment have to explicitly remap the assignment to the older default using the resource CLI command below.
+
+```
+resource led_strip a8
+```
+
 ### Board naming (needs updating)
 These boards are called differently depending on the distributor.
 ```
