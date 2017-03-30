@@ -104,7 +104,7 @@ These boards are called differently depending on the distributor.
 ### OMNIBUS F4 V2 and F4 Pro
 
 - Use OMNIBUSF4SD target.
-- LED strip port is PWM6.
+- For OMNIBUS F4 Pro V2, LED strip signal is connected to PWM6.
 
 #### Resource Mapping (WIP)
 
