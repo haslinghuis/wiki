@@ -22,7 +22,7 @@ For maximum ease of use, the OmnibusF3 has an onboard voltage regulator that can
   - Blackbox: SD Card
   - PPM/UART Shared: UART3 (optionally)
   - Battery Voltage Sensor: Yes, directly connected, no wiring necessary
-  - Integrated Voltage Regulator: Yes, supports up to 5S - 1.5AMP MAX!
+  - Integrated Voltage Regulator: Yes, supports up to 5S, 1.5AMP
   - Brushed Motor Mosfets: No
   - Buttons: 2 (1: DFU, 2: unassigned)
 
@@ -35,17 +35,11 @@ For maximum ease of use, the OmnibusF3 has an onboard voltage regulator that can
 
 ## Manufacturers and Distributors
 
-[Airbot](https://myairbot.com)
-
-USA: [ReadyToFlyQuads] 
+[Airbot](https://myairbot.com) (manufacturer)
 
 Available here: http://shop.myairbot.com/index.php/flight-control/cleanflight-baseflight/omnibusv11.html
 
-USA: https://www.fpv303.com 
-
-[Omnibus F3 Pro](https://www.fpv303.com/product/omnibus-f3-pro/)
-
-[Omnibus F3](https://www.fpv303.com/product/omnibus-f3)
+https://www.fpv303.com, http://www.readytoflyquads.com/
 
 ## Designers
 
@@ -56,29 +50,15 @@ _(add your name here if you help test or contribute code for this board)_
 
 [Nathan](https://github.com/nathantsoi)
 
-[WiteSpy]
-
-[QuadroBro](https://github.com/QuadroBro)
-
 ## Similar Targets
 
 _(add links board descriptions here that are similar in features or function, but have a separate target)_
 
 - [SirinFPV](/betaflight/betaflight/wiki/Board---SIRINFPV)
 
-## Boards with same name that use the same Target code:
-
-FlipF3 OMNIBUS
-
-## All Boards from BG are clones. Not supporting the Manufacturers. 
-
 ## Variants
 
 OMNIBUS AIO F3 PRO - http://shop.myairbot.com/index.php/omnibus-prov1-72.html
-FLIP 32 - F3 - OMNIBUS V2 Micro (25x25 Size)
-FLIP 32 - F3 - OMNIBUS V2 NANO (20x20 Size)
-FLIP 32 - F4 - OMNIBUS  (F4 Variant)
-FLIP 32 - F7 - OMNIBUS (coming soon)
 
 Diffrences:
   - Added Current Sensor
@@ -154,6 +134,3 @@ OMNIBUS AIO F3
 ![](http://shop.myairbot.com/media/catalog/product/cache/1/image/54b2359dd2430bcca06ee462d488eb40/o/m/omnibusf3-v1.1-3.jpg)
 OMNIBUS AIO F3 PRO
 ![](http://shop.myairbot.com/media/catalog/product/cache/1/image/54b2359dd2430bcca06ee462d488eb40/o/m/omnibusf3-pro-4_1.jpg)
-
-PINOUTS:
-![Pinouts F3](http://cdna2.zoeysite.com/Adzpo594RQGDpLcjBynL1z/cache=expiry:31536000/resize=fit:max,width:1200/compress/http://s3.amazonaws.com/zcom-media/sites/a0iE000000GWIo4IAH/media/catalog/product/9/-/9-18-2016_1-45-48_pm.png)
