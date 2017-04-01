@@ -4,6 +4,19 @@ Not for public viewing yet.
 
 List of compatible pins.
 
+CLI commands to free up PWM 5 and PWM 6:
+
+`resource MOTOR 5 NONE`
+
+`resource MOTOR 6 NONE`
+
+CLI commands to assign softserial:
+
+`resource serial_tx 11 <pin>`
+
+`resource serial_tx 12 <pin>`
+
+
 NOTE:
 - The OK means it is compatible, and does not warrant it will work when it is configured as a part of a complete system.
 
