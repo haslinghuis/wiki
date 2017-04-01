@@ -467,6 +467,9 @@ Boris' explanation:
 Just a limit for how high i-term can grow, its threshold to prevent iterm to go nuts on high dynamic cases for example like fast stick inputs or some other scenarios.  
 I think the default value is pretty good from what I have seen from many setups I analyzed. I don't think you need to tune it unless you really suffer from high iterm windups.   
 
+#### fpv_mix_degrees = 0
+Allowed range: 0 - 50
+
 ### Removed from 3.1.3
 #### accum_threshold = 200
 #### set yaw_accum_threshold
