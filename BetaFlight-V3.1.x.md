@@ -469,6 +469,7 @@ I think the default value is pretty good from what I have seen from many setups 
 
 #### fpv_mix_degrees = 0
 Allowed range: 0 - 50
+Note: Same command as "set roll_yaw_cam_mix_degrees" in V2.x. See the 2.x CLI coommand Wiki page for more ino and video links.  
 
 ### Removed from 3.1.3
 #### accum_threshold = 200
