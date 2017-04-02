@@ -78,6 +78,8 @@ Hit return and done
 Just ensure that in the ESCs (BLHeli Suite) that PPM_MIN_THROTTLE is set to 1000 and PPM_MAX_THROTTLE is set to 2000.  
 Note: This is not needed in BLHeli_S 16.43 and up since the PPM_MIN & MAX values are not used for Dshot.   
 This means that when DSHOT is use NO ESC Calibration is required. Just Select DSHOT.
+#### Even though Dshot doesn't use the min/max values in the ESC (BLHeli) it is recommended to do an ESC cal with one of the Analog Protocols (OneShot or MultiShot) on new and newly Flashed ESCs. This is easy to do with the BLHeli Suite's Motor Tab.
+Just select an analog protocol in ßF config and Save first. Then Use the BLHeli Pass-through to Flash and Cal the ESCs.
 
 #### Max ESC update speed supported by different dshot versions:  
 ##### WARNING: due to processor tasks, FC and/or ESC, the maximum update rate may not work-  
@@ -98,8 +100,9 @@ Note: When DSHOT is enabled Unsyced PWM is disabled. DSHOT always runs at the PI
 
 ###  Originally Posted by airmaxx23
 I recently finished building a new quad with the BFF3 controller and Armattan 20a ESCs with d-shot 300 enabled. The first thing I've noticed is that the ESCs tones are out of sync when I plug a battery in and I'm having a flip/roll of death once in a while. What should I check first?   
-Answer from  AILERON8  
+#### Answer from  AILERON8  
 I've been reloading the BLHeli configurator and reflashing the ESCs, then setting the ESCs to MS, syncing my FC/ESC loop, and calibrating. Then I've been going back to DShot and setting things up normally. Don't ask me why or how it works, but I've had to do this on more than one occasion now or I get a distant ESC song or two playing out of sequence in the background like you have now. This worked each time, but not saying it will work for you with certainty.   
+
 
 ### Does Dshot work on other models besides the Quad-X, like hex and tri-copters?
 They should surely work if the FC was designed for them.
