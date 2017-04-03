@@ -265,6 +265,11 @@ Connect ESC for motor 2 to 'LED' pin on the board.
 - All other targets not listed above.   
 
 ### ESCs supporting Dshot:
+
+#### BLHeli_32 
+Announced on 3 April 2017:  
+https://www.rcgroups.com/forums/showthread.php?2864611-BLHeli_32-Power-to-perform#post37240208   
+
 #### KISS 24 
  - 150, 300, 600, 900, 1200 See the Dshot thread (link above) for ESC code.  
 KISS24 ESC Beep Codes:   
