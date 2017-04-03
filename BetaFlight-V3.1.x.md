@@ -1,3 +1,31 @@
+## Betaflight 3.1.7 - 
+Maintenance Release 3.1.7
+https://github.com/betaflight/betaflight/releases/tag/v3.1.7   
+
+For full release info see 3.1:
+https://github.com/betaflight/betaflight/releases/tag/v3.1.0
+
+### New:
+- Airmode is now fully disabled when feature or mode not engaged. Before airmode was always active and it was just the iterm not being active on low throttle.
+- Digital idle percent added to OSD
+- Anti Gravity can now be disabled via feature or mode switch
+- RSSI inversion added
+- Added KROOZX , CL_RACINGF4 and SPRACINGF4EVO target
+- Readjusted default config
+- Added transponder driver for F4
+
+### Fixes:
+- Improved safety of DSHOT on very high loop speeds
+- Improve validation of dterm notch settings
+- Fix spektrum bind stuck bug
+- Fix AK8975 MAG detection
+- Fix broken Softserial SPRACINGF3EVO
+- Fix "deathswitch" bug with SD and onboard blackbox on the same board (BLUEJAYF4)
+- Fix angletrim bug
+- Fix "escprog" feature for some boards. KISS ESC passthrough should now work better
+- Fix wrong flash sector for F4
+- Fix some broken targets like COLIBRI_RACE
+
 ## Betaflight 3.1.6 - 
 https://github.com/betaflight/betaflight/releases  
 
