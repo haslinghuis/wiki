@@ -78,7 +78,8 @@ voltage 57, current 320. If this reads reverse current at idle and reads way too
 
 ## Other Resources
 
-Setup Guide: 
+Setup Guide:
+ 
 [http://flyinglemon.eu/ext_images/kiwif4_wiring_s.pdf](http://flyinglemon.eu/ext_images/kiwif4_wiring_s.pdf)
 
 Rcgroups Thread: 
