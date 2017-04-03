@@ -67,7 +67,7 @@ https://github.com/betaflight/betaflight-configurator/issues/411
 It's a temporary solution requiring you to manually install patched up version of BF configurator, next release of official BF configurator is going to fix that.
 
 ###LED signal wire
-This is undocumented in the wiring diagram but the RGB LED signal wire goes to the DATA pin on the reversed side of the FC, you need to take 5v and ground wire elsewhere on the board (ie. from the UART3/6 ports)
+This is undocumented in the wiring diagram but the RGB LED signal wire goes to the DATA pin on the reversed side of the FC, you need to take 5v and ground wire elsewhere on the board (ie. from the UART3/6 ports) but please keep in mind that PSU on KIWI is 600mA current capacity where FC and OSD need around 280mA.
 
 ###Troubles Entering Bootloader Mode (DFU):
 Some devices (e.g. receivers connected to SBUS/IBUS port or devices connected to one of the UARTS) can inhibit the FC from entering USB bootloader mode. In this case the FC will not be detected by Windows/MacOS. Windows detects the FC as "Unknown Device", MacOS reports "enumeration errors". If you see some of these errors unplug all devices from the FC and flash the FC standalone.
@@ -79,6 +79,7 @@ voltage 57, current 320. If this reads reverse current at idle and reads way too
 ## Other Resources
 
 Setup Guide: 
+[http://flyinglemon.eu/ext_images/kiwif4_wiring_s.pdf](http://flyinglemon.eu/ext_images/kiwif4_wiring_s.pdf)
 
 Rcgroups Thread: 
 
