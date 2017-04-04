@@ -86,3 +86,8 @@ As mentioned only the first three motor outs do anything, the fourth I couldn't 
 I'm not aware of a servo update frequency parameter but having one could be good for airplanes. Those with digital servos can use 200-300hz update frequencies. For future helicopter applications I know that some tail servos have a smaller centerpulse, sort of half way between oneshot and PWM.  
 
 I think that's everything I learned so far regarding betaflight and planes.  
+
+Post by: touchthebitum  
+Not a great video (first test in LOS flight) but it is only to illustrate that Betaflight can work pretty good with a fixed wing.   
+I'm impressed of the landing speed in acc mode. It was very windy (about 20kmh)
+https://youtu.be/DpmqeoRGwgA  
