@@ -1,16 +1,16 @@
 Some have asked if BetaFlight can control a Fixed wing aircraft. 
 
-###Boris' Note:  
-####I would not trust this as nobody is testing it, but it may work.
-####iNav fork puts a lot of effort in airplane modes. Its better to try them. 
+### Boris' Note:  
+#### I would not trust this as nobody is testing it, but it may work.
+#### iNav fork puts a lot of effort in airplane modes. Its better to try them. 
 
-####The page is to help those that wish to Experiment and Test Fixed Wing functionality with BetaFlight. 
-####Do Remember that YOU are the TESTER.
+#### The page is to help those that wish to Experiment and Test Fixed Wing functionality with BetaFlight. 
+#### Do Remember that YOU are the TESTER.
 
 Reference the [Betaflight resource remapping](https://github.com/betaflight/betaflight/wiki/Betaflight-resource-remapping).
 Note: Pin re-mapping requires BetaFlight 3.1 an higher.  
 
-####AresFPV asked this in Boris' ßF Thread and then did research on how to do this. His findings are: 
+#### AresFPV asked this in Boris' ßF Thread and then did research on how to do this. His findings are: 
 
 Fixed wing success:  
 For the few of you that are trying to get fixed wing working in BetaFlight, I've been able to have some success on the bench. I'm using BetaFlight because iNAV doesn't have the piko blx target yet. This post helped a lot: https://www.rcgroups.com/forums/showpost.php?p=36886595&postcount=45058  
@@ -22,7 +22,7 @@ Use the servos tab to reverse them if needed.
 Set the PWM frequency as separate from PID loop and set it to 50hz to make the servos work (you will lose all of the new ESC protocols but that's not as important on a plane).   
 The modes and mixes work fine for me as-is and I expect that everything else will be fine as well(like OSD). I just need to add FPV to it and get it up in the air! 
 
-####A Post by RCvehicleGuy:  
+#### A Post by RCvehicleGuy:  
 Well I messed with trying to get betaflight to work with an airplane. It was clearly not intended to work.  
 What I wanted to do was use the resource command to put servos 1-4 on motor outputs 1-4 on my naze board and do a custom smix to assign stabilized roll, stabilized elevator, rc throttle, and stabilized rudder to the outputs respectively. Like a futaba radio. It sounds simple but for the life of me couldn't get it to work last night. I think something is broken somewhere, these possibilities haven't been tested I would think, seeing as betaflight is designed for acro-quad flying it really only gets tested on acro-quads.  
 I stepped the PID-loop frequency to .06 khz. I am running digital servos so theoretically I could do .3 khz and update them at 300 hz, but going analog speeds just to see if it works.  
@@ -87,7 +87,7 @@ I'm not aware of a servo update frequency parameter but having one could be good
 
 I think that's everything I learned so far regarding betaflight and planes.  
 
-Post by: touchthebitum  
+#### Post by: touchthebitum  
 Not a great video (first test in LOS flight) but it is only to illustrate that Betaflight can work pretty good with a fixed wing.   
 I'm impressed of the landing speed in acc mode. It was very windy (about 20kmh)
 https://youtu.be/DpmqeoRGwgA  
