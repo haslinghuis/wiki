@@ -192,6 +192,9 @@ NOTE- For the features in this release you will need to use the following Versio
 - Configurator 1.9.0
 - BlackBox Viewer 2.5.9
 
+### Warning: It is NOT recommended to use any Save/Restore or even CLI Dump/Diff copy paste between firmware Versions. 
+Always use the Config GUI to setup and manually type into the CLI after doing a "get 'name'" to be sure of new spelling and options.
+
 ### Bugs and fixes:  
 - RC2 - Fix in rc expo symmetry // fix missing baro on some targets
 - RC3 - Enable experimental 32khz support
