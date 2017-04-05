@@ -1,9 +1,8 @@
 # KAKUTE F3
 
-## Target Hex code: SPRACINGF  
+## Target Hex code: SPRACINGF3  
 
 ## Description
-
 
 
 ## MCU, Sensors and Features
