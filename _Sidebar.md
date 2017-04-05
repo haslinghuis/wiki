@@ -69,6 +69,7 @@
  - [FURYF4](/betaflight/betaflight/wiki/Board---FURYF4)
  - [FURYF7](/betaflight/betaflight/wiki/Board---FURYF7)
  - [IRCFUSIONF3](/betaflight/betaflight/wiki/Board---IRCFUSIONF3)
+ - [KAKUTE F3](https://github.com/betaflight/betaflight/wiki/KAKUTE-F3)
  - [KAKUTEF4](/betaflight/betaflight/wiki/Board---KAKUTEF4)
  - [KISSFC](/betaflight/betaflight/wiki/Board---KISSFC)
  - [KIWIF4](https://github.com/betaflight/betaflight/wiki/KIWIF4)
