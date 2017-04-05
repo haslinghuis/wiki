@@ -37,7 +37,7 @@ F405+ICM20602, w/ Betaflight OSD & SD Card Slot
 * w/ Anti-vibration Standoffs
 
 ## Manufacturers and Distributors
-Matek Systems http://www.mateksys.com/?portfolio=F405-OSD
+Matek Systems http://F405.mateksys.com/
 
 ## Designers
 Matek Systems www.mateksys.com
