@@ -6,6 +6,9 @@ With 3.1, we can easily modify motor mappings with `resource` CLI command. See [
 A Joshua Bardwell Video: [Resource Remapping- No more Custom Motor Mixer](https://www.youtube.com/watch?v=z5aO-3_n-Hs   )  
 Project Blue Falcon video: [Find Bad ESC output Pin and Remap Motors](https://www.youtube.com/watch?v=cEMfs_4X2VM)  
 
+A Blue Falcon video:  
+[Remap Motors In Betaflight (damaged pins fix) ](https://www.youtube.com/watch?v=cEMfs_4X2VM&feature=youtu.be&t=159)  
+
 ###Examples: 
 
 Here, the most common case of "rotating FC or PDB" is taken as an example.
