@@ -14,7 +14,7 @@ New feature for 3.1 allows to flash kiss escs with a pass-through and KISS flash
 Note: it is apparently not yet active on all targets.   
 The FLASH LOADER is a Chrome App and must be 'installed' in Extensions with 'Developer Mode' enabled.
 
-For now you have to enable passthrough in the cli and than flash through flash loader app. Later it might be done from the app directly. [Flashloader](https://dl.dropboxusercontent.com/u/31537757/flashloader.zip)  
+For now you have to enable passthrough in the cli and than flash through flash loader app. Later it might be done from the app directly. [Flashloader attached to first post of this thread](https://www.rcgroups.com/forums/showthread.php?2756129-Dshot-testing-a-new-digital-parallel-ESC-throttle-signal)  
 
 KISSESC_flashloader also attached to [First Post of Dshot Thread](https://www.rcgroups.com/forums/showthread.php?2756129-Dshot-testing-a-new-digital-parallel-ESC-throttle-signal  ) in the "Files" section.
 
