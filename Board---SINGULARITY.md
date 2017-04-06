@@ -1,3 +1,5 @@
+3.1.7 : this target should be back to normal with DSHOT support on motors 1-4.
+
  Originally Posted by jdrotor:  
 Ok, I figured out the issue today and wasn't sure who to share what I found. The default Resource Mapping for the Singularity FC in BF3.0.1 changed in BF3.1.+. I'm not sure if the board I was working on is an "old" version.
 
