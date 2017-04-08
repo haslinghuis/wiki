@@ -29,6 +29,13 @@
 - Raceflight ready
 - Betaflight ready
 
+### Kakute FC Betaflight additional features pad assigments
+
+PAD ON Kakute FC|FUNCTION
+---|--------
+PPM|Softserial 1
+LED|Softserial 2
+
 ## Manufacturers and Distributors
 
 https://www.nextfpv.com.au/products/full-metal-racing-kakute-f3-flight-controller-v1-0 
