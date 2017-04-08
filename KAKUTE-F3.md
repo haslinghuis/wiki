@@ -61,3 +61,4 @@ Setup Guide:
 Rcgroups Thread: 
 
 ## Image
+![](http://www.fpvwarehouse.com.au/image/cache/product_images/fmr/kakute/KAKUTE-BOT_large-1008x800.png)
