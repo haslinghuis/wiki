@@ -36,6 +36,15 @@ PAD ON Kakute FC|FUNCTION
 PPM|Softserial 1
 LED|Softserial 2
 
+Softserial pad assignment can be enabled with the resource command.
+**Note: you must be using Betaflight 3.1.6 or later.**
+In cli type these commands:
+resource ppm none
+resource serial_tx 11 a00
+resource led 1 none
+resource serial_tx 12 A08
+save 
+
 ## Manufacturers and Distributors
 
 https://www.nextfpv.com.au/products/full-metal-racing-kakute-f3-flight-controller-v1-0 
