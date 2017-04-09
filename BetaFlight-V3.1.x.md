@@ -26,6 +26,22 @@ https://github.com/betaflight/betaflight/releases/tag/v3.1.0
 - Fix wrong flash sector for F4
 - Fix some broken targets like COLIBRI_RACE
 
+#### What Defaults changed?
+Boris's answer:  
+Basically people kept complaining that betaflight default D was too conservative and therefore changed.  
+Setpoint transition has been disabled (1.0) to give more linearity over the entire stick.  
+I still recommend that you slowly remove default filtering as well if your setup allows you for best results. Nowadays most do softmounting so removing of filters can easily improve performance. The defaults are optimized for hard mounted medium noisy environment for safety. The best tuning performance is achieved with as less Du.
+
+I think best filter removal steps would be.  
+set d_lowpass_type = PT1 should always be done first and I think possible on every setup.  
+If it is still fine than:  
+Remove notch 1  
+Than if still fine remove notch 2   
+Now if your setup is still clean you could even remove dterm notch.  
+That will give you the best results. Sharpest response, easiest tuning and literally no prop wash on good setups.  
+
+Note that default betaflight filters are made so every beginner can put a quad in air without burning his gear.   
+
 ## Betaflight 3.1.6 - 
 https://github.com/betaflight/betaflight/releases  
 
