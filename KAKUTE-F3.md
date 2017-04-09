@@ -37,7 +37,7 @@ PPM|Softserial 1
 LED|Softserial 2
 
 Softserial pad assignment can be enabled with the resource command.  
-
+You can use these pads to connect to smart audio on a unify or telemetry on a tramp.   
 **Note: you must be using Betaflight 3.1.6 or later.**  
 In cli type these commands:  
 resource ppm none  
