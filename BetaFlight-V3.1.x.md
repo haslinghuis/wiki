@@ -42,6 +42,14 @@ That will give you the best results. Sharpest response, easiest tuning and liter
 
 Note that default betaflight filters are made so every beginner can put a quad in air without burning his gear.   
 
+Dterm lowpass is always needed. Never remove that! Even on the cleanest setup.
+
+I think if you really put some effort to build a clean setup you easily can get away without most of other filter settings.
+To test that I was able to repeat it on 3 of my builds.  Hardware softmounting is always filtering without extra penalty.  
+
+The most difference with and with filtering comes from the steep gyro changes. The more filtering there is the slower P will react on high gyro changes and translates itself to more prop wash and less direct feel.  
+As I said defaults are meant to be safe and protect against most common vibrations shown across many hardmounted 4 / 5inch setups. But more and more people care about clean setup nowadays than lets say 1 year ago and that means you may get much better running setup with some filter removals.   
+
 ## Betaflight 3.1.6 - 
 https://github.com/betaflight/betaflight/releases  
 
