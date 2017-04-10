@@ -56,3 +56,4 @@ More details on phase shift for example can be found here: https://github.com/be
 Post by r.a.v.
 You can view earlier BB logs (pre BF 3.0) but the analyzer won't know at which rate it was recorded. This will probably result in a correct looking spectrum but with incorrect frequency labels. Clicking on the traces on the Graph section to the right will show the analyzer screen.
 
+See [Filters](https://github.com/betaflight/betaflight/wiki/Gyro-&-Dterm-filtering-recommendations)
