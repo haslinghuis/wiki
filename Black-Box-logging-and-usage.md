@@ -56,30 +56,3 @@ More details on phase shift for example can be found here: https://github.com/be
 Post by r.a.v.
 You can view earlier BB logs (pre BF 3.0) but the analyzer won't know at which rate it was recorded. This will probably result in a correct looking spectrum but with incorrect frequency labels. Clicking on the traces on the Graph section to the right will show the analyzer screen.
 
-Post by ctzsnooze  
-All filters add delay. Doubling slope on an IIR LPF doubles delay since the same 1st order filter is simply applied twice. None currently are FIR. FIR were evaluated and not as good as simple IIR. Dterm is IIR, gyro cut was biquad (i think it still is). There is a recent post about the notch filter that linked to the GitHub page where the Notch was discussed before implementation. Diagrams there show delay for different filter combinations. Lots of thought has gone into current filter design. 
-
-Another post by ctzsnooze on using the Filters available in 3.x
-http://www.rcgroups.com/forums/showpost.php?p=35764414&postcount=38600
-
-#### Additional discussion on Filter Usage  
-
-Post by Boris   
-I still recommend that you slowly remove default filtering as well if your setup allows you for best results. Nowadays most do soft mounting so removing of filters can easily improve performance. The defaults are optimized for hard mounted medium noisy environment for safety. The best tuning performance is achieved with as less Du.  
-
-I think best filter removal steps would be.  
-set d_lowpass_type = PT1 should always be done first and I think possible on every setup.  
-
-If it is still fine then:  
-Remove notch 1  
-Than if still fine remove notch 2  
-
-Now if your setup is still clean you could even remove dterm notch. 
-That will give you the best results. Sharpest response, easiest tuning and literally no prop wash on good setups.  
-Note that default betaflight filters are made so every beginner can put a quad in air without burning his gear.  
-
-Post by ctzsnooze   
-When Boris was first putting notch filters into betaflight they were intended as narrow, specific point filters, to block tight peaks of noise - and for this they are really, really good.  
-However, when set wide, and particularly if set wide with a low cutoff, they do have a 'tail' that causes both delay and phase shift. Those negative effects can extend some way below the lower cutoff point, especially if the filter is 'wide', ie there is a big difference between centre point and low point.  
-For example, setting a notch centre point to 200 and its low point at 100 will have significant effects below 100, whereas setting it to centre of 200 and low point of 160 won't be nearly as much of a problem.  
-Notch filters should be used primarily to control tall, discrete 'peaks' of noise, and only made just wide enough to control the peak.   
