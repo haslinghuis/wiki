@@ -1678,6 +1678,12 @@ http://rotorgeeks.com/index.php?route=product/product&product_id=599&search=damp
 Gozz -- These are the ones I recently started using too, they work very well for the size.  
 https://www.readymaderc.com/store/index.php?main_page=product_info&cPath=53_777&products_id=6306  
 
+What is considered the proper way to soft motors?  
+Answer from AILERON8:   
+There are many different ways of doing it, but what I do is make sure I'm using truly "soft" mounts, either rubber or low-infill TPU, and place one under each motor and under the arms so the motor screws are floating as well. You want the motors to decouple from the frame without becoming loose in the process. It's a fine balance that results in the best tune ever if executed properly.  
+http://pirofliprc.com/1mm-Medium-density-motor-soft-mounting-pad-10-pcs_p_3852.html   
+
+
 ## Is there a way to download blackbox logs through a terminal client ? 
 
 Thanks to dropax for asking this and working out the answer.  
