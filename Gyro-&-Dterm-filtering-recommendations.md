@@ -216,8 +216,8 @@ lpfD, notchD
 
 Signal path is like this:
 
-`gyro -> lpf -> notch1 -> notch2 -> P term                   -> motor`  
-`gyro -> lpf -> notch1 -> notch2 -> D term -> lpfD -> notchD -> motor`  
+gyro -> lpf -> notch1 -> notch2 -> P term                   -> motor  
+gyro -> lpf -> notch1 -> notch2 -> D term -> lpfD -> notchD -> motor  
 
 Each filter creates more delay the stronger it is.
 
