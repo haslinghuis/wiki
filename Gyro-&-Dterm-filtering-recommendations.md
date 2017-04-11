@@ -118,7 +118,7 @@ I'm not too technical but once I switched D lowpass to Pt1 it does handle windy 
 I think people want to try PT1 need to lower down D back to around 24 first, tune it like the old days, actually I found much better as I know when to stop adding numbers lol, also with dshot much easy to see over Dgains symptoms so you know when to back down.
 For racing I think Biquad still best if don't mind a touch of prop wash but benefits will more efficient and faster motors.  
 
-#### how do I see the dterm trace? Roll/pitch D graph??  
+#### How do I see the dterm trace? Roll/pitch D graph in BB log??  
 Answer by ctzsnooze:  
 Yep, click on the icon at the right near the parameter to select that one.  
 For Dterm just graph it, select either roll or pitch (they can be different).  
