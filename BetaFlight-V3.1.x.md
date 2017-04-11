@@ -32,6 +32,7 @@ Basically people kept complaining that betaflight default D was too conservative
 Setpoint transition has been disabled (1.0) to give more linearity over the entire stick.  
 I still recommend that you slowly remove default filtering as well if your setup allows you for best results. Nowadays most do softmounting so removing of filters can easily improve performance. The defaults are optimized for hard mounted medium noisy environment for safety. The best tuning performance is achieved with as less Du.
 
+See the [Gyro & Filters](https://github.com/betaflight/betaflight/wiki/Gyro-&-Dterm-filtering-recommendations) for much more.
 I think best filter removal steps would be.  
 set d_lowpass_type = PT1 should always be done first and I think possible on every setup.  
 If it is still fine than:  
