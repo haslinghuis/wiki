@@ -200,3 +200,38 @@ dterm: pt1 170Hz
 dterm notch: 280, cut 160    
 ![PT1 vs BiQuad](https://static.rcgroups.net/forums/attachments/6/5/0/4/8/6/a9947852-19-pt1-biquad.png)
 
+All the filters and signal sources interact with each other and it's difficult to find the perfect setting.
+Here's my point of view.
+
+We have:  
+< 110Hz: Useful, important signals  
+> 200Hz: Motor noise / frame resonance / unwanted signals  
+
+Gyro filters:  
+lpf, notch1, notch2
+
+Dterm filters:  
+lpfD, notchD
+
+
+Signal path is like this:
+
+`gyro -> lpf -> notch1 -> notch2 -> P term                   -> motor`
+`                               \-> D term -> lpfD -> notchD -> motor`
+
+Each filter creates more delay the stronger it is.
+
+We want to:
+keep total delay as low as possible  
+keep delay between P->motor and D->motor as low as possible  
+filter out as much noise as possible   
+
+lpf of second order (biquad) creates most delay but has a steep curve and does not influence frequencies below cutoff too much. 
+lpf of first order (PT1) creates less delay than biquad, but has a strong influence on lower frequencies.  
+Notches are great to remove certain frequencies created by motors and have a delay based on filter width but less than lpf. 
+
+In my opinion it's best to use biquad and notches for gyro. This does a great job at removing noise but keeping the useful data.  
+The dterm needs still additional filtering so a PT1 at high cutoff and another notch take care of noise without touching low frequency data. This also keeps the delay between D and P low.  
+
+The default setting of a biquad for D with quite low cutoff creates a lot of delay and also lower magnitude of useful data.   
+
