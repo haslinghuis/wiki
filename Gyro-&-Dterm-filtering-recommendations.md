@@ -204,7 +204,7 @@ All the filters and signal sources interact with each other and it's difficult t
 Here's my point of view.
 
 We have:  
-` < 110Hz: Useful, important signals  `
+` < 110Hz: Useful, important signals  `   
 ` > 200Hz: Motor noise / frame resonance / unwanted signals  `
 
 Gyro filters:  
