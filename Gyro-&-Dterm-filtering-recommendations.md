@@ -49,6 +49,30 @@ All filters add delay. Doubling slope on an IIR LPF doubles delay since the same
 
 ### Filters were changed in Version 3.0 
 
+#### What Defaults changed in 3.1.7?
+Boris's answer:  
+Basically people kept complaining that betaflight default D was too conservative and therefore changed.  
+Setpoint transition has been disabled (1.0) to give more linearity over the entire stick.  
+I still recommend that you slowly remove default filtering as well if your setup allows you for best results. Nowadays most do softmounting so removing of filters can easily improve performance. The defaults are optimized for hard mounted medium noisy environment for safety. The best tuning performance is achieved with as less Du.
+
+I think best filter removal steps would be.  
+set d_lowpass_type = PT1 should always be done first and I think possible on every setup.  
+If it is still fine than:  
+Remove notch 1  
+Than if still fine remove notch 2   
+Now if your setup is still clean you could even remove dterm notch.  
+That will give you the best results. Sharpest response, easiest tuning and literally no prop wash on good setups.  
+
+Note that default betaflight filters are made so every beginner can put a quad in air without burning his gear.   
+
+Dterm lowpass is always needed. Never remove that! Even on the cleanest setup.
+
+I think if you really put some effort to build a clean setup you easily can get away without most of other filter settings.
+To test that I was able to repeat it on 3 of my builds.  Hardware softmounting is always filtering without extra penalty.  
+
+The most difference with and with filtering comes from the steep gyro changes. The more filtering there is the slower P will react on high gyro changes and translates itself to more prop wash and less direct feel.  
+As I said defaults are meant to be safe and protect against most common vibrations shown across many hardmounted 4 / 5inch setups. But more and more people care about clean setup nowadays than lets say 1 year ago and that means you may get much better running setup with some filter removals. 
+
 #### What is the difference between PT1 vs BIQUAD filters   
 Answer by pete_oz:  
 A biquad filter is more aggressive (it can filter the noise better at the cost of extra delay). I have no technical expertise to explain how each filter works (perhaps others can explain it for us) but basically based on latest Boris's recommendation we should be using PT1 unless there is too much noise on your copter.
