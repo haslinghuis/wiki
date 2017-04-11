@@ -177,3 +177,26 @@ When Boris was first putting notch filters into betaflight they were intended as
 However, when set wide, and particularly if set wide with a low cutoff, they do have a 'tail' that causes both delay and phase shift. Those negative effects can extend some way below the lower cutoff point, especially if the filter is 'wide', ie there is a big difference between centre point and low point.  
 For example, setting a notch centre point to 200 and its low point at 100 will have significant effects below 100, whereas setting it to centre of 200 and low point of 160 won't be nearly as much of a problem.  
 Notch filters should be used primarily to control tall, discrete 'peaks' of noise, and only made just wide enough to control the peak.   
+
+#### post by r.a.v.
+As explained earlier PT1 is a first order filter and biquad is a second order filter.  
+
+A main difference is also how steep the cutoff of the filter is. 
+Here's a graph that shows the difference between the two. (X is frequency in Hz, Y is magnitude in dB).  
+You can see that the biquad does not influence frequencies below the cutoff as much as the pt1 filter, but much stronger above.  
+Keep in mind that changes in rx input come in at 9ms = 111Hz and influence the D-term based on setpoint rate which is calculated before the filter is applied, so that could explain why pt1 feels better than biquad.  
+
+If we combine the filters on gyro with the filters on D, we get something like a 2-3 order filter but with weird behavior on magnitude below the cutoff value. (The coefficients should be changed to get a proper behavior when cascading filters.)
+So there is not only a phase shift between P and D, but also a large difference in magnitude.  
+
+Instead of disabling notch filters. I'd recommend raising the cutoff of the D low pass filter.  
+By moving the pt1 cutoff higher and using notches, noise is reduced a lot without influencing lower frequencies.
+
+As an example this is what I use on my super noisy noise-o-copter and get cool motors:   
+gyro filter: biquad at 110Hz   
+gyro notch1: 330, cut 250   
+gyro notch2: 250, cut 170   
+dterm: pt1 170Hz   
+dterm notch: 280, cut 160    
+![PT1 vs BiQuad](https://static.rcgroups.net/forums/attachments/6/5/0/4/8/6/a9947852-19-pt1-biquad.png)
+
