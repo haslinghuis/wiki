@@ -47,12 +47,94 @@ See [BB logging page](https://github.com/betaflight/betaflight/wiki/Black-Box-lo
 Post by ctzsnooze  
 All filters add delay. Doubling slope on an IIR LPF doubles delay since the same 1st order filter is simply applied twice. None currently are FIR. FIR were evaluated and not as good as simple IIR. Dterm is IIR, gyro cut was biquad (i think it still is). There is a recent post about the notch filter that linked to the GitHub page where the Notch was discussed before implementation. Diagrams there show delay for different filter combinations. Lots of thought has gone into current filter design. 
 
-Another post by ctzsnooze on using the Filters available in 3.x
+### Filters were changed in Version 3.0 
+
+#### What is the difference between PT1 vs BIQUAD filters   
+Answer by pete_oz:  
+A biquad filter is more aggressive (it can filter the noise better at the cost of extra delay). I have no technical expertise to explain how each filter works (perhaps others can explain it for us) but basically based on latest Boris's recommendation we should be using PT1 unless there is too much noise on your copter.
+
+Answer by ctzsnooze:  
+PT1 is a standard -6db/octave 'infinite impluse type' IIR type low pass filter. Signal amplitude is halved at the set frequency and then is reduced by a factor of four times each time frequency doubles above that. Delay is approximately 1ms at 100Hz (2ms at 50Hz etc). Phase shift is 45 degrees at cutoff frequency. This filter is the digital equivalent of a simple analog low pass RC filter.  
+
+BiQuad is a steeper -12dB/octave low pass filter. Signal amplitude is halved at the set frequency and then is reduced by a factor of 8 times each time frequency doubles above that. The 'cost' is that delay and phase shift is doubled. Delay is approximately 2ms at 100Hz (4ms at 50Hz etc). Phase shift is 90 degrees at cutoff frequency (I think that's correct). Basically twice as steep a cut, but more delay.  
+
+Answer by Boris:  
+Ctznooze explained it already, but here a very easy explanation for those who don't understand how filters work.  
+PT1 is a less good filter, but therefore much faster than BIQUAD. Dterm speed of reaction gets greatly improved with PT1 therefore and the pid controller gets a faster reaction in quick disturbance cases.  
+The main performance difference comes into play during very rapid accelerations and decelerations of gyro changes.  
+You could say that rising and falling edge scenarios from gyro changes are better followed with PT1 than with any other higher order filter.  
+Though BIQUAD coefficients also can be modified to be same to PT1.  
+
+#### What is the difference between the gyro notch and the D-term notch?  
+Answer by Boris:  
+Gyro notch is applies to gyro input and dterm notch on dterm output.  
+But those are in line. Gyro noise at 300hz will also result to dterm noise at 300hz  
+Loop:
+Gyro->PID->motors
+And again  
+
+#### How should I set Dterm Notch Filter? Do I set it to the same value as Gyro Notch Filter e.g. 285Hz?
+Answer by pete_oz:
+It's difficult to answer this question because in BB spectro analysis we are unable to produce spectro graph that would show us state of noise after gyro notch filters were applied but before D notch filter is applied.  
+We can see spectro graph before gyro notches are removed ("pre-notch") and can only compare it gyro spectrum graph after all filters (incl. D notch) are applied.  
+In order to be able to identify this better the developers would have to implement debug mode that would allow us to see state of noise after gyro notch filters but before d notch filter is applied.
+I remember someone was requesting this functionality on Github but the request was dismissed with explanation given (please don't quote me this) that D term noise pattern is identical to that of gyro noise except for the magnitude of the noise.
+
+When asking same question in the past (how to set my D notch filtering) I believe I was given the answer to set my D notch filtering for example between my 2 gyro notches (if I have a gap there) or otherwise set it to where I have most noise.  
+
+Answer by ctzsnooze:
+Well, first get the noise level under control with basic filtering (no notch filters at all). By that I mean, configure the basic gyro filter appropriately, either BiQuad or PT1, until your P trace on blackbox is 'smooth enough'.  
+
+If the P trace has a prominent noise peak, apply a gyro notch filter to specifically block that out - but only if the amplitude is big enough that you can see it in the P trace itself. If the noise is less than 1% of signal, like if you can't really see it in P trace compared to signal, ignore the spectrum and don't use any notch.
+
+If you need two gyro notch filters for speciific gyro peaks, use them.  
+
+After doing all this, then look at the Dterm trace. You must have some basic Dterm filtering. If the Dterm trace appears to have less than a few percent noise, you don't need to do anything, you could conceivably use less filtering an get better performance. If you have a broad band of noise on D, then you may need to lower the overall D lowpass or use a BiQuad on D.
+
+Only then would you think about adding a D notch filter, and only to deal with a very specific peak that had got through the gyro notch filters.
+
+Finally check the motor traces at different stages in a typical flight. Provided that oscillations are less than a couple of percent, they can basically be ignored. We are not trying to get a flat spectrum, just to make it so that signal to motors is 'clean enough'. If we filter super hard, we may get rid of high frequency noise, but may end up exaggerating low frequency wobbles. There is some 'sweet spot', and it differs according to what you want to achieve.
+
+Full optimization simply can't be done without a blackbox, quite a lot of time, and knowing what you're doing. Think of it like you are reprogramming the ECU of your car.
+
+Also be aware that if you change your props, if they get some nicks or bends, or if you get a little bearing wear, or even if you just change ESCs, all your careful optimizations done with clean new original gear won't work so well.
+
+Reducing filtering to the bare minimum, keeping motors perfect, and only flying clean props = fantastic performance and hardly any propwash wobble (assuming light props, low rotational mass, and free-revving powerful motors).
+
+For me, I'd rather fly. I set my filters relatively quite low, and don't care much about a little propwash. Motors stay cool, tolerate bent props really well, don't get burning hot at the drop of the hat. Turn P down on more powerful setups. But yeah, I get propwash on hard 180 stops, so I just live with it and learn to fly smoother arcs :-)    
+
+No one should use motor signal as the input source in blackbox when modifying filters.
+
+Pterm noise is the same as gyro noise multiplied by your P factor. In BlackBox, gyro or P traces should be used as the input source for tuning gyro filters.
+
+Dterm noise can only be evaluated using the Dterm trace in BlackBox logs. Be aware that Dterm is calculated *after* all the gyro filtering, so always first optimise the gyro filters, then worry about Dterm filtering independently. A Dterm notch should only be used when there remains a peak in Dterm *and* where that peak is of such magnitude to be a significant contributor in terms of your final result. Otherwise don't use it at all. Just randomly setting the Dterm notch in-between the gyro notches is not likely to work well.
+
+By comparing noise levels and spectrum between P and D in blackbox, it's actually quite easy to visualise what the Dterm filtering is doing. And of course you can turn it off and do a short test run :-) just not for long or you may overheat.
+
+The only role that the motor traces have is to look at your overall 'end result' - to visually quantify the amount of energy in oscillations of any kind, with the goal of keeping the total oscillation energy low enough to be not a practical issue. They should not be used as a blackbox input when tuning filters.   
+
+Comment by zenkinsw:
+I'm not too technical but once I switched D lowpass to Pt1 it does handle windy days much better, P hunts much less, and less prop wash too, basically less bumpy fly, but trade off with some more D noises motor get hotter.
+I think people want to try PT1 need to lower down D back to around 24 first, tune it like the old days, actually I found much better as I know when to stop adding numbers lol, also with dshot much easy to see over Dgains symptoms so you know when to back down.
+For racing I think Biquad still best if don't mind a touch of prop wash but benefits will more efficient and faster motors.  
+
+#### how do I see the dterm trace? Roll/pitch D graph??  
+Answer by ctzsnooze:  
+Yep, click on the icon at the right near the parameter to select that one.  
+For Dterm just graph it, select either roll or pitch (they can be different).  
+Remember that you can scroll to a 'start' point in the log, press 'i' on the keyboard, then scroll a bit further on, press 'o' on the keyboard... now your graph only shows that region of the log.  
+Very, very useful. Allows you to look at hover throttle, mid throttle, high throttle independently, often the peaks are different at different RPM. Looking at noise throughout the entire trace is OK but it can be more productive to focus on the throttle range you care about most (or the range with the most noise).  
+Be sure to edit your BBLog settings to disable all expo and set all gains to 100% in the first instance. Expo on BBLog traces is very confusing, much better disabled.  (S & X keys)
+
+Finally, use the spectrum only to determine the *relative* distribution of the frequencies, not the absolute magnitude of the noise. In other words, do not worry about the absolute 'height' of the spectrum. It is always bigger if you include more data. For the same included amount of time, a bigger spectrum means more noise, but you must select the same length range to do valid comparisons.  
+To evaluate the overall magnitude of noise, look at the Motors traces - the wiggly lines themselves - with no expo and 100% scale. Eyeball how much noise you reckon there is, as a proportion of the total motor signal itself. 
+
+Post by ctzsnooze on using the Filters available in 3.x
 http://www.rcgroups.com/forums/showpost.php?p=35764414&postcount=38600
 
-#### Additional discussion on Filter Usage  
+### Additional discussion on Filter Usage  
 
-Post by Boris   
+#### Post by Boris   
 I still recommend that you slowly remove default filtering as well if your setup allows you for best results. Nowadays most do soft mounting so removing of filters can easily improve performance. The defaults are optimized for hard mounted medium noisy environment for safety. The best tuning performance is achieved with as less Du.  
 
 I think best filter removal steps would be.  
