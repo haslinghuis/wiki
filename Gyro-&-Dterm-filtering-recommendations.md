@@ -235,3 +235,30 @@ The dterm needs still additional filtering so a PT1 at high cutoff and another n
 
 The default setting of a biquad for D with quite low cutoff creates a lot of delay and also lower magnitude of useful data.   
 
+### Filter Delays
+ All filters add delay but this can not be avoided. Here is some info on delays.
+
+Posted by ctzsnooze:  
+Switching from biquad to PT1 , while leaving frequency the same, say at 100Hz, will do the following:  
+Twice as much noise at 200hz  
+Four times as much noise at 400hz  
+Almost no change in phase delay at 10hz  
+About 15 degrees *less* phase delay at 50hz  
+45 degrees *less* phase delay at 100hz  
+
+The improvement in phase delay at 100hz can be thought of as about 1.5ms less absolute delay.   
+
+Post by r.a.v. showing Filter delays:  
+Here's an overview of the delay between 90Hz and 170Hz:  
+biquad: 2.75ms vs 2.5ms at 100Hz  
+pt1: 0.88ms vs 0.8ms   
+![BiQuad Delay verse Cut-off frequency](https://redirect.viglink.com/?format=go&jsonp=vglnk_149199926656316&key=8a24c98a696b4e5723db293f62190b87&libId=j1exth4b010004o4000DAkk8ce2y8&loc=https%3A%2F%2Fwww.rcgroups.com%2Fforums%2Fshowthread.php%3F2464844-Betaflight-Flight-Controller-Firmware-Discussion-Thread%2Fpage3162&v=1&out=https%3A%2F%2Fstatic.rcgroups.net%2Fforums%2Fattachments%2F6%2F5%2F0%2F4%2F8%2F6%2Fa9950155-145-phasedelayBiquad90-170.png&ref=https%3A%2F%2Fwww.rcgroups.com%2Fforums%2Fshowthread.php%3F2464844-Betaflight-Flight-Controller-Firmware-Discussion-Thread%2Fpage3161&title=Betaflight%20Flight%20Controller%20Firmware%20Discussion%20Thread%20-%20Page%203162%20-%20RC%20Groups&txt=)
+
+![PT1 Delay verse Cut-off frequency](https://redirect.viglink.com/?format=go&jsonp=vglnk_149199932789918&key=8a24c98a696b4e5723db293f62190b87&libId=j1exth4b010004o4000DAkk8ce2y8&loc=https%3A%2F%2Fwww.rcgroups.com%2Fforums%2Fshowthread.php%3F2464844-Betaflight-Flight-Controller-Firmware-Discussion-Thread%2Fpage3162&v=1&out=https%3A%2F%2Fstatic.rcgroups.net%2Fforums%2Fattachments%2F6%2F5%2F0%2F4%2F8%2F6%2Fa9950156-96-phasedelayPT190-170.png&ref=https%3A%2F%2Fwww.rcgroups.com%2Fforums%2Fshowthread.php%3F2464844-Betaflight-Flight-Controller-Firmware-Discussion-Thread%2Fpage3161&title=Betaflight%20Flight%20Controller%20Firmware%20Discussion%20Thread%20-%20Page%203162%20-%20RC%20Groups&txt=)  
+
+I'll just throw in some notch delays for notches with cutoff 80Hz below each center.  
+As you can see the delay is very low but the strong filtering allows higher cutoff for lpf filters.  
+So total delay of notch + high cutoff lpf is lower than lpf alone with low cutoff while the noise is still reduced significantly.   
+
+![Notch Delay verse Cut-off frequency](https://redirect.viglink.com/?format=go&jsonp=vglnk_149199948127320&key=8a24c98a696b4e5723db293f62190b87&libId=j1exth4b010004o4000DAkk8ce2y8&loc=https%3A%2F%2Fwww.rcgroups.com%2Fforums%2Fshowthread.php%3F2464844-Betaflight-Flight-Controller-Firmware-Discussion-Thread%2Fpage3162&v=1&out=https%3A%2F%2Fstatic.rcgroups.net%2Fforums%2Fattachments%2F6%2F5%2F0%2F4%2F8%2F6%2Fa9950217-164-notch220Hz-300Hz-80cut.png&ref=https%3A%2F%2Fwww.rcgroups.com%2Fforums%2Fshowthread.php%3F2464844-Betaflight-Flight-Controller-Firmware-Discussion-Thread%2Fpage3161&title=Betaflight%20Flight%20Controller%20Firmware%20Discussion%20Thread%20-%20Page%203162%20-%20RC%20Groups&txt=)  
+
