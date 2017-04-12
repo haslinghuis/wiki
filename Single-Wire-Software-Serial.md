@@ -117,4 +117,4 @@ IRCFUSIONF3
 
 | Pin | Label             | S.Audio | Tramp | S.Port | Notes                  |
 |-----|-------------------|---------|-------|--------|------------------------|
-| A00 | PPM               | ?       | ?     | OK     |                        |
+| A00 | PPM               | ?       | ?     | OK     | When PPM is not in use |
