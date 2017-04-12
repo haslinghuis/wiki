@@ -71,6 +71,9 @@ Another fairly common issue. Read carefully the Wiki [FAQ #56](https://github.co
 3. Yaw tuning may require adjustment of lower yaw_accel_limit and yaw_p_limit setting especially with high power, high kv motors.  
 4. 
 
+### Filters:  
+See the [Gyro & Filters](https://github.com/betaflight/betaflight/wiki/Gyro-&-Dterm-filtering-recommendations) Wiki Page for details on adjusting/Tuning the Filters. 
+
 ## Tuning the DJI Snail system  
 This system needs very different PIDs and Defaults do not work causing extreme oscillations. The following video and thread covers tuning this power system (also a good video on general Tuning).   
 https://www.youtube.com/watch?v=8L2v10RS6io
