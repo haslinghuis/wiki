@@ -73,7 +73,7 @@ To test that I was able to repeat it on 3 of my builds.  Hardware softmounting i
 The most difference with and with filtering comes from the steep gyro changes. The more filtering there is the slower P will react on high gyro changes and translates itself to more prop wash and less direct feel.  
 As I said defaults are meant to be safe and protect against most common vibrations shown across many hardmounted 4 / 5inch setups. But more and more people care about clean setup nowadays than lets say 1 year ago and that means you may get much better running setup with some filter removals. 
 
-- Testimonials
+- Testimonials   
 Redtail2426:  
 So I ended up switching to pt1, removing both notch filters, and removed the d term notch filter, and the prop wash is pretty much 99% gone, much much better than it was with the default 3.1.7 filtering. Awesome job guys  
 
