@@ -1683,6 +1683,8 @@ Answer from AILERON8:
 There are many different ways of doing it, but what I do is make sure I'm using truly "soft" mounts, either rubber or low-infill TPU, and place one under each motor and under the arms so the motor screws are floating as well. You want the motors to decouple from the frame without becoming loose in the process. It's a fine balance that results in the best tune ever if executed properly.  
 http://pirofliprc.com/1mm-Medium-density-motor-soft-mounting-pad-10-pcs_p_3852.html   
 
+### Can Filter tuning help?  
+The newer filters in 3.0 & 3.1 have pretty aggressive defaults. A number of fliers have reduced oscillation issue be reducing the use of the filters. See the [Gyro & Filters ](https://github.com/betaflight/betaflight/wiki/Gyro-&-Dterm-filtering-recommendations) Wiki page for details and discussions.
 
 ## Is there a way to download blackbox logs through a terminal client ? 
 
