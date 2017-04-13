@@ -73,7 +73,7 @@ Another fairly common issue. Read carefully the Wiki [FAQ #56](https://github.co
 4. 
 
 ### Filters:  
-See the [Gyro & Filters](https://github.com/betaflight/betaflight/wiki/Gyro-&-Dterm-filtering-recommendations) Wiki Page for details on adjusting/Tuning the Filters. 
+See the [Gyro & Filters](https://github.com/betaflight/betaflight/wiki/Gyro-&-Dterm-filtering-recommendations) Wiki Page for details and discussions on adjusting/Tuning the Filters. 
 
 ## Tuning the DJI Snail system  
 This system needs very different PIDs and Defaults do not work causing extreme oscillations. The following video and thread covers tuning this power system (also a good video on general Tuning).   
