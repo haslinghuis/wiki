@@ -1,3 +1,7 @@
+The following FAQs are common questions that were asked in Boris' ßF or other RCG threads.
+Many of these do cover Basics but be Aware that some cover specific Versions of ßF Firmware and may be Obsolete for the later Versions of the firmware.
+Therefore be sure to Read the Release Note Wiki pages to know what commands or features are currently supported.
+
 ## Contents
 
 1. [I'm a Neewbe, how do I start ?](#im-a-neewbe-how-do-i-start-)
