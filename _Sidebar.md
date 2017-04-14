@@ -18,6 +18,7 @@
  - [Deep Dive](/betaflight/betaflight/wiki/BetaFlight-Deep-Dive)
  - [Gyro and Filters](/betaflight/betaflight/wiki/Gyro-&-Dterm-filtering-recommendations)
  - [Black Box logging and Filters](/betaflight/betaflight/wiki/Black-Box-logging-and-usage) 
+ - [Soft Mounting & Noise Reduction](https://github.com/betaflight/betaflight/wiki/Soft-Mounting-and-Noise-Reduction)
  - [Rate-Calculator](/betaflight/betaflight/wiki/Rate-Calculator)
  - [Resource Remapping](/betaflight/betaflight/wiki/Betaflight-resource-remapping)
  - [Remapping Motors](/betaflight/betaflight/wiki/Remapping-Motors-with-Resource-Command-(3.1))
