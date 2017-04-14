@@ -55,10 +55,15 @@ Differences:
 
 ## FAQ & Known Issues
 
-- Tornado has output driver chips so can not add a wire to the output pin header to use DSHOT.  
+- To use DSHOT ESC protocol with ßF3.1 Motor1 needs to be re-mapped to the PPM pin.
 
-- To use DSHOT ESC protocol with ßF3.1 Motor1 needs to be re-mapped to the PPM pin. See the [DSHOT & Betaflight](https://github.com/betaflight/betaflight/wiki/DSHOT%20ESC%20Protocol) page.  
+- Tornado has output driver chips so can not add a wire to the output pin header to use DSHOT.  So just wire Motor #1's ESC directly to the PPM pin and re-map.
 
+- The Cyclone and Tempest boards can have the PPM pin wired to the motor #1 output pin. 
+
+See the [DSHOT & Betaflight](https://github.com/betaflight/betaflight/wiki/DSHOT%20ESC%20Protocol) page.  
+
+For Cyclone & Tempest -   
 A wire can be soldered from the PPM pin to the motor 1 header pin or just connect ESC#1 directly to the PPM pin.
 Note: Adding this wire is not required if you connect signal wire from ESC #1 directly to the PPM pin.  
  Move motor 1 from Output #1 header pin to the PPM input header pin.   
@@ -68,8 +73,11 @@ Note: Adding this wire is not required if you connect signal wire from ESC #1 di
 `resource motor 1 A07 `  
 `save  `  
 
-Photo of wire added to a Cyclone.
+- Photo of wire added to a Cyclone.
 https://www.rcgroups.com/forums/showpost.php?p=36589146&postcount=2787
+
+- Photo and post on modifying the MotorF3 (Warp Quad) board to use Dshot. 
+https://www.rcgroups.com/forums/showthread.php?2537379-MotoLab-Board-Setup-and-Troubleshooting/page197#post37314713
 
 - Report that with the Mod and remapping to run DSHOT there is a conflict with DMA for LEDs with Motor #4.  
 Currently LEDs need to be disabled to run DSHOT. 
