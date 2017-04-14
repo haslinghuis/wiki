@@ -46,6 +46,7 @@ https://chrome.google.com/webstore/detail/betaflight-configurator/kdaghagfopacdn
 ## BlackBox Viewer
 The Latest Viewer and source is here:   
 https://github.com/betaflight/blackbox-log-viewer  
+See [BB Logging and Usage](https://github.com/betaflight/betaflight/wiki/Black-Box-logging-and-usage) Wiki page on using the BB logger. 
 
 ## BetaFlight Logos
 Links to logos (Note: The bee/wasp in the logo is different from the one that was finally adopted):  
