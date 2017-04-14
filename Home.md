@@ -7,7 +7,7 @@ New to Betaflight and just want to get started see the [installation](https://gi
 - Searching the Wiki-  
 Type in URL bar of the Web Browser:   
 "site:github.com/betaflight/betaflight/wiki PT1" (wiki search for term 'PT1')  
-or
+or   
 "site:github.com/betaflight/betaflight PT1" (broader search for term 'PT1')   
 
 -  Note that Default setting may change from one Version to the next. We try to list these under the Version Release Notes but not always get them all. I method to use is to keep track of changes and to check these yourself is:   
