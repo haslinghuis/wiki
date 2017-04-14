@@ -73,10 +73,10 @@ Note: Adding this wire is not required if you connect signal wire from ESC #1 di
 `resource motor 1 A07 `  
 `save  `  
 
-- Photo of wire added to a Cyclone.
+- Photo of wire added to a Cyclone.   
 https://www.rcgroups.com/forums/showpost.php?p=36589146&postcount=2787
 
-- Photo and post on modifying the MotorF3 (Warp Quad) board to use Dshot. 
+- Photo and post on modifying the MotorF3 (Warp Quad) board to use Dshot.   
 https://www.rcgroups.com/forums/showthread.php?2537379-MotoLab-Board-Setup-and-Troubleshooting/page197#post37314713
 
 - Report that with the Mod and remapping to run DSHOT there is a conflict with DMA for LEDs with Motor #4.  
