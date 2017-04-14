@@ -7,7 +7,7 @@
  - [PID Tuning Guide](/betaflight/betaflight/wiki/PID-Tuning-Guide)
  - [Flying Tips](/betaflight/betaflight/wiki/Flying-Tips)
 
-# Upgrading
+# Upgrading-Releases
 
  - [Betaflight 3.1.x](/betaflight/betaflight/wiki/BetaFlight-V3.1.x)
  - [Betaflight 3.0.x](/betaflight/betaflight/wiki/BetaFlight-3.0.x)
