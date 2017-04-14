@@ -1685,12 +1685,12 @@ http://pirofliprc.com/1mm-Medium-density-motor-soft-mounting-pad-10-pcs_p_3852.h
 
 List of Soft mounting parts from SadLeprechaun-  
 I use this stuff for soft mounting/vibrations:  
-[Motors](http://www.getfpv.com/motor-soft-mount-silicone-pad-w-3m-backing-set-of-4.html)
-[stand offs](http://www.getfpv.com/anti-vibration-flight-controller-standoff-7mm.html)
-[o-rings (on top of standoffs)](http://www.getfpv.com/multipurpose-o-ring-set-of-8.html)
-[HD cam / escs:](http://www.getfpv.com/rtom-anti-vibration-moongel.html)
-[Cap for battery lead:](https://www.amazon.com/dp/B00T2IA7MM?tag=viglink20264-20)
-[Caps for ESCs: ](https://www.amazon.com/Panasonic-470uF-Radial-Electrolytic-Capacitor/dp/B00WOQ0ILE?tag=viglink20264-20)
+[Motors](http://www.getfpv.com/motor-soft-mount-silicone-pad-w-3m-backing-set-of-4.html)   
+[stand offs](http://www.getfpv.com/anti-vibration-flight-controller-standoff-7mm.html)   
+[o-rings (on top of standoffs)](http://www.getfpv.com/multipurpose-o-ring-set-of-8.html)   
+[HD cam / escs:](http://www.getfpv.com/rtom-anti-vibration-moongel.html)   
+[Cap for battery lead:](https://www.amazon.com/dp/B00T2IA7MM?tag=viglink20264-20)   
+[Caps for ESCs: ](https://www.amazon.com/Panasonic-470uF-Radial-Electrolytic-Capacitor/dp/B00WOQ0ILE?tag=viglink20264-20)   
 
 ### Can Filter tuning help?  
 The newer filters in 3.0 & 3.1 have pretty aggressive defaults. A number of fliers have reduced oscillation issue be reducing the use of the filters. See the [Gyro & Filters ](https://github.com/betaflight/betaflight/wiki/Gyro-&-Dterm-filtering-recommendations) Wiki page for details and discussions.
