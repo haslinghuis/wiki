@@ -18,6 +18,7 @@ Betaflight is also always being adjusted to support most current Cleanflight too
 
 ## Firmware Releases
 Releases can be found here: https://github.com/betaflight/betaflight/releases or downloaded from configurator.
+Also check the Upgrading List to the Right for Release Notes and other Details on the various Versions.
 
 *BETA TESTING (WARNING)*
 
