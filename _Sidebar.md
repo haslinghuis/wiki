@@ -11,27 +11,26 @@
 
  - [Betaflight 3.1.x](/betaflight/betaflight/wiki/BetaFlight-V3.1.x)
  - [Betaflight 3.0.x](/betaflight/betaflight/wiki/BetaFlight-3.0.x)
- - [New release! What do I need to know?](/betaflight/betaflight/wiki/New-release!-What-do-I-need-to-know%3F)
+ - [V2.x CLI Commands](/betaflight/betaflight/wiki/Betaflight-specific-CLI-commands)  
 
 # Setup and More
 
- - [V2.x CLI Commands](/betaflight/betaflight/wiki/Betaflight-specific-CLI-commands)
- - [3D Setup](/betaflight/betaflight/wiki/3D-Setup)
- - [Rate-Calculator](/betaflight/betaflight/wiki/Rate-Calculator)
- - [Gyro and Filters](/betaflight/betaflight/wiki/Gyro-&-Dterm-filtering-recommendations)
  - [Deep Dive](/betaflight/betaflight/wiki/BetaFlight-Deep-Dive)
+ - [Gyro and Filters](/betaflight/betaflight/wiki/Gyro-&-Dterm-filtering-recommendations)
  - [Black Box logging and Filters](/betaflight/betaflight/wiki/Black-Box-logging-and-usage) 
+ - [Rate-Calculator](/betaflight/betaflight/wiki/Rate-Calculator)
  - [Resource Remapping](/betaflight/betaflight/wiki/Betaflight-resource-remapping)
  - [Remapping Motors](/betaflight/betaflight/wiki/Remapping-Motors-with-Resource-Command-(3.1))
- - [SERVO_TILT for 3.1](https://github.com/betaflight/betaflight/wiki/SERVO_TILT-for-3.1)
- - [CHANNEL_FORWARDING for 3.1](https://github.com/betaflight/betaflight/wiki/CHANNEL_FORWARDING-for-3.1)
  - [DSHOT ESC Protocol](/betaflight/betaflight/wiki/DSHOT-ESC-Protocol) 
  - [ESC Programming Pass-through](/betaflight/betaflight/wiki/Betaflight-ESC-pass-through)
+ - [SERVO_TILT for 3.1](https://github.com/betaflight/betaflight/wiki/SERVO_TILT-for-3.1)
+ - [CHANNEL_FORWARDING for 3.1](https://github.com/betaflight/betaflight/wiki/CHANNEL_FORWARDING-for-3.1)
  - [TBS Unify SmartAudio](/betaflight/betaflight/wiki/Unify-Smartaudio)
  - [IRC Tramp](/betaflight/betaflight/wiki/IRC-Tramp)
  - [ESC-Telemetry](/betaflight/betaflight/wiki/ESC-Telemetry)
  - [CMS Screen Adjustment](/betaflight/betaflight/wiki/CMS-Adjusting-Screen)
  - [CMS on MWOSD](https://github.com/betaflight/betaflight/wiki/CMS-on-MWOSD)
+ - [3D Setup](/betaflight/betaflight/wiki/3D-Setup)
  - [Setup on a Fixed Wing Aircraft](https://github.com/betaflight/betaflight/wiki/Setup-for-a-Fixed-Wing-Aircraft)  
 
 # Development
