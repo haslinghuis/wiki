@@ -56,9 +56,9 @@ Setpoint transition has been disabled (1.0) to give more linearity over the enti
 I still recommend that you slowly remove default filtering as well if your setup allows you for best results. Nowadays most do softmounting so removing of filters can easily improve performance. The defaults are optimized for hard mounted medium noisy environment for safety. The best tuning performance is achieved with as less Du.
 
 #### I think best filter removal steps would be.  
-set d_lowpass_type = PT1 should always be done first and I think possible on every setup.  
+set d_lowpass_type = PT1 (in the CLI) should always be done first and I think possible on every setup.  
 If it is still fine than:  
-Remove notch 1  
+Remove notch 1  (set Freq = 0 in the config GUI or CLI to disable Notch filter)
 Than if still fine remove notch 2   
 Now if your setup is still clean you could even remove dterm notch.  
 That will give you the best results. Sharpest response, easiest tuning and literally no prop wash on good setups.  
