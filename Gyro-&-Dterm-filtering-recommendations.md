@@ -108,7 +108,7 @@ Gyro->PID->motors
 And again  
 
 #### How should I set Dterm Notch Filter? Do I set it to the same value as Gyro Notch Filter e.g. 285Hz?
-Answer by pete_oz:
+Answer by pete_oz:  
 It's difficult to answer this question because in BB spectro analysis we are unable to produce spectro graph that would show us state of noise after gyro notch filters were applied but before D notch filter is applied.  
 We can see spectro graph before gyro notches are removed ("pre-notch") and can only compare it gyro spectrum graph after all filters (incl. D notch) are applied.  
 In order to be able to identify this better the developers would have to implement debug mode that would allow us to see state of noise after gyro notch filters but before d notch filter is applied.
@@ -116,7 +116,7 @@ I remember someone was requesting this functionality on Github but the request w
 
 When asking same question in the past (how to set my D notch filtering) I believe I was given the answer to set my D notch filtering for example between my 2 gyro notches (if I have a gap there) or otherwise set it to where I have most noise.  
 
-Answer by ctzsnooze:
+Answer by ctzsnooze:  
 Well, first get the noise level under control with basic filtering (no notch filters at all). By that I mean, configure the basic gyro filter appropriately, either BiQuad or PT1, until your P trace on blackbox is 'smooth enough'.  
 
 If the P trace has a prominent noise peak, apply a gyro notch filter to specifically block that out - but only if the amplitude is big enough that you can see it in the P trace itself. If the noise is less than 1% of signal, like if you can't really see it in P trace compared to signal, ignore the spectrum and don't use any notch.
@@ -147,7 +147,7 @@ By comparing noise levels and spectrum between P and D in blackbox, it's actuall
 
 The only role that the motor traces have is to look at your overall 'end result' - to visually quantify the amount of energy in oscillations of any kind, with the goal of keeping the total oscillation energy low enough to be not a practical issue. They should not be used as a blackbox input when tuning filters.   
 
-Comment by zenkinsw:
+Comment by zenkinsw:  
 I'm not too technical but once I switched D lowpass to Pt1 it does handle windy days much better, P hunts much less, and less prop wash too, basically less bumpy fly, but trade off with some more D noises motor get hotter.
 I think people want to try PT1 need to lower down D back to around 24 first, tune it like the old days, actually I found much better as I know when to stop adding numbers lol, also with dshot much easy to see over Dgains symptoms so you know when to back down.
 For racing I think Biquad still best if don't mind a touch of prop wash but benefits will more efficient and faster motors.  
@@ -163,7 +163,7 @@ Be sure to edit your BBLog settings to disable all expo and set all gains to 100
 Finally, use the spectrum only to determine the *relative* distribution of the frequencies, not the absolute magnitude of the noise. In other words, do not worry about the absolute 'height' of the spectrum. It is always bigger if you include more data. For the same included amount of time, a bigger spectrum means more noise, but you must select the same length range to do valid comparisons.  
 To evaluate the overall magnitude of noise, look at the Motors traces - the wiggly lines themselves - with no expo and 100% scale. Eyeball how much noise you reckon there is, as a proportion of the total motor signal itself. 
 
-Post by ctzsnooze on using the Filters available in 3.x
+Post by ctzsnooze on using the Filters available in 3.x  
 http://www.rcgroups.com/forums/showpost.php?p=35764414&postcount=38600
 
 ### Additional discussion on Filter Usage  
@@ -188,7 +188,7 @@ However, when set wide, and particularly if set wide with a low cutoff, they do 
 For example, setting a notch centre point to 200 and its low point at 100 will have significant effects below 100, whereas setting it to centre of 200 and low point of 160 won't be nearly as much of a problem.  
 Notch filters should be used primarily to control tall, discrete 'peaks' of noise, and only made just wide enough to control the peak.   
 
-#### post by r.a.v.
+#### post by r.a.v.  
 As explained earlier PT1 is a first order filter and biquad is a second order filter.  
 
 A main difference is also how steep the cutoff of the filter is. 
@@ -244,6 +244,33 @@ In my opinion it's best to use biquad and notches for gyro. This does a great jo
 The dterm needs still additional filtering so a PT1 at high cutoff and another notch take care of noise without touching low frequency data. This also keeps the delay between D and P low.  
 
 The default setting of a biquad for D with quite low cutoff creates a lot of delay and also lower magnitude of useful data.   
+
+post by ctzsnooze on Evaluating and setting Filter:  
+Summary:  
+- Raw gyro spectrum shows what is happening without any filtering at all.   
+- Normal gyro spectrum shows what happens after gyro LPF and the gyro notch filters.  
+- Spectrum from D trace shows how the D calculation adds noise on top of the filtered gyro data. To see what D is 'adding', we compare the spectrum from the D trace (in any given axis) with the gyro spectrum on that axis. We look to see what the D calculation 'adds on'. It usually amplifies noise, progressively more at higher frequencies. That's why D MUST have at least a PT1 low pass filter, and why if there is any high frequency peak creeping through gyro, it will be even bigger in D. The D notch should be applied to that final remaining notch after your gyro notches, or if you have no gyro notches, to deal with whatever is the biggest notch getting through the gyro filtering into D. That's why I say, *always, always always get the gyro filters right first, then look at the D filters*.   
+- finally, PIDsum and motor trace spectrums shows what the motors finally receive; this is the sum of the gyro->P and gyro->D pathways added together and modified by your P and D weightings.  
+
+Remember that we are not 'trying to fix a spectrum'.  
+Our goal is to reduce the relative amount of noise in the signal going to the motors - say as a percentage of total signal to the motors - to a reasonable level.
+
+Therefore the final step is to visually examine the motors trace (with scaling at 100% and no expo in the blackbox config), and check that overall the noise contribution is small. It does not have to be zero, just small enough to not be more than say a few percent, ideally. 5% noise costs 5% power and gives you 5% heat. The less noise, the better, all things being equal.
+
+You can look at the motors spectrum to see, if there remains a bit more noise present than you want, what its frequency range is. Then you can go back through the pathway to find where best to deal with it.
+
+The purpose of the spectrum and the filtering options is to identify the frequencies that contribute to the noise, so that you can then then to set the cut points on the LPF's to get rid of most of it, then add, if needed, the notch filters to remove any stubborn remaining peaks. But you don't need to put a notch on a peak if the actual amount of noise from that peak that is actually present on the motor trace - the waveform itself - is so small as to be irrelevant. We aren't fixing a spectrum!
+
+Note that as you reduce filtering, the quad will become 'twitchier'. Reducing filtering means that P and D now are active in higher frequencies that they never 'saw' before. So the quad may fly a bit better perhaps, but may also resonate or go insane from feedback when it didn't used to.
+
+The whole goal of filtering is to allow more P and more D than you other wise could use without filtering. And we want more P and more D, if possible, because they are good for propwash. We want the highest P and D possible without overheating motors.
+
+But, reducing filtering may limit how much P and D you can safely run without overheating.
+
+It's just not true to suggest that 'less filtering means better performance', especially if it limits how much P and D you can run. If you have beat up old machines and dodgy props, you will be able to safely run them on quite high P and D with solid filtering.
+
+Somewhere there is a good balance between too much and not enough filtering. Finding the balance that works best for you is what its about.
+
 
 ### Filter Delays
  All filters add delay but this can not be avoided. Here is some info on delays.
