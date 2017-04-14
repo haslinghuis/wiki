@@ -10,7 +10,7 @@ Type in URL bar of the Web Browser:
 or   
 "site:github.com/betaflight/betaflight PT1" (broader search for term 'PT1')   
 
--  Note that Default setting may change from one Version to the next. We try to list these under the Version Release Notes but not always get them all. I method to use is to keep track of changes and to check these yourself is:   
+-  Note that Default settings as well as CLI commands may change from one Version to the next. We try to list these under the Version Release Notes but not always get them all. I method to use is to keep track of changes and to check these yourself is:   
 After Flashing but before configuring do the CLI Dump then Copy/paste this into a Text file named with V#. Then on next update do this again to a new text file.  
 This allows you to check for differences either manually compared the two text files or by using an Difference option in a text editor.  NotePad++ is one such editor with a good difference feature.
 
