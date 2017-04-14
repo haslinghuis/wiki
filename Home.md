@@ -3,6 +3,13 @@
 
 New to Betaflight and just want to get started see the [installation](https://github.com/betaflight/betaflight/wiki/Installing-Betaflight) section.
 
+## Wiki Tips:   
+Searching the Wiki-  
+Type in URL bar of the Web Browser:   
+"site:github.com/betaflight/betaflight/wiki PT1" (wiki search for term 'PT1')  
+or
+"site:github.com/betaflight/betaflight PT1" (broader search for term 'PT1')   
+
 ## Introduction
 Betaflight is a Cleanflight fork started by BorisB. It used to work as a beta test platform for Cleanflight and kept pushing the envelope in terms of performance, but it eventually evolved into a fully grown up, stable and well maintained firmware by various developers. In fact it looks like it is the number 1 open source multi-rotor firmware according to Google Trends analysis around January 2017.
 
