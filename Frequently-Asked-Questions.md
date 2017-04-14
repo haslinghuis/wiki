@@ -1691,6 +1691,7 @@ I use this stuff for soft mounting/vibrations:
 [HD cam / escs:](http://www.getfpv.com/rtom-anti-vibration-moongel.html)   
 [Cap for battery lead:](https://www.amazon.com/dp/B00T2IA7MM?tag=viglink20264-20)   
 [Caps for ESCs: ](https://www.amazon.com/Panasonic-470uF-Radial-Electrolytic-Capacitor/dp/B00WOQ0ILE?tag=viglink20264-20)   
+It took all that and removing gyro notch filters / PT1 fix to get the F60 Pro quad to run without mid-throttle jitters. Each thing reduced them more and more.   
 
 ### Can Filter tuning help?  
 The newer filters in 3.0 & 3.1 have pretty aggressive defaults. A number of fliers have reduced oscillation issue be reducing the use of the filters. See the [Gyro & Filters ](https://github.com/betaflight/betaflight/wiki/Gyro-&-Dterm-filtering-recommendations) Wiki page for details and discussions.
