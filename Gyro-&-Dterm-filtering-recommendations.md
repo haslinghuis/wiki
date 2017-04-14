@@ -58,8 +58,8 @@ I still recommend that you slowly remove default filtering as well if your setup
 #### I think best filter removal steps would be.  
 set d_lowpass_type = PT1 (in the CLI) should always be done first and I think possible on every setup.  
 If it is still fine than:  
-Remove notch 1  (set Freq = 0 in the config GUI or CLI to disable Notch filter)
-Than if still fine remove notch 2   
+Remove notch 1  (set Freq = 0 in the config GUI or CLI to disable Notch filter)  
+Then if still fine remove notch 2   
 Now if your setup is still clean you could even remove dterm notch.  
 That will give you the best results. Sharpest response, easiest tuning and literally no prop wash on good setups.  
 
