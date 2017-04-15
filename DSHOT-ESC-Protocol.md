@@ -193,6 +193,7 @@ See: [CLI resource command](https://github.com/betaflight/betaflight/wiki/Betafl
 `resource ppm none  `  
 `resource motor 1 A07 `  
 `save  `  
+See the [MOTOLAB ](https://github.com/betaflight/betaflight/wiki/Board---MOTOLAB) Wiki page for other Remapping info.
  
 ##### PIKOBLX - Re-map motor 1 to the PPM pin (same as MotoLab). Solder motor 1 signal to the PPM pad leaving the SBUS jumper 'shorted'.
 To allow the use of the LED pin Re-map motor 4 to motor 5 signal out a01, which must also be soldered as such.   
