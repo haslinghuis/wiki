@@ -85,7 +85,7 @@ Anyway, just my 2 cents. Just converted my whole fleet using tpu soft mounts and
 All aboard, the hype train is leaving the station!  
 
 #### Another Post on curing oscillations from linklemming:  
-https://www.rcgroups.com/forums/showpost.php?p=36220137&postcount=41113
+https://www.rcgroups.com/forums/showpost.php?p=36220137&postcount=41113   
 Later comment:   
 I just stuck three squarish (~15mm) pieces of electrical tape on the frame underneath the motors, used an exacto knife to cut holes in the tape for the screws and remounted the motors making sure not to tighten them down too much.  
 I really doubted it would be as effective as it was since vibes can still come thru the mounting screws but it fixed the issue.   
