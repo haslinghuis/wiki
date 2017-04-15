@@ -5,9 +5,10 @@ Please check often as this page gets built.
 
 See [FAQ #56 ](https://github.com/betaflight/betaflight/wiki/Frequently-Asked-Questions) for Discussion on Yaw Twitches and Mid-throttle Oscillations. This covers Gyros and other possible causes.
 
+
 ## Soft Mounting the FC board
 
-#### A nice Over view of the Yaw Twich and/or throttle oscillaions from ctzsnooze   
+#### A nice Over view of the Yaw Twitch and/or throttle oscillations from ctzsnooze   
 Lots of us have seen exactly this behaviour. I am surprised that you seem so astonished now that you find it happens to you. It happens randomly. It could happen to anyone. It just happened to happen to you. :-)   
 It goes away with replacing the gyro chip, replacing the FC, or soft mounting the FC; these fixes work whether or not capacitors are added. Sometimes it goes away by just adding capacitors.
 
@@ -47,7 +48,7 @@ Maybe try leave the FC dangling in the air and see if it still happens - just to
 #### Here is a post from ctzsnooze on a better soft-mounting method.  
 http://www.rcgroups.com/forums/showpost.php?p=35486733&postcount=36111
 
-##### Links to Soft Mounting hardware:  
+### Links to Soft Mounting hardware:  
 OZ -- I am using these, $4.30 for 8 shipped. They are rubber 8mm x 8mm with standard M3 male/female mounting.  
 http://www.ebay.com/itm/151873404692?_trksid=p2057872.m2749.l2649&ssPageName=STRK%3AMEBIDX%3AIT&rmvSB=true  
 These are the only ones I have tried and all yaw twitches are gone, they are stiffer than I would think would work, but working well on my revolts (SSG) and sparky2's (9250) flight controllers @ 32/16, motors are hard mounted. 
@@ -65,10 +66,10 @@ https://www.readymaderc.com/store/index.php?main_page=product_info&cPath=53_777&
 Isolating vibration at its source before it's amplified is standard practice in just about every mechanical and aeronautical engineering handbook that's ever been written. Yet for some reason most folks in this hobby are so laser focused on a software-based filter or FC enhancement of some sort they're blinded to what should be an obvious solution. Dampening the motor vibration, stiffening the frame, or even placing a sensor near or on the motors (utilizing the active feedback signal within the FC software for an automated/enhanced filter) are going to have a much more pronounced effect on noise reduction than all the software filtering in the world.   
 I'd also just like to mention that I am in no way trying to imply that software-based filters in the flight controller are ineffective. Only that reducing motor vibration has great and untapped potential in my opinion.   
 
-##### AILERON8:  
+#### AILERON8:  
 
 The same goes for motor soft mounting, the bolts must be isolated for the method to reach its full potential. I have yet to see a quad with fully soft-mounted motors, but I suspect it would make for the smoothest, most oscillation-free quad ever. So oscillation-free these 32khz gyro's should be all set for takeoff. Floating motors should eliminate the opportunity for resonance to develop and propagate towards the sensitive gyros. Unlike soft-mounting the FC, for motor dampening to be effective it doesn't need to eliminate frame oscillation. The goal for motor dampening is to decouple the frames' natural resonant frequency from the motor as its oscillations vary in frequency and amplitude. All motors oscillate, regardless of balancing. The frame won't oscillate if it's detached from the motors. The motor must completely float in order to achieve this effect however. Which is why I think folks will be in for a surprise when they see how well motor soft mounting can be if fully implemented. I honestly think FC soft mounting will be a thing of the past when the results start pouring-in...   
-##### Tesseract1984:  
+#### Tesseract1984:  
 Agreed.  
 Having tried it all (soft mount FC, caps on mains, caps on ESCs, soft mounting motors), this seems to be the ticket.  I've had varying levels of success with each option. The most useless of them all being a cap on the mains.  
 Soft-mounting motors makes the most sense. In my opinion doing it to the FC is a band-aid while doing the motors attacks the source and doesn't introduce any delay.  
@@ -89,15 +90,12 @@ Later comment:
 I just stuck three squarish (~15mm) pieces of electrical tape on the frame underneath the motors, used an exacto knife to cut holes in the tape for the screws and remounted the motors making sure not to tighten them down too much.  
 I really doubted it would be as effective as it was since vibes can still come thru the mounting screws but it fixed the issue.   
 
-##### Motor Vibration Isolators. Printed in extra flexible NinjaFlex (softer than TPU)   
+### Motor Vibration Isolators. Printed in extra flexible NinjaFlex (softer than TPU)   
 https://www.rcgroups.com/forums/showpost.php?p=36698872&postcount=2693 
 
 ## Adding Cap(s)
 
-### Example of Cap:  
-http://www.rcgroups.com/forums/showthread.php?t=2464844&page=2332  
-
-##### Thread about Caps for Noise reduction:    
+#### Thread about Caps for Noise reduction:    
 https://www.rcgroups.com/forums/showthread.php?2830948-Capacitors-for-noise-reduction  
 
 #### Post by Swing3r  
