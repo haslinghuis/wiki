@@ -77,10 +77,11 @@ Note: Adding this wire is not required if you connect signal wire from ESC #1 di
 https://www.rcgroups.com/forums/showpost.php?p=36589146&postcount=2787
 
 - Photo and post on modifying the MotorF3 (Warp Quad) board to use Dshot. Note this is an alternet method that wires the PPM to Motor #7 output since the #7 output is very close to the PPM pin.
-The CLI re-mapping is:
-'resource motor 7 none'   
-'resource ppm none'  
-'resource motor 1 A07'  
+The CLI re-mapping is:   
+'resource motor 7 none '   
+'resource ppm none '  
+'resource motor 1 A07 '  
+'save '   
 https://www.rcgroups.com/forums/showthread.php?2537379-MotoLab-Board-Setup-and-Troubleshooting/page197#post37314713
 
 - Report that with the Mod and remapping to run DSHOT there is a conflict with DMA for LEDs with Motor #4.  
