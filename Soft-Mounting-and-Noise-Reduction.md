@@ -95,7 +95,7 @@ https://www.rcgroups.com/forums/showpost.php?p=36698872&postcount=2693
 
 ## Adding Cap(s)
 
-#### Thread about Caps for Noise reduction:    
+#### Thread about Caps for Noise reduction (has links to recommended Caps):    
 https://www.rcgroups.com/forums/showthread.php?2830948-Capacitors-for-noise-reduction  
 
 #### Post by Swing3r  
