@@ -44,6 +44,20 @@ On my setups 70 for gyro and 90 for dterm keep motors cool even with the most be
 
 See [BB logging page](https://github.com/betaflight/betaflight/wiki/Black-Box-logging-and-usage) for measuring noise and filter.
 
+The sequence in disabling notch filters isn't certain.
+
+The best approach is to blackbox the quad with both gyro notch filters off and look at the spectrum of the gyro trace. If there is a big peak there, and that peak is resulting in noise that is visible in the motors trace, then it should be filtered out by a gyro notch. If there is diffusely too much gyro noise, but no specific peak, then either use the biquad fitler or lower the gyro cut low pass filter.
+
+Not removing a prominent spike in gyro noise will just not be a good idea.
+
+Once the gyro trace is relatively clean, then look at Dterm noise spectrum to decide how much filtering it needs; if it has a spike that is causing problems, it should have a notch. But if you already have controlled the same spike in the gyro trace, you may need no notch on D.
+
+If you can control a spike with a notch in either the gyro trace or the D trace, which approach is better?
+
+Well, it depends. A big spike in gyro that is not filtered out will cause noise on the P trace that will get into the motors. Notches on D will not get this out of P. The only way is a notch on gyro. On the other hand, if the spike is not very prominent in the gyro spectrum, but Dterm exaggerates it and makes it a problem only in D, then put the notch in D and don't worry about a gyro notch for that particular problem.
+
+Without a black box there is no reliable way to know what to do. Certainly you can just disable the notches randomly, listen to the sound of the motors, see that they don't get hot, etc, and keep only the filters that are needed. But as to setting the ideal values, you need to get a black box log for that.   
+
 Post by ctzsnooze  
 All filters add delay. Doubling slope on an IIR LPF doubles delay since the same 1st order filter is simply applied twice. None currently are FIR. FIR were evaluated and not as good as simple IIR. Dterm is IIR, gyro cut was biquad (i think it still is). There is a recent post about the notch filter that linked to the GitHub page where the Notch was discussed before implementation. Diagrams there show delay for different filter combinations. Lots of thought has gone into current filter design. 
 
