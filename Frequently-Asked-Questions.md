@@ -93,18 +93,7 @@ See the next FAQ topic ("How do I install Betaflight") when you are ready.
 
 ## How do I install Betaflight ?
 
-Start with the following video that gives a very comprehensive guide on Betaflight and the best practice approach for it's configuration:
-http://www.youtube.com/watch?v=xSzO6HP6yzs
-
-New Video by Joshua Bardwell on the BetaFlight Configurator: 
-https://www.youtube.com/watch?v=VAHUZZXIn9o
-
-There is a step-by-step guide on how to flash the flight controller with Betaflight here: http://quadquestions.com/blog/2015/12/25/betaflight_flashing/
-
-How to flash Betaflight on CC3D video guide:
-http://www.rcgroups.com/forums/showpost.php?p=34196999&postcount=21477
-
-There is a topic on this FAQ page called "Which HEX target do I download and flash to my Flight Controller" that will help when it comes to deciding which file to use on your Flight Controller board.
+Read the [Installing BetaFlight ](https://github.com/betaflight/betaflight/wiki/Installing-Betaflight) Wiki page.
 
 ## What is the difference between Min_Check Min_command and Min_throttle and stick inputs ?
 
