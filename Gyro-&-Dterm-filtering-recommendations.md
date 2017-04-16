@@ -104,7 +104,16 @@ I removed filters on f3 flight controller, by the time I removed first notch fil
 I repeated on an almost identical quad running f4, this is where it got interesting, the improvement was similar but les marked, subjectively the most noticeable thing was prop wash vanished.  
 BUT,  
 On a whim I switched from 8khz/4khz to 32khz/16khz the change in speed had a dramatic effect, gyro traces were noisy as hell, but motor noise was at values like 400kz which 8khz should find easily. Front two motors got warm and audibly screamed over about 15-20% throttle. Quad actually flew quite well.  
-Got both set of bb logs and not particularly worried as I usually fly8/4 but thought the result was quite interesting.   
+Got both set of bb logs and not particularly worried as I usually fly8/4 but thought the result was quite interesting.  
+  
+Oz asked:  
+You find 8/4 flys better than 32/16? (Properly soft mounted)  
+Cheredanine's answer:  
+Subjective but I don't find improvement over 8/4, probably less than that. I have 5 quads with bluejay f4s in them, i gave 32/16 a good test since it became available. Provided you tune it properly, 8/4 is as good as 32/16 as far as I can tell, I am 100% sure I would not be able to tell the difference in a blind test. (The quads I mentioned above are both dquad obsessions with returner r4, 25a blheli_s 16.6 escs, one uses an rg-ssd, the other has a bluejay., no noticeable difference in flight apart from:  
+Normally (with filters) 32/16khz has motor noise above 4khz, this is not apparent on spectrographs at 8/4 but then given the scale of the graph and nyquist limit I wouldn't expect it to.  
+But strip back the filtering and 32/16 is far messier, flies ok, but the heat and noise from the motor was worrying.   
+All quads have vibration isolation on the fc, where possible using rubber standoffs (exceptions being shrike and tokio-x prototype, the former has to use rubber o rings and the latter has a unique vibrations isolation mount).   
+32/16 has so far not flown any better than 8/4 and in some cases flown considerably worse.  
 
 #### What is the difference between PT1 vs BIQUAD filters   
 Answer by pete_oz:  
