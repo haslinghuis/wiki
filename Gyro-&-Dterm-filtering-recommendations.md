@@ -96,7 +96,16 @@ I got rid of the Dterm notch and went PT1 yesterday as well, and it was a consid
 
 Hattrickmwf:   
 Going to PT1 and removing all the notch filters made a huge difference in my quad too. Almost Zero prop wash. I also noticed it handles impacts with gates or ground touches much better too. No Tasmanian Devil quad after impact. May be placebo effect, but it seems to handle a lot better too.  
- 
+
+Cheredanine:   
+Some interesting stuff:   
+I removed filters on f3 flight controller, by the time I removed first notch filter flight performance was much improved (perceptively) when I removed second notch didn't make much difference (or none that I noticed subjectively) although bb gyro traces remained clean, clearly there was a sort of milestone I passed in terms of latency.  
+
+I repeated on an almost identical quad running f4, this is where it got interesting, the improvement was similar but les marked, subjectively the most noticeable thing was prop wash vanished.  
+BUT,  
+On a whim I switched from 8khz/4khz to 32khz/16khz the change in speed had a dramatic effect, gyro traces were noisy as hell, but motor noise was at values like 400kz which 8khz should find easily. Front two motors got warm and audibly screamed over about 15-20% throttle. Quad actually flew quite well.  
+Got both set of bb logs and not particularly worried as I usually fly8/4 but thought the result was quite interesting.   
+
 #### What is the difference between PT1 vs BIQUAD filters   
 Answer by pete_oz:  
 A biquad filter is more aggressive (it can filter the noise better at the cost of extra delay). I have no technical expertise to explain how each filter works (perhaps others can explain it for us) but basically based on latest Boris's recommendation we should be using PT1 unless there is too much noise on your copter.
