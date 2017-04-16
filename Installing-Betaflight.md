@@ -5,14 +5,14 @@ Using Betaflight Configurator, select the firmware_flasher tab and press the "Lo
 > Only exception to this being for the SPracingF3 type of flight controllers, for those FC you *may* need to check 'Manual baud rate' and change the selection to '115200' baud.
 
 There are basically two classes of USB devices used by all FCs:
-- type 1 
-1. Using a Silabs CP2103 USB interface chip.
-1.1 Needs the Silabs CP210x driver. Used in both BootLoader mode for flashing and normal config mode. Shows up as a "COMx" device in BFC.
+- type 1   
+1. Using a Silabs CP2103 USB interface chip.  
+1.1 Needs the Silabs CP210x driver. Used in both BootLoader mode for flashing and normal config mode. Shows up as a "COMx" device in BFC.  
 http://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers  
 
-- type 2  
-2. Using the MCU integrated STM32 VCP USB interface.
-2.1 Needs WinUSB driver when in BootLoader mode, for flashing. Installed by Zadig or ImpulseRC DF. Shows up as a "DFU" device in BFC.
+- type 2   
+2. Using the MCU integrated STM32 VCP USB interface.  
+2.1 Needs WinUSB driver when in BootLoader mode, for flashing. Installed by Zadig or ImpulseRC DF. Shows up as a "DFU" device in BFC.  
 2.2 Needs STM VCP driver for connection and configuration with BFC Shows up as a "COMx" device in BFC.
 
 - CC3D is a special case.  
