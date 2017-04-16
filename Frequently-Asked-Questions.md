@@ -133,7 +133,7 @@ Code:
  rxrange 2 1000 2000  
  rxrange 3 1000 2000  
 
-These can be adjusted for radios that can not meet the standard values.
+These can be adjusted for radios that can not meet the standard values. These can also be used to Reverse a Stick's direction by swapping the End Point values: Example- rxrange 0 2000 1000 reverses the Roll stick.  
 The FC firmware uses the mid_rc and these to calculate a stick value to hand off to the PIDC code. max_check is NOT used here.
 
 If a channel does not get to these end points then the FC will simply not see full movement, either on one side or both. This is one reason I and others and the MW Wiki and CF docs state to adjust the radios stick end points to these defaults. The other is ensuring the stick exceed the min_check, max_check thresholds so stick commands work. 
@@ -162,7 +162,7 @@ Check the following:
 * Copter Tilted more than the 'small_angle' setting. Increase small_angle. To Arm at any angle set this to 180.  
 
 There is a new task scheduler present in firmware versions greater than 2.2.0 If upgrading from a version prior to this, then check to see if the FC status light is flashing. If it is then this indicates that there is not enough processing time to complete all the features that have been enabled.
- On newer versions on the ßF Configurator the CPU loading is displayed in the Status bar and MUST be less then 100%, preferably less than 50%. If at 100% then decrease the LOPP Rates (Gyro and/or PID), click Save and Reboot and recheck CPU loading.
+ On newer versions on the ßF Configurator the CPU loading is displayed in the Status bar and MUST be less then 100%, preferably less than 50%. If at 100% then decrease the LOOP Rates (Gyro and/or PID), click Save and Reboot and recheck CPU loading.
  
 In the CLI type the _tasks_ command and check the results:
  
@@ -320,9 +320,7 @@ Note that near or very near center sticks, AcroPlus has markedly less effect on 
 
 Hence Acro Plus can be considered a form of exponential rate multiplier, outside of the normal PID mechanisms, that should, in most quads, increase roll rates at high stick angles quite significantly. The iTerm coding changes prevent iTerm windup problems that would otherwise inevitably cause loss of control or serious bounce-back at the end of such extremely high rate rolls or flips.
 
-
-**TODO**
-Re-write explanation to include the two possible factor (CLI commands) set acro_plus_factor and set acro_plus_offset. Also discuss the changes in the different Version of ßF Firmware.
+### Note: Acro Plus was removed in V3.0 and replaced by Srates. Read the 3.0.x Wiki page.
 
 ## What is 2kHz mode ?
 
@@ -359,6 +357,7 @@ set baro_hardware = 1
 set mag_hardware = 1
 set gyro_lpf = OFF 
 ```
+### NOTE: 2k mode was removed in V3.0 and up.
 
 ## Limitations of 2kHz mode
 
@@ -378,6 +377,8 @@ For Betaflight 2.4.1 onwards the number of Aux channels is selectable with the s
 Some ESCs will not calibrate at 2kHz and faster Loop Rates, KISS ESCs have been reported to have this issue. The fix is to simply set Loop rate to 1kHz (1000usec looptime) then calibrate the ESCs and change back to the desired looptime.
 
 ## What Flight Controllers are recommended to get the best out of BetaFlight ?
+
+### NOTE: This list is old since there are just too many new FC's now on the market. Check the Boards in the Wiki menu on the Right and the Released hex files.
 
 Here is a list of FCs compiled around the end of January 2016. The opinions regarding Pros and Cons are also shown.
 
@@ -406,6 +407,8 @@ Roundup of F3 based boards: http://www.youtube.com/watch?v=StnC9Q_O1Fw
 Recommended CleanFlight/BetaFlight boards: http://www.youtube.com/watch?v=SJa_LgbwwMk
 
 ## What are the differences between LuxFloat and Rewrite PID Controllers ?
+
+### NOTE: Both of these PIDCs have been removed in V3.0 and up.  
 
 According to Boris, there is literally no difference between Lux and Rewrite any more (from a flight characteristics point of view), except that they scale the numbers differently. So the actual PID gains and rates will vary between them, but the processing of gyro data is identical. The main problem with Luxfloat is that the CleanFlight Configurator GUI by default only gives you 0.1 precision, which is too big of a step for Luxfloat. It would be like trying to tune Rewrite, and only being able to use whole integers like 4.0, 5.0, 6.0. 
 
@@ -481,7 +484,6 @@ http://www.youtube.com/watch?v=7UNg8fkV6zQ
 
 Also he has at least 100 blackbox log analysis videos where he was gracious enough to help other people out. Check out those and you can learn a lot just from him reviewing peoples footage and pointing things out. There is kind of an 'art' to it so to speak ... (and goes on to mention he doesn't really use Black Box to tune) " - from powdermnky007 reply
 
-
 b. More info: Joshua Bardwells's Blackbox Log Video Responses link:  http://www.rcgroups.com/forums/showthread.php?t=2484202
 
 c. But:  "I think that even without blackbox you can get a great tune.
@@ -495,7 +497,7 @@ Good tuning just makes that feel tighter and helps removing unnecessary oscillat
 
 d. Battery Factor: "A while ago someone took over my pids to his quad with same setup and he said it didn't feel good. So I flew his setup and it indeed felt like PIDs were twice as low as they should be! It appeared he was using almost 2 years old (Turnigy) Nanotechs completely lost their power. Even I feel huge difference between different batteries I have." - Boris comment
 
-There is also a Wiki page titled "BlackBox log and Usage" with general BB info (links) and how to use BB to analyze Filters.
+Also Read the [PID Tuning Guide](https://github.com/betaflight/betaflight/wiki/PID-Tuning-Guide) the [Black Box logging and usage](https://github.com/betaflight/betaflight/wiki/Black-Box-logging-and-usage) Wiki pages.
 
 ## Why does my copter behave erratic after a crash ?
 
@@ -599,7 +601,7 @@ PLEASE NOTE: This does not work on the following boards:
 
 ## Why does my copter flip when trying to takeoff ?
 
-Here are some likely causes:
+Here are the most common causes:
 
 * Motors plugged in to the wrong FC headers.
 * Custom mix is incorrect.
@@ -618,6 +620,8 @@ Some of the new F3 boards come with a Virtual COM Port (VCP) that is used to com
 http://www.youtube.com/watch?v=b8fMsazyxDw
 
 Within this FAQ, check the answer to "What Flight Controllers are recommended to get the best out of BetaFlight" for more details on which FC has VCP ports.
+
+The [Installing Betaflight](https://github.com/betaflight/betaflight/wiki/Installing-Betaflight) has more details on USB Drivers, etc. 
 
 ## Will Betaflight code be merged back into Cleanflight ?
 
@@ -689,6 +693,11 @@ It is recommended to setup Fail Safe to disarm (shut off motors) immediately upo
 
 ## Why does my Flight Controller blink/beep lots of times when powering up ?
 
+During Firmware Boot-up the Gyro is Calibrated and should give three Beeps/Blinks. This indicates the Firmware is ready.
+Upon Arming there is one Beep which is from Syncing Video to a BB log.
+
+If gives repeated 2 Beeps this means NO Valid RX - This could be a bad wire to RX, or RX not binding to TX, or TX not yet sending data.
+ 
 5 short blink/beeps followed by any number of long blinks/beeps indicates an error code.
 Number of long blinks indicates the following error:
 
@@ -751,7 +760,7 @@ There won't be a problem, the cell count is calculated and the PID adjustments a
 
 ## How can I run the PID controller faster than 2kHz ?
 
-### Instructions for ßF V2.5.0 RC6 and later
+### Instructions for ßF V2.5.0 RC6 and later but before V3.0
 
 Set looptime (microSeconds) in config GUI.
 OneShot42 and MultiShot now supported
@@ -849,7 +858,7 @@ http://blog.oscarliang.net/raceflight-multishot/
 
 Start by doing a continuity check with a multimeter if you have one.  A quick test for a short between the negative and positive pads on your power distribution board can save a lot of headaches.
 
-Another option is to use a Current Limiter when having the LiPo connected on the bench and Testing new setups. This has saved a few ESCs and Motors for many people.  Build and use this Limiter with a Switch in-line for easy powering On/OFF.
+But ALWAYS use a Current Limiter when having the LiPo connected on the bench and Testing new setups. This has saved a few ESCs and Motors for many people.  Build and use this Limiter with a Switch in-line for easy powering On/OFF.
 http://www.rcgroups.com/forums/showthread.php?t=2327875
 
 ## Why do we have RC Rate and also Yaw Pitch Roll Rates ?
@@ -993,7 +1002,6 @@ Only change the values in the grey boxes, and it will adjust the graphs and tabl
 
 ## Which Flight Controllers currently use SPI ?
   
-  
 As of 11th Oct 2016  
 Colibri Race  
 Lux Race  
@@ -1003,6 +1011,8 @@ DOGE
 CC3D (this is F1 board though......performs slightly better than i2c F3 board on rewrite)
 Alienflight F3 V2, F4
 XRacer F303 (v3.1 only, prior versions use I2C)
+
+Note: there are many more new FC's on the market. Check the Seller's specs.
 
 ## Which HEX target do I download and flash to my Flight Controller ?
 
@@ -1241,6 +1251,8 @@ You can achieve more or less the same curve with both expo and s.rates, it just 
 - Soft mounting the FC must be done properly to ensure No vibrations get to the FC board (Gyro) through the mounting.  
 - Modern ESCs (active Braking) and modern high power motors can put a lot of noise into the electrical system. Adding a high value, low ESC cap helps to prevent this noise from getting into the Gyro chip on the FC (also helps with cleaner video and preventing damaging other electronics from high Voltage spikes).  
 - There is NO one cure for any copter. Each copter build is different and requires trying the various solutions. Some only need a large cap added, other only soft mounting the FC while some require both.  
+
+- There is a NEW [Soft Mounting and Noise Reduction](https://github.com/betaflight/betaflight/wiki/Soft-Mounting-and-Noise-Reduction) Wiki page. Details on Soft Mounting will be moved to this new page so check back.
 
 The following are extracted from posts about this issues with Observations, Theories, Discussions and suggested solutions. Read through all the discussion and follow the links to learn almost all there is about the issue and solutions.
 
