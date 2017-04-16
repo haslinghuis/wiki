@@ -15,7 +15,8 @@ http://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp
 2.1 Needs WinUSB driver when in BootLoader mode, for flashing. Installed by Zadig or ImpulseRC DF. Shows up as a "DFU" device in BFC.
 2.2 Needs STM VCP driver for connection and configuration with BFC Shows up as a "COMx" device in BFC.
 
-CC3D is a special case. It is an type 2 FC, but it is lacking the 2.1 USB-DFU interface as it is an STM32F1 based FC. All F1 based FC only has serial UART based bootloader interfaces. CC3D needs an external USB-serial adapter on UART1 for bootloader connection and flashing. (Or a secondary bootloader flashed, OP Bootloader for example).  
+- CC3D is a special case.  
+It is an type 2 FC, but it is lacking the 2.1 USB-DFU interface as it is an STM32F1 based FC. All F1 based FC only has serial UART based bootloader interfaces. CC3D needs an external USB-serial adapter on UART1 for bootloader connection and flashing. (Or a secondary bootloader flashed, OP Bootloader for example).  
 
 ## Native USB based flight controllers - type 2
 Note that this is for those controllers that are *not* using a hardware serial bridge - e.g. FTDI or SiLabs CP210x.
