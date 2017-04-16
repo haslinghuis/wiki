@@ -106,7 +106,7 @@ http://www.rcgroups.com/forums/showpost.php?p=34196999&postcount=21477
 
 There is a topic on this FAQ page called "Which HEX target do I download and flash to my Flight Controller" that will help when it comes to deciding which file to use on your Flight Controller board.
 
-# What is the difference between Min_Check Min_command and Min_throttle and stick inputs ?
+## What is the difference between Min_Check Min_command and Min_throttle and stick inputs ?
 
 From MasterZap
 
