@@ -87,6 +87,21 @@ impulserc driver fixer https://impulserc.blob.core.windows.net/utilities/Impulse
 
 ## Setup Guide: 
 
+Example:
+Tramp HV or Unify Pro HV:
+Telemitry to UART 3 TX pin
+Video to video out
+Power from VBAT and AGND
+
+Camera:
+Video to video in
+power from VBAT and AGND
+
+X4R-SB:
+Smartport telemitry to UART 1 TX pin
+SBUS to UART 2
+Power from 5v rail
+
 Rcgroups Thread: https://www.rcgroups.com/forums/showthread.php?2795213-NEW-Betaflight-F3-Flight-Controller-OSD-PDB-SD-card-BEC-current-sensor
 
 Probably the first video about the BFF3: https://www.youtube.com/watch?v=kr16b45Lhw4
