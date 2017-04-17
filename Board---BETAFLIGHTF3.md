@@ -19,8 +19,8 @@ _(Fill in hardware specs and add any not listed)_
   - Battery Voltage Sensor: 
   - Current sensor: 0.5 mOhm
   - Integrated Voltage Regulator: 3A, 5V or 3V for RX and VBAT or 5V for VTX/camera with filtered AGND
-  - Brushed Motor Mosfets: 
   - Buttons: BOOT button
+  - Software Serial broken out
 
 ### Features
 
@@ -52,7 +52,7 @@ _format is reporter [name], (status): issue contents_
  - The DSM2/SBUS pad is connected to RX2
  - LED_STRIP conflicts with motor 2 in Betaflight 3.1.0 when using DShot. Upgrade to version 3.1.6+ to fix it
  - The ground plane acts as a heatsink, making the ground (-) pads difficult to solder to. Preheat the area you're working on with a hot air station at 100°C - 150°C (200°F - 300°F) to make soldering faster and easier
-
+ 
 ## Other Resources
 
 Setup Guide: 
