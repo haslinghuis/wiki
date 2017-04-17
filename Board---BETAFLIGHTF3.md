@@ -67,10 +67,13 @@ SD card:
 5. back to CLI and set sdcard_dma=off
 
 Current sensor:
-There is a resistor that can be measured and scaling number can be calculated from that value
+There is a resistor that can be measured and scaling number can be calculated from that value.
+
+picture of resistor in link below
 it may be in a different place but should be around there
 https://static.rcgroups.net/forums/attachments/5/9/3/2/6/3/a9650746-128-EDB2C10E-33D3-40BA-988A-6029EA696B4F.jpg
-here is the proceidure 
+
+here is the procedure for calculating the value 
 https://www.rcgroups.com/forums/showthread.php?2798055-Understanding-Current-Meters
 
 
