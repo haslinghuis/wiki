@@ -54,7 +54,7 @@ _format is reporter [name], (status): issue contents_
  - The ground plane acts as a heatsink, making the ground (-) pads difficult to solder to. Preheat the area you're working on with a hot air station at 100°C - 150°C (200°F - 300°F) to make soldering faster and easier
  - SD card needs to be formatted to specific parameters
  - Current sensor needs to be calibrated in BF software
- - Filtered 5v rail is weak
+ - Filtered 5v rail(RAM) is weak
 
 ## Other Resources
 ## Issue fixes
