@@ -21,6 +21,7 @@ _(Fill in hardware specs and add any not listed)_
   - Integrated Voltage Regulator: 3A, 5V or 3V for RX and VBAT or 5V for VTX/camera with filtered AGND
   - Buttons: BOOT button
   - Software Serial broken out
+  - Weight: 5.4 grams
 
 ### Features
 
@@ -77,6 +78,11 @@ https://static.rcgroups.net/forums/attachments/5/9/3/2/6/3/a9650746-128-EDB2C10E
 here is the procedure for calculating the value 
 https://www.rcgroups.com/forums/showthread.php?2798055-Understanding-Current-Meters
 
+### Driver related problems
+some people have been complaining about computer(windows pc's) not being able to see the board
+The driver needs to be replaced with the generic WinUSB driver the configurator can use. Zadig or IRCDF does this job for you
+Zadig http://zadig.akeo.ie/
+impulserc driver fixer https://impulserc.blob.core.windows.net/utilities/ImpulseRC_Driver_Fixer.exe (link to official irc site)
 
 
 ## Setup Guide: 
