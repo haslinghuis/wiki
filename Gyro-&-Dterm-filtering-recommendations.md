@@ -31,7 +31,7 @@ Blackbox Gyro reading with Default 2.8 settings
 Blackbox Gyro reading with _Very Noisy_ settings from above
 ![Filtered](http://i.imgur.com/oOlGGtv.png)
 
-### From ctzsnooze's post:  
+### From ctzsnooze's posts:  
 The ideal value for filters is as high as you can go without getting hot motors etc. I don't think anyone can tell you how high you can go.
 
 But your particular concern was that your motors still felt a bit warm. So I'd map out what dterm cut does while leaving gyro cut where it is. The only way to find out is to do the testing. Once you know the best value for Dterm cut, ie the value where motors are coolest, keep dterm cut and gyro cut in the same proportion from then on. If, despite finding the coolest value for dterm cut, they are still warmer than you'd like, try say reducing both by 20%. If they are cool and you want crisper performance, try increasing both by 20%, and keep going up until they become clearly warmer than with a lower value.
@@ -58,8 +58,15 @@ Well, it depends. A big spike in gyro that is not filtered out will cause noise 
 
 Without a black box there is no reliable way to know what to do. Certainly you can just disable the notches randomly, listen to the sound of the motors, see that they don't get hot, etc, and keep only the filters that are needed. But as to setting the ideal values, you need to get a black box log for that.   
 
-Post by ctzsnooze  
-All filters add delay. Doubling slope on an IIR LPF doubles delay since the same 1st order filter is simply applied twice. None currently are FIR. FIR were evaluated and not as good as simple IIR. Dterm is IIR, gyro cut was biquad (i think it still is). There is a recent post about the notch filter that linked to the GitHub page where the Notch was discussed before implementation. Diagrams there show delay for different filter combinations. Lots of thought has gone into current filter design. 
+Recently helped review a noisy log. Quad had PT1 on both gyro and D, and only one single notch, on Dterm.   
+Log showed *no* peak in noise at the centre point of the Dterm notch when looking at debug notch or the incoming gyro data! That notch was achieving absolutely nothing! :-)
+
+Take home message: you cannot guess where to put notch filters!   
+Notch filters really need a black box log to get them focused exactly on a peak. Otherwise they are useless and counterproductive.   
+If you are going to blindly remove a notch to 'see how it goes', try removing the *lowest* frequency notch before any others.   
+That's the one that is most likely to mess with frequencies relevant to flight dynamics.  
+
+A notch filter set very high up (eg 300 centre 200 cut) will have much less effect on flight dynamics than a lower notch filter (eg 200 centre 140 cut). 
 
 ### Filters were changed in Version 3.0 
 
@@ -305,7 +312,9 @@ Somewhere there is a good balance between too much and not enough filtering. Fin
 
 
 ### Filter Delays
- All filters add delay but this can not be avoided. Here is some info on delays.
+
+Post by ctzsnooze  
+All filters add delay. Doubling slope on an IIR LPF doubles delay since the same 1st order filter is simply applied twice. None currently are FIR. FIR were evaluated and not as good as simple IIR. Dterm is IIR, gyro cut was biquad (i think it still is). There is a recent post about the notch filter that linked to the GitHub page where the Notch was discussed before implementation. Diagrams there show delay for different filter combinations. Lots of thought has gone into current filter design.  
 
 Posted by ctzsnooze:  
 Switching from biquad to PT1 , while leaving frequency the same, say at 100Hz, will do the following:  
