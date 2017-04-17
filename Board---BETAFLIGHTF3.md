@@ -57,7 +57,7 @@ _format is reporter [name], (status): issue contents_
 
 ## Other Resources
 # Issue fixes
-SD card:
+### SD card:
  Samsung Evo class 10 series, 16GB or 32GB seem to work better than others
 (this may or may not work)
 1. Format card in SDcardformatter v4
@@ -66,7 +66,7 @@ SD card:
 4. Card should initialize and the icon in the blackbox tab under the BF GUI should show it green
 5. back to CLI and set sdcard_dma=off
 
-Current sensor:
+### Current sensor:
 There is a resistor that can be measured and scaling number can be calculated from that value.
 
 picture of resistor in link below
@@ -78,7 +78,7 @@ https://www.rcgroups.com/forums/showthread.php?2798055-Understanding-Current-Met
 
 
 
-Setup Guide: 
+## Setup Guide: 
 
 Rcgroups Thread: https://www.rcgroups.com/forums/showthread.php?2795213-NEW-Betaflight-F3-Flight-Controller-OSD-PDB-SD-card-BEC-current-sensor
 
