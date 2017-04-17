@@ -68,6 +68,8 @@ That's the one that is most likely to mess with frequencies relevant to flight d
 
 A notch filter set very high up (eg 300 centre 200 cut) will have much less effect on flight dynamics than a lower notch filter (eg 200 centre 140 cut). 
 
+[NO MORE PROPWASH OSCILLATION ](https://www.youtube.com/watch?v=PHkofDq_JxU) A Joshua Bardwell Video.
+
 ### Filters were changed in Version 3.0 
 
 #### What Defaults changed in 3.1.7?
