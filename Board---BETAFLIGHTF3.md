@@ -56,7 +56,7 @@ _format is reporter [name], (status): issue contents_
  - Current sensor needs to be calibrated in BF software
 
 ## Other Resources
-# Issue fixes
+## Issue fixes
 ### SD card:
  Samsung Evo class 10 series, 16GB or 32GB seem to work better than others
 (this may or may not work)
