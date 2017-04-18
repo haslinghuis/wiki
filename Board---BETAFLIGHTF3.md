@@ -56,6 +56,7 @@ _format is reporter [name], (status): issue contents_
  - SD card needs to be formatted to specific parameters
  - Current sensor needs to be calibrated in BF software
  - Filtered 5v rail(RAM) is weak
+ - osd and 16/9 cameras do produce flickers in the osd
 
 ## Other Resources
 ## Issue fixes
