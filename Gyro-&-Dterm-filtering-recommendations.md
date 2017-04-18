@@ -68,6 +68,23 @@ That's the one that is most likely to mess with frequencies relevant to flight d
 
 A notch filter set very high up (eg 300 centre 200 cut) will have much less effect on flight dynamics than a lower notch filter (eg 200 centre 140 cut). 
 
+Did a heap of testing today... interesting stuff.
+
+I realized that if you put P, I and D all to 2 (ie, almost totally off), what you the blackbox the gyro trace (quad safely hand held or in a restraint) shows gyro data without amplification by PIDs. If you zoom in on gyro (say 1000 times, with no expo on the trace), you can see the 'input' noise as would go into the PID loop.
+
+If we then add P alone, and test while (safely) hand held, it becomes apparent that the amount of noise added by the 'P' part of the PID calculations is small. Even with PT1 and no notch filters, P itself doesn't seem to be much affected by motor noise, nor contribute to feedback resonance in a big way. If it wasn't for D, all we'd need is a PT1 on gyro.
+
+But when you add D - that's when it gets interesting. With only a PT1 on gyro, D carries a heap of amplified noise back to the motors - even if D lowpass is a biquad.
+
+This is a cunning way to identify what P or D individually add to the noise sent back to the motors.
+
+Overall I get the impression that we need more D filtering than Gyro filtering. We can drop back on gyro, but when we do, more noise gets through to D, making a worse overall noise picture. A but more D filtering would allow less gyro filtering, and probably better handling.
+
+PS - I too had many occurrences of 'prop resonance' where the frame shakes and the prop blades flex like crazy, starting really abruptly at just above idle throttle, and easing off with more throttle. It starts abruptly, sounds really bad, the quad shakes violently, and if you're on the ground it adds thrust and tries to fly away. If you throttle past it, all comes good again. Motors quickly get hot! I recorded it. In my case it was a very narrow peak at exactly 145 Hz, put a single gyro notch filter there and it disappeared. Interestingly this shaking was entirely in pitch and roll, yaw was flat and smooth. Also the D component was three times larger than the P component. Once a carefully placed notch filter eliminated the problem, flight was entirely normal all the time. I don't really understand what's causing this, it is definitely a feedback process driven mostly by D, but why it should be so powerful at such low rpm has me beat. 
+
+
+
+
 [NO MORE PROPWASH OSCILLATION ](https://www.youtube.com/watch?v=PHkofDq_JxU) A Joshua Bardwell Video.
 
 ### Filters were changed in Version 3.0 
