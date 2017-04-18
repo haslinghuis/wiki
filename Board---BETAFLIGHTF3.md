@@ -85,6 +85,8 @@ The driver needs to be replaced with the generic WinUSB driver the configurator 
 Zadig http://zadig.akeo.ie/
 impulserc driver fixer https://impulserc.blob.core.windows.net/utilities/ImpulseRC_Driver_Fixer.exe (link to official irc site)
 
+### remapping for motors
+http://i.imgur.com/Mh41SmG.jpg
 
 ## Setup Guide: 
 
