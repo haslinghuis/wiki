@@ -11,7 +11,7 @@ _(Fill in hardware specs and add any not listed)_
   - IMU: MPU-6000
   - IMU Interrupt: 
   - BARO: no
-  - VCP: 
+  - USB: STM32 VCP 
   - Hardware UARTS: 3
   - OSD: uses a AB7456 chip
   - Blackbox: SD Card
