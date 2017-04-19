@@ -1,7 +1,7 @@
 # NAME
 MATEKSYS F405-OSD
 
-![MATEKF405](http://www.mateksys.com/downloads/FC/MATEKF405.JPG)
+![MATEKF405](http://www.mateksys.com/downloads/FC/MATEKF405-OSD.JPG)
 
 
 ## Description
