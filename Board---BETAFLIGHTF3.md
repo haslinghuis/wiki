@@ -7,7 +7,7 @@
 
 ### Hardware
 _(Fill in hardware specs and add any not listed)_
-  - MCU: STM32F3
+  - MCU: STM32F303CCT6
   - IMU: MPU-6000
   - IMU Interrupt: 
   - BARO: no
@@ -16,7 +16,7 @@ _(Fill in hardware specs and add any not listed)_
   - OSD: uses a AB7456 chip
   - Blackbox: SD Card
   - PPM/UART Shared: 
-  - Battery Voltage Sensor: 
+  - Battery Voltage Sensor: Yes 
   - Current sensor: 0.5 mOhm
   - Integrated Voltage Regulator: 3A, 5V or 3V for RX and VBAT or 5V for VTX/camera with filtered AGND
   - Buttons: BOOT button
@@ -55,8 +55,11 @@ _format is reporter [name], (status): issue contents_
  - The ground plane acts as a heatsink, making the ground (-) pads difficult to solder to. Preheat the area you're working on with a hot air station at 100°C - 150°C (200°F - 300°F) to make soldering faster and easier
  - SD card needs to be formatted to specific parameters
  - Current sensor needs to be calibrated in BF software
- - Filtered 5v rail(RAM) is weak
+ - Filtered power rail(RAM) is weak
  - osd and 16/9 cameras do produce flickers in the osd
+ - USB 5V power is connected to main 5V rail. If you have a lot of devices connected, e.g. buzzer, LED strip, Rx etc, USB might shut down. Power up on battery before connecting to USB in such cases.
+ - Status LED is inverted and connected in parallel with the beeper (PC15). So the light is on when beeper is quiet, and visa verse. A bit odd.
+ 
 
 ## Other Resources
 ## Issue fixes
@@ -80,11 +83,14 @@ here is the procedure for calculating the value
 https://www.rcgroups.com/forums/showthread.php?2798055-Understanding-Current-Meters
 
 ### Driver related problems
-some people have been complaining about computer(windows pc's) not being able to see the board
-The driver needs to be replaced with the generic WinUSB driver the configurator can use. Zadig or IRCDF does this job for you
+Some people have been complaining about computer(windows pc's) not being able to see the board. 
+In boot loader mode, the default STM USB-dfu driver needs to be replaced with the generic WinUSB driver the Firmware Flasher in configurator can use. Zadig or IRCDF does this job for you.
 Zadig http://zadig.akeo.ie/
 impulserc driver fixer https://impulserc.blob.core.windows.net/utilities/ImpulseRC_Driver_Fixer.exe (link to official irc site)
+In normal mode, the STM VCP driver needs to be installed. http://www.st.com/en/development-tools/stsw-stm32102.html
 
+This is in no way special or specific for this board. All FC's with a STM USB-VCP port behave like this. Read https://github.com/betaflight/betaflight/wiki/Installing-Betaflight 
+ 
 ### remapping for motors
 http://i.imgur.com/Mh41SmG.jpg
 
