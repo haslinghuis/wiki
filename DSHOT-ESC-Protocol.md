@@ -27,6 +27,7 @@ The Latest Development version of the Configurator is recommended. Link on [Home
 - All STM32F1 Target do not support DSHOT
 - Some ESCs that have a signal filter cap may not work until the cap is removed. 
 - Some targets have a DMA conflict between a motor and the LEDs. Some have work-arounds but some do not. If no work-around is listed then disable LEDs and contact the FC designer/support.
+- No reports of Dshot working for HEX copter. 
 
 ### A quick way to determine IF the Firmware flashed into the FC supports Dshot:  
 Go to the CLI and type "get pwm". All settings with 'pwm' in the name will be shown with all options.
