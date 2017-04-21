@@ -43,6 +43,7 @@ Procedure is easy:
 If the above command doesnt work escserial flash passthrough is not enabled yet.  
 Btw also castle escs can be flashed on the same way.  
 
+[KISS Flashing Tips](https://www.rcgroups.com/forums/showthread.php?2864933-Another-Kiss-24a-ESC-flashing-question%21%21-need-some-tips)
 
 <h3>Current Limiter<h3>   
 
