@@ -56,4 +56,12 @@ More details on phase shift for example can be found here: https://github.com/be
 Post by r.a.v.
 You can view earlier BB logs (pre BF 3.0) but the analyzer won't know at which rate it was recorded. This will probably result in a correct looking spectrum but with incorrect frequency labels. Clicking on the traces on the Graph section to the right will show the analyzer screen.
 
+Post by ctzsnooze:  
+Remember the spectrum is a *relative* comparator of the frequencies in the noise spectrum. It won't tell you about the absolute amount of noise. It can only be compared to other traces, and even then only when
+
+- A fixed and comparable amount of vertical gain is set
+- The horizontal scale is set to be comparable to other traces
+- *most important* the duration of the data to be analyzed is fixed. ie 30s. use the i and o keys to select a 30s realm for example.  
+
+The most important thing is to scroll through and look at the motors traces for how big that noise is. The spectrum is useful for analyzing what you see there, but the motor trace and how it looks is what matters.   
 See [Gyro and Filters](https://github.com/betaflight/betaflight/wiki/Gyro-&-Dterm-filtering-recommendations) for more info.  
