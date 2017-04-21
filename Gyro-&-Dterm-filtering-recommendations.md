@@ -113,9 +113,9 @@ To test that I was able to repeat it on 3 of my builds.  Hardware softmounting i
 The most difference with and with filtering comes from the steep gyro changes. The more filtering there is the slower P will react on high gyro changes and translates itself to more prop wash and less direct feel.  
 As I said defaults are meant to be safe and protect against most common vibrations shown across many hardmounted 4 / 5inch setups. But more and more people care about clean setup nowadays than lets say 1 year ago and that means you may get much better running setup with some filter removals. 
 
-##### Testimonials   
+#### Testimonials   
 
-##### Redtail2426:  
+Redtail2426:  
 So I ended up switching to pt1, removing both notch filters, and removed the d term notch filter, and the prop wash is pretty much 99% gone, much much better than it was with the default 3.1.7 filtering. Awesome job guys  
 
 kevinpratt823:  
@@ -133,7 +133,7 @@ BUT,
 On a whim I switched from 8khz/4khz to 32khz/16khz the change in speed had a dramatic effect, gyro traces were noisy as hell, but motor noise was at values like 400kz which 8khz should find easily. Front two motors got warm and audibly screamed over about 15-20% throttle. Quad actually flew quite well.  
 Got both set of bb logs and not particularly worried as I usually fly8/4 but thought the result was quite interesting.  
   
-##### Oz asked:  
+Oz asked:  
 You find 8/4 flies better than 32/16? (Properly soft mounted)  
 Cheredanine's answer:  
 Subjective but I don't find improvement over 8/4, probably less than that. I have 5 quads with bluejay f4s in them, i gave 32/16 a good test since it became available. Provided you tune it properly, 8/4 is as good as 32/16 as far as I can tell, I am 100% sure I would not be able to tell the difference in a blind test. (The quads I mentioned above are both dquad obsessions with returner r4, 25a blheli_s 16.6 escs, one uses an rg-ssd, the other has a bluejay., no noticeable difference in flight apart from:  
