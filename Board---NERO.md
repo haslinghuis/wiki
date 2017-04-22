@@ -27,6 +27,7 @@ Beautifully simple STM32F7 based flightcontroller. A F7 replacement for the Naze
   - BlHeli passthrough: Yes 
   - WS2811 Led Strip: Yes (on motor output Pin 5)
   - Transponder: No
+  - SPI (2) is broken out for adding an SPI peripheral, e.g. another GYRO.
 
 ## Manufacturers and Distributors
 
@@ -41,7 +42,7 @@ Available here: [nerofc.com](https://nerofc.com)
 
 ### Schematics
 
-The pin out for the MCU is provided here, so that others if they are thinking of developing a board using the same target so we don't need a multitude of targets going forward. I hope that it will also assist other developers in adding features.
+The pin out for the MCU is provided here, so that it can be used as a reference for others considering developing a board using the same target. This is so targets can be minimised going forward. Hopefully the info will also assist other developers in adding features.
 
 ![MCU Output Schematic - rev1](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/boards/nero/nero-rev1-mcu-schematic.png)
 
