@@ -3,8 +3,8 @@
 
 Beautifully simple STM32F7 based flightcontroller. A F7 replacement for the Naze.
 
-![NERO (TOP) - rev1](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/boards/nero/nero-rev1-top.png)
-![NERO (BOTTOM) - rev1](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/boards/nero/nero-rev1-bottom.png)
+![NERO (TOP) - rev1](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/boards/nero/nero-rev1-top.jpg)
+![NERO (BOTTOM) - rev1](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/boards/nero/nero-rev1-bottom.jpg)
 
 ## MCU, Sensors and Features
 
