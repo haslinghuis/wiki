@@ -33,6 +33,9 @@
   - Voltage regulator: No/Yes Max xVolt input, max xAmps load.
   - Filtered power output: No/Yes, max xAmps load.
 
+### Software
+  - Firmware target: 
+
 ### Features
 
 _(add list of features)_
