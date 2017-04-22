@@ -3,6 +3,9 @@
 
 Beautifully simple STM32F7 based flightcontroller. A F7 replacement for the Naze.
 
+![NERO (TOP) - rev1](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/boards/nero/nero-rev1-top.png)
+![NERO (BOTTOM) - rev1](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/boards/nero/nero-rev1-bottom.png)
+
 ## MCU, Sensors and Features
 
 ### Hardware
@@ -27,14 +30,21 @@ Beautifully simple STM32F7 based flightcontroller. A F7 replacement for the Naze
 
 ## Manufacturers and Distributors
 
-These boards are currently available in pre-order only. Shipping is expected in the first half of 2017.  
+These boards are currently available in pre-order only. Shipping is expected during May and June of 2017.  
 
 Available here: [nerofc.com](https://nerofc.com)
 
 ## Configuration Information
 
 ### Wiring Diagrams
-![Wiring Diagram - rev4](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/boards/nero/nero-rev1-wiring.png)
+![Wiring Diagram - rev1](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/boards/nero/nero-rev1-wiring.png)
+
+### Schematics
+
+The pin out for the MCU is provided here, so that others if they are thinking of developing a board using the same target so we don't need a multitude of targets going forward. I hope that it will also assist other developers in adding features.
+
+![MCU Output Schematic - rev1](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/boards/nero/nero-rev1-mcu-schematic.png)
+
 
 # Other Resources
 
