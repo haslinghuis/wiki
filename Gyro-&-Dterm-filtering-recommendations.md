@@ -146,6 +146,26 @@ Boris provided the following info:
 There is additional filtering present when running at 8khz gyro or lower, this is not present when running 32khz. Therefore changing d low-pass to pt1 and removing notch filters when running 32khz will produce much messier gyros.  
 In summary I found quad flew fantastic on 8khz gyro with filters stripped back but on 32khz gryo I had to leave them in place to get similar performance and no heat in motors.  
 
+Posted by QuadMcFly:  
+So here's my experience with PT1 and the notch filters, as well as some other general thoughts. I gave RF1 a shot for about a month, because I like to try things so I can actually speak from experience. Something about my rig really hated RF1. I had some pretty significant issues with low throttle noise, and the stick handling never felt right. Kind of felt unpredictable like I was having to fight it instead of flowing with it. I don't necessarily think that is reflective of everyone's experience on RF1, I just think there are some setups that it doesn't like at all, and mine happened to be one of them. Anyway I got tired of fighting it, so I put BF 3.1.7 on the revolt, 8k/8k PT1 Dterm, lower gyro notch removed. Got it flying a few days ago and I have been totally blown away. The difference was stunning. Like going from PPM to S.Bus all over again. I don't think I've ever flown anything that flew this well, and I've flown a lot of stuff! It still needs a bit of adjustment to clean up that last bit of prop wash, but man alive! Amazing for a totally blind tune, just thrown in based on the power train. The stick feel is utterly amazing in terms of precision and crispness.  
+
+As I mentioned a few days ago, DO NOT run PT1 dterm on 32khz! It is quite likely to launch your quad at full throttle! Found that out on my first attempt 8k/8k on the other hand is absolutely stunning! 10/10 would recommend!  
+
+Here's a boring few clips from about the only spot I really get a chance to fly, feel free to skip it:  
+https://youtu.be/3KZlI8F0ER8  
+
+Boris' response:  
+Looking great indeed!
+
+It basically all comes down to filter interaction. There is no 32k magic at all.  
+Any kind of bench test didn't show any performance gain going to 32khz update speed for motors.  
+But 32k mode fully disables any kind of internal gyro filtering, while 8k mode still has a 256hz lo-wpass active.  
+The 256hz low-pass is kind of just not enough filtering by itself so it needs a tiny bit of software assistance like pt1 ans you get the best balance of filtering without much signal damage.  
+32k mode, which essentially only has internal 3600hz low-pass active needs a lot of software assistance to make it useful.
+The betaflight philosophy has been more to make every-bodies quad fly without damaging their gear and that meant filter protection against any common oscillation scenarios.  
+So with all default soft filters on top of it you were still able to fly 32k mode and it felt a bit better than 8k modes as there was simply less filtering.   
+It is not just delays we are here talking about. What is more important is the amount of signal deformation on sharp changes like what you can get in propwash cases or other very quick changing frequencies.  
+
 #### What is the difference between PT1 vs BIQUAD filters   
 Answer by pete_oz:  
 A biquad filter is more aggressive (it can filter the noise better at the cost of extra delay). I have no technical expertise to explain how each filter works (perhaps others can explain it for us) but basically based on latest Boris's recommendation we should be using PT1 unless there is too much noise on your copter.
