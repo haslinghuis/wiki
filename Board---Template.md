@@ -9,16 +9,29 @@
   - MCU: 
   - IMU: 
   - IMU Interrupt: 
-  - BARO: 
-  - VCP: 
-  - Hardware UARTS: 
+  - BARO:
+  - Compass: 
+  - USB: (STM32 VCP or Silabs/FTDI/CH340 etc interface)
+  - Hardware UARTS:
+  - Software UARTS: 
   - OSD: 
+  - RC Rx:
+  - FPV Tx:
   - Blackbox: 
   - PPM/UART Shared: 
   - Battery Voltage Sensor: 
-  - Integrated Voltage Regulator: 
   - Brushed Motor Mosfets: 
   - Buttons: None. Solder BOOT pads
+  - Number of ESC/Motor outputs: 
+  - Unbuffered Bidirectional ESC out/in-puts: Yes, ESC passthrough possible/No. 
+  - Status LEDs: LED0/LED1/...
+  - Active Beeper output:
+  - Passive Beeper output:
+  - LED-strip output:
+  - Sbus inverter: Fixed or Configurable, UARTx 
+  - PDB: No/Yes, Max xxAmps total.
+  - Voltage regulator: No/Yes Max xVolt input, max xAmps load.
+  - Filtered power output: No/Yes, max xAmps load.
 
 ### Features
 
