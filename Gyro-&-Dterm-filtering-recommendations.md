@@ -82,9 +82,6 @@ Overall I get the impression that we need more D filtering than Gyro filtering. 
 
 PS - I too had many occurrences of 'prop resonance' where the frame shakes and the prop blades flex like crazy, starting really abruptly at just above idle throttle, and easing off with more throttle. It starts abruptly, sounds really bad, the quad shakes violently, and if you're on the ground it adds thrust and tries to fly away. If you throttle past it, all comes good again. Motors quickly get hot! I recorded it. In my case it was a very narrow peak at exactly 145 Hz, put a single gyro notch filter there and it disappeared. Interestingly this shaking was entirely in pitch and roll, yaw was flat and smooth. Also the D component was three times larger than the P component. Once a carefully placed notch filter eliminated the problem, flight was entirely normal all the time. I don't really understand what's causing this, it is definitely a feedback process driven mostly by D, but why it should be so powerful at such low rpm has me beat. 
 
-
-
-
 [NO MORE PROPWASH OSCILLATION ](https://www.youtube.com/watch?v=PHkofDq_JxU) A Joshua Bardwell Video.
 
 ## Filters were changed in Version 3.0 
@@ -113,7 +110,7 @@ To test that I was able to repeat it on 3 of my builds.  Hardware softmounting i
 The most difference with and with filtering comes from the steep gyro changes. The more filtering there is the slower P will react on high gyro changes and translates itself to more prop wash and less direct feel.  
 As I said defaults are meant to be safe and protect against most common vibrations shown across many hardmounted 4 / 5inch setups. But more and more people care about clean setup nowadays than lets say 1 year ago and that means you may get much better running setup with some filter removals. 
 
-question from linklemming:   
+#### question from linklemming:   
 From BB analysis with debug notch on, I have determined that D lowpass of PT1 is fine and that I only really 1 notch filter (300Hz Center, 200Hz low). I have a softmounted FC.  
 I can see the spike in the frequency range both in P and D.  
 
@@ -126,6 +123,7 @@ My own design sub250g 180 quad(3mm) with rcx1306-3100kv, dal 4045 dual blades on
 My own design sub250g 150 quad(3mm) with dys1306-4000kv, dal 4045 dual blades cut to 3" on 4s  
 
 Im guessing this is just frame resonance? All are 3mm single baseplate designs.   
+
 Answer from ctzsnooze:   
 To be honest, no-one really knows.  
 
