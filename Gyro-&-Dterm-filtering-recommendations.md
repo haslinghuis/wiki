@@ -1,4 +1,4 @@
-### Changes in Default Filter settings
+## Changes in Default Filter settings
 From version 2.7 onward, the default filtering strength settings are _reduced_ in order to provide the best possible flight characteristics. You may find that after upgrading, your aircraft becomes very twitchy or uncontrollable. This can be caused if you have a noisy quad because the vibrations are now making it past the filter into the PID loop.
 ##### Note: Defaults values can be different across minor and major firmware versions. Always do a CLI DUMP (or a get 'partial name') to see what the default values are before making changes.  
 
@@ -87,9 +87,9 @@ PS - I too had many occurrences of 'prop resonance' where the frame shakes and t
 
 [NO MORE PROPWASH OSCILLATION ](https://www.youtube.com/watch?v=PHkofDq_JxU) A Joshua Bardwell Video.
 
-### Filters were changed in Version 3.0 
+## Filters were changed in Version 3.0 
 
-#### What Defaults changed in 3.1.7?
+### What Defaults changed in 3.1.7?
 Boris's answer:  
 Basically people kept complaining that betaflight default D was too conservative and therefore changed.  
 Setpoint transition has been disabled (1.0) to give more linearity over the entire stick.  
@@ -112,6 +112,31 @@ To test that I was able to repeat it on 3 of my builds.  Hardware softmounting i
 
 The most difference with and with filtering comes from the steep gyro changes. The more filtering there is the slower P will react on high gyro changes and translates itself to more prop wash and less direct feel.  
 As I said defaults are meant to be safe and protect against most common vibrations shown across many hardmounted 4 / 5inch setups. But more and more people care about clean setup nowadays than lets say 1 year ago and that means you may get much better running setup with some filter removals. 
+
+question from linklemming:   
+From BB analysis with debug notch on, I have determined that D lowpass of PT1 is fine and that I only really 1 notch filter (300Hz Center, 200Hz low). I have a softmounted FC.  
+I can see the spike in the frequency range both in P and D.  
+
+Boris mentions removing gyro notches first, I'm wondering what the trade-offs would be in selecting gyro notch vs D notch. Obviously if using only gyro notch, I get noise reductions in P and D and it seems to me this is better than using D notch unless there is some flight behaviors that would be better suited to using D notch only. The noise I believe is low enough that any P noise from using just D notch would be minimal.  
+
+Interestingly all the quads I did testing on this weekend show the same noise spike around 300Hz (+/- 30Hz). 
+This includes:   
+F1-4B 3mm with DYS 1806-2700kv motors, dal 4045V2 tri blades on 4s  
+My own design sub250g 180 quad(3mm) with rcx1306-3100kv, dal 4045 dual blades on 4s  
+My own design sub250g 150 quad(3mm) with dys1306-4000kv, dal 4045 dual blades cut to 3" on 4s  
+
+Im guessing this is just frame resonance? All are 3mm single baseplate designs.   
+Answer from ctzsnooze:   
+To be honest, no-one really knows.  
+
+If you compare D trace (zoom in, smoothing off, expo off) to P trace (same zoom), and if most of the noise is in D, then there are two ways of dealing with it.  
+First way of thinking about it, just filter what is bad - ie just filter D only. This fixes the noise problem and delays P the least.  
+Second, put the notch on gyro, that's where the noise is coming, this way both P and D will have less noise, and the relative phase lag between P and D won't change.  
+
+Frankly I doubt it makes any difference..   
+I do like the idea of only adding filtering where it is necessary; in this case, just putting the notch on D. Sure there will be slightly more phase delay between P and D, but D is already phase delayed because of the D lowpass filter, and the extra phase delay from a 300/200 notch filter on D alone may have no adverse effect.  
+If you had time to try both and compare logs, that would be great. If possible make your flight testing 'blind', ie get someone else to make the change in the firmware so you don't know which you are flying.  
+Be surprised if it makes the slightest difference. If you had to enable the notch filter lower down, eg centre 145 cut 90, for example, it might matter a lot. But high up probably either way is fine, gyro should end up slightly smoother and fly just as well.   
 
 #### Testimonials   
 
