@@ -1,7 +1,7 @@
 # CL_RACING AIO F4 Flight controller  
 
 ## Description
-- F4chip+ OSD + PDB + SD card adapter 
+- F4 chip+ OSD + PDB + SD card adapter 
  
 ## MCU, Sensors and Features
 
@@ -9,16 +9,18 @@
 _(Fill in hardware specs and add any not listed)_
   - MCU: STM32F4
   - IMU: MPU-6000
-  - IMU Interrupt: 
+  - IMU Interrupt:YES 
   - BARO: NO
   - VCP: YES
-  - Hardware UARTS: 
+  - Hardware UARTS: 4
   - OSD: uses a AB7456 chip
   - Blackbox: SD Card
-  - PPM/UART NOT Shared: 
+  - PPM/UART NOT Shared: Yes
   - Battery Voltage Sensor: 10:1
   - Current sensor: 0.5 mOhm, 250 Current scale in the setting
   - Integrated Voltage Regulator: 1.2A 5v
+  - build_in filterd 7.86v BEC FOR video tx (800mw MAX)and camera
+
 ### Features
   -CL_RACING F4 AIO borad has 
   -onboard BEC  
@@ -27,7 +29,7 @@ _(Fill in hardware specs and add any not listed)_
   -Betaflight OSD build in.
   -Current sensor
   -Build in Sbus inverter
-  -130A rated PDB
+  -120A Continues current rated PDB. 160A burst for 10s
 
 ## Manufacturers and Distributors
 
