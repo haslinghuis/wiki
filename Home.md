@@ -16,6 +16,8 @@ This allows you to check for differences by either manually compared the two tex
 
 - If not in this Wiki then it is probably not a feature new to BetaFlight and you need to look in the CleanFlight Docs.
 
+- New [Docs](https://github.com/martinbudden/betaflight/tree/master/docs) for BetaFlight.
+
 ## Introduction
 Betaflight is a Cleanflight fork started by BorisB. It used to work as a beta test platform for Cleanflight and kept pushing the envelope in terms of performance, but it eventually evolved into a fully grown up, stable and well maintained firmware by various developers. In fact it looks like it is the number 1 open source multi-rotor firmware according to Google Trends analysis around January 2017.
 
