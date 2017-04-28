@@ -75,6 +75,7 @@
  - [KISSFC](/betaflight/betaflight/wiki/Board---KISSFC)
  - [KIWIF4](https://github.com/betaflight/betaflight/wiki/KIWIF4)
  - [KroozX](https://github.com/betaflight/betaflight/wiki/Board---KroozX)
+ - [LUMBAF3](/betaflight/betaflight/wiki/Board---LUMBAF3)
  - [LUX_RACE](/betaflight/betaflight/wiki/Board---LUX_RACE)
  - [NAZE](/betaflight/betaflight/wiki/Board---NAZE)
  - [NERO](/betaflight/betaflight/wiki/Board---NERO)
