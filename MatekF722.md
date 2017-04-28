@@ -10,7 +10,7 @@ F722+ICM20602, w/ Betaflight OSD & SD Card Slot
 ## MCU, Sensors and Features
 
 ### Hardware
-* MCU: STM32F405RET6
+* MCU: STM32F722
 * IMU: ICM-20602(SPI)
 * OSD: BetaFlight OSD w/ AT7456E chip
 * Compass & Baro: no
