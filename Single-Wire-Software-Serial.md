@@ -128,3 +128,5 @@ BETAFLIGHTF3
 | B01 | Soft Serial TX1   | NG (v1) | ?     | ?      |  @iwarp                |
 | A02 | Soft Serial TX2   | NG (v1) | ?     | ?      |  @iwarp                |
 | B07 | PPM               | OK (v1) | ?     | ?      |  @iwarp                |
+
+http://i.imgur.com/Mh41SmG.jpg
