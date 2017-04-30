@@ -118,3 +118,13 @@ IRCFUSIONF3
 | Pin | Label             | S.Audio | Tramp | S.Port | Notes                  |
 |-----|-------------------|---------|-------|--------|------------------------|
 | A00 | PPM               | ?       | ?     | OK     | When PPM is not in use |
+
+
+---
+BETAFLIGHTF3
+
+| Pin | Label             | S.Audio | Tramp | S.Port | Notes                  |
+|-----|-------------------|---------|-------|--------|------------------------|
+| B01 | Soft Serial TX1   | NG (v1) | ?     | ?      |  @iwarp                |
+| A02 | Soft Serial TX2   | NG (v1) | ?     | ?      |  @iwarp                |
+| B07 | PPM               | OK (v1) | ?     | ?      |  @iwarp                |
