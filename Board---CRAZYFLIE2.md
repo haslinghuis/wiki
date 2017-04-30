@@ -9,7 +9,7 @@ The board has its own operating system and set of client side tools which enable
 ## MCU, Sensors and Features
 
 ### Hardware
-  - MCU: STM32F405RG (flight control) + NRF51822 (Bluetooth and ESB Rx)
+  - MCU: STM32F405RG (flight control) + NRF51822 (Bluetooth and Nordic ESB Rx)
   - IMU: Invensense MPU9250
   - IMU Interrupt: Yes
   - BARO: STM LPS25H (no driver in betaflight yet)
