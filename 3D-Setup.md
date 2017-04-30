@@ -110,4 +110,6 @@ Additional information for BLHeli_S is that there's currently an issue where the
 
 Dshot has an inverted lower section when compared to standard 3D. This means that full negative thrust in Dshot3D is 1499 and minumum negative thrust is 1000 (as opposed to standard/oneshot 3D where full negative thrust would be 1000 and minimum would be 1499). Positive thrust has it's minimum at 1501 and maximum at 2000 *Positive values are a guess, needs confirmation* You will notice this in the configurator.
 
+Idle Percent is used for idle speed in BOTH directions.
+
 TODO: Clean up this whole section and add more thorough Dshot information.
