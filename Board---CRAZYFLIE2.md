@@ -39,12 +39,6 @@ The board has its own operating system and set of client side tools which enable
 ### Software
   - Firmware target: CRAZYFLIE2
 
-### Features
-
-  - Brushed motors
-  - UART Rx (custom protocol)
-  - 
-
 ## Manufacturers and Distributors
 
 [Bitcraze AB Online Store](https://store.bitcraze.io/)
@@ -62,7 +56,6 @@ Sean Kelly, @theseankelly
 
 _(add links board descriptions here that are similar in features or function, but have a separate target)_
 
-
 ## Variants
 
 Differences:
@@ -72,10 +65,11 @@ Differences:
 
 
 ## Other Resources
+[Schematics](https://wiki.bitcraze.io/_media/projects:crazyflie2:hardware:crazyflie_2.0_rev.c_schematics.pdf)
 
 Setup Guides: 
 
-[Setup Guide](https://wiki.bitcraze.io/projects:crazyflie2:development:dfu)
+[Setup Guide on Bitcraze Wiki](https://wiki.bitcraze.io/projects:crazyflie2:development:dfu)
 
 ## Image
 
