@@ -42,6 +42,7 @@ The board has its own operating system and set of client side tools which enable
 ## Manufacturers and Distributors
 
 [Bitcraze AB Online Store](https://store.bitcraze.io/)
+
 [SeeedStudio](https://www.seeedstudio.com/Crazyflie-2.0-p-2103.html)
 
 ## Designers
