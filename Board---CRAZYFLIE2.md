@@ -66,6 +66,7 @@ Differences:
 
 ## Other Resources
 [Schematics](https://wiki.bitcraze.io/_media/projects:crazyflie2:hardware:crazyflie_2.0_rev.c_schematics.pdf)
+
 [Setup Guide on Bitcraze Wiki](https://wiki.bitcraze.io/projects:crazyflie2:development:dfu)
 
 ## Image
