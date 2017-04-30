@@ -45,15 +45,15 @@ _(add list of features)_
 
 ## Manufacturers and Distributors
 
-[https://store.bitcraze.io/](Bitcraze AB Online Store)
-[https://www.seeedstudio.com/Crazyflie-2.0-p-2103.html](SeeedStudio)
+[Bitcraze AB Online Store](https://store.bitcraze.io/)
+[SeeedStudio](https://www.seeedstudio.com/Crazyflie-2.0-p-2103.html)
 
 ## Designers
 
-[https://www.bitcraze.io/team/](Arnaud Taffanel, Marcus Eliasson, Tobias Antonsson)
+[Arnaud Taffanel, Marcus Eliasson, Tobias Antonsson](https://www.bitcraze.io/team/)
 
 ## Maintainers
-_(add your name here if you help test or contribute code for this board)_
+Sean Kelly, @theseankelly
 
 
 ## Similar Targets
@@ -73,7 +73,7 @@ Differences:
 
 Setup Guides: 
 
-[https://wiki.bitcraze.io/projects:crazyflie2:development:dfu](Setup Guide)
+[Setup Guide](https://wiki.bitcraze.io/projects:crazyflie2:development:dfu)
 
 ## Image
 
