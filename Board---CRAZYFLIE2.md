@@ -24,7 +24,7 @@ The board has its own operating system and set of client side tools which enable
   - PPM/UART Shared: No
   - Battery Voltage Sensor: No
   - Brushed Motor Mosfets: Yes
-  - Buttons: Yes, connected to NRF51822. Can be used to [Boot into DFU mode](https://wiki.bitcraze.io/projects:crazyflie2:development:dfu)
+  - Buttons: Power button connected to NRF51822. Can be used to [Boot into DFU mode](https://wiki.bitcraze.io/projects:crazyflie2:development:dfu)
   - Number of ESC/Motor outputs: 4 Brushed motors
   - Unbuffered Bidirectional ESC out/in-puts: No 
   - Status LEDs: LED0/LED1/LED2
@@ -41,7 +41,9 @@ The board has its own operating system and set of client side tools which enable
 
 ### Features
 
-_(add list of features)_
+  - Brushed motors
+  - UART Rx (custom protocol)
+  - 
 
 ## Manufacturers and Distributors
 
