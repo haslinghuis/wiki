@@ -13,7 +13,7 @@ Source: https://github.com/sambas/hw/tree/master/AnyFCM7
   - Baro: MS5611
   - VCP: Yes
   - Hardware UARTS: 4
-  - 10-pwm outputs (DSHOT supported six of them)
+  - 10-pwm outputs
   - 6-pwm inputs (PPM on input 1 and UART6 on input 3/4)
   - Blackbox: 128MB DataFlash
   - Battery Voltage Sensor: Yes, 10k/1k divider
