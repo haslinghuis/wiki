@@ -99,7 +99,15 @@ MID_RC_PULS = = (STOP_RC_PULS + FULL_RC_PULS) / 2
 
 Currently Dshot is working with 3D and according to Boris B still requires some serious flight testing as of 01-01-2017. Updates will be here as we get a greater understanding of 3D with Dshot.
 
-Dshot is definitely different with regards to behavior in the configurator, I'm not sure if the calibration process is still required e.t.c. but for now I'm setting up as before and then doing Dshot specific tasks on top of the original setup.
-Be aware that when using Dshot and having 3D mode activated in the configurator if you go to the motor tab and then un-check the "I understand the risks..." box the configurator will tell the FC to send 1500us to the ESCs which will spin the motors forward whilst running the Dshot protocol. **As always, props off on the bench!**
+Dshot is definitely different with regards to behavior in the configurator, I'm not sure if the calibration process is still required e.t.c. but for now I'm setting up as before and then doing Dshot specific tasks on top of the original setup. (30-04-2017EDIT: It has come to my attention that calibration is not required being that Dshot is a digital signal, I should have realised this earlier, Teracis)
+
+Be aware that when using Dshot and having 3D mode activated in the configurator if you go to the motor tab and then un-check the "I understand the risks..." box the configurator will tell the FC to send 1500us (the equivalent digital signal) to the ESCs which will spin the motors forward whilst running the Dshot protocol. **As always, props off on the bench!**
 
 Some flight testing with Kiss 24A ESCs using Build #861 on a CC3D Revo F4 has been completed and no issues regarding flight performance were found as of 05-01-2017.
+
+30-04-2017:
+Additional information for BLHeli_S is that there's currently an issue where the motors *may* spin a different way using Dshot to using oneshot/pwm and therefore motor direction MUST be checked when switching to Dshot with 3D, you may need to set some motors to Bi-Directional and others to Bi-Directional reverse.
+
+Dshot has an inverted lower section when compared to standard 3D. This means that full negative thrust in Dshot3D is 1499 and minumum negative thrust is 1000 (as opposed to standard/oneshot 3D where full negative thrust would be 1000 and minimum would be 1499). Positive thrust has it's minimum at 1501 and maximum at 2000 *Positive values are a guess, needs confirmation* You will notice this in the configurator.
+
+TODO: Clean up this whole section and add more thorough Dshot information.
