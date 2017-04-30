@@ -49,7 +49,7 @@ The board has its own operating system and set of client side tools which enable
 [Arnaud Taffanel, Marcus Eliasson, Tobias Antonsson](https://www.bitcraze.io/team/)
 
 ## Maintainers
-Sean Kelly, @theseankelly
+[Sean Kelly, @theseankelly](https://github.com/theseankelly)
 
 
 ## Similar Targets
