@@ -12,7 +12,7 @@ The board has its own operating system and set of client side tools which enable
   - MCU: STM32F405RG (flight control) + NRF51822 (Bluetooth and ESB Rx)
   - IMU: Invensense MPU9250
   - IMU Interrupt: Yes
-  - BARO: STM LPS25H (not supported..yet)
+  - BARO: STM LPS25H (no driver in betaflight yet)
   - Compass: Onboard in MPU9250
   - USB: STM32 VCP  
   - Hardware UARTS: 0 (1 internal bridge from the NRF51822 to the STM32)
