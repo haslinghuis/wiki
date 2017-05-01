@@ -11,9 +11,9 @@ OMNIBUS F4 V3 ~~and F4 Pro V3~~ SBUS header through-hole is connected to **UART6
 
 ### v3.1.7 and later: LED strip pin assignment has changed for OMNIBUSF4SD target
 
-v3.1.x and earlier uses PWM5 (OMNIBUSF4 target) or PWM6 (OMNIBUSF4SD target) for LED strip, not the LED labelled pin. This was a work around for the original OMNIBUS F4 AIO having invalid pin on the designated pin. However, newer revisions of the OMNIBUS F4 family has valid (usable) pin assigned to the LED pin. Unfortunately, the pin is not ready for use with BF3.1.x, but will be in v3.2 as a default. It means the current wiring does not work unless explicitly remapped to the current pin.
+v3.1.x and earlier uses PWM5 (OMNIBUSF4 target) or PWM6 (OMNIBUSF4SD target) for LED strip, not the LED labelled pin. This was a work around for the original OMNIBUS F4 AIO having invalid pin on the designated pin. However, newer revisions of the OMNIBUS F4 family has valid (usable) pin assigned to the LED pin. Unfortunately, the pin was not ready for use with BF3.1.6 and earlier, but is was made default after BF3.1.7 and later. It means the current working connection to non-LED connector/through-hole in BF3.1.6 and earlier does not work unless explicitly remapped to the current pin.
 
-Those users with working LED strip on PWM6 can either migrate to the new assignment if the board supports the mapping, or explicitly assign older mapping with the `resource` CLI command.
+Those users with working LED strip on PWM5 or PWM6 can either migrate to the new assignment if the board supports the mapping, or explicitly assign older mapping with the `resource` CLI command.
 
 1. Migrating to the new assignment
 
@@ -24,7 +24,7 @@ Users of the following boards can migrate (rewire the LED strip signal) to the n
 - OMNIBUS F4 Pro V3 (J1)
 
 Notes:
-(1) Firmware is already modified to use these through-hole/connector.
+(1) v3.1.7 firmware is already modified to use these through-hole/connector.
 (2) Unfortunately, PPM users can't use this new assignment because The new pin (MCU PB6) has a timer collision with PPM input pin (PB8); these users are forced to use the remap method below.
 
 2. Explicit pin assignment remapping.
