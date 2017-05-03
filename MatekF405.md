@@ -16,7 +16,7 @@ F405+ICM20602, w/ Betaflight OSD & SD Card Slot
 * OSD: BetaFlight OSD w/ AT7456E chip
 * Compass & Baro: no
 * VCP: Yes
-* Hardware UARTS: 1, 2, 3, 4
+* Hardware UARTS: 1, 2, 3, 4, 5
 * Blackbox: Micro SD Card
 * PPM/UART Shared:  UART2-RX
 * Battery Voltage Sensor: Yes 1:10
@@ -32,12 +32,13 @@ F405+ICM20602, w/ Betaflight OSD & SD Card Slot
 * 32K Gyro ICM-20602
 * Support Gyro sample rate 32K & PID Loop 16K
 * Built in inverter for SBUS input (UART2-RX)
+* 6x DShot outputs without conflict
 * SD Card Slot
-* VCP, UART1, UART2, UART3 & UART4
+* VCP, UART1, UART2, UART3, UART4 & UART5
 * w/ Anti-vibration Standoffs
 
 ## Manufacturers and Distributors
-Matek Systems http://F405.mateksys.com/
+Matek Systems http://www.mateksys.com/?portfolio=f405-osd
 
 ## Designers
 Matek Systems www.mateksys.com
