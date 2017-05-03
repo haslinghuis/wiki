@@ -1,5 +1,15 @@
-# Flip32 and AirBotF4
+# AirBotF4 and FLIP32F4
 
 Flip32F4 and AirBotF4 are essentially the same. Both are based on the OP Revolution design, with some changes and addons.
 
-Use firmware target: AIRBOTF4.
+## Firmware targets
+
+For boards with a SDCARD holder, use AIRBOTF4SD. Otherwise, use AIRBOTF4.
+
+## Dual gyro boards
+
+With dual gyro variant of the AirbotF4 and FLIP32F4 (e.g. FLIP32-F4-DUAL GYRO EDITION), gyro to use can be selected by CLI variable `gyro_to_use`.
+```
+set gyro_to_use = 0 # Selects MPU6000
+set gyro_to_use = 1 # Selects ICM2060x
+```
