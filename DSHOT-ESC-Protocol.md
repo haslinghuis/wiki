@@ -427,6 +427,7 @@ Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36503849&postcount=2
 Cap removal: https://www.rcgroups.com/forums/showthread.php?2690769-Racerstar-Blheli_S-ESCs-%28v2-just-released%29-10-for-20a-12-for-30a-30-4in1-20a/page38  
 - Racerstar RS30Ax4 v2 (4in1) -    
 More info: https://www.rcgroups.com/forums/showthread.php?2790572-Dshot-bench-test-super-smooth-motor-spining-at-1011-REVO-and-Racerstar-BLHeli_S   
+- Schubkraft 35A 4in1 (SCHUBKRAFT X4 BB21, 45A Burst) V2 - works out of the box
 - Spedix ES 20 lite - with cap removed    
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36203466&postcount=1509   
 - Spedix 25a - with signal cap removed    
