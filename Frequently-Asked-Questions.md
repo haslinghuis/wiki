@@ -227,6 +227,14 @@ After some readings in other open source projects and some of the older discussi
 
 With AIR mode the copter will always think it's in the "AIR" and will always try to correct as fast as possible and never become weak. We of course need this stabilization once in AIR! This has it's consequences for our ground situations which you have to be aware of. With Air mode it would mean that the motors could be spooling up after arming, but there is some protection built for that. When you arm and keep throttle stick low (below min check) it will know it is on the ground and the motors will not spool up. Once you move your throttle to higher position for more than 1 second and pitch and roll are not centered anymore it will fully activate the stabilization with 0 throttle! So you have to be aware that if you would land very quickly after first take off that the motors now are able to spool up as the copter thinks its flying and has max ability to correct. Dont worry you can disarm now or you can keep throttle low with roll + pitch stick centered and it will still spool down or at least it will not spool up anymore.
 
+### A quicky explanation from ctzsnooze:
+Let's say you have PID_at_min_throttle enabled, pull throttle back to zero, so that all motors are at min_throttle, and pull the roll stick to the right quickly. The left two motors will speed up, but the right two can't go any slower. So only the left two, in speeding up, contribute to getting the roll going.  
+Contrast this to a right roll at hover throttle. The PID requested is the same as for the roll above, and the left two motors speed up to the same extent. But the right two can go slower than hover rpm, and they do.  
+That's why, before airmode, even if idle up was enabled, or PID_at_min_throttle enabled, a roll at hover throttle would always be quicker than a roll at zero throttle.  
+What airmode does is to compensate for the motors that can't slow down. With airmode enabled, as soon as the mixer determines that some motors have to go to min_throttle, the other motors are sped up accordingly, so that the differential required to generate the turn is the same as it would be hat hover throttle.  
+Hence airmode maintains roll rate when any of the contributing motors hit zero (or max) throttle. It ensures consistency of roll rate at extreme throttle values.  
+That's how airmode is different from pId-at-min-throttle.   
+
 
 The feature might still be optimized based on experiences of the Beta Testers, but is looking good already.
 
