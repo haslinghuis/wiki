@@ -69,6 +69,8 @@ I'd also just like to mention that I am in no way trying to imply that software-
 #### AILERON8:  
 
 The same goes for motor soft mounting, the bolts must be isolated for the method to reach its full potential. I have yet to see a quad with fully soft-mounted motors, but I suspect it would make for the smoothest, most oscillation-free quad ever. So oscillation-free these 32khz gyro's should be all set for takeoff. Floating motors should eliminate the opportunity for resonance to develop and propagate towards the sensitive gyros. Unlike soft-mounting the FC, for motor dampening to be effective it doesn't need to eliminate frame oscillation. The goal for motor dampening is to decouple the frames' natural resonant frequency from the motor as its oscillations vary in frequency and amplitude. All motors oscillate, regardless of balancing. The frame won't oscillate if it's detached from the motors. The motor must completely float in order to achieve this effect however. Which is why I think folks will be in for a surprise when they see how well motor soft mounting can be if fully implemented. I honestly think FC soft mounting will be a thing of the past when the results start pouring-in...   
+Using [these wiggly jiggly ones from BG: ](https://m.banggood.com/10-PCS-Silica-Gel-Anti-vibration-Pad-in-for-22XX-23XX-Motor-p-1147595.html?rmmds=orderdetail&utm_source=tradetracker&utm_medium=tradetracker_SE&utm_campaign=tradetracker&utm_content=227736)  
+
 #### Tesseract1984:  
 Agreed.  
 Having tried it all (soft mount FC, caps on mains, caps on ESCs, soft mounting motors), this seems to be the ticket.  I've had varying levels of success with each option. The most useless of them all being a cap on the mains.  
