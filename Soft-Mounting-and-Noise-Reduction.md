@@ -95,6 +95,8 @@ I really doubted it would be as effective as it was since vibes can still come t
 ### Motor Vibration Isolators. Printed in extra flexible NinjaFlex (softer than TPU)   
 https://www.rcgroups.com/forums/showpost.php?p=36698872&postcount=2693 
 
+####  [Motor soft mount idea:](https://www.rcgroups.com/forums/showpost.php?p=37447636&postcount=48105)  
+
 ## Adding Cap(s)
 
 #### Thread about Caps for Noise reduction (has links to recommended Caps):    
