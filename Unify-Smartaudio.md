@@ -202,3 +202,21 @@ Store or Reload values - Long Press MENU button
 Switch screens - Short Press MENU button
 Navigate between values - "+" & "-" buttons
 EDIT value - Press ENTER
+
+## Using both SmartAudio and microphone at the same time
+
+#### General concept of wiring
+
+The digital signal can be connected either directly or using a Resistor. 
+
+If it comes from a microcontroller with 3.3V, best solution is to use a voltage divider to ~0.9V for a proper audio level (4k7 and 1k8 resistor values in our case). 
+
+The analog signal needs to be ac coupled using a series capacitor from audio source to the smart audio signal. Ideal capacitance is around 100nF. 
+
+#### Ideal connection:
+![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/4037455969/original/GsQVQvCDbXk1zf8WJPaz9NLTZu1eNrbL3g?1490626337)
+
+#### These two configurations might work as well depending on how it is used and connected:
+![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/4037456019/original/SWkM-JY1Fsh8h8loM_yMxBJCPFVLSd0bsw?1490626407)
+
+![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/4037456045/original/zsjw2bevK6FMWT_pgGseUckoLviUUONOjg?1490626445)
