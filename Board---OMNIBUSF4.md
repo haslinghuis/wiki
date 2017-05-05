@@ -1,13 +1,15 @@
-# OMNIBUS F4 AIO, F4 V2/V3 and F4 Pro
+# OMNIBUS F4 AIO, F4 V2/V3, F4 Pro "(v2)"/V3 and ASGARD
 
 ### Board identification
 
 For board identification, see
 [OMNIBUS F4 V2 & V3 : Identifying revisions](https://www.rcgroups.com/forums/showthread.php?2837385-OMNIBUS-F4-V2-Identifying-revisions)
 
-### Note for OMNIBUS F4 V3 and ~~F4 Pro V3~~ users
+### Note for OMNIBUS F4 V3 and ASGARD users
 
-OMNIBUS F4 V3 ~~and F4 Pro V3~~ SBUS header through-hole is connected to **UART6**, not UART1 like all others.
+- OMNIBUS F4 V3 SBUS header through-hole is connected to **UART6**, not UART1 like all others.
+- ASGARD also uses UART6 RX (J5) for serial RX.
+- These boards require custom built firmware to handle programmable inverter. The support for the programmable inverter is planned to be included in post-3.1.7 releases.
 
 ### v3.1.7 and later: LED strip pin assignment has changed for OMNIBUSF4SD target
 
