@@ -13,3 +13,11 @@ With dual gyro variant of the AirbotF4 and FLIP32F4 (e.g. FLIP32-F4-DUAL GYRO ED
 set gyro_to_use = 0 # Selects MPU6000
 set gyro_to_use = 1 # Selects ICM2060x
 ```
+
+## Serial RX UART and programmable inverters on Airbot F4 variants
+
+| Board               | Serial RX | Inverter CLI Command                                       |
+|---------------------|-----------|------------------------------------------------------------|
+| Airbot F4 MPU9250   | UART1     | `resource inverter 1 a10`                                  |
+| Airbot F4 Nano      | UART3     | `resource inverter 3 a8`                                   |
+| Airbot F4 Dual Gyro | UART6     | `resource inverter 6 d2` (default for `AIRBOTF4SD` target) |
