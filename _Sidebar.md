@@ -49,6 +49,7 @@
  - [ALIENFLIGHTF3](/betaflight/betaflight/wiki/Board---ALIENFLIGHTF3)
  - [ALIENFLIGHTF4](/betaflight/betaflight/wiki/Board---ALIENFLIGHTF4)
  - [ALIENFLIGHTNGF7](/betaflight/betaflight/wiki/Board---ALIENFLIGHTNGF7)
+ - [ANYFCF7](/betaflight/betaflight/wiki/Board---ANYFCF7)
  - [BeeRotor F4](/betaflight/betaflight/wiki/Board-BeeRotor-F4)
  - [BETAFLIGHTF3](/betaflight/betaflight/wiki/Board---BETAFLIGHTF3)
  - [BLUEJAYF4](/betaflight/betaflight/wiki/Board---BLUEJAYF4)
