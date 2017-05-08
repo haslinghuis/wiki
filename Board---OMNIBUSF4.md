@@ -5,11 +5,16 @@
 For board identification, see
 [OMNIBUS F4 V2 & V3 : Identifying revisions](https://www.rcgroups.com/forums/showthread.php?2837385-OMNIBUS-F4-V2-Identifying-revisions)
 
-### Note for OMNIBUS F4 V3 and ASGARD users
+### Note for OMNIBUS F4 V3, V4 and ASGARD users
 
-- OMNIBUS F4 V3 SBUS header through-hole is connected to **UART6**, not UART1 like all others.
+- On OMNIBUS F4 V3 and later serial RX is **UART6**, not UART1.
 - ASGARD also uses UART6 RX (J5) for serial RX.
-- These boards require custom built firmware to handle programmable inverter. The support for the programmable inverter is planned to be included in post-3.1.7 releases.
+- Programmable inverter is functional in post-3.1.7 builds, and will be switched according to serial RX protocol (e.g. SBUS, IBUS, ...) selected.
+- However, inverter pin differs between F4 V3/V4 and ASGARD, and OMNIBUSF4SD target defaults to F4 V3/V4 design.
+ASGARD users must explicitly change the pin mapping by executing the following CLI command.
+```
+resource inverter 6 c9
+```
 
 ### v3.1.7 and later: LED strip pin assignment has changed for OMNIBUSF4SD target
 
