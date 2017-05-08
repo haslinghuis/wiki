@@ -65,3 +65,20 @@ Remember the spectrum is a *relative* comparator of the frequencies in the noise
 
 The most important thing is to scroll through and look at the motors traces for how big that noise is. The spectrum is useful for analyzing what you see there, but the motor trace and how it looks is what matters.   
 See [Gyro and Filters](https://github.com/betaflight/betaflight/wiki/Gyro-&-Dterm-filtering-recommendations) for more info.  
+
+### Tuning Tips using BB logs
+ 
+
+#### ctzsnooze:  
+PS seems to me like a bit more D on roll might be better. Also the log shows that the motors seem a bit slow to develop the requested amount of thrust. Lighter props might give better handling. 
+mtfinger22:  
+Can you explain what you are looking at in the logs that show that? I'm currently looking at different props for my recent build, and I would like to have an educated guess on what I should do without buying 10 different sets of props and trying them all out.
+ctzsnooze:  
+The time taken between the RC input signal and the resulting gyro change when doing a fast roll or flip tells you how long it took your motors to turn the quad.  
+In the log posted, the motors go to full 100% signal to turn it at the requested speed, but then it overshoots and the reverse pair have to speed up to slow down the overshoot. And there is a fair amount of delay, overall, between RC input and achieved actual roll.  
+That kind of stuff implies either relatively weak motor power compared to rotational inertia, or over-propped motors for their kv, or battery current limitation, or heavy props, or any combination of those things.  
+Light weight props allow motors to spool up faster and generate thrust more quickly, so the delay becomes less, and the amount of overshoot becomes less as well.  
+Also if you look at the absolute height of your P and D traces (make sure you have no expo on the PID traces in blackbox), you can see that D is relatively small compared to P. That means it is relatively ineffective in controlling your P overshoot. As a very rough 'rule of thumb', a good 'ratio' is D about half the amplitude of P during roll stops. Ensure you don't have expo on the blackbox P and D traces, or comparing heights of P and D is meaningless!  
+You could add more D, which most likely would allow more P, making for a crisper overall response without any more overshoot. Additionally, if your D setpoint weight was set above 1, D will drive the motors harder at the initial part of a stick input, which may help a little in scenarios like this.  
+I have quite a few underpowered quads like this. They need a lot of P and a lot of D to handle as crisp as the more powerful ones, but with tuning they fly great, though they cannot control propwash nearly as well. With a more sensitive throttle they can actually feel much the same in ordinary flight, they just don't go so fast at the top end.  
+These questions are really just basic P and D tuning questions not really betaflight related.  
