@@ -16,6 +16,8 @@ set gyro_to_use = 1 # Selects ICM2060x
 
 ## Serial RX UART and programmable inverters on Airbot F4 variants
 
+Applicable to post-3.1.7 builds
+
 | Board               | Serial RX | Inverter CLI Command                                       |
 |---------------------|-----------|------------------------------------------------------------|
 | Airbot F4 MPU9250   | UART1     | `resource inverter 1 a10`                                  |
