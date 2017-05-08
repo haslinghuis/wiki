@@ -70,10 +70,10 @@ See [Gyro and Filters](https://github.com/betaflight/betaflight/wiki/Gyro-&-Dter
  
 
 #### ctzsnooze:  
-PS seems to me like a bit more D on roll might be better. Also the log shows that the motors seem a bit slow to develop the requested amount of thrust. Lighter props might give better handling. 
+PS seems to me like a bit more D on roll might be better. Also the log shows that the motors seem a bit slow to develop the requested amount of thrust. Lighter props might give better handling.  
 mtfinger22:  
-Can you explain what you are looking at in the logs that show that? I'm currently looking at different props for my recent build, and I would like to have an educated guess on what I should do without buying 10 different sets of props and trying them all out.
-ctzsnooze:  
+Can you explain what you are looking at in the logs that show that? I'm currently looking at different props for my recent build, and I would like to have an educated guess on what I should do without buying 10 different sets of props and trying them all out.  
+ctzsnooze:   
 The time taken between the RC input signal and the resulting gyro change when doing a fast roll or flip tells you how long it took your motors to turn the quad.  
 In the log posted, the motors go to full 100% signal to turn it at the requested speed, but then it overshoots and the reverse pair have to speed up to slow down the overshoot. And there is a fair amount of delay, overall, between RC input and achieved actual roll.  
 That kind of stuff implies either relatively weak motor power compared to rotational inertia, or over-propped motors for their kv, or battery current limitation, or heavy props, or any combination of those things.  
