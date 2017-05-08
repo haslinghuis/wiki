@@ -66,7 +66,7 @@ Differences:
 ## Other Resources
 
 Setup Guides: 
-
+https://www.rcgroups.com/forums/showthread.php?2715556-MotoLab-Flight-Controllers
 
 ## Image
 https://www.rcgroups.com/forums/showpost.php?p=37468289&postcount=3013
