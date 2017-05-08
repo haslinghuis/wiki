@@ -43,6 +43,21 @@ Sambas
 ## FAQ & Known Issues
 SDcard detect not working correctly on chinaboards
 
+### Output pinout
+| Output number | MCU Pin | Default motor | DSHOT | Other |
+|---------------|:-------:|:-------------:|:-----:|:-----:|
+| 1 | A03 | 4 | YES DMA1_ST6 |  | 
+| 2 | A01 | 3 | YES DMA1_ST4 |  | 
+| 3 | E06 |   | NO |  | 
+| 4 | B05 |   | YES DMA1_ST5 | Default LEDSTRIP | 
+| 5 | B09 |   | NO |  | 
+| 6 | A02 | 2 | YES DMA1_ST1 |  | 
+| 7 | A00 |   | YES DMA1_ST2 |  | 
+| 8 | B03 |   | YES DMA1_ST6 |  | 
+| 9 | B04 |   | YES DMA1_ST4 |  | 
+| 10 | B08 | 1 | YES DMA1_ST7 |  | 
+
+
 ## Other Resources
 
 RC Groups Thread: https://www.rcgroups.com/forums/showthread.php?2847666-Next-generation-flight-controller-AnyFC-F7
