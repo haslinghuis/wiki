@@ -81,6 +81,7 @@
  - [NERO](/betaflight/betaflight/wiki/Board---NERO)
  - [MICROSCISKY](/betaflight/betaflight/wiki/Board---MICROSCISKY)
  - [MOTOLAB](/betaflight/betaflight/wiki/Board---MOTOLAB)
+ - [MOTOLABF4](/betaflight/betaflight/wiki/Board---MOTOLABF4)
  - [OLIMEXINO](/betaflight/betaflight/wiki/Board---OLIMEXINO)
  - [OMNIBUS](/betaflight/betaflight/wiki/Board---OMNIBUS)
  - [OMNIBUSF4](/betaflight/betaflight/wiki/Board---OMNIBUSF4)
