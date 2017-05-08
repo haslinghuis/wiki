@@ -9,12 +9,18 @@ For board identification, see
 
 - On OMNIBUS F4 V3 and later serial RX is **UART6**, not UART1.
 - ASGARD also uses UART6 RX (J5) for serial RX.
-- Programmable inverter is functional in post-3.1.7 builds, and will be switched according to serial RX protocol (e.g. SBUS, IBUS, ...) selected.
+- These boards require a firmware with programmable inverter support (still OMNIBUSF4SD target).
+- With the support, inversion will be enabled/disabled according to selected serial RX protocol (e.g. SBUS, IBUS, ...).
 - However, inverter pin differs between F4 V3/V4 and ASGARD, and OMNIBUSF4SD target defaults to F4 V3/V4 design.
 ASGARD users must explicitly change the pin mapping by executing the following CLI command.
 ```
 resource inverter 6 c9
 ```
+- The full inverter support is available as current dev master, available at http://andwho.sytes.net:8080/job/BorisB_BetaFlight/ . Select build after #1253.
+- Fixed inversion firmware based on 3.1.7 is available at https://www.dropbox.com/s/hj4jd3av8oko9ji/betaflight_3.1.6_Asgard_PC9_HIGH_SBUSInverter_Enabled?dl=0
+With this firmware, UART6 is serial RX with inversion (SBUS).
+- Note Spektrum users can use stock 3.1.7.
+- IBUS users probably need the full inverter support (for stability reasons).
 
 ### v3.1.7 and later: LED strip pin assignment has changed for OMNIBUSF4SD target
 
