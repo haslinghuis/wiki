@@ -7,7 +7,7 @@ For board identification, see
 
 ### Note for OMNIBUS F4 V3, V4 and ASGARD users
 
-- On OMNIBUS F4 V3 and later serial RX is **UART6**, not UART1.
+- On OMNIBUS F4 V3 and later, serial RX is **UART6**, not UART1.
 - ASGARD also uses UART6 RX (J5) for serial RX.
 - These boards require a firmware with programmable inverter support (still OMNIBUSF4SD target).
 - With the support, inversion will be enabled/disabled according to selected serial RX protocol (e.g. SBUS, IBUS, ...).
