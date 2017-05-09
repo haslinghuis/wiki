@@ -399,6 +399,7 @@ Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36230015&postcount=1
 - Maverick 24A - New product announcement:  
 https://www.rcgroups.com/forums/showthread.php?2795245-Fully-compatible-with-Dshot-New-upgraded-32-bit-Maverick-24A-ESC#post36408093  
 - MRM ZEUS-S 20A - with CAP removed (see FVT littlebee-s 20a cap removal)   
+- Multistar BLHeli_S 20A - shipped without the signal filter cap
 - Multistar BLHeli_S 30A -   
 - Racerstar v2 6a -  
 Cap removal: https://www.rcgroups.com/forums/showpost.php?p=36268041&postcount=1961  
