@@ -260,6 +260,7 @@ Connect ESC for motor 2 to 'LED' pin on the board.
  `save`
 
 
+##### AIR32 - See Board---AIR32#faq--known-issues
 #### FC Target reported NOT working
 - SPARKY2 - Oz reports:  I tried DS600 and only motors 2 & 4 will spin, 1 & 3 will not spin, I am guessing motor output 1 & 3 don't have dma's or ?  
 
