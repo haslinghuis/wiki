@@ -86,6 +86,7 @@
  - [OLIMEXINO](/betaflight/betaflight/wiki/Board---OLIMEXINO)
  - [OMNIBUS](/betaflight/betaflight/wiki/Board---OMNIBUS)
  - [OMNIBUSF4](/betaflight/betaflight/wiki/Board---OMNIBUSF4)
+ - [OMNIBUSF7](/betaflight/betaflight/wiki/Board---OMNIBUSF7)
  - [PIKOBLX](/betaflight/betaflight/wiki/Board---PIKOBLX)
  - [PLUM F4](/betaflight/betaflight/wiki/Board---PLUMF4)
  - [PODIUM](/betaflight/betaflight/wiki/Board---PODIUM)
