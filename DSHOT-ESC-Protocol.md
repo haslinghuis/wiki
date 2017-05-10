@@ -260,7 +260,7 @@ Connect ESC for motor 2 to 'LED' pin on the board.
  `save`
 
 
-##### AIR32 - See (/betaflight/betaflight/wiki/Board---AIR32#faq--known-issues)
+##### AIR32 - [instructions](/betaflight/betaflight/wiki/Board---AIR32#faq--known-issues)
 
 
 #### FC Target reported NOT working
