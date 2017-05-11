@@ -40,6 +40,8 @@ SW1 OFF, SW2 OFF 500mW
 
 Regarding soft mounting, that's never been necessary on any of my builds or those of the beta testers here. With the MPU6000, the well-filtered power in the Typhoon, and a stiff frame there shouldn't be a problem. 
 
+[MotoLab Typhoon F4 & VTX Video](https://www.youtube.com/watch?v=h0VcUPcgi8A)
+
 ### Software
   - Firmware target: MOTOLABF4
 
