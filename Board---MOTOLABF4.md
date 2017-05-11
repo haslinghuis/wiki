@@ -32,8 +32,16 @@ Two board set
 
  - Note: The VTX board is not powered from the USB input. The board should NOT be powered from lipo without an antenna connected. 
 
+The VTX controls are through the BetaFlight OSD functions using the RC transmitter. I think there may be documentation in the wiki. The VTX requires uploading a font through the Font Manager in BetaFlight Configurator. The only other control is the power selection switches. The settings for that are:
+
+SW1 ON, SW 2 ON 25mW
+SW1 ON, SW 2 OFF 200mW
+SW1 OFF, SW2 OFF 500mW
+
+Regarding soft mounting, that's never been necessary on any of my builds or those of the beta testers here. With the MPU6000, the well-filtered power in the Typhoon, and a stiff frame there shouldn't be a problem. The video above has the FC hard mounted.
+
 ### Software
-  - Firmware target: 
+  - Firmware target: MOTOLABF4
 
 ### Features
 
@@ -67,6 +75,10 @@ Differences:
 
 Setup Guides: 
 https://www.rcgroups.com/forums/showthread.php?2715556-MotoLab-Flight-Controllers
+
+Pin Out diagram is attached in this post:  
+https://www.rcgroups.com/forums/showpost.php?p=37498779&postcount=595
+
 
 ## Image
 https://www.rcgroups.com/forums/showpost.php?p=37468289&postcount=3013
