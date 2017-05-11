@@ -80,6 +80,7 @@
  - [LUX_RACE](/betaflight/betaflight/wiki/Board---LUX_RACE)
  - [NAZE](/betaflight/betaflight/wiki/Board---NAZE)
  - [NERO](/betaflight/betaflight/wiki/Board---NERO)
+ - [Matek F405](/betaflight/wiki/matekf405)
  - [MICROSCISKY](/betaflight/betaflight/wiki/Board---MICROSCISKY)
  - [MOTOLAB](/betaflight/betaflight/wiki/Board---MOTOLAB)
  - [MOTOLABF4](/betaflight/betaflight/wiki/Board---MOTOLABF4)
