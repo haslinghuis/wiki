@@ -2,7 +2,7 @@
 
 ## Description
 
-`Holybro KakuteF4-AIO is a fantastic and popular flight controller designed for FPV racing drone DIY. It is designed around the STM32F4 MCU.The board size  is 35x44.5mm, and the mounting holes is 30.5x30.5mm.`
+`Holybro KakuteF4-AIO is a fantastic and popular flight controller designed for FPV racing drone DIY. It is designed around the STM32F4 MCU.The board size  is 35x44.5mm, and the mounting holes is 30.5x30.5mm.`IMU inner damping built-in.
 
 ## Image of Top and Bottom
 
@@ -15,13 +15,15 @@
 ### Hardware
 
   - MCU: STM32F405RGT6
-  - IMU:  (SPI)
+  - IMU: ICM20689(SPI)
   - OSD: MAX7456
-  - SPI Flash: MX25L25635FMI
+  - SPI Flash: W25Q128FVSIG
   
 ### Features
   - F4 processor runs at 168MHz, it allows you to run high loop times.
-  - Onboard 32MBytes SPI Flash for storage of flight logging.
+  - Onboard 16MBytes SPI Flash for storage of flight logging.
+  - The new high performance low noise high sensitivity 32KHz ICM20689 6-axis Gyro and ACC.
+  - IMU inner damping built-in.
   - FrSky Telemetry support for S.Port style receivers.
   - Power distribution, 120A capability.
   - One analog input for RSSI monitoring.
@@ -29,8 +31,8 @@
   - WS2811 Led Strip: implemented.
   - VCP: Yes.
   - Hardware UARTS: 3,Capable of Telemetry, GPS, DSM, Debug, MavLink, HOTT, FrSky Sensor.
-  - 6 Servo outputs, capable of traditional PWM or OneShot.
-  - OSD: MAX7456,directly configured by betaflight-configurator.
+  - 1~4 Servo outputs, capable of traditional PWM,OneShot,multishot,Dshot
+  - Betaflight OSD included. Change PIDs, adjust configuration parameters, and control your video transmitter, all using your transmitter sticks and goggles.
   - PPM/UART Shared: UART6
   - Battery Voltage Sensor: Yes, onboard, no wiring necessary
   - Battery Current Sensor: Yes, onboard, no wiring necessary
@@ -39,7 +41,7 @@
   - CAN Bus which is very useful for talking to external devices.
 
 ## Target Code   
-???
+KAKUTEF4
 
 ## Hardware Designs (if available)
 
