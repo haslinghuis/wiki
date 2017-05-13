@@ -78,8 +78,10 @@ SPRACINGF3EVO
 
 | Pin | Label             | S.Audio | Tramp | S.Port | Notes                  |
 |-----|-------------------|---------|-------|--------|------------------------|
-| A8  | LED strip         | ?       | NG    | ?      | @pafleraf              |
-| B1  | M8                | ?       | OK    | OK     | @pafleraf              |
+| A8  | LED strip         | NG      | NG    | ?      | @pafleraf              |
+| B1  | M8                | OK      | OK    | OK     | @pafleraf              |
+
+Note: Soft Serial for this target is disabled in bf 3.1.7. However, it works with bf 3.2.0 nightly as of today (2017-05-13)
 
 ---
 REVOLT
