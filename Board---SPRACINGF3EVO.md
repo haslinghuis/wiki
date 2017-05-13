@@ -62,6 +62,7 @@ _(add links to boards here that are similar in features or function, but use thi
 
 ## FAQ & Known Issues
 _(add FAQs, known issues and workarounds specifically related to this board. please link work in progress issues to the related github issue or pull request)_
+Softserial is disabled for this target in bf 3.1.7 but works in nightly build 3.2.0 as of today (2017-05-13).
 
 ## Other Resources
 
