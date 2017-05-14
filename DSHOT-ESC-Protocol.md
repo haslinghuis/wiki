@@ -253,6 +253,8 @@ Connect ESC for motor 2 to 'LED' pin on the board.
   `resource motor 4 A15 `  
   `save  ` 
 
+See Github Issue  #2282 [Emax Femto (SPRACING F3EVO) - DSHOT 600 Motor 4 not spinning BF 3.1](https://github.com/betaflight/betaflight/issues/2282) for more details.
+
 ##### BeeRotor F4 -  (for use with a Hexacopter) Motor 6 needs to be moved to the LED pin on the 'SC' connector.
   LED_STRIP needs to be disabled, and then motor 6 gets remapped to this pin:   
  `feature -LED_STRIP`  
