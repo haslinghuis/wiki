@@ -1,4 +1,4 @@
-# Typhoon F4 Flight Controlle
+# Typhoon F4 Flight Controller and VTX
 ## Description
 Two board set
 
@@ -51,12 +51,13 @@ _(add list of features)_
 
 ## Manufacturers and Distributors
 
-They'll be in stock at Heli-Nation, RocketCityFPV, DefianceRC and others.
+Manufactured by MotoLab. Distributed by Heli-Nation, RocketCityFPV, DefianceRC and others.
 
 ## Designers
 Moto Moto
 
 ## Maintainers
+Moto Moto
 _(add your name here if you help test or contribute code for this board)_
 
 
