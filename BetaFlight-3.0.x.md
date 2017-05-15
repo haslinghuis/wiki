@@ -340,6 +340,9 @@ Note: for my method, you quad needs to be well tuned already. No noise issues, m
 Tune first. Sliders last. This may be me speaking for myself and there might be a better method but this is what works for me. Oh, also, when you're tuning, don't be so afraid of using D. Keep jacking it up while maintaining motor temps until your prop wash is under control. My numbers ended up a lot higher in 3.1 over any other release.  
 And Boris' reply:  
 Yeah that's a valid statement. The sliders can even differ per prop. On bullnose props which seem a bit more bouncy in general I tend to run lower setpoint transition. On that way I don't have to sacrifice much sharpness on my tune.  
+
+A Joshua Bardwell video on [Betaflight 3.0 Setpoint Weight (2DOF PID Controller) ](https://www.youtube.com/watch?v=4zncyYdAZPU)  
+
 ##### MoreTuning Tip from Tesseract1984:
 Ya...I almost feel like there needs to be a blurb somewhere that post 3.0.1 you should rethink your paradigms around what are acceptable value ranges.
 
