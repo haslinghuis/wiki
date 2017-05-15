@@ -124,6 +124,7 @@ Betaflight may not be able to support all Targets ( or specific boards) due to t
 - AIORACERF3
 - Airbot F3 (SPRACINGF3)  
 - ALIENFLIGHTF3
+- ALIENFLIGHTNGF7
 - BETAFLIGHTF3  
 - BLUEJAYF4
 - BrainFPV RE1 (needs build from BrainFPV repo)
