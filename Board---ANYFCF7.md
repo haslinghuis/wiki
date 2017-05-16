@@ -33,6 +33,7 @@ Source: https://github.com/sambas/hw/tree/master/AnyFCF7
 MXK? started to produce these, but used cheaply sourced parts. Currently known sources for these boards:
   - https://www.banggood.com/STM32F745-100lqfp-216MHz-MPU6000-SPI-F7-Flight-Controller-for-FPV-Racing-Support-Betaflight-p-1137386.html
   - http://www.buzzhobbies.com.au/anyfc-f7-flight-controller
+  - http://www.readytoflyquads.com/anyf7-fc
 
 ## Designers
 Sambas
