@@ -34,6 +34,9 @@ I still recommend that you slowly remove default filtering as well if your setup
 
 See the [Gyro & Filters](https://github.com/betaflight/betaflight/wiki/Gyro-&-Dterm-filtering-recommendations) for much more.
 
+### WARNING: Report that if AirMode is set to always on in the Config GUI then if a Fail Safe is triggered the Motors go to a high throttle instead of shutting down. FS works correctly if AirMode is setup to be enabled on an AUX switch. Post about this here: https://www.rcgroups.com/forums/showpost.php?p=37535627&postcount=48369  
+
+
 ## Betaflight 3.1.6 - 
 https://github.com/betaflight/betaflight/releases  
 
