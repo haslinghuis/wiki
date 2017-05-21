@@ -91,6 +91,9 @@ https://www.rcgroups.com/forums/showthread.php?2715556-MotoLab-Flight-Controller
 Pin Out diagram is attached in this post:  
 https://www.rcgroups.com/forums/showpost.php?p=37498779&postcount=595
 
+Board stuck in 'unknown device' mode? Check out this post: 
+https://www.rcgroups.com/forums/showpost.php?p=37567682&postcount=3053
 
-## Image
+
+## Images
 https://www.rcgroups.com/forums/showpost.php?p=37468289&postcount=3013
