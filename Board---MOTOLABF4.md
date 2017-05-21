@@ -83,7 +83,9 @@ Differences:
 ## Other Resources
 
 Setup Guides: 
+See Post #2 of this thread:   
 https://www.rcgroups.com/forums/showthread.php?2537379-MotoLab-Board-Setup-and-Troubleshooting  
+More in this thread:   
 https://www.rcgroups.com/forums/showthread.php?2715556-MotoLab-Flight-Controllers
 
 Pin Out diagram is attached in this post:  
