@@ -377,6 +377,48 @@ It's just not true to suggest that 'less filtering means better performance', es
 
 Somewhere there is a good balance between too much and not enough filtering. Finding the balance that works best for you is what its about.
 
+### Frame Resonance
+Posted by ctzsnooze:  
+There is a lot of confusion about resonance.
+
+Frame resonance is completely independent of props. It’s an intrinsic characteristic of the frame.
+
+All frames have a natural resonant frequency. At that point, the frame starts to exaggerate how much it shakes in response to the input.
+
+Let's say you have a source of shaking that varies in frequency - for instance, an out of balance prop. As the motors go faster, the frequency of the shaking gets higher. That’s our ‘input’. At the frame’s resonant frequency, the frame will shake much more than at any other rpm. Even though the ‘input’ itself hasn’t changed in magnitude, the frame resonance makes it seem like it has.
+
+A very hard frame won't resonate until the frequencies are very high, but a softer frame with heavier motors will have a lower resonant frequency.
+
+Resonant frame problems will be exaggerated if the arm can flex, ie it is loose at the bolts, or is beginning to fail, or is thin.
+
+However you get real issues when the resonant point of the frame coincides with the resonant point of the prop - and then when the PID loop amplifies the whole thing even more.
+
+That’s because prop blades have their own resonant frequency, independent of the frame. Hold a prop hard on a table-top and 'pluck' the blade, and you will hear it. Stiffer props make a higher pitched sound, the frequency you hear is approximately the resonant frequency of the prop. You can also pluck the arms of the quad in the same way to hear their natural resonant frequency.
+
+If the prop resonant frequency and the frame resonant frequency happen to be very similar, then you can get sudden severe resonance problems.
+
+A good way to determine if this is happening is to hand hold the quad and run the motors with props on in the motors tab. Take care. You can then feel (and hear and see if the accelerometer is on) how each motor individually shakes the frame, and if there is some point where the whole thing shakes much more than any other, that’s the resonant point of the system. By testing individual motors you can tell which motor or motors are providing the greatest input stimulus (i.e. has the biggest problem. You can also test with all motors on at once, which tells you the overall smoothness of the whole frame. Note that in the motors tab the PID loop will not amplify anything; what you feel there is purely mechanical without PID amplification.
+
+The whole idea of notch filtering is to precisely match the centre of the notch filter exactly to a specific resonant point, and make it only wide enough to cover the width of the resonant peak.
+
+To do this we have to precisely know what the resonant points are, so we need a blackbox, and to look at the various traces carefully. As I explained before, a resonant peak on P needs a gyro notch, then re-log and check if D is still a problem.
+
+Usually D is the main resonance amplifier. Without blackbox or notches, it is simpler to just put a steeper low pass on D i.e. biquad at a low frequency (70) rather than worrying about D notches. Also, If gyro is filtered properly with suitable gyro notches, you won’t need a D notch since nothing is coming into D at the resonant point.
+
+Unfortunately there is no way to predict the resonant points for your frame, since they differ from prop to prop and frame to frame. The only way is to blackbox it and individualize the filters.
+
+In the case we are discussing, the only notch filter that was in use was a D filter, and it was achieving nothing because there was no resonant point at its centre frequency.
+
+Notch filters have to be tuned specifically prop by prop and frame by frame.
+
+Note that the notch filters do not stop the shaking or the resonance. What they do is stop the PID loop from positively feeding back and amplifying that resonance. The result is less overall shaking. When done properly, the quad itself will shake just as much as it did when driven from the motors tab, but not more.
+
+Then if you have a minor prop imbalance, the frame will still shake and resonate, maybe badly, but you should be able to keep flying and your motors won't get hot or sound bad. It would still be good to fix the bearings or replace the bent prop, but at least you can keep flying in the meantime.
+
+That’s the whole idea behind notch filtering; blackbox logs are the only way to do them properly, the defaults most likely are wrong, and it absolutely must be individualized per prop and per frame.
+
+PS - also there are certain points in BLHeli where the motors are not controlled as smoothly as other points. If you spool motors slowly up without props in the motors tab you will hear them - it just sounds gritty. You can feel it (and see it if the accelerometer is enabled). Sometimes these points provide another trigger for resonance. If the rotational speed of the motors at these points coincides with other resonances you then get issues at those throttle points that aren't apparent elsewhere. 
+
 
 ### Filter Delays
 
