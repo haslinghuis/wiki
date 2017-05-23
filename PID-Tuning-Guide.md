@@ -72,6 +72,43 @@ Another fairly common issue. Read carefully the Wiki [FAQ #56](https://github.co
 3. Yaw tuning may require adjustment of lower yaw_accel_limit and yaw_p_limit setting especially with high power, high kv motors.  
 4. 
 
+### I have between 14 and 17 for D with P in the upper 50s. I can't get prop wash no matter what I try with pt1 and one or both notches disabled. Is there really any benefit to trying higher D if the quad is flying so well?  
+Answer from ctzsnooze:   
+D exists primarily to allow more P.
+
+Nowadays there two relatively minor additional functions for D, but that's the original historical purpose, and still the main reason it exists.
+
+Basically D is a 'dampener'. It pushes against any fast uncommanded changes, resisting more strongly the faster the rate of change.
+
+If you get an un-commanded fast wobble from high P, then D can attenuate that wobble, allowing use of higher P without wobble than would be possible with no D. Classical tuning involved turning D down to near-zero, gradually increasing P until you just get wobble after sharp inputs, then bringing D up to see if you can control that wobble a bit, then see if you can add a bit more P.
+
+Historically, P wobble happened within the control frequency range, because motors weren't so strong. It was essential to try to get P as high as possible and adding the right amount of D was essential to getting as much P as possible.
+
+Nowadays, with more powerful motors, P alone is much more quickly able to track control inputs, because P alone can make very fast changes to the attitude of the quad. Often P can do this below its natural oscillation frequency. If the natural P oscillation frequency is high enough, the gyro filters start suppressing P feedback anyway, so D becomes less important.
+
+Hence, with powerful motors, if you don't need to push P to the point of oscillation to get good handling, the importance of adding D becomes much less.
+
+There is one 'modern' benefit of D that started since D became calculated from error. In betaflight this benefit only exists D weighting is above zero (ie 1 or higher in practice).
+
+When D weighting is zero, D opposes stick inputs just as it opposes uncommanded inputs like wobbles. If you have a lot of D, the quad will become less responsive to stick inputs.
+
+But if D weighting is above zero, a quick stick input generates a brief D spike that helps initiated the movement in the quad and avoids the tendency for D to oppose stick input. Somewhere around a weghting of 0.4-0.6 the effect is neutral, by a weighting of 1 or higher, more D makes for a twitchier quad in response to quick stick inputs, rather than opposing them. Some people like that responsiveness, others don't. A lot of D weighting and not enough P can result in a twitchy quad that is a bit floaty at the same time. But if you really like the D weighting 'feel', then more D and more D weighting gives you more of that kind of thing.
+
+If you set the D relaxation to zero, when you return sticks to normal, D will dampen the rate of return of the quad to centre as if there was zero D weighting. This allows a quad with significant D and significant D weighing to have crisp turn initiation and smooth recovery at the end of rolls and flips. To be noticeable a lot of D is needed. Freestylers quite like this, but for racing I don't think its so good, because turn in and return behave differently. But again this effect needs D to work.
+
+The biggest drawback of D, by far, is amplifying high frequency noise and heating up the motors with that noise. D is highly frequency sensitive. For a fixed amplitude of noise, the D signal carrying that noise back to the motors will double every time the noise frequency doubles. P doesn't do this and is much less likely to be a significant contributor to hot motors. (Blackbox logs can clearly identify which of the two is the problem, but usually it's D).
+
+Clearly there are benefits to D and drawbacks.
+
+My personal (racing focused) view is that we should only apply enough D to control P wobble after a classical tuning approach; no more. This will provide the most crisp handling for the quad. Using this approach you may need to filter gyros so hard because D won't be heating the motors so much; you can then put filtering more on D without much drawback, keeping the gyro/P control loop fast so it can be super effective on propwash etc.
+
+It seems to me that more powerful the setup, the less the need for D. Typically they handle awesomely with not much P; the P resonant frequency can be high enough that the gyro filters are effective in controlling oscillation, lots of D simply isn't needed unless you want a smoothed out freestyle feel.
+
+On the other hand, medium to low power quads need more P to feel good, for sure, and for them adding D so we can push P as high as possible is very useful; the D weighting effect then becomes quite useful.
+
+Bottom line is that if you have a powerful quad that flies great with not much D, that's fantastic. You probably need some D to control P oscillation. But if it works fine and has no apparent P oscillation with hardly any D - ie it feels great and the motors stay cool - that's awesome. Especially for racing.  
+
+
 ### Filters:  
 See the [Gyro & Filters](https://github.com/betaflight/betaflight/wiki/Gyro-&-Dterm-filtering-recommendations) Wiki Page for details and discussions on adjusting/Tuning the Filters. 
 
