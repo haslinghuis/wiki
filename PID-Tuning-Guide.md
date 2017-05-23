@@ -108,6 +108,22 @@ On the other hand, medium to low power quads need more P to feel good, for sure,
 
 Bottom line is that if you have a powerful quad that flies great with not much D, that's fantastic. You probably need some D to control P oscillation. But if it works fine and has no apparent P oscillation with hardly any D - ie it feels great and the motors stay cool - that's awesome. Especially for racing.  
 
+More on D, which might not be entirely right, but it makes a ton of sense...
+
+D's main purpose is to control P oscillations. D doesn't really have any role at all above the natural P oscillation frequency. In fact, above the natural P oscillation point, D is basically unhelpful.
+
+If you were to do a classical tuning approach, ie where you turn P and D right down (say P to 10 and D to 2), then hover, then gradually increase P in steps until the quad oscillates on quick pitch/roll flicks, and then increase to the point where it just starts to oscillate continually (all in the absence of D), you will then be able to determine the natural P oscillation frequency.
+
+A blackbox log would identify that frequency with precision, but just looking at it would probably be sufficient to get a decent idea. Often P oscillation is very low, as low as 5 to 10 Hz on low power quads, up to say 30-40Hz on powerful quads.
+
+Once you know the frequency at which P oscillates, that tells you where the primary D lowpass setpoint needs to be. Probably somewhere like 50%-100% above the natural P oscillation point would be fine (and avoid phase shift issues). This could mean a D lowpass as low as 3 - 40 - 50Hz on many setups, even lower on some. It would depend on how powerful the motors are and how fast the resulting P oscillation was.
+
+So long as the D lowpass is set above the P oscillation point - a decent way above, to avoid phase shift issues - D would still be able to properly dampen P oscillations and roll-stop wobbles etc, but low enough to have less of an effect on noise amplification at higher frequencies.
+
+This approach suggests that there might be a logical way to determine the optimal D lowpass filter set-point value after all. I'll give it a go on the weekend.
+
+I suggest doing a classical tuning exercise on a problematic quad? Sounds to me like you have too much P and are trying to add D in increasing amounts to control it. Classical PID theory suggests that you can't get a stable, well damped system if P is simply too high. Trying to control excessive P with more and more D doesn't work out well. As a rule of thumb, D allows pushing P 20-30% above the oscillation point. I think personally it's safer to get D to the point it helps control the oscillation, and then set P at 80% of the oscillation value. The quad may not be totally crisp like this - you could push P higher, perhaps - but it will be really stable and smooth and nicely damped. If the motors are powerful it will also be crisp and precise. You don't need a blackbox to do this; blackbox really is needed only to precisely set filters or resolve power train issues.  
+
 
 ### Filters:  
 See the [Gyro & Filters](https://github.com/betaflight/betaflight/wiki/Gyro-&-Dterm-filtering-recommendations) Wiki Page for details and discussions on adjusting/Tuning the Filters. 
