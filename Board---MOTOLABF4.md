@@ -61,7 +61,8 @@ There are two reason the board might not appear as the correct device:
 
 2) The wrong drivers are installed. Zadig should be used to install only the DFU mode driver. Connect in DFU mode with the boot pins, and then install the driver listed in post #1. Additional instructions are [here](https://github.com/betaflight/betaflight/wiki/Installing-Betaflight#dfu-flashing-under-windows---usb-dfu). The default Windows drivers should work for VCP mode.
 
-#### I've identified the cause of the USB reconnect failures after resets. I believed it was a software issue since the F3 boards had a similar problem that was fixed previously, but this is a hardware issue. There's a resistor that shouldn't be there, and the fix is removing it. Dealer stock will be reworked and available later this week.
+#### USB Reconnect Failures: 
+I've identified the cause of the USB reconnect failures after resets. I believed it was a software issue since the F3 boards had a similar problem that was fixed previously, but this is a hardware issue. There's a resistor that shouldn't be there, and the fix is removing it. Dealer stock will be reworked and available later this week.
 
 Anybody with a board now can return it for rework, or you can do it yourself at your risk. The part is an 0402 SMT resistor, easily removed with the right tools. PM me for instructions if you want to return your board.
 
