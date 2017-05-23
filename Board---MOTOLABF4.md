@@ -42,6 +42,9 @@ Regarding soft mounting, that's never been necessary on any of my builds or thos
 
 [MotoLab Typhoon F4 & VTX Video](https://www.youtube.com/watch?v=h0VcUPcgi8A)
 
+#### how do I configure the vtx like change channels?  
+It shows the stick commands on the OSD startup screen. Mid throttle, yaw left and roll centered, pitch up. 
+
 ### Software
   - Firmware target: MOTOLABF4
 
@@ -50,6 +53,20 @@ https://www.dropbox.com/s/5h1gz0kct03lb09/betaflight_3.1.7_DMA_MOTOLABF4.hex?dl=
 
 Note that F4 targets as of now don't reboot to DFU mode from the Configurator. It's necessary to short the boot jumper. I recommend installing a right-angle header on the bottom of the board. 
 https://www.rcgroups.com/forums/showpost.php?p=37515881&postcount=613
+
+####  I can get it to connect properly in DFU mode!
+There are two reason the board might not appear as the correct device:
+
+1) The firmware is corrupted or wrong file loaded. The red led should flash at startup, and then flash if the board is rotated from level if the firmware is running. If not, force DFU mode with the boot pins and reflash with "No reboot sequence" enabled.
+
+2) The wrong drivers are installed. Zadig should be used to install only the DFU mode driver. Connect in DFU mode with the boot pins, and then install the driver listed in post #1. Additional instructions are [here](https://github.com/betaflight/betaflight/wiki/Installing-Betaflight#dfu-flashing-under-windows---usb-dfu). The default Windows drivers should work for VCP mode.
+
+#### I've identified the cause of the USB reconnect failures after resets. I believed it was a software issue since the F3 boards had a similar problem that was fixed previously, but this is a hardware issue. There's a resistor that shouldn't be there, and the fix is removing it. Dealer stock will be reworked and available later this week.
+
+Anybody with a board now can return it for rework, or you can do it yourself at your risk. The part is an 0402 SMT resistor, easily removed with the right tools. PM me for instructions if you want to return your board.
+
+The part is R9 in the picture below, it should be desoldered and removed. That's the USB connector on the right, for orientation. It's the third part below the "V1.2" on the silkscreen.   
+![https://www.rcgroups.com/forums/showpost.php?p=37577499&postcount=3060](Picture)  
 
 ### Features
 
