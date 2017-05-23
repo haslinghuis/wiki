@@ -67,7 +67,7 @@ I've identified the cause of the USB reconnect failures after resets. I believed
 Anybody with a board now can return it for rework, or you can do it yourself at your risk. The part is an 0402 SMT resistor, easily removed with the right tools. PM me for instructions if you want to return your board.
 
 The part is R9 in the picture below, it should be desoldered and removed. That's the USB connector on the right, for orientation. It's the third part below the "V1.2" on the silkscreen.   
-![https://www.rcgroups.com/forums/showpost.php?p=37577499&postcount=3060](Picture)  
+[picture](https://www.rcgroups.com/forums/showpost.php?p=37577499&postcount=3060) 
 
 ### Features
 
