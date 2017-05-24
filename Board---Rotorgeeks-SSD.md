@@ -44,6 +44,14 @@ _(add FAQs, known issues and workarounds specifically related to this board. ple
 
 - RCGroup post on Beeper connection: https://www.rcgroups.com/forums/showpost.php?p=36610466&postcount=14  
 
+ - iLap and Easy Race Lap Timer  
+Some progress is being made on the IR transponder. One of the guys we know has it running on a test board and is working to get it implemented. Looking at multi-protocol support.
+iLap and Easy Race Lap Timer (and another one I can't find much info about). ERLT is the one I really wanted to get going.
+https://github.com/betaflight/betaflight/issues/2131   
+
+It's working its way through github now. I think it might appear on Cleanflight first.  
+https://github.com/cleanflight/cleanflight/blob/master/docs/Transponder.md  
+
 ## Other Resources
 
 [Manual](http://rotorgeeks.com/download/RG_SSD_Manual.pdf)  
