@@ -67,9 +67,29 @@ The most important thing is to scroll through and look at the motors traces for 
 See [Gyro and Filters](https://github.com/betaflight/betaflight/wiki/Gyro-&-Dterm-filtering-recommendations) for more info.  
 
 ### Tuning Tips using BB logs
- 
 
-#### ctzsnooze:  
+#### ctzsnooze: 
+Clicking the little 'i' at top left of the blackbox viewer, shows all your settings. On that quad, both gyro and D lowpass are PT1 (not what you thought it was). I'm suggesting putting the D lowpass to BiQuad and cutting its low pass to 70Hz. You could, as R.A.V. suggests, leave it at 100, but I doubt you'd notice any difference, and lower would be better in your case.
+
+Flight performance generally does not deteriorate very much if you filter D more heavily; all that happens is that D sort of disappears from high frequencies. This is good. On the other hand, it's best to try and filter gyro/P the least possible.
+
+To get an idea of whether overall noise is a problem, look at the motor traces. Less than 1-2% noise is great, 5% marginal, any more than that is not so good.
+
+To find out what your gyro filters are doing, set the spectrum to the P trace. P trace includes the effect of gyro lowpass and both gyro notches.
+
+To find out what your D filters are doing, set the spectrum to the D trace. Remember that first the gyro low-pass and the gyro notch filters are applied to the gyro data, then D is calculated (amplifying the fast noise), then the D filters are applied. So if you apply a notch to gyro, you probably won't find anything useful by applying the same filter again to D.
+
+To directly compare the overall contribution of P compared to D, leave the spectrum scaling alone and click on P then D then P then D. The relative height of the peaks tells you which of P or D is contributing most tot he noise.
+
+I don't change the slider positions from default.
+
+Note that the spectrum is calculated, by default, from the entire log. Longer logs will make a 'taller' spectrum than shorter logs because there is more data to build the spectrum from. To directly compare spectrums log to log, always select the same amount of time. To do that, scroll to a start point, press 'i', then scroll to an end point, press 'o'. Now the spectrum is created only from the data in the smaller selection. This allows direct comparison of equal time length bits of different logs. Very short selections can also look at small bits eg just a short full throttle period to analyze that period alone.
+
+Also in the graph setup, be sure to set smoothing to zero and expo to 100 on all traces.
+
+After that, you can save the graph setup by pressing shift-1. Then pressing 1 will recall it. Same for all the number keys on your keyboard. This is very useful, you can save different setups for roll, pitch and yaw separately, and recall them quickly, with smoothing and expo as you set it. 
+
+#### ctzsnooze comments on a log posted:  
 PS seems to me like a bit more D on roll might be better. Also the log shows that the motors seem a bit slow to develop the requested amount of thrust. Lighter props might give better handling.  
 mtfinger22:  
 Can you explain what you are looking at in the logs that show that? I'm currently looking at different props for my recent build, and I would like to have an educated guess on what I should do without buying 10 different sets of props and trying them all out.  
