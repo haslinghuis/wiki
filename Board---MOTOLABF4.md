@@ -60,9 +60,9 @@ There are two reason the board might not appear as the correct device:
 #### USB Reconnect Failures: 
 _**This applies only to Typhoons shipped before May 24, 2017**_
 
-I've identified the cause of the USB reconnect failures after resets. I believed it was a software issue since the F3 boards had a similar problem that was fixed previously, but this is a hardware issue. There's a resistor that shouldn't be there, and the fix is removing it (then ENSURE that pads are NOT Shorted). Dealer stock will be reworked and available later this week.
+Early production Typhoon FCs exhibited a problem reconnecting to USB after resets or when switching to/from DFU mode. The cause was identified as an unneeded pull-up resistor on the USB interface. The fix is removal of that resistor. Dealer stock has been updated as of May 24.
 
-Anybody with a board now can return it for rework, or you can do it yourself at your risk. The part is an 0402 SMT resistor, easily removed with the right tools. PM me for instructions if you want to return your board.
+Anybody with an early board can return it for rework, or you can do it yourself at your risk. The part is an 0402 SMT resistor, easily removed with the right tools.
 
 The part is R9 in the picture below, it should be desoldered and removed. That's the USB connector on the right, for orientation. It's the third part below the "V1.2" on the silkscreen.   
 [picture](https://www.rcgroups.com/forums/showpost.php?p=37577499&postcount=3060) 
