@@ -66,6 +66,16 @@ Remember the spectrum is a *relative* comparator of the frequencies in the noise
 The most important thing is to scroll through and look at the motors traces for how big that noise is. The spectrum is useful for analyzing what you see there, but the motor trace and how it looks is what matters.   
 See [Gyro and Filters](https://github.com/betaflight/betaflight/wiki/Gyro-&-Dterm-filtering-recommendations) for more info.  
 
+#### So by disabling all notches you mean, gyro_notch_1, gyro_notch_2, AND dterm_notch... correct?  
+won't set debug_mode=notch do the same thing or am I misunderstanding?   
+Answer from ctzsnooze:   
+The filtering sequence for P is gyro lpf -> gyro notch 1 -> gyro notch 2 -> P.
+For D it is gyro lpf -> gyro notch 1 -> gyro notch 2 -> Dterm LPF -> D notch -> D
+
+Disabling all three notch filters means that they are gone. The gyro data goes into the PID loop without any attenuation from the notches. Frequencies that might otherwise have been filtered out by the notches will now be amplified by the PID loop. What you see in the gyro, P, D and motor spectrums is how your quad actually behaves when they aren't there at all.  
+Set debug_mode = notch keeps the notch filters active, but records a version of the gyro trace from just after the gyro LPF - before the notch filters are implemented. The P, D and motor traces will be affected by the notches, because they are still active. Because they remain active, PID related noise amplification at those frequencies will be attenuated, reducing the amount of noise in those regions even in the pre-notch gyro trace. It just doesn't show what it would be like with no notch filters.  
+Disabling a notch filter completely is the only way to really know what the noise state of the machine is like without it. Set debug_mode = notch isn't nearly as useful, that's why I don't recommend using it for this purpose.
+
 ### Tuning Tips using BB logs
 
 #### ctzsnooze: 
