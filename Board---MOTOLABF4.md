@@ -58,9 +58,9 @@ There are two reason the board might not appear as the correct device:
 2) The wrong drivers are installed. Zadig should be used to install only the DFU mode driver. Connect in DFU mode with the boot pins, and then install the driver listed in post #1. Additional instructions are [here](https://github.com/betaflight/betaflight/wiki/Installing-Betaflight#dfu-flashing-under-windows---usb-dfu). The default Windows drivers should work for VCP mode.
 
 #### USB Reconnect Failures: 
-_**This applies only to Typhoons shipped before May 24, 2017**_
+_**This applies only to Typhoons shipped before 24 May 2017**_
 
-Early production Typhoon FCs exhibited a problem reconnecting to USB after resets or when switching to/from DFU mode. The cause was identified as an unneeded pull-up resistor on the USB interface. The fix is removal of that resistor. Dealer stock has been updated as of May 24.
+Early production Typhoon FCs exhibited a problem reconnecting to USB after resets or when switching to/from DFU mode. The cause was identified as an unneeded pull-up resistor on the USB interface. The fix is removal of that resistor. Dealer stock has been updated as of 24 May 2017.
 
 Anybody with an early board can return it for rework, or you can do it yourself at your risk. The part is an 0402 SMT resistor, easily removed with the right tools.
 
