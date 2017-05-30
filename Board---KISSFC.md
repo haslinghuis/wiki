@@ -92,7 +92,7 @@ When using KISS 24RE ESCs, you use the ESC telemetry by connecting the ESC telem
 To get ESC telemetry working with the TLM pads, you will need to solder-bridge the TX3/RX3 pads on the bottom of the KISS FC board. In BF 3.2 this will be fixed with a CLI command and the solder-bridge is not needed any more.
 
 How to enable/use ESC Telemetry:
-1. Create solder-brigde between RX3/RX3 on the bottom of the KISS FC board.
+1. Create solder-brigde between TX3/RX3 on the bottom of the KISS FC board.
 2. Connect ESC telemetry wires to the TLM pads
 3. Start Betaflight Configurator
 4. Open Ports Tab
