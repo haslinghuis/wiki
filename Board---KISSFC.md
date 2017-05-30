@@ -84,7 +84,7 @@ _(add links to boards here that are similar in features or function, but use thi
 _(add FAQs, known issues and workarounds specifically related to this board. please link work in progress issues to the related github issue or pull request)_
 
 ### Maximum gyro update / PID loop frequency
-The KISS FC features an onboard MPU6050 gyro that is connected with IC2 and is thereby limited to 4kHz gyro update frequency and 4kHz PID loop frequency.
+The KISS FC features an onboard MPU6050 gyro that is connected with I2C and is thereby limited to 4kHz gyro update frequency and 4kHz PID loop frequency.
 
 ### ESC Telemetry
 When using KISS 24RE ESCs, you use the ESC telemetry by connecting the ESC telemetry wire to the TLM pads on the KISS FC board.
