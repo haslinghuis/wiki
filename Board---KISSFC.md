@@ -16,8 +16,9 @@ KISSFC is a STM32F3 based flight controller with integrated voltage regulator, b
   - BARO: No
   - VCP: Yes
   - Hardware UARTS: 3
+  - Soft-serials: 2
   - OSD: No
-  - Blackbox: No
+  - Blackbox: Yes, External blackbox device connected on UART1 (use PORT2 connector or TX1/TX1 pads) 
   - PPM/UART Shared: UART2
   - Battery Voltage Sensor: Yes, directly connected, no wiring necessary
   - Integrated Voltage Regulator: Yes, unknown voltage limit
