@@ -96,7 +96,7 @@ How to enable/use ESC Telemetry:
 2. Connect ESC telemetry wires to the TLM pads
 3. Start Betaflight Configurator
 4. Open Ports Tab
-5. Select `ESC` for `Sensor input` on `UART3`. 
+5. Select `ESC` for `Sensor Input` on `UART3`. 
 6. Hit Save & Reboot.
 7. Open Configuration Tab
 8. Enable `VBAT_SENSOR` feature. Select `ESC Sensor` for `Voltage Meter Type`
@@ -104,7 +104,7 @@ How to enable/use ESC Telemetry:
 10. Hit Save & Reboot. 
 
 ### Motor order
-KISS original firmware uses another motor layout pattern than Betaflight uses. There is no need to resolder the motors anymore. Betaflight has an build-in mixer to assign the right motor to the right pad, just solder the motors to the correspondig pads (Motor 1 -> PWM1, Motor 2 -> PWM2, ...)
+KISS original firmware uses another motor layout pattern than Betaflight uses. There is no need to resolder the motors anymore. Betaflight has an build-in mixer to assign the right motor to the right pad, just solder the motors to the correspondig pads (Motor 1 -> PWM1, Motor 2 -> PWM2, ...). Betaflight will do the rest.
 
 ## Other Resources
 
