@@ -114,4 +114,4 @@ Rcgroups Thread: http://www.rcgroups.com/forums/showthread.php?t=2555204
 
 ## Image
 
-![](http://flyduino.net/bilder/produkte/gross/KISS-FC-32bit-Flight-Controller-V103.jpg)
+![](https://cdn3.volusion.com/zzpvf.kmsuu/v/vspfiles/photos/elec-fc-kiss103-4.jpg)
