@@ -1,6 +1,6 @@
 # KISSFC
 
-_Keep it simple stupid._
+_Keep It Simple Stupid._
 
 ## Description
 
@@ -102,6 +102,9 @@ How to enable/use ESC Telemetry:
 8. Enable `VBAT_SENSOR` feature. Select `ESC Sensor` for `Voltage Meter Type`
 9. Enable `CURRENT_SENSOR` feature. Select `ESC Sensor` for `Current Meter Type`. 
 10. Hit Save & Reboot. 
+
+### Motor order
+KISS original firmware uses another motor layout pattern than Betaflight uses. There is no need to resolder the motors anymore. Betaflight has an build-in mixer to assign the right motor to the right pad, just solder the motors to the correspondig pads (Motor 1 -> PWM1, Motor 2 -> PWM2, ...)
 
 ## Other Resources
 
