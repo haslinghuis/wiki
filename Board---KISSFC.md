@@ -32,14 +32,31 @@ KISSFC is a STM32F3 based flight controller with integrated voltage regulator, b
 
 ### KISS FC Betaflight additional features pad assigments
 
-PAD ON KISS FC|FUNCTION
----|--------
-PITCH|Current sensor
-PWM5 (Motor 5)|LED strip
-AUX1|Softserial 1
-ROLL|Softserial 2
+PAD ON KISS FC|PIN ON MCU|BF FEATURE
+---|---|--------
+PITCH|A02|Current sensor
+PWM5 (Motor 5)|A06|LED strip
+AUX1|A13|Softserial 1
+ROLL|A15|Softserial 2
 
 Softserial pad assignment can be changed with the `resource` command. Current sensor and LED strip assignments are hard-coded and can not be changed runtime at the moment.
+By default the pads are assigned to their original function (see pad name) and need to be freed to be able to assign one of the alternate features shown in the table above.
+
+First free all (or some) resources:
+
+`resource PWM 2 NONE`
+
+`resource PWM 3 NONE`
+
+`resource PWM 4 NONE`
+
+`resource PWM 5 NONE`
+
+Assign resources for soft-serial:
+
+`resource SERIAL_TX 11 A13`
+
+`resource SERIAL_TX 12 A15`
 
 ## Hardware Designs (if available)
 
@@ -66,25 +83,24 @@ _(add links to boards here that are similar in features or function, but use thi
 ## FAQ & Known Issues
 _(add FAQs, known issues and workarounds specifically related to this board. please link work in progress issues to the related github issue or pull request)_
 
-###Remapping Motor pins with the Resource command by NarcolepticLTD:   
-I just swapped over from kiss firmware to BF 3.1.1 to give the new features a try (and didn't want to resolder anything). I noted in previous releases that the motor outputs had been updated to match in this target, but not sure if that carried over to 3.1.1 - anyways, for anyone curious on how to do this, I simply held down the boot loader when plugging in, released, and then flashed 3.1.1 (kiss fc target), and had no issues with the install.
+### Maximum gyro update / PID loop frequency
+The KISS FC features an onboard MPU6050 gyro that is connected with IC2 and is thereby limited to 4kHz gyro update frequency and 4kHz PID loop frequency.
 
-Once it's installed, if like me you're wired for kiss firmware and don't want to resolder/mess about, you can use the new resource remapping tools to fix the motor order. Pick quadX1234 for your mixer, and change your motor mapping in the CLI from this:  
+### ESC Telemetry
+When using KISS 24RE ESCs, you use the ESC telemetry by connecting the ESC telemetry wire to the TLM pads on the KISS FC board.
+To get ESC telemetry working with the TLM pads, you will need to solder-bridge the TX3/RX3 pads on the bottom of the KISS FC board. In BF 3.2 this will be fixed with a CLI command and the solder-bridge is not needed any more.
 
-`resource MOTOR 1 B14`  
-`resource MOTOR 2 B00`  
-`resource MOTOR 3 B15`  
-`resource MOTOR 4 A08`  
-
-To this:  
-`resource MOTOR 1 A08`  
-`resource MOTOR 2 B00`  
-`resource MOTOR 3 B14`  
-`resource MOTOR 4 B15`  
-
-once I had that set everything checked out in the motors tab and typical props off benchtests... hover test completed. Hopefully I'll get a chance to get out and fly in the next few days and see how the new anti_gravity settings sort my pitch issues (sick of doing wheelies).
-
-Quick edit to note that I haven't yet bothered to see if telemetry will need to be remapped - I may mess with it later. 
+How to enable/use ESC Telemetry:
+1. Create solder-brigde between RX3/RX3 on the bottom of the KISS FC board.
+2. Connect ESC telemetry wires to the TLM pads
+3. Start Betaflight Configurator
+4. Open Ports Tab
+5. Select `ESC` for `Sensor input` on `UART3`. 
+6. Hit Save & Reboot.
+7. Open Configuration Tab
+8. Enable `VBAT_SENSOR` feature. Select `ESC Sensor` for `Voltage Meter Type`
+9. Enable `CURRENT_SENSOR` feature. Select `ESC Sensor` for `Current Meter Type`. 
+10. Hit Save & Reboot. 
 
 ## Other Resources
 
