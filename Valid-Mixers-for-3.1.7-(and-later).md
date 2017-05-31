@@ -29,7 +29,7 @@
 | A-tail Quad      | o       | o  | o       |      |
 | Y4               | o       | o  | o       |      |
 | Y6               | x       | x  | o       |      |
-| Octo X8          | x       | x  | o       | No code, can be emulated by mmix (see below)     |
+| Octo X8          | x       | x  | o       | Can be emulated by mmix (see below)     |
 | PPM to SERVO     | x       | x  | x       | No code, can be emulated by smix (see below)    |
 | Custom           | o       | o  | o       |      |
 | Custom Airplane  | o       | o  | o       |      |
