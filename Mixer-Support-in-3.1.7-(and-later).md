@@ -27,8 +27,8 @@ Ultimately, motor and servo mixes will be dynamically loaded by configurator, an
 | Heli 120         | x       | x  | x       | No code      |
 | Heli 90          | x       | x  | x       | No code     |
 | Single Copter    | x       | x  | x       | Insufficient code (no mmix)      |
-| Dual Copter      | x       | x  | o       |      |
-| Bicopter         | x       | x  | o       |      |
+| Dual Copter      | x       | x  | o       | Doesn't reset without #3178     |
+| Bicopter         | x       | x  | o       | Doesn't reset without #3178     |
 | V-tail Quad      | o       | o  | o       |      |
 | A-tail Quad      | o       | o  | o       |      |
 | Y4               | o       | o  | o       |      |
