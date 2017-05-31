@@ -1,6 +1,5 @@
-## Valid mixers on 3.1.7 and later
 
-### The support table
+### The support matrix
 
 - Some rarely used mixers are not supported (dropped) from F1 and F3 firmwares due to flash space limitation.
 - Some mixers are not supported from the beginning (or at least I couldn't find any remains of the code).
