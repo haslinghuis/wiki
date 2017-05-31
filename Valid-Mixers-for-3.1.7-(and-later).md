@@ -1,10 +1,14 @@
+### Introduction
 
-### The support matrix
-
-- Some rarely used mixers are not supported (dropped) from F1 and F3 firmwares due to flash space limitation.
-- Some mixers are not supported from the beginning (or at least I couldn't find any remains of the code).
+- Beginning with 3.1.7, some rarely used mixers are not supported (being dropped) from F1 and F3 firmwares due to flash space limitation.
+- In addition, some mixers are not supported from the beginning (or at least I couldn't find any remains of the code).
 - If unsupported mixer is specified, it will reset to custom mix (on 3.1.8 or 3.2 and later).
 
+### The future
+
+Ultimately, motor and servo mixes will be dynamically loaded by configurator, and rarely used mixers are likely to resurrect (if devs find them useful enough).
+
+### The support matrix
 
 | Mixer            | F1 (*1) | F3 | F4 & F7 | Note |
 |------------------|---------|----|---------|------|
