@@ -23,7 +23,7 @@ Ultimately, motor and servo mixes will be dynamically loaded by configurator, an
 | Octo Flat +      | x       | x  | o       |      |
 | Octo Flat X      | x       | x  | o       |      |
 | Flying Wing      | o       | o  | o       |      |
-| Airplane         | o       | o  | o       | Same as Flywing Wing (single prop)     |
+| Airplane         | o       | o  | o       |      |
 | Heli 120         | x       | x  | x       | No code      |
 | Heli 90          | x       | x  | x       | No code     |
 | Single Copter    | x       | x  | x       | Insufficient code (no mmix)      |
