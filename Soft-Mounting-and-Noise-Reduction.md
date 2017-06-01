@@ -97,6 +97,11 @@ https://www.rcgroups.com/forums/showpost.php?p=36698872&postcount=2693
 
 ####  [Motor soft mount idea:](https://www.rcgroups.com/forums/showpost.php?p=37447636&postcount=48105)  
 
+#### Some experiments and observations from AILERON8:
+I've found it's these lower frequencies where the soft motor mounts work best. Sometimes shifting the noise upward, but often eliminating it altogether. In addition to trying-out the dynamic notch filter on two quads I spent last weekend playing with my motor softmounts. Empirical testing only, e.g., quads with busted BB's at the moment unfortunately. I also noticed how the higher sounding prop resonance from one of my quads didn't change (as much) with motor soft mounting. My FC soft mounts seemed to be more effective at alleviating the mid-to-high frequencies of the singing unbalanced butter cutters I was testing. It was far from an exhaustive design of experiment, but there was definitely a trend where my silicone and/or rubber soft mounts helped to get rid of the lower motor and frame resonance without having to place additional BF filters. Using the same butters I also noticed how removing my gyro notches had a noticeable impact on mid throttle oscillation reduction as it related to the noisy props. At least on the one quad I was testing, and that's not the first time I've experienced this effect. I'm hoping to do more testing this upcoming weekend and finally get some BB logs to show cause & effect.
+
+Let me clarify on my first statement: not actually "shifting" the frequencies higher, but reducing the amplitude of the lower frequencies, leaving the higher frequency noise alone.   
+
 ## Adding Cap(s)
 
 #### Thread about Caps for Noise reduction (has links to recommended Caps):    
