@@ -5,7 +5,7 @@ https://github.com/betaflight/betaflight/releases/tag/v3.1.7
 For full release info see 3.1:
 https://github.com/betaflight/betaflight/releases/tag/v3.1.0
 
-Mixer Sopport: https://github.com/betaflight/betaflight/wiki/Mixer-Support-in-3.1.7-(and-later)  
+Mixer Support: https://github.com/betaflight/betaflight/wiki/Mixer-Support-in-3.1.7-(and-later)  
 
 ### New:
 - Airmode is now fully disabled when feature or mode not engaged. Before airmode was always active and it was just the iterm not being active on low throttle.
