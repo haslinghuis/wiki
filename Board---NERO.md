@@ -31,14 +31,21 @@ Beautifully simple STM32F7 based flightcontroller. A F7 replacement for the Naze
 
 ## Manufacturers and Distributors
 
-These boards are currently available in pre-order only. Shipping is expected during May and June of 2017.  
+These boards are now currently available. Shipping of pre-orders is occurring now.  
 
-Available here: [nerofc.com](https://nerofc.com)
+Available here: 
+
+[electricwingman.com](https://www.electricwingman.com/nero-f7-flight-controller)
+[readytoflyquads.com](http://www.readytoflyquads.com/nero-f7-flight-controller)
+[nerofc.com](https://nerofc.com)
 
 ## Configuration Information
 
 ### Wiring Diagrams
 ![Wiring Diagram - rev1](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/boards/nero/nero-rev1-wiring.png)
+
+
+![Micro pins - rev1](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/boards/nero/nero-rev1-micro-pins.png)
 
 ### Schematics
 
