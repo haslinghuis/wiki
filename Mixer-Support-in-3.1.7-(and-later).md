@@ -2,7 +2,7 @@
 
 - Beginning with 3.1.7, some rarely used mixers are not supported (being dropped) from F1 and F3 firmwares due to flash space limitation.
 - In addition, some mixers are not supported from the beginning (or at least I couldn't find any remains of the code).
-- If unsupported mixer is specified, it will reset to custom mix (on 3.1.8 or 3.2 and later).
+- On 3.2 and later, unsupported mixer is detected and reset to default (mixers without servos to "Custom" and mixers with servos to "Custom Airplane").
 
 ### The future
 
