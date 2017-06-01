@@ -42,8 +42,12 @@ Available here:
 ## Configuration Information
 
 ### Wiring Diagrams
+
+Main wiring details:
+
 ![Wiring Diagram - rev1](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/boards/nero/nero-rev1-wiring.png)
 
+Micro pin details:
 
 ![Micro pins - rev1](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/boards/nero/nero-rev1-micro-pins.png)
 
