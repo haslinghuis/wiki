@@ -114,7 +114,23 @@ Package
 
 ## FAQ & Known Issues
 
-## Other Resources
-_(add setup guides and instructional material here)_
+`“Board Align” Feature Documentation`
 
-Rcgroups Thread: `link goes here`
+`https://www.youtube.com/watch?v=jSzWRnAqsSY`
+
+`How To Check For Continuity With Your Multimeter`
+
+`https://www.youtube.com/watch?v=MZ8YxBMQI5Q`
+
+`All About Betaflight Drivers, Including How To Install Them`
+
+`https://www.youtube.com/watch?v=m4ygG6Y5zXI` 
+
+## Other Resources
+`Contact us at:`
+
+`•Email: productservice@holybro.com`
+
+`•Facebook Page: Holybro`
+
+`•Facebook Group: Holybro Shuriken Owner Group`
