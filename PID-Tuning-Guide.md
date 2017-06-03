@@ -68,10 +68,11 @@ The second reason is either a Bad motor or Bad ESC or even a loose prop nut. If 
 Another fairly common issue. Read carefully the Wiki [FAQ #56](https://github.com/borisbstyle/betaflight/wiki/Frequently-Asked-Questions#how-do-i-solve-yaw-twitches-or-mid-throttle-oscillations-)  for discussion of the issue and possible solutions.
 
 ### Additional Notes for BetaFlight version 3 (3.0 & 3.1):
-1. Roll and Pitch 'P' terms can be pretty high without oscillation so increasing until oscillates then reducing may not work. 
-2. There is Dterm Setpoints, weight & threshold sliders in the config GUI. These can help refine the tune. Discussion about how to adjust these is in the 3.0.x & 3.1.x Wiki pages. If increasing D term does not help bounce back then try adjust the Setpoint sliders.
-3. Yaw tuning may require adjustment of lower yaw_accel_limit and yaw_p_limit setting especially with high power, high kv motors.  
-4. 
+1. The Default PIDs work very well on most copters and only require slight tweaking of the PIDs.
+2. Roll and Pitch 'P' terms can be pretty high without oscillation so increasing until oscillates then reducing may not work. 
+3. There is Dterm Setpoints, weight & threshold sliders in the config GUI. These can help refine the tune. Discussion about how to adjust these is in the 3.0.x & 3.1.x Wiki pages. If increasing D term does not help bounce back then try adjust the Setpoint sliders.
+4. Yaw tuning may require adjustment of lower yaw_accel_limit and yaw_p_limit setting especially with high power, high kv motors.  
+5. Some high power systems do not fly with Default. Those require 'tuning from scratch' much like the procedures above. Check the video linked to in the DJI Snail System tuning at the bottom of this page.
 
 ### I have between 14 and 17 for D with P in the upper 50s. I can't get prop wash no matter what I try with pt1 and one or both notches disabled. Is there really any benefit to trying higher D if the quad is flying so well?  
 Answer from ctzsnooze:   
