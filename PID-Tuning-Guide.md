@@ -63,6 +63,7 @@ For more information see these resources:
 ### Death Rolls
 The most common reason for a copter to not stop rolling (flipping) is too low of minimum throttle setting. This is basically the ESC not being able to get a motor running after commanding a motor to minimum throttle. In a BB log this shows up as a motor being Commanded to Full throttle but copter keeps rolling. First thing to try is increase the min_throttle setting (Idle % if running DSHOT protocol).   
 The second reason is either a Bad motor or Bad ESC or even a loose prop nut. If using BB logging then you will see a motor being Commanded to full throttle but that arm will drop (if the Accelerometer is enabled) indicating that motor is Not producing thrust. This is a Swap and try to see if it is the motor or the ESC.  
+Third may be an ESC/Motor combination that just doesn't work. Not all ESC run all of the newer high power motors well. If replacing an ESC with another of the same doesn't fix the issue then try a different ESC (Brand/model).  
 
 ### Yaw Twitches and Mid-Throttle Oscillations  
 Another fairly common issue. Read carefully the Wiki [FAQ #56](https://github.com/borisbstyle/betaflight/wiki/Frequently-Asked-Questions#how-do-i-solve-yaw-twitches-or-mid-throttle-oscillations-)  for discussion of the issue and possible solutions.
