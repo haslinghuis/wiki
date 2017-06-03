@@ -1,3 +1,5 @@
+**_If you're looking to fly a simple delta wing, scroll to bottom._**
+
 Some have asked if BetaFlight can control a Fixed wing aircraft. 
 
 ### Boris' Note:  
