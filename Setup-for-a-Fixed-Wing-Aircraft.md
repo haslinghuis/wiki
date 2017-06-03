@@ -91,3 +91,53 @@ I think that's everything I learned so far regarding betaflight and planes.
 Not a great video (first test in LOS flight) but it is only to illustrate that Betaflight can work pretty good with a fixed wing.   
 I'm impressed of the landing speed in acc mode. It was very windy (about 20kmh)
 https://youtu.be/DpmqeoRGwgA  
+
+---
+# Betaflight for a **Flying Delta Wing** (using a Betaflight F3)
+#### by DangerFlite
+
+I've been reading the above text and following the thread on rcgroups trying to get a simple rate mode working on my delta wing using a Betaflight F3. I ran into problems because:
+
+* I'm not using a Naze32, so the aforementioned resource assignments don't apply
+* I'm only using two elevons, so the mixes applied above don't work for me
+* Betaflight is confusing when it comes to servos (everywhere in betaflight it appears to be servo 3 / 4 for the elevons but when you assign resources, they are referred to as servo 1 / 2)
+* It is a lot easier than it looks. The purpose of this guide is to help someone who doesn't already know
+
+So far I have the flight controller working great in passthrough mode (manual flight), Acro/rate mode (stabilised), and Angle mode (self-level). Even in passthrough mode the BFF3 is still useful as it enabled the use of an SBUS receiver, telemetry, battery monitoring, and an excellent OSD.
+
+#### Wiring configuration
+
+* Connect the ESC to 'M1' pad on the Betaflight F3 (1/2 in below image)
+* Connect left elevon servo to 'M3' pad on the Betaflight F3 (3 in below image)
+* Connect right elevon servo to 'M4' pad on the Betaflight F3 (4 in below image)
+
+![betaflight mixer](http://i.imgur.com/EU7EVEJ.png)
+
+#### Betaflight Settings
+
+* Flash betaflight with full chip erase
+* Configure your ports / receiver / other settings as normal
+* Configuration tab > Select "Flying Wing" mixer type
+* CLI tab > Run the following commands to get the servos working:
+>resource servo 1 b08
+
+>resource servo 2 b09
+
+>save
+* Servo tab > Reverse either servo **3** or **4** (if needed) by setting the rate to -100 (assuming 100% of travel is needed)
+* Modes tab > Set your arm switch
+* Modes tab > Set up passthrough mode for manual flight (no stabilisation) and Angle mode for self levelling (useful once you get the trim right). I recommend having passthrough mode set in case of any strange tuning issues so you can take control.
+
+#### Some troubleshooting and extra notes:
+
+If your plane reacts correctly to roll but wrongly to pitch (or vice versa), swap the resource assignments of the servos
+
+My ESC refused to work at all even though it worked fine when the FC was set to the Quad X configuration. The below configuration fixed the issue. You might be fine to leave these at MULTISHOT125 or one of the DSHOT settings depending on what your ESC supports. It must be something to do with timers. The servos worked regardless of the ESC protocol selected.
+
+* _Configuration tab > Set ESC/Motor protocol to "PWM"†_
+* _Configuration tab > Enabled "Motor PWM Separated from PID Speed"†_
+* _Configuration tab > Set "Motor PWM Frequency" to 480hz†_
+
+All of the PID loop / gyro update frequency combinations I tried yielded the same results. 
+
+I had to raise pitch/roll P significantly and almost completely disable the I term to get the wing feeling responsive (and not overshoot the angles a lot). D remained basically where it was. Great having the OSD to configure this in the field!
