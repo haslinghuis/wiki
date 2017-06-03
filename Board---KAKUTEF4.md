@@ -2,22 +2,32 @@
 
 ## Description
 
-`The Holybro Kakute F4 All-In-One flight controller makes it easy to build your multirotor. It integrates flight controller (FC), power distribution board (PDB), and on-screen display (OSD) in one. The Kakute F4 AIO’s layout makes it easy to wire up the other components of the multirotor while keeping the build neat and tidy.'
+`The Holybro Kakute F4 All-In-One flight controller makes it easy to build your multirotor. It integrates flight controller (FC), power distribution board (PDB), and on-screen display (OSD) in one. The Kakute F4 AIO’s layout makes it easy to wire up the other components of the multirotor while keeping the build neat and tidy.`
 
 ![](https://github.com/jamming/image/blob/master/kakuteF4-package1.jpg?raw=true)
 
 ## Features
-`•Supports Betaflight and Cleanflight.
-`•Betaflight OSD. Change PIDs, adjust common configuration parameters, and change video transmitter channel and power level, all using your transmitter sticks and goggles.
-`•Soft-mounting built in. The “gyro” chip on this board is mounted on vibration-isolating foam. This means that there is no need to soft-mount the board itself.
-`•New high-performance / low-noise / high sensitivity IMU. ICM20689 with 6-axis gyro and accelerometer. Can run at up to 32 kHz.
-`•2 oz copper PCB allows up to 120A maximum continuous current.
-`•Dedicated bootloader button for easy firmware flashing.
-`•Low-profile design fits into even very compact frames.
-`•Input voltage 7v to 42v. Power the board directly from the flight pack, up to 6S (on “BAT” pad only).
-`•Automatic voltage monitoring. No need to run a separate vBat wire for voltage monitoring; the Kakute F4 AIO monitors voltage directly from the battery power lead.
-`•Filtered voltage output for clean, noise-free video. On-board regulators output 5v at up to 1.5 amps and 3.3v at up to 200 mA to power peripherals such as receiver, video transmitter, FPV camera, or LED strip.
-`•Supports BLHeli passthrough for easy ESC upgrade and configuration.
+`•Supports Betaflight and Cleanflight.`
+
+`•Betaflight OSD. Change PIDs, adjust common configuration parameters, and change video transmitter channel and power level, all using your transmitter sticks and goggles.`
+
+`•Soft-mounting built in. The “gyro” chip on this board is mounted on vibration-isolating foam. This means that there is no need to soft-mount the board itself.`
+
+`•New high-performance / low-noise / high sensitivity IMU. ICM20689 with 6-axis gyro and accelerometer. Can run at up to 32 kHz.`
+
+`•2 oz copper PCB allows up to 120A maximum continuous current.`
+
+`•Dedicated bootloader button for easy firmware flashing.`
+
+`•Low-profile design fits into even very compact frames.`
+
+`•Input voltage 7v to 42v. Power the board directly from the flight pack, up to 6S (on “BAT” pad only).`
+
+`•Automatic voltage monitoring. No need to run a separate vBat wire for voltage monitoring; the Kakute F4 AIO monitors voltage directly from the battery power lead.`
+
+`•Filtered voltage output for clean, noise-free video. On-board regulators output 5v at up to 1.5 amps and 3.3v at up to 200 mA to power peripherals such as receiver, video transmitter, FPV camera, or LED strip.`
+
+`•Supports BLHeli passthrough for easy ESC upgrade and configuration.`
 
 ## Image
 
@@ -36,37 +46,62 @@ Package
 
 
 ## Specifications
+
 `•MCU: STM32F405RGT6 32-bit processor`
+
 `•IMU: ICM20689 (SPI)`
+
 `•USB VCP Driver (all UARTs usable simultaneously; USB does not take up a UART)`
+
 `•3 hardware UARTS (UART1,3,6)`
+
 `•128 Mbit Dataflash chip for Blackbox logging`
+
 `•Dimensions: 35x43x6mm (includes USB in height)`
+
 `•Mounting Holes: Standard 30.5mm square to center of holes `
+
 `•Weight: 7g`
 
 ## Pinout Diagram
 ![](https://github.com/jamming/image/blob/master/kakuteF4-size.jpg?raw=true)  
+
 `BUZ- : Piezo buzzer negative leg`
+
 `BUZ+ : Piezo buzzer positive leg`
+
 `LED       : WS2182 addressable LED signal wire`
+
 `SmartPort : FrSky SmartPort Telemetry`
+
 `R3, T3    : UART3 RX(with sbus invertor) and TX`
+
 `R6, T6    : UART6 RX and TX`
+
 `RSSI      : Analog (0-3.3v) RSSI input`
+
 `3V3       : 3.3v output (200 mA max)`
+
 `5V        : 5v output (1.5 A max)`
+
 `M1 to M6  : Motor signal outputs`
+
 `VO        : Video output to video transmitter`
+
 `VI        : Video input from FPV camera`
+
 `Boot      : Bootloader button`
+
 `G         : Ground`
+
 `B+        : Battery positive voltage (2S-6S)`
+
 `+         : Main battery lead positive`
+
 `-         : Main battery lead negative`
 
 ## Target Code   
-KAKUTEF4
+`KAKUTEF4`
 
 ## Hardware Designs (if available)
 
