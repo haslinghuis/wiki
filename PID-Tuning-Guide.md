@@ -1,6 +1,7 @@
 # How should I tune my Copter ?
 
 ## Introduction
+#### NOTE: These Tuning instructions were written for ßF 2.x and earlier. For later versions read the additional information and discussions below. 
 
 In general, to achieve a good tune, we want to use AS MUCH P as possible without introducing oscillations.  In a sense P is proportional to the amount of control you have over an axis. Less P is less positive control. More P is more positive control.  The problem is that if P gets too high, it will start to overshoot the intended end state.  This causes it to constantly overcorrect -- hence, oscillations.  High quality ESCs and faster PID loop times help with this as well by allowing the flight controller to make corrections more quickly and effectively.
 
