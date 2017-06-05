@@ -115,5 +115,7 @@ Rcgroups Thread: https://www.rcgroups.com/forums/showthread.php?2795213-NEW-Beta
 
 Probably the first video about the BFF3: https://www.youtube.com/watch?v=kr16b45Lhw4
 
+helpful for someone who is starting a build with the Betaflight F3 FC...(Note: this is a ARMATTAN CHAMELEON Build using the BFF3 FC).   https://www.youtube.com/watch?v=wmbRVg3stoE  
+
 ## Image
 http://www.fpvmodel.com/-pre-order-betaflight-f3-flight-controller_g1231.html
