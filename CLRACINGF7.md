@@ -17,16 +17,18 @@ CLRACINGF7
 * PPM/UART NOT Shared: YES
 * Battery Voltage Sensor: 10:1
 * Current sensor: 0.5 mOhm, 250 Current scale in the setting
-* Integrated Voltage Regulator: 3A 5v 
+* Integrated Voltage Regulator: 1.2 A 5v 
 * 120A Current sensing PDB and 150A burst current for 10S on the current sensing Resistor
-
+* Sbus/Sat/etc (UART 6)
+* Telemetry ( UART 1 )
 ### Software
   - Firmware target: CLRACINGF7
 
 ### Features
 * betaflight osd
 * build in PDB
-* build in BEC for camera and VTX (1.2A)
+* build in Filter for camera and VTX
+
 ## Manufacturers and Distributors
 
 www.clrpowered.com
