@@ -442,7 +442,7 @@ Since I often re-use not so great props, and 'fly home' with bent ones often eno
 
 At least one notch needs to match the prop resonance, so go pluck your prop! :-)   
 
-#### [Video- How to Quickly Find Natural Resonant Frequency of a Propeller ](https://www.youtube.com/watch?v=xFcfES2qAB8)
+#### [Video- How to Quickly Find Natural Resonant Frequency of a Propeller. Uses the app: FFT spectrum analyzer  ](https://www.youtube.com/watch?v=xFcfES2qAB8)
 
 ### Filter Delays
 
