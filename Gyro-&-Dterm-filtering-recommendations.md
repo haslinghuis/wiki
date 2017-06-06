@@ -419,6 +419,28 @@ That’s the whole idea behind notch filtering; blackbox logs are the only way t
 
 PS - also there are certain points in BLHeli where the motors are not controlled as smoothly as other points. If you spool motors slowly up without props in the motors tab you will hear them - it just sounds gritty. You can feel it (and see it if the accelerometer is enabled). Sometimes these points provide another trigger for resonance. If the rotational speed of the motors at these points coincides with other resonances you then get issues at those throttle points that aren't apparent elsewhere. 
 
+#### continued experiments and discussion from ctzsnooze:   
+Spent half the day messing with filters and logging stuff. Bluejay F4 board, O ring mounted with beveled overdrilled holes (not a super soft mount, but not hard either), Tornado T2's.
+
+I'd previously optimised P and D, was trying a 'from the very basics' test of a range of filter strategies.
+
+I tried arming with only PT1 both at 130 on Gyro and D, and with no notches at all. Terrible grinding noise at idle! Log shows massive but really tightly defined sine wave peak at 180Hz. Looking at the props I can see them flexing like crazy, with so much energy that the frame flex makes the prop nuts are a little blurry. At slightly lower lowpass settings, but still with no notches at all, I can throttle up past this and the motors run smoothly...
+
+So I was sitting there, wondering what to try next, flicking the ends of the props (stiff 50403's), and I noticed that they have a musical 'note'. A fundamental frequency. I wondered what frequency that was? Recorded the plucked prop sound, checked its frequency - guess what, nearly exactly 180Hz. Hmm!
+
+Got some cyclones, which I use sometimes, they 'pluck' at 300Hz (stiffer).
+
+So I stuck a gyro filter with midpoint 180 and low point at 140 and *bingo* no more shaking - able to bring the lowpass values up quite high now. So I made another profile for cyclones with the notch centred around 300. Same outcome!
+
+I also noticed that with PT1 on both gyro and D, the proportion of noise on D compared to P becomes progressively greater as frequency increases. To keep the two in a constant relationship, a biquad on D works much better. Once the amplitudes of P and D sort of are the same, we only need to put notches in the right place on gyro, and none are needed on D.
+
+So I ended up with PT1 on gyro, biquad on D, and just a single gyro notch to suit the exact prop resonance point, nothing else. Flew great!
+
+I set both lowpass points at the same frequency, and tested higher and lower. Too high (with high PIDs), and the shakes would reappear either side of the gyro notch! Clearly there was some upper value where there was so little filtering that even good props would feedback and shake, and there also was a lower bound were bad props were happily tolerated.
+
+Since I often re-use not so great props, and 'fly home' with bent ones often enough, I went for lower filters. I ended up with both lowpass filters cutting from 80, PT1 on gyro and biquad on Dterm, a single gyro notch at 140/180 (for light but stiff 50403's), P around 40-50 and D around 25. I'd recommend this as a basic starting 'recipe' from which one could lift the lowpass values later.
+
+At least one notch needs to match the prop resonance, so go pluck your prop! :-)   
 
 ### Filter Delays
 
