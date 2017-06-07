@@ -232,6 +232,8 @@ Always use the Config GUI to setup and manually type into the CLI after doing a 
 - Everyone having issues with weird freakouts,  make sure that this isn't the culprit. I have no idea if it would be the cause but just throwing this out there, as I know a lot of people don't read the changelog. Adamtfc  
 There is no check for the D Term Notch Filter to ensure that the cutoff frequency ('D Term Notch Filter Cutoff') is not higher than the mid frequency ('D Term Notch Filter Frequency'). WARNING: If a cutoff frequency that is higher than the mid frequency is configured, this can result in a runaway motor acceleration. (Applies to versions prior to 3.1.6 too.)  
 
+- Some are reporting issue with copter shaking or oscillating with BB logging directly to and SD card. This is in [Github Issue #2631](https://github.com/betaflight/betaflight/issues/2631).
+
 ##### Note: With v3.1 and later, servos must be configured manually by resource cli command.Do NOT use  CHANNEL_FORWARDING. It does something really nasty.     
 [See Teralift's post here](https://www.rcgroups.com/forums/showpost.php?p=36792606&postcount=44331)   
 [Servo mapping on a Naze32 to use Servo_tilt by TeraLift](https://www.rcgroups.com/forums/showpost.php?p=36821753&postcount=44612)
