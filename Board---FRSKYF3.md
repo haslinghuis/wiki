@@ -27,6 +27,7 @@ For maximum ease of use, some FrskyF3's board has an onboard PDB up to 6s with a
   Transponder: Yes
   Beeper: Inverted
   Receiver: Frsky X8R
+  RSSI:SBUS channel 8
 
 ## Manufacturers and Distributors
   Frsky(Manufacturers)
