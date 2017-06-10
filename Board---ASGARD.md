@@ -9,7 +9,7 @@ The uni-directional nature of the buffer prevents half-duplex (bi-directional) p
 
 #### Inverter Pin Configuration
 
-V1 and V2 has different inverter configuration. V2's inverter control is PC8, which is different from that of V1, which is PC9. As a matter of fact, PC8 is same as the pin used by OMNIBUS F4 V3.
+V1 and V2 have different inverter configuration. V2's inverter control is PC8, which is different from that of V1, which is PC9. As a matter of fact, PC8 is same as the pin used by OMNIBUS F4 V3.
 
 This derives following instruction regarding inverter configuration for RX6, for BF post-3.1.7 (3.2).
 
