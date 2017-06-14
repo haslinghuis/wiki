@@ -109,7 +109,7 @@ Package
 
 ## Manufacturers and Distributors
 
-`www.holybro.com`(Manufacturer)
+ www.holybro.com (Manufacturer)
 
  www.banggood.com; 
  www.unmannedtechshop.co.uk; 
@@ -130,7 +130,8 @@ Package
 `https://www.youtube.com/watch?v=m4ygG6Y5zXI` 
 
 ## Other Resources
- manual:
+
+ Manual:
  http://www.holybro.com/manual/Holybro_Kakute_F4_AIO_Manual_v1.4.pdf
 
 `Contact us at:`
