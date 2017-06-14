@@ -109,11 +109,11 @@ Package
 
 ## Manufacturers and Distributors
 
-`www.holybro.com`(Manufactures)
+`www.holybro.com`(Manufacturer)
 
- www.banggood.com
- www.unmannedtechshop.co.uk
- www.gearbest.com
+ www.banggood.com; 
+ www.unmannedtechshop.co.uk; 
+ www.gearbest.com;
 
 ## FAQ & Known Issues
 
