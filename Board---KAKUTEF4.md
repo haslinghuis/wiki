@@ -109,7 +109,7 @@ Package
 
 ## Manufacturers and Distributors
 
- www.holybro.com (Manufacturer)
+ www.holybro.com (Manufacturer & Designer)
 
  www.hobbyking.com;
 
