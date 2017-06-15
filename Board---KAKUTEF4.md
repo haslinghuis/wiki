@@ -112,8 +112,11 @@ Package
  www.holybro.com (Manufacturer)
 
  www.hobbyking.com;
- www.banggood.com; 
- www.unmannedtechshop.co.uk; 
+
+ www.banggood.com;
+ 
+ www.unmannedtechshop.co.uk;
+
  www.gearbest.com;
 
 ## FAQ & Known Issues
