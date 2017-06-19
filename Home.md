@@ -59,7 +59,10 @@ https://chrome.google.com/webstore/detail/betaflight-configurator/kdaghagfopacdn
 *Then you'll see the new configurator in your Chrome extensions.*
 
 ## BlackBox Viewer
-The Latest Viewer and source is here:   
+Viewer Releases are here:
+https://github.com/betaflight/blackbox-log-viewer/releases
+
+The Latest Viewer source is here:   
 https://github.com/betaflight/blackbox-log-viewer  
 See [BB Logging and Usage](https://github.com/betaflight/betaflight/wiki/Black-Box-logging-and-usage) Wiki page on using the BB logger. 
 
