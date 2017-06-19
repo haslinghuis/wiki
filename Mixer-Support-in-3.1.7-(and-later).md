@@ -8,7 +8,7 @@
 
 Ultimately, motor and servo mixes will be dynamically loaded by configurator, and rarely used mixers are likely to resurrect (if devs find them useful enough).
 
-### The support matrix
+### The support matrix (x = not included, o = included)
 
 | Mixer            | F1 (*1) | F3 | F4 & F7 | Note |
 |------------------|---------|----|---------|------|
