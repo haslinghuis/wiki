@@ -18,6 +18,17 @@ The automatic bind pin selection can be overridden by specifying a pin to use by
 resource RX_BIND pin-id
 ```
 
+### Bind Plug
+
+The bind plug facility is also reconfigurable with 3.2.
+
+Use resource`RX_BIND_PLUG` to specify the bind plug pin.
+```
+resource RX_BIND_PLUG pin-id
+```
+
+Note that only the `Negative logic` plug (short to ground to make it work) type is supported (for now).
+
 ### Bind Pin Override example - ASGARD
 
 ASGARD's default serial RX pad is UART6_RX. However, since there is a uni-directional inverter on this pad, it can not be used as a bind pin. Fortunately, there is another MCU pin that is connected directly to this pad, which is PB8. The PB8 is used as PPM input when PPM is selected as a receiver input, but you can utilize this pin to drive receiver signal line.
