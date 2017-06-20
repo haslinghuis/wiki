@@ -25,6 +25,6 @@ To do this, override the default bind pin
 ```
 resource RX_BIND B8
 ```
-then follow the normal satellite binding procedures.
+then follow the normal satellite binding procedure using `spektrum_sat_bind` CLI variable and power cycling.
 
 Note: It is unfortunate SRXL (still) does not work on UART6 for ASGARD.
