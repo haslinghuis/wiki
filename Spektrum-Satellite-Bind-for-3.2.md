@@ -23,3 +23,5 @@ To do this, override the default bind pin
 resource RX_BIND B8
 ```
 Then follow normal satellite binding procedures.
+
+Note: It is unfortunate SRXL (still) does not work on UART6 for ASGARD.
