@@ -1,3 +1,6 @@
+
+**NOT MERGED YET**
+
 ### General Description
 
 Prior to 3.2, Spektrum satellite bind pin was fixed to a pre-defined pin, usually a RX pin of fixed UART port.
