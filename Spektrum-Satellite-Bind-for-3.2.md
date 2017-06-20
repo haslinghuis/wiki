@@ -4,7 +4,7 @@ Prior to 3.2, Spektrum satellite bind pin was fixed to a pre-defined pin, usuall
 
 With 3.2 and later,
 
-- The bind pin automatically defaults to RX pin of the UART port the satellite receiver is configured; if you configure UARTx for serial RX and set serial RX protocol to one of Spektrum kind, then UARTx_RX will be used for binding.
+- The bind pin automatically defaults to RX pin of the UART port the satellite receiver is configured; if you configure UARTx for serial RX and set serial RX protocol to one of SPEKTRUM kind, then UARTx_RX will be used for binding.
 
 - If SRXL is selected as a serial RX protocol, then UARTx_TX will be used for binding.
 
