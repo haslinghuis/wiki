@@ -49,9 +49,9 @@ Matek Systems www.mateksys.com
 ## FAQ & Known Issues
 
 
-Setup Guide: 
+Setup Guide: http://f405.mateksys.com
 
-Rcgroups Thread: 
+Rcgroups Thread: https://www.rcgroups.com/forums/showthread.php?2889298-MATEKSYS-Flight-Controller-F405-OSD-32K-Gyro-5xUARTs-SD-Slot
 
 
 
