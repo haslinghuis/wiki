@@ -254,6 +254,8 @@ Some may like this one better and it is also recommended to run faster PID loop 
 ### Betaflight 2DOF PID controller
 This is a NEW PIDC controller.  
 
+On top of that also the setpoint weight from 2DOF architecture is used for Derivative component. So technically it is a Kp, Ki, Kd, c from pid2 in [here.](https://www.mathworks.com/help/control/ug/two-degree-of-freedom-2-dof-pid-controllers.html?s_tid=gn_loc_drop)
+
 Post from Boris about this differences between the Legacy and 2DOF PIDC: 
 http://www.rcgroups.com/forums/showpost.php?p=35460572&postcount=35822
 
