@@ -98,9 +98,11 @@ I don`t want to draw power from the board with my servo, so the + - of the servo
 Now you must assign your servo in cli:  
 If you type 'resource' in the CLI, you will see that motor 8 are on A03, but Serial_Rx 2 are also on A03
 What I did is:  
+```
 Resource motor 8 None
 Resource Serial_Rx 2 None
 Resource servo 1 A03  
+```
 
 And my servo are working, I did not have to change directions on servo or epa etc.   
 I`m no pro and still don`t know what Serial_Rx 2 are doing, but everything is working correctly in the last 2 flights. I have a taranis with a x4r on Sbus and smartport - pids are showing on my taranis as well as battery voltage - seems like I don't use Serial_Rx 2.    
