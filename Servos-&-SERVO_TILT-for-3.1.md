@@ -28,7 +28,7 @@ __Target/board maintainers, please add example entries that reflect mappings bas
 
 ---
 #### Example 1: NAZE32 "__Shift by 2__" style assignment
-If you have a NAZE32 already setup based on "__Shift Motor Outputs by 2__" rule, and it was working prior to v3.1, here is your assignment.
+If you have a NAZE32 already setup based on "__Shift Motor Outputs by 2__" rule, and it was working prior to v3.1, here is your assignment. (On F1 boards Servos output to motors #1 & 2 to avoid Timer conflicts)
 ```
 resource motor 1 none
 resource motor 2 none
@@ -94,17 +94,18 @@ resource servo 1 b1
 Just to give some feedback how I got my tricopter servo to work 100% on a F3 board(Xracer F303) and betaflight 3.1.7  
 
 Motor 1-3 are connected to motor pin 1-3.  
-I don`t want to draw power from the board with my servo, so the + - of the servo goes to a 5v ubec and the signal goes to motor pin 8.  
+I don`t want to draw power from the board with my servo, so the + - of the servo goes to a 5v ubec and the signal goes to motor pin 8 (On F3 boards Servos output to motors #7 & 8 to avoid Timer conflicts).  
 Now you must assign your servo in cli:  
 If you type 'resource' in the CLI, you will see that motor 8 are on A03, but Serial_Rx 2 are also on A03
 What I did is:  
 Resource motor 8 None
 Resource Serial_Rx 2 None
-Resource servo 1 A03
+Resource servo 1 A03  
 
-And my servo are working, I did not have to change directions on servo or epa etc. 
-I`m no pro and still don`t know what Serial_Rx 2 are doing, but everything is working correctly in the last 2 flights. I have a taranis with a x4r on Sbus and smartport - pids are showing on my taranis as well as battery voltage - seems like I don't use Serial_Rx 2.  
+And my servo are working, I did not have to change directions on servo or epa etc.   
+I`m no pro and still don`t know what Serial_Rx 2 are doing, but everything is working correctly in the last 2 flights. I have a taranis with a x4r on Sbus and smartport - pids are showing on my taranis as well as battery voltage - seems like I don't use Serial_Rx 2.    
 I halved the P and I 50% from stock on yaw, but the tail were loose, went back to stock and it`s rock solid with no oscillation.   
+
 ---   
 #### New Example Place Holder
 
