@@ -25,7 +25,7 @@
  - [DSHOT ESC Protocol](/betaflight/betaflight/wiki/DSHOT-ESC-Protocol) 
  - [ESC Programming Pass-through](/betaflight/betaflight/wiki/Betaflight-ESC-pass-through)
  - [ESC-Telemetry](/betaflight/betaflight/wiki/ESC-Telemetry) 
- - [SERVO_TILT for 3.1](https://github.com/betaflight/betaflight/wiki/SERVO_TILT-for-3.1)
+ - [Servos & SERVO_TILT for 3.1](https://github.com/betaflight/betaflight/wiki/SERVO_TILT-for-3.1)
  - [CHANNEL_FORWARDING for 3.1](https://github.com/betaflight/betaflight/wiki/CHANNEL_FORWARDING-for-3.1)
  - [TBS Unify SmartAudio](/betaflight/betaflight/wiki/Unify-Smartaudio)
  - [IRC Tramp](/betaflight/betaflight/wiki/IRC-Tramp)
