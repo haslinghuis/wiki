@@ -111,6 +111,8 @@ Package
 
  www.holybro.com (Manufacturer & Designer)
 
+Distributors:
+
  www.hobbyking.com;
 
  www.banggood.com;
