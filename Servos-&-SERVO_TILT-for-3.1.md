@@ -17,17 +17,9 @@ Output 7: TIM15 CH1
 Output 8: TIM15 CH2
 
 ```
-Output 1: TIM16 CH1
-Output 2: TIM17 CH1
-Output 3: TIM4 CH1
-Output 4: TIM4 CH2
-Output 5: TIM4 CH3
-Output 6: TIM4 CH4
-Output 7: TIM15 CH1
-Output 8: TIM15 CH2
 
 Grand rule is that channels of a timer can not be assigned to different functions.
-If you have motors connected to Outputs 3 and 4, then TIM4 is locked to motor and can not be used for something else. This means that you can not use Output 5 and 6 for servos.
+If you have motors connected to Outputs 3 and 4, then TIM4 is locked to motor and can not be used for something else. This means that you can not use Output 5 and 6 for servos. (The exceptional case is when motors are controlled by legacy PWM protocol; in this case, motors and servos can be mixed on channels of the same timer.)
 
 Options are
 (1) Output 1 & 2: Servos and Output 3~6: Motors
