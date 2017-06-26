@@ -1,6 +1,43 @@
 ### Introduction
 
 Starting with v3.1, default servo output assignments are deleted from the firmware. Instead, servo outputs must be explicitly assigned by`resource` CLI command. (For details of the `resource` command, please refer to [Betaflight resource remapping](https://github.com/betaflight/betaflight/wiki/Betaflight-resource-remapping).
+---
+Background   
+Internal on STM32 processors are Timers that are used for timing the output pulse to motor, servos, etc. Each FC board can have different STM32 pins connected to input & outputs on the FC. This is one of the main reasons for different Target hex files. The pins and internal resource are Defined in the "target'c' source files found [here.](https://github.com/betaflight/betaflight/tree/master/src/main/target)   
+
+For example: The timer and channel assignment for outputs SPRacingF3/target.c lists: 
+```
+Output 1: TIM16 CH1
+Output 2: TIM17 CH1
+Output 3: TIM4 CH1
+Output 4: TIM4 CH2
+Output 5: TIM4 CH3
+Output 6: TIM4 CH4
+Output 7: TIM15 CH1
+Output 8: TIM15 CH2
+
+```
+Output 1: TIM16 CH1
+Output 2: TIM17 CH1
+Output 3: TIM4 CH1
+Output 4: TIM4 CH2
+Output 5: TIM4 CH3
+Output 6: TIM4 CH4
+Output 7: TIM15 CH1
+Output 8: TIM15 CH2
+
+Grand rule is that channels of a timer can not be assigned to different functions.
+If you have motors connected to Outputs 3 and 4, then TIM4 is locked to motor and can not be used for something else. This means that you can not use Output 5 and 6 for servos.
+
+Options are
+(1) Output 1 & 2: Servos and Output 3~6: Motors
+
+or
+
+(2) Output 1~4: Motors and Output 7 and 8: Servos
+
+Then there is another point of consideration if you are using Dshot; DMA channel conflict. 
+
 
 ---
 ### General Information
