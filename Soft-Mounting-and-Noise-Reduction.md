@@ -125,6 +125,9 @@ I use this stuff for soft mounting/vibrations:
 [Caps for ESCs: ](https://www.amazon.com/Panasonic-470uF-Radial-Electrolytic-Capacitor/dp/B00WOQ0ILE?tag=viglink20264-20)   
 It took all that and removing gyro notch filters / PT1 fix to get the F60 Pro quad to run without mid-throttle jitters. Each thing reduced them more and more.   
 
+### List of Soft mounting parts from AILERON8
+[motor mounts](http://pirofliprc.com/1mm-Medium-density-motor-soft-mounting-pad-10-pcs_p_3852.html)  
+
 ### Post on soft motor mounts:  
 https://www.rcgroups.com/forums/showpost.php?p=37788454&postcount=49263  
 
