@@ -4,10 +4,6 @@ All of the information referring to Revolt V2 applies to Skitzo FC as well, it's
 
 Is not currently supported in current BetaFlight builds but can run BetaFlight now with the following instructions.
 
-####Originally Posted by ladysman in Boris' BetaFlight thread on RCG.
-And just like that, its working. Big thanks to Blckmn for getting this working so quickly. Hopefully my pics helped.
-Blckman has noted it WILL be added to 3.1.6 build. However, if you want to test now, you must do the following to get it to function.
-
 1) Install 3.1.7 or higher Betaflight version
 
 2) Solder the pads on the bottom of the board to enable UART 1 for Inversion See this ![Photo.](https://static.rcgroups.net/forums/attachments/4/7/1/6/9/4/a9783283-253-Revolt_V2%20Bottom.jpg)
