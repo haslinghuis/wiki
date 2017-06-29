@@ -59,7 +59,7 @@ https://chrome.google.com/webstore/detail/betaflight-configurator/kdaghagfopacdn
 *Then you'll see the new configurator in your Chrome extensions.*
 
 ## Mobile Flight 2.0 beta for iPhone and iPad  
-See post: https://www.rcgroups.com/forums/showpost.php?p=37815161&postcount=49332  
+Is in Beta Testing- See post: https://www.rcgroups.com/forums/showpost.php?p=37815161&postcount=49332  
 
 ## BlackBox Viewer
 Viewer Releases are here:
