@@ -58,6 +58,9 @@ https://chrome.google.com/webstore/detail/betaflight-configurator/kdaghagfopacdn
 *4. Click on load unpacked extension and point it to the Betaflight Configurator directory (for example D:/betaflight-configurator)*    
 *Then you'll see the new configurator in your Chrome extensions.*
 
+## Mobile Flight 2.0 beta for iPhone and iPad  
+See post: https://www.rcgroups.com/forums/showpost.php?p=37815161&postcount=49332  
+
 ## BlackBox Viewer
 Viewer Releases are here:
 https://github.com/betaflight/blackbox-log-viewer/releases
