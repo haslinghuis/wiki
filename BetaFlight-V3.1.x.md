@@ -28,6 +28,9 @@ Mixer Support: https://github.com/betaflight/betaflight/wiki/Mixer-Support-in-3.
 - Fix wrong flash sector for F4
 - Fix some broken targets like COLIBRI_RACE
 
+### Known bugs:  
+-  with airmode disabled and small brushed copters  
+
 #### What Defaults changed?
 Boris's answer:  
 Basically people kept complaining that betaflight default D was too conservative and therefore changed.  
