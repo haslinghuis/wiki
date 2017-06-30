@@ -6,6 +6,6 @@ If you have any questions or concerns please advise here. Providing notice here 
 
 You can see some information here : https://github.com/betaflight/betaflight/projects/2 however it doesn't look complete.
 
-From Boris (30 June 2017):
+From Boris (30 June 2017):   
 Well release candidate is around the corner.
 Basically a lot of fundamental changes. Not much of those will affect the user, but there are also quite some new features as well. 
