@@ -70,8 +70,8 @@ Another fairly common issue. Read carefully the Wiki [FAQ #56](https://github.co
 
 ### Additional Notes for BetaFlight version 3 (3.0 & 3.1):
 1. The Default PIDs work very well on most copters and only require slight tweaking of the PIDs.
-2. Roll and Pitch 'P' terms can be pretty high without oscillation so increasing until oscillates then reducing may not work. 
-3. There is Dterm Setpoints, weight & threshold sliders in the config GUI. These can help refine the tune. Discussion about how to adjust these is in the 3.0.x & 3.1.x Wiki pages. If increasing D term does not help bounce back then try adjust the Setpoint sliders.
+2. Roll and Pitch 'P' terms can be pretty high without oscillation so increasing until oscillates then reducing may not work. You can raise P gain pretty much through the roof and as long as you have nearly any D gain at all, you won't get ringing oscillation on sharp stick moves. P is tuned mostly by feel, and for me anyway, by the amount of propwash oscillation you get. Also, looking for oscillation or bounce at the end of flips and rolls. These are pretty much the only clear indicators of what P is doing other than feel.   
+3. There are Dterm Setpoints, weight & threshold sliders in the config GUI. These can help refine the tune. Discussion about how to adjust these is in the 3.0.x & 3.1.x Wiki pages. If increasing D term does not help bounce back then try adjust the Setpoint sliders.
 4. Yaw tuning may require adjustment of lower yaw_accel_limit and yaw_p_limit setting especially with high power, high kv motors.  
 5. Some high power systems do not fly with Default. Those require 'tuning from scratch' much like the procedures above. Check the video linked to in the DJI Snail System tuning at the bottom of this page.
 
