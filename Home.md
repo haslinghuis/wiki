@@ -1,6 +1,6 @@
-![BetaFlight Notice, version 3.2 will be the last version of Betaflight to support STM32F1 based flight controllers, this includes NAZE, CC3D (original) and CJMCU like flight controllers](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/betaflight/bf3_2_notice.jpg)
+![BetaFlight Notice, version 3.2 will be the last version of Betaflight to support STM32F1 based flight controllers, this includes NAZE, CC3D (original) and CJMCU like flight controllers](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/betaflight/bf3_2_notice.png)
 
-![BetaFlight](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/betaflight/bf_logo.jpg)
+![BetaFlight](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/betaflight/bf_logo.png)
 # Welcome to the BetaFlight Wiki!
 
 New to Betaflight and just want to get started see the [installation](https://github.com/betaflight/betaflight/wiki/Installing-Betaflight) section.
