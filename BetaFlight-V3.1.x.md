@@ -29,7 +29,7 @@ Mixer Support: https://github.com/betaflight/betaflight/wiki/Mixer-Support-in-3.
 - Fix some broken targets like COLIBRI_RACE
 
 ### Known bugs:  
--  with airmode disabled and small brushed copters  
+-  with airmode disabled and small brushed copters  https://github.com/betaflight/betaflight/issues/3016
 
 #### What Defaults changed?
 Boris's answer:  
