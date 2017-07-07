@@ -38,7 +38,7 @@ F405+ICM20602, w/ Betaflight OSD & SD Card Slot
 * w/ Anti-vibration Standoffs
 
 ## Manufacturers and Distributors
-Matek Systems http://www.mateksys.com/?portfolio=f405-osd
+Matek Systems http://www.mateksys.com/?portfolio=f405-osd and http://www.mateksys.com/?portfolio=f405-aio
 
 ## Designers
 Matek Systems www.mateksys.com
@@ -49,9 +49,10 @@ Matek Systems www.mateksys.com
 ## FAQ & Known Issues
 
 
-Setup Guide: http://f405.mateksys.com
+Setup Guide Matek F405: http://f405.mateksys.com
+Setup Guide Matek F405-AIO: http://www.mateksys.com/?portfolio=f405-aio
 
-Rcgroups Thread: https://www.rcgroups.com/forums/showthread.php?2889298-MATEKSYS-Flight-Controller-F405-OSD-32K-Gyro-5xUARTs-SD-Slot
-
+Rcgroups Thread Matek F405: https://www.rcgroups.com/forums/showthread.php?2889298-MATEKSYS-Flight-Controller-F405-OSD-32K-Gyro-5xUARTs-SD-Slot
+Rcgroups Thread Matek F405-AIO: https://www.rcgroups.com/forums/showthread.php?2912273-Matek-Flight-Controller-F405-AIO
 
 
