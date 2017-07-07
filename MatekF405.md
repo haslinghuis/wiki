@@ -57,4 +57,4 @@ Rcgroups Thread Matek F405: https://www.rcgroups.com/forums/showthread.php?28892
 
 Rcgroups Thread Matek F405-AIO: https://www.rcgroups.com/forums/showthread.php?2912273-Matek-Flight-Controller-F405-AIO
 
-
+Matek FC Facebook Group: https://www.facebook.com/groups/1882519175321708/
