@@ -95,9 +95,10 @@ I still recommend that you slowly remove default filtering as well if your setup
 #### I think best filter removal steps would be.  
 set d_lowpass_type = PT1 (in the CLI) should always be done first and I think possible on every setup.  
 If it is still fine than:  
-Remove notch 1  (set Freq = 0 in the config GUI or CLI to disable Notch filter)  
-Then if still fine remove notch 2   
-Now if your setup is still clean you could even remove dterm notch.  
+Remove notch 1  (set Gyro Notch Filter 1 Frequency[Hz] = 0 in the config GUI or in CLI type "set gyro_notch1_hz = 0" to disable Notch filter)  
+Then if its still fine 
+Remove notch 2 (set Gyro Notch Filter 2 Frequency[Hz] = 0 in the config GUI or in CLI type "set gyro_notch2_hz = 0" to disable Notch filter)  
+Now if your setup is still clean you could even remove the dterm notch (set D Term Notch Filter Frequency[Hz] = 0 in the config GUI or in CLI type "set d_notch_hz = 0" to disable Notch filter).  
 That will give you the best results. Sharpest response, easiest tuning and literally no prop wash on good setups.  
 
 Note that default betaflight filters are made so every beginner can put a quad in air without burning his gear.   
