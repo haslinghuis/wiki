@@ -72,6 +72,8 @@ Remember the spectrum is a *relative* comparator of the frequencies in the noise
 The most important thing is to scroll through and look at the motors traces for how big that noise is. The spectrum is useful for analyzing what you see there, but the motor trace and how it looks is what matters.   
 See [Gyro and Filters](https://github.com/betaflight/betaflight/wiki/Gyro-&-Dterm-filtering-recommendations) for more info.  
 
+### The Spectral data is accumulative which means the longer the time frame of a log the higher the noise in the spectra;l display will be. This makes it impossible to compare the noise from two logs if they are different lengths of time. Therefore, you must compare spectras of same length - say 30 sec on each log, else it has zero meaning. To do it use "I" and "O" keys to mark start and end for analysis.  
+
 #### So by disabling all notches you mean, gyro_notch_1, gyro_notch_2, AND dterm_notch... correct?
 Won't set debug_mode=notch do the same thing or am I misunderstanding?   
 Answer from ctzsnooze:   
