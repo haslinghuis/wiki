@@ -4,13 +4,14 @@
 
 ## Setup
 
-#### From teralift's post in Boris' thread
+#### From teralift's post in Boris' thread (modified a bit)
 
 - Targets  
 TBS SmartAudio is supported on all F3 and F4 targets (except for those with integrated VTX).
 
 - Wiring  
-Just wire the SmartAudio wire to a free hardware UART (TX) port.
+Just wire the SmartAudio wire to a free TX port, hardware UART or software serial.
+(There are some compatibility issues reported; if you have any problems, search the net before going into the BF github repo and cry for help.)
 
 - Configuration  
 The up to date configurator supports easy configuration of the SmartAudio on the selected port.
@@ -49,9 +50,9 @@ The SmartAudio support unlocks certain capabilities of a SmartAudio device, to p
 
 ## Compatibility
 
-- The SmartAudio support was developed and tested with SmartAudio V2 devices (Unify 5G8 Pro and Unify 5G8 Pro HV).
+- Both SmartAudio V1 and V2 devices are supported.
 
-- The SmartAudio V1 may not be compatible with hardware UARTs (as of 2017-02-12). If you have trouble with V1 devices with hardware UARTs, please try the software serial (will be available in v3.1.6 patch release, schedule to be released on 2017-03-01).
+- The SmartAudio V1 is NOT compatible with hardware UARTs (as of 2017-02-12). If you have trouble with V1 devices with hardware UARTs, please try the software serial (available in v3.1.6 patch release or later).
 
 - Unify 5G8 Pro Race Edition:
 Lower frequencies are not supported.
