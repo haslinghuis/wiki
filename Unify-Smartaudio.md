@@ -11,6 +11,7 @@ TBS SmartAudio is supported on all F3 and F4 targets (except for those with inte
 
 - Wiring  
 Just wire the SmartAudio wire to a free TX port, hardware UART or software serial.
+For software serial, be careful that your port may not be labelled TX, or port labelled TX may not work. (It can be freely assigned to valid timer port.)
 (There are some compatibility issues reported; if you have any problems, search the net before going into the BF github repo and cry for help.)
 
 - Configuration  
