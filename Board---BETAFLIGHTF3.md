@@ -51,7 +51,7 @@ _(add FAQs, known issues and workarounds specifically related to this board. ple
 _format is reporter [name], (status): issue contents_
 
  - The DSM2/SBUS pad is connected to RX2
- - LED_STRIP conflicts with motor 2 in Betaflight 3.1.0 when using DShot. Upgrade to version 3.1.6+ to fix it
+ - LED_STRIP conflicts with motor 2 in Betaflight 3.1.0. Upgrade to version 3.1.6+ to fix it.
  - The ground plane acts as a heatsink, making the ground (-) pads difficult to solder to. Preheat the area you're working on with a hot air station at 100°C - 150°C (200°F - 300°F) to make soldering faster and easier
  - SD card needs to be formatted to specific parameters
  - Current sensor needs to be calibrated in BF software
