@@ -77,9 +77,11 @@ Hit return and done
 ### ESC Cal and min/max throttle
 ßF firmware with Dshot does Not use the min_throttle or max_throttle setting, these are ignored.
 Just ensure that in the ESCs (BLHeli Suite) that PPM_MIN_THROTTLE is set to 1000 and PPM_MAX_THROTTLE is set to 2000.  
-Note: This is not needed in BLHeli_S 16.43 and up since the PPM_MIN & MAX values are not used for Dshot.   
-This means that when DSHOT is use NO ESC Calibration is required. Just Select DSHOT.
-#### Even though Dshot doesn't use the min/max values in the ESC (BLHeli) it is recommended to do an ESC cal with one of the Analog Protocols (OneShot or MultiShot) on new and newly Flashed ESCs. This is easy to do with the BLHeli Suite's Motor Tab.
+Note: This is not needed in BLHeli_S 16.43 and up since the PPM_MIN & MAX values are not used for Dshot.
+  
+**This means that when DSHOT is use NO ESC Calibration is required. Just Select DSHOT.**
+
+Even though Dshot doesn't use the min/max values in the ESC (BLHeli) **it is recommended** to do an ESC cal with one of the Analog Protocols (OneShot or MultiShot) on new and newly Flashed ESCs. This is easy to do with the BLHeli Suite's Motor Tab.
 Just select an analog protocol in ßF config and Save first. Then Use the BLHeli Pass-through to Flash and Cal the ESCs.
 
 #### Max ESC update speed supported by different dshot versions:  
