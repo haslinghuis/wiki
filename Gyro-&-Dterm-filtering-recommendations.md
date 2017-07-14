@@ -6,21 +6,21 @@ From version 2.7 onward, the default filtering strength settings are _reduced_ i
 In case your setup is too noisy you need to adjust the filters. Here are some of the recommendations. The more filtering you use the less noise will be let into the system, but that will reduce the overall responsitivity of the pid controller and provide less stability in prop wash scenarios for example. Using as low as possible Dterm can help too.
 
 * Default / Optimal flight performance:
- * gyro_lowpass = 100
- * dterm_lowpass = 110
- * gyro_lpf = OFF
+    * gyro_lowpass = 100
+    * dterm_lowpass = 110
+    * gyro_lpf = OFF
 * Slightly noisy setup:
- * gyro_lowpass = 80
- * dterm_lowpass = 100
- * gyro_lpf = OFF
+    * gyro_lowpass = 80
+    * dterm_lowpass = 100
+    * gyro_lpf = OFF
 * Very noisy setup
- * gyro_lowpass = 50
- * dterm_lowpass = 100
- * gyro_lpf = 188HZ
+    * gyro_lowpass = 50
+    * dterm_lowpass = 100
+    * gyro_lpf = 188HZ
 * 2.6.1 defaults:
- * gyro_lowpass = 80
- * dterm_lowpass = 70
- * gyro_lpf = OFF
+    * gyro_lowpass = 80
+    * dterm_lowpass = 70
+    * gyro_lpf = OFF
 
 ### Example
 Below is a snapshot of the Gyros (top) and PID sum (bottom) using default betaflight 2.8 PID settings. The Blackbox log viewer is zoomed out to 10% which helps to visualize the noise (thick gyro lines = noisy). Before changing the filter settings the quad was nearly unflyable.
