@@ -90,8 +90,8 @@ Currently LEDs need to be disabled to run DSHOT.
 
 ### Servo_tilt with DSHOT on BF3.1: 
 
-Do mod and setup for DSHOT as above.
-Outputs 7 & 8 on the Cyclone (Tornado & Tempest) have timers available for servos (Outputs 5 & 6 might also be available but not tested).
+Do mod and setup for DSHOT as above.   
+Outputs 7 & 8 on the Cyclone (Tornado & Tempest) have timers available for servos (Outputs 5 & 6 might also be available but not tested).   
 In CLI type: 
 
 `resource motor 7 none`   
