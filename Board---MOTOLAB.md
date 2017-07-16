@@ -91,19 +91,19 @@ Currently LEDs need to be disabled to run DSHOT.
 ### Servo_tilt with DSHOT on BF3.1: 
 
 Do mod and setup for DSHOT as above.
-Outputs 7 & 8 on the Cyclone (Tornado & Tempest) have timers avaliable.
+Outputs 7 & 8 on the Cyclone (Tornado & Tempest) have timers available for servos.
 In CLI type: 
 
-`resource motor 7 none   `
-`resource motor 8 none   `
-`resource servo 1 A03   `
-`resource servo 2 A08   '
-`save   '
+`resource motor 7 none`   
+`resource motor 8 none`   
+`resource servo 1 A03`   
+`resource servo 2 A08'   
+`save'   
 
 Reconnect USB and reopen configurator.  
 On Config Tab Enable 'Servo_tilt' and click "SAVE and REBOOT".
-On Servo Tab check CH1 for Servo 0 (servo 0 here is Servo 1 in CLI) and check CH2 for Servo 1.
-Click Save. Outputs 7 & 8 should now be 1000 to 2000usec servo pulses. Use the Motors Tab to check or an O'scope on the output pins.
+On Servo Tab check CH1 (Roll) for Servo 0 (servo 0 here is Servo 1 in CLI) and check CH2 (Pitch) for Servo 1.
+Click Save. Outputs 7 & 8 should now be 1000 to 2000usec servo pulses. Use the Motors Tab to check or an O'scope on the output pins. Adjust the MIN & MAX to get the movement desired.  
 
 
 ### Tri-copter with Dshot ESCs on BF3.1:  
