@@ -97,7 +97,7 @@ In CLI type:
 `resource motor 7 none`   
 `resource motor 8 none`   
 `resource servo 1 A03`   
-`resource servo 2 A08'     
+`resource servo 2 A08`     
 `save'   
 
 Reconnect USB and reopen configurator.  
