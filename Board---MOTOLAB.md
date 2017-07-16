@@ -98,7 +98,7 @@ In CLI type:
 `resource motor 8 none`   
 `resource servo 1 A03`   
 `resource servo 2 A08`     
-`save'   
+`save`   
 
 Reconnect USB and reopen configurator.  
 On Config Tab Enable 'Servo_tilt' and click "SAVE and REBOOT".
