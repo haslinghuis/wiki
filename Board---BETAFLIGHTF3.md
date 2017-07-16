@@ -1,5 +1,12 @@
 # AIO Betaflight F3 Flight controller  
 
+## Updates
+
+### Timer mapping is modified (3.2)
+- Software serial no longer interfere with motors 1-4.
+- Software serial pads/TH can be used for motors 5-6 (dshot enabled; hexa-dshot).
+- In the hexa-dshot configuration, LED strip has DMA conflict with motor 5. Use of other timer resource, presumably PPM, is advised.
+
 ## Description
 - OSD + PDB + SD card adapter 
 
