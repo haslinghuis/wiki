@@ -13,3 +13,5 @@ The major complain about Betaflight was too frequent updates in the past. So we 
 
 Current V3.2 files are here: https://betaflight.qmd.cl/
 
+### Note: When discussing this Version in the Forums (Boris' BetaFlight thread)   
+## Please State: Version and Build Number.
