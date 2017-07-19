@@ -47,6 +47,10 @@ The issue that was being faced was due to misconfiguration of the failsafe funct
 
 It is an issue that the firmware allows you to disable stage 2, therefore the ability to do so has been removed (https://github.com/betaflight/betaflight/pull/3562).
 
+It is unlikely you'd face an issue with motors starting if you plug in the quad before powering on the radio (the exception being if the default AUX channel positions are close to the ARM or AIRMODE box ranges, which in itself is an unsafe configuration).
+
+Even in the worst case given that throttle position is at minimum in failsafe the maximum motor speed is determined by min_command, the motors could not run at full throttle.
+
 There is no safety issue with airmode as a feature when failsafe is configured correctly.
 
 A few tips for minimizing the potential for injury when building, flying and testing:
