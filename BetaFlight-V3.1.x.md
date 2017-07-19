@@ -39,10 +39,22 @@ I still recommend that you slowly remove default filtering as well if your setup
 
 See the [Gyro & Filters](https://github.com/betaflight/betaflight/wiki/Gyro-&-Dterm-filtering-recommendations) for much more.
 
-### WARNING: Report that if AirMode is set to always on in the Config GUI then if a Fail Safe is triggered the Motors go to a high throttle instead of shutting down. FS works correctly if AirMode is setup to be enabled on an AUX switch. Post about this here: https://www.rcgroups.com/forums/showpost.php?p=37535627&postcount=48369  
-Github Issue #3108  
+#### Air mode feature and failsafe issue
 
-### Always TEST the Fail Safe function before installing props and flying.
+This is with regards to the issue raised in RCGroups (https://www.rcgroups.com/forums/showpost.php?p=37535627&postcount=48369) and in issue #3108 (https://github.com/betaflight/betaflight/issues/3108).
+
+The issue that was being faced was due to misconfiguration of the failsafe function, specifically failsafe stage 2 had been disabled. It is failsafe stage 2 that is responsible for putting the craft into a safe state after a failure, stage 1 is still regarded as a potentially recoverable state (if the RX link is recovered).
+
+It is an issue that the firmware allows you to disable stage 2, therefore the ability to do so has been removed (https://github.com/betaflight/betaflight/pull/3562).
+
+There is no safety issue with airmode as a feature when failsafe is configured correctly.
+
+A few tips for minimizing the potential for injury when building, flying and testing:
+- Always perform tests with props removed
+- Always test your failsafe before ever putting props on
+- Always set the arm range slider to be activated well away from the default channel value (typically the high end of the channel is adequate, e.g. 1800-2000)
+- Try to keep your radio more than a foot away from your quad to ensure a good radio link at close range
+- Plug in the battery with a firm grip of the quad (all being well this is unnecessary but is a good belt and  braces approach)
 
 ## Betaflight 3.1.6 - 
 https://github.com/betaflight/betaflight/releases  
