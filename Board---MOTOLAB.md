@@ -55,6 +55,8 @@ Differences:
 
 ## FAQ & Known Issues
 
+- The BF developers removed flash support from the MotoLab target in 3.1.x. The other MotoLab boards use the same target but don't have flash, so apparently they overlooked the MotoF3 and thought the flash code wasn't needed.   
+
 - To use DSHOT ESC protocol with ßF3.1 Motor1 needs to be re-mapped to the PPM pin.
 
 - Tornado has output driver chips so can not add a wire to the output pin header to use DSHOT.  So just wire Motor #1's ESC directly to the PPM pin and re-map.
