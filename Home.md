@@ -18,6 +18,8 @@ This allows you to check for differences by either manually compared the two tex
 
 - If not in this Wiki then it is probably not a feature new to BetaFlight and you need to look in the CleanFlight Docs.
 
+- All BASICs and alternate methods to config and flash are in the NAZE32 Manual here: http://www.abusemark.com/downloads/naze32_rev2.pdf  
+
 - New [Docs](https://github.com/martinbudden/betaflight/tree/master/docs) for BetaFlight 2.x. Note: These are NOT fully covering all Versions of BetaFlight, particularly the CLI commands. Always also read the Wiki Release Note pages for changes and then a "get" CLI command to check spelling and valid options.
 
 ## Introduction
