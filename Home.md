@@ -41,7 +41,7 @@ Also check the Upgrading List to the Right for Release Notes and other Details o
 
 *BETA TESTING (WARNING)*
 
-*If you want to contribute to better development you can download the latest beta build directly from:* *http://andwho.sytes.net:8080/job/BorisB_BetaFlight/lastSuccessfulBuild/artifact/obj/*
+*If you want to contribute to better development you can download the latest beta build directly from:* *https://ci.betaflight.tech/job/Betaflight/lastBuild/artifact/obj/*
 
 You can find release planning here:   
 https://github.com/betaflight/betaflight/milestones
