@@ -1,6 +1,8 @@
 ## Introduction
 
-With 3.2, barometer driver was converted to fully configurable / reconfigurable. As a side effect, how related definitions in target.h are interpreted has been changed in large. Measures to keep backward compatibility has been taken, but there might be cases in which working setups with barometer fail to work with 3.2.
+With 3.2, barometer driver was converted to fully configurable / reconfigurable.
+
+As a side effect, how related definitions in target.h are interpreted has been changed in large. Measures to keep backward compatibility has been taken, but there might be cases in which working setups with barometer fail to work with 3.2.
 
 This page explains CLI variables/command to configure barometers at runtime and changes in default configuration determination for target maintainers.
 
