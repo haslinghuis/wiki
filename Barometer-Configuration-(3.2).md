@@ -30,12 +30,12 @@ This page explains CLI variables/command to configure barometers and changes in 
 
 This section is intended for target maintainers and developers.
 
-- `USE_BARO_xxx` and `USE_BARO_SPI_xxx` are now independent.
+#### `USE_BARO_xxx` and `USE_BARO_SPI_xxx` are now independent.
 Prior to 3.2, to configure a device `xxx` on SPI required both `USE_BARO_xxx` and `USE_BARO_SPI_xxx` defined. With 3.2, this dependency has been removed. `USE_BARO_xxx` configures an I2C variant of the `xxx` and `USE_BARO_SPI_xxx` configures an SPI variant of `xxx`. If both specified, both I2C and SPI variants are configured.
 
 Right now, as inherited from 3.1.7, targets that use SPI connected barometer defines both `USE_BARO_xxx` and `USE_BARO_SPI_xxx`, so they are configured for both I2C and SPI variants, in which case, a run time selection will be the SPI variant as explained next.
 
-- Default device determination (compile time)
+#### Default device determination (compile time)
 
 When a single barometer device is configured in the target definition, then the device will be the default device.
 
@@ -43,8 +43,8 @@ When multiple barometer devices are configured in the target definition, then th
 
 1. In an order of pre-defined precedence: BMP280, MS5611 then BMP085.
 2. When both I2C and SPI variants are configured, then SPI is selected.
-3. Note that when `baro_bustype = I2C` and `baro_i2c_address = 0` and `baro_hardware = AUTO`, then I2C devices on specified I2C bus will be scanned in the order of precedence described in 1 (run time behavior).
+3. Note that when `baro_bustype = I2C` and `baro_i2c_address = 0` and `baro_hardware = AUTO`, then I2C devices on specified I2C bus will be scanned in the order of precedence described in 1 (this is a run time behavior).
 
-- Overriding default configuration
+#### Overriding default configuration
 
 If above rule does not bring intended default configuration, macro names `DEFAULT_BARO_bbb_xxx` can be used to override the rule. See beginning of the `sensors/barometer.c` for specific macro names.
