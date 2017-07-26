@@ -33,7 +33,7 @@ This page explains CLI variables/command to configure barometers at runtime and 
 This section is intended for target maintainers and developers.
 
 #### `USE_BARO_xxx` and `USE_BARO_SPI_xxx` are now independent.
-Prior to 3.2, to configure a device `xxx` on SPI required both `USE_BARO_xxx` and `USE_BARO_SPI_xxx` defined. With 3.2, this dependency has been removed. `USE_BARO_xxx` configures an I2C variant of the `xxx` and `USE_BARO_SPI_xxx` configures an SPI variant of `xxx`. If both specified, both I2C and SPI variants are configured.
+Prior to 3.2, to configure a device `xxx` on SPI required both `USE_BARO_xxx` and `USE_BARO_SPI_xxx` defined (and this combination disabled I2C support for the device `xxx`). With 3.2, this dependency/relationship has been removed. `USE_BARO_xxx` configures an I2C variant of the `xxx` and `USE_BARO_SPI_xxx` configures an SPI variant of `xxx`. If both specified, both I2C and SPI variants are configured.
 
 Right now, as inherited from 3.1.7, targets that use SPI connected barometer defines both `USE_BARO_xxx` and `USE_BARO_SPI_xxx`, so they are configured for both I2C and SPI variants, in which case, a run time selection will be the SPI variant as explained next.
 
