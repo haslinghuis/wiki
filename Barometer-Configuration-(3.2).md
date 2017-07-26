@@ -16,7 +16,7 @@ This page explains CLI variables/command to configure barometers at runtime and 
 | `baro_i2c_device` | `0` ~ Max I2C bus ordinate for MCU type (1 origin, same as `x` in `I2Cx` expression in `target.h`) | Specifies a bus ordinate of the I2C bus the device is connected when `baro_bustype` is `I2C`. `0` meanns "none". |
 | `baro_i2c_address` | `0` ~ `119` (0x77) | Specifies an I2C address of the device in 7-bit representation. `0` is a special value to specify "_driver default address_". Values `1`~`7` are invalid and behavior is unpredictable. |
 | `baro_spi_device` | `0` ~ Max SPI bus ordinate for MCU type (1 origin, same as `x` in `SPIx` expression in `target.h`) | Specifies a bus ordinate of the SPI bus the device is connected when `baro_bustype` is `SPI`. `0` means "none". |
-| `baro_hardware` | `NONE`, `AUTO`, `BMP280`, `MS5611`, `BMP085` | `NONE` = Barometer will not be active. `AUTO` = Firmware will determine device to use under pre-defined rule. `BMP280`, `MS5611` and `BMP085` = Explicitly specifies device to use.
+| `baro_hardware` | `NONE`, `AUTO`, `BMP280`, `MS5611`, `BMP085` | `NONE` = Barometer support disabled. `AUTO` = Firmware will determine device to use under pre-defined rule. `BMP280`, `MS5611` and `BMP085` = Explicitly specifies device to use.
 
 - If the device is SPI connected, CS (Chip Select) pin can be specified with the `resource` CLI command
 
