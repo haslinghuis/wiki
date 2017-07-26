@@ -43,8 +43,8 @@ When a single barometer device is configured in the target definition, then the 
 
 When multiple barometer devices are configured in the target definition, then the following rule are applied sequentially to determine the default device.
 
-1. In an order of pre-defined precedence: BMP280, MS5611 then BMP085.
-2. When both I2C and SPI variants are configured, then SPI is selected.
+1. In an order of pre-defined precedence: BMP280, MS5611 then BMP085; the order was decided based on popularity.
+2. When both I2C and SPI variants are configured, then SPI is selected; it is assumed that the SPI variant is more likely to be onboard.
 3. Note that when `baro_bustype = I2C` and `baro_i2c_address = 0` and `baro_hardware = AUTO`, then I2C devices on specified I2C bus will be scanned in the order of precedence described in 1 (this is a run time behavior).
 
 #### Overriding default configuration
