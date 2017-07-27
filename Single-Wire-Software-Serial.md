@@ -132,3 +132,4 @@ BETAFLIGHTF3
 | B07 | PPM               | OK (v1) | ?     | ?      |  @iwarp                |
 
 http://i.imgur.com/Mh41SmG.jpg
+Note (2017-07-27) by @jflyper: BETAFLIGHTF3 had a timer assignment problem with pre-3.2 firmware. It is fixed with 3.2, and PB01 and A02 should work as software serial --- need to be verified.
