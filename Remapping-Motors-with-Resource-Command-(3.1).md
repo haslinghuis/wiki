@@ -36,8 +36,8 @@ Let's fix this.
 
 1. Record the current motor mapping
 
-    Type `resource list` to find out the original mapping.
-    ```
+Type `resource list` to find out the original mapping.
+```
 # resource list
 ...
 A06: MOTOR 1
@@ -49,7 +49,7 @@ A12: MOTOR 4
 
 2. Write a diagram with the original pin to motor mapping.
 
-    ```
+```
            FRONT
 4(A12)       2(A7)
 
@@ -59,7 +59,7 @@ A12: MOTOR 4
 444
 3. Rotate the drawing clock wise 90-degrees.
 
-    ```
+```
            FRONT
 3(A11)       4(A12)
 
@@ -69,7 +69,7 @@ A12: MOTOR 4
 
 4. Remove the old motor position label.
 
-    ```
+```
            FRONT
 A11            A12
 
@@ -80,7 +80,7 @@ This is your actual MCU pin position.
 
 5. Assign new motor position label to the MCU pins.
 
-    ```
+```
            FRONT
 4(A11)       2(A12)
 
@@ -91,7 +91,7 @@ This is your new mapping.
 
 6. The cli resource command for this mapping is:
 
-    ```
+```
 resource motor 1 a7
 resource motor 2 a12
 resource motor 3 a6
@@ -99,7 +99,7 @@ resource motor 4 a11
 save
 ```
     As you enter these commands, you will be seeing error messages in the form "* ERROR * X also used by MOTOR Y". The overlapping mapping is transitional, and you will be ending up with clean mapping at the end. If you don't like the error messages, you can clear the old mapping by following typing following commands prior to new mapping.
-    ```
+```
 resource motor 1 none
 resource motor 2 none
 resource motor 3 none
