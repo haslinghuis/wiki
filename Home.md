@@ -53,8 +53,8 @@ https://chrome.google.com/webstore/detail/betaflight-configurator/kdaghagfopacdn
 *BETA TESTING*
 
 *If you want to contribute to better development you can download the latest or any of the older BetaFlight configurator from:*
-*https://github.com/betaflight/betaflight-configurator* 
-*The following methods also allows more than one Version of the configurator to be installed.*
+*https://github.com/betaflight/betaflight-configurator*   
+*The following methods also allows more than one Version of the configurator to be installed.*  
 
 *Instructions (from the README.MD file in the download):*    
 *1. Clone the repo to any local directory or download source as zip, click the GREEN "Clone or download" button, Select "Download ZIP*  
