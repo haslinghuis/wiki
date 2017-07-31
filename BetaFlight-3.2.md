@@ -29,36 +29,36 @@ https://github.com/betaflight/betaflight/releases/tag/v3.2.0-RC1
 
 ###New:
 
--Full F7 support (@sambas @blckmn )
--SITL simulator support (@cs8425)
--Added crosshairs to CMS (@lostcontrol)
--Improved ITerm windup handling for tricopter (@martinbudden)
--Added SP RACING F3 OSD/PDB suport (@hydra)
--Added horizon_tilt_effect command (@ethomas997)
--Improved scheduler efficiency (@lilcw)
--Increased motor output resolution (@borisbstyle)
--Improved pwm timer precision (@blckmn)
--Added new motor protocol Proshot1000 (@TonyBazz)
--Improved configuration architecture (PG implementation @martinbudden , @ledvinap)
--OSD improvements
+- Full F7 support (@sambas @blckmn )
+- SITL simulator support (@cs8425)
+- Added crosshairs to CMS (@lostcontrol)
+- Improved ITerm windup handling for tricopter (@martinbudden)
+- Added SP RACING F3 OSD/PDB suport (@hydra)
+- Added horizon_tilt_effect command (@ethomas997)
+- Improved scheduler efficiency (@lilcw)
+- Increased motor output resolution (@borisbstyle)
+- Improved pwm timer precision (@blckmn)
+- Added new motor protocol Proshot1000 (@TonyBazz)
+- Improved configuration architecture (PG implementation @martinbudden , @ledvinap)
+- OSD improvements
 - New target support
--Added Automatic Notch filter based on noise frequency (@rav-rav , @martinbudden)
--Fix/enable disabling of rc smoothing in level modes
--Flip inverted quad on ground (anti-turtle mode) (@brycedjohnson)
--Improved blackbox storage to be more compact. Allows recording at higher rates and/or longer logs on flash storage (@martinbudden)
--Camera control
--TBS compatible LED frequency indicator
--beeper / OSD / CLI indication of reason for not arming;
+- Added Automatic Notch filter based on noise frequency (@rav-rav , @martinbudden)
+- Fix/enable disabling of rc smoothing in level modes
+- Flip inverted quad on ground (anti-turtle mode) (@brycedjohnson)
+- Improved blackbox storage to be more compact. Allows recording at higher rates and/or longer logs on flash storage (@martinbudden)
+- Camera control
+- TBS compatible LED frequency indicator
+- beeper / OSD / CLI indication of reason for not arming;
 
 ###Experimental - use with caution
 
--Added experimental crash detection and recovery (@martinbudden)
--Fixed full throttle drift when airmode disabled
--Added experimental CPU overclock options for F4
--FrSky SPI RX support
+- Added experimental crash detection and recovery (@martinbudden)
+- Fixed full throttle drift when airmode disabled
+- Added experimental CPU overclock options for F4
+- FrSky SPI RX support
 
 ###Fixes:
 
--Fix GPS serial overflow (@mikeller)
--Fixed destabilisation on full throttle when Airmode disabled
+- Fix GPS serial overflow (@mikeller)
+- Fixed destabilisation on full throttle when Airmode disabled
 
