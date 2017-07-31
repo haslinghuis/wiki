@@ -18,16 +18,16 @@ or https://betaflight.qmd.cl/
 ## Please State: Version and Build Number.
 
 
-###From Boris:  
+### From Boris:  
 Hi Guys. I hope everyone is fine.
 
 We finally have a release candidate on schedule like promised!   
 https://github.com/betaflight/betaflight/releases/tag/v3.2.0-RC1
 
 
-##Betaflight 3.2.0 RC1
+## Betaflight 3.2.0 RC1
 
-###New:
+### New:
 
 - Full F7 support (@sambas @blckmn )
 - SITL simulator support (@cs8425)
@@ -50,14 +50,14 @@ https://github.com/betaflight/betaflight/releases/tag/v3.2.0-RC1
 - TBS compatible LED frequency indicator
 - beeper / OSD / CLI indication of reason for not arming;
 
-###Experimental - use with caution
+### Experimental - use with caution
 
 - Added experimental crash detection and recovery (@martinbudden)
 - Fixed full throttle drift when airmode disabled
 - Added experimental CPU overclock options for F4
 - FrSky SPI RX support
 
-###Fixes:
+### Fixes:
 
 - Fix GPS serial overflow (@mikeller)
 - Fixed destabilisation on full throttle when Airmode disabled
