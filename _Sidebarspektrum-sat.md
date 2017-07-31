@@ -86,6 +86,7 @@
  - [NERO](/betaflight/betaflight/wiki/Board---NERO)
  - [Matek F405](/betaflight/betaflight/wiki/matekf405)
  - [MICROSCISKY](/betaflight/betaflight/wiki/Board---MICROSCISKY)
+ - [MLTEMPESTF4](https://github.com/betaflight/betaflight/wiki/Board-MLTEMPESTF4)
  - [MOTOLAB](/betaflight/betaflight/wiki/Board---MOTOLAB)
  - [MOTOLABF4](/betaflight/betaflight/wiki/Board---MOTOLABF4)
  - [OLIMEXINO](/betaflight/betaflight/wiki/Board---OLIMEXINO)
