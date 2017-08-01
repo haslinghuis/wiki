@@ -22,10 +22,10 @@ or https://betaflight.qmd.cl/
 Hi Guys. I hope everyone is fine.
 
 We finally have a release candidate on schedule like promised!   
-https://github.com/betaflight/betaflight/releases/tag/v3.2.0-RC1
+https://github.com/betaflight/betaflight/releases
 
 
-## Betaflight 3.2.0 RC1
+## Betaflight 3.2.0 RC2 Pre-release
 
 ### New:
 
@@ -61,6 +61,10 @@ https://github.com/betaflight/betaflight/releases/tag/v3.2.0-RC1
 
 - Fix GPS serial overflow (@mikeller)
 - Fixed destabilisation on full throttle when Airmode disabled
+
+### RC2 Changes:  
+- Fix for new blackbox denominators
+- Improved ACC scaling in some cases  
 
 ### Other Features:   
 
