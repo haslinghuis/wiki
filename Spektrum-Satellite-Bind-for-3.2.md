@@ -26,7 +26,7 @@ resource RX_BIND_PLUG pin-id
 
 Note that only the `Negative logic` plug (short to ground to make it work) type is supported (for now).
 
-### Bind Pin Override example - ASGARD
+### Bind Pin Override examples
 
 ASGARD's default serial RX pad is UART6_RX. However, since there is a uni-directional inverter on this pad, it can not be used as a bind pin. Fortunately, there is another MCU pin that is connected directly to this pad, which is PB8. The PB8 is used as PPM input when PPM is selected as a receiver input, but you can utilize this pin to drive receiver signal line.
 To do this, override the default bind pin
@@ -35,4 +35,7 @@ resource RX_BIND B8
 ```
 then follow the normal satellite binding procedure using `spektrum_sat_bind` CLI variable and power cycling.
 
-Note: It is unfortunate SRXL (still) does not work on UART6 for ASGARD.
+Note:
+1. It is unfortunate SRXL (still) does not work on UART6 for ASGARD.
+2. For F4 boards with shared SBUS(SerialRX)/PPM pad/TH, the same procedure can be used, but you have to find out which MCU pin the PPM is assigned to.
+3. For F4 boards with separate SBUS(SerialRX) and PPM pad/TH, you can bridge (jump) the PPM pad to SBUS(SerialRX) pad and leave it there (as long as PPM is not used for other purposes).
