@@ -71,5 +71,5 @@ https://github.com/betaflight/betaflight/releases
 - Spektrum Satellite Bind for 3.2  
 https://github.com/betaflight/betaflight/wiki/Spektrum-Satellite-Bind-for-3.2
 
-- Reconfigurable Barometer for 3.2
+- Reconfigurable Barometer for 3.2  
 https://github.com/betaflight/betaflight/wiki/Barometer-Configuration-(3.2)
