@@ -8,7 +8,7 @@ This page explains CLI variables/command to configure barometers at runtime to b
 
 ### Barometer configuration with CLI
 
-- Barometer related CLI variables were extended with the following.
+- Barometer related CLI variables
 
 | Variable | Range | Description |
 |----------|-------|---------|
