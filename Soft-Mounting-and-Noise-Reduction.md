@@ -7,6 +7,7 @@ See [FAQ #56 ](https://github.com/betaflight/betaflight/wiki/Frequently-Asked-Qu
 
 Also be sure to read the other Wiki pages:  
 [Gyro & Filters](https://github.com/betaflight/betaflight/wiki/Gyro-&-Dterm-filtering-recommendations)  
+[BB loging & Filters](https://github.com/betaflight/betaflight/wiki/Black-Box-logging-and-usage)  
 
 ## Soft Mounting the FC board
 
