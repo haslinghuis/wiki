@@ -26,7 +26,7 @@ This page explains CLI variables/command to configure barometers at runtime to b
 
 - Note that not all combination of bus type and devices are built-in for a particular target.
 
-- A combination of `baro_hardware = AUTO`, `baro_bustype = I2C` and `baro_i2c_address = 0` will cause all built-in I2C devices types to be scanned in the order of `BMP280`, `MS5611` and `BMP085`.
+- A combination of `baro_hardware = AUTO`, `baro_bustype = I2C` and `baro_i2c_address = 0` will cause all built-in I2C devices types to be scanned on the specified `baro_i2c_device`, in the order of `BMP280`, `MS5611` and `BMP085`.
 
 ### Target definition changes
 
