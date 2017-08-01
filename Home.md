@@ -56,7 +56,9 @@ https://chrome.google.com/webstore/detail/betaflight-configurator/kdaghagfopacdn
 *https://github.com/betaflight/betaflight-configurator*   
 *The following method also allows more than one Version of the configurator to be installed.*  
 
-*Instructions (the README.MD file in the download is NOT correct):*    
+*Instructions (the README.MD file in the download is NOT correct):*   
+*Note: these instruction work for Chrome version 59.0. Other versions and Chromium may have different Menus so Use the Help to learn how to install Extensions)*  
+
 *1. Clone the repo to any local directory or download source as zip, click the GREEN "Clone or download" button, Select "Download ZIP*  
 *2. Unzip on your PC, remember the location*  
 *3. Start Chromium or Google Chrome*  
