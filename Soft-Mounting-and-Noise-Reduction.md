@@ -5,6 +5,8 @@ Please check often as this page gets built.
 
 See [FAQ #56 ](https://github.com/betaflight/betaflight/wiki/Frequently-Asked-Questions) for Discussion on Yaw Twitches and Mid-throttle Oscillations. This covers Gyros and other possible causes.
 
+Also be sure to read the other Wiki pages:  
+[Gyro & Filters](https://github.com/betaflight/betaflight/wiki/Gyro-&-Dterm-filtering-recommendations)  
 
 ## Soft Mounting the FC board
 
