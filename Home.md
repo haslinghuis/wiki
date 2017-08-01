@@ -58,7 +58,7 @@ https://chrome.google.com/webstore/detail/betaflight-configurator/kdaghagfopacdn
 
 *Instructions (from the README.MD file in the download):*    
 *1. Clone the repo to any local directory or download source as zip, click the GREEN "Clone or download" button, Select "Download ZIP*  
-*2. Unzip on your PC, remember the location*
+*2. Unzip on your PC, remember the location*  
 *3. Start Chromium or Google Chrome and go to tools -> extension*  
 *4. Check the "Developer mode" checkbox*  
 *5. Click on load unpacked extension and point it to the Betaflight Configurator directory (for example D:/betaflight-configurator)*    
