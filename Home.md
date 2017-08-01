@@ -56,12 +56,14 @@ https://chrome.google.com/webstore/detail/betaflight-configurator/kdaghagfopacdn
 *https://github.com/betaflight/betaflight-configurator*   
 *The following method also allows more than one Version of the configurator to be installed.*  
 
-*Instructions (from the README.MD file in the download):*    
+*Instructions (the README.MD file in the download is NOT correct):*    
 *1. Clone the repo to any local directory or download source as zip, click the GREEN "Clone or download" button, Select "Download ZIP*  
 *2. Unzip on your PC, remember the location*  
-*3. Start Chromium or Google Chrome and go to tools -> extension*  
-*4. Check the "Developer mode" checkbox*  
-*5. Click on load unpacked extension and point it to the Betaflight Configurator directory (for example D:/betaflight-configurator)*    
+*3. Start Chromium or Google Chrome
+*4. Click the 3-dots on the far right of the URL bar.
+*5. Select "More Tools" then "extensions*  
+*6. Check the "Developer mode" checkbox*  
+*7. Click on load unpacked extension and point it to the Betaflight Configurator directory (for example D:/betaflight-configurator)*    
 *Then you'll see the new configurator in your Chrome extensions.*
 
 ## Mobile Flight for iPhone and iPad  
