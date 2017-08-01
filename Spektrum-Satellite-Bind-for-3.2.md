@@ -15,6 +15,11 @@ The automatic bind pin selection can be overridden by specifying a pin to use by
 resource RX_BIND pin-id
 ```
 
+There are targets with `RX_BIND` by default, which disables the automatic port selection. In this case, you can remove this assignment by the following command.
+```
+resource RX_BIND NONE
+```
+
 ### Bind Plug
 
 The bind plug facility is also reconfigurable with 3.2.
