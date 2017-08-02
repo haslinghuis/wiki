@@ -36,6 +36,8 @@
  - [3D Setup](/betaflight/betaflight/wiki/3D-Setup)
  - [Setup on a Fixed Wing Aircraft](https://github.com/betaflight/betaflight/wiki/Setup-for-a-Fixed-Wing-Aircraft)  
 
+ - [Serial Pass Through](https://github.com/betaflight/betaflight/wiki/Serial-Pass-Through)  
+
 # V3.2 specific Setup
 
  - [Spektrum Bind Facility for 3.2](https://github.com/betaflight/betaflight/wiki/Spektrum-Satellite-Bind-for-3.2)
