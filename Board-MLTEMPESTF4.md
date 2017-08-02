@@ -18,3 +18,8 @@ The Tempest F4 is compatible with Betaflight using the new MLTEMPESTF4 board tar
 
 Link to thread:   
 https://www.rcgroups.com/forums/showthread.php?2715556-MotoLab-Typhoon-F4-Flight-Controller-and-VTX/page49#post38010951
+
+Firmware:
+
+BF 3.2 experimental binaries and backup of 3.1.7 for the Typhoon & Tempest can be found here:  
+https://www.rcgroups.com/forums/showpost.php?p=38021190&postcount=742  
