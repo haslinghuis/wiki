@@ -10,8 +10,8 @@
 # Upgrading-Releases
 
  - [BetaFlight 3.2](https://github.com/betaflight/betaflight/wiki/BetaFlight-3.2)
- - [Betaflight 3.1](/betaflight/betaflight/wiki/BetaFlight-V3.1.x)
- - [Betaflight 3.0](/betaflight/betaflight/wiki/BetaFlight-3.0.x)
+ - [BetaFlight 3.1](/betaflight/betaflight/wiki/BetaFlight-V3.1.x)
+ - [BetaFlight 3.0](/betaflight/betaflight/wiki/BetaFlight-3.0.x)
  - [V2.x CLI Commands](/betaflight/betaflight/wiki/Betaflight-specific-CLI-commands)  
 
 # Setup and More
