@@ -50,6 +50,9 @@ It shows the stick commands on the OSD startup screen. Mid throttle, yaw left an
 - Here's a new hex file. It's 3.1.7 with a fix for Spetrum Sat bind, and with SDcard DMA enabled.  
 https://www.dropbox.com/s/5h1gz0kct03lb09/betaflight_3.1.7_DMA_MOTOLABF4.hex?dl=0   
 
+BF 3.2 experimental binaries and backup of 3.1.7 for the Typhoon & Tempest can be found here:  
+https://www.rcgroups.com/forums/showpost.php?p=38021190&postcount=742  
+
 ####  I can get it to connect properly in DFU mode!
 There are two reason the board might not appear as the correct device:
 
