@@ -117,7 +117,20 @@ I had issues with yaw oscillation at mid throttle with Aikons + Lumenier 2206-23
 Just another small report of electrical noise: Friend built another all new quad with naze r6 which produced a weird high frequency hum, no matter what filters/PID etc were set to.  
 A single cap (35v 470uf) to the pdb fixed it. 
 
+###  Originally Posted by mnemennth: ad nauseum
 
+Today's high-speed high-current ESCs are the electronic equivalent of a chainsaw running WOT, and your entire power supply has to juggle 4 of them at once. They used to have 330-470uF capacitors right on the ESC to clean up this noise, but everybody bitched that the ESCs were too big/long/fat/lumpy, so they started designing with big banks of tiny ceramic caps right on the ESC as a substitute.
+
+What they didn't realize was that ceramic caps are not the same as equivalent electrolytic caps due to a factor known as derating. At around the same time, we started demanding massive increases in both speed and current capacity from our ESCs... Ironically, we needed those big caps on the ESCs more than ever just at the time we got rid of them. We need to put that capacitance back on there one way or another.
+
+I recommend still installing a 1000uF 35V Low-ESR cap even if you are using a regulator to power your video equipment. Linear regulators can pass some very fast-acting spikes right through to the load they power, while switching regulators are prone to being themselves damaged by such voltage spikes; enough so that Pololu warns about the issue at the bottom of every one of their regulator listings.
+
+This search returns only capacitors advertised as Low ESR, and only US vendors.
+https://www.ebay.com/sch/i.html?_from=R40&_sacat=0&_nkw=1000uf+25v+low+ESR&LH_PrefLoc=1&_sop=15
+
+Look for name brands like Panasonic, Sanyo, Nichicon or Rubycon. Pick a vendor with a price and ETA you like. To be sure you get low ESR you need to check the part # against the MFR website; Low-ESR/High Ripple current rated is what we want.
+
+There simply is no better way to spend 3 grams on a build.
 ### List of Soft mounting parts from SadLeprechaun-  
 I use this stuff for soft mounting/vibrations:  
 [Motors](http://www.getfpv.com/motor-soft-mount-silicone-pad-w-3m-backing-set-of-4.html)   
