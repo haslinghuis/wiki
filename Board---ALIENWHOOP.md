@@ -45,7 +45,7 @@ AlienWhoop flight controller for Tiny Whoop, Blade Inductrix, Eachine, BetaFPV, 
 
 ## Maintainers
 
-  @brucesdad13
+  [@brucesdad13](https://github.com/brucesdad13)
 
 ## Acknowledgements
 
