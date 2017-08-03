@@ -47,3 +47,6 @@ AlienWhoop flight controller for Tiny Whoop, Blade Inductrix, Eachine, BetaFPV, 
 
   @brucesdad13
 
+## Acknowledgements
+
+*Acknowledgements: AlienWhoop V2 is a remix of [AlienFlight F3 Quad Brushed V1](https://github.com/brucesdad13/AlienFlightArchive/tree/master/Flight-Controllers/F3-V1/F3-Quad)
