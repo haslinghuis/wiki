@@ -38,7 +38,11 @@ F405+ICM20602, w/ Betaflight OSD & SD Card Slot
 * w/ Anti-vibration Standoffs
 
 ## Manufacturers and Distributors
-Matek Systems http://www.mateksys.com/?portfolio=f405-osd and http://www.mateksys.com/?portfolio=f405-aio
+* Matek Systems
+  * [F405-OSD](http://www.mateksys.com/?portfolio=f405-osd)
+  * [F405-AIO](http://www.mateksys.com/?portfolio=f405-aio)
+* UnmannedTech (UK/EU)
+  * [F405-OSD](https://www.unmannedtechshop.co.uk/matek-f405-osd-betaflight-flight-controller/)
 
 ## Designers
 Matek Systems www.mateksys.com
