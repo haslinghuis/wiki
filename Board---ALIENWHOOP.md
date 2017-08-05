@@ -13,7 +13,7 @@ AlienWhoop flight controller for Tiny Whoop, Blade Inductrix, Eachine, BetaFPV, 
 * Latest BetaFlight firmware running the ALIENWHOOPF4 or ALIENWHOOPF7 target. Capable of 32kHz gyro sampling and potentially 32kHz PID loop when overclocking for F4 is released with BetaFlight 3.2 (*32kHz gyro sampling rate has been flown on prototypes for several months now at up to 16kHz PID loop without overclocking the F4*).
 * Fairchild Semiconductor FDMA410NZ MOSFET with 9.5A continuous and 24A burst brushed motor insanity (8.5mm coreless scream) or newest FDMA410NZT MOSFET with 9.5A continuous and 63A burst
 * UART4 solder pads for programmable LED strip (SUPER COOL) using WS2812B RGB or RX/TX for Micro MinimOSD
-* Choice of external receivers. Officially supporting FrSky XM and XM+ and LemonRX DSM2 and DSMX satellites--FlySky iBUS undergoing testing.
+* Choice of external receivers. Officially supporting FrSky XM and XM+ (SBUS), LemonRX DSM2 and DSMX (SBUS), and FlySky FS-A8S (iBUS) satellites.
 
 ## MCU, Sensors and Features
 
