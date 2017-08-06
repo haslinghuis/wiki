@@ -22,7 +22,7 @@ Here a good preview for this option: [https://youtu.be/gXeaINFpvow FPV camera ti
 Another video on this option: [https://www.youtube.com/watch?v=gEcWxHIH378 Betaflight Camera Uptilt Compensation]
 
 '''set gyro_lpf''' = 188HZ '' <br />
-<i>[OFF,188HZ,98HZ,42HZ,EXPERIMENTAL(2.5.0)]</i> See [https://github.com/betaflight/betaflight/wiki/Gyro-&-Dterm-filtering-recommendations Gyro & Dterm Filtering Recommendations] for more information.
+<i>[OFF,188HZ,98HZ,42HZ,EXPERIMENTAL(2.5.0)]</i> See [[Gyro & Dterm filtering recommendations]] for more information.
 
 This is the internal gyro filtering value. The lower the value the more buffering and delay will be introduced to gyro. Must be set to OFF to enable 2K mode (starting with Version 2.3.0)(starting with Version 2.4 this is automatically set to OFF if 500 looptime is selected in the GUI)''
 
