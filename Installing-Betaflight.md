@@ -83,7 +83,7 @@ This assigns the device to the plugdev group(a standard group in Ubuntu). To che
 
     sudo usermod -a -G plugdev <username>
 
-In some cases adding the user to the plugdev group doesn't work. In this try to add your user to the uucp or the dialout group:
+In some cases adding the user to the plugdev group doesn't work. In this case try to add your user to the uucp or the dialout group:
 
     sudo usermod -a -G uucp <username>
 
