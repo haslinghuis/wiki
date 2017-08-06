@@ -85,9 +85,9 @@ This assigns the device to the plugdev group(a standard group in Ubuntu). To che
 
 In some cases adding the user to the plugdev group doesn't work. In this try to add your user to the uucp or the dialout group:
 
-sudo usermod -a -G uucp <username>
+    sudo usermod -a -G uucp <username>
 
-sudo usermod -a -G dialout <username>
+    sudo usermod -a -G dialout <username>
 
  If you see your ttyUSB device disappear right after the board is connected, chances are that the ModemManager service (that handles network connectivity for you) thinks it is a GSM modem. If this happens, you can issue the following command to disable the service:
 
