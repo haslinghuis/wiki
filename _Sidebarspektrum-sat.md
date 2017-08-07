@@ -97,7 +97,6 @@
  - [MLTEMPF4](https://github.com/betaflight/betaflight/wiki/Board-MLTEMPF4)
  - [MLTYPHF4](https://github.com/betaflight/betaflight/wiki/Board-MLTYPHF4)
  - [MOTOLAB](/betaflight/betaflight/wiki/Board---MOTOLAB)
- - [MOTOLABF4](/betaflight/betaflight/wiki/Board---MOTOLABF4)
  - [OLIMEXINO](/betaflight/betaflight/wiki/Board---OLIMEXINO)
  - [OMNIBUS](/betaflight/betaflight/wiki/Board---OMNIBUS)
  - [OMNIBUSF4(SD)](/betaflight/betaflight/wiki/Board---OMNIBUSF4)
