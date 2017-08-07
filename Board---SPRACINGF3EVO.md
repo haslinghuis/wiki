@@ -61,8 +61,22 @@ _(add links board descriptions here that are similar in features or function, bu
 _(add links to boards here that are similar in features or function, but use this target when flashing)_
 
 ## FAQ & Known Issues
-_(add FAQs, known issues and workarounds specifically related to this board. please link work in progress issues to the related github issue or pull request)_
-Softserial is disabled for this target in bf 3.1.7 but works in nightly build 3.2.0 as of today (2017-05-13).
+* Softserial is disabled for this target in bf 3.1.7 but works in nightly build 3.2.0 as of today (2017-05-13).
+* DSHot does not work out of the box, due to DMA limitations. The solution to enable DSHOT on this board is to remap motor 4 to A06, this can be done through CLI as follows:
+
+`resource MOTOR 5 NONE`
+
+`resource MOTOR 4 A06`
+
+`save`
+
+Note that, if you wish to use SDCARD Blackbox logging with DSHOT, you will have to disable SDCARD DMA. This will negatively impact SDCARD logging rate. As of BF 3.2.0-RC3 there is no other solution. This can be done as follows:
+
+`set sdcard_dma = OFF`
+
+`save`
+
+Source: https://github.com/betaflight/betaflight/issues/2162
 
 ## Other Resources
 
