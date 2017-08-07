@@ -23,3 +23,10 @@ Firmware:
 
 BF 3.2 experimental binaries and backup of 3.1.7 for the Typhoon & Tempest can be found here:  
 https://www.rcgroups.com/forums/showpost.php?p=38021190&postcount=742  
+
+Source for MotoLab tagets:
+https://www.rcgroups.com/forums/showpost.php?p=38050705&postcount=3176
+
+Tempest Pinouts:
+https://www.rcgroups.com/forums/showpost.php?p=38051079&postcount=3177
+
