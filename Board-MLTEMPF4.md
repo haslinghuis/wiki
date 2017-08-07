@@ -14,7 +14,7 @@ Plug-in direct connection to VTX and Camera with custom cables
 Buzzer and serial LED outputs  
 38x40mm board size with 30.5mm mounting hole spacing  
   
-The Tempest F4 is compatible with Betaflight using the new MLTEMPESTF4 board target.   
+The Tempest F4 is compatible with Betaflight using the new MLTEMPF4 board target.   
 
 Link to thread:   
 https://www.rcgroups.com/forums/showthread.php?2715556-MotoLab-Typhoon-F4-Flight-Controller-and-VTX/page49#post38010951
