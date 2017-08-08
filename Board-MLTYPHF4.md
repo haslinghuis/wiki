@@ -38,6 +38,16 @@ The VTX controls are through the BetaFlight OSD functions using the RC transmitt
 * SW1 OFF, SW2  ON 200mW
 * SW1 OFF, SW2 OFF 500mW
 
+The values (1-5) for vtx_band in CLI are:
+
+ - 1: Boscam A
+ - 2: Boscam B
+ - 3: Boscam E
+ - 4: Fatshark
+ - 5: Raceband
+
+vtx_channel values are 1-8 for channel 1-8.
+
 Regarding soft mounting, that's never been necessary on any of my builds or those of the beta testers here. With the MPU6000, the well-filtered power in the Typhoon, and a stiff frame there shouldn't be a problem. 
 
 [MotoLab Typhoon F4 & VTX Video](https://www.youtube.com/watch?v=h0VcUPcgi8A)
