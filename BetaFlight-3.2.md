@@ -24,19 +24,6 @@ Hi Guys. I hope everyone is fine.
 We finally have a release candidate on schedule like promised!   
 https://github.com/betaflight/betaflight/releases
 
-## Instructions for Upgrading
-
-### Switching from 'tlm_inversion' to 'tlm_inverted'
-
-With the change of the configuration parameter `tlm_inversion` to the parameter `tlm_inverted`, the scope and function of the parameter have changed:
-
-- `tlm_inverted` applies to **all** telemetry protocols;
-- `tlm_inverted = on` means that telemetry is expected to be inverted **compared to what it is for the selected protocol** (i.e. when using SmartPort, `tlm_inverted = off` means that the flight controller expects the telemetry signal to be inverted serial, since this is the default for SmartPort).
-
-_This means that for all protocols, if unmodified hardware is used `tlm_inverted = off` is most likely the correct setting._
-
-(Also, note that this only works for F3 / F7 based boards, or for F4 boards on ports with switchable external inverters.)
-
 ## Betaflight 3.2.0 RC3 Pre-release
 
 ### New:
@@ -97,11 +84,25 @@ https://github.com/betaflight/betaflight/wiki/Spektrum-Satellite-Bind-for-3.2
 - Reconfigurable Barometer for 3.2  
 https://github.com/betaflight/betaflight/wiki/Barometer-Configuration-(3.2)
 
-
 ## Black Box Viewer
 https://github.com/betaflight/blackbox-log-viewer/commits/master
 
+## Instructions for Upgrading
+
+### Switching from 'tlm_inversion' to 'tlm_inverted'
+
+With the change of the configuration parameter `tlm_inversion` to the parameter `tlm_inverted`, the scope and function of the parameter have changed:
+
+- `tlm_inverted` applies to **all** telemetry protocols;
+- `tlm_inverted = on` means that telemetry is expected to be inverted **compared to what it is for the selected protocol** (i.e. when using SmartPort, `tlm_inverted = off` means that the flight controller expects the telemetry signal to be inverted serial, since this is the default for SmartPort).
+
+_This means that for all protocols, if unmodified hardware is used `tlm_inverted = off` is most likely the correct setting._
+
+(Also, note that this only works for F3 / F7 based boards, or for F4 boards on ports with switchable external inverters.)
 ## CLI command change in 3.2
+
+#3# New CLI commands
+
 
 ### Name changes
 #### yaw_motor_direction [1, -1] => yaw_motors_reversed [OFF, ON]
