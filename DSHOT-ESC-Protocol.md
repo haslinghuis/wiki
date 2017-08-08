@@ -280,7 +280,9 @@ See Github Issue  #2282 [Emax Femto (SPRACING F3EVO) - DSHOT 600 Motor 4 not spi
 Announced on 3 April 2017:  
 https://www.rcgroups.com/forums/showthread.php?2864611-BLHeli_32-Power-to-perform#post37240208   
 
-#### KISS 24 
+#### KISS 24  
+https://www.rcgroups.com/forums/showthread.php?2555162-KISS-ESC-24A-Race-Edition-Flyduino-32bit-ESC  
+
  - 150, 300, 600, 900, 1200 See the Dshot thread (link above) for ESC code.  
 KISS24 ESC Beep Codes:   
 - 1beep/second = too many dshot errors (more then 10% are bad) but it doesn't disarm it just tells
