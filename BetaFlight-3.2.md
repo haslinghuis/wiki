@@ -89,3 +89,9 @@ https://github.com/betaflight/betaflight/wiki/Barometer-Configuration-(3.2)
 
 ## Black Box Viewer
 https://github.com/betaflight/blackbox-log-viewer/commits/master
+
+## CLI command change in 3.2
+
+Old name                   new name
+yaw_motor_direction        yaw_motors_reversed
+
