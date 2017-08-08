@@ -94,4 +94,5 @@ https://github.com/betaflight/blackbox-log-viewer/commits/master
 
 ### Name changes
 #### yaw_motor_direction [1, -1] => yaw_motors_reversed [OFF, ON]
+#### sport_halfduplex=OFF => set tlm_halfduplex=OFF
 
