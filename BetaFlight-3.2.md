@@ -92,6 +92,6 @@ https://github.com/betaflight/blackbox-log-viewer/commits/master
 
 ## CLI command change in 3.2
 
-Old name                   new name
-yaw_motor_direction        yaw_motors_reversed
+### Name changes
+#### yaw_motor_direction [1, -1] => yaw_motors_reversed [OFF, ON]
 
