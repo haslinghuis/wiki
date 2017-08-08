@@ -37,7 +37,7 @@ _This means that for all protocols, if unmodified hardware is used `tlm_inverted
 
 (Also, note that this only works for F3 / F7 based boards, or for F4 boards on ports with switchable external inverters.)
 
-## Betaflight 3.2.0 RC2 Pre-release
+## Betaflight 3.2.0 RC3 Pre-release
 
 ### New:
 
@@ -65,8 +65,8 @@ _This means that for all protocols, if unmodified hardware is used `tlm_inverted
 ### Experimental - use with caution
 
 - Added experimental crash detection and recovery (@martinbudden)
-- Fixed full throttle drift when airmode disabled
 - Added experimental CPU overclock options for F4
+- Fixed full throttle drift when airmode disabled
 - FrSky SPI RX support
 
 ### Fixes:
@@ -77,6 +77,17 @@ _This means that for all protocols, if unmodified hardware is used `tlm_inverted
 ### RC2 Changes:  
 - Fix for new blackbox denominators
 - Improved ACC scaling in some cases  
+
+### RC3 Changes
+- MATEKF405 Enable follow me spektrum binding
+- Fix for blackbox p_denom
+- ROM savings
+- Add missing AHI sidebar in cli
+- Check for notch 0 in filter init
+- rework on pin timer mapping
+- Fix buzzer on alienwhoop v2.0
+- Spektrum Telemtry fix for FlightPack Capacity
+- Fix Acc reporting for some gyros in configurator
 
 ### Other Features:   
 
