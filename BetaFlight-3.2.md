@@ -99,12 +99,13 @@ With the change of the configuration parameter `tlm_inversion` to the parameter 
 _This means that for all protocols, if unmodified hardware is used `tlm_inverted = off` is most likely the correct setting._
 
 (Also, note that this only works for F3 / F7 based boards, or for F4 boards on ports with switchable external inverters.)
-## CLI command change in 3.2
+
+## CLI command changes in 3.2
 
 #3# New CLI commands
 
 
 ### Name changes
 #### yaw_motor_direction [1, -1] => yaw_motors_reversed [OFF, ON]
-#### sport_halfduplex=OFF => set tlm_halfduplex=OFF
-
+#### sport_halfduplex => set tlm_halfduplex
+#### tlm_inversion' => 'tlm_inverted
