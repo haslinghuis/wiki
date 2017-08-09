@@ -87,7 +87,7 @@ https://github.com/betaflight/betaflight/wiki/Barometer-Configuration-(3.2)
 ## Black Box Viewer
 https://github.com/betaflight/blackbox-log-viewer/commits/master
 
-## Instructions for Upgrading
+## Instructions for Upgrading - New feature and changes of how old feature work
 
 ### Switching from 'tlm_inversion' to 'tlm_inverted'
 
@@ -99,6 +99,10 @@ With the change of the configuration parameter `tlm_inversion` to the parameter 
 _This means that for all protocols, if unmodified hardware is used `tlm_inverted = off` is most likely the correct setting._
 
 (Also, note that this only works for F3 / F7 based boards, or for F4 boards on ports with switchable external inverters.)
+
+### Dynamic Filters
+
+TO DO - fill in CLI commands and what they do.
 
 ## CLI command changes in 3.2
 
