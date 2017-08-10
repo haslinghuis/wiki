@@ -104,6 +104,16 @@ _This means that for all protocols, if unmodified hardware is used `tlm_inverted
 
 TO DO - fill in CLI commands and what they do.
 
+### Crash Recovery
+
+TO DO - fill in CLI commands and what they do.
+
+TCHTHSKY Posted in Boris' thread-
+[Here's the code for it. It has comments: ](https://github.com/kc10kevin/betaflight/blob/master/src/main/flight/pid.c)
+[And here is the feature request: ](https://github.com/betaflight/betaflight/issues/2731)
+[And here's this: ](http://stackissue.com/betaflight/betaflight/added-experimental-crash-detection-and-recovery-2783.html)
+[Here's another from earlier in this thread:](https://www.rcgroups.com/forums/showpost.php?p=37951070&postcount=49982)
+
 ## CLI command changes in 3.2
 
 #3# New CLI commands
