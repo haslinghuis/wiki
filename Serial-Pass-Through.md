@@ -1,7 +1,7 @@
 # Serial Pass through
 
 ## Update FrSky XSR RX Firmware
-NOTE: This needs testing. BryceJ has successfully done this procedure, however I was unable to replicate due to issues with the FrSky tool not loading COM ports.  If you are familiar with this procedure, please update this information, or PM me (TCHTHSKY) on RCGroups and I'll add it. 
+**NOTE: This needs verification and testing.** BryceJ has successfully done this procedure, however I was unable to replicate due to issues with the FrSky tool not loading COM ports.  If you are familiar with this procedure, please update this information, or PM me (TCHTHSKY) on RCGroups and I'll add it. 
 
 FrSky Tool: 
 https://www.frsky-rc.com/wp-content/uploads/2017/07/Tool/frsky_update_sport_rev14.zip
