@@ -378,7 +378,7 @@ It's just not true to suggest that 'less filtering means better performance', es
 
 Somewhere there is a good balance between too much and not enough filtering. Finding the balance that works best for you is what its about.
 
-### Frame Resonance
+### Frame and Prop Resonance
 Posted by ctzsnooze:  
 There is a lot of confusion about resonance.
 
@@ -443,7 +443,15 @@ Since I often re-use not so great props, and 'fly home' with bent ones often eno
 
 At least one notch needs to match the prop resonance, so go pluck your prop! :-)   
 
+Quick description by ctzsnooze of measuring Prop Resonance:
+Get a representative prop, hold the hub hard onto a firm table, with one blade poking out over the edge. Try to dull the other blades so they don't rattle.  
+Plucking the blade itself takes some practice to get a good sound, a clean flick up from below should make a smooth clean tone.  
+There are quite a few Audio FFT apps that record a short sample and present a 3D FFT with the noise peak highlighted; ideally one where you can scroll back looking for the peak. Usually quite easy to identify, there will be one big sine wave peak that fades out like a guitar string being plucked.  
+iAnalyzer Lite on iOS for example.  
+The predominant sine-wave like frequency is the fundamental resonant frequency of the prop, and works really well as the main notch filter value. Completely stops grinding on idle on all my quads that had it, first time.  
+
 #### [Video- How to Quickly Find Natural Resonant Frequency of a Propeller. Uses the app: FFT spectrum analyzer  ](https://www.youtube.com/watch?v=xFcfES2qAB8)
+
 
 #### More from ctzsnooze:   
 True motor noise (bearings, out of balance bells, loose bolts, out of balance props, etc) is typically a sort of random junk broadly spread over a range of frequencies from low to high, occasionally with some small peaks, but basically a smooth spread. The actual frequency of this noise at any point in time correlates with motor rpm. A single out of balance bell or prop will induce sine wave shaking of the frame and the frequency will increase as rpm increases. Obviously all motors make some shaking and noise, and the frequency obviously changes during the flight. The key thing is that noise from bearings or out of balance props / motor bells will be rpm dependent and will vary in frequency. Low pass filters deal very well with noise over a broad spread of frequencies going from low to high. A notch only takes out a tiny piece of it, leaving the rest untouched. If out of balance motor noise coincides with the natural resonant frequency of a prop, arm or other frame component, it will become greatly exaggerated...
