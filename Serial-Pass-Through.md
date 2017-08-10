@@ -1,6 +1,10 @@
 # Serial Pass through
 
 ## Update FrSky XSR RX Firmware
+NOTE: This needs testing. BryceJ has successfully done this procedure, however I was unable to replicate due to issues with the FrSky tool not loading COM ports.  If you are familiar with this procedure, please update this information, or PM me (TCHTHSKY) on RCGroups and I'll add it. 
+
+FrSky Tool: 
+https://www.frsky-rc.com/wp-content/uploads/2017/07/Tool/frsky_update_sport_rev14.zip
 
 This is what it seems to me (using a fully build copter with Rx wired and powered by USB): 
 *Open Betaflight Configurator, access CLI*  
@@ -10,6 +14,7 @@ This is what it seems to me (using a fully build copter with Rx wired and powere
 *Apply power to the Rx*  
 *Update firmware via FrSky Tool*  
 
+From BryceJ: 
 On my Spracingf3 board with a CP210x it would only work if I had my MSP changed to 57600 as well. Not sure what is the issue there. (If you change the MSP speed make sure you reconnect to the configurator at 57600 as well)  
 
 Here is the frsky windows tool: Link needs fixing  
