@@ -94,3 +94,33 @@ The rev2 onboard regulator is limited in current capacity, and has been replaced
 # Other Resources
 
 Rcgroups Thread: http://www.rcgroups.com/forums/showthread.php?t=2593106
+
+# Configuring 4th UART (3.2 and later)
+
+- 4th hardware UART (UART4) is supported on motor outputs 1 and 2, but it is hidden until explicitly turned on by resource commands.
+- Motor outputs 1 and 2 must be remapped to avoid collision with UART4.
+
+### Example
+
+Below is a sequence of resource commands to configure UART4, shift motor outputs by two (Motor 1 to motor output 3, motor 2 to motor output 4 and so on) and use DEBUG pad for LED strip.
+
+```
+# Disable functions on motor outputs 5 and 6 so motors can be shifted by two
+resource SERIAL_TX 11 NONE
+resource SERIAL_RX 11 NONE
+resource MOTOR 5 NONE
+resource MOTOR 6 NONE
+
+# Remap LED
+resource LED_STRIP 1 B03 
+
+# Remap motors
+resource MOTOR 3 B00
+resource MOTOR 4 B01
+resource MOTOR 1 A02
+resource MOTOR 2 A03
+
+# Configure UART4
+resource SERIAL_TX 4 A00
+resource SERIAL_RX 4 A01
+```
