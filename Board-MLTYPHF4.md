@@ -71,7 +71,7 @@ BF 3.2 pre-release build (8/12/2017):
 https://www.dropbox.com/s/w509cb9oscwhazz/betaflight_3.2.0_MLTYPHF4.hex?dl=0
 
 ### Pinout
-![](https://drive.google.com/file/d/0Bwt-GJJpQHmjZGNtWXZKU3F1M3M/view?usp=sharing)
+![](http://gdurl.com/l0JR)
 
 ## Manufacturers and Distributors
 
