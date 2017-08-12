@@ -53,7 +53,7 @@ Regarding soft mounting, that's never been necessary on any of my builds or thos
 [MotoLab Typhoon F4 & VTX Video](https://www.youtube.com/watch?v=h0VcUPcgi8A)
 
 #### how do I configure the vtx like change channels?  
-It shows the stick commands on the OSD startup screen. Mid throttle, yaw left and roll centered, pitch up. 
+It shows the stick commands on the OSD startup screen. Mid throttle, yaw left and roll centered, pitch up. The VTX can also be configured while on USB power using CLI commands vtx_band and vtx_channel. The command parameters are shown above.
 
 ### Software
   - Firmware target: MLTYPHF4
