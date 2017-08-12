@@ -87,7 +87,12 @@ https://github.com/betaflight/betaflight/wiki/Barometer-Configuration-(3.2)
 ## Black Box Viewer
 https://github.com/betaflight/blackbox-log-viewer/commits/master
 
-## Instructions for Upgrading - New feature and changes of how old feature work
+## Instructions for Upgrading - 
+
+DO NOT use Copy/Paste of CLI commands since many have changed- either names or new ones.
+Use the latest Configurator to setup then the CLI Tab and manually set.
+
+## New features and changes of how old feature work
 
 ### Switching from 'tlm_inversion' to 'tlm_inverted'
 
@@ -120,6 +125,8 @@ TO DO - Describe what this does, how to setup and which ESC firmware supports th
 
 
 ## CLI command changes in 3.2
+
+TO DO - Compare a CLI dump from 3.1.x to 3.2 and list all differences.
 
 ### New CLI commands
 
