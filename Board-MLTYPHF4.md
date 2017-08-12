@@ -1,6 +1,6 @@
 Board MLTYPHF4
 
-# MotoLAB Typhoon F4 Flight Controller and VTX
+# MotoLab Typhoon F4 Flight Controller and VTX
 ## Description
 A complete FC, PDB, VTX and OSD system with F4 CPU on two boards with minimal cabling.
 
