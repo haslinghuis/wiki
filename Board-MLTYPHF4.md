@@ -73,7 +73,7 @@ There are two reason the board might not appear as the correct device:
 
 ### Features
 
-_(add list of features)_
+A complete FC, PDB, VTX and OSD system with F4 CPU on two boards with minimal cabling.
 
 ## Manufacturers and Distributors
 
