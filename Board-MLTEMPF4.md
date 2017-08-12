@@ -1,6 +1,6 @@
-##New Tempest F4 Flight Controller
+# MotoLab Tempest F4 Flight Controller
 
-MotoLab Tempest F4 Flight Controller Specifications:  
+Specifications:  
 168MHz STM32F4 version of Tempest   
 100+A PDB with motor current sensor  
 MPU6000 gyro/acc on SPI bus  
@@ -14,18 +14,19 @@ Plug-in direct connection to VTX and Camera with custom cables
 Buzzer and serial LED outputs  
 38x40mm board size with 30.5mm mounting hole spacing  
   
-The Tempest F4 is compatible with Betaflight using the new MLTEMPF4 board target.   
+The Tempest F4 is compatible with Betaflight using the new MLTEMPF4 board target.
 
 Link to thread:   
 https://www.rcgroups.com/forums/showthread.php?2715556-MotoLab-Typhoon-F4-Flight-Controller-and-VTX/page49#post38010951
 
 Firmware:
 
-BF 3.2 experimental binaries and backup of 3.1.7 for the Typhoon & Tempest can be found here:  
-https://www.rcgroups.com/forums/showpost.php?p=38021190&postcount=742  
+The MLTEMPF$ target is added to Betaflight master repositories and will be in future releases.
+A custom build of BF 3.1.7 shipped on the boards is here:
+https://www.dropbox.com/s/tx77p8wxzdoyweo/betaflight_3.1.7_MOTOLABF4_Tempest.hex?dl=0
 
-Source for MotoLab tagets:
-https://www.rcgroups.com/forums/showpost.php?p=38050705&postcount=3176
+Pre-release Betaflight 3.2 firmware is here:
+https://www.dropbox.com/s/ibiln2zy2ccoy20/betaflight_3.2.0_MLTEMPF4.hex?dl=0
 
 Tempest Pinouts:
 https://www.rcgroups.com/forums/showpost.php?p=38051079&postcount=3177
