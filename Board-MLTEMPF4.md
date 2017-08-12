@@ -1,6 +1,9 @@
 Board MLTEMPF4
 
 # MotoLab Tempest F4 Flight Controller
+
+![](https://static.rcgroups.net/forums/attachments/4/5/2/0/2/8/a10242740-88-Angle.jpg)
+
 ## Description
 
 An integrated F4 flight controller with PDB, OSD, and MicroSD
