@@ -2,7 +2,7 @@ Board MLTYPHF4
 
 # MotoLab Typhoon F4 Flight Controller and VTX
 ## Description
-A complete FC, PDB, VTX and OSD system with F4 CPU on two boards with minimal cabling.
+A complete FC, PDB, VTX, OSD and MicroSd system with F4 CPU on two boards with minimal cabling.
 
 ## Hardware
 ### Typhoon F4 Flight Controller:
@@ -55,10 +55,11 @@ Regarding soft mounting, that's never been necessary on any of my builds or thos
 #### how do I configure the vtx like change channels?  
 It shows the stick commands on the OSD startup screen. Mid throttle, yaw left and roll centered, pitch up. The VTX can also be configured while on USB power using CLI commands vtx_band and vtx_channel. The command parameters are shown above.
 
-### Software
+### Firmware
   - Firmware target: MLTYPHF4
 
-- Here's a new hex file. It's 3.1.7 with a fix for Spetrum Sat bind, and with SDcard DMA enabled.  
+The MLTYPHF4 target is added to Betaflight master repositories and will be in future releases.
+A custom build of BF 3.1.7 shipped on the boards is here:
 https://www.dropbox.com/s/5h1gz0kct03lb09/betaflight_3.1.7_DMA_MOTOLABF4.hex?dl=0   
 
 BF 3.2 pre-release build (8/12/2017):
