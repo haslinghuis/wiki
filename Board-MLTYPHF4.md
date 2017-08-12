@@ -62,6 +62,7 @@ It shows the stick commands on the OSD startup screen. Mid throttle, yaw left an
   - Firmware target: MLTYPHF4
 
 The MLTYPHF4 target is added to Betaflight master repositories and will be in future releases.
+
 A custom build of BF 3.1.7 shipped on the boards is here:
 https://www.dropbox.com/s/5h1gz0kct03lb09/betaflight_3.1.7_DMA_MOTOLABF4.hex?dl=0   
 
