@@ -39,7 +39,7 @@ https://www.dropbox.com/s/ibiln2zy2ccoy20/betaflight_3.2.0_MLTEMPF4.hex?dl=0
 
 ### Tempest F4 Pinout
 https://www.rcgroups.com/forums/showpost.php?p=38051079&postcount=3177
-![](https://static.rcgroups.net/forums/attachments/4/5/2/0/2/8/a10258747-171-TempestF4-PinOut.jpg)
+![](http://gdurl.com/FlVd)
 
 ## Manufacturers and Distributors
 
