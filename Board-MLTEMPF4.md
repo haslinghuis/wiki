@@ -4,7 +4,7 @@
 
 ## Description
 
-An integrated F4 flight controller with PDB, OSD, and MicroSD
+An F4 flight controller with integrated PDB, OSD, and MicroSD
 
 ## Specifications:  
 168MHz STM32F4 version of Tempest   
