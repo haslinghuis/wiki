@@ -4,7 +4,7 @@ Board MLTEMPF4
 ## Description
 
 An integrated F4 flight controller with PDB, OSD, and MicroSD
-
+![](https://static.rcgroups.net/forums/attachments/4/5/2/0/2/8/a10258747-171-TempestF4-PinOut.jpg)
 ![](https://www.dropbox.com/s/3k9wnhb6k7rm4ek/Angle.jpg?dl=0)
 
 ## Specifications:  
