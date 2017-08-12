@@ -16,7 +16,7 @@ Two board set
  - Plug-in connection to VTX board
  - 38x40mm board size with 30.5mm mounting hole spacing
 
- - The Typhoon F4 is compatible with Betaflight using the new MOTOLABF4 board target.
+ - The Typhoon F4 is compatible with Betaflight using the new MLTYPHF4 board target.
  - The F4 board mates directly with the VTX board with no external wiring between the two.
 
 ### Typhoon VTX:
@@ -56,13 +56,13 @@ Regarding soft mounting, that's never been necessary on any of my builds or thos
 It shows the stick commands on the OSD startup screen. Mid throttle, yaw left and roll centered, pitch up. 
 
 ### Software
-  - Firmware target: MOTOLABF4
+  - Firmware target: MLTYPHF4
 
 - Here's a new hex file. It's 3.1.7 with a fix for Spetrum Sat bind, and with SDcard DMA enabled.  
 https://www.dropbox.com/s/5h1gz0kct03lb09/betaflight_3.1.7_DMA_MOTOLABF4.hex?dl=0   
 
-BF 3.2 experimental binaries and backup of 3.1.7 for the Typhoon & Tempest can be found here:  
-https://www.rcgroups.com/forums/showpost.php?p=38021190&postcount=742  
+BF 3.2 pre-release build (8/12/2017):
+https://www.dropbox.com/s/w509cb9oscwhazz/betaflight_3.2.0_MLTYPHF4.hex?dl=0
 
 ####  I can get it to connect properly in DFU mode!
 There are two reason the board might not appear as the correct device:
@@ -89,7 +89,7 @@ _(add your name here if you help test or contribute code for this board)_
 
 ## Similar Targets
 
-[MotoLab Tempest](https://github.com/betaflight/betaflight/wiki/Board---MOTOLAB)
+[MotoLab Tempest F4](https://github.com/betaflight/betaflight/wiki/Board---MLTEMPF4)
 
 
 ## Variants
