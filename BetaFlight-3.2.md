@@ -109,17 +109,26 @@ TO DO - fill in CLI commands and what they do.
 TO DO - fill in CLI commands and what they do.
 
 TCHTHSKY Posted in Boris' thread-
-[Here's the code for it. It has comments: ](https://github.com/kc10kevin/betaflight/blob/master/src/main/flight/pid.c)
-[And here is the feature request: ](https://github.com/betaflight/betaflight/issues/2731)
-[And here's this: ](http://stackissue.com/betaflight/betaflight/added-experimental-crash-detection-and-recovery-2783.html)
-[Here's another from earlier in this thread:](https://www.rcgroups.com/forums/showpost.php?p=37951070&postcount=49982)
+[Here's the code for it. It has comments: ](https://github.com/kc10kevin/betaflight/blob/master/src/main/flight/pid.c)   
+[And here is the feature request: ](https://github.com/betaflight/betaflight/issues/2731)   
+[And here's this: ](http://stackissue.com/betaflight/betaflight/added-experimental-crash-detection-and-recovery-2783.html)   
+[Here's another from earlier in this thread:](https://www.rcgroups.com/forums/showpost.php?p=37951070&postcount=49982)   
+
+### Turtle Mode  
+
+TO DO - Describe what this does, how to setup and which ESC firmware supports this.
+
 
 ## CLI command changes in 3.2
 
-#3# New CLI commands
+### New CLI commands
 
+TO DO - list all new CLI commands with a description of what they do and how to use them (links are good) and what the Default and optional values are.
 
 ### Name changes
+
+TO DO - add to this list all CLI commands that changed names
+ 
 #### yaw_motor_direction [1, -1] => yaw_motors_reversed [OFF, ON]
 #### sport_halfduplex => set tlm_halfduplex
 #### tlm_inversion' => 'tlm_inverted
