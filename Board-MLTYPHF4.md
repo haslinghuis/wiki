@@ -1,8 +1,8 @@
 Board MLTYPHF4
 
-# Typhoon F4 Flight Controller and VTX
+# MotoLAB Typhoon F4 Flight Controller and VTX
 ## Description
-Two board set
+A complete FC, PDB, VTX and OSD system with F4 CPU on two boards with minimal cabling.
 
 ## Hardware
 ### Typhoon F4 Flight Controller:
@@ -70,10 +70,6 @@ There are two reason the board might not appear as the correct device:
 1) The firmware is corrupted or wrong file loaded. The red led should flash at startup, and then flash if the board is rotated from level if the firmware is running. If not, force DFU mode with the boot pins and reflash with "No reboot sequence" enabled.
 
 2) The wrong drivers are installed. Zadig should be used to install only the DFU mode driver. Connect in DFU mode with the boot pins, and then install the driver listed in post #1. Additional instructions are [here](https://github.com/betaflight/betaflight/wiki/Installing-Betaflight#dfu-flashing-under-windows---usb-dfu). The default Windows drivers should work for VCP mode.
-
-### Features
-
-A complete FC, PDB, VTX and OSD system with F4 CPU on two boards with minimal cabling.
 
 ## Manufacturers and Distributors
 
