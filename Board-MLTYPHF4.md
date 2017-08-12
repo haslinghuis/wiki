@@ -1,6 +1,7 @@
 Board MLTYPHF4
 
 # MotoLab Typhoon F4 Flight Controller and VTX
+![](https://drive.google.com/open?id=0Bwt-GJJpQHmjRU9wTWhOa1lDZ00)
 ![](https://static.rcgroups.net/forums/attachments/4/5/2/0/2/8/a10021631-82-IMG_20170507_155423.jpg)
 ![](https://static.rcgroups.net/forums/attachments/4/5/2/0/2/8/a10021635-46-IMG_20170507_155528.jpg)
 
@@ -118,7 +119,7 @@ https://www.rcgroups.com/forums/showpost.php?p=37567682&postcount=3053
 
 ## Images
 https://www.rcgroups.com/forums/showpost.php?p=37468289&postcount=3013
-![](https://drive.google.com/open?id=0Bwt-GJJpQHmjRU9wTWhOa1lDZ00)
+
 Source code:
 https://www.rcgroups.com/forums/showpost.php?p=38050705&postcount=3176
 
