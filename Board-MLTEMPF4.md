@@ -5,6 +5,8 @@ Board MLTEMPF4
 
 An integrated F4 flight controller with PDB, OSD, and MicroSD
 
+![](https://www.dropbox.com/s/3k9wnhb6k7rm4ek/Angle.jpg?dl=0)
+
 ## Specifications:  
 168MHz STM32F4 version of Tempest   
 100+A PDB with motor current sensor  
