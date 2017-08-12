@@ -34,7 +34,7 @@ https://www.dropbox.com/s/tx77p8wxzdoyweo/betaflight_3.1.7_MOTOLABF4_Tempest.hex
 Pre-release Betaflight 3.2 firmware is here:
 https://www.dropbox.com/s/ibiln2zy2ccoy20/betaflight_3.2.0_MLTEMPF4.hex?dl=0
 
-### Tempest Pinouts
+### Tempest F4 Pinout
 https://www.rcgroups.com/forums/showpost.php?p=38051079&postcount=3177
 
 ## Manufacturers and Distributors
