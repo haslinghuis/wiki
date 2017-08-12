@@ -1,5 +1,3 @@
-Board MLTYPHF4
-
 # MotoLab Typhoon F4 Flight Controller and VTX
 ![](http://gdurl.com/GGSY)
 ![](http://gdurl.com/9Idm)
