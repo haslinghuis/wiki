@@ -40,6 +40,8 @@ The VTX controls are through the BetaFlight OSD functions using the RC transmitt
 * SW1 OFF, SW2  ON 200mW
 * SW1 OFF, SW2 OFF 500mW
 
+The VTX can also be configured while on USB power (the VTX is not powered) with Configurator using CLI commands vtx_band and vtx_channel.
+
 The values (1-5) for vtx_band in CLI are:
 
  - 1: Boscam A
@@ -50,12 +52,7 @@ The values (1-5) for vtx_band in CLI are:
 
 vtx_channel values are 1-8 for channel 1-8.
 
-Regarding soft mounting, that's never been necessary on any of my builds or those of the beta testers here. With the MPU6000, the well-filtered power in the Typhoon, and a stiff frame there shouldn't be a problem. 
-
 [MotoLab Typhoon F4 & VTX Video](https://www.youtube.com/watch?v=h0VcUPcgi8A)
-
-#### how do I configure the vtx like change channels?  
-It shows the stick commands on the OSD startup screen. Mid throttle, yaw left and roll centered, pitch up. The VTX can also be configured while on USB power using CLI commands vtx_band and vtx_channel. The command parameters are shown above.
 
 ### Firmware
   - Firmware target: MLTYPHF4
@@ -94,6 +91,9 @@ There are two reason the board might not appear as the correct device:
 1) The firmware is corrupted or wrong file loaded. The red led should flash at startup, and then flash if the board is rotated from level if the firmware is running. If not, force DFU mode with the boot pins and reflash with "No reboot sequence" enabled.
 
 2) The wrong drivers are installed. Zadig should be used to install only the DFU mode driver. Connect in DFU mode with the boot pins, and then install the driver listed in post #1. Additional instructions are [here](https://github.com/betaflight/betaflight/wiki/Installing-Betaflight#dfu-flashing-under-windows---usb-dfu). The default Windows drivers should work for VCP mode.
+
+#### how do I configure the vtx like change channels?  
+Stick commands are shown on the OSD startup screen. Mid throttle, yaw left and roll centered, pitch up.
 
 ## Other Resources
 
