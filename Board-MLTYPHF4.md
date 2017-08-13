@@ -3,6 +3,8 @@
 ![](http://gdurl.com/9Idm)
 ![](https://static.rcgroups.net/forums/attachments/4/5/2/0/2/8/a10021635-46-IMG_20170507_155528.jpg)
 
+[MotoLab Typhoon F4 & VTX Video](https://www.youtube.com/watch?v=h0VcUPcgi8A)
+
 ## Description
 A complete FC, PDB, VTX, OSD and MicroSd system with F4 CPU on two boards with minimal cabling.
 
@@ -51,8 +53,6 @@ The values (1-5) for vtx_band in CLI are:
  - 5: Raceband
 
 vtx_channel values are 1-8 for channel 1-8.
-
-[MotoLab Typhoon F4 & VTX Video](https://www.youtube.com/watch?v=h0VcUPcgi8A)
 
 ### Firmware
   - Firmware target: MLTYPHF4
