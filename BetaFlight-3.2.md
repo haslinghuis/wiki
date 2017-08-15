@@ -139,3 +139,4 @@ TO DO - add to this list all CLI commands that changed names
 #### yaw_motor_direction [1, -1] => yaw_motors_reversed [OFF, ON]
 #### sport_halfduplex => set tlm_halfduplex
 #### tlm_inversion' => 'tlm_inverted
+#### dfu => bl
