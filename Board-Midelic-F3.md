@@ -23,10 +23,10 @@ F3 board with PDB and integrated FrSky RX.
   - Blackbox: serial / SD Card
   - Battery Voltage Sensor: yes
   - Current Sensor: yes
-  - Integrated Voltage Regulator: 5V
+  - Integrated Voltage Regulator: 5V 3A
   - PDB: yes
   - Brushed Motor Mosfets: no
-  - Buttons: Boot / Bind (combined
+  - Buttons: Boot / Bind (combined)
   - 6 PWM / Dshot outputs
   - LED strip output (combined with motor 5)
   - Integrated FrSky RX: yes
