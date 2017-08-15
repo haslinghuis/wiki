@@ -92,6 +92,7 @@
  - [LUX_RACE](/betaflight/betaflight/wiki/Board---LUX_RACE)
  - [Matek F405](/betaflight/betaflight/wiki/matekf405)
  - [MICROSCISKY](/betaflight/betaflight/wiki/Board---MICROSCISKY)
+ - [Midelic F3](/betaflight/betaflight/wiki/Board-Midelic-F3)
  - [MLTEMPF4](https://github.com/betaflight/betaflight/wiki/Board-MLTEMPF4)
  - [MLTYPHF4](https://github.com/betaflight/betaflight/wiki/Board-MLTYPHF4)
  - [MOTOLAB](/betaflight/betaflight/wiki/Board---MOTOLAB)
