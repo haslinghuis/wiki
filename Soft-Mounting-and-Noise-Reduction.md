@@ -51,6 +51,9 @@ Maybe try leave the FC dangling in the air and see if it still happens - just to
 #### Here is a post from ctzsnooze on a better soft-mounting method.  
 http://www.rcgroups.com/forums/showpost.php?p=35486733&postcount=36111
 
+#### Post from deekon on Soft Mounting:  
+https://www.rcgroups.com/forums/showpost.php?p=38103439&postcount=50944   
+
 ### Links to Soft Mounting hardware:  
 OZ -- I am using these, $4.30 for 8 shipped. They are rubber 8mm x 8mm with standard M3 male/female mounting.  
 http://www.ebay.com/itm/151873404692?_trksid=p2057872.m2749.l2649&ssPageName=STRK%3AMEBIDX%3AIT&rmvSB=true  
