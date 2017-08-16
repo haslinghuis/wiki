@@ -9,6 +9,45 @@ Also be sure to read the other Wiki pages:
 [Gyro & Filters](https://github.com/betaflight/betaflight/wiki/Gyro-&-Dterm-filtering-recommendations)  
 [BB logging & Filters](https://github.com/betaflight/betaflight/wiki/Black-Box-logging-and-usage)  
 
+### Damping Theory by ctzsnooze:  
+Regarding so-called 'maximum damped frequency'...
+
+Ideal hardware damping results in a physical effect comparable to that of an electronic low pass filter. We want is full transmission without delay of frequencies below a cut point, and attenuation above that; the higher we go in frequency above the cut point, the less gets transmitted through the damping material.
+
+Real world hardware damping usually has the unfortunate result of also generating a resonant peak at the frequency where the damping ought to start. At frequencies above that resonant peak, there is a progressive cut.
+
+In principle, therefore, there is no 'maximal damping frequency'. There is just a cutoff point above which damping / attenuation gets progressively greater.
+
+The classical physical 'damper' is the shock absorber on a car.
+
+Electronic low pass filters (eg PT1 or biquad) do not resonate around cutoff. But most real world hardware damping methods do.
+
+The typical damping method we use involves some soft, vibration absorbent material that has a bit of 'give', isolating one part of the system from another.
+
+The ideal damping material is a viscoelastic substance that absorbs high frequencies and does not act like a spring.
+
+Real world damping materials *all* act like springs. The springier they are, the more resonance you will get.
+
+Adding mass to an object on a spring will *lower* the cut / resonant peak frequency but will also *increase* the magnitude of the resonance.
+
+For a flight controller, we want to reduce transmission of high frequency noise, but not cause resonance around the peak. The isolating materials should be viscoelastic, not springy. 'Hard' rubber foam and silicone are not viscoelastic. They will minimize transmission of noise but will result in a resonant peak.
+
+Adding mass to the FC will lower the cut point and attenuate noise. Very light FC's on relatively hard foam will not be damped much and may resonate at exactly the point we want to cut.
+
+If an arm has flex, it will have a resonant peak at a certain frequency and dampen out noise above that. Adding mass to the end of the arm eg with heavier motors will lower that frequency and enhance resonance. Making the arm stiffer will shift the resonant peak higher and attenuate the magnitude of the resonance.
+
+The two main problems with 'soft mounting' methods are:
+
+1. they all can induce resonance at or around their cutoff point, and
+
+2. it is difficult to know what the actual cutoff point will be.
+
+It is possible to test performance of soft mounting systems is to push noise through them and see how much gets through. For an FC we have the recorder built in - the gyro. So if we were to hard attach the FC to a loudspeaker cone, and drive noise into the loudspeaker, we could get the frequency response of that system (the loudspeaker itself would be non-linear especially with the mass of the FC attached). If we put a soft mount *between the loudspeaker cone and the FC*, we could see exactly how that soft mount altered noise transmission to the FC; we would have scientific evidence of what kind of attenuation / resonance was actually happening.
+
+To do it properly, the mass of the soft mount parts would be included in the first part of the test by attaching them to the loudspeaker cone but not in the attenuation pathway.
+
+I did something like this about 30 years ago when testing frequency response of arterial pressure monitoring systems. It takes quite a bit of time to do. Until someone gets hard data on it, we really have no idea if our soft mounts are too soft, too hard, causing resonance, etc. 
+
 ## Soft Mounting the FC board
 
 #### A nice Over view of the Yaw Twitch and/or throttle oscillations from ctzsnooze   
