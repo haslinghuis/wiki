@@ -1,5 +1,3 @@
-# Arming Sequence & Safety
-
 Betaflight 3.2 (and above) includes more detailed troubleshooting information for the case when a craft will not arm.
 
 This information is available via:
