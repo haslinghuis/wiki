@@ -37,15 +37,15 @@ What each flag means and what you should do to (probably) fix the issue.
 
 - `THROTTLE`  
   Throttle channel is too high.  
-  Lower throttle below `min_check`
+  Lower throttle below `min_check`.
 
 - `ANGLE`  
   Craft is not level (enough).  
-  Levl craft to within `min_angle`
+  Level craft to within `small_angle` degrees (default 25).
 
 - `BOOT GRACE`  
   Arming too soon after power on.  
-  Wait until boot grace time has elapsed.
+  Wait until `pwr_on_arm_grace` seconds (default 5) have elapsed.
 
 - `NO PREARM`  
   Prearm switch is not activated or prearm has not been toggled after disarm.  
