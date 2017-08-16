@@ -47,7 +47,7 @@ F3 board with PDB and integrated FrSky RX.
 
 ## Designers
 
- - FrSky RX code: Liviu Midelic
+ - FrSky RX code: Midelic
  - hardware: Eric Freund
  - Betaflight integration: Michael Keller
  
