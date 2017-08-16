@@ -14,11 +14,13 @@ Betaflight OSD
 Micro SD slot with DMA support  
 Up to 5 serial ports plus USB  
 Up to 6 Dshot motor outputs  
-Serial inverters for SBUS and S.PORT  
+Serial inverters for SBUS and S.PORT
+Compatible with TBS Smartaudio and IRC Tramp serial protocols
 1.5A 5V regulator with LC filtered 5V for OSD and camera  
 Plug-in direct connection to VTX and Camera with custom cables  
 Buzzer and serial LED outputs  
-38x40mm board size with 30.5mm mounting hole spacing  
+38x40mm board size with 30.5mm mounting hole spacing
+Supplied with cables for direct connection to Unify Pro HV VTX and HS1177 camera
   
 The Tempest F4 is compatible with Betaflight using the new MLTEMPF4 board target.
 Cables are included for direct plug-in to an HS1177 camera and a Unify Pro HV VTX.
