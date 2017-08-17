@@ -30,13 +30,14 @@ F3 board with PDB and integrated FrSky RX.
   - 6 PWM / Dshot outputs
   - LED strip output (combined with motor 5)
   - Integrated FrSky RX: yes
+  - Analog inputs for telemetry: A1 / A2
 
 
 ### Features
 
   - 6 motor outputs
   - blackbox logging to SD Card
-  - FrSky Rx (SPI) with telemetry
+  - FrSky Rx (SPI) with telemetry and RSSI
 
 
 ## Manufacturers and Distributors
