@@ -109,6 +109,12 @@ _This means that for all protocols, if unmodified hardware is used `tlm_inverted
 
 TO DO - fill in CLI commands and what they do.
 
+
+This is the current signal path in ascii art:
+
+gyro -> dynamicNotch -> notch1 -> notch2 -> lpf -> P term                                           -> motors
+                                               \-> D term -> notchD -> lpfD -> setpointRelax&Weight /   
+
 ### Crash Recovery
 
 TO DO - fill in CLI commands and what they do.
