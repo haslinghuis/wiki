@@ -112,8 +112,9 @@ TO DO - fill in CLI commands and what they do.
 
 This is the current signal path in ascii art:
 
-gyro -> dynamicNotch -> notch1 -> notch2 -> lpf -> P term                                           -> motors
-                                               \-> D term -> notchD -> lpfD -> setpointRelax&Weight /   
+gyro -> dynamicNotch -> notch1 -> notch2 -> lpf -> P term                                           
+-> motors    
+                                               \-> D term -> notchD -> lpfD -> setpointRelax&Weight /    
 
 ### Crash Recovery
 
