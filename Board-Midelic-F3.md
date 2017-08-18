@@ -24,7 +24,7 @@ F3 board with PDB and integrated FrSky RX.
   - Battery Voltage Sensor: yes
   - Current Sensor: yes
   - Integrated Voltage Regulator: 5V 3A
-  - PDB: yes
+  - PDB: yes (2S - 6S, 100A, 125A peak)
   - Brushed Motor Mosfets: no
   - Buttons: Boot / Bind (combined)
   - 6 PWM / Dshot outputs
