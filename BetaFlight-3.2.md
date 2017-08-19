@@ -153,7 +153,7 @@ TO DO - add to this list all CLI commands that changed names
 #### dfu => bl
 
 
-## Changes in the New Configurator GUI
+## Changes in the New Configurator GUI (V3.2.2)
 
 ### Receiver Tab  
  Added "Stick Min", "Stick Center" & "Stick Max" ---these are simply MIN_CHECK, MID_RC, MAX_CHECK.
