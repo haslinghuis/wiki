@@ -6,15 +6,29 @@ This information is available via:
 - beep patterns
 - Betaflight Configurator
 
+Several of these conditions are to assist in preventing accidental arming via bad radio system configuration, unreliable/poor quality receivers and user mistakes.
+
 These reasons for not arming are encoded as a set of flags (see [runtime_config.h](https://github.com/betaflight/betaflight/blob/master/src/main/fc/runtime_config.h)).
+
+## CLI
+
+Flags can be viewed via the `status` command.
 
 Some targets with limited flash space will only provide the hexadecimal representation of these flags, in which case the active flags must be derived from the `armingDisableFlags_e` enum in `runtime_config.h` (ensure the version of the file you are looking at matches that of your firmware).
 
-Several of these conditions are to assist in preventing accidental arming via bad radio system configuration, unreliable/poor quality receivers and user mistakes.
+## Beeper
+
+A series of beeps will be made if you try to arm and any arming prevention flag is set.
+
+The beep pattern will be a series of `[long] [pause] [short] [pause]`, the number of times this pattern is repeated is the index of the most severe reason for arming being disabled.
+
+The reason can be obtained from the `armingDisableFlags_e` enum in `runtime_config.h` (ensure the version of the file you are looking at matches that of your firmware).
 
 ## Description of arming prevention flags
 
-What each flag means and what you should do to (probably) fix the issue.
+What each flag means and what you should do to (probably) fix the issue.#
+
+This list *should* be kept up to date with the code in `master` so can be used to find what flag corresponds to a certain index, however if you run an older version you'd have to check this manually as mentioned above.
 
 - `NOGYRO`  
   A gyro was not detected.  
