@@ -135,6 +135,10 @@ TO DO - Describe what this does, how to setup and which ESC firmware supports th
 
 TO DO - Compare a CLI dump from 3.1.x to 3.2 and list all differences.
 
+### Removed CLI Commands
+
+TO DO - List all CLI comands that were in V3.1.x that are not in V3.2.
+
 ### New CLI commands
 
 TO DO - list all new CLI commands with a description of what they do and how to use them (links are good) and what the Default and optional values are.
@@ -147,3 +151,9 @@ TO DO - add to this list all CLI commands that changed names
 #### sport_halfduplex => set tlm_halfduplex
 #### tlm_inversion' => 'tlm_inverted
 #### dfu => bl
+
+
+## Changes in the New Configurator GUI
+
+### Receiver Tab  
+ Added "Stick Min", "Stick Center" & "Stick Max" ---these are simply MIN_CHECK, MID_RC, MAX_CHECK.
