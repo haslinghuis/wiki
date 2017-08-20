@@ -65,6 +65,7 @@ Therefore be sure to Read the Release Note Wiki pages to know what commands or f
 1. [Recently with the temps dropping, my quad has started to develop a random twitch. Anyone else experience random issues when it's 20'ish degree's F outside ?](#recently-with-the-temps-dropping,-my-quad-has-started-to-develop-a-random-twitch.-Anyone-else-experience-random-issues-when-it's-20'ish-degree's-F-outside-)
 1. [Why can't I connect to my flight controller using MSP over UART1?](#why-cant-i-connect-to-my-flight-controller-using-msp-over-uart1)
 1. [Is it possible that we can flash the Frsky receivers thru the flight controller like we now flash the ESC?](#is-it-possible-that-we-can-flash-the-frsky-receivers-thru-the-flight-controller-like-we-now-flash-the-esc)
+1. [Is there a way to dismiss the OSD post flight statistics screen?](#is-there-a-way-to-dismiss-the-osd-post-flight-statistics-screen)
 
 **If your question is not listed above then please check the following pages:**
 
@@ -1754,3 +1755,7 @@ Follow the instructions under "development" on this wiki, but add `OPTIONS=USE_M
 
 That's done by Fishpepper;
 [OpenSky / tinyFISH](http://fishpepper.de/2017/02/24/opensky-tinyfish-how-to-update-the-opensky-receiver-firmware-through-betaflight/)
+
+## Is there a way to dismiss the OSD post flight statistics screen?
+
+Yes, move either the throttle or pitch stick high to dismiss the statistics screen and return to the "main" OSD screen.
