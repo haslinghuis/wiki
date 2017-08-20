@@ -139,6 +139,13 @@ TO DO - Compare a CLI dump from 3.1.x to 3.2 and list all differences.
 
 TO DO - List all CLI comands that were in V3.1.x that are not in V3.2.
 
+feature -VBAT
+feature -FAILSAFE
+feature -CURRENT_METER
+feature -BLACKBOX
+feature -SDCARD
+feature -VTX
+
 set align_mag   
 set bat_detect_thresh   
 set blackbox_rate_num   
@@ -153,6 +160,10 @@ set servo_lowpass
 
 TO DO - list all new CLI commands with a description of what they do and how to use them (links are good) and what the Default and optional values are.
 
+#### feature -DYNAMIC_FILTER
+#### beeper BLACKBOX_ERASE
+
+GLOBAL SET  
 #### set beeper_frequency = 0
 [0..16000]  
 
@@ -168,6 +179,29 @@ TO DO - list all new CLI commands with a description of what they do and how to 
 #### set camera_control_ref_voltage = 330
 [100..400]
 
+#### set dashboard_i2c_addr = 60
+[8..119]
+#### set dashboard_i2c_bus = 1
+[0..2]
+#### set esc_sensor_halfduplex = OFF
+[OFF, ON]
+
+#### set ibatv_offset = 0
+[-16000..16000]
+#### set ibatv_scale = 0
+[-16000..16000]
+#### set led_inversion = 0
+[0..7]
+#### set motor_pwm_inversion = OFF
+[OFF, ON]
+#### set report_cell_voltage = OFF
+[OFF, ON]
+#### set vbat_detect_cell_voltage = 30
+[10..50]
+#### set motor_pwm_protocol = ONESHOT125
+[OFF, ONESHOT125, ONESHOT42, MULTISHOT, BRUSHED, DSHOT150, DSHOT300, DSHOT600, DSHOT1200, PROSHOT1000]
+
+Per PROFILE:   
 #### set crash_delay = 0
 [0..500]
 #### set crash_dthreshold = 50
@@ -184,30 +218,10 @@ TO DO - list all new CLI commands with a description of what they do and how to 
 [0..2000]
 #### set crash_time = 500
 [0..500]
-#### set dashboard_i2c_addr = 60
-[8..119]
-#### set dashboard_i2c_bus = 1
-[0..2]
-#### set esc_sensor_halfduplex = OFF
-[OFF, ON]
 #### set horizon_tilt_effect = 75
 [0..250]
 #### set horizon_tilt_expert_mode = OFF
 [OFF, ON]
-#### set ibatv_offset = 0
-[-16000..16000]
-#### set ibatv_scale = 0
-[-16000..16000]
-#### set led_inversion = 0
-[0..7]
-#### set motor_pwm_inversion = OFF
-[OFF, ON]
-#### set report_cell_voltage = OFF
-[OFF, ON]
-#### set vbat_detect_cell_voltage = 30
-[10..50]
-#### set motor_pwm_protocol = ONESHOT125
-[OFF, ONESHOT125, ONESHOT42, MULTISHOT, BRUSHED, DSHOT150, DSHOT300, DSHOT600, DSHOT1200, PROSHOT1000]
 
 ### Name changes
 
