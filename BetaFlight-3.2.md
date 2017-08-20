@@ -139,18 +139,77 @@ TO DO - Compare a CLI dump from 3.1.x to 3.2 and list all differences.
 
 TO DO - List all CLI comands that were in V3.1.x that are not in V3.2.
 
+set align_mag   
+set bat_detect_thresh   
+set blackbox_rate_num   
+set fixedwing_althold_dir  
+set frsky_vfas_cell_voltage   
+set gyro_use_32khz  
+set mwii_ibat_output  
+set servo_lowpass  
+  
+
 ### New CLI commands
 
 TO DO - list all new CLI commands with a description of what they do and how to use them (links are good) and what the Default and optional values are.
+
+#### set beeper_frequency
+
+#### set blackbox_record_acc = ON
+
+#### set camera_control_key_delay = 150
+
+#### set camera_control_mode = HARDWARE_PWM
+
+#### set camera_control_ref_voltage = 330
+
+#### set crash_delay = 0
+#### set crash_dthreshold = 50
+#### set crash_gthreshold = 400
+#### set crash_recovery = OFF
+#### set crash_recovery_angle = 10
+#### set crash_recovery_rate = 100
+#### set crash_setpoint_threshold = 350
+#### set crash_time = 500
+
+set dashboard_i2c_addr = 60
+set dashboard_i2c_bus = 1
+
+set esc_sensor_halfduplex = OFF
+
+set horizon_tilt_effect = 75
+set horizon_tilt_expert_mode = OFF
+
+set ibatv_offset = 0
+set ibatv_scale = 0
+set led_inversion = 0
+set motor_pwm_inversion = OFF
+set report_cell_voltage = OFF
+set vbat_detect_cell_voltage = 30
+
 
 ### Name changes
 
 TO DO - add to this list all CLI commands that changed names
  
-#### yaw_motor_direction [1, -1] => yaw_motors_reversed [OFF, ON]
-#### sport_halfduplex => set tlm_halfduplex
-#### tlm_inversion' => 'tlm_inverted
-#### dfu => bl
+#### yaw_motor_direction [1, -1] ==> yaw_motors_reversed [OFF, ON]
+#### sport_halfduplex ==> set tlm_halfduplex
+#### tlm_inversion' ==> tlm_inverted
+#### spektrum_sat_bind_autorst ==> spektrum_sat_bind_autoreset  
+#### dfu ==> bl
+#### current_meter_type = ADC ==> current_meter = VIRTUAL
+#### d_lowpass ==> dterm_lowpass  
+#### d_lowpass_type ==> dterm_lowpass_type  
+#### d_notch_cut ==> dterm_notch_cutoff  
+#### d_notch_hz ==> dterm_notch_hz  
+#### digital_idle_percent [7.00] ==> dshot_idle_value [450]
+#### yaw_accel_limit ==> acc_limit_yaw  
+#### yaw_control_direction [1] ==> yaw_control_reversed [OFF]
+#### anti_gravity_thresh ==> anti_gravity_threshold  
+#### battery_meter_type ==> battery_meter
+#### blackbox_rate_denom [4] ==> blackbox_p_denom [32]
+#### ibat_offset [0] ==> ibata_offset [0]
+#### ibat_scale [400] ==> ibata_scale [400]
 
 
 ## Changes in the New Configurator GUI (V3.2.2)
