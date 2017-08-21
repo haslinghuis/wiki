@@ -139,12 +139,12 @@ TO DO - Compare a CLI dump from 3.1.x to 3.2 and list all differences.
 
 TO DO - List all CLI comands that were in V3.1.x that are not in V3.2.
 
-feature -VBAT
-feature -FAILSAFE
-feature -CURRENT_METER
-feature -BLACKBOX
-feature -SDCARD
-feature -VTX
+feature -VBAT  
+feature -FAILSAFE  
+feature -CURRENT_METER  
+feature -BLACKBOX  
+feature -SDCARD  
+feature -VTX  
 
 set align_mag   
 set bat_detect_thresh   
