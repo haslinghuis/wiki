@@ -34,7 +34,7 @@ The reason can be obtained from the `armingDisableFlags_e` enum in `runtime_conf
 
 ## Description of arming prevention flags
 
-What each flag means and what you should do to (probably) fix the issue.#
+What each flag means and what you should do to (probably) fix the issue.
 
 This list *should* be kept up to date with the code in `master` so can be used to find what flag corresponds to a certain index, however if you run an older version you'd have to check this manually as mentioned above.
 
