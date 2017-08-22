@@ -126,6 +126,9 @@ TCHTHSKY Posted in Boris' thread-
 [And here's this: ](http://stackissue.com/betaflight/betaflight/added-experimental-crash-detection-and-recovery-2783.html)   
 [Here's another from earlier in this thread:](https://www.rcgroups.com/forums/showpost.php?p=37951070&postcount=49982)   
 
+Important note from mjbudden:  
+The crash recovery routine does not currently attempt to limit yaw spin - it just tried to level the quad. I did not anticipate the "yaw spin to the moon" problem when I wrote the crash recovery routine. I'm now working on a solution. See PR github.com/betaflight/betaflight/pull/3909 in github for the current discussion on the subject. Feel free to contribute to the discussion. Also black box logs of "yaw spins to the moon" are very welcome and will help analyze and solve the problem.   
+
 ### Turtle Mode  
 
 TO DO - Describe what this does, how to setup and which ESC firmware supports this.
@@ -133,11 +136,7 @@ TO DO - Describe what this does, how to setup and which ESC firmware supports th
 
 ## CLI command changes in 3.2
 
-TO DO - Compare a CLI dump from 3.1.x to 3.2 and list all differences.
-
 ### Removed CLI Commands
-
-TO DO - List all CLI comands that were in V3.1.x that are not in V3.2.
 
 feature -VBAT  
 feature -FAILSAFE  
@@ -225,8 +224,6 @@ Per PROFILE:
 
 ### Name changes
 
-TO DO - add to this list all CLI commands that changed names
- 
 #### yaw_motor_direction [1, -1] ==> yaw_motors_reversed [OFF, ON]
 #### sport_halfduplex ==> set tlm_halfduplex
 #### tlm_inversion' ==> tlm_inverted
