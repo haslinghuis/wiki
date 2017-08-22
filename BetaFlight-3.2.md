@@ -208,19 +208,19 @@ GLOBAL SET
 Per PROFILE:   
 #### set crash_delay = 0
 [0..500]
-#### set crash_dthreshold = 50
+#### set crash_dthreshold = 50 :degrees/second/second
 [0..2000]
-#### set crash_gthreshold = 400
+#### set crash_gthreshold = 400 :degrees/second
 [0..2000]
 #### set crash_recovery = OFF
 [OFF, ON, BEEP]
-#### set crash_recovery_angle = 10
+#### set crash_recovery_angle = 10 :degrees
 [0..30]
-#### set crash_recovery_rate = 100
+#### set crash_recovery_rate = 100 :degrees/second
 [0..255]
-#### set crash_setpoint_threshold = 350
+#### set crash_setpoint_threshold = 350 :degrees/second
 [0..2000]
-#### set crash_time = 500
+#### set crash_time = 500 :ms
 [0..500]
 #### set horizon_tilt_effect = 75
 [0..250]
