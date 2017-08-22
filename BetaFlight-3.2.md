@@ -127,7 +127,12 @@ TCHTHSKY Posted in Boris' thread-
 [Here's another from earlier in this thread:](https://www.rcgroups.com/forums/showpost.php?p=37951070&postcount=49982)   
 
 #### Important note from mjbudden:  
-The crash recovery routine does not currently attempt to limit yaw spin - it just tried to level the quad. I did not anticipate the "yaw spin to the moon" problem when I wrote the crash recovery routine. I'm now working on a solution. See PR github.com/betaflight/betaflight/pull/3909 in github for the current discussion on the subject. Feel free to contribute to the discussion. Also black box logs of "yaw spins to the moon" are very welcome and will help analyze and solve the problem.   
+The crash recovery routine does not currently attempt to limit yaw spin - it just tried to level the quad. I did not anticipate the "yaw spin to the moon" problem when I wrote the crash recovery routine. I'm now working on a solution. See PR github.com/betaflight/betaflight/pull/3909 in github for the current discussion on the subject. Feel free to contribute to the discussion. Also black box logs of "yaw spins to the moon" are very welcome and will help analyze and solve the problem.    
+From Yamaford:  
+Just to clear this up for others that may read this wrong, I don't think your crash recovery code is the culprit as the crazy "YSTTM" (Yaw spin to the moon) is happening with or without acc or crash recovery enabled right?   
+From mjbudden:   
+Correct. Yaw spin to the moon happens with or without crash recovery enabled and is not cause by crash recovery code.  
+There is a new PR that tries to fix this, see [PR 3909](https://github.com/betaflight/betaflight/pull/3909). If you could test this and provide blackbox logs it would be most useful.   
 
 ### Turtle Mode  
 
