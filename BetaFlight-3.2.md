@@ -120,6 +120,14 @@ gyro -> dynamicNotch -> notch1 -> notch2 -> lpf -> P term
 
 TO DO - fill in CLI commands and what they do.
 
+Briefly the mode works like this:  
+1. A crash is detected if `crash_dthreshold` and `crash_gthreshold` are exceded.  
+2. Once a crash is detected, the craft tries to level itself, ignoring RC input on roll and pitch axes.  
+3. Craft continues to try and level itself until either:  
+1. `crash_time` milliseconds after the crash, or  
+2. the craft angle is less than `crash_recovery_angle` degrees on both the roll and pitch axes and the craft gyro rate is less that `crash_recovery_rate` degrees/second on both roll and pitch axes.  
+4. For testing purposes crash recovery can be enabled by turning the beeper on (this will be removed/changed if crash recovery proves successful).    
+
 TCHTHSKY Posted in Boris' thread-
 [Here's the code for it. It has comments: ](https://github.com/kc10kevin/betaflight/blob/master/src/main/flight/pid.c)   
 [And here is the feature request: ](https://github.com/betaflight/betaflight/issues/2731)   
@@ -210,8 +218,10 @@ Per PROFILE:
 [0..500]
 #### set crash_dthreshold = 50 :degrees/second/second
 [0..2000]
+dterm crash value, zero (off) by default, set to at least 1 to enable crash detection  
 #### set crash_gthreshold = 400 :degrees/second
 [0..2000]
+gyro crash value  
 #### set crash_recovery = OFF
 [OFF, ON, BEEP]
 #### set crash_recovery_angle = 10 :degrees
