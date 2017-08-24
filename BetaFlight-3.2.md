@@ -116,6 +116,9 @@ gyro -> dynamicNotch -> notch1 -> notch2 -> lpf -> P term
 -> motors    
                                                \-> D term -> notchD -> lpfD -> setpointRelax&Weight /    
 
+Dynamic filter runs in the gyro loop, so PID loop freq doesn't matter. 
+Don't run 8k on F3 processors, use 4/4 on those. F4 / F7 should run fine on higher freq.   
+
 ### Crash Recovery
 
 TO DO - fill in CLI commands and what they do.
