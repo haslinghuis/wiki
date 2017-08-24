@@ -119,8 +119,7 @@ gyro -> dynamicNotch -> notch1 -> notch2 -> lpf -> P term
 Dynamic filter runs in the gyro loop, so PID loop freq doesn't matter. 
 Don't run 8k on F3 processors, use 4/4 on those. F4 / F7 should run fine on higher freq. 
 
-mjbudden posted the following regarding the gyro/PID loop speed: 
-
+mjbudden posted on Boris' thread regarding the gyro/PID loop speed and Dynamic Filtering: 
 Official recommendation from myself and r.a.v. (who between us wrote the code) is _not to use above 4k/4k on F3 processors if using dynamic filtering_. When running 8k gyro you have 125 microseconds in each loop and it is simply not enough time to run the calculations. So the PID loop will run slower than 8k anyway. There may be no outward signs of problems, but there will be jitter in the PID loops and that can potentially cause problems.
 
 ### Crash Recovery
