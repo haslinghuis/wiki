@@ -100,3 +100,11 @@ Inside the file you will see:
 You can change `NAZE` to any of the following options:
 
 `NAZE NAZE32PRO OLIMEXINO STM32F3DISCOVERY CHEBUZZF3 $(CC3D_TARGETS) CJMCU EUSTM32F103RC SPRACINGF3 PORT103R SPARKY ALIENFLIGHTF1 ALIENFLIGHTF3 COLIBRI_RACE LUX_RACE MOTOLAB RMDO IRCFUSIONF3 AFROMINI SPRACINGF3MINI SPRACINGF3EVO DOGE`
+
+
+update:
+or just use brew:
+
+brew tap PX4/homebrew-px4
+brew update
+brew install gcc-arm-none-eabi
