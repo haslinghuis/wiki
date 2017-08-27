@@ -14,7 +14,7 @@ The YuPiF4 is a 36x36mm (30.5x30.5 mounting holes) board with an F4 microcontrol
   - IMU Interrupt: Yes
   - BARO: No
   - VCP: Yes
-  - Hardware UARTS: 3 with an inverter for SBus and a Smart-Port Pad to solder directly your SPort wire
+  - Hardware UARTS: 3 with an inverter for SBus
   - Blackbox: SD card slot
   - PPM : A specific pad is available for PPM input
   - Battery Voltage Sensor: Yes, directly connected, no wiring necessary
