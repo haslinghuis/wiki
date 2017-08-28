@@ -7,11 +7,12 @@ AlienWhoop flight controller for Tiny Whoop, Blade Inductrix, Eachine, BetaFPV, 
 * Choice of the top performing ARM processors: 
   * High-performance ST Microelectronics ARM Cortex-M4 core F4 168 MHz CPU
   * High-performance ST Microelectronics ARM Cortex-M7 core F7 216 MHz CPU
+  * Highest-performer ST Microelectronics ARM Cortex-M4 core F4 *OVERCLOCKED to 240 MHz!!*
 * Choice of top performing motion processors: 
   * Invensense MPU-6500 Six-Axis (Gyro + Accelerometer) low power consumption MEMS MotionTracking™ Device
   * Invensense MPU-9250 Nine-Axis (Gyro + Accelerometer + Compass) low power consumption MEMS MotionTracking™ Device
-* Latest BetaFlight firmware running the ALIENWHOOPF4 or ALIENWHOOPF7 target. Capable of 32kHz gyro sampling and potentially 32kHz PID loop when overclocking for F4 is released with BetaFlight 3.2 (*32kHz gyro sampling rate has been flown on prototypes for several months now at up to 16kHz PID loop without overclocking the F4*).
-* Fairchild Semiconductor FDMA410NZ MOSFET with 9.5A continuous and 24A burst brushed motor insanity (8.5mm coreless scream) or newest FDMA410NZT MOSFET with 9.5A continuous and 63A burst
+* Latest BetaFlight firmware running the ALIENWHOOPF4 or ALIENWHOOPF7 target. Capable of 32kHz gyro sampling and 32kHz PID loop with overclocked F4 in BetaFlight 3.2 (*32kHz gyro sampling rate might not be optimal depending on features selected 16/16 or 16/8 might be preferable*).
+* Extreme power. Choice of either (1) Fairchild Semiconductor FDMA410NZ MOSFET with 9.5A continuous and 24A burst brushed motor insanity (8.5mm coreless scream), (2) FDMA410NZT MOSFET with 9.5A continuous and 63A burst, or (3) *Infineon Technologies IRFHS8342 MOSFET up to 75A pulsed!!*
 * UART4 solder pads for programmable LED strip (SUPER COOL) using WS2812B RGB or RX/TX for Micro MinimOSD
 * Choice of external receivers. Officially supporting FrSky XM and XM+ (SBUS), LemonRX DSM2 and DSMX (SBUS), and FlySky FS-A8S (iBUS) satellites.
 
@@ -20,7 +21,7 @@ AlienWhoop flight controller for Tiny Whoop, Blade Inductrix, Eachine, BetaFPV, 
 ## Hardware
 
   - MCU: STM32F405RGT6 or STM32F722RET6
-  - Brushed Motor Mosfets: Fairchild Semiconductor FDMA410NZ (9.5A/23A pulsed) or FDMA410NZT (9.5A/63A pulsed)
+  - Brushed Motor Mosfets: Fairchild Semiconductor FDMA410NZ (9.5A/23A pulsed), FDMA410NZT (9.5A/63A pulsed), or Infineon IRFHS8342 MOSFET up to 75A pulsed
   - IMU: MPU-6500 or MPU-9250 (both SPI)
   - BARO: N/A
   - USB: STM32 VCP 
