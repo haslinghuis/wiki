@@ -90,15 +90,15 @@ This list *should* be kept up to date with the code in `master` so can be used t
   Exit the CLI.
 
 - `CMS`  
-  CMS (OSD menu) is active.  
-  Exit the CMS.
+  CMS (config menu) is Active - over OSD or other display.  
+  Exit the CMS (or OSD menu).
 
 - `OSD`  
-  No idea.  
-  Turn it off and on again.
+  OSD menu is active
+  Exit OSD menu.
 
 - `BST`  
-  No idea.  
-  Turn it off and on again.
+  A Black Sheep Telemetry device (TBS Core Pro for example) disarmed and is preventing arming.
+  ??
 
 (1) This may appear on the Betaflight OSD during flight, take it as a sign that your radio system is either faulty or you are flying at the edge of your range. Treat it the same you would an "RSSI critically low" warning.
