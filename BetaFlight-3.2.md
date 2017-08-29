@@ -24,7 +24,7 @@ Hi Guys. I hope everyone is fine.
 We finally have a release candidate on schedule like promised!   
 https://github.com/betaflight/betaflight/releases
 
-## Betaflight 3.2.0 RC3 Pre-release
+## Betaflight 3.2.0 RC4 Pre-release
 
 ### New:
 
@@ -75,6 +75,17 @@ https://github.com/betaflight/betaflight/releases
 - Fix buzzer on alienwhoop v2.0
 - Spektrum Telemtry fix for FlightPack Capacity
 - Fix Acc reporting for some gyros in configurator
+
+### RC4 Changes
+- Added Experimental Slew filter
+- Fixed lockup on MSP for dterm filter change
+- Improved gyro debug logging
+- Validate features when not supported
+- Experimental Yaw overflow handling
+- Added OSD warning for battery not full
+- Fix cli settings for OSD timers
+- Added Iterm limit to prevent strong accumulations
+- Reset iterm after crash for crash detection
 
 ### Other Features:   
 
