@@ -1,8 +1,11 @@
 # OMNIBUS F7
 
-F7 + OSD
+### V2 support
+For OMNIBUS F7 V2, please use **OMNIBUSF7V2** target, available in 3.2RC-4 and later.
+
 
 ## Features
+F7 + OSD
 
 - OSD
 - SPI Gyro ICM-20608-G (SPI1)
