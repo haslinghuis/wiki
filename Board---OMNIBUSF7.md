@@ -9,6 +9,8 @@ For OMNIBUS F7 V2, please use **OMNIBUSF7V2** target, available in 3.2RC-4 and l
 - Current sensing uses pin7 of J3 connector. This pin can be used as (c) voltage (0-3V3) encoded current sensor output suitable for input to ADC, or (d) ESC telemetry input to UART7_RX(RX7).
 - These functions should be selected with two jumper blocks, as described in the drawing below.
 
+![](https://user-images.githubusercontent.com/14850998/29853571-abed2e8c-8d7b-11e7-81ac-2eaf86052bda.jpg)
+
 ---
 ## Features
 F7 + OSD
