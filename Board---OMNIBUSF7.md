@@ -1,9 +1,15 @@
 # OMNIBUS F7
 
 ### V2 support
+#### Firmware target
 For OMNIBUS F7 V2, please use **OMNIBUSF7V2** target, available in 3.2RC-4 and later.
 
+#### ESC Mid Rail and ESC Telemetry Jumper Block
+- ESC Mid Rail can be configured either as (a) 5V INPUT rail or (b) ESC telemetry input to UART7_RX(RX7).
+- Current sensing uses pin7 of J3 connector. This pin can be used as (c) voltage (0-3V3) encoded current sensor output suitable for input to ADC, or (d) ESC telemetry input to UART7_RX(RX7).
+- These functions should be selected with two jumper blocks, as described in the drawing below.
 
+---
 ## Features
 F7 + OSD
 
