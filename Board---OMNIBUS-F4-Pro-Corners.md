@@ -4,7 +4,7 @@
 
 - Variant of OMNIBUS F4 Pro (OMNIBUSF4SD target). Please refer to OMNIBUS F4 wiki page for additional information.
 - Still uses OMNIBUSF4SD target.
-- Dual inverters on UART3 (controlled by PC9) and UART6 (controlled by PC8); supports SBUS and native SmartPort (requires a diode for SmartPort).
+- Two dual inverters, on UART3 (controlled by PC9) and UART6 (controlled by PC8); supports SBUS and native SmartPort (requires a diode for SmartPort).
 - UART1_RX can be connected to ESC telemetry via jumper.
 
 ## Configuration Example
