@@ -102,7 +102,7 @@
  - [NERO](/betaflight/betaflight/wiki/Board---NERO) - [OLIMEXINO](/betaflight/betaflight/wiki/Board---OLIMEXINO)
  - [OMNIBUS](/betaflight/betaflight/wiki/Board---OMNIBUS)
  - [OMNIBUSF4(SD)](/betaflight/betaflight/wiki/Board---OMNIBUSF4)
- - [OMNIBUS F4 Pro Corners](betaflight/betaflight/wiki/Board---OMNIBUS-F4-Pro-Corners)
+ - [OMNIBUS F4 Pro Corners](/betaflight/betaflight/wiki/Board---OMNIBUS-F4-Pro-Corners)
  - [OMNIBUSF7](/betaflight/betaflight/wiki/Board---OMNIBUSF7)
  - [PIKOBLX](/betaflight/betaflight/wiki/Board---PIKOBLX)
  - [PLUM F4](/betaflight/betaflight/wiki/Board---PLUMF4)
