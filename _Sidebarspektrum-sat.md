@@ -37,6 +37,7 @@
  - [Setup on a Fixed Wing Aircraft](https://github.com/betaflight/betaflight/wiki/Setup-for-a-Fixed-Wing-Aircraft)  
  - [Serial Pass Through](https://github.com/betaflight/betaflight/wiki/Serial-Pass-Through)  
  - [Arming Sequence & Safety](https://github.com/betaflight/betaflight/wiki/Arming-Sequence-&-Safety)
+ - [Howto setup Spektrum SPM4649T Telemetry](https://github.com/betaflight/betaflight/wiki/Spektrum-SPM4649T-SRXL-Telemetry-setup.)
 
 # V3.2 specific Setup
 
