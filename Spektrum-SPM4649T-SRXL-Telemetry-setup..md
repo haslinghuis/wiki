@@ -2,7 +2,7 @@
 
 It's easy:
 
-1. Connect your SPM4648T to the TX3 pin on your FC (and feed it 5V obviously).
+1. Connect your SPM4649T to the TX3 pin on your FC (and feed it 5V obviously).
 2. In Betaflight Configurator Ports page enable 'Serial RX' on UART3 and save
 3. After board has rebooted, in the Configuration page select Serial Receiver and SRXL as provider.
 4. Turn on the TELEMETRY feature. Press "Save and Reboot".
