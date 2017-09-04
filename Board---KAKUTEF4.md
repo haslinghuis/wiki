@@ -142,6 +142,9 @@ Distributors:
  Manual:
  http://www.holybro.com/manual/Holybro_Kakute_F4_AIO_Manual_v1.4.pdf
 
+ Discussion:
+ https://www.rcgroups.com/forums/showthread.php?2904475-Holybro-Kakute-F4-AIO-Flight-Controller
+
 `Contact us at:`
 
 `•Email: productservice@holybro.com`
