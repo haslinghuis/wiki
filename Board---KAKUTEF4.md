@@ -148,7 +148,9 @@ Change a resistor on the KakuteF4 from 4.53K to 2.2K, the waveform looks good. T
 ![](https://github.com/jamming/image/blob/master/smartport.png?raw=true)
 ![](https://github.com/jamming/image/blob/master/waveform2.png?raw=true)
 
-If the SmartPort don't work stable, please try this way.And we have changed this resistor from 4.53K to 2.2K at the secondary produce.
+If the SmartPort don't work stable, please try this way. If you don't have a SMD resistor, you can use a 5.1K plug-in resistor to bypass SmartPort signal to GND. It has the same effect.
+
+And we have changed this resistor from 4.53K to 2.2K at the secondary produce.
  
 ## Other Resources
 
