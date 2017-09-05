@@ -25,6 +25,8 @@ Supplied with cables for direct connection to Unify Pro HV VTX and HS1177 camera
 The Tempest F4 is compatible with Betaflight using the new MLTEMPF4 board target.
 Cables are included for direct plug-in to an HS1177 camera and a Unify Pro HV VTX.
 
+Note: The VTX will display a screen full of the letter "V" until a font is uploaded. Use the "Upload Font" button on the Configurator VTX tab and select a font. The VTX must be powered from lipo during upload.
+
 Link to thread:   
 https://www.rcgroups.com/forums/showthread.php?2715556-MotoLab-Typhoon-F4-Flight-Controller-and-VTX/page49#post38010951
 
