@@ -137,16 +137,15 @@ Distributors:
 
 `https://www.youtube.com/watch?v=m4ygG6Y5zXI` 
 
-`SmartPort:`
-`Kakute F4's bidir inverter is designed with mosfet.We have tested the smartport of each board with XSR receiver and X9D in factory. But there are some special XSR receivers, who's input capacitance are higher than the normal, it may cause the smartport waveform distorted. The waveform don't drop to 0v during low period. See the following picture. `
+##SmartPort:
+Kakute F4's bidir inverter is designed with mosfet.We have tested the smartport of each board with XSR receiver and X9D in factory. But there are some special XSR receivers, who's input capacitance are higher than the normal, it may cause the smartport waveform distorted. The waveform don't drop to 0v during low period. See the following picture. 
 ![](https://github.com/jamming/image/blob/master/waveform.png?raw=true) 
 
 Change a resistor on the KakuteF4 from 4.53K to 2.2K, the waveform looks good. That may be the reason.
 ![](https://github.com/jamming/image/blob/master/smartport.png?raw=true)
 ![](https://github.com/jamming/image/blob/master/waveform2.png?raw=true)
 
-`If the SmartPort don't work stable, please try this way.`
-`And we have changed this resistor from 4.53K to 2.2K at the secondary produce.`
+If the SmartPort don't work stable, please try this way.And we have changed this resistor from 4.53K to 2.2K at the secondary produce.
  
 ## Other Resources
 
