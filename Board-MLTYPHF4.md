@@ -37,6 +37,8 @@ A complete FC, PDB, VTX, OSD and MicroSd system with F4 CPU on two boards with m
 
  - Note: The VTX board is not powered from the USB input. The board should NOT be powered from lipo without an antenna connected. 
 
+ - The VTX will display a screen full of the letter "V" until a font is uploaded. Use the "Upload Font" button on the Configurator VTX tab and select a font. The VTX must be powered from lipo during upload.
+
 The VTX controls are through the BetaFlight OSD functions using the RC transmitter. The VTX requires uploading a font through the Font Manager in BetaFlight Configurator. The only other control is the power selection switches. The settings for that are:
 * SW1  ON, SW2  ON 25mW
 * SW1 OFF, SW2  ON 200mW
