@@ -2,7 +2,7 @@
 
 
 ## Description
-Derive from REVO, has inverters for SBUS and SPORT, only one full-fledged UART3 broken out.
+Derived from REVO, has inverters for SBUS and SPORT, only one full-fledged UART3 broken out.
 
 
 ## MCU, Sensors and Features
