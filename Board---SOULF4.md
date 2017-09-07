@@ -50,7 +50,6 @@ Adam Tusk (?)
 ## Maintainers
 
 Andrey Mironov (@DieHertz)
-_(add your name here if you help test or contribute code for this board)_
 
 
 ## Similar Targets
