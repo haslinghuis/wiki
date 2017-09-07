@@ -8,9 +8,9 @@ Derive from REVO, has inverters for SBUS and SPORT, only one full-fledged UART3 
 ## MCU, Sensors and Features
 
 ### Hardware
-_(Fill in hardware specs and add any not listed)_
   - MCU: STM32F405
   - IMU: MPU-6000
+  - Motor outputs: 4
   - IMU Interrupt: 
   - BARO: No
   - VCP: Yes
@@ -24,8 +24,18 @@ _(Fill in hardware specs and add any not listed)_
   - Buttons: No
 
 ### Features
+SmartPort telemetry inversion. This board uses the following schematic to perform SmartPort inversion and split the signal into Rx and Tx components:
 
-_(add list of features)_
+![S.Port inverter](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/boards/soulf4/smartport-inverter-schematic.png)
+
+To set SmartPort up correctly, connect corresponding wire from your receiver to the pad labeled `S.Port` on the FC, then head into CLI and type:
+```
+set tlm_inverted = off
+set tlm_halfduplex = off
+save
+```
+Don't forget to enable SmartPort telemetry feature for UART6 (3rd UART on the **Ports** tab).
+
 
 ## Manufacturers and Distributors
 
@@ -39,6 +49,7 @@ Adam Tusk (?)
 
 ## Maintainers
 
+Andrey Mironov (@DieHertz)
 _(add your name here if you help test or contribute code for this board)_
 
 
