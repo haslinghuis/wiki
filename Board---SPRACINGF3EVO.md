@@ -62,7 +62,7 @@ _(add links to boards here that are similar in features or function, but use thi
 
 ## FAQ & Known Issues
 * Softserial is disabled for this target in bf 3.1.7 but works in nightly build 3.2.0 as of today (2017-05-13).
-* DSHot does not work out of the box, due to DMA limitations. The solution to enable DSHOT on this board is to remap motor 4 to A06, this can be done through CLI as follows:
+* DSHot does not work out of the box, due to DMA limitations. The solution to enable DSHOT on this board is to remap motor 4 to motor pin 5 (A06), this can be done through CLI as follows:
 
 `resource MOTOR 5 NONE`
 
