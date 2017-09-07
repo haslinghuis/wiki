@@ -28,7 +28,7 @@ The up to date configurator supports easy configuration of the SmartAudio on the
 (You even can switch between OSD and OLED while in CMS.)  
 This means that users of external OSDs can control SmartAudio from the CMS.
 
-####From AILERON8's post in Boris' thread:
+#### From AILERON8's post in Boris' thread:
 
 There is a little info on smartaudio setup in here, but you may need to do a bit of troubleshooting to make it work for your particular setup. Good luck! I look forward to setting up SmartAudio on my next BFF3 quad myself.
 
@@ -36,10 +36,10 @@ https://github.com/betaflight/betaflight/issues/1029
 
 http://team-blacksheep.com/tbs-unify-pro-5g8-manual.pdf   
 
-####Here is a tutorial by Amano13:  
+#### Here is a tutorial by Amano13:  
 https://tmr.kiwi/betaflight-mwosd-smartaudio-cms/
 
-####From Boris:  
+#### From Boris:  
 The easiest is of course to get fc with OSD. That works absolutely flawless, but
 there is a separate betaflight repository with LUA scripts
 https://github.com/betaflight/betaflight-tx-lua-scripts
