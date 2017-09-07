@@ -1,5 +1,9 @@
 ## OMNIBUS F4 Pro Corners
 
+## Notes
+
+- 3.2.0: Programmable inverter on UART3 (controlled by PC9) is configured, but not activated by default as it interfere with other usages of PC9; users must activate it by `resource INVERTER 3 C09` (see example below).
+
 ## Hardware
 
 - Variant of OMNIBUS F4 Pro (OMNIBUSF4SD target). Please refer to OMNIBUS F4 wiki page for additional information.
