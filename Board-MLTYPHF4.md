@@ -108,4 +108,4 @@ https://www.rcgroups.com/forums/showthread.php?2715556-MotoLab-Flight-Controller
 Board stuck in 'unknown device' mode? Check out this post: 
 https://www.rcgroups.com/forums/showpost.php?p=37567682&postcount=3053
 
-
+Joshua Bardwell Video [Review](https://www.youtube.com/watch?v=dD7Hla63Xho)
