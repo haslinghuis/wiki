@@ -40,5 +40,11 @@ Requires no additional components, wire your `PIN` to `OSD`, preferably with a `
 
 * Emax Magnum stack + Foxeer Arrow v3  
 600ohm resistor in line  
-Camera control Mapped to Motor 5 output  
-set camera_control_key_delay = 125 (This made it work more reliably for me)
+Camera control Mapped to Motor 6 output 
+set camera_control_key_delay = 125 (This made it work more reliably for me)   
+  
+Use following CLI Commands  
+resource MOTOR 6 none  
+resource CAMERA_CONTROL A08  
+set camera_control_key_delay = 125  
+save
