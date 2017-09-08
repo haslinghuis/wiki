@@ -87,6 +87,9 @@ https://github.com/betaflight/betaflight/releases
 - Added Iterm limit to prevent strong accumulations
 - Reset iterm after crash for crash detection
 
+### RC4 Bugs (see the Issues and Pull requests in Github for details)
+- gyro debug and notch debug doesnt work. No data is displaying in analyzer.
+
 ### Other Features:   
 
 - Spektrum Satellite Bind for 3.2  
@@ -163,6 +166,13 @@ There is a new PR that tries to fix this, see [PR 3909](https://github.com/betaf
 
 TO DO - Describe what this does, how to setup and which ESC firmware supports this.
 
+### Experimental Slew filter
+https://github.com/betaflight/betaflight/pull/3983  
+More info here:  
+https://github.com/betaflight/betaflight/pull/3909  
+https://github.com/betaflight/betaflight/issues/3959#issuecomment-326430286
+https://github.com/betaflight/betaflight/pull/3950  
+https://github.com/betaflight/betaflight/issues/3893  
 
 ## CLI command changes in 3.2
 
