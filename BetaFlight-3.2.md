@@ -89,6 +89,7 @@ https://github.com/betaflight/betaflight/releases
 
 ### RC4 Bugs (see the Issues and Pull requests in Github for details)
 - gyro debug and notch debug doesnt work. No data is displaying in analyzer.
+- various [Issues](https://github.com/betaflight/betaflight/issues/4001) with DSHOT1200
 
 ### Other Features:   
 
