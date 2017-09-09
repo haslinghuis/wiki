@@ -2,7 +2,7 @@
 This functionality provides OSD joystick emulation for HS1177-style cameras, e.g. cameras having a single OSD input pin driven by a button resistor divider.
 Most cameras up to date seem to adhere to the design and have the following resistor nominals:
 
-* 47 kΩ - camera internal resistor
+* 47 kΩ - camera internal resistor, 9.9 kΩ for Foxeer Monster and probably other HS1190 cameras
 * 45 kΩ - enter
 * 27 kΩ - left
 * 15 kΩ - up
@@ -14,6 +14,7 @@ Most cameras up to date seem to adhere to the design and have the following resi
 * `set camera_control_mode = hardware_pwm` - mode of operation, `software_pwm` is the least restrictive in terms of available PIN selection, but it requires both a resistor and a capacitor to work properly; `hardware_pwm` is almost guaranteed to work with just a resistor given you can spare a timer for it; `dac` (not yet implemented) is supported on the very few FCs that have a DAC pin broken out and unoccupied by other functions, it works by direct connection to the camera.
 * `set camera_control_ref_voltage = 330` - voltage (in 10 mV steps) measured across your camera's floating `OSD` and `GND` pins, usually 3V3, but not guaranteed, e.g. my RunCam Sky has 3V4, and some cameras have reportedly have as low as 3V1.
 * `set camera_control_key_delay = 180` - the duration of each key press (in ms presence at the `camera_control` pin, after consulting with RunCam it was set to 180 ms to accommodate most cameras, while some of them accept as low as 125 ms.
+* `set camera_control_internal_resistance = 470` - the internal resistance (in 100 Ω steps) of your camera, most HS1177 derivatives have 47 kΩ, but that's not guaranteed. You'll have to derive this value for your camera in case the default one doesn't work.
 
 ## Modes of operation
 ### Hardware PWM
@@ -36,15 +37,36 @@ Requires no additional components, wire your `PIN` to `OSD`, preferably with a `
 ## Stick Commands
 ![Camera Control Stick Commands](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/camera-control-stick-commands.png)
 
+## Troubleshooting
+If your camera doesn't work, chances are you have to adjust values for key delay, reference voltage or internal resistance.
+Defaults work fine for most HS1177-derivatives, if you have issues, try changing the key delay value first.
+
+### Key Delay
+If you have multi-click occurrences, decrease the delay by 10-15%, if your clicks don't register consistently - try increasing it instead.
+Foxeer Arrow v3 is known to work best with delay of 125 ms.
+
+### Reference Voltage
+Just measure the voltage between OSD and GND pins on the camera while it is powered.
+
+### Internal Resistance
+Foxeer Monster (and probably other cameras I haven't yet discovered) is known to require `camera_control_internal_resistance = 99`.
+To derive this value for an unknown camera, you'll need a multimeter and a suitable joystick. First set your multimeter to resistance measurement mode and measure the resistance of your OSD joystick while pressing individuals keys, write the values down somewhere, you'll need them later.
+Now you'll have to power your camera, connect the OSD joystick to it and find a way to measure the OSD-pin voltage while pressing individual keys on joystick, measuring voltages for all keys is not necessary, one or two is sufficient. Also measure the `Reference Voltage` if you haven't yet.
+You'll end up with a set of resistance and voltage values for each key. To find internal resistance value, plug in your values into this formula:
+`Rin = Rkey * (Vref / Vkey - 1) where key in (enter, left, up, right, down)`
+Calculate this value for a few keys as a sanity check, the resulting values should be roughly the same. The `Rin` you've arrived at is your `camera_control_internal_resistance` value, keep in mind it is measured in 100 Ω steps, hence divide your value by 100.
+
 ## Example FC configurations
 
-* Emax Magnum stack + Foxeer Arrow v3  
-600ohm resistor in line  
+### Emax Magnum stack + Foxeer Arrow v3  
+600 Ω resistor in line  
 Camera control Mapped to Motor 6 output 
-set camera_control_key_delay = 125 (This made it work more reliably for me)   
-  
-Use following CLI Commands  
-resource MOTOR 6 none  
-resource CAMERA_CONTROL A08  
-set camera_control_key_delay = 125  
+set camera_control_key_delay = 125
+
+Use following CLI Commands
+```
+resource MOTOR 6 none
+resource CAMERA_CONTROL A08
+set camera_control_key_delay = 125
 save
+```
