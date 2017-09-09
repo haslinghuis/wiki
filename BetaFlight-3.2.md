@@ -17,6 +17,7 @@ or https://betaflight.qmd.cl/
 ### Note: When discussing this Version in the Forums (Boris' BetaFlight thread)   
 ## Please State: Version and Build Number.
 
+### If having a problem check [ISSUES](https://github.com/betaflight/betaflight/issues) to see if it have been reported and a possible work around.
 
 ### From Boris:  
 Hi Guys. I hope everyone is fine.
