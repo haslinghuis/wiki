@@ -126,6 +126,7 @@ _This means that for all protocols, if unmodified hardware is used `tlm_inverted
 
 TO DO - fill in CLI commands and what they do.
 
+NOTE: F1 boards can't handle dynamic filters.. no space, no power for it.  
 
 This is the current signal path in ascii art:
 
