@@ -50,10 +50,14 @@ Just measure the voltage between OSD and GND pins on the camera while it is powe
 
 ### Internal Resistance
 Foxeer Monster (and probably other cameras I haven't yet discovered) is known to require `camera_control_internal_resistance = 99`.
+
 To derive this value for an unknown camera, you'll need a multimeter and a suitable joystick. First set your multimeter to resistance measurement mode and measure the resistance of your OSD joystick while pressing individuals keys, write the values down somewhere, you'll need them later.
+
 Now you'll have to power your camera, connect the OSD joystick to it and find a way to measure the OSD-pin voltage while pressing individual keys on joystick, measuring voltages for all keys is not necessary, one or two is sufficient. Also measure the `Reference Voltage` if you haven't yet.
+
 You'll end up with a set of resistance and voltage values for each key. To find internal resistance value, plug in your values into this formula:
 `Rin = Rkey * (Vref / Vkey - 1) where key in (enter, left, up, right, down)`
+
 Calculate this value for a few keys as a sanity check, the resulting values should be roughly the same. The `Rin` you've arrived at is your `camera_control_internal_resistance` value, keep in mind it is measured in 100 Ω steps, hence divide your value by 100.
 
 ## Example FC configurations
