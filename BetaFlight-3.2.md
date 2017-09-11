@@ -191,7 +191,7 @@ Can't fix broken props or save you or if long grass, so doesn't always work.
 
 RCs 4 or below inverted the mixer and had all 4 props reversed and spinning. That works too but it is a little more messy on the ground and requires some finesse. 
 
-### Experimental Slew filter
+### Experimental Slew filter- Removed in RC5
 https://github.com/betaflight/betaflight/pull/3983  
 More info here:  
 https://github.com/betaflight/betaflight/pull/3909  
