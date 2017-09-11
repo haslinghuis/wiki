@@ -25,12 +25,12 @@ Hi Guys. I hope everyone is fine.
 We finally have a release candidate on schedule like promised!   
 https://github.com/betaflight/betaflight/releases
 
-## Betaflight 3.2.0 RC4 Pre-release
+## Betaflight 3.2.0 RC5 Pre-release
 
 ### New:
 
 - Full F7 support (@sambas @blckmn )
-- SITL simulator support (@cs8425)
+- [SITL](http://ardupilot.org/dev/docs/sitl-simulator-software-in-the-loop.html) simulator support (@cs8425)
 - Added crosshairs to CMS (@lostcontrol)
 - Improved ITerm windup handling for tricopter (@martinbudden)
 - Added SP RACING F3 OSD/PDB suport (@hydra)
@@ -93,6 +93,14 @@ https://github.com/betaflight/betaflight/releases
 - various [Issues](https://github.com/betaflight/betaflight/issues/4001) with DSHOT1200
 - NAZE target not able to log data to Black Box
 - Gyro Call beeps [issue 4107](https://github.com/betaflight/betaflight/issues/4107)
+
+### RC5 Changes
+- Default setpoint weight has been changed to 0. Note that this means that default flight behavior from previous RC's should be identical to default behavior in RC 5 when setpoint weight has been set to 0. (Before relax ratio of 0 was already disabling setpoint weight)
+- Removed experimental Slew filter
+- Disabled beeping on gyro calibration during boot
+- Added gyro overflow protection for some newer gyros (ICMxxx gyro series is known to show inversion due to overflow above +/-2000deg/sec)
+- Added internal resistance adjustment for camera control
+- Show MSP version in cli
 
 ### Other Features:   
 
