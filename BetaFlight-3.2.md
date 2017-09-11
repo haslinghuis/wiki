@@ -49,18 +49,18 @@ https://github.com/betaflight/betaflight/releases
 - Camera control
 - TBS compatible LED frequency indicator
 - beeper / OSD / CLI indication of reason for not arming;
+- Added Iterm limit to prevent strong accumulations
 
 ### Experimental - use with caution
 
 - Added experimental crash detection and recovery (@martinbudden)
 - Added experimental CPU overclock options for F4
-- Fixed full throttle drift when airmode disabled
-- FrSky SPI RX support
 
 ### Fixes:
 
 - Fix GPS serial overflow (@mikeller)
 - Fixed destabilisation on full throttle when Airmode disabled
+- Less chance on yaw spins with Iterm limit
 
 ### RC2 Changes:  
 - Fix for new blackbox denominators
