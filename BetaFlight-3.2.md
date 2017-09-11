@@ -175,9 +175,21 @@ From mjbudden:
 Correct. Yaw spin to the moon happens with or without crash recovery enabled and is not cause by crash recovery code.  
 There is a new PR that tries to fix this, see [PR 3909](https://github.com/betaflight/betaflight/pull/3909). If you could test this and provide blackbox logs it would be most useful.   
 
-### Turtle Mode  
+### "flip after crash mode" (was called Turtle Mode)  
 
 TO DO - Describe what this does, how to setup and which ESC firmware supports this.
+
+Description by brycej:  
+In its current form (as of last week, 8aug17, or so). You need to flick the mode switch and then arm. Throttle and yaw sticks don't do anything. Pitch and roll will control which props are spinning based on stick deflection. With the pitch and roll centered no props are moving.  
+Take a good guess on the side with free props and try and flip it over. If it isn't flipping, try a different pitch or roll. Don't just jam the stick over and leave it if it is stuck. I haven't burned up any escs in quite a bit of testing, but I'm just someone will manage it with some effort....  
+Disarm after flipped. Undo flipaftercrash mode and rearm to fly away.  
+Other tips: Has worked well to get me out of trees.
+
+Try it with props off on the bench first. 16.63 from official blheli hasn't some issues reversing all the motors because it is a little more stringent then 16.67 from the unofficial blheli fork. Newer betaflight versions have some fixes in to help that.  
+Also, try it in short grass LOS so you can see how it works...  
+Can't fix broken props or save you or if long grass, so doesn't always work.  
+
+RCs 4 or below inverted the mixer and had all 4 props reversed and spinning. That works too but it is a little more messy on the ground and requires some finesse. 
 
 ### Experimental Slew filter
 https://github.com/betaflight/betaflight/pull/3983  
