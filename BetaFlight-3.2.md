@@ -93,6 +93,7 @@ https://github.com/betaflight/betaflight/releases
 - various [Issues](https://github.com/betaflight/betaflight/issues/4001) with DSHOT1200
 - NAZE target not able to log data to Black Box
 - Gyro Cal beeps [issue 4107](https://github.com/betaflight/betaflight/issues/4107)
+- effectively made the setpoint weight behave as if it was set to zero (no matter what you set it to) if the setpoint transition was at the default 1.0. Fixed in RC5.
 
 ### RC5 Changes
 - Default setpoint weight has been changed to 0. Note that this means that default flight behavior from previous RC's should be identical to default behavior in RC 5 when setpoint weight has been set to 0. (Before relax ratio of 0 was already disabling setpoint weight)
