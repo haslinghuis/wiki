@@ -92,7 +92,7 @@ https://github.com/betaflight/betaflight/releases
 - gyro debug and notch debug doesnt work. No data is displaying in analyzer. Fixed in Build #179. 
 - various [Issues](https://github.com/betaflight/betaflight/issues/4001) with DSHOT1200
 - NAZE target not able to log data to Black Box
-- Gyro Call beeps [issue 4107](https://github.com/betaflight/betaflight/issues/4107)
+- Gyro Cal beeps [issue 4107](https://github.com/betaflight/betaflight/issues/4107)
 
 ### RC5 Changes
 - Default setpoint weight has been changed to 0. Note that this means that default flight behavior from previous RC's should be identical to default behavior in RC 5 when setpoint weight has been set to 0. (Before relax ratio of 0 was already disabling setpoint weight)
