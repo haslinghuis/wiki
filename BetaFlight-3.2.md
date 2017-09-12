@@ -89,7 +89,7 @@ https://github.com/betaflight/betaflight/releases
 - Reset iterm after crash for crash detection
 
 ### RC4 Bugs (see the Issues and Pull requests in Github for details)
-- gyro debug and notch debug doesnt work. No data is displaying in analyzer.
+- gyro debug and notch debug doesnt work. No data is displaying in analyzer. Fixed in Build #179. 
 - various [Issues](https://github.com/betaflight/betaflight/issues/4001) with DSHOT1200
 - NAZE target not able to log data to Black Box
 - Gyro Call beeps [issue 4107](https://github.com/betaflight/betaflight/issues/4107)
