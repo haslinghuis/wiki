@@ -36,9 +36,9 @@ It is really hard to explain without reading a lot about pid controllers and how
 
 But here's my attempt for a quick and "easy" to understand explanation:
 
-Before explaining I will first tell you what determines the Dterm part of PIDsum. It is the derivative or in other words rate of change. It is basically acceleration speed of something. 
+Before explaining I will first tell you what determines the Dterm part of PIDsum. It is the derivative or, in other words, rate of change. It is basically the speed of something. 
 
-Lets say you drive 50km/h constantly than your derivative is 0. But when you push the pedal and keep accelerate and start speeding up with 5km/h per second than that is your derivative 5. When you start slowing down it becomes negative.
+Lets say you're driving at a constant speed of 50km/h, then your speed derivative is 0. But when you push the pedal and keep accelerating and start speeding up with 5km/h per second then the derivative of your speed is 5. When you start slowing down, your speed derivative goes negative.
 
 Delta from error:
 This is the classical Derivative approach. It reflects the speed of error. Error is derived from stick input. Once you move the stick you introduce an error and PID controller has to correct the error. The faster the error grows the the bigger derivative gets. It helps PID loop to reach target faster. It is accelerating it more what creates the dampening effect.
