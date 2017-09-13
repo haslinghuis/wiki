@@ -6,7 +6,7 @@
 [MotoLab Typhoon F4 & VTX Video](https://www.youtube.com/watch?v=h0VcUPcgi8A)
 
 ## Description
-A complete FC, PDB, VTX, OSD and MicroSd system with F4 CPU on two boards with minimal cabling. The entire system is 3S-6S compatible.
+A complete FC, PDB, VTX, OSD and MicroSd system with F4 CPU on two boards with minimal cabling.
 
 ## Hardware
 ### Typhoon F4 Flight Controller:
@@ -19,6 +19,7 @@ A complete FC, PDB, VTX, OSD and MicroSd system with F4 CPU on two boards with m
  - 1.5A 5V regulator with LC filtered 5V for VTX and camera
  - Plug-in connection to VTX board
  - 38x40mm board size with 30.5mm mounting hole spacing
+ - 2S to 6S lipo compatible
 
  - The Typhoon F4 is compatible with Betaflight using the new MLTYPHF4 board target.
  - The F4 board mates directly with the VTX board with no external wiring between the two.
