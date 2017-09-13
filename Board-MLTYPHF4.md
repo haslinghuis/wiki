@@ -6,7 +6,7 @@
 [MotoLab Typhoon F4 & VTX Video](https://www.youtube.com/watch?v=h0VcUPcgi8A)
 
 ## Description
-A complete FC, PDB, VTX, OSD and MicroSd system with F4 CPU on two boards with minimal cabling.
+A complete FC, PDB, VTX, OSD and MicroSd system with F4 CPU on two boards with minimal cabling. The entire system is 3S-6S compatible.
 
 ## Hardware
 ### Typhoon F4 Flight Controller:
