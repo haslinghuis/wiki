@@ -21,6 +21,7 @@ Plug-in direct connection to VTX and Camera with custom cables
 Buzzer and serial LED outputs  
 38x40mm board size with 30.5mm mounting hole spacing
 Supplied with cables for direct connection to Unify Pro HV VTX and HS1177 camera
+2S to 6S lipo compatible
   
 The Tempest F4 is compatible with Betaflight using the new MLTEMPF4 board target.
 Cables are included for direct plug-in to an HS1177 camera and a Unify Pro HV VTX.
