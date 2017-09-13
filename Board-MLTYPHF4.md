@@ -79,7 +79,7 @@ https://www.dropbox.com/s/w509cb9oscwhazz/betaflight_3.2.0_MLTYPHF4.hex?dl=0
 
 ## Manufacturers and Distributors
 
-Manufactured by MotoLab. Distributed by Heli-Nation, RocketCityFPV, DefianceRC and others.
+Manufactured by MotoLab.
 
 ## Designers
 Moto Moto
