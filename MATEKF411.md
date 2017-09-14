@@ -5,7 +5,7 @@ MATEKSYS F411-MINI
 
 
 ## Description
-F411+ICM20602, w/ Betaflight OSD, No blackbox 
+F411+ICM20602, w/ BFOSD, No blackbox 
 
 
 ## MCU, Sensors and Features
