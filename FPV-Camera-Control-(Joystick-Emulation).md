@@ -38,6 +38,8 @@ Requires no additional components, wire your `PIN` to `OSD`, preferably with a `
 ![Camera Control Stick Commands](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/camera-control-stick-commands.png)
 
 ## Troubleshooting
+First of all, make sure `resource list` CLI command lists `camera_control` as allocated.
+
 If your camera doesn't work, chances are you have to adjust values for key delay, reference voltage or internal resistance.
 Defaults work fine for most HS1177-derivatives, if you have issues, try changing the key delay value first.
 
@@ -74,3 +76,13 @@ resource CAMERA_CONTROL A08
 set camera_control_key_delay = 125
 save
 ```
+
+## Frequently asked questions
+>Which resistor value is best?
+
+Any resistor from the 150-600 Ω will do, with preference to lower values.
+
+
+>Which resistor power rating is required?
+
+Irrelevant
