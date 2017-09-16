@@ -24,3 +24,10 @@ frsky_update_sport_rev14.exe
 If you use the PID/VTx adjustment on the taranis, make sure that still works. There was a couple versions that it didn't.  
 
 For disconnecting the XSR, if you have the plug still on there you can plug and unplug that. On a x4r it would be a little more annoying if you direct soldered it.  
+
+
+## minimOSD Serial Pass-through
+
+Allows use of the MW OSD Configurator to adjust settings and load fonts.
+
+[Video](https://www.youtube.com/watch?v=5ABd0gz3ckI)
