@@ -51,6 +51,10 @@ https://github.com/betaflight/betaflight/releases
 - beeper / OSD / CLI indication of reason for not arming;
 - Added Iterm limit to prevent strong accumulations
 
+### Issues
+- F7 support is quite early and dshot is currently broken. The devs know and are looking into it.  
+See https://github.com/betaflight/betaflight/issues/4129
+
 ### Experimental - use with caution
 
 - Added experimental crash detection and recovery (@martinbudden)
