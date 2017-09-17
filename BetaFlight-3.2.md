@@ -192,6 +192,17 @@ Can't fix broken props or save you or if long grass, so doesn't always work.
 
 RCs 4 or below inverted the mixer and had all 4 props reversed and spinning. That works too but it is a little more messy on the ground and requires some finesse. 
 
+### Yaw Jump tuning  
+Post by ctzsnooze:  
+The jump up when abruptly stopping / reversing a hard yaw spin is because two motors must go full on to generate maximum yaw torque. That's like applying 50% throttle.  
+acc_limit_yaw delays the speed at which yaw can accumulate, but not the maximum amount, so as you say it kind of delays the onset of the jump, but if a big correction is needed it will still jump at the same speed. As you say, slowing the rate of onset of yaw moves using a lower acc_limit_yaw will reduce yaw responsiveness to stick inputs.  
+pid_sum_yaw indirectly limits the maximum speed the motors will be requested to attain during a yaw move. That will limit the maximum possible yaw rate, and reduce the climb rate to the same extent. Basically jump and yaw are inextricably linked. But this should retain crisp yaw responsiveness for inputs that don't hit the limit.  
+RC5 has a number of measures to reduce yaw spin to the moon problems. I haven't had a bad one since going to RC5. 
+
+Reversing the prop rotation also seems to me to reduce the amount of spin acquired when clipping a gate with the outside of a front prop. This reduces the chance of getting a big spin and a big climb after hitting a gate.  
+Keep in mind that if you clip a gate and spin at high rotational rates, and if you run a lot of yaw P, two of your motors will go full on to oppose that spin, and may need to stay on for some time before regaining control.  
+I configure my sticks so that equal yaw and roll stick deflections result in a properly banked turn with the quad at 45 degrees. Hence I set the same rates for yaw as for roll. However because yaw responsiveness is inherently weaker than roll, I do need to run quite a lot of yaw P, which does cause fast yaw climbs after clipping gates.   
+
 ### Experimental Slew filter- Removed in RC5
 https://github.com/betaflight/betaflight/pull/3983  
 More info here:  
