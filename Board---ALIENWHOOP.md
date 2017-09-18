@@ -39,7 +39,7 @@ AlienWhoop flight controller for Tiny Whoop, Blade Inductrix, Eachine, BetaFPV, 
   
   - Preorder F4 boards here: https://shop.alienwhoop.us/products/alienwhoop-v2-f4-brushed-flight-controller
   - DIY files here: https://oshpark.com/projects/m61Bc99Q
-  - Prebuild boards here: https://groupgets.com/campaigns/297-alienwhoop-v2-flight-controller (ended)
+  - Crowdfunded boards via GroupGets (campaign ended): https://groupgets.com/campaigns/297-alienwhoop-v2-flight-controller
 
 ## Designers
 
