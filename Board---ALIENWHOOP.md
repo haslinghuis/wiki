@@ -37,8 +37,9 @@ AlienWhoop flight controller for Tiny Whoop, Blade Inductrix, Eachine, BetaFPV, 
 ## Manufacturers and Distributors
   AlienWhoop (Manufacturers)
   
-  - Prebuild boards here: https://groupgets.com/campaigns/297-alienwhoop-v2-flight-controller
+  - Preorder F4 boards here: https://shop.alienwhoop.us/products/alienwhoop-v2-f4-brushed-flight-controller
   - DIY files here: https://oshpark.com/projects/m61Bc99Q
+  - Prebuild boards here: https://groupgets.com/campaigns/297-alienwhoop-v2-flight-controller (ended)
 
 ## Designers
 
