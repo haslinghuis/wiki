@@ -87,9 +87,9 @@ _(add FAQs, known issues and workarounds specifically related to this board. ple
 ### Maximum gyro update / PID loop frequency
 The KISS FC features an onboard MPU6050 gyro that is connected with I2C and is thereby limited to 4kHz gyro update frequency and 4kHz PID loop frequency.
 
-### ESC Telemetry
+### ESC Telemetry (ESC Sensor)
 When using KISS 24RE ESCs, you use the ESC telemetry by connecting the ESC telemetry wire to the TLM pads on the KISS FC board.
-To get ESC telemetry working with the TLM pads, you will need to solder-bridge the TX3/RX3 pads on the bottom of the KISS FC board. In BF 3.2 this will be fixed with a CLI command and the solder-bridge is not needed any more.
+To get ESC telemetry working with the TLM pads when using pre-BF 3.2, you will need to solder-bridge the TX3/RX3 pads on the bottom of the KISS FC board. In BF 3.2 the solder-bridge is not needed any more, with CLI command is `set esc_sensor_halfduplex = ON` you can set the UART to except TX and RX signals on the same pad.
 
 How to enable/use ESC Telemetry:
 1. Create solder-brigde between TX3/RX3 on the bottom of the KISS FC board.
