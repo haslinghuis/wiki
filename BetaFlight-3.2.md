@@ -55,7 +55,7 @@ https://github.com/betaflight/betaflight/releases
 - F7 support is quite early and dshot is currently broken. The devs know and are looking into it.  
 See https://github.com/betaflight/betaflight/issues/4129
 
-- Many features disabled for NAZE and other F1 boards. BLHeli Pass-through is/was one dsiabled. A custom build has been done that removes Mag & Baro and enables Pass-through. Might be the way the final 3.2.0 code wiil be. See this post for NAZE code:  
+- Many features disabled for NAZE and other F1 boards. BLHeli Pass-through is/was one disabled. A custom build has been done that removes Mag & Baro and enables Pass-through. Might be the way the final 3.2.0 code will be. See this post for NAZE code:  
 https://www.rcgroups.com/forums/showpost.php?p=38309374&postcount=51892  
 
 
