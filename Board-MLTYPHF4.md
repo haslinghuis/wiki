@@ -104,6 +104,12 @@ There are two reason the board might not appear as the correct device:
 #### how do I configure the vtx like change channels?  
 Stick commands are shown on the OSD startup screen. Mid throttle, yaw left and roll centered, pitch up.
 
+#### Can the Typhoon's stackable Vtx's power, band, and channel be controlled/adjusted via the radio/goggles? Asking because I'm trying to decide between it and a tbs Unify, which has SmartAudio. Could only see reference to controlling the power via dipswitches and band/channel via CLI commands.   
+
+The Typhoon band and channel can be selected through the Betaflight OSD or CLI. Power selection is on the switches, although there is a power setting in the OSD that affects the RF preamp gain and not the power amp gain.
+
+The Typhoon FC is intended for use with the VTX specifically. It won't connect easily to other VTXs. The Tempest F4 is designed specifically for use with a Unify Pro and comes with a custom cable for that. The Tempest has the OSD and SD card on the FC board also. If you want to use a Unify, get the Tempest F4.  
+
 ## Other Resources
 
 Setup Guides: 
