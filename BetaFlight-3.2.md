@@ -107,6 +107,11 @@ See https://github.com/betaflight/betaflight/issues/4129
 - Added internal resistance adjustment for camera control
 - Show MSP version in cli
 
+### RC5 Bugs (see the Issues and Pull requests in Github for details)
+- running a Cl Racing f4 fc and upgraded to 3.2 rc5 today and lost ppm signal. That is a known problem, fixed with  
+https://github.com/betaflight/betaflight/pull/4182  
+
+
 ### Other Features:   
 
 - Spektrum Satellite Bind for 3.2  
