@@ -138,6 +138,12 @@ If you are using S.BUS or other Serial RX receivers, then you can move your rece
 The PPM signal is connected to MCU pin PB4, and you can use this for single-wire software serial available in BF3.1.6 and later.
 (taken from here : https://www.rcgroups.com/forums/showthread.php?2831228-OMNIBUS-F3-F3-Pro-PPM-An-extra-timer-pin)
 
+`feature -RX_PPM` //disable the rx-pwm  
+`feature RX_SERIAL` //switch to serial reciever  
+`feature SOFTSERIAL` // enable soft serial  
+`resource SERIAL_TX 11 B04` // enable softSerial1 tx on J12/PWM6   
+and/or `resource SERIAL_TX 12 B07` // enable softSerial2 tx on J12/PWM7
+
 ### Club 24A VCC-RAM Bypass Hack
 if you experience incorrect current reading when using the VCC-RAM jumper then this is the suggested fix.
 ![](https://static.rcgroups.net/forums/attachments/5/9/3/2/6/3/a9529383-153-OMNIBUS_F3_PRO_VCC-RAM_Bypass_0.jpg)
