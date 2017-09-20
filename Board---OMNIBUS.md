@@ -141,8 +141,9 @@ The PPM signal is connected to MCU pin PB4, and you can use this for single-wire
 `feature -RX_PPM` //disable the rx-pwm  
 `feature RX_SERIAL` //switch to serial reciever  
 `feature SOFTSERIAL` // enable soft serial  
-`resource SERIAL_TX 11 B04` // enable softSerial1 tx on J12/PWM6   
-and/or `resource SERIAL_TX 12 B07` // enable softSerial2 tx on J12/PWM7
+`resource SERIAL_TX 11 B04` // enable softSerial1 tx on pin B04(PWM6)   
+and/or `resource SERIAL_TX 12 B07` // enable softSerial2 tx on pin B07(PWM5)  
+`Save`   
 
 ### Club 24A VCC-RAM Bypass Hack
 if you experience incorrect current reading when using the VCC-RAM jumper then this is the suggested fix.
