@@ -138,6 +138,14 @@ If you are using S.BUS or other Serial RX receivers, then you can move your rece
 The PPM signal is connected to MCU pin PB4, and you can use this for single-wire software serial available in BF3.1.6 and later.
 (taken from here : https://www.rcgroups.com/forums/showthread.php?2831228-OMNIBUS-F3-F3-Pro-PPM-An-extra-timer-pin)
 
+### Club 24A VCC-RAM Bypass Hack
+if you experience incorrect current reading when using the VCC-RAM jumper then this is the suggested fix.
+![](https://static.rcgroups.net/forums/attachments/5/9/3/2/6/3/a9529383-153-OMNIBUS_F3_PRO_VCC-RAM_Bypass_0.jpg)
+![](https://static.rcgroups.net/forums/attachments/5/9/3/2/6/3/a9529390-246-OMNIBUS_F3_PRO_VCC-RAM_Bypass_1.jpg)
+![](https://static.rcgroups.net/forums/attachments/5/9/3/2/6/3/a9529395-59-OMNIBUS_F3_PRO_VCC-RAM_Bypass_3.jpg)
+
+(taken from here : https://www.rcgroups.com/forums/showpost.php?p=36217140&postcount=640)
+
 ## Other Resources
 
 Setup Guide: https://nathan.vertile.com/blog/2016/07/07/omnibus-typhoon-miniquad/
@@ -149,3 +157,5 @@ OMNIBUS AIO F3
 ![](http://shop.myairbot.com/media/catalog/product/cache/1/image/54b2359dd2430bcca06ee462d488eb40/o/m/omnibusf3-v1.1-3.jpg)
 OMNIBUS AIO F3 PRO
 ![](http://shop.myairbot.com/media/catalog/product/cache/1/image/54b2359dd2430bcca06ee462d488eb40/o/m/omnibusf3-pro-4_1.jpg)
+![](https://nathan.vertile.com/assets/images/blog/airbot/180/omnibusf3-pro-top-a0c107c7.png)
+![](https://nathan.vertile.com/assets/images/blog/airbot/180/omnibusf3-pro-bottom-c19f8aea.png)
