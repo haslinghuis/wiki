@@ -53,7 +53,7 @@ The SmartAudio support unlocks certain capabilities of a SmartAudio device, to p
 
 - Both SmartAudio V1 and V2 devices are supported.
 
-- The SmartAudio V1 is NOT compatible with hardware UARTs (as of 2017-02-12). If you have trouble with V1 devices with hardware UARTs, please try the software serial (available in v3.1.6 patch release or later).
+- The SmartAudio V1 is NOT compatible with _some_ hardware UARTs (as of 2017-02-12). If you have trouble with V1 devices with hardware UARTs, please try the software serial (available in v3.1.6 patch release or later).
 
 - Unify 5G8 Pro Race Edition:
 Lower frequencies are not supported.
