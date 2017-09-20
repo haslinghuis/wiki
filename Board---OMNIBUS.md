@@ -130,6 +130,14 @@ I.E. Servo1 cli, uses Servo 0 on the Servo Tab page So on the Servo Tab page it 
 
 Regards BobFlyer
 
+### Extra timer pin
+If you are using S.BUS or other Serial RX receivers, then you can move your receiver input from SBUS/PPM header (J8) to UART3 RX (F3: J22/PWM6, F3 Pro: J12/PWM6), and make the SBUS/PPM header dedicated for PPM signal.
+
+![](https://static.rcgroups.net/forums/attachments/5/9/3/2/6/3/t9770685-40-thumb-6547DA9F-A6FA-4217-BCB0-3355A92A6AC1.jpg?d=1486736891)
+
+The PPM signal is connected to MCU pin PB4, and you can use this for single-wire software serial available in BF3.1.6 and later.
+(taken from here : https://www.rcgroups.com/forums/showthread.php?2831228-OMNIBUS-F3-F3-Pro-PPM-An-extra-timer-pin)
+
 ## Other Resources
 
 Setup Guide: https://nathan.vertile.com/blog/2016/07/07/omnibus-typhoon-miniquad/
