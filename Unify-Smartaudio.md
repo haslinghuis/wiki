@@ -44,6 +44,9 @@ The easiest is of course to get fc with OSD. That works absolutely flawless, but
 there is a separate betaflight repository with LUA scripts
 https://github.com/betaflight/betaflight-tx-lua-scripts
 
+Revised [LUA Scripts](https://github.com/codecae/betaflight-tx-lua-revised/) here:  
+
+
 I am thinking to add more howto videos to github locations. So those who are willing to make nice howto videos please post it in here.
 ## User's Responsibility
 
