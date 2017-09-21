@@ -191,7 +191,9 @@ There is a new PR that tries to fix this, see [PR 3909](https://github.com/betaf
 
 ### "flip after crash mode" (was called Turtle Mode)  
 
-TO DO - Describe what this does, how to setup and which ESC firmware supports this.
+TO DO - Describe what this does, how to setup and which ESC firmware supports this.  
+
+#### NOTE: Ensure the ESC Firmware supports DSHOT commands to Reverse the motors. NOT all latest ESC firmware has this support. Check with the ESC Firmware developers/Docs for the ESCs you are using.
 
 Description by brycej:  
 In its current form (as of last week, 8aug17, or so). You need to flick the mode switch and then arm. Throttle and yaw sticks don't do anything. Pitch and roll will control which props are spinning based on stick deflection. With the pitch and roll centered no props are moving.  
@@ -215,6 +217,11 @@ RC5 has a number of measures to reduce yaw spin to the moon problems. I haven't 
 Reversing the prop rotation also seems to me to reduce the amount of spin acquired when clipping a gate with the outside of a front prop. This reduces the chance of getting a big spin and a big climb after hitting a gate.  
 Keep in mind that if you clip a gate and spin at high rotational rates, and if you run a lot of yaw P, two of your motors will go full on to oppose that spin, and may need to stay on for some time before regaining control.  
 I configure my sticks so that equal yaw and roll stick deflections result in a properly banked turn with the quad at 45 degrees. Hence I set the same rates for yaw as for roll. However because yaw responsiveness is inherently weaker than roll, I do need to run quite a lot of yaw P, which does cause fast yaw climbs after clipping gates.   
+
+### FPV Camera control via OSD   
+
+There are compatibilities among different cams. Don't expect too much.  
+See: https://github.com/betaflight/betaflight/wiki/FPV-Camera-Control-(Joystick-Emulation)  
 
 ### Experimental Slew filter- Removed in RC5
 https://github.com/betaflight/betaflight/pull/3983  
