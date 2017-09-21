@@ -1258,7 +1258,7 @@ You can achieve more or less the same curve with both expo and s.rates, it just 
 
 - Gyro issues can happen on any of the Gyro chips used. If you see either Yaw Twitches or excessive noise on any axis (A BlackBox Log is a definitive method to see these) then first try proper Soft Mounting of the FC.  
 - Soft mounting the FC must be done properly to ensure No vibrations get to the FC board (Gyro) through the mounting.  
-- Modern ESCs (active Braking) and modern high power motors can put a lot of noise into the electrical system. Adding a high value, low ESC cap helps to prevent this noise from getting into the Gyro chip on the FC (also helps with cleaner video and preventing damaging other electronics from high Voltage spikes).  
+- Modern ESCs (active Braking) and modern high power motors can put a lot of noise into the electrical system. Adding a high value (1000uF seems common), low ESR capacitor helps to prevent this noise from getting into the Gyro chip on the FC (also helps with cleaner video and preventing damaging other electronics from high Voltage spikes).  
 - There is NO one cure for any copter. Each copter build is different and requires trying the various solutions. Some only need a large cap added, other only soft mounting the FC while some require both.  
 
 - There is a NEW [Soft Mounting and Noise Reduction](https://github.com/betaflight/betaflight/wiki/Soft-Mounting-and-Noise-Reduction) Wiki page. Details on Soft Mounting will be moved to this new page so check back.
