@@ -1,3 +1,8 @@
+# Note: this works on some cameras but not others. The RCG discussion thread is here: 
+https://www.rcgroups.com/forums/showthread.php?2961216-Betaflight-Camera-Control-Compatibility-Reports#post38325570
+
+Read this thread for help on compatibility.
+
 ## Description
 This functionality provides OSD joystick emulation for HS1177-style cameras, e.g. cameras having a single OSD input pin driven by a button resistor divider.
 Most cameras up to date seem to adhere to the design and have the following resistor nominals:
