@@ -61,7 +61,7 @@ SPRACINGF3 (by @jflyper)
 |-----|-------------------|---------|-------|--------|------------------------|
 | A0  | IO_1[3] PPM/CH1   | OK      | ?     | ?      | When PPM is not in use |
 | A1  | IO_1[4] CH2       | OK      | ?     | ?      | When PPM is not in use |
-| B4  | IO_1[5] CH5       | OK      | ?     | ?      |                        |
+| B4  | IO_1[5] CH5       | OK      | OK    | ?      |                        |
 | B5  | IO_1[6] CH6       | OK      | ?     | ?      |                        |
 | A8  | IO_1[7] LED strip | OK      | ?     | ?      |                        |
 | B0  | IO_2[5] CH7       | OK      | ?     | ?      |                        |
