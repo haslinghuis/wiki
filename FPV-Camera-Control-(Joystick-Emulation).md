@@ -88,5 +88,6 @@ Any resistor from the 150-600 Ω will do, with preference to lower values.
 Irrelevant
 
 >RCG Discussion Thread
+
 https://www.rcgroups.com/forums/showthread.php?2961216-Betaflight-Camera-Control-Compatibility-Reports
 Read this thread for help on compatibility.
