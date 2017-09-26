@@ -90,4 +90,16 @@ Irrelevant
 >RCG Discussion Thread
 
 https://www.rcgroups.com/forums/showthread.php?2961216-Betaflight-Camera-Control-Compatibility-Reports
+
 Read this thread for help on compatibility.
+
+## Tips for hardware designers
+If you're designing a flight controller, select an MCU pin which you'll be able to provide a dedicated timer for.
+To add your camera control pin to default target resources assignment, use the following preprocessor macro in `target.h` file:
+```
+#define CAMERA_CONTROL_PIN pin_name
+```
+Use 150-220 Ω resistor inline between designated MCU pin and the solder pad.
+Consider adding some additional capacitance to support the widest variety of cameras, a 100 nF ceramic SMD capacitor would be sufficient, anything in the range of 100-500 nF will increase user experience greatly.
+
+If you're designing a camera, the same advice about capacitance applies. It provides debouncing for the physical joystick and simplifies FC configuration for the end user.
