@@ -103,3 +103,4 @@ Use 150-220 Ω resistor inline between designated MCU pin and the solder pad.
 Consider adding some additional capacitance to support the widest variety of cameras, a 100 nF ceramic SMD capacitor would be sufficient, anything in the range of 100-500 nF will increase user experience greatly.
 
 If you're designing a camera, the same advice about capacitance applies. It provides debouncing for the physical joystick and simplifies FC configuration for the end user.
+Having control over camera firmware, make it less restrictive in terms of _key_ voltage levels with some 5-10% of margin from both sides.
