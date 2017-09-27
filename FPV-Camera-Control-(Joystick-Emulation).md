@@ -19,6 +19,7 @@ Most cameras up to date seem to adhere to the design and have the following resi
 ## Modes of operation
 ### Hardware PWM
 Requires a 150-600 Ω resistor inline from your FC `PIN` to Camera `OSD`. Additional `GND` connection is advised.
+Assumes that the camera (or FC) has sufficient capacitance at OSD pin (look at `Tips for hardware designers` section). If you camera is not working, try adding a some capacitor between camera `OSD` and `GND`.
 #### How do I select a suitable `PIN`?
 @todo
 
@@ -77,6 +78,9 @@ set camera_control_key_delay = 125
 save
 ```
 
+### Foxeer Arrow Micro v1 and v2
+This camera has insufficient to no capacitance on OSD pin, as a result you'll have to add at least 0.1 µF to get Hardware PWM working. Foxeer may release a new revision which will address this problem
+
 ## Frequently asked questions
 >Which resistor value is best?
 
@@ -87,11 +91,13 @@ Any resistor from the 150-600 Ω will do, with preference to lower values.
 
 Irrelevant
 
+
 >RCG Discussion Thread
 
 https://www.rcgroups.com/forums/showthread.php?2961216-Betaflight-Camera-Control-Compatibility-Reports
 
 Read this thread for help on compatibility.
+
 
 ## Tips for hardware designers
 If you're designing a flight controller, select an MCU pin which you'll be able to provide a dedicated timer for.
