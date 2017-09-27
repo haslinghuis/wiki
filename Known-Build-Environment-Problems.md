@@ -19,6 +19,6 @@ When trying to build and run the unittests on Linux, you may encounter this prob
     /usr/bin/ld: cannot find -lBlocksRuntime
     clang: error: linker command failed with exit code 1 (use -v to see invocation)
 
-Problem is a missing linrary, install it this way:
+Problem is a missing library, install it this way:
 
     $ sudo apt-get install libblocksruntime-dev
