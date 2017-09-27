@@ -12,3 +12,13 @@ The arm-sdk installation done from the new "make arm_sdk_install" command will i
     sudo apt-get update  
     sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386  
 
+## Linking Unit Tests may fail.
+When trying to build and run the unittests on Linux, you may encounter this problem:
+
+    linking ../../obj/test/alignsensor_unittest/alignsensor_unittest
+    /usr/bin/ld: cannot find -lBlocksRuntime
+    clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+Problem is a missing linrary, install it this way:
+
+    $ sudo apt-get install libblocksruntime-dev
