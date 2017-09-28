@@ -20,7 +20,7 @@ F405+ICM20602, w/ Betaflight OSD & SD Card Slot
 * Blackbox: Micro SD Card
 * PPM/UART Shared:  UART2-RX
 * Battery Voltage Sensor: Yes 1:10
-* Currsnt Sensor: No (FCHUB-6S option)
+* Current Sensor: No (FCHUB-6S option)
 * Integrated Voltage Regulator: No (FCHUB-6S option)
 * Brushed Motor Mosfets: No
 * Buttons: BOOT button
