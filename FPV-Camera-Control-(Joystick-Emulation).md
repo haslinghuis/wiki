@@ -19,7 +19,8 @@ Most cameras up to date seem to adhere to the design and have the following resi
 ## Modes of operation
 ### Hardware PWM
 Requires a 150-600 Ω resistor inline from your FC `PIN` to Camera `OSD`. Additional `GND` connection is advised.
-Assumes that the camera (or FC) has sufficient capacitance at OSD pin (look at `Tips for hardware designers` section). If you camera is not working, try adding a some capacitor between camera `OSD` and `GND`.
+
+Assumes that the camera (or FC) has sufficient capacitance at OSD pin (look at `Tips for hardware designers` section). If you camera is not working, try adding a capacitor between camera `OSD` and `GND`.
 #### How do I select a suitable `PIN`?
 @todo
 
