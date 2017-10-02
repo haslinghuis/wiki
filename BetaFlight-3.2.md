@@ -25,7 +25,7 @@ Hi Guys. I hope everyone is fine.
 We finally have a release candidate on schedule like promised!   
 https://github.com/betaflight/betaflight/releases
 
-## Betaflight 3.2.0 RC5 Pre-release
+## Betaflight 3.2.0 RC6 Pre-release
 
 ### New:
 
@@ -115,6 +115,12 @@ https://www.rcgroups.com/forums/showpost.php?p=38309374&postcount=51892
 - running a Cl Racing f4 fc and upgraded to 3.2 rc5 today and lost ppm signal. That is a known problem, fixed with  
 https://github.com/betaflight/betaflight/pull/4182  
 
+### RC6 Changes  
+- Disable small angle during crashflip
+- Fix mixer for dshot 3D
+- Improved Mixer for crashflip mode
+- CCD fix for parallel PWM
+- Remove pidsumlimit from crashflip mode
 
 ### Other Features:   
 
