@@ -7,27 +7,27 @@ For maximum ease of use, some FrskyF4's board has an onboard PDB up to 6s with a
 
 ## Hardware
 
-  MCU: STM32F4
-  IMU: MPU6000 (SPI)
-  IMU Interrupt: Yes
-  VCP: Yes
-  Hardware UARTS: 3(UART3-->SBUS UART6-->S.PORT)
-  OSD: BFOSD
-  Blackbox: SD Card
-  Battery Voltage Sensor: yes
-  Integrated Voltage Regulator: Yes, supports up to 6S, 1AMP
-  Brushed Motor Mosfets: No
-  Buttons: 2 (1: DFU, 2:Receiver Bind)
+*   MCU: STM32F4
+*   IMU: MPU6000 (SPI)
+*   IMU Interrupt: Yes
+*   VCP: Yes
+*   Hardware UARTS: 3(UART3-->SBUS UART6-->S.PORT)
+*   OSD: BFOSD
+*   Blackbox: SD Card
+*   Battery Voltage Sensor: yes
+*   Integrated Voltage Regulator: Yes, supports up to 6S, 1AMP
+*   Brushed Motor Mosfets: No
+*   Buttons: 2 (1: DFU, 2:Receiver Bind)
 
 ## Features
 
-  Current Sensor: PC1
-  BlHeli passthrough: Yes
-  WS2811 Led Strip: Yes
-  Transponder: Yes
-  Beeper: Inverted
-  Receiver: Frsky X8R
-  RSSI:  SBUS CHANNEL 8
+*   Current Sensor: PC1
+*   BlHeli passthrough: Yes
+*   WS2811 Led Strip: Yes
+*   Transponder: Yes
+*   Beeper: Inverted
+*   Receiver: Frsky X8R
+*   RSSI:  SBUS CHANNEL 8
 
 ## Manufacturers and Distributors
   Frsky(Manufacturers)
