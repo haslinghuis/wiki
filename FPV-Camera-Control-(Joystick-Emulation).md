@@ -80,7 +80,10 @@ save
 ```
 
 ### Foxeer Arrow Micro v1 and v2
-This camera has insufficient to no capacitance on OSD pin, as a result you'll have to add at least 0.1 µF to get Hardware PWM working. Foxeer may release a new revision which will address this problem
+This camera has insufficient to no capacitance on OSD pin, as a result you'll have to add at least 0.1 µF to get Hardware PWM working. Foxeer may release a new revision which will address this problem.
+
+1206 capacitors work perfectly while soldering directly to JST connector backside, here's an illustration of a 100 nF 1206 capacitor soldered onto an Foxeer Arrow Micro v2:
+![Foxeer Arrow Micro v2 modified for camera control](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/camera-control-foxeer-arrow-micro-mod.png)
 
 ## Frequently asked questions
 >Which resistor value is best?
