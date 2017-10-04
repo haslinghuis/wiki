@@ -39,65 +39,81 @@ What each flag means and what you should do to (probably) fix the issue.
 This list *should* be kept up to date with the code in `master` so can be used to find what flag corresponds to a certain index, however if you run an older version you'd have to check this manually as mentioned above.
 
 - `NOGYRO`  
+  Encoded value: 0x0001  
   A gyro was not detected.  
   You may have a hardware failure, if a previous firmware version works then it may be a firmware issue.
 
 - `FAILSAFE`  
+  Encoded value: 0x0002  
   Failsafe is active.  
   Rectify the failure condition and try again.
 
 - `RX LOSS` (1)  
+  Encoded value: 0x0004  
   No valid receiver signal is detected.  
   Your receiver is either faulty or has no link to the transmitter.
 
 - `BAD RX` (1)  
+  Encoded value: 0x0008  
   Your receiver has just recovered from receiver failsafe but the arm switch is on.   
   Switch the arm switch off.
 
 - `BOXFAILSAFE`  
+  Encoded value: 0x0010  
   See `FAILSAFE`
 
 - `THROTTLE`  
+  Encoded value: 0x0020  
   Throttle channel is too high.  
   Lower throttle below `min_check`.
 
 - `ANGLE`  
+  Encoded value: 0x0040  
   Craft is not level (enough).  
   Level craft to within `small_angle` degrees (default 25).
 
 - `BOOT GRACE`  
+  Encoded value: 0x0080  
   Arming too soon after power on.  
   Wait until `pwr_on_arm_grace` seconds (default 5) have elapsed.
 
 - `NO PREARM`  
+  Encoded value: 0x0100  
   Prearm switch is not activated or prearm has not been toggled after disarm.  
   Toggle the prearm switch.
 
 - `ARM SWITCH`  
+  Encoded value: 0x0200  
   Arm switch is in an unsafe position.  
   Toggle the arm switch to arm.
 
 - `LOAD`  
+  Encoded value: 0x0400  
   System load is too high for safe flight.  
   Revisit configuration and disable features.
 
 - `CALIB`  
+  Encoded value: 0x0800  
   Sensor calibration is still ongoing.  
   Wait for sensor calibration to complete.
 
 - `CLI`  
+  Encoded value: 0x1000  
   CLI is active.  
   Exit the CLI.
 
 - `CMS`  
+  Encoded value: 0x2000  
   CMS (config menu) is Active - over OSD or other display.  
   Exit the CMS (or OSD menu).
 
 - `OSD`  
+  Encoded value: 0x4000  
   OSD menu is active
   Exit OSD menu.
 
 - `BST`  
+  Encoded value: 0x8000  
   A Black Sheep Telemetry device (TBS Core Pro for example) disarmed and is preventing arming.
   ??
 
