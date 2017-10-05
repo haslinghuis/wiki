@@ -5,6 +5,10 @@
 
 New to Betaflight and just want to get started see the [installation](https://github.com/betaflight/betaflight/wiki/Installing-Betaflight) section.
 
+## Merchandise:
+**For a limited time only:** Buy a [Betaflight TShirt](https://github.com/betaflight/betaflight/wiki/Betaflight-merchandise)!
+
+
 ## Wiki Tips:   
 - Searching the Wiki-  
 Type in URL bar of the Web Browser:   
