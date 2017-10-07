@@ -25,7 +25,7 @@ Hi Guys. I hope everyone is fine.
 We finally have a release candidate on schedule like promised!   
 https://github.com/betaflight/betaflight/releases
 
-## Betaflight 3.2.0 RC6 Pre-release
+## Betaflight 3.2.0 Release
 
 ### New:
 
@@ -69,6 +69,12 @@ https://www.rcgroups.com/forums/showpost.php?p=38309374&postcount=51892
 - Fix GPS serial overflow (@mikeller)
 - Fixed destabilisation on full throttle when Airmode disabled
 - Less chance on yaw spins with Iterm limit
+
+### Known issues:
+- The configuration after an upgrade from a previous version of the firmware is not properly reset, and is likely to be corrupted. To fix this, always do a CLI backup, before the upgrade, then do a 'Reset to defaults' / CLI defaults after upgrading, and restore from the backup ([#4280](https://github.com/betaflight/betaflight/pull/4280));
+- MavLink port sharing with MSP does not work ([#4287](https://github.com/betaflight/betaflight/pull/4287));
+- Camera control menu is overlaid with the OSD statistics page if camera control is invoked from the statistics page ([#4293](https://github.com/betaflight/betaflight/pull/4293));
+- When a battery is connected, the ESCs are initialised twice in a row (i.e. the initialisation beeps sound twice) ([#4257](https://github.com/betaflight/betaflight/issues/4257)).
 
 ### RC2 Changes:  
 - Fix for new blackbox denominators
