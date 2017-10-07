@@ -14,7 +14,9 @@ Black shirt: [HERE >](https://teespring.com/de/betaflight-t-shirt_copy_1#pid=374
 ![](http://wd-design.de/bf/stickers.png)
 
 Sticker sheet > [HERE](https://www.redbubble.com/people/skaman82/works/28365078-betaflight-sticker-sheet?asc=u&p=sticker&rel=carousel)
+
 Big wasp sticker > [HERE](https://www.redbubble.com/people/skaman82/works/28365019-betaflight-collection-v1?asc=u&p=sticker&rel=carousel)
+
 Mug > [HERE](https://www.redbubble.com/people/skaman82/works/28365019-betaflight-collection-v1?asc=u&p=mug&rel=carousel&style=standard)
 
 Thank you!
