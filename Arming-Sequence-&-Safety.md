@@ -109,12 +109,12 @@ This list *should* be kept up to date with the code in `master` so can be used t
 
 - `OSD`  
   Encoded value: 0x4000  
-  OSD menu is active
+  OSD menu is active.  
   Exit OSD menu.
 
 - `BST`  
   Encoded value: 0x8000  
-  A Black Sheep Telemetry device (TBS Core Pro for example) disarmed and is preventing arming.
+  A Black Sheep Telemetry device (TBS Core Pro for example) disarmed and is preventing arming.  
   ??
 
 (1) This may appear on the Betaflight OSD during flight, take it as a sign that your radio system is either faulty or you are flying at the edge of your range. Treat it the same you would an "RSSI critically low" warning.
