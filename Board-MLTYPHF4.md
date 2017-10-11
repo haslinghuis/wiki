@@ -90,7 +90,7 @@ _(add your name here if you help test or contribute code for this board)_
 
 ## Similar Targets
 
-[MotoLab Tempest F4](https://github.com/betaflight/betaflight/wiki/Board---MLTEMPF4)
+[MotoLab Tempest F4](https://github.com/betaflight/betaflight/wiki/Board-MLTEMPF4)
 
 ## FAQ & Known Issues
 
