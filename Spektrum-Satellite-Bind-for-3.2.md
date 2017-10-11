@@ -30,3 +30,14 @@ resource RX_BIND_PLUG pin-id
 ```
 
 Note that only the `Negative logic` plug (short to ground to make it work) type is supported (for now).
+
+
+### Binding Sequence once all is setup. This is the Same as has been.
+In the CLI:   
+`set spektrum_sat_bind = 9  `   
+`save  `   
+
+Unplug USB cable, plug it back in, when the LED flashes bind it to the controller.   
+
+`set spektrum_sat_bind = 0   `   
+`save  `   
