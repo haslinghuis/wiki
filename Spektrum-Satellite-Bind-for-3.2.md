@@ -41,3 +41,11 @@ Unplug USB cable, plug it back in, when the LED flashes bind it to the controlle
 
 `set spektrum_sat_bind = 0   `   
 `save  `   
+
+other bind options
+3 for dsm2 1024/22ms
+5 for dsm2 2048/11ms
+7 for dsmx 1024/22ms
+8 for dsmx 2048/22ms
+9 for dsmx 2048/11ms
+
