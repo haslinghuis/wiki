@@ -243,6 +243,11 @@ https://github.com/betaflight/betaflight/issues/3959#issuecomment-326430286
 https://github.com/betaflight/betaflight/pull/3950  
 https://github.com/betaflight/betaflight/issues/3893  
 
+### Arming Flags
+Are now in the CLI STATUS. Example: `Arming disable flags: RX LOSS CLI`  
+On F4/F7 STM32's the Arming status will print out names whereas on F1/F3 STM32's this is a simple Bit Field.  
+See [Arming Sequence and Safety](https://github.com/betaflight/betaflight/wiki/Arming-Sequence-&-Safety) for details.  
+
 ## CLI command changes in 3.2
 
 ### Removed CLI Commands
