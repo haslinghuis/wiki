@@ -42,10 +42,11 @@ Unplug USB cable, plug it back in, when the LED flashes bind it to the controlle
 `set spektrum_sat_bind = 0   `   
 `save  `   
 
-other bind options
-3 for dsm2 1024/22ms
-5 for dsm2 2048/11ms
-7 for dsmx 1024/22ms
-8 for dsmx 2048/22ms
-9 for dsmx 2048/11ms
+other bind options  
+3 for dsm2 1024/22ms  
+5 for dsm2 2048/11ms  
+7 for dsmx 1024/22ms  
+8 for dsmx 2048/22ms  
+9 for dsmx 2048/11ms  
 
+Note: Binding will only work if there are a direct connection between the FC processor and the satellite, allowing for bi-directional data. On REVO, and all other F4 based FCs there are inverters on some UARTs that will block the binding signal. UART3 is usually OK on most F4s, UART1 and 6 might be more troublesome.  
