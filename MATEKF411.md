@@ -5,14 +5,14 @@ MATEKSYS F411-MINI
 
 
 ## Description
-F411+ICM20602, w/ BFOSD, No blackbox 
+F411+MPU6000, w/ BFOSD, No blackbox 
 
 
 ## MCU, Sensors and Features
 
 ### Hardware
 * MCU: STM32F411CEU6
-* IMU: ICM-20602(SPI)
+* IMU: MPU6000(SPI)
 * OSD: BetaFlight OSD w/ AT7456E chip
 * Compass & Baro: no
 * VCP: Yes
@@ -29,8 +29,6 @@ F411+ICM20602, w/ BFOSD, No blackbox
 * Beeper : Yes
 
 ### Features
-* 32K Gyro ICM-20602
-* Support 32K/8K or 16K/16K
 * Built in inverter for SBUS input (UART1-RX)
 * 6x DShot outputs without conflict
 * VCP, UART1, UART2
