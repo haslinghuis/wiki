@@ -37,16 +37,29 @@ In the CLI:
 `set spektrum_sat_bind = 9  `   
 `save  `   
 
-Unplug USB cable, plug it back in, when the LED flashes bind it to the controller.   
+Unplug USB cable, plug it back in, when the LED in the receiver flashes, bind it to the RC transmitter.   
+Normally you are now done with the bind process, unless you have also disabled automatic reset. Described below.
 
-`set spektrum_sat_bind = 0   `   
+Automatic reset from bind mode is enabled by default, in some situations it may be needed to disable it at the same time binding is setup:
+
+`set spektrum_sat_bind = 9  `   
+`spektrum_sat_bind_autoreset = OFF   `   
 `save  `   
 
-other bind options  
+If automatic reset from bind mode is disabled, you have to manually reset it after binding is complete 
+
+`set spektrum_sat_bind = 0   `   
+`spektrum_sat_bind_autoreset = ON   `    
+`save  `   
+
+
+
+Other bind options values:  
 3 for dsm2 1024/22ms  
 5 for dsm2 2048/11ms  
-7 for dsmx 1024/22ms  
-8 for dsmx 2048/22ms  
+7 for dsmx 2048/22ms  
 9 for dsmx 2048/11ms  
+
+More details can be found here: https://github.com/SpektrumFPV/SpektrumDocumentation/blob/master/Telemetry/Remote%20Receiver%20Interfacing.pdf
 
 Note: Binding will only work if there are a direct connection between the FC processor and the satellite, allowing for bi-directional data. On REVO, and all other F4 based FCs there are inverters on some UARTs that will block the binding signal. UART3 is usually OK on most F4s, UART1 and 6 might be more troublesome.  
