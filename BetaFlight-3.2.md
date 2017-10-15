@@ -248,6 +248,16 @@ Are now in the CLI STATUS. Example: `Arming disable flags: RX LOSS CLI`
 On F4/F7 STM32's the Arming status will print out names whereas on F1/F3 STM32's this is a simple Bit Field.  
 See [Arming Sequence and Safety](https://github.com/betaflight/betaflight/wiki/Arming-Sequence-&-Safety) for details.  
 
+### Rate Profile and Profiles
+From Woody_99's experience:  
+I will share what I have learned, and also that 3.2 is different in a couple of ways from previous versions.
+
+- rate profiles are definitely separated from regular profiles in 3.2
+- in 3.2, if I enable rate profile select on a 3 way switch, BF will use all three rate profiles no matter where the slider is positioned in the adjustments screen. Previously, if I just wanted to have two rate profiles tied to a single profile, the slider would control whether the rate profile was selected by switch position. Not a bad thing, just a change to be aware of.
+- Need to use a different slot now as well. Previously I could use the same slot for various different adjustments using different aux channels, but now different adjustments need a different slot as well.   
+[Post with a Adjustment Tab screen shot](https://www.rcgroups.com/forums/showpost.php?p=38456811&postcount=52308)  
+
+
 ## CLI command changes in 3.2
 
 ### Removed CLI Commands
