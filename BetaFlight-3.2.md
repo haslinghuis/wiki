@@ -25,6 +25,37 @@ Hi Guys. I hope everyone is fine.
 We finally have a release candidate on schedule like promised!   
 https://github.com/betaflight/betaflight/releases
 
+## Betaflight 3.2.1
+### Maintenance Release
+Please read the Instructions for Upgrading.
+
+This release contains bugfixes and target changes only. For a full list of new features see 3.2.0.
+### Fixes:
+
+- Configuration does not reset to defaults after an upgrade, and is corrupted instead (#4280);
+- MavLink port sharing with MSP does not work (#4287);
+- CRSF Telemetry gets stuck when ACC is turned off (#4279);
+- Wrong timer assignment for PA14 (#4297);
+- GD32F350x6 ESCs not supported by 4-way interface (#4329).
+- When a battery is connected, the ESCs are initialised twice in a row (#4322);
+- Camera control menu is overlaid with the OSD statistics page if camera control is invoked from the statistics page (#4293);
+- VTX band colours for LED_STRIP are wrong (#4362);
+- Dshot beacon sounds when beeper is turning off (#4360);
+- Dshot ESC info is inconsistent in CLI (#4308);
+- Dshot1200 timing is wrong for F4 and F7 (#4367);
+- Stick commands for camera control do not repeat when holding stick (#4368);
+- Dshot on F7 does not work (#4165);
+- Toggling WiFi on a RunCam Split will turn it off in flight (#4369);
+- Arming flag names are not used in CLI in some cases, even if compiled in (#4370).
+
+### Target updates:
+
+- KIWIF4V2 / PLUMF4: Moved LED_STRIP pin back to VTX.DTA (#4285);
+- New target: XRACERF4 (#4255).
+- ALIENFLIGHT: Fixed instable hardware detection issue. (#4300).
+- BEEBRAIN_V2: Separated into V2D and V2F (#4318).
+
+
 ## Betaflight 3.2.0 Release
 
 ### New:
