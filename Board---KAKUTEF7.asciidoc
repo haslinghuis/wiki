@@ -6,17 +6,17 @@
 
 ## Benefits of KakuteF7 Compared to KakuteF4
 
-`F7 is a faster processor (216MHz vs 168MHz of F4), the faster speed F7 processor allows for faster looptime in theory without overclocking like we do with F4 running 32KHz`
+`•F7 is a faster processor (216MHz vs 168MHz of F4), the faster speed F7 processor allows for faster looptime in theory without overclocking like we do with F4 running 32KHz`
 
-`F7 offers more UART’s with built-in hardware inversion`
+`•F7 offers more UART’s with built-in hardware inversion`
 
-`F7 has superscalar pipeline and DSP capabilities – basically that means the F7 is a better platform for future development that allows the developers to further optimize the flight controller algorithms`
+`•F7 has superscalar pipeline and DSP capabilities – basically that means the F7 is a better platform for future development that allows the developers to further optimize the flight controller algorithms`
 
-`Onboard Baro BMP280, Support more flight mode`
+`•Onboard Baro BMP280, Support more flight mode`
 
-`Support SD card for Blackbox logging`
+`•Support SD card for Blackbox logging`
 
-`I2C1 Pads for external compass connection`
+`•I2C1 Pads for external compass connection`
 
 ## Image
 
