@@ -30,6 +30,8 @@ OMNIBUS(F3) (by @jflyper)
 | B6  | PWM8/SCL  | OK      | OK    | OK     | I2C must be de-configured? Need furthe testing. |
 | B7  | PWM7/SDA  | OK      | ?     | ?      | Ditto                        |
 
+@olexs: B07 (PWM7/SDA) works with S.Audio on 3.2, no extra config needed (I2C resources aren't mapped per default).
+
 ---
 OMNIBUSF4 (by @jflyper)
 
