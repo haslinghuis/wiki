@@ -117,4 +117,9 @@ This list *should* be kept up to date with the code in `master` so can be used t
   A Black Sheep Telemetry device (TBS Core Pro for example) disarmed and is preventing arming.  
   ??
 
+- `MSP`  
+  Encoded value: 0x10000  
+  MSP connection is active, probably via Betaflight Configurator.  
+  Terminate the Betaflight Configurator connection (disconnect).
+
 (1) This may appear on the Betaflight OSD during flight, take it as a sign that your radio system is either faulty or you are flying at the edge of your range. Treat it the same you would an "RSSI critically low" warning.
