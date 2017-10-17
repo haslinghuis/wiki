@@ -25,6 +25,7 @@ Top View
 
 Bottom View
 ![](https://github.com/jamming/image/blob/master/KakuteF7-bottom-90.png?raw=true)
+
 ## Specifications
 
 `•MCU: STM32F745VG 32-bit processor,216MHz`
