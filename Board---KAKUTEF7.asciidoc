@@ -2,31 +2,18 @@
 
 ## Description
 
-`The Holybro Kakute F7 All-In-One flight controller makes it easy to build your multirotor. It integrates flight controller (FC), power distribution board (PDB), and on-screen display (OSD) in one. `
+`F7 is a newer generation MCU, it is a faster processor (216MHz). F7 offers more UART’s with built-in hardware inversion and it F7 has superscalar pipeline and DSP capabilities – basically that means the F7 is a better platform for future development that allows the developers to further optimize the flight controller algorithms. 
+`
 
 
-## Features
-`•Supports Betaflight and Cleanflight.`
+## Benefits of KakuteF7 Compared to KakuteF4
+`F7 is a faster processor (216MHz vs 168MHz of F4)`
 
-`•Betaflight OSD. Change PIDs, adjust common configuration parameters, and change video transmitter channel and power level, all using your transmitter sticks and goggles.`
+`F7 offers more UART’s with built-in hardware inversion`
 
-`•Soft-mounting built in. The “gyro” chip on this board is mounted on vibration-isolating foam. This means that there is no need to soft-mount the board itself.`
+`F7 has superscalar pipeline and DSP capabilities – basically that means the F7 is a better platform for future development that allows the developers to further optimize the flight controller algorithms`
 
-`•New high-performance / low-noise / high sensitivity IMU. ICM20689 with 6-axis gyro and accelerometer. Can run at up to 32 kHz.`
-
-`•2 oz copper PCB allows up to 120A maximum continuous current.`
-
-`•Dedicated bootloader button for easy firmware flashing.`
-
-`•Low-profile design fits into even very compact frames.`
-
-`•Input voltage 7v to 42v. Power the board directly from the flight pack, up to 6S (on “BAT” pad only).`
-
-`•Automatic voltage monitoring. No need to run a separate vBat wire for voltage monitoring; the Kakute F4 AIO monitors voltage directly from the battery power lead.`
-
-`•Filtered voltage output for clean, noise-free video. On-board regulators output 5v at up to 1.5 amps and 3.3v at up to 200 mA to power peripherals such as receiver, video transmitter, FPV camera, or LED strip.`
-
-`•Supports BLHeli passthrough for easy ESC upgrade and configuration.`
+`The faster speed F7 processor allows for faster looptime in theory without overclocking like we do with F4 running 32KHz`
 
 ## Image
 
@@ -40,9 +27,13 @@ Top View
 
 `•IMU: ICM20689 and MPU6000 double IMU`
 
+`•Onboard Baro BMP280`
+
 `•USB VCP Driver (all UARTs usable simultaneously; USB does not take up a UART)`
 
 `•6 hardware UARTS (UART1,2,3,4,6,7)`
+
+`•1 I2C (I2C1)`
 
 `•SD card for Blackbox logging`
 
