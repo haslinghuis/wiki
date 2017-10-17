@@ -100,10 +100,6 @@ Top View
 ## Target Code   
 `KAKUTEF7`
 
-## Hardware Designs (if available)
-
-`The hardware is currently closed source.`
-
 ## Manufacturers and Distributors
 
  www.holybro.com (Manufacturer & Designer)
@@ -115,7 +111,6 @@ Distributors:
 `“Board Align” Feature Documentation`
 
 ## Other Resources
-
 
 `Contact us at:`
 
