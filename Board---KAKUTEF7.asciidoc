@@ -46,7 +46,10 @@ Top View
 `•Weight: 8g`
 
 ## Pinout Diagram
- https://github.com/jamming/image/blob/master/KakuteF7-top.png
+
+Top View
+![]( https://github.com/jamming/image/blob/master/KakuteF7-top.png?raw=true)
+
 `BUZ- : Piezo buzzer negative leg`
 
 `LED       : WS2182 addressable LED signal wire`
