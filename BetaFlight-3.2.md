@@ -230,7 +230,13 @@ From Yamaford:
 Just to clear this up for others that may read this wrong, I don't think your crash recovery code is the culprit as the crazy "YSTTM" (Yaw spin to the moon) is happening with or without acc or crash recovery enabled right?   
 From mjbudden:   
 Correct. Yaw spin to the moon happens with or without crash recovery enabled and is not cause by crash recovery code.  
-There is a new PR that tries to fix this, see [PR 3909](https://github.com/betaflight/betaflight/pull/3909). If you could test this and provide blackbox logs it would be most useful.   
+There is a new PR that tries to fix this, see [PR 3909](https://github.com/betaflight/betaflight/pull/3909). If you could test this and provide blackbox logs it would be most useful.  
+
+#### Crash Recovery while failsafe is active
+
+In the event that a crash is detected while the vehicle is in failsafe mode, it will immediately disarm.  This is to prevent damage or injury should the vehicle strike an object or the ground during a failsafe event (i.e. loss of RX signal).  This should also disarm the vehicle after failsafe LANDING has put the vehicle on the ground.
+
+Once the failsafe condition has cleared (i.e. RX signal is restored for a minimum of 30 seconds), the vehicle will once again be ready to arm.
 
 ### "flip after crash mode" (was called Turtle Mode)  
 
