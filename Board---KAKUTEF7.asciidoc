@@ -20,10 +20,8 @@
 
 ## Image
 
-Top View
 ![](https://github.com/jamming/image/blob/master/KakuteF7-top-90.png?raw=true)
 
-Bottom View
 ![](https://github.com/jamming/image/blob/master/KakuteF7-bottom-90.png?raw=true)
 
 ## Specifications
