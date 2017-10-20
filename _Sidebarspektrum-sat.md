@@ -38,6 +38,7 @@
  - [Serial Pass Through](https://github.com/betaflight/betaflight/wiki/Serial-Pass-Through)  
  - [Arming Sequence & Safety](https://github.com/betaflight/betaflight/wiki/Arming-Sequence-&-Safety)
  - [Howto setup Spektrum SPM4649T Telemetry](https://github.com/betaflight/betaflight/wiki/Spektrum-SPM4649T-SRXL-Telemetry-setup.)
+ - [Howto use RSSI with Spektrum SPM4649T and other satellites](https://github.com/betaflight/betaflight/wiki/Howto-use-RSSI-with-Spektrum-SPM4649T-and-other-satellites)
 
 # V3.2 specific Setup
 
