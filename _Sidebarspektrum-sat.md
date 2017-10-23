@@ -52,6 +52,7 @@
  - [Known Build Environment Problems](/betaflight/betaflight/wiki/Known-Build-Environment-Problems)
  - [Mac OS X Hex File Development](/betaflight/betaflight/wiki/Mac-OS-X-Hex-File-Development)
  - [Hardware developers reference](/betaflight/betaflight/wiki/Hardware-Reference)
+ - [SWD debug port connection conflicts](/betaflight/betaflight/wiki/SWD-debug-port-connection-conflicts.)
 
 # Boards
 
