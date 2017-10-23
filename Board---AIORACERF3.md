@@ -79,7 +79,7 @@
 
 ## Designers
 
-RCTimer: http://rctimer.com/
+CRIUS
 
 ## Maintainers
 
