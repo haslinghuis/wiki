@@ -7,6 +7,7 @@ When using TBS SmartAudio or IRC Tramp you can have the LEDs change color based 
 The following table shows what color each frequency is assigned to.
 The default color can be changed by double-clicking the color and moving the Hue slider or by using the color command in the CLI.
 
+### Example
 
 ```
 color 3 10,0,255
