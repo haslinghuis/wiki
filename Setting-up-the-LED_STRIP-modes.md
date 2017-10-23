@@ -1,0 +1,32 @@
+##LED color based on VTX frequency
+
+When using TBS SmartAudio or IRC Tramp you can have the LEDs change color based on your VTX channel by enabling the VTX overlay in the LED strip tab.
+
+***Betaflight 3.3***
+
+The following table shows what color each frequency is assigned to.
+The default color can be changed by double-clicking the color and moving the Hue slider or by using the color command in the CLI.
+
+```
+color 3 10,0,255
+color 4 38,0,255
+```
+
+ Frequency range | Default color | Color index
+ ------------ | ------------- | -------------
+ <= 5672 |  White | 1
+ |> 5672 <= 5711 |  Red | 2
+ |> 5711 <= 5750 | Orange | 3
+ |> 5750 <= 5789 | Yellow | 4
+ |> 5789 <= 5829 | Green | 6
+ |> 5829 <= 5867 | Blue | 10
+ |> 5867 <= 5906 | Dark violet | 11
+ |> 5906 | Deep pink | 13
+
+##How to set up Throttle functionality with LEDs
+
+For the selected LED, select function Color, then activate the Color Modifier that's labeled Throttle by default. After that it's possible to select another channel which will control the fading of the selected LED (drop down menu).
+
+After that, choose one of the 16 colors. This is the color which is shown when the chosen channel is at its Middle value. The color with the previous number is shown when the chosen channel is at its Minimum value, and the color with the next number is shown when the channel is at its Maximum value. The colors loop around if using channel 0 or 15.
+
+The fade is linear of all HSV values, so it's easy to fade from completely black to bright yellow or red. 
