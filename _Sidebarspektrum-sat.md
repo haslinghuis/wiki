@@ -44,7 +44,7 @@
 
  - [Spektrum Bind Facility for 3.2](https://github.com/betaflight/betaflight/wiki/Spektrum-Satellite-Bind-for-3.2)
  - [Barometer Configuration for 3.2](https://github.com/betaflight/betaflight/wiki/Barometer-Configuration-(3.2))  
- - [Setting up LED_STRIP Throttle / AUX Indicator](/betaflight/betaflight/wiki/LED-Strip-functionality)
+ - [Changes to the LED_STRIP functionality](/betaflight/betaflight/wiki/LED-Strip-functionality)
  - [FPV Camera Control](/betaflight/betaflight/wiki/FPV-Camera-Control-(Joystick-Emulation))
 
 # Development
