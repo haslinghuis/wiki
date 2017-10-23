@@ -30,11 +30,6 @@ color 4 38,0,255
 color "color_index" "Hue", "Saturation", "Value"
 ```
 
-## Change LED color with an aux channel.
-By using an aux channel instead of throttle as the color modifier you can use an aux channel on your radio to adjust the LED color. When using the Color function the aux channel will only fade through the previous color to the next color with the selected color being at the center position of the aux channel.
-
-By changing the LED Function to Arm State the aux channel will fade through all possible colors.
-
 ## How to set up Throttle functionality with LEDs
 
 For the selected LED, select function Color, then activate the Color Modifier that's labeled Throttle by default. After that, it's possible to select another channel which will control the fading of the selected LED (drop-down menu).
@@ -42,3 +37,8 @@ For the selected LED, select function Color, then activate the Color Modifier th
 After that, choose one of the 16 colors. This is the color which is shown when the chosen channel is at its Middle value. The color with the previous number is shown when the chosen channel is at its Minimum value, and the color with the next number is shown when the channel is at its Maximum value. The colors loop around if using channel 0 or 15.
 
 The fade is linear of all HSV values, so it's easy to fade from completely black to bright yellow or red. 
+
+## Change LED color with an aux channel.
+By using an aux channel instead of throttle as the color modifier you can use an aux channel on your radio to adjust the LED color. When using the Color function the aux channel will only fade through the previous color to the next color with the selected color being at the center position of the aux channel.
+
+By changing the LED Function to Arm State the aux channel will fade through all possible colors.
