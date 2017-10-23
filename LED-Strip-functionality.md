@@ -5,6 +5,18 @@ When using TBS SmartAudio or IRC Tramp you can have the LEDs change color based 
 ***Betaflight 3.3***
 
 The following table shows what color each frequency is assigned to.
+
+ Frequency range | Default color | Color index
+ ------------ | ------------- | -------------
+ <= 5672 |  White | 1
+ |> 5672 <= 5711 |  Red | 2
+ |> 5711 <= 5750 | Orange | 3
+ |> 5750 <= 5789 | Yellow | 4
+ |> 5789 <= 5829 | Green | 6
+ |> 5829 <= 5867 | Blue | 10
+ |> 5867 <= 5906 | Dark violet | 11
+ |> 5906 | Deep pink | 13
+
 The default color can be changed by double-clicking the color and moving the Hue slider or by using the color command in the CLI.
 
 ### Example
@@ -17,17 +29,6 @@ color 4 38,0,255
 ```
 color "color_index" "Hue", "Saturation", "Value"
 ```
-
- Frequency range | Default color | Color index
- ------------ | ------------- | -------------
- <= 5672 |  White | 1
- |> 5672 <= 5711 |  Red | 2
- |> 5711 <= 5750 | Orange | 3
- |> 5750 <= 5789 | Yellow | 4
- |> 5789 <= 5829 | Green | 6
- |> 5829 <= 5867 | Blue | 10
- |> 5867 <= 5906 | Dark violet | 11
- |> 5906 | Deep pink | 13
 
 ## Change LED color with an aux channel.
 By using an aux channel instead of throttle as the color modifier you can use an aux channel on your radio to adjust the LED color. When using the Color function the aux channel will only fade through the previous color to the next color with the selected color being at the center position of the aux channel.
