@@ -168,4 +168,4 @@ And we have changed this resistor from 4.53K to 2.2K at the secondary produce.
 
 `•Facebook Page: Holybro`
 
-`•Facebook Group: Holybro Shuriken Owner Group`
+`•Facebook Group: Holybro Hobby Official Group`
