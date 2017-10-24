@@ -51,9 +51,11 @@ Package
 
 `•IMU: ICM20689 (SPI)`
 
+`•Baro: BMP280 (Only V2 support)`
+
 `•USB VCP Driver (all UARTs usable simultaneously; USB does not take up a UART)`
 
-`•3 hardware UARTS (UART1,3,6)`
+`•hardware UARTS (UART1/3/6 for V1, UART1/3/4/5/6 for V2)`
 
 `•128 Mbit Dataflash chip for Blackbox logging`
 
