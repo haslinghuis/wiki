@@ -175,6 +175,8 @@ https://github.com/betaflight/blackbox-log-viewer/commits/master
 DO NOT use Copy/Paste of CLI commands since many have changed- either names or new ones.
 Use the latest Configurator to setup then the CLI Tab and manually set.
 
+Joshua Bardwell's [Betaflight 3.2 Ultimate Setup Guide](https://www.youtube.com/watch?v=JkggzZySIqs)  
+
 ## New features and changes of how old feature work
 
 ### Switching from 'tlm_inversion' to 'tlm_inverted'
