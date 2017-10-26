@@ -11,7 +11,7 @@ For maximum ease of use, some FrskyF4's board has an onboard PDB up to 6s with a
 *   IMU: MPU6000 (SPI)
 *   IMU Interrupt: Yes
 *   VCP: Yes
-*   Hardware UARTS: 3(UART3-->SBUS UART6-->S.PORT)
+*   Hardware UARTS: 3(UART1-->SBUS UART6-->S.PORT)
 *   OSD: BFOSD
 *   Blackbox: SD Card
 *   Battery Voltage Sensor: yes
