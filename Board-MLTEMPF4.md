@@ -42,7 +42,7 @@ https://www.rcgroups.com/forums/showthread.php?2715556-MotoLab-Typhoon-F4-Flight
 
  - Board target: MLTEMPF4
 
-The MLTEMPF4 target is included in Betaflight version 3.2 and later releases.
+The MLTEMPF4 target is included in Betaflight 3.2 and later releases.
 
 ### Troubleshooting and Discussion Thread
 https://www.rcgroups.com/forums/showthread.php?2537379-MotoLab-Board-Setup-and-Troubleshooting
