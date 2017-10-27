@@ -66,13 +66,7 @@ vtx_channel values are 1-8 for channel 1-8.
 ### Firmware
   - Firmware target: MLTYPHF4
 
-The MLTYPHF4 target is added to Betaflight master repositories and will be in future releases.
-
-A custom build of BF 3.1.7 shipped on the boards is here:
-https://www.dropbox.com/s/5h1gz0kct03lb09/betaflight_3.1.7_DMA_MOTOLABF4.hex?dl=0   
-
-BF 3.2 pre-release build (8/13/2017):
-https://www.dropbox.com/s/w509cb9oscwhazz/betaflight_3.2.0_MLTYPHF4.hex?dl=0
+The MLTYPHF4 target is included in Betaflight 3.2 and later releases.
 
 ### Pinout
 ![](http://gdurl.com/l0JR)
