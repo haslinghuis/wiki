@@ -40,12 +40,9 @@ https://www.rcgroups.com/forums/showthread.php?2715556-MotoLab-Typhoon-F4-Flight
 
 ### Firmware
 
-The MLTEMPF4 target is added to Betaflight master repositories and will be in future releases.
-A custom build of BF 3.1.7 shipped on the boards is here:
-https://www.dropbox.com/s/tx77p8wxzdoyweo/betaflight_3.1.7_MOTOLABF4_Tempest.hex?dl=0
+ - Board target: MLTEMPF4
 
-Pre-release Betaflight 3.2 firmware is here:
-https://www.dropbox.com/s/ibiln2zy2ccoy20/betaflight_3.2.0_MLTEMPF4.hex?dl=0
+The MLTEMPF4 target is included in Betaflight version 3.2 and later releases.
 
 ### Troubleshooting and Discussion Thread
 https://www.rcgroups.com/forums/showthread.php?2537379-MotoLab-Board-Setup-and-Troubleshooting
