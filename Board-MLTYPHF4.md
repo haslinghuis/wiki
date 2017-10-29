@@ -109,7 +109,7 @@ The Typhoon FC is intended for use with the VTX specifically. It won't connect e
 `# Betaflight / MLTEMPF4 (MLTE) 3.2.1 Oct 15 2017 / 19:40:18 (434db9a36) MSP API: 1.36`
 
 `# escprog ki 255`
-`Unknown command, try 'help'`
+`Unknown command, try 'help'`  
 Reason is a required #define isn't in the target file. I'll submit a PR for the next release.
 
 Meanwhile this should have it fixed:  
