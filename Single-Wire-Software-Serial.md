@@ -129,10 +129,11 @@ BETAFLIGHTF3
 
 | Pin | Label             | S.Audio | Tramp | S.Port | Notes                  |
 |-----|-------------------|---------|-------|--------|------------------------|
-| B01 | Soft Serial TX1   | NG (v1) | ?     | ?      |  @iwarp                |
+| B01 | Soft Serial TX1   | OK (v1) | ?     | ?      |  @iwarp                |
 | A02 | Soft Serial TX2   | NG (v1) | ?     | ?      |  @iwarp                |
 | B07 | PPM               | OK (v1) | ?     | ?      |  @iwarp                |
 
 http://i.imgur.com/Mh41SmG.jpg
 
-Note (2017-07-27) by @jflyper: BETAFLIGHTF3 had a timer assignment problem with pre-3.2 firmware. It is fixed with 3.2, and PB01 and A02 should work as software serial --- need to be verified.
+Note (2017-07-27) by @jflyper: BETAFLIGHTF3 had a timer assignment problem with pre-3.2 firmware. It is fixed with 3.2, and PB01 and A02 should work as software serial --- need to be verified
+(29/10/17) by @iwarp B01 confirmed working on 3.2.1
