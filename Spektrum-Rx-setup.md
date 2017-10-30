@@ -1,4 +1,4 @@
-# Spektrum Rx setup
+# How to setup Spektrum Serial Receivers
 ## Binding
  - [Spektrum Bind Facility](https://github.com/betaflight/betaflight/wiki/Spektrum-Satellite-Bind-for-3.2)
 
