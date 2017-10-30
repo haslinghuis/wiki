@@ -37,12 +37,10 @@
  - [Setup on a Fixed Wing Aircraft](https://github.com/betaflight/betaflight/wiki/Setup-for-a-Fixed-Wing-Aircraft)  
  - [Serial Pass Through](https://github.com/betaflight/betaflight/wiki/Serial-Pass-Through)  
  - [Arming Sequence & Safety](https://github.com/betaflight/betaflight/wiki/Arming-Sequence-&-Safety)
- - [Howto setup Spektrum SPM4649T Telemetry](https://github.com/betaflight/betaflight/wiki/Spektrum-SPM4649T-SRXL-Telemetry-setup.)
- - [Howto use RSSI with Spektrum SPM4649T and other satellites](https://github.com/betaflight/betaflight/wiki/Howto-use-RSSI-with-Spektrum-SPM4649T-and-other-satellites)
+ - [Howto setup Spektrum Serial Receivers](https://github.com/betaflight/betaflight/wiki/Spektrum-Rx-setup)
 
 # V3.2 specific Setup
 
- - [Spektrum Bind Facility for 3.2](https://github.com/betaflight/betaflight/wiki/Spektrum-Satellite-Bind-for-3.2)
  - [Barometer Configuration for 3.2](https://github.com/betaflight/betaflight/wiki/Barometer-Configuration-(3.2))  
  - [Changes to the LED_STRIP functionality](/betaflight/betaflight/wiki/LED-Strip-functionality)
  - [FPV Camera Control](/betaflight/betaflight/wiki/FPV-Camera-Control-(Joystick-Emulation))
