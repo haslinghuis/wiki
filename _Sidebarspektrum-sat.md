@@ -48,6 +48,7 @@
 # Development
 
  - [Known Build Environment Problems](/betaflight/betaflight/wiki/Known-Build-Environment-Problems)
+ - [Building Betaflight on Windows, the Linux subsystem way](/betaflight/betaflight/wiki/Building-Betaflight-on-Windows,-the-Linux-subsystem-way)
  - [Mac OS X Hex File Development](/betaflight/betaflight/wiki/Mac-OS-X-Hex-File-Development)
  - [Hardware developers reference](/betaflight/betaflight/wiki/Hardware-Reference)
  - [SWD debug port connection conflicts](/betaflight/betaflight/wiki/SWD-debug-port-connection-conflicts.)
