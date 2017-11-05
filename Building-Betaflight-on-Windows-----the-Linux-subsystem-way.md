@@ -9,7 +9,7 @@ You will need to restart your PC at least once, so be mentally prepared for that
 First, install the Linux subsystem from this great guide (from which I stole the first sentence): [https://msdn.microsoft.com/en-us/commandline/wsl/install-win10](https://msdn.microsoft.com/en-us/commandline/wsl/install-win10)
 
 It should look like this:
-[Imgur](https://i.imgur.com/uj0QPQY.jpg)
+![Imgur](https://i.imgur.com/uj0QPQY.jpg)
 
 If you don't see this screen, open a command prompt and enter  `bash`
 
@@ -42,7 +42,7 @@ Once that's done, enter `git clone https://www.github.com/betaflight/betaflight 
 # Building Betaflight
 
 To build Betaflight, you have two things left to install. Enter the folder you cloned the Betaflight repo into. The `ls` command should output something like this:
-[Imgur](https://i.imgur.com/Kd65LfN.jpg)
+![Imgur](https://i.imgur.com/Kd65LfN.jpg)
 If it doesn't match, you are in the wrong folder. Use the Windows file manager to help if you are lost.
 
 If you are missing a few folders, don't worry, we are going to solve that right now.
