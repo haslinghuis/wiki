@@ -27,7 +27,7 @@ and
 
 So far so good, eh?
 
-# Clone betaflight
+# Cloning betaflight
 
 If you already have the repository cloned to your computer and do not wish to use git, you can skip this step.
 
