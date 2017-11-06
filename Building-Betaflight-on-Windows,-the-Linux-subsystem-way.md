@@ -73,4 +73,4 @@ Then do the following in the Linux subsystem:
 The root file system for the Linux Subsystem is available from Windows here: 
 `C:\Users\<username>\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs`
 
-In earlier iterations of Windows Subsystem for Linux, the Ubuntu file system was at %localappdata%\Lxss (e.g., C:\Users\<username>\AppData\Local\Lxss But it has now mow to the location mantioned above. Beware there are still a lot of incorrect information about this floating around. Even on MS own site. 
+In earlier iterations of Windows Subsystem for Linux, the Ubuntu file system was at %localappdata%\Lxss (e.g., C:\Users\<username>\AppData\Local\Lxss But it has now moved to the location mentioned above. Beware there are still a lot of incorrect information about this floating around. Even on MS own site. 
