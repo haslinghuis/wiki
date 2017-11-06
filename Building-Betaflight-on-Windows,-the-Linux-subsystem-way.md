@@ -51,6 +51,19 @@ First, enter `sudo apt install build-essential`. This is the package that will a
 
 Once that is done, your system is ready to spit out those sweet hex files.
 
-Enter `make TARGET=[targetname]` to build Betaflight for your chosen board. Alternatively, you can try `make TARGET=ALL` if you have some spare time.
+Enter `make <targetname>` to build Betaflight for your chosen board. For example `make BETAFLIGHTF3` or even `make BETAFLIGHTF3 BETAFLIGHTF4` for multiple targets. `make help` is also your friend. 
+Alternatively, you can try `make all` if you have some spare time.
 
 The hex files will be in the `/obj` folder of the betaflight folder
+
+## Optional items
+
+If you do not like the default Windows console, you can always install for example `xterm`. This will however also require an X-server running in the Windows host environment. Get it here: https://sourceforge.net/projects/xming/
+
+Then do the following in the Linux subsystem:
+
+
+`$ sudo apt install xterm`   
+`$ sudo apt-get install dbus-x11`   
+`$ sudo dbus-uuidgen --ensure`   
+`$ xterm --display :0.0 &`   
