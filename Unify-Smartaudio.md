@@ -218,6 +218,8 @@ If it comes from a microcontroller with 3.3V, best solution is to use a voltage 
 
 The analog signal needs to be ac coupled using a series capacitor from audio source to the smart audio signal. Ideal capacitance is around 100nF. 
 
+(The click sound in your audio will disappear after arming)
+
 #### Ideal connection:
 ![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/4037455969/original/GsQVQvCDbXk1zf8WJPaz9NLTZu1eNrbL3g?1490626337)
 
