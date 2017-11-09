@@ -9,7 +9,7 @@ You can see some information here : https://github.com/betaflight/betaflight/pro
 From Boris (30 June 2017):   
 Well release candidate is around the corner.
 Basically a lot of fundamental changes. Not much of those will affect the user, but there are also quite some new features as well.   
-The major complain about Betaflight was too frequent updates in the past. So we slowed that down. Not having the pressure for quick releases gives some time for thinking and researching new things.  
+The major complaint about Betaflight was too frequent updates in the past. So we slowed that down. Not having the pressure for quick releases gives some time for thinking and researching new things.  
 
 Current V3.2 files are here: https://ci.betaflight.tech/job/Betaflight/lastSuccessfulBuild/artifact/obj/ 
 or https://betaflight.qmd.cl/
