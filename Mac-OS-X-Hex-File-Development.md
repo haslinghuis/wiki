@@ -82,6 +82,18 @@ you should see the version number pop up:
 
 `arm-none-eabi-gcc (GNU Tools for ARM Embedded Processors) 4.9.3 20150529 (release) [ARM/embedded-4_9-branch revision 227977] Copyright (C) 2014 Free Software Foundation, Inc.`
 
+If you have zsh installed then you need one more thing. Type: 
+
+`nano ~/.zshrc`
+
+Put the path here as well. Then open a new terminal and type:
+
+`arm-none-eabi-gcc --version`
+
+You will see:
+
+`arm-none-eabi-gcc (GNU Tools for ARM Embedded Processors) 4.9.3 20150529 (release) [ARM/embedded-4_9-branch revision 227977] Copyright (C) 2014 Free Software Foundation, Inc.`
+
 # Creating the Hex File
 
 Go to: https://github.com/borisbstyle/betaflight/releases and download the latest Source code (tar.gz). The tar.gz file will allow you to edit the Makefile, so you can pick a target. Once the file is downloaded make sure you un pack it. 
