@@ -90,6 +90,7 @@
  - [IRCFUSIONF3](/betaflight/betaflight/wiki/Board---IRCFUSIONF3)
  - [KAKUTE F3](https://github.com/betaflight/betaflight/wiki/KAKUTE-F3)
  - [KAKUTEF4](/betaflight/betaflight/wiki/Board---KAKUTEF4)
+ - [KAKUTEF4V2](/betaflight/betaflight/wiki/Board---KAKUTEF4V2)
  - [KAKUTEF7](/betaflight/betaflight/wiki/Board---KAKUTEF7)
  - [KISSFC](/betaflight/betaflight/wiki/Board---KISSFC)
  - [KIWIF4](https://github.com/betaflight/betaflight/wiki/KIWIF4)
