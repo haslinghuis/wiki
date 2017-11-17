@@ -1,9 +1,11 @@
 KAKUTE F4 FLIGHT CONTROLLER V2
 
 Descriptions:
+
 The Holybro Kakute F4 All-In-One flight controller makes it easy to build your multirotor. It integrates flight controller (FC), power distribution board (PDB), and on-screen display (OSD) in one. The Kakute F4 V2’s layout makes it easy to wire up the other components of the multirotor while keeping the build neat and tidy.
 
 New V2 Features
+
 · Additional UART (UART 4) added to support serial camera communication such as to RunCam Split. Please note this is NOT the same as Betaflight Camera Control feature, which controls the menu of FPV cameras like Swift, Monster, etc.
 · Additional UART (UART 5) added to support ESC telemetry such as from BLHeli_32 and KISS.
 · Through-hole solder pads instead of flat pads for more secure soldering especially for beginners.
@@ -11,6 +13,7 @@ New V2 Features
 · I2C pad available for certain external sensors.
 
 Features
+
 · Supports Betaflight and Cleanflight.
 · Betaflight OSD. Change PIDs, adjust common configuration parameters, and change video transmitter channel and power level, all using your transmitter sticks and goggles.
 · Soft-mounting built in. The IMU (“gyro”) chip on this board is mounted on vibration-isolating foam. This means that there is no need to soft-mount the board itself.
@@ -24,6 +27,7 @@ Features
 · Supports BLHeli pass-through for easy ESC upgrade and configuration.
 
 Specifications
+
 · MCU: STM32F405RGT6 32-bit processor
 · IMU: ICM20689 (SPI)
 · Barometer: BMP280
