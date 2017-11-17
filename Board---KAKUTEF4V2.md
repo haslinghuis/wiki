@@ -10,8 +10,7 @@ The Holybro Kakute F4 All-In-One flight controller makes it easy to build your m
 *  Barometer sensor on board allows altitude hold mode.
 *  I2C pad available for certain external sensors.
 
-Features
-
+# Features
 *  Supports Betaflight and Cleanflight.
 *  Betaflight OSD. Change PIDs, adjust common configuration parameters, and change video transmitter channel and power level, all using your transmitter sticks and goggles.
 *  Soft-mounting built in. The IMU (“gyro”) chip on this board is mounted on vibration-isolating foam. This means that there is no need to soft-mount the board itself.
@@ -24,8 +23,7 @@ Features
 *  Filtered voltage output for clean, noise-free video. On-board regulators output 5v at up to 1.5 amps and 3.3v at up to 200 mA to power peripherals such as receiver, video transmitter, FPV camera, or LED strip.
 *  Supports BLHeli pass-through for easy ESC upgrade and configuration.
 
-Specifications
-
+# Specifications
 *  MCU: STM32F405RGT6 32-bit processor
 *  IMU: ICM20689 (SPI)
 *  Barometer: BMP280
