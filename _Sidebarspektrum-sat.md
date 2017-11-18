@@ -38,12 +38,13 @@
  - [Serial Pass Through](https://github.com/betaflight/betaflight/wiki/Serial-Pass-Through)  
  - [Arming Sequence & Safety](https://github.com/betaflight/betaflight/wiki/Arming-Sequence-&-Safety)
  - [Howto setup Spektrum Serial Receivers](https://github.com/betaflight/betaflight/wiki/Spektrum-Rx-setup)
+ - [FPV Camera Control](/betaflight/betaflight/wiki/FPV-Camera-Control-(Joystick-Emulation))
+ - [FrSky FPort](/betaflight/betaflight/wiki/The-FrSky-FPort-Protocol)
 
 # V3.2 specific Setup
 
  - [Barometer Configuration for 3.2](https://github.com/betaflight/betaflight/wiki/Barometer-Configuration-(3.2))  
  - [Changes to the LED_STRIP functionality](/betaflight/betaflight/wiki/LED-Strip-functionality)
- - [FPV Camera Control](/betaflight/betaflight/wiki/FPV-Camera-Control-(Joystick-Emulation))
 
 # Development
 
