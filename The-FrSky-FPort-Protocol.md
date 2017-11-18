@@ -41,9 +41,10 @@ F4:
 5. Bind your receiver to your transmitter;
 6. Test RC control: With the transmitter on and the flight controller connected to the configurator, make sure the bars in the 'Receiver' tab move when you move the sticks on the transmitter;
 7. Test telemetry: (In OpenTx, a rescan of the sensors is required, since the sensor ids are different between SmartPort and FPort.) Check that the telemetry screen shows the values from your flight controller. (caveat: With FPort it is possible that RC commands work, but telemetry doesn't. If this happens, it means that the serial connection that you are using is not bidirectional, and the receiver => flight controller data flow works, but flight controller => receiver doesn't. Id this happens, check your port settings, and (for F4) make sure that the port you are using can support inverted bidirectional.)
-8. Happy flying. ;-)
+8. If you want to use the Betaflight lua telemetry scripts on Taranis / Horus, download and install the latest release (1.0 or newer) from [6].
+9. Happy flying. ;-)
 
-(As always, any sort of feedback and bug reports are appreciated, please drop them here: [6])
+(As always, any sort of feedback and bug reports are appreciated, please drop them here: [7])
 
 
 
@@ -59,4 +60,6 @@ F4:
 
 [5] https://ci.betaflight.tech/job/Betaflight/
 
-[6] https://github.com/betaflight/betaflight/issues
+[6] https://github.com/betaflight/betaflight-tx-lua-scripts/releases
+
+[7] https://github.com/betaflight/betaflight/issues
