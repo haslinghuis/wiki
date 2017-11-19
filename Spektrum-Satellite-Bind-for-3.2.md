@@ -8,6 +8,9 @@ With 3.2 and later, you have a freedom of moving the Spektrum satellite receiver
 
 - If SRXL is selected as a serial RX protocol, then UARTx_TX will be used for binding.
 
+**Note**: Binding will only work if there are a direct connection between the FC processor and the satellite, allowing for bi-directional data. On REVO, and all other F4 based FCs there are inverters on some UARTs that will block the binding signal. UART3 is usually OK on most F4s, UART1 and 6 might be more troublesome.  
+
+
 ### Overriding Bind Pin Default
 
 The automatic bind pin selection can be overridden by specifying a pin to use by `RX_BIND` resource and `resource` cli command.
@@ -61,5 +64,3 @@ Other bind options values:
 9 for dsmx 2048/11ms  
 
 More details can be found here: https://github.com/SpektrumFPV/SpektrumDocumentation/blob/master/Telemetry/Remote%20Receiver%20Interfacing.pdf
-
-Note: Binding will only work if there are a direct connection between the FC processor and the satellite, allowing for bi-directional data. On REVO, and all other F4 based FCs there are inverters on some UARTs that will block the binding signal. UART3 is usually OK on most F4s, UART1 and 6 might be more troublesome.  
