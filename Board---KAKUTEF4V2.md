@@ -36,5 +36,7 @@ The Holybro Kakute F4 All-In-One flight controller makes it easy to build your m
 *  Weight: 7g
 
 ### Images
-![](https://github.com/jamming/image/blob/master/IMG_6808.JPG)
+top
 ![](https://github.com/jamming/image/blob/master/IMG_6809.JPG)
+bottom
+![](https://github.com/jamming/image/blob/master/IMG_6808.JPG)
