@@ -2,7 +2,7 @@
 This functionality provides OSD joystick emulation for HS1177-style cameras, e.g. cameras having a single OSD input pin driven by a button resistor divider.
 Most cameras up to date seem to adhere to the design and have the following resistor nominals:
 
-* 47 kΩ - camera internal resistor, 9.9 kΩ for Foxeer Monster and probably other HS1190 cameras (thanks to @khalinatek)
+* 47 kΩ - camera internal resistor, 9.9 kΩ for RunCam Sparrow, Foxeer Monster and probably other HS1190 cameras (thanks to @khalinatek)
 * 45 kΩ - enter
 * 27 kΩ - left
 * 15 kΩ - up
@@ -53,7 +53,7 @@ Foxeer Arrow v3 is known to work best with delay of 125 ms.
 Just measure the voltage between OSD and GND pins on the camera while it is powered.
 
 ### Internal Resistance
-Foxeer Monster (and probably other cameras I haven't yet discovered) is known to require `camera_control_internal_resistance = 99`.
+Foxeer Monster, RunCam Micro Sparrow (and probably other cameras I haven't yet discovered) are known to require `camera_control_internal_resistance = 99`.
 
 To derive this value for an unknown camera, you'll need a multimeter and a suitable joystick. First set your multimeter to resistance measurement mode and measure the resistance of your OSD joystick while pressing individuals keys, write the values down somewhere, you'll need them later.
 
