@@ -51,6 +51,7 @@ F4:
 
 
 [1] (release by FrSky pending)
+
 [2] https://github.com/betaflight/betaflight/files/1484373/XSR_FPport_Betaflight_171114.zip
 
 [3] https://oscarliang.com/flash-frsky-rx-firmware/
