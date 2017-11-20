@@ -3,14 +3,14 @@
 ### Descriptions:
 The Holybro Kakute F4 All-In-One flight controller makes it easy to build your multirotor. It integrates flight controller (FC), power distribution board (PDB), and on-screen display (OSD) in one. The Kakute F4 V2’s layout makes it easy to wire up the other components of the multirotor while keeping the build neat and tidy.
 
-# New V2 Features
+### New V2 Features
 *  Additional UART (UART 4) added to support serial camera communication such as to RunCam Split. Please note this is NOT the same as Betaflight Camera Control feature, which controls the menu of FPV cameras like Swift, Monster, etc.
 *  Additional UART (UART 5) added to support ESC telemetry such as from BLHeli_32 and KISS.
 *  Through-hole solder pads instead of flat pads for more secure soldering especially for beginners.
 *  Barometer sensor on board allows altitude hold mode.
 *  I2C pad available for certain external sensors.
 
-# Features
+### Features
 *  Supports Betaflight and Cleanflight.
 *  Betaflight OSD. Change PIDs, adjust common configuration parameters, and change video transmitter channel and power level, all using your transmitter sticks and goggles.
 *  Soft-mounting built in. The IMU (“gyro”) chip on this board is mounted on vibration-isolating foam. This means that there is no need to soft-mount the board itself.
@@ -23,7 +23,7 @@ The Holybro Kakute F4 All-In-One flight controller makes it easy to build your m
 *  Filtered voltage output for clean, noise-free video. On-board regulators output 5v at up to 1.5 amps and 3.3v at up to 200 mA to power peripherals such as receiver, video transmitter, FPV camera, or LED strip.
 *  Supports BLHeli pass-through for easy ESC upgrade and configuration.
 
-# Specifications
+### Specifications
 *  MCU: STM32F405RGT6 32-bit processor
 *  IMU: ICM20689 (SPI)
 *  Barometer: BMP280
@@ -35,5 +35,6 @@ The Holybro Kakute F4 All-In-One flight controller makes it easy to build your m
 *  Mounting Holes: Standard 30.5mm square to center of holes
 *  Weight: 7g
 
+### Images
 ![](https://github.com/jamming/image/blob/master/IMG_6808.JPG)
 ![](https://github.com/jamming/image/blob/master/IMG_6809.JPG)
