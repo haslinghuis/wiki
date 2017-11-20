@@ -31,7 +31,7 @@ The Holybro Kakute F4 All-In-One flight controller makes it easy to build your m
 *  5 hardware UARTS (UART1,3,4, 5, 6)
 *  Supports serial receivers (SBUS, iBus, Spektrum, Crossfire) only. PPM and PWM receivers are not supported.
 *  128 Mbit Dataflash chip for Blackbox logging
-*  Dimensions: 35x35x7mm (includes USB in height)
+*  Dimensions: 35x30x8mm (includes USB in height)
 *  Mounting Holes: Standard 30.5mm square to center of holes
 *  Weight: 7g
 
