@@ -22,16 +22,16 @@ The detailed specification for FPort is available here: [1].
 ## Installation
 1. Download and install the XSR / X4R(SB) firmware: [2]. Instructions for the firmware installation can be found at [3], [4];
 2. Install a Betaflight nightly build (#366 or newer required) from [5] onto your flight controller;
-3. Connect the SmartPort port on your receiver to the inverted bidirectional port on your flight controller. On F3 / F7, the receiver is connected to the TX pin of the serial port, on F4 the connection will be dependent on how the bidirectional inverter is designed - consult your flight controller manual; (Effectively, this connection uses the same pins on both sides that would be used to connect SmartPort if a non-FPort firmware was used.)
-4. Configure your flight controller. Enable 'serial RX' for the port the receiver is connected to, choose 'Serial Rx' as receiver type, and 'FPort' as protocol. For F3, set `serialrx_halfduplex = on` in CLI. After all is done, the relevant bits of a `dump` should look like this (assuming we're using UART3):
+3. Connect the SmartPort port on your receiver to the inverted bidirectional port on your flight controller. On F3 / F4 with a 'uninverted SmartPort' hacked receiver / F7, the receiver is connected to the TX pin of the serial port, on F4 with a non-hacked receiver the connection will be dependent on how the bidirectional inverter is designed - consult your flight controller manual; (Effectively, this connection uses the same pins on both sides that would be used to connect SmartPort if a non-FPort firmware was used.)
+4. Configure your flight controller. Enable 'serial RX' for the port the receiver is connected to, choose 'Serial Rx' as receiver type, and 'FPort' as protocol. For F3 / F4 with a 'uninverted SmartPort' hacked receiver / F7, set `serialrx_halfduplex = on` in CLI. After all is done, the relevant bits of a `dump` should look like this (assuming we're using UART3):
 
-F3 / F7:
+F3 / F4 with 'uninverted SmartPort' hacked receiver / F7:
 
     serial 2 64 115200 57600 0 115200
     set serialrx_provider = FPORT
     set serialrx_halfduplex = ON
 
-F4:
+F4 with non-hacked receiver:
 
     serial 2 64 115200 57600 0 115200
     set serialrx_provider = FPORT
