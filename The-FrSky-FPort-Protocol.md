@@ -59,7 +59,7 @@ F4 with 'uninverted SmartPort' hacked receiver:
 
 
 
-[1] (release by FrSky pending)
+[1] https://github.com/betaflight/betaflight/files/1491056/F.Port.protocol.betaFlight.V2.1.2017.11.21.pdf
 
 [2] https://github.com/betaflight/betaflight/files/1484373/XSR_FPport_Betaflight_171114.zip
 
