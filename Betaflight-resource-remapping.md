@@ -1,6 +1,6 @@
-# Resource Remapping Command (available in v3.1)
+# Resource Remapping Command
 
-**NOTE: this command is only newly available in v3.1 of Betaflight.**
+**NOTE: this command is only available in version 3.1 and newer of Betaflight.**
 
 The IO remapping allows you to configure the pins on the MCU to be utilised for various functions. This is the starting framework - more work can be done.
 
