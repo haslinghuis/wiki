@@ -1,7 +1,8 @@
 ## KAKUTE F4 FLIGHT CONTROLLER V2
 
 ### Descriptions:
-The Holybro Kakute F4 All-In-One flight controller makes it easy to build your multirotor. It integrates flight controller (FC), power distribution board (PDB), and on-screen display (OSD) in one. The Kakute F4 V2’s layout makes it easy to wire up the other components of the multirotor while keeping the build neat and tidy.
+The Holybro Kakute F4 flight controller supports important features of Betaflight/Cleanflight, such as OSD and Dshot. The faster F4 processor gives room for future feature development: run all features at the fast 8 kHz PID loop rate, at single-digit CPU utilization! Because of issues with serial inversion, other F4 boards struggle to support protocols such as FrSky SBUS and SmartPort at the same time. The Kakute F4 is designed to support all serial protocols at once.
+
 
 ### New V2 Features
 *  Additional UART (UART 4) added to support serial camera communication such as to RunCam Split. Please note this is NOT the same as Betaflight Camera Control feature, which controls the menu of FPV cameras like Swift, Monster, etc.
