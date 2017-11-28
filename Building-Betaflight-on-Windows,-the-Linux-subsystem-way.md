@@ -41,6 +41,8 @@ Once that's done, enter `git clone https://www.github.com/betaflight/betaflight 
 
 # Building Betaflight
 
+**Note:** The file system mapping of WSL is still somewhat experimental, and currently all files on the local disk are mounted into `/mnt/c` on the linux side. They are accessible, but they are mounted with `root:root` permissions. This causes permissioning issues with a lot of things, and amongst them is that it leads to errors when trying to build Betaflight from a repository that was cloned onto the local disk under Windows. Rather than doing this, create a fresh clone in linux under `/home/<username>`, and build from there.
+
 To build Betaflight, you have two things left to install. Enter the folder you cloned the Betaflight repo into. The `ls` command should output something like this:
 ![Imgur](https://i.imgur.com/Kd65LfN.jpg)
 If it doesn't match, you are in the wrong folder. Use the Windows file manager to help if you are lost.
