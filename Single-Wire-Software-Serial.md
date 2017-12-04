@@ -38,7 +38,7 @@ OMNIBUSF4 (by @jflyper)
 | Pin | Label     | S.Audio | Tramp | S.Port | Note |
 |-----|-----------|---------|-------|--------|------|
 | A1  | PWM5      | OK      | ?     | OK     |      |
-| A8  | PWM6      | OK      | ?     | ?      |      |
+| A8  | PWM6      | OK      | OK    | ?      | Tramp report by @llambkin     |
 | B14 | PPM       | OK      | ?     | ?      |      |
 | B15 | CH2       | OK      | ?     | ?      |      |
 | C8  | CH5       | OK      | ?     | ?      |      |
@@ -49,7 +49,7 @@ OMNIBUSF4SD (by @jflyper)
 
 | Pin | Label     | S.Audio | Tramp | S.Port | Note |
 |-----|-----------|---------|-------|--------|------|
-| A1  | PWM5      | OK       | ?     | OK     | @basdelfos      |
+| A1  | PWM5      | OK      | ?     | OK     | @basdelfos      |
 | A8  | PWM6      | OK      | OK    | OK     |      |
 | B14 | PPM       | ?       | ?     | ?      |      |
 | B15 | CH2       | ?       | ?     | ?      |      |
