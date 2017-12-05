@@ -47,8 +47,8 @@ bottom
 *  www.facebook.com/holybrohobby/
 
 ### Distributors:
-*  [www.banggood.com](www.banggood.com)
-*  [www.getfpv.com](www.getfpv.com)
-*  [www.unmannedtechshop.co.uk](www.unmannedtechshop.co.uk)
-*  [www.gearbest.com](www.gearbest.com)
-*  [www.hobbyking.com](www.hobbyking.com)
+*  www.banggood.com
+*  www.getfpv.com
+*  www.unmannedtechshop.co.uk
+*  www.gearbest.com
+*  www.hobbyking.com
