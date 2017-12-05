@@ -41,3 +41,13 @@ top
 ![](https://github.com/jamming/image/blob/master/IMG_6809.JPG)
 bottom
 ![](https://github.com/jamming/image/blob/master/IMG_6808.JPG)
+
+### Manufacturers and Distributors
+www.holybro.com (Manufacturer & Designer)
+
+### Distributors:
+www.hobbyking.com
+www.banggood.com
+www.getfpv.com
+www.unmannedtechshop.co.uk
+www.gearbest.com
