@@ -44,7 +44,7 @@ bottom
 
 ### Manufacturers and Distributors
 *  www.holybro.com (Manufacturer & Designer)
-*  https://www.facebook.com/holybrohobby/
+*  www.facebook.com/holybrohobby/
 
 ### Distributors:
 *  [www.banggood.com](www.banggood.com)
