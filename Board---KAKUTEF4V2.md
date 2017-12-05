@@ -46,7 +46,7 @@ bottom
 www.holybro.com (Manufacturer & Designer)
 
 ### Distributors:
-[www.banggood.com](www.banggood.com)
+[banggood](www.banggood.com)
 [www.getfpv.com](www.getfpv.com)
 [www.unmannedtechshop.co.uk](www.unmannedtechshop.co.uk)
 [www.gearbest.com](www.gearbest.com)
