@@ -38,15 +38,11 @@ The Holybro Kakute F4 flight controller supports important features of Betafligh
 
 ### Image
 * KakuteF4 V2 flight controller
-top 
 ![](https://github.com/jamming/image/blob/master/IMG_6809.JPG)
-bottom
 ![](https://github.com/jamming/image/blob/master/IMG_6808.JPG)
 
 * KakuteF4 All-In-One V2 flight controller
-top
 ![](https://github.com/jamming/image/blob/master/kakuteF4aio-V2-TOP.jpg)
-bottom
 ![](https://github.com/jamming/image/blob/master/kakuteF4aio-V2-bottom.jpg)
 
 ### Manufacturers and Distributors
