@@ -53,7 +53,7 @@ F4 with 'uninverted SmartPort' hacked receiver:
 8. If you want to use the Betaflight lua telemetry scripts on Taranis / Horus, download and install the latest release (1.0 or newer) from [here][6].
 9. Happy flying. ;-)
 
-(As always, any sort of feedback and bug reports are appreciated, please drop them [here][7])
+(As always, any sort of feedback and bug reports are appreciated, please drop them [here][7].)
 
 
 
