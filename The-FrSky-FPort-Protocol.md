@@ -17,7 +17,7 @@ The detailed specification for FPort is available here: [F.Port.protocol.betaFli
 
 ## Requirements:
 - a FrSky XSR or X4R(SB) or XSR-m receiver;
-- a free hardware port on the flight controller (F3 or better) that is capable of running SmartPort (i.e. must be able to run inverted bidirectional).
+- a free hardware port on the flight controller (F3 or better) that is capable of running SmartPort with your receiver (i.e. must be able to run inverted bidirectional, or your receiver needs to have the 'uninverted SmartPort' hack applied).
 
 ## Installation
 1. Download and install the receiver firmware: [XSR_FPport_Betaflight_171114.zip][2]. Instructions for the firmware installation can be found [here][3] and [here][4].
