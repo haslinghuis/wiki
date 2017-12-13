@@ -1,4 +1,4 @@
-# Official Betaflight T-Shirts!
+# Official Betaflight T-Shirts and Hoodies!
 
 For **limited time** we are offering two Betaflight T-Shirt designs. 
 We are earning $5 for each shirt to fund some shirts for the developers. So please support us and buy one!
