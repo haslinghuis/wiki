@@ -49,7 +49,7 @@ Make sure you have zadig if you're using Windows to enable the DFU driver. Instr
 
 ### Installing STMicro Virtual Com Port (VCP) Driver under Windows:
 
-Many of the F4 boards (REVO, ALIENFLIGHTF4, BLUEJAYF4), and some F3 boards (SPRacingF3EVO, STM32DISCOVERY) utilise the STM32 Virtual Com Port (VCP) - a CDC serial implementation. This allows the UARTs on board to be utilised whilst the USB is connected. This requires the STM VCP driver to be installed so that the VCP to be recognised as an additional comm port on the PC. 
+Many of the F7, F4 (REVO, ALIENFLIGHTF4, BLUEJAYF4, etc), and some F3 boards (SPRacingF3EVO, STM32DISCOVERY) utilise the STM32 Virtual Com Port (VCP) - a CDC serial implementation. This allows the UARTs on board to be utilised whilst the USB is connected. This requires the STM VCP driver to be installed so that the VCP to be recognised as an additional comm port on the PC. 
 **NOTE:** this is similar to installing a USB serial driver, e.g. FTDI or SiLabs
 
 The STM32 VCP driver can be downloaded here --> http://www.st.com/web/en/catalog/tools/PF257938
