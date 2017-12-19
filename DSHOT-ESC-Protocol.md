@@ -206,8 +206,7 @@ To allow the use of the LED pin Re-map motor 4 to motor 5 signal out a01, which 
 Link to modification details: https://www.rcgroups.com/forums/showpost.php?p=36608148&postcount=43149  
  Follow above and to re-map output type in CLI:  
 `resource ppm none  `  
-`resource motor 1 A07 `
-`resource motor 4 A01 `  
+`resource motor 1 A07 ` 
 `save  `  
 
 
