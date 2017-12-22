@@ -104,4 +104,4 @@ Visit this RC Groups Forum to join the discussion: http://www.rcgroups.com/forum
 
 Financial support to Boris.B by PayPal donation:
 
-[![Donate](https://www.paypalobjects.com/en_US/NL/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Z3RQMS2KT4YJU)
+[![Donate](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=dreambb1982%40gmail%2ecom&lc=US&item_name=Betaflight&no_note=0&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHostedGuest)
