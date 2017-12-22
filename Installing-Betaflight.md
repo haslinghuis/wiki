@@ -60,35 +60,46 @@ e.g. C:\Program Files (x86)\STMicroelectronics\Software\Virtual comport driver\W
 
 ### Platform Specific: Linux
 
-Linux requires udev rules to allow write access to USB devices for users. The command bellow will create a template rule for you.
+Linux does not know the concept of product specific 'device drivers', so no driver installation is needed. But there are a couple of steps required to make the Betaflight configurator work on linux:
+
+Linux requires udev rules to allow write access to USB devices for users.  If you are not familiar with udev rules don’t worry, we will walk you through the process in the proceeding steps using the command line interface (CLI).
+
+#### Step 1:
+
+Since we will be using the CLI, simply copy and paste this command into your terminal, it will create the required file for you:
 
     (echo '# DFU (Internal bootloader for STM32 MCUs)'
      echo 'ACTION=="add", SUBSYSTEM=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", MODE="0664", GROUP="plugdev"') | sudo tee /etc/udev/rules.d/45-stdfu-permissions.rules > /dev/null
 
-Now you need to find the real product id of your FC. Type in the command bellow and plug your FC in and out. It should print a line with the product id out.
+The file created is `/etc/udev/rules.d/45-stdfu-permissions.rules`, which is used when your flight controller is in DFU mode.  
 
-    udevadm monitor --environment --udev | grep ID_MODEL_ID
+#### Step 2:
 
-Now update the entry in "/etc/udev/rules.d/45-stdfu-permissions.rules" accordingly. You can add more than one rule in the file. The default product id is the FC in bootloader mode. Then reload rules using:
+Make sure you've got permissions to access your flight controller in non-DFU mode (borrowed from https://github.com/GoldenCheetah/GoldenCheetah/wiki/Allowing-your-linux-userid-permission-to-use-your-usb-device):
 
-    sudo udevadm control --reload-rules && udevadm trigger
+Note: This example assumes that you know the device name of you USB device and that your userid has sudo privileges.
 
-You can then test the rule using when your FC is plugged in:
+In this example our Linux userid is _user_ and we are on the server called _machine_.
 
-    udevadm test $(udevadm info -q path -n /dev/ttyACM0)
+Our USB device is called _/dev/ttyUSB0_.
 
-Ensure line "MODE 0664 /etc/udev/rules.d/45-stdfu-permissions.rules" is present
+Check the current permissions and owner/group of the device.
 
-This assigns the device to the plugdev group(a standard group in Ubuntu). To check that your account is in the plugdev group type groups in the shell and ensure plugdev is listed. If not you can add yourself as shown (replacing <username> with your username):
+`[user@machine ~]$ ls -la /dev/ttyUSB0`
 
-    sudo usermod -a -G plugdev <username>
+`crw-rw----. 1 root dialout 188, 0 Apr  3 21:16 /dev/ttyUSB0`
+ 
+For this configuration, the owner is _root_, the group is _dialout_and both the owner/group have _read/write_ permissions.
 
-In some cases adding the user to the plugdev group doesn't work. In this case try to add your user to the uucp or the dialout group:
+What you need to do is make your login userid part of the group associated with the USB device.
 
-    sudo usermod -a -G uucp <username>
+For this case, we add the group _dialout_ to our userid _user_ using the _usermod_ command. This command requires root privileges to run.
 
-    sudo usermod -a -G dialout <username>
+`[user@machine ~]$ sudo usermod -a -G dialout user`
 
+You will need to log out then log back in and now you should have access to the device.Now you will need to get the product ID for your specific FC.  
+
+#### Troubleshooting installation problems:
  If you see your ttyUSB device disappear right after the board is connected, chances are that the ModemManager service (that handles network connectivity for you) thinks it is a GSM modem. If this happens, you can issue the following command to disable the service:
 
     sudo systemctl stop ModemManager.service
