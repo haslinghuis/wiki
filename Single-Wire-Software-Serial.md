@@ -70,8 +70,8 @@ SPRACINGF3 (by @jflyper)
 | B1  | IO_2[6] CH8       | OK      | ?     | ?      |                        |
 | B8  | M5                | NG      | ?     | NG     | TIM4 crash with M3&M4  |
 | B9  | M6                | NG      | ?     | ?      | TIM4 crash with M3&M4  |
-| A2  | M7                | OK      | ?     | ?      |                        |
-| A3  | M8                | OK      | ?     | ?      |                        |
+| A2  | M7                | OK      | OK    | ?      |                        |
+| A3  | M8                | OK      | OK    | ?      |                        |
 
 Note: Some reports CH1 and CH2 not working: (https://github.com/betaflight/betaflight/issues/2532#issuecomment-284669276)
 
