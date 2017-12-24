@@ -97,9 +97,18 @@ Predator expects a really low value for DOWN, while the FC can't output lower th
 Reference voltage for my samples seems to be on the higher side, staying at 3.43 V for a 3S battery, which leads to the problem with UP.
 This camera seems to register UP key with a logic like:
 
-`if voltage was V_up: wait for voltage to become V_max`
+```
+if voltage is V_up:
+  time_start = now
+  while (voltage is not V_max): wait
+  time_end = now
+  total_time = time_end - time_start
 
-It results in the camera getting stuck (**even the OSD timer stops counting**) as the FC can never output `Vmax ~= 3.4`.
+  if total_time is short: UP
+  else: LONG_UP
+```
+
+It results in the camera getting stuck in an infinite loop, **even the OSD timer stops counting**, as the FC can never output `Vmax ~= 3.4`.
 
 **Please follow manufacturers guidelines from the bottom of this page to avoid such problems!**
 
