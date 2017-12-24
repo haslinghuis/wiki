@@ -88,6 +88,21 @@ These camera have insufficient to no capacitance on OSD pin, as a result you'll 
 A similar trick works for Foxeer Monster.
 @todo add a photo
 
+### Foxeer Predator
+**UP&DOWN do not work**, hopefully future batches will have the firmware flaw addressed.
+`set camera_control_internal_resistance = 99`
+
+Predator expects a really low value for DOWN, while the FC can't output lower than `3.3 * R / (R + 9.9 kΩ) = 49 mV` for a resistor of 150 Ω. Using a resistor of 75 Ω may solve the issue with DOWN.
+
+Reference voltage for my samples seems to be on the higher side, staying at 3.43 V for a 3S battery, which leads to the problem with UP.
+This camera seems to register UP key with a logic like:
+
+`if voltage was V_up: wait for voltage to become V_max`
+
+It results in the camera getting stuck (**even the OSD timer stops counting**) as the FC can never output `Vmax ~= 3.4`.
+
+**Please follow manufacturers guidelines from the bottom of this page to avoid such problems!**
+
 ## Frequently asked questions
 >Which resistor value is best?
 
