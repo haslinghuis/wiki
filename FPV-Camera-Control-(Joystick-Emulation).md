@@ -1,5 +1,5 @@
 ## Description
-This functionality provides OSD joystick emulation for HS1177-style cameras, e.g. cameras having a single OSD input pin driven by a button resistor divider.
+This functionality provides OSD joystick emulation for HS1177-style cameras, e.g. cameras having a single OSD input pin driven by a button resistor divider. Camera OSD is activated by `yaw right, everything else mid`.
 Most cameras up to date seem to adhere to the design and have the following resistor nominals:
 
 * 47 kΩ - camera internal resistor, 9.9 kΩ for RunCam Sparrow, Foxeer Monster and probably other HS1190 cameras (thanks to @khalinatek)
