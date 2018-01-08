@@ -1,5 +1,14 @@
 ## Cygwin on Windows
-ccache 3.1.9 in Cygwin 2.874 is broken. Returns false cache hits. Do not install. Betaflight build system uses ccache if available. 
+
+### ccache
+ccache 3.1.9 in Cygwin 2.874 is broken. Returns false cache hits. Do not install. Betaflight build system uses ccache if available.
+
+### clang
+Compiling the unittests using clang may fail on Cygwin. There is a version mismatch with Cygwin supplied <sys/unistd.h> and clang. Not easily fixed, needs a Cygwin patch. Do not run unittests on Cygwin. The error looks like this:
+
+    /usr/include/sys/unistd.h:53:36: error: __block attribute not allowed, only allowed on local variables`
+    void    _EXFUN(encrypt, (char *__block, int __edflag));`
+Using gcc works better with this particular problem, but fails in other places where clang is required.
 
 ## GNU ARM Toolchain Version
 Using the 4.8-2014-q2 version of the [GNU ARM Toolchain](https://launchpad.net/gcc-arm-embedded/+download) with Windows/Cygwin (recommended on the Cleanflight "[Building in Windows.md](https://github.com/cleanflight/cleanflight/blob/master/docs/development/Building%20in%20Windows.md)" page) lead to strange results.  (When running a 2.9.1 version of Betaflight I built on NAZE the change-flight-mode beep would constantly sound when in Horizon mode.)  Updating the toolchain to 4.9-2015-q3 and rebuilding fixed the issue (and also cleared some compiler warnings).  BorisB mentions the toolchain version [here](http://www.rcgroups.com/forums/showthread.php?p=34530653#post34530653).  
