@@ -6,8 +6,8 @@ ccache 3.1.9 in Cygwin 2.874 is broken. Returns false cache hits. Do not install
 ### clang
 Compiling the unittests using clang may fail on Cygwin. There is a version mismatch with Cygwin supplied <sys/unistd.h> and clang. Not easily fixed, needs a Cygwin patch. Do not run unittests on Cygwin. The error looks like this:
 
-    /usr/include/sys/unistd.h:53:36: error: __block attribute not allowed, only allowed on local variables`
-    void    _EXFUN(encrypt, (char *__block, int __edflag));`
+    /usr/include/sys/unistd.h:53:36: error: __block attribute not allowed, only allowed on local variables
+    void    _EXFUN(encrypt, (char *__block, int __edflag));
 Using gcc works better with this particular problem, but fails in other places where clang is required.
 
 ## GNU ARM Toolchain Version
