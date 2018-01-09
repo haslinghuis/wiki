@@ -41,6 +41,16 @@ Stick command to activate the BetaFlight CMS is `Thr MID + Yaw LEFT + Pitch UP`.
 
 ### Caveats
           
+#### Canvas Mode with full DISPLAYPORT
+MWOSD can work with full DISPLAYPORT support (configure OSD through Betaflight Configurator OSD tab), however there are limitations.  At 60Hz update rate, 115.2Kbps (roughly 11KB/s) is only capable of supporting 190 characters per cycle. Any display item beyond this bandwidth limit will build up in the transmit queue, and as the queue builds up, newest characters will be delayed, and will eventually start to drop, making overlay look slow and jittery.  This may be acceptable if only using limited or static OSD elements like Voltage/Current monitoring and Timer, however things like artificial horizon indicator may lag and jitter and become unusable.
+
+To use with DISPLAYPORT, simply update to the latest firmware on your MWOSD, and build your firmware target with added options (example for REVOLT target):
+```bash
+make OPTIONS="USE_OSD USE_OSD_OVER_MSP_DISPLAYPORT" REVOLT
+```
+
+This will enable the OSD tab and full DISPLAYPORT support from the FC.
+
 #### Dual Menu Chaos 
         
 When the MWOSD is used together with FC-side CMS, you are going to have two menu systems; one in the FC and one in MWOSD. It would certainly be an awful experience if you activate both menus simultaneously.
