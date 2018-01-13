@@ -48,81 +48,81 @@ This list *should* be kept up to date with the code in `master` (`armingDisableF
   You may have a hardware failure, if a previous firmware version works then it may be a firmware issue.
 
 - `FAILSAFE`  
-  Number of beeps: 2
+  Number of beeps: 2  
   Failsafe is active.  
   Rectify the failure condition and try again.
 
 - `RX LOSS` (1)  
-  Number of beeps: 3
+  Number of beeps: 3  
   No valid receiver signal is detected.  
   Your receiver is either faulty or has no link to the transmitter.
 
 - `BAD RX` (1)  
-  Number of beeps: 4
+  Number of beeps: 4  
   Your receiver has just recovered from receiver failsafe but the arm switch is on.   
   Switch the arm switch off.
 
 - `BOXFAILSAFE`  
-  Number of beeps: 5
+  Number of beeps: 5  
   See `FAILSAFE`
 
 - `THROTTLE`  
-  Number of beeps: 6
+  Number of beeps: 6  
   Throttle channel is too high.  
   Lower throttle below `min_check`.
 
 - `ANGLE`  
-  Number of beeps: 7
+  Number of beeps: 7  
   Craft is not level (enough).  
   Level craft to within `small_angle` degrees (default 25).
 
 - `BOOT GRACE`  
-  Number of beeps: 8
+  Number of beeps: 8  
   Arming too soon after power on.  
   Wait until `pwr_on_arm_grace` seconds (default 5) have elapsed.
 
 - `NO PREARM`  
-  Number of beeps: 9
+  Number of beeps: 9  
   Prearm switch is not activated or prearm has not been toggled after disarm.  
   Toggle the prearm switch.
 
 - `LOAD`  
-  Number of beeps: 10
+  Number of beeps: 10  
   System load is too high for safe flight.  
   Revisit configuration and disable features.
 
 - `CALIB`  
-  Number of beeps: 11
+  Number of beeps: 11  
   Sensor calibration is still ongoing.  
   Wait for sensor calibration to complete.
 
 - `CLI`  
-  Number of beeps: 12
+  Number of beeps: 12  
   CLI is active.  
   Exit the CLI.
 
 - `CMS`  
-  Number of beeps: 13
+  Number of beeps: 13  
   CMS (config menu) is Active - over OSD or other display.  
   Exit the CMS (or OSD menu).
 
 - `OSD`  
-  Number of beeps: 14
+  Number of beeps: 14  
   OSD menu is active.  
   Exit OSD menu.
 
 - `BST`  
-  Number of beeps: 15
+  Number of beeps: 15  
   A Black Sheep Telemetry device (TBS Core Pro for example) disarmed and is preventing arming.  
   ??
 
 - `MSP`  
-  Number of beeps: 16
+  Number of beeps: 16  
   MSP connection is active, probably via Betaflight Configurator.  
   Terminate the Betaflight Configurator connection (disconnect).
 
 - `ARM SWITCH`  
-  Number of beeps: 17
+  Number of beeps: 17  
   Arm switch is in an unsafe position.  
   Toggle the arm switch to arm.
 
