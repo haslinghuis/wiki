@@ -26,16 +26,6 @@ Some targets with limited flash space will only provide the hexadecimal represen
 
 ## Beeper
 
-A series of beeps will be made if you try to arm and any arming prevention flag is set.
-
-The beep pattern will be a series of `[long] [pause] [short] [pause]`, the number of times this pattern is repeated is the index of the most severe reason for arming being disabled.
-
-The reason can be obtained from the `armingDisableFlags_e` enum in `runtime_config.h` (ensure the version of the file you are looking at matches that of your firmware).
-
-## Description of arming prevention flags
-
-What each flag means and what you should do to (probably) fix the issue.
-
 When arming is attempted and fails, if a beeper is connected to the flight controller it will emit a warning signal indicating the most important (lowest number) reason why disarming is disabled.
 
 The signal is as follows:
@@ -44,6 +34,10 @@ The signal is as follows:
 - a number of short beeps with long intervals (may be 0).
 
 The arming prevention condition that is active can be calculated as `(5 * <number of long beeps>) + <number of short beeps>`.
+
+## Description of arming prevention flags
+
+What each flag means and what you should do to (probably) fix the issue.
 
 This list *should* be kept up to date with the code in `master` (`armingDisableFlags_e` in [src/main/fc/runtime_config.h](https://github.com/betaflight/betaflight/blob/master/src/main/fc/runtime_config.h#L37-L55)) so can be used to find what flag corresponds to a certain index, however if you run an older version you'd have to check this manually as mentioned above.
 
