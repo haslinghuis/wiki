@@ -3,6 +3,7 @@
 
 **Since I've run into this issue so often on various facebook threads and /r/multicopter posts, I decided it would be worthwhile to compile a (written) checklist for to diagnose your quad**
 
+**This is prior to Anti-taz (Runaway takeoff prevention) being implemented**
 
 When you attempt to arm your multirotor, does it?....
 - Spin around
