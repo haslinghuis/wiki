@@ -93,7 +93,7 @@ https://www.dropbox.com/s/viczizbjz0fwod4/Betaflight.Logos.zip?dl=0
 
 Or The logo bf uses is at the top of this wiki page, just mouse right and save image as, cut the writing if you don't want it 
 
-## Other Firmware that runs on same hardware as Bf and has related source code:   
+## Other Firmware that runs on same hardware as BF and has related source code:   
 Official CleanFlight documentation: http://github.com/cleanflight/cleanflight/wiki
 
 Check out the INAV project. It's focused on GPS/Alt Hold/Autonomous flight.  
