@@ -58,10 +58,6 @@
  - [Hardware developers reference](/betaflight/betaflight/wiki/Hardware-Reference)
  - [SWD debug port connection conflicts](/betaflight/betaflight/wiki/SWD-debug-port-connection-conflicts.)
 
-# Trouble Shooting
-
- - [Multirotor Spazzing Out](/betaflight/betaflight/wiki/Multirotor-Spazzing-Out)
-
 # Boards
 
  - [AIORACERF3](/betaflight/betaflight/wiki/Board---AIORACERF3)
