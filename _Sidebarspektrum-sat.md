@@ -46,7 +46,7 @@
  - [Barometer Configuration for 3.2](https://github.com/betaflight/betaflight/wiki/Barometer-Configuration-(3.2))  
  - [Changes to the LED_STRIP functionality](/betaflight/betaflight/wiki/LED-Strip-functionality)
 
-# Trouble Shooting
+# Troubleshooting
 
  - [Multicopter Spazzing Out?](https://github.com/betaflight/betaflight/wiki/Multirotor-Spazzing-Out%3F)
 
