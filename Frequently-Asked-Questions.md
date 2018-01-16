@@ -6,6 +6,7 @@ Therefore be sure to Read the Release Note Wiki pages to know what commands or f
 
 1. [I'm a Newbie, how do I start ?](#im-a-newbie-how-do-i-start-)
 1. [How do I install Betaflight ?](#how-do-i-install-betaflight-)
+1. [What's the history of Betaflight and it's relationship to Cleanflight ?](#whats-the-history-of-betaflight-and-its-relationship-to-cleanflight-)
 1. [What is the difference between Min_check Min_command and Min_throttle and stick inputs ?](#what-is-the-difference-between-min_check-min_command-and-min_throttle-and-stick-inputs-)
 1. [Why wont my FC board arm after upgrading the firmware ?](#why-wont-my-fc-board-arm-after-upgrading-the-firmware-)
 1. [Why is the Gyro light turned off and the 3D Model not moving ?](#why-is-the-gyro-light-turned-off-and-the-3d-model-not-moving-)
@@ -77,9 +78,6 @@ http://github.com/borisbstyle/betaflight/wiki/BetaFlight-Deep-Dive
 
 ## Im a Newbie how do I start ?
 
-A little history. This all started with OpenSource MultiWii code based on Arduino 8-bit boards. When the 32-bit STM32 processors become available the MutliWii code was ported to the STM32 and was called BaseFlight. Due to politics others forked the BaseFlight code to CleanFlight. More recently Boris decided that he could possibly make improvements on the way the PID control loop works and forked an Experimental version as BetaFlight.
-Therefore documentation on ßF and CF tends to only show what is new or changed and the documentation of previous Firmware must be read.
-
 Start with the following video that gives a very comprehensive guide on Betaflight and the best practice approach for it's configuration:
 http://www.youtube.com/watch?v=xSzO6HP6yzs
 
@@ -95,6 +93,12 @@ See the next FAQ topic ("How do I install Betaflight") when you are ready.
 ## How do I install Betaflight ?
 
 Read the [Installing BetaFlight ](https://github.com/betaflight/betaflight/wiki/Installing-Betaflight) Wiki page.
+
+## What's the history of Betaflight and it's relationship to Cleanflight ?
+
+A little history. This all started with OpenSource MultiWii code based on Arduino 8-bit boards. When the 32-bit STM32 processors become available the MutliWii code was ported to the STM32 and was called BaseFlight. Due to politics others forked the BaseFlight code to CleanFlight. More recently Boris decided that he could possibly make improvements on the way the PID control loop works and forked an Experimental version as BetaFlight.
+Therefore documentation on ßF and CF tends to only show what is new or changed and the documentation of previous Firmware must be read.
+
 
 ## What is the difference between Min_Check Min_command and Min_throttle and stick inputs ?
 
