@@ -97,7 +97,7 @@ For this case, we add the group _dialout_ to our userid _user_ using the _usermo
 
 `[user@machine ~]$ sudo usermod -a -G dialout user`
 
-You will need to log out then log back in and now you should have access to the device.Now you will need to get the product ID for your specific FC.  
+You will need to log out then log back in and now you should have access to the device.
 
 #### Troubleshooting installation problems:
  If you see your ttyUSB device disappear right after the board is connected, chances are that the ModemManager service (that handles network connectivity for you) thinks it is a GSM modem. If this happens, you can issue the following command to disable the service:
