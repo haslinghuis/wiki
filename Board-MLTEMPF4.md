@@ -50,21 +50,6 @@ https://www.rcgroups.com/forums/showthread.php?2537379-MotoLab-Board-Setup-and-T
 ### Pinout Diagram
 ![](http://gdurl.com/FlVd)
 
-### Issues 
-
-### the "escprog" from this page isn't available on the TempestF4 (or TyphF4) built
-`# version`
-`# Betaflight / MLTEMPF4 (MLTE) 3.2.1 Oct 15 2017 / 19:40:18 (434db9a36) MSP API: 1.36`
-
-`# escprog ki 255`
-`Unknown command, try 'help'`  
-Reason is a required #define isn't in the target file. I'll submit a PR for the next release.
-
-Meanwhile this should have it fixed:  
-https://www.dropbox.com/s/wcrr7oyesw7titp/betaflight_3.2.1_MLTEMPF4.hex?dl=0   
-Typhoon version:  
-https://www.dropbox.com/s/bn9pxzwodc4a9ig/betaflight_3.2.1_MLTYPHF4.hex?dl=0  
-
 ## Manufacturers and Distributors
 
 Manufactured by MotoLab. Distributed by Heli-Nation, RocketCityFPV, DefianceRC and others.
