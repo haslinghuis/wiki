@@ -110,6 +110,20 @@ if voltage is V_up:
 
 It results in the camera getting stuck in an infinite loop, **even the OSD timer stops counting**, as the FC can never output `Vmax ~= 3.4`.
 
+### Caddx.us Micro Turbo S1
+Works perfectly on the default settings, no capacitor required.
+```
+set camera_control_internal_resistance = 470
+set camera_control_ref_voltage = 325
+```
+
+### Caddx.us Micro Turbo F1
+This camera has usually low reference voltage, at least no sample, running up a 4S battery it showed 2.77 V, works perfectly otherwise. No capacitor required.
+```
+set camera_control_internal_resistance = 470
+set camera_control_ref_voltage = 277
+```
+
 **Please follow manufacturers guidelines from the bottom of this page to avoid such problems!**
 
 ## Frequently asked questions
