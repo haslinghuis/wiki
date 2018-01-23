@@ -119,6 +119,7 @@
  - [PLUM F4](/betaflight/betaflight/wiki/Board---PLUMF4)
  - [PODIUM](/betaflight/betaflight/wiki/Board---PODIUM)
  - [PORT103R](/betaflight/betaflight/wiki/Board---PORT103R)
+ - [PYRODRONEF4](https://github.com/betaflight/betaflight/blob/master/docs/boards/Board%20-%20PyroDroneF4.md)
  - [RCEXPLORERF3](/betaflight/betaflight/wiki/Board---RCEXPLORERF3)
  - [REVO - LibrePilot docs](https://librepilot.atlassian.net/wiki/display/LPDOC/OpenPilot+Revolution)
  - [REVOLT (V1 & V2)](https://github.com/betaflight/betaflight/wiki/REVOLT-(V1-&-V2))
