@@ -89,6 +89,12 @@ https://www.rcgroups.com/forums/showthread.php?2537379-MotoLab-Board-Setup-and-T
 
 - Report that with the Mod and remapping to run DSHOT there is a conflict with DMA for LEDs with Motor #4.  
 Currently LEDs need to be disabled to run DSHOT. 
+ctzsnooze reported a fix:   
+The solution, for versions of betaflight before 3.3, is to solder the ESC signal wire for motor 4 to the motor 5 pad, and in the CLI save:  
+
+`resource MOTOR 4 A01`  
+
+`resource MOTOR 5 NONE`  
 
 ### Servo_tilt with DSHOT on BF3.1: 
 
