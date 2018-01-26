@@ -40,6 +40,7 @@
  - [Howto setup Spektrum Serial Receivers](https://github.com/betaflight/betaflight/wiki/Spektrum-Rx-setup)
  - [FPV Camera Control](/betaflight/betaflight/wiki/FPV-Camera-Control-(Joystick-Emulation))
  - [FrSky FPort](/betaflight/betaflight/wiki/The-FrSky-FPort-Protocol)
+ - [Gyro Offset](/betaflight/betaflight/blob/master/docs/CLI/gyro_offset_yaw.md)
 
 # V3.2 specific Setup
 
