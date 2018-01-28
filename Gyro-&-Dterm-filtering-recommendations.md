@@ -85,7 +85,7 @@ PS - I too had many occurrences of 'prop resonance' where the frame shakes and t
 [NO MORE PROPWASH OSCILLATION ](https://www.youtube.com/watch?v=PHkofDq_JxU) A Joshua Bardwell Video.
 
 ## Version 3.2.X filter\debug sequence:
-![](https://static.rcgroups.net/forums/attachments/6/8/2/3/6/4/a10620638-118-Debug_Mode%20Process%20Flow%20Diagram_1.png)
+![](https://static.rcgroups.net/forums/attachments/6/8/2/3/6/4/a10687440-175-Debug_Mode%20Process%20Flow%20Diagram_1.png)
 
 ## Filters were changed in Version 3.0 
 
