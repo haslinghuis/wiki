@@ -1,3 +1,5 @@
+# New: r-XSR firmware for FPort is available!
+
 # Motivation
 
 FPort is a new RC protocol that was developed by FrSky in collaboration with Betaflight. It has a number of improvements over existing protocols used by FrSky hardware:
@@ -13,14 +15,14 @@ The detailed specification for FPort is available here: [F.Port.protocol.betaFli
 
 
 
-# Testing FPort
+# Using FPort
 
 ## Requirements:
-- a FrSky XSR or X4R(SB) or XSR-m receiver;
+- a FrSky XSR or X4R(SB) or XSR-m or r-XSR receiver;
 - a free hardware port on the flight controller (F3 or better) that is capable of running SmartPort with your receiver (i.e. must be able to run inverted bidirectional, or your receiver needs to have the 'uninverted SmartPort' hack applied).
 
 ## Installation
-1. Download and install the receiver firmware: [XSR_FPport_Betaflight_171114.zip][2]. Instructions for the firmware installation can be found [here][3] and [here][4].
+1. Download and install the receiver firmware: [XSR / X4R / XSR-m][2] / [r-XSR][8]. Instructions for the firmware installation can be found [here][3] and [here][4].
 2. Install a Betaflight nightly build (#366 or newer required) from [here][5] onto your flight controller.
 3. Connect the SmartPort port on your receiver to the inverted bidirectional port on your flight controller. On F3 / F4 with a 'uninverted SmartPort' hacked receiver / F7, the receiver is connected to the TX pin of the serial port, on F4 with a non-hacked receiver the connection will be dependent on how the bidirectional inverter is designed - consult your flight controller manual; (Effectively, this connection uses the same pins on both sides that would be used to connect SmartPort if a non-FPort firmware was used.)
 4. Configure your flight controller. Enable 'serial RX' for the port the receiver is connected to, choose 'Serial Rx' as receiver type, and 'FPort' as protocol. For F3 / F4 with a 'uninverted SmartPort' hacked receiver / F7, set `serialrx_halfduplex = on` in CLI. If **not** using a receiver with 'uninverted SmartPort' hack, set `serialrx_inverted = on`. After all is done, the relevant bits of a `dump` should look like this (assuming we're using UART3):
@@ -61,7 +63,7 @@ F4 with 'uninverted SmartPort' hacked receiver:
 
 [1]: https://github.com/betaflight/betaflight/files/1491056/F.Port.protocol.betaFlight.V2.1.2017.11.21.pdf
 
-[2]: https://github.com/betaflight/betaflight/files/1484373/XSR_FPport_Betaflight_171114.zip
+[2]: https://www.frsky-rc.com/xsr/
 
 [3]: https://oscarliang.com/flash-frsky-rx-firmware/
 
@@ -72,3 +74,5 @@ F4 with 'uninverted SmartPort' hacked receiver:
 [6]: https://github.com/betaflight/betaflight-tx-lua-scripts/releases
 
 [7]: https://github.com/betaflight/betaflight/issues
+
+[8]: https://www.frsky-rc.com/r-xsr/
