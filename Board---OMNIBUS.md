@@ -82,7 +82,7 @@ _format is reporter [name], (status): issue contents_
 #### REMAP SERVOS AIRPLANE / FLYING WING
 You will need to remap the pins currently assigned from the motors to servos in the CLI to get servo functionality!!!
 
-The resources dump from my CLI looks like this, it remaps motors 3 and 4 to servos 3 and 4.
+The resources dump from my CLI looks like this for my flying wing, it remaps motors 3 and 4 to servos 3 and 4.
 
 `resource MOTOR 1 B08`   
 `resource MOTOR 2 B09`   
