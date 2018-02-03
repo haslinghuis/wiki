@@ -25,7 +25,7 @@ Set the PWM frequency as separate from PID loop and set it to 50hz to make the s
 The modes and mixes work fine for me as-is and I expect that everything else will be fine as well(like OSD). I just need to add FPV to it and get it up in the air! 
 
 #### TO REMAP SERVOS
-You will need to remap the pins assigned currently assigned from the motors to servos in the CLI to get servo functionality!!!
+You will need to remap the pins currently assigned from the motors to servos in the CLI to get servo functionality!!!
 
 The resources dump from my CLU looks like this, it remaps motors 3 and 4 to servos 3 and 4 - this is an OMNIBUS target, FYI:  
 
