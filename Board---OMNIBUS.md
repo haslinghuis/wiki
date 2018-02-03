@@ -75,30 +75,32 @@ Diffrences:
 ## FAQ & Known Issues
 _(add FAQs, known issues and workarounds specifically related to this board. please link work in progress issues to the related github issue or pull request)_
 
+_format is reporter [name], (status): issue contents_
+
+
+
 #### REMAP SERVOS AIRPLANE / FLYING WING
 You will need to remap the pins currently assigned from the motors to servos in the CLI to get servo functionality!!!
 
 The resources dump from my CLI looks like this, it remaps motors 3 and 4 to servos 3 and 4.
 
-`resource MOTOR 1 B08`
-`resource MOTOR 2 B09`
-`resource MOTOR 3 NONE`
-`resource MOTOR 4 NONE`
-`resource MOTOR 5 B07`
-`resource MOTOR 6 B06`
-`resource MOTOR 7 NONE`
-`resource MOTOR 8 NONE`
-`resource SERVO 1 A02`
-`resource SERVO 2 A03`
-`resource SERVO 3 NONE`
-`resource SERVO 4 NONE`
-`resource SERVO 5 NONE`
-`resource SERVO 6 NONE`
-`resource SERVO 7 NONE`
-`resource SERVO 8 NONE`
+`resource MOTOR 1 B08`   
+`resource MOTOR 2 B09`   
+`resource MOTOR 3 NONE`   
+`resource MOTOR 4 NONE`   
+`resource MOTOR 5 B07`   
+`resource MOTOR 6 B06`   
+`resource MOTOR 7 NONE`   
+`resource MOTOR 8 NONE`   
+`resource SERVO 1 A02`   
+`resource SERVO 2 A03`   
+`resource SERVO 3 NONE`   
+`resource SERVO 4 NONE`   
+`resource SERVO 5 NONE`   
+`resource SERVO 6 NONE`   
+`resource SERVO 7 NONE`   
+`resource SERVO 8 NONE`   
 
-
-_format is reporter [name], (status): issue contents_
 
 ### Setup TRICOPTER in ßF 3.1.x
 This setup is for the Flip32 F3 omnibus board using Betaflight 3.1.6  
