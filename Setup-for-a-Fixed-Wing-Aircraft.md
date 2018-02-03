@@ -27,7 +27,7 @@ The modes and mixes work fine for me as-is and I expect that everything else wil
 #### TO REMAP SERVOS
 You will need to remap the pins currently assigned from the motors to servos in the CLI to get servo functionality!!!
 
-The resources dump from my CLU looks like this, it remaps motors 3 and 4 to servos 3 and 4 - this is an OMNIBUS target, FYI:  
+The resources dump from my CLI looks like this, it remaps motors 3 and 4 to servos 3 and 4 - this is an OMNIBUS target, FYI:  
 
 'resource MOTOR 1 B08
 'resource MOTOR 2 B09
