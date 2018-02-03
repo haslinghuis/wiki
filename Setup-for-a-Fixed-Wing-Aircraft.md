@@ -24,10 +24,32 @@ Use the servos tab to reverse them if needed.
 Set the PWM frequency as separate from PID loop and set it to 50hz to make the servos work (you will lose all of the new ESC protocols but that's not as important on a plane).   
 The modes and mixes work fine for me as-is and I expect that everything else will be fine as well(like OSD). I just need to add FPV to it and get it up in the air! 
 
+#### TO REMAP SERVOS
+You will need to remap the pins assigned currently assigned from the motors to servos in the CLI to get servo functionality!!!
+
+The resources dump from my CLU looks like this, it remaps motors 3 and 4 to servos 3 and 4 - this is an OMNIBUS target, FYI:  
+
+'resource MOTOR 1 B08
+'resource MOTOR 2 B09
+'resource MOTOR 3 NONE
+'resource MOTOR 4 NONE
+'resource MOTOR 5 B07
+'resource MOTOR 6 B06
+'resource MOTOR 7 NONE
+'resource MOTOR 8 NONE
+'resource SERVO 1 A02
+'resource SERVO 2 A03
+'resource SERVO 3 NONE
+'resource SERVO 4 NONE
+'resource SERVO 5 NONE
+'resource SERVO 6 NONE
+'resource SERVO 7 NONE
+'resource SERVO 8 NONE
+
 #### A Post by RCvehicleGuy:  
 Well I messed with trying to get betaflight to work with an airplane. It was clearly not intended to work.  
 What I wanted to do was use the resource command to put servos 1-4 on motor outputs 1-4 on my naze board and do a custom smix to assign stabilized roll, stabilized elevator, rc throttle, and stabilized rudder to the outputs respectively. Like a futaba radio. It sounds simple but for the life of me couldn't get it to work last night. I think something is broken somewhere, these possibilities haven't been tested I would think, seeing as betaflight is designed for acro-quad flying it really only gets tested on acro-quads.  
-I stepped the PID-loop frequency to .06 khz. I am running digital servos so theoretically I could do .3 khz and update them at 300 hz, but going analog speeds just to see if it works.  
+
 I think the key is the smix command, either it isn't working correctly or I don't understand it well enough to work. I'll try again when I have more time and see if I can't get this working.  
 so to output stabilized roll to servo 1 I believe the smix command is, if you just reset the smix:  
 smix 0 0 0 100 0 0 100 0, or something like that. rule 0, servo 0 (1), source 0 (PID roll), 100 (rate), 0 (null speed), 0 (min), 100 (max), 0 (box. don't know what this is).  
@@ -35,7 +57,7 @@ As I said I will try again. I already tried iNav but without the resource comman
 
 Part 2:  
 OK! I'd like to update that I have the outputs on my Naze32 working for stabilized roll, pitch, and yaw, good for a typical 3 servo 4 channel plane.
-I am using a 1k cycle and pid loop time. It was the .06 pid loop that was messing up the smix. I thought that the pid loop sent synced values to the escs, this is obviously not the case. So much to learn. I wanted to use motor output 4, resource b07, as rudder, but it seems broken on my Naze so I moved that to 3 and decided to just use the throttle output on my receiver instead.
+I am using a 1k cycle and pid loop time. I wanted to use motor output 4, resource b07, as rudder, but it seems broken on my Naze so I moved that to 3 and decided to just use the throttle output on my receiver instead.
 It's interesting to watch the PIDs wind-up with throttle applied. They wind up up much harder for setpoint changes and hardly at all for board movements. This should make for some interesting flight characteristics. I'm excited to get this on the Crack Laser and in the air to see how it changes the way it flies. It will be funny to be doing a rolling loop and let go of the aileron and have iterm windup keep it rolling another 3 revs or so, lol.
 
 I'm more interested in the applications of level mode. For people new to airplanes or for strangers who ask if they can fly, having a working level mode means hey why not. On small 3d foamies at least, what is usually a touchy aerobatic machine could be turned into what amounts to a 3 channel trainer with level mode working.
