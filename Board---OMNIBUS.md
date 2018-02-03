@@ -80,22 +80,22 @@ You will need to remap the pins currently assigned from the motors to servos in 
 
 The resources dump from my CLI looks like this, it remaps motors 3 and 4 to servos 3 and 4.
 
-resource MOTOR 1 B08
-resource MOTOR 2 B09
-resource MOTOR 3 NONE
-resource MOTOR 4 NONE
-resource MOTOR 5 B07
-resource MOTOR 6 B06
-resource MOTOR 7 NONE
-resource MOTOR 8 NONE
-resource SERVO 1 A02
-resource SERVO 2 A03
-resource SERVO 3 NONE
-resource SERVO 4 NONE
-resource SERVO 5 NONE
-resource SERVO 6 NONE
-resource SERVO 7 NONE
-resource SERVO 8 NONE
+`resource MOTOR 1 B08`
+`resource MOTOR 2 B09`
+`resource MOTOR 3 NONE`
+`resource MOTOR 4 NONE`
+`resource MOTOR 5 B07`
+`resource MOTOR 6 B06`
+`resource MOTOR 7 NONE`
+`resource MOTOR 8 NONE`
+`resource SERVO 1 A02`
+`resource SERVO 2 A03`
+`resource SERVO 3 NONE`
+`resource SERVO 4 NONE`
+`resource SERVO 5 NONE`
+`resource SERVO 6 NONE`
+`resource SERVO 7 NONE`
+`resource SERVO 8 NONE`
 
 
 _format is reporter [name], (status): issue contents_
