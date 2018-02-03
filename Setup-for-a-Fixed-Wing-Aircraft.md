@@ -24,28 +24,6 @@ Use the servos tab to reverse them if needed.
 Set the PWM frequency as separate from PID loop and set it to 50hz to make the servos work (you will lose all of the new ESC protocols but that's not as important on a plane).   
 The modes and mixes work fine for me as-is and I expect that everything else will be fine as well(like OSD). I just need to add FPV to it and get it up in the air! 
 
-#### TO REMAP SERVOS
-You will need to remap the pins currently assigned from the motors to servos in the CLI to get servo functionality!!!
-
-The resources dump from my CLI looks like this, it remaps motors 3 and 4 to servos 3 and 4 - this is an OMNIBUS target, FYI:  
-
-`resource MOTOR 1 B08
-`resource MOTOR 2 B09
-`resource MOTOR 3 NONE
-`resource MOTOR 4 NONE
-`resource MOTOR 5 B07
-`resource MOTOR 6 B06
-`resource MOTOR 7 NONE
-`resource MOTOR 8 NONE
-`resource SERVO 1 A02
-`resource SERVO 2 A03
-`resource SERVO 3 NONE
-`resource SERVO 4 NONE
-`resource SERVO 5 NONE
-`resource SERVO 6 NONE
-`resource SERVO 7 NONE
-`resource SERVO 8 NONE
-
 #### A Post by RCvehicleGuy:  
 Well I messed with trying to get betaflight to work with an airplane. It was clearly not intended to work.  
 What I wanted to do was use the resource command to put servos 1-4 on motor outputs 1-4 on my naze board and do a custom smix to assign stabilized roll, stabilized elevator, rc throttle, and stabilized rudder to the outputs respectively. Like a futaba radio. It sounds simple but for the life of me couldn't get it to work last night. I think something is broken somewhere, these possibilities haven't been tested I would think, seeing as betaflight is designed for acro-quad flying it really only gets tested on acro-quads.  
