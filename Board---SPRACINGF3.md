@@ -1,0 +1,1 @@
+please help... i cannot get my flysky ia6 receiver to "talk" with my spracing f3 v1. it is soldered to the usart 3 with black to -, red to +, and white to rx, but cannot bind together
