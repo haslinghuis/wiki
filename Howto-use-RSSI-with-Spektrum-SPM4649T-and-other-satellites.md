@@ -15,5 +15,5 @@ The Betaflight and Spektrum RSSI % values are not the same. Currently not user a
 
 ![RSSI vs Distancel menu](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/ideal_rssi_to_range.jpg)
 
-The Betaflight fake RSSI values are not scaling too well to distance either, looks more like the red "%R" curve above. This is because it is based on fades and frame losses. And fades start to occur close to range limit.
+The Betaflight fake RSSI values are not scaling too well to distance either, looks more like the red "%R" curve above. This is because it is based on fades and frame losses. And fades start to occur close to range limit. Currently the fake RSSI scaling is not configurable, 40 lost frames/s are regarded as 0% RSSI, and 0 frames/s is 100% .
  
