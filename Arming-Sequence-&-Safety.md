@@ -121,8 +121,12 @@ This list *should* be kept up to date with the code in `master` (`armingDisableF
   MSP connection is active, probably via Betaflight Configurator.  
   Terminate the Betaflight Configurator connection (disconnect).
 
+- `RUNAWAY`
+  Number of beeps: 17
+  Runway Takeoff Prevention has been triggered. Disarm to clear this condition.
+
 - `ARM SWITCH`  
-  Number of beeps: 17  
+  Number of beeps: 18  
   Arm switch is in an unsafe position.  
   Toggle the arm switch to arm.
 
