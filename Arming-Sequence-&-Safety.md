@@ -122,8 +122,8 @@ This list *should* be kept up to date with the code in `master` (`armingDisableF
   Terminate the Betaflight Configurator connection (disconnect).
 
 - `RUNAWAY`
-  Number of beeps: 17
-  Runway Takeoff Prevention has been triggered. Disarm to clear this condition.
+  Number of beeps: 17  
+  Runway Takeoff Prevention has been triggered. Disarm to clear this condition.  
 
 - `ARM SWITCH`  
   Number of beeps: 18  
