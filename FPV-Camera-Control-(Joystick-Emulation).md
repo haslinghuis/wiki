@@ -92,7 +92,8 @@ A similar trick works for Foxeer Monster.
 **UP&DOWN do not work**, hopefully future batches will have the firmware flaw addressed.
 `set camera_control_internal_resistance = 99`
 
-Predator expects a really low value for DOWN, while the FC can't output lower than `3.3 * R / (R + 9.9 kΩ) = 49 mV` for a resistor of 150 Ω. Using a resistor of 75 Ω may solve the issue with DOWN.
+Predator expects a really low value for DOWN, while the FC can't output lower than `3.3 * R / (R + 9.9 kΩ)`.
+Use a resistor of 75-150 Ω to make it work.
 
 Reference voltage for my samples seems to be on the higher side, staying at 3.43 V for a 3S battery, which leads to the problem with UP.
 This camera seems to register UP key with a logic like:
