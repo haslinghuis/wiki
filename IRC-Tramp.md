@@ -55,7 +55,13 @@ When the thermal protection is in effect, the device will automatically regulate
 ## Modify VTX Settings (TBS Unify / TrampHV) using FrSky TARANIS Menu  
 http://www.nitbeatfpv.com/tramphv-unify-vtx-settings-taranis  
 
-## Modify VTX Settings (TBS Unify / Tramp HV / RTC6705 ) using Spektrum VTX Control Menu 
-Any VTX that is configurable from CMS and CLI can also be controlled using a Spektrum TX with VTX control menues, introduced in betaflight 3.3.0.
+## Modify VTX Settings (TBS Unify / Tramp HV / RTC6705 ) using Spektrum VTX Setup Menu 
+Any VTX that is configurable from CMS and CLI can also be controlled using a Spektrum TX with VTX Setup menues, introduced in betaflight 3.3.0.
 
-![Spektrum VTX Control menu](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/Spektrum_VTX_Control_menu.jpg)
+![Spektrum VTX Setup menu](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/Spektrum_VTX_Control_menu.jpg)
+
+If you are using telemetry and a SPM4649T receiver, you can also see the current VTX status on the same VTX Setup screen. This can be very useful if VTX settings are changed in some other way than from the Transmitter VTX Setup menu.
+
+![Spektrum VTX Status and Setup menu](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/Spektrum_VTX_Control_status_menu_1.21exp.jpg)
+
+
