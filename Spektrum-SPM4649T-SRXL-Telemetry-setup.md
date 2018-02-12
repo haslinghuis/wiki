@@ -19,7 +19,7 @@ Please also note that it does not have to be connected to UART3/TX3 as stated ab
 
 Use the transmitter scroller to select the items you like to use.
 
-##Telemetry sample screen shots.
+## Telemetry sample screen shots.
 
 ![Spektrum Telemetry Overview](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/Spektrum_TM_Overview.jpg)
 ![Spektrum Telemetry Overview](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/Spektrum_TM_Flightlog.jpg)
