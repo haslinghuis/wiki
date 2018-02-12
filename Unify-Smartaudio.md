@@ -183,6 +183,10 @@ Protocol statistics between a flight controller and a SmartAudio device. May hel
 - You can use alternative CMS device such as I2C OLED to cancel the Out-Range mode.
 - You can tap or connect VIDEO OUTPUT from OSD and connect it to external display or goggle's VIDEO INPUT.
 
+## Modify VTX Settings (TBS Unify / TrampHV) using Spektrum VTX Setup Menu   
+Please read the Spektrum VTX setup section on the IRC Tramp WiKi page: 
+https://github.com/betaflight/betaflight/wiki/IRC-Tramp#modify-vtx-settings-tbs-unify--tramp-hv--rtc6705--using-spektrum-vtx-control-menu
+
 ## Modify VTX Settings (TBS Unify / TrampHV) using FrSky TARANIS Menu   
 http://www.nitbeatfpv.com/tramphv-unify-vtx-settings-taranis
 
