@@ -185,7 +185,7 @@ Protocol statistics between a flight controller and a SmartAudio device. May hel
 
 ## Modify VTX Settings (TBS Unify / TrampHV) using Spektrum VTX Setup Menu   
 Please read the Spektrum VTX setup section on the IRC Tramp WiKi page: 
-https://github.com/betaflight/betaflight/wiki/IRC-Tramp#modify-vtx-settings-tbs-unify--tramp-hv--rtc6705--using-spektrum-vtx-control-menu
+https://github.com/betaflight/betaflight/wiki/IRC-Tramp#modify-vtx-settings-tbs-unify--tramp-hv--rtc6705--using-spektrum-vtx-setup-menu
 
 ## Modify VTX Settings (TBS Unify / TrampHV) using FrSky TARANIS Menu   
 http://www.nitbeatfpv.com/tramphv-unify-vtx-settings-taranis
