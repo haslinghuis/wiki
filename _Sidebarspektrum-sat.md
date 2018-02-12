@@ -41,7 +41,7 @@
  - [FPV Camera Control](/betaflight/betaflight/wiki/FPV-Camera-Control-(Joystick-Emulation))
  - [FrSky FPort](/betaflight/betaflight/wiki/The-FrSky-FPort-Protocol)
  - [Gyro Offset](/betaflight/betaflight/blob/master/docs/CLI/gyro_offset_yaw.md)
- - [Runaway Takeoff] (/betaflight/betaflight/wiki/Runaway-Takeoff-Prevention)
+ - [Runaway Takeoff](/betaflight/betaflight/wiki/Runaway-Takeoff-Prevention)
 
 # V3.2 specific Setup
 
