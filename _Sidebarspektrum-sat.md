@@ -102,6 +102,7 @@
  - [KAKUTEF7](/betaflight/betaflight/wiki/Board---KAKUTEF7)
  - [KISSFC](/betaflight/betaflight/wiki/Board---KISSFC)
  - [KIWIF4](https://github.com/betaflight/betaflight/wiki/KIWIF4)
+ - [KIWIF4 V2](https://github.com/betaflight/betaflight/wiki/KIWIF4-V2)
  - [KroozX](https://github.com/betaflight/betaflight/wiki/Board---KroozX)
  - [LUMBAF3](/betaflight/betaflight/wiki/Board---LUMBAF3)
  - [LUX_RACE](/betaflight/betaflight/wiki/Board---LUX_RACE)
