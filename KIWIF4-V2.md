@@ -29,6 +29,36 @@ MPU-6000 F4 flight controller with stackable PDB. Integrated 12V and 5V regulato
 | Current Sensor | Yes|
 | Boot Button | Yes| 
 
+#### Resource mapping (WIP)
+
+
+| Label                      | Pin | Timer  | DMA | Default     | Note                             |
+|----------------------------|------|-------|-----|-------------|----------------------------------|
+| LED0_PIN                   | PB4  |       |     |             |                                  |
+| BEEPER                     | PA8  |       |     |             |                                  |
+| INVERTER_PIN_UART1         | PC0  |       |     |             |                                  |
+| MPU6000_INT_EXTI           | PC4  |       |     |             |                                  |
+| MPU6000_CS_PIN             | PA4  |       |     |             |                                  |
+| MAX7456_SPI_CS_PIN         | PA15 |       |     |             |                                  |
+| SDCARD_DETECT_PIN          | PB9  |       |     |             |                                  |
+| SDCARD_SPI_CS_PIN          | PB12 |       |     |             |                                  |
+| VBUS_SENSING_PIN           | PC5  |       |     |             |                                  |
+| UART1 TX                   | PA9  |       |     |             |                                  |
+| UART1 RX                   | PA10 |       |     |             |                                  |
+| UART3 TX                   | PB10 |       |     |             |                                  |
+| UART3 RX                   | PB11 |       |     |             |                                  |
+| UART6 TX                   | PC6  |       |     |             |                                  |
+| UART6 RX                   | PC7  |       |     |             |                                  |
+| VBAT_ADC_PIN               | PC1  |       |     |             |                                  |
+| RSSI_ADC_PIN               | PC2  |       |     |             |                                  |
+| CURRENT_METER_ADC_PIN      | PC3  |       |     |             |                                  |
+|                            |      |       |     |             |                                  |
+|                            |      |       |     |             |                                  |
+
+
+
+
+
 ## Manufacturers and Distributors
 
 [Flying Lemon](https://flyinglemon.eu/flight-controllers/39-kiwif4-flight-controller.html)
