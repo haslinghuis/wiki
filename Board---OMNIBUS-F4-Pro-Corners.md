@@ -53,8 +53,8 @@ set tlm_halfduplex = OFF
 - SOFTSERIAL1 Smartport (UART TX1 pad)
 - SOFTSERIAL2 IRC Tramp (M5 pad)
 
-
-
+![Omnibus F4 Pro Corner wiring diagram](https://github.com/stsa64/Quadcopter/blob/master/Omnibus%20F4%20pro%20corner%20diagram.jpg)
+```
 # Betaflight / OMNIBUSF4SD (OBSD) 3.2.5 Feb 11 2018 / 00:49:36 (6e69ff00c) MSP API: 1.36
 
 # resources
@@ -77,3 +77,4 @@ serial 31 8192 115200 57600 0 115200
 
 # master
 set serialrx_provider = SBUS
+```
