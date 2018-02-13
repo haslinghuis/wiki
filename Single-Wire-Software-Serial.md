@@ -49,8 +49,8 @@ OMNIBUSF4SD (by @jflyper)
 
 | Pin | Label     | S.Audio | Tramp | S.Port | Note |
 |-----|-----------|---------|-------|--------|------|
-| A1  | PWM5      | OK      | OK @stsa64   | OK     | @basdelfos;      |
-| A8  | PWM6      | OK      | OK    | OK     |      |
+| A1  | PWM5      | OK @basdelfos     | OK @stsa64   | OK @basdelfos     |       |
+| A8  | PWM6      | OK      | OK    | OK     | @stsa64: Tramp does not work if running smartport on A9 (UART TX1) via softserial (timer conflict??)     | 
 | B14 | PPM       | ?       | ?     | ?      |      |
 | B15 | CH2       | ?       | ?     | ?      |      |
 | C8  | CH5       | ?       | ?     | ?      |      |
