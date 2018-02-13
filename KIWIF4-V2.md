@@ -29,7 +29,7 @@ MPU-6000 F4 flight controller with stackable PDB. Integrated 12V and 5V regulato
 | Current Sensor | Yes|
 | Boot Button | Yes| 
 
-#### Resource mapping (WIP)
+#### Resource mapping as of BF 3.2.5
 
 
 | Label                      | Pin | Timer  | DMA | Default     | Note                             |
@@ -55,6 +55,19 @@ MPU-6000 F4 flight controller with stackable PDB. Integrated 12V and 5V regulato
 |                            |      |       |     |             |                                  |
 |                            |      |       |     |             |                                  |
 
+### SPI3 (MAX7456)
+| Label                         | Pin   | Timer  | DMA | Default     | Note                            |
+|-------------------------------|-------|-------|-----|-------------|----------------------------------|
+| SPI3_NSS_PIN                  | PA15  |       |     |             |                                  |
+| SPI3_SCK_PIN                  | PC10  |       |     |             |                                  |
+| SPI3_MISO_PIN                 | PC11  |       |     |             |                                  |
+| SPI3_MOSI_PIN                 | PC12  |       |     |             |                                  |
+
+### I2C (Disabled by Default)
+| Label                      | Pin  | Timer  | DMA | Default     | Note                             |
+|----------------------------|------|-------|-----|-------------|----------------------------------|
+| I2C_C1_SCL                 | PB6  |       |     |             |                                  |
+| I2C_C1_SDA                 | PB7  |       |     |             |                                  |
 
 
 
