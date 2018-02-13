@@ -49,7 +49,7 @@ OMNIBUSF4SD (by @jflyper)
 
 | Pin | Label     | S.Audio | Tramp | S.Port | Note |
 |-----|-----------|---------|-------|--------|------|
-| A1  | PWM5      | OK      | ?     | OK     | @basdelfos      |
+| A1  | PWM5      | OK      | OK @stsa64   | OK     | @basdelfos;      |
 | A8  | PWM6      | OK      | OK    | OK     |      |
 | B14 | PPM       | ?       | ?     | ?      |      |
 | B15 | CH2       | ?       | ?     | ?      |      |
