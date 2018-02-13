@@ -1,49 +1,53 @@
 # KIWI F4 V2
 
+![Flight Controller](http://flyinglemon.eu/ext_images/KIWIV2_TOP2_S.jpg)
 
 ## Description
 
-KIWI V2 is a rebulided V1, added s.port inverter, sdcard, redesigned PCB
+MPU-6000 F4 flight controller with stackable PDB. Integrated 12V and 5V regulators. Built-in OSD, S.Port inverter, SD Card slot.
 
 ## MCU, Sensors and Features
 
 ### Hardware
-_(Fill in hardware specs and add any not listed)_
-  - MCU: STM32F405RGT6
-  - IMU: MPU6000
-  - IMU Interrupt: 
-  - BARO: no
-  - VCP: yes
-  - Hardware UARTS: 4
-  - OSD: yes 
-  - Blackbox: SDCard
-  - PPM/UART Shared: 
-  - Battery Voltage Sensor: yes
-  - Integrated Voltage Regulator: yes 
-  - Brushed Motor Mosfets: no
-  - Buttons: BOOT
 
-### Features
+| Hardware      | Part Number   | Notes|
+|---------------|---------------|------|
+| MCU  | STM32F405RGT6  | 4 Hardware UARTS - Shared PPM/UART TBD|
+| IMU  | MPU6000        | Interrupt TBD |
+| OSD  | MAX7456EUI     | |
+| 12V Regulator | NCP1117 17-12G | LDO Linear: 1A Max |
+| 5V Regulator | LMR14206 | Switching Freq: 1.25MHz |
 
-_(add list of features)_
+
+| Features | Yes/No |
+|----------|--------|
+| Barometer | No |
+| VCP | Yes |
+| OSD | Yes |
+| SD Card | Yes |
+| Voltage Sensor | Yes |
+| Current Sensor | Yes|
+| Boot Button | Yes| 
 
 ## Manufacturers and Distributors
 
-[https://flyinglemon.eu/flight-controllers/39-kiwif4-flight-controller.html](https://flyinglemon.eu/flight-controllers/39-kiwif4-flight-controller.html)
-[https://beaverfpv.com/collections/new-arrivals/products/kiwi-f4-flight-controller-kiwi-pdb](https://beaverfpv.com/collections/new-arrivals/products/kiwi-f4-flight-controller-kiwi-pdb)
+[Flying Lemon](https://flyinglemon.eu/flight-controllers/39-kiwif4-flight-controller.html)
+
+[Beaver FPV](https://beaverfpv.com/collections/new-arrivals/products/kiwi-f4-flight-controller-kiwi-pdb)
 
 ## Designers
 * JohnLemon
 * Flyinglemon
 
 ## Maintainers
-_(add your name here if you help test or contribute code for this board)_
+[FlyingLemonFPV](https://github.com/flyinglemonfpv)
 
 
 ## Similar Targets
 
-_(add links board descriptions here that are similar in features or function, but have a separate target)_
+[Kiwi F4](https://github.com/betaflight/betaflight/wiki/KIWIF4)
 
+[Plum F4](https://github.com/betaflight/betaflight/wiki/Board---PLUMF4)
 
 ## Variants
 
@@ -67,12 +71,8 @@ voltage 57, current 444 offset 11.
 ## Other Resources
 
 Setup Guide:
- 
-[http://flyinglemon.eu/ext_images/kiwif4V2_wiring_diagram.pdf](http://flyinglemon.eu/ext_images/kiwif4V2_wiring_diagram.pdf)
 
-Rcgroups Thread: 
+![Wiring Diagram](https://i.imgur.com/WmDlIHV.jpg)
 
-## Image
-
-![](http://flyinglemon.eu/ext_images/KIWIV2_TOP2_S.jpg)
-![](http://flyinglemon.eu/ext_images/KIWI_COMBO_S.jpg)
+Dimensions:
+FC: 36mm x 36mm x 6.8mm(H)
