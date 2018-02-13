@@ -1,1 +1,5 @@
-please help... i cannot get my flysky ia6 receiver to "talk" with my spracing f3 v1. it is soldered to the usart 3 with black to -, red to +, and white to rx, but cannot bind together
+# SPRacingF3
+
+## Description
+
+`The Seriously Pro Racing F3 Flight Controller (SPRacingF3) was designed to give awesome flight performance based on tried and tested sensors whilst also providing unparalleled and I/O capabilities in a small and extremely lightweight form-factor using a next-generation CPU.`
