@@ -11,7 +11,7 @@
 - Two dual inverters, on UART3 (controlled by PC9) and UART6 (controlled by PC8); supports SBUS and native SmartPort (requires a diode for SmartPort).
 - UART1_RX can be connected to ESC telemetry via jumper.
 
-## Configuration Example
+## Configuration Example 1
 
 - UART1 ESC Telemetry
 - UART3 SBUS
@@ -45,3 +45,35 @@ set current_meter = ESC
 set battery_meter = ADC
 set tlm_halfduplex = OFF
 ```
+
+## Configuration Example 2
+- UART1 ESC Telemetry
+- UART3 SBUS
+- UART6 Free (for e.g. GPS)
+- SOFTSERIAL1 Smartport (UART TX1 pad)
+- SOFTSERIAL2 IRC Tramp (M5 pad)
+
+
+
+# Betaflight / OMNIBUSF4SD (OBSD) 3.2.5 Feb 11 2018 / 00:49:36 (6e69ff00c) MSP API: 1.36
+
+# resources
+resource MOTOR 5 NONE
+resource SERIAL_TX 1 NONE
+resource SERIAL_TX 11 A09
+resource SERIAL_TX 12 A01
+
+# feature
+feature MOTOR_STOP
+feature SOFTSERIAL
+feature TELEMETRY
+feature ESC_SENSOR
+
+# serial
+serial 0 1024 115200 57600 0 115200
+serial 2 64 115200 57600 0 115200
+serial 30 32 115200 57600 0 115200
+serial 31 8192 115200 57600 0 115200
+
+# master
+set serialrx_provider = SBUS
