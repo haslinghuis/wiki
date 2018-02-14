@@ -39,8 +39,9 @@ MPU-6000 F4 flight controller with stackable PDB. Integrated 12V and 5V regulato
 
 [Beaver FPV](https://beaverfpv.com/collections/new-arrivals/products/kiwi-f4-flight-controller-kiwi-pdb)
 
-## Maintainers
+## Contributors
 [FlyingLemonFPV](https://github.com/flyinglemonfpv) - Board Designer
+[MiddleMan5](https://github.com/MiddleMan5) - Documentation
 
 ## Variants
 
