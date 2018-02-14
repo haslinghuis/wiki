@@ -106,7 +106,24 @@ voltage 57, current 444 offset 11.
 
 ## Other Resources
 
-Setup Guide:
+### Enable Camera Control:
+1. See [this page](https://github.com/betaflight/betaflight/wiki/FPV-Camera-Control-(Joystick-Emulation)) for setting up your camera. 
+2. After configuring your hardware (RC Filter) solder your OSD control wire to the VTX.CLK pad (PIN B06). 
+3. Enter the following commands:
+```
+resource CAMERA_CONTROL 1 B06
+set camera_control_mode = software_pwm
+set camera_control_ref_voltage = 330
+set camera_control_key_delay = 180
+set camera_control_internal_resistance = 470
+```
+
+You may have to set your reference voltage, key_delay, and/or internal resistance depending on your camera.
+For me ( [MiddleMan5](https://github.com/MiddleMan5) ), I soldered a 1uF capacitor between OSD and ground directly on my Foxeer Monster V2 and added an inline resistor of 220 ohms to the OSD pad (VTX.CLK). My reference voltage and key delay were the same as listed above, my internal resistance was set to 107.
+
+**NOTE** the above configuration worked for me, it is not guaranteed to work for you, and you may have to play around with the configuration. The software PWM on VTX.CLK is probably not the best method either, but it does function perfectly well for my setup.
+
+###Setup Guide:
 
 ![Wiring Diagram](https://i.imgur.com/WmDlIHV.jpg)
 
