@@ -116,6 +116,7 @@ set camera_control_mode = software_pwm
 set camera_control_ref_voltage = 330
 set camera_control_key_delay = 180
 set camera_control_internal_resistance = 470
+save
 ```
 
 You may have to set your reference voltage, key_delay, and/or internal resistance depending on your camera.
