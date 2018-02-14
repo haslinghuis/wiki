@@ -9,6 +9,10 @@ It's easy:
 
 Please also note that it does not have to be connected to UART3/TX3 as stated above, any free UART Tx pin will do fine, PROVIDED there is a direct connection to the processor IO-pin. I.e. no inverters or such in the way, blocking bidirectional data flow. UART3 is usually fine on most FCs. UART1 and 6 might be more troublesome on F4 based FCs, depending on FC brand and design. 
 
+You must also do a final fifth step on your RC Transmitter.
+
+5. Run "Auto-Config" in the "Function List" "Telemetry" menu.
+
 ## The information you can get via Spektrum Telemetry.
 
 * RSSI, Frame drops and Holds.   
