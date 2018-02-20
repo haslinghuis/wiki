@@ -85,5 +85,15 @@ As the Runaway Takeoff Prevention feature matures based on feedback from the use
 ## Known Issues
 * Crashing severely immediately on takeoff may cause an auto-disarm.  Not really an issue and probably a good thing.  Simply don't crash on takeoff. :)
 * Severe bouncing/bumping the ground on takeoff may cause a disarm.  This is not actually very likely to occur as it takes a really big hit to trigger the disarm with the default configuration.  See the troubleshooting section for ideas.
-* Arming with no props and moving the R/P/Y sticks significantly may trigger a disarm.  This is normal and is caused because the PID controller is trying to control the craft and it's not responding properly (because there are no props!).  As a result the PID_sum values will grow as the PID controller begins to push harder and harder to make something happen.  This can end up looking like a runaway PID_sum event.
-* I-term windup could trigger a disarm. Again this is not an issue. A common support question is "When I arm without props why the motors start to speed up on their own?"  This is called i-term windup and is again caused by the PID controller trying to control the craft but not getting any response because there are no props.  Likewise it tries harder and harder and this leads to the motors spinning faster and the PID_sum values growing.  If the PID_sum grows too large then an auto-disarm could occur.
+* Arming with no props and moving the R/P/Y sticks significantly may trigger a disarm.  This is normal and is caused because the PID controller is trying to control the craft and it's not responding properly (because there are no props!).  As a result the PID_sum values will grow as the PID controller begins to push harder and harder to make something happen.  This can end up looking like a runaway PID_sum event.  In BF3.3RC3 this behavior is improved to allow limited bench testing without disarming.  Heavy yaw movements could still trigger a disarm but generally "wiggling" the sticks won't be a problem.  
+* "Hand flying" with the props off could trigger a disarm.  **NEVER TRY TO HOLD AN ARMED CRAFT IN YOUR HANDS WHILE THE PROPS ARE ON!!**  If the props are off and you move the craft around while the motors are spinning the PID controller will oppose the motion but because there are no props the PID_sum value will grow possibly triggering a disarm.  On the other hand, holding the craft still while moving the sticks to feel the motor response will not trigger a disarm (BF3.3RC3 or later).
+
+## Version History
+
+**Betaflight 3.3RC1**
+* Initial release
+
+**Betaflight 3.3RC2**
+* Reactivate the feature after the pilot uses crash-flip to recover from a crash.  Provides protection for the next arming and takeoff in case of broken props or other problems that might cause a runaway.
+* Disable the feature temporarily while crash-flip is active to prevent triggering while the pilot is attempting to flip over.
+* In coordination with Betaflight Configurator 10.2.0 or later, temporarily disable the feature when arming while connected to the configurator.  This allows unrestricted bench testing without risk of triggering a disarm.  Prevents any need to manually disable the feature which may result in forgetting to re-enable before flying.
