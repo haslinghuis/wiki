@@ -23,6 +23,8 @@ You must also do a final fifth step on your RC Transmitter.
 
 Use the transmitter scroller to select the items you like to use.
 
+Note: When using CMS in this way, it will be given highest possible priority on the telemetry radio link for performance reasons. A few other telemetry reports will be disabled as long as you are using CMS. This makes it VERY IMPORTANT to leave CMS with a proper EXIT, otherwise you will loose some telemetry data. Like battery current and capacity used, VTX status etc. 
+
 ## Telemetry sample screen shots.
 
 ![Spektrum Telemetry Overview](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/Spektrum_TM_Overview.jpg)
