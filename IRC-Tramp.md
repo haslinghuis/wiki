@@ -52,8 +52,8 @@ Note that the status line indicates "running" status of the VTX device, and valu
 ### Thermal Protection
 When the thermal protection is in effect, the device will automatically regulate the RF power. Therefore, value set by `POWER` entry will not be displayed on the status line.
 
-## Modify VTX Settings (TBS Unify / TrampHV) using FrSky TARANIS Menu  
-http://www.nitbeatfpv.com/tramphv-unify-vtx-settings-taranis  
+## Modify VTX Settings (TBS Unify / TrampHV) using FrSky TARANIS Betaflight LUA script  
+https://github.com/betaflight/betaflight-tx-lua-scripts/releases  
 
 ## Modify VTX Settings (TBS Unify / Tramp HV / RTC6705 ) using Spektrum VTX Setup Menu 
 Any VTX that is configurable from CMS and CLI can also be controlled using a Spektrum TX with VTX Setup menues, introduced in betaflight 3.3.0.
