@@ -2,16 +2,17 @@
 
 It's easy:
 
-1. Connect your SPM4649T to the TX3 pin on your FC (and feed it 5V obviously).
-2. In Betaflight Configurator Ports page enable 'Serial RX' on UART3 and save
-3. After board has rebooted, in the Configuration page select Serial Receiver and SRXL as provider.
+1. Connect your SPM4649T to +5V, GND and a free UART TX pin on your FC. For example UART3/TX3.
+2. In Betaflight Configurator Ports page enable 'Serial RX' on the UART you connected to above, and save.
+3. After board has rebooted, on the Configuration page in the Receiver box you select "Serial.based Receiver" as Receiver Mode and "Spektrum Bibir SRXL" as Serial Receiver Provider.
 4. Turn on the TELEMETRY feature. Press "Save and Reboot".
+5. Bind the SPM4649T to your RC Transmitter, for details see https://github.com/betaflight/betaflight/wiki/Spektrum-Satellite-Bind-for-3.2
 
 Please also note that it does not have to be connected to UART3/TX3 as stated above, any free UART Tx pin will do fine, PROVIDED there is a direct connection to the processor IO-pin. I.e. no inverters or such in the way, blocking bidirectional data flow. UART3 is usually fine on most FCs. UART1 and 6 might be more troublesome on F4 based FCs, depending on FC brand and design. 
+ 
+You must also do a final step on your RC Transmitter.
 
-You must also do a final fifth step on your RC Transmitter.
-
-5. Run "Auto-Config" in the "Function List" "Telemetry" menu.
+6. Run "Auto-Config" in the "Function List" "Telemetry" menu.
 
 ## The information you can get via Spektrum Telemetry.
 
