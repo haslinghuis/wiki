@@ -108,7 +108,7 @@ If your system lacks the systemctl command, use any equivalent command that work
 
 If you see the ttyUSB device appear and immediately disappear from the list in Cleanflight Configurator when you plug in your flight controller via USB, chances are that NetworkManager thinks your board is a GSM modem and hands it off to the ModemManager daemon as the flight controllers are not known to the blacklisted
 
-Sometimes, after other programs (configuration scripts, ESC firmware uploaders) have used the port that your flight controller is recognised as, and (i.e. `/dev/ttyUSB0` or `/dev/ttyACM0'), and change modes on the port without resetting them. This leaves the configurator unable to connect to the flight controller, even after unplugging / replugging the USB cable. In this situation, the following command will reset the port settings to defaults:
+Sometimes, after other programs (configuration scripts, ESC firmware uploaders) have used the port that your flight controller is recognised as, and (i.e. `/dev/ttyUSB0` or `/dev/ttyACM0`), and change modes on the port without resetting them. This leaves the configurator unable to connect to the flight controller, even after unplugging / replugging the USB cable. In this situation, the following command will reset the port settings to defaults:
 
     stty sane -F /dev/<your port>
 
