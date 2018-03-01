@@ -209,6 +209,7 @@ Link to modification details: https://www.rcgroups.com/forums/showpost.php?p=366
 `resource motor 1 A07 ` 
 `save  `  
 
+Starting with BetaFlight 3.3 no hardware mode or remap is needed anymore.
 
 ##### SPRACINGF3EVO -  Must move MOTOR 4 to new pin assignment (CLI = resource MOTOR 4 A06). Then solder ESC for motor #4 to motor output #5, fixes DMA conflict with motor outputs 2 and 4.  
  Follow above and to re-map output type in CLI:  
@@ -233,14 +234,16 @@ Move ledstrip to motor #8 output then enter following in the CLI to re-map ledst
 
     Limitation: BlackBox on the internal SDCard works with MultiShot but not with DShot.  
 
-##### KOMBINI - Move motor #1 from Output #1 header pin to the PPM input header pin.  
+##### KOMBINI V1 - Move motor #1 from Output #1 header pin to the PPM input header pin.  
  Follow above and to re-map output type in CLI:  
 `resource ppm none  `  
 `resource motor 1 A07 `  
 `save  `  
 
-    Limitation: no LED functionality with DShot is allowed.  
+Limitation: no LED functionality with DShot is allowed.  
 Video on getting this FC working: https://www.rcgroups.com/forums/showpost.php?p=36269451&postcount=1966    
+
+Starting with BetaFlight 3.3 no hardware mode or remap is needed anymore. LED stripe will also work.
 
 ##### AIORACERF3 -  Must move MOTOR 2 to new pin assignment since it has a DMA conflict with MOTOR 1:    
 Connect ESC for motor 2 to 'LED' pin on the board.  
