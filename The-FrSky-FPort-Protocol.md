@@ -1,5 +1,3 @@
-# New: r-XSR firmware for FPort is available!
-
 # Motivation
 
 FPort is a new RC protocol that was developed by FrSky in collaboration with Betaflight. It has a number of improvements over existing protocols used by FrSky hardware:
@@ -8,22 +6,34 @@ FPort is a new RC protocol that was developed by FrSky in collaboration with Bet
 - the serial connection uses 115200, N81, making it easier to implement on hardware that has limited support for 'exotic' modes;
 - it is uninverted (not possible with the test firmware for existing RX).
 
-A driver for FPort has been added to Betaflight. It is available in nightly releases, and will be included in Betaflight 3.3.
+A driver for FPort has been added to Betaflight. It is available since Betaflight 3.3.
 
 The detailed specification for FPort is available here: [F.Port.protocol.betaFlight.V2.1.2017.11.21.pdf][1]
 
+Frsky announcement: [here][9]
 
+# Compatibility
+
+
+| Receiver | Compatible ? | Firmware download page |
+| - | - | - |
+| FrSky RXSR | Yes (beta) | [here][8] |
+| FrSky X4R | Yes (beta) | [here][10] |
+| FrSky X4R-SB | Yes (beta) | [here][11] |
+| FrSky XSR | Yes (beta) | [here][2] |
+| FrSky XSR-M | Yes (beta) | [here][12] |
+| FrSky R9M Slim | Not yet | |
 
 
 # Using FPort
 
 ## Requirements:
-- a FrSky XSR or X4R(SB) or XSR-m or r-XSR receiver;
+- a FrSky XSR or X4R(SB) or XSR-m or r-XSR receiver (see the list above);
 - a free hardware port on the flight controller (F3 or better) that is capable of running SmartPort with your receiver (i.e. must be able to run inverted bidirectional, or your receiver needs to have the 'uninverted SmartPort' hack applied).
 
 ## Installation
-1. Download and install the receiver firmware: [XSR / X4R / XSR-m][2] / [r-XSR][8]. Instructions for the firmware installation can be found [here][3] and [here][4].
-2. Install a Betaflight nightly build (#366 or newer required) from [here][5] onto your flight controller.
+1. Download and install the receiver firmware (see the list above); Instructions for the firmware installation can be found [here][3] and [here][4].
+2. Install latest Betaflight version onto your flight controller.
 3. Connect the SmartPort port on your receiver to the inverted bidirectional port on your flight controller. On F3 / F4 with a 'uninverted SmartPort' hacked receiver / F7, the receiver is connected to the TX pin of the serial port, on F4 with a non-hacked receiver the connection will be dependent on how the bidirectional inverter is designed - consult your flight controller manual; (Effectively, this connection uses the same pins on both sides that would be used to connect SmartPort if a non-FPort firmware was used.)
 4. Configure your flight controller. Enable 'serial RX' for the port the receiver is connected to, choose 'Serial Rx' as receiver type, and 'FPort' as protocol. For F3 / F4 with a 'uninverted SmartPort' hacked receiver / F7, set `serialrx_halfduplex = on` in CLI. If **not** using a receiver with 'uninverted SmartPort' hack, set `serialrx_inverted = on`. After all is done, the relevant bits of a `dump` should look like this (assuming we're using UART3):
 
@@ -76,3 +86,13 @@ F4 with 'uninverted SmartPort' hacked receiver:
 [7]: https://github.com/betaflight/betaflight/issues
 
 [8]: https://www.frsky-rc.com/r-xsr/
+
+[9]: https://www.frsky-rc.com/frsky-betaflight-introduction-of-f-port-protocol/
+
+[10]: https://www.frsky-rc.com/x4r/
+
+[11]: https://www.frsky-rc.com/x4rsb/
+
+[12]: https://www.frsky-rc.com/xsr-m/
+
+[13]: https://www.frsky-rc.com/r9-slim/
