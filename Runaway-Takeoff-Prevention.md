@@ -38,14 +38,6 @@ The first group of parameters configure how the feature detects and activates du
 
 Set this to `OFF` to completely disable the feature.  Note that there will be no protection against runaway takeoff events and the firmware will behave as it did before the feature was implemented.
 
-`runaway_takeoff_threshold = 60`
-
-This configures the PID_sum threshold for any axis that will trigger the auto-disarm.  The default value of 60 corresponds to 60% for a PID_sum value as viewed in the blackbox viewer (raw value is actually 600 as it is scaled when viewed).  Valid values range from 30 to 100.  Increasing the value will make the logic slower to respond to the runaway and the resulting event will be more violent.  Setting it too high might prevent triggering altogether.  Likewise lowering the value will make the logic kick in sooner and result in a faster response to the problem.  However setting it too low may lead to false triggering in cases where the takeoff might not be smooth or bumpy (but still sucessful).  This is a parameter that you probably don't want to change without guidance.
-
-`runaway_takeoff_activate_delay = 75`
-
-This configures the amount of time in milliseconds where the PID_sum value for any axis must stay above `runaway_takeoff_threshold` for triggering to occur.  Valid values range from 0 to 255.  This delay allows the logic to ignore transient events like bouncing/bumping on takeoff.  Bumping the ground will generate a large PID_sum "spike" because the PID controller is trying to correct the externally caused event.  If this happens immediately on liftoff, it could fool the Runaway Takeoff Prevention logic into thinking there's a runaway PID_sum event happening and it should disarm.  Fortunately the PID_sum spike caused by a ground bounce/bump is very short in nature - that's where the delay comes in.  By delaying triggering activation to require a longer duration PID_sum spike we can filter out the ground bounces.  Increasing this value will make if more resistant to larger bounces/bumps, but will make the triggering react slower to an actual runaway - possibly resulting in a more violent event.  Reducing this value will make the feature react faster, but could lead to false triggering on bumpy takeoffs.
-
 The remaining parameters affect the logic used to detect normal controlled flight and deactivate the feature for the remainder of the battery:
 
 `runaway_takeoff_deactivate_throttle_percent = 25`
@@ -54,7 +46,7 @@ Determines the minimum throttle percentage threshold where successful flight can
 
 `runaway_takeoff_deactivate_delay = 500`
 
-This is the amount of successful flight time in milliseconds that must be accumulated to deactivate the feature.  Valid values range from 100 (0.1 seconds) to 5000 (5 seconds).  The default value of 500 (0.5 seconds) seems to be very reliable and shouldn't need to be adjusted.  The goal is to deactivate the logic after a "reasonable" but short period of time once we've determined the craft is flying normally.  However we want it to deactivate before we might reach the first point where a crash or other event may occur (like at the first gate during a race).  Raising this value will delay the deactivation and it's possible that a crash or gate/branch clip could cause an unintended disarm.  Lowering this value too much could result in the logic deactivating too soon and not providing protection in a runaway event.  It's important to note that the delay is the **accumulated** amount of flight time where the other criteria like throttle level, stick activity, etc. are met.  Thus the "real" elapsed time before deactivation may be longer than 0.5 seconds if the throttle was dropping below the limit or if the R/P/Y sticks were centered.  The actual behavior can be viewed by using blackbox logging - see the debugging section below.
+This is the amount of successful flight time in milliseconds that must be accumulated to deactivate the feature.  Valid values range from 100 (0.1 seconds) to 1000 (1 second).  The default value of 500 (0.5 seconds) seems to be very reliable and shouldn't need to be adjusted.  The goal is to deactivate the logic after a "reasonable" but short period of time once we've determined the craft is flying normally.  However we want it to deactivate before we might reach the first point where a crash or other event may occur (like at the first gate during a race).  Raising this value will delay the deactivation and it's possible that a crash or gate/branch clip could cause an unintended disarm.  Lowering this value too much could result in the logic deactivating too soon and not providing protection in a runaway event.  It's important to note that the delay is the **accumulated** amount of flight time where the other criteria like throttle level, stick activity, etc. are met.  Thus the "real" elapsed time before deactivation may be longer than 0.5 seconds if the throttle was dropping below the limit or if the R/P/Y sticks were centered.  The actual behavior can be viewed by using blackbox logging - see the debugging section below.
 
 ## Debugging
 
@@ -90,13 +82,17 @@ As the Runaway Takeoff Prevention feature matures based on feedback from the use
 
 ## Version History
 
-**Betaflight 3.3RC1**
-* Initial release
+**Betaflight 3.3**
+* Simplified configuration by removing unnecessary tuning parameters `runaway_takeoff_threshold` and `runaway_takeoff_activate_delay`.  The previous default values were found to be appropriate and unnecessary to tune.
+* Enhance logic to accelerate deactivation under higher throttle conditions.
+
+**Betaflight 3.3RC3**
+* Added gyro rate checking to activation detection to improve bench testing
 
 **Betaflight 3.3RC2**
 * Reactivate the feature after the pilot uses crash-flip to recover from a crash.  Provides protection for the next arming and takeoff in case of broken props or other problems that might cause a runaway.
 * Disable the feature temporarily while crash-flip is active to prevent triggering while the pilot is attempting to flip over.
 * In coordination with Betaflight Configurator 10.2.0 or later, temporarily disable the feature when arming while connected to the configurator.  This allows unrestricted bench testing without risk of triggering a disarm.  Prevents any need to manually disable the feature which may result in forgetting to re-enable before flying.
 
-**Betaflight 3.3RC3**
-* Added gyro rate checking to activation detection to improve bench testing
+**Betaflight 3.3RC1**
+* Initial release
