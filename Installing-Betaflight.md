@@ -1,8 +1,13 @@
-## How to install:
+## How to install Betaflight firmware on your FC:
 
-Using Betaflight Configurator, select the firmware_flasher tab and press the "Load firmware [Local]" button, you can now browse to the folder you downloaded the Betaflight firmware to & select the correct firmware hex for your corresponding Flight Controller. Leaving all options unchecked ** (defaults) press "Flash firmware".  The Configuration tool should now erase the target and flash the selected firmware to your Flight controller. Depending on your flight controller, this may prompt the installation of DFU driver, you may see a windows popup for "installing new hardware", if this happens allow it to complete and then press the "flash firmware" button again.
+Using Betaflight Configurator, select the Firmware Flasher tab and select what firmware to flash in one of two different ways, online or local firmware.
+  1. Load online firmware.   
+Select Target and Version in the upper left corner. Press "Load Firmwar {Online]", lower right part of the screen. 
+  2. Load local firmware.   
+ Press the "Load firmware [Local]" button, you can now browse to the folder you have the local Betaflight firmware file. Select the correct firmware hex-file matching your Flight Controller. 
 
-> Only exception to this being for the SPracingF3 type of flight controllers, for those FC you *may* need to check 'Manual baud rate' and change the selection to '115200' baud.
+Leaving all options unchecked ** (defaults) press "Flash firmware".  The Configuration tool should now erase the target and flash the selected firmware to your Flight controller. All this assumes you have the correct drivers etc setup correctly, read further on for details.
+
 
 There are basically two classes of USB devices used by all FCs:
 - Type 1. Using a Silabs CP2103 USB interface chip.  
