@@ -109,6 +109,6 @@ http://inavflight.com
 ## Providing feedback and contributing to this project
 Visit this RC Groups Forum to join the discussion: http://www.rcgroups.com/forums/showthread.php?t=2464844
 
-Financial support to Boris.B by PayPal donation:
+Financial support to the Betaflight Team by PayPal donation:
 
-[![Donate](https://www.paypalobjects.com/en_US/NL/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=dreambb1982%40gmail%2ecom&lc=US&item_name=Betaflight&no_note=0&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHostedGuest)
+[![Donate](https://www.paypalobjects.com/en_US/NL/i/btn/btn_donateCC_LG.gif)](https://paypal.me/betaflight)
