@@ -43,6 +43,8 @@
  - [Gyro Offset](/betaflight/betaflight/blob/master/docs/CLI/gyro_offset_yaw.md)
  - [Runaway Takeoff Prevention](/betaflight/betaflight/wiki/Runaway-Takeoff-Prevention)
  - [RunCam Device Protocol](https://github.com/betaflight/betaflight/wiki/RunCam-Device-Protocol)
+ - [LED_STRIP Setup](https://github.com/betaflight/betaflight/blob/master/docs/LedStrip.md)
+
 # V3.2 specific Setup
 
  - [Barometer Configuration for 3.2](https://github.com/betaflight/betaflight/wiki/Barometer-Configuration-(3.2))  
