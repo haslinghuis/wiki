@@ -12,7 +12,7 @@ RunCam Device Protocol is the serial communication protocol for the RunCam HD Ca
 Through this function, with the RunCam Control Adapter(Comming Soon), for the most cameras with OSD Input Pin(yes, included the FPV camera not RunCam), we can operate the OSD menu of camera via the two joysticks of the transmitter, including some shortcut key settings. For exemple, for Micro Swift2, we can  push the Roll of the transmitter to the maximum value continuously(simulate the right button of the OSD) to switch the scene, so you can easily adjust the camera to adapt to the different light environment.
 
 #### Setup Guide
-![RC-CA_viki-manua](https://s3-us-west-2.amazonaws.com/runcamfcfiles/RC-CA_viki-manual_v2.jpg)
+![RC-CA_viki-manua](https://s3-us-west-2.amazonaws.com/runcamfcfiles/RC-CA_viki-manual_v3.jpg)
 
 #### Part of camera list confirmed compatible
 | Swift series | Compatible | | Eagle series | Compatible | | Sparrow series | Compatible | | Owl series | Compatible |
