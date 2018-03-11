@@ -64,4 +64,5 @@ If you are using telemetry and a SPM4649T receiver, you can also see the current
 
 ![Spektrum VTX Status and Setup menu](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/Spektrum_VTX_Control_status_menu_1.21exp.jpg)
 
-
+## Modify VTX Configuration (TBS Unify / TrampHV) using CLI Settings
+As of Betaflight version 3.3.0, CLI settings to modify the VTX configuration are supported. See the [VTX CLI Settings](/betaflight/betaflight/wiki/VTX-CLI-Settings) page for more information.
