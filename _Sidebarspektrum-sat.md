@@ -30,6 +30,7 @@
  - [CHANNEL_FORWARDING for 3.1](https://github.com/betaflight/betaflight/wiki/CHANNEL_FORWARDING-for-3.1)
  - [TBS Unify SmartAudio](/betaflight/betaflight/wiki/Unify-Smartaudio)
  - [IRC Tramp](/betaflight/betaflight/wiki/IRC-Tramp)
+ - [VTX CLI Settings](/betaflight/betaflight/wiki/VTX-CLI-Settings)
  - [Single Wire Software Serial](/betaflight/betaflight/wiki/Single-Wire-Software-Serial)
  - [OSD and CMS Screen Adjustment](/betaflight/betaflight/wiki/OSD-and-CMS-Adjusting-Screen)
  - [CMS on MWOSD](https://github.com/betaflight/betaflight/wiki/CMS-on-MWOSD)
