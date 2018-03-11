@@ -212,6 +212,9 @@ Switch screens - Short Press MENU button
 Navigate between values - "+" & "-" buttons
 EDIT value - Press ENTER
 
+## Modify VTX Configuration (TBS Unify / TrampHV) using CLI Settings
+As of Betaflight version 3.3.0, CLI settings to modify the VTX configuration are supported. See the [VTX CLI Settings](/betaflight/betaflight/wiki/VTX-CLI-Settings) page for more information.
+
 ## Using both SmartAudio and microphone at the same time
 
 #### General concept of wiring
