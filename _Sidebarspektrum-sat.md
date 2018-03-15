@@ -84,6 +84,7 @@
  - [CL_RACINGF4](/betaflight/betaflight/wiki/Board-CL_RACINGF4)
  - [COLIBRI](/betaflight/betaflight/wiki/Board---COLIBRI)
  - [COLIBRI_RACE](/betaflight/betaflight/wiki/Board---COLIBRI_RACE)
+ - [CrazyBeeF3FR](https://github.com/betaflight/betaflight/blob/master/docs/boards/Board%20-%20CrazyBeeF3FR.md)
  - [CRAZYFLIE2](/betaflight/betaflight/wiki/Board---CRAZYFLIE2)
  - [DALRCF405](https://github.com/betaflight/betaflight/blob/master/docs/boards/Board%20-%20DALRCF405.md)
  - [DOGE](/betaflight/betaflight/wiki/Board---DOGE)
