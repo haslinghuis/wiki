@@ -12,8 +12,6 @@ As this FC has only one UART (UART6) provided as pins, it can be tricky to get i
 
 `resource PWM 3 NONE`
 
-`resource PWM 4 NONE`
-
 `resource SERIAL_TX 6 NONE`
 
 `resource SERIAL_TX 11 C06`
