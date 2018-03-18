@@ -9,6 +9,7 @@ As this FC has only one UART (UART6) provided as pins, it can be tricky to get i
 1) Solder iBus to the Pad labled RX6 and SmartAudio to the Pad labeled TX6.
 2) Configure iBus in Betaflight as usual for Port 6
 3) Run the following commands in CLI:
+
 `resource PWM 3 NONE`
 
 `resource PWM 4 NONE`
@@ -20,4 +21,5 @@ As this FC has only one UART (UART6) provided as pins, it can be tricky to get i
 `feature SOFTSERIAL`
 
 `save`
+
 4) Now you should find another soft-serial on your ports-tab that you can use to configure SmartAudio
