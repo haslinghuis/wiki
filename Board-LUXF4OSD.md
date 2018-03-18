@@ -17,6 +17,6 @@ resource SERIAL_TX 6 NONE
 
 resource SERIAL_TX 11 C06
 
-`feature SOFTSERIAL`
+feature SOFTSERIAL`
 save`
 4) Now you should find another soft-serial on your ports-tab that you can use to configure SmartAudio
