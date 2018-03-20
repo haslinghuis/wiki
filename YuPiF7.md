@@ -36,7 +36,7 @@ The YuPiF7 is a 36x36mm (30.5x30.5 mounting holes) board with an F7 microcontrol
 
 This board is currently in the prototype phase. Only small batches were manufactured for testing.
 
-Website : not available yet
+Website : http://www.yupifc.com
 
 ## Hardware Designs (if available)
 
