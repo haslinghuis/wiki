@@ -4,7 +4,7 @@ It's easy:
 
 1. Connect your SPM4649T to +5V, GND and a free UART TX pin on your FC. For example UART3/TX3.  On a Piko F4 OSD board, the pad you need is UART4/TX4.
 2. In Betaflight Configurator Ports page, enable 'Serial RX' on the UART you connected to above, and save.
-3. After the board has rebooted, Go to the Configuration page.  In the Receiver box you select "Serial based Receiver" as Receiver Mode and "Spektrum Bidir SRXL" as Serial Receiver Provider.
+3. After the board has rebooted, Go to the Configuration page.  In the Receiver box you select "Serial based Receiver" as Receiver Mode and Serial Receiver Provider: "SPEKTRUM2048/SRXL" (or "Spektrum Bidir SRXL" in Configurator 10.2.0 and older).
 4. Turn on the TELEMETRY feature. Press "Save and Reboot".
 5. Bind the SPM4649T to your RC Transmitter, for details see https://github.com/betaflight/betaflight/wiki/Spektrum-Satellite-Bind-for-3.2
 6. Select Channel map Spektrum/Graupner/JR (TAER1234) in the receiver tab.  
