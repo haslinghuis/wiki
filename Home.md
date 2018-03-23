@@ -9,8 +9,7 @@ New to Betaflight and just want to get started see the [installation](https://gi
 
 | Date  | Event |
 | - | - |
-| 01 February 2018 | Start of feature freeze / Release Candidate window for Betaflight 3.3 |
-| 01 March 2018 | Planned [release](https://github.com/betaflight/betaflight/milestone/6) date for Betaflight 3.3 |
+| 01 July 2018 | Planned [release](https://github.com/betaflight/betaflight/milestone/7) date for Betaflight 3.4 |
 
 ## Merchandise:
 **For a limited time only:** Buy a [Betaflight Shirt or Hoodie](https://github.com/betaflight/betaflight/wiki/Betaflight-merchandise)!
