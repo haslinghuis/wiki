@@ -9,6 +9,7 @@
 
 # Upgrading-Releases
 
+ - [BetaFlight 3.3](https://github.com/betaflight/betaflight/blob/master/docs/Upgrading/Upgrading%20from%203.2%20to%203.3.md)
  - [BetaFlight 3.2](https://github.com/betaflight/betaflight/wiki/BetaFlight-3.2)
  - [BetaFlight 3.1](/betaflight/betaflight/wiki/BetaFlight-V3.1.x)
  - [BetaFlight 3.0](/betaflight/betaflight/wiki/BetaFlight-3.0.x)
