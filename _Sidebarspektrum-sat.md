@@ -7,7 +7,7 @@
  - [PID Tuning Guide](/betaflight/betaflight/wiki/PID-Tuning-Guide)
  - [Flying Tips](/betaflight/betaflight/wiki/Flying-Tips)
 
-# Upgrading-Releases
+# Release Notes
 
  - [BetaFlight 3.3](https://github.com/betaflight/betaflight/blob/master/docs/Upgrading/Upgrading%20from%203.2%20to%203.3.md)
  - [BetaFlight 3.2](https://github.com/betaflight/betaflight/wiki/BetaFlight-3.2)
@@ -29,6 +29,8 @@
  - [ESC-Telemetry](/betaflight/betaflight/wiki/ESC-Telemetry) 
  - [Servos & SERVO_TILT for 3.1](https://github.com/betaflight/betaflight/wiki/Servos-&-SERVO_TILT-for-3.1)
  - [CHANNEL_FORWARDING for 3.1](https://github.com/betaflight/betaflight/wiki/CHANNEL_FORWARDING-for-3.1)
+ - [Barometer Configuration for 3.2](https://github.com/betaflight/betaflight/wiki/Barometer-Configuration-(3.2))  
+ - [Changes to the LED_STRIP functionality in 3.2](/betaflight/betaflight/wiki/LED-Strip-functionality)
  - [TBS Unify SmartAudio](/betaflight/betaflight/wiki/Unify-Smartaudio)
  - [IRC Tramp](/betaflight/betaflight/wiki/IRC-Tramp)
  - [VTX CLI Settings](/betaflight/betaflight/wiki/VTX-CLI-Settings)
@@ -46,11 +48,6 @@
  - [Runaway Takeoff Prevention](/betaflight/betaflight/wiki/Runaway-Takeoff-Prevention)
  - [RunCam Device Protocol](https://github.com/betaflight/betaflight/wiki/RunCam-Device-Protocol)
  - [LED_STRIP Setup](https://github.com/betaflight/betaflight/blob/master/docs/LedStrip.md)
-
-# V3.2 specific Setup
-
- - [Barometer Configuration for 3.2](https://github.com/betaflight/betaflight/wiki/Barometer-Configuration-(3.2))  
- - [Changes to the LED_STRIP functionality](/betaflight/betaflight/wiki/LED-Strip-functionality)
 
 # Troubleshooting
 
