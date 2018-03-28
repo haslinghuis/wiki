@@ -286,16 +286,13 @@ If you want Airmode on permanently, tick the box and then drag the slider so it 
 2. Arm motors (motors start spinning)
 3. Enable AirMode (no 'I' windup on ground) 
 4. Lift off & fly around (motors will never stop in flight even at lowest throttle)
-5. Just prior to landing, disable Air Mode (optional)
-6. Land and disarm motors
+5. Land and disarm motors
 
 There are some people saying or complaining about their minimum throttle in airmode.
 
 Your min_check determines your lowest possible throttle value out of your TX! The lower your min_check is configured the lower throttle you can get out of your quad in air mode.
 
 If your min_check is set to 1100 and your TX goes down to 1000 that would mean that it is already giving some throttle. I use min_check a bit higher than 1000. I believe something like 1015 or 1020 
-
-If you have difficulty with bounce or other unwanted actions upon landing then disable the "Disarm motor regardless of throttle value". What this allows is putting the aux switch to the disarm position while flying and keeps the copter armed as long as the throttle stick value stays above min_check. Then upon landing drop the throttle stick to zero (below min_check) and the copter disarms. No bounce or other issues and no need to reach for the disarm switch upon landing.
 
 ## What is Acro Plus ?
 
