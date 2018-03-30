@@ -48,6 +48,7 @@
  - [Runaway Takeoff Prevention](/betaflight/betaflight/wiki/Runaway-Takeoff-Prevention)
  - [RunCam Device Protocol](https://github.com/betaflight/betaflight/wiki/RunCam-Device-Protocol)
  - [LED_STRIP Setup](https://github.com/betaflight/betaflight/blob/master/docs/LedStrip.md)
+ - [FrSky SPI RX](https://github.com/betaflight/betaflight/blob/master/docs/FrSky%20SPI%20RX.md)
 
 # Troubleshooting
 
@@ -138,6 +139,7 @@
  - [SOULF4](/betaflight/betaflight/wiki/Board---SOULF4)
  - [SPARKY](/betaflight/betaflight/wiki/Board---SPARKY)
  - [SPARKY2 - Taulabs docs](https://github.com/TauLabs/TauLabs/wiki/Sparky2)
+ - [SpeedyBee F4](https://github.com/betaflight/betaflight/blob/master/docs/boards/Board%20-%20SpeedyBee%20F4%20AIO-1.md)
  - [SPRACINGF3](/betaflight/betaflight/wiki/Board---SPRACINGF3)
  - [SPRACINGF3EVO](/betaflight/betaflight/wiki/Board---SPRACINGF3EVO)
  - [SPRACINGF3MINI](/betaflight/betaflight/wiki/Board---SPRACINGF3MINI)
