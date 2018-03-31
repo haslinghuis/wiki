@@ -64,6 +64,7 @@
 
 # Boards
 
+ - [AikonF4](https://github.com/betaflight/betaflight/blob/master/docs/boards/Board%20-%20AikonF4.md)
  - [AIORACERF3](/betaflight/betaflight/wiki/Board---AIORACERF3)
  - [AIR32](/betaflight/betaflight/wiki/Board---AIR32)
  - [AIRBOTF4](/betaflight/betaflight/wiki/Board---AIRBOTF4FLIP32F4)
