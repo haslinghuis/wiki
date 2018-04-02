@@ -8,7 +8,7 @@ An F4 flight controller with integrated PDB, OSD, MicroSD, and current sensor
 
 ## Specifications:  
  - 168MHz STM32F4 version of Tempest   
- - 100+A PDB with motor current sensor  
+ - 100+A PDB with 200A motor current sensor  
  - MPU6000 gyro/acc on SPI bus  
  - Betaflight OSD  
  - Micro SD slot with DMA support  
