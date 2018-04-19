@@ -29,6 +29,7 @@ Excerpts from the data sheets / reference manuals that cover possible pin / time
 - [STM32F3](https://github.com/betaflight/betaflight/wiki/reference/stm/stm32f3_pins_timers_dma.pdf)
 - [STM32F4](https://github.com/betaflight/betaflight/wiki/reference/stm/stm32f4_pins_timers_dma.pdf)
 - [STM32F722](https://github.com/betaflight/betaflight/wiki/reference/stm/stm32f722_pins_timers_dma.pdf)
+- [STM32F745](https://github.com/betaflight/betaflight/wiki/reference/stm/stm32f745_pins_timers_dma.pdf)
 
 # Protocols
 
