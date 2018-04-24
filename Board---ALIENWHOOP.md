@@ -1,8 +1,8 @@
 ## ALIENWHOOP Board
 
-![IMAGE AlienWhoop F7 Flight Controller Welcome](https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/20375760_1452516294794035_3452827763551447574_n.png?oh=ce87191ab286e5735aee62b3992636ee&oe=5A38B747)
+![IMAGE AlienWhoop F7 Flight Controller Welcome](https://cdn.shopify.com/s/files/1/2371/1335/products/IMG_20170922_213059_8cee69cc-6f5e-48d7-9d72-639ff104019a_1024x1024.jpg?v=1511621625)
 
-AlienWhoop flight controller for Tiny Whoop, Blade Inductrix, Eachine, BetaFPV, and other micro brushed quadcopter frames. Best in class flight controller running BetaFlight 3.2 release candidate (upgradable).
+AlienWhoop flight controller for Tiny Whoop, Blade Inductrix, Eachine, BetaFPV, and other micro brushed quadcopter frames. Best in class flight controller running BetaFlight.
 
 * Choice of the top performing ARM processors: 
   * High-performance ST Microelectronics ARM Cortex-M4 core F4 168 MHz CPU
@@ -11,10 +11,10 @@ AlienWhoop flight controller for Tiny Whoop, Blade Inductrix, Eachine, BetaFPV, 
 * Choice of top performing motion processors: 
   * Invensense MPU-6500 Six-Axis (Gyro + Accelerometer) low power consumption MEMS MotionTracking™ Device
   * Invensense MPU-9250 Nine-Axis (Gyro + Accelerometer + Compass) low power consumption MEMS MotionTracking™ Device
-* Latest BetaFlight firmware running the ALIENWHOOPF4 or ALIENWHOOPF7 target. Capable of 32kHz gyro sampling and 32kHz PID loop with overclocked F4 in BetaFlight 3.2 (*32kHz gyro sampling rate might not be optimal depending on features selected 16/16 or 16/8 might be preferable*).
-* Extreme power. Choice of either (1) Fairchild Semiconductor FDMA410NZ MOSFET with 9.5A continuous and 24A burst brushed motor insanity (8.5mm coreless scream), (2) FDMA410NZT MOSFET with 9.5A continuous and 63A burst, or (3) *Infineon Technologies IRFHS8342 MOSFET up to 75A pulsed!!*
+* Capable of 32kHz gyro sampling and 32kHz PID loop with overclocked F4 (*32kHz gyro sampling rate might not be optimal depending on features selected 16/16 or 16/8 might be preferable*).
+* Extreme power. Choice of either (1) Fairchild Semiconductor FDMA410NZ MOSFET with 9.5A continuous and 24A burst brushed motor insanity (8.5mm coreless scream), (2) FDMA410NZT MOSFET with 9.5A continuous and 63A burst, or (3) *Infineon Technologies IRFHS8342 MOSFET*
 * UART4 solder pads for programmable LED strip (SUPER COOL) using WS2812B RGB or RX/TX for Micro MinimOSD
-* Supports most serial external receivers. Officially supporting FrSky XM and XM+ (SBUS), LemonRX DSM2 and DSMX (SBUS), and FlySky FS-A8S (iBUS) satellites.
+* Supports most serial external receivers. Officially supporting FrSky XM, XM+, R-XSR (SBUS/Fport), LemonRX DSM2 and DSMX (SBUS), and FlySky FS-A8S (iBUS) satellites.
 
 ## MCU, Sensors and Features
 
@@ -27,7 +27,7 @@ AlienWhoop flight controller for Tiny Whoop, Blade Inductrix, Eachine, BetaFPV, 
   - USB: STM32 VCP 
   - Hardware UARTS: UART4 solder pads for Micro MinimOSD, LED strip, etc.
   - OSD: N/A
-  - Blackbox: N/A
+  - Blackbox: N/A on V2; via onboard flash V2.1
   - PPM/UART Shared: N/A 
   - Battery Voltage Sensor: N/A
   - Current sensor: N/A
@@ -52,4 +52,4 @@ AlienWhoop flight controller for Tiny Whoop, Blade Inductrix, Eachine, BetaFPV, 
 
 ## Acknowledgements
 
-*Acknowledgements: AlienWhoop V2 is a remix of [AlienFlight F3 Quad Brushed V1](https://github.com/brucesdad13/AlienFlightArchive/tree/master/Flight-Controllers/F3-V1/F3-Quad)
+*Acknowledgements: AlienWhoop V2 and 2.1 are remixes of [AlienFlight F3 Quad Brushed V1](https://github.com/brucesdad13/AlienFlightArchive/tree/master/Flight-Controllers/F3-V1/F3-Quad)
