@@ -144,6 +144,7 @@
  - [SPRACINGF3](/betaflight/betaflight/wiki/Board---SPRACINGF3)
  - [SPRACINGF3EVO](/betaflight/betaflight/wiki/Board---SPRACINGF3EVO)
  - [SPRACINGF3MINI](/betaflight/betaflight/wiki/Board---SPRACINGF3MINI)
+ - [SPRACINGF7DUAL](/betaflight/betaflight/wiki/Board---SPRACINGF7DUAL)
  - [STM32F3DISCOVERY](/betaflight/betaflight/wiki/Board---STM32F3DISCOVERY)
  - [STM32F429DISCO](/betaflight/betaflight/wiki/Board---STM32F429DISCO)
  - [TinyBee F3](/betaflight/betaflight/wiki/Board---TinyBee-F3)
