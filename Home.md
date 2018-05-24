@@ -3,13 +3,15 @@
 ![BetaFlight](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/betaflight/bf_logo.png)
 # Welcome to the BetaFlight Wiki!
 
-New to Betaflight and just want to get started see the [installation](https://github.com/betaflight/betaflight/wiki/Installing-Betaflight) section.
+**New to Betaflight and just want to get started? See the [installation](https://github.com/betaflight/betaflight/wiki/Installing-Betaflight) section.**
 
 ## Events
 
 | Date  | Event |
 | - | - |
+| 01 June 2018 | Start of feature freeze / Release Candidate window for Betaflight 3.4 |
 | 01 July 2018 | Planned [release](https://github.com/betaflight/betaflight/milestone/7) date for Betaflight 3.4 |
+
 
 ## Merchandise:
 **For a limited time only:** Buy a [Betaflight Shirt or Hoodie](https://github.com/betaflight/betaflight/wiki/Betaflight-merchandise)!
