@@ -11,6 +11,7 @@
 | - | - |
 | 01 June 2018 | Start of feature freeze / Release Candidate window for Betaflight 3.4 |
 | 01 July 2018 | Planned [release](https://github.com/betaflight/betaflight/milestone/7) date for Betaflight 3.4 |
+| 01 January 2019 | Planned [release](https://github.com/betaflight/betaflight/milestone/20) date for Betaflight 4.0 |
 
 
 ## Merchandise:
