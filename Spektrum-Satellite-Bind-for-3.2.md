@@ -69,4 +69,16 @@ Other bind options values:
 7 for dsmx 2048/22ms  
 9 for dsmx 2048/11ms  
 
+
+### Reverse range
+
+It is usually necessary to reverse the ROLL and the YAW.
+
+```
+rxrange 0 2000 1000
+rxrange 1 1000 2000
+rxrange 2 2000 1000
+rxrange 3 1000 2000
+```
+
 More details can be found here: https://github.com/SpektrumFPV/SpektrumDocumentation/blob/master/Telemetry/Remote%20Receiver%20Interfacing.pdf
