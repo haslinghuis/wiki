@@ -167,7 +167,7 @@ Absolute control will likely eventually replace iterm_rotation, but is not yet e
 
 To enable: ```set abs_control_gain = 10```.  Smaller quads are ok with 5.  
 
-AbsoluteControl needs to be used with iTermRelax to avoid bounce-backs due to the latency between stick movement and quad response. iTermRelax will then suspend AbsoluteControl error accumulation as well during quick moves.
+AbsoluteControl needs to be used with iTermRelax to avoid bounce-backs due to the latency between stick movement and quad response. iTermRelax will then suspend AbsoluteControl error accumulation as well during quick moves. Finally AbsoluteControl only kicks in once the throttle minimum for airmode activation is exceeded to avoid undue corrections on the ground. 
 
 ## My quad doesn't feel as responsive as it used to!
 
