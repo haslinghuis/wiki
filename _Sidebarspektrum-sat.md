@@ -9,6 +9,7 @@
 
 # Release Notes
 
+ - [Betaflight 3.4 RC1 files + notes](https://github.com/betaflight/betaflight/releases/tag/v3.4.0-RC1)
  - [BetaFlight 3.3](https://github.com/betaflight/betaflight/blob/master/docs/Upgrading/Upgrading%20from%203.2%20to%203.3.md)
  - [BetaFlight 3.2](https://github.com/betaflight/betaflight/wiki/BetaFlight-3.2)
  - [BetaFlight 3.1](/betaflight/betaflight/wiki/BetaFlight-V3.1.x)
@@ -17,7 +18,7 @@
 
 # Setup and More
 
- - [Betaflight 3.4 features(/betaflight/betaflight/wiki/Betaflight-3.4-features)
+ - [Betaflight 3.4 features](/betaflight/betaflight/wiki/Betaflight-3.4-features)
  - [Deep Dive](/betaflight/betaflight/wiki/BetaFlight-Deep-Dive)
  - [Gyro and Filters](/betaflight/betaflight/wiki/Gyro-&-Dterm-filtering-recommendations)
  - [Black Box logging and Filters](/betaflight/betaflight/wiki/Black-Box-logging-and-usage) 
