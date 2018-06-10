@@ -75,7 +75,7 @@ set dterm_lowpass_hz = 70
 set dterm_lowpass2_hz = 140
 ```
 
-The higher the filters and the better the state of the quad, the better it will fly.
+The higher the filter numbers - meaning, less filtering - and the better the state of the quad, the better it will fly.
 
 ## Should I keep the dynamic notch filter on always
 
@@ -87,3 +87,36 @@ Short answer:  No.  They cause a lot of delay, and dual PT1 filters usually are 
 
 Long answer: Fixed notch filters may be useful if a log spectrum shows a clear noise peak despite the dynamic notch.  Typically a problematic peak will appear at prop resonant frequency on flexible frames.  The only way to know for sure is to get a blackbox log and use PID-Analyzer or Blackbox Explorer to perform spectral analysis.  Prop resonant frequency can be determined using an audio spectrum analyser and 'plucking' the propeller, sometimes just setting a D notch at that frequency can be useful.  
 
+## Throttle Boost
+
+This is a new functionality by JoeLucid that improves responsiveness to fast throttle inputs.  The code uses high-pass filtering on the RC throttle signal to create additional 'kicks' in throttle.  It is basically a feed forward factor on throttle.  The faster the throttle stick is moved, the greater the boost effect.  The result is a stronger, more responsive feel to fast throttle inputs - both on increasing throttle, and cutting throttle.  This is useful because some quads are weaker in terms of throttle responsiveness than others.
+
+The height of each 'kick' is determined by the size of the RC step multiplied by ```throttle_boost```, and how long it lasts is set by the ```throttle_boost_cutoff``` value.  
+
+The default throttle_boost_cutoff value is 15Hz, meaning a time constant of 10ms.  This works well for SBus 9ms radio setups.  It results in about 40% residual 'kick' carrying over into the next step, accumulating as the stick movement continues quickly, and dissipating otherwise.  The kick is rounded somewhat.  
+
+If the throttle_boost value is 0, the effect is disabled.
+
+Assuming throttle_boost_cutoff of 15, and 9ms RC intervals, throttle_boost = 5 is enough to overcome most to all RC smoothing delay on throttle (if indeed rc smoothing was applied to throttle).  Throttle should feel a bit more responsive - and sound smoother - than un-smoothed throttle input.  Increasing boost above 5 results in feed forward on throttle.  Values of 10 or higher can be used to overcome excessive motor delay when over-propping weaker motors.  Too much throttle boost may cause a kind of over-run and excessive sensitivity to big inputs.
+
+The throttle_boost_cutoff value can be adjusted also.  Ideally it would be set at a value approximating the spool up time constant of the motors.  If set to lower frequencies than default, the boost effect accumulates to a greater effect, and vice versa.  Higher frequencies will cause sharper spikes of shorter duration, with less tendency to accumulate.  
+
+Leaving the default value at 15 is probably a good idea. Better, if a sensitivity adjustment is needed, to change the throttle_boost value.
+
+## iTerm Rotation
+
+This is also by JoeLucid and is activated by default and much appreciated by LOS acro pilots, particularly when yawing continuously during rolls and when performing funnels and other tricks.  The code rotates the current iTerm vector properly as the quad rotates on other axes.  For FPV the effect is fairly subtle but can result in somewhat more predictable responses during abrupt stick inputs and while performing tricks.  There are no settings to adjust, just on or off.
+
+## Smart Feed Forward
+
+This experimental code, again by JoeLucid, modifies how D weight works.  It is not enabled by default  
+
+Normally, D setpoint weight is a feed forward amount that increases with quicker RC stick movements. The greater the D weight, the greater the stick sensitivity to pitch and roll.
+
+In the classical betaflight PID system, D setpoint weight assists P in initiating turns.  Typically D setpoint weight climbs quicker and relatively earlier than P.  Adding more D setpoint weight, and reducing P a little, can reduce PID overshoot without losing stick sensitivity.
+
+Smart Feed forward changes the D setpoint weight behaviour, such that it replaces P entirely, but only when it is greater than P (and in the same direction).  For it to work, the D setpoint value must be set significantly higher than usual - up to 2.0 or more.  Then, a large part of the initial part of a turn is driven very hard by D weight, and P doesn't need to do so much.  In some settings, this can reduce overshoot a bit.   
+
+## Absolute Control
+
+This is experimental code by JoeLucid as well.  It is intended to improve responsiveness during complex stick inputs.  It is not enabled by default. 
