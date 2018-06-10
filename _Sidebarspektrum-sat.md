@@ -19,6 +19,7 @@
 # Setup and More
 
  - [Betaflight 3.4 features](/betaflight/betaflight/wiki/Betaflight-3.4-features)
+ - [Yaw Spin Recovery & Gyro Overflow Detect](/betaflight/betaflight/wiki/Yaw-Spin-Recovery-and-Gyro-Overflow-Detect)
  - [Deep Dive](/betaflight/betaflight/wiki/BetaFlight-Deep-Dive)
  - [Gyro and Filters](/betaflight/betaflight/wiki/Gyro-&-Dterm-filtering-recommendations)
  - [Black Box logging and Filters](/betaflight/betaflight/wiki/Black-Box-logging-and-usage) 
