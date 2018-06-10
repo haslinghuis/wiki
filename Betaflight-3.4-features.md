@@ -165,7 +165,9 @@ The result is significantly better tracking to sticks, particularly during rotat
 
 Absolute control will likely eventually replace iterm_rotation, but is not yet enabled by default. 
 
-To enable: ```set abs_control_gain = 10```.  Smaller quads are ok with 5.
+To enable: ```set abs_control_gain = 10```.  Smaller quads are ok with 5.  
+
+AbsoluteControl needs to be used with iTermRelax to avoid bounce-backs due to the latency between stick movement and quad response. iTermRelax will then suspend AbsoluteControl error accumulation as well during quick moves.
 
 ## My quad doesn't feel as responsive as it used to!
 
