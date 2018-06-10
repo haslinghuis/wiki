@@ -163,7 +163,7 @@ Absolute Control continuously measures the error of the quads path over stick in
 
 The result is significantly better tracking to sticks, particularly during rotations involving yaw and other difficult situations like throttle blips.
 
-Absolute control will likely eventually replace iterm_rotation, but is not yet enabled by default. 
+Absolute control will likely eventually replace iterm_rotation, but is not yet enabled by default. You should not enable abs_control and iterm_rotation at the same time.
 
 To enable: ```set abs_control_gain = 10```.  Smaller quads are ok with 5.  
 
