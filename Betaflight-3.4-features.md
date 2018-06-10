@@ -93,6 +93,22 @@ Short answer:  No.  They cause a lot of delay, and dual PT1 filters usually are 
 
 Long answer: Fixed notch filters may be useful if a log spectrum shows a clear noise peak despite the dynamic notch.  Typically a problematic peak will appear at prop resonant frequency on flexible frames.  The only way to know for sure is to get a blackbox log and use PID-Analyzer or Blackbox Explorer to perform spectral analysis.  Prop resonant frequency can be determined using an audio spectrum analyser and 'plucking' the propeller, sometimes just setting a D notch at that frequency can be useful.  
 
+## Filter based RC smoothing 
+
+3.4 brings, thanks to eTracer, RC smoothing, with less delay and less jitter than interpolation methods.  Furthermore it is capable of adjusting the filter setpoint automatically to suite the RC command intervals.  
+
+To activate the filter method, paste and save ```set rc_smoothing_type = FILTER``` in the CLI.
+
+A biquad filter is then applied to the set incoming RC data, smoothing off the sharp square corners at the default frequency.  Sharp steps on throttle, P and D weight are then attenuated.  Because D setpoint weight adds even bigger spikes with each RC input, a second filter is applied specifically to D setpoint weight.
+
+The end result is a smoother set of motor traces.  Each incoming RC step results in an immediate step up in PIDsum and the motors, but the step up is not a sharp spike any more, reducing motor heat accumulation, improving efficiency, and making them sound smoother during rapid stick movements.  Spikes also can trigger iterm_windup protection, this code avoids that problem.
+
+When ```set rc_smoothing_input_hz = 0```, the code calculates the ideal low-pass value for RC command based on the initial RC interval.  The same applies for ```set rc_smoothing_derivative_hz = 0```, which sets the second low-pass value that gets applied to D weight automatically.  For 9ms Sbus, the automatic value is 50Hz. The actual values are written into the blackbox log header.
+
+If you run very high levels of D weight, a somewhat lower derivative smoothing frequency may smooth out some of the big spikes that you might otherwise see.
+
+Some people have voiced concern that low-pass filtering RC inputs will cause delay.  While that is true, without any filtering the motors trace gets filled with spikes that appear at each RC input step.  The current filter based smoothing code just takes the sharp point off these spikes, and doesn't delay the bulk of the step, or the majority of the D weight effect at all - the step up in the motors trace is still there at exactly the same time, just a bit smoother and rounder.
+
 ## iTerm Relax
 
 The new iTerm_relax functionality cuts, or reduces, I accumulation during fast stick inputs.  It can be enabled to work on pitch and roll alone, or pitch, roll and yaw.
