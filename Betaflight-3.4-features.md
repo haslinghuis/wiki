@@ -59,7 +59,7 @@ set dterm_lowpass_hz = 100
 set dterm_lowpass2_hz = 250
 ```
 
-A typical 5" quad with motors/props that aren't new but are average, and props aren't a problem: 
+A typical 5" quad with motors/props that aren't new but are average, and bent props aren't a problem: 
 (if MPU6000 gyro is used `gyro_lowpass2` can be set to 0 for best performance but logging/hot motors should be used to verify if this ok)
 
 ```
