@@ -16,7 +16,7 @@ This will enable the term_relax code, which markedly reduces I bounce-back after
 set rc_smoothing_type = FILTER
 ```
 
-This activates low-pass RC input smoothing, which removes spikes and sharp edges that otherwise arise during rapid stick inputs.  It should keep the motors sounding smooth and running cool during frequent rapid stick inputs, without delaying responsiveness as much as the older interpolation method (which is still available as an alternative).  
+This activates **low-pass filter based RC input smoothing**, which removes spikes and sharp edges that otherwise arise during rapid stick inputs.  It should keep the motors sounding smooth and running cool during frequent rapid stick inputs, without delaying responsiveness as much as the older interpolation method (which is still available as an alternative).  
 
 Note that with any RC smoothing, the normal spikes from D weight or throttle inputs will be trimmed smooth.  While this improves efficiency, motor temperature, and smoothness of motor control signals, losing those spikes reduces the effectiveness of D weight, P, and throttle, during very rapid stick inputs.  **After enabling RC smoothing, if you notice a small reduction in response to rapid stick inputs, consider increasing D weight and P by up to about 20%**. 
 
@@ -27,6 +27,10 @@ Note that with any RC smoothing, the normal spikes from D weight or throttle inp
 **The new default D Setpoint Transition value is zero**.  If you previously flew with 1.0 or 0.5, to get a smooth centre feel, and it now feels too twitchy around centre sticks, try your old setting.  The default of 0 provides equal stick responsiveness regardless of stick position, and is recommended for racing.  Values under 0.1 are not recommended.
 
 If your PID settings were higher than the current defaults, and the quad feels like it is a bit less responsive than before, try with values for P, D, and D weight more like what you had, and also try 20% above that. 
+
+## Can I enable the new features on F3 boards?
+
+A custom build with some features disabled can be made that will run on F3's with more than 128k of flash.  For instance I can make a build that will run 4k4k on a MOTOLAB F3 at 30% CPU with dual filters, throttle boost, iTerm_relax and filter based rc_smoothing.
 
 ### What about these new dual filters?
 
@@ -77,7 +81,7 @@ set dterm_lowpass2_hz = 140
 
 The higher the filter numbers - meaning, less filtering - and the better the state of the quad, the better it will fly.
 
-## Should I keep the dynamic notch filter on always
+## Should I keep the dynamic notch filter on always?
 
 Probably.  It does add delay, but really helps if a prop gets bent.  For super clean setups where performance is everything, try with it off.  Make a very heavily D filtered profile to limp home if needed, otherwise motors can overheat a lot.
 
@@ -86,6 +90,20 @@ Probably.  It does add delay, but really helps if a prop gets bent.  For super c
 Short answer:  No.  They cause a lot of delay, and dual PT1 filters usually are enough.
 
 Long answer: Fixed notch filters may be useful if a log spectrum shows a clear noise peak despite the dynamic notch.  Typically a problematic peak will appear at prop resonant frequency on flexible frames.  The only way to know for sure is to get a blackbox log and use PID-Analyzer or Blackbox Explorer to perform spectral analysis.  Prop resonant frequency can be determined using an audio spectrum analyser and 'plucking' the propeller, sometimes just setting a D notch at that frequency can be useful.  
+
+## iTerm Relax
+
+The new iTerm_relax functionality cuts, or reduces, I accumulation during fast stick inputs.  It can be enabled to work on pitch and roll alone, or pitch, roll and yaw.
+
+The code has two operational modes, setpoint and gyro.  Gyro mode is more clinical and complete in suppressing iTerm, Setpoint mode is a bit smoother with slightly softer landings after flips.
+
+Setpoint mode applies a high-pass filter to RC input, resulting in a value that gets higher whenever the sticks are moved quickly.  When the rate of change is zero (i.e., the sticks are not moving), iTerm accumulation is normal.  Accumulation is then attenuated linearly as the stick movement approaches a threshold.  Above threshold, no iTerm accumulation occurs at all.  
+
+Gyro mode uses a high-pass filter based on rate of change of stick movement, and uses this to create a window either side of the gyro value inside which the quad should be tracking.  While inside the window, no iTerm accumulation occurs.  If the sticks are held still, the window compresses back to nothing, and iTerm accumulation becomes normal again.
+
+In both case the filter time constant can be adjusted to fine-tune the response.  Typically no adjustment is required.  Sometimes after a fast multi-rotation flip, or other fast input, some I may accumulate and hang around too long once the stick movements stop, causing a late settling of turn rate.  Typically this will be less of a problem if the frequency is increased.
+
+This feature is really useful and is capable, in a quad where P and D are well tuned, of totally eliminating bounce-back due to I.
 
 ## Throttle Boost
 
