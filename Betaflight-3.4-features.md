@@ -120,3 +120,13 @@ Smart Feed forward changes the D setpoint weight behaviour, such that it replace
 ## Absolute Control
 
 This is experimental code by JoeLucid as well.  It is intended to improve responsiveness during complex stick inputs.  It is not enabled by default. 
+
+$$ My quad doesn't feel as responsive as it used to!
+
+If you've enabled rc_smoothing and it is set to interpolation, try ```set rc_smoothing_type = FILTER```.  
+
+Consider increasing P, I and D by around 20% over previous values.
+
+If the quad didn't need much filtering, try the 'clean quad' filter settings, above.
+
+If all else fails, revert to your old code - you may find, by now, that it doesn't feel quite as good as you remember it!
