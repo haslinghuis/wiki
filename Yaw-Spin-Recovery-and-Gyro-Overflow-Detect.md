@@ -80,8 +80,6 @@ This is a log of a much more significant impact.  The peak yaw spin rate probabl
 
 ![betaflight yaw spin protection massive yaw spin example blackbox log image](https://user-images.githubusercontent.com/11737748/39326261-be444840-49d7-11e8-887f-a1b86e988311.jpg)
 
-/Users/chris/Documents/Personal/RC/Betaflight Notes/YawSpin/Very big spin.jpg
-
 With yaw_spin_protection, this massive spin stopped relatively quickly.  
 
 ### What is the underlying cause of these indefinite yaw spins - how does this code work?
