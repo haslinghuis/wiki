@@ -1,9 +1,10 @@
 ## Yaw Spin Recovery Notes
 
-This new feature, enabled by default in betaflight 3.4, reduces the severity and duration of un-commanded severe yaw spins.   
-For example, if a quadcopter clips a gate, tree, branch or other object in such a way as to cause a high rate yaw spin, it may go into a 'never-ending' uncontrollable spin.  Typically it makes a distinctive warbling noise and climbs rapidly - the so-called Yaw Spin To The Moon (YSTTM) problem.  This code should bring such spins under control more quickly and cleanly.
+This new feature, enabled by default in betaflight 3.4, reduces the severity and duration of un-commanded severe yaw spins.
+   
+For example, if a quadcopter clips a gate, tree, branch or other object and causes a high rate yaw spin, it may go into a 'never-ending' uncontrollable spin.  Typically it makes a distinctive warbling noise and climbs rapidly - the so-called Yaw Spin To The Moon (YSTTM) problem.  3.4 introduces two code features that should bring such spins under control more quickly and cleanly.
 
-It is intended primarily for FPV pilots, and works best with MPU gyros.
+Yaw Spin Recovery is intended primarily for FPV pilots, and works best with MPU gyros.
 
 LOS acro pilots who use high yaw rates may prefer to disable this function.
 
@@ -13,7 +14,7 @@ yaw_spin_recovery can be enabled or disabled in the CLI:
 
 ```set yaw_spin_recovery = ON``` or ```set yaw_spin_recovery = OFF``` 
 
-The 'threshold' value is the spin rate, in degrees per second, at which the spin protection kicks in.  The default threshold of 1950 was chosen to minimise false triggering.  For FPV, a lower value, e.g. around 800-1000, or 100-200 above your maximum configured yaw rate, is recommended, for example:
+The 'threshold' value is the spin rate, in degrees per second, at which the spin protection kicks in.  The default threshold of 1950 was chosen to minimise false triggering.  For FPV, a lower value, e.g. 100-200 above your maximum configured yaw rate, is recommended. For example, a quad with a maximum configured yaw rate of 700 degrees/sec:
 
 ```set yaw_spin_threshold = 850```
 
@@ -21,35 +22,43 @@ Too low a threshold may cause false triggering, and delay return to normal contr
 
 ### How does it work?
 
-Once triggered, yaw_spin_recovery assigns full motor authority to the correction of the spin.  One pair of motors goes full on, the others go to minimum rpm.  All unrelated PID and throttle activity stops.  Once the yaw spin rate falls 100 degrees per second *below* threshold, and stays there for 20ms, full control is returned to the pilot.  
+Once triggered, yaw_spin_recovery assigns full motor authority to the correction of the spin, and stops all unrelated PID and throttle activity.  One pair of motors goes full on, the others go to minimum rpm.  Once the yaw spin rate falls *below* threshold by 100 degrees per second, and stays below threshold for 20ms, full control is returned to the pilot.  
 
 ### Should I lower the threshold?
 
 A threshold of 1000 will reduce the total time spent in a typical out of control yaw spin by about half, compared to a threshold of 1950.  
 
-A threshold of about 800 - 1000 works well for FPV.  It should result in a return to normal control in about a quarter of a second.
+For quads configured with a maximum yaw rate of about 800 degrees/sec, a threshold of 1000 works well, and should result in a return to normal control in about a quarter of a second after clipping a gate.
 
 False triggering will occur if the quad's yaw rate exceeds the threshold during normal flying.  It is very unusual for FPV pilots to exceed 500 degrees/sec in normal racing, even during very quick turns.  Exceeding 500 degrees/sec usually only happens if the pilot performs 'tricks' involving sustained commanded yaw spins.  
 
 Personally, I run 850 and find that works very well for me.  My maximum yaw rate is configured to 800 but even if I do a deliberate full yaw spin, I don't see anything suggesting that I hit the limit.
 
+### What happens if the threshold is too low?
+
+If the maximum yaw rate is configured to be greater than the threshold, a sustained yaw spin will cause the quad to 'stutter' in yaw.  The motors will push past threshold, then the PIDs will be disabled and the quad's spin will be slowed down, then the motors will push past threshold, again and again.  The solution is to reduce the maximum commanded yaw rate, or set the threshold higher.
+
 ### What should I do if I clip a gate and spin?
 
 No specific actions are required by the pilot.  The safest thing to do is to cut throttle, centre sticks, and mentally prepare for either re-gaining control, or disarming.  
 
-When yaw spin protection is triggered, the quad gets driven with 50% effective throttle.  It will accelerate briefly in the direction of the spin axis, but control should be returned to the pilot quickly, and should not climb much.  There is no need to increase throttle manually.  
+When yaw spin protection is triggered, the quad gets driven with 50% effective throttle.  It will accelerate briefly, perpendicular to the spin axis, but control should be returned to the pilot quickly, and should not climb much.  There is no need to increase throttle manually.
 
-Control will be returned to the pilot 20ms after the spin rate falls to 100 degrees/sec below threshold.  Although the quad will still be spinning, the PIDs will become fully active, and will quickly stabilise the quad.  By the time the pilot can see which way the quad is pointing, it should be easy to control. 
+Control will be returned to the pilot 20ms after the spin rate falls 100 degrees/sec below threshold.  Although the quad will still be spinning, the PIDs will become fully active, and will quickly stabilise the quad.  By the time the pilot can see which way the quad is pointing, it should be easy to control. 
 
 If the spin is prolonged, for example more than half a second, there may be a gyro overflow, a badly bent prop or some other hardware problem, and the pilot should disarm.
 
-### I have an ICM gyro, will this work with gyro_overflow_detect = ON?
+### I have an ICM gyro, will this work with gyro_overflow_detect active?
 
-ICM gyros are susceptible to overflow-inversion problems if exposed to very high turn rates.  If enabled, overflow protection will kick in and disable all PIDs if any axis exceeds 1950 degrees/second.  Because the FC then won't know the actual direction of the spin, it slows down all motors to their minimum / idle throttle value until the spin resolves passively.  This can take several seconds.  Normal behaviour returns when all axes fall below 1850 degrees per second.  1850 degrees/second is still a very fast spin.  If yaw spin recovery is configured at a low threshold (say 800), it will speed up this final recovery stage, but not make as much of an improvement as it would for an MPU gyro.
+Gyro_overflow_detect is special code intended to deal with overflow issues on ICM gyros.  The default is to be on, for all axes.  It is unwise to disable this if your quad has an ICM gyro.  It is not needed or helpful for MPU gyros.
+
+ICM gyros are susceptible to overflow-inversion problems if exposed to very high turn rates.  If enabled and set to ALL, overflow protection will kick in and disable all PIDs whenever any axis exceeds 1950 degrees/second.  Because the FC then won't know the actual direction of the spin, it slows down all motors to their minimum / idle throttle value, until all axes fall below 1850 degrees per second.  This can take a long time, since the quad does not actively oppose the spin.  1850 degrees/second is still a very fast spin.  If yaw spin recovery is active at a lower threshold (say 800), recovery to below 800 will be faster and cleaner than otherwise.  
+
+So the answer is yes, yaw_spin_recovery is useful for ICM gyros even if Gyro_overflow_detect is enabled.
 
 ### Why can't the quad re-orient itself to the original heading and attitude?
 
-That would require valid accelerometer and mag sensor data, which could be inaccurate immediately after a crash.  In any case, it would take time, may interfere with more accurate pilot inputs, might glitch at the point of transfer back to acro mode and may point you the wrong way in absolute terms.
+That would require valid accelerometer and mag sensor data, which could be inaccurate immediately after a crash.  In any case, any such recovery would take some time, may interfere with more accurate pilot inputs, might glitch at the point of transfer back to acro mode and may fly away the wrong way.
 
 ### What would happen if I set the threshold too low?
 
