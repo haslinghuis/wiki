@@ -139,6 +139,8 @@ Smart Feed forward changes the D setpoint weight behaviour, such that it replace
 
 This is experimental code by JoeLucid as well.  It is intended to improve responsiveness during complex stick inputs.  It is not enabled by default. 
 
+To enable: ```set abs_control_gain = 10```.  Smaller quads are ok with 5.
+
 $$ My quad doesn't feel as responsive as it used to!
 
 If you've enabled rc_smoothing and it is set to interpolation, try ```set rc_smoothing_type = FILTER```.  
