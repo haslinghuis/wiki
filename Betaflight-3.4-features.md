@@ -122,7 +122,7 @@ Some people have voiced concern that low-pass filtering RC inputs will cause del
 
 ## iTerm Relax
 
-The new iTerm_relax functionality cuts, or reduces, I accumulation during fast stick inputs.  It can be enabled to work on pitch and roll alone, or pitch, roll and yaw.
+The new iTerm_relax functionality by JoeLucid cuts, or reduces, I accumulation during fast stick inputs.  It can be enabled to work on pitch and roll alone, or pitch, roll and yaw.
 
 The code has two operational modes, setpoint and gyro.  Gyro mode is more clinical and complete in suppressing iTerm, Setpoint mode is a bit smoother with slightly softer landings after flips.
 
@@ -138,7 +138,7 @@ This feature is really useful and is capable, in a quad where P and D are well t
 
 ## Throttle Boost
 
-This improves responsiveness to fast throttle inputs.  The code uses high-pass filtering on the RC throttle signal to create additional 'kicks' in throttle.  It is basically a feed forward factor on throttle.  The faster the throttle stick is moved, the greater the boost effect.  The result is a quicker, more responsive feel to fast throttle inputs - both on increasing throttle, and cutting throttle.  It is particularly useful for quads that are weaker in terms of throttle responsiveness, or for making 3S feel like 4S, or 4S feel like 5S.
+This feature, also by JoeLucid, improves responsiveness to fast throttle inputs.  The code uses high-pass filtering on the RC throttle signal to create additional 'kicks' in throttle.  It is basically a feed forward factor on throttle.  The faster the throttle stick is moved, the greater the boost effect.  The result is a quicker, more responsive feel to fast throttle inputs - both on increasing throttle, and cutting throttle.  It is particularly useful for quads that are weaker in terms of throttle responsiveness, or for making 3S feel like 4S, or 4S feel like 5S.
 
 The height of each 'kick' is determined by the size of the RC step multiplied by the ```throttle_boost``` amount, and how long it lasts is set by the ```throttle_boost_cutoff``` value.  
 
