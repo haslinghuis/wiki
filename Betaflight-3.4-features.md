@@ -2,7 +2,9 @@
 
 ### I just want to fly, not read all this stuff...
 
-No problem, flash the code, and do a brief test fly with the stock defaults.  **Both 8k and 32k gyro modes should fly on defaults**, though 32k may require more filtering - check motor temps after the first flight
+No problem, flash the code, and do a brief test fly with the stock defaults.  **Both 8k and 32k gyro modes should fly on defaults**, though 32k may require more filtering - always check motor temps after the first flight.
+
+Note that 3.4 contains major changes to filtering and several new features that dramatically improve potential flight performance.  Do not expect it to fly the same as earlier versions!
 
 If motor temps are OK, and handling generally alright, I'd recommend pasting into the CLI:
 
@@ -141,7 +143,7 @@ This is experimental code by JoeLucid as well.  It is intended to improve respon
 
 To enable: ```set abs_control_gain = 10```.  Smaller quads are ok with 5.
 
-$$ My quad doesn't feel as responsive as it used to!
+## My quad doesn't feel as responsive as it used to!
 
 If you've enabled rc_smoothing and it is set to interpolation, try ```set rc_smoothing_type = FILTER```.  
 
