@@ -12,7 +12,9 @@ LOS acro pilots who use high yaw rates may prefer to disable this function.
 
 yaw_spin_recovery can be enabled or disabled in the CLI:
 
-```set yaw_spin_recovery = ON``` or ```set yaw_spin_recovery = OFF``` 
+```set yaw_spin_recovery = ALL```, ```set yaw_spin_recovery = YAW``` or ```set yaw_spin_recovery = OFF``` 
+
+If you are only troubled by prolonged spins on the yaw axis only, select YAW; otherwise select ALL, or OFF.
 
 The 'threshold' value is the spin rate, in degrees per second, at which the spin protection kicks in.  The default threshold of 1950 was chosen to minimise false triggering.  For FPV, a lower value, e.g. 100-200 above your maximum configured yaw rate, is recommended. For example, a quad with a maximum configured yaw rate of 700 degrees/sec:
 
@@ -23,6 +25,8 @@ Too low a threshold may cause false triggering, and delay return to normal contr
 ### How does it work?
 
 Once triggered, yaw_spin_recovery assigns full motor authority to the correction of the spin, and stops all unrelated PID and throttle activity.  One pair of motors goes full on, the others go to minimum rpm.  Once the yaw spin rate falls *below* threshold by 100 degrees per second, and stays below threshold for 20ms, full control is returned to the pilot.  
+
+Without this feature active, it is possible for any quad to get indefinite spins when the spin rate confuses the gyro.  See "What is the underlying cause" below... 
 
 ### Should I lower the threshold?
 
