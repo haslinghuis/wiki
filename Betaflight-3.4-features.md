@@ -109,17 +109,17 @@ This feature is really useful and is capable, in a quad where P and D are well t
 
 ## Throttle Boost
 
-This is a new functionality by JoeLucid that improves responsiveness to fast throttle inputs.  The code uses high-pass filtering on the RC throttle signal to create additional 'kicks' in throttle.  It is basically a feed forward factor on throttle.  The faster the throttle stick is moved, the greater the boost effect.  The result is a stronger, more responsive feel to fast throttle inputs - both on increasing throttle, and cutting throttle.  This is useful because some quads are weaker in terms of throttle responsiveness than others.
+This improves responsiveness to fast throttle inputs.  The code uses high-pass filtering on the RC throttle signal to create additional 'kicks' in throttle.  It is basically a feed forward factor on throttle.  The faster the throttle stick is moved, the greater the boost effect.  The result is a quicker, more responsive feel to fast throttle inputs - both on increasing throttle, and cutting throttle.  It is particularly useful for quads that are weaker in terms of throttle responsiveness, or for making 3S feel like 4S, or 4S feel like 5S.
 
-The height of each 'kick' is determined by the size of the RC step multiplied by ```throttle_boost```, and how long it lasts is set by the ```throttle_boost_cutoff``` value.  
+The height of each 'kick' is determined by the size of the RC step multiplied by the ```throttle_boost``` amount, and how long it lasts is set by the ```throttle_boost_cutoff``` value.  
 
-The default throttle_boost_cutoff value is 15Hz, meaning a time constant of 10ms.  This works well for SBus 9ms radio setups.  It results in about 40% residual 'kick' carrying over into the next step, accumulating as the stick movement continues quickly, and dissipating otherwise.  The kick is rounded somewhat.  
+The default throttle_boost_cutoff value is 15Hz, meaning a time constant of 10ms.  This works well for SBus 9ms radio setups, with or without rc smoothing on throttle.  It results in about 40% residual 'kick' carrying over into the next step, accumulating as the stick movement continues quickly, and dissipating otherwise.  The kick is rounded somewhat.  
+
+If rc_smoothing is enabled on throttle, a higher cutoff frequency can reduce the residual for accumulation, allowing the rc smoothing handles the spikes that would otherwise appear.  For example, a value of 25 at 50Hz is about the same as 5 at 15Hz, but with less overshoot tendency.
 
 If the throttle_boost value is 0, the effect is disabled.
 
-Assuming throttle_boost_cutoff of 15, and 9ms RC intervals, throttle_boost = 5 is enough to overcome most to all RC smoothing delay on throttle (if indeed rc smoothing was applied to throttle).  Throttle should feel a bit more responsive - and sound smoother - than un-smoothed throttle input.  Increasing boost above 5 results in feed forward on throttle.  Values of 10 or higher can be used to overcome excessive motor delay when over-propping weaker motors.  Too much throttle boost may cause a kind of over-run and excessive sensitivity to big inputs.
-
-The throttle_boost_cutoff value can be adjusted also.  Ideally it would be set at a value approximating the spool up time constant of the motors.  If set to lower frequencies than default, the boost effect accumulates to a greater effect, and vice versa.  Higher frequencies will cause sharper spikes of shorter duration, with less tendency to accumulate.  
+With the default throttle_boost_cutoff of 15, throttle_boost = 5 is enough to overcome most to all RC smoothing delay on throttle (if indeed rc smoothing was applied to throttle).  Throttle should feel a bit more responsive - and sound smoother - than un-smoothed throttle input.  Increasing boost above 5 at 15Hz results in feed forward on throttle.  Values of 10 or higher can be used to overcome excessive motor delay when over-propping weaker motors.  Too much throttle boost may cause a kind of over-run and excessive sensitivity to big inputs.  This can be attenuated by choosing a higher throttle boost cutoff frequency, e.g. 50Hz, and a corresponding increase in amount, e.g. 25.  RC smoothing on throttle then becomes essential.  That's because higher cutoff frequency will cause sharper spikes of shorter duration, with less tendency to accumulate.  
 
 Leaving the default value at 15 is probably a good idea. Better, if a sensitivity adjustment is needed, to change the throttle_boost value.
 
