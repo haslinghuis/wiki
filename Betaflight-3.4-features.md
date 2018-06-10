@@ -119,6 +119,8 @@ Setpoint mode applies a high-pass filter to RC input, resulting in a value that 
 
 Gyro mode uses a high-pass filter based on rate of change of stick movement, and uses this to create a window either side of the gyro value inside which the quad should be tracking.  While inside the window, no iTerm accumulation occurs.  If the sticks are held still, the window compresses back to nothing, and iTerm accumulation becomes normal again.
 
+Since Gyro bases the amount of iTerm suppression on how well the quad follows the expected path it can adjust the iTerm if that's required to implement the setpoint change demanded by the sticks. This can facilitate better tracking in unbalanced quads or if throttle changes are applied during the move.
+
 In both case the filter time constant can be adjusted to fine-tune the response.  Typically no adjustment is required.  Sometimes after a fast multi-rotation flip, or other fast input, some I may accumulate and hang around too long once the stick movements stop, causing a late settling of turn rate.  Typically this will be less of a problem if the frequency is increased.
 
 This feature is really useful and is capable, in a quad where P and D are well tuned, of totally eliminating bounce-back due to I.
@@ -155,7 +157,13 @@ Smart Feed forward changes the D setpoint weight behaviour, such that it replace
 
 ## Absolute Control
 
-This is experimental code by JoeLucid as well.  It is intended to improve responsiveness during complex stick inputs.  It is not enabled by default. 
+This is experimental code by JoeLucid as well.  It's purpose is to address the same attitude issues as iterm_rotation but without some of its downsides.
+
+Absolute Control continuously measures the error of the quads path over stick input, properly rotated into the quads coordinate system, and mixes a correction proportional to that error into the setpoint. It's as if you noticed every tiny attitude error the quad incurs and provided an instantaneous correction on your TX.
+
+The result is significantly better tracking to sticks, particularly during rotations involving yaw and other difficult situations like throttle blips.
+
+Absolute control will likely eventually replace iterm_rotation, but is not yet enabled by default. 
 
 To enable: ```set abs_control_gain = 10```.  Smaller quads are ok with 5.
 
