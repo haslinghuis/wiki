@@ -17,6 +17,7 @@
 
 # Setup and More
 
+ - [Betaflight 3.4 features(/betaflight/betaflight/wiki/Betaflight-3.4-features)
  - [Deep Dive](/betaflight/betaflight/wiki/BetaFlight-Deep-Dive)
  - [Gyro and Filters](/betaflight/betaflight/wiki/Gyro-&-Dterm-filtering-recommendations)
  - [Black Box logging and Filters](/betaflight/betaflight/wiki/Black-Box-logging-and-usage) 
