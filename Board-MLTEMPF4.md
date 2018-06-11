@@ -23,6 +23,7 @@ An F4 flight controller with integrated PDB, OSD, MicroSD, and current sensor
  - Supplied with cables for direct connection to Unify Pro HV VTX and HS1177 camera
  - 2S to 6S lipo compatible
  - Secure through-hole wiring connections for no lifted-pad wiring failures
+ - All wiring connections solderable from top side
   
 The Tempest F4 is compatible with Betaflight using the new MLTEMPF4 board target.
 Cables are included for direct plug-in to an HS1177 camera and a Unify Pro HV VTX.
