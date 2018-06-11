@@ -22,7 +22,7 @@ An F4 flight controller with integrated PDB, OSD, MicroSD, and current sensor
  - 38x40mm board size with 30.5mm mounting hole spacing
  - Supplied with cables for direct connection to Unify Pro HV VTX and HS1177 camera
  - 2S to 6S lipo compatible
- - Secure through-hole wiring connections for no lifted-pad wiring failures
+ - Secure through-hole wiring connections for no lifted-pad failures
  - All wiring connections solderable from top side
   
 The Tempest F4 is compatible with Betaflight using the new MLTEMPF4 board target.
