@@ -18,8 +18,6 @@
 
 # Setup and More
 
- - [Betaflight 3.4 features](/betaflight/betaflight/wiki/Betaflight-3.4-features)
- - [Yaw Spin Recovery & Gyro Overflow Detect](/betaflight/betaflight/wiki/Yaw-Spin-Recovery-and-Gyro-Overflow-Detect)
  - [Deep Dive](/betaflight/betaflight/wiki/BetaFlight-Deep-Dive)
  - [Gyro and Filters](/betaflight/betaflight/wiki/Gyro-&-Dterm-filtering-recommendations)
  - [Black Box logging and Filters](/betaflight/betaflight/wiki/Black-Box-logging-and-usage) 
@@ -52,6 +50,8 @@
  - [RunCam Device Protocol](https://github.com/betaflight/betaflight/wiki/RunCam-Device-Protocol)
  - [LED_STRIP Setup](https://github.com/betaflight/betaflight/blob/master/docs/LedStrip.md)
  - [FrSky SPI RX](https://github.com/betaflight/betaflight/blob/master/docs/FrSky%20SPI%20RX.md)
+ - [Yaw Spin Recovery & Gyro Overflow Detect](/betaflight/betaflight/wiki/Yaw-Spin-Recovery-and-Gyro-Overflow-Detect)
+ - [Tuning Tips for Betaflight 3.4](/betaflight/betaflight/wiki/Tuning-Tips-for-Betaflight-3.4)
 
 # Troubleshooting
 
