@@ -18,6 +18,15 @@
 
 # Setup and More
 
+ - [Tuning Tips for Betaflight 3.4](/betaflight/betaflight/wiki/Tuning-Tips-for-Betaflight-3.4)
+ - [Yaw Spin Recovery & Gyro Overflow Detect](/betaflight/betaflight/wiki/Yaw-Spin-Recovery-and-Gyro-Overflow-Detect)
+ - [Runaway Takeoff Prevention](/betaflight/betaflight/wiki/Runaway-Takeoff-Prevention)
+ - [FrSky FPort](/betaflight/betaflight/wiki/The-FrSky-FPort-Protocol)
+ - [Arming Sequence & Safety](https://github.com/betaflight/betaflight/wiki/Arming-Sequence-&-Safety)
+ - [TBS Unify SmartAudio](/betaflight/betaflight/wiki/Unify-Smartaudio)
+ - [IRC Tramp](/betaflight/betaflight/wiki/IRC-Tramp)
+ - [VTX CLI Settings](/betaflight/betaflight/wiki/VTX-CLI-Settings)
+ - [OSD and CMS Screen Adjustment](/betaflight/betaflight/wiki/OSD-and-CMS-Adjusting-Screen)
  - [Deep Dive](/betaflight/betaflight/wiki/BetaFlight-Deep-Dive)
  - [Gyro and Filters](/betaflight/betaflight/wiki/Gyro-&-Dterm-filtering-recommendations)
  - [Black Box logging and Filters](/betaflight/betaflight/wiki/Black-Box-logging-and-usage) 
@@ -32,26 +41,17 @@
  - [CHANNEL_FORWARDING for 3.1](https://github.com/betaflight/betaflight/wiki/CHANNEL_FORWARDING-for-3.1)
  - [Barometer Configuration for 3.2](https://github.com/betaflight/betaflight/wiki/Barometer-Configuration-(3.2))  
  - [Changes to the LED_STRIP functionality in 3.2](/betaflight/betaflight/wiki/LED-Strip-functionality)
- - [TBS Unify SmartAudio](/betaflight/betaflight/wiki/Unify-Smartaudio)
- - [IRC Tramp](/betaflight/betaflight/wiki/IRC-Tramp)
- - [VTX CLI Settings](/betaflight/betaflight/wiki/VTX-CLI-Settings)
  - [Single Wire Software Serial](/betaflight/betaflight/wiki/Single-Wire-Software-Serial)
- - [OSD and CMS Screen Adjustment](/betaflight/betaflight/wiki/OSD-and-CMS-Adjusting-Screen)
  - [CMS on MWOSD](https://github.com/betaflight/betaflight/wiki/CMS-on-MWOSD)
  - [3D Setup](/betaflight/betaflight/wiki/3D-Setup)
  - [Setup on a Fixed Wing Aircraft](https://github.com/betaflight/betaflight/wiki/Setup-for-a-Fixed-Wing-Aircraft)  
  - [Serial Pass Through](https://github.com/betaflight/betaflight/wiki/Serial-Pass-Through)  
- - [Arming Sequence & Safety](https://github.com/betaflight/betaflight/wiki/Arming-Sequence-&-Safety)
  - [Howto setup Spektrum Serial Receivers](https://github.com/betaflight/betaflight/wiki/Spektrum-Rx-setup)
  - [FPV Camera Control](/betaflight/betaflight/wiki/FPV-Camera-Control-(Joystick-Emulation))
- - [FrSky FPort](/betaflight/betaflight/wiki/The-FrSky-FPort-Protocol)
  - [Gyro Offset](/betaflight/betaflight/blob/master/docs/CLI/gyro_offset_yaw.md)
- - [Runaway Takeoff Prevention](/betaflight/betaflight/wiki/Runaway-Takeoff-Prevention)
  - [RunCam Device Protocol](https://github.com/betaflight/betaflight/wiki/RunCam-Device-Protocol)
  - [LED_STRIP Setup](https://github.com/betaflight/betaflight/blob/master/docs/LedStrip.md)
  - [FrSky SPI RX](https://github.com/betaflight/betaflight/blob/master/docs/FrSky%20SPI%20RX.md)
- - [Yaw Spin Recovery & Gyro Overflow Detect](/betaflight/betaflight/wiki/Yaw-Spin-Recovery-and-Gyro-Overflow-Detect)
- - [Tuning Tips for Betaflight 3.4](/betaflight/betaflight/wiki/Tuning-Tips-for-Betaflight-3.4)
 
 # Troubleshooting
 
