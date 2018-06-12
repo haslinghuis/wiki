@@ -24,11 +24,11 @@ Note that with any RC smoothing, the normal spikes from D weight or throttle inp
 
 ### The defaults are OK but I want to make some changes.  What do I need to know?
 
-**The new default D weight value is 0.6**.  This is approximately equal to 0.8 in pre-3.4 versions.  More D weight means greater immediacy of stick responses, particularly to quick stick movements.  If the default of 0.6 doesn't feel responsive enough at the same rates as before, try a higher value.  1.0 is sufficient to overcome the normal damping behaviour that D itself would otherwise slow down responses to your stick inputs - the quad shifts from measurement to error mode of D calculation.  Values above 1.0 provide an additional 'feed forward' effect.  Too much D weight can feel excessively twitchy. 
+**The new default D weight value is 0.6**.  This is approximately equal to 0.8 in pre-3.4 versions.  More D weight means greater immediacy of stick responses, particularly to quick stick movements.  If the default of 0.6 doesn't feel responsive enough at the same rates as before, try a higher value.  1.0 is sufficient to overcome the normal damping behaviour that D itself would otherwise slow down responses to your stick inputs - the quad shifts from measurement to error mode of D calculation.  Values above 1.0 provide an additional 'feed forward' effect.  Higher D weight can feel excessively twitchy, but can allow reduction in P while retaining the same overall responsiveness. 
 
-**The new default D Setpoint Transition value is zero**.  If you previously flew with 1.0 or 0.5, to get a smooth centre feel, and it now feels too twitchy around centre sticks, try your old setting.  The default of 0 provides equal stick responsiveness regardless of stick position, and is recommended for racing.  Values under 0.1 are not recommended.
+**The new default D Setpoint Transition value is zero**.  If you previously flew with 1.0 or 0.5, to get a smooth centre feel for freestyle, and it now feels too twitchy around centre sticks, use your old setting.  The default of 0 provides equal stick responsiveness regardless of stick position, and is recommended for racing.  0.5 is great fore freestyle.  Values under 0.1 are not recommended.
 
-If your PID settings were higher than the current defaults, and the quad feels like it is a bit less responsive than before, try with values for P, D, and D weight more like what you had, and also try 20% above that. 
+If your PID settings were higher than the current defaults, and the quad feels like it is a bit less responsive than before, try with values for P, D, and D weight more like what you had, and consider trying 20% above your old defaults. 
 
 ## Can I enable the new features on F3 boards?
 
