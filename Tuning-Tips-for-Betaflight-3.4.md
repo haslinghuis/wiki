@@ -30,7 +30,7 @@ Note that with any RC smoothing, the normal spikes from D weight or throttle inp
 
 If your PID settings were higher than the current defaults, and the quad feels like it is a bit less responsive than before, try with values for P, D, and D weight more like what you had, and consider trying 20% above your old defaults. 
 
-## Can I enable the new features on F3 boards?
+### Can I enable the new features on F3 boards?
 
 A custom build with some features disabled can be made that will run on F3's with more than 128k of flash.  For instance I can make a build that will run 4k4k on a MOTOLAB F3 at 30% CPU with dual filters, throttle boost, iTerm_relax and filter based rc_smoothing.
 
@@ -96,6 +96,72 @@ set dterm_lowpass2_hz = 140
 ```
 
 The higher the filter numbers - meaning, less filtering - and the better the state of the quad, the better it will fly.
+
+## What about the PIDs - are the defaults OK?
+
+We think the defaults are pretty good for most quads.  Lots of people report that they fly great.
+
+If your focus is racing, and your quad is not carrying a GoPro, and is light and responsive, you might try these settings:
+
+```
+set rc_smoothing_type = FILTER
+
+set setpoint_relax_ratio = 0
+set dterm_setpoint_weight = 120
+
+set iterm_rotation = ON
+
+set iterm_relax = RP
+set iterm_relax_type = SETPOINT
+set iterm_relax_cutoff = 12
+
+set throttle_boost = 2
+set throttle_boost_cutoff = 15
+
+set p_pitch = 32
+set i_pitch = 65
+set d_pitch = 23
+set p_roll = 30
+set i_roll = 60
+set d_roll = 21
+set p_yaw = 65
+set i_yaw = 60
+set d_yaw = 20
+
+set tpa_rate = 20
+set tpa_breakpoint = 1100
+```
+
+If your focus is freestyle, and the quad is a little heavier, perhaps something like this:
+
+```
+set rc_smoothing_type = FILTER
+
+set setpoint_relax_ratio = 50
+set dterm_setpoint_weight = 80
+
+set iterm_rotation = ON
+
+set iterm_relax = RP
+set iterm_relax_type = GYRO
+set iterm_relax_cutoff = 10
+
+set throttle_boost = 8
+set throttle_boost_cutoff = 15
+
+set p_pitch = 58
+set i_pitch = 65
+set d_pitch = 35
+set p_roll = 50
+set i_roll = 60
+set d_roll = 30
+set p_yaw = 65
+set i_yaw = 60
+set d_yaw = 20
+
+set tpa_rate = 30
+set tpa_breakpoint = 1100
+```
 
 ## Should I keep the dynamic notch filter on always?
 
