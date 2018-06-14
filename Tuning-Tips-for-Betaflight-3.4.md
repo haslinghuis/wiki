@@ -163,17 +163,30 @@ set tpa_rate = 30
 set tpa_breakpoint = 1100
 ```
 
-## Should I keep the dynamic notch filter on always?
+### My quad doesn't feel as responsive as it used to!
+
+If you've enabled rc_smoothing and it is set to interpolation, try ```set rc_smoothing_type = FILTER```.  
+
+Consider increasing P, I and D by around 20% over previous values.
+
+If the quad didn't need much filtering, try the 'clean quad' filter settings, above.
+
+If all else fails, revert to your old code - you may find, by now, that it doesn't feel quite as good as you remember it!
+
+### Should I keep the dynamic notch filter on always?
 
 Probably.  It does add delay, but really helps if a prop gets bent.  For super clean setups where performance is everything, try with it off.  Make a very heavily D filtered profile to limp home if needed, otherwise motors can overheat a lot.
 
-## Do I need the fixed notch filters anymore?
+### Do I need the fixed notch filters anymore?
 
 Short answer:  No.  They cause a lot of delay, and dual PT1 filters usually are enough.
 
-Long answer: Fixed notch filters may be useful if a log spectrum shows a clear noise peak despite the dynamic notch.  Typically a problematic peak will appear at prop resonant frequency on flexible frames.  The only way to know for sure is to get a blackbox log and use PID-Analyzer or Blackbox Explorer to perform spectral analysis.  Prop resonant frequency can be determined using an audio spectrum analyser and 'plucking' the propeller, sometimes just setting a D notch at that frequency can be useful.  
+Long answer: Fixed notch filters may be useful if a log spectrum shows a clear noise peak despite the dynamic notch.  Typically a problematic peak will appear at prop resonant frequency on flexible frames.  The only way to know for sure is to get a blackbox log and use PID-Analyzer or Blackbox Explorer to perform spectral analysis.  Prop resonant frequency can be determined using an audio spectrum analyser and 'plucking' the propeller, sometimes just setting a D notch at that frequency can be useful. 
 
-## Filter based RC smoothing 
+
+## Information about some of the new features: 
+
+### Filter based RC smoothing 
 
 3.4 brings, thanks to eTracer, RC smoothing, with less delay and less jitter than interpolation methods.  Furthermore it is capable of adjusting the filter setpoint automatically to suite the RC command intervals.  
 
@@ -189,7 +202,7 @@ If you run very high levels of D weight, a somewhat lower derivative smoothing f
 
 Some people have voiced concern that low-pass filtering RC inputs will cause delay.  While that is true, without any filtering the motors trace gets filled with spikes that appear at each RC input step.  The current filter based smoothing code just takes the sharp point off these spikes, and doesn't delay the bulk of the step, or the majority of the D weight effect at all - the step up in the motors trace is still there at exactly the same time, just a bit smoother and rounder.
 
-## iTerm Relax
+### iTerm Relax
 
 The new iTerm_relax functionality by JoeLucid cuts, or reduces, I accumulation during fast stick inputs.  It can be enabled to work on pitch and roll alone, or pitch, roll and yaw.
 
@@ -205,7 +218,7 @@ In both case the filter time constant can be adjusted to fine-tune the response.
 
 This feature is really useful and is capable, in a quad where P and D are well tuned, of totally eliminating bounce-back due to I.
 
-## Throttle Boost
+### Throttle Boost
 
 This feature, also by JoeLucid, improves responsiveness to fast throttle inputs.  The code uses high-pass filtering on the RC throttle signal to create additional 'kicks' in throttle.  It is basically a feed forward factor on throttle.  The faster the throttle stick is moved, the greater the boost effect.  The result is a quicker, more responsive feel to fast throttle inputs - both on increasing throttle, and cutting throttle.  It is particularly useful for quads that are weaker in terms of throttle responsiveness, or for making 3S feel like 4S, or 4S feel like 5S.
 
@@ -221,11 +234,11 @@ With the default throttle_boost_cutoff of 15, throttle_boost = 5 is enough to ov
 
 Leaving the default value at 15 is probably a good idea. Better, if a sensitivity adjustment is needed, to change the throttle_boost value.
 
-## iTerm Rotation
+### iTerm Rotation
 
 This is also by JoeLucid and is activated by default and much appreciated by LOS acro pilots, particularly when yawing continuously during rolls and when performing funnels and other tricks.  The code rotates the current iTerm vector properly as the quad rotates on other axes.  For FPV the effect is fairly subtle but can result in somewhat more predictable responses during abrupt stick inputs and while performing tricks.  There are no settings to adjust, just on or off.
 
-## Smart Feed Forward
+### Smart Feed Forward
 
 This experimental code, again by JoeLucid, modifies how D weight works.  It is not enabled by default  
 
@@ -235,7 +248,7 @@ In the classical betaflight PID system, D setpoint weight assists P in initiatin
 
 Smart Feed forward changes the D setpoint weight behaviour, such that it replaces P entirely, but only when it is greater than P (and in the same direction).  For it to work, the D setpoint value must be set significantly higher than usual - up to 2.0 or more.  Then, a large part of the initial part of a turn is driven very hard by D weight, and P doesn't need to do so much.  In some settings, this can reduce overshoot a bit.   
 
-## Absolute Control
+### Absolute Control
 
 This is experimental code by JoeLucid as well.  It's purpose is to address the same attitude issues as iterm_rotation but without some of its downsides.
 
@@ -248,13 +261,3 @@ Absolute control will likely eventually replace iterm_rotation, but is not yet e
 To enable: ```set abs_control_gain = 10```.  Smaller quads are ok with 5.  
 
 AbsoluteControl needs to be used with iTermRelax to avoid bounce-backs due to the latency between stick movement and quad response. iTermRelax will then suspend AbsoluteControl error accumulation as well during quick moves. Finally AbsoluteControl only kicks in once the throttle minimum for airmode activation is exceeded to avoid undue corrections on the ground. 
-
-## My quad doesn't feel as responsive as it used to!
-
-If you've enabled rc_smoothing and it is set to interpolation, try ```set rc_smoothing_type = FILTER```.  
-
-Consider increasing P, I and D by around 20% over previous values.
-
-If the quad didn't need much filtering, try the 'clean quad' filter settings, above.
-
-If all else fails, revert to your old code - you may find, by now, that it doesn't feel quite as good as you remember it!
