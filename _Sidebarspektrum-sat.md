@@ -52,7 +52,7 @@
  - [Runaway Takeoff Prevention](/betaflight/betaflight/wiki/Runaway-Takeoff-Prevention)
  - [Yaw Spin Recovery & Gyro Overflow Detect](/betaflight/betaflight/wiki/Yaw-Spin-Recovery-and-Gyro-Overflow-Detect)
  - [Tuning Tips for Betaflight 3.4](/betaflight/betaflight/wiki/Tuning-Tips-for-Betaflight-3.4)
- - [OSD Logo Replacement](https://bflogo.ekezet.com/static/help.html?v=7b567c225fc2899cba5d0fcf8effd585)
+ - [OSD Logo Replacement](https://bflogo.ekezet.com/static/help.html)
  
 # Troubleshooting
 
