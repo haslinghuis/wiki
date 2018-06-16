@@ -9,7 +9,7 @@ Note that 3.4 contains major changes to filtering and several new features that 
 If motor temps are OK, and handling generally alright, I'd recommend pasting into the CLI:
 
 ```
-set iterm_relax = RPY
+set iterm_relax = RP
 ```
 
 This will enable the term_relax code, which markedly reduces I bounce-back after flips or rolls, and allows higher levels of I than before.  Typically I can be increased by 50% or more to improve directional stability while flying in turbulent air or when approaching gates at high speed.
