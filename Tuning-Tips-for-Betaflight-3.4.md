@@ -128,8 +128,8 @@ set p_yaw = 65
 set i_yaw = 60
 set d_yaw = 20
 
-set tpa_rate = 20
-set tpa_breakpoint = 1100
+set tpa_rate = 15
+set tpa_breakpoint = 1050
 ```
 
 If your focus is freestyle, and the quad is a little heavier, perhaps something like this:
@@ -159,8 +159,8 @@ set p_yaw = 65
 set i_yaw = 60
 set d_yaw = 20
 
-set tpa_rate = 30
-set tpa_breakpoint = 1100
+set tpa_rate = 20
+set tpa_breakpoint = 1050
 ```
 
 ### My quad doesn't feel as responsive as it used to!
