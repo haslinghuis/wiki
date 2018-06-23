@@ -53,6 +53,7 @@
  - [Yaw Spin Recovery & Gyro Overflow Detect](/betaflight/betaflight/wiki/Yaw-Spin-Recovery-and-Gyro-Overflow-Detect)
  - [Tuning Tips for Betaflight 3.4](/betaflight/betaflight/wiki/Tuning-Tips-for-Betaflight-3.4)
  - [OSD Logo Replacement](https://bflogo.ekezet.com/static/help.html)
+ - [HID Joystick Support](HID-Joystick-Support)
  
 # Troubleshooting
 
