@@ -29,6 +29,6 @@ Figure: How different resource command variation works
 
 ## Wiki pages with examples of using the Resource Commands:   
 [Remapping Motor outputs](https://github.com/betaflight/betaflight/wiki/Remapping-Motors-with-Resource-Command-(3.1))  
-[Using SERVO_TILT](https://github.com/betaflight/betaflight/wiki/SERVO_TILT-for-3.1)   
+[Using Servos & SERVO_TILT](https://github.com/betaflight/betaflight/wiki/Servos-&-SERVO_TILT-for-3.1)   
 [Using CHANNEL_FORWARDING](https://github.com/betaflight/betaflight/wiki/CHANNEL_FORWARDING-for-3.1)  
 [Setup on a Fixed Wing Aircraft](https://github.com/betaflight/betaflight/wiki/Setup-for-a-Fixed-Wing-Aircraft)  
