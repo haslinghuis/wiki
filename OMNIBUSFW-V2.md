@@ -1,5 +1,5 @@
 # OMNIBUS Fireworks v2
-![twst](https://imgur.com/DMmMzoI)
+
 [Flight Controller](https://imgur.com/BpeSasH)
 
 ## Description
@@ -67,7 +67,7 @@ Some devices (e.g. receivers connected to SBUS/IBUS port or devices connected to
 ###Setup Guide:
 
 
-[Pinout Top](https://imgur.com/a/6Tdb4jW)
+[Pinout Top](https://imgur.com/6Tdb4jW)
 
 
 [Pinout Bottom](https://imgur.com/DMmMzoI)
