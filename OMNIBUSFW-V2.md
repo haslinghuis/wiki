@@ -1,6 +1,6 @@
 # OMNIBUS Fireworks v2
 
-[Flight Controller](https://imgur.com/BpeSasH)
+[Flight Controller](https://image.ibb.co/gxmWGd/fireworksv2_1.jpg)
 
 ## Description
 
@@ -64,13 +64,13 @@ Some devices (e.g. receivers connected to SBUS/IBUS port or devices connected to
 
 ### Enable Camera Control:
 
-###Setup Guide:
+### Setup Guide:
 
 
-![Pinout Top](https://ibb.co/eOPCNJ)
+![Pinout Top](https://image.ibb.co/j9uq9y/Fire_Works_Pinout2_51557_1528920698.jpg)
 
 
-![Pinout Bottom](https://ibb.co/hmXhNJ)
+![Pinout Bottom](https://image.ibb.co/jTZwhJ/Fire_Works_Pinout1_70404_1528920698.jpg)
 
 Dimensions:
 FC: X(L) x X(W) x X(H)
