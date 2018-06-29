@@ -67,10 +67,10 @@ Some devices (e.g. receivers connected to SBUS/IBUS port or devices connected to
 ###Setup Guide:
 
 
-[Pinout Top](https://imgur.com/6Tdb4jW)
+![Pinout Top](https://ibb.co/eOPCNJ)
 
 
-[Pinout Bottom](https://imgur.com/DMmMzoI)
+![Pinout Bottom](https://ibb.co/hmXhNJ)
 
 Dimensions:
 FC: X(L) x X(W) x X(H)
