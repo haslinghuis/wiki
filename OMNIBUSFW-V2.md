@@ -1,6 +1,6 @@
 # OMNIBUS Fireworks v2
 
-![Flight Controller](https://imgur.com/BpeSasH)
+[Flight Controller](https://imgur.com/BpeSasH)
 
 ## Description
 
@@ -67,10 +67,10 @@ Some devices (e.g. receivers connected to SBUS/IBUS port or devices connected to
 ###Setup Guide:
 
 
-![Pinout Top](https://imgur.com/a/6Tdb4jW)
+[Pinout Top](https://imgur.com/a/6Tdb4jW)
 
 
-![Pinout Bottom](https://imgur.com/DMmMzoI)
+[Pinout Bottom](https://imgur.com/DMmMzoI)
 
 Dimensions:
 FC: X(L) x X(W) x X(H)
