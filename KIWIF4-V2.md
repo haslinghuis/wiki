@@ -1,6 +1,6 @@
 # KIWI F4 V2
 
-![Flight Controller](http://flyinglemon.eu/ext_images/KIWIV2_TOP2_S.jpg)
+![Flight Controller](http://i.imgur.com/1XKRUdq.jpg)
 
 ## Description
 
