@@ -54,16 +54,16 @@ Omnibus Fireworks supports 3-6s LIPO direct input, build in hall Current Sensor 
 ### Troubles Entering Bootloader Mode (DFU):
 Some devices (e.g. receivers connected to SBUS/IBUS port or devices connected to one of the UARTS) can inhibit the FC from entering USB bootloader mode. In this case the FC will not be detected by Windows/MacOS. Windows detects the FC as "Unknown Device", MacOS reports "enumeration errors". If you see some of these errors unplug all devices from the FC and flash the FC standalone.
 
-### Voltage and Current Scaling:  
+## Voltage and Current Scaling:  
 
 ** From Betaflight 3.3 **
 
-# Voltage:
+#### Voltage:
 * Scale:      110
 * Divider:     10
 * Multiplier:   1
 
-# Current:
+#### Current:
 * Scale:   176
 * Offset: -18500
 
