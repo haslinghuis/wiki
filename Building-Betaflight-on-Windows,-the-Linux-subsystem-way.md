@@ -13,7 +13,7 @@ _Note for absolute newbs regarding Ubuntu_ (maybe applies to others, but IDK), w
 It should look like this:
 ![Imgur](https://i.imgur.com/uj0QPQY.jpg)
 
-If you don't see this screen, open a command prompt and enter  `bash`
+If you don't see this screen, open a Windows command prompt and enter  `bash`
 
 # Configuring the Linux subsystem
 
