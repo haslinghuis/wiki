@@ -8,7 +8,7 @@ You will need to restart your PC at least once, so be mentally prepared for that
 
 First, install the Linux subsystem from this great guide (from which I stole the first sentence): [https://msdn.microsoft.com/en-us/commandline/wsl/install-win10](https://msdn.microsoft.com/en-us/commandline/wsl/install-win10)
 
-_Note for absolute newbs regarding Ubuntu_ (maybe applies to others, but IDK), when prompted to enter a new UNIX user, be sure to use only lower case. The user name is compared to a regular expression that only allows lower case, but not upper.
+_Note for absolute newbs regarding **Ubuntu**_ (maybe applies to others, but IDK), when prompted to enter a new UNIX user, be sure to use only lower case. The user name is compared to a regular expression that only allows lower case, but not upper.
 
 It should look like this:
 ![Imgur](https://i.imgur.com/uj0QPQY.jpg)
@@ -54,6 +54,8 @@ If it doesn't match, you are in the wrong folder. Use the Windows file manager t
 If you are missing a few folders, don't worry, we are going to solve that right now.
 
 First, enter `sudo apt install build-essential`. This is the package that will actually build Betaflight. Then, enter `make arm_sdk_install`.
+
+UPDATE/NOTE: Using **Ubuntu**, I had to run `sudo apt-get update` which installed a few updates, _prior to_ running `sudo apt install build-essential`.  After, the command will complete, whereas before, when I tried w/o running the update, the output was a long list of 404 errors.
 
 Once that is done, your system is ready to spit out those sweet hex files.
 
