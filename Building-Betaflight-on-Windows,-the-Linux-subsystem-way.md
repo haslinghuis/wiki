@@ -41,7 +41,7 @@ To install git, enter:
 
 Once that's done, navigate to the folder you want to have the repository cloned to. Use `cd [folder name]` to enter a folder, `cd ..` to go up a folder and `ls` to see the current folder's contents. Use `mkdir [foldername]` to create a new folder.
 
-Once that's done, enter `git clone https://www.github.com/betaflight/betaflight [foldername]` This will create a new folder within the folder you are in with the name you specified and clone (=download) the Betaflight repo into it.
+Once that's done, enter `git clone https://www.github.com/betaflight/betaflight [foldername]` (be sure to have your GitHub login info ready). This will create a new folder within the folder you are in with the name you specified and clone (=download) the Betaflight repo into it.
 
 # Building Betaflight
 
