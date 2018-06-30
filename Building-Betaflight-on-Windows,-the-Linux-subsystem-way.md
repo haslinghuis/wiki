@@ -14,7 +14,7 @@ It should look like this:
 ![Imgur](https://i.imgur.com/uj0QPQY.jpg)
 
 If you don't see this screen, open a Windows command prompt and enter  `bash`.
-Note the Ubuntu app installer can pin shortcuts to the Start Menu, or the Task Bar. I tried opening these and I did not get the above screenshot; it was missing the path (/mnt/c/Users/username$), and only showed my username@desktop. Running 'bash' from Windows CMD included the expected path. 
+Note the Ubuntu app installer can pin shortcuts to the Start Menu, or the Task Bar. I tried opening these and I did not get the above screenshot; it was missing the path (/mnt/c/Users/username$), and only showed my username@desktop. Running `bash` from Windows CMD included the expected path. 
 
 # Configuring the Linux subsystem
 
