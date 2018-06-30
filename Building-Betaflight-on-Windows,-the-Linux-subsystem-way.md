@@ -55,7 +55,7 @@ If you are missing a few folders, don't worry, we are going to solve that right 
 
 First, enter `sudo apt install build-essential`. This is the package that will actually build Betaflight. Then, enter `make arm_sdk_install`.
 
-UPDATE/NOTE: Using **Ubuntu**, I had to run `sudo apt-get update` which installed a few updates, _prior to_ running `sudo apt install build-essential`.  After, the command will complete, whereas before, when I tried w/o running the update, the output was a long list of 404 errors.
+**UPDATE/NOTE:** Using **Ubuntu**, I had to run `sudo apt-get update` which installed a few updates, _prior to_ running `sudo apt install build-essential`. Without the updates, `sudo apt install build-essential` only produced 404 errors.
 
 Once that is done, your system is ready to spit out those sweet hex files.
 
