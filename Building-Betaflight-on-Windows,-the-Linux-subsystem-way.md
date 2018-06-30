@@ -8,7 +8,7 @@ You will need to restart your PC at least once, so be mentally prepared for that
 
 First, install the Linux subsystem from this great guide (from which I stole the first sentence): [https://msdn.microsoft.com/en-us/commandline/wsl/install-win10](https://msdn.microsoft.com/en-us/commandline/wsl/install-win10)
 
-_Note for absolute newbs regarding Ubuntu_ (maybe applies to others, but IDK), when prompted to enter a new UNIX user, be sure to use only lower case. The user name is compared to a regular expression that only allows lower case, and will fail otherwise. 
+_Note for absolute newbs regarding Ubuntu_ (maybe applies to others, but IDK), when prompted to enter a new UNIX user, be sure to use only lower case. The user name is compared to a regular expression that only allows lower case and not upper.
 
 It should look like this:
 ![Imgur](https://i.imgur.com/uj0QPQY.jpg)
