@@ -1,4 +1,5 @@
-## Notes about some new 3.4 features and defaults <last updated 2 July 2018>
+## Notes about some new 3.4 features and defaults
+  <last updated 2 July 2018>
 
 ### I just want to fly, not read all this stuff...
 
