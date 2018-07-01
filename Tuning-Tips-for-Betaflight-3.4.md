@@ -1,4 +1,4 @@
-## Notes about some new 3.4 features and defaults
+## Notes about some new 3.4 features and defaults <last updated 2 July 2018>
 
 ### I just want to fly, not read all this stuff...
 
@@ -6,25 +6,34 @@ No problem, flash the code, and do a brief test fly with the stock defaults.  **
 
 Note that 3.4 contains major changes to filtering and several new features that dramatically improve potential flight performance.  Do not expect it to fly the same as earlier versions!
 
-If motor temps are OK, and handling generally alright, I'd recommend pasting into the CLI:
+If motor temps are OK, and handling generally alright, there are several changes that may further improve flight behaviour.
+
+If motors are warmer than you'd like, check the section on filters below.  Otherwise, the defaults are probably OK for your quad.  
+
+For optimal flight performance I'd recommend pasting into the CLI:
 
 ```
 set iterm_relax = RP
 ```
 
-This will enable the term_relax code, which markedly reduces I bounce-back after flips or rolls, and allows higher levels of I than before.  Typically I can be increased by 50% or more to improve directional stability while flying in turbulent air or when approaching gates at high speed.
+This will enable the term_relax code on pitch and roll.  It markedly reduces I bounce-back after flips or rolls, and allows higher levels of I than before.  Typically I can be increased by 50% or more, which improves directional stability while flying in turbulent air or when approaching gates at high speed.
 
 ```
 set rc_smoothing_type = FILTER
+set rc_interp = AUTO
+set rc_interp_ch = RPYT
+
 ```
 
-This activates **low-pass filter based RC input smoothing**, which removes spikes and sharp edges that otherwise arise during rapid stick inputs.  It should keep the motors sounding smooth and running cool during frequent rapid stick inputs, without delaying responsiveness as much as the older interpolation method (which is still available as an alternative).  
+This activates **low-pass filter based RC input smoothing** on all inputs, removing spikes and sharp edges that otherwise arise during rapid stick inputs.  It should keep the motors sounding smooth and running cool during frequent rapid stick inputs, without delaying responsiveness as much as the older interpolation method (which is still available as an alternative). 
 
-Note that with any RC smoothing, the normal spikes from D weight or throttle inputs will be trimmed smooth.  While this improves efficiency, motor temperature, and smoothness of motor control signals, losing those spikes reduces the effectiveness of D weight, P, and throttle, during very rapid stick inputs.  **After enabling RC smoothing, if you notice a small reduction in response to rapid stick inputs, consider increasing D weight and P by up to about 20%**. 
+If you enable item_relax, throttle_boost, or use D setpoint weight above zero, you definitely should activate RC smoothing on the relevant axes, as above.
+
+Note that with RC smoothing, the sharp spikes from D weight or throttle inputs will be smoothed out.  While this improves efficiency, motor temperature, and smoothness of motor control signals, losing those spikes reduces the effectiveness of D weight, P, and throttle boost, during very rapid stick inputs, a tiny bit.  **After enabling RC smoothing, if you notice a small reduction in response to rapid stick inputs, consider increasing D weight, throttle boost and, perhaps, P by up to about 20%**.  Usually this is not required.
 
 ### The defaults are OK but I want to make some changes.  What do I need to know?
 
-**The new default D weight value is 0.6**.  This is approximately equal to 0.8 in pre-3.4 versions.  More D weight means greater immediacy of stick responses, particularly to quick stick movements.  If the default of 0.6 doesn't feel responsive enough at the same rates as before, try a higher value.  1.0 is sufficient to overcome the normal damping behaviour that D itself would otherwise slow down responses to your stick inputs - the quad shifts from measurement to error mode of D calculation.  Values above 1.0 provide an additional 'feed forward' effect.  Higher D weight can feel excessively twitchy, but can allow reduction in P while retaining the same overall responsiveness. 
+**The new default D weight value is 0.6**.  This is approximately equal to 0.8 in pre-3.4 versions.  More D weight means greater immediacy of stick responses, particularly to quick stick movements.  If the default of 0.6 doesn't feel responsive enough at the same rates as before, try a higher value.  1.0 is sufficient to overcome the normal damping behaviour that D itself would otherwise slow down responses to your stick inputs - the quad shifts from the measurement mode of D calculation to to error mode.  Values above 1.0 provide an additional 'feed forward' effect.  Higher D weight can feel excessively twitchy, but can allow reduction in P while retaining the same overall responsiveness. 
 
 **The new default D Setpoint Transition value is zero**.  If you previously flew with 1.0 or 0.5, to get a smooth centre feel for freestyle, and it now feels too twitchy around centre sticks, use your old setting.  The default of 0 provides equal stick responsiveness regardless of stick position, and is recommended for racing.  0.5 is great fore freestyle.  Values under 0.1 are not recommended.
 
