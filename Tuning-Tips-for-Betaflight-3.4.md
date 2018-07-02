@@ -11,7 +11,7 @@ If motor temps are OK, and handling generally alright, there are several changes
 
 If motors are warmer than you'd like, check the section on filters below.  Otherwise, the defaults are probably OK for your quad.  
 
-For optimal flight performance I'd recommend enabling iterm_relax by pasting into the CLI:
+For optimal flight performance I'd recommend **enabling iterm_relax** by pasting into the CLI:
 
 ```
 set iterm_relax = RP
@@ -19,7 +19,7 @@ set iterm_relax = RP
 
 This will enable the term_relax code on pitch and roll.  It markedly reduces I bounce-back after flips or rolls, and allows higher levels of I than before.  Typically I can be increased by 50% or more, which improves directional stability while flying in turbulent air or when approaching gates at high speed.
 
-I'd also recommend using the new filter based rc_smoothing on all axes:
+I'd also recommend using the **new filter based rc_smoothing on all axes**:
 
 ```
 set rc_smoothing_type = FILTER
