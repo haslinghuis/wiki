@@ -1,8 +1,6 @@
 # NAME
 MATEKSYS F405-OSD
 
-![Matek F405-OSD](http://www.mateksys.com/downloads/FC/MATEKF405-OSD.JPG)
-
 
 ## Description
 F405+ICM20602, w/ Betaflight OSD & SD Card Slot 
