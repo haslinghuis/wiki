@@ -6,7 +6,7 @@
 
 The Omnibus Fireworks flight controller uses the ICM20608
 over SPI mounted inside of an onboard damping box.
-Also on-board is a barometer and AB7456 OSD chip for the BetaFlight integrated OSD.
+Also on-board is a barometer, an AB7456 OSD chip for the BetaFlight integrated OSD, and 16 megabytes of data-flash (blackbox).
 
 Omnibus Fireworks supports 3-6s LIPO direct input, contains a built-in hall effect Current Sensor, and provides on board power filtering.
 
