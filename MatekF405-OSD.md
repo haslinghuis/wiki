@@ -39,6 +39,7 @@ F405+ICM20602, w/ Betaflight OSD & SD Card Slot
 
 ## Manufacturers and Distributors
 * Matek Systems
+  * [F405-STD (NEW)](http://www.mateksys.com/?portfolio=f405-std)
   * [F405-OSD](http://www.mateksys.com/?portfolio=f405-osd)
   * [F405-AIO](http://www.mateksys.com/?portfolio=f405-aio)
 * BANGGOOD
