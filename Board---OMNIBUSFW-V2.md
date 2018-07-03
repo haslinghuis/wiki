@@ -48,7 +48,7 @@ Omnibus Fireworks supports 3-6s LIPO direct input, contains a built-in hall effe
 ### Fireworks V1
 
     Changes since V1:
-    * Footprints for (approx 8.9mm(L) x 4.2mm(W)) ESC output capacitors. Airbot does not provide the exact footprint
+    * Footprints for (approx 8.9mm(L) x 4.2mm(W)) ESC output capacitors. Airbot recommends a TMJE106K050RCQXC.
     * Solder pads for SmartAudio (UART2/GPIO PA2) and Camera Control (GPIO PB9) 
     * IMU reoriented
     * Ribbon cable fully contained within IMU cage
@@ -78,10 +78,15 @@ Some devices (e.g. receivers connected to SBUS/IBUS port or devices connected to
 
 ## Other Resources
 
-### Enable Camera Control:
+### Note on Capacitors
+Airbot recommends the usage of TMJE106K050RCQXC capacitors. Images from prior models show 107C (100uF size-C) capacitors being placed on these pads:
+![Omnibus Fireworks Public Test Version](https://image.ibb.co/iSd2wd/OFW_PTV.png)
+
+Don't let their website or the countless videos and forum posts fool you, the capacitors really are missing. This is directly related to the [growing MLCC shortage](https://www.ttiinc.com/content/ttiinc/en/resources/marketeye/categories/passives/me-zogbi-20180302.html) that has been affecting many industries, specifically PCB manufacturing. Not only has this made ceramic and tantalum capacitors significantly more expensive. 
+
+### Camera Control:
 
 ### Setup Guide:
-
 
 ![Pinout Top](https://image.ibb.co/j9uq9y/Fire_Works_Pinout2_51557_1528920698.jpg)
 
