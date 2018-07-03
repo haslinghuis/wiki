@@ -8,7 +8,7 @@ The Omnibus Fireworks flight controller uses the ICM20608
 over SPI mounted inside of an onboard damping box.
 Also on-board is a barometer and AB7456 OSD chip for the BetaFlight integrated OSD.
 
-Omnibus Fireworks supports 3-6s LIPO direct input, build in hall Current Sensor and Power Filter too.
+Omnibus Fireworks supports 3-6s LIPO direct input, contains a built-in hall effect Current Sensor, and provides on board power filtering.
 
 ## MCU, Sensors and Features
 
@@ -16,7 +16,7 @@ Omnibus Fireworks supports 3-6s LIPO direct input, build in hall Current Sensor 
 
 | Hardware      | Part Number   | Notes|
 |---------------|---------------|------|
-| MCU  | [STM32F405RGT6](http://www.mouser.com/ds/2/389/DM00037051-492832.pdf)  | 4 Hardware UARTS - Shared PPM/UART TBD|
+| MCU  | [STM32F405RGT6](http://www.mouser.com/ds/2/389/DM00037051-492832.pdf)  |  |
 | IMU  | [ICM-20608](https://store.invensense.com/datasheets/invensense/ICM-20608-G-ProductSpec-V1.pdf)        | |
 | OSD  | [AB7456](https://www.unmannedtechshop.co.uk/micro-osd-v2-3-ab7456/)     | Need actual datasheet |
 
@@ -45,9 +45,16 @@ Omnibus Fireworks supports 3-6s LIPO direct input, build in hall Current Sensor 
 
 ## Variants
 
+### Fireworks V1
 
-
-
+    Changes since V1:
+    * Footprints for (approx 8.9mm(L) x 4.2mm(W)) ESC output capacitors. Airbot does not provide the exact footprint
+    * Solder pads for SmartAudio (UART2/GPIO PA2) and Camera Control (GPIO PB9) 
+    * IMU reoriented
+    * Ribbon cable fully contained within IMU cage
+    * 8V@1A (buck) switching regulator and LC filter added for camera and VTX
+    * Smartport uses software serial on GPIO PA9. Airbot claims this increases the quantity of UARTs to 5.
+(More information will need to be provided on Betaflight's support of software serial on PA9)
 
 ## FAQ & Known Issues
 
