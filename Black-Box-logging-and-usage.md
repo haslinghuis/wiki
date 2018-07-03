@@ -10,7 +10,8 @@ and: http://www.readytoflyquads.com/high-rate-f4-data-logger-openlager
 
 ### BlackBox Viewer
 The Latest Viewer and source is here:   
-https://github.com/betaflight/blackbox-log-viewer  
+https://github.com/betaflight/blackbox-log-viewer 
+For 3.4 logs, you can use http://andwho.sytes.net:8080/job/Borisb_Blackbox_Log_Viewer/ until oficial release comes by.
 
 ### Videos and tutorials
 Joshua Bardwell just started a new video series which he calls BlackBox 101:   
