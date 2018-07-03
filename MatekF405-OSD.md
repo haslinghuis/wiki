@@ -43,6 +43,7 @@ F405+ICM20602, w/ Betaflight OSD & SD Card Slot
   * [F405-OSD](http://www.mateksys.com/?portfolio=f405-osd)
   * [F405-AIO](http://www.mateksys.com/?portfolio=f405-aio)
 * BANGGOOD
+  * [F405-STD (NEW)](https://www.banggood.com/Matek-F405-OSD-BetaFlight-STM32F405-Flight-Controller-Built-in-OSD-Inverter-for-RC-Multirotor-FPV-Racing-Drone-p-1141282.html)
   * [F405-OSD](http://www.banggood.com/Matek-F405-OSD-BetaFlight-STM32F405-Flight-Controller-Built-in-OSD-Inverter-for-SBUS-Input-p-1141282.html)
   * [F405-AIO](http://www.banggood.com/Matek-Systems-BetaFlight-F405-AIO-STM32F405-Flight-Controller-Built-in-PDB-5V2A-9V2A-Dual-BEC-p-1165338.html)
 
