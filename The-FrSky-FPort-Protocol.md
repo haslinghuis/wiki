@@ -4,7 +4,7 @@ FPort is a new RC protocol that was developed by FrSky in collaboration with Bet
 
 - only one serial connection is required, RC control information, telemetry (including MSP tunneling), and RSSI are all sent over this connection;
 - the serial connection uses 115200, N81, making it easier to implement on hardware that has limited support for 'exotic' modes;
-- it is uninverted (not possible with the test firmware for existing RX).
+- it is inverted (not possible with the test firmware for existing RX).
 
 A driver for FPort has been added to Betaflight. It is available since Betaflight 3.3.
 
