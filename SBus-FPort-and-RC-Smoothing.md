@@ -47,3 +47,5 @@ If the number of is set channels to a number between 8 and 16, for example, 11, 
 ## Why use filter based RC smoothing over the older interpolation method?
 
 It's faster, has less delay, keeps motor traces smoother, is much less badly affected by looptime jitter, and handles packet loss in the Rx link better.
+
+that's it - enjoy!
