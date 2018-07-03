@@ -95,6 +95,59 @@ I'm impressed of the landing speed in acc mode. It was very windy (about 20kmh)
 https://youtu.be/DpmqeoRGwgA  
 
 ---
+# Betaflight-compatible FC on an EPP Foam Plane
+#### by etheli
+
+I wanted to add a Betaflight-compatible flight controller to a 28" EPP foam plane to get support for OSD, FrSky SBUS receiver, easy VTX frequency configuration, and stabilized flight modes.  It took a bit of research and tweaking to come up with a good Betaflight configuration for airplane use.  The configuration I came up with lays out on the F3 Omnibus board like this:
+
+[![BF_plane_wiring](http://www.etheli.com/FPVFoamCombat/files/Flip32F3Omnibus_plane_wiring_s.png)](http://www.etheli.com/FPVFoamCombat/files/Flip32F3Omnibus_plane_wiring.png)
+
+Using Betaflight v3.3.3, I started with a CUSTOMAIRPLANE model/mix type.  The resources are allocated as follows:
+
+`resource MOTOR 1 B08  # motor PWM1 <- Throttle`  
+`resource SERVO 1 A02  # motor PWM4 <- Elevator`  
+`resource SERVO 2 A03  # motor PWM3 <- Aileron`  
+`resource SERVO 3 B07  # motor PWM7 <- Aileron2`  
+`resource SERVO 4 B06  # motor PWM8 <- Rudder`  
+`resource SERVO 5 B04  # SBUS/PPM <- Camera tilt  [AUX2 (ch6)]`  
+`resource SERVO 6 A08  # ledstrip <- AUX3 (ch7)`  
+
+`# Rule    Servo    Source    Rate    Speed    Min    Max    Box`  
+`smix 0 2 1 100 0 0 100 0   # Servo 1 Elevator <- Stabilized pitch`  
+`smix 1 3 0 100 0 0 100 0   # Servo 2 Aileron <- Stabilized roll`  
+`smix 2 4 0 100 0 0 100 0   # Servo 3 Aileron2 <- Stabilized roll`  
+`smix 3 5 2 100 0 0 100 0   # Servo 4 Rudder <- Stabilized yaw`  
+`smix 4 6 9 100 0 0 100 0   # Servo 5 <- RC AUX2 (ch6)`  
+`smix 5 7 10 100 0 0 100 0  # Servo 6 <- RC AUX3 (ch7)`  
+
+Because of internal-processor-timer constraints the PWM2 output cannot run a servo (only a motor).  Any needed servo reversing should be done in the flight controller (not in the transmitter).  The servo-reversing commands look like this:
+
+`smix reverse 2 1 r   # reverse Servo 1 Elevator`  
+`smix reverse 3 0 r   # reverse Servo 2 Aileron`  
+`smix reverse 4 0 r   # reverse Servo 3 Aileron2`  
+`smix reverse 5 2 r   # reverse Servo 4 Rudder`  
+`smix reverse 6 9 r   # reverse Servo 5 RC AUX2 (ch6)`  
+`smix reverse 7 10 r  # reverse Servo 6 RC AUX3 (ch7)`  
+
+In my setup I needed to reverse the Elevator and Rudder servos.  See [here](http://www.etheli.com/FPVFoamCombat/settings/diff_Flip32F3Omnibus_plane_basic.txt) for a file containing the basic configuration.
+
+The plane flies great in gyro-stabilized (acro) mode.  For tuning I needed to lower most of the values to tame oscillations, and I increased the servo 'rate' values to increase the responsiveness of the controls:
+
+`set p_pitch = 40`  
+`set i_pitch = 40`  
+`set d_pitch = 25`  
+`set p_roll = 25`  
+`set i_roll = 25`  
+`set d_roll = 15`  
+`set p_yaw = 50`  
+`set i_yaw = 30`  
+`set roll_srate = 100`  
+`set pitch_srate = 80`  
+`set yaw_srate = 80`  
+
+For the self-leveling flight mode to work well, the plane should be in a somewhat pitch-up position when the accelerometer is calibrated in Betaflight.  The calibration can also be trimmed up in that direction.  I've posted a full build article for this plane [here](http://www.etheli.com/FPVFoamCombat).
+
+---
 # Betaflight for a **Flying Delta Wing** (using a Betaflight F3)
 #### by DangerFlite
 
