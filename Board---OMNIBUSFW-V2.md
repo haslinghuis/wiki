@@ -85,8 +85,6 @@ Airbot recommends the usage of TMJE106K050RCQXC capacitors, however images from 
 #### [MiddleMan5](https://github.com/MiddleMan5) says:
 Don't let Airbot's website, or the countless videos and forum posts, fool you; the capacitors really are missing. This is directly related to the [growing MLCC shortage](https://www.ttiinc.com/content/ttiinc/en/resources/marketeye/categories/passives/me-zogbi-20180302.html) that has been affecting many industries, specifically PCB manufacturing. Not only has this made ceramic and tantalum capacitors significantly more expensive, but it's made lead time's significantly longer as well. I'm not suggesting Airbot is cheating anyone out of a couple of dollars, but I have first hand experience with this issue; the company I work for has had many major issues with ceramic and tantalum capacitor shortages.
 
-### Camera Control:
-
 ### Setup Guide:
 
 ![Pinout Top](https://image.ibb.co/j9uq9y/Fire_Works_Pinout2_51557_1528920698.jpg)
@@ -95,4 +93,4 @@ Don't let Airbot's website, or the countless videos and forum posts, fool you; t
 ![Pinout Bottom](https://image.ibb.co/jTZwhJ/Fire_Works_Pinout1_70404_1528920698.jpg)
 
 Dimensions:
-FC: X(L) x X(W) x X(H)
+Volume: 41.9mm(L) x 46mm(L) x 10mm(H)
