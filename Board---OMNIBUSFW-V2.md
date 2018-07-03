@@ -79,10 +79,11 @@ Some devices (e.g. receivers connected to SBUS/IBUS port or devices connected to
 ## Other Resources
 
 ### Note on Capacitors
-Airbot recommends the usage of TMJE106K050RCQXC capacitors. Images from prior models show 107C (100uF size-C) capacitors being placed on these pads:
+Airbot recommends the usage of TMJE106K050RCQXC capacitors, however images from prior models show 107C (100uF size-C) capacitors being placed on these pads:
 ![Omnibus Fireworks Public Test Version](https://image.ibb.co/iSd2wd/OFW_PTV.png)
 
-Don't let their website or the countless videos and forum posts fool you, the capacitors really are missing. This is directly related to the [growing MLCC shortage](https://www.ttiinc.com/content/ttiinc/en/resources/marketeye/categories/passives/me-zogbi-20180302.html) that has been affecting many industries, specifically PCB manufacturing. Not only has this made ceramic and tantalum capacitors significantly more expensive. 
+[MiddleMan5](https://github.com/MiddleMan5) says:
+Don't let Airbot's website, or the countless videos and forum posts, fool you; the capacitors really are missing. This is directly related to the [growing MLCC shortage](https://www.ttiinc.com/content/ttiinc/en/resources/marketeye/categories/passives/me-zogbi-20180302.html) that has been affecting many industries, specifically PCB manufacturing. Not only has this made ceramic and tantalum capacitors significantly more expensive, but it's made lead time's significantly longer as well. I'm not suggesting Airbot is cheating anyone out of a couple of dollars, but I have first hand experience with this issue; the company I work for has had many major issues with ceramic and tantalum capacitor shortages.
 
 ### Camera Control:
 
