@@ -4,7 +4,7 @@ SBus and FPort, in FrSky X mode (called 'D16 mode' by OpenTX), send data packets
 
 If you only need 8 data channels - four control channels (roll, pitch, yaw and throttle) and four aux switches, **be sure to set the number of channels in the Model Setup page to 8** as per the image below:
 
-![How to set an SBus Rx link to 8 channels for 9ms latency](https://user-images.githubusercontent.com/11737748/42189630-8883428e-7e9c-11e8-9cf7-c6db1e8aa5dc.jpg)
+![How to set an SBus Rx link to 8 channels for 9ms latency](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/D16_8_Channels.jpg)
 
 This will ensure each channel of data is sent every 9ms and ensure proper RC smoothing performance.
 
