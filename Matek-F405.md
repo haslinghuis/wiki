@@ -43,8 +43,7 @@ F405+ICM20602, w/ Betaflight OSD & SD Card Slot
 * 1x 16pin bottom mounted FFC Slot for FCHUB-6S, FCHUB-VTX or FCHUB-W connection
 * 36x36mm PCB with 30.5mm mounting holes
 
-w/ 2x 0.5mm*16Pin 5cm Flexible Flat Cable
-w/ 4pcs M3 Anti-vibration Standoffs
+w/ 2x 0.5mm*16Pin 5cm Flexible Flat Cable and 4pcs M3 Anti-vibration Standoffs
 
 ## Manufacturers and Distributors
 * Matek Systems
