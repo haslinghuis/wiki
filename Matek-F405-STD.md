@@ -1,5 +1,5 @@
 # NAME
-MATEKSYS F405-OSD
+MATEKSYS F405-STD
 
 
 ## Description
@@ -9,31 +9,42 @@ F405+ICM20602, w/ Betaflight OSD & SD Card Slot
 ## MCU, Sensors and Features
 
 ### Hardware
-* MCU: STM32F405RGT6
-* IMU: ICM-20602(SPI)
+
+* MCU: 168MHz STM32F405RGT6
+* IMU: 32K ICM20602 gyro/accelerometer (SPI)
+* Baro: BMP280 (I2C)
 * OSD: BetaFlight OSD w/ AT7456E chip
-* Compass & Baro: no
-* VCP: Yes
-* Hardware UARTS: 1, 2, 3, 4, 5
-* Blackbox: Micro SD Card
-* PPM/UART Shared:  UART2-RX
-* Battery Voltage Sensor: Yes 1:10
-* Current Sensor: No (FCHUB-6S option)
-* Integrated Voltage Regulator: No (FCHUB-6S option)
-* Brushed Motor Mosfets: No
-* Buttons: BOOT button
-* 6 PWM / DShot outputs 
+* Blackbox: MicroSD card slot (SD/SDHC)
+* VCP, UART1, UART2, UART3, UART4, UART5
+* Built in inverter for SBUS input (UART2-RX)
+* PPM/UART Shared: UART2-RX
+* SoftSerial on TX2, S5 or S6 optional
+* Camera control on S6 or DAC optional
+* Smartaudio & Tramp VTX protocol supported
+* Battery Voltage Sensor: 1:10
+* Current Sensor: No (FCHUB-6S, FCHUB-VTX, FCHUB-W option)
+* BEC 5V: No (FCHUB-6S, FCHUB-VTX, FCHUB-W option)
+* LDO 3.3V: Max.300mA
+* I2C1 SDA & SCL: Yes
 * WS2812 Led Strip : Yes
 * Beeper : Yes
+* RSSI: Yes
 
 ### Features
-* 32K Gyro ICM-20602
-* Support Gyro sample rate 32K & PID Loop 16K
-* Built in inverter for SBUS input (UART2-RX)
-* 6x DShot outputs without conflict
-* SD Card Slot
-* VCP, UART1, UART2, UART3, UART4 & UART5
-* w/ Anti-vibration Standoffs
+
+* 3x LEDs for FC STATUS (Blue, Red) and 3.3V indicator(Red)
+* 6x PWM / DShot outputs without conflict
+* 2x 2812LED outputs option
+* 5x UARTs
+* 1x Group of 5V/G/S1/S2/S3/S4 pads for 4in1 ESC Signal/GND
+* 4x pairs of corner pads for ESC Signal/GND connections (DSHOT compatible)
+* 1x pair I2C1 pads
+* 1x Side-press button for BOOT(DFU) mode
+* 1x 16pin bottom mounted FFC Slot for FCHUB-6S, FCHUB-VTX or FCHUB-W connection
+* 36x36mm PCB with 30.5mm mounting holes
+
+* w/ 2x 0.5mm*16Pin 5cm Flexible Flat Cable
+* w/ 4pcs M3 Anti-vibration Standoffs
 
 ## Manufacturers and Distributors
 * Matek Systems
