@@ -62,6 +62,13 @@ Matek Systems www.mateksys.com
 ## Maintainers
 * Hardware: Matek Systems
 
+## Tips
+
+* Included rubber anti-vibration standoffs are necessary to avoid vibration issues.
+* 2812LED_Strip share I2C1_SCL pad as default. Either enable LED_Strip, or enable Baro.
+* 2812LED can be resourced to S7 (PB8) if using Baro the same time.
+* Put a piece of sponge on the barometer to reduce the impact of airflow.
+
 ## FAQ & Known Issues
 
 Setup Guide Matek F405-STD: http://www.mateksys.com/?portfolio=f405-std
