@@ -118,7 +118,7 @@
  - [KroozX](https://github.com/betaflight/betaflight/wiki/Board---KroozX)
  - [LUMBAF3](/betaflight/betaflight/wiki/Board---LUMBAF3)
  - [LUX_RACE](/betaflight/betaflight/wiki/Board---LUX_RACE)
- - [Matek F405-OSD](/betaflight/betaflight/wiki/matekf405-OSD)
+ - [Matek F405](/betaflight/betaflight/wiki/matek-f405-std)
  - [MICROSCISKY](/betaflight/betaflight/wiki/Board---MICROSCISKY)
  - [Midelic F3](/betaflight/betaflight/wiki/Board-Midelic-F3)
  - [MLTEMPF4](https://github.com/betaflight/betaflight/wiki/Board-MLTEMPF4)
