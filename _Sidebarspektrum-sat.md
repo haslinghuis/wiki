@@ -50,6 +50,7 @@
  - [FrSky SPI RX](https://github.com/betaflight/betaflight/blob/master/docs/FrSky%20SPI%20RX.md)
  - [FrSky FPort](/betaflight/betaflight/wiki/The-FrSky-FPort-Protocol)
  - [SBus and FPort settings](/betaflight/betaflight/wiki/SBus-FPort-and-RC-Smoothing)
+ - [Spektrum + RC Smoothing Filter](/betaflight/betaflight/wiki/Spektrum-and-RC-Smoothing-Filter)
  - [Runaway Takeoff Prevention](/betaflight/betaflight/wiki/Runaway-Takeoff-Prevention)
  - [Yaw Spin Recovery & Gyro Overflow Detect](/betaflight/betaflight/wiki/Yaw-Spin-Recovery-and-Gyro-Overflow-Detect)
  - [Tuning Tips for Betaflight 3.4](/betaflight/betaflight/wiki/Tuning-Tips-for-Betaflight-3.4)
