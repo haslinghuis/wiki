@@ -38,8 +38,9 @@ F405+ICM20602, w/ Betaflight OSD & SD Card Slot
 ## Manufacturers and Distributors
 * Matek Systems
   * [F405-STD (NEW)](http://www.mateksys.com/?portfolio=f405-std)
-  * [F405-OSD](http://www.mateksys.com/?portfolio=f405-osd)
   * [F405-CTR](http://www.mateksys.com/?portfolio=f405-ctr)
+Discontinued:
+  * [F405-OSD](http://www.mateksys.com/?portfolio=f405-osd)
   * [F405-AIO](http://www.mateksys.com/?portfolio=f405-aio)
 * BANGGOOD
   * [F405-STD (NEW)](https://www.banggood.com/Matek-F405-OSD-BetaFlight-STM32F405-Flight-Controller-Built-in-OSD-Inverter-for-RC-Multirotor-FPV-Racing-Drone-p-1141282.html)
