@@ -515,31 +515,6 @@ About 15 degrees *less* phase delay at 50hz
 
 The improvement in phase delay at 100hz can be thought of as about 1.5ms less absolute delay.   
 
-####  Posted by ctzsnooze
-There are a number of formulas that calculate phase shift vs frequency for various filters, including notches.
-
-For lowpass filters, the delay in ms is intrinsically linked to the cutoff frequency and is more commonly expressed in terms of phase shift.
-
-For our PT1 (one pole) type lowpass filters, phase shift is 45 degrees or 1/8th of the wavelength at cutoff frequency. If we set the cutoff frequency to 125Hz, where the wavelength is 8ms, our delay will be 1ms; if we set a PT1 to 62.5Hz, delay will be 2ms.
-
-For biquads we just double the delay, ie 2ms at 125Hz and 4ms at 62.5Hz.
-
-For notch filters, the delay is more complex, and is especially troublesome if set wide and low. I think that our notch filters cause phase shift of 45 degrees at their -3dB low point and 90 degrees at centre. Because the centre is not always twice the low point, there is no simple numerical 'delay' equivalent. However, if we have the low point of a notch at 125hz and centre at 250, the implied delay for both points is 1ms. But if the centre point is closer to the low point, the delay is no longer a simple time but is frequency dependent. Notch filters carry their phase shift / delay effect lower and deeper than simple low pass filters.
-
-Note that in both cases, the higher the filter frequencies can go, the less delay we get. And that each filter adds its own delay, in series; they add up.
-
-We can very easily accumulate 7-8ms delay from strong filtering (especially on D). That delay is simply massive when compared to gyro update and PID recalculation rates happening more than 50 times faster, ie every 0.125ms at 8k/8k. It's why a machine with lots of filtering has problems with propwash, and in terms of propwash actually won't handle any better than 2k2k. For D to work properly, the phase relationship between P and D must be preserved. When we filter D with a biquad + notch we offset D significantly and wreck those phase relationships.
-
-Softmounting the FC will make it harder for noise to be transmitted via the bolts to the gyro chip, hopefully so that less software filtering is required. For this to work, a mechanical equivalent of whatever electronic filtering you took away is needed, and that's difficult to achieve in a controllable fashion. In any case, if the FC mounting was soft enough to cut high frequencies as effectively as our low pass filters, it will inevitably incur delays of comparable magnitude.
-
-Soft mounting motors if done effectively can result in reduced noise transmission into the frame without significantly negatively impacting the time taken for the motor to generate thrust. In principle this is very appealing. However if too soft the motor can process and wobble in the mounts, causing larger scale low frequency shaking than would otherwise happen. This limits how soft they can be. And the entire bolt needs to be isolated from the frame to be effective.
-
-If most of the noise can pushed upwards into a range well above the frequencies we care about, the filtering we apply can be less intensive, causing less delay.
-
-Super stiff frames, effective motor soft mounts, stiff props, high rpm setups, tight bearings, no shaft travel, perfectly balanced props, exactly equal thrust per blade, and perfect ESCs all play a part in shifting the noise spectrum higher and higher and reducing the amount of noise to be filtered.
-
-For my race quads I've largely given up on getting rid of propwash. I filter heavily so I can fly with beat up props and smashed up motors and light-weight arms that have a bit of flex, that gives me heaps of propwash. But if I wanted a super smooth freestyle quad, or spent more money on new props and motors all the time, I'd set up a stiff quad as above and would get a very different propwash experience.  
-
 #### Post by r.a.v. showing Filter delays:  
 Here's an overview of the delay between 90Hz and 170Hz:  
 biquad: 2.75ms vs 2.5ms at 100Hz  
