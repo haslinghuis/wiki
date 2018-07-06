@@ -62,6 +62,8 @@ Alternatively, you can try `make all` if you have some spare time.
 
 The hex files will be in the `/obj` folder of the betaflight folder
 
+**TIP:** To find your board (and how it should be referenced from the `make` command), see here: [https://github.com/betaflight/betaflight/tree/master/src/main/target](https://github.com/betaflight/betaflight/tree/master/src/main/target)
+
 # Optional items
 
 If you do not like the default Windows console, you can always install for example `xterm`. This will however also require an X-server running in the Windows host environment. Get it here: https://sourceforge.net/projects/xming/
