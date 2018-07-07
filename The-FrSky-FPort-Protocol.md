@@ -22,7 +22,8 @@ Frsky announcement: [here][9]
 | FrSky X4R-SB | Yes (beta) | [here][11] |
 | FrSky XSR | Yes (beta) | [here][2] |
 | FrSky XSR-M | Yes (beta) | [here][12] |
-| FrSky R9M Slim | Not yet | |
+| FrSky R9M Slim | Yes (beta) | [here][13] |
+| FrSky R9M Slim+ | Yes (beta) | [here][14] |
 
 
 # Using FPort
@@ -96,3 +97,5 @@ F4 with 'uninverted SmartPort' hacked receiver:
 [12]: https://www.frsky-rc.com/xsr-m/
 
 [13]: https://www.frsky-rc.com/r9-slim/
+
+[14]: https://www.frsky-rc.com/product/r9-slim-plus/
