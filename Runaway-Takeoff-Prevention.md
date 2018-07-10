@@ -1,12 +1,12 @@
 ## Description
 
-Runaway Takeoff Prevention is a safety feature designed to detect and auto-disarm if an unsafe response is detected by the PID controller on takeoff.  Sometimes referred to as a "Tasmanian Devil", some configuration or hardware issues can cause a violent and dangerous out-of-control spin immediately after arming or as the throttle is raised for takeoff.  Some common causes are:
+Runaway Takeoff Prevention is a safety feature designed to detect and auto-disarm if an unsafe response is detected by the PID controller on the first takeoff after power-up.  Sometimes referred to as a "Tasmanian Devil", some configuration or hardware issues can cause a violent and dangerous out-of-control spin immediately after arming or as the throttle is raised for takeoff.  Some common causes are:
 * Props on incorrectly
 * Motor order wrong
 * Motors spinning the wrong direction
 * Flight controller (gyro) orientation incorrect
 
-This feature is designed to only intervene and auto-disarm during a runaway event on takeoff and should have no impact on normal flight.
+This feature is designed to only intervene and auto-disarm during a runaway event on first takeoff after powering up, and should have no impact on normal flight.  
 
 Please provide feedback or ask questions [in this RCGroups thread](https://www.rcgroups.com/forums/showthread.php?3034038-Runaway-Takeoff-Prevention-%28anti-taz%29-discussion-Betaflight-3-3).
 
@@ -20,13 +20,19 @@ The Runaway Takeoff Prevention feature is enabled by default beginning with Beta
 
 **Takeoff:**
 
-After arming the feature looks for excessive PID responses that indicate the craft is not responding properly and escalating towards an out-of-control runaway event.  If detected the flight controller will automatically disarm.  A beep pattern will indicate that a runaway takeoff event occurred and "RUNAWAY" will be displayed as the arming disabled reason in both the OSD and CLI.
+After the first arm after powering up, the feature looks for excessive PID responses that indicate the craft is not responding properly and escalating towards an out-of-control runaway event.  If detected the flight controller will automatically disarm.  A [beep pattern](https://github.com/betaflight/betaflight/wiki/Arming-Sequence-&-Safety) - one long, one short - will indicate that a runaway takeoff event occurred and "RUNAWAY" will be displayed as the arming disabled reason in both the OSD and CLI.
 
 **Successful Flight:**
 
-Once the craft successfully takes off and is in controlled flight the feature will deactivate for the remainder of the battery.  The detection of successful flight involves looking at throttle level and control stick activity along with the craft responding correctly to the PID controller over a period of time. By deactivating the feature after successful flight is detected we prevent subsequent inadvertent disarming caused by crashes or gate/branch clips.
+Once the craft successfully takes off and is in controlled flight the feature will deactivate for the remainder of the battery.  After that finial successful take-off, the pilot can arm and disarm at any time without re-activating the feature.  
+
+The detection of successful flight involves looking at throttle level and control stick activity along with the craft responding correctly to the PID controller over a period of time. By deactivating the feature after successful flight is detected we prevent subsequent inadvertent disarming caused by crashes or gate/branch clips.
 
 This short video is an example of the feature activating: https://youtu.be/FEczCjAWv_0
+
+**Unsuccessful Flight:**
+
+If triggered, the pilot should disarm immediately.  The feature will remain active until a successful flight clears the problem.  Re-arming without solving the problem will likely re-trigger the protection.  False triggering can, rarely, occur.  It can be minimised by modifying the configuration parameters. 
   
 ## Configuration
 
