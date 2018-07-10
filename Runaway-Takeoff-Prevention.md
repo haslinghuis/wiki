@@ -40,8 +40,6 @@ If triggered, the pilot should disarm immediately.  The feature will remain acti
 
 In general there shouldn't be any need to adjust the configuration parameters.  Default values were chosen based on testing and should give good results.  However as is always the case, additional testing and feedback from the users may identify some further optimization to these settings.  It's anticipated that once the Runaway Takeoff Prevention feature matures that some of the tunable values might be eliminated and replaced with optimized hard-coded values to simplify the configuration.
 
-If you don’t see configuration options in the CLI, check that the accelerometer is not active.  Some custom builds for F3’s have it disabled.
-
 The first group of parameters configure how the feature detects and activates during a runaway takeoff event:
 
 `runaway_takeoff_prevention = ON`
