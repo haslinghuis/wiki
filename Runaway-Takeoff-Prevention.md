@@ -10,9 +10,11 @@ This feature is designed to only intervene and auto-disarm during a runaway even
 
 Please provide feedback or ask questions [in this RCGroups thread](https://www.rcgroups.com/forums/showthread.php?3034038-Runaway-Takeoff-Prevention-%28anti-taz%29-discussion-Betaflight-3-3).
 
+Note that the accelerometer must be enabled for this feature to be active.
+
 ## WARNING
 
-**While this feature is designed to prevent most types of runaway takeoff events, it cannot be guaranteed that all such occurrences will be prevented.  The wide range of hardware and variable circumstances mean that there may be cases where this feature may be unable to provide additional protection.  As always it is the pilot's responsibility to ensure their aircraft is configured properly and safe to fly.**
+**While this feature is designed to prevent most types of runaway takeoff events, it cannot be guaranteed that all such occurrences will be prevented.  The wide range of hardware and variable circumstances mean that there may be cases where this feature may be unable to provide additional protection.  It will not work if the accelerometer is disabled.  As always it is the pilot's responsibility to ensure their aircraft is configured properly and safe to fly.**
 
 ## Operation
 
@@ -37,6 +39,8 @@ If triggered, the pilot should disarm immediately.  The feature will remain acti
 ## Configuration
 
 In general there shouldn't be any need to adjust the configuration parameters.  Default values were chosen based on testing and should give good results.  However as is always the case, additional testing and feedback from the users may identify some further optimization to these settings.  It's anticipated that once the Runaway Takeoff Prevention feature matures that some of the tunable values might be eliminated and replaced with optimized hard-coded values to simplify the configuration.
+
+If you don’t see configuration options in the CLI, check that the accelerometer is not active.  Some custom builds for F3’s have it disabled.
 
 The first group of parameters configure how the feature detects and activates during a runaway takeoff event:
 
