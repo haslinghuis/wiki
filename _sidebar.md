@@ -57,6 +57,7 @@
  - [OSD Logo Replacement](https://bflogo.ekezet.com/static/help.html)
  - [HID Joystick Support](HID-Joystick-Support)
  - [GPS Rescue (external link)](https://diegofpv.com/gps-rescue-mode-for-betaflight-setup-guide/)
+ - [Mass Storage Device (MSC) Support](MSC-Support)
  
 # Troubleshooting
 
