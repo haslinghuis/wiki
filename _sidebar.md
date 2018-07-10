@@ -56,7 +56,7 @@
  - [Tuning Tips for Betaflight 3.4](/betaflight/betaflight/wiki/Tuning-Tips-for-Betaflight-3.4)
  - [OSD Logo Replacement](https://bflogo.ekezet.com/static/help.html)
  - [HID Joystick Support](HID-Joystick-Support)
- - [GPS Rescue (external link)](https://diegofpv.com/gps-rescue-mode-for-betaflight-setup-guide/)
+ - [GPS Rescue mode](GPS-rescue-mode)
  - [Mass Storage Device (MSC) Support](Mass-Storage-Device-(MSC)-Support)
  
 # Troubleshooting
