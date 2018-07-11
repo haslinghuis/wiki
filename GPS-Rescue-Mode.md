@@ -1,3 +1,13 @@
+# **WHAT THIS IS:**
+
+GPS Rescue Mode is intended to bring your quad back autonomously in case of an emergency such as loss of video or radio link. It is not meant to be a reliable Return to Home mode. Keep this in mind, and (other than for initial testing) only activate it to avoid losing your quad. In order to increase the probability of GPS Rescue's successful operation, please read this document and configure your system as best as possible for your particular environment and flying style.
+
+# **REQUIREMENTS**
+
+* GPS is required. The recommended models are Ublox m8n variants. This has been tested with 18x18mm m8n units, the Beitian BN 880 and other similar models. 
+* Barometer is optional but recommended. We have tested with both on-board and external (i2c) units.
+* **This mode does not use or need compass.**
+
 # **DISCLAIMER**: 
 * this is an experimental feature.
 *  Use with extreme caution.
@@ -31,7 +41,7 @@ This is the distance at which your quad will start descending towards home.
 ### At this point you are ready to test Rescue Mode. 
  Wait for your gps to get a good fix. 
  By default your quad will not arm if you have less than gps_rescue_min_sats. 
-You can decrease this value in the CLI or even make it 0 if you just want to fly near yourself.
+You can decrease this value in the CLI or even make it 0 if you just want to fly near yourself. Keep in mind that if you do not hav a GPS fix by the time you arm, your quad will not know where to return if you activate Rescue Mode.
 ## We suggest the following procedure:
 
 Fly in a straight line for at least 100 meters past your descent distance. For example, if your descent distance setting is 150 meters, fly to 250 meters. As you fly, the home arrow should adjust to point towards home.
