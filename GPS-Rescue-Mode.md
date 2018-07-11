@@ -10,8 +10,7 @@ Then configure the following parameters in the cli:
 
 `set gps_rescue_initial_alt=[number] (default is 70)`
 
-
-This is the most important parameter. When Rescue Mode is activated, Your quad will point home and try to climb to this altitude relative to your takeoff point. I personally like to make it 70 or 80 meters.
+This is the most important parameter. When Rescue Mode is activated, your quad will point home and try to climb to a safe altitude relative to your takeoff point. This altitude will either be this parameter or the maximum altitude recorded during flight which ever is highest. I personally like to make it 70 or 80 meters.
 
 `set gps_rescue_ground_speed=[number] (default is 1500)`
 
