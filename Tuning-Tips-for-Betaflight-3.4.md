@@ -42,7 +42,7 @@ Note that with RC smoothing, the sharp spikes from D weight or throttle inputs w
 
 **The new default D weight value is 0.6**.  This is approximately equal to 0.8 in pre-3.4 versions.  More D weight means greater immediacy of stick responses, particularly to quick stick movements.  If the default of 0.6 doesn't feel responsive enough at the same rates as before, try a higher value.  1.0 is sufficient to overcome the normal damping behaviour that D itself would otherwise slow down responses to your stick inputs - the quad shifts from the measurement mode of D calculation to to error mode.  Values above 1.0 provide an additional 'feed forward' effect.  Higher D weight can feel excessively twitchy, but can allow reduction in P while retaining the same overall responsiveness. 
 
-**The new default D Setpoint Transition value is zero**.  If you previously flew with 1.0 or 0.5, to get a smooth centre feel for freestyle, and it now feels too twitchy around centre sticks, use your old setting.  The default of 0 provides equal stick responsiveness regardless of stick position, and is recommended for racing.  0.5 is great fore freestyle.  Values under 0.1 are not recommended.
+**The new default D Setpoint Transition value is zero**.  If you previously flew with 1.0 or 0.5, to get a smooth centre feel for freestyle, and it now feels too twitchy around centre sticks, use your old setting.  The default of 0 provides equal stick responsiveness regardless of stick position, and is recommended for racing.  0.5 is great for freestyle.  Values above zero, but under 0.1, are not recommended, because they may cause glitching when the sticks are smoothly swept across the centre position.
 
 If your PID settings were higher than the current defaults, and the quad feels like it is a bit less responsive than before, try with values for P, D, and D weight more like what you had, and consider trying 20% above your old defaults. 
 
@@ -201,6 +201,17 @@ Short answer:  No.  They cause a lot of delay, and dual PT1 filters usually are 
 
 Long answer: Fixed notch filters may be useful if a log spectrum shows a clear noise peak despite the dynamic notch.  Typically a problematic peak will appear at prop resonant frequency on flexible frames.  The only way to know for sure is to get a blackbox log and use PID-Analyzer or Blackbox Explorer to perform spectral analysis.  Prop resonant frequency can be determined using an audio spectrum analyser and 'plucking' the propeller, sometimes just setting a D notch at that frequency can be useful. 
 
+### Do I need to change Airmode settings?
+
+Nothing has changed.  However quads are getting more powerful.  
+
+If you'd like to ensure that Airmode enables reliably on takeoff, set the start percentage to a value around your hover throttle value, e.g., for a quad that hovers on 20% throttle:
+
+```
+set airmode_start_throttle_percent = 20
+```
+
+If you are a racer and would like to hold angle on a starting block, set the air mode start percentage to a value a bit below hover point; in the above example, 10-15 would start airmode at a throttle value that wouldn't make the quad take off.
 
 ## Information about some of the new features: 
 
