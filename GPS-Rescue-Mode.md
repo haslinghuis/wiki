@@ -72,3 +72,5 @@ We do not expect that most people will have to fine tune the navigation speed ga
 After your quad reliably returns home once, you may want to test it at progressively larger distances and directions. When you have a reasonable level of trust in the feature, you may want to set your failsafe to GPS_RESCUE:
 
 `set failsafe_procedure = GPS-RESCUE`
+
+With this setting, GPS Rescue will activate in the event of a failsafe. However, it will return control to the user as soon as the radio link comes back. During this time the user should either activate Rescue Mode manually on the radio just so that there cannot be an unexpected transition to manual control, or be ready to take over control at any moment. Our recommended approach is the first one, which requires having Rescue Mode on a switch if you want to use it for failsafe as well.
