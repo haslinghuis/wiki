@@ -63,6 +63,10 @@ The STM32 VCP driver can be downloaded here --> http://www.st.com/web/en/catalog
 
 e.g. C:\Program Files (x86)\STMicroelectronics\Software\Virtual comport driver\Win8\ <- will have two files present. One for 64 bit systems (dpinst_amd64.exe) and one for 32 bit systems (dpinst_x86.exe).
 
+### Windows 10
+in many cases, the above might not work. installing  Virtual COM port drivers from SiLabs will solve the issues:
+https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers
+
 ### Platform Specific: Linux
 
 Linux does not know the concept of product specific 'device drivers', so no driver installation is needed. But there are a couple of steps required to make the Betaflight configurator work on linux:
