@@ -9,10 +9,10 @@ GPS Rescue Mode is intended to bring your quad back autonomously in case of an e
 * **This mode does not use or need compass.**
 
 # **DISCLAIMER**: 
-* this is an experimental feature.
+*  This is an experimental feature.
 *  Use with extreme caution.
 *  This documentation WILL change so check this page often. 
-
+*  If you plan on using this as a failsafe method you should ABSOLUTELY enable sanity checks!
 
 ## Go to the Betaflight Modes tab and add a switch for GPS Rescue Mode. Verify that the mode actually gets activated (of course no props).
 
@@ -74,3 +74,13 @@ After your quad reliably returns home once, you may want to test it at progressi
 `set failsafe_procedure = GPS-RESCUE`
 
 With this setting, GPS Rescue will activate in the event of a failsafe. However, it will return control to the user as soon as the radio link comes back. During this time the user should either activate Rescue Mode manually on the radio just so that there cannot be an unexpected transition to manual control, or be ready to take over control at any moment. Our recommended approach is the first one, which requires having Rescue Mode on a switch if you want to use it for failsafe as well.
+
+## **DEALING WITH FAILURES / SANITY CHECKS (VERY IMPORTANT): **
+
+If you're using rescue mode in a supervised fashion (as a switch only with video), or in a place with no danger to surroundings (over water, etc), sanity checks are entirely optional.  If you plan on setting this as a failsafe (and most of the time even if you do not) you should highly consider enabling these.
+
+`set gps_rescue_sanity_checks = RESCUE_SANITY_ON`
+
+You can also set this to RESCUE_SANITY_FS_ONLY if you want it to only matter in a failsafe (unsupervised) condition.  
+
+Sanity checks will ensure that you have a valid GPS fix, that the quad is spending most of its time approaching home, and also it will do its best to disarm if it detects a premature landing (not within the target home landing zone). 
