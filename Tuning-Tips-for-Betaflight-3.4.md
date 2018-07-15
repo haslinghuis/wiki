@@ -180,6 +180,11 @@ set d_yaw = 20
 set tpa_rate = 20
 set tpa_breakpoint = 1050
 ```
+If experimenting with Absolute Control, use these settings:
+
+```set iterm_rotation = OFF```
+```set abs_control_gain = 10``` (for smaller crafts use ```abs_control_gain = 5```)
+*See bottom of page for more info on Absolute Control
 
 ### My quad doesn't feel as responsive as it used to!
 
