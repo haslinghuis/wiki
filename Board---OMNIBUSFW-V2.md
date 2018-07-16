@@ -93,5 +93,5 @@ Don't let Airbot's website, or the countless videos and forum posts, fool you; t
 ![Pinout Bottom](https://image.ibb.co/jTZwhJ/Fire_Works_Pinout1_70404_1528920698.jpg)
 
 ### Dimensions:
-Volume: 41.9mm(L) x 46mm(L) x 10mm(H)
+Volume: 41.9mm(L) x 46mm(W) x 10mm(H)
 (Where width is measured from battery input, across USB port, to board corner)
