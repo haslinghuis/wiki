@@ -5,6 +5,7 @@ GPS Rescue Mode is intended to bring your quad back autonomously in case of an e
 # **REQUIREMENTS**
 
 * GPS is required. The recommended models are Ublox m8n variants. This has been tested with 18x18mm m8n units, the Beitian BN 880 and other similar models. 
+* Accelerometer must be enabled, Rescue Mode needs it to keep the quad leveled.
 * Barometer is optional but recommended. We have tested with both on-board and external (i2c) units.
 * **This mode does not use or need compass.**
 
