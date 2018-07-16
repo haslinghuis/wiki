@@ -71,4 +71,3 @@ This list *should* be kept up to date with the code in `master` (`armingDisableF
 </table>
 (1) This may appear on the Betaflight OSD during flight, take it as a sign that your radio system is either faulty or you are flying at the edge of your range. Treat it the same you would an "RSSI critically low" warning.
 
-(2) Betaflight 3.4 is not released yet.
