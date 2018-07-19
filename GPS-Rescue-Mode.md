@@ -41,8 +41,8 @@ This is the distance at which your quad will start descending towards home.
 
 ### At this point you are ready to test Rescue Mode. 
  Wait for your gps to get a good fix. 
- By default your quad will not arm if you have less than gps_rescue_min_sats. 
-You can decrease this value in the CLI or even make it 0 if you just want to fly near yourself. Keep in mind that if you do not hav a GPS fix by the time you arm, your quad will not know where to return if you activate Rescue Mode.
+ By default your quad will not arm if you have less than `gps_rescue_min_sats`. 
+You can decrease this value in the CLI or even make it 0 if you just want to fly near yourself. Keep in mind that if you do not hav a GPS fix by the time you arm, your quad will not know where to return if you activate Rescue Mode, and it will simply land.
 ## We suggest the following procedure:
 
 Fly in a straight line for at least 100 meters past your descent distance. For example, if your descent distance setting is 150 meters, fly to 250 meters. As you fly, the home arrow should adjust to point towards home.
