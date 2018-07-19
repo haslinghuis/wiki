@@ -1,6 +1,7 @@
 ## What's new
 
 - 2017-02-12 Note on compatibility of SmartAudio V1 devices (Compatibility section)
+- 2018-07-19 Note on operational mode switching
 
 ## Setup
 
@@ -117,7 +118,7 @@ and current power field matches that of power level selection menu entry.
 Changes to `POWER` takes effect immediately, but changes to `BAND` and `CHAN` must be commenced by `SET`.
 
 #### Switching between Freestyle and Race
-There is an `OPMODEL` entry in the `CONFIG` sub-menu. Select either `FREE` or `RACE`. A device must be power cycled for the change to take effect.
+There is an `OPMODEL` entry in the `CONFIG` sub-menu. Select either `FREE` or `RACE`. A device must be power cycled immediately after the selection for the change to take effect.
 
 ### The top menu (Band/Channel mode)
 
