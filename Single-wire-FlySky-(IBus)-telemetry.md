@@ -29,10 +29,6 @@ serial 1 64 115200 57600 0 115200
 serial 2 4096 115200 57600 115200 115200
 ```
 
-Currently there is a problem (https://github.com/betaflight/betaflight/issues/2637) with ibus serial rx on master so I do not expect this PR to work at the moment but I have done a backport to 3.1.6 to test on hardware. There is also extensive unit tests to boost the confidence that this should be in good order once the aforementioned issue is solved.
-
-In the meantime please give me feedback and why not test the backport: https://github.com/unitware/cleanflight/tree/bf-combined-ibus-on-3.1.6 
-
 This is how the signals look:
 ![image](https://cloud.githubusercontent.com/assets/6065378/23835770/5dd5c9f0-076d-11e7-84eb-486759996cd2.png)
 
