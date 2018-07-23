@@ -36,6 +36,8 @@ This allows you to check for differences by either manually compared the two tex
 - New [Docs](https://github.com/martinbudden/betaflight/tree/master/docs) for BetaFlight 2.x. Note: These are NOT fully covering all Versions of BetaFlight, particularly the CLI commands. Always also read the Wiki Release Note pages for changes and then a "get" CLI command to check spelling and valid options.
 
 ## Introduction
+Betaflight is software that is open source and is available free of charge without warranty to all users.
+
 Betaflight is a Cleanflight fork started by BorisB. It used to work as a beta test platform for Cleanflight and kept pushing the envelope in terms of performance, but it eventually evolved into a fully grown up, stable and well maintained firmware by various developers. In fact it looks like it is the number 1 open source multi-rotor firmware according to Google Trends analysis around January 2017.
 
 The name "Beta" comes from the fact it started with a goal to keep trying new things out and have quick and easy test distributions available. The name "Beta" has stuck as the brand name was strong at the moment where it transitioned from beta to stable and there was already a lot of documentation around.
