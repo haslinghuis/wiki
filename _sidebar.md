@@ -58,6 +58,7 @@
  - [HID Joystick Support](HID-Joystick-Support)
  - [GPS Rescue mode](GPS-rescue-mode)
  - [Mass Storage Device (MSC) Support](Mass-Storage-Device-(MSC)-Support)
+ - [Tuning Tips for Betaflight 3.5](/betaflight/betaflight/wiki/3.5-tuning-notes)
  
 # Troubleshooting
 
