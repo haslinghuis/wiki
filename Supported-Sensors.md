@@ -9,7 +9,7 @@ This page is a _un_-complete list of supported sensors by betaflight. To be sure
 * qmc5883l
 
 
-## Gyroscope / Accellerometer
+## Gyroscope / Accelerometer
 * mpu3050
 * mpu6050
 * mpu6500
