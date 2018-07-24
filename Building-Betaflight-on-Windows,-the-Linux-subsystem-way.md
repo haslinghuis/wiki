@@ -23,7 +23,7 @@ You will have to install a few Linux packages.
 
 First, the basics. We need Python and Curl. To install those, enter
 
-`sudo apt install python curl -Y`
+`sudo apt install python curl -y`
 
 You can install multiple packages at once. The -Y option says yes to all questions during installation.
 
