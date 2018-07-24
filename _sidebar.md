@@ -59,7 +59,8 @@
  - [GPS Rescue mode](GPS-rescue-mode)
  - [Mass Storage Device (MSC) Support](Mass-Storage-Device-(MSC)-Support)
  - [Tuning Tips for Betaflight 3.5](/betaflight/betaflight/wiki/3.5-tuning-notes)
- 
+ - [Supported Sensors](/betaflight/betaflight/wiki/Supported-Sensors)
+
 # Troubleshooting
 
  - [Multicopter Spazzing Out?](https://github.com/betaflight/betaflight/wiki/Multirotor-Spazzing-Out%3F)
