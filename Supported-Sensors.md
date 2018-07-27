@@ -31,3 +31,5 @@ This page is a _un_-complete list of supported sensors by betaflight. To be sure
 
 ## Range Finder
 * HCSR04
+* Benewake LIDAR TF02
+* Benewake LIDAR TFmini
