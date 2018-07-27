@@ -14,6 +14,10 @@ I'm combining the ibus ports of the FS-iA6B receiver with a diode and a resistor
 
 R = 10Kohm, Diode 1N4148 or similar.
 
+Note (2018-07-27): In some cases, the value of the series resistor may be too large, and going down to 1K[ohm] may provide a good result.
+
+
+
 ![image](https://cloud.githubusercontent.com/assets/6065378/23835685/0ed7bfc6-076c-11e7-9c27-dcf6b9686847.png)
 
 Both uart tx and rx channels are used so it's not possible to use the spare pin for rx of something else.
