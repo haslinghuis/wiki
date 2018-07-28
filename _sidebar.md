@@ -149,7 +149,7 @@
  - [Rotorgeeks SSD](https://github.com/betaflight/betaflight/wiki/Board---Rotorgeeks-SSD)
  - [SINGULARITY](/betaflight/betaflight/wiki/Board---SINGULARITY)
  - [SIRINFPV](/betaflight/betaflight/wiki/Board---SIRINFPV)
- - [SKYZONEF405](https://github.com/betaflight/betaflight/blob/master/docs/boards/Board%20-%20SKYZONEF405.md)
+ - [SKYZONEF405](https://github.com/betaflight/betaflight/blob/master/docs/boards/Board%20-%20SKYFZONEF405.md)
  - [SOULF4](/betaflight/betaflight/wiki/Board---SOULF4)
  - [SPARKY](/betaflight/betaflight/wiki/Board---SPARKY)
  - [SPARKY2 - Taulabs docs](https://github.com/TauLabs/TauLabs/wiki/Sparky2)
