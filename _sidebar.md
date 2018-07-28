@@ -103,6 +103,7 @@
  - [Elle0 - Paparazzi docs](http://wiki.paparazziuav.org/wiki/Elle0)
  - [EUSTM32F103RC](/betaflight/betaflight/wiki/Board---EUSTM32F103RC)
  - [F4BY](/betaflight/betaflight/wiki/Board---F4BY)
+ - [FF_PIKOBLX](https://github.com/betaflight/betaflight/wiki/Board---FF_PIKOBLX)
  - [FishDroneF4](/betaflight/betaflight/wiki/Board---FishDroneF4)
  - [Flip32 F3 OSD](/betaflight/betaflight/wiki/Board---Flip32-F3-OSD)
  - [Flip32F4](/betaflight/betaflight/wiki/Board---AIRBOTF4FLIP32F4)
