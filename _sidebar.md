@@ -99,6 +99,7 @@
  - [CrazyBeeF3FS](https://github.com/betaflight/betaflight/blob/master/docs/boards/Board%20-%20CrazyBeeF3FS.md)
  - [CRAZYFLIE2](/betaflight/betaflight/wiki/Board---CRAZYFLIE2)
  - [DALRCF405](https://github.com/betaflight/betaflight/blob/master/docs/boards/Board%20-%20DALRCF405.md)
+ - [DALFCF722DUAL](https://github.com/betaflight/betaflight/blob/master/docs/boards/Board%20-%20DALRCF722DUAL.md)
  - [DOGE](/betaflight/betaflight/wiki/Board---DOGE)
  - [Elle0 - Paparazzi docs](http://wiki.paparazziuav.org/wiki/Elle0)
  - [EUSTM32F103RC](/betaflight/betaflight/wiki/Board---EUSTM32F103RC)
