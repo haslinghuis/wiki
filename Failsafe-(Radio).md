@@ -2,7 +2,11 @@
 
 Why should I set my Failsafe:
 ___
-Define Credential: What is a (Radio) failsafe, which occasion it occurs
+Define Credential: 
+___
+What is a (Radio) failsafe, 
+___
+Which occasion it occurs
 ___
 Basic Setups and Knowledge + Different Failsafe behavior:...
 ___
