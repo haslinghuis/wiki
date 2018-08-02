@@ -1,14 +1,14 @@
 (To be edited)
 
-Why should I set my Failsafe:
+Why should I set my Failsafe
 ___
-Define Credential: 
+Define Credentials
 ___
-What is a (Radio) failsafe, 
+What is a (Radio) failsafe 
 ___
 Which occasion it occurs
 ___
-Basic Setups and Knowledge + Different Failsafe behavior:...
+Basic Setups and Knowledge + Different Failsafe behavior
 ___
 Quick and dirty troubleshoot:
 ___
