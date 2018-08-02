@@ -10,5 +10,7 @@ ___
 
 Notes:
 http://www.warms.com.au/news/2016/1/20/radio-failsafe
+
 https://oscarliang.com/setup-failsafe/
+
 http://ardupilot.org/copter/docs/radio-failsafe.html
