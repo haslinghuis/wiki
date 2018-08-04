@@ -87,6 +87,7 @@
  - [ALIENWHOOP](/betaflight/betaflight/wiki/Board---ALIENWHOOP)
  - [ANYFCF7](/betaflight/betaflight/wiki/Board---ANYFCF7)
  - [ASGARD](/betaflight/betaflight/wiki/Board---ASGARD)
+ - [ASGARD32](/betaflight/betaflight/wiki/Board---Asgard32)
  - [BeeRotor F4](/betaflight/betaflight/wiki/Board-BeeRotor-F4)
  - [BETAFLIGHTF3](/betaflight/betaflight/wiki/Board---BETAFLIGHTF3)
  - [BLUEJAYF4](/betaflight/betaflight/wiki/Board---BLUEJAYF4)
