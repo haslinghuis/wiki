@@ -12572,4 +12572,3 @@ set beeper_inversion = ON # default
 
 This is the circuit used for testing.
 <img width="629" alt="document_pdf 1" src="https://user-images.githubusercontent.com/14850998/36553159-f7805d12-183e-11e8-8e22-8cd2740a53b8.png">
-
