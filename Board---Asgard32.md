@@ -14,7 +14,8 @@ This workaround configuration is implemented in official releases.
 2. The buzzer function is overloaded with status LED function, and there is no dedicated pad for buzzers.
 (The BUZ- pad is switched to ground by the status LED signal.)
 If a buzzer is connected the BUZ-, then beeper beeps on events that normal beeper doesn't beep (like attitude on ground).
-Workaround is described below.
+Workaround is described below
+([Adding a (real) beeper function](https://github.com/betaflight/betaflight/wiki/Board---Asgard32#adding-a-real-beeper-function)).
 
 ### Pad/Pin function map for Asgard32 F4
 
