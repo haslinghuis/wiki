@@ -2,8 +2,6 @@
 
 Why should I set my Failsafe
 ___
-Define Credentials
-___
 What is a (Radio) failsafe 
 ___
 Which occasion it occurs
