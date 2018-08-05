@@ -113,3 +113,22 @@ Dshot has an inverted lower section when compared to standard 3D. This means tha
 Idle Percent is used for idle speed in BOTH directions.
 
 TODO: Clean up this whole section and add more thorough Dshot information.
+
+## ESC Tuning:
+
+### BL Heli_S Tuning
+
+**For ALL tests, safety glasses on (props will be on for step 4 onward), quad held in hand or locked in vice and pointed away from everything, Airmode DISABLED, monitor motor temperature. Take notes for each test to compare.**
+
+1. Get all motors spinning in correct directions and 3D mode enabled on FC with default BL Heli_S settings other than direction.
+2. Set idle values to not stall in either direction when touched lightly, this is the same process for 2D setups but needs to be done in BOTH directions for 3D.
+3. Enable brake on stop.
+4. Fit props and safety equipment. Use props intended for flight, or heaviest props intended for flight.
+5. Disable Airmode or any similar function.
+6. Change motor timing and test which has the smoothest direction changing. This can be subtle and it's worth testing all options (Low, Med/Low, Med, Med/High, High) confirm the final selection by going back and forwards between the other options and the selected best.
+7. Change startup power to determine the smoothest direction changing. This can also be subtle, however initial testing has indicated that higher startup power has been the smoothest and quickest to recover from a desync.
+8. Check the idle values again, lift these if direction changing is still problematic.
+9. Tune PID values (if not already complete) and test hover to confirm no motor heating issues.
+10. Test fly and confirm motor direction changes are satisfactory, if not, start at step 4 again, potentially with lighter props.
+
+If a single motor is lagging severely, consider swapping motors around to see if the problem follows the motor (motor issue) or stays on that arm (esc issue) or even swapping the motor bells around or the entire motor for a spare.
