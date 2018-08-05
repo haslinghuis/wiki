@@ -48,9 +48,9 @@ If your PID settings were higher than the current defaults, and the quad feels l
 
 ### Can I enable the new features on F3 boards?
 
-As of 3.4.0 official release, most F3 will have all the below mentioned options available by default, no need for a custom build.
+As of 3.4.0 official release, F3 boards will have most of the options available by default.  Due to flash memory limitations, features like item_relax may not be available on some F3 boards.
 
-A custom build with some features disabled can be made that will run on F3's with more than 128k of flash.  For instance I can make a build that will run 4k4k on a MOTOLAB F3 at 30% CPU with dual filters, throttle boost, iTerm_relax and filter based rc_smoothing.
+A custom build compiled without some Rx protocols or Acro-Trainer will run all the new features on F3's with more than 128k of flash.  As an example, a MOTOLAB F3 can run 4k4k at 30% CPU with dual filters, throttle boost, iTerm_relax and filter based rc_smoothing - and it flies really well.
 
 Binaries of 3.4 with the new features enabled on F3 instead of Acro-Trainer can be found here:
 https://github.com/joelucid/betaflight/releases/tag/3.4a
