@@ -20,8 +20,9 @@ Download the firmware for your Rx (if you don't see your Rx, below, go to the do
 - [https://www.frsky-rc.com/r9-mini/](https://www.frsky-rc.com/r9-mini/)
 - https://www.frsky-rc.com/r9-slim-plus/
 
-This is what it seems to me (using a fully build copter with Rx wired to the FC, and NOT powered by USB): 
-* It's important to power the Rx from a 5 volt source other than a dedicated Rx power pad, as you do not want the Rx to be powered by USB
+### The Process
+NOTE: This might not work in every case. To increase success rate, it's important to power the Rx from a 5 volt source other than a dedicated Rx power pad, _as you do not want the Rx to be powered by USB_.
+
 * Open Betaflight Configurator, connect you copter, access CLI
 * Enter and send command serialpassthrough 57600
 * Disconnect power to the Rx (this is going to be the tricky part)
