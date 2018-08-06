@@ -50,13 +50,9 @@ If that went well, you should see the firmware version at the bottom of the tool
 
 *If okay up to this point, click the **Download** button...the status message at the bottom should now read "Please wait, in progressing" (their typo, not mine)
 
-
+## NOTES
 From BryceJ: 
 On my Spracingf3 board with a CP210x it would only work if I had my MSP changed to 57600 as well. Not sure what is the issue there. (If you change the MSP speed make sure you reconnect to the configurator at 57600 as well)  
-
-Here is the frsky windows tool: Link needs fixing  
-https://www.frsky-rc.com/wp-content/...port_rev14.zip  
-frsky_update_sport_rev14.exe  
 
 If you use the PID/VTx adjustment on the taranis, make sure that still works. There was a couple versions that it didn't.  
 
