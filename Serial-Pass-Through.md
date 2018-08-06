@@ -3,7 +3,7 @@
 
 I was unable to replicate due to issues with the FrSky tool not loading COM ports.  If you are familiar with this procedure, please update if necessary. 
 
-UPDATE:Joshua Bardwell has posted a video on this process.  See 
+UPDATE: Joshua Bardwell has posted a video on this process.  See 
 [https://www.youtube.com/watch?v=Hzf-EuQZYsE](https://www.youtube.com/watch?v=Hzf-EuQZYsE)
 
 ### FrSky Tool
