@@ -44,7 +44,7 @@ If all went well, you should see:
 * Close Betaflight Configurator (but do not power cycle the FC)
 * Start the **FrSky_Update_sport_rev**... tool (this will be found in the folder where the contents of _Tool-FrSky update sport_ were extracted to)
 * Select the COM port (whatever Betaflight Configurator was using).
-* Then click the **File** button and navigate to where you extracted the firmware update for your Rx. The tool is now waiting to find a device (the bottom of the tool window will show "_Finding device..."_
+* Then click the **File** button and navigate to where you extracted the firmware update for your Rx. The tool is now waiting to find a device; the bottom of the tool window will show "_Finding device..."_
 * Apply power to the copter (LiPo), which will power the Rx. 
 
 If that went well, you should see the firmware version at the bottom of the tool window, instead of "Finding device".  If this is not the case, then it didn't work.
