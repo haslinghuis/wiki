@@ -1,18 +1,22 @@
 # Serial Pass through
 
 ## Update FrSky XSR RX Firmware
-**NOTE: This needs verification and testing.** BryceJ has successfully done this procedure, however I was unable to replicate due to issues with the FrSky tool not loading COM ports.  If you are familiar with this procedure, please update this information, or PM me (TCHTHSKY) on RCGroups and I'll add it. 
+**NOTE: This needs verification and testing.** BryceJ has successfully done this procedure, however I was unable to replicate due to issues with the FrSky tool not loading COM ports.  If you are familiar with this procedure, please update this information.
 
 FrSky Tool: 
-https://www.frsky-rc.com/wp-content/uploads/2017/07/Tool/frsky_update_sport_rev14.zip
+[https://www.frsky-rc.com/stk/](https://www.frsky-rc.com/stk/)
+* Expand **Tool-FrSky update sport**
+* Click the Download button
+* Extract the contents (it's a .zip) and remember the location
 
-This is what it seems to me (using a fully build copter with Rx wired and powered by USB): 
-*Open Betaflight Configurator, access CLI*  
-*Enter and send command serialpassthrough 57600*  
-*Disconnect power to the Rx (this is going to be the tricky part)*  
-*Start the FrSky tool (where is this? What is it called?)*  
-*Apply power to the Rx*  
-*Update firmware via FrSky Tool*  
+This is what it seems to me (using a fully build copter with Rx wired to the FC, and NOT powered by USB): 
+* It's important to power the Rx from a 5 volt source other than a dedicated Rx power pad, as you do not want the Rx to be powered by USB*
+* Open Betaflight Configurator, connect you copter, access CLI*  
+* Enter and send command serialpassthrough 57600*  
+* Disconnect power to the Rx (this is going to be the tricky part)*  
+* Start the FrSky tool (where is this? What is it called?)*  
+* Apply power to the Rx*  
+* Update firmware via FrSky Tool*  
 
 From BryceJ: 
 On my Spracingf3 board with a CP210x it would only work if I had my MSP changed to 57600 as well. Not sure what is the issue there. (If you change the MSP speed make sure you reconnect to the configurator at 57600 as well)  
