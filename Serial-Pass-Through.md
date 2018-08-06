@@ -28,7 +28,7 @@ NOTE: This might not work in every case. To increase success rate, it's importan
 
 ALSO, this works best if you know SmartPort is working, as you will use this UART. It's much easier to deal with an F4 flight controller that has a dedicated SmartPort pad. If no dedicated pad, then you'll need to understand inversion, which is beyond this scope. F3's and F7's natively support UART inversion, so almost any UART Tx pad will do, so it's a non-issue on those. 
 
-**IMPORTANT!** Don't disconnect power while doing this procedure. 
+**IMPORTANT!** Don't disconnect power while flashing/upgrading your Rx! 
 
 * Connect the copter to your computer via USB (if the Rx powers up, might as well stop - it should not power up), and note the COM port
 * Go to **Ports** tab and note the UART SmartPort is on, and subtract 1 (e.g., if SmartPort is on UART 3, then 2 is the number you want)
