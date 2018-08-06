@@ -6,7 +6,7 @@
 ### FrSky Tool: 
 [https://www.frsky-rc.com/stk/](https://www.frsky-rc.com/stk/)
 * Expand **Tool-FrSky update sport**
-* Click the **Download **button
+* Click the **Download** button
 * Extract the contents (it's a .zip) and remember the location
 
 ### FrSky Rx Firmware
