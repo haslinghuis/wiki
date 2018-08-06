@@ -37,7 +37,7 @@ ALSO, this works best if you know SmartPort is working, as you will use this UAR
 
 If all went well, you should see:
 
-`Port X opened, baud = 57600`
+`Port 2 opened, baud = 57600`
 
 `Forwarding, power cycle to exit`
 
