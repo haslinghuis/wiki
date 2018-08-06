@@ -11,7 +11,8 @@
 
 ### FrSky Rx Firmware
 [https://www.frsky-rc.com/download/](https://www.frsky-rc.com/download/)
-*Download the firmware for your Rx (if you don't see your Rx, below, go to the download page (above) and find the correct firmware for your model Rx):
+
+Download the firmware for your Rx (if you don't see your Rx, below, go to the download page (above) and find the correct firmware for your model Rx):
 - [https://www.frsky-rc.com/xsr/](https://www.frsky-rc.com/xsr/)
 - [https://www.frsky-rc.com/r-xsr/](https://www.frsky-rc.com/r-xsr/)
 - [https://www.frsky-rc.com/xm-plus-mini-sbus-non-telemetry-full-range/](https://www.frsky-rc.com/xm-plus-mini-sbus-non-telemetry-full-range/)
