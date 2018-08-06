@@ -32,6 +32,9 @@ ALSO, this works best if you know SmartPort is working, as you will use this UAR
 * Go to **Ports** tab and note the UART SmartPort is on, and subtract 1 (e.g., if SmartPort is on UART 3, then 2 is the number you want)
 * Open Betaflight Configurator, connect you copter, access CLI
 * Enter and send command `serialpassthrough 2 57600` (remember, UART 3 is actually ID 2, UART 2 would be 1, and UART 1 would be 0), then press **ENTER**
+If all went well, you should see:
+`Port X opened, baud = 57600`
+`Forwarding, power cycle to exit`
 * Disconnect power to the Rx (this is going to be the tricky part)
 * Start the FrSky tool (where is this? What is it called?)
 * Apply power to the Rx
