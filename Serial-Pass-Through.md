@@ -24,7 +24,7 @@ Download the firmware for your Rx (if you don't see your Rx, below, go to the do
 - https://www.frsky-rc.com/r9-slim-plus/
 
 ### The Process
-NOTE: This might not work in every case. To increase success rate, it's important to power the Rx from a 5 volt source other than a dedicated Rx power pad, _as you do not want the Rx to be powered by USB_.
+NOTE: This might not work in every case. To increase success rate, it's important to power the Rx from a 5 volt source other than a dedicated Rx power pad, _as you do not want the Rx to be powered by USB_. On some flight controllers, there is a set of dedicated pads for Rx, i.e., Ground, 5V, and Signal. The 5V pad is sometimes powered when connecting USB. You want to _avoid_ this 5V source and tap into any other 5V source on the FC.
 
 ALSO, this works best if you know SmartPort is working, as you will use this UART. It's much easier to deal with an F4 flight controller that has a dedicated SmartPort pad. If no dedicated pad, then you'll need to understand inversion, which is beyond this scope. F3's and F7's natively support UART inversion, so almost any UART Tx pad will do, so it's a non-issue on those. 
 
