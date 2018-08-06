@@ -28,18 +28,28 @@ NOTE: This might not work in every case. To increase success rate, it's importan
 
 ALSO, this works best if you know SmartPort is working, as you will use this UART. It's much easier to deal with an F4 flight controller that has a dedicated SmartPort pad. If no dedicated pad, then you'll need to understand inversion, which is beyond this scope. F3's and F7's natively support UART inversion, so almost any UART Tx pad will do, so it's a non-issue on those. 
 
-* Connect the copter to your computer via USB (if the Rx powers up, might as well stop - it should not power up)
+**IMPORTANT!** Don't disconnect power while doing this procedure. 
+
+* Connect the copter to your computer via USB (if the Rx powers up, might as well stop - it should not power up), and note the COM port
 * Go to **Ports** tab and note the UART SmartPort is on, and subtract 1 (e.g., if SmartPort is on UART 3, then 2 is the number you want)
 * Open Betaflight Configurator, connect you copter, access CLI
 * Enter and send command `serialpassthrough 2 57600` (remember, UART 3 is actually ID 2, UART 2 would be 1, and UART 1 would be 0), then press **ENTER**.
 
 If all went well, you should see:
+
 `Port X opened, baud = 57600`
 `Forwarding, power cycle to exit`
-* Disconnect power to the Rx (this is going to be the tricky part)
-* Start the FrSky tool (where is this? What is it called?)
-* Apply power to the Rx
-* Update firmware via FrSky Tool
+
+* Close Betaflight Configurator (but do not power cycle the FC)
+* Start the **FrSky_Update_sport_rev**... tool (this will be found in the folder where the contents of _Tool-FrSky update sport_ were extracted to)
+* Select the COM port (whatever Betaflight Configurator was using).
+* Then click the **File** button and navigate to where you extracted the firmware update for your Rx. The tool is now waiting to find a device (the bottom of the tool window will show "_Finding device..."_
+* Apply power to the copter (LiPo), which will power the Rx. 
+
+If that went well, you should see the firmware version at the bottom of the tool window, instead of "Finding device".  If this is not the case, then it didn't work.
+
+*If okay up to this point, click the **Download** button...the status message at the bottom should now read "Please wait, in progressing" (their typo, not mine)
+
 
 From BryceJ: 
 On my Spracingf3 board with a CP210x it would only work if I had my MSP changed to 57600 as well. Not sure what is the issue there. (If you change the MSP speed make sure you reconnect to the configurator at 57600 as well)  
