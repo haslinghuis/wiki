@@ -3,7 +3,7 @@
 ## Update FrSky XSR RX Firmware
 **NOTE: This needs verification and testing.** BryceJ has successfully done this procedure, however I was unable to replicate due to issues with the FrSky tool not loading COM ports.  If you are familiar with this procedure, please update this information.
 
-### FrSky Tool: 
+### FrSky Tool
 [https://www.frsky-rc.com/stk/](https://www.frsky-rc.com/stk/)
 * Expand **Tool-FrSky update sport**
 * Click the **Download** button
