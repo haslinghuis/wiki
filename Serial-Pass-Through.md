@@ -49,7 +49,7 @@ If all went well, you should see:
 
 If that went well, you should see the firmware version at the bottom of the tool window, instead of "Finding device".  If this is not the case, then it didn't work.
 
-*If okay up to this point, click the **Download** button...the status message at the bottom should now read "Please wait, in progressing" (their typo, not mine)
+* If okay up to this point, click the **Download** button...the status message at the bottom should now read "Please wait, in progressing" (their typo, not mine)
 
 ## NOTES
 From BryceJ: 
