@@ -1,5 +1,5 @@
 (To be edited)
-![]([img]https://i.imgur.com/FPpYekM.png[/img])
+![](https://imgur.com/FPpYekM)
 
 Why should I set my Failsafe
 ___
