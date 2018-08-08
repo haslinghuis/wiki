@@ -5,7 +5,7 @@ Using Betaflight Configurator, select the Firmware Flasher tab and select what f
 Select Target and Version in the upper left corner. Press "Load Firmwar {Online]", lower right part of the screen. 
   2. Load local firmware.   
  Press the "Load firmware [Local]" button, you can now browse to the folder you have the local Betaflight firmware file. Select the correct firmware hex-file matching your Flight Controller. 
-
+![](https://user-images.githubusercontent.com/25552059/43810531-307d9cc8-9a86-11e8-9e2c-55cbfe386258.png)
 Leaving all options unchecked ** (defaults) press "Flash firmware".  The Configuration tool should now erase the target and flash the selected firmware to your Flight controller. All this assumes you have the correct drivers etc setup correctly, read further on for details.
 
 
