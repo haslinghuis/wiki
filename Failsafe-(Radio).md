@@ -1,5 +1,4 @@
 (To be edited)
-[(https://i.imgur.com/FPpYekM.png)]
 
 Why should I set my Failsafe
 ___
