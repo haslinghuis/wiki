@@ -1,4 +1,5 @@
-(To be edited)
+**Test failsafe without propellers.**
+Arm the Quadcopter and shut the radio off
 
 What is a (Radio) failsafe?
 
