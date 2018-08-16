@@ -16,6 +16,7 @@ I leave throttle to "hold" for 0.4 second in the configurator tab, I can live wi
 ___
 Which occasion it occurs?
 
+- Out of range
 - Broken, damaged or not the right lenght antenna on RX and or TX
 - shadowing, multipath, antenna conductor touching carbon fiber or signal blocked by carbon fiber
 - Too close of the VTX
