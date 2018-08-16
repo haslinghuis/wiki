@@ -11,8 +11,11 @@ Why should I set my Failsafe?
 -Failsafe place the flight controller in a "safer" state. Tipically, small Quad can fall without severe damage but with bigger quad, it might be better with landing. The basic rule behind it, it is better dropping from the sky unarmed than having a flyaway, randomly chasing people.
 
 You might want to set the RCcommand on failsafe for each channel. I usually set throttle to hold leaving pitch, roll and yaw to "auto". Auxilliary 1 switch to "unarmed", for me it is "set 1000" and AUX 2 "set 2000" ( I have a mini-Quad with a beeper which makes it easier to locate).
+
 ![Failsafe Tab](https://user-images.githubusercontent.com/25552059/44224354-2a14cb80-a158-11e8-884a-c9abeca80c3f.PNG)
+
 ![Mode Tab](https://user-images.githubusercontent.com/25552059/44224487-8a0b7200-a158-11e8-9a97-ae17a388c297.PNG)
+
 I leave throttle to "hold" for 0.4 second in the configurator tab, I can live with that. After 0.4s, the FC will put the RCcommand to the rx failsafe set value. **This is why it is so important on binding process to have the correct stick position**. You might feel anxious about it and uses auto, in this case the RCcommand set will be the one stored on binding of the receiver with no delay.
 ___
 Which occasion it occurs?
