@@ -1,7 +1,7 @@
 **Test failsafe without propellers.**
 Arm the Quadcopter and shut the radio off.
 
-What is a (Radio) failsafe?
+What is a failsafe?
 
 Failsafe is a safety feature, it can be triggered by a switch, the loss of radio link or an unexpected RCcommand pulse. The flight controller will behave as set in the failsafe tab of the configurator. (Betaflight's default = Drop)
 ___
