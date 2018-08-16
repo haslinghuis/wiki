@@ -12,6 +12,8 @@ It's easy:
 
 
 Please also note that it does not have to be connected to UART3/TX3 as stated above, any free UART Tx pin will do fine, PROVIDED there is a direct connection to the processor IO-pin. I.e. no inverters or such in the way, blocking bidirectional data flow. UART3 is usually fine on most FCs.  UART1 and 6 might be more troublesome on F4 based FCs, depending on FC brand and design. 
+
+There is also a known problem using UART2 Tx pin on F3 based FCs. This pin can also be used as SWDCLK signal. At power on it is pulled low before BetaFlight firmware initializes it as a UART Tx pin. This will cause the SPM4649T to go into bind mode.
  
 You must also do a final step on your RC Transmitter.
 
