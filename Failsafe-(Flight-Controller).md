@@ -1,5 +1,5 @@
 **Test failsafe without propellers.**
-Arm the Quadcopter and shut the radio off.
+Arm the Quadcopter and shut the radio off. Full range receiver and Satelite behave diffently from brand to brand, read the operator's manual.
 
 What is a failsafe?
 
