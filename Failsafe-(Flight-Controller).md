@@ -9,7 +9,7 @@ ___
 
 Why should I set my Failsafe?
 
--Failsafe place the flight controller in a "safer" state. Tipically, small Quad can fall without severe damage but with bigger quad, it might be better with landing. The basic rule behind it, it is better dropping from the sky unarmed than having a flyaway, randomly chasing people.
+-Failsafe place the flight controller in a "safer" state. Typically, small Quad can fall without severe damage but with bigger quad, it might be better with landing. The basic rule behind it, it is better dropping from the sky unarmed than having a flyaway, randomly chasing people.
 
 You might want to set the RCcommand on failsafe for each channel. I usually set throttle to hold leaving pitch, roll and yaw to "auto". Auxilliary 1 switch to "unarmed", for me it is "set 1000" and AUX 2 "set 2000" ( I have a mini-Quad with a beeper which makes it easier to locate).
 
