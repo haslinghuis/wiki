@@ -64,7 +64,7 @@
 # Troubleshooting
 
  - [Multicopter Spazzing Out?](https://github.com/betaflight/betaflight/wiki/Multirotor-Spazzing-Out%3F)
- - [Failsafe](https://github.com/betaflight/betaflight/wiki/Failsafe-(Radio))
+ - [Failsafe](https://github.com/betaflight/betaflight/wiki/Failsafe-(Flight-Controller))
 
 # Development
 
