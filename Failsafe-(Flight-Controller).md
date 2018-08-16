@@ -20,6 +20,11 @@ You might want to set the RCcommand on failsafe for each channel. I usually set 
 
 I leave throttle to "hold" for 0.4 second in the configurator tab, I can live with that. After 0.4s, the FC will put the RCcommand to the rx failsafe set value. **This is why it is so important on binding process to have the correct stick position**. You might feel anxious about it and uses auto, in this case the RCcommand set will be the one stored on binding of the receiver with no delay.
 ___
+Stage 1 and Stage 2
+(to be edited)
+___
+
+
 Which occasion it occurs?
 
 - Out of range
