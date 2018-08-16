@@ -15,10 +15,10 @@ I leave throttle to hold for 0.4 second, I can live with that. You might feel an
 ___
 Which occasion it occurs?
 
--Broken, damaged or not the right lenght antenna on RX and or TX
--shadowing, multipath, antenna conductor touching carbon fiber or signal blocked by carbon fiber
--Too close of the VTX
--With satelite, 3.3v regulator problem
+- Broken, damaged or not the right lenght antenna on RX and or TX
+- shadowing, multipath, antenna conductor touching carbon fiber or signal blocked by carbon fiber
+- Too close of the VTX
+- With satelite, 3.3v regulator problem
 -
 
 
