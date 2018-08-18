@@ -43,8 +43,12 @@ With v3.4.0, REVOLT target was completely rewritten as a standalone target, rath
 
 With post-v3.4.0, Revolt V1 users who are connecting S.BUS to SBUS pad must explicitly turn off the `serialrx_halfduplex` to `OFF`.
 ```
-set sreialrx_halfduplex = OFF
+set serialrx_halfduplex = OFF
 ```
+
+The theory behind this operation is depicted by this drawing.
+
+![Hardware differences between V1, V2 and V3](https://user-images.githubusercontent.com/14850998/44298169-38f6ac00-a319-11e8-8db7-1132bcf28d09.png)
 
 ---
 # Board Information
