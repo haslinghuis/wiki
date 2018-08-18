@@ -1,4 +1,4 @@
-# REVOLT V2 OWNERS TAKE NOTE
+## REVOLT V2 OWNERS TAKE NOTE
 
 All of the information referring to Revolt V2 applies to Skitzo FC as well, it's identical board (just different color).
 
@@ -11,13 +11,15 @@ Is not currently supported in current BetaFlight builds but can run BetaFlight n
 3) Solder up the cable for the receiver on UART 1 as shown in the revolt V2 diagram (make sure its the V2 diagram)
 https://flightone.us/support/#pinout_section
 
-4) Do this command in CLI.  
-`set serialrx_halfduplex=ON`
+4) Do this command in CLI.
+```
+set serialrx_halfduplex=ON
+```
+(This setting became default with v3.4.0.)
 
 5) Hit Save.
 
 6) On the REVOLT V2 you also need to jumper the RX1 and TX1 pads to get receiver working. [Take a look here.](https://drive.google.com/open?id=0B5fFGD7QYC-lVFBkT0dLV3Y2ekZId0RWTFV2ci1FWVNFNTlJ)
-
 
 Enjoy 
 
@@ -34,7 +36,19 @@ https://github.com/betaflight/betaflight-configurator/issues/411
 
 It's a temporary solution requiring you to manually install patched up version of BF configurator, next release of official BF configurator is going to fix that.
 
-# NAME
+
+## Revolt V1 S.BUS configuration after v3.4.0
+
+With v3.4.0, REVOLT target was completely rewritten as a standalone target, rather than a sub-target of REVO target. The new target also introduced a new default value of duplex option for UART1 which is suitable only for V2 and V3 boards, but it made Revolt V1 configuration from pre-v3.4.0 incompatible with post-v3.4.0 configuration.
+
+With post-v3.4.0, Revolt V1 users who are connecting S.BUS to SBUS pad must explicitly turn off the `serialrx_halfduplex` to `OFF`.
+```
+set sreialrx_halfduplex = OFF
+```
+
+---
+# Board Information
+## Name
 
 Revolt V1 and V2
 
