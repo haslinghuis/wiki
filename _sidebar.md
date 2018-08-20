@@ -62,8 +62,8 @@
 
 # Tuning Tips
 
- - [Tuning Tips for Betaflight 3.4](/betaflight/betaflight/wiki/Tuning-Tips-for-Betaflight-3.4)
- - [Tuning Tips for Betaflight 3.5](/betaflight/betaflight/wiki/3.5-tuning-notes)
+ - [Betaflight 3.4](/betaflight/betaflight/wiki/Tuning-Tips-for-Betaflight-3.4)
+ - [Betaflight 3.5](/betaflight/betaflight/wiki/3.5-tuning-notes)
 
 # Troubleshooting
 
