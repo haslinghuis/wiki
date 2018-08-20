@@ -17,6 +17,11 @@
  - [BetaFlight 3.0](/betaflight/betaflight/wiki/BetaFlight-3.0.x)
  - [V2.x CLI Commands](/betaflight/betaflight/wiki/Betaflight-specific-CLI-commands)  
 
+# Tuning Tips
+
+ - [Betaflight 3.5](/betaflight/betaflight/wiki/3.5-tuning-notes)
+ - [Betaflight 3.4](/betaflight/betaflight/wiki/Tuning-Tips-for-Betaflight-3.4)
+
 # Setup and More
 
  - [Arming Sequence & Safety](https://github.com/betaflight/betaflight/wiki/Arming-Sequence-&-Safety)
@@ -59,11 +64,6 @@
  - [GPS Rescue mode](GPS-rescue-mode)
  - [Mass Storage Device (MSC) Support](Mass-Storage-Device-(MSC)-Support)
  - [Supported Sensors](/betaflight/betaflight/wiki/Supported-Sensors)
-
-# Tuning Tips
-
- - [Betaflight 3.4](/betaflight/betaflight/wiki/Tuning-Tips-for-Betaflight-3.4)
- - [Betaflight 3.5](/betaflight/betaflight/wiki/3.5-tuning-notes)
 
 # Troubleshooting
 
