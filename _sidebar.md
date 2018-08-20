@@ -9,7 +9,7 @@
 
 # Release Notes
 
- - [Betaflight 3.5](https://github.com/betaflight/betaflight/releases/tag/3.5.0)
+ - [Betaflight 3.5](https://github.com/betaflight/betaflight/blob/master/docs/Release%20Notes/Betaflight%203.5%20Release%20Notes.md)
  - [Betaflight 3.4](https://github.com/betaflight/betaflight/blob/master/docs/Release%20Notes/Betaflight%203.4%20Release%20Notes.md)
  - [BetaFlight 3.3](https://github.com/betaflight/betaflight/blob/master/docs/Upgrading/Upgrading%20from%203.2%20to%203.3.md)
  - [BetaFlight 3.2](https://github.com/betaflight/betaflight/wiki/BetaFlight-3.2)
@@ -54,13 +54,16 @@
  - [Spektrum + RC Smoothing Filter](/betaflight/betaflight/wiki/Spektrum-and-RC-Smoothing-Filter)
  - [Runaway Takeoff Prevention](/betaflight/betaflight/wiki/Runaway-Takeoff-Prevention)
  - [Yaw Spin Recovery & Gyro Overflow Detect](/betaflight/betaflight/wiki/Yaw-Spin-Recovery-and-Gyro-Overflow-Detect)
- - [Tuning Tips for Betaflight 3.4](/betaflight/betaflight/wiki/Tuning-Tips-for-Betaflight-3.4)
  - [OSD Logo Replacement](https://bflogo.ekezet.com/static/help.html)
  - [HID Joystick Support](HID-Joystick-Support)
  - [GPS Rescue mode](GPS-rescue-mode)
  - [Mass Storage Device (MSC) Support](Mass-Storage-Device-(MSC)-Support)
- - [Tuning Tips for Betaflight 3.5](/betaflight/betaflight/wiki/3.5-tuning-notes)
  - [Supported Sensors](/betaflight/betaflight/wiki/Supported-Sensors)
+
+# Tuning Tips
+
+ - [Tuning Tips for Betaflight 3.4](/betaflight/betaflight/wiki/Tuning-Tips-for-Betaflight-3.4)
+ - [Tuning Tips for Betaflight 3.5](/betaflight/betaflight/wiki/3.5-tuning-notes)
 
 # Troubleshooting
 
