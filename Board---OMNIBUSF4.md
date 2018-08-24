@@ -5,6 +5,10 @@
 For board identification, see
 [OMNIBUS F4 V2 & V3 : Identifying revisions](https://www.rcgroups.com/forums/showthread.php?2837385-OMNIBUS-F4-V2-Identifying-revisions)
 
+### Note for Omnibus F4 Nano V4, V5 and V6 users (2018-08-24)
+
+- Serial RX port for inverted protocols (e.g., S.BUS) is UART1, and there is no programmable inverters.
+
 ### Note for OMNIBUS F4 V3, V4 and ASGARD users
 
 - On OMNIBUS F4 V3 and later, serial RX is **UART6**, not UART1.
