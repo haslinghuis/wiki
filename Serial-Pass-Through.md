@@ -52,7 +52,7 @@ If that went well, you should see the firmware version at the bottom of the tool
 * If okay up to this point, click the **Download** button...the status message at the bottom should now read "Please wait, in progressing" (their typo, not mine)
 
 ## If the Rx is powered up by USB
-It happens in some cases. If you have such a setup, you will need some way to disconnect the receiver, i.e. use a plug. Reconnect it once the tool window shows "_Finding device..."_ and flashing will commence.
+It happens in some cases. If you have such a setup, you will need some way to disconnect the receiver, i.e. use a plug. Reconnect it once the tool window shows "_Finding device..."_ and flashing will commence. Try at own risk.
 
 ## NOTES
 From BryceJ: 
