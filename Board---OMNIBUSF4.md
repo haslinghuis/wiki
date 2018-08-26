@@ -5,9 +5,9 @@
 For board identification, see
 [OMNIBUS F4 V2 & V3 : Identifying revisions](https://www.rcgroups.com/forums/showthread.php?2837385-OMNIBUS-F4-V2-Identifying-revisions)
 
-### Note for Omnibus F4 Nano V6 users (2018-08-26)
+### Note for Omnibus F4 V6 and Omnibus F4 Nano V6 users (2018-08-26)
 
-- Firmware target for Nano V6 is `OMNIBUSF4FW`.
+- Firmware target for V6 and Nano V6 is `OMNIBUSF4FW`.
 
 ### Note for Omnibus F4 Nano V4, V5 and V6 users (2018-08-24)
 
