@@ -64,6 +64,7 @@
  - [GPS Rescue mode](GPS-rescue-mode)
  - [Mass Storage Device (MSC) Support](Mass-Storage-Device-(MSC)-Support)
  - [Supported Sensors](/betaflight/betaflight/wiki/Supported-Sensors)
+ - [Pinio and PinioBox](/betaflight/betaflight/wiki/Pinio-and-PinioBox)
 
 # Troubleshooting
 
@@ -119,6 +120,7 @@
  - [FURYF3](/betaflight/betaflight/wiki/Board---FURYF3)
  - [FURYF4](/betaflight/betaflight/wiki/Board---FURYF4)
  - [FURYF7](/betaflight/betaflight/wiki/Board---FURYF7)
+ - [HAKRCF722](https://github.com/betaflight/betaflight/blob/master/docs/boards/Board%20-%20HAKRCF722.md)
  - [IRCFUSIONF3](/betaflight/betaflight/wiki/Board---IRCFUSIONF3)
  - [KAKUTE F3](https://github.com/betaflight/betaflight/wiki/KAKUTE-F3)
  - [KAKUTEF4](/betaflight/betaflight/wiki/Board---KAKUTEF4)
