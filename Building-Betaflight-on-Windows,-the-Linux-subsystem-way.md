@@ -64,6 +64,8 @@ The hex files will be in the `/obj` folder of the betaflight folder
 
 **TIP:** To find your board (and how it should be referenced from the `make` command), see here: [https://github.com/betaflight/betaflight/tree/master/src/main/target](https://github.com/betaflight/betaflight/tree/master/src/main/target)
 
+**UPDATE/NOTE 2:** In order to run `make test` or `make junittest` you will have to install clang. If you type `which clang` in console and get no output, it's not installed. In order to install enter `sudo apt-get install clang`. Additionally, you may need to run `sudo apt-get install libblocksruntime-dev` to install a missing library for linking.
+
 # Optional items
 
 If you do not like the default Windows console, you can always install for example `xterm`. This will however also require an X-server running in the Windows host environment. Get it here: https://sourceforge.net/projects/xming/
