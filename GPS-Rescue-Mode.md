@@ -19,35 +19,29 @@ GPS Rescue Mode is intended to bring your quad back autonomously in case of an e
 
 Then configure the following parameters in the cli:
 
-`set gps_rescue_initial_alt=[number] (default is 70)`
+`set gps_rescue_initial_alt=[number] (default is 50)`
 
 This is the most important parameter. When Rescue Mode is activated, your quad will point home and try to climb to a safe altitude relative to your takeoff point. This altitude will either be this parameter or the maximum altitude recorded during flight +15m which ever is highest. I personally like to make it 70 or 80 meters.
 
-`set gps_rescue_ground_speed=[number] (default is 1500)`
-
+`set gps_rescue_ground_speed=[number] (default is 2000)`
 
 This is the speed at which your what will try to come back, in centimeters per second. I like 1500 (about 35 mph), but this setting depends on how and where you fly.
 
-`set gps_rescue_angle=[number] (default is 30)`
+`set gps_rescue_angle=[number] (default is 32)`
 
-
-This is the maximum allowed tilt angle for your quad when coming home. This setting may prevent it to reaching full speed, so you may have to experiment with it if you change the defaults. Note that the higher the angle, the harder if will be for the altitude controller to keep a stable altitude. When there is a chance of returning into head winds I 
-  like to set this parameter to 45 degrees.
+This is the maximum allowed tilt angle for your quad when coming home. This setting may prevent it to reaching full speed, so you may have to experiment with it if you change the defaults. Note that the higher the angle, the harder if will be for the altitude controller to keep a stable altitude. When there is a chance of returning into head winds I like to set this parameter to 45 degrees.
 
 `set gps_rescue_descent_dist =[number] (default is 200)`
 
-
-This is the distance at which your quad will start descending towards home.
+This is the distance in meters at which your quad will start descending towards home.
 
 ### At this point you are ready to test Rescue Mode. 
  Wait for your gps to get a good fix. 
- By default your quad will not arm if you have less than `gps_rescue_min_sats`. 
+ By default your quad will not arm if you have less than `gps_rescue_min_sats` (default is 8) satellites. 
 You can decrease this value in the CLI or even make it 0 if you just want to fly near yourself. Keep in mind that if you do not hav a GPS fix by the time you arm, your quad will not know where to return if you activate Rescue Mode, and it will simply land.
 ## We suggest the following procedure:
 
 Fly in a straight line for at least 100 meters past your descent distance. For example, if your descent distance setting is 150 meters, fly to 250 meters. As you fly, the home arrow should adjust to point towards home.
-
-
 
  ## **VERY IMPORTANT: **  if your arrow does not point towards home, **DO NOT** activate GPS Rescue. Your quad will try to fly in the direction of the arrow if you do.
 Activate GPS Rescue. 
