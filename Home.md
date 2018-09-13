@@ -1,5 +1,3 @@
-![BetaFlight Notice, version 3.2 will be the last version of Betaflight to support STM32F1 based flight controllers, this includes NAZE, CC3D (original) and CJMCU like flight controllers](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/betaflight/stm32f1_support_notice.png)
-
 ![BetaFlight](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/betaflight/bf_logo.png)
 # Welcome to the BetaFlight Wiki!
 
@@ -9,8 +7,6 @@
 
 | Date  | Event |
 | - | - |
-| 22 July 2018 | Start of feature freeze / Release Candidate window for Betaflight 3.5 |
-| 05 August 2018 | Planned [release](https://github.com/betaflight/betaflight/milestone/21) date for Betaflight 3.5 |
 | 01 January 2019 | Planned [release](https://github.com/betaflight/betaflight/milestone/20) date for Betaflight 4.0 |
 
 
