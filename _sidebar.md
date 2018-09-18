@@ -171,6 +171,7 @@
  - [STM32F3DISCOVERY](/betaflight/betaflight/wiki/Board---STM32F3DISCOVERY)
  - [STM32F429DISCO](/betaflight/betaflight/wiki/Board---STM32F429DISCO)
  - [TinyBee F3](/betaflight/betaflight/wiki/Board---TinyBee-F3)
+ - [UAVP-NG HW-0.30-mini](https://ng.uavp.ch/Family#HW-0.30-mini)
  - [VRRACE](/betaflight/betaflight/wiki/Board---VRRACE)
  - [X_RACERSPI](/betaflight/betaflight/wiki/Board---X_RACERSPI)
  - [YuPiF4](/betaflight/betaflight/wiki/Board---YUPIF4)
