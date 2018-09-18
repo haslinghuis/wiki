@@ -8,7 +8,7 @@ Config for Flysky to control-board responds in Betaflight however the device wil
 
 I don't know enough about this type of programming to know how to work the problem and am speculating that this is the reason for the device failing to arm, .
 
-Buzzer and Pre arm bothl light up Arm fails with only CLI errors of arm-switch and the fact that I'm using the USB link.
+Buzzer and Pre arm both light up Arm fails with only CLI errors of arm-switch and the fact that I'm using the USB link.
 
 # Status:
 System Uptime: 77 seconds
