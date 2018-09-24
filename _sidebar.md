@@ -163,6 +163,7 @@
  - [SOULF4](/betaflight/betaflight/wiki/Board---SOULF4)
  - [SPARKY](/betaflight/betaflight/wiki/Board---SPARKY)
  - [SPARKY2 - Taulabs docs](https://github.com/TauLabs/TauLabs/wiki/Sparky2)
+ - [SPEDIXF4](https://github.com/betaflight/betaflight/blob/master/docs/boards/Board%20-%20SPEDIXF4.md)
  - [SpeedyBee F4](https://github.com/betaflight/betaflight/blob/master/docs/boards/Board%20-%20SpeedyBee%20F4%20AIO-1.md)
  - [SPRACINGF3](/betaflight/betaflight/wiki/Board---SPRACINGF3)
  - [SPRACINGF3EVO](/betaflight/betaflight/wiki/Board---SPRACINGF3EVO)
