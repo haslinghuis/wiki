@@ -86,3 +86,14 @@ The root file system for the Linux Subsystem is available from Windows here:
 In earlier iterations of Windows Subsystem for Linux, the Ubuntu file system was at %localappdata%\Lxss (e.g., C:\Users\<username>\AppData\Local\Lxss But it has now moved to the location mentioned above. Beware there are still a lot of incorrect information about this floating around. Even on MS own site. 
 
 Under normal circumstances, avoid doing anything in these folder as much as possible, it might mess up the Linux subsystem.
+
+# Compiling unit tests
+
+To compile unit tests, you need to install two additional packages:
+`$ sudo apt-get install clang`   
+`$ sudo apt-get install libblocksruntime-dev`
+
+Then run the following command to compile all unit tests:
+`$ make test`
+You can also compile them individually as well. For more usage information run this command:
+`$ cd ./src/test && make help`
