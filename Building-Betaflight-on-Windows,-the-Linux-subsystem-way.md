@@ -90,10 +90,17 @@ Under normal circumstances, avoid doing anything in these folder as much as poss
 # Compiling unit tests
 
 To compile unit tests, you need to install two additional packages:
+
+
 `$ sudo apt-get install clang`   
 `$ sudo apt-get install libblocksruntime-dev`
 
 Then run the following command to compile all unit tests:
+
+
 `$ make test`
+
 You can also compile them individually as well. For more usage information run this command:
+
+
 `$ cd ./src/test && make help`
