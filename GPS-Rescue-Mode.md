@@ -21,19 +21,19 @@ Then configure the following parameters in the cli:
 
 `set gps_rescue_initial_alt=[number] (default is 50)`
 
-This is the most important parameter. When Rescue Mode is activated, your quad will point home and try to climb to a safe altitude relative to your takeoff point. This altitude will either be this parameter or the maximum altitude recorded during flight +15m which ever is highest. I personally like to make it 70 or 80 meters.
+This is the most important parameter. When Rescue Mode is activated, your quad will point home and try to climb to a safe altitude relative to your takeoff point. This altitude will either be this parameter, or the maximum altitude recorded during flight +15m, whichever is highest. I personally like to make it 70 or 80 meters.
 
 `set gps_rescue_ground_speed=[number] (default is 2000)`
 
-This is the speed at which your what will try to come back, in centimeters per second. I like 1500 (about 35 mph), but this setting depends on how and where you fly.
+This is the speed at which your quad will try to come back, in centimeters per second. I like 1500 (about 35 mph), but this setting depends on how and where you fly.
 
 `set gps_rescue_angle=[number] (default is 32)`
 
-This is the maximum allowed tilt angle for your quad when coming home. This setting may prevent it to reaching full speed, so you may have to experiment with it if you change the defaults. Note that the higher the angle, the harder if will be for the altitude controller to keep a stable altitude. When there is a chance of returning into head winds I like to set this parameter to 45 degrees.
+This is the maximum allowed tilt angle for your quad when coming home. This setting may prevent it to reaching full speed, so you may have to experiment with it if you change the defaults. Note that the higher the angle, the harder it will be for the altitude controller to keep a stable altitude. When there is a chance of returning into head winds I like to set this parameter to 45 degrees.
 
 `set gps_rescue_descent_dist =[number] (default is 200)`
 
-This is the distance in meters at which your quad will start descending towards home.
+This is the distance, in meters, at which your quad will start descending towards home.
 
 ### At this point you are ready to test Rescue Mode. 
  Wait for your gps to get a good fix. 
@@ -68,7 +68,7 @@ After your quad reliably returns home once, you may want to test it at progressi
 
 `set failsafe_procedure = GPS-RESCUE`
 
-With this setting, GPS Rescue will activate in the event of a failsafe. However, it will return control to the user as soon as the radio link comes back. During this time the user should either activate Rescue Mode manually on the radio just so that there cannot be an unexpected transition to manual control, or be ready to take over control at any moment. Our recommended approach is the first one, which requires having Rescue Mode on a switch if you want to use it for failsafe as well.
+With this setting, GPS Rescue will activate in the event of a failsafe. However, it will return control to the user as soon as the radio link comes back. During this time the user should either activate Rescue Mode manually on the radio, just so that there cannot be an unexpected transition to manual control, or be ready to take over control at any moment. Our recommended approach is the first one, which requires having Rescue Mode on a switch if you want to use it for failsafe as well.
 
 ## **DEALING WITH FAILURES / SANITY CHECKS (VERY IMPORTANT): **
 
