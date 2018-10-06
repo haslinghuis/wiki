@@ -45,7 +45,7 @@ OMNIBUSF4 (by @jflyper)
 | C9  | CH6       | OK      | ?     | ?      |      |
 
 ---
-OMNIBUSF4SD (by @jflyper)
+OMNIBUSF4SD (by @jflyper, @antonig)
 
 | Pin | Label     | S.Audio | Tramp | S.Port | Note |
 |-----|-----------|---------|-------|--------|------|
