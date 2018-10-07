@@ -95,3 +95,18 @@ Don't let Airbot's website, or the countless videos and forum posts, fool you; t
 ### Dimensions:
 Volume: 41.9mm(L) x 46mm(W) x 10mm(H)
 (Where width is measured from battery input, across USB port, to board corner)
+
+### Tips
+
+#### Omnibus F4 nano V6 : Current sensor ADC on RX4
+Current sensor source of Omnibus F4 Nano V6 is limited to telemetry from ESC, available as input to RX4 (UART4_RX). However the MCU pin PA1 which is the pin for the UART4_RX, is also capable of being assigned to ADC input.
+
+The pin can still be accessed as RX4 (either as one of 4-in-1 ESC socket J3 or a small pad marked RX4 next to J3).
+
+```
+resource SERIAL_RX 4 none  # Release PA1 from RX4
+resource ADC_CURR a1       # Assign PA1 as ADC input (ADC123_IN1)
+current_meter = adc        # Can be done in battery tab
+set ibata_scale = 367      # Ditto. Calibration required.
+set ibata_offset = 0       # Ditto
+```
