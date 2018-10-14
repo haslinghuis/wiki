@@ -183,6 +183,24 @@ So far I have the flight controller working great in passthrough mode (manual fl
 * Modes tab > Set your arm switch
 * Modes tab > Set up passthrough mode for manual flight (no stabilisation) and Angle mode for self levelling (useful once you get the trim right). I recommend having passthrough mode set in case of any strange tuning issues so you can take control.
 
+# Betaflight for a **Flying Delta Wing** (using a Matek f405 and Matek FCHUB-W PDB)
+#### by druckgott
+
+#### Wiring configuration
+
+* Connect the ESC to 'M1' pad on the Matek FCHUB-W PDB
+* Connect left elevon servo to 'SV3' pad on the Matek FCHUB-W PDB
+* Connect right elevon servo to 'SV4' pad on the Matek FCHUB-W PDB
+
+![betaflight mixer](http://i.imgur.com/EU7EVEJ.png)
+
+You have now to MAP the Servos to this Pins:
+resource servo 1 C07
+resource servo 2 C08
+save
+
+Now it works
+
 #### Some troubleshooting and extra notes:
 
 If your plane reacts correctly to roll but wrongly to pitch (or vice versa), swap the resource assignments of the servos
