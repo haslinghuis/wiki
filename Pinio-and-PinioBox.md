@@ -26,7 +26,7 @@ I/O configuration of each pin is specified by `pinio_config` CLI variable, which
 
 Example of `pinio_config`
 ```
-set pinio_config 1,129,1,1
+set pinio_config = 1,129,1,1
 ```
 sets Output-Push-Pull for `pinio` 1, 3 and 4, and Inverted Output-Push-Pull for `pinio` 2. Default value is 1 (Output-Push-Pull).
 
