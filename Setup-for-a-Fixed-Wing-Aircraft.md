@@ -195,9 +195,9 @@ So far I have the flight controller working great in passthrough mode (manual fl
 ![betaflight mixer](http://i.imgur.com/EU7EVEJ.png)
 
 You have now to MAP the Servos to this Pins:
-resource servo 1 C07
-resource servo 2 C08
-save
+>resource servo 1 C07
+>resource servo 2 C08
+>save
 
 Now it works
 
