@@ -83,7 +83,7 @@ Sanity checks will ensure that you have a valid GPS fix, that the quad is spendi
 ## Version History
 
 **Betaflight 3.5**
-* GPS Rescue will always check the quad to be at least 100m away from home in order to activate, regardless of the Sanity check setting. If GPS Rescue is activated when the quad is closer than 100m from home, it will drop.
+* GPS Rescue activated on failsafe will check the quad to be at least 100m away from home, regardless of the Sanity check setting. If it's closer, it will drop. Non-failsafe activated GPS Rescue works as in 3.4.
 
 **Betaflight 3.4**
-* The Sanity check includes a test for the quad to be farther away than 100m from target home for the Rescue mode to be activated. If GPS Rescue is activated when the quad is closer than 100m from home, AND the Sanity check is enabled, it will drop.
+* The Sanity check includes a test for the quad to be farther away than 100m from target home for the Rescue mode to be activated. When Sanity check is enabled, if GPS Rescue is activated (either manually or by failsafe) when the quad is closer than 100m from home, it will drop.
