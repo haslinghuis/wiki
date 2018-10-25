@@ -115,6 +115,8 @@
  - [FishDroneF4](/betaflight/betaflight/wiki/Board---FishDroneF4)
  - [Flip32 F3 OSD](/betaflight/betaflight/wiki/Board---Flip32-F3-OSD)
  - [Flip32F4](/betaflight/betaflight/wiki/Board---AIRBOTF4FLIP32F4)
+ - [FOXEERF405](https://github.com/betaflight/betaflight/blob/master/docs/boards/Board%20-%20FOXEERF405.md)
+ - [FOXEERF722DUAL(https://github.com/betaflight/betaflight/blob/master/docs/boards/Board%20-%20FOXEERF722DUAL.md)
  - [FRSKYF3](/betaflight/betaflight/wiki/Board---FRSKYF3)
  - [FRSKYF4](/betaflight/betaflight/wiki/Board---FRSKYF4)
  - [FURYF3](/betaflight/betaflight/wiki/Board---FURYF3)
