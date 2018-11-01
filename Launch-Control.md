@@ -8,6 +8,8 @@ Adds a race start assistance system that allows the pilot to pitch forward and t
 * Recenter sticks
 * Advance throttle to launch
 
+Example video: https://youtu.be/_S0rn3zcN0Q
+
 **Mode switch configuration:**
 For Launch Control to be enabled the mode must be configured. The state of the mode is captured at arming so the pilot has multiple options on how he wishes to set it up. Options include a dedicated switch, a momentary toggle held when arming, tied directly to the arming switch, or even always active.
 
