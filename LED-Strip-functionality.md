@@ -1,4 +1,4 @@
-## LED color
+## LED color by AUX channel
 
 Some race events require each craft to be identified by LED colors, and it is convenient to have an AUX channel to change the color.
  
