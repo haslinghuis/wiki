@@ -1,3 +1,11 @@
+## LED color
+
+Some race events require each craft to be identified by LED colors, and it is convenient to have an AUX channel to change the color.
+ 
+For example, the first FAI drone event in Shenzhen requests one of Red, Blue, Yellow, Green, Purple and White for this purpose.
+
+https://github.com/betaflight/betaflight/issues/6896#issuecomment-427647756 gives a solution based on available LED strip facility.
+
 ## LED color based on VTX frequency
 
 When using TBS SmartAudio or IRC Tramp you can have the LEDs change color based on your VTX channel by enabling the VTX overlay in the LED strip tab.
