@@ -65,6 +65,7 @@
  - [Mass Storage Device (MSC) Support](Mass-Storage-Device-(MSC)-Support)
  - [Supported Sensors](/betaflight/betaflight/wiki/Supported-Sensors)
  - [Pinio and PinioBox](/betaflight/betaflight/wiki/Pinio-and-PinioBox)
+ - [Launch Control](/betaflight/betaflight/wiki/Launch-Control)
 
 # Troubleshooting
 
