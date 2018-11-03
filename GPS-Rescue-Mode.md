@@ -76,7 +76,7 @@ If you're using rescue mode in a supervised fashion (as a switch only with video
 
 `set gps_rescue_sanity_checks = RESCUE_SANITY_ON`
 
-You can also set this to RESCUE_SANITY_FS_ONLY if you want it to only matter in a failsafe (unsupervised) condition.  
+You can also set this to `RESCUE_SANITY_FS_ONLY` if you want it to only matter in a failsafe (unsupervised) condition.  
 
 Sanity checks will ensure that you have a valid GPS fix, that the quad is spending most of its time approaching home, and also it will do its best to disarm if it detects a premature landing (not within the target home landing zone). 
 
