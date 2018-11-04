@@ -1,3 +1,11 @@
+## Betaflight 4.0
+
+Add crash flip recovery_led_warning
+
+when crash flip recovery is active (AKA Turtle MODE) on the list of warnings to be shown on LED_STRIP.
+
+
+
 ## LED color by AUX channel
 
 Some race events require each craft to be identified by LED colors, and it is convenient to have an AUX channel to change the color.
@@ -10,13 +18,6 @@ https://github.com/betaflight/betaflight/issues/6896#issuecomment-427647756 give
 
 When using TBS SmartAudio or IRC Tramp you can have the LEDs change color based on your VTX channel by enabling the VTX overlay in the LED strip tab.
 
-
-
-***Betaflight 4.0***
-
-add crash flip recovery_led_warning
-
-Added 'crash flip recovery active (AKA Turtle MODE) to the list of warnings to be shown on LED_STRIP.
 
 
 ***Betaflight 3.3***
