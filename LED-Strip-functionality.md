@@ -10,6 +10,15 @@ https://github.com/betaflight/betaflight/issues/6896#issuecomment-427647756 give
 
 When using TBS SmartAudio or IRC Tramp you can have the LEDs change color based on your VTX channel by enabling the VTX overlay in the LED strip tab.
 
+
+
+***Betaflight 4.0***
+
+add crash flip recovery_led_warning
+
+Added 'crash flip recovery active (AKA Turtle MODE) to the list of warnings to be shown on LED_STRIP.
+
+
 ***Betaflight 3.3***
 
 The following table shows what color each frequency is assigned to.
