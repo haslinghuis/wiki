@@ -1,8 +1,8 @@
 ## Betaflight 4.0
 
-Add crash flip recovery_led_warning
+Add crash flip recovery_led_warning, this can be used instead of a buzzer
 
-when crash flip recovery is active (AKA Turtle MODE) on the list of warnings to be shown on LED_STRIP.
+when crash flip recovery is active (AKA Turtle MODE). Added on the list of warnings to be shown on LED_STRIP.
 
 
 
