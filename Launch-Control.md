@@ -1,6 +1,7 @@
+## Description
 Adds a race start assistance system that allows the pilot to pitch forward and then release the sticks with the quad holding position for the race start. Available starting with Betaflight 4.0.
 
-**Launch procedure:**
+## Launch procedure:
 * Launch Control mode switch is enabled
 * Arm
 * Leave throttle at minimum
@@ -10,10 +11,10 @@ Adds a race start assistance system that allows the pilot to pitch forward and t
 
 Example video: https://youtu.be/_S0rn3zcN0Q
 
-**Mode switch configuration:**
+## Mode switch configuration:
 For Launch Control to be enabled the mode must be configured. The state of the mode is captured at arming so the pilot has multiple options on how he wishes to set it up. Options include a dedicated switch, a momentary toggle held when arming, tied directly to the arming switch, or even always active.
 
-**Parameters:**
+## Parameters:
 
 **`launch_control_mode`**: Allows `NORMAL` (default), `PITCHONLY`, and `FULL`.
 
@@ -37,7 +38,7 @@ Adds a throttle deadband below which Launch Control will be active. The launch w
 
 Determines the Iterm gain used to hold position. If the quad has difficulty holding position then increase this value. Be careful with high values as windup can occur. If you hear the motors continuing to speed up while position is being held then the gain is likely too high. Basically you want to use the lowest value that works acceptably. While raised up in the launch position it's normal for the quad to move around a little. In this position it's very susceptible to wind in particular. Normally a little motion won't be a problem and it's not necessary to try to tune this with increased gain.
 
-**Accelerometer Integration**
+## Accelerometer Integration
 
 If the accelerometer is enabled then additional feedback will be presented in the OSD that indicates the current pitch angle. The pilot can use this to fine tune their launch angle for consistency.
 
@@ -45,13 +46,13 @@ If the accelerometer is enabled then additional feedback will be presented in th
 
 Allows the pilot to optionally set an angle limit that will limit the forward pitch. Provides an assist to help the pilot attain a consistent launch angle. It is simply a limit that prevents any more forward pitch when reached. The quad will not actively or automatically go to this angle. Pilot can still adjust the angle lower if desired. Setting to 0 disables the limit.
 
-**OSD Integration**
+## OSD Integration
 
 If the warnings element is enabled then when Launch Control is active a `LAUNCH` indicator will be displayed. Additionally if the accelerometer is enabled the current pitch angle will be appended like `LAUNCH 25`.
 
 All of the Launch Control parameters can be adjusted in the OSD menus. They're under PROFILE -> MISC PP -> LAUNCH CONTROL.
 
-**NOTES**
+## NOTES
 
 Launch Control will not activate if any of the following are true:
 * Arming while in a flight mode other than acro
