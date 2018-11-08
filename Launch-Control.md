@@ -1,6 +1,9 @@
 ## Description
 Adds a race start assistance system that allows the pilot to pitch forward and then release the sticks with the quad holding position for the race start. Available starting with Betaflight 4.0.
 
+## Safety
+While the quad is actively in Launch Control it may appear to be docile and safe. In reality it's anything but. You should treat it as if it's a powerful beast ready to leap ferociously at any point. Never take your hands off the controls and be prepared to disarm. Never stand close or allow others to. Follow all normal safety considerations.
+
 ## Launch procedure:
 * Launch Control mode switch is enabled
 * Arm
