@@ -68,9 +68,11 @@ Motor 3 (left) to motor output pin S3
 Motor 4 motor output pin S4 Free
 
 
-In the BetaFlight GUI in the Receiver Tab is a selection for how the model is setup.
+In the BetaFlight GUI in the Receiver Tab is a selection for how the connection to the model is setup.
 
-Betaflight Defaults to AETR1234 This is an accepted standard setup on Taranis.
+Betaflight Defaults to AETR1234 Aileron, Elevator, Throttle, Rudder(yaw) Aux 1 2 3 4. 
+
+This is an accepted standard setup on Taranis.
 
 In the Configuration tab.
 
