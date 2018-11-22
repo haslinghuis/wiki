@@ -81,7 +81,7 @@ You can also set this to `RESCUE_SANITY_FS_ONLY` if you want it to only matter i
 Sanity checks will ensure that you have a valid GPS fix, that the quad is spending most of its time approaching home, and also it will do its best to disarm if it detects a premature landing (not within the target home landing zone). 
 
 ## Common pitfalls
-- Ensure that you are flying further than minimum distance to home (100m by default) before testing GPS Rescue.
+- Ensure that you are flying further than the minimum distance to home (100m by default) before testing GPS Rescue.
 - For Betaflight versions prior to 4.0, it's highly encouraged to enable Air Mode, and optionally to finetune failsafe Stage1 settings, as a workaround for the crash detection issue immediately after activating Rescue Mode. Basically, ensure your settings will avoid the quad to be free-falling when entering into Stage2.
 - When changing failsafe parameters with Betaflight Configurator 10.4 or lower, the failsafe procedure will be silently reset. Ensure that you set the failsafe procedure manually on CLI after saving modifications on the failsafe tab.
 
