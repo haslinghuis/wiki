@@ -67,18 +67,27 @@ Motor 3 (left) to motor output pin S3
 
 Motor 4 motor output pin S4 is free, as this is a Tricopter.
 
+Motor pin 4 will not work for tail servo due to timing issue.
+
 I chose to disable motor 4 anyway.
+
+In the CLI
+
+Type
 
 resource motor 4 none
 
 save
 
+__________________________________________________________________________________________________________________________
 
 In the BetaFlight GUI in the Receiver Tab is a selection for how the connection to the model is setup.
 
 Betaflight Defaults to AETR1234 Aileron, Elevator, Throttle, Rudder(yaw) Aux 1 2 3 4. 
 
 This is an accepted standard setup on Taranis.
+
+__________________________________________________________________________________________________________________________
 
 In the Configuration tab.
 
@@ -89,6 +98,8 @@ feature CHANNEL_FOWARDING
 Need to be OFF.
 
 Selecting TRICOPTER sets yaw output to servo automaticly.
+
+__________________________________________________________________________________________________________________________
 
 How to set the tail servo.
 
@@ -112,6 +123,8 @@ resource servo 1 B10.
 
 save
 
+__________________________________________________________________________________________________________________________
+
 Nothing needs to be changed in the Servos tab for movement.
 
 Do not draw power from the board with a servo especially on a tricopter. 
@@ -120,7 +133,7 @@ Positive, black negative are going to a pdb 5v output.
 
 The yellow or white wire, signal wire can be connected to motor pin 5, motor pin 6, 7 or 8, will work.
  
-Motor pin 4 will not work for tail servo due to timing issue.
+__________________________________________________________________________________________________________________________
 
 IF you want to disable the tail servo when it`s not armed, go to the CLI.
 
@@ -137,6 +150,8 @@ Type
 set tri_unarmed_servo = ON
 
 save
+
+__________________________________________________________________________________________________________________________
 
 Now check if your servo/motor are tilting in the correct direction.
  
