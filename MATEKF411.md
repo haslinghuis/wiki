@@ -82,8 +82,11 @@ Nothing needs to be changed in the Servos tab for movement.
 
 Do not draw power from the board with a servo especially on a tricopter. 
 
-Positive, black negative are going to a pdb 5v output, The yellow or white wire,signal wire can be connected to motor pin 5, motor pin 6, 7 or 8 other pins whatever will work. M
-otor pin 4 will not work for Matek F411 due to timing issue.
+Positive, black negative are going to a pdb 5v output.
+
+The yellow or white wire, signal wire can be connected to motor pin 5, motor pin 6, 7 or 8, will work.
+ 
+Motor pin 4 will not work for tail servo due to timing issue.
 
 IF you want to disable the tail servo when it`s not armed, go to cli and type:
 
@@ -104,7 +107,7 @@ Set yaw_control_direction = -1
 
 save
 
-Or you can just reverse the yaw direction on your tx, but it is better to do it in the GUI
+Or you can just reverse the yaw direction on your tx, but it is better to do it in the GUI.
 
 Now check if your servo/motor are compensating in the correct direction. 
 
