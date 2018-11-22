@@ -52,9 +52,9 @@ Matek FC Facebook Group: https://www.facebook.com/groups/1882519175321708/
 **Matek Setup for F411 mini Tricopter**
 
 Setup: 2 front motors facing forward and rear motor / servo facing you
-Motor 1 - rear to motor output pin 1
-Motor 2 right to motor output pin 2
-Motor 3 left to motor output pin 3
+Motor 1 - rear to motor output pin S1
+Motor 2 right to motor output pin S2
+Motor 3 left to motor output pin S3
 
 On the BetaFlight GUI on the Receiver Tab is a selection for how the model is setup.
 Betaflight Defaults to AETR1234 This is an accepted standard setup on Taranis
@@ -64,7 +64,9 @@ Needs to be OFF.
 Selecting TRICOPTER sets yaw output to servo.
 
 Set tail servo Matek F411
-resource motor 6 none  (Pin on board is B10)
+resource motor 6 none  (Pin on board is S6 (
+***
+B10)
 resource servo 1 B10
 save
 
