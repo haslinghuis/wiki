@@ -65,7 +65,13 @@ Motor 2 (right) to motor output pin S2
 
 Motor 3 (left) to motor output pin S3
 
-Motor 4 motor output pin S4 Free
+Motor 4 motor output pin S4 is free, as this is a Tricopter.
+
+I chose to disable motor 4 anyway.
+
+resource motor 4 none
+
+save
 
 
 In the BetaFlight GUI in the Receiver Tab is a selection for how the connection to the model is setup.
@@ -84,13 +90,23 @@ Need to be OFF.
 
 Selecting TRICOPTER sets yaw output to servo automaticly.
 
-Set tail servo.
+How to set the tail servo.
 
 In the CLI
 
-resource motor 6 none. Then the pin will be free.
+I chose to use pin 6 in my setup, as pin 5 in my setup is used for telemetry.
 
-Pin on board is S6 which B10 is the location of the pin.
+Type
+
+resource motor 6 none
+
+save 
+
+Then the pin will be free.
+
+Pin on board is S6, and B10 is the location of the pin.
+
+Type
 
 resource servo 1 B10.
 
@@ -106,11 +122,17 @@ The yellow or white wire, signal wire can be connected to motor pin 5, motor pin
  
 Motor pin 4 will not work for tail servo due to timing issue.
 
-IF you want to disable the tail servo when it`s not armed, go to cli and type:
+IF you want to disable the tail servo when it`s not armed, go to the CLI.
+
+Type
 
 set tri_unarmed_servo = OFF 
 
+save
+
 Or if you want it on.
+
+Type
 
 set tri_unarmed_servo = ON
 
@@ -120,7 +142,9 @@ Now check if your servo/motor are tilting in the correct direction.
  
 If you move your yaw stick to the left, the motor must tilt to the right. If not, there are 2 ways to fix this.
 
-In cli type:
+In CLI
+
+Type
 
 Set yaw_control_direction = -1 
 
@@ -134,7 +158,7 @@ Set the endpoints in the GUI so you have 40 degrees deflection in both direction
 
 An analog servo works as will a digital one in most cases my directions were not reversed with an analog servo, but may be with a digital.
 
- Hopes this helps anybody to figure it out, It took much time to do..
+ Hopes this helps.
 
 Cheers!!!
 
