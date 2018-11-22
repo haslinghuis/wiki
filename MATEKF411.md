@@ -49,18 +49,26 @@ Setup Guide http://www.mateksys.com/?portfolio=f411-MINI
 
 Matek FC Facebook Group: https://www.facebook.com/groups/1882519175321708/
 
-**Matek Setup for F411 mini for Tricopter** by Flashted
+**Setup for Matek F411 mini for Tricopter** by Flashted
 
-Setup: 2 front motors facing forward and rear motor / servo facing you
-Motor 1 - rear to motor output pin S1
-Motor 2 right to motor output pin S2
-Motor 3 left to motor output pin S3
+Setup: 2 front motors facing forward and (tail) rear motor / servo facing you.
+
+On the board.
+
+Motor 1 - (rear) to motor output pin S1
+
+Motor 2 (right) to motor output pin S2
+
+Motor 3 (left) to motor output pin S3
+
 Motor 4 motor output pin S4 Free
 
 
-On the BetaFlight GUI on the Receiver Tab is a selection for how the model is setup.
+In the BetaFlight GUI in the Receiver Tab is a selection for how the model is setup.
 
 Betaflight Defaults to AETR1234 This is an accepted standard setup on Taranis.
+
+In the Configuration tab.
 
 feature SERVO_TILT
 
@@ -70,9 +78,13 @@ Need to be OFF.
 
 Selecting TRICOPTER sets yaw output to servo automaticly.
 
-Set tail servo Matek F411
+Set tail servo.
 
-resource motor 6 none. Pin on board is S6 B10.
+In the CLI
+
+resource motor 6 none. Then the pin will be free.
+
+Pin on board is S6 which B10 is the location of the pin.
 
 resource servo 1 B10.
 
@@ -95,6 +107,7 @@ set tri_unarmed_servo = OFF
 Or if you want it on.
 
 set tri_unarmed_servo = ON
+
 save
 
 Now check if your servo/motor are tilting in the correct direction.
@@ -107,13 +120,16 @@ Set yaw_control_direction = -1
 
 save
 
-Or you can just reverse the yaw direction on your tx, but it is better to do it in the GUI.
+If you quickly move your tail to the right  the motor must tilt quickly to the left, and vice versa.
 
-Now check if your servo/motor are compensating in the correct direction. 
+You can just reverse the yaw direction on your Tx, but it is better to do it in the GUI, so the flight controller does not have to process the data.
 
-If you quickly move your tail to the right So nose will tilt left, the motor must tilt quickly to the left.
+Set the endpoints in the GUI so you have 40 degrees deflection in both directions, and neutral at as level as you can get it. 
 
 An analog servo works as will a digital one in most cases my directions were not reversed with an analog servo, but may be with a digital.
 
+ Hopes this helps anybody to figure it out, It took much time to do..
+
+Cheers!!!
 
 
