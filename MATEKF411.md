@@ -165,6 +165,8 @@ Set yaw_control_direction = -1
 
 save
 
+__________________________________________________________________________________________________________________________
+
 If you quickly move your tail to the right  the motor must tilt quickly to the left, and vice versa.
 
 You can just reverse the yaw direction on your Tx, but it is better to do it in the GUI, so the flight controller does not have to process the data.
