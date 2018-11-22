@@ -81,6 +81,12 @@ You can also set this to `RESCUE_SANITY_FS_ONLY` if you want it to only matter i
 Sanity checks will ensure that you have a valid GPS fix, that the quad is spending most of its time approaching home, and also it will do its best to disarm if it detects a premature landing (not within the target home landing zone). 
 
 ## Version History
+**Betaflight 4.0**
+* Prevent crash detection immediately after entering GPS Rescue mode (https://github.com/betaflight/betaflight/pull/7034)
+* Allow minimum distance to home to be configurable (https://github.com/betaflight/betaflight/pull/6404)
+
+**Betaflight 3.5.3**
+* Fixed problem with MOTOR_STOP and auto-disarm activating when GPS Rescue is active (https://github.com/betaflight/betaflight/pull/6979);
 
 **Betaflight 3.5**
 * GPS Rescue activated on failsafe will check the quad to be at least 100m away from home, regardless of the Sanity check setting. If it's closer, it will drop. Non-failsafe activated GPS Rescue works as in 3.4.
