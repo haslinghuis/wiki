@@ -66,9 +66,7 @@ Needs to be OFF.
 Selecting TRICOPTER sets yaw output to servo.
 
 Set tail servo Matek F411
-resource motor 6 none  Pin on board is S6
-***
-B10)
+resource motor 6 none  Pin on board is S6 B10
 resource servo 1 B10
 save
 
@@ -88,7 +86,7 @@ set yaw_control_direction = -1
 save
 Or you can just reverse the yaw direction on your tx, but it is better to do it in the GUI
 
-Now check if your servo/motor are compensating in the correct direction. If you quickly move your tail to the right (So nose will tilt left), the motor must tilt quickly to the left.
+Now check if your servo/motor are compensating in the correct direction. If you quickly move your tail to the right So nose will tilt left, the motor must tilt quickly to the left.
 
 An analog servo works as will a digital one in most cases my directions were not reversed with an analog servo, but may be with a digital.
 
