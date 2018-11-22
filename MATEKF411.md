@@ -49,12 +49,14 @@ Setup Guide http://www.mateksys.com/?portfolio=f411-MINI
 
 Matek FC Facebook Group: https://www.facebook.com/groups/1882519175321708/
 
-**Matek Setup for F411 mini Tricopter**
+**Matek Setup for F411 mini for Tricopter**
 
 Setup: 2 front motors facing forward and rear motor / servo facing you
 Motor 1 - rear to motor output pin S1
 Motor 2 right to motor output pin S2
 Motor 3 left to motor output pin S3
+Motor 4 motor output pin S4 Free
+
 
 On the BetaFlight GUI on the Receiver Tab is a selection for how the model is setup.
 Betaflight Defaults to AETR1234 This is an accepted standard setup on Taranis
@@ -69,6 +71,8 @@ resource motor 6 none  (Pin on board is S6 (
 B10)
 resource servo 1 B10
 save
+
+Nothing needs to be changed in the Servos tab for movement.
 
 Do not draw power from the board with a servo (especially on a tricopter), so red(positive) , black (negative) are going to a pdb 5v output, The yellow or white wire(signal wire) can be connected to motor pin 5, motor pin 6, 7 or 8 other pins whatever will work (motor pin 4 will not work for Matek due to timing issue)
 
