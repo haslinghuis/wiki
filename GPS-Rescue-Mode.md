@@ -82,6 +82,7 @@ Sanity checks will ensure that you have a valid GPS fix, that the quad is spendi
 
 ## Common pitfalls
 - Ensure that you are flying further than minimum distance to home (100m by default) before testing GPS Rescue.
+- For Betaflight versions prior to 4.0, it's highly encouraged to enable Air Mode, and optionally to finetune failsafe Stage1 settings, as a workaround for the crash detection issue immediately after activating Rescue Mode. Basically, ensure your settings will avoid the quad to be free-falling when entering into Stage2.
 - When changing failsafe parameters with Betaflight Configurator 10.4 or lower, the failsafe procedure will be silently reset. Ensure that you set the failsafe procedure manually on CLI after saving modifications on the failsafe tab.
 
 ## Version History
