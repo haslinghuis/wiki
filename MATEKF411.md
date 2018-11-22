@@ -49,9 +49,13 @@ Setup Guide http://www.mateksys.com/?portfolio=f411-MINI
 
 Matek FC Facebook Group: https://www.facebook.com/groups/1882519175321708/
 
+
+
 **Setup for Matek F411 mini for Tricopter** by Flashted
 
-Setup: 2 front motors facing forward and (tail) rear motor / servo facing you.
+Setup: 
+
+The 2 front motors face forward and (tail) rear motor / servo facing towards you.
 
 On the board.
 
