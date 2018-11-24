@@ -125,9 +125,10 @@ ________________________________________________________________________________
 
 How to set the tail servo.
 
-In the CLI
+I chose to use pin 6 in my setup for tail servo, as pin 5 in my setup is used for telemetry, as I stated earlier.
 
-I chose to use pin 6 in my setup, as pin 5 in my setup is used for telemetry.
+
+In the CLI
 
 Type
 
