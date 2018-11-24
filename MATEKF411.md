@@ -53,6 +53,8 @@ ________________________________________________________________________________
 
 **Setup for Matek F411 mini for Tricopter** by Flashted
 
+Do a full CLI dump, to have a reference to the original file before making ANY changes.  You may need a fixed starting point in case you have to start over. You must assign it to be a tricopter "first", and then "save and reboot" it as a tricopter so that all resources, and their designations will show up in the CLI.
+
 Setup: 
 
 The 2 front motors face forward and (tail) rear motor / servo facing towards you.
@@ -67,17 +69,10 @@ Motor 3 (left) to motor output pin S3
 
 Motor 4 motor output pin S4 is free, as this is a Tricopter.
 
-Motor pin 4 will not work for tail servo due to timing issue.
+Motor pin 4 will not work for tail servo due to timing issue. (I think)
 
-I chose to disable motor 4 anyway.
-
-In the CLI
-
-Type
-
-resource motor 4 none
-
-save
+I chose to disable motor 4, and noticed that I lost motor 2 when I tried to calibrate the esc's due to some Betaflight strangeness. I re-asigned motor 4 back to the original assignment, and motor 2 worked again, no problems. 
+Go figure...
 
 __________________________________________________________________________________________________________________________
 
