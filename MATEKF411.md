@@ -58,6 +58,8 @@ If Firmware update is needed on F411, it is best done in the CLI. If you power d
 If computer can't detect it, reinstall DFU drivers with zadig 
 or use this https://impulserc.blob.core.windows.net/utilities/ImpulseRC_Driver_Fixer.exe 
 
+To enter bootloader mode.
+
 In CLI
 
 Type
