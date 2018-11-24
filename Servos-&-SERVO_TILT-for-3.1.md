@@ -139,7 +139,7 @@ I halved the P and I 50% from stock on yaw, but the tail were loose, went back t
 
 _________________________________________________________________________________________________________________________
 
-Setup for Matek F411 mini for Tricopter by Flashted
+#### Example 5: Setup for Matek F411 mini for Tricopter by Flashted
 
 If Firmware update is needed on F411, it is best done in the CLI. If you power down the board, press the bootloader button on flight controller, and plug back in like a lot of other boards, it doesn't seem to work. There is NO blinking led confirming bootloader mode. It either works, or it does not.
 
