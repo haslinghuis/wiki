@@ -53,6 +53,22 @@ ________________________________________________________________________________
 
 **Setup for Matek F411 mini for Tricopter** by Flashted
 
+If Firmware update is needed on F411, it is best done in the CLI. If you power down the board, press the bootloader button on flight controller, and plug back in like a lot of other boards, it doesn't seem to work. There is NO blinking led confirming bootloader mode. It either works, or it does not.
+
+If computer can't detect it, reinstall DFU drivers with zadig 
+or use this https://impulserc.blob.core.windows.net/utilities/ImpulseRC_Driver_Fixer.exe 
+
+In CLI
+
+Type
+
+bl
+
+enter
+
+Then bootloader mode is enabled, and newer firmware can be flashed.
+
+
 Do a full CLI dump, to have a reference to the original file before making ANY changes.  You may need a fixed starting point in case you have to start over. You must assign it to be a tricopter "first", and then "save and reboot" it as a tricopter so that all resources, and their designations will show up in the CLI.
 
 Setup: 
@@ -69,10 +85,19 @@ Motor 3 (left) to motor output pin S3
 
 Motor 4 motor output pin S4 is free, as this is a Tricopter.
 
-Motor pin 4 will not work for tail servo due to timing issue. (I think)
+Motor pin 4 will not work for tail servo due to timing issue.
 
-I chose to disable motor 4, and noticed that I lost motor 2 when I tried to calibrate the esc's due to some Betaflight strangeness. I re-asigned motor 4 back to the original assignment, and motor 2 worked again, no problems. 
+(Tail servo setup is explained below, keep reading)
+
+If you need more outputs for servos, or as I needed strobes, motor 4 (S4) can't be remapped to servo if motor 3 (S3) is assigned to a motor.
+If S5 is used for a servo, S6 can be remapped to a servo also. I used S5 for telemetry in Taranis.
+
+You can also use RSSI pad or LED pads for servo outputs.
+
+I chose to try to disable motor 4, and noticed that I lost motor 2 when I tried to calibrate the esc's due to some Betaflight strangeness. I re-asigned motor 4 back to the original assignment, and motor 2 worked again, no problems. 
 Go figure...
+
+
 
 __________________________________________________________________________________________________________________________
 
