@@ -139,9 +139,15 @@ I halved the P and I 50% from stock on yaw, but the tail were loose, went back t
 
 _________________________________________________________________________________________________________________________
 
-#### Example 5: Setup for Matek F411 mini for Tricopter by Flashted
+#### Example 5: Setup for Matek F411 mini for Tricopter in Betaflight 3.2.0 by Flashted
 
-If Firmware update is needed on F411, it is best done in the CLI. If you power down the board, press the bootloader button on flight controller, and plug back in like a lot of other boards, it doesn't seem to work. There is NO blinking led confirming bootloader mode. It either works, or it does not.
+If Firmware update is needed on F411, it is best done in the CLI. 
+
+I have found these instructions do not work with the new Betaflight 3.5.3, as something has changed in the higher versions that have made changes to how the tail servo outputs. I am at the moment trying to figure out why. But, if you want to try with higher versions, try it. Betaflight 3.2.0 works.
+
+I want to experiment with GPS rescue for tricopter, which Betaflight 3.2.0 does not support, so I am going to go back to the first version that supports GPS rescue, and start there.
+
+If you power down the board, press the bootloader button on flight controller, and plug back in like a lot of other boards, it doesn't seem to work. There is NO blinking led confirming bootloader mode. It either works, or it does not.
 
 If computer can't detect it, reinstall DFU drivers with zadig or use this https://impulserc.blob.core.windows.net/utilities/ImpulseRC_Driver_Fixer.exe
 
