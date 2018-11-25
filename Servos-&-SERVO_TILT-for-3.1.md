@@ -169,6 +169,12 @@ Do a full CLI dump, to have a reference to the original file before making ANY c
 
 Setup:
 
+The first servo output channel is used for tail servo
+The first motor output channel is used for tail motor
+The second motor output channel is used for right motor
+The third motor output channel is used for left motor.
+
+
 The 2 front motors face forward and (tail) rear motor / servo facing towards you.
 
 On the board:
