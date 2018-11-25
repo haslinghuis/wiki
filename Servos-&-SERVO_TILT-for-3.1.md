@@ -143,7 +143,7 @@ ________________________________________________________________________________
 
 If Firmware update is needed on F411, it is best done in the CLI. 
 
-I have found these instructions work with the Betaflight  3.2.2, Something has changed in the higher versions that have made changes to how the tail servo outputs, and this method does not work with Betaflight 3.4.1, or higher. I have not tried between version 3.2.2 - 3.4.0 I am at the moment trying to figure out why. But, if you want to try with higher versions, try it, and tri to figure it out. Betaflight 3.2.1 works with a minimum of effort to get your craft flying.
+I have found these instructions work with the Betaflight  3.2.2, Something has changed in the higher versions that have made changes to how the tail servo outputs, and this method does not work with Betaflight 3.4.1, or higher. I have not tried between version 3.2.2 - 3.4.0 I am at the moment trying to figure out why. But, if you want to try with higher versions, try it, and tri to figure it out. Betaflight 3.2.2 works with a minimum of effort to get your craft flying.
 
 I want to experiment with GPS rescue for tricopter, which Betaflight 3.2.2 does not support, so I am going to go foward to version 3.4.1 which supports GPS rescue, and start there.
 
