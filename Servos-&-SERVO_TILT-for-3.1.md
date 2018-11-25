@@ -139,19 +139,19 @@ I halved the P and I 50% from stock on yaw, but the tail were loose, went back t
 
 _________________________________________________________________________________________________________________________
 
-#### Example 5: Setup for Matek F411 mini for Tricopter in Betaflight 3.2.0 by Flashted
+#### Example 5: Setup for Matek F411 mini for Tricopter in Betaflight 3.2.2 by Flashted
 
 If Firmware update is needed on F411, it is best done in the CLI. 
 
-I have found these instructions do not work with the new Betaflight 3.5.3, as something has changed in the higher versions that have made changes to how the tail servo outputs. I am at the moment trying to figure out why. But, if you want to try with higher versions, try it. Betaflight 3.2.0 works.
+I have found these instructions work with the Betaflight  3.2.2, Something has changed in the higher versions that have made changes to how the tail servo outputs, and this method does not work with Betaflight 3.4.1, or higher. I have not tried between version 3.2.2 - 3.4.0 I am at the moment trying to figure out why. But, if you want to try with higher versions, try it, and tri to figure it out. Betaflight 3.2.1 works with a minimum of effort to get your craft flying.
 
-I want to experiment with GPS rescue for tricopter, which Betaflight 3.2.0 does not support, so I am going to go back to the first version that supports GPS rescue, and start there.
+I want to experiment with GPS rescue for tricopter, which Betaflight 3.2.2 does not support, so I am going to go foward to version 3.4.1 which supports GPS rescue, and start there.
 
-If you power down the board, press the bootloader button on flight controller, and plug back in like a lot of other boards, it doesn't seem to work. There is NO blinking led confirming bootloader mode. It either works, or it does not.
+If you power down the board, press the bootloader button on the Matek F411 flight controller, and plug back in like a lot of other boards, it does not enter bootloader mode, and there is NO blinking led confirming bootloader mode, at least with my windows 10 laptop. It does not work.
 
 If computer can't detect it, reinstall DFU drivers with zadig or use this https://impulserc.blob.core.windows.net/utilities/ImpulseRC_Driver_Fixer.exe
 
-To enter bootloader mode.
+To enter bootloader mode in CLI:
 
 In CLI
 
@@ -169,7 +169,7 @@ Setup:
 
 The 2 front motors face forward and (tail) rear motor / servo facing towards you.
 
-On the board.
+On the board:
 
 Motor 1 - (rear) to motor output pin S1
 
@@ -195,7 +195,7 @@ Betaflight Defaults to AETR1234 Aileron, Elevator, Throttle, Rudder(yaw) Aux 1 2
 
 This is an accepted standard setup on Taranis.
 
-In the Configuration tab.
+In the Configuration tab:
 
 feature SERVO_TILT
 
@@ -205,11 +205,11 @@ Need to be OFF.
 
 Selecting TRICOPTER sets yaw output to servo automaticly.
 
-How to set the tail servo.
+How to set the tail servo:
 
 I chose to use pin 6 in my setup for tail servo, as pin 5 in my setup is used for telemetry, as I stated earlier.
 
-In the CLI
+In the CLI:
 
 Type
 
@@ -221,7 +221,7 @@ Then the pin will be free.
 
 Pin on board is S6, and B10 is the location of the pin.
 
-Type
+Type:
 
 resource servo 1 B10.
 
@@ -237,7 +237,7 @@ The yellow or white wire, signal wire can be connected to motor pin 5, motor pin
 
 IF you want to disable the tail servo when it`s not armed, go to the CLI.
 
-Type
+Type:
 
 set tri_unarmed_servo = OFF
 
@@ -245,7 +245,7 @@ save
 
 Or if you want it on.
 
-Type
+Type:
 
 set tri_unarmed_servo = ON
 
@@ -255,7 +255,7 @@ Now check if your servo/motor are tilting in the correct direction.
 
 If you move your yaw stick to the left, the motor must tilt to the right. If not, there are 2 ways to fix this.
 
-In CLI
+In CLI:
 
 Type
 
