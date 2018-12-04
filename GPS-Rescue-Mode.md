@@ -82,6 +82,7 @@ Sanity checks will ensure that you have a valid GPS fix, that the quad is spendi
 
 ## Common pitfalls
 - Ensure that you are flying further than the minimum distance to home (100m by default) before testing GPS Rescue.
+- Every time the quad is armed, the home point is updated. Prior to BF 4.0, home point was updated on disarm but could be missed if switching rapidly. Best practice for launching in all versions is to arm, wait a few seconds until home point shows up in osd with 0 distance, and then start flying. Otherwise, disarm, wait a few seconds and repeat. 
 - For Betaflight versions prior to 4.0, it's highly encouraged to enable Air Mode, and optionally to finetune failsafe Stage1 settings, as a workaround for the crash detection issue immediately after activating Rescue Mode. Basically, ensure your settings will avoid the quad to be free-falling when entering into Stage2.
 - When changing failsafe parameters with Betaflight Configurator 10.4 or lower, the failsafe procedure will be silently reset. Ensure that you set the failsafe procedure manually on CLI after saving modifications on the failsafe tab.
 
