@@ -4,6 +4,7 @@ Add crash flip recovery_led_warning, this can be used instead of a buzzer
 
 when crash flip recovery is active (AKA Turtle MODE). Added on the list of warnings to be shown on LED_STRIP.
 
+@watageek Please don't change the page title, as it is part of the URL that already have a reference to.
 
 
 ## LED color by AUX channel
