@@ -101,6 +101,7 @@
  - [CHEBUZZF3](/betaflight/betaflight/wiki/Board---CHEBUZZF3)
  - [CJMCU](/betaflight/betaflight/wiki/Board---CJMCU)
  - [CLRACINGF4](/betaflight/betaflight/wiki/Board-CLRACINGF4)
+ - [CLRACINGF7](https://github.com/betaflight/betaflight/blob/master/docs/boards/Board%20-%20CLRACINGF7.md)
  - [COLIBRI](/betaflight/betaflight/wiki/Board---COLIBRI)
  - [COLIBRI_RACE](/betaflight/betaflight/wiki/Board---COLIBRI_RACE)
  - [CrazyBeeF3FR](https://github.com/betaflight/betaflight/blob/master/docs/boards/Board%20-%20CrazyBeeF3FR.md)
