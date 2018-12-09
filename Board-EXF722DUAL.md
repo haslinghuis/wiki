@@ -5,7 +5,6 @@
 - OSD: AT7456E (SPI2)
 - Barometer: BMP280 (SPI3)
 - Blackbox: Micron M25P16VP (SPI3)
-- PID Audio: PA4
 
 ### Feature
 - High-performance and DSP with FPU, ARM Cortex-M7 MCU with 512 Kbytes Flash. 
