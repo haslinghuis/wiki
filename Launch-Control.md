@@ -33,7 +33,7 @@ Determines the launch triggering reset behavior. After a launch is triggered we 
 
 As long as the launch has not been triggered the pilot can arm/disarm multiple times and the feature will still be available. So if the quad was to fall off the blocks for example the pilot can reposition and simply re-arm.
 
-**`launch_trigger_throttle_percent`**: Allows 0 - 50 (default 20).
+**`launch_trigger_throttle_percent`**: Allows 0 - 90 (default 20).
 
 Adds a throttle deadband below which Launch Control will be active. The launch will be triggered once throttle exceeds the configured percent. Higher values provide a more aggressive launch as the throttle will "jump" to the configured percentage. Setting to 0 will cause the trigger to be `min_check`. The default value of 20 provides a good initial deadband to prevent accidental triggering while still providing a good "jump" off the blocks. Be careful with higher values as the quad can be quite aggressive when launching.
 
