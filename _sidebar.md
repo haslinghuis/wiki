@@ -112,6 +112,7 @@
  - [DOGE](/betaflight/betaflight/wiki/Board---DOGE)
  - [Elle0 - Paparazzi docs](http://wiki.paparazziuav.org/wiki/Elle0)
  - [EUSTM32F103RC](/betaflight/betaflight/wiki/Board---EUSTM32F103RC)
+ - [EXF722DUAL](https://github.com/betaflight/betaflight/blob/master/docs/boards/Board%20-%20EXF722DUAL.md)
  - [F4BY](/betaflight/betaflight/wiki/Board---F4BY)
  - [FF_PIKOBLX](https://github.com/betaflight/betaflight/wiki/Board---FF_PIKOBLX)
  - [FishDroneF4](/betaflight/betaflight/wiki/Board---FishDroneF4)
