@@ -45,7 +45,7 @@ All in one created by Exuav (https://www.facebook.com/EXUAV/), includes: FC (F4)
 
 ## Manufacturers and Distributors
 www.exuavrc.com
-http://www.banggood.com/F4-Tower-Flight-Controller-Build-In-Accelerometer-Gyroscope-with-PDB-Buzzer-For-RC-Racer-p-1108717.html?p=3T212374947582016110
+http://www.banggood.com/F4-Tower-Flight-Controller-Build-In-Accelerometer-Gyroscope-with-PDB-Buzzer-For-RC-Racer-p-1108717.html
 
 ## Designers
 Exuav
