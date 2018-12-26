@@ -66,7 +66,7 @@
  - [Supported Sensors](/betaflight/betaflight/wiki/Supported-Sensors)
  - [Pinio and PinioBox](/betaflight/betaflight/wiki/Pinio-and-PinioBox)
  - [Launch Control](/betaflight/betaflight/wiki/Launch-Control)
- - [Paraylze](/betaflight/betaflight/wiki/Paralyze-for-team-races)
+ - [Paralyze](/betaflight/betaflight/wiki/Paralyze-for-team-races)
 
 # Troubleshooting
 
