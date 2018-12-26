@@ -55,7 +55,7 @@ https://www.rcgroups.com/forums/showthread.php?2537379-MotoLab-Board-Setup-and-T
 
 ## Manufacturers and Distributors
 
-Manufactured by MotoLab. Distributed by Heli-Nation, RocketCityFPV, DefianceRC and others.
+Manufactured by MotoLab.
 
 ## Designers
 Moto Moto
