@@ -41,7 +41,7 @@ This is the distance, in meters, at which your quad will start descending toward
 You can decrease this value in the CLI or even make it 0 if you just want to fly near yourself. Keep in mind that if you do not hav a GPS fix by the time you arm, your quad will not know where to return if you activate Rescue Mode, and it will simply land.
 ## We suggest the following procedure:
 
-Fly in a straight line for at least 100 meters past your descent distance. For example, if your descent distance setting is 150 meters, fly to 250 meters. As you fly, the home arrow should adjust to point towards home.
+Fly in a straight line for at least 100 meters past your descent distance. For example, if your descent distance setting is 150 meters, fly to 250 meters. As you keep flying in a straight line, the home arrow should adjust to point towards home.
 
  ## **VERY IMPORTANT: **  if your arrow does not point towards home, **DO NOT** activate GPS Rescue. Your quad will try to fly in the direction of the arrow if you do.
 Activate GPS Rescue. 
@@ -90,6 +90,11 @@ Sanity checks will ensure that you have a valid GPS fix, that the quad is spendi
 **Betaflight 4.0**
 * Prevent crash detection immediately after entering GPS Rescue mode (https://github.com/betaflight/betaflight/pull/7034)
 * Allow minimum distance to home to be configurable (https://github.com/betaflight/betaflight/pull/6404)
+* Fixed a problem with Sanity Check misreporting STALLED/FLYAWAY during the initial phase (https://github.com/betaflight/betaflight/pull/7254)
+* Added warning indication for GPS Rescue unreliable (https://github.com/betaflight/betaflight/pull/7256)
+
+**Betaflight 3.5.5**
+* Fixed a problem with Sanity Check misreporting STALLED during the initial phase (https://github.com/betaflight/betaflight/pull/7254)
 
 **Betaflight 3.5.3**
 * Fixed problem with MOTOR_STOP and auto-disarm activating when GPS Rescue is active (https://github.com/betaflight/betaflight/pull/6979);
