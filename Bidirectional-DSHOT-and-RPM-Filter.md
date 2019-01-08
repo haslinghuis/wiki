@@ -1,5 +1,11 @@
 ### Dshot & Betaflight 4.0
 
+[Bidirectional Dshot](https://github.com/betaflight/betaflight/pull/7264) is a new feature in Betaflight 4.0 which enables the flight controller to receive high frequency rpm telemetry for each motor on the ESC motor signal line. It does require not require any additional wiring or an additional telemetry back-channel. Each dshot frame from the FC gets acknowledged by a frame from the ESC containing the current eRPM. The FC needs to know the motor pole count (number of magnets) to convert to rpm.
+
+The rpm filter (https://github.com/betaflight/betaflight/pull/7271) is a bank of notch filters on gyro and dterm which takes advantage of this high frequency rpm telemetry data to implement a motor harmonics feature which removes motor noise with surgical precision.
+
+These two features are currently supported by blheli32 and require an update. A first test version is [available](https://github.com/bitdump/BLHeli/tree/master/BLHeli_32%20ARM/BLHeli_32%20Test%20code%20Rev32.61%20hex%20files).
+
 ### Required configuration
 
 ### Loop times and dshot protocol
@@ -43,9 +49,9 @@ Please add additional verified configurations here.
 
 ### References
 
-Bidirectional Dshot PR: https://github.com/betaflight/betaflight/pull/7271
+Bidirectional Dshot PR: https://github.com/betaflight/betaflight/pull/7264
 
-Rpm Filter PR: https://github.com/betaflight/betaflight/pull/7264
+Rpm Filter PR: https://github.com/betaflight/betaflight/pull/7271
 
 A test version of blheli32 with erpm telemetry on signal line support is now available:
 https://github.com/bitdump/BLHeli/tree/master/BLHeli_32%20ARM/BLHeli_32%20Test%20code%20Rev32.61%20hex%20files
