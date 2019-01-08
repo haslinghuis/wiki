@@ -38,7 +38,7 @@ The escs report erpm which needs to be converted to rpm using the number of pole
 
 ### Verifying consistent loop time
 
-Since the rpm filter works with very narrow notch filters it's imperative that the gyro loop time does not vary and is exactly as high as specified. After enabling all of the above features double check that this is the case. If not select a lower loop rate. Remember that unlike effective filtering loop time has very minimal effect on [flight performance] (https://github.com/betaflight/betaflight/issues/7327).
+Since the rpm filter works with very narrow notch filters it's imperative that the gyro loop time does not vary and is exactly as high as specified. After enabling all of the above features double check that this is the case. If not select a lower loop rate. Remember that unlike effective filtering loop time has very minimal effect on [flight performance](https://github.com/betaflight/betaflight/issues/7327).
 
 ### Supported FCs
 
