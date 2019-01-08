@@ -18,13 +18,13 @@ Both bidirectional dshot and the rpm filter are fairly cpu intensive and it is v
 
 The current implementation requires normal DMA to be used, not burst dma. This may or may not work with a given FC. You can simply try it out:
 
-set dshot_burst=off
+``set dshot_burst=off``
 
 And test whether your quad still flies. If so proceed to the next step:
 
 ### Enabling Bidirectional Dshot
 
-set dshot_bidir=on
+``set dshot_bidir=on``
 
 See if your motors still spin up. If so try detach the USB cable, connect a battery and reconnect USB. Now go to the CLI and type ``status``. You should see dshot telemetry being reported. The reported rpm should be zero for each motor and there should be few errors.
 
@@ -32,7 +32,7 @@ See if your motors still spin up. If so try detach the USB cable, connect a batt
 
 The escs report erpm which needs to be converted to rpm using the number of poles (magnets) of the motors. Regular 5" motors have 14 poles and that's the default setting. Smaller motors have less poles, often 12. Count them or look up the motor specs and configure using:
 
-set motor_poles=14
+``set motor_poles=14``
 
 ### Verifying consistent loop time
 
