@@ -38,6 +38,8 @@ OMNIBUSF4SD target (Joe)
 Banggood 20mm NOXE FC (uses NOX target, n channels reassigned breaks LED support). (Joe)
 Kakutef4v2 (bizmar)
 
+Please add additional verified configurations here.
+
 
 ### References
 
