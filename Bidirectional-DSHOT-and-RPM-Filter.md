@@ -3,6 +3,7 @@
 ### Supported FCs
 
 OMNIBUSF4SD target
+Banggood 20mm NOXE FC (uses NOX target, n channels reassigned breaks LED support).
 
 
 ### References
