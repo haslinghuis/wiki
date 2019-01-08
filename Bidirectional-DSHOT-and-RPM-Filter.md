@@ -2,6 +2,10 @@
 
 ## Required configuration
 
+### Loop times and dshot protocol
+
+Bidirectional dshot works with dshot 300, 600 and 1200; and with proshot 1200. Remember though that for each frame sent there will now be a frame coming back. And between input and output frames there is a period of 25us to switch the line, dma and timers. The loop time needs to be selected low enough that given the dshot protocol rate both frames + 50 us fit into one gyro iteration.
+
 ### DMA
 
 The current implementation requires normal DMA to be used, not burst dma. This may or may not work with a given FC. You can simply try it out:
