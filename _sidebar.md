@@ -120,6 +120,7 @@
  - [EXF722DUAL](https://github.com/betaflight/betaflight/blob/master/docs/boards/Board%20-%20EXF722DUAL.md)
  - [F4BY](/betaflight/betaflight/wiki/Board---F4BY)
  - [FF_PIKOBLX](https://github.com/betaflight/betaflight/wiki/Board---FF_PIKOBLX)
+ - [FF_RACEPIT](https://github.com/betaflight/betaflight/blob/3.5.x-maintenance/docs/boards/Board%20-%20FF_RacePIT.md)
  - [FishDroneF4](/betaflight/betaflight/wiki/Board---FishDroneF4)
  - [Flip32 F3 OSD](/betaflight/betaflight/wiki/Board---Flip32-F3-OSD)
  - [Flip32F4](/betaflight/betaflight/wiki/Board---AIRBOTF4FLIP32F4)
