@@ -1,6 +1,6 @@
 ### Dshot & Betaflight 4.0
 
-## Required configuration
+### Required configuration
 
 ### Loop times and dshot protocol
 
