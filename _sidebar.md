@@ -19,9 +19,10 @@
 
 # Tuning Tips
 
+ - [Betaflight 4.0](/betaflight/betaflight/wiki/Bidirectional-DSHOT-and-RPM-Filter) 
  - [Betaflight 3.5](/betaflight/betaflight/wiki/3.5-tuning-notes)
  - [Betaflight 3.4](/betaflight/betaflight/wiki/Tuning-Tips-for-Betaflight-3.4)
- - [Betaflight 4.0](/betaflight/betaflight/wiki/Bidirectional-DSHOT-and-RPM-Filter)
+
 # Setup and More
 
  - [Arming Sequence & Safety](https://github.com/betaflight/betaflight/wiki/Arming-Sequence-&-Safety)
