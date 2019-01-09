@@ -10,7 +10,9 @@ These two features are currently supported by blheli32 and require an update. A 
 
 ### Loop times and dshot protocol
 
-Bidirectional dshot works with dshot 300, 600 and 1200; and with proshot 1200. Remember though that for each frame sent there will now be a frame coming back. And between input and output frames there is a period of 25us to switch the line, dma and timers. The loop time needs to be selected low enough that given the dshot protocol rate both frames + 50 us fit into one gyro iteration.
+Bidirectional dshot works with dshot 300, 600 and 1200; and with proshot 1000. Remember though that for each frame sent there will now be a frame coming back. And between input and output frames there is a period of 25us to switch the line, dma and timers. The loop time needs to be selected low enough that given the dshot protocol rate both frames + 50 us fit into one gyro iteration. 
+
+Decoding of proshot packets is significantly faster than dshot. If it works on your FC we recommend using proshot 1000 for that purpose.
 
 Both bidirectional dshot and the rpm filter are fairly cpu intensive and it is very important for the loop rates to be exactly on spot so that the filters get tuned to the right frequencies. I recommend running at 4k/4k. All dshot speeds should work at that loop rate.
 
