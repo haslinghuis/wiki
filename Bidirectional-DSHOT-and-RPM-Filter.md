@@ -1,6 +1,6 @@
 ### Dshot & Betaflight 4.0
 
-[Bidirectional Dshot](https://github.com/betaflight/betaflight/pull/7264) is a new feature in Betaflight 4.0 which enables the flight controller to receive high frequency rpm telemetry for each motor on the ESC motor signal line. It does require not require any additional wiring or an additional telemetry back-channel. Each dshot frame from the FC gets acknowledged by a frame from the ESC containing the current eRPM. The FC needs to know the motor pole count (number of magnets) to convert to rpm.
+[Bidirectional Dshot](https://github.com/betaflight/betaflight/pull/7264) is a new feature in Betaflight 4.0 which enables the flight controller to receive high frequency rpm telemetry for each motor on the ESC motor signal line. It does not require any additional wiring or an additional telemetry back-channel. Each dshot frame from the FC gets acknowledged by a frame from the ESC containing the current eRPM. The FC needs to know the motor pole count (number of magnets) to convert to rpm.
 
 [The rpm filter](https://github.com/betaflight/betaflight/pull/7271) is a bank of 48 notch filters on gyro and dterm which takes advantage of this high frequency rpm telemetry data to implement a motor harmonics filter which removes motor noise with surgical precision. In its default configuration it runs 12 notch filter on pitch, roll and yaw, each, covering the first 3 harmonics of each motor's rpm for the gyro filter bank and the first harmonic for the dterm.
 
