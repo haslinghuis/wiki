@@ -1,3 +1,9 @@
+### FAQ
+
+- When will bidirectional DSHOT come to non F7 and F4 FC's with n channels or incompatibilities without burst?
+
+We're currently investigating an alternative implementation approach using GPIO DMA which would likely work on the vast majority of FCs and would then be the one to port to F7.
+
 ### Dshot & Betaflight 4.0
 
 [Bidirectional Dshot](https://github.com/betaflight/betaflight/pull/7264) is a new feature in Betaflight 4.0 which enables the flight controller to receive high frequency rpm telemetry for each motor on the ESC motor signal line. It does not require any additional wiring or an additional telemetry back-channel. Each dshot frame from the FC gets acknowledged by a frame from the ESC containing the current eRPM. The FC needs to know the motor pole count (number of magnets) to convert to rpm.
