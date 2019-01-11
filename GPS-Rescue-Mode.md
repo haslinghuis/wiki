@@ -94,6 +94,8 @@ Sanity checks will ensure that you have a valid GPS fix, that the quad is spendi
 * Allow minimum distance to home to be configurable (https://github.com/betaflight/betaflight/pull/6404)
 * Fixed a problem with Sanity Check misreporting STALLED/FLYAWAY during the initial phase (https://github.com/betaflight/betaflight/pull/7254)
 * Added warning indication for GPS Rescue unreliable (https://github.com/betaflight/betaflight/pull/7256)
+* Added explicit parameter for arming without fix or low sats: gps_rescue_allow_arming_without_fix (https://github.com/betaflight/betaflight/pull/7320)
+
 
 **Betaflight 3.5.5**
 * Fixed a problem with Sanity Check misreporting STALLED during the initial phase (https://github.com/betaflight/betaflight/pull/7254)
