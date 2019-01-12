@@ -197,8 +197,9 @@ Allowed values: OFF, ON
 
 airmode_start_throttle_percent = 32
 Allowed range: 0 - 100
+This keeps AirMode OFF until the the first time throttle reaches this value. AirMode is always on after this. Note that 3D users have to reconfigure their threshold to something else otherwise airmode would be always enabled.
 
-rx_min_usec = 885
+x_min_usec = 885
 Allowed range: 750 - 2250
 
 rx_max_usec = 2115
@@ -578,6 +579,7 @@ Allowed range: 0 - 1048575
 
 ledstrip_visual_beeper = OFF
 Allowed values: OFF, ON
+When set to on, and the LEDLOW mode is active (i.e. LED strip off), blink the LED strip in synch with beeping, as a visual indicator in cases where the craft is too far away for the beeper to be heard / multiple craft are flying.
 
 ledstrip_grb_rgb = GRB
 Allowed values: GRB, RGB
