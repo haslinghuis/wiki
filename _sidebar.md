@@ -169,6 +169,7 @@
  - [REVONANO](/betaflight/betaflight/wiki/Board---REVONANO)
  - [RMDO](/betaflight/betaflight/wiki/Board---RMDO)
  - [Rotorgeeks SSD](https://github.com/betaflight/betaflight/wiki/Board---Rotorgeeks-SSD)
+ - [RUSHCORE7](https://github.com/betaflight/betaflight/blob/3.5.x-maintenance/docs/boards/Board%20-%20RUSHCORE7.md)
  - [SINGULARITY](/betaflight/betaflight/wiki/Board---SINGULARITY)
  - [SIRINFPV](/betaflight/betaflight/wiki/Board---SIRINFPV)
  - [SKYZONEF405](https://github.com/betaflight/betaflight/blob/master/docs/boards/Board%20-%20SKYZONEF405.md)
