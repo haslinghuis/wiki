@@ -22,7 +22,9 @@ Decoding of proshot packets is significantly faster than dshot. ~~If it works on
 
 Both bidirectional dshot and the rpm filter are fairly cpu intensive and it is very important for the loop rates to be exactly on spot so that the filters get tuned to the right frequencies. I recommend running at 4k/4k. All dshot speeds should work at that loop rate.
 
-On F4 rpm telemetry costs about 3-4 uS per motor per line direction change. So something around 24-32 uS for the line direction switching both directions together. And the rpm-filter has 48 notch filters that get dynamically tuned at 1000 hz update frequency. So running at 8k/8k will get tight.
+On F4 rpm telemetry costs about 3-4 uS per motor per line direction change. So something around 24-32 uS for the line direction switching both directions together. And the rpm-filter has 48 notch filters that get dynamically tuned at 1000 hz update frequency. So running at 8k/8k will get tight. Use 4k/4k instead, at least to start with.
+
+First install the blheli32 test fw on your escs. Also switch off any extended startup melody since that currently interferes with bidirectional dshot. The standard startup tones will work fine though.
 
 ### DMA
 
