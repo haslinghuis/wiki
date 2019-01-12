@@ -21,11 +21,11 @@ You might want to set the RCcommand on failsafe for each channel. I usually set 
 I leave throttle to "hold" for 0.4 second in the configurator tab, I can live with that. After 0.4s, the FC will put the RCcommand to the rx failsafe set value. **This is why it is so important on binding process to have the correct stick position**. You might feel anxious about it and uses auto, in this case the RCcommand set will be the one stored on binding of the receiver with no delay.
 ___
 
-Which occasion it occurs?
+What can cause failsafes?
 
-- Out of range
-- Broken, damaged or not the right lenght antenna on RX and or TX
-- shadowing, multipath, antenna conductor touching carbon fiber or signal blocked by carbon fiber
+- RX Signal out of range
+- Broken, damaged or not the right length antenna on RX and or TX
+- shadowing, multipathing, antenna conductor touching carbon fiber or signal blocked by carbon fiber
 - Too close of the VTX
 - With satelite, 3.3v regulator problem on FC
 - Broken or loose wire
