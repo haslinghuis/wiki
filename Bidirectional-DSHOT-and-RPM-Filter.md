@@ -10,7 +10,7 @@ We're currently investigating an alternative implementation approach using GPIO 
 
 [The rpm filter](https://github.com/betaflight/betaflight/pull/7271) is a bank of 48 notch filters on gyro and dterm which takes advantage of this high frequency rpm telemetry data to implement a motor harmonics filter which removes motor noise with surgical precision. In its default configuration it runs 12 notch filter on pitch, roll and yaw, each, covering the first 3 harmonics of each motor's rpm for the gyro filter bank and the first harmonic for the dterm.
 
-These two features are currently supported by blheli32 and require an update. A first test version is [available](https://github.com/bitdump/BLHeli/tree/master/BLHeli_32%20ARM/BLHeli_32%20Test%20code%20Rev32.61%20hex%20files).
+These two features are currently supported by blheli32 and require an update. A first test version is [available](https://github.com/bitdump/BLHeli/tree/master/BLHeli_32%20ARM/BLHeli_32%20Test%20code%20Rev32.6.1%20hex%20files).
 
 ### Required configuration
 
