@@ -68,13 +68,13 @@ Verified:
 * Banggood 20mm NOXE FC (uses NOX target, n channels reassigned breaks LED support). (Joe)
 * Kakutef4v2 (bizmar)
 * Airbot f4 nano v6 ( OmnibusF4FW target ) (skonk)
+* MATEK405
 * CLRacingF4 (joe, requires [dshot_bidir_newtargets](https://github.com/joelucid/betaflight/tree/dshot_bidir_newtargets) branch)
 * Revolt (fujin, requires [dshot_bidir_newtargets](https://github.com/joelucid/betaflight/tree/dshot_bidir_newtargets) branch)
 
-Likely to work (please let us know if they really do work):
+Very likely to work (please let us know if they really do work):
 
 * OMNIBUSF4
-* MATEK405
 
 Please add additional verified configurations here.
 
