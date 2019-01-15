@@ -62,6 +62,8 @@ To do so enter ``status`` in the CLI and check that the gyro rate matches what y
 
 ### Supported FCs
 
+Verified:
+
 * OMNIBUSF4SD target (Joe)
 * Banggood 20mm NOXE FC (uses NOX target, n channels reassigned breaks LED support). (Joe)
 * Kakutef4v2 (bizmar)
@@ -69,9 +71,12 @@ To do so enter ``status`` in the CLI and check that the gyro rate matches what y
 * CLRacingF4 (joe, requires [dshot_bidir_newtargets](https://github.com/joelucid/betaflight/tree/dshot_bidir_newtargets) branch)
 * Revolt (fujin, requires [dshot_bidir_newtargets](https://github.com/joelucid/betaflight/tree/dshot_bidir_newtargets) branch)
 
+Likely to work (please let us know if they really do work):
+
+* OMNIBUSF4
+* MATEK405
+
 Please add additional verified configurations here.
-
-
 
 ### References
 
