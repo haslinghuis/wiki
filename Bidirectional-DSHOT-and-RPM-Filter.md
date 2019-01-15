@@ -46,11 +46,19 @@ The escs report erpm which needs to be converted to rpm using the number of pole
 
 ``set motor_poles=14``
 
+### Enabling new scheduler policy
+
+Since the rpm filter works with very narrow notch filters it's imperative that the gyro loop time does not vary and is exactly as high as specified. This used to require low loop rates and overclocking. A scheduler change has now been added, which allows consistent gyro rates even at higher loop rates. We recommend enabling it:
+
+``set scheduler_optimize_rate=on``
+
 ### Verifying consistent loop time
 
 **Important:**
 
-Since the rpm filter works with very narrow notch filters it's imperative that the gyro loop time does not vary and is exactly as high as specified. After enabling all of the above features double check that this is the case. If not select a lower loop rate. Remember that unlike effective filtering loop time has very minimal effect on [flight performance](https://github.com/betaflight/betaflight/issues/7327).
+After enabling all of the above features double check that your loop rate is consistent. If not select a lower loop rate. Remember that unlike effective filtering loop time has very minimal effect on [flight performance](https://github.com/betaflight/betaflight/issues/7327).
+
+To do so enter ``status`` in the CLI and check that the gyro rate matches what you have specified.
 
 ### Supported FCs
 
