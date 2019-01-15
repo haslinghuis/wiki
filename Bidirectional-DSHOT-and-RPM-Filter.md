@@ -57,9 +57,12 @@ Since the rpm filter works with very narrow notch filters it's imperative that t
 * OMNIBUSF4SD target (Joe)
 * Banggood 20mm NOXE FC (uses NOX target, n channels reassigned breaks LED support). (Joe)
 * Kakutef4v2 (bizmar)
-* Airbot f4 nano v6 ( OmnibusF4FW target ) (skonk ) 
+* Airbot f4 nano v6 ( OmnibusF4FW target ) (skonk)
+* CLRacingF4 (joe, requires [dshot_bidir_newtargets](https://github.com/joelucid/betaflight/tree/dshot_bidir_newtargets) branch)
+* Revolt (fujin, requires [dshot_bidir_newtargets](https://github.com/joelucid/betaflight/tree/dshot_bidir_newtargets) branch)
 
 Please add additional verified configurations here.
+
 
 
 ### References
