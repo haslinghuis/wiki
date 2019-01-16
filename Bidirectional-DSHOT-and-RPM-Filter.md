@@ -71,10 +71,10 @@ Verified:
 * MATEK405
 * CLRacingF4 (joe, requires [dshot_bidir_newtargets](https://github.com/joelucid/betaflight/tree/dshot_bidir_newtargets) branch)
 * Revolt (fujin, requires [dshot_bidir_newtargets](https://github.com/joelucid/betaflight/tree/dshot_bidir_newtargets) branch)
+* OMNIBUSF4 (Omerco)
 
 Very likely to work (please let us know if they really do work):
 
-* OMNIBUSF4
 
 Please add additional verified configurations here.
 
