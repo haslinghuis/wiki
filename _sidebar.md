@@ -68,6 +68,7 @@
  - [Pinio and PinioBox](/betaflight/betaflight/wiki/Pinio-and-PinioBox)
  - [Launch Control](/betaflight/betaflight/wiki/Launch-Control)
  - [Paralyze](/betaflight/betaflight/wiki/Paralyze-for-team-races)
+ - [D_Cut](/betaflight/betaflight/wiki/d_cut)
 
 # Troubleshooting
 
