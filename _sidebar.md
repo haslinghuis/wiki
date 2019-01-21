@@ -133,6 +133,7 @@
  - [FURYF3](/betaflight/betaflight/wiki/Board---FURYF3)
  - [FURYF4](/betaflight/betaflight/wiki/Board---FURYF4)
  - [FURYF7](/betaflight/betaflight/wiki/Board---FURYF7)
+ - [HAKRCF411] (https://github.com/betaflight/betaflight/blob/3.5.x-maintenance/docs/boards/Board%20-%20HAKRCF411.md)
  - [HAKRCF722](https://github.com/betaflight/betaflight/blob/master/docs/boards/Board%20-%20HAKRCF722.md)
  - [IRCFUSIONF3](/betaflight/betaflight/wiki/Board---IRCFUSIONF3)
  - [JHEF7DUAL](https://github.com/betaflight/betaflight/blob/3.5.x-maintenance/docs/boards/Board%20-%20JHEF7DUAL.md)
