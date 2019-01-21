@@ -72,6 +72,7 @@ Verified:
 * CLRacingF4 (joe, requires [dshot_bidir_newtargets](https://github.com/joelucid/betaflight/tree/dshot_bidir_newtargets) branch)
 * Revolt (fujin, requires [dshot_bidir_newtargets](https://github.com/joelucid/betaflight/tree/dshot_bidir_newtargets) branch)
 * OMNIBUSF4 (Omerco)
+* OMNIBUSF4V6 (Jack) this will need at least fw version 32.6.2 for the esc.  It does not work on 32.6.1
 
 Very likely to work (please let us know if they really do work):
 
@@ -84,4 +85,4 @@ Please add additional verified configurations here.
 
 [Rpm Filter PR](https://github.com/betaflight/betaflight/pull/7271)
 
-A test version of blheli32 with erpm telemetry on signal line support is now [available](https://github.com/bitdump/BLHeli/tree/master/BLHeli_32%20ARM/BLHeli_32%20Test%20code%20Rev32.6.1%20hex%20files)
+A test version of blheli32 with erpm telemetry on signal line support is now [available](https://github.com/bitdump/BLHeli/tree/master/BLHeli_32%20ARM/BLHeli_32%20Test%20code%20Rev32.6.2%20hex%20files)
