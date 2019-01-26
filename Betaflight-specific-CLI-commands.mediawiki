@@ -1157,6 +1157,7 @@ Allowed range: 0 - 255
 launch_control_mode = NORMAL
 profile 0
 Allowed values: NORMAL, PITCHONLY, FULL
+https://github.com/betaflight/betaflight/wiki/Launch-Control
   
 launch_trigger_allow_reset = ON
 profile 0
