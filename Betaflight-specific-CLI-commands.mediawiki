@@ -716,7 +716,7 @@ Allowed values: OFF, ON
   
 pinio_config = 1,1,1,1
 Array length: 4
-
+https://github.com/betaflight/betaflight/wiki/Pinio-and-PinioBox
   
 pinio_box = 255,255,255,255
 Array length: 4
