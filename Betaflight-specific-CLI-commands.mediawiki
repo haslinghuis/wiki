@@ -64,6 +64,7 @@ Axis where gyro overflow detection applies
 
 yaw_spin_recovery = ON
 Allowed values: OFF, ON
+https://github.com/betaflight/betaflight/wiki/Yaw-Spin-Recovery-and-Gyro-Overflow-Detect
 This new feature, enabled by default in betaflight 3.4, reduces the severity and duration of un-commanded severe yaw spins.
 For example, if a quadcopter clips a gate, tree, branch or other object and causes a high rate yaw spin, it may go into a 'never-ending' uncontrollable spin. 
 Typically it makes a distinctive warbling noise and climbs rapidly - the so-called Yaw Spin To The Moon (YSTTM) problem. 3.4 introduces two code features that should bring such spins under control more quickly and cleanly.
@@ -160,9 +161,11 @@ Allowed values: INTERPOLATION, FILTER
 
 rc_smoothing_input_hz = 0
 Allowed range: 0 - 255
+https://github.com/betaflight/betaflight/wiki/Spektrum-and-RC-Smoothing-Filter
 
 rc_smoothing_derivative_hz = 0
 Allowed range: 0 - 255
+https://github.com/betaflight/betaflight/wiki/Spektrum-and-RC-Smoothing-Filter
 
 rc_smoothing_debug_axis = ROLL
 Allowed values: ROLL, PITCH, YAW, THROTTLE
@@ -253,6 +256,7 @@ Allowed range: 0 - 2000
 
 dshot_burst = OFF
 Allowed values: OFF, ON
+https://github.com/betaflight/betaflight/wiki/Bidirectional-DSHOT-and-RPM-Filter#dma
 
 use_unsynced_pwm = OFF
 Allowed values: OFF, ON
@@ -268,6 +272,8 @@ Allowed values: OFF, ON
 
 motor_poles = 14
 Allowed range: 4 - 255
+The escs report erpm which needs to be converted to rpm using the number of poles (magnets) of the motors. Regular 5" motors have 14 poles and that's the default setting. Smaller motors have less poles, often 12. Count them or look up the motor specs 
+https://github.com/betaflight/betaflight/wiki/Bidirectional-DSHOT-and-RPM-Filter
 
 thr_corr_value = 0
 Allowed range: 0 - 150
@@ -457,6 +463,7 @@ Allowed values: OFF, ON
 
 gps_rescue_angle = 32
 Allowed range: 0 - 200
+https://github.com/betaflight/betaflight/wiki/GPS-rescue-mode
 
 gps_rescue_initial_alt = 50
 Allowed range: 20 - 100
@@ -533,10 +540,16 @@ pid_process_denom = 4
 Allowed range: 1 - 16
 
 # runaway_takeoff_prevention  
+https://github.com/betaflight/betaflight/wiki/Runaway-Takeoff-Prevention
+Set this to OFF to completely disable the feature. Note that there will be no protection against runaway takeoff events and the firmware will behave as it did before the feature was implemented.
+
+The remaining parameters affect the logic used to detect normal controlled flight and deactivate the feature for the remainder of the battery:
 
 # runaway_takeoff_deactivate_delay  
+This is the amount of successful flight time in milliseconds that must be accumulated to deactivate the feature. Valid values range from 100 (0.1 seconds) to 1000 (1 second). The default value of 500 (0.5 seconds) seems to be very reliable and shouldn't need to be adjusted. The goal is to deactivate the logic after a "reasonable" but short period of time once we've determined the craft is flying normally. However we want it to deactivate before we might reach the first point where a crash or other event may occur (like at the first gate during a race). Raising this value will delay the deactivation and it's possible that a crash or gate/branch clip could cause an unintended disarm. Lowering this value too much could result in the logic deactivating too soon and not providing protection in a runaway event. It's important to note that the delay is the accumulated amount of flight time where the other criteria like throttle level, stick activity, etc. are met. Thus the "real" elapsed time before deactivation may be longer than 0.5 seconds if the throttle was dropping below the limit or if the R/P/Y sticks were centered. The actual behavior can be viewed by using blackbox logging - see the debugging section below.
 
 # runaway_takeoff_deactivate_throttle_percent  
+Determines the minimum throttle percentage threshold where successful flight can be considered. Valid values range from 0 to 100. Along with throttle level the logic also requires activity on the roll, pitch or yaw sticks along with the PID controller successfully controlling the craft with the PID_sum staying under control. When these conditions are met the logic accumulates successful flight time. Generally you won't need to adjust this value as most quads require around 25% or more throttle to takeoff/hover. The exception may be if you have and extremely powerful or light craft that is capable of flying well below 25% throttle. In this case you may want to lower this value closer to your actual hover throttle percent. If this value is set too low it's possible that the logic will deactivate too quickly and may not trigger in a real runaway event. Setting it too high will result in the logic taking more flight time to deactivate as it only accumulates flight time when the throttle is above the setting.
 
 tlm_inverted = OFF
 Allowed values: OFF, ON
@@ -583,6 +596,7 @@ When set to on, and the LEDLOW mode is active (i.e. LED strip off), blink the LE
 
 ledstrip_grb_rgb = GRB
 Allowed values: GRB, RGB
+https://github.com/betaflight/betaflight/blob/master/docs/LedStrip.md#ws2811-vs-ws2812
 
 sdcard_detect_inverted = OFF
 Allowed values: OFF, ON
@@ -629,21 +643,48 @@ Allowed range: 0 - 30
 
 vtx_band = 4
 Allowed range: 0 - 5
+0=user, 1=A, 2=B, 3=E, 4=F(Airwaves/Fatshark), 5=Raceband
 
 osd_vtx_channel_pos = 234
 Allowed range: 0 - 15359
 
 vtx_channel = 1
 Allowed range: 1 - 8
+https://github.com/betaflight/betaflight/wiki/VTX-CLI-Settings
 
 vtx_power = 1
 Allowed range: 0 - 4
+for SmartAudio:  0=25mW, 1=25mW, 2=200mW, 3=500mW, 4=800mW
+for TBS Unify Nano:  0=25mW, 1=25mW, 2=50mW
+for IRC-Tramp:  0=25mW, 1=25mW, 2=100mW, 3=200mW, 4=400mW, 5=600mW
 
 vtx_low_power_disarm = OFF
 Allowed values: OFF, ON, UNTIL_FIRST_ARM
+If ON and the flight controller is disarmed, the video transmitter output power will be set to its lowest value (vtx_power=1). Otherwise, the video transmitter output power will be set to the configured 'vtx_power' value. (Note one exception: If a receiver failsafe has occurred then the output power will not be lowered.)
 
 vtx_freq = 5740
 Allowed range: 0 - 5999
+if vtx_band!=0 and VTX connected then shows freq in MHz
+if vtx_band==0 then sets frequency in MHz
+
+if vtx_band==0 and vtx_freq==0 then the settings will not be sent out to the VTX
+
+For example, to configure the VTX to use band 'F' and channel '6' (5840 MHz), enter the CLI and input:
+
+set vtx_band = 4
+set vtx_channel = 6
+save
+
+The VTX configuration will not be changed until after the 'save' and restart.  If it is successful then entering 'get vtx_freq' will show the current frequency value in MHz.
+
+Frequency table:
+                                            Channel
+                 1       2       3       4       5       6      7       8
+Band 1:  5865 5845 5825 5805 5785 5765 5745 5725  (A: Boscam A / TBS / RC305)
+Band 2:  5733 5752 5771 5790 5809 5828 5847 5866  (B: Boscam B)
+Band 3:  5705 5685 5665 5645 5885 5905 5925 5945  (E: Boscam E / DJI)
+Band 4:  5740 5760 5780 5800 5820 5840 5860 5880  (F: IRC NexWave / Fatshark)
+Band 5:  5658 5695 5732 5769 5806 5843 5880 5917  (R: Raceband)
 
 vtx_pit_mode_freq = 0
 Allowed range: 0 - 5999
@@ -697,18 +738,20 @@ Allowed range: 0 - 7
 
 camera_control_mode = HARDWARE_PWM
 Allowed values: HARDWARE_PWM, SOFTWARE_PWM, DAC
-
+mode of operation, software_pwm is the least restrictive in terms of available PIN selection, but it requires both a resistor and a capacitor to work properly; hardware_pwm is almost guaranteed to work with just a resistor given you can spare a timer for it; dac (not yet implemented) is supported on the very few FCs that have a DAC pin broken out and unoccupied by other functions, it works by direct connection to the camera.
+https://github.com/betaflight/betaflight/wiki/FPV-Camera-Control-(Joystick-Emulation)
   
 camera_control_ref_voltage = 330
 Allowed range: 200 - 400
-
+voltage (in 10 mV steps) measured across your camera's floating OSD and GND pins, usually 3V3, but not guaranteed, e.g. my RunCam Sky has 3V4, and some cameras have reportedly have as low as 3V1.
   
 camera_control_key_delay = 180
 Allowed range: 100 - 500
+the duration of each key press (in ms presence at the camera_control pin, after consulting with RunCam it was set to 180 ms to accommodate most cameras, while some of them accept as low as 125 ms.
 
 camera_control_internal_resistance = 470
 Allowed range: 10 - 1000
-
+the internal resistance (in 100 Ω steps) of your camera, most HS1177 derivatives have 47 kΩ, but that's not guaranteed. You'll have to derive this value for your camera in case the default one doesn't work.
  
 camera_control_inverted = OFF
 Allowed values: OFF, ON
@@ -724,7 +767,7 @@ Array length: 4
   
 usb_hid_cdc = OFF
 Allowed values: OFF, ON
-
+HID joystick support is currently only available on F4 / F7 boards.
   
 usb_msc_pin_pullup = ON
 Allowed values: OFF, ON
