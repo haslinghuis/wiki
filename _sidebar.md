@@ -8,7 +8,7 @@
  - [Flying Tips](/betaflight/betaflight/wiki/Flying-Tips)
 
 # Release Notes
-
+ - [Betaflight 4.0] CLI commands
  - [Betaflight 3.5](https://github.com/betaflight/betaflight/blob/master/docs/Release%20Notes/Betaflight%203.5%20Release%20Notes.md)
  - [Betaflight 3.4](https://github.com/betaflight/betaflight/blob/master/docs/Release%20Notes/Betaflight%203.4%20Release%20Notes.md)
  - [BetaFlight 3.3](https://github.com/betaflight/betaflight/blob/master/docs/Upgrading/Upgrading%20from%203.2%20to%203.3.md)
