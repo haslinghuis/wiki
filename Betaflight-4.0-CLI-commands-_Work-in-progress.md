@@ -1,12 +1,4 @@
-These settings are specific to betaflight. For cleanflight CLI docs go here 
-https://github.com/cleanflight/cleanflight/blob/master/docs/Cli.md
-
-Configurator: 10.4.0
-Firmware: BTFL 4.0.0 (Target: CLR4)
-
-2019-01-01 @ 22:24:05 -- Flight controller info, identifier: BTFL, version: 4.0.0
-
-2019-01-01 @ 22:24:05 -- Running firmware released on: Dec 31 2018 06:39:37
+**For best results use Control F on your keyboard and paste the CLI command in question from your dump into the box that pops up. **
 
 
 align_gyro = DEFAULT
