@@ -1,6 +1,9 @@
-**For best results use Control F on your keyboard and paste the CLI command in question from your dump into the box that pops up. **
+<h3>**For best results use Control F on your keyboard and paste the CLI command in question from your dump into the box that pops up. **</h3>
+<h3>GET command</h3>
+Type a "get" and part of a CLI command name (example: "get acc"). The cli will return all CLI commands that have the name part with the current value plus what the valid value range or valid Names.
+This is a very handy feature and allows easy to find variable names that can then be copy/pasted from the CLI display to the command line entry box.  
 
-
+## dump
 align_gyro = DEFAULT
 Allowed values: DEFAULT, CW0, CW90, CW180, CW270, CW0FLIP, CW90FLIP, CW180FLIP, CW270FLIP
 Used to orient the gyro chip in the direction of flight. (less CPU load than Board orientation)
