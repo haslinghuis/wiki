@@ -1290,4 +1290,4 @@ yaw_rate_limit = 1998
 rateprofile 0
 Allowed range: 200 - 1998
 
-
+*airmode_noise_reduction
