@@ -359,12 +359,12 @@ Allowed range: 1 - 255
 **ibata_scale = 250**
 Allowed range: -16000 - 16000
 
-**ibata_set  **
+_**ibata_set  **_
 
 **ibatv_scale = 0**
 Allowed range: -16000 - 16000
 
-**ibatv_set  **
+_**ibatv_set  **_
 
 **beeper_inversion = ON**
 Allowed values: OFF, ON
@@ -534,16 +534,19 @@ Allowed values: OFF, ON
 **pid_process_denom = 4**
 Allowed range: 1 - 16
 
-**runaway_takeoff_prevention  **
+****runaway_takeoff_prevention  ****
+
 https://github.com/betaflight/betaflight/wiki/Runaway-Takeoff-Prevention
 Set this to OFF to completely disable the feature. Note that there will be no protection against runaway takeoff events and the firmware will behave as it did before the feature was implemented.
 
 The remaining parameters affect the logic used to detect normal controlled flight and deactivate the feature for the remainder of the battery:
 
-**runaway_takeoff_deactivate_delay  **
+****runaway_takeoff_deactivate_delay  ****
+
 This is the amount of successful flight time in milliseconds that must be accumulated to deactivate the feature. Valid values range from 100 (0.1 seconds) to 1000 (1 second). The default value of 500 (0.5 seconds) seems to be very reliable and shouldn't need to be adjusted. The goal is to deactivate the logic after a "reasonable" but short period of time once we've determined the craft is flying normally. However we want it to deactivate before we might reach the first point where a crash or other event may occur (like at the first gate during a race). Raising this value will delay the deactivation and it's possible that a crash or gate/branch clip could cause an unintended disarm. Lowering this value too much could result in the logic deactivating too soon and not providing protection in a runaway event. It's important to note that the delay is the accumulated amount of flight time where the other criteria like throttle level, stick activity, etc. are met. Thus the "real" elapsed time before deactivation may be longer than 0.5 seconds if the throttle was dropping below the limit or if the R/P/Y sticks were centered. The actual behavior can be viewed by using blackbox logging - see the debugging section below.
 
-**runaway_takeoff_deactivate_throttle_percent  **
+****runaway_takeoff_deactivate_throttle_percent  ****
+
 Determines the minimum throttle percentage threshold where successful flight can be considered. Valid values range from 0 to 100. Along with throttle level the logic also requires activity on the roll, pitch or yaw sticks along with the PID controller successfully controlling the craft with the PID_sum staying under control. When these conditions are met the logic accumulates successful flight time. Generally you won't need to adjust this value as most quads require around 25% or more throttle to takeoff/hover. The exception may be if you have and extremely powerful or light craft that is capable of flying well below 25% throttle. In this case you may want to lower this value closer to your actual hover throttle percent. If this value is set too low it's possible that the logic will deactivate too quickly and may not trigger in a real runaway event. Setting it too high will result in the logic taking more flight time to deactivate as it only accumulates flight time when the throttle is above the setting.
 
 **tlm_inverted = OFF**
@@ -582,8 +585,6 @@ Array length: 15
 **mavlink_mah_as_heading_divisor = 0**
 Allowed range: 0 - 30000
 
-## **telemetry_disabled_sensors = 491520**
-Allowed range: 0 - 1048575
 
 **ledstrip_visual_beeper = OFF**
 Allowed values: OFF, ON
