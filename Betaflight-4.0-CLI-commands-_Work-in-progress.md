@@ -817,7 +817,7 @@ Allowed range: 0 - 119
 gyro_2_sensor_align = DEFAULT
 Allowed values: DEFAULT, CW0, CW90, CW180, CW270, CW0FLIP, CW90FLIP, CW180FLIP, CW270FLIP
 
-timezone_set_minutes  
+*timezone_offset_minutes = 0 
 
 
   
@@ -1292,5 +1292,43 @@ Allowed range: 200 - 1998
 yaw_rate_limit = 1998
 rateprofile 0
 Allowed range: 200 - 1998
+
+*telemetry_disabled_voltage = OFF
+
+Through
+
+*telemetry_disabled_temperature = OFF
+
+*gps_ublox_use_galileo = OFF
+*gps_set_home_point_once = OFF
+
+*gps_rescue_allow_arming_without_fix = OFF
+*gps_rescue_use_mag = ON*thrust_linear = 0
+
+*scheduler_optimize_rate = OFF
+
+*dterm_cut_percent = 65
+
+*dterm_cut_gain = 15
+
+*dterm_cut_range_hz = 40
+
+*dterm_cut_lowpass_hz = 7
+
+*integrated_yaw_relax = 200
+
+*use_integrated_yaw = OFF
+
+*gyro_rpm_notch_q = 500
+
+*gyro_rpm_notch_min = 100
+
+*dterm_rpm_notch_harmonics = 1
+
+*dterm_rpm_notch_q = 500
+
+*dterm_rpm_notch_min = 100
+
+*gyro_rpm_notch_harmonics
 
 *airmode_noise_reduction
