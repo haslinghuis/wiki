@@ -1254,6 +1254,8 @@ _*gps_rescue_use_mag = ON_
 
 _*thrust_linear = 0_
 
+https://github.com/betaflight/betaflight/pull/7304
+
 _*scheduler_optimize_rate = OFF_
 
 _*dterm_cut_percent = 65_
