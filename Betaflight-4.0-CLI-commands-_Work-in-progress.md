@@ -1257,7 +1257,7 @@ _*thrust_linear = 0_
 _*scheduler_optimize_rate = OFF_
 
 _*dterm_cut_percent = 65_
-
+https://github.com/betaflight/betaflight/wiki/d_cut
 _*dterm_cut_gain = 15_
 
 _*dterm_cut_range_hz = 40_
