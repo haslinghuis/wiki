@@ -1238,18 +1238,21 @@ Allowed range: 200 - 1998
 rateprofile 0
 Allowed range: 200 - 1998
 
-_`*telemetry_disabled_voltage = OFF`_
+_*telemetry_disabled_voltage = OFF_
 
 _Through_
 
 _*telemetry_disabled_temperature = OFF_
 
 _*gps_ublox_use_galileo = OFF_
+
 _*gps_set_home_point_once = OFF_
 
 _*gps_rescue_allow_arming_without_fix = OFF_
 
-_*gps_rescue_use_mag = ON*thrust_linear = 0_
+_*gps_rescue_use_mag = ON_
+
+_*thrust_linear = 0_
 
 _*scheduler_optimize_rate = OFF_
 
