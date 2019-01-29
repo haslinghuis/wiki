@@ -156,7 +156,7 @@ Allowed range: 1 - 50
 
 **rc_smoothing_type = FILTER**
 Allowed values: INTERPOLATION, FILTER
-
+https://github.com/betaflight/betaflight/wiki/Tuning-Tips-for-Betaflight-3.4#i-just-want-to-fly-not-read-all-this-stuff
 **rc_smoothing_input_hz = 0**
 Allowed range: 0 - 255
 https://github.com/betaflight/betaflight/wiki/Spektrum-and-RC-Smoothing-Filter
@@ -242,6 +242,7 @@ Allowed range: 750 - 2250
 **pid_at_min_throttle = ON**
 profile 0
 Allowed values: OFF, ON
+pid_at_min_throttle enables the copter to continue process the PID algorithm even at minimum throttle. But pid_at_min_throttle only keeps P and D active, I is zero’ed
 
 **max_throttle = 2000**
 Allowed range: 750 - 2250
