@@ -56,6 +56,9 @@ Allowed range: 0 - 200
 **gyro_overflow_detect = ALL**
 Allowed values: OFF, YAW, ALL
 Axis where gyro overflow detection applies
+Gyro_overflow_detect is special code intended to deal with overflow issues on ICM gyros. The default is to be on, for all axes. It is unwise to disable this if your quad has an ICM gyro. It is not needed or helpful for MPU gyros.
+
+ICM gyros are susceptible to overflow-inversion problems if exposed to very high turn rates. If enabled and set to ALL, overflow protection will kick in and disable all PIDs whenever any axis exceeds 1950 degrees/second.
 
 **yaw_spin_recovery = ON**
 Allowed values: OFF, ON
