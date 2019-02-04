@@ -1,6 +1,6 @@
 # RunCam Device Protocol
 ## Description
-RunCam Device Protocol is the serial communication protocol for the RunCam HD Camera and RunCam analog camera.Through this protocol, users can use these devices more easily, for exemple,for the RunCam Split, if the current is cut off, and then we power the camera for recording again, inaccurate time of the camera will cause the creation time of media file to be inaccurate, we can solve this proble by this protocol;We can also display the available SD-Card space of the camera and other functions already available for the camera through Betaflight. This protocol will continue to be updated in the future, hoping you can control the RunCam camera more convenient.
+RunCam Device Protocol is the serial communication protocol for the RunCam HD Camera and RunCam analog camera.Through this protocol, users can use these devices more easily, for example, for the RunCam Split, if the current is cut off, and then we power the camera for recording again, inaccurate time of the camera will cause the creation time of media file to be inaccurate, we can solve this problem by this protocol;We can also display the available SD-Card space of the camera and other functions already available for the camera through Betaflight. This protocol will continue to be updated in the future, hoping you can control the RunCam camera more convenient.
 
 ## Protocol specification
 @todo
@@ -9,7 +9,7 @@ RunCam Device Protocol is the serial communication protocol for the RunCam HD Ca
 
 ## For FPV Camera: Swift 2, Micro Swift 2, Micro Eagle, ...
 ### OSD Cable Simulation on Transmitter
-Through this function, with the RunCam Control Adapter(Comming Soon), for the most cameras with OSD Input Pin(yes, included the FPV camera not RunCam), we can operate the OSD menu of camera via the two joysticks of the transmitter, including some shortcut key settings. For exemple, for Micro Swift2, we can  push the Roll of the transmitter to the maximum value continuously(simulate the right button of the OSD) to switch the scene, so you can easily adjust the camera to adapt to the different light environment.
+Through this function, with the RunCam Control Adapter(Coming Soon), for the most cameras with OSD Input Pin(yes, included the FPV camera not RunCam), we can operate the OSD menu of camera via the two joysticks of the transmitter, including some shortcut key settings. For exemple, for Micro Swift2, we can  push the Roll of the transmitter to the maximum value continuously(simulate the right button of the OSD) to switch the scene, so you can easily adjust the camera to adapt to the different light environment.
 
 #### Setup Guide
 ![RC-CA_viki-manua](https://s3-us-west-2.amazonaws.com/runcamfcfiles/RC-CA_viki-manual_v3.jpg)
