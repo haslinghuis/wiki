@@ -62,21 +62,18 @@ To do so enter ``status`` in the CLI and check that the gyro rate matches what y
 
 ### Supported FCs
 
-Verified:
-
-* OMNIBUSF4SD target (Joe)
-* Banggood 20mm NOXE FC (uses NOX target, n channels reassigned breaks LED support). (Joe)
-* Kakutef4v2 (bizmar)
-* Airbot f4 nano v6 ( OmnibusF4FW target ) (skonk)
-* MATEK405
-* CLRacingF4 (joe, requires [dshot_bidir_newtargets](https://github.com/joelucid/betaflight/tree/dshot_bidir_newtargets) branch)
-* REVOLT, REVOLTOSD (JayBird/fujin, requires [dshot_bidir_newtargets](https://github.com/joelucid/betaflight/tree/dshot_bidir_newtargets) branch)
-* OMNIBUSF4 (Omerco)
-* OMNIBUSF4V6 (Jack) this will need at least fw version 32.6.2 for the esc.  It does not work on 32.6.1
-* AIKON F4 2020 (fujin, requires [dshot_bidir_newtargets](https://github.com/joelucid/betaflight/tree/dshot_bidir_newtargets) branch
-
-Very likely to work (please let us know if they really do work):
-
+| Board | Target | dshot_bidir | Tester | Notes |
+|---|--|---|---|---|
+|       | OMNIBUSF4SD | OK | joelucid |
+| Banggood 20mm NOXE | NOX | OK | joelucid |
+| Kakute F4 V2 | | OK | bizmar |
+| Airbot F4 Nano V6 | OMNIBUSF4FW | OK | skonk |
+| MATEK F405-XXX | MATEKF405 | OK | unknown |
+| CLRACINGF4 | CLRACINGF4 | OK | joelucid | requires [dshot_bidir_newtargets](https://github.com/joelucid/betaflight/tree/dshot_bidir_newtargets) branch |
+| REVOLTOSD | REVOLTOSD | OK | JayBird | requires [dshot_bidir_newtargets](https://github.com/joelucid/betaflight/tree/dshot_bidir_newtargets) branch |
+| | OMNIBUSF4 | OK | omerco | |
+| | OMNIBUSF4V6 | OK | Jack | Requires ESC FW 32.6.2 |
+| AIKON F4 2020 | AIKONF4 | OK | fujin | requires [dshot_bidir_newtargets](https://github.com/joelucid/betaflight/tree/dshot_bidir_newtargets) branch |
 
 Please add additional verified configurations here.
 
