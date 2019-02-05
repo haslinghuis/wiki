@@ -70,9 +70,10 @@ Verified:
 * Airbot f4 nano v6 ( OmnibusF4FW target ) (skonk)
 * MATEK405
 * CLRacingF4 (joe, requires [dshot_bidir_newtargets](https://github.com/joelucid/betaflight/tree/dshot_bidir_newtargets) branch)
-* Revolt (fujin, requires [dshot_bidir_newtargets](https://github.com/joelucid/betaflight/tree/dshot_bidir_newtargets) branch)
+* REVOLT, REVOLTOSD (JayBird/fujin, requires [dshot_bidir_newtargets](https://github.com/joelucid/betaflight/tree/dshot_bidir_newtargets) branch)
 * OMNIBUSF4 (Omerco)
 * OMNIBUSF4V6 (Jack) this will need at least fw version 32.6.2 for the esc.  It does not work on 32.6.1
+* AIKON F4 2020 (fujin, requires [dshot_bidir_newtargets](https://github.com/joelucid/betaflight/tree/dshot_bidir_newtargets) branch
 
 Very likely to work (please let us know if they really do work):
 
