@@ -72,7 +72,7 @@ To do so enter ``status`` in the CLI and check that the gyro rate matches what y
 | CLRACINGF4 | CLRACINGF4 | OK | joelucid | requires [dshot_bidir_newtargets](https://github.com/joelucid/betaflight/tree/dshot_bidir_newtargets) branch |
 | REVOLTOSD | REVOLTOSD | OK | JayBird | requires [dshot_bidir_newtargets](https://github.com/joelucid/betaflight/tree/dshot_bidir_newtargets) branch |
 | | OMNIBUSF4 | OK | omerco | |
-| | OMNIBUSF4V6 | OK | Jack | Requires ESC FW 32.6.2 |
+|OMNIBUSF4V6| OMNIBUSF4V6 | OK | Jack | Requires ESC FW 32.6.2 |
 | AIKON F4 2020 | AIKONF4 | OK | fujin | requires [dshot_bidir_newtargets](https://github.com/joelucid/betaflight/tree/dshot_bidir_newtargets) branch |
 
 Please add additional verified configurations here.
