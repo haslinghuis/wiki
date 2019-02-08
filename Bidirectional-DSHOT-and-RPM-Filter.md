@@ -74,7 +74,7 @@ To do so enter ``status`` in the CLI and check that the gyro rate matches what y
 | | OMNIBUSF4 | OK | omerco | |
 |OMNIBUSF4V6| OMNIBUSF4V6 | OK | Jack | Requires ESC FW 32.6.2 |
 | AIKON F4 2020 | AIKONF4 | OK | fujin | requires [dshot_bidir_newtargets](https://github.com/joelucid/betaflight/tree/dshot_bidir_newtargets) branch |
-| Betaflight F4 | BETAFLIGHTF4 | OK | | |
+| Betaflight F4 | BETAFLIGHTF4 | OK | Balint | |
 
 Please add additional verified configurations here.
 
