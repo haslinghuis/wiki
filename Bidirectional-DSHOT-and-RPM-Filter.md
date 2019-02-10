@@ -84,4 +84,4 @@ Please add additional verified configurations here.
 
 [Rpm Filter PR](https://github.com/betaflight/betaflight/pull/7271)
 
-A test version of blheli32 with erpm telemetry on signal line support is now [available](https://github.com/bitdump/BLHeli/tree/master/BLHeli_32%20ARM/BLHeli_32%20Test%20code%20Rev32.6.2%20hex%20files)
+A test version of blheli32 with erpm telemetry on signal line support is now [available](https://github.com/bitdump/BLHeli/tree/master/BLHeli_32%20ARM/BLHeli_32%20Test%20code%20Rev32.6.3%20hex%20files)
