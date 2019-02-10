@@ -1,12 +1,13 @@
 # D_MIN
 
-D_MIN provides a way to have a lower level of D in normal flight and a higher level for quick manoeuvres that might cause overshoot, like flips and rolls.  It also brings D up during prop wash.  The high level is simply your usual D number.  The low level is the  `d_min_xxx` value, which can be adjusted in the CLI or OSD.  
+D_MIN provides a way to have a lower level of D in normal flight and a higher level for quick manoeuvres that might cause overshoot, like flips and rolls.  It also brings D up during prop wash.  The high level is simply your usual D number.  The low level is the `d_min_xxx` value, which can be adjusted in the CLI or OSD.  
 
 In the CLI, d_min settings are at the bottom of the list of profile values.
 
 In the OSD, they are in the miscellaneous settings.
 
-D_Cut allows the pilot to have D, and, as a result, sometimes more P, than previously, without the drawbacks of having higher D all the time.
+D_min allows the pilot to have D, and, as a result, sometimes more P, than previously, without the drawbacks of having higher D all the time.
+
 
 ## Background and purpose.
 
@@ -30,7 +31,7 @@ The intent of d_min is to get the best of both worlds, i.e. low D when flying sm
 
 Maybe.  
 
-If the quad flies well and doesn't have overshoot, oscillate, or have warm motors, there may not be much benefit from adding d_min.  
+If the quad flies well and doesn't have overshoot, doesn't oscillate, and doesn't have excessively warm motors, there may not be much benefit from adding d_min.  
 
 However, with d_min, you may be able to lift P a bit higher, and lift peak D a bit higher - that may give tighter handling.
 
@@ -67,7 +68,7 @@ If propwash is your primary problem, and motors are cool, bring the d_min value 
 
 Yes.  The timing of the d_min boost effect typically improves overshoot even at the same D value.  
 
-With d_min active, it's possible to increase D wand have cooler motors at the same time; that gives much more leeway for improved overshoot control by increasing D.
+With d_min active, it's possible to increase D and have cooler motors at the same time; that gives much more leeway for improved overshoot control by increasing D.
 
 D should be adjusted until you have optimal overshoot control, and d_min adjusted down for motor heat control.  
 
@@ -107,14 +108,14 @@ Quick flips and turns are associated with larger gyro changes at frequencies in 
 
 By applying an 80hz biquad lowpass filter to the gyro signal, these events can be detected, and higher frequency noise ignored.  Both flips and propwash will increase the boost signal.
 
-Smoothing the absolute value of the filtered gyro signal through a 10Hz first order lowpass filter provides a way to smoothly and gently vary D when these events occur.  The 7hz lowpass delays the boost effect so that, the boost occurs more towards at the end of the input for a fast flip, rather than at the beginning.  This means the boost does not dampen the quad's initial responsiveness to commanded inputs.  
+Smoothing the absolute value of the filtered gyro signal through a 10Hz first order lowpass filter provides a way to smoothly and gently vary D when these events occur.  The 10hz lowpass delays the boost effect so that, the boost occurs more towards at the end of the input for a fast flip, rather than at the beginning.  This means the boost does not dampen the quad's initial responsiveness to commanded inputs.  
 
 The boost strength is modulated by the gain setting.  
 
 
 ## Does d_min add more CPU load?
 
-Yes, but only a little bit; one biquad filter and one PT1 filter, and some simple maths.  To find out how much extra CPU, temporarily set dterm_cut_percentage to zero and re-check CPU use in the CLI.
+Yes, but only a tiny bit; one biquad filter and one PT1 filter, and some simple maths.  To find out how much extra CPU, temporarily set d_min to zero on all axes and re-check CPU use in the CLI.
 
 
 ## Is d_min available on all F3 targets?
@@ -124,5 +125,5 @@ No.  Some F3 chips don't have enough flash space for d_min.  Boards with those c
 See also:
 
 - [the original d_cut PR7373 by ctzsnooze Jan 2019](https://github.com/betaflight/betaflight/pull/7373)
-- [d_min PR7538, updating d_cut, by ctzsnooze Feb 2019](https://github.com/betaflight/betaflight/pull/7538)
+- [d_min PR7538, updating d_cut to d_min, by ctzsnooze Feb 2019](https://github.com/betaflight/betaflight/pull/7538)
 - [d_min PR7559, CMS menu changes, by eTracer Feb 2019](https://github.com/betaflight/betaflight/pull/7559)
