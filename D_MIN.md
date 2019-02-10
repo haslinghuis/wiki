@@ -30,7 +30,9 @@ The intent of d_min is to get the best of both worlds, i.e. low D when flying sm
 
 Maybe.  
 
-If the quad flies well and doesn't have overshoot, oscillate, or have warm motors, there may not be much benefit from adding d_min.  You may be able to lift P a bit higher, and lift peak D a bit higher - that may give tighter handling.
+If the quad flies well and doesn't have overshoot, oscillate, or have warm motors, there may not be much benefit from adding d_min.  
+
+However, with d_min, you may be able to lift P a bit higher, and lift peak D a bit higher - that may give tighter handling.
 
 
 ## How do I disable d_min?
