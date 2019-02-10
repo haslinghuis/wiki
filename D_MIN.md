@@ -65,11 +65,11 @@ If propwash is your primary problem, and motors are cool, bring the d_min value 
 
 ## Will adding d_min improve overshoot control?
 
-The timing of the d_min boost effect means that D is typically more effective in managing overshoot than it otherwise would be.  So even without changing your D value, d_min may improve overshoot.  
+Yes.  The timing of the d_min boost effect typically improves overshoot even at the same D value.  
 
-However the main advantage of d_min, if overshoot is a problem and motors are warm, is that it lets you increase D and have cooler motors at the same time.
+With d_min active, it's possible to increase D wand have cooler motors at the same time; that gives much more leeway for improved overshoot control by increasing D.
 
-With d_min, D itself should be increased until you have optimal overshoot control, and d_min adjusted down for motor heat control.  
+D should be adjusted until you have optimal overshoot control, and d_min adjusted down for motor heat control.  
 
 
 ## What about the 'd_min_advance' parameter?
