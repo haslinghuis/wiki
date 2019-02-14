@@ -75,6 +75,7 @@ To do so enter ``status`` in the CLI and check that the gyro rate matches what y
 |OMNIBUSF4V6| OMNIBUSF4V6 | OK | Jack | Requires ESC FW 32.6.2 |
 | AIKON F4 2020 | AIKONF4 | OK | fujin | requires [dshot_bidir_newtargets](https://github.com/joelucid/betaflight/tree/dshot_bidir_newtargets) branch |
 | Betaflight F4 | BETAFLIGHTF4 | OK | Balint | |
+| [Hyperlite F4 OSD V1/V2](https://pyrodrone.com/products/hyperlite-f4-osd) | PYRODRONEF4 | OK | fujin | requires [pyrodrone-f4-bidir-support](https://github.com/fujin/betaflight/tree/pyrodronef4-bidir-support) branch |
 
 Please add additional verified configurations here.
 
