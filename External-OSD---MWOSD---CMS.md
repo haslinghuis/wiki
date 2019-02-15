@@ -38,7 +38,7 @@ If you are building your own Betaflight FC firmware:
 
 Limitations:
 * Screen update speed is slower than a typical installation.
-* Only very basic layouts should be used to avoid screen update delays and jittery characters.
+* If this mode is required, raise a request with MWOSD team. A small amount of development is required to resolve issues with flickering display.
 
 To use with DISPLAYPORT:
 * Install latest MWOSD firmware on the OSD.
