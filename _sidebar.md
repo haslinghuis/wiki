@@ -30,7 +30,7 @@
  - [IRC Tramp](/betaflight/betaflight/wiki/IRC-Tramp)
  - [VTX CLI Settings](/betaflight/betaflight/wiki/VTX-CLI-Settings)
  - [External OSD / MWOSD](https://github.com/betaflight/betaflight/wiki/External-OSD---MWOSD---CMS)
- - [OSD / CMS Screen Adjustment](/betaflight/betaflight/wiki/OSD-and-CMS-Adjusting-Screen)
+ - [OSD Screen Adjustment](/betaflight/betaflight/wiki/OSD-and-CMS-Adjusting-Screen)
  - [Deep Dive](/betaflight/betaflight/wiki/BetaFlight-Deep-Dive)
  - [Gyro and Filters](/betaflight/betaflight/wiki/Gyro-&-Dterm-filtering-recommendations)
  - [Black Box logging and Filters](/betaflight/betaflight/wiki/Black-Box-logging-and-usage) 
