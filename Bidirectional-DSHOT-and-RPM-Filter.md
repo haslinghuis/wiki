@@ -68,7 +68,7 @@ To do so enter ``status`` in the CLI and check that the gyro rate matches what y
 | Banggood 20mm NOXE | NOX | OK | joelucid |
 | Kakute F4 V2 | | OK | bizmar |
 | Airbot F4 Nano V6 | OMNIBUSF4FW | OK | skonk |
-| MATEK F405-XXX | MATEKF405 | OK | unknown |
+| MATEK F405-XXX | MATEKF405 | OK | Wudz_17 |
 | CLRACINGF4 | CLRACINGF4 | OK | joelucid | requires [dshot_bidir_newtargets](https://github.com/joelucid/betaflight/tree/dshot_bidir_newtargets) branch |
 | REVOLTOSD | REVOLTOSD | OK | JayBird | requires [dshot_bidir_newtargets](https://github.com/joelucid/betaflight/tree/dshot_bidir_newtargets) branch |
 | | OMNIBUSF4 | OK | omerco | |
