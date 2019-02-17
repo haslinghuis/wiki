@@ -14,7 +14,7 @@ These two features are currently supported by blheli32 and require an update. _S
 
 ### Required configuration
 
-Check the table at the bottom of this page to see if your FC is supposed. Some boards require a custom build which can be found [here] (https://ci.betaflight.tech/job/Joelucid%20dshot%20bidir%20test/lastSuccessfulBuild/artifact/obj/)
+Check the table at the bottom of this page to see if your FC is supposed. Some boards require a custom build which can be found [here](https://ci.betaflight.tech/job/Joelucid%20dshot%20bidir%20test/lastSuccessfulBuild/artifact/obj/)
 
 ### Loop times and dshot protocol
 
