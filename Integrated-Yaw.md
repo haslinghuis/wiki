@@ -12,8 +12,9 @@ Integrated Yaw fixes this by integrating the output of the yaw pid before applyi
 
 Here are the CLI commands to enable it:
 
+```
 set use_integrated_yaw=on
 set iterm_rotation=off
 set abs_control_gain=10
-
+```
 Now reconfigure your Yaw pids to something like P/I/D/FF = 30/0/20/60. Make sure I is zero since significant I leads to strong oscillations. Pitch and roll might require slight retuning - primarily reducing I a bit since absolute control acts similar to a second I term.
