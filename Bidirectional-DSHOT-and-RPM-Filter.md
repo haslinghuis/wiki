@@ -62,9 +62,30 @@ To do so enter ``status`` in the CLI and check that the gyro rate matches what y
 
 There are two blackbox debug modes to verify the rpm filter: RPM_FILTER logs the frequency of each motor as reported by the esc. DSHOT_RPM_TELEMETRY logs the unconverted erpm.
 
-### Tuning
+### Tuning (Sugar_K)
 
+The rpm filter will do the heavy lifting without adding much latency. Typically only the dterm lpf and the dynamic notch are additionally needed to remove broad background noise and frame resonances respectively. You should remove the filters in stages.
 
+The first thing to turn off is the stage2 Dterm lpf filter. Next is to slim up the dynamic notch filter. We recommend setting your dynamic width to 0, this gives you a single notch filter not the cascaded version 
+```
+set dyn_notch_width_percent = 0
+```
+Now you need to set the min freq for the dynamic and the range. basically you need the dynamic to clean up after the rpm filter. on a 5” racer a dynamic min of 200hz and range of medium should be fine, for a long ranger with 6-7” props you might need to set the min to 100hz and low. A black box log will show you what you need to know. basically you are looking for the frequency of the idle motor noise. If the quad is very clean you can likely get away with the dynamic notch Q of 200-250 ( stock is 120 ) this makes the notch narrower and produces less latency 
+the next thing to turn off. Remember to test hover and fly each setting change.
+
+Next is gyro LPF filtering. Remember there are both static and dynamic gyro lpfs, if you turn off the dynamic it will revert to the static so you need to turn that off too. 
+```
+set gyro_lowpass_hz = 0
+set dyn_lpf_gyro_min_hz = 0
+```
+
+If the quad doesn't like this i recommend changing the type of LPF to a PT1 to get some gain in latency over the Biquad. Lastly you should be able to push the dynamic dterm LPF filtering, you need it so don’t turn it off but you can increase the min/max and make some big savings to the over all filter latency.
+
+First i would start with the max, stock its 250hz but 300-400 should be ok, also the min can be pushed. If you get this wrong you will get motor grinding at idle so its easy to tune. If you can push this up to 200hz your pretty much golden.
+
+Lastly is it possible to run the dynamic notch off if you lower your Dterm lpf enough but this removes any filtering that can react to external influences e.g. wind. I had a near fly away testing this on a really windy day where the wind gusts were stirring up the motors enough too not descend on idle throttle.
+
+Finally I do recommend using the D only TPA aka TDA using a strong cut of 60-80% and the threshold at 1750 so you still have strong D for pulling out of prop wash but then it cuts nice and sharply for high throttle runs.
 
 ### Supported FCs
 
