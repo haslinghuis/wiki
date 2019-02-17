@@ -14,6 +14,8 @@ These two features are currently supported by blheli32 and require an update. _S
 
 ### Required configuration
 
+Check the table at the bottom of this page to see if your FC is supposed. Some boards require a custom build which can be found [here] (https://ci.betaflight.tech/job/Joelucid%20dshot%20bidir%20test/lastSuccessfulBuild/artifact/obj/)
+
 ### Loop times and dshot protocol
 
 Bidirectional dshot works with dshot 300, 600 and 1200; and with proshot 1000. Remember though that for each frame sent there will now be a frame coming back. And between input and output frames there is a period of 25us to switch the line, dma and timers. The loop time needs to be selected low enough that given the dshot protocol rate both frames + 50 us fit into one gyro iteration. 
