@@ -69,6 +69,7 @@
  - [Launch Control](/betaflight/betaflight/wiki/Launch-Control)
  - [Paralyze](/betaflight/betaflight/wiki/Paralyze-for-team-races)
  - [D_Min](/betaflight/betaflight/wiki/d_min)
+ - [Integrated Yaw](/betaflight/betaflight/Integrated_Yaw)
 
 # Troubleshooting
 
