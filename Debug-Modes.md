@@ -75,7 +75,18 @@ RC_SMOOTHING_RATE:
 * [2] = the current calculated average
 * [3] = indicates whether guard time is active
 
+### FLIGHT DYNAMICS
+ITERM_RELAX:
+* [0] = 
+* [1] = 
+* [2] = 
+* [3] = 
 
+D_MIN:
+* [0] = roll: active D-term gains
+* [1] = pitch: active D-term gains
+* [2] = yaw: active D-term gains
+* [3] = [empty]
 
 ### SENSOR FUSION GYRO BOARDS:
 DUAL_GYRO_RAW:
