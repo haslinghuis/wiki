@@ -1,4 +1,4 @@
-# DYNAMIC NOTCH AND LOWPASS FILTERS
+### DYNAMIC NOTCH AND LOWPASS FILTERS
 DYN_LPF:
 [0] = roll: raw gyro data
 [1] = roll: notch center frequency
