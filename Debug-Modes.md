@@ -76,11 +76,11 @@ RC_SMOOTHING_RATE:
 * [3] = indicates whether guard time is active
 
 ### FLIGHT DYNAMICS
-ITERM_RELAX:
-* [0] = 
-* [1] = 
-* [2] = 
-* [3] = 
+ITERM_RELAX: (https://youtu.be/QfiGTG5LfCk)
+* [0] = highpass filter to detect large setpoint changes
+* [1] = ?? (mirror of highpass?)
+* [2] = accumulation of the I-term
+* [3] = output I-term (same as I-term trace)
 
 D_MIN:
 * [0] = roll: active D-term gains
