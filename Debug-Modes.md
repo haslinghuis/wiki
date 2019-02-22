@@ -1,4 +1,4 @@
-### GYRO SIGNAL
+### GYRO SIGNAL (https://youtu.be/A09sprstYqI)
 GYRO_RAW: (does have gyro's internal Digial Lowpass Filter (DLPF) applied)
 * [0] = roll: gyro signal input to firmware **UN**scaled
 * [1] = pitch: gyro signal input to firmware **UN**scaled
