@@ -41,6 +41,19 @@ FFT_TIME:
 * [0] = currently active calculation step
 * [1] = duration of this step
 * [2] = duration of additional steps
+* [3] = [empty]
+
+RPM_FILTER:
+* [0] = motor #1 RPM Notch center frequency (where peak motor noise is anticipated)
+* [1] = motor #2 RPM Notch center frequency
+* [2] = motor #3 RPM Notch center frequency
+* [3] = motor #4 RPM Notch center frequency
+
+DSHOT_RPM_TELEMETRY:
+* [0] = motor #1 RPM
+* [1] = motor #2 RPM
+* [2] = motor #3 RPM
+* [3] = motor #4 RPM
 
 ### RC COMMAND SMOOTHING (https://youtu.be/M50fKpvFjT8)
 
