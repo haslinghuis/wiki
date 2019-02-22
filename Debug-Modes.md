@@ -42,6 +42,27 @@ FFT_TIME:
 * [1] = duration of this step
 * [2] = duration of additional steps
 
+### RC COMMAND SMOOTHING
+
+RC_INTERPOLATION:
+* [0] = raw un-smoothed rc channel data
+* [1] = current RX frame rate
+* [2] = [empty]
+* [3] = [empty]
+
+RC_SMOOTHING:
+* [0] = raw un-smoothed rc channel data
+* [1] = raw un-smoothed setpoint derivative
+* [2] = filtered setpoint derivative before applied to setpoint weight
+* [3] = auto-calculated filter cutoff frequency base after sampling the rx frame rate
+
+RC_SMOOTHING_RATE:
+* [0] = log each RX frame interval
+* [1] = log the training step count
+* [2] = the current calculated average
+* [3] = indicates whether guard time is active
+
+
 
 ### SENSOR FUSION GYRO BOARDS:
 DUAL_GYRO_RAW:
