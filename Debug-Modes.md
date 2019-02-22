@@ -42,7 +42,7 @@ FFT_TIME:
 * [1] = duration of this step
 * [2] = duration of additional steps
 
-### RC COMMAND SMOOTHING
+### RC COMMAND SMOOTHING (https://youtu.be/M50fKpvFjT8)
 
 RC_INTERPOLATION:
 * [0] = raw un-smoothed rc channel data
