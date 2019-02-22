@@ -18,7 +18,7 @@ GYRO_FILTERED: (SAME AS GYRO TRACES RECORDED BY DEFAULT)
 * [3] = [empty]
 
 
-### DYNAMIC NOTCH AND LOWPASS FILTERS
+### DYNAMIC NOTCH AND LOWPASS FILTERS (https://youtu.be/__vyp60cU_8)
 DYN_LPF:
 * [0] = roll: raw gyro data
 * [1] = roll: notch center frequency
