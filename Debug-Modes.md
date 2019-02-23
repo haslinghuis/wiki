@@ -24,7 +24,7 @@ GYRO_FILTERED: (SAME AS GYRO TRACES RECORDED BY DEFAULT)
 
 ### DYNAMIC NOTCH AND LOWPASS FILTERS (https://youtu.be/__vyp60cU_8)
 DYN_LPF:
-* [0] = roll: raw gyro data
+* [0] = roll: raw gyro data (scaled)
 * [1] = roll: notch center frequency
 * [2] = roll: lowpass filter cutoff frequency
 * [3] = roll: pre-dyn notch (post lowpass filters)gyro data
@@ -32,7 +32,7 @@ DYN_LPF:
 FFT_FREQ:
 * [0] = roll: notch center frequency
 * [1] = pitch: notch center frequency
-* [2] = roll: raw gyro data
+* [2] = roll: raw gyro data (scaled)
 * [3] = roll: pre-dyn notch (post lowpass filters) gyro data
 
 FFT:
@@ -112,7 +112,7 @@ DAUL_GYRO_DIFF:
 * [3] = [empty]
 
 DUAL_GYRO_COMBINED:  (programmer useful only)
-* [0] = <empty>
+* [0] = [empty]
 * [1] = roll: filtered gyro (same as “gyro” trace)
 * [2] = pitch: filtered gyro (same as “gyro” trace)
 * [3] = [empty]
