@@ -32,8 +32,8 @@ DYN_LPF:
 FFT_FREQ:
 * [0] = roll: notch center frequency
 * [1] = pitch: notch center frequency
-* [2] = roll: raw gyro data (scaled)
-* [3] = roll: pre-dyn notch (post lowpass filters) gyro data
+* [2] = roll: pre-dyn notch (post lowpass filters) gyro data
+* [3] = roll: raw gyro data (scaled)
 
 FFT:
 * [0] = pre-dyn notch gyro roll data
