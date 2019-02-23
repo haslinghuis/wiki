@@ -1,11 +1,13 @@
 ### GYRO SIGNAL (https://youtu.be/A09sprstYqI)
 GYRO_RAW: (does have gyro's internal Digial Lowpass Filter (DLPF) applied)
+For use in seeing the unscaled gyro signal into the firmware for use in stack overflow detection (ICM gyros).
 * [0] = roll: gyro signal input to firmware **UN**scaled
 * [1] = pitch: gyro signal input to firmware **UN**scaled
 * [2] = yaw: gyro signal input to firmware **UN**scaled
 * [3] = [empty]
 
 GYRO_SCALED: (does have gyro's internal Digial Lowpass Filter (DLPF) applied)
+For use in seeing the "raw" noise from the gyro into the firmware for fitler tunining.
 * [0] = roll: gyro signal input to firmware **scaled** into deg/sec
 * [1] = pitch: gyro signal input to firmware **scaled** into deg/sec
 * [2] = yaw: gyro signal input to firmware **scaled** into deg/sec
