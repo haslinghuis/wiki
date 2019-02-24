@@ -87,10 +87,10 @@ ITERM_RELAX: (https://youtu.be/QfiGTG5LfCk)
 * [3] = output I-term (same as I-term trace)
 
 D_MIN:
-* [0] = roll: active D-term gains
-* [1] = pitch: active D-term gains
-* [2] = yaw: active D-term gains
-* [3] = [empty]
+* [0] = stick movement
+* [1] = derivative of stick movement
+* [2] = roll: active D-term gain
+* [3] = pitch: active D-term gain
 
 ### SENSOR FUSION GYRO BOARDS:
 DUAL_GYRO_RAW:
