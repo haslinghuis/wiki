@@ -100,7 +100,7 @@ Finally I do recommend using the D only TPA aka TDA using a strong cut of 60-80%
 | MATEK F405-XXX | MATEKF405 | OK | Wudz_17 |
 | CLRACINGF4 | CLRACINGF4 | OK | joelucid | requires [dshot_bidir_newtargets](https://github.com/joelucid/betaflight/tree/dshot_bidir_newtargets) branch |
 | REVOLTOSD | REVOLTOSD | OK | JayBird | requires [dshot_bidir_newtargets](https://github.com/joelucid/betaflight/tree/dshot_bidir_newtargets) branch |
-| | OMNIBUSF4 | OK | omerco | |
+| FlameF4 | OMNIBUSF4 | OK | omerco | |
 |OMNIBUSF4V6| OMNIBUSF4V6 | OK | Jack | Requires ESC FW 32.6.2 |
 | AIKON F4 2020 | AIKONF4 | OK | fujin | requires [dshot_bidir_newtargets](https://github.com/joelucid/betaflight/tree/dshot_bidir_newtargets) branch |
 | Betaflight F4 | BETAFLIGHTF4 | OK | Balint | |
