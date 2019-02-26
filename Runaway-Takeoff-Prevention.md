@@ -46,7 +46,7 @@ Set this to `OFF` to completely disable the feature.  Note that there will be no
 
 The remaining parameters affect the logic used to detect normal controlled flight and deactivate the feature for the remainder of the battery:
 
-`runaway_takeoff_deactivate_throttle_percent = 25`
+`runaway_takeoff_deactivate_throttle_percent = 25` (reduced to 20 in BF4.0)
 
 Determines the minimum throttle percentage threshold where successful flight can be considered.  Valid values range from 0 to 100.  Along with throttle level the logic also requires activity on the roll, pitch or yaw sticks along with the PID controller successfully controlling the craft with the PID_sum staying under control.  When these conditions are met the logic accumulates successful flight time.  Generally you won't need to adjust this value as most quads require around 25% or more throttle to takeoff/hover.  The exception may be if you have and extremely powerful or light craft that is capable of flying well below 25% throttle.  In this case you may want to lower this value closer to your actual hover throttle percent.  If this value is set too low it's possible that the logic will deactivate too quickly and may not trigger in a real runaway event.  Setting it too high will result in the logic taking more flight time to deactivate as it only accumulates flight time when the throttle is above the setting.
 
@@ -87,6 +87,9 @@ As the Runaway Takeoff Prevention feature matures based on feedback from the use
 * "Hand flying" with the props off could trigger a disarm.  **NEVER TRY TO HOLD AN ARMED CRAFT IN YOUR HANDS WHILE THE PROPS ARE ON!!**  If the props are off and you move the craft around while the motors are spinning the PID controller will oppose the motion but because there are no props the PID_sum value will grow possibly triggering a disarm.  On the other hand, holding the craft still while moving the sticks to feel the motor response will not trigger a disarm.
 
 ## Version History
+
+**Betaflight 4.0**
+* Changed `runaway_takeoff_deactivate_throttle_percent` default to 20.
 
 **Betaflight 3.3**
 * Simplified configuration by removing unnecessary tuning parameters `runaway_takeoff_threshold` and `runaway_takeoff_activate_delay`.  The previous default values were found to be appropriate and unnecessary to tune.
