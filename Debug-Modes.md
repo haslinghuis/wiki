@@ -74,9 +74,9 @@ RC_SMOOTHING:
 * [3] = auto-calculated filter cutoff frequency base after sampling the rx frame rate
 
 RC_SMOOTHING_RATE:
-* [0] = log each RX frame interval
+* [0] = log each RX frame interval (shows the delay from the previous frame in microsecond)
 * [1] = log the training step count
-* [2] = the current calculated average
+* [2] = the current calculated average (shows the current "locked" rate used to set the filters)
 * [3] = indicates whether guard time is active
 
 ### FLIGHT DYNAMICS
