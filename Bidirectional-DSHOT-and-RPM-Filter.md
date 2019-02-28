@@ -4,6 +4,34 @@
 
 We're currently investigating an alternative implementation approach using GPIO DMA which would likely work on the vast majority of FCs and would then be the one to port to F7.
 
+### Update: first F7 binaries are available at https://github.com/joelucid/rpmfilterf7
+
+| Target | Changes required | Notes | Supported Motors|
+| --- | --- | --- | --- |
+| ALIENFLIGHTNGF7 | + | M3 doesn't work, use one of M5-9 instead. LED doesn't work with M1 | M1-M2, M4-M9 |
+|ALIENWHOOP|-|| M1-M4 | 
+|ANYFCF7|-||M1 M2 M3 M4 M5 M6 M9|
+|ANYFCM7|+||M1 M2 M3 M4 M5 M7 M9 M10|
+|CLRACINGF7|-|Motor 4 doesn't work. Use the LED pad instead|M1 M2 M3 M5|
+|DALRCF722DUAL|-||M1-M6. But either M5 or M6|
+|EXF722DUAL|+||M1-M8|
+|FLYWOOF7DUAL|-||M1-M6|
+|FOXEERF722DUAL|+||M1-M6|
+|FURYF7|-||M1-M4|
+|HAKRCF722|+||M1-M6|
+|KAKUTEF7|-||M1-M6|
+|KISSFCV2F7|+||M1-M6|
+|MATEKF722|+||M1-M8|
+|MATEKF722SE|+|M5 does not work|M1-M4, M6-M8|
+|NERO|+||M1-M8|
+|NUCLEOF7|-|M4 does not work but can be replaced with M6|M1-M3,M6|
+|NUCLEOF722|-|M4 does not work but can be replaced with M6|M1-M3,M6|
+|OMNIBUSF7|+||M1-M4|
+|OMNINXTF7|-||M1-M4|
+|SPRACINGF7DUAL|+||M1-M10|
+|YUPIF7|-||M1-M6|
+
+
 ### DSHOT & Betaflight 4.0
 
 [Bidirectional DSHOT](https://github.com/betaflight/betaflight/pull/7264) is a new feature in Betaflight 4.0 which enables the flight controller to receive high frequency RPM telemetry for each motor on the ESC motor signal line. It does not require any additional wiring or an additional telemetry back-channel. Each DSHOT frame from the FC gets acknowledged by a frame from the ESC containing the current eRPM. The FC needs to know the motor pole count to convert to RPM.
