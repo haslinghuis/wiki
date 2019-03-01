@@ -86,7 +86,40 @@ The ESCs report eRPM, which needs to be converted to RPM using the number of pol
 
 After enabling all of the above features double check that your loop rate is consistent. If not select a lower loop rate. Remember that unlike effective filtering, loop time has very minimal effect on [flight performance](https://github.com/betaflight/betaflight/issues/7327).
 
-To do so enter ``status`` in the CLI and check that the gyro rate matches what you have specified.
+To do so enter ``tasks`` in the CLI and check that the gyro rate matches what you have specified. For example:
+
+```
+# tasks
+Task list             rate/hz  max/us  avg/us maxload avgload     total/ms
+00 - (         SYSTEM)     10       1       0    0.5%    0.0%         0
+01 - (         SYSTEM)   1000       3       1    0.8%    0.6%       522
+02 - (       GYRO/PID)   7999      43      34   34.8%   27.6%      2845
+03 - (            ACC)   1000      12      10    1.7%    1.5%       107
+04 - (       ATTITUDE)    100      17      10    0.6%    0.6%        11
+05 - (             RX)     32      34      32    0.6%    0.6%        12
+06 - (         SERIAL)    100     851       3    9.0%    0.5%         8
+08 - (BATTERY_VOLTAGE)     50       4       2    0.5%    0.5%         1
+09 - (BATTERY_CURRENT)     50       1       1    0.5%    0.5%         0
+10 - ( BATTERY_ALERTS)      5       3       2    0.5%    0.5%         0
+11 - (         BEEPER)    100       2       1    0.5%    0.5%         1
+14 - (           BARO)     43      98      66    0.9%    0.7%        34
+15 - (       ALTITUDE)     40       7       3    0.5%    0.5%         1
+17 - (      TELEMETRY)    250       1       0    0.5%    0.0%        27
+19 - (            OSD)     60      21      13    0.6%    0.5%         9
+21 - (            CMS)     60       1       1    0.5%    0.5%         0
+22 - (        VTXCTRL)      5       1       1    0.5%    0.5%         0
+23 - (        CAMCTRL)      5       1       1    0.5%    0.5%         0
+25 - (    ADCINTERNAL)      2       3       1    0.5%    0.5%         0
+26 - (       PINIOBOX)     19       1       1    0.5%    0.5%         0
+RX Check Function                   2       1                         0
+Total (excluding SERIAL)                        46.0%   37.1%
+```
+
+You need to check the *GYRO/PID* line:
+
+```02 - (       GYRO/PID)   7999      43      34   34.8%   27.6%      2845```
+
+In this case we have the Gyro/PID configured in 8k/8k and this line show us that it is executing at a rate of 7999Hz. This must be very, very close to the 8k value (8000Hz). A recommendation will be maintain the error under the 1%.
 
 ### Debug modes
 
