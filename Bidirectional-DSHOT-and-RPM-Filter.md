@@ -117,7 +117,9 @@ Total (excluding SERIAL)                        46.0%   37.1%
 
 You need to check the *GYRO/PID* line:
 
-```02 - (       GYRO/PID)   7999      43      34   34.8%   27.6%      2845```
+```
+02 - (       GYRO/PID)   7999      43      34   34.8%   27.6%      2845
+```
 
 In this case we have the Gyro/PID configured in 8k/8k and this line show us that it is executing at a rate of 7999Hz. This must be very, very close to the 8k value (8000Hz). A recommendation will be maintain the error under the 1%.
 
