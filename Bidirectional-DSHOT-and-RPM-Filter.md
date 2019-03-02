@@ -86,7 +86,7 @@ The ESCs report eRPM, which needs to be converted to RPM using the number of pol
 
 After enabling all of the above features double check that your loop rate is consistent. If not select a lower loop rate. Remember that unlike effective filtering, loop time has very minimal effect on [flight performance](https://github.com/betaflight/betaflight/issues/7327).
 
-To do so enter ``tasks`` in the CLI and check that the gyro rate matches what you have specified. For example:
+To do so enter ``tasks`` in the CLI and check that the gyro rate matches what you have specified (Note:  Battery should be connected to FC to get accurate loop rate results). For example:
 
 ```
 # tasks
