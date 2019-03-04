@@ -139,7 +139,7 @@ Next is to slim up the dynamic notch filter. We recommend setting dynamic notch 
 
 ``set dyn_notch_width_percent = 0``
 
-Now you need to set the minimum frequency and range for the dynamic notch filter. On a typical 5” racer, a dynamic min of 200hz and range of medium should be fine, but for a larger quad with 6-7” props, you might need to set the min to 100hz and range to low. A black box log will verify this, basically you are looking for the frequency of the idle motor noise.
+Now you need to set the minimum frequency and range for the dynamic notch filter. On a typical 5” racer, a dynamic min of 200hz and range of medium should be fine, a heavier acro quad 150hz would be a good start  but for a larger quad with 6-7” props, you might need to set the min to 100hz and range to low. A black box log will verify this, basically you are looking for the frequency of the idle motor noise.
 ```
 set dyn_notch_range = medium
 set dyn_notch_min_hz = 200
@@ -167,11 +167,14 @@ Once that is set, you can try pushing the min up to 200Hz. If this is too high, 
 
 ``set dyn_lpf_dterm_min_hz = 200``
 
+**UPDATE I'm leaning towards a min of 150hz**
+
+
 It is possible to run the dynamic notch filter off if you lower your Dterm lowpass enough, but this removes any filtering that can react to external influences, e.g. wind. I had a near flyaway while testing this on a really windy day where the wind gusts were stirring up the motors enough to not descend on idle throttle.
 
 Finally, I do recommend using the D only TPA (aka TDA, which is now the default in 4.0) using a strong rate cut of 60-80% (default 50%) and the threshold at 1750 (default 1500). This way, you still have strong D for pulling out of prop wash, but it also cuts nice and sharply for high throttle runs.
 ```
-set tpa_rate = 60
+set tpa_rate = 80
 set tpa_breakpoint = 1750
 ```
 
