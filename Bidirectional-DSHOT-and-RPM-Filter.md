@@ -40,6 +40,8 @@ We're currently investigating an alternative implementation approach using GPIO 
 
 These two features are currently supported by BLHeli_32 and require an update to the latest firmware. _See [References](#References)_
 
+Here's a demo of the feature in flight. Quad has minimal filtering other than the rpm filter, handles very well and shows close to no prop wash: https://youtu.be/jwFYaGHp91c
+
 ### Required configuration
 
 Check the table at the bottom of this page to see if your FC is supported. Some boards require a custom build which can be found [here](https://ci.betaflight.tech/job/Joelucid%20dshot%20bidir%20test/lastSuccessfulBuild/artifact/obj/).
