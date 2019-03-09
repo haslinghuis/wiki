@@ -158,36 +158,36 @@ set tpa_breakpoint = 1750
 | --- | --- | --- | --- |
 | AIKONF4|[snippet](https://github.com/joelucid/bidircfg/blob/master/AIKONF4.cf) |  | M1 - M4 (tested fujin) |
 | ALIENFLIGHTNGF7 | [snippet](https://github.com/joelucid/bidircfg/blob/master/ALIENFLIGHTNGF7.cf) | M3 doesn't work, use one of M5-9 instead. LED doesn't work with M1 | M1-M2, M4-M9 |
-|ALIENWHOOP|-|| M1-M4 | 
-|ANYFCF7|-||M1 M2 M3 M4 M5 M6 M9|
+|ALIENWHOOP|[snippet](https://github.com/joelucid/bidircfg/blob/master/DEFAULT.cf)|| M1-M4 | 
+|ANYFCF7|[snippet](https://github.com/joelucid/bidircfg/blob/master/DEFAULT.cf)||M1 M2 M3 M4 M5 M6 M9|
 |ANYFCM7|[snippet](https://github.com/joelucid/bidircfg/blob/master/ANYFCM7.cf)||M1 M2 M3 M4 M5 M7 M9 M10|
-|BETAFLIGHTF4|-| | M1 - M4 ok (tested Balint) |
+|BETAFLIGHTF4|[snippet](https://github.com/joelucid/bidircfg/blob/master/DEFAULT.cf)| | M1 - M4 ok (tested Balint) |
 |CLRACINGF4|[snippet](https://github.com/joelucid/bidircfg/blob/master/CLRACINGF4.cf)| | M1-M4 ok|
-|CLRACINGF7|-|Motor 4 doesn't work. Use the LED pad instead|M1 M2 M3 M5|
-|DALRCF722DUAL|-||M1-M6. But either M5 or M6|
+|CLRACINGF7|[snippet](https://github.com/joelucid/bidircfg/blob/master/DEFAULT.cf)|Motor 4 doesn't work. Use the LED pad instead|M1 M2 M3 M5|
+|DALRCF722DUAL|[snippet](https://github.com/joelucid/bidircfg/blob/master/DEFAULT.cf)||M1-M6. But either M5 or M6|
 |EXF722DUAL|[snippet](https://github.com/joelucid/bidircfg/blob/master/EXF722DUAL.cf)||M1-M8|
-|FLYWOOF7DUAL|-||M1-M6|
+|FLYWOOF7DUAL|[snippet](https://github.com/joelucid/bidircfg/blob/master/DEFAULT.cf)||M1-M6|
 |FOXEERF722DUAL|[snippet](https://github.com/joelucid/bidircfg/blob/master/FOXEERF722DUAL.cf)||M1-M6|
-|FURYF7|-||M1-M4|
+|FURYF7|[snippet](https://github.com/joelucid/bidircfg/blob/master/DEFAULT.cf)||M1-M4|
 |HAKRCF722|[snippet](https://github.com/joelucid/bidircfg/blob/master/HAKRCF722.cf)||M1-M6|
-|KAKUTEF4V2 | - |  ||M1-M4 tested|
+|KAKUTEF4V2 | [snippet](https://github.com/joelucid/bidircfg/blob/master/DEFAULT.cf) |  ||M1-M4 tested|
 |KISSFCV2F7|[snippet](https://github.com/joelucid/bidircfg/blob/master/KISSFCV2F7.cf)||M1-M6|
-|MATEKF405|-||M1-M4 tested (Wudz_17)|
-|MATEKF722|-||M1-M8|
+|MATEKF405|[snippet](https://github.com/joelucid/bidircfg/blob/master/DEFAULT.cf)||M1-M4 tested (Wudz_17)|
+|MATEKF722|[snippet](https://github.com/joelucid/bidircfg/blob/master/DEFAULT.cf)||M1-M8|
 |MATEKF722SE|[snippet](https://github.com/joelucid/bidircfg/blob/master/MATEKF722SE.cf)|M5 does not work|M1-M4, M6-M8|
 |NERO|[snippet](https://github.com/joelucid/bidircfg/blob/master/NERO.cf)||M1-M8|
 |NOX|[snippet](https://github.com/joelucid/bidircfg/blob/master/NOX.cf)||M1-M4|
-|NUCLEOF7|-|M4 does not work but can be replaced with M6|M1-M3,M6|
-|NUCLEOF722|-|M4 does not work but can be replaced with M6|M1-M3,M6|
-|OMNIBUSF4|-||M1-M4 (tested omerco)|
-|OMNIBUSF4SD|-||M1-M4 (tested joe lucid)|
-|OMNIBUSF4FW|-| | M1-M4 tested (skonk) |
+|NUCLEOF7|[snippet](https://github.com/joelucid/bidircfg/blob/master/DEFAULT.cf)|M4 does not work but can be replaced with M6|M1-M3,M6|
+|NUCLEOF722|[snippet](https://github.com/joelucid/bidircfg/blob/master/DEFAULT.cf)|M4 does not work but can be replaced with M6|M1-M3,M6|
+|OMNIBUSF4|[snippet](https://github.com/joelucid/bidircfg/blob/master/DEFAULT.cf)||M1-M4 (tested omerco)|
+|OMNIBUSF4SD|[snippet](https://github.com/joelucid/bidircfg/blob/master/DEFAULT.cf)||M1-M4 (tested joe lucid)|
+|OMNIBUSF4FW|[snippet](https://github.com/joelucid/bidircfg/blob/master/DEFAULT.cf)| | M1-M4 tested (skonk) |
 |OMNIBUSF7|[snippet](https://github.com/joelucid/bidircfg/blob/master/OMNIBUSF7.cf)||M1-M4|
-|OMNINXTF7|-||M1-M4|
+|OMNINXTF7|[snippet](https://github.com/joelucid/bidircfg/blob/master/DEFAULT.cf)||M1-M4|
 |PYRODRONEF4|[snippet](https://github.com/joelucid/bidircfg/blob/master/PYRODRONEF4.cf)||M1-M4 (tested fujin)|
 |REVOLTOSD|[snippet](https://github.com/joelucid/bidircfg/blob/master/REVOLT.cf)||M1-M4 (tested JayBird)|
 |SPRACINGF7DUAL|[snippet](https://github.com/joelucid/bidircfg/blob/master/SPRACINGF7DUAL.cf)||M1-M10|
-|YUPIF7|-||M1-M6|
+|YUPIF7|[snippet](https://github.com/joelucid/bidircfg/blob/master/DEFAULT.cf)||M1-M6|
 
 Please add additional verified configurations here.
 
