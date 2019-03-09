@@ -62,6 +62,8 @@ If so you're ready for your first test flight! Log to blackbox if you can. The s
 
 ## Advanced Topics
 
+If your board is supported the board snippet should get you up in the air with very effective default settings. Below is a description of more advanced topics which explains some of the setting in the config snippets.
+
 ### Loop times and DSHOT protocol
 
 Bidirectional DSHOT works with DSHOT 300, 600 and 1200, and also with Proshot 1000. Remember, though, that for each frame sent there will now be a frame coming back, and between input and output frames there is a period of 25us to switch the line, DMA, and timers. The loop time selection needs to be low enough that given the DSHOT protocol rate both frames + 50 us fit into one gyro loop iteration.
