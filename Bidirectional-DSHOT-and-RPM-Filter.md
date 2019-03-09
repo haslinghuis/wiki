@@ -13,6 +13,8 @@ Here's a demo of the feature in flight. Quad has minimal filtering other than th
 
 Check the table at the bottom of this page to see if your target is supported. Some boards require a reconfiguration of timer or dma channels using config snippets linked in the table. Paste the snippet into the CLI now if your board needs one.
 
+Don't be discouraged if your target isn't listed. Many targets will work. Try it out and report back.
+
 ### Loop times and DSHOT protocol
 
 Bidirectional DSHOT works with DSHOT 300, 600 and 1200, and also with Proshot 1000. Remember, though, that for each frame sent there will now be a frame coming back, and between input and output frames there is a period of 25us to switch the line, DMA, and timers. The loop time selection needs to be low enough that given the DSHOT protocol rate both frames + 50 us fit into one gyro loop iteration.
