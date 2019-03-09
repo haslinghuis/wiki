@@ -19,9 +19,9 @@ Also switch off any extended startup melody since that currently interferes with
 
 ### Motor Magnets
 
-The ESCs report eRPM, which needs to be converted to RPM using the number of magnets of the motors. These are found on the bell of the motor, not the stator magnets where the windings are located. Typical 5" motors have 14 magnets, so that is the default setting. Smaller motors have fewer magnets, often 12. Count them or look up the motor specs and configure using the following command in the CLI:
+The ESCs report eRPM, which needs to be converted to RPM using the number of magnets of the motors. These are found on the bell of the motor, not the stator magnets where the windings are located. Typical 5" motors have 14 magnets, so that is the default setting. Smaller motors have fewer magnets, often 12. Count them or look up the motor specs and configure using the following command in the CLI if you don't have 14 magnets:
 
-``set motor_poles=12``
+``set motor_poles=xx`` where xx is the number of magnets you counted.
 
 ### Config Snippet
 
