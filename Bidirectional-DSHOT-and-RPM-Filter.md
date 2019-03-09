@@ -13,7 +13,7 @@ Here's a demo of the feature in flight. Quad has minimal filtering other than th
 
 Check the table at the bottom of this page to see if your target is supported. Some boards require a reconfiguration of timer or dma channels using config snippets linked in the table. Paste the snippet into the CLI now if your board needs one.
 
-Don't be discouraged if your target isn't listed. Many targets will work. Try it out and report back.
+Don't be discouraged if your target isn't listed. Many targets will work. Use this [Default Snippet](https://github.com/joelucid/bidircfg/blob/master/DEFAULT.cf), try it out and report back.
 
 ### Loop times and DSHOT protocol
 
