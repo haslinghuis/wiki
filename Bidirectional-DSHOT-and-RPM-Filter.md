@@ -1,36 +1,3 @@
-### FAQ
-
-- When will bidirectional DSHOT come to F7? Or to F4 FCs with n channels or incompatibilities without burst?
-
-We're currently investigating an alternative implementation approach using GPIO DMA which would likely work on the vast majority of FCs and would then be the one to port to F7.
-
-### Update: first F7 binaries are available at https://github.com/joelucid/rpmfilterf7
-
-| Target | Changes required | Notes | Supported Motors|
-| --- | --- | --- | --- |
-| ALIENFLIGHTNGF7 | + | M3 doesn't work, use one of M5-9 instead. LED doesn't work with M1 | M1-M2, M4-M9 |
-|ALIENWHOOP|-|| M1-M4 | 
-|ANYFCF7|-||M1 M2 M3 M4 M5 M6 M9|
-|ANYFCM7|+||M1 M2 M3 M4 M5 M7 M9 M10|
-|CLRACINGF7|-|Motor 4 doesn't work. Use the LED pad instead|M1 M2 M3 M5|
-|DALRCF722DUAL|-||M1-M6. But either M5 or M6|
-|EXF722DUAL|+||M1-M8|
-|FLYWOOF7DUAL|-||M1-M6|
-|FOXEERF722DUAL|+||M1-M6|
-|FURYF7|-||M1-M4|
-|HAKRCF722|+||M1-M6|
-|KAKUTEF7|-||M1-M6|
-|KISSFCV2F7|+||M1-M6|
-|MATEKF722|+||M1-M8|
-|MATEKF722SE|+|M5 does not work|M1-M4, M6-M8|
-|NERO|+||M1-M8|
-|NUCLEOF7|-|M4 does not work but can be replaced with M6|M1-M3,M6|
-|NUCLEOF722|-|M4 does not work but can be replaced with M6|M1-M3,M6|
-|OMNIBUSF7|+||M1-M4|
-|OMNINXTF7|-||M1-M4|
-|SPRACINGF7DUAL|+||M1-M10|
-|YUPIF7|-||M1-M6|
-
 
 ### DSHOT & Betaflight 4.0
 
@@ -44,7 +11,7 @@ Here's a demo of the feature in flight. Quad has minimal filtering other than th
 
 ### Required configuration
 
-Check the table at the bottom of this page to see if your FC is supported. Some boards require a custom build which can be found [here](https://ci.betaflight.tech/job/Joelucid%20dshot%20bidir%20test/lastSuccessfulBuild/artifact/obj/).
+Check the table at the bottom of this page to see if your target is supported. Some boards require a reconfiguration of timer or dma channels using config snippets linked in the table. Paste the snippet into the CLI now if your board needs one.
 
 ### Loop times and DSHOT protocol
 
@@ -183,22 +150,42 @@ set tpa_rate = 80
 set tpa_breakpoint = 1750
 ```
 
-### Supported FCs
+### Supported targets
 
-| Board | Target | dshot_bidir | Tester | Notes |
-|---|--|---|---|---|
-|       | OMNIBUSF4SD | OK | joelucid |
-| Banggood 20mm NOXE | NOX | OK | joelucid |
-| Kakute F4 V2 | | OK | bizmar |
-| Airbot F4 Nano V6 | OMNIBUSF4FW | OK | skonk |
-| MATEK F405-XXX | MATEKF405 | OK | Wudz_17 |
-| CLRACINGF4 | CLRACINGF4 | OK | joelucid | requires [dshot_bidir_newtargets](https://github.com/joelucid/betaflight/tree/dshot_bidir_newtargets) branch |
-| REVOLTOSD | REVOLTOSD | OK | JayBird | requires [dshot_bidir_newtargets](https://github.com/joelucid/betaflight/tree/dshot_bidir_newtargets) branch |
-| FlameF4 | OMNIBUSF4 | OK | omerco | |
-|OMNIBUSF4V6| OMNIBUSF4V6 | OK | Jack | Requires ESC FW 32.6.2 |
-| AIKON F4 2020 | AIKONF4 | OK | fujin | requires [dshot_bidir_newtargets](https://github.com/joelucid/betaflight/tree/dshot_bidir_newtargets) branch |
-| Betaflight F4 | BETAFLIGHTF4 | OK | Balint | |
-| [Hyperlite F4 OSD V1/V2](https://pyrodrone.com/products/hyperlite-f4-osd) | PYRODRONEF4 | OK | fujin | requires [pyrodrone-f4-bidir-support](https://github.com/fujin/betaflight/tree/pyrodronef4-bidir-support) branch |
+| Target | Changes required | Notes | Supported Motors|
+| --- | --- | --- | --- |
+| AIKONF4|[snippet](https://github.com/joelucid/bidircfg/blob/master/AIKONF4.cf) |  | M1 - M4 (tested fujin) |
+| ALIENFLIGHTNGF7 | [snippet](https://github.com/joelucid/bidircfg/blob/master/ALIENFLIGHTNGF7.cf) | M3 doesn't work, use one of M5-9 instead. LED doesn't work with M1 | M1-M2, M4-M9 |
+|ALIENWHOOP|-|| M1-M4 | 
+|ANYFCF7|-||M1 M2 M3 M4 M5 M6 M9|
+|ANYFCM7|[snippet](https://github.com/joelucid/bidircfg/blob/master/ANYFCM7.cf)||M1 M2 M3 M4 M5 M7 M9 M10|
+|BETAFLIGHTF4|-| | M1 - M4 ok (tested Balint) |
+|CLRACINGF4|[snippet](https://github.com/joelucid/bidircfg/blob/master/CLRACINGF4.cf)| | M1-M4 ok|
+|CLRACINGF7|-|Motor 4 doesn't work. Use the LED pad instead|M1 M2 M3 M5|
+|DALRCF722DUAL|-||M1-M6. But either M5 or M6|
+|EXF722DUAL|[snippet](https://github.com/joelucid/bidircfg/blob/master/EXF722DUAL.cf)||M1-M8|
+|FLYWOOF7DUAL|-||M1-M6|
+|FOXEERF722DUAL|[snippet](https://github.com/joelucid/bidircfg/blob/master/FOXEERF722DUAL.cf)||M1-M6|
+|FURYF7|-||M1-M4|
+|HAKRCF722|[snippet](https://github.com/joelucid/bidircfg/blob/master/HAKRCF722.cf)||M1-M6|
+|KAKUTEF4V2 | - |  ||M1-M4 tested|
+|KISSFCV2F7|[snippet](https://github.com/joelucid/bidircfg/blob/master/KISSFCV2F7.cf)||M1-M6|
+|MATEKF405|-||M1-M4 tested (Wudz_17)|
+|MATEKF722|-||M1-M8|
+|MATEKF722SE|[snippet](https://github.com/joelucid/bidircfg/blob/master/MATEKF722SE.cf)|M5 does not work|M1-M4, M6-M8|
+|NERO|[snippet](https://github.com/joelucid/bidircfg/blob/master/NERO.cf)||M1-M8|
+|NOX|[snippet](https://github.com/joelucid/bidircfg/blob/master/NOX.cf)||M1-M4|
+|NUCLEOF7|-|M4 does not work but can be replaced with M6|M1-M3,M6|
+|NUCLEOF722|-|M4 does not work but can be replaced with M6|M1-M3,M6|
+|OMNIBUSF4|-||M1-M4 (tested omerco)|
+|OMNIBUSF4SD|-||M1-M4 (tested joe lucid)|
+|OMNIBUSF4FW|-| | M1-M4 tested (skonk) |
+|OMNIBUSF7|[snippet](https://github.com/joelucid/bidircfg/blob/master/OMNIBUSF7.cf)||M1-M4|
+|OMNINXTF7|-||M1-M4|
+|PYRODRONEF4|[snippet](https://github.com/joelucid/bidircfg/blob/master/PYRODRONEF4.cf)||M1-M4 (tested fujin)|
+|REVOLTOSD|[snippet](https://github.com/joelucid/bidircfg/blob/master/REVOLT.cf)||M1-M4 (tested JayBird)|
+|SPRACINGF7DUAL|[snippet](https://github.com/joelucid/bidircfg/blob/master/SPRACINGF7DUAL.cf)||M1-M10|
+|YUPIF7|-||M1-M6|
 
 Please add additional verified configurations here.
 
