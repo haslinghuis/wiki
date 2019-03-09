@@ -29,7 +29,7 @@ Check the table at the bottom of this page to see if your target is supported. S
 
 Click on the snippet for your board and cut/paste the commands into the CLI. Paste the snippet into the CLI now if your board needs one.
 
-Don't be discouraged if your target isn't listed. Many targets will work. Use this [Default Snippet](https://github.com/joelucid/bidircfg/blob/master/DEFAULT.cf), try it out and report back.
+Don't be discouraged if your target isn't listed. Many targets will work. Use this [Default Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf), try it out and report back.
 
 ### Config Verification
 
