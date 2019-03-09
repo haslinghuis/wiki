@@ -132,6 +132,9 @@ There are two blackbox debug modes to verify the RPM filter: RPM_FILTER logs the
 ### Tuning (Sugar_K)
 
 The RPM filter will do the heavy lifting without adding much latency. Typically only the Dterm lowpass filter and the dynamic notch are additionally needed to remove broad background noise and frame resonances, respectively. You should remove the filters in stages, test hovering and flying after each change to verify that your motors are not getting too hot.
+please also note the absolute numbers and number of filters turned off were reached using a very clean high power to weight racing quad with good props...
+
+also **do not turn off all the Dterm filtering, doing this is a very bad idea**
 
 The first thing to turn off is the stage2 Dterm lowpass filter.
 
