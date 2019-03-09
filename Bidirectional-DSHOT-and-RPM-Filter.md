@@ -9,11 +9,23 @@ These two features are currently supported by BLHeli_32 and require an update to
 
 Here's a demo of the feature in flight. Quad has minimal filtering other than the rpm filter, handles very well and shows close to no prop wash: https://youtu.be/jwFYaGHp91c
 
-### Required configuration
+## Configuration
 
-Check the table at the bottom of this page to see if your target is supported. Some boards require a reconfiguration of timer or dma channels using config snippets linked in the table. Paste the snippet into the CLI now if your board needs one.
+### Motor Magnets
+
+The ESCs report eRPM, which needs to be converted to RPM using the number of magnets of the motors. These are found on the bell of the motor, not the stator magnets where the windings are located. Typical 5" motors have 14 magnets, so that is the default setting. Smaller motors have fewer magnets, often 12. Count them or look up the motor specs and configure using the following command in the CLI:
+
+``set motor_poles=12``
+
+### Config Snippet
+
+Check the table at the bottom of this page to see if your target is supported. Some boards require a reconfiguration of timer or dma channels. Additionally since the rpm filter removes motor noise so effectively we have developed a set of filter defaults optimized for use with the rpm filter. Both changes are included in a board specific snippet which is liked in the table.
+
+Click on the snippet for your board and cut/paste the commands into the CLI. Paste the snippet into the CLI now if your board needs one.
 
 Don't be discouraged if your target isn't listed. Many targets will work. Use this [Default Snippet](https://github.com/joelucid/bidircfg/blob/master/DEFAULT.cf), try it out and report back.
+
+
 
 ### Loop times and DSHOT protocol
 
