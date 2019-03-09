@@ -25,7 +25,7 @@ The ESCs report eRPM, which needs to be converted to RPM using the number of mag
 
 ### Config Snippet
 
-Check the table at the bottom of this page to see if your target is supported. Some boards require a reconfiguration of timer or dma channels. Additionally since the rpm filter removes motor noise so effectively we have developed a set of filter defaults optimized for use with the rpm filter. Both changes are included in a board specific snippet which is liked in the table.
+Check the table at the bottom of this page to see if your target is supported. Some boards require a reconfiguration of timer or dma channels. Additionally since the rpm filter removes motor noise so effectively we have developed a set of filter defaults optimized for use with the rpm filter. Both changes plus conservative selections of DSHOT600 and a gyro frequency of 4k are included in a board specific snippet which is liked in the table.
 
 Click on the snippet for your board and cut/paste the commands into the CLI. Paste the snippet into the CLI now if your board needs one.
 
@@ -58,7 +58,9 @@ Dshot RPM Motor 2: 107
 Dshot RPM Motor 3: 111
 ```
 
-If so you're ready for your first test flight!
+If so you're ready for your first test flight! Log to blackbox if you can. The snippet sets the debug_mode to rpm_filter which allows you to see the live rpm of your quad in your blackbox log.
+
+## Advanced Topics
 
 ### Loop times and DSHOT protocol
 
