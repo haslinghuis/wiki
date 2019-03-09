@@ -11,6 +11,12 @@ Here's a demo of the feature in flight. Quad has minimal filtering other than th
 
 ## Configuration
 
+### BLHeli32 firmware update
+
+First install the [BLHeli_32 test firmware](https://github.com/bitdump/BLHeli/tree/master/BLHeli_32%20ARM) on your ESCs. To identify the file you need start blheli32 configurator and select the "flash Blheli" button. A window will open which shows the firmware name. Download the matching firmware and flash it onto **all four** ESCs. You will need to select the firmware separately for each ESC.
+
+Also switch off any extended startup melody since that currently interferes with bidirectional DSHOT. The standard startup tones will work fine though.
+
 ### Motor Magnets
 
 The ESCs report eRPM, which needs to be converted to RPM using the number of magnets of the motors. These are found on the bell of the motor, not the stator magnets where the windings are located. Typical 5" motors have 14 magnets, so that is the default setting. Smaller motors have fewer magnets, often 12. Count them or look up the motor specs and configure using the following command in the CLI:
@@ -25,7 +31,34 @@ Click on the snippet for your board and cut/paste the commands into the CLI. Pas
 
 Don't be discouraged if your target isn't listed. Many targets will work. Use this [Default Snippet](https://github.com/joelucid/bidircfg/blob/master/DEFAULT.cf), try it out and report back.
 
+### Config Verification
 
+Now your FC is set up for bidirectional dshot. You now need to verify that it works. To do so power cycle FC and ESC. Connect the lipo first to the ESC, then the USB cable. Open the CLI and enter ``status``. You should now see bidirectional dshot statistics similar to this:
+
+```
+Dshot reads: 145267
+Dshot invalid pkts: 36
+Dshot irq micros: 5
+Dshot RPM Motor 0: 0
+Dshot RPM Motor 1: 0
+Dshot RPM Motor 2: 0
+Dshot RPM Motor 3: 0
+```
+The number of invalid packets should not exceed 1% of all Dshot reads. All motors should report an RPM of 0.
+
+Type ``exit`` to leave the CLI. Go to the motors tab and let all motors spin very slowly. Go back to the CLI and repeat the ``status`` command. Now your output should look like this:
+
+```
+Dshot reads: 505108
+Dshot invalid pkts: 8
+Dshot irq micros: 4
+Dshot RPM Motor 0: 106
+Dshot RPM Motor 1: 112
+Dshot RPM Motor 2: 107
+Dshot RPM Motor 3: 111
+```
+
+If so you're ready for your first test flight!
 
 ### Loop times and DSHOT protocol
 
