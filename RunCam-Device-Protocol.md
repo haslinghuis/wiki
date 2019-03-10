@@ -72,7 +72,7 @@ In the Peripherals column of the line UART3 (on the Ports tab), select RunCam De
 ![bf-ports-setup-for-rcsplit](https://s3-us-west-2.amazonaws.com/runcamfcfiles/bf-ports-setup-for-rcsplit.png)
 
 
-####### 3.Instructions of the functions of the camera and assigning transmitter channels to them
+###### 3.Instructions of the functions of the camera and assigning transmitter channels to them
 
 In the Betaflight Configurator, navigate to the Modes tab. There are new CAMERA WI-FI, CAMERA POWER and CAMERA CHANGE modes.
 
