@@ -217,6 +217,7 @@ set tpa_breakpoint = 1750
 |DALRCF722DUAL|[snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)||M1-M6. But either M5 or M6|
 |EXF722DUAL|[snippet](https://github.com/betaflight/bidircfg/blob/master/EXF722DUAL.cf)||M1-M8|
 |FLYWOOF7DUAL|[snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)||M1-M6|
+|FORTINIF4|[snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)||M1-M4(tested QuadMcFly)|
 |FOXEERF722DUAL|[snippet](https://github.com/betaflight/bidircfg/blob/master/FOXEERF722DUAL.cf)||M1-M6|
 |FURYF7|[snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)||M1-M4|
 |HAKRCF722|[snippet](https://github.com/betaflight/bidircfg/blob/master/HAKRCF722.cf)||M1-M6|
