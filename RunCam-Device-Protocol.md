@@ -6,6 +6,8 @@ The protocol itself supports not only full camera osd menu navigation but also t
 
 Not all features of the protocol are currently supported in betaflight but both betaflights support and the protocol itself are in continued development.
 
+Lately similar to TBS Smartaudio and IRC Tramp other companies (for instance Caddx) started to adopt support for the protocol in their cameras.
+
 ## Currently supported features in betaflight
 * Full camera OSD control
 * Starting/Stopping recording on split style cameras
