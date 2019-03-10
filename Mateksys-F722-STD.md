@@ -58,4 +58,4 @@ Matek Systems www.mateksys.com
 
 Setup Guide Matek F722-STD: http://www.mateksys.com/?portfolio=f722-std#tab-id-3
 
-Rcgroups Thread Matek F722: hhttps://www.rcgroups.com/forums/showthread.php?2986161-Matek-Flight-Controller-F722-STD
+Rcgroups Thread Matek F722: https://www.rcgroups.com/forums/showthread.php?2986161-Matek-Flight-Controller-F722-STD
