@@ -38,6 +38,17 @@ If your SPM4649T for example are connected to TX3, you can also open CLI and cop
 * Betaflight Configuration Menu System, CMS. 
 * VTX Status (In a separate VTX  Setup menu)
 
+In BetaFlight 4.0 a few items have been added, you will be able view:
+* Battery average cell voltage or voltage of the full pack, depending on how you have set the cli parameter:
+
+`report_cell_voltage = OFF`   
+`Allowed values: OFF, ON`   
+
+* Core temperature of the flight controller CPU.
+* Combined average RPM of all motors. Please note: RPM values below 1000 will be shown as 999, due to limitations in the Spektrum telemetry frame.
+
+ 
+
 Use the transmitter scroller to select the items you like to use.
 
 Note: When using CMS in this way, it will be given highest possible priority on the telemetry radio link for performance reasons. A few other telemetry reports will be disabled as long as you are using CMS. This makes it VERY IMPORTANT to leave CMS with a proper EXIT, otherwise you will loose some telemetry data. Like battery current and capacity used, VTX status etc. 
@@ -51,3 +62,7 @@ Note: When using CMS in this way, it will be given highest possible priority on 
 ![Spektrum Telemetry Overview](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/Spektrum_TM_FlightPackCapacity.jpg)
 ![Spektrum Telemetry Overview](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/Spektrum_TM_Text_CMS.jpg)
 ![Spektrum Telemetry Overview](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/Spektrum_VTX_Status.jpg)
+
+### New items in BF4.0:
+
+![Spektrum_tm_BF4_new_items](https://user-images.githubusercontent.com/15121917/54093433-18b33b00-4398-11e9-949c-007c84b51298.jpg)
