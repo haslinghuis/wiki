@@ -205,6 +205,7 @@ set tpa_breakpoint = 1750
 
 | Target | Changes required | Notes | Supported Motors|
 | --- | --- | --- | --- |
+| AG3XF4|[snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf) |  | M1 - M4 (tested Mister_M) |
 | AIKONF4|[snippet](https://github.com/betaflight/bidircfg/blob/master/AIKONF4.cf) |  | M1 - M4 (tested fujin) |
 | ALIENFLIGHTNGF7 | [snippet](https://github.com/betaflight/bidircfg/blob/master/ALIENFLIGHTNGF7.cf) | M3 doesn't work, use one of M5-9 instead. LED doesn't work with M1 | M1-M2, M4-M9 |
 |ALIENWHOOP|[snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|| M1-M4 | 
