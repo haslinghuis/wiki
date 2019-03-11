@@ -19,7 +19,7 @@ Other flight-related changes include:
 - iterm_rotation is disabled by default, 
 - PID defaults have been changed a little.
 
-# IMPORTANT NOTE :  SET 4.0 up from scratch!  DO NOT PAST OLD DUMPS INTO THE CLI!
+# IMPORTANT NOTE :  SET 4.0 up from scratch!  DO NOT PASTE OLD DUMPS INTO THE CLI!
 
 ##What should I notice if I fly defaults?
 
@@ -30,7 +30,7 @@ Other flight-related changes include:
 
 ##I'm a freestyle pilot, what should I paste into the CLI?
 
-Using your old PID's is fine, set D_MIN to about 75% of your previous D value, or if starting from defaults, try:
+The goal is smoothness.  Using your old PID's is fine, set D_MIN to about 75% of your previous D value, or if starting from defaults, try:
 ```
 set feedforward_transition = 30
 set iterm_relax_type = gyro
