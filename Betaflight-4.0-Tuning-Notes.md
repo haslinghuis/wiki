@@ -3,7 +3,7 @@
 - [RPM controlled multiple dynamic notch filtering over bi-directional DShot](https://github.com/betaflight/betaflight/wiki/Bidirectional-DSHOT-and-RPM-Filter), to markedly improve motor noise suppression, reducing filter delay time
 - [Launch Control](https://github.com/betaflight/betaflight/wiki/Launch-Control), allows a pilot to hold a specified angle precisely and accurately for the perfect race launch
 - [D_min](https://github.com/betaflight/betaflight/wiki/d_min), which dynamically adjusts the PID D parameter according to stick movement
-- [Dynamic biquad lowpass filteringl D](https://github.com/betaflight/betaflight/wiki/4.0-tuning-notes#dynamic-lowpass-filtering), to improve noise control at low rpm and reduce filter delay time at high rpm
+- [Dynamic biquad lowpass filtering](https://github.com/betaflight/betaflight/wiki/4.0-tuning-notes#dynamic-lowpass-filtering), to improve noise control at low rpm and reduce filter delay time at high rpm
 - [Improved dynamic notch code](https://github.com/betaflight/betaflight/wiki/improved-dynamic-notch-code), with better tracking and better noise rejection with less delay,
 - [D-only TPA](https://github.com/betaflight/betaflight/wiki/4.0-tuning-notes#d-only-tpa), to selectively reduce D related noise at high throttle and maintain normal P responsiveness
 - [Integrated yaw](https://github.com/betaflight/betaflight/wiki/Integrated-Yaw), and experimental option which mathematically integrates the yaw PID values, potentially simplifying yaw tuning
