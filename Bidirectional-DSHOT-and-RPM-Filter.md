@@ -214,6 +214,7 @@ set tpa_breakpoint = 1750
 |BETAFLIGHTF4|[snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)| | M1 - M4 ok (tested Balint) |
 |CLRACINGF4|[snippet](https://github.com/betaflight/bidircfg/blob/master/CLRACINGF4.cf)| | M1-M4 ok|
 |CLRACINGF7|[snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|Motor 4 doesn't work. Use the LED pad instead|M1 M2 M3 M5|
+|DALRCF4|[snippet](https://github.com/betaflight/bidircfg/blob/master/DALRCF4.cf)||M1-M6. But either M5 or M6|
 |DALRCF722DUAL|[snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)||M1-M6. But either M5 or M6|
 |EXF722DUAL|[snippet](https://github.com/betaflight/bidircfg/blob/master/EXF722DUAL.cf)||M1-M8|
 |FLYWOOF7DUAL|[snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)||M1-M6|
