@@ -111,7 +111,7 @@ Please note however that only the turtle v2 correctly supports UART controls as 
 For the v1 you can still use [FPV Camera Control](https://github.com/betaflight/betaflight/wiki/FPV-Camera-Control-%28Joystick-Emulation%29/) to enter the OSD and control the camera via your transmitter.
 
 **Download:**
-[Caddx Turtle v2 firmware update with RunCam Device Protocol support](https://github.com/betaflight/betaflight-configurator/files/2873505/caddx_turtle_firmware.zip)
+[Caddx Turtle v2 firmware update with RunCam Device Protocol support](https://github.com/betaflight/betaflight/files/2955936/caddx_turtle_firmware_march_2019.zip)
 
 #### Supported Features:
 ##### OSD Menu Control
