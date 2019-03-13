@@ -56,6 +56,16 @@ Omnibus Fireworks supports 3-6s LIPO direct input, contains a built-in hall effe
     * Smartport uses software serial on GPIO PA9. Airbot claims this increases the quantity of UARTs to 5.
 (More information will need to be provided on Betaflight's support of software serial on PA9)
 
+### Omnibus F4 V6
+
+    Features:
+    * STM32 F405 MCU
+    * SBUS/PPM input (Pinheaders)
+    * 6PWM output (1-4Pinheaders and Sh1.0 Plug, 5-6 as Pinheaders)
+    * INCL. BARO BMP280
+    * SPI Sensor MPU6000
+    * Flash
+
 ## FAQ & Known Issues
 
 ### Troubles Entering Bootloader Mode (DFU):
@@ -112,3 +122,12 @@ current_meter = adc        # Can be done in battery tab
 set ibata_scale = 367      # Ditto. Calibration required.
 set ibata_offset = 0       # Ditto
 ```
+#### Use these CLI instructions for Frsky Omnibus versions with Rxsr-Fc connected via FPC:
+
+resource SERIAL_TX 11 C08
+resource SERIAL_RX 11 C09
+feature SOFTSERIAL
+feature TELEMETRY serial 0 0 115200 57600 0 115200 serial 30 64 115200 57600 0 115200
+set serialrx_provider = FPORT
+set serialrx_inverted = OFF
+set serialrx_halfduplex = ON
