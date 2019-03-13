@@ -127,7 +127,9 @@ set ibata_offset = 0       # Ditto
 resource SERIAL_TX 11 C08
 resource SERIAL_RX 11 C09
 feature SOFTSERIAL
-feature TELEMETRY serial 0 0 115200 57600 0 115200 serial 30 64 115200 57600 0 115200
+feature TELEMETRY 
+serial 0 0 115200 57600 0 115200 
+serial 30 64 115200 57600 0 115200
 set serialrx_provider = FPORT
 set serialrx_inverted = OFF
 set serialrx_halfduplex = ON
