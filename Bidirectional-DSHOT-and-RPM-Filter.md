@@ -163,10 +163,10 @@ first thing to do if you run hall sensor gimbals ( frsky radios ) is go to the h
 then set your smoothing filters on input and derivative to PT1.
 a good starting point for the filter settings is..
 
-```set rc_smoothing_input_hz = 40
+``set rc_smoothing_input_hz = 40
 set rc_smoothing_derivative_hz = 100
 set rc_smoothing_input_type = PT1
-set rc_smoothing_derivative_type = PT1```
+set rc_smoothing_derivative_type = PT1``
 
 there are some other fixes coming but they will be in BF 4.1
 
