@@ -149,12 +149,33 @@ There are two blackbox debug modes to verify the RPM filter: RPM_FILTER logs the
 
 ### Tuning (Sugar_K)
 
-The RPM filter will do the heavy lifting without adding much latency. Typically only the Dterm lowpass filter and the dynamic notch are additionally needed to remove broad background noise and frame resonances, respectively. You should remove the filters in stages, test hovering and flying after each change to verify that your motors are not getting too hot.
+The RPM filter will do the heavy lifting without adding much latency. Typically only the Dterm lowpass filter and the dynamic notch are additionally needed to remove broad background noise and frame resonances, respectively. **You should remove the filters in stages, test hovering and flying after each change to verify that your motors are not getting too hot.**
+running quick black box logs and looking at the gyro spectra graphs to see if you suddenly gain any massive noise spikes is also a good idea and more useful that just running Plasma Tree graphs as your PT graphs are going to look worse as you turn stuff off but this is to be expected as you reduce the overall filter levels.
 please also note the absolute numbers and number of filters turned off were reached using a very clean high power to weight racing quad with good props...
+Lastly  **do not turn off all the Dterm filtering, doing this is a very bad idea**
 
-also **do not turn off all the Dterm filtering, doing this is a very bad idea**
+**The first thing to do is to get a good 4.0 tune**.
+I don't recommend dumping in some one else filtering settings with out first tuning your quad on 4.0 as it is. basically running RPM filtering in its optimised state means you have very little actual filtering and for this to work well you are going to need a mechanically sound build that doesn't  have de-lamitated arm, loose bolts, a bad gyro chip or cooked motor bearing. by starting with a quad tuned with out the RPM filtering you can simply move to turning off the un needed filters and then optimise them a little.
 
-The first thing to turn off is the stage2 Dterm lowpass filter.
+Also its come to light that the way rc smoothing is set up right now is not entirely ideal and can cause FF to drive your motors up and down as the Fc receives packets from openTX with zeros. 
+
+first thing to do if you run hall sensor gimbals ( frsky radios ) is go to the hardware tab in the radio menu and uncheck the ADC filter box, for this to work you need to change your dead band in the radio menu to 0 on all axis ( this is pretty important)
+then set your smoothing filters on input and derivative to PT1.
+a good starting point for the filter settings is 
+``set rc_smoothing_input_hz = 40``
+``set rc_smoothing_derivative_hz = 100``
+``set rc_smoothing_input_type = PT1``
+``set rc_smoothing_derivative_type = PT1``
+
+there are some other fixes coming but they will be in BF 4.1
+
+
+
+ now on to the tuning of filtering using the Bi Directional Dshot 
+
+remember to test fly every single stage of this process 
+
+first filter to  turn off is the stage2 Dterm lowpass filter.
 
 ``set dterm_lowpass2_hz = 0``
 
