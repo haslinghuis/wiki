@@ -125,7 +125,7 @@ Sometimes, after other programs (configuration scripts, ESC firmware uploaders) 
 
 The symptoms between a fried CPU, and a CPU that is missing firmware is almost identical, with the exception that it is impossible to flash firmware to a dead CPU. CPUs may arrive from the manufacture dead, die when it first powers on do to a manufacturing defect, or die when if you wire up your board incorrectly (e.g. connect the 5v rail or battery power to a UART port). When a CPU dies, you may or may not see magic smoke. 
 
-The STM32 chipset requires 3.3v of power to operate, and so on-board dedicated voltage regulators are required to provide stable power to the CPU during operation. Since this is usually the only thing on the board requiring power, you can determine if the CPU is fried using the following two methods:
+The STM32 chipset requires 3.3v of power to operate, and so on-board dedicated voltage regulators are required to provide stable power to the CPU during operation. Since this is usually the only thing on the board requiring this voltage, you can determine if the CPU is fried using the following two methods:
 
 * Use a multimeter to measure the resistance between the 3.3v pad on your flight controller, and any ground pin on the board. The resistance should be in the mid to high kilo-ohm range if the CPU is operational. The resistance will be near zero (1-3 ohms) if the CPU is dead. 
 * If you do not have a multimeter available, find the 3.3v voltage regulator on your flight controller, and connect it to power (i.e. USB). If the temperature remains low (about 30C), then the flight controller is probably okay. If temperatures rise quickly (between 80-150C), then the CPU is probably dead.
