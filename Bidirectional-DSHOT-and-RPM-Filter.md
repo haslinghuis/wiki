@@ -161,11 +161,12 @@ Also its come to light that the way rc smoothing is set up right now is not enti
 
 first thing to do if you run hall sensor gimbals ( frsky radios ) is go to the hardware tab in the radio menu and uncheck the ADC filter box, for this to work you need to change your dead band in the radio menu to 0 on all axis ( this is pretty important)
 then set your smoothing filters on input and derivative to PT1.
-a good starting point for the filter settings is 
-``set rc_smoothing_input_hz = 40``
-``set rc_smoothing_derivative_hz = 100``
-``set rc_smoothing_input_type = PT1``
-``set rc_smoothing_derivative_type = PT1``
+a good starting point for the filter settings is..
+
+```set rc_smoothing_input_hz = 40
+set rc_smoothing_derivative_hz = 100
+set rc_smoothing_input_type = PT1
+set rc_smoothing_derivative_type = PT1```
 
 there are some other fixes coming but they will be in BF 4.1
 
