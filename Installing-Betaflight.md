@@ -121,6 +121,17 @@ Sometimes, after other programs (configuration scripts, ESC firmware uploaders) 
 
     stty sane -F /dev/<your port>
 
+### Diagnosing if your CPU is dead, or just missing firmware (Blue LED of Death)
+
+The symptoms between a fried CPU, and a CPU that is missing firmware is almost identical, with the exception that it is impossible to flash firmware to a dead CPU. CPUs may arrive from the manufacture dead, die when it first powers on do to a manufacturing defect, or die when if you wire up your board incorrectly (e.g. connect the 5v rail or battery power to a UART port). When a CPU dies, you may or may not see magic smoke. 
+
+The STM32 chipset requires 3.3v of power to operate, and so on-board dedicated voltage regulators are required to provide stable power to the CPU during operation. Since this is usually the only thing on the board requiring power, you can determine if the CPU is fried using the following two methods:
+
+* Use a multimeter to measure the resistance between the 3.3v pad on your flight controller, and any ground pin on the board. The resistance should be in the mid to high kilo-ohm range if the CPU is operational. The resistance will be near zero (1-3 ohms) if the CPU is dead. 
+* If you do not have a multimeter available, find the 3.3v voltage regulator on your flight controller, and connect it to power (i.e. USB). If the temperature remains low (about 30C), then the flight controller is probably okay. If temperatures rise quickly (between 80-150C), then the CPU is probably dead.
+
+[![](https://i.ytimg.com/vi/qQ86-GsXVQE/hqdefault.jpg)](https://www.youtube.com/watch?v=qQ86-GsXVQE)
+
 ## Additional Tutorial Links
 Start with the following video that gives a very comprehensive guide on Betaflight and the best practice approach for it's configuration:
 http://www.youtube.com/watch?v=xSzO6HP6yzs
@@ -132,8 +143,6 @@ There is a step-by-step guide on how to flash the flight controller with Betafli
 
 How to flash Betaflight on CC3D video guide:
 http://www.rcgroups.com/forums/showpost.php?p=34196999&postcount=21477
-
-Blue LED of death, and inability to flash firmware troubleshooting. How to diagnose if the CPU on your flight controller is dead: https://www.youtube.com/watch?v=qQ86-GsXVQE 
 
 There is a topic on this FAQ page called "Which HEX target do I download and flash to my Flight Controller" that will help when it comes to deciding which file to use on your Flight Controller board.  
 Also check the Boards (Wiki menu at the right) from more info on the FC board you have. Most have information (Note: these wiki pages are to be maintained by the FC Designed/Seller or by dedicated Users) but some are blank.
