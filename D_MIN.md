@@ -99,6 +99,9 @@ If the quad can be logged, the ideal gain value for general use is where the rea
 
 2.  Make a log:  Enter `set debug_mode = D_MIN` in the CLI. Debug2 in blackbox explorer will show instantaneous D on roll, and debug3 shows D on pitch (note the numerical values are expressed as D*10).
 
+Debug 2 shows D on roll, Debug 3 shows D on pitch.  Both are before TPA attenuation.  
+Debug 0 shows the gyro contribution, and Debug 1 the setpoint (advance) contribution, to the boosting effect.
+
 
 ## How does d_min work?
   
