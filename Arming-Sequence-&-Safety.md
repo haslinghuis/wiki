@@ -68,6 +68,7 @@ This list *should* be kept up to date with the code in `master` (`armingDisableF
 <tr><td><code>PARALYZE</code></td><td>Paralyze mode has been activated</td><td></td><td></td><td>18</td><td>17</td><td>Power cycle/reset FC board.</td></tr>
 <tr><td><code>GPS</code></td><td>GPS rescue mode is configured but required number of satellites has not been fixed</td><td></td><td></td><td>19</td><td>18</td><td>Wait for GPS fix or disable GPS rescue mode.</td></tr>
 <tr><td><code>RESCUE SW</code></td><td>GPS Rescue switch is in an unsafe position</td><td></td><td></td><td></td><td>19</td><td>Turn off the GPS Rescue switch to arm.</td></tr>
-<tr><td><code>RPMFILTER</code></td><td>Motor RPM-based filtering is not functioning</td><td></td><td></td><td></td><td>20</td><td>One or more ESC's are not supplying valid RPM telemetry.</td></tr>
+<tr><td><code>RPMFILTER</code><sup>(2)</sup></td><td>Motor RPM-based filtering is not functioning</td><td></td><td></td><td></td><td>20</td><td>One or more ESC's are not supplying valid RPM telemetry.</td></tr>
 <tr><td><code>ARMSWITCH</code></td><td>Arm switch is in an unsafe position</td><td>17</td><td>18</td><td>20</td><td>21</td><td>Toggle the arm switch to arm.</td></tr></table>
 (1) This may appear on the Betaflight OSD during flight, take it as a sign that your radio system is either faulty or you are flying at the edge of your range. Treat it the same you would an "RSSI critically low" warning.
+(2) RPM-based filtering is enabled but one or more ESC's are not supplying valid DSHOT telemetry. Check that the ESC's are capable of and have the required firmware installed to support bidirectional DSHOT telemetry.
