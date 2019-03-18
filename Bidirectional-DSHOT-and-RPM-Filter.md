@@ -9,6 +9,10 @@ These two features are currently supported by BLHeli_32 and require an update to
 
 Here's a demo of the feature in flight. Quad has minimal filtering other than the rpm filter, handles very well and shows close to no prop wash: https://youtu.be/jwFYaGHp91c
 
+### Arming Prevention Check
+
+If the RPM Filter is enabled but one or more of the ESC's are not supplying valid telemetry data, then arming will be prevented with the `RPMFILTER` message. This is in place to prevent arming with incomplete or non-working configurations that may result in flyaways or hot motors due to the non-functioning filtering. See the sections below to ensure the ESC's are properly configured to support this feature.
+
 ## Configuration
 
 ### BLHeli32 firmware update
