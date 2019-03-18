@@ -71,4 +71,5 @@ This list *should* be kept up to date with the code in `master` (`armingDisableF
 <tr><td><code>RPMFILTER</code><sup>(2)</sup></td><td>Motor RPM-based filtering is not functioning</td><td></td><td></td><td></td><td>20</td><td>One or more ESC's are not supplying valid RPM telemetry.</td></tr>
 <tr><td><code>ARMSWITCH</code></td><td>Arm switch is in an unsafe position</td><td>17</td><td>18</td><td>20</td><td>21</td><td>Toggle the arm switch to arm.</td></tr></table>
 (1) This may appear on the Betaflight OSD during flight, take it as a sign that your radio system is either faulty or you are flying at the edge of your range. Treat it the same you would an "RSSI critically low" warning.
+
 (2) RPM-based filtering is enabled but one or more ESC's are not supplying valid DSHOT telemetry. Check that the ESC's are capable of and have the required firmware installed to support bidirectional DSHOT telemetry.
