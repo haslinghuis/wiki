@@ -241,7 +241,8 @@ set tpa_breakpoint = 1750
 |DALRCF4|[snippet](https://github.com/betaflight/bidircfg/blob/master/DALRCF4.cf)||M1-M6 (tested QuadMcFly)|
 |DALRCF722DUAL|[snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)||M1-M6. But either M5 or M6|
 |DYSF4PRO|[snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)||M1-M4 (tested BRadFPV)|
-|ELINF405|[snippet](https://github.com/betaflight/bidircfg/blob/master/REVOLT.cf)||M1-M4 (tested elin-neo)|
+|ELINF405|[snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)||M1-M4 (tested elin-neo)|
+|ELINF722|[snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)||M1-M4 (tested elin-neo)|
 |EXF722DUAL|[snippet](https://github.com/betaflight/bidircfg/blob/master/EXF722DUAL.cf)||M1-M8|
 |FLYWOOF7DUAL|[snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)||M1-M6|
 |FORTINIF4|[snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)||M1-M4(tested QuadMcFly)|
