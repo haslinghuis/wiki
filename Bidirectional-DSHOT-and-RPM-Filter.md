@@ -31,7 +31,7 @@ The ESCs report eRPM, which needs to be converted to RPM using the number of mag
 
 Check the table at the bottom of this page to see if your target is supported. Some boards require a reconfiguration of timer or dma channels. Additionally since the rpm filter removes motor noise so effectively we have developed a set of filter defaults optimized for use with the rpm filter. Both changes plus conservative selections of DSHOT600 and a gyro frequency of 4k are included in a board specific snippet which is liked in the table.
 
-Click on the snippet for your board and cut/paste the commands into the CLI. Paste the snippet into the CLI now if your board needs one.
+We've added a bit of tuning for optimal prop wash handling which should be ideal for new installs but might change the tune of an existing quad. These are included in the **new** snippets. Use the **upgrade** snippets for existing already tuned quads where you just want to enable the rpm filter. Click on the snippet for your board and cut/paste the commands into the CLI.
 
 Don't be discouraged if your target isn't listed. Many targets will work. Use this [Default Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf), try it out and report back.
 
