@@ -270,7 +270,7 @@ there are some other fixes coming but they will be in BF 4.1
 |OMNIBUSF4|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 (tested omerco)|
 |OMNIBUSF4SD|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 (tested joe lucid)|
 |OMNIBUSF4FW|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)| | M1-M4 tested (skonk) |
-|OMNIBUSF7|[new](https://github.com/betaflight/bidircfg/blob/master/OMNIBUSF7.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/OMNIBUSF7-upgrade.cf)||M1-M4|
+|OMNIBUSF7|[new](https://github.com/betaflight/bidircfg/blob/master/OMNIBUSF7.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/OMNIBUSF7-upgrade.cf)||M1-M4 (tested in RC2 IgguT)|
 |OMNINXTF7|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4|
 |PYRODRONEF4|[new](https://github.com/betaflight/bidircfg/blob/master/PYRODRONEF4.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/PYRODRONEF4-upgrade.cf)||M1-M4 (tested fujin)|
 |REVOLTOSD|[new](https://github.com/betaflight/bidircfg/blob/master/REVOLT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/REVOLT-upgrade.cf)||M1-M4 (tested JayBird)|
