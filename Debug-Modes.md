@@ -62,16 +62,16 @@ DSHOT_RPM_TELEMETRY:
 ### RC COMMAND SMOOTHING (https://youtu.be/M50fKpvFjT8)
 
 RC_INTERPOLATION:
-* [0] = raw un-smoothed rc channel data
+* [0] = raw un-smoothed rc channel data [roll]
 * [1] = current RX frame rate
-* [2] = [empty]
-* [3] = [empty]
+* [2] = interpolation step count
+* [3] = rc setpoint [roll]
 
 RC_SMOOTHING:
 * [0] = raw un-smoothed rc channel data
 * [1] = raw un-smoothed setpoint derivative
 * [2] = filtered setpoint derivative before applied to setpoint weight
-* [3] = auto-calculated filter cutoff frequency base after sampling the rx frame rate
+* [3] = the current calculated average (shows the current "locked" rate used to set the filters)
 
 RC_SMOOTHING_RATE:
 * [0] = log each RX frame interval (shows the delay from the previous frame in microsecond)
@@ -82,13 +82,13 @@ RC_SMOOTHING_RATE:
 ### FLIGHT DYNAMICS
 ITERM_RELAX: (https://youtu.be/QfiGTG5LfCk)
 * [0] = highpass filter to detect large setpoint changes
-* [1] = ?? (mirror of highpass?)
-* [2] = accumulation of the I-term
-* [3] = output I-term (same as I-term trace)
+* [1] = relax factor (percent, only used in `SETPOINT` mode)
+* [2] = relaxed I-term Error
+* [3] = absolute control axis error [roll]
 
 D_MIN:
-* [0] = stick movement
-* [1] = derivative of stick movement
+* [0] = gyro factor (percent, scaled by `d_min_gain`)
+* [1] = setpoint factor (percent, scaled by `d_min_advance`). The larger of _gyro_ and _setpoint_ factors takes effect.
 * [2] = roll: active D-term gain
 * [3] = pitch: active D-term gain
 
