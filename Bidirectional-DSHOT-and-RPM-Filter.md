@@ -248,7 +248,7 @@ there are some other fixes coming but they will be in BF 4.1
 |CLRACINGF4|[new](https://github.com/betaflight/bidircfg/blob/master/CLRACINGF4.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/CLRACINGF4-upgrade.cf)| | M1-M4 ok|
 |CLRACINGF7|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)|Motor 4 doesn't work. Use the LED pad instead|M1 M2 M3 M5|
 |DALRCF4|[new](https://github.com/betaflight/bidircfg/blob/master/DALRCF4.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DALRCF4-upgrade.cf)||M1-M6 (tested QuadMcFly)|
-|DALRCF722DUAL|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M6. But either M5 or M6|
+|DALRCF722DUAL|[new](https://github.com/betaflight/bidircfg/blob/master/DALRCF722DUAL.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DALRCF722DUAL-upgrade.cf)||M1-M6. But either M5 or M6|
 |DYSF4PRO|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 (tested BRadFPV)|
 |ELINF405|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 (tested elin-neo)|
 |ELINF722|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 (tested elin-neo)|
