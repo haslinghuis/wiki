@@ -161,20 +161,7 @@ Lastly  **do not turn off all the Dterm filtering, doing this is a very bad idea
 **The first thing to do is to get a good 4.0 tune**.
 I don't recommend dumping in some one else filtering settings with out first tuning your quad on 4.0 as it is. basically running RPM filtering in its optimised state means you have very little actual filtering and for this to work well you are going to need a mechanically sound build that doesn't  have de-lamitated arm, loose bolts, a bad gyro chip or cooked motor bearing. by starting with a quad tuned with out the RPM filtering you can simply move to turning off the un needed filters and then optimise them a little.
 
-Also its come to light that the way rc smoothing is set up right now is not entirely ideal and can cause FF to drive your motors up and down as the Fc receives packets from openTX with zeros. 
 
-first thing to do if you run hall sensor gimbals ( frsky radios ) is go to the hardware tab in the radio menu and uncheck the ADC filter box, for this to work you need to change your dead band in the radio menu to 0 on all axis ( this is pretty important)
-then set your smoothing filters on input and derivative to PT1.
-a good starting point for the filter settings is..
-
-```
-set rc_smoothing_input_hz = 40
-set rc_smoothing_derivative_hz = 100
-set rc_smoothing_input_type = PT1
-set rc_smoothing_derivative_type = PT1
-```
-
-there are some other fixes coming but they will be in BF 4.1
 
 
 
@@ -228,6 +215,23 @@ Finally, I do recommend using the D only TPA (aka TDA, which is now the default 
 set tpa_rate = 80
 set tpa_breakpoint = 1750
 ```
+
+**bonus section**
+Also its come to light that the way rc smoothing is set up right now doesn't cope well with openTX sending packets with bad  rc data. The auto smoothing algorithm you get by setting input and derivative  to 0 does a great job of dealing with the speed changes that cross fire makes but it does't help with the packets that openTX sends that have zero values, this causes the FF to cut to zero breifly then jump back up to the value it should be, this causes the motors to ramp app and down and can induce increased motor heat and mid corner wash 
+
+this first  stage works only if your running an FRSKY radio with hall gimbals ( not recommended if you have the stock potentiometer gimbals ) if you is go to the hardware tab in the radio menu and uncheck the ADC filter box, for this to work you need to change your dead band in the radio menu in the BF configurator  to 0 on all axis, this is pretty important as you can get jittering as you cross through the dead band. Then set your smoothing filters on input and derivative to PT1.
+a good starting point for the filter settings is..
+
+```
+set rc_smoothing_input_hz = 40
+set rc_smoothing_derivative_hz = 150
+set rc_smoothing_input_type = PT1
+set rc_smoothing_derivative_type = PT1
+```
+
+
+
+there are some other fixes coming but they will be in BF 4.1
 
 ### Supported targets
 
