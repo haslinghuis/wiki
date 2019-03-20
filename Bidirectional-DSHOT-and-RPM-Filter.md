@@ -263,6 +263,7 @@ there are some other fixes coming but they will be in BF 4.1
 |MATEKF405|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 tested (Wudz_17)|
 |MATEKF722|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M8|
 |MATEKF722SE|[new](https://github.com/betaflight/bidircfg/blob/master/MATEKF722SE.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/MATEKF722SE-upgrade.cf)|M5 does not work|M1-M4, M6-M8|
+|MLTEMPF4|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 (tested RC2 monko760)|
 |NERO|[new](https://github.com/betaflight/bidircfg/blob/master/NERO.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/NERO-upgrade.cf)||M1-M8|
 |NOX|[new](https://github.com/betaflight/bidircfg/blob/master/NOX.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/NOX-upgrade.cf)||M1-M4|
 |NUCLEOF7|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)|M4 does not work but can be replaced with M6|M1-M3,M6|
