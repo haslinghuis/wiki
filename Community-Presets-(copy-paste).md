@@ -1,7 +1,6 @@
 # BF 4.0
 
-### Brushless Whoop Class
-
+##UAV TECH
 ### Brushed Whoop Class
 
 ### 2" - 3" Quad
@@ -33,10 +32,6 @@ set abs_control_gain = 10
 set iterm_rotation = OFF
 ```
 ### 6" Quad
-
-### Beast Class
-
-### X-Class
 
 ### Revert to BF 3.5.X
 
