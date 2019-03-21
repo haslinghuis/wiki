@@ -7,6 +7,7 @@
 ### 2" - 3" Quad
 
 ### 5" Quad
+```
 set dterm_lowpass2_type = PT1
 set dterm_lowpass2_hz = 200
 set feedforward_transition = 30
@@ -30,7 +31,7 @@ set d_yaw = 0
 set f_yaw = 35
 set abs_control_gain = 10
 set iterm_rotation = OFF
-
+```
 ### 6" Quad
 
 ### Beast Class
