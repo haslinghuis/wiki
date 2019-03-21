@@ -4,11 +4,11 @@
 
 ### Brushed Whoop Class
 
-### 2" - 3"
+### 2" - 3" Quad
 
-### 5"
+### 5" Quad
 
-### 6"
+### 6" Quad
 
 ### Beast Class
 
