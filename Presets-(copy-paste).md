@@ -1,15 +1,15 @@
 # BF 4.0
 
-## Brushless Whoop Class
+### Brushless Whoop Class
 
-## Brushed Whoop Class
+### Brushed Whoop Class
 
-## 2" - 3"
+### 2" - 3"
 
-## 5"
+### 5"
 
-## 6"
+### 6"
 
-## Beast Class
+### Beast Class
 
-## X-Class
+### X-Class
