@@ -166,6 +166,7 @@
  - [OMNIBUS F4(SD)](/betaflight/betaflight/wiki/Board---OMNIBUSF4)
  - [OMNIBUS F4 Fireworks V2](/betaflight/betaflight/wiki/Board---OMNIBUSFW-V2)
  - [OMNIBUS F4 Pro Corners](/betaflight/betaflight/wiki/Board---OMNIBUS-F4-Pro-Corners)
+ - [OMNIBUS F4 Nano V7](https://github.com/betaflight/betaflight/blob/master/docs/boards/Board%20-%20OMNIBUSF4NANOV7.md)
  - [OMNIBUS F7](/betaflight/betaflight/wiki/Board---OMNIBUSF7)
  - [PIKOBLX](/betaflight/betaflight/wiki/Board---PIKOBLX)
  - [PLUM F4](/betaflight/betaflight/wiki/Board---PLUMF4)
