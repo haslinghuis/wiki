@@ -1,8 +1,12 @@
 ### INFORMATION COMMANDS
 * "VERSION" - Shows the current firmware loaded and the last github code commit [ie: "(9f67a584b)"] for the specific build of the firmware.
+
 * "STATUS" - Shows various information about the quad setup such as ROM space available for firmware, gyro type, detected voltage, etc...
+
 * "TASKS" - Shows the active tasks running and their CPU utilization.  Make sure the "gyro/PID tasks rate/hz is running at the specified rate.
+
 * "DSHOT_TELETRY_INFO" - Shows the Dshot RPM bi-directional telemetry packet success for each ESC.
+
 * "RC_SMOOTHING_INFO" - Shows the detected RX frame rate.  This only works if the "Filter" RC signal smoothing type is selected in the Receiver tab.  The radio and RX need to be connected and powered up for the detected frame rate data to be valid.
 
 ### GYRO SIGNAL (https://youtu.be/A09sprstYqI)
