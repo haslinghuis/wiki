@@ -219,14 +219,7 @@ set tpa_breakpoint = 1750
 **bonus section**
 Also its come to light that the way rc smoothing is set up right now doesn't cope well with openTX sending packets with bad  rc data, this causes the FF to cut to zero breifly then jump back up to the value it should be, this causes the motors to ramp app and down and can induce increased motor heat and mid corner wash 
 
-this first  stage works only if your running an FRSKY radio with hall gimbals ( not recommended if you have the stock potentiometer gimbals ) if you is go to the hardware tab in the radio menu and uncheck the ADC filter box, for this to work you need to change your dead band in the radio menu in the BF configurator  to 0 on all axis, this is pretty important as you can get jittering as you cross through the dead band. Then set your smoothing filters on input and derivative to PT1, input set to 0 means it adapts if you have CF or R9 to the speed changes 
-a good starting point for the filter settings is..
-
-```
-set rc_smoothing_input_hz = 0
-set rc_smoothing_derivative_hz = 150
-set rc_smoothing_input_type = PT1
-set rc_smoothing_derivative_type = PT1
+this first  stage works only if your running an FRSKY radio with hall gimbals ( not recommended if you have the stock potentiometer gimbals ) if you is go to the hardware tab in the radio menu and uncheck the ADC filter box, for this to work you need to change your dead band in the radio menu in the BF configurator  to 0 on all axis, this is pretty important as you can get jittering as you cross through the dead band. 
 ```
 
 
