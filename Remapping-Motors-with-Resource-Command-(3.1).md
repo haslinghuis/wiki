@@ -56,7 +56,7 @@ A12: MOTOR 4
 3(A11)       1(A6)
        BACK
 ```
-444
+
 3. Rotate the drawing clock wise 90-degrees.
 
 ```
