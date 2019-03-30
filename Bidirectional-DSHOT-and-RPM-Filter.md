@@ -216,16 +216,22 @@ set tpa_rate = 80
 set tpa_breakpoint = 1750
 ```
 
-**bonus section**
-Also its come to light that the way rc smoothing is set up right now doesn't cope well with openTX sending packets with bad  rc data, this causes the FF to cut to zero breifly then jump back up to the value it should be, this causes the motors to ramp app and down and can induce increased motor heat and mid corner wash 
+### Bonus Section: RC Smoothing fix for FrSky Transmitters
+It has come to light that the way RC smoothing is set up right now doesn't cope well with OpenTX sending packets with bad RC data, causing the FF to cut to zero briefly and then jump back up to the value it should be. This causes the motors to ramp up and down, which can induce increased motor heat and mid-corner wash.
 
-this first  stage works only if your running an FRSKY radio with hall gimbals ( not recommended if you have the stock potentiometer gimbals ) if you is go to the hardware tab in the radio menu and uncheck the ADC filter box, for this to work you need to change your dead band in the radio menu in the BF configurator  to 0 on all axis, this is pretty important as you can get jittering as you cross through the dead band. 
+The following settings work only if you are running a FrSky radio with Hall gimbals (not recommended if you have the stock potentiometer gimbals):  
+* In the hardware tab of the radio configuration menu, uncheck the `ADC filter` box.  **Note:** The special edition radios often come with a firmware build that has the ADC filter off already.
+* In the BetaFlight Configurator `Receiver` tab, set `RC Deadband` and `Yaw Deadband` to `0`. This is pretty important in order to help prevent jittering as you cross through the deadband. 
+* Set RC smoothing filters on input and derivative to PT1.  Input set to 0 means it adapts to framerate changes if you have CF or R9. A good starting point for the filter settings is:
 ```
+set rc_smoothing_input_hz = 0
+set rc_smoothing_derivative_hz = 150
+set rc_smoothing_input_type = PT1
+set rc_smoothing_derivative_type = PT1
+```
+There are further fixes for this issue planned for BetaFlight 4.1.
 
 
-**note** the special edition radios often come with a firmware build that has the ADC off already
-
-there are some other fixes coming but they will be in BF 4.1
 
 ### Supported targets
 
