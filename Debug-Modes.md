@@ -91,12 +91,23 @@ RC_SMOOTHING_RATE:
 * [3] = indicates whether guard time is active
 
 ### FLIGHT DYNAMICS
-ABSOLUTE CONTROL:
+AC_ERROR (Absolute Control Error):
 * [0] = roll attitude error
 * [1] = Absolute Control PID Sum
 * [2] = Absolute Control P
 * [3] = Absolute Control D
 
+AC_CORRECTION (Absolute Control Correction):
+* [0] = roll attitude error
+* [1] = Absolute Control PID Sum
+* [2] = Absolute Control P
+* [3] = Absolute Control D
+
+FF_THUMB (Absolute Control Correction):
+* [0] = roll normal FF
+* [1] = roll FF after stick limit
+* [2] = FF after max deflection
+* [3] = projected max rate due to stick extrapolation
 
 ITERM_RELAX: (https://youtu.be/QfiGTG5LfCk)
 * [0] = highpass filter to detect large setpoint changes
