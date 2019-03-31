@@ -91,6 +91,13 @@ RC_SMOOTHING_RATE:
 * [3] = indicates whether guard time is active
 
 ### FLIGHT DYNAMICS
+ABSOLUTE CONTROL:
+* [0] = roll attitude error
+* [1] = Absolute Control PID Sum
+* [2] = Absolute Control P
+* [3] = Absolute Control D
+
+
 ITERM_RELAX: (https://youtu.be/QfiGTG5LfCk)
 * [0] = highpass filter to detect large setpoint changes
 * [1] = relax factor (percent, only used in `SETPOINT` mode)
