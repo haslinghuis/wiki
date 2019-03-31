@@ -92,16 +92,16 @@ RC_SMOOTHING_RATE:
 
 ### FLIGHT DYNAMICS
 AC_ERROR (Absolute Control Error):
-* [0] = roll attitude error
-* [1] = Absolute Control PID Sum
-* [2] = Absolute Control P
-* [3] = Absolute Control D
+* [0] = roll: axis error
+* [1] = pitch: axis error
+* [2] = yaw: axis error
+* [3] = [none]
 
 AC_CORRECTION (Absolute Control Correction):
-* [0] = roll attitude error
-* [1] = Absolute Control PID Sum
-* [2] = Absolute Control P
-* [3] = Absolute Control D
+* [0] = roll: axis correction
+* [1] = pitch: axis correction
+* [2] = yaw: axis correction
+* [3] = [none]
 
 FF_THUMB (Absolute Control Correction):
 * [0] = roll normal FF
