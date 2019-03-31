@@ -97,10 +97,10 @@ AC_ERROR (Absolute Control Error):
 * [2] = yaw: axis error * 10
 * [3] = [none]
 
-AC_CORRECTION (Absolute Control Correction):
-* [0] = roll: axis correction * 10
-* [1] = pitch: axis correction * 10
-* [2] = yaw: axis correction * 10
+AC_CORRECTION (AC = Absolute Control):
+* [0] = roll: axis AC correction * 10
+* [1] = pitch: axis AC correction * 10
+* [2] = yaw: axis AC correction * 10
 * [3] = [none]
 
 FF_THUMB (Absolute Control Correction):
