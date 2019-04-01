@@ -43,10 +43,10 @@ You can decrease this value in the CLI or even make it 0 if you just want to fly
 
 Fly in a straight line for at least 100 meters past your descent distance. For example, if your descent distance setting is 150 meters, fly to 250 meters. As you keep flying in a straight line, the home arrow should adjust to point towards home.
 
- ## **VERY IMPORTANT: **  if your arrow does not point towards home, **DO NOT** activate GPS Rescue. Your quad will try to fly in the direction of the arrow if you do.
+### VERY IMPORTANT: if your arrow does not point towards home, **DO NOT** activate GPS Rescue. Your quad will try to fly in the direction of the arrow if you do.
 Activate GPS Rescue. 
 
-## **IMPORTANT**: be ready to deactivate the mode and take back control if your quad does not point towards you and starts making its way home.
+### IMPORTANT: be ready to deactivate the mode and take back control if your quad does not point towards you and starts making its way home.
 
 If everything goes well, your quad will come back towards you and start descending. Do not let it get too close to the ground or to yourself because the landing functionality is not included in current builds. Your quad may just crash near your or overshoot you.
 
@@ -70,7 +70,7 @@ After your quad reliably returns home once, you may want to test it at progressi
 
 With this setting, GPS Rescue will activate in the event of a failsafe. However, it will return control to the user as soon as the radio link comes back. During this time the user should either activate Rescue Mode manually on the radio, just so that there cannot be an unexpected transition to manual control, or be ready to take over control at any moment. Our recommended approach is the first one, which requires having Rescue Mode on a switch if you want to use it for failsafe as well.
 
-## **DEALING WITH FAILURES / SANITY CHECKS (VERY IMPORTANT): **
+## DEALING WITH FAILURES / SANITY CHECKS (VERY IMPORTANT):
 
 If you're using rescue mode in a supervised fashion (as a switch only with video), or in a place with no danger to surroundings (over water, etc), sanity checks are entirely optional.  If you plan on setting this as a failsafe (and most of the time even if you do not) you should highly consider enabling these.
 
@@ -80,9 +80,16 @@ You can also set this to `RESCUE_SANITY_FS_ONLY` if you want it to only matter i
 
 Sanity checks will ensure that you have a valid GPS fix, that the quad is spending most of its time approaching home, and also it will do its best to disarm if it detects a premature landing (not within the target home landing zone). 
 
+## Arm without a GPS Fix
+By default, Betaflight will not let arm without a GPS Fix if you have GPS Rescue configured in some way. Since Betaflight 4.0, if you need sometimes to arm and take off without GPS Rescue, the solution is:
+
+`set gps_rescue_allow_arming_without_fix = ON`
+
+With this value, you can take off without a GPS Fix, but **the GPS Rescue will not be available during the flight**. A warning will appear in the OSD to make you aware of that.
+
 ## Common pitfalls
 - Ensure that you are flying further than the minimum distance to home (100m by default) before testing GPS Rescue.
-- Every time the quad is armed, the home point is updated. Prior to BF 4.0, home point was updated on disarm but could be missed if switching rapidly. Best practice for launching in all versions is to arm, wait a few seconds until home point shows up in osd with 0 distance, and then start flying. Otherwise, disarm, wait a few seconds and repeat. 
+- Every time the quad is armed, the home point is updated. Prior to BF 4.0, home point was updated on disarm but could be missed if switching rapidly. Best practice for launching in all versions is to arm, wait a few seconds until home point shows up in osd with 0 distance, and then start flying. Otherwise, disarm, wait a few seconds and repeat. Since Betaflight 4.0 you can use this cli command `set gps_set_home_point_once = ON` in this way only the first arm after the battery is connected will be used as home point.
 - For Betaflight versions prior to 4.0, it's highly encouraged to enable Air Mode, and optionally to finetune failsafe Stage1 settings, as a workaround for the crash detection issue immediately after activating Rescue Mode. Basically, ensure your settings will avoid the quad to be free-falling when entering into Stage2.
 - When changing failsafe parameters with Betaflight Configurator 10.4 or lower, the failsafe procedure will be silently reset. Ensure that you set the failsafe procedure manually on CLI after saving modifications on the failsafe tab.
 - In some particular setups, the accelerometer can drift over time and this can avoid GPS Rescue to work properly. This can be checked by flying for a long time and then activating angle mode, if the quad does not get to a nearly perfect stable orientation please do not use GPS Rescue on this quad.
