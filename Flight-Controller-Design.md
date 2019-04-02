@@ -22,3 +22,6 @@ https://github.com/nppc/FF4Nano
 
 #### AlienWhoopF7 by brucesdad13
 https://github.com/brucesdad13/AlienWhoopF7
+
+#### OpenFC Project by DroneMesh
+http://dronemeshforum.com/viewforum.php?f=33&sid=c2c2708fe551f2214d6d2290c62a3e91
