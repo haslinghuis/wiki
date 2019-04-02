@@ -216,20 +216,8 @@ set tpa_rate = 80
 set tpa_breakpoint = 1750
 ```
 
-### Bonus Section: RC Smoothing fix for FrSky Transmitters
-It has come to light that the way RC smoothing is set up right now doesn't cope well with OpenTX sending packets with bad RC data, causing the FF to cut to zero briefly and then jump back up to the value it should be. This causes the motors to ramp up and down, which can induce increased motor heat and mid-corner wash.
+#### Note: The RC Smoothing fix for FrSky section has been moved to the [4.0 Tuning Notes](https://github.com/betaflight/betaflight/wiki/4.0-Tuning-Notes#bonus-section-rc-smoothing-fix-for-frsky-transmitters) page.
 
-The following settings work only if you are running a FrSky radio with Hall gimbals (not recommended if you have the stock potentiometer gimbals):  
-* In the hardware tab of the radio configuration menu, uncheck the `ADC filter` box.  **Note:** The special edition radios often come with a firmware build that has the ADC filter off already.
-* In the BetaFlight Configurator `Receiver` tab, set `RC Deadband` and `Yaw Deadband` to `0`. This is pretty important in order to help prevent jittering as you cross through the deadband. 
-* Set RC smoothing filters on input and derivative to PT1.  Input set to 0 means it adapts to framerate changes if you have CF or R9. A good starting point for the filter settings is:
-```
-set rc_smoothing_input_hz = 0
-set rc_smoothing_derivative_hz = 150
-set rc_smoothing_input_type = PT1
-set rc_smoothing_derivative_type = PT1
-```
-There are further fixes for this issue planned for BetaFlight 4.1.
 
 
 
