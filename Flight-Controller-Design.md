@@ -46,9 +46,14 @@ https://www.st.com/resource/en/datasheet/stm32f411ce.pdf
 https://www.st.com/resource/en/reference_manual/dm00119316.pdf
 
 #### STM32F722RE
+https://www.st.com/resource/en/datasheet/stm32f722ic.pdf
+https://www.st.com/resource/en/reference_manual/dm00083560.pdf
 
 #### STM32F745
+https://www.st.com/resource/en/datasheet/DM00166116.pdf
+https://www.st.com/resource/en/reference_manual/dm00124865.pdf
 
-#### STM32H743
-
-#### STM32H750
+#### STM32H743/H750
+https://www.st.com/resource/en/datasheet/stm32h743bi.pdf
+https://www.st.com/resource/en/datasheet/stm32h750ib.pdf
+https://www.stmicroelectronics.com.cn/resource/en/reference_manual/dm00314099.pdf
