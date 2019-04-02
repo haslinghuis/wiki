@@ -13,15 +13,17 @@ https://www.alienflightng.com
 
 #### OpenPilot Revo
 
-#### Fury F4
+#### Fury F3, F4 and F7 by kc10kevin
+https://www.rcgroups.com/forums/showthread.php?2628430-Kopter-Kontrol-Next-Generation-New-F3-and-F4-Flight-Controllers
 
-#### Fury F7
-
-#### AnyFC by sambas
+#### AnyFC Series by sambas
 https://github.com/sambas/hw
 
 #### FF4Nano by nppc
 https://github.com/nppc/FF4Nano
+
+#### tinyFish FC by fishpepper
+https://fishpepper.de/projects/tinyfish/
 
 #### AlienWhoopF7 by brucesdad13
 https://github.com/brucesdad13/AlienWhoopF7
