@@ -93,6 +93,7 @@ With this value, you can take off without a GPS Fix, but **the GPS Rescue will n
 - For Betaflight versions prior to 4.0, it's highly encouraged to enable Air Mode, and optionally to finetune failsafe Stage1 settings, as a workaround for the crash detection issue immediately after activating Rescue Mode. Basically, ensure your settings will avoid the quad to be free-falling when entering into Stage2.
 - When changing failsafe parameters with Betaflight Configurator 10.4 or lower, the failsafe procedure will be silently reset. Ensure that you set the failsafe procedure manually on CLI after saving modifications on the failsafe tab.
 - In some particular setups, the accelerometer can drift over time and this can avoid GPS Rescue to work properly. This can be checked by flying for a long time and then activating angle mode, if the quad does not get to a nearly perfect stable orientation please do not use GPS Rescue on this quad.
+- some GPS units need configuration with U-Center to work. Use [this video](https://www.youtube.com/watch?v=8FIi_xuH4Vo) by Painless360 for setup.
 - GPS Rescue is not and will never be completely reliable, so it should never be used as the only recovery measure. Showing lat/lon GPS Coordinates on the OSD (and recording the flight with a DVR), logging the telemetry (including GPS coordinates) in the Radio TX or using an autonomous beeper are some measures that should be in place even before testing GPS Rescue.
 
 ## Version History
