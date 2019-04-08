@@ -9,7 +9,7 @@
 
 * "RC_SMOOTHING_INFO" - Shows the detected RX frame rate.  This only works if the "Filter" RC signal smoothing type is selected in the Receiver tab.  The radio and RX need to be connected and powered up for the detected frame rate data to be valid.
 
-FFT:
+DSHOT_RPM_ERRORS:
 * [0] = Motor #1: the per-motor invalid packet percentages in hundredths of a percent (so 123 is 1.23%)
 * [1] = Motor #2:   "
 * [2] = Motor #3:   "
