@@ -11,7 +11,7 @@ Betaflight 3.2 (and above) includes more detailed troubleshooting information fo
 This information is available via:
 - the CLI
 - Betaflight OSD
-- beep patterns
+- beep patterns d
 - Betaflight Configurator
 
 Several of these conditions are to assist in preventing accidental arming via bad radio system configuration, unreliable/poor quality receivers and user mistakes.
