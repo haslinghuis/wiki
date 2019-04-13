@@ -7,7 +7,7 @@
 
 These two features are currently supported by BLHeli_32 and require an update to the latest firmware. _See [References](#References)_
 
-Here's a demo of the feature in flight. Quad has minimal filtering other than the rpm filter, handles very well and shows close to no prop wash: https://youtu.be/jwFYaGHp91c
+Here's a demo of the feature in flight. Quad has minimal filtering other than the rpm filter, handles very well and shows close to no prop wash: https://youtu.be/jwFYaGHp91c, https://youtu.be/SoG245vmaLo
 
 ### Arming Prevention Check
 
