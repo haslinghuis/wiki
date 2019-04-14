@@ -6,6 +6,8 @@
 
 ### Brushed Whoop Class
 
+<coming soon>
+
 ### 2" - 3" Quad
 ```
 #Filter Settings
@@ -125,6 +127,12 @@ set d_yaw = 0
 ```
 ### Revert to BF 3.4.X
 
+<coming soon>
+
 ### Revert to BF 3.3.X
 
+<coming soon>
+
 ### Revert to BF 3.2.X
+
+<coming soon>
