@@ -6,7 +6,7 @@
 
 ### Brushed Whoop Class
 
-<coming soon>
+--coming soon--
 
 ### 2" - 3" Quad
 ```
@@ -92,6 +92,9 @@ set tpa_rate = 80
 set tpa_breakpoint = 1800
 ```
 
+
+## REVERT TO AN OLDER VERSION OF BETAFLIGHT
+
 ### Revert to BF 3.5.X
 ```
 # NB - use your old 'known good' 3.5 PID values, not 4.0 defaults.
@@ -127,12 +130,12 @@ set d_yaw = 0
 ```
 ### Revert to BF 3.4.X
 
-<coming soon>
+--coming soon--
 
 ### Revert to BF 3.3.X
 
-<coming soon>
+--coming soon--
 
 ### Revert to BF 3.2.X
 
-<coming soon>
+--coming soon--
