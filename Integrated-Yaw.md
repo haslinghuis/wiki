@@ -23,7 +23,8 @@ set f_yaw=60
 ```
 The yaw pids serve as starting point and might need adjustment. Make sure I is low or zero since significant I leads to strong oscillations. Pitch and roll might require slight retuning - primarily reducing I a bit since absolute control acts similar to a second I term.
 
-
+____________________________________________________________________
+To be noted:
 
 There is no more I and maybe it doesn't make sense anymore, but in the past the CLI Command 
 ```
