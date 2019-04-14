@@ -1,6 +1,9 @@
 # BF 4.0.X
 
 ## UAV TECH
+
+`**ALWAYS CHECK YOUR MOTOR TEMPS AFTER A SHORT 15 SECOND FORWARD FLIGHT**`
+
 ### Brushed Whoop Class
 
 ### 2" - 3" Quad
