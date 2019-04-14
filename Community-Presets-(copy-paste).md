@@ -97,7 +97,7 @@ set tpa_breakpoint = 1800
 
 ### Revert to BF 3.5.X
 ```
-# NB - use your old 'known good' 3.5 PID values, not 4.0 defaults.
+# Use your old 'known good' 3.5 PID values, not 4.0 defaults.
 set gyro_lowpass_type = PT1
 set gyro_lowpass_hz = 100
 set gyro_lowpass2_type = PT1
@@ -106,7 +106,7 @@ set gyro_lowpass2_hz = 300
 set dyn_lpf_gyro_min_hz = 0
 set dyn_lpf_dterm_min_hz = 0
 
-set dyn_notch_range = AUTO
+set dyn_notch_range = Auto
 set dyn_notch_width_percent = 0
 set dyn_notch_q = 70
 set dyn_notch_min_hz = 130
