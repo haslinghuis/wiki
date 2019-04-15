@@ -190,13 +190,29 @@ set d_min_roll = 0
 set d_min_pitch = 0
 set d_min_yaw = 0
 
+# Default PIDs
+set p_pitch = 50
+set i_pitch = 50
+set d_pitch = 27
+set f_pitch = 60
+set p_roll = 46
+set i_roll = 45
+set d_roll = 25
+set f_roll = 60
+set p_yaw = 65
+set i_yaw = 45
+set d_yaw = 0
+set f_yaw = 60
+
+set iterm_relax_type = GYRO
+set iterm_relax_cutoff = 11
 set abs_control_gain = 0
 set use_integrated_yaw = OFF
-set d_yaw = 0
 
-# If you want to use 4.0 default PIDS, make the following changes:
- set d_pitch = 25
- set d_roll = 23
+set tpa_mode = PD
+set tpa_rate = 10
+set tpa_breakpoint = 1650
+
 ```
 ### Revert to BF 3.4.X
 
