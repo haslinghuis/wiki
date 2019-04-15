@@ -167,7 +167,7 @@ set tpa_breakpoint = 1800
 
 ### Revert to BF 3.5.X
 ```
-# Use your old 'known good' 3.5 PID values, not 4.0 defaults.
+# Filter Settings
 set gyro_lowpass_type = PT1
 set gyro_lowpass_hz = 100
 set gyro_lowpass2_type = PT1
@@ -204,6 +204,7 @@ set i_yaw = 45
 set d_yaw = 0
 set f_yaw = 60
 
+#PID Controller Settings
 set iterm_relax_type = GYRO
 set iterm_relax_cutoff = 11
 set abs_control_gain = 0
@@ -212,7 +213,6 @@ set use_integrated_yaw = OFF
 set tpa_mode = PD
 set tpa_rate = 10
 set tpa_breakpoint = 1650
-
 ```
 ### Revert to BF 3.4.X
 
