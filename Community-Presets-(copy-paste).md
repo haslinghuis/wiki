@@ -147,9 +147,15 @@ set dterm_lowpass2_hz = 0
 set vbat_pid_gain = ON
 set anti_gravity_gain = 10000
 set p_pitch = 35
-set p_roll = 32
 set d_pitch = 25
-set d_roll = 22
+set f_pitch = 32
+set p_roll = 33
+set d_roll = 23
+set f_roll = 30
+set p_yaw = 30
+set i_yaw = 90
+set d_min_roll = 0
+set d_min_pitch = 0
 ```
 ### 6" Quad
 ```
