@@ -64,6 +64,7 @@ Dshot RPM Motor 1: 112
 Dshot RPM Motor 2: 107
 Dshot RPM Motor 3: 111
 ```
+**Note that the motors have to actually be spinning at the time you check with the `status` command for a non-zero RPM to be reported.**
 
 If so you're ready for your first test flight! Log to blackbox if you can. The snippet sets the debug_mode to rpm_filter which allows you to see the live rpm of your quad in your blackbox log.
 
