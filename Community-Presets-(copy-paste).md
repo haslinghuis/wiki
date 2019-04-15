@@ -5,37 +5,105 @@
 `**ALWAYS CHECK YOUR MOTOR TEMPS AFTER A SHORT 15 SECOND FORWARD FLIGHT**`
 
 ### Brushed Whoop Class
-
---coming soon--
-
-### 2" - 3" Quad
 ```
 #Filter Settings
 set gyro_lowpass_type = PT1
-set dyn_notch_min_hz = 100
+set dyn_notch_min_hz = 150
 set dyn_lpf_gyro_min_hz = 150
 set dyn_lpf_gyro_max_hz = 750
 set dyn_lpf_dterm_min_hz = 150
-set dyn_lpf_dterm_max_hz = 350
+set dyn_lpf_dterm_max_hz = 250
 set dterm_lowpass_type = BiQUAD
-set dterm_lowpass2_hz = 0
+set dterm_lowpass2_hz = 150
 
 #PID Gains Settings
 set vbat_pid_gain = ON
-set anti_gravity_gain = 10000
-set iterm_relax_cutoff = 11
-set d_pitch = 40
-set d_roll = 45
-set d_min_roll = 20
-set d_min_pitch = 25
-set d_min_boost_gain = 40
+set anti_gravity_gain = 5
+set p_pitch = 33
+set i_pitch = 85
+set d_pitch = 35
+set p_roll = 28
+set i_roll = 78
+set d_roll = 32
+set d_min_roll = 16
+set d_min_pitch = 18
+set d_min_boost_gain = 30
 set d_min_advance = 0
+
+#Assumes Freestyle | use cutoff = 20 for Racing
+set iterm_relax_cutoff = 11
 
 #TPA Settings (which is D-term only by default)
 set tpa_rate = 80
 set tpa_breakpoint = 1800
 ```
 
+### 2" - 3" Quad - 11xx-12xx Motors
+```
+#Filter Settings
+set gyro_lowpass_type = BiQUAD
+set dyn_notch_min_hz = 150
+set dyn_lpf_gyro_min_hz = 150
+set dyn_lpf_gyro_max_hz = 700
+set dyn_lpf_dterm_min_hz = 150
+set dyn_lpf_dterm_max_hz = 250
+set dterm_lowpass_type = BiQUAD
+set dterm_lowpass2_hz = 150
+
+#PID Gains Settings
+set vbat_pid_gain = ON
+set anti_gravity_gain = 5
+set p_pitch = 33
+set i_pitch = 85
+set d_pitch = 35
+set p_roll = 28
+set i_roll = 78
+set d_roll = 32
+set d_min_roll = 16
+set d_min_pitch = 18
+set d_min_boost_gain = 30
+set d_min_advance = 0
+
+#Assumes Freestyle | use cutoff = 20 for Racing
+set iterm_relax_cutoff = 11
+
+#TPA Settings (which is D-term only by default)
+set tpa_rate = 80
+set tpa_breakpoint = 1800
+```
+### 3" Quad - 14xx-15xx Motors
+```
+#Filter Settings
+set gyro_lowpass_type = BiQUAD
+set dyn_notch_min_hz = 150
+set dyn_lpf_gyro_min_hz = 150
+set dyn_lpf_gyro_max_hz = 650
+set dyn_lpf_dterm_min_hz = 150
+set dyn_lpf_dterm_max_hz = 250
+set dterm_lowpass_type = BiQUAD
+set dterm_lowpass2_hz = 150
+
+#PID Gains Settings
+set vbat_pid_gain = ON
+set anti_gravity_gain = 5
+set p_pitch = 38
+set i_pitch = 85
+set d_pitch = 35
+set p_roll = 35
+set i_roll = 78
+set d_roll = 32
+set d_min_roll = 16
+set d_min_pitch = 18
+set d_min_boost_gain = 30
+set d_min_advance = 0
+
+#Assumes Freestyle | use cutoff = 20 for Racing
+set iterm_relax_cutoff = 11
+
+#TPA Settings (which is D-term only by default)
+set tpa_rate = 80
+set tpa_breakpoint = 1800
+```
 ### 5" Quad
 Clean build:
 
@@ -52,13 +120,15 @@ set dterm_lowpass2_hz = 0
 #PID Gains Settings
 set vbat_pid_gain = ON
 set anti_gravity_gain = 10000
-set iterm_relax_cutoff = 11
 set d_pitch = 58
 set d_roll = 55
 set d_min_roll = 35
 set d_min_pitch = 38
 set d_min_boost_gain = 45
 set d_min_advance = 0
+
+#Assumes Freestyle | use cutoff = 20 for Racing
+set iterm_relax_cutoff = 11
 
 #TPA Settings (which is D-term only by default)
 set tpa_rate = 80
@@ -79,7 +149,7 @@ set dterm_lowpass2_hz = 0
 #PID Gains Settings
 set vbat_pid_gain = ON
 set anti_gravity_gain = 10000
-set iterm_relax_cutoff = 11
+set iterm_relax_cutoff = 11 #for freestyle | use 20 for racing
 set d_pitch = 68
 set d_roll = 65
 set d_min_roll = 35
