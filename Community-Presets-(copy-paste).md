@@ -104,7 +104,7 @@ set iterm_relax_cutoff = 11
 set tpa_rate = 80
 set tpa_breakpoint = 1800
 ```
-### 5" Quad
+### 5" Quad (3-4S)
 Clean build:
 
 Gyro_Scaled spectrograms for a full hard flight look like the below or better:
@@ -133,6 +133,23 @@ set iterm_relax_cutoff = 11
 #TPA Settings (which is D-term only by default)
 set tpa_rate = 80
 set tpa_breakpoint = 1800
+```
+### 5" Quad (5-6S)
+```
+#Filter Settings
+set gyro_lowpass_type = PT1
+set dyn_notch_min_hz = 100
+set dyn_lpf_gyro_max_hz = 510
+set dterm_lowpass_type = PT1
+set dterm_lowpass2_hz = 0
+
+#PID Gains Settings
+set vbat_pid_gain = ON
+set anti_gravity_gain = 10000
+set p_pitch = 35
+set p_roll = 32
+set d_pitch = 25
+set d_roll = 22
 ```
 ### 6" Quad
 ```
