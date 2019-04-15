@@ -36,6 +36,8 @@ We've added a bit of tuning for optimal prop wash handling which should be ideal
 
 Don't be discouraged if your target isn't listed. Many targets will work. Use this [Default Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf), try it out and report back.
 
+Beware of issue https://github.com/betaflight/betaflight/issues/8019: a diff of the config after applying the snippet will currently not cleanly reproduce the config when applied to a clean install. To fix this take any ```dma pin``` lines in the snippet and reapply them after applying your diff.
+
 ### Config Verification
 
 Now your FC is set up for bidirectional dshot. You now need to verify that it works. To do so power cycle FC and ESC. Connect the lipo first to the ESC, then the USB cable. Open the CLI and enter ``status``. You should now see bidirectional dshot statistics similar to this:
