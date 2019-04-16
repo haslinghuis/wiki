@@ -175,8 +175,8 @@ set anti_gravity_gain = 10000
 set iterm_relax_cutoff = 11 #for freestyle | use 20 for racing
 set d_pitch = 68
 set d_roll = 65
-set d_min_roll = 35
-set d_min_pitch = 38
+set d_min_roll = 25
+set d_min_pitch = 30
 set d_min_boost_gain = 45
 set d_min_advance = 0
 
