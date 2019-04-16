@@ -105,7 +105,7 @@ set d_min_advance = 0
 #Assumes Freestyle | use cutoff = 20 for Racing
 set iterm_relax_cutoff = 11
 
-#With RPM Filter | Without leave at = 8 (default)
+#With RPM Filter | Without leave at = 8 (default) OR set to 0 if you can afford less filtering
 set dyn_notch_width_percent = 0
 
 #TPA Settings (which is D-term only by default)
@@ -138,7 +138,7 @@ set d_min_advance = 0
 #Assumes Freestyle | use cutoff = 20 for Racing
 set iterm_relax_cutoff = 11
 
-#With RPM Filter | Without leave at = 8 (default)
+#With RPM Filter | Without leave at = 8 (default) OR set to 0 if you can afford less filtering
 set dyn_notch_width_percent = 0
 
 #TPA Settings (which is D-term only by default)
@@ -170,7 +170,7 @@ set d_min_advance = 0
 #Assumes Freestyle | use cutoff = 20 for Racing
 set iterm_relax_cutoff = 11
 
-#With RPM Filter | Without leave at = 8 (default)
+#With RPM Filter | Without leave at = 8 (default) OR set to 0 if you can afford less filtering
 set dyn_notch_width_percent = 0
 
 #TPA Settings (which is D-term only by default)
