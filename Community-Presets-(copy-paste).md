@@ -14,7 +14,7 @@ set dyn_lpf_gyro_max_hz = 750
 set dyn_lpf_dterm_min_hz = 150
 set dyn_lpf_dterm_max_hz = 250
 set dterm_lowpass_type = BiQUAD
-set dterm_lowpass2_hz = 150
+set dterm_lowpass2_hz = 0
 
 #PID Gains Settings
 set vbat_pid_gain = ON
@@ -172,13 +172,15 @@ set dterm_lowpass2_hz = 0
 #PID Gains Settings
 set vbat_pid_gain = ON
 set anti_gravity_gain = 10000
-set iterm_relax_cutoff = 11 #for freestyle | use 20 for racing
 set d_pitch = 58
 set d_roll = 55
 set d_min_pitch = 28
 set d_min_roll = 25
 set d_min_boost_gain = 45
 set d_min_advance = 0
+
+#Assumes Freestyle | use cutoff = 20 for Racing
+set iterm_relax_cutoff = 11
 
 #TPA Settings (which is D-term only by default)
 set tpa_rate = 80
