@@ -157,7 +157,7 @@ set i_yaw = 90
 set d_min_roll = 0
 set d_min_pitch = 0
 ```
-### 6" Quad
+### 6"/7" Quads
 ```
 #Filter Settings
 set gyro_lowpass_type = PT1
