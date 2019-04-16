@@ -25,8 +25,8 @@ set d_pitch = 35
 set p_roll = 28
 set i_roll = 78
 set d_roll = 32
-set d_min_roll = 16
 set d_min_pitch = 18
+set d_min_roll = 16
 set d_min_boost_gain = 30
 set d_min_advance = 0
 
@@ -59,8 +59,8 @@ set d_pitch = 35
 set p_roll = 28
 set i_roll = 78
 set d_roll = 32
-set d_min_roll = 16
 set d_min_pitch = 18
+set d_min_roll = 16
 set d_min_boost_gain = 30
 set d_min_advance = 0
 
@@ -92,8 +92,8 @@ set d_pitch = 35
 set p_roll = 35
 set i_roll = 78
 set d_roll = 32
-set d_min_roll = 16
 set d_min_pitch = 18
+set d_min_roll = 16
 set d_min_boost_gain = 30
 set d_min_advance = 0
 
@@ -104,7 +104,7 @@ set iterm_relax_cutoff = 11
 set tpa_rate = 80
 set tpa_breakpoint = 1800
 ```
-### 5" Quad (3-4S)
+### 5" Quad (3s-4s)
 Clean build:
 
 Gyro_Scaled spectrograms for a full hard flight look like the below or better:
@@ -122,8 +122,8 @@ set vbat_pid_gain = ON
 set anti_gravity_gain = 10000
 set d_pitch = 58
 set d_roll = 55
-set d_min_roll = 35
 set d_min_pitch = 38
+set d_min_roll = 35
 set d_min_boost_gain = 45
 set d_min_advance = 0
 
@@ -134,7 +134,7 @@ set iterm_relax_cutoff = 11
 set tpa_rate = 80
 set tpa_breakpoint = 1800
 ```
-### 5" Quad (5-6S)
+### 5" Quad (5s-6s)
 ```
 #Filter Settings
 set gyro_lowpass_type = PT1
@@ -173,10 +173,10 @@ set dterm_lowpass2_hz = 0
 set vbat_pid_gain = ON
 set anti_gravity_gain = 10000
 set iterm_relax_cutoff = 11 #for freestyle | use 20 for racing
-set d_pitch = 68
-set d_roll = 65
+set d_pitch = 58
+set d_roll = 55
+set d_min_pitch = 28
 set d_min_roll = 25
-set d_min_pitch = 30
 set d_min_boost_gain = 45
 set d_min_advance = 0
 
