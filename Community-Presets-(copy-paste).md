@@ -39,6 +39,7 @@ set tpa_breakpoint = 1800
 ```
 
 ### 2" - 3" Quad - 11xx-12xx Motors
+(in coordination with George Hartmann)
 ```
 #Filter Settings
 set gyro_lowpass_type = BiQUAD
@@ -67,11 +68,15 @@ set d_min_advance = 0
 #Assumes Freestyle | use cutoff = 20 for Racing
 set iterm_relax_cutoff = 11
 
+#With RPM Filter | Without leave at = 8 (default)
+set dyn_notch_width_percent = 0
+
 #TPA Settings (which is D-term only by default)
 set tpa_rate = 80
 set tpa_breakpoint = 1800
 ```
 ### 3" Quad - 14xx-15xx Motors
+(in coordination with George Hartmann)
 ```
 #Filter Settings
 set gyro_lowpass_type = BiQUAD
@@ -99,6 +104,9 @@ set d_min_advance = 0
 
 #Assumes Freestyle | use cutoff = 20 for Racing
 set iterm_relax_cutoff = 11
+
+#With RPM Filter | Without leave at = 8 (default)
+set dyn_notch_width_percent = 0
 
 #TPA Settings (which is D-term only by default)
 set tpa_rate = 80
@@ -130,32 +138,12 @@ set d_min_advance = 0
 #Assumes Freestyle | use cutoff = 20 for Racing
 set iterm_relax_cutoff = 11
 
+#With RPM Filter | Without leave at = 8 (default)
+set dyn_notch_width_percent = 0
+
 #TPA Settings (which is D-term only by default)
 set tpa_rate = 80
 set tpa_breakpoint = 1800
-```
-### 5" Quad (5s-6s)
-```
-#Filter Settings
-set gyro_lowpass_type = PT1
-set dyn_notch_min_hz = 100
-set dyn_lpf_gyro_max_hz = 510
-set dterm_lowpass_type = PT1
-set dterm_lowpass2_hz = 0
-
-#PID Gains Settings
-set vbat_pid_gain = ON
-set anti_gravity_gain = 10000
-set p_pitch = 35
-set d_pitch = 25
-set f_pitch = 32
-set p_roll = 33
-set d_roll = 23
-set f_roll = 30
-set p_yaw = 30
-set i_yaw = 90
-set d_min_roll = 0
-set d_min_pitch = 0
 ```
 ### 6"/7" Quads
 ```
@@ -182,11 +170,37 @@ set d_min_advance = 0
 #Assumes Freestyle | use cutoff = 20 for Racing
 set iterm_relax_cutoff = 11
 
+#With RPM Filter | Without leave at = 8 (default)
+set dyn_notch_width_percent = 0
+
 #TPA Settings (which is D-term only by default)
 set tpa_rate = 80
 set tpa_breakpoint = 1800
 ```
+## RipperDrone
+### 5" Quad (5s-6s)
+```
+#Filter Settings
+set gyro_lowpass_type = PT1
+set dyn_notch_min_hz = 100
+set dyn_lpf_gyro_max_hz = 510
+set dterm_lowpass_type = PT1
+set dterm_lowpass2_hz = 0
 
+#PID Gains Settings
+set vbat_pid_gain = ON
+set anti_gravity_gain = 10000
+set p_pitch = 35
+set d_pitch = 25
+set f_pitch = 32
+set p_roll = 33
+set d_roll = 23
+set f_roll = 30
+set p_yaw = 30
+set i_yaw = 90
+set d_min_roll = 0
+set d_min_pitch = 0
+```
 
 ## REVERT TO AN OLDER VERSION OF BETAFLIGHT
 
