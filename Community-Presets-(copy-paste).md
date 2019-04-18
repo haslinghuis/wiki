@@ -30,7 +30,8 @@ set d_min_roll = 16
 set d_min_boost_gain = 30
 set d_min_advance = 0
 
-#Assumes Freestyle | use cutoff = 20 for Racing
+#Assumes Freestyle | For racing use "Setpoint" and cutoff = 20
+set iterm_relax_type = GYRO
 set iterm_relax_cutoff = 11
 
 #TPA Settings (which is D-term only by default)
@@ -65,7 +66,8 @@ set d_min_roll = 16
 set d_min_boost_gain = 30
 set d_min_advance = 0
 
-#Assumes Freestyle | use cutoff = 20 for Racing
+#Assumes Freestyle | For racing use "Setpoint" and cutoff = 20
+set iterm_relax_type = GYRO
 set iterm_relax_cutoff = 11
 
 #With RPM Filter | Without leave at = 8 (default) OR set to 0 if you can afford less filtering
@@ -102,7 +104,8 @@ set d_min_roll = 16
 set d_min_boost_gain = 30
 set d_min_advance = 0
 
-#Assumes Freestyle | use cutoff = 20 for Racing
+#Assumes Freestyle | For racing use "Setpoint" and cutoff = 20
+set iterm_relax_type = GYRO
 set iterm_relax_cutoff = 11
 
 #With RPM Filter | Without leave at = 8 (default) OR set to 0 if you can afford less filtering
@@ -135,7 +138,8 @@ set d_min_roll = 35
 set d_min_boost_gain = 45
 set d_min_advance = 0
 
-#Assumes Freestyle | use cutoff = 20 for Racing
+#Assumes Freestyle | For racing use "Setpoint" and cutoff = 20
+set iterm_relax_type = GYRO
 set iterm_relax_cutoff = 11
 
 #With RPM Filter | Without leave at = 8 (default) OR set to 0 if you can afford less filtering
@@ -167,7 +171,8 @@ set d_min_roll = 25
 set d_min_boost_gain = 45
 set d_min_advance = 0
 
-#Assumes Freestyle | use cutoff = 20 for Racing
+#Assumes Freestyle | For racing use "Setpoint" and cutoff = 20
+set iterm_relax_type = GYRO
 set iterm_relax_cutoff = 11
 
 #With RPM Filter | Without leave at = 8 (default) OR set to 0 if you can afford less filtering
