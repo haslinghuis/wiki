@@ -304,7 +304,7 @@ set f_roll = 150
 set p_yaw = 70
 set i_yaw = 45
 set d_yaw = 0
-set f_yaw = 150
+set f_yaw = 0
 
 #PID Controller Settings
 set feedforward_transition = 0
@@ -315,7 +315,7 @@ set anti_gravity_gain = 5000
 #I-term Relax is OFF by Default
 set iterm_relax_type = Setpoint
 set iterm_relax_cutoff = 100
-#if you turn on i-Term Relax, 3.4 defaults are below
+#if you turn on i-Term Relax, 3.4 defaults are below (take "#" off front)
 #set iterm_relax_type = Gyro
 #set iterm_relax_cutoff = 11
 
