@@ -380,8 +380,7 @@ set f_yaw = 0
 
 #PID Controller Settings
 set feedforward_transition = 0
-set iterm_relax_type = Setpoint
-set iterm_relax_cutoff = 100
+set iterm_relax = OFF
 set abs_control_gain = 0
 set use_integrated_yaw = OFF
 set anti_gravity_gain = 1000
