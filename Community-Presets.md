@@ -4,7 +4,7 @@
 
 `**ALWAYS CHECK YOUR MOTOR TEMPS AFTER A SHORT 15 SECOND FORWARD FLIGHT**`
 
-### Brushed Whoop Class
+### Brushed \ Brushless Whoop Class
 ```
 #Filter Settings
 set gyro_lowpass_type = PT1
