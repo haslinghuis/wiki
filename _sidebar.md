@@ -21,7 +21,7 @@
  - [Betaflight 4.0](/betaflight/betaflight/wiki/4.0-Tuning-Notes)
  - [Betaflight 3.5](/betaflight/betaflight/wiki/3.5-tuning-notes)
  - [Betaflight 3.4](/betaflight/betaflight/wiki/Tuning-Tips-for-Betaflight-3.4)
- - [Community Presets (copy/paste)](/betaflight/betaflight/wiki/Community-Presets-(copy-paste))
+ - [Community Presets (copy/paste)](/betaflight/betaflight/wiki/Community-Presets)
  - [Debug Modes](/betaflight/betaflight/wiki/Debug-Modes)
 
 # Setup and More
