@@ -13,7 +13,7 @@ For board identification, see
 
 - Serial RX port for inverted protocols (e.g., S.BUS) is UART1, and there is no programmable inverters.
 
-### Note for OMNIBUS F4 V3, V4 and ASGARD users
+### Note for OMNIBUS F4 V3, V4, V5 and ASGARD users
 
 - On OMNIBUS F4 V3 and later, serial RX is **UART6**, not UART1.
 - ASGARD also uses UART6 RX (J5) for serial RX.
