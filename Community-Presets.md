@@ -18,7 +18,7 @@ set dterm_lowpass2_hz = 0
 
 #PID Gains Settings
 set vbat_pid_gain = ON
-set anti_gravity_gain = 5
+set anti_gravity_gain = 5000
 set p_pitch = 33
 set i_pitch = 85
 set d_pitch = 35
