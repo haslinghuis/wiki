@@ -200,7 +200,7 @@
  - [VRRACE](/betaflight/betaflight/wiki/Board---VRRACE)
  - [X_RACERSPI](/betaflight/betaflight/wiki/Board---X_RACERSPI)
  - [YuPiF4](/betaflight/betaflight/wiki/Board---YUPIF4)
- - [YuPiF7](/betaflight/betaflight/wiki/YuPiF7)
+ - [YuPiF7](/betaflight/betaflight/wiki/Board---YuPiF7)
  - [ZCOREF3](/betaflight/betaflight/wiki/Board---ZCOREF3)
 
 ### Page Templates
