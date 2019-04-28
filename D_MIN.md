@@ -66,11 +66,10 @@ If propwash is your primary problem, and motors are cool, bring the d_min value 
 
 ## I have huge propwash, deactivating d_Min is helping.
 
-As suggested by @spatzengr (D_Boost) (AKA UAVTech) you can raise the value of D_Min and the standard value at the same time. Simply raise both, the value into D_Min and raise the value in the PID tab.  
+As suggested by @spatzengr (D_Boost) (AKA UAVTech) you can raise the value of D_Min and the standard value at the same time.  
 Here is an example:
 
 ![](https://user-images.githubusercontent.com/25552059/56864158-24c97b00-698d-11e9-85ab-ddf741d9f8e0.PNG)
-
 
 ## Will adding d_min improve overshoot control?
 
@@ -143,9 +142,3 @@ See also:
 
 ____________________________________
 
-## I have huge propwash, deactivating d_Min is helping.
-
-As suggested by @spatzengr (D_Boost) (AKA UAVTech) you can raise the value of D_Min and the standard value at the same time. Simply put the lowest value into D_Min and raise the value in the PID tab.  
-Here is an example:
-
-![](https://user-images.githubusercontent.com/25552059/56864158-24c97b00-698d-11e9-85ab-ddf741d9f8e0.PNG)
