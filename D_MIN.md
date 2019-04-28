@@ -64,6 +64,14 @@ The d_min algorithm does detect and respond to propwash events by bringing D bac
 If propwash is your primary problem, and motors are cool, bring the d_min value up.  
 
 
+## I have huge propwash, deactivating d_Min is helping.
+
+As suggested by @spatzengr (D_Boost) (AKA UAVTech) you can raise the value of D_Min and the standard value at the same time. Simply raise both, the value into D_Min and raise the value in the PID tab.  
+Here is an example:
+
+![](https://user-images.githubusercontent.com/25552059/56864158-24c97b00-698d-11e9-85ab-ddf741d9f8e0.PNG)
+
+
 ## Will adding d_min improve overshoot control?
 
 Yes.  The timing of the d_min boost effect typically improves overshoot even at the same D value.  
@@ -130,3 +138,14 @@ See also:
 - [the original d_cut PR7373 by ctzsnooze Jan 2019](https://github.com/betaflight/betaflight/pull/7373)
 - [d_min PR7538, updating d_cut to d_min, by ctzsnooze Feb 2019](https://github.com/betaflight/betaflight/pull/7538)
 - [d_min PR7559, CMS menu changes, by eTracer Feb 2019](https://github.com/betaflight/betaflight/pull/7559)
+
+
+
+____________________________________
+
+## I have huge propwash, deactivating d_Min is helping.
+
+As suggested by @spatzengr (D_Boost) (AKA UAVTech) you can raise the value of D_Min and the standard value at the same time. Simply put the lowest value into D_Min and raise the value in the PID tab.  
+Here is an example:
+
+![](https://user-images.githubusercontent.com/25552059/56864158-24c97b00-698d-11e9-85ab-ddf741d9f8e0.PNG)
