@@ -182,6 +182,39 @@ set dyn_notch_width_percent = 0
 set tpa_rate = 80
 set tpa_breakpoint = 1800
 ```
+### X-Class [IN PROGRESS!!!]
+```
+#Filter Settings
+set gyro_lowpass_type = PT1
+set dyn_notch_min_hz = 50
+set dyn_lpf_gyro_min_hz = 50
+set dyn_lpf_gyro_max_hz = 200
+set dyn_lpf_dterm_min_hz = 60
+set dyn_lpf_dterm_max_hz = 150
+set dterm_lowpass_type = BIQUAD
+set dterm_lowpass2_hz = 0
+
+#PID Gains Settings
+set vbat_pid_gain = ON
+set anti_gravity_gain = 10000
+set d_pitch = ??
+set d_roll = ??
+set d_min_pitch = ??
+set d_min_roll = ??
+set d_min_boost_gain = 45
+set d_min_advance = 0
+
+#Assumes Freestyle | For racing use "Setpoint" and cutoff = 20
+set iterm_relax_type = GYRO
+set iterm_relax_cutoff = 11
+
+#With RPM Filter | Without leave at = 8 (default) OR set to 0 if you can afford less filtering
+set dyn_notch_width_percent = 8
+
+#TPA Settings (which is D-term only by default)
+set tpa_rate = 80
+set tpa_breakpoint = 1750
+```
 ## RipperDrone
 ### 5" Quad (5s-6s)
 ```
