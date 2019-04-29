@@ -1,36 +1,36 @@
-# [Home]()
+# [Home](/betaflight/betaflight/wiki)
 
 # Getting Started
 
  - [Installation](Installing-Betaflight)
  - [FAQ](Frequently-Asked-Questions)
  - [PID Tuning Guide](PID-Tuning-Guide)
- - Flying-Tips
+ - [Flying Tips](Flying-Tips)
 
 # Release Notes
  - [Betaflight 3.5](https://github.com/betaflight/betaflight/blob/master/docs/Release%20Notes/Betaflight%203.5%20Release%20Notes.md)
  - [Betaflight 3.4](https://github.com/betaflight/betaflight/blob/master/docs/Release%20Notes/Betaflight%203.4%20Release%20Notes.md)
  - [BetaFlight 3.3](https://github.com/betaflight/betaflight/blob/master/docs/Upgrading/Upgrading%20from%203.2%20to%203.3.md)
  - [BetaFlight 3.2](https://github.com/betaflight/betaflight/wiki/BetaFlight-3.2)
- - [BetaFlight 3.1](/betaflight/betaflight/wiki/BetaFlight-V3.1.x)
- - [BetaFlight 3.0](/betaflight/betaflight/wiki/BetaFlight-3.0.x)
- - [V2.x CLI Commands](/betaflight/betaflight/wiki/Betaflight-specific-CLI-commands)  
- - [Betaflight 4.0 CLI commands (work in progress)](https://github.com/betaflight/betaflight/wiki/Betaflight-4.0-CLI-commands-_Work-in-progress)
+ - [BetaFlight 3.1](BetaFlight-V3.1.x)
+ - [BetaFlight 3.0](BetaFlight-3.0.x)
+ - [V2.x CLI Commands](Betaflight-specific-CLI-commands)  
+ - [Betaflight 4.0 CLI commands (work in progress)](Betaflight-4.0-CLI-commands-_Work-in-progress)
 # Tuning Tips
 
- - [Betaflight 4.0](/betaflight/betaflight/wiki/4.0-Tuning-Notes)
- - [Betaflight 3.5](/betaflight/betaflight/wiki/3.5-tuning-notes)
- - [Betaflight 3.4](/betaflight/betaflight/wiki/Tuning-Tips-for-Betaflight-3.4)
- - [Community Presets (copy/paste)](/betaflight/betaflight/wiki/Community-Presets)
- - [Debug Modes](/betaflight/betaflight/wiki/Debug-Modes)
+ - [Betaflight 4.0](4.0-Tuning-Notes)
+ - [Betaflight 3.5](3.5-tuning-notes)
+ - [Betaflight 3.4](Tuning-Tips-for-Betaflight-3.4)
+ - [Community Presets (copy/paste)](Community-Presets)
+ - [Debug Modes](Debug-Modes)
 
 # Setup and More
 
- - [Betaflight 4.0 Bidirectional Dshot & RPM Filter](/betaflight/betaflight/wiki/Bidirectional-DSHOT-and-RPM-Filter) 
- - [Arming Sequence & Safety](https://github.com/betaflight/betaflight/wiki/Arming-Sequence-&-Safety)
- - [TBS Unify SmartAudio](/betaflight/betaflight/wiki/Unify-Smartaudio)
- - [IRC Tramp](/betaflight/betaflight/wiki/IRC-Tramp)
- - [VTX CLI Settings](/betaflight/betaflight/wiki/VTX-CLI-Settings)
+ - [Betaflight 4.0 Bidirectional Dshot & RPM Filter](Bidirectional-DSHOT-and-RPM-Filter) 
+ - [Arming Sequence & Safety](Arming-Sequence-&-Safety)
+ - [TBS Unify SmartAudio](Unify-Smartaudio)
+ - [IRC Tramp](IRC-Tramp)
+ - [VTX CLI Settings](VTX-CLI-Settings)
  - [External OSD / MWOSD](https://github.com/betaflight/betaflight/wiki/External-OSD---MWOSD---CMS)
  - [OSD Screen Adjustment](/betaflight/betaflight/wiki/OSD-and-CMS-Adjusting-Screen)
  - [Deep Dive](/betaflight/betaflight/wiki/BetaFlight-Deep-Dive)
