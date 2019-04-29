@@ -61,7 +61,7 @@ _(add your name here if you help test or contribute code for this board)_
 
 _(add links board descriptions here that are similar in features or function, but have a separate target)_
 
-- [SirinFPV](/betaflight/betaflight/wiki/Board---SIRINFPV)
+- [SirinFPV](Board---SIRINFPV)
 
 ## Variants
 

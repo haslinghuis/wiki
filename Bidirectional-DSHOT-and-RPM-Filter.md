@@ -12,7 +12,7 @@ https://youtu.be/jwFYaGHp91c, https://youtu.be/SoG245vmaLo
 
 ### Arming Prevention Check
 
-If the RPM Filter is enabled but one or more of the ESC's are not supplying valid telemetry data, then arming will be prevented with the `RPMFILTER` message (see [Arming Sequence & Safety](https://github.com/betaflight/betaflight/wiki/Arming-Sequence-&-Safety)). This is in place to prevent arming with incomplete or non-working configurations that may result in flyaways or hot motors due to the non-functioning filtering. See the sections below to ensure the ESC's are properly configured to support this feature.
+If the RPM Filter is enabled but one or more of the ESC's are not supplying valid telemetry data, then arming will be prevented with the `RPMFILTER` message (see [Arming Sequence & Safety](Arming-Sequence-&-Safety)). This is in place to prevent arming with incomplete or non-working configurations that may result in flyaways or hot motors due to the non-functioning filtering. See the sections below to ensure the ESC's are properly configured to support this feature.
 
 ## Configuration
 
@@ -220,7 +220,7 @@ set tpa_rate = 80
 set tpa_breakpoint = 1750
 ```
 
-#### Note: The RC Smoothing fix for FrSky section has been moved to the [4.0 Tuning Notes](https://github.com/betaflight/betaflight/wiki/4.0-Tuning-Notes#bonus-section-rc-smoothing-fix-for-frsky-transmitters) page.
+#### Note: The RC Smoothing fix for FrSky section has been moved to the [4.0 Tuning Notes](4.0-Tuning-Notes#bonus-section-rc-smoothing-fix-for-frsky-transmitters) page.
 
 
 

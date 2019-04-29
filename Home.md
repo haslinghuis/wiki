@@ -1,7 +1,7 @@
 ![BetaFlight](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/betaflight/bf_logo.png)
 # Welcome to the BetaFlight Wiki!
 
-**New to Betaflight and just want to get started? See the [installation](https://github.com/betaflight/betaflight/wiki/Installing-Betaflight) section.**
+**New to Betaflight and just want to get started? See the [installation](Installing-Betaflight) section.**
 
 
 ## News
@@ -37,7 +37,7 @@ In addition to the drastic changes mentioned above, Betaflight 4.0 will have a n
 
 
 ## Merchandise:
-**For a limited time only:** Buy a [Betaflight Shirt or Hoodie](https://github.com/betaflight/betaflight/wiki/Betaflight-merchandise)!
+**For a limited time only:** Buy a [Betaflight Shirt or Hoodie](Betaflight-merchandise)!
 
 
 ## Wiki Tips:   
@@ -115,7 +115,7 @@ https://github.com/betaflight/blackbox-log-viewer/releases
 
 The Latest Viewer source is here:   
 https://github.com/betaflight/blackbox-log-viewer  
-See [BB Logging and Usage](https://github.com/betaflight/betaflight/wiki/Black-Box-logging-and-usage) Wiki page on using the BB logger. 
+See [BB Logging and Usage](Black-Box-logging-and-usage) Wiki page on using the BB logger. 
 
 ## BetaFlight Logos
 Links to logos (Note: The bee/wasp in the logo is different from the one that was finally adopted):  

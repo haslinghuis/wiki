@@ -62,7 +62,7 @@ ICM gyros are susceptible to overflow-inversion problems if exposed to very high
 
 **yaw_spin_recovery = ON**
 Allowed values: OFF, ON
-https://github.com/betaflight/betaflight/wiki/Yaw-Spin-Recovery-and-Gyro-Overflow-Detect
+Yaw-Spin-Recovery-and-Gyro-Overflow-Detect
 This new feature, enabled by default in betaflight 3.4, reduces the severity and duration of un-commanded severe yaw spins.
 For example, if a quadcopter clips a gate, tree, branch or other object and causes a high rate yaw spin, it may go into a 'never-ending' uncontrollable spin. 
 Typically it makes a distinctive warbling noise and climbs rapidly - the so-called Yaw Spin To The Moon (YSTTM) problem. 3.4 introduces two code features that should bring such spins under control more quickly and cleanly.
@@ -156,14 +156,14 @@ Allowed range: 1 - 50
 
 **rc_smoothing_type = FILTER**
 Allowed values: INTERPOLATION, FILTER
-https://github.com/betaflight/betaflight/wiki/Tuning-Tips-for-Betaflight-3.4#i-just-want-to-fly-not-read-all-this-stuff
+Tuning-Tips-for-Betaflight-3.4#i-just-want-to-fly-not-read-all-this-stuff
 **rc_smoothing_input_hz = 0**
 Allowed range: 0 - 255
-https://github.com/betaflight/betaflight/wiki/Spektrum-and-RC-Smoothing-Filter
+Spektrum-and-RC-Smoothing-Filter
 
 **rc_smoothing_derivative_hz = 0**
 Allowed range: 0 - 255
-https://github.com/betaflight/betaflight/wiki/Spektrum-and-RC-Smoothing-Filter
+Spektrum-and-RC-Smoothing-Filter
 
 **rc_smoothing_debug_axis = ROLL**
 Allowed values: ROLL, PITCH, YAW, THROTTLE
@@ -255,7 +255,7 @@ Allowed range: 0 - 2000
 
 **dshot_burst = OFF**
 Allowed values: OFF, ON
-https://github.com/betaflight/betaflight/wiki/Bidirectional-DSHOT-and-RPM-Filter#dma
+Bidirectional-DSHOT-and-RPM-Filter#dma
 
 **use_unsynced_pwm = OFF**
 Allowed values: OFF, ON
@@ -272,7 +272,7 @@ Allowed values: OFF, ON
 **motor_poles = 14**
 Allowed range: 4 - 255
 The escs report erpm which needs to be converted to rpm using the number of poles (magnets) of the motors. Regular 5" motors have 14 poles and that's the default setting. Smaller motors have less poles, often 12. Count them or look up the motor specs 
-https://github.com/betaflight/betaflight/wiki/Bidirectional-DSHOT-and-RPM-Filter
+Bidirectional-DSHOT-and-RPM-Filter
 
 **thr_corr_value = 0**
 Allowed range: 0 - 150
@@ -462,7 +462,7 @@ Allowed values: OFF, ON
 
 **gps_rescue_angle = 32**
 Allowed range: 0 - 200
-https://github.com/betaflight/betaflight/wiki/GPS-rescue-mode
+GPS-rescue-mode
 
 **gps_rescue_initial_alt = 50**
 Allowed range: 20 - 100
@@ -540,7 +540,7 @@ Allowed range: 1 - 16
 
 **runaway_takeoff_prevention**
 
-https://github.com/betaflight/betaflight/wiki/Runaway-Takeoff-Prevention
+Runaway-Takeoff-Prevention
 Set this to OFF to completely disable the feature. Note that there will be no protection against runaway takeoff events and the firmware will behave as it did before the feature was implemented.
 
 The remaining parameters affect the logic used to detect normal controlled flight and deactivate the feature for the remainder of the battery:
@@ -648,7 +648,7 @@ Allowed range: 0 - 5
 
 **vtx_channel = 1**
 Allowed range: 1 - 8
-https://github.com/betaflight/betaflight/wiki/VTX-CLI-Settings
+VTX-CLI-Settings
 
 **vtx_power = 1**
 Allowed range: 0 - 4
@@ -732,7 +732,7 @@ Allowed range: 0 - 7
 **camera_control_mode = HARDWARE_PWM**
 Allowed values: HARDWARE_PWM, SOFTWARE_PWM, DAC
 mode of operation, software_pwm is the least restrictive in terms of available PIN selection, but it requires both a resistor and a capacitor to work properly; hardware_pwm is almost guaranteed to work with just a resistor given you can spare a timer for it; dac (not yet implemented) is supported on the very few FCs that have a DAC pin broken out and unoccupied by other functions, it works by direct connection to the camera.
-https://github.com/betaflight/betaflight/wiki/FPV-Camera-Control-(Joystick-Emulation)
+FPV-Camera-Control-(Joystick-Emulation)
   
 **camera_control_ref_voltage = 330**
 Allowed range: 200 - 400
@@ -752,7 +752,7 @@ Allowed values: OFF, ON
   
 **pinio_config = 1,1,1,1**
 Array length: 4
-https://github.com/betaflight/betaflight/wiki/Pinio-and-PinioBox
+Pinio-and-PinioBox
   
 **pinio_box = 255,255,255,255**
 Array length: 4
@@ -1183,7 +1183,7 @@ Allowed range: 0 - 255
 **launch_control_mode = NORMAL**
 profile 0
 Allowed values: NORMAL, PITCHONLY, FULL
-https://github.com/betaflight/betaflight/wiki/Launch-Control
+Launch-Control
   
 **launch_trigger_allow_reset = ON**
 profile 0
@@ -1264,7 +1264,7 @@ _*scheduler_optimize_rate = OFF_
 
 _*dterm_cut_percent = 65_
 
-https://github.com/betaflight/betaflight/wiki/d_cut
+d_cut
 
 _*dterm_cut_gain = 15_
 

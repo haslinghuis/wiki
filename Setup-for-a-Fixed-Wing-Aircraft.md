@@ -9,7 +9,7 @@ Some have asked if BetaFlight can control a Fixed wing aircraft.
 #### The page is to help those that wish to Experiment and Test Fixed Wing functionality with BetaFlight. 
 #### Do Remember that YOU are the TESTER.
 
-Reference the [Betaflight resource remapping](https://github.com/betaflight/betaflight/wiki/Betaflight-resource-remapping).
+Reference the [Betaflight resource remapping](Betaflight-resource-remapping).
 Note: Pin re-mapping requires BetaFlight 3.1 an higher.  
 
 #### AresFPV asked this in Boris' ßF Thread and then did research on how to do this. His findings are: 

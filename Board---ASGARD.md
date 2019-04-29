@@ -27,4 +27,4 @@ Inversion control will be handled correctly by each protocol handler for V1 and 
 
 ### For other related information, please refer to OMNIBUS F4 board wiki
 
-https://github.com/betaflight/betaflight/wiki/Board---OMNIBUSF4
+Board---OMNIBUSF4

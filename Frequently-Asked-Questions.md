@@ -92,7 +92,7 @@ See the next FAQ topic ("How do I install Betaflight") when you are ready.
 
 ## How do I install Betaflight ?
 
-Read the [Installing BetaFlight ](https://github.com/betaflight/betaflight/wiki/Installing-Betaflight) Wiki page.
+Read the [Installing BetaFlight ](Installing-Betaflight) Wiki page.
 
 ## What's the history of Betaflight and it's relationship to Cleanflight ?
 
@@ -507,7 +507,7 @@ Good tuning just makes that feel tighter and helps removing unnecessary oscillat
 
 d. Battery Factor: "A while ago someone took over my pids to his quad with same setup and he said it didn't feel good. So I flew his setup and it indeed felt like PIDs were twice as low as they should be! It appeared he was using almost 2 years old (Turnigy) Nanotechs completely lost their power. Even I feel huge difference between different batteries I have." - Boris comment
 
-Also Read the [PID Tuning Guide](https://github.com/betaflight/betaflight/wiki/PID-Tuning-Guide) the [Black Box logging and usage](https://github.com/betaflight/betaflight/wiki/Black-Box-logging-and-usage) Wiki pages.
+Also Read the [PID Tuning Guide](PID-Tuning-Guide) the [Black Box logging and usage](Black-Box-logging-and-usage) Wiki pages.
 
 ## Why does my copter behave erratic after a crash ?
 
@@ -631,7 +631,7 @@ http://www.youtube.com/watch?v=b8fMsazyxDw
 
 Within this FAQ, check the answer to "What Flight Controllers are recommended to get the best out of BetaFlight" for more details on which FC has VCP ports.
 
-The [Installing Betaflight](https://github.com/betaflight/betaflight/wiki/Installing-Betaflight) has more details on USB Drivers, etc. 
+The [Installing Betaflight](Installing-Betaflight) has more details on USB Drivers, etc. 
 
 ## Will Betaflight code be merged back into Cleanflight ?
 
@@ -1262,7 +1262,7 @@ You can achieve more or less the same curve with both expo and s.rates, it just 
 - Modern ESCs (active Braking) and modern high power motors can put a lot of noise into the electrical system. Adding a high value (1000uF seems common), low ESR capacitor helps to prevent this noise from getting into the Gyro chip on the FC (also helps with cleaner video and preventing damaging other electronics from high Voltage spikes).  
 - There is NO one cure for any copter. Each copter build is different and requires trying the various solutions. Some only need a large cap added, other only soft mounting the FC while some require both.  
 
-- There is a NEW [Soft Mounting and Noise Reduction](https://github.com/betaflight/betaflight/wiki/Soft-Mounting-and-Noise-Reduction) Wiki page. Details on Soft Mounting will be moved to this new page so check back.
+- There is a NEW [Soft Mounting and Noise Reduction](Soft-Mounting-and-Noise-Reduction) Wiki page. Details on Soft Mounting will be moved to this new page so check back.
 
 The following are extracted from posts about this issues with Observations, Theories, Discussions and suggested solutions. Read through all the discussion and follow the links to learn almost all there is about the issue and solutions.
 
@@ -1709,7 +1709,7 @@ I use this stuff for soft mounting/vibrations:
 It took all that and removing gyro notch filters / PT1 fix to get the F60 Pro quad to run without mid-throttle jitters. Each thing reduced them more and more.   
 
 ### Can Filter tuning help?  
-The newer filters in 3.0 & 3.1 have pretty aggressive defaults. A number of fliers have reduced oscillation issue be reducing the use of the filters. See the [Gyro & Filters ](https://github.com/betaflight/betaflight/wiki/Gyro-&-Dterm-filtering-recommendations) Wiki page for details and discussions.
+The newer filters in 3.0 & 3.1 have pretty aggressive defaults. A number of fliers have reduced oscillation issue be reducing the use of the filters. See the [Gyro & Filters ](Gyro-&-Dterm-filtering-recommendations) Wiki page for details and discussions.
 
 ## Is there a way to download blackbox logs through a terminal client ? 
 

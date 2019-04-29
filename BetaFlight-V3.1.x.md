@@ -5,7 +5,7 @@ https://github.com/betaflight/betaflight/releases/tag/v3.1.7
 For full release info see 3.1:
 https://github.com/betaflight/betaflight/releases/tag/v3.1.0
 
-Mixer Support: https://github.com/betaflight/betaflight/wiki/Mixer-Support-in-3.1.7-(and-later)  
+Mixer Support: Mixer-Support-in-3.1.7-(and-later)  
 
 ### New:
 - Airmode is now fully disabled when feature or mode not engaged. Before airmode was always active and it was just the iterm not being active on low throttle.
@@ -37,7 +37,7 @@ Basically people kept complaining that betaflight default D was too conservative
 Setpoint transition has been disabled (1.0) to give more linearity over the entire stick.  
 I still recommend that you slowly remove default filtering as well if your setup allows you for best results. Nowadays most do softmounting so removing of filters can easily improve performance. The defaults are optimized for hard mounted medium noisy environment for safety. The best tuning performance is achieved with as less Du.
 
-See the [Gyro & Filters](https://github.com/betaflight/betaflight/wiki/Gyro-&-Dterm-filtering-recommendations) for much more.
+See the [Gyro & Filters](Gyro-&-Dterm-filtering-recommendations) for much more.
 
 #### Air mode feature and failsafe issue
 
@@ -196,18 +196,18 @@ Betaflight firmware has undergone some major changes under the hood. Hardware dr
 
 - Added F7 support with already few supported targets - @sambas
 - Dynamic IO / pin allocation - @blckmn
-- [DSHOT Support](/betaflight/betaflight/wiki/DSHOT ESC Protocol) for F3 and F4. DSHOT150, 300, 600, and 1200 supported (read wiki about board supported hardware) - @blckmn
+- [DSHOT Support](DSHOT ESC Protocol) for F3 and F4. DSHOT150, 300, 600, and 1200 supported (read wiki about board supported hardware) - @blckmn
 - Full Floating Point Logic for flight behavior - @borisbstyle
 - Many new dynamic configurations (filters, setpoint weights etc.) - @borisbstyle
 - Many code optimizations (faster pid speeds possible on F3 and F4) - @martinbudden and @borisbstyle
 - Support for KISS ESC telemetry (only with DSHOT) - @basdelfos
 - Added temperature and RPM to KISS ESC telemetry - @mikeller 
-- Added [Serial ESC Pass-through](/betaflight/betaflight/wiki/Betaflight-ESC-pass-through) for KISS24 and CASTLE esc's - @sambas
+- Added [Serial ESC Pass-through](Betaflight-ESC-pass-through) for KISS24 and CASTLE esc's - @sambas
 - New target support (now 72 targets on 4 MCU types)
 - Added CMS display support - @jflyper
 - Added CRSF support for TBS receivers and associated telemetry - @martinbudden and @blckmn
 - Added additional OSD parameters like pids and power - @martinbudden and @rafl
-- Added [Unify SmartAudio](/betaflight/betaflight/wiki/Unify-Smartaudio) support - @jflyper
+- Added [Unify SmartAudio](Unify-Smartaudio) support - @jflyper
 - Added MSP over Smartport - @raphaelcoeffic
 - Auto Video Format support for OSD
 - Configurator enhancements - @mikeller
@@ -314,7 +314,7 @@ Also worth noting your set-point will likely shift depending on your specific se
 
 #### More on SetPoint Posted by joshuabardwell  
 For setpoint transition, the wiki has a good explanation:  
- [Reference PIDC and Setpoint discussion on 3.0.x Wiki page](https://github.com/betaflight/betaflight/wiki/BetaFlight-3.0.x)   
+ [Reference PIDC and Setpoint discussion on 3.0.x Wiki page](BetaFlight-3.0.x)   
 So:  
 Delta from error (high D term setpoint weight) has very sharp, immediate stick response. But may have problems with bounceback at the end of flips and rolls, and may provide less smooth flight (especially bad for some freestyle flyers). With high D term setpoint weight, the quad feels very connected and immediate, but also every. tiny. little. finger. motion. is translated instantly to quadcopter motion, which is not necessarily what every pilot wants.  
 Delta from measurement (low D term setpoint weight) has smoother and slower stick response. Quad feels less connected and immediate, but is smoother. Also, measurement is best at stopping bounceback/oscillation at the end of flips and rolls.  
@@ -347,17 +347,17 @@ I think after I "fixed it" with transition setpoint, I could even back off with 
 
 ### New CLI commands for 3.1:
 
-Note: See the [3.0.x page](/betaflight/betaflight/wiki/BetaFlight-3.0.x) for CLI commands plus other features that were new in 3.0.x  
-See the [V2.x CLI Commands](/betaflight/betaflight/wiki/Betaflight-specific-CLI-commands) page for a history of CLI command changes. This WIKI has only documented Changes from being Forked from CleanFlight. Do see the CF docs.  
+Note: See the [3.0.x page](BetaFlight-3.0.x) for CLI commands plus other features that were new in 3.0.x  
+See the [V2.x CLI Commands](Betaflight-specific-CLI-commands) page for a history of CLI command changes. This WIKI has only documented Changes from being Forked from CleanFlight. Do see the CF docs.  
 
 #### Resource Remapping
 From betaflight v3.1 there is a new command to map resources. No more custom motor mixes just to move a motor pin.  
-[Resource Mapping](/betaflight/betaflight/wiki/Betaflight-resource-remapping) goes into further details on how to use this new command.  
+[Resource Mapping](Betaflight-resource-remapping) goes into further details on how to use this new command.  
 
 #### set digital_idle_percent = 3.000
 <i>[0..20]<i>  
 Only used when a DSHOT ESC protocol is selected.  
-See [Setting Min Throttle with Dshot](/betaflight/betaflight/wiki/DSHOT ESC Protocol)
+See [Setting Min Throttle with Dshot](DSHOT ESC Protocol)
 
 #### set anti_gravity_threshold = 350   - per Profile
 <i>[20..1000]<i>  
@@ -477,7 +477,7 @@ Allowed values: OFF, ON
 
 #### debug_mode = NONE (added in 3.0)  
 Allowed values: NONE, CYCLETIME, BATTERY, GYRO, ACCELEROMETER, MIXER, AIRMODE, PIDLOOP, NOTCH, RC_INTERPOLATION, VELOCITY, DFILTER, ANGLERATE, ESC_SENSOR, SCHEDULER, STACK   
-Enable additional value to be sent to a BlackBox Log which is useful to measure frequency of noise before filters and other debugging. See [BB logging page](https://github.com/betaflight/betaflight/wiki/Black-Box-logging-and-usage) for measuring noise and filter.
+Enable additional value to be sent to a BlackBox Log which is useful to measure frequency of noise before filters and other debugging. See [BB logging page](Black-Box-logging-and-usage) for measuring noise and filter.
 
 #### pidsum_limit = 0.500
 Allowed range: 0 - 1  

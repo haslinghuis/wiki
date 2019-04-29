@@ -47,4 +47,4 @@ https://oscarliang.com/setup-failsafe/
 
 http://ardupilot.org/copter/docs/radio-failsafe.html
 
-https://github.com/betaflight/betaflight/wiki/Arming-Sequence-&-Safety
+Arming-Sequence-&-Safety

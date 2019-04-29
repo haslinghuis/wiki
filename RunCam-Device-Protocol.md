@@ -47,7 +47,7 @@ RunCam Split cameras (1,2,mini and mini 2 etc.) also work however may require a 
 
 #### Supported Features:
 ##### OSD Menu Control
-Entering the osd menu to change settings should work with the same stick commands as [FPV Camera Control](https://github.com/betaflight/betaflight/wiki/FPV-Camera-Control-(Joystick-Emulation))
+Entering the osd menu to change settings should work with the same stick commands as [FPV Camera Control](FPV-Camera-Control-(Joystick-Emulation))
 
 ![Camera Control Stick Commands](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/camera-control-stick-commands.png)
 
@@ -108,14 +108,14 @@ Set the SD to the bottom, the camera switches among the three modes: video, phot
 Caddx also implemented support for the RunCam Device protocol via their last firmware update.
 Please note however that only the turtle v2 correctly supports UART controls as the v1 had some incompatible connections on the board despite having UART pads.
 
-For the v1 you can still use [FPV Camera Control](https://github.com/betaflight/betaflight/wiki/FPV-Camera-Control-%28Joystick-Emulation%29/) to enter the OSD and control the camera via your transmitter.
+For the v1 you can still use [FPV Camera Control](FPV-Camera-Control-%28Joystick-Emulation%29/) to enter the OSD and control the camera via your transmitter.
 
 **Download:**
 [Caddx Turtle v2 firmware update with RunCam Device Protocol support](https://github.com/betaflight/betaflight/files/2955936/caddx_turtle_firmware_march_2019.zip)
 
 #### Supported Features:
 ##### OSD Menu Control
-Entering the osd menu to change settings should work with the same stick commands as [FPV Camera Control](https://github.com/betaflight/betaflight/wiki/FPV-Camera-Control-(Joystick-Emulation))
+Entering the osd menu to change settings should work with the same stick commands as [FPV Camera Control](FPV-Camera-Control-(Joystick-Emulation))
 
 ![Camera Control Stick Commands](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/camera-control-stick-commands.png)
 
@@ -128,7 +128,7 @@ Just as with the RunCam Split starting/stopping recording on a switch is support
 ### RunCam Control Adapter (OSD Cable Simulation)
 
 The RunCam Control Adapter, which connects between the OSD pin and an UART on the FC, allows navigation of the OSD menu via the transmitter.
-Unlike the [FPV Camera Control](https://github.com/betaflight/betaflight/wiki/FPV-Camera-Control-(Joystick-Emulation)) however no additional resistors or capacitors are required.
+Unlike the [FPV Camera Control](FPV-Camera-Control-(Joystick-Emulation)) however no additional resistors or capacitors are required.
 
 Depending on the device some shortcut keys are also supported. For example keeping roll pressed to to the right will switch the currently selected scene when using a Micro Swift2.
 

@@ -3,11 +3,11 @@
 FAQ #56 has been where all the info has been put. We will be editing FAQ #56 to put information on this page.
 Please check often as this page gets built.
 
-See [FAQ #56 ](https://github.com/betaflight/betaflight/wiki/Frequently-Asked-Questions) for Discussion on Yaw Twitches and Mid-throttle Oscillations. This covers Gyros and other possible causes.
+See [FAQ #56 ](Frequently-Asked-Questions) for Discussion on Yaw Twitches and Mid-throttle Oscillations. This covers Gyros and other possible causes.
 
 Also be sure to read the other Wiki pages:  
-[Gyro & Filters](https://github.com/betaflight/betaflight/wiki/Gyro-&-Dterm-filtering-recommendations)  
-[BB logging & Filters](https://github.com/betaflight/betaflight/wiki/Black-Box-logging-and-usage)  
+[Gyro & Filters](Gyro-&-Dterm-filtering-recommendations)  
+[BB logging & Filters](Black-Box-logging-and-usage)  
 
 ### Damping Theory by ctzsnooze:  
 Regarding so-called 'maximum damped frequency'...

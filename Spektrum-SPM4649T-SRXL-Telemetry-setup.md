@@ -7,7 +7,7 @@ It's easy:
 3. After the board has rebooted, Go to the Configuration page.  In the Receiver box you select "Serial based Receiver" as Receiver Mode and Serial Receiver Provider: "SPEKTRUM2048/SRXL" (or "Spektrum Bidir SRXL" in Configurator 10.2.0 and older).        
 3.1 In later Betaflight versions, after 3.4, you need to open CLI and add `set serialrx_halfduplex = ON`, and `save`.
 4. Turn on the TELEMETRY feature. Press "Save and Reboot".
-5. Bind the SPM4649T to your RC Transmitter, for details see https://github.com/betaflight/betaflight/wiki/Spektrum-Satellite-Bind-for-3.2
+5. Bind the SPM4649T to your RC Transmitter, for details see Spektrum-Satellite-Bind-for-3.2
 6. Select Channel map Spektrum/Graupner/JR (TAER1234) in the receiver tab.  
 
 

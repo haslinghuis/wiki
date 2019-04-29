@@ -57,7 +57,7 @@ Francisco Perea (fncisco)
 
 ## Similar Targets
 
-https://github.com/betaflight/betaflight/wiki/Board---FishDroneF4
+Board---FishDroneF4
 
 ## Variants
 
