@@ -77,6 +77,7 @@
 
  - [Multicopter Spazzing Out?](https://github.com/betaflight/betaflight/wiki/Multirotor-Spazzing-Out%3F)
  - [Failsafe](https://github.com/betaflight/betaflight/wiki/Failsafe-(Flight-Controller))
+ - [OSD Font Upload Problem](OSD-Font-upload-problem)
 
 # Development
 
