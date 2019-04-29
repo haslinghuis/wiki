@@ -1,11 +1,11 @@
-# [Home](/betaflight/betaflight/wiki)
+# [Home](/)
 
 # Getting Started
 
- - [Installation](/betaflight/betaflight/wiki/Installing-Betaflight)
- - [FAQ](/betaflight/betaflight/wiki/Frequently-Asked-Questions)
- - [PID Tuning Guide](/betaflight/betaflight/wiki/PID-Tuning-Guide)
- - [Flying Tips](/betaflight/betaflight/wiki/Flying-Tips)
+ - [Installation](Installing-Betaflight)
+ - [FAQ](Frequently-Asked-Questions)
+ - [PID Tuning Guide](PID-Tuning-Guide)
+ - [Flying Tips](Flying-Tips)
 
 # Release Notes
  - [Betaflight 3.5](https://github.com/betaflight/betaflight/blob/master/docs/Release%20Notes/Betaflight%203.5%20Release%20Notes.md)
