@@ -52,13 +52,13 @@ Normally you are now done with the bind process, unless you have also disabled a
 Automatic reset from bind mode is enabled by default, in some situations it may be needed to disable it at the same time binding is setup:
 
 `set spektrum_sat_bind = 9  `   
-`spektrum_sat_bind_autoreset = OFF   `   
+`set spektrum_sat_bind_autoreset = OFF   `   
 `save  `   
 
 If automatic reset from bind mode is disabled, you have to manually reset it after binding is complete 
 
 `set spektrum_sat_bind = 0   `   
-`spektrum_sat_bind_autoreset = ON   `    
+`set spektrum_sat_bind_autoreset = ON   `    
 `save  `   
 
 
