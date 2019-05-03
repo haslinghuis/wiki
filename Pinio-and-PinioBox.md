@@ -32,7 +32,7 @@ sets Output-Push-Pull for `pinio` 1, 3 and 4, and Inverted Output-Push-Pull for 
 
 ## PinioBox
 
-CLI variable `pin_iobox`, comma separated list of permanent ID of boxes, associate the boxes to corresponding `pinio`s. Once associated, the boxes's activation status are reflected to the associated `pinio`s (and then to pins). Since the piniobox facility has it's own capability of monitoring activation state of boxes, it operates independently from what boxes are meant for. (In other words, the piniobox _**adds**_ pinio capability to boxes.)
+CLI variable `pinio_box`, comma separated list of permanent ID of boxes, associate the boxes to corresponding `pinio`s. Once associated, the boxes's activation status are reflected to the associated `pinio`s (and then to pins). Since the piniobox facility has it's own capability of monitoring activation state of boxes, it operates independently from what boxes are meant for. (In other words, the piniobox _**adds**_ pinio capability to boxes.)
 
 For permanent ID of boxes, refer to `interfaces/msp_box.c`.
 Permanent IDs 40 through 43 are user defined boxes, which are activated and appear as `USER1` through `USER4` in the list of boxes at places such as Modes tab in configurator.
