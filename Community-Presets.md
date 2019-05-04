@@ -215,6 +215,38 @@ set dyn_notch_width_percent = 8
 set tpa_rate = 80
 set tpa_breakpoint = 1750
 ```
+### PID Tuning Preset
+```
+#Filter Settings
+set dyn_notch_min_hz = 50
+set gyro_lowpass_type = PT1
+set dyn_lpf_gyro_min_hz = 100
+set dyn_lpf_gyro_max_hz = 450
+set dterm_lowpass_type = PT1
+set dterm_lowpass2_hz = 0
+set dterm_lowpass_type = BiQUAD
+set dyn_lpf_dterm_min_hz = 60
+set dyn_lpf_dterm_max_hz = 175
+set dterm_lowpass2_hz = 0
+
+#PID Gains Settings
+set vbat_pid_gain = ON
+set anti_gravity_gain = 10000
+set d_min_pitch = 0
+set d_min_roll = 0
+
+#PID Controller Settings
+set feedforward_transition = 0
+set abs_control_gain = 0
+set use_integrated_yaw = OFF
+set iterm_relax_type = GYRO
+set iterm_relax_cutoff = 11
+
+#TPA Settings (which is D-term only by default)
+set tpa_rate = 80
+set tpa_breakpoint = 1800
+```
+
 ## RipperDrone
 ### 5" Quad (5s-6s)
 ```
