@@ -18,7 +18,7 @@ If the RPM Filter is enabled but one or more of the ESC's are not supplying vali
 
 ### BLHeli32 firmware update
 
-First install the [BLHeli_32 test firmware](https://github.com/bitdump/BLHeli/tree/master/BLHeli_32%20ARM) on your ESCs. To identify the file you need start blheli32 configurator and select the "flash Blheli" button. A window will open which shows the firmware name. Download the matching firmware and flash it onto **all four** ESCs. You will need to select the firmware separately for each ESC.
+First install the BLHeli_32 test firmware on your ESC. BF 4.0 and 4.0.1 require the [BLHeli_32 test firmware](https://github.com/bitdump/BLHeli/tree/master/BLHeli_32%20ARM). Starting from 5/4/19 BF 4.1 nightly builds require a [different BLHeli_32 firmware](https://github.com/bitdump/BLHeli/tree/master/BLHeli_32%20ARM/BLHeli_32%20Test%20code%20Rev32.6.2%20hex%20files/Rev32.6.3%20for%20inverted%20bidirectional%20dshot%20only). To identify the file you need start blheli32 configurator and select the "flash Blheli" button. A window will open which shows the firmware name. Download the matching firmware and flash it onto **all four** ESCs. You will need to select the firmware separately for each ESC.
 
 Also switch off any extended startup melody since that currently interferes with bidirectional DSHOT. The standard startup tones will work fine though.
 
@@ -40,7 +40,7 @@ Beware of issue https://github.com/betaflight/betaflight/issues/8019: a diff of 
 
 ### Config Verification
 
-Now your FC is set up for bidirectional dshot. You now need to verify that it works. To do so power cycle FC and ESC. Connect the lipo first to the ESC, then the USB cable. Open the CLI and enter ``status``. You should now see bidirectional dshot statistics similar to this:
+Now your FC is set up for bidirectional dshot. You now need to verify that it works. To do so power cycle FC and ESC. Connect the lipo first to the ESC, then the USB cable. Open the CLI and enter ``status``. For BF 4.1 builds use the command ``dshot_telemetry_info`` instead. You should now see bidirectional dshot statistics similar to this:
 
 ```
 Dshot reads: 145267
