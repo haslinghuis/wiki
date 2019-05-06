@@ -58,7 +58,7 @@
  - [LED_STRIP Setup](https://github.com/betaflight/betaflight/blob/master/docs/LedStrip.md)
  - [FrSky SPI RX](https://github.com/betaflight/betaflight/blob/master/docs/FrSky%20SPI%20RX.md)
  - [FrSky FPort](The-FrSky-FPort-Protocol)
- - [SBus and FPort problems when using OpenTX](SBus-FPort-and-RC-Smoothing)
+ - [SBus and FPort problems when using OpenTX](SBus-FPort-and-RC-Smoothing-when-using-OpenTX)
  - [Spektrum + RC Smoothing Filter](Spektrum-and-RC-Smoothing-Filter)
  - [Runaway Takeoff Prevention](Runaway-Takeoff-Prevention)
  - [Yaw Spin Recovery & Gyro Overflow Detect](Yaw-Spin-Recovery-and-Gyro-Overflow-Detect)
