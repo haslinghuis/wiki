@@ -1,4 +1,12 @@
-# SBus and FPort - Set RF channels to 8 for 9ms
+# Problems with SBus and FPort when using OpenTX
+
+OpenTX has the problem that it fails to fully utilise the hardware that FrSky sells for SBus and FPort (called 'D16' in OpenTX terminology). As a consequence, on FrSky hardware that is perfectly capable of supporting 4 RC channels and up to 12 switch channels with an update rate of 9 ms, OpenTX (up to and including version 2.2.3 at least) only supports an update rate of 18 ms for the RC channels. To make matters worse, it does this by sending RC frames to the flight controller at intervals of 9 ms, but sends identical RC data for each pair of consecutive frames.
+
+For this reason, in order to get the performance that the FrSky hardware is capable of, it is highly recommended to use alternatives or derivatives of OpenTX that are not affected by the shortcomings of OpenTX:
+- [Ersky9x](http://www.er9x.com/);
+- [Fork of OpenTX supporting 16 channels at 9 ms](https://github.com/mikeller/opentx/releases).
+
+# When using OpenTX despite its shortcomings: Set RF channels to 8 for 9ms
 
 SBus and FPort, in FrSky X mode (called 'D16 mode' by OpenTX), send data packets every 9ms, but the maximum number of channels per packet is 8.
 
