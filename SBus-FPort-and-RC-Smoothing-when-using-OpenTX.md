@@ -50,7 +50,7 @@ Manually setting a lower filter frequency will smooth out the RC input ripple th
 
 If more than 8 SBus or FPort channels are needed in FrSky X mode, it's best to set the number of channels to 16 so that all will have the same 18ms step interval, and manually configure both smoothing filters to 25Hz, and set the interpolation time to 19ms.  
 
-If the number of is set channels to a number between 8 and 16, for example, 11, data will be received at 9ms intervals on 13 channels, and 18ms intervals on 3.  Logging is needed to identify which are fast and which are slow.  If all dynamic control signals are put on the fast channels, and switches are only set on the slow channels, the default values for smoothing and interpolation are fine and will optimise performance.
+If the number of channels is set to a number between 8 and 16, for example, 11, data will be received at 9ms intervals on 13 channels, and 18ms intervals on 3.  Logging is needed to identify which are fast and which are slow.  If all dynamic control signals are put on the fast channels, and switches are only set on the slow channels, the default values for smoothing and interpolation are fine and will optimise performance.
 
 ## Why use filter based RC smoothing over the older interpolation method?
 
