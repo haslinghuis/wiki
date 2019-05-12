@@ -222,7 +222,6 @@ set dyn_notch_min_hz = 50
 set gyro_lowpass_type = PT1
 set dyn_lpf_gyro_min_hz = 100
 set dyn_lpf_gyro_max_hz = 450
-set dterm_lowpass_type = PT1
 set dterm_lowpass2_hz = 0
 set dterm_lowpass_type = BiQUAD
 set dyn_lpf_dterm_min_hz = 60
