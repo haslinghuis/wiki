@@ -221,7 +221,7 @@ set tpa_breakpoint = 1750
 set dyn_notch_min_hz = 50
 set gyro_lowpass_type = PT1
 set dyn_lpf_gyro_min_hz = 100
-set dyn_lpf_gyro_max_hz = 450
+set dyn_lpf_gyro_max_hz = 350
 set gyro_lowpass2_hz = 0
 set dterm_lowpass_type = BiQUAD
 set dyn_lpf_dterm_min_hz = 60
@@ -231,6 +231,9 @@ set dterm_lowpass2_hz = 0
 #PID Gains Settings
 set vbat_pid_gain = ON
 set anti_gravity_gain = 10000
+set f_pitch = 0
+set f_roll = 0
+set f_yaw = 0
 set d_min_pitch = 0
 set d_min_roll = 0
 
