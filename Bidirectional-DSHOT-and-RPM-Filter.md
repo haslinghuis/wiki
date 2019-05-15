@@ -247,6 +247,7 @@ set tpa_breakpoint = 1750
 |FLYWOOF7DUAL|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M6|
 |FORTINIF4|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4(tested QuadMcFly)|
 |FOXEERF722DUAL|[new](https://github.com/betaflight/bidircfg/blob/master/FOXEERF722DUAL.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/FOXEERF722DUAL-upgrade.cf)||M1-M6|
+|FURYF4|[new](https://github.com/betaflight/bidircfg/blob/master/FURYF4SD.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/FURYF4SD-upgrade.cf)||M1-M4, No LED support, Tested RawFPV|
 |FURYF7|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4|
 |HAKRCF722|[new](https://github.com/betaflight/bidircfg/blob/master/HAKRCF722.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/HAKRCF722-upgrade.cf)||M1-M6|
 |KAKUTEF4V2 | [new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  ||M1-M4 tested|
