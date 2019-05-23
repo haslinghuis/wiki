@@ -2,8 +2,10 @@ Betaflight has the ability to display on your OSD a measurement of Crossfire LQ 
 
 To set it up, simply do the following:
 1. Configure your Crossfire RX to transmit LQ on channel 12 by using the Crossfire OLED menu or Lua Script.
-2. Configure your flight controller to use the CRSF protocol.
-3. On the Receiver page, set the RSSI Channel to AUX 8.
-4. Enable and place the RSSI element on your OSD.
+2. Alternatively, if the receiver is configured to use 8 channels only, configure LQ on channel 8
+3. Configure your flight controller to use the CRSF protocol.
+4. On the Receiver page, set the RSSI Channel to AUX 8.
+5. Alternatively, if you setup LQ on channel 8, set the RSSI Channel to AUX 4.
+6. Enable and place the RSSI element on your OSD.
 
 ### ** !!! IMPORTANT: DO NOT ENABLE THE RSSI_ADC SWITCH AS IT WILL LEAD TO INACCURATE RESULTS !!! **
