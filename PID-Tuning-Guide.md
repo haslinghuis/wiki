@@ -66,7 +66,7 @@ The second reason is either a Bad motor or Bad ESC or even a loose prop nut. If 
 Third may be an ESC/Motor combination that just doesn't work. Not all ESC run all of the newer high power motors well. If replacing an ESC with another of the same doesn't fix the issue then try a different ESC (Brand/model).  
 
 ### Yaw Twitches and Mid-Throttle Oscillations  
-Another fairly common issue. Read carefully the Wiki [FAQ #56](https://github.com/borisbstyle/betaflight/wiki/Frequently-Asked-Questions#how-do-i-solve-yaw-twitches-or-mid-throttle-oscillations-)  for discussion of the issue and possible solutions.
+Another fairly common issue. Read carefully the Wiki [FAQ #57](https://github.com/betaflight/betaflight/wiki/Frequently-Asked-Questions#how-do-i-solve-yaw-twitches-or-mid-throttle-oscillations-)  for discussion of the issue and possible solutions.
 
 ### Additional Notes for BetaFlight version 3 (3.0 & 3.1):
 1. The Default PIDs work very well on most copters and only require slight tweaking of the PIDs.
