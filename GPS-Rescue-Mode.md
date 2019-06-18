@@ -79,7 +79,7 @@ After your quad reliably returns home once, you may want to test it at progressi
 
 With this setting, GPS Rescue will activate in the event of a failsafe. However, it will return control to the user as soon as the radio link comes back. During this time the user should either activate Rescue Mode manually on the radio, just so that there cannot be an unexpected transition to manual control, or be ready to take over control at any moment. Our recommended approach is the first one, which requires having Rescue Mode on a switch if you want to use it for failsafe as well.
 
-Additionally the failsafe procedure can be activated in the Failsafe tab of the configurator, or by using the OSD menus (`FEATURES > FAILSAFE`). The OSD menus setting is also convenient to disable DPS Rescue on failsafe in the field if you are flying in restricted or limited airspace (like indoors or among trees). Be sure to reenable when appropriate.
+Additionally the failsafe procedure can be activated in the Failsafe tab of the configurator, or by using the OSD menus (`FEATURES > FAILSAFE`). The OSD menus setting is also convenient to disable GPS Rescue on failsafe in the field if you are flying in restricted or limited airspace (like indoors or among trees). Be sure to reenable when appropriate.
 
 ## DEALING WITH FAILURES / SANITY CHECKS (VERY IMPORTANT):
 
