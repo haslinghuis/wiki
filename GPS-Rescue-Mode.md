@@ -2,8 +2,9 @@
 
 GPS Rescue Mode is intended to bring your quad back autonomously in case of an emergency such as loss of video or radio link. It is not meant to be a reliable Return to Home mode. Keep this in mind, and (other than for initial testing) only activate it to avoid losing your quad. In order to increase the probability of GPS Rescue's successful operation, please read this document and configure your system as best as possible for your particular environment and flying style.
 
-# **FAILSAFE**
-Once the pilot has some confidence in the function of GPS Rescue it can be enabled through the radio's stick control to access the Betaflight OSD. There ("osd menu -> features -> failsafe -> procedure"), there is the option to choose to have the aircraft "Drop" or enter "GPS Rescue" in the event of a Failsafe situation.
+# **WHAT THIS IS NOT:**
+
+GPS Rescue is not a full "Return To Home" (RTH) function. It is not meant to be a tool to autonomously fly your quad home and you should not try and use it this way. It has no ability to auto-land and will intentionally "soft-crash" when it approaches the home point. Its entire purpose is to return the quad closer to home **so the pilot can resume control** in the event of signal loss. The pilot should resume control as soon as possible and not rely on GPS Rescue to fly home.
 
 # **REQUIREMENTS**
 
@@ -77,6 +78,8 @@ After your quad reliably returns home once, you may want to test it at progressi
 `set failsafe_procedure = GPS-RESCUE`
 
 With this setting, GPS Rescue will activate in the event of a failsafe. However, it will return control to the user as soon as the radio link comes back. During this time the user should either activate Rescue Mode manually on the radio, just so that there cannot be an unexpected transition to manual control, or be ready to take over control at any moment. Our recommended approach is the first one, which requires having Rescue Mode on a switch if you want to use it for failsafe as well.
+
+Additionally the failsafe procedure can be activated in the Failsafe tab of the configurator, or by using the OSD menus (`FEATURES > FAILSAFE`). The OSD menus setting is also convenient to disable DPS Rescue on failsafe in the field if you are flying in restricted or limited airspace (like indoors or among trees). Be sure to reenable when appropriate.
 
 ## DEALING WITH FAILURES / SANITY CHECKS (VERY IMPORTANT):
 
