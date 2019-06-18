@@ -2,6 +2,9 @@
 
 GPS Rescue Mode is intended to bring your quad back autonomously in case of an emergency such as loss of video or radio link. It is not meant to be a reliable Return to Home mode. Keep this in mind, and (other than for initial testing) only activate it to avoid losing your quad. In order to increase the probability of GPS Rescue's successful operation, please read this document and configure your system as best as possible for your particular environment and flying style.
 
+# **FAILSAFE**
+Once the pilot has some confidence in the function of GPS Rescue it can be enabled through the radio's stick control to access the Betaflight OSD. There ("osd menu -> features -> failsafe -> procedure"), there is the option to choose to have the aircraft "Drop" or enter "GPS Rescue" in the event of a Failsafe situation.
+
 # **REQUIREMENTS**
 
 * GPS is required. The recommended models are Ublox m8n variants. This has been tested with 18x18mm m8n units, the Beitian BN 880 and other similar models. 
