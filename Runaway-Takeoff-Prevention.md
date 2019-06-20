@@ -42,7 +42,7 @@ The first group of parameters configure how the feature detects and activates du
 
 `runaway_takeoff_prevention = ON`
 
-Set this to `OFF` to completely disable the feature.  Note that there will be no protection against runaway takeoff events and the firmware will behave as it did before the feature was implemented.
+Set this to `OFF` to completely disable the feature.  Note that there will be no protection against runaway takeoff events and the firmware will behave as it did before the feature was implemented. **WE DO NOT RECOMMEND DISABLING THE FEATURE.** Runaway events can be quite violent and personal injury or damage to property can occur for even seemingly minor setup issues like putting the props on incorrectly.
 
 The remaining parameters affect the logic used to detect normal controlled flight and deactivate the feature for the remainder of the battery:
 
