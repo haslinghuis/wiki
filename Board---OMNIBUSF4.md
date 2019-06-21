@@ -12,6 +12,7 @@ For board identification, see
 ### Note for Omnibus F4 Nano V4, V5 and V6 users (2018-08-24)
 
 - Serial RX port for inverted protocols (e.g., S.BUS) is UART1, and there is no programmable inverters.
+- Flit10 Rx works only on UART3
 
 ### Note for OMNIBUS F4 V3, V4, V5 and ASGARD users
 
