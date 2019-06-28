@@ -38,7 +38,7 @@
  - [Gyro and Filters](Gyro-&-Dterm-filtering-recommendations)
  - [Black Box logging and Filters](Black-Box-logging-and-usage) 
  - [Soft Mounting & Noise Reduction](Soft-Mounting-and-Noise-Reduction)
- - [Rate-Calculator](Rate-Calculator)
+ - [Rate Calculator](Rate-Calculator)
  - [Resource Remapping](Betaflight-resource-remapping)
  - [Remapping Motors](Remapping-Motors-with-Resource-Command-(3.1))
  - [DSHOT ESC Protocol](DSHOT-ESC-Protocol) 
