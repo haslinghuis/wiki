@@ -275,8 +275,9 @@ set d_min_pitch = 0
 ```
 
 ## REVERT TO AN OLDER VERSION OF BETAFLIGHT
-
+These are presets to apply to BF 4.0 to get the defaults from older versions of betaflight
 ### Revert to BF 3.5.X
+
 ```
 #Features to be off by Default
 feature -AIRMODE
