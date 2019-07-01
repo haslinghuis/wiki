@@ -5,7 +5,7 @@
 
 * "TASKS" - Shows the active tasks running and their CPU utilization.  Make sure the "gyro/PID tasks rate/hz is running at the specified rate.
 
-* "DSHOT_TELETRY_INFO" - Shows the Dshot RPM bi-directional telemetry packet success for each ESC.
+* "DSHOT_TELEMETRY_INFO" - Shows the Dshot RPM bi-directional telemetry packet success for each ESC. (4.1+)
 
 * "RC_SMOOTHING_INFO" - Shows the detected RX frame rate.  This only works if the "Filter" RC signal smoothing type is selected in the Receiver tab.  The radio and RX need to be connected and powered up for the detected frame rate data to be valid.
 
