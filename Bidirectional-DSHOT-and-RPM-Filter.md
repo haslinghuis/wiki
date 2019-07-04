@@ -16,11 +16,11 @@ If the RPM Filter is enabled but one or more of the ESC's are not supplying vali
 
 ## Configuration
 
-### BLHeli32 firmware update
+### BLHeli_32 Bidirectional DShot Firmware
 
-First install the BLHeli_32 test firmware on your ESC. BF 4.0 and 4.0.1 require the 32.6.4 [BLHeli_32 test firmware](https://github.com/bitdump/BLHeli/tree/master/BLHeli_32%20ARM). Starting from 5/4/19 BF 4.1 nightly builds require a more recent [32.6.5+ firmware](https://github.com/bitdump/BLHeli/tree/master/BLHeli_32%20ARM/BLHeli_32%20Test%20code%20Rev32.6.4%20hex%20files/Rev32.6.5%20for%20inverted%20bidirectional%20dshot%20only). To identify the file you need start blheli32 configurator and select the "flash Blheli" button. A window will open which shows the firmware name. Download the matching firmware and flash it onto **all four** ESCs. You will need to select the firmware separately for each ESC.
+In order for RPM Filtering to work, BLHeli_32 beta firmware is required to enable the Bidirectional DShot protocol. This is not available in the BLHeli_32 configurator yet, and must be downloaded and selected in the flashing interface. BetaFlight 4.0 and 4.0.x requires the [BLHeli_32 32.6.4](https://github.com/bitdump/BLHeli/tree/master/BLHeli_32%20ARM) firmware. BetaFlight 4.1 nightly builds (test) requires the more recent [32.6.5+ firmware](https://github.com/bitdump/BLHeli/tree/master/BLHeli_32%20ARM/BLHeli_32%20Test%20code%20Rev32.6.4%20hex%20files/Rev32.6.5%20for%20inverted%20bidirectional%20dshot%20only). The Bidirectional DShot protocol is different in 4.1, so it is important that you match the correct version of BLHeli_32 to the version of Betaflight you are running. To identify the file you need to download, start the BLHeli_32 configurator and select the "Flash Blheli" button. A window will open which shows the firmware name. Download the matching firmware by right clicking on "Raw" and choosing "Save As", and flash it onto **all four** ESCs. You will need to select the firmware file separately for each ESC as it will default to the most recent stable version of BLHeli.
 
-Also switch off any extended startup melody since that currently interferes with bidirectional DSHOT. The standard startup tones will work fine though.
+Remove ant extended startup melody if you have configured one for the ESCs since that currently interferes with Bidirectional DSHOT. The standard startup tones will work fine.
 
 ### Motor Magnets
 
