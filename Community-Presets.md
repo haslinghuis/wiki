@@ -461,5 +461,4 @@ set tpa_breakpoint = 1650
 set rc_smoothing_type = INTERPOLATION
 ```
 
-##CUDA KEER
-[6" Floss 2.1 with Hyperlite 2405 1922kv race rig](https://github.com/cudakeer808/betaflight/wiki/floss-2.1-2405-1722-rpm_filter)
+## CUDA KEER<br>[6" Floss 2.1 with Hyperlite 2405 1922kv race rig](https://github.com/cudakeer808/betaflight/wiki/floss-2.1-2405-1722-rpm_filter)
