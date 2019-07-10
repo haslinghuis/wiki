@@ -4,8 +4,11 @@
 
 `**ALWAYS CHECK YOUR MOTOR TEMPS AFTER A SHORT 15 SECOND FORWARD FLIGHT**`
 
-### Brushed \ Brushless Whoop Class
-```
+---
+#### Brushed \ Brushless Whoop Class
+<details><summary>CLI Paste</summary>
+
+```python
 #Filter Settings
 set gyro_lowpass_type = PT1
 set dyn_notch_min_hz = 150
@@ -37,11 +40,16 @@ set iterm_relax_cutoff = 11
 #TPA Settings (which is D-term only by default)
 set tpa_rate = 80
 set tpa_breakpoint = 1800
-```
 
-### 2" - 3" Quad - 11xx-12xx Motors
-(in coordination with George Hartmann)
 ```
+</details>
+
+---
+#### 2" - 3" Quad - 11xx-12xx Motors
+```(in coordination with George Hartmann)```
+<details><summary>CLI Paste</summary>
+
+```python
 #Filter Settings
 set gyro_lowpass_type = BiQUAD
 set dyn_notch_min_hz = 150
@@ -76,10 +84,16 @@ set dyn_notch_width_percent = 0
 #TPA Settings (which is D-term only by default)
 set tpa_rate = 80
 set tpa_breakpoint = 1800
+
 ```
+</details>
+
+---
 ### 3" Quad - 14xx-15xx Motors
-(in coordination with George Hartmann)
-```
+```(in coordination with George Hartmann)```
+<details><summary>CLICK ME</summary>
+
+```python
 #Filter Settings
 set gyro_lowpass_type = BiQUAD
 set dyn_notch_min_hz = 150
@@ -114,13 +128,19 @@ set dyn_notch_width_percent = 0
 #TPA Settings (which is D-term only by default)
 set tpa_rate = 80
 set tpa_breakpoint = 1800
+
 ```
-### 5" Quad (3s-4s)
+</details>
+
+---
+#### 5" Quad (3s-4s)
 Clean build:
 
 Gyro_Scaled spectrograms for a full hard flight look like the below or better:
 "Clean Build" (which isn't that crazy clean): https://github.com/spatzengr/UAVtech-Resources/blob/master/Gyro_Raw%20Noise%20Profiles/Clean/Nova%20on%20BF4.0.png
-```
+<details><summary>CLI Paste</summary>
+
+```python
 #Filter Settings
 set gyro_lowpass_type = PT1
 set dyn_notch_min_hz = 100
@@ -148,9 +168,15 @@ set dyn_notch_width_percent = 0
 #TPA Settings (which is D-term only by default)
 set tpa_rate = 80
 set tpa_breakpoint = 1800
+
 ```
-### 6"/7" Quads
-```
+</details>
+
+---
+#### 6"/7" Quads
+<details><summary>CLI Paste</summary>
+
+```python
 #Filter Settings
 set gyro_lowpass_type = PT1
 set dyn_notch_min_hz = 100
@@ -181,9 +207,15 @@ set dyn_notch_width_percent = 0
 #TPA Settings (which is D-term only by default)
 set tpa_rate = 80
 set tpa_breakpoint = 1800
+
 ```
-### X-Class [IN PROGRESS!!!]
-```
+</details>
+
+---
+#### X-Class [IN PROGRESS!!!]
+<details><summary>CLI Paste</summary>
+
+```python
 #Filter Settings
 set gyro_lowpass_type = PT1
 set dyn_notch_min_hz = 50
@@ -214,9 +246,15 @@ set dyn_notch_width_percent = 8
 #TPA Settings (which is D-term only by default)
 set tpa_rate = 80
 set tpa_breakpoint = 1750
+
 ```
+</details>
+
+---
 ### PID Tuning Preset
-```
+<details><summary>CLI Paste</summary>
+
+```python
 #Filter Settings
 set dyn_notch_min_hz = 80
 set gyro_lowpass_type = PT1
@@ -247,11 +285,20 @@ set iterm_relax_cutoff = 11
 #TPA Settings (which is D-term only by default)
 set tpa_rate = 80
 set tpa_breakpoint = 1800
+
 ```
+</details>
+
+---
+
+<br/>
+<br/>
 
 ## RipperDrone
-### 5" Quad (5s-6s)
-```
+#### 5" Quad (5s-6s)
+<details><summary>CLI Paste</summary>
+
+```python
 #Filter Settings
 set gyro_lowpass_type = PT1
 set dyn_notch_min_hz = 100
@@ -272,13 +319,29 @@ set p_yaw = 30
 set i_yaw = 90
 set d_min_roll = 0
 set d_min_pitch = 0
+
 ```
+</details>
+
+---
+
+<br/>
+<br/>
+
+## CUDA KEER<br>
+##### [6" Floss 2.1 with Hyperlite 2405 1922kv race rig](https://github.com/cudakeer808/betaflight/wiki/floss-2.1-2207-1922-rpm_filter)
+
+---
+
+<br/>
+<br/>
 
 ## REVERT TO AN OLDER VERSION OF BETAFLIGHT
 These are presets to apply to BF 4.0 to get the defaults from older versions of betaflight
-### Revert to BF 3.5.X
+#### Revert to BF 3.5.X
+<details><summary>CLI Paste</summary>
 
-```
+```python
 #Features to be off by Default
 feature -AIRMODE
 
@@ -331,9 +394,15 @@ set tpa_breakpoint = 1650
 
 #RC smoothing settings
 set rc_smoothing_type = INTERPOLATION
+
 ```
-### Revert to BF 3.4.X
-```
+</details>
+
+---
+#### Revert to BF 3.4.X
+<details><summary>CLI Paste</summary>
+
+```python
 #Features to be off by Default
 feature -AIRMODE
 
@@ -393,10 +462,15 @@ set tpa_breakpoint = 1650
 
 #RC smoothing settings
 set rc_smoothing_type = INTERPOLATION
-```
 
-### Revert to BF 3.2.x & 3.3.X (they were the same)
 ```
+</details>
+
+---
+#### Revert to BF 3.2.x & 3.3.X (they were the same)
+<details><summary>CLI Paste</summary>
+
+```python
 #Features to be off by Default
 feature -AIRMODE
 feature -DYNAMIC_FILTER
@@ -459,7 +533,6 @@ set tpa_breakpoint = 1650
 
 #RC smoothing settings
 set rc_smoothing_type = INTERPOLATION
-```
 
-## CUDA KEER<br>
-#### [6" Floss 2.1 with Hyperlite 2405 1922kv race rig](https://github.com/cudakeer808/betaflight/wiki/floss-2.1-2207-1922-rpm_filter)
+```
+</details>
