@@ -1,12 +1,12 @@
 # BF 4.0.X
 
-## UAV TECH
+## Pilot: UAV TECH
 
 `**ALWAYS CHECK YOUR MOTOR TEMPS AFTER A SHORT 15 SECOND FORWARD FLIGHT**`
 
 ---
 #### Brushed \ Brushless Whoop Class
-<details><summary>CLI Paste</summary>
+<details><summary>CLI Copy\Paste</summary>
 
 ```python
 #Filter Settings
@@ -47,7 +47,7 @@ set tpa_breakpoint = 1800
 ---
 #### 2" - 3" Quad - 11xx-12xx Motors
 ```(in coordination with George Hartmann)```
-<details><summary>CLI Paste</summary>
+<details><summary>CLI Copy\Paste</summary>
 
 ```python
 #Filter Settings
@@ -91,7 +91,7 @@ set tpa_breakpoint = 1800
 ---
 ### 3" Quad - 14xx-15xx Motors
 ```(in coordination with George Hartmann)```
-<details><summary>CLICK ME</summary>
+<details><summary>CLI Copy\Paste</summary>
 
 ```python
 #Filter Settings
@@ -138,7 +138,7 @@ Clean build:
 
 Gyro_Scaled spectrograms for a full hard flight look like the below or better:
 "Clean Build" (which isn't that crazy clean): https://github.com/spatzengr/UAVtech-Resources/blob/master/Gyro_Raw%20Noise%20Profiles/Clean/Nova%20on%20BF4.0.png
-<details><summary>CLI Paste</summary>
+<details><summary>CLI Copy\Paste</summary>
 
 ```python
 #Filter Settings
@@ -174,7 +174,7 @@ set tpa_breakpoint = 1800
 
 ---
 #### 6"/7" Quads
-<details><summary>CLI Paste</summary>
+<details><summary>CLI Copy\Paste</summary>
 
 ```python
 #Filter Settings
@@ -213,7 +213,7 @@ set tpa_breakpoint = 1800
 
 ---
 #### X-Class [IN PROGRESS!!!]
-<details><summary>CLI Paste</summary>
+<details><summary>CLI Copy\Paste</summary>
 
 ```python
 #Filter Settings
@@ -252,7 +252,7 @@ set tpa_breakpoint = 1750
 
 ---
 ### PID Tuning Preset
-<details><summary>CLI Paste</summary>
+<details><summary>CLI Copy\Paste</summary>
 
 ```python
 #Filter Settings
@@ -294,9 +294,9 @@ set tpa_breakpoint = 1800
 <br/>
 <br/>
 
-## RipperDrone
+## Pilot: RipperDrone
 #### 5" Quad (5s-6s)
-<details><summary>CLI Paste</summary>
+<details><summary>CLI Copy\Paste</summary>
 
 ```python
 #Filter Settings
@@ -328,7 +328,7 @@ set d_min_pitch = 0
 <br/>
 <br/>
 
-## CUDA KEER<br>
+## Pilot: CUDA KEER<br>
 ##### [6" Floss 2.1 with Hyperlite 2405 1922kv race rig](https://github.com/cudakeer808/betaflight/wiki/floss-2.1-2207-1922-rpm_filter)
 
 ---
@@ -339,7 +339,7 @@ set d_min_pitch = 0
 ## REVERT TO AN OLDER VERSION OF BETAFLIGHT
 These are presets to apply to BF 4.0 to get the defaults from older versions of betaflight
 #### Revert to BF 3.5.X
-<details><summary>CLI Paste</summary>
+<details><summary>CLI Copy\Paste</summary>
 
 ```python
 #Features to be off by Default
@@ -400,7 +400,7 @@ set rc_smoothing_type = INTERPOLATION
 
 ---
 #### Revert to BF 3.4.X
-<details><summary>CLI Paste</summary>
+<details><summary>CLI Copy\Paste</summary>
 
 ```python
 #Features to be off by Default
@@ -468,7 +468,7 @@ set rc_smoothing_type = INTERPOLATION
 
 ---
 #### Revert to BF 3.2.x & 3.3.X (they were the same)
-<details><summary>CLI Paste</summary>
+<details><summary>CLI Copy\Paste</summary>
 
 ```python
 #Features to be off by Default
