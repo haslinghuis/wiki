@@ -143,7 +143,7 @@ set tpa_breakpoint = 1800
 </details>
 
 ---
-#### 5" Quad on Clean Build
+#### 5" Quad
 <details><summary>CLI Copy\Paste</summary>
 
 ```python
@@ -298,7 +298,7 @@ set feedforward_transition = 0
 set abs_control_gain = 0
 set use_integrated_yaw = OFF
 set iterm_relax_type = GYRO
-set iterm_relax_cutoff = 11
+set iterm_relax_cutoff = 10
 
 #TPA Settings (which is D-term only by default)
 set tpa_rate = 80
