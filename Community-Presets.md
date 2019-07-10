@@ -2,7 +2,13 @@
 
 ## Pilot: UAV TECH
 
-`**ALWAYS CHECK YOUR MOTOR TEMPS AFTER A SHORT 15 SECOND FORWARD FLIGHT**`
+<b>
+DISCLAIMER:<br/>
+**ALWAYS CHECK YOUR MOTOR TEMPS AFTER A SHORT 15 SECOND FORWARD FLIGHT** <br/>
+If your mechanical/electrical issues are not addressed (most of the time these are the issues folks have), the below settings may require heaver filtering (the BF default).  Heavier filting gives wores flight performance.<br/><br/>
+</b>
+
+A clean build is when a spectrograph of the RAW gyro noise trace (Debug_Mode=Gyro_Scaled) on a FULL & HARD flight looks like the below or better: https://github.com/spatzengr/UAVtech-Resources/blob/master/Gyro_Raw%20Noise%20Profiles/Clean/Nova%20on%20BF4.0.png
 
 ---
 #### Brushed \ Brushless Whoop Class
@@ -32,10 +38,11 @@ set d_min_pitch = 18
 set d_min_roll = 16
 set d_min_boost_gain = 30
 set d_min_advance = 0
+set pidsum_limit = 1000 #unleashes PID Sum to be 100% (not restricted to 50% by default)
 
 #Assumes Freestyle | For racing use "Setpoint" and cutoff = 20
 set iterm_relax_type = GYRO
-set iterm_relax_cutoff = 11
+set iterm_relax_cutoff = 10
 
 #TPA Settings (which is D-term only by default)
 set tpa_rate = 80
@@ -73,13 +80,11 @@ set d_min_pitch = 18
 set d_min_roll = 16
 set d_min_boost_gain = 30
 set d_min_advance = 0
+set pidsum_limit = 1000 #unleashes PID Sum to be 100% (not restricted to 50% by default)
 
 #Assumes Freestyle | For racing use "Setpoint" and cutoff = 20
 set iterm_relax_type = GYRO
-set iterm_relax_cutoff = 11
-
-#With RPM Filter | Without leave at = 8 (default) OR set to 0 if you can afford less filtering
-set dyn_notch_width_percent = 0
+set iterm_relax_cutoff = 10
 
 #TPA Settings (which is D-term only by default)
 set tpa_rate = 80
@@ -117,13 +122,11 @@ set d_min_pitch = 18
 set d_min_roll = 16
 set d_min_boost_gain = 30
 set d_min_advance = 0
+set pidsum_limit = 1000 #unleashes PID Sum to be 100% (not restricted to 50% by default)
 
 #Assumes Freestyle | For racing use "Setpoint" and cutoff = 20
 set iterm_relax_type = GYRO
-set iterm_relax_cutoff = 11
-
-#With RPM Filter | Without leave at = 8 (default) OR set to 0 if you can afford less filtering
-set dyn_notch_width_percent = 0
+set iterm_relax_cutoff = 10
 
 #TPA Settings (which is D-term only by default)
 set tpa_rate = 80
@@ -133,20 +136,23 @@ set tpa_breakpoint = 1800
 </details>
 
 ---
-#### 5" Quad (3s-4s)
-Clean build:
-
-Gyro_Scaled spectrograms for a full hard flight look like the below or better:
-"Clean Build" (which isn't that crazy clean): https://github.com/spatzengr/UAVtech-Resources/blob/master/Gyro_Raw%20Noise%20Profiles/Clean/Nova%20on%20BF4.0.png
+#### 5" Quad on Clean Build
 <details><summary>CLI Copy\Paste</summary>
 
 ```python
 #Filter Settings
-set gyro_lowpass_type = PT1
+set gyro_lowpass_type = BiQUAD
 set dyn_notch_min_hz = 100
-set dyn_lpf_gyro_max_hz = 510
-set dterm_lowpass_type = PT1
+set dyn_lpf_gyro_min_hz = 0
+set dyn_lpf_gyro_max_hz = 0
+set dyn_lpf_dterm_min_hz = 80
+set dyn_lpf_dterm_max_hz = 150
+set dterm_lowpass_type = BiQUAD
 set dterm_lowpass2_hz = 0
+
+#For RPM Filter: Without RPM leave at = 8 (default)
+#Set to 0 if you can afford less Dynamic Notch filtering because RPM is added (reduces to one notch instead of two on DN)
+#set dyn_notch_width_percent = 8
 
 #PID Gains Settings
 set vbat_pid_gain = ON
@@ -157,13 +163,11 @@ set d_min_pitch = 38
 set d_min_roll = 35
 set d_min_boost_gain = 45
 set d_min_advance = 0
+set pidsum_limit = 1000 #unleashes PID Sum to be 100% (not restricted to 50% by default)
 
 #Assumes Freestyle | For racing use "Setpoint" and cutoff = 20
 set iterm_relax_type = GYRO
-set iterm_relax_cutoff = 11
-
-#With RPM Filter | Without leave at = 8 (default) OR set to 0 if you can afford less filtering
-set dyn_notch_width_percent = 0
+set iterm_relax_cutoff = 10
 
 #TPA Settings (which is D-term only by default)
 set tpa_rate = 80
@@ -187,6 +191,10 @@ set dyn_lpf_dterm_max_hz = 200
 set dterm_lowpass_type = PT1
 set dterm_lowpass2_hz = 0
 
+#For RPM Filter: Without RPM leave at = 8 (default)
+#Set to 0 if you can afford less Dynamic Notch filtering because RPM is added (reduces to one notch instead of two on DN)
+#set dyn_notch_width_percent = 8
+
 #PID Gains Settings
 set vbat_pid_gain = ON
 set anti_gravity_gain = 10000
@@ -196,13 +204,11 @@ set d_min_pitch = 28
 set d_min_roll = 25
 set d_min_boost_gain = 45
 set d_min_advance = 0
+set pidsum_limit = 1000 #unleashes PID Sum to be 100% (not restricted to 50% by default)
 
 #Assumes Freestyle | For racing use "Setpoint" and cutoff = 20
 set iterm_relax_type = GYRO
-set iterm_relax_cutoff = 11
-
-#With RPM Filter | Without leave at = 8 (default) OR set to 0 if you can afford less filtering
-set dyn_notch_width_percent = 0
+set iterm_relax_cutoff = 10
 
 #TPA Settings (which is D-term only by default)
 set tpa_rate = 80
@@ -238,10 +244,7 @@ set d_min_advance = 0
 
 #Assumes Freestyle | For racing use "Setpoint" and cutoff = 20
 set iterm_relax_type = GYRO
-set iterm_relax_cutoff = 11
-
-#With RPM Filter | Without leave at = 8 (default) OR set to 0 if you can afford less filtering
-set dyn_notch_width_percent = 8
+set iterm_relax_cutoff = 10
 
 #TPA Settings (which is D-term only by default)
 set tpa_rate = 80
@@ -274,6 +277,7 @@ set f_roll = 0
 set f_yaw = 0
 set d_min_pitch = 0
 set d_min_roll = 0
+set pidsum_limit = 1000 #unleashes PID Sum to be 100% (not restricted to 50% by default)
 
 #PID Controller Settings
 set feedforward_transition = 0
