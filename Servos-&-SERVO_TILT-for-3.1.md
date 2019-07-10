@@ -134,7 +134,7 @@ Resource servo 1 A03
 ```
 
 And my servo are working, I did not have to change directions on servo or epa etc.   
-I`m no pro and still don`t know what Serial_Rx 2 are doing, but everything is working correctly in the last 2 flights. I have a taranis with a x4r on Sbus and smartport - pids are showing on my taranis as well as battery voltage - seems like I don't use Serial_Rx 2.    
+I'm no pro and still don't know what Serial_Rx 2 are doing, but everything is working correctly in the last 2 flights. I have a taranis with a x4r on Sbus and smartport - pids are showing on my taranis as well as battery voltage - seems like I don't use Serial_Rx 2.    
 I halved the P and I 50% from stock on yaw, but the tail were loose, went back to stock and it`s rock solid with no oscillation. 
 
 _________________________________________________________________________________________________________________________
