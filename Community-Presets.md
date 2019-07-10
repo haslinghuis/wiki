@@ -148,6 +148,7 @@ set tpa_breakpoint = 1800
 
 ```python
 #Filter Settings
+set dyn_notch_min_hz = 80
 set gyro_lowpass_type = BiQUAD
 set dyn_notch_min_hz = 100
 set dyn_lpf_gyro_min_hz = 0
@@ -278,7 +279,7 @@ set dyn_lpf_gyro_min_hz = 100
 set dyn_lpf_gyro_max_hz = 350
 set gyro_lowpass2_hz = 0
 set dterm_lowpass_type = BiQUAD
-set dyn_lpf_dterm_min_hz = 60
+set dyn_lpf_dterm_min_hz = 80
 set dyn_lpf_dterm_max_hz = 175
 set dterm_lowpass2_hz = 0
 
