@@ -89,7 +89,7 @@ set tpa_breakpoint = 1800
 </details>
 
 ---
-### 3" Quad - 14xx-15xx Motors
+#### 3" Quad - 14xx-15xx Motors
 ```(in coordination with George Hartmann)```
 <details><summary>CLI Copy\Paste</summary>
 
@@ -251,7 +251,7 @@ set tpa_breakpoint = 1750
 </details>
 
 ---
-### PID Tuning Preset
+#### PID Tuning Preset
 <details><summary>CLI Copy\Paste</summary>
 
 ```python
@@ -329,10 +329,11 @@ set d_min_pitch = 0
 <br/>
 
 ## Pilot: CUDA KEER<br>
-##### [6" Floss 2.1 with Hyperlite 2405 1922kv race rig](https://github.com/cudakeer808/betaflight/wiki/floss-2.1-2207-1922-rpm_filter)
+#### [6" Floss 2.1 with Hyperlite 2405 1922kv race rig](https://github.com/cudakeer808/betaflight/wiki/floss-2.1-2207-1922-rpm_filter)
 
 ---
 
+<br/>
 <br/>
 <br/>
 
