@@ -157,10 +157,16 @@ set dterm_lowpass2_hz = 0
 #PID Gains Settings
 set vbat_pid_gain = ON
 set anti_gravity_gain = 10000
-set d_pitch = 58
+set p_pitch = 60
+set i_pitch = 70
+set d_pitch = 55
+
+set p_roll = 65
+set i_roll = 60
 set d_roll = 55
-set d_min_pitch = 38
-set d_min_roll = 35
+
+set d_min_pitch = 45
+set d_min_roll = 45
 set d_min_boost_gain = 45
 set d_min_advance = 0
 set pidsum_limit = 1000 #unleashes PID Sum to be 100% (not restricted to 50% by default)
