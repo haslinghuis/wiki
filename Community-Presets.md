@@ -1,4 +1,9 @@
+### The below presets are _**by the community, for the community**_.  You will see the BF version the preset is targeted toward and the pilot's name who published their recommended preset(s).  We encourage community members to provide their own presets on this wiki page.  To do so, you simply need a Github account.  Enjoy!
+<br/><br/>
+
 # BF 4.0.X
+
+<br/>
 
 ## Pilot: UAV TECH
 
