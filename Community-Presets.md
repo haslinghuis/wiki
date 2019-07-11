@@ -354,8 +354,8 @@ set d_min_pitch = 0
 <br/>
 <br/>
 
-## REVERT TO AN OLDER VERSION OF BETAFLIGHT
-These are presets to apply to BF 4.0 to get the defaults from older versions of betaflight
+## REVERT 4.0.x DEFAULTS TO AN OLDER VERSION OF BETAFLIGHT DEFAULTS
+These are presets to apply to BF 4.0.x to get the defaults of an older versions of Betaflight.  This WILL give you the same flight experience as an older release if that is what ypu like, but want the new features of BF 4.0.x.
 #### Revert to BF 3.5.X
 <details><summary>CLI Copy\Paste</summary>
 
