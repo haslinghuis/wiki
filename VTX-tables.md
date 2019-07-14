@@ -10,14 +10,15 @@ then release as appropriate.
 While the VTX button is held the STATUS 2 LED will flash N times per second indi
 	
 Example to cycle VTX power
-	```
-	0 seconds       | 1 second      | 2 seconds     | 3 seconds     | 4 seconds     | 5 seconds     | 6 seconds or more |
-	[-HOLD BUTTON-----------------------------------|-RELEASE BUTTON-NOW------------|-RELEASED TO LATE TO CHANGE POWER -|
-	| 4 Flashes     | 3 flashes     | 3 flashes     | 2 flashes     | 2 flashes     | 1 flash       | 1 flash           |
-	| 0 seconds      | 1 second      | 2 seconds    | 3 seconds     | 4 seconds     | 5 seconds     | 6 seconds or more |
-	|-HOLD BUTTON-----------------------------------|-RELEASE BUTTON-NOW------------|-RELEASED TOO LATE TO CHANGE POWER-|
-	| 4 Flashes      | 3 flashes     | 3 flashes    | 2 flashes     | 2 flashes     | 1 flash       | 1 flash           |
-	```
+
+```
+0 seconds      | 1 second     | 2 seconds    | 3 seconds    | 4 seconds    | 5 seconds    | 6 seconds or more |
+[-HOLD BUTTON------------------------------|-RELEASE BUTTON-NOW------------|-RELEASED TO LATE TO CHANGE POWER |
+| 4 Flashes    | 3 flashes    | 3 flashes    | 2 flashes    | 2 flashes    | 1 flash      | 1 flash           |
+| 0 seconds     | 1 second     | 2 seconds   | 3 seconds    | 4 seconds    | 5 seconds    | 6 seconds or more |
+|-HOLD BUTTON------------------------------|-RELEASE BUTTON-NOW------------|-RELEASED TOO LATE TO CHANGE POWER|
+| 4 Flashes     | 3 flashes    | 3 flashes   | 2 flashes    | 2 flashes    | 1 flash      | 1 flash           |
+```
 	
 The VTX button works with ALL VTX systems including onboard RTC6705, Tramp and SmartAudio.
 	
@@ -33,19 +34,19 @@ The contents of the vtxTable need to be setup manually. They need to match the h
 	
 The contents of the table can be examined by typing the command `vtxtable` into the cli.
 Example:
-	```
-	# vtxtable
-	vtxtable bands 5
-	vtxtable channels 8
-	vtxtable band 1 BOSCAM_A A FACTORY    0 5845 5825 5805 5785 5765 5745    0
-	vtxtable band 2 BOSCAM_B B FACTORY    0 5752 5771 5790 5809 5828 5847    0
-	vtxtable band 3 BOSCAM_E E FACTORY    0    0    0    0    0    0    0    0
-	vtxtable band 4 MYBAND   M CUSTOM  5745 5769    0 5806    0 5843    0    0
-	vtxtable band 5 RACEBAND R FACTORY    0    0    0 5769 5806 5843    0    0
-	vtxtable powerlevels 3
-	vtxtable powervalues  14 20 26
-	vtxtable powerlabels 25 100 400
-	``` 
+```
+# vtxtable
+vtxtable bands 5
+vtxtable channels 8
+vtxtable band 1 BOSCAM_A A FACTORY    0 5845 5825 5805 5785 5765 5745    0
+vtxtable band 2 BOSCAM_B B FACTORY    0 5752 5771 5790 5809 5828 5847    0
+vtxtable band 3 BOSCAM_E E FACTORY    0    0    0    0    0    0    0    0
+vtxtable band 4 MYBAND   M CUSTOM  5745 5769    0 5806    0 5843    0    0
+vtxtable band 5 RACEBAND R FACTORY    0    0    0 5769 5806 5843    0    0
+vtxtable powerlevels 3
+vtxtable powervalues  14 20 26
+vtxtable powerlabels 25 100 400
+``` 
 	
 ### Bands and channels
 	
