@@ -136,7 +136,7 @@ vtxtable powervalues  20 26
 vtxtable powerlabels .1W .4W
 ```
 	
-###complete examples
+### complete examples
 	
 IRC Tramp device
 	
@@ -210,7 +210,7 @@ vtxtable powervalues 0 1 2
 vtxtable powerlabels OFF MIN MAX
 ```
 	
-##Pitmode
+## Pitmode
 Pitmode is separate from vtxTable. No power level should be created for pitmode.
 Pitmode can be controlled in a variety of ways including OSD, AUX switches and lua scripts.
 	
