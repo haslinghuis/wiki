@@ -1,4 +1,4 @@
-### VTX Button usage
+VTX Button usage
 	
 	While the VTX button is held the STATUS 2 LED will flash N times per second indicating the action that will be taken when the button is released. The flashing starts as soon as the button is held. e.g. You press the button, count flashes and then release as appropriate.
 	While the VTX button is held the STATUS 2 LED will flash N times per second indicating the action that will be taken when
