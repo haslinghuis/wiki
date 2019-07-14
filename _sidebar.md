@@ -73,7 +73,7 @@
  - [Paralyze](Paralyze-for-team-races)
  - [D_Min](d_min)
  - [Integrated Yaw](Integrated-Yaw)
- - [VTX Tables] (VTX Tables)
+ - [VTX Tables](VTX Tables)
 
 # Troubleshooting
 
