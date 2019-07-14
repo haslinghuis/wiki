@@ -1,15 +1,15 @@
 VTX Button usage
 	
-	While the VTX button is held the STATUS 2 LED will flash N times per second indicating the action that will be taken when the button is released. The flashing starts as soon as the button is held. e.g. You press the button, count flashes and then release as appropriate.
-	While the VTX button is held the STATUS 2 LED will flash N times per second indicating the action that will be taken when
-	the button is released. The flashing starts as soon as the button is held. e.g. You press the button, count flashes and
-	then release as appropriate.
+While the VTX button is held the STATUS 2 LED will flash N times per second indicating the action that will be taken when the button is released. The flashing starts as soon as the button is held. e.g. You press the button, count flashes and then release as appropriate.
+While the VTX button is held the STATUS 2 LED will flash N times per second indicating the action that will be taken when
+the button is released. The flashing starts as soon as the button is held. e.g. You press the button, count flashes and
+then release as appropriate.
 	
 	| Duration      | Function                  | Flashes   |
 	|---------------|---------------------------|-----------|
-  While the VTX button is held the STATUS 2 LED will flash N times per second indi
+While the VTX button is held the STATUS 2 LED will flash N times per second indi
 	
-	Example to cycle VTX power
+Example to cycle VTX power
 	```
 	0 seconds       | 1 second      | 2 seconds     | 3 seconds     | 4 seconds     | 5 seconds     | 6 seconds or more |
 	[-HOLD BUTTON-----------------------------------|-RELEASE BUTTON-NOW------------|-RELEASED TO LATE TO CHANGE POWER -|
@@ -19,22 +19,20 @@ VTX Button usage
 	| 4 Flashes      | 3 flashes     | 3 flashes    | 2 flashes     | 2 flashes     | 1 flash       | 1 flash           |
 	```
 	
-	The VTX button works with ALL VTX systems including onboard RTC6705, Tramp and SmartAudio.
+The VTX button works with ALL VTX systems including onboard RTC6705, Tramp and SmartAudio.
 	
 	
-	If the VTX can be turned off then POWER 0 will turn off the VTX and POWER 1 will set the VTX into it's lowest power output.
-	If the VTX cannot be turned off then POWER 0 will set the VTX into it's lowest power output.
+If the VTX can be turned off then POWER 0 will turn off the VTX and POWER 1 will set the VTX into it's lowest power output.
+If the VTX cannot be turned off then POWER 0 will set the VTX into it's lowest power output.
 	
-	## vtxTable
+## vtxTable
 	
-	As of Betaflight 4.1.0, band/channel and power level information needed to control videotransmitters is no longer hardcoded,
-	but stored in a new facility called vtxTable.
+As of Betaflight 4.1.0, band/channel and power level information needed to control videotransmitters is no longer hardcoded, but stored in a new facility called vtxTable.
 	
-	The contents of the vtxTable need to be setup manually. They need to match the hardware, local laws and regulations, as
-	well as user preferences.
+The contents of the vtxTable need to be setup manually. They need to match the hardware, local laws and regulations, as well as user preferences.
 	
-	The contents of the table can be examined by typing the command `vtxtable` into the cli.
-	Example:
+The contents of the table can be examined by typing the command `vtxtable` into the cli.
+Example:
 	```
 	# vtxtable
 	vtxtable bands 5
@@ -49,9 +47,9 @@ VTX Button usage
 	vtxtable powerlabels 25 100 400
 	``` 
 	
-	### Bands and channels
+### Bands and channels
 	
-	The example above contains 5 bands, **each with a name, a single-letter abbreviation, a factory flag and eight frequencies.**
+The example above contains 5 bands, **each with a name, a single-letter abbreviation, a factory flag and eight frequencies.**
 	
 	The factory flag controls how Betaflight communicates with the vtx.
 	
