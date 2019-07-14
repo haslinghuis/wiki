@@ -7,7 +7,7 @@ then release as appropriate.
 	
 	| Duration      | Function                  | Flashes   |
 	|---------------|---------------------------|-----------|
-While the VTX button is held the STATUS 2 LED will flash N times per second indi
+
 	
 Example to cycle VTX power
 
