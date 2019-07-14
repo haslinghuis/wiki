@@ -273,6 +273,12 @@ set tpa_breakpoint = 1750
 
 Please add additional verified configurations here.
 
+### Unsupported targets
+
+| Target | Notes |
+| --- | --- |
+|MAMBAF722|Requires DSHOT burst and only 2 motors will spin with it OFF|
+
 ### References
 
 [Bidirectional Dshot PR](https://github.com/betaflight/betaflight/pull/7264)
