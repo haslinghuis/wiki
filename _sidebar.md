@@ -73,7 +73,7 @@
  - [Paralyze](Paralyze-for-team-races)
  - [D_Min](d_min)
  - [Integrated Yaw](Integrated-Yaw)
- - https://github.com/betaflight/betaflight/wiki/VTX-tables
+ - [VTX Tables](https://github.com/betaflight/betaflight/wiki/VTX-tables)
 
 # Troubleshooting
 
