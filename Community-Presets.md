@@ -153,8 +153,12 @@ set tpa_breakpoint = 1800
 
 ```
 </details>
+<br/><br/>
 
-#### 5" Quad - Setpoint Tracker: Lowend Noise between 50hz and 200hz
+#### 5" Quad - Setpoint Tracker (high FF & D_min)
+Kwads with Noise between 50hz and 200hz
+<br/>
+
 <details><summary>CLI Copy\Paste</summary>
 
 ```python
@@ -206,7 +210,10 @@ set tpa_breakpoint = 1750
 </details>
 
 ---
-#### 5" Quad - Setpoint Tracker: NO noise between 50hz and 200hz
+#### 5" Quad - Setpoint Tracker (high FF & D_min)
+Kwads with NO Noise between 50hz and 200hz
+<br/>
+
 <details><summary>CLI Copy\Paste</summary>
 
 ```python
@@ -254,6 +261,7 @@ set tpa_breakpoint = 1750
 
 ```
 </details>
+<br/><br/>
 
 ---
 #### 6"/7" Quads
