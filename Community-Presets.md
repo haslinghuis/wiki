@@ -35,16 +35,20 @@ set dterm_lowpass2_hz = 0
 #PID Gains Settings
 set vbat_pid_gain = ON
 set anti_gravity_gain = 5000
+
 set p_pitch = 33
 set i_pitch = 85
 set d_pitch = 35
+
 set p_roll = 28
 set i_roll = 78
 set d_roll = 32
+
 set d_min_pitch = 18
 set d_min_roll = 16
 set d_min_boost_gain = 30
 set d_min_advance = 0
+
 set pidsum_limit = 1000 #unleashes PID Sum to be 100% (not restricted to 50% by default)
 
 #Assumes Freestyle | For racing use "Setpoint" and cutoff = 20
@@ -77,16 +81,20 @@ set dterm_lowpass2_hz = 150
 #PID Gains Settings
 set vbat_pid_gain = ON
 set anti_gravity_gain = 5000
+
 set p_pitch = 33
 set i_pitch = 85
 set d_pitch = 35
+
 set p_roll = 28
 set i_roll = 78
 set d_roll = 32
+
 set d_min_pitch = 18
 set d_min_roll = 16
 set d_min_boost_gain = 30
 set d_min_advance = 0
+
 set pidsum_limit = 1000 #unleashes PID Sum to be 100% (not restricted to 50% by default)
 
 #Assumes Freestyle | For racing use "Setpoint" and cutoff = 20
@@ -119,16 +127,20 @@ set dterm_lowpass2_hz = 150
 #PID Gains Settings
 set vbat_pid_gain = ON
 set anti_gravity_gain = 5000
+
 set p_pitch = 38
 set i_pitch = 85
 set d_pitch = 35
+
 set p_roll = 35
 set i_roll = 78
 set d_roll = 32
+
 set d_min_pitch = 18
 set d_min_roll = 16
 set d_min_boost_gain = 30
 set d_min_advance = 0
+
 set pidsum_limit = 1000 #unleashes PID Sum to be 100% (not restricted to 50% by default)
 
 #Assumes Freestyle | For racing use "Setpoint" and cutoff = 20
@@ -142,8 +154,59 @@ set tpa_breakpoint = 1800
 ```
 </details>
 
+#### 5" Quad - Setpoint Tracker: Lowend Noise between 50hz and 200hz
+<details><summary>CLI Copy\Paste</summary>
+
+```python
+#Filter Settings
+set dyn_notch_min_hz = 80
+set gyro_lowpass2_hz = 200
+set gyro_lowpass2_type = PT1
+set dyn_lpf_gyro_min_hz = 0
+set dyn_lpf_gyro_max_hz = 0
+set dyn_lpf_dterm_min_hz = 0
+set dyn_lpf_dterm_max_hz = 0
+set dterm_lowpass_type = PT1
+set dterm_lowpass2_hz = 125
+
+#For RPM Filter: Without RPM leave at = 8 (default)
+#Set to 0 if you can afford less Dynamic Notch filtering because RPM is added (reduces to one notch instead of two on DN)
+#set dyn_notch_width_percent = 8
+
+#PID Gains Settings
+set vbat_pid_gain = ON
+set anti_gravity_gain = 10000
+set p_pitch = 60
+set i_pitch = 70
+set d_pitch = 60
+set f_pitch = 350
+
+set p_roll = 65
+set i_roll = 60
+set d_roll = 65
+set f_roll = 325
+
+set f_yaw = 0
+
+set d_min_pitch = 45
+set d_min_roll = 45
+set d_min_boost_gain = 30
+set d_min_advance = 0
+set pidsum_limit = 1000 #unleashes PID Sum to be 100% (not restricted to 50% by default)
+
+#Assumes Freestyle | For racing use "Setpoint" and cutoff = 20
+set iterm_relax_type = GYRO
+set iterm_relax_cutoff = 10
+
+#TPA Settings (which is D-term only by default)
+set tpa_rate = 80
+set tpa_breakpoint = 1750
+
+```
+</details>
+
 ---
-#### 5" Quad
+#### 5" Quad - Setpoint Tracker: NO noise between 50hz and 200hz
 <details><summary>CLI Copy\Paste</summary>
 
 ```python
@@ -166,16 +229,19 @@ set vbat_pid_gain = ON
 set anti_gravity_gain = 10000
 set p_pitch = 60
 set i_pitch = 70
-set d_pitch = 55
+set d_pitch = 60
+set f_pitch = 350
 
 set p_roll = 65
 set i_roll = 60
-set d_roll = 55
+set d_roll = 65
+set f_roll = 325
 
 set d_min_pitch = 45
 set d_min_roll = 45
-set d_min_boost_gain = 45
+set d_min_boost_gain = 30
 set d_min_advance = 0
+
 set pidsum_limit = 1000 #unleashes PID Sum to be 100% (not restricted to 50% by default)
 
 #Assumes Freestyle | For racing use "Setpoint" and cutoff = 20
@@ -184,7 +250,7 @@ set iterm_relax_cutoff = 10
 
 #TPA Settings (which is D-term only by default)
 set tpa_rate = 80
-set tpa_breakpoint = 1800
+set tpa_breakpoint = 1750
 
 ```
 </details>
@@ -211,12 +277,15 @@ set dterm_lowpass2_hz = 0
 #PID Gains Settings
 set vbat_pid_gain = ON
 set anti_gravity_gain = 10000
+
 set d_pitch = 58
 set d_roll = 55
+
 set d_min_pitch = 28
 set d_min_roll = 25
 set d_min_boost_gain = 45
 set d_min_advance = 0
+
 set pidsum_limit = 1000 #unleashes PID Sum to be 100% (not restricted to 50% by default)
 
 #Assumes Freestyle | For racing use "Setpoint" and cutoff = 20
@@ -285,11 +354,14 @@ set dterm_lowpass2_hz = 0
 #PID Gains Settings
 set vbat_pid_gain = ON
 set anti_gravity_gain = 10000
+
 set f_pitch = 0
 set f_roll = 0
 set f_yaw = 0
+
 set d_min_pitch = 0
 set d_min_roll = 0
+
 set pidsum_limit = 1000 #unleashes PID Sum to be 100% (not restricted to 50% by default)
 
 #PID Controller Settings
