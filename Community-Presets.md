@@ -58,6 +58,7 @@ set iterm_relax_cutoff = 10
 #TPA Settings (which is D-term only by default)
 set tpa_rate = 80
 set tpa_breakpoint = 1800
+save
 
 ```
 </details>
@@ -104,6 +105,7 @@ set iterm_relax_cutoff = 10
 #TPA Settings (which is D-term only by default)
 set tpa_rate = 80
 set tpa_breakpoint = 1800
+save
 
 ```
 </details>
@@ -150,6 +152,7 @@ set iterm_relax_cutoff = 10
 #TPA Settings (which is D-term only by default)
 set tpa_rate = 80
 set tpa_breakpoint = 1800
+save
 
 ```
 </details>
@@ -212,6 +215,7 @@ set iterm_relax_cutoff = 10
 #TPA Settings (which is D-term only by default)
 set tpa_rate = 80
 set tpa_breakpoint = 1750
+save
 
 ```
 </details>
@@ -272,6 +276,7 @@ set iterm_relax_cutoff = 10
 #TPA Settings (which is D-term only by default)
 set tpa_rate = 80
 set tpa_breakpoint = 1750
+save
 
 ```
 </details>
@@ -317,6 +322,7 @@ set iterm_relax_cutoff = 10
 #TPA Settings (which is D-term only by default)
 set tpa_rate = 80
 set tpa_breakpoint = 1800
+save
 
 ```
 </details>
@@ -353,6 +359,7 @@ set iterm_relax_cutoff = 10
 #TPA Settings (which is D-term only by default)
 set tpa_rate = 80
 set tpa_breakpoint = 1750
+save
 
 ```
 </details>
@@ -396,6 +403,7 @@ set iterm_relax_cutoff = 10
 #TPA Settings (which is D-term only by default)
 set tpa_rate = 80
 set tpa_breakpoint = 1800
+save
 
 ```
 </details>
@@ -506,6 +514,7 @@ set tpa_breakpoint = 1650
 
 #RC smoothing settings
 set rc_smoothing_type = INTERPOLATION
+save
 
 ```
 </details>
@@ -574,6 +583,7 @@ set tpa_breakpoint = 1650
 
 #RC smoothing settings
 set rc_smoothing_type = INTERPOLATION
+save
 
 ```
 </details>
@@ -645,6 +655,7 @@ set tpa_breakpoint = 1650
 
 #RC smoothing settings
 set rc_smoothing_type = INTERPOLATION
+save
 
 ```
 </details>
