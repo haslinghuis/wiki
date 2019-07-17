@@ -164,10 +164,14 @@ Kwads with Noise between 50hz and 200hz
 ```python
 #Filter Settings
 set dyn_notch_min_hz = 80
-set gyro_lowpass_hz = 200
-set gyro_lowpass_type = PT1
+
 set dyn_lpf_gyro_min_hz = 0
 set dyn_lpf_gyro_max_hz = 0
+set gyro_lowpass_hz = 0
+set gyro_lowpass_type = PT1
+set gyro_lowpass2_hz = 200
+set gyro_lowpass2_type = PT1
+
 
 set dyn_lpf_dterm_min_hz = 0
 set dyn_lpf_dterm_max_hz = 0
@@ -220,10 +224,13 @@ Kwads with NO Noise between 50hz and 200hz
 ```python
 #Filter Settings
 set dyn_notch_min_hz = 80
-set gyro_lowpass_hz = 150
-set gyro_lowpass_type = PT1
+
 set dyn_lpf_gyro_min_hz = 0
 set dyn_lpf_gyro_max_hz = 0
+set gyro_lowpass_hz = 0
+set gyro_lowpass_type = PT1
+set gyro_lowpass2_hz = 0
+set gyro_lowpass2_type = PT1
 
 set dyn_lpf_dterm_min_hz = 80
 set dyn_lpf_dterm_max_hz = 175
