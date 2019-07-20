@@ -14,8 +14,16 @@ Requires an efm8bb21 based BLHeli_S ESC. You can recognize them by their name ta
 
 # Current Status
 
-The implementation is currently in very early access. Only try it out if you're comfortable reflashing ESC's via the C2 interface.
+The implementation is currently in very early access. Only try it out if you're comfortable reflashing ESC's via the C2 interface. Be extra careful and don't power up at first with props installed.
 
 # Installation
 
-* 
+* Check whether your FC is supports bidirectional dshot here: https://github.com/betaflight/betaflight/wiki/Bidirectional-DSHOT-and-RPM-Filter
+* Download and install the latest betaflight hex with JESC support for your FC from here:
+https://github.com/jflight-public/betaflight/releases
+* Download and install the latest JESC Configurator here: https://github.com/jflight-public/jesc-configurator/releases
+* Visit https://jflight.net, set up an account and purchase the required Telemetry licenses for your esc.
+* Start JESC Configurator, and use the "License All" button to connect your linenses to your esc.
+* Flash the latest JESC fw by pressing "Flash All" and follow instructions.
+* Flash the latest Telemetry fw by pressing "Flash All Telemetry" and follow instructions.
+* Now follow the instructions on https://github.com/betaflight/betaflight/wiki/Bidirectional-DSHOT-and-RPM-Filter.
