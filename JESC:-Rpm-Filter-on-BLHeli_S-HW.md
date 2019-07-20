@@ -18,6 +18,8 @@ The implementation is currently in very early access. Only try it out if you're 
 
 # Installation
 
+**Follow these steps in the order listed here!**
+
 * Check whether your FC is supports bidirectional dshot here: https://github.com/betaflight/betaflight/wiki/Bidirectional-DSHOT-and-RPM-Filter
 * Download and install the latest betaflight hex with JESC support for your FC from here:
 https://github.com/jflight-public/betaflight/releases
