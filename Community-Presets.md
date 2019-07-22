@@ -158,7 +158,7 @@ save
 </details>
 <br/><br/>
 
-#### 5" Quad - Setpoint Tracker (high FF & D_min)
+#### 5" Quad - Setpoint Tracker (725g AUW Kwad)
 Kwads with Noise between 50hz and 200hz
 <br/>
 
@@ -221,7 +221,7 @@ save
 </details>
 
 ---
-#### 5" Quad - Setpoint Tracker (high FF & D_min)
+#### 5" Quad - Setpoint Tracker (725g AUW Kwad)
 Kwads with NO Noise between 50hz and 200hz
 <br/>
 
