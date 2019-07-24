@@ -1,3 +1,4 @@
+### UPDATE: Bidirectional DSHOT and RPM Filter now available on BLHeli_S escs. [Early Access here!](https://github.com/betaflight/betaflight/wiki/JESC:-Rpm-Filter-on-BLHeli_S-HW) ###
 
 ### DSHOT & Betaflight 4.0
 
