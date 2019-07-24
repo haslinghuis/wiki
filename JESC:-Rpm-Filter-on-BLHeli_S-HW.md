@@ -14,7 +14,7 @@ Requires an efm8bb21 based BLHeli_S ESC. You can recognize them by their name ta
 
 # Current Status
 
-The implementation is currently in very early access. Only try it out if you're comfortable reflashing ESC's via the C2 interface. Be extra careful and don't power up at first with props installed.
+The implementation is currently in early access and requires a custom build of BetaFlight. Be extra careful and don't power up at first with props installed.
 
 # Installation
 
