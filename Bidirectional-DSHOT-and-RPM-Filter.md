@@ -281,6 +281,14 @@ Please add additional verified configurations here.
 | --- | --- |
 |MAMBAF722|Requires DSHOT burst and only 2 motors will spin with it OFF|
 
+Update: MAMBAF722 still can be used without dshot burst, use the following settings :
+```
+dma pin a09 1
+dma pin a08 1
+dma pin c09 0
+dma pin c08 1
+```
+
 ### References
 
 [Bidirectional Dshot PR](https://github.com/betaflight/betaflight/pull/7264)
