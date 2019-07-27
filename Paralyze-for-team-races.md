@@ -1,6 +1,6 @@
 During team relay races it's unsafe to retrieve crashed quads because the course is continuously hot. In order to safely fly a backup quad with the primary quad crashed in the field (but powered up) it's necessary to:
 
-* Disable arming, so that the crashed quad doesn't unintentionally arm when taking off with the backup. This is specifically a problem when a transmitter can send signals to all powered up receivers (like FrSky D8/D16 and others)
+* Disable arming, so that the crashed quad doesn't unintentionally arm when taking off with the backup. This is specifically a problem when a transmitter can send signals to all powered up receivers (like FrSky ACCST D8/D16 and others)
 * and change the VTX to an unused (graveyard) channel with low power output so it doesn't interfere with the backup quad.
 
 Betaflight 3.5 introduced a new mode called paralyze which disables arming. It can only be invoked while the quad isn't armed. Paralyze is a sticky mode, so once it's active, the FC has to be power cycled.
