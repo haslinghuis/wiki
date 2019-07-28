@@ -158,7 +158,8 @@ save
 </details>
 <br/><br/>
 
-#### 5" Quad - Setpoint Tracker (725g AUW Kwad | 1020 deg/sec max rates)
+#### 5" Quad - Setpoint Tracker - Lower Cutoffs Filters (more filtering)
+(725g AUW Kwad | 1020 deg/sec max rates)
 Kwads with Noise between 50hz and 200hz
 <br/>
 
@@ -224,7 +225,8 @@ save
 </details>
 
 ---
-#### 5" Quad - Setpoint Tracker (725g AUW Kwad | 1020 deg/sec max rates)
+#### 5" Quad - Setpoint Tracker - Higher Cutoffs Filters (less filtering)
+(725g AUW Kwad | 1020 deg/sec max rates)
 Kwads with NO Noise between 50hz and 200hz
 <br/>
 
