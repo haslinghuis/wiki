@@ -109,6 +109,7 @@ If the quad can be logged, the ideal gain value for general use is where the rea
 Debug 2 shows D on roll, Debug 3 shows D on pitch.  Both are before TPA attenuation.  
 Debug 0 shows the gyro contribution, and Debug 1 the setpoint (advance) contribution, to the boosting effect.
 
+Note from @docteh: The debug OSD element in 4.0 and 4.1 shows debug 0 1 2 3 on one big line. You also need to have d_min enabled for values to show up here, as the element needs those values to show anything. This "debug2" stuff needs a bit of work.
 
 ## How does d_min work?
   
