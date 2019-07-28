@@ -200,7 +200,10 @@ set i_roll = 60
 set d_roll = 65
 set f_roll = 325
 
-set f_yaw = 0
+set p_yaw = 90
+set i_yaw = 100
+set d_taw = 0
+set f_taw = 150
 
 set d_min_pitch = 45
 set d_min_roll = 45
@@ -261,6 +264,11 @@ set p_roll = 65
 set i_roll = 60
 set d_roll = 65
 set f_roll = 325
+
+set p_yaw = 90
+set i_yaw = 100
+set d_taw = 0
+set f_taw = 150
 
 set d_min_pitch = 45
 set d_min_roll = 45
