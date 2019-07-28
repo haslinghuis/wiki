@@ -159,7 +159,7 @@ save
 <br/><br/>
 
 #### 5" Quad - Setpoint Tracker - Lower Cutoffs Filters (more filtering)
-(725g AUW Kwad | 1020 deg/sec max rates)
+For: 650g to 725g AUW Kwads | 1000 to 1100 deg/sec rates. <br/>
 Kwads with Noise between 50hz and 200hz
 <br/>
 
@@ -201,10 +201,10 @@ set i_roll = 60
 set d_roll = 65
 set f_roll = 325
 
-set p_yaw = 90
+set p_yaw = 100
 set i_yaw = 100
 set d_yaw = 0
-set f_yaw = 150
+set f_yaw = 125
 
 set d_min_pitch = 45
 set d_min_roll = 45
@@ -226,7 +226,7 @@ save
 
 ---
 #### 5" Quad - Setpoint Tracker - Higher Cutoffs Filters (less filtering)
-(725g AUW Kwad | 1020 deg/sec max rates)
+For: 650g to 725g AUW Kwads | 1000 to 1100 deg/sec rates. <br/>
 Kwads with NO Noise between 50hz and 200hz
 <br/>
 
@@ -267,10 +267,10 @@ set i_roll = 60
 set d_roll = 65
 set f_roll = 325
 
-set p_yaw = 90
+set p_yaw = 100
 set i_yaw = 100
 set d_yaw = 0
-set f_yaw = 150
+set f_yaw = 125
 
 set d_min_pitch = 45
 set d_min_roll = 45
