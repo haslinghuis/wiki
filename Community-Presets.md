@@ -459,7 +459,7 @@ set d_min_pitch = 0
 
 ## Pilot: CUDA KEER<br>
 #### [6" Floss 2.1 with Hyperlite 2207 1922kv race rig](https://github.com/cudakeer808/betaflight/wiki/floss-2.1-2207-1922-rpm_filter)<br>
-#### [Massive Droner with T-Motor F60pro II](https://github.com/cudakeer808/betaflight/wiki/Massive-Droner-2207-1750kv)
+#### [5" Massive Droner with T-Motor F60pro II](https://github.com/cudakeer808/betaflight/wiki/Massive-Droner-2207-1750kv)
 ---
 
 <br/>
