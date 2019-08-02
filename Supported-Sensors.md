@@ -24,6 +24,7 @@ This page is a _un_-complete list of supported sensors by betaflight. To be sure
 ## Barometer
 * BMP085
 * BMP280
+* BMP388
 * QMP6988
 * MS5611
 
