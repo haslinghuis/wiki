@@ -6,34 +6,23 @@
 
 ## News
 
-### Betaflight 4.0
+### Betaflight 4.1
 
-As you might have learned from the [Betaflight GitHub page](https://github.com/betaflight/betaflight), our next release will be 4.0. Betaflight 4.0 will be the culmination of years of work that started in 2016 with the introduction of remappable resources, and it will drastically change the way how Betaflight is built and distributed. To you as the user, not much in how you download and install the Betaflight firmware will change, but you will get some noticeable improvements:
+For Betaflight 4.0 we announced the advent of Unified Targets, and with them the capability to change all of the hardware resources on all (F4 and F7) targets. Unified Targets have been used successfully by testers since Betaflight 4.0 has been released, and users using the new bidirectional Dshot protocol have been using configurable resources to make this protocol work on their targets since then.
 
-- we’ll have to spend less time on maintaining and releasing the firmware, meaning that we’ll have more time to work on new and exciting features;
-- manufacturers will have an easy way to release custom configurations for all of their boards and ready-to-fly (including RX setup and tuning) craft based on original Betaflight firmware - you will no longer be stuck on using old firmware, or recreating your configuration from scratch;
-- the tinkerers amongst you will be able to share Betaflight firmware with your home built improvements amongst your friends without having to build and distribute separate targets for everybody’s board.
+But we were still not happy with the way that users had to use Unified Targets: The target specific hardware configuration had to be applied after the firmware was flashed, and re-applied every time the configuration was reset to defaults - we wanted to make the Unified Targets as easy to use as the existing 'legacy' targets are.
 
-*(These changes are planned for F4 and F7, F3’s flash space limitations mean we won’t be able to fit all of this in.)*
+We have figured out a way to make this work, and are currently working on implementing the required changes in the firmware and in Betaflight configurator, but it's taking longer than we'd anticipated to complete. To allow us to get the integration of Unified Targets completed, **we have shifted the release date for Betaflight 4.1 to 01 October 2019**. Until then we will keep doing monthly releases of Betaflight 4.0 with bugfixes and new / updated targets.
 
-We are almost there with the implementation of these changes, but since they are quite complex, and getting ‘almost there’ doesn’t buy us much, we have decided that we need to take more time to complete them, make sure the way users can use the firmware still works as expected, and properly test the new firmware. For this reason we have decided to **postpone the planned release date for Betaflight to 01 April 2019**. We will keep doing monthly releases of Betaflight 3.5 with bugfixes and new / updated targets in the meantime.
-
-
-To get the latest update from us, you can now also visit our webpage at <https://betaflight.com/>.
-
-In addition to the drastic changes mentioned above, Betaflight 4.0 will have a number of other exciting new features and improvements:
-
-- yet again improved flight performance;
-- 'Launch control' mode;
-- switchable profiles for the OSD layout.
+To get the latest update from us, you can now also visit our webpage at https://betaflight.com/.
 
 
 ## Events
 
 | Date  | Event |
 | - | - |
-| 01 April 2019 | Planned [release](https://github.com/betaflight/betaflight/milestone/20) date for Betaflight 4.0 |
-| 01 September 2019 | Planned [release](https://github.com/betaflight/betaflight/milestone/30) date for Betaflight 4.1 |
+| 01 September 2019 | Start of feature freeze / Release Candidate window for Betaflight 4.1 |
+| 01 October 2019 | Planned [release](https://github.com/betaflight/betaflight/milestone/30) date for Betaflight 4.1 |
 
 
 ## Merchandise:
