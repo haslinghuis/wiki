@@ -254,7 +254,7 @@ set tpa_breakpoint = 1750
 |KAKUTEF4V2 | [new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  ||M1-M4 tested|
 |KISSFCV2F7|[new](https://github.com/betaflight/bidircfg/blob/master/KISSFCV2F7.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/KISSFCV2F7-upgrade.cf)||M1-M6|
 |LUXF4OSD  | [new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  ||M1-M4 tested (Mister_M)|
-|MAMBAF722|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT_MambaF722.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf.cf)|Needs dma resource changes|M1-M4, M6-M8|
+|MAMBAF722|[new](https://github.com/betaflight/bidircfg/blob/master/MAMBAF722.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/MAMBAF722-upgrade.cf)||M1-M4 tested (kc10kevin)|
 |MATEKF405|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 tested (Wudz_17)|
 |MATEKF722|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M8|
 |MATEKF722SE|[new](https://github.com/betaflight/bidircfg/blob/master/MATEKF722SE.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/MATEKF722SE-upgrade.cf)|M5 does not work|M1-M4, M6-M8|
@@ -279,15 +279,7 @@ Please add additional verified configurations here.
 
 | Target | Notes |
 | --- | --- |
-|MAMBAF722|Requires DSHOT burst and only 2 motors will spin with it OFF|
 
-Update: MAMBAF722 still can be used without dshot burst, use the following settings :
-```
-dma pin a09 1
-dma pin a08 1
-dma pin c09 0
-dma pin c08 1
-```
 
 ### References
 
