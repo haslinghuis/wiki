@@ -10,6 +10,71 @@
 
 <br/>
 
+---
+#### Back to 4.0.x Defaults
+This will take your setup back to BF 4.0.x defaults
+<br/>
+<details><summary>CLI Copy\Paste</summary>
+
+```python
+#Filter Settings
+set dyn_notch_min_hz = 150
+
+set dyn_lpf_gyro_min_hz = 150
+set dyn_lpf_gyro_max_hz = 450
+set gyro_lowpass_hz = 0
+set gyro_lowpass_type = BiQUAD
+set gyro_lowpass2_hz = 150
+set gyro_lowpass2_type = PT1
+
+set dyn_lpf_dterm_min_hz = 150
+set dyn_lpf_dterm_max_hz = 250
+set dterm_lowpass_type = BiQUAD
+set dterm_lowpass_hz = 0
+set dterm_lowpass2_type = PT1
+set dterm_lowpass2_hz = 100
+
+set dyn_notch_width_percent = 8 #Dual Dynamic Notches is as default; 8% spread from center to center.
+
+#PID Gains Settings
+set vbat_pid_gain = OFF
+set anti_gravity_gain = 5000
+set p_pitch = 46
+set i_pitch = 70
+set d_pitch = 38
+set f_pitch = 75
+
+set p_roll = 42
+set i_roll = 60
+set d_roll = 35
+set f_roll = 70
+
+set p_yaw = 35
+set i_yaw = 100
+set d_yaw = 0
+set f_yaw = 0
+
+set d_min_pitch = 20
+set d_min_roll = 22
+set d_min_boost_gain = 27
+set d_min_advance = 20
+
+set pidsum_limit = 500 #restricted to 50% by default
+
+#For racing use "Setpoint" and cutoff = 20
+set iterm_relax_type = Setpoint
+set iterm_relax_cutoff = 20
+
+#TPA Settings (which is D-term only by default)
+set tpa_rate = 50
+set tpa_breakpoint = 1500
+save
+
+```
+</details>
+
+---
+<br/><br/>
 ## Pilot: UAV TECH
 
 <b>
