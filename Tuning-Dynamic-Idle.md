@@ -13,9 +13,11 @@ We traditionally tune our dshot_idle_value to satisfy two goals:
 - Enough idle so responsiveness is good (it takes a long time for props to speed up from very low rpm).
 - Enough idle so motors don't desync in reverse flow conditions.
 
+``dshot_idle_value`` is specified in percent * 100, so 500 is an idle throttle of 5% and puts 5% throttle to the motors when your throttle stick is at zero.
+
 Dynamic Idle introduces a second setting: ``idle_min_rpm`` which sets the minimum rpm that will be allowed for any motor. It's specified in ``rpm / 100``. So say you're flying ``2400kv`` motors on ``4s``, giving you ``~35520 rpm`` at max throttle. Say we want the min rpm to be similar to maybe 4% of max. That's 1420.8, so you would ``set idle_min_rpm = 14``. Some quads - esp. high rates LOS quads may need as much as ``28``. 
 
-As the ``idle_min_rpm`` limit approaches the FC increases output equally to all motors to ensure that the minimum rpm constraint is satisfied. 
+Effectively your motors will idle at the higher one of (a) the motor speed caused by idle throttle and (b) ``idle_min_rpm``. ``dshot_idle_value`` is a static value, but ``idle_min_rpm`` results in a dynamic addition if one of the motors gets too slow. As the ``idle_min_rpm`` limit approaches the FC increases output equally to all motors to ensure that the minimum rpm constraint is satisfied. 
 
 This setting doesn't replace dshot_idle_value, but complements it. It should be set such that in normal conditions ``dshot_idle_value`` still determines how fast the motors spin. ``idle_min_rpm`` is merely the insurance policy that keeps motors spinning fast enough in reverse flow conditions.
 
