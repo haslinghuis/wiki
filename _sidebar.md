@@ -74,6 +74,7 @@
  - [D_Min](d_min)
  - [Integrated Yaw](Integrated-Yaw)
  - [VTX Tables](https://github.com/betaflight/betaflight/wiki/VTX-tables)
+ - [Tuning Dynamic Idle](https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle)
 
 # Troubleshooting
 
