@@ -296,7 +296,7 @@ save
 For: 650g to 725g AUW Kwads | 1000 to 1100 deg/sec rates. <br/>
 Kwads with NO Noise between 50hz and 200hz
 <br/>
-**Requires a quad with extremely low noise! NOT MANY QUADS WILL BE ABLE TO RUN THESE SETTINGS!**
+**Requires a quad with NO noise issues from 50hz to 200hz! So, if you are not sure, use the above first and if that goes well try these settings next.**
 <br/>
 <details><summary>CLI Copy\Paste</summary>
 
