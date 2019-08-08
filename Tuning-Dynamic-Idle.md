@@ -33,4 +33,5 @@ Additionally during quick maneuvers the added 6% or so of braking torque will he
 
 ### Suggested Tuning
 
-Start out with ``idle_min_rpm = 14`` and ``dshot_idle_value = 1``. This means that your motors will sit at idle_min_rpm when idle. Fly around, do max rate rolls etc and check for desyncs, increasing ``idle_min_rpm`` as needed. Now increase dshot_idle_value to get the preferred trade-of between idle thrust and quad response.
+Before you start ``set transient_throttle_limit=0`` since this idle noise avoidance mechanism is not needed with dynamic idle an actually hurts. Start out with ``idle_min_rpm = 14`` and ``dshot_idle_value = 1``. This means that your motors will sit at idle_min_rpm when idle. Fly around, do max rate rolls etc and check for desyncs, increasing ``idle_min_rpm`` as needed. Now increase dshot_idle_value to get the preferred trade-of between idle thrust and quad response.
+
