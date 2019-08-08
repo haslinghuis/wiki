@@ -27,7 +27,9 @@ Clearly this allows to prevent low rpm desyncs without raising the dshot_idle_va
 
 Dynamic idle internally uses a ``dshot_idle_value`` of ``1``, but adds a constant idle throttle to compensate and deliver the same idle rpm. This has a big advantage: now motors can be decelerated by the FC sending the minimum dshot motor value. Previously the FC would never send less than the ``dshot_idle_value``.
 
-In practical terms this means that noise or small pid action will no longer result in an rpm increase at idle - a welcome change resulting in more hang time. Also during quick maneuvers the added 6% or so of braking torque will help the quad perform with more precision and lower average rpm. This will lower overshoot and make light weight quads less jumpy in airmode situations.
+In practical terms this means that noise or small pid action will no longer result in an rpm increase at idle. Instead for these small pid actions airmode won't need to raise throttle at all. The pids will just increase the speed of some motors above where they run ad ``dshot_idle_value`` and slow others down. That's a welcome change resulting in more hang time. 
+
+Additionally during quick maneuvers the added 6% or so of braking torque will help the quad perform with more precision and lower average rpm. This will lower overshoot and make light weight quads less jumpy in airmode situations.
 
 ### Suggested Tuning
 
