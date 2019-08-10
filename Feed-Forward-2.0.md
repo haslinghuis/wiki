@@ -1,6 +1,4 @@
-# FeedForward 2.0 notes
-
-4.1 brings `ff_2.0` - a comprehensive set of updates to feed-forward
+Betaflight 4.1 brings us `Feed Forward 2.0` - a comprehensive set of updates to FeedForward.
 
 ## What is FeedForward?
 
