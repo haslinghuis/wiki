@@ -8,7 +8,7 @@ RPM based notch filtering results in far more effective removal of motor noise f
 
 [The RPM filter](https://github.com/betaflight/betaflight/pull/7271) is a bank of 36 notch filters on gyro and Dterm which takes advantage of this high frequency RPM telemetry data to implement a motor harmonics filter which removes motor noise with surgical precision. By default configuration it runs 12 notch filters each on pitch, roll, and yaw, covering the first 3 harmonics of each motor's RPM for the gyro filter bank.
 
-These two features are currently supported by betaflight 4.1 with BLHeli_32 ESCs that have been updated to the latest 'GCR' firmware and BLHeli-S ESCs that have been flashed using [JFlight](https://jflight.net).
+These two features are currently supported by betaflight 4.1 with BLHeli_32 ESCs that have been updated to the latest 'GCR' firmware and BLHeli-S ESCs that have been flashed using [JESC](https://jflight.net).
 
 Earlier versions for betaflight 4.0 required different ESC code.  The use of 4.1 and GCR code is strongly recommended. _See [References](#References)_
 
