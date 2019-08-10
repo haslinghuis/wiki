@@ -1,7 +1,5 @@
 ### UPDATE: Bidirectional DSHOT and RPM Filter now available on BLHeli_S escs. [Early Access here!](https://jflight.net) ###
 
-# DSHOT & Betaflight 4.1
-
 ## Introduction
 
 The RPM based notch filtering results in far more effective removal of motor noise from the gyro data than ever before, with less delay.  The dynamic notch filter then doesn't need to be so wide, and is freed up to more effectively chase and eliminate other frame resonances at frequencies other than motor rpm.  Together they provide a much more effective solution for noise management and bent props than ever before.  In most cases, enabling rpm filtering will mean that the lowpass filters can be shifted higher, or in some cases turned off completely, further reducing delay and improving propwash.  This should only be done by experienced users after reading the [tuning guide](#Tuning).
