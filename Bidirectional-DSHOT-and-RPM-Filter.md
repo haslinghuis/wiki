@@ -168,9 +168,9 @@ There are two blackbox debug modes to verify the RPM filter: RPM_FILTER logs the
 
 ### Supported targets
 
-| Target | New Install Snippet | Upgrade Snippet | Notes | Supported Motors|
+| Target | Install Snippet | Notes | Supported Motors|
 | --- | --- | --- | --- | --- |
-| AG3XF4|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  | M1 - M4 (tested Mister_M) |
+| AG3XF4|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  | M1 - M4 (tested Mister_M) |
 | AIKONF4|[new](https://github.com/betaflight/bidircfg/blob/master/AIKONF4.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/AIKONF4-upgrade.cf) |  | M1 - M4 (tested fujin) |
 | ALIENFLIGHTNGF7 | [new](https://github.com/betaflight/bidircfg/blob/master/ALIENFLIGHTNGF7.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/ALIENFLIGHTNGF7-upgrade.cf) | M3 doesn't work, use one of M5-9 instead. LED doesn't work with M1 | M1-M2, M4-M9 |
 |ALIENWHOOP|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)|| M1-M4 | 
