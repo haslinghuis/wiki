@@ -95,6 +95,6 @@ For racers and general use the quality of the RC link depends mostly on how good
 
 This experimental code performs a lookahead a bit like ff_max_rate_limit, but limits the feedforward element internally if, at the specified time in the future, P + FF would be larger than P would be at that future point in time.  This may improve overshoot in moves that otherwise would not hit the stick limit.  It has been included for testing purposes. 
 
-Kudos to JoeLucid for an awesome set of improvements.  Also ctzsnooze for the boost concept the  gang for testing and validation.  Now we just need better RC links  :-)
+Kudos to JoeLucid for an awesome set of improvements.  Also ctzsnooze for the boost concept and the  gang for testing and validation.  Now we just need better RC links  :-)
 
 For technical details and more info,check the [original pull request #8623](https://github.com/betaflight/betaflight/pull/8623)
