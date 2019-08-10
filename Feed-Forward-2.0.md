@@ -24,7 +24,7 @@ Currently erratic RC steps are a major problem.  OpenTx 2.3 is likely to improve
 
 This is a fantastic new feature that markedly reduces delay in fast setpoint changes.
 
-Most motors take time to spin up / slow down.  They need to be pushed harder at the very start of a move than in the middle.  FF and P both ramp up slowly at the start of a move because initially our fingers move slowly and most pilots use Expo in their Rates setup. So until now, the motors haven't got that immediate push needed unless really high FF gains were used (250+).  But with FF gains of that matnitude, overshoot is hard to control, especially because of SuperRate being applied at the end of the stick travel, really casing FF to boost the move right when we need the quad to stat to slow down to not overshoot.
+Most motors take time to spin up / slow down.  They need to be pushed harder at the very start of a move than in the middle.  FF and P both ramp up slowly at the start of a move because initially our fingers move slowly and most pilots use Expo in their Rates setup. So until now, the motors haven't got that immediate push needed unless really high FF gains were used (250+).  But with FF gains of that matnitude, overshoot is hard to control, especially because of SuperRate being applied at the end of the stick travel, really casing FF to boost the move right when we need the quad to start to slow down to not overshoot.
 
 'ff_boost' is a PID parameter that is proportional to the stick acceleration.  Technically it is the second derivative of Setpoint.
 
