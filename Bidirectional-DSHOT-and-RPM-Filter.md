@@ -2,26 +2,32 @@
 
 ### DSHOT & Betaflight 4.0
 
-[Bidirectional DSHOT](https://github.com/betaflight/betaflight/pull/7264) is a new feature in Betaflight 4.0 which enables the flight controller to receive high frequency RPM telemetry for each motor on the ESC motor signal line. It does not require any additional wiring or an additional telemetry back-channel. Each DSHOT frame from the FC gets acknowledged by a frame from the ESC containing the current eRPM. The FC needs to know the motor pole count to convert to RPM.
+[Bidirectional DSHOT](https://github.com/betaflight/betaflight/pull/7264) is a new feature in Betaflight 4.0 which lets the flight controller receive high frequency RPM telemetry for each motor on the ESC motor signal line. It does not require any additional wiring or an additional telemetry back-channel. Each DSHOT frame from the FC gets acknowledged by a frame from the ESC containing the current eRPM. The FC needs to know the motor pole count to convert to RPM.
 
-[The RPM filter](https://github.com/betaflight/betaflight/pull/7271) is a bank of 36 notch filters on gyro and Dterm which takes advantage of this high frequency RPM telemetry data to implement a motor harmonics filter which removes motor noise with surgical precision. In its default configuration it runs 12 notch filters each on pitch, roll, and yaw, covering the first 3 harmonics of each motor's RPM for the gyro filter bank.
+[The RPM filter](https://github.com/betaflight/betaflight/pull/7271) is a bank of 36 notch filters on gyro and Dterm which takes advantage of this high frequency RPM telemetry data to implement a motor harmonics filter which removes motor noise with surgical precision. By default configuration it runs 12 notch filters each on pitch, roll, and yaw, covering the first 3 harmonics of each motor's RPM for the gyro filter bank.
 
-These two features are currently supported by BLHeli_32 and require an update to the latest firmware. _See [References](#References)_
+These two features are currently supported by betaflight 4.1 with BLHeli_32 ESCs that have been updated to the latest 'GCR' firmware and BLHeli-S ESCs that have been flashed using [JFlight](https://jflight.net)  _See [References](#References)_
 
 Here's a demo of the feature in flight. Quad has minimal filtering other than the rpm filter, handles very well and shows close to no prop wash: 
 https://youtu.be/jwFYaGHp91c, https://youtu.be/SoG245vmaLo
 
 ### Arming Prevention Check
 
-If the RPM Filter is enabled but one or more of the ESC's are not supplying valid telemetry data, then arming will be prevented with the `RPMFILTER` message (see [Arming Sequence & Safety](Arming-Sequence-&-Safety)). This is in place to prevent arming with incomplete or non-working configurations that may result in flyaways or hot motors due to the non-functioning filtering. See the sections below to ensure the ESC's are properly configured to support this feature.
+If the RPM Filter is enabled but one or more of the ESC's are not supplying valid telemetry data, arming will be prevented, and the `RPMFILTER` message will be shown on the OSD (see [Arming Sequence & Safety](Arming-Sequence-&-Safety)). This prevents arming with incomplete or non-working configurations that may result in flyaways or hot motors. See below to ensure the ESC's are properly configured to support this feature.
 
 ## Configuration
 
 ### BLHeli_32 Bidirectional DShot Firmware
 
-In order for RPM Filtering to work, BLHeli_32 beta firmware is required to enable the Bidirectional DShot protocol. This is not available in the BLHeli_32 configurator yet, and must be downloaded and selected in the flashing interface. BetaFlight 4.0.x requires the [BLHeli_32 32.6.4](https://github.com/bitdump/BLHeli/tree/master/BLHeli_32%20ARM/BLHeli_32%20Test%20code%20Rev32.6.4%20hex%20files) firmware. BetaFlight 4.1 nightly builds (test) requires the more recent [32.6.6 firmware](https://github.com/bitdump/BLHeli/tree/master/BLHeli_32%20ARM/BLHeli_32%20Test%20code%20Rev32.6.4%20hex%20files/Rev32.6.6%20for%20inverted%20bidirectional%20dshot%20and%20GCR%20return%20data%20only). The Bidirectional DShot protocol is different in 4.1 and is based a GCR encoding shema for the return data, so it is important that you match the correct version of BLHeli_32 to the version of Betaflight you are running. Download the correct firmware for your ESC brand/model by right clicking on "Raw" and choosing "Save As", and flash it onto **all four** ESCs. You will need to select the firmware file separately for each ESC as it will default to the most recent stable version of BLHeli.
+For RPM Filtering to work, the ESC must support the Bidirectional DShot protocol. 
+
+For BLHeli_32, the hex file is not available in the configurator, and must be downloaded separately and selected in the flashing interface. BetaFlight 4.0.x requires the [BLHeli_32 32.6.4](https://github.com/bitdump/BLHeli/tree/master/BLHeli_32%20ARM/BLHeli_32%20Test%20code%20Rev32.6.4%20hex%20files) firmware. BetaFlight 4.1 nightly builds requires the more recent [32.6.6 firmware](https://github.com/bitdump/BLHeli/tree/master/BLHeli_32%20ARM/BLHeli_32%20Test%20code%20Rev32.6.4%20hex%20files/Rev32.6.6%20for%20inverted%20bidirectional%20dshot%20and%20GCR%20return%20data%20only). 
+
+The Bidirectional DShot protocol is different in 4.1 and is based a GCR encoding shema for the return data, so it is important that you match the correct version of BLHeli_32 to the version of Betaflight you are running. Download the correct firmware for your ESC brand/model by right clicking on "Raw" and choosing "Save As", and flash it onto **all four** ESCs. You will need to select the firmware file separately for each ESC as it will default to the most recent stable version of BLHeli.
 
 Remove any extended startup melody if you have configured one for the ESCs since that currently interferes with Bidirectional DSHOT. The standard startup tones will work fine.
+
+For JESC flash the latest GCR version to your BLHeli-S ESC/s using the JESC BLHeli configurator.
 
 ### Motor Magnets
 
@@ -31,9 +37,9 @@ The ESCs report eRPM, which needs to be converted to RPM using the number of mag
 
 ### Config Snippet
 
-Check the table at the bottom of this page to see if your target is supported. Some boards require a reconfiguration of timer or dma channels. Additionally since the rpm filter removes motor noise so effectively we have developed a set of filter defaults optimized for use with the rpm filter. Both changes plus conservative selections of DSHOT600 and a gyro frequency of 4k are included in a board specific snippet which is liked in the table.
+Check the table at the bottom of this page to see if your target is supported.  Some boards require a reconfiguration of timer or dma channels, which is most easily done by pasting in the required snippet.  
 
-We've added a bit of tuning for optimal prop wash handling which should be ideal for new installs but might change the tune of an existing quad. These are included in the **NEW** snippets. Use the **UPGRADE** snippets for existing already tuned quads where you just want to enable the rpm filter. Click on the snippet for your board and cut/paste the commands into the CLI.
+Click on the snippet for your board and cut/paste the commands into the CLI.
 
 Don't be discouraged if your target isn't listed. Many targets will work. Use this [Default Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf), try it out and report back.
 
@@ -75,17 +81,21 @@ If your board is supported the board snippet should get you up in the air with v
 
 ### Loop times and DSHOT protocol
 
-Bidirectional DSHOT works with DSHOT 300, 600 and 1200, and also with Proshot 1000. Remember, though, that for each frame sent there will now be a frame coming back, and between input and output frames there is a period of 25us to switch the line, DMA, and timers. The loop time selection needs to be low enough that given the DSHOT protocol rate both frames + 50 us fit into one gyro loop iteration.
+Bidirectional DSHOT works with DSHOT 300, 600 and 1200, and also with Proshot 1000. 
 
-Both bidirectional DSHOT and the RPM filter are fairly CPU intensive and it is very important for the loop rates to be exactly on spot so that the filters get tuned to the right frequencies. It is recommended to run at 4k/4k. All DSHOT speeds should work at that loop rate.
+For practical purposes, DShot 300 works best at 4k PID loops, and DShot 600 for 8k PID loops.
+
+Remember that for each frame sent there will now be a frame coming back, and between input and output frames there is a period of 25us to switch the line, DMA, and timers. The loop time selection needs to be low enough that given the DSHOT protocol rate both frames + 50 us fit into one gyro loop iteration.
+
+Both bidirectional DSHOT and the RPM filter are fairly CPU intensive and it is very important for the loop rates to be exactly on spot so that the filters get tuned to the right frequencies. It is recommended to run at 4k/4k with DShot 300 initially. All DSHOT speeds should work at that loop rate.  
 
 On F4, RPM telemetry costs about 3-4uS per motor per line direction change. So something around 24-32uS for the line direction switching both directions together. The RPM filter has 36 notch filters that get dynamically tuned at 1000Hz update frequency. So running at 8k/8k can get tight.
 
-First install the BLHeli_32 test firmware on your ESCs. Also switch off any extended startup melody since that currently interferes with bidirectional DSHOT. The standard startup tones will work fine though.
+First install the ESC firmware on your ESCs. Switch off any extended startup melody since that currently interferes with bidirectional DSHOT. The standard startup tones will work fine though.
 
 ### DMA
 
-The current implementation requires normal DMA to be used, not burst DMA. This may or may not work with a given FC. You can simply try it out:
+The current implementation requires normal DMA to be used, not burst DMA. Turning burst DMA off may, of itself, not work with a given FC. You can try it out in advance:
 
 ``set dshot_burst=off``
 
@@ -156,6 +166,61 @@ In this case we have the Gyro/PID configured in 8k/8k and this line show us that
 
 There are two blackbox debug modes to verify the RPM filter: RPM_FILTER logs the frequency of each motor as reported by the ESC. DSHOT_RPM_TELEMETRY logs the unconverted eRPM.
 
+### Supported targets
+
+| Target | New Install Snippet | Upgrade Snippet | Notes | Supported Motors|
+| --- | --- | --- | --- | --- |
+| AG3XF4|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  | M1 - M4 (tested Mister_M) |
+| AIKONF4|[new](https://github.com/betaflight/bidircfg/blob/master/AIKONF4.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/AIKONF4-upgrade.cf) |  | M1 - M4 (tested fujin) |
+| ALIENFLIGHTNGF7 | [new](https://github.com/betaflight/bidircfg/blob/master/ALIENFLIGHTNGF7.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/ALIENFLIGHTNGF7-upgrade.cf) | M3 doesn't work, use one of M5-9 instead. LED doesn't work with M1 | M1-M2, M4-M9 |
+|ALIENWHOOP|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)|| M1-M4 | 
+|ANYFCF7|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1 M2 M3 M4 M5 M6 M9|
+|ANYFCM7|[new](https://github.com/betaflight/bidircfg/blob/master/ANYFCM7.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/ANYFCM7-upgrade.cf)||M1 M2 M3 M4 M5 M7 M9 M10|
+|BETAFLIGHTF4|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)| | M1 - M4 ok (tested Balint) |
+|CLRACINGF4|[new](https://github.com/betaflight/bidircfg/blob/master/CLRACINGF4.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/CLRACINGF4-upgrade.cf)| | M1-M4 ok|
+|CLRACINGF7|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)|Motor 4 doesn't work. Use the LED pad instead|M1 M2 M3 M5|
+|DALRCF4|[new](https://github.com/betaflight/bidircfg/blob/master/DALRCF4.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DALRCF4-upgrade.cf)||M1-M6 (tested QuadMcFly)|
+|DALRCF722DUAL|[new](https://github.com/betaflight/bidircfg/blob/master/DALRCF722DUAL.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DALRCF722DUAL-upgrade.cf)||M1-M6. But either M5 or M6|
+|DYSF4PRO|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 (tested BRadFPV)|
+|ELINF405|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 (tested elin-neo)|
+|ELINF722|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 (tested elin-neo)|
+|EXF722DUAL|[new](https://github.com/betaflight/bidircfg/blob/master/EXF722DUAL.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/EXF722DUAL-upgrade.cf)||M1-M8|
+|FLYWOOF7DUAL|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M6|
+|FORTINIF4|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4(tested QuadMcFly)|
+|FOXEERF722DUAL|[new](https://github.com/betaflight/bidircfg/blob/master/FOXEERF722DUAL.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/FOXEERF722DUAL-upgrade.cf)||M1-M6|
+|FURYF4|[new](https://github.com/betaflight/bidircfg/blob/master/FURYF4SD.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/FURYF4SD-upgrade.cf)||M1-M4, No LED support, Tested RawFPV|
+|FURYF7|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4|
+|HAKRCF722|[new](https://github.com/betaflight/bidircfg/blob/master/HAKRCF722.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/HAKRCF722-upgrade.cf)||M1-M6|
+|KAKUTEF4V2 | [new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  ||M1-M4 tested|
+|KISSFCV2F7|[new](https://github.com/betaflight/bidircfg/blob/master/KISSFCV2F7.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/KISSFCV2F7-upgrade.cf)||M1-M6|
+|LUXF4OSD  | [new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  ||M1-M4 tested (Mister_M)|
+|MAMBAF722|[new](https://github.com/betaflight/bidircfg/blob/master/MAMBAF722.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/MAMBAF722-upgrade.cf)||M1-M4 tested (kc10kevin)|
+|MATEKF405|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 tested (Wudz_17)|
+|MATEKF722|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M8|
+|MATEKF722SE|[new](https://github.com/betaflight/bidircfg/blob/master/MATEKF722SE.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/MATEKF722SE-upgrade.cf)|M5 does not work|M1-M4, M6-M8|
+|MLTEMPF4|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 (tested RC2 monko760)|
+|NERO|[new](https://github.com/betaflight/bidircfg/blob/master/NERO.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/NERO-upgrade.cf)||M1-M8|
+|NOX|[new](https://github.com/betaflight/bidircfg/blob/master/NOX.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/NOX-upgrade.cf)||M1-M4|
+|NUCLEOF7|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)|M4 does not work but can be replaced with M6|M1-M3,M6|
+|NUCLEOF722|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)|M4 does not work but can be replaced with M6|M1-M3,M6|
+|OMNIBUSF4|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 (tested omerco)|
+|OMNIBUSF4SD|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 (tested joe lucid)|
+|OMNIBUSF4FW|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)| | M1-M4 tested (skonk) |
+|OMNIBUSF7|[new](https://github.com/betaflight/bidircfg/blob/master/OMNIBUSF7.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/OMNIBUSF7-upgrade.cf)||M1-M4 (tested in RC2 IgguT)|
+|OMNINXTF7|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4|
+|PYRODRONEF4|[new](https://github.com/betaflight/bidircfg/blob/master/PYRODRONEF4.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/PYRODRONEF4-upgrade.cf)||M1-M4 (tested fujin)|
+|REVOLTOSD|[new](https://github.com/betaflight/bidircfg/blob/master/REVOLT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/REVOLT-upgrade.cf)||M1-M4 (tested JayBird)|
+|SPRACINGF7DUAL|[new](https://github.com/betaflight/bidircfg/blob/master/SPRACINGF7DUAL.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/SPRACINGF7DUAL-upgrade.cf)||M1-M10|
+|YUPIF7|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M6|
+
+Please add additional verified configurations here.
+
+### Unsupported targets
+
+| Target | Notes |
+| --- | --- |
+
+
 ### Tuning (Sugar_K)
 
 The RPM filter will do the heavy lifting without adding much latency. Typically only the Dterm lowpass filter and the dynamic notch are additionally needed to remove broad background noise and frame resonances, respectively. **You should remove the filters in stages, test hovering and flying after each change to verify that your motors are not getting too hot.**
@@ -218,65 +283,8 @@ Finally, I do recommend using the D only TPA (aka TDA, which is now the default 
 set tpa_rate = 80
 set tpa_breakpoint = 1750
 ```
-
 #### Note: The RC Smoothing fix for FrSky section has been moved to the [4.0 Tuning Notes](4.0-Tuning-Notes#bonus-section-rc-smoothing-fix-for-frsky-transmitters) page.
 
-
-
-
-### Supported targets
-
-| Target | New Install Snippet | Upgrade Snippet | Notes | Supported Motors|
-| --- | --- | --- | --- | --- |
-| AG3XF4|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  | M1 - M4 (tested Mister_M) |
-| AIKONF4|[new](https://github.com/betaflight/bidircfg/blob/master/AIKONF4.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/AIKONF4-upgrade.cf) |  | M1 - M4 (tested fujin) |
-| ALIENFLIGHTNGF7 | [new](https://github.com/betaflight/bidircfg/blob/master/ALIENFLIGHTNGF7.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/ALIENFLIGHTNGF7-upgrade.cf) | M3 doesn't work, use one of M5-9 instead. LED doesn't work with M1 | M1-M2, M4-M9 |
-|ALIENWHOOP|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)|| M1-M4 | 
-|ANYFCF7|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1 M2 M3 M4 M5 M6 M9|
-|ANYFCM7|[new](https://github.com/betaflight/bidircfg/blob/master/ANYFCM7.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/ANYFCM7-upgrade.cf)||M1 M2 M3 M4 M5 M7 M9 M10|
-|BETAFLIGHTF4|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)| | M1 - M4 ok (tested Balint) |
-|CLRACINGF4|[new](https://github.com/betaflight/bidircfg/blob/master/CLRACINGF4.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/CLRACINGF4-upgrade.cf)| | M1-M4 ok|
-|CLRACINGF7|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)|Motor 4 doesn't work. Use the LED pad instead|M1 M2 M3 M5|
-|DALRCF4|[new](https://github.com/betaflight/bidircfg/blob/master/DALRCF4.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DALRCF4-upgrade.cf)||M1-M6 (tested QuadMcFly)|
-|DALRCF722DUAL|[new](https://github.com/betaflight/bidircfg/blob/master/DALRCF722DUAL.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DALRCF722DUAL-upgrade.cf)||M1-M6. But either M5 or M6|
-|DYSF4PRO|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 (tested BRadFPV)|
-|ELINF405|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 (tested elin-neo)|
-|ELINF722|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 (tested elin-neo)|
-|EXF722DUAL|[new](https://github.com/betaflight/bidircfg/blob/master/EXF722DUAL.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/EXF722DUAL-upgrade.cf)||M1-M8|
-|FLYWOOF7DUAL|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M6|
-|FORTINIF4|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4(tested QuadMcFly)|
-|FOXEERF722DUAL|[new](https://github.com/betaflight/bidircfg/blob/master/FOXEERF722DUAL.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/FOXEERF722DUAL-upgrade.cf)||M1-M6|
-|FURYF4|[new](https://github.com/betaflight/bidircfg/blob/master/FURYF4SD.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/FURYF4SD-upgrade.cf)||M1-M4, No LED support, Tested RawFPV|
-|FURYF7|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4|
-|HAKRCF722|[new](https://github.com/betaflight/bidircfg/blob/master/HAKRCF722.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/HAKRCF722-upgrade.cf)||M1-M6|
-|KAKUTEF4V2 | [new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  ||M1-M4 tested|
-|KISSFCV2F7|[new](https://github.com/betaflight/bidircfg/blob/master/KISSFCV2F7.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/KISSFCV2F7-upgrade.cf)||M1-M6|
-|LUXF4OSD  | [new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  ||M1-M4 tested (Mister_M)|
-|MAMBAF722|[new](https://github.com/betaflight/bidircfg/blob/master/MAMBAF722.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/MAMBAF722-upgrade.cf)||M1-M4 tested (kc10kevin)|
-|MATEKF405|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 tested (Wudz_17)|
-|MATEKF722|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M8|
-|MATEKF722SE|[new](https://github.com/betaflight/bidircfg/blob/master/MATEKF722SE.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/MATEKF722SE-upgrade.cf)|M5 does not work|M1-M4, M6-M8|
-|MLTEMPF4|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 (tested RC2 monko760)|
-|NERO|[new](https://github.com/betaflight/bidircfg/blob/master/NERO.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/NERO-upgrade.cf)||M1-M8|
-|NOX|[new](https://github.com/betaflight/bidircfg/blob/master/NOX.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/NOX-upgrade.cf)||M1-M4|
-|NUCLEOF7|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)|M4 does not work but can be replaced with M6|M1-M3,M6|
-|NUCLEOF722|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)|M4 does not work but can be replaced with M6|M1-M3,M6|
-|OMNIBUSF4|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 (tested omerco)|
-|OMNIBUSF4SD|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 (tested joe lucid)|
-|OMNIBUSF4FW|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)| | M1-M4 tested (skonk) |
-|OMNIBUSF7|[new](https://github.com/betaflight/bidircfg/blob/master/OMNIBUSF7.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/OMNIBUSF7-upgrade.cf)||M1-M4 (tested in RC2 IgguT)|
-|OMNINXTF7|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4|
-|PYRODRONEF4|[new](https://github.com/betaflight/bidircfg/blob/master/PYRODRONEF4.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/PYRODRONEF4-upgrade.cf)||M1-M4 (tested fujin)|
-|REVOLTOSD|[new](https://github.com/betaflight/bidircfg/blob/master/REVOLT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/REVOLT-upgrade.cf)||M1-M4 (tested JayBird)|
-|SPRACINGF7DUAL|[new](https://github.com/betaflight/bidircfg/blob/master/SPRACINGF7DUAL.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/SPRACINGF7DUAL-upgrade.cf)||M1-M10|
-|YUPIF7|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M6|
-
-Please add additional verified configurations here.
-
-### Unsupported targets
-
-| Target | Notes |
-| --- | --- |
 
 
 ### References
