@@ -15,7 +15,7 @@ Too much FeedForward can cause:
 
 Since RC data comes into the flight controller in 'packets', we actually get a series of sudden steps coming in.  The derivative of an instant step is an infinitely high spike, which is basically useless.  Back in 3.4.0 we introduced 'filter' mode RC smoothing, where an 'input' lowpass filter rounded off those steps; the derivative now became a wider spike that we could use.  We then applied a 'derivative' lowpass over that spike, which smoothed it out into a kind of 'lump' of FF for each incoming step.  AUTO RC filtering adapts the smoothing filters dynamically to the apparent incoming RC step rate; manual setups can be fine-tuned to any desired degree of smoothness, at the cost of input delay.
 
-Currently erratic RC steps are a major problem.  OpenTx 2.3 is likely to improve this a bit for FrSky users, and TBS are introducing a 'locked 50hz mode' to improve on this.
+Currently erratic RC steps are a major problem.  OpenTx 2.3 is likely to improve this a bit for FrSky users, and TBS are introducing a 'locked 150hz mode' to improve on this.
 
 4.1 introduces several novel `ff_2.0` technologies that improve on these limitations.
 
@@ -57,7 +57,7 @@ ff_max_rate_limit attenuates / prevents FF induced overshoot at the start of a f
 
 When performing quick flips or rolls, the sticks typically stop suddenly when they hit the physical limit of their travel.  With Expo and SuperRate applied to your Rates, the rate of increase in Setpoint is greatest just before the sticks stop.  At this point in time, the quad itself is turning really fast and has a ton of rotational momentum.  The Expo\SuperRate effect means FF is absolutely massive too.  All this, just before the sticks suddenly come to a grinding halt.  
 
-Significant overshoot, even with a lot of D, is basically inevitable.  In pervious versions, you could use D_min to boost your D-gains high enough to compensate, but it was difficult to find the balance.  Additionally, the transition would be sudden and the opposing pair of motors have to spin up and go full throttle, which in turn causes wobbles on the other axes and makes the quad climb.  Using a ton of D to control this has its own problems, eg noise and dumbing down responsiveness at other times.
+Significant overshoot, even with a lot of D, is basically inevitable.  In previous versions, you could use D_min to boost your D-gains high enough to compensate, but it was difficult to find the balance.  Additionally, the transition would be sudden and the opposing pair of motors have to spin up and go full throttle, which in turn causes wobbles on the other axes and makes the quad climb.  Using a ton of D to control this has its own problems, eg noise and dumbing down responsiveness at other times.
 
 ff_max_rate_limit predictively identifies situations in which the sticks are likely to hit their limit, and cuts FF in anticipation of that happening.  It kind of 'looks ahead' and pre-emptively reduces FF just at the right time, typically totally eliminating the overshoot that would otherwise happen.  
 
