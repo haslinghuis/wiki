@@ -13,7 +13,7 @@ Too much FeedForward can cause:
 - spikes in the motor traces and brief shakes with big RC steps
 - gyro getting ahead of setpoint
 
-Since RC data comes into the flight controller in 'packets', we actually get a series of sudden steps coming in.  The derivative of an instant step is an infinitely high spike, which is basically useless.  Back in 3.5 we introduced 'filter' mode RC smoothing, where an 'input' lowpass filter rounded off those steps; the derivative now became a wider spike that we could use.  We then applied a 'derivative' lowpass over that spike, which smoothed it out into a kind of 'lump' of FF for each incoming step.  AUTO RC filtering adapts the smoothing filters dynamically to the apparent incoming RC step rate; manual setups can be fine-tuned to any desired degree of smoothness, at the cost of input delay.
+Since RC data comes into the flight controller in 'packets', we actually get a series of sudden steps coming in.  The derivative of an instant step is an infinitely high spike, which is basically useless.  Back in 3.4.0 we introduced 'filter' mode RC smoothing, where an 'input' lowpass filter rounded off those steps; the derivative now became a wider spike that we could use.  We then applied a 'derivative' lowpass over that spike, which smoothed it out into a kind of 'lump' of FF for each incoming step.  AUTO RC filtering adapts the smoothing filters dynamically to the apparent incoming RC step rate; manual setups can be fine-tuned to any desired degree of smoothness, at the cost of input delay.
 
 Currently erratic RC steps are a major problem.  OpenTx 2.3 is likely to improve this a bit for FrSky users, and TBS are introducing a 'locked 50hz mode' to improve on this.
 
