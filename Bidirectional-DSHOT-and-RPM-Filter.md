@@ -1,33 +1,43 @@
 ### UPDATE: Bidirectional DSHOT and RPM Filter now available on BLHeli_S escs. [Early Access here!](https://jflight.net) ###
 
-### DSHOT & Betaflight 4.0
+# DSHOT & Betaflight 4.1
 
-[Bidirectional DSHOT](https://github.com/betaflight/betaflight/pull/7264) is a new feature in Betaflight 4.0 which lets the flight controller receive high frequency RPM telemetry for each motor on the ESC motor signal line. It does not require any additional wiring or an additional telemetry back-channel. Each DSHOT frame from the FC gets acknowledged by a frame from the ESC containing the current eRPM. The FC needs to know the motor pole count to convert to RPM.
+## Introduction
+
+The RPM based notch filtering results in far more effective removal of motor noise from the gyro data than ever before, with less delay.  The dynamic notch filter then doesn't need to be so wide, and is freed up to more effectively chase and eliminate other frame resonances at frequencies other than motor rpm.  Together they provide a much more effective solution for noise management and bent props than ever before.  In most cases, enabling rpm filtering will mean that the lowpass filters can be shifted higher, or in some cases turned off completely, further reducing delay and improving propwash.  This should only be done by experienced users after reading the [tuning guide](#Tuning).
+
+[Bidirectional DSHOT](https://github.com/betaflight/betaflight/pull/7264) is a new feature in Betaflight 4.1 which lets the flight controller receive high frequency RPM telemetry for each motor on the ESC motor signal line. It does not require any additional wiring or an additional telemetry back-channel. Each DSHOT frame from the FC gets acknowledged by a frame from the ESC containing the current eRPM. The FC needs to know the motor pole count to convert to RPM.  
 
 [The RPM filter](https://github.com/betaflight/betaflight/pull/7271) is a bank of 36 notch filters on gyro and Dterm which takes advantage of this high frequency RPM telemetry data to implement a motor harmonics filter which removes motor noise with surgical precision. By default configuration it runs 12 notch filters each on pitch, roll, and yaw, covering the first 3 harmonics of each motor's RPM for the gyro filter bank.
 
-These two features are currently supported by betaflight 4.1 with BLHeli_32 ESCs that have been updated to the latest 'GCR' firmware and BLHeli-S ESCs that have been flashed using [JFlight](https://jflight.net)  _See [References](#References)_
+These two features are currently supported by betaflight 4.1 with BLHeli_32 ESCs that have been updated to the latest 'GCR' firmware and BLHeli-S ESCs that have been flashed using [JFlight](https://jflight.net).
 
-Here's a demo of the feature in flight. Quad has minimal filtering other than the rpm filter, handles very well and shows close to no prop wash: 
+Earlier versions for betaflight 4.0 required different ESC code.  The use of 4.1 and GCR code is strongly recommended. _See [References](#References)_
+
+Here's a demo in flight. Quad has minimal filtering other than the rpm filter, handles very well and shows close to no prop wash: 
 https://youtu.be/jwFYaGHp91c, https://youtu.be/SoG245vmaLo
 
 ### Arming Prevention Check
 
 If the RPM Filter is enabled but one or more of the ESC's are not supplying valid telemetry data, arming will be prevented, and the `RPMFILTER` message will be shown on the OSD (see [Arming Sequence & Safety](Arming-Sequence-&-Safety)). This prevents arming with incomplete or non-working configurations that may result in flyaways or hot motors. See below to ensure the ESC's are properly configured to support this feature.
 
-## Configuration
+## ESC Configuration
 
-### BLHeli_32 Bidirectional DShot Firmware
+### Bidirectional DShot Firmware
 
-For RPM Filtering to work, the ESC must support the Bidirectional DShot protocol. 
+For RPM Filtering to work, the ESC must support the Bidirectional DShot protocol, and Bidirectional DShot must be enabled in the CLI.  
 
-For BLHeli_32, the hex file is not available in the configurator, and must be downloaded separately and selected in the flashing interface. BetaFlight 4.0.x requires the [BLHeli_32 32.6.4](https://github.com/bitdump/BLHeli/tree/master/BLHeli_32%20ARM/BLHeli_32%20Test%20code%20Rev32.6.4%20hex%20files) firmware. BetaFlight 4.1 nightly builds requires the more recent [32.6.6 firmware](https://github.com/bitdump/BLHeli/tree/master/BLHeli_32%20ARM/BLHeli_32%20Test%20code%20Rev32.6.4%20hex%20files/Rev32.6.6%20for%20inverted%20bidirectional%20dshot%20and%20GCR%20return%20data%20only). 
+The Bidirectional DShot protocol is different in 4.1 from 4.0.  In 4.1 a GCR encoding scheme is used for the return data.  It is important that the ESC code is correct for the version of Betaflight you are running. 
 
-The Bidirectional DShot protocol is different in 4.1 and is based a GCR encoding shema for the return data, so it is important that you match the correct version of BLHeli_32 to the version of Betaflight you are running. Download the correct firmware for your ESC brand/model by right clicking on "Raw" and choosing "Save As", and flash it onto **all four** ESCs. You will need to select the firmware file separately for each ESC as it will default to the most recent stable version of BLHeli.
+For BLHeli_32, the hex file is not available in the configurator, and must be downloaded separately and selected in the flashing interface. BetaFlight 4.0.x requires the [BLHeli_32 32.6.4](https://github.com/bitdump/BLHeli/tree/master/BLHeli_32%20ARM/BLHeli_32%20Test%20code%20Rev32.6.4%20hex%20files) firmware. BetaFlight 4.1 requires the more recent [32.6.6 firmware](https://github.com/bitdump/BLHeli/tree/master/BLHeli_32%20ARM/BLHeli_32%20Test%20code%20Rev32.6.4%20hex%20files/Rev32.6.6%20for%20inverted%20bidirectional%20dshot%20and%20GCR%20return%20data%20only). 
+
+Download the correct firmware for your ESC brand/model by right clicking on "Raw" and choosing "Save As", and flash it onto **all four** ESCs. You will need to select the firmware file separately for each ESC as it will default to the most recent stable version of BLHeli.
 
 Remove any extended startup melody if you have configured one for the ESCs since that currently interferes with Bidirectional DSHOT. The standard startup tones will work fine.
 
-For JESC flash the latest GCR version to your BLHeli-S ESC/s using the JESC BLHeli configurator.
+For JESC and 4.1, flash the latest GCR version to your BLHeli-S ESC/s using the JESC BLHeli configurator.
+
+## Betaflight Configuration
 
 ### Motor Magnets
 
@@ -37,17 +47,70 @@ The ESCs report eRPM, which needs to be converted to RPM using the number of mag
 
 ### Config Snippet
 
-Check the table at the bottom of this page to see if your target is supported.  Some boards require a reconfiguration of timer or dma channels, which is most easily done by pasting in the required snippet.  
-
-Click on the snippet for your board and cut/paste the commands into the CLI.
+The easiest way to make the required changes in Betaflight is to copy and paste the relevant snippet, from the list below, into the CLI, and saving.
 
 Don't be discouraged if your target isn't listed. Many targets will work. Use this [Default Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf), try it out and report back.
 
 Beware of issue https://github.com/betaflight/betaflight/issues/8019: a diff of the config after applying the snippet will currently not cleanly reproduce the config when applied to a clean install. To fix this take any ```dma pin``` lines in the snippet and reapply them after applying your diff.
 
+### Snippets for supported targets
+
+| Target | Install Snippet | Notes | Supported Motors|
+| --- | --- | --- | --- |
+| AG3XF4| [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  | M1 - M4 (tested Mister_M) |
+| AIKONF4|[Snippet](https://github.com/betaflight/bidircfg/blob/master/AIKONF4-upgrade.cf) |  | M1 - M4 (tested fujin) |
+| ALIENFLIGHTNGF7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/ALIENFLIGHTNGF7-upgrade.cf) | M3 doesn't work, use one of M5-9 instead. LED doesn't work with M1 | M1-M2, M4-M9 |
+|ALIENWHOOP|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)|| M1-M4 | 
+|ANYFCF7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1 M2 M3 M4 M5 M6 M9|
+|ANYFCM7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/ANYFCM7-upgrade.cf)||M1 M2 M3 M4 M5 M7 M9 M10|
+|BETAFLIGHTF4|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)| | M1 - M4 ok (tested Balint) |
+|CLRACINGF4|[Snippet](https://github.com/betaflight/bidircfg/blob/master/CLRACINGF4-upgrade.cf)| | M1-M4 ok|
+|CLRACINGF7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)|Motor 4 doesn't work. Use the LED pad instead|M1 M2 M3 M5|
+|DALRCF4|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DALRCF4-upgrade.cf)||M1-M6 (tested QuadMcFly)|
+|DALRCF722DUAL|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DALRCF722DUAL-upgrade.cf)||M1-M6. But either M5 or M6|
+|DYSF4PRO|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 (tested BRadFPV)|
+|ELINF405|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 (tested elin-neo)|
+|ELINF722|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 (tested elin-neo)|
+|EXF722DUAL|[Snippet](https://github.com/betaflight/bidircfg/blob/master/EXF722DUAL-upgrade.cf)||M1-M8|
+|FLYWOOF7DUAL|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M6|
+|FORTINIF4|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4(tested QuadMcFly)|
+|FOXEERF722DUAL|[Snippet](https://github.com/betaflight/bidircfg/blob/master/FOXEERF722DUAL-upgrade.cf)||M1-M6|
+|FURYF4|[Snippet](https://github.com/betaflight/bidircfg/blob/master/FURYF4SD-upgrade.cf)||M1-M4, No LED support, Tested RawFPV|
+|FURYF7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4|
+|HAKRCF722|[Snippet](https://github.com/betaflight/bidircfg/blob/master/HAKRCF722-upgrade.cf)||M1-M6|
+|KAKUTEF4V2|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  ||M1-M4 tested|
+|KISSFCV2F7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/KISSFCV2F7-upgrade.cf)||M1-M6|
+|LUXF4OSD|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  ||M1-M4 tested (Mister_M)|
+|MAMBAF722|[Snippet](https://github.com/betaflight/bidircfg/blob/master/MAMBAF722-upgrade.cf)||M1-M4 tested (kc10kevin)|
+|MATEKF405|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 tested (Wudz_17)|
+|MATEKF722|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M8|
+|MATEKF722SE|[Snippet](https://github.com/betaflight/bidircfg/blob/master/MATEKF722SE-upgrade.cf)|M5 does not work|M1-M4, M6-M8|
+|MLTEMPF4|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 (tested RC2 monko760)|
+|NERO|[Snippet](https://github.com/betaflight/bidircfg/blob/master/NERO-upgrade.cf)||M1-M8|
+|NOX|[Snippet](https://github.com/betaflight/bidircfg/blob/master/NOX-upgrade.cf)||M1-M4|
+|NUCLEOF7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)|M4 does not work but can be replaced with M6|M1-M3,M6|
+|NUCLEOF722|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)|M4 does not work but can be replaced with M6|M1-M3,M6|
+|OMNIBUSF4|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 (tested omerco)|
+|OMNIBUSF4SD|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 (tested joe lucid)|
+|OMNIBUSF4FW|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)| | M1-M4 tested (skonk) |
+|OMNIBUSF7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/OMNIBUSF7-upgrade.cf)||M1-M4 (tested in RC2 IgguT)|
+|OMNINXTF7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4|
+|PYRODRONEF4|[Snippet](https://github.com/betaflight/bidircfg/blob/master/PYRODRONEF4-upgrade.cf)||M1-M4 (tested fujin)|
+|REVOLTOSD|[Snippet](https://github.com/betaflight/bidircfg/blob/master/REVOLT-upgrade.cf)||M1-M4 (tested JayBird)|
+|SPRACINGF7DUAL|[Snippet](https://github.com/betaflight/bidircfg/blob/master/SPRACINGF7DUAL-upgrade.cf)||M1-M10|
+|YUPIF7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M6|
+
+Please add additional verified configurations here.
+
+### Unsupported targets
+
+| Target | Notes |
+| --- | --- |
+
+
 ### Config Verification
 
-Now your FC is set up for bidirectional dshot. You now need to verify that it works. To do so power cycle FC and ESC. Connect the lipo first to the ESC, then the USB cable. Open the CLI and enter ``status``. For BF 4.1 builds use the command ``dshot_telemetry_info`` instead. You should now see bidirectional dshot statistics similar to this:
+Now your FC is set up for bidirectional dshot, let's verify that it works. To do so power cycle FC and ESC. Connect the lipo first to the ESC, then the USB cable.  Open the CLI and enter ``status``. For BF 4.1 builds use the command ``dshot_telemetry_info`` instead. You should now see bidirectional dshot statistics similar to this:
 
 ```
 Dshot reads: 145267
@@ -60,7 +123,7 @@ Dshot RPM Motor 3: 0
 ```
 The number of invalid packets should not exceed 1% of all Dshot reads. All motors should report an RPM of 0.
 
-Type ``exit`` to leave the CLI. Go to the motors tab and let all motors spin very slowly. Go back to the CLI and repeat the ``status`` command. Now your output should look like this:
+Type ``exit`` to leave the CLI. Go to the motors tab, click the safety toggle, move the slider up, and let all motors spin very slowly. Go back to the CLI and repeat the ``status`` command. Now your output should look like this:
 
 ```
 Dshot reads: 505108
@@ -73,7 +136,8 @@ Dshot RPM Motor 3: 111
 ```
 **Note that the motors have to actually be spinning at the time you check with the `status` command for a non-zero RPM to be reported.**
 
-If so you're ready for your first test flight! Log to blackbox if you can. The snippet sets the debug_mode to rpm_filter which allows you to see the live rpm of your quad in your blackbox log.
+Now you're ready for your first test flight! Log to blackbox if you can. The snippet sets the debug_mode to rpm_filter which allows you to see the live rpm of your quad in your blackbox log.  For later logs, and to test filters for tuning, change this to `set debug_mode = GYRO_SCALED`
+
 
 ## Advanced Topics
 
@@ -83,7 +147,7 @@ If your board is supported the board snippet should get you up in the air with v
 
 Bidirectional DSHOT works with DSHOT 300, 600 and 1200, and also with Proshot 1000. 
 
-For practical purposes, DShot 300 works best at 4k PID loops, and DShot 600 for 8k PID loops.
+For practical purposes, DShot 300 works well at all PID loop rates.
 
 Remember that for each frame sent there will now be a frame coming back, and between input and output frames there is a period of 25us to switch the line, DMA, and timers. The loop time selection needs to be low enough that given the DSHOT protocol rate both frames + 50 us fit into one gyro loop iteration.
 
@@ -166,84 +230,88 @@ In this case we have the Gyro/PID configured in 8k/8k and this line show us that
 
 There are two blackbox debug modes to verify the RPM filter: RPM_FILTER logs the frequency of each motor as reported by the ESC. DSHOT_RPM_TELEMETRY logs the unconverted eRPM.
 
-### Supported targets
+## Tuning
 
-| Target | Install Snippet | Notes | Supported Motors|
-| --- | --- | --- | --- |
-| AG3XF4| [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  | M1 - M4 (tested Mister_M) |
-| AIKONF4|[Snippet](https://github.com/betaflight/bidircfg/blob/master/AIKONF4-upgrade.cf) |  | M1 - M4 (tested fujin) |
-| ALIENFLIGHTNGF7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/ALIENFLIGHTNGF7-upgrade.cf) | M3 doesn't work, use one of M5-9 instead. LED doesn't work with M1 | M1-M2, M4-M9 |
-|ALIENWHOOP|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)|| M1-M4 | 
-|ANYFCF7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1 M2 M3 M4 M5 M6 M9|
-|ANYFCM7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/ANYFCM7-upgrade.cf)||M1 M2 M3 M4 M5 M7 M9 M10|
-|BETAFLIGHTF4|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)| | M1 - M4 ok (tested Balint) |
-|CLRACINGF4|[Snippet](https://github.com/betaflight/bidircfg/blob/master/CLRACINGF4-upgrade.cf)| | M1-M4 ok|
-|CLRACINGF7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)|Motor 4 doesn't work. Use the LED pad instead|M1 M2 M3 M5|
-|DALRCF4|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DALRCF4-upgrade.cf)||M1-M6 (tested QuadMcFly)|
-|DALRCF722DUAL|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DALRCF722DUAL-upgrade.cf)||M1-M6. But either M5 or M6|
-|DYSF4PRO|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 (tested BRadFPV)|
-|ELINF405|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 (tested elin-neo)|
-|ELINF722|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 (tested elin-neo)|
-|EXF722DUAL|[Snippet](https://github.com/betaflight/bidircfg/blob/master/EXF722DUAL-upgrade.cf)||M1-M8|
-|FLYWOOF7DUAL|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M6|
-|FORTINIF4|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4(tested QuadMcFly)|
-|FOXEERF722DUAL|[Snippet](https://github.com/betaflight/bidircfg/blob/master/FOXEERF722DUAL-upgrade.cf)||M1-M6|
-|FURYF4|[Snippet](https://github.com/betaflight/bidircfg/blob/master/FURYF4SD-upgrade.cf)||M1-M4, No LED support, Tested RawFPV|
-|FURYF7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4|
-|HAKRCF722|[Snippet](https://github.com/betaflight/bidircfg/blob/master/HAKRCF722-upgrade.cf)||M1-M6|
-|KAKUTEF4V2|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  ||M1-M4 tested|
-|KISSFCV2F7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/KISSFCV2F7-upgrade.cf)||M1-M6|
-|LUXF4OSD|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  ||M1-M4 tested (Mister_M)|
-|MAMBAF722|[Snippet](https://github.com/betaflight/bidircfg/blob/master/MAMBAF722-upgrade.cf)||M1-M4 tested (kc10kevin)|
-|MATEKF405|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 tested (Wudz_17)|
-|MATEKF722|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M8|
-|MATEKF722SE|[Snippet](https://github.com/betaflight/bidircfg/blob/master/MATEKF722SE-upgrade.cf)|M5 does not work|M1-M4, M6-M8|
-|MLTEMPF4|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 (tested RC2 monko760)|
-|NERO|[Snippet](https://github.com/betaflight/bidircfg/blob/master/NERO-upgrade.cf)||M1-M8|
-|NOX|[Snippet](https://github.com/betaflight/bidircfg/blob/master/NOX-upgrade.cf)||M1-M4|
-|NUCLEOF7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)|M4 does not work but can be replaced with M6|M1-M3,M6|
-|NUCLEOF722|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)|M4 does not work but can be replaced with M6|M1-M3,M6|
-|OMNIBUSF4|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 (tested omerco)|
-|OMNIBUSF4SD|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 (tested joe lucid)|
-|OMNIBUSF4FW|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)| | M1-M4 tested (skonk) |
-|OMNIBUSF7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/OMNIBUSF7-upgrade.cf)||M1-M4 (tested in RC2 IgguT)|
-|OMNINXTF7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4|
-|PYRODRONEF4|[Snippet](https://github.com/betaflight/bidircfg/blob/master/PYRODRONEF4-upgrade.cf)||M1-M4 (tested fujin)|
-|REVOLTOSD|[Snippet](https://github.com/betaflight/bidircfg/blob/master/REVOLT-upgrade.cf)||M1-M4 (tested JayBird)|
-|SPRACINGF7DUAL|[Snippet](https://github.com/betaflight/bidircfg/blob/master/SPRACINGF7DUAL-upgrade.cf)||M1-M10|
-|YUPIF7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M6|
+The RPM filter will do the heavy lifting of removing nearly all motor noise without adding much latency. 
 
-Please add additional verified configurations here.
+However, general 'junk' noise from bearings, wind and turbulence will not be removed by the RPM filters;   lowpass filtering will still be required to control those noise elements.  
 
-### Unsupported targets
+Frame resonances, which manifest as large fixed frequency noise lines, won't be removed by the RPM filters either; they are probably best managed by keeping the Dynamic Notch.  
 
-| Target | Notes |
-| --- | --- |
+The default filters in 4.1 are different from 4.0.  They have been designed to work well with RPM filtering with no changes, and should be used when first flying with the rpm filter.  Pilots trying out rpm filtering with 4.0x should set their filters to the 4.1 defaults when trying out rpm filtering using the snippet below, but we recommend starting rpm with 4.1 and a clean install.
 
+```
+set gyro_lowpass_type = PT1
+set gyro_lowpass_hz = 150
+set dyn_lpf_gyro_min_hz = 200
+set dyn_lpf_gyro_max_hz = 500
+set gyro_lowpass2_type = PT1
+set gyro_lowpass2_hz = 250
 
-### Tuning (Sugar_K)
+set dterm_lowpass_type = PT1
+set dterm_lowpass_hz = 100
+set dyn_lpf_dterm_min_hz = 70
+set dyn_lpf_dterm_max_hz = 170
+set dterm_lowpass2_type = PT1
+set dterm_lowpass2_hz = 150
+```
 
-The RPM filter will do the heavy lifting without adding much latency. Typically only the Dterm lowpass filter and the dynamic notch are additionally needed to remove broad background noise and frame resonances, respectively. **You should remove the filters in stages, test hovering and flying after each change to verify that your motors are not getting too hot.**
-running quick black box logs and looking at the gyro spectra graphs to see if you suddenly gain any massive noise spikes is also a good idea and more useful that just running Plasma Tree graphs as your PT graphs are going to look worse as you turn stuff off but this is to be expected as you reduce the overall filter levels.
-please also note the absolute numbers and number of filters turned off were reached using a very clean high power to weight racing quad with good props...
-Lastly  **do not turn off all the Dterm filtering, doing this is a very bad idea**
+Filter delay can be reduced by:
+- converting biquad filters to PT1s, 
+- lifting the lowpass filter cutoff number to a higher value, or 
+- by disabling the entire filter bank (setting its cutoff value to zero).  
 
-**The first thing to do is to get a good 4.0 tune**.
-I don't recommend dumping in some one else filtering settings with out first tuning your quad on 4.0 as it is. basically running RPM filtering in its optimised state means you have very little actual filtering and for this to work well you are going to need a mechanically sound build that doesn't  have de-lamitated arm, loose bolts, a bad gyro chip or cooked motor bearing. by starting with a quad tuned with out the RPM filtering you can simply move to turning off the un needed filters and then optimise them a little.
+Each of these actions lets more noise through the filter bank to the PIDs and then to the motors.  
 
+## WARNING:  Removing entire lowpass filter blocks can result in hot or burnt out motors, or flyaways!
 
+ALWAYS save a `diff all` listing of your starting filter settings before changing anything, so you can go back. 
 
-now on to the tuning of filtering using the Bi Directional Dshot 
+ALWAYS do your first test flight with the standard 4.1 filter settings!  The only exception to this rule is where  the current filter settings have been carefully tuned beforehand are known to be good.  
 
-remember to test fly every single stage of this process 
+Note that adding rpm filtering using a snippet *will not* change your exiting lowpass filter settings, and will not cause flyways of itself.  It will narrow the dynamic notch to focus it better on chasing frame resonances, but that of itself is likely not to be bad.
 
-first filter to  turn off is the stage2 Dterm lowpass filter.
+## Lifting or removing lowpass filters after a successful test flight
 
-``set dterm_lowpass2_hz = 0``
+If the test flights are positive - motors cool, no bad noises on arming, etc - you may be able to improve propwash by lifting filter cutoffs or disabling filters.
 
-Next is to slim up the dynamic notch filter. We recommend setting dynamic notch width to 0, this gives you the classic single notch filter, not the cascaded version.
+**Filters should only ever be changed one at a time, test hovering and then test flying after each individual change to verify that your motors are not getting too hot.**
 
-``set dyn_notch_width_percent = 0``
+Black box logging, before and after, and using PID Toolbox to look at the spectral graphs is useful to know which filters aren't needed and to check that you haven't suddenly gained any massive noise spikes.  
+
+**Do not turn off all the Dterm filtering, this is a very bad idea!  Nearly all quads require two PT1's on D.**
+
+To disable lowpass filters you are going to need a mechanically sound build that doesn't have de-laminated arms, loose bolts, a bad gyro chip or cooked motor bearings. 
+
+My personal preference for reducing lowpass delay on clean builds is to simply move all 4.1 filters to higher values, keeping their relative values the same.  For instance, the following snippet shifts all 4.1 lowpass filters up by about 50%, and cuts delay by a couple of milliseconds:
+
+ ```
+set gyro_lowpass_type = PT1
+set gyro_lowpass_hz = 225
+set dyn_lpf_gyro_min_hz = 300
+set dyn_lpf_gyro_max_hz = 900
+set gyro_lowpass2_type = PT1
+set gyro_lowpass2_hz = 350
+
+set dterm_lowpass_type = PT1
+set dterm_lowpass_hz = 150
+set dyn_lpf_dterm_min_hz = 100
+set dyn_lpf_dterm_max_hz = 250
+set dterm_lowpass2_type = PT1
+set dterm_lowpass2_hz = 200
+```
+
+Personally I recommend the above as the first step up in filtering.  It is quite a big step up and should not be done unless you are sure the build is good.  On first arming, if the quad makes a grinding noise or shows random tendencies to jump up on arming or during hover, that usually means you've gone up to high (on D mostly).
+
+I do not recommend going higher unless you are expert and have blackbox logging capabilities.  However the next step would be something like 1.75x defaults, and then even 2x defaults.  By the time the lowpass filters are set twice as high as defaults, you sure better have a really clean quad - but you'll have halved your lowpass filter delay.
+
+## Configuring the Dynamic Notch with RPM filtering
+
+The Dynamic Notch range is by default set in AUTO mode.  This uses the value of dyn_lpf_gyro_max_hz to choose the frequency range over which the dynamic notch will operate.  
+
+Because frame resonances usually happen in the LOW or MEDIUM dynamic notch range, it is best, when rpm filtering is used, to configure the Dynamic Notch manually into LOW range mode.  If you know you have no frame resonances below 150hz, choosing MEDIUM will reduce delay and keep the dynamic notch higher.  
+
+If you want the dynamic notch to stay above a certain minimum value, because you know you have no resonances below that value and want it to target something higher up, set the dynamic notch minimum frequency accordingly (just below the resonance that you are targeting)
 
 Now you need to set the minimum frequency and range for the dynamic notch filter. On a typical 5” racer, a dynamic min of 200hz and range of medium should be fine, a heavier acro quad 150hz would be a good start  but for a larger quad with 6-7” props, you might need to set the min to 100hz and range to low. A black box log will verify this, basically you are looking for the frequency of the idle motor noise.
 ```
