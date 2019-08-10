@@ -301,59 +301,63 @@ set dterm_lowpass2_type = PT1
 set dterm_lowpass2_hz = 200
 ```
 
-Personally I recommend the above as the first step up in filtering.  It is quite a big step up and should not be done unless you are sure the build is good.  On first arming, if the quad makes a grinding noise or shows random tendencies to jump up on arming or during hover, that usually means you've gone up to high (on D mostly).
+Personally I recommend the above as the first step to reduce filtering delay.  It is quite a big step up and should not be done unless you are sure the build is good.  On first arming, if the quad makes a grinding noise or shows random tendencies to jump up on arming or during hover, that usually means you've gone up to high (on D mostly).
 
-I do not recommend going higher unless you are expert and have blackbox logging capabilities.  However the next step would be something like 1.75x defaults, and then even 2x defaults.  By the time the lowpass filters are set twice as high as defaults, you sure better have a really clean quad - but you'll have halved your lowpass filter delay.
+I do not recommend going higher unless you are an expert and have blackbox logging capabilities, or like living dangerously.  However the next step would be something like 1.75x defaults, and then even 2x defaults.  If the lowpass filters are set twice as high as defaults, you sure better have a really clean quad - but you'll have halved your lowpass filter delay.
 
 ## Configuring the Dynamic Notch with RPM filtering
 
-The Dynamic Notch range is by default set in AUTO mode.  This uses the value of dyn_lpf_gyro_max_hz to choose the frequency range over which the dynamic notch will operate.  
+The Dynamic Notch range is by default set to AUTO mode.  This uses the value of dyn_lpf_gyro_max_hz to choose the frequency range over which the dynamic notch will operate.  
 
 Because frame resonances usually happen in the LOW or MEDIUM dynamic notch range, it is best, when rpm filtering is used, to configure the Dynamic Notch manually into LOW range mode.  If you know you have no frame resonances below 150hz, choosing MEDIUM will reduce delay and keep the dynamic notch higher.  
 
 If you want the dynamic notch to stay above a certain minimum value, because you know you have no resonances below that value and want it to target something higher up, set the dynamic notch minimum frequency accordingly (just below the resonance that you are targeting)
 
-Now you need to set the minimum frequency and range for the dynamic notch filter. On a typical 5” racer, a dynamic min of 200hz and range of medium should be fine, a heavier acro quad 150hz would be a good start  but for a larger quad with 6-7” props, you might need to set the min to 100hz and range to low. A black box log will verify this, basically you are looking for the frequency of the idle motor noise.
+For example, this snippet would let the dynamic notch run between 90 to about 330hz with a narrow single notch:
+```
+set dyn_notch_range = low
+set dyn_notch_min_hz = 90
+set dyn_notch_q = 200
+set dyn_notch_width = 0
+```
+This snippet would let the dynamic notch range from 180 to about 550hz with a narrow single notch:
 ```
 set dyn_notch_range = medium
-set dyn_notch_min_hz = 200
+set dyn_notch_min_hz = 180
+set dyn_notch_q = 200
+set dyn_notch_width = 0
 ```
-If the quad is very clean, you can likely get away with the dynamic notch Q of 200-250 (stock is 120). This makes the notch narrower and produce less latency.
 
-``set dyn_notch_q = 200``
+If the resonance line is very narrow, you can likely get away with the dynamic notch Q of 250.  Wider or more diffuse resonance bands may need a Q of 120-150.  
 
-Next is gyro lowpass filtering. Remember there are both static and dynamic gyro lpfs, if you turn off the dynamic it will revert to a static lowpass and you need to turn that off too. 
+It is always best to compare spectrums with dynamic filter on or off to check exactly what it is doing.
+
+It is possible to turn the dynamic notch filter off altogether on stiff resonance-free builds, but this should be done with caution, and is best tested by before and after logging confirms that it is not contributing meaningfully to the end result. 
+
+## Disabling low-pass filters completely
+
+This can have fairly substantial effects and should only be done only by people familiar with filtering who appreciate the risks involved.  Generally it is safer to move filters up or down as a group (eg move all of them up by 20%, or back down by 30% if motors are hot).  This is safer and a bit easier to tune than disabling them.
+
+The following will disable the first gyro lowpass completely:
 ```
 set gyro_lowpass_hz = 0
 set dyn_lpf_gyro_max_hz = 0
 ```
 
-If your quad doesn't like this and your motors get too hot, reenable the static gyro lowpass filter and change its type to PT1 to at least reduce its latency by a small amount.
+This will disable the second gyro lowpass completely:
 ```
-set gyro_lowpass_hz = 150
-set gyro_lowpass_type = PT1
+set gyro_lowpass2_hz = 0
 ```
-Lastly, you should be able to push the dynamic Dterm lowpass filtering up a bit higher, you need it so don’t turn it off, but you can increase the min/max and make some big savings to the overall filter latency. Stock settings for min/max are 150Hz and 250Hz, respectively. Starting with the max, you can try to push it to 300 or even 400Hz.
 
-``set dyn_lpf_dterm_max_hz = 300``
+## TPA
 
-Once that is set, you can try pushing the min up to 200Hz. If this is too high, you will get a grinding noise from your motors at idle, and if that happens, simply lower it back to 150Hz.
-
-``set dyn_lpf_dterm_min_hz = 200``
-
-**UPDATE I'm leaning towards a min of 150hz**
-
-
-It is possible to run the dynamic notch filter off if you lower your Dterm lowpass enough, but this removes any filtering that can react to external influences, e.g. wind. I had a near flyaway while testing this on a really windy day where the wind gusts were stirring up the motors enough to not descend on idle throttle.
-
-Finally, I do recommend using the D only TPA (aka TDA, which is now the default in 4.0) using a strong rate cut of 60-80% (default 50%) and the threshold at 1750 (default 1500). This way, you still have strong D for pulling out of prop wash, but it also cuts nice and sharply for high throttle runs.
+This snippet will set a 4.0x build to the 4.1 default of 65% D only TPA starting at 1250
 ```
-set tpa_rate = 80
-set tpa_breakpoint = 1750
+set tpa_rate = 65
+set tpa_breakpoint = 1250
 ```
+
 #### Note: The RC Smoothing fix for FrSky section has been moved to the [4.0 Tuning Notes](4.0-Tuning-Notes#bonus-section-rc-smoothing-fix-for-frsky-transmitters) page.
-
-
 
 ### References
 
