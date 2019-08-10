@@ -98,7 +98,8 @@ resource motor 3 a6
 resource motor 4 a11
 save
 ```
-    As you enter these commands, you will be seeing error messages in the form "* ERROR * X also used by MOTOR Y". The overlapping mapping is transitional, and you will be ending up with clean mapping at the end. If you don't like the error messages, you can clear the old mapping by following typing following commands prior to new mapping.
+As you enter these commands, you will be seeing error messages in the form `* ERROR * X also used by MOTOR Y`. The overlapping mapping is transitional, and you will be ending up with clean mapping at the end. If you don't like the error messages, you can clear the old mapping by following typing following commands prior to new mapping.
+
 ```
 resource motor 1 none
 resource motor 2 none
