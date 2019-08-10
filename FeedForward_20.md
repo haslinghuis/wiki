@@ -4,11 +4,11 @@
 
 ## What is FeedForward?
 
-Feed forward (FF) is a drive factor that increases stick responsiveness.  It is proportional to the instantaneous derivative, or 'rate of change' of stick movement.  The faster the sticks are moving, the more FF we get.  FF helps P drive the quad into turns.  Unlike P, FF cannot cause oscillation, no matter how much FF is added. 
+FeedForward (FF) is a drive factor that increases stick responsiveness.  It is proportional to the instantaneous derivative, or 'rate of change' of stick movement.  The faster the sticks are moving, the more FeedForward we get.  FeedForward helps P drive the quad into turns.  Unlike P, FeedForward cannot cause oscillation, no matter how much FF is added. 
 
-With FF, we get better stick responsiveness without pushing P so high as to cause wobbles.  It also reduces the delay time between input and response.  Less delay means less error and less I windup/overshoot.  FF is great for racing, LOS and radical freestyle flying.  It isn't great for cinematic HD.
+With FeedForward, we get better stick responsiveness without pushing P so high as to cause wobbles.  It also reduces the delay time between input and response.  Less delay means less error and less I windup/overshoot.  It is great for racing, LOS and radical freestyle flying.  It isn't great for cinematic HD.
 
-Too much feedforward can cause:
+Too much FeedForward can cause:
 - overshoot at the start of a flip, particularly when the sticks hit 100% travel
 - exaggerated responsiveness to RC steps
 - amplification of shaking when the pilot is cold or nervous
@@ -30,13 +30,13 @@ Most motors take time to spin up / slow down.  They need to be pushed harder at 
 
 But the stick acceleration comes on immediately.  ff_boost is a PID parameter that is proportional to that stick acceleration.  Technically it is the second derivative of setpoint.
 
-ff_boost peaks really early in a move, the instant the sticks start moving.  It then eases away to zero when the sticks are at mid-travel, because at constant stick velocity we have lots of FF but no acceleration.  ff_boost finally goes negative as the sticks slow down. 
+`ff_boost` peaks really early in a move, the instant the sticks start moving.  It then eases away to zero when the sticks are at mid-travel, because at constant stick velocity we have lots of FF but no acceleration.  ff_boost finally goes negative as the sticks slow down. 
 
 The acceleration component does exactly what we need to help overcome motor delay - pushes early, eases off mid-move, and actively slows down the motors at the end.  With the right amount of FF and ff_boost, a responsive quad can have nearly completely lag-free tracking of inputs and not get overshoot.  
 
-Typically ff_boost of 20 is about right for most quads.  Bigger values should be used with caution.  
+Typically `set ff_boost = 20` is about right for most quads.  Larger values may be used on low-authority quads or quads with motors that are slow to spool up.  More than 40 would be unusual.  
 
-The amount of ff_boost effect is linked to the amount of F set in the PIDs.  Think of it as a 'factor' that modulates the timing of how your FF gets applied to the motors.  More boost brings the FF on earlier. 
+The strength of the boost is directly linked to the amount of F set in the PIDs.  Think of ff_boost as a 'factor' that modulates the timing of how your FF gets applied to the motors.  More boost brings the FF on earlier. 
 
 Advanced users who can log should do a test flight with fast twitchy inputs, quick left/right stabs, and look for the timing and amount of their FF signal.  Ideally P should have little work left to do when the boost/FF components are correct.  
 
@@ -46,11 +46,11 @@ ff_boost can work without any other of the ff_2.0 features being active.
 
 This is a 'digital' way of calculating FF from each new RC 'step'.  It gives a cleaner feedforward trace than with the old 'filter' method, with less delay.  
 
-ff_interpolate_sp analyses each new incoming RC data packet on arrival, and the calculated change in setpoint is converted to an immediate step up in FF.  Each step up is held constant until the next RC data step arrives.  
+`set ff_interpolate_sp = ON` analyses each new incoming RC data packet on arrival, and the calculated change in setpoint is converted to an immediate step up in FF.  Each step up is held constant until the next RC data step arrives.  
 
 The sharp corner of the FF step can be smoothed according to the rc_smoothing_derivative lowpass filter frequency.  This is set dynamically by default in AUTO mode, but can be manually overriden if desired.  50hz is a good smoothing value for reliable 50hz signals, but a clean 50hz RC data signal is unusual; 20hz smoothes out most traces adequately; 10hz may be needed for very long range and cinematic quads where you get large steps and poor quality links and don't care so much about delay.
 
-Dropped RC packets will normally cause sudden FF drops to zero.  ff_extend (see below) is intended to help manage this specific issue; very low derivative filtering will smooth them over at the cost of delay.
+Dropped RC packets will normally cause sudden FF drops to zero.  ff_spread (see below) is intended to help manage this specific issue.  Alternatively, low rc_smoothing_derivative filtering will smooth the drops out a bit, at the cost of incoming RC delay.
 
 
 ## ff_max_rate_limit
@@ -65,7 +65,7 @@ ff_max_rate_limit predictively identifies situations in which the sticks are lik
 
 A major benefit is that it markedly reduces the need for the opposing motors to spin up.  Flips become cleaner and more accurate than before, and climb on flipping under LOS conditions is much less. 
 
-The default value of 100 is strong enough that most quads will slightly under-shoot at the  very start of the flip; this is intentional, because it better avoids spinning up the reversing pair of motors, and isn't visible in FPV or HD feeds.  A value of 115-120 will generate a more classical 'optimally damped' overshoot/pullback image, with slightly faster terminal response.  But the default of 100 is probably best, even for racing.
+The default value of 100 - `set ff_max_rate_limit = 100` is strong enough that most quads will slightly under-shoot at the  very start of the flip; this is intentional, because it better avoids spinning up the reversing pair of motors, and isn't visible in FPV or HD feeds.  A value of 115-120 will generate a more classical 'optimally damped' overshoot/pullback image, with slightly faster terminal response.  But the default of 100 is probably best, even for racing.
 
 ## ff_spread 
 
@@ -81,19 +81,21 @@ If the ff_spread time is set to twice the normal RC interval for your radio, the
 
 Normal settings for ff_spread would be:
 
-- 18ms for FrSky SBus (9ms packet intervals)
-- 14ms for TBS/Futaba (150hz mode, 6.66 ms packet intervals)
-- 40ms for TBS 50hz mode / R9 (avoid such a high value unless for cinematic long-range)
+- `set ff_spread = 18` for FrSky SBus (9ms packet intervals)
+- `set ff_spread = 14` for TBS/Futaba (150hz mode, 6.66 ms packet intervals)
+- `set ff_spread = 40` for TBS 50hz mode / R9 (avoid such a high value unless for cinematic long-range)
 
-If the packets come in on-time, this code doesn't add delay.  But there is a small downside.  If the pilot makes a fast input, then suddenly holds the sticks perfectly still, ff_spread will hold FF at the previous, high, value for the set time, rather than dropping to zero immediately as it should. This can cause an overshoot for the duration set by the extend value.   
+If the packets come in on-time, this code doesn't add delay.  
 
-This is most useful for long-range / cinematic quads when associated with substantial RC smoothing.  
+There is a small downside.  If the pilot makes a fast input, then suddenly holds the sticks perfectly still, ff_spread will hold FF at the previous, high, value for the set time, rather than dropping to zero immediately as it should. This can cause an overshoot for the duration set by the extend value. It is most easily seen at the start of a flip when the sticks hit their physical limit, but can happen at other times.
+
+`ff_spread` is most useful for long-range / cinematic quads when associated with substantial RC smoothing.  
 
 For racers and general use the quality of the RC link depends mostly on how good your antennas are and how far you plan to fly.  Close-in racing with good antennas probably won't need this.
 
 ## ff_lookahead_limit
 
-This experimental code performs similar lookahead to the ff_max_rate_limit, and limits FF if, at that time in the future, P + FF would be larger than P would be at that point in time.  This may improve overshoot in moves that otherwise would not hit the stick limit.  It has been included for testing purposes. 
+This experimental code performs a lookahead a bit like ff_max_rate_limit, but limits the feedforward element internally if, at the specified time in the future, P + FF would be larger than P would be at that future point in time.  This may improve overshoot in moves that otherwise would not hit the stick limit.  It has been included for testing purposes. 
 
 Kudos to JoeLucid for an awesome set of improvements.  Also ctzsnooze for the boost concept and all Skunkworks gang for testing and validation.  Now we just need better RC links  :-)
 
