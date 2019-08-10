@@ -75,7 +75,7 @@
  - [Integrated Yaw](Integrated-Yaw)
  - [VTX Tables](https://github.com/betaflight/betaflight/wiki/VTX-tables)
  - [Tuning Dynamic Idle](https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle)
- - [FeedForward 2.0](FeedForward_20)
+ - [FeedForward 2.0](Feed-Forward-2.0)
 
 # Troubleshooting
 
