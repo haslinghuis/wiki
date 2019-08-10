@@ -24,17 +24,17 @@ Currently erratic RC steps are a major problem.  OpenTx 2.3 is likely to improve
 
 This is a fantastic new feature that markedly reduces delay in fast setpoint changes.
 
-Most motors take time to spin up / slow down.  They need to be pushed harder at the very start of a move than in the middle.  FF and P both ramp up slowly at the start of a move because initially our fingers move slowly, so until now, the motors haven't got that immediate push.
+Most motors take time to spin up / slow down.  They need to be pushed harder at the very start of a move than in the middle.  FF and P both ramp up slowly at the start of a move because initially our fingers move slowly and most pilots use Expo in their Rates setup. So until now, the motors haven't got that immediate push needed unless really high FF gains were used (250+).  But with FF gains of that matnitude, overshoot is hard to control, especially because of SuperRate being applied at the end of the stick travel, really casing FF to boost the move right when we need the quad to stat to slow down to not overshoot.
 
-But the stick acceleration comes on immediately.  ff_boost is a PID parameter that is proportional to that stick acceleration.  Technically it is the second derivative of setpoint.
+'ff_boost' is a PID parameter that is proportional to the stick acceleration.  Technically it is the second derivative of Setpoint.
 
-`ff_boost` peaks really early in a move, the instant the sticks start moving.  It then eases away to zero when the sticks are at mid-travel, because at constant stick velocity we have lots of FF but no acceleration.  ff_boost finally goes negative as the sticks slow down. 
+Being the second derivative, `ff_boost` peaks really early in a move, the instant the sticks start moving.  It then eases away to zero when the sticks are at mid-travel, because at constant stick velocity we have lots of FF, but no acceleration.  ff_boost finally goes negative as the sticks slow down. 
 
 The acceleration component does exactly what we need to help overcome motor delay - pushes early, eases off mid-move, and actively slows down the motors at the end.  With the right amount of FF and ff_boost, a responsive quad can have nearly completely lag-free tracking of inputs and not get overshoot.  
 
 Typically `set ff_boost = 20` is about right for most quads.  Larger values may be used on low-authority quads or quads with motors that are slow to spool up.  More than 40 would be unusual.  
 
-The strength of the boost is directly linked to the amount of F set in the PIDs.  Think of ff_boost as a 'factor' that modulates the timing of how your FF gets applied to the motors.  More boost brings the FF on earlier. 
+The strength of the boost is directly linked to the amount of FF set in the PIDs.  Think of ff_boost as a 'factor' that modulates the timing of how your FF gets applied to the motors.  More boost brings the FF on earlier. 
 
 Advanced users who can log should do a test flight with fast twitchy inputs, quick left/right stabs, and look for the timing and amount of their FF signal.  Ideally P should have little work left to do when the boost/FF components are correct.  
 
@@ -55,9 +55,9 @@ Dropped RC packets will normally cause sudden FF drops to zero.  ff_spread (see 
 
 ff_max_rate_limit attenuates / prevents FF induced overshoot at the start of a flip.  
 
-When performing quick flips or rolls, the sticks typically stop suddenly when they hit the physical limit of their travel.  With expo, the rate of increase in setpoint is greatest just before the sticks stop.  At this point in time, quad itself is turning really fast and has a ton of rotational momentum.  The expo effect means FF is absolutely massive too.  All this, just before the sticks suddenly come to a grinding halt.  
+When performing quick flips or rolls, the sticks typically stop suddenly when they hit the physical limit of their travel.  With Expo and SuperRate applied to your Rates, the rate of increase in Setpoint is greatest just before the sticks stop.  At this point in time, the quad itself is turning really fast and has a ton of rotational momentum.  The Expo\SuperRate effect means FF is absolutely massive too.  All this, just before the sticks suddenly come to a grinding halt.  
 
-Significant overshoot, even with a lot of D, is basically inevitable.  Normally D and FF drop suddenly, and the opposing pair of motors have to spin up and go full throttle, which in turn causes wobbles on the other axes and makes the quad climb.  Using a ton of D to control this has its own problems, eg noise and dumbing down responsiveness at other times.
+Significant overshoot, even with a lot of D, is basically inevitable.  In pervious versions, you could use D_min to boost your D-gains high enough to compensate, but it was difficult to find the balance.  Additionally, the transition would be sudden and the opposing pair of motors have to spin up and go full throttle, which in turn causes wobbles on the other axes and makes the quad climb.  Using a ton of D to control this has its own problems, eg noise and dumbing down responsiveness at other times.
 
 ff_max_rate_limit predictively identifies situations in which the sticks are likely to hit their limit, and cuts FF in anticipation of that happening.  It kind of 'looks ahead' and pre-emptively reduces FF just at the right time, typically totally eliminating the overshoot that would otherwise happen.  
 
@@ -83,7 +83,7 @@ Normal settings for ff_spread would be:
 - `set ff_spread = 14` for TBS/Futaba (150hz mode, 6.66 ms packet intervals)
 - `set ff_spread = 40` for TBS 50hz mode / R9 (avoid such a high value unless for cinematic long-range)
 
-If the packets come in on-time, this code doesn't add delay.  
+If the packets come in on-time, this code doesn't add delay. Of course if packets are missed, that is a delay, but that is on the TX air protocol or OpenTX and there is nothing Betafligh can do to address that.
 
 There is a small downside.  If the pilot makes a fast input, then suddenly holds the sticks perfectly still, ff_spread will hold FF at the previous, high, value for the set time, rather than dropping to zero immediately as it should. This can cause an overshoot for the duration set by the extend value. It is most easily seen at the start of a flip when the sticks hit their physical limit, but can happen at other times.
 
