@@ -263,23 +263,19 @@ Each of these actions lets more noise through the filter bank to the PIDs and th
 
 ## WARNING:  Removing entire lowpass filter blocks can result in hot or burnt out motors, or flyaways!
 
+**Filters should only ever be changed one at a time, test hovering and then test flying after each individual change to verify that your motors are not getting too hot.**
+
+Black box logging, before and after, and using PID Toolbox to look at the spectral graphs is useful to know which filters aren't needed and to check that you haven't suddenly gained any massive noise spikes. 
+
 ALWAYS save a `diff all` listing of your starting filter settings before changing anything, so you can go back. 
 
 ALWAYS do your first test flight with the standard 4.1 filter settings!  The only exception to this rule is where  the current filter settings have been carefully tuned beforehand are known to be good.  
 
 Note that adding rpm filtering using a snippet *will not* change your exiting lowpass filter settings, and will not cause flyways of itself.  It will narrow the dynamic notch to focus it better on chasing frame resonances, but that of itself is likely not to be bad.
 
-## Lifting or removing lowpass filters after a successful test flight
+## Lifting lowpass filters after a successful test flight
 
 If the test flights are positive - motors cool, no bad noises on arming, etc - you may be able to improve propwash by lifting filter cutoffs or disabling filters.
-
-**Filters should only ever be changed one at a time, test hovering and then test flying after each individual change to verify that your motors are not getting too hot.**
-
-Black box logging, before and after, and using PID Toolbox to look at the spectral graphs is useful to know which filters aren't needed and to check that you haven't suddenly gained any massive noise spikes.  
-
-**Do not turn off all the Dterm filtering, this is a very bad idea!  Nearly all quads require two PT1's on D.**
-
-To disable lowpass filters you are going to need a mechanically sound build that doesn't have de-laminated arms, loose bolts, a bad gyro chip or cooked motor bearings. 
 
 My personal preference for reducing lowpass delay on clean builds is to simply move all 4.1 filters to higher values, keeping their relative values the same.  For instance, the following snippet shifts all 4.1 lowpass filters up by about 50%, and cuts delay by a couple of milliseconds:
 
@@ -299,7 +295,7 @@ set dterm_lowpass2_type = PT1
 set dterm_lowpass2_hz = 200
 ```
 
-Personally I recommend the above as the first step to reduce filtering delay.  It is quite a big step up and should not be done unless you are sure the build is good.  On first arming, if the quad makes a grinding noise or shows random tendencies to jump up on arming or during hover, that usually means you've gone up to high (on D mostly).
+I recommend the above as the first step to reduce filtering delay.  It is quite a big step up and should not be done unless you are sure the build is good.  On first arming, if the quad makes a grinding noise or shows random tendencies to jump up on arming or during hover, that usually means you've gone up to high (on D mostly).
 
 I do not recommend going higher unless you are an expert and have blackbox logging capabilities, or like living dangerously.  However the next step would be something like 1.75x defaults, and then even 2x defaults.  If the lowpass filters are set twice as high as defaults, you sure better have a really clean quad - but you'll have halved your lowpass filter delay.
 
@@ -334,7 +330,9 @@ It is possible to turn the dynamic notch filter off altogether on stiff resonanc
 
 ## Disabling low-pass filters completely
 
-This can have fairly substantial effects and should only be done only by people familiar with filtering who appreciate the risks involved.  Generally it is safer to move filters up or down as a group (eg move all of them up by 20%, or back down by 30% if motors are hot).  This is safer and a bit easier to tune than disabling them.
+To disable lowpass filters, without cooking your motors, you are going to need a mechanically sound build that doesn't have de-laminated arms, loose bolts, a bad gyro chip or noisy motor bearings. 
+
+Disabling filters have fairly substantial effects and should only be done by people familiar with filtering.  Generally it is safer to move filters up or down as a group.
 
 The following will disable the first gyro lowpass completely:
 ```
