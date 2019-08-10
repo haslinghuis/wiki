@@ -169,12 +169,12 @@ There are two blackbox debug modes to verify the RPM filter: RPM_FILTER logs the
 ### Supported targets
 
 | Target | Install Snippet | Notes | Supported Motors|
-| --- | --- | --- | --- | --- |
-| AG3XF4|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  | M1 - M4 (tested Mister_M) |
-| AIKONF4|[new](https://github.com/betaflight/bidircfg/blob/master/AIKONF4.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/AIKONF4-upgrade.cf) |  | M1 - M4 (tested fujin) |
-| ALIENFLIGHTNGF7 | [new](https://github.com/betaflight/bidircfg/blob/master/ALIENFLIGHTNGF7.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/ALIENFLIGHTNGF7-upgrade.cf) | M3 doesn't work, use one of M5-9 instead. LED doesn't work with M1 | M1-M2, M4-M9 |
-|ALIENWHOOP|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)|| M1-M4 | 
-|ANYFCF7|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1 M2 M3 M4 M5 M6 M9|
+| --- | --- | --- | --- |
+| AG3XF4| [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  | M1 - M4 (tested Mister_M) |
+| AIKONF4|[Snippet](https://github.com/betaflight/bidircfg/blob/master/AIKONF4-upgrade.cf) |  | M1 - M4 (tested fujin) |
+| ALIENFLIGHTNGF7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/ALIENFLIGHTNGF7-upgrade.cf) | M3 doesn't work, use one of M5-9 instead. LED doesn't work with M1 | M1-M2, M4-M9 |
+|ALIENWHOOP|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)|| M1-M4 | 
+|ANYFCF7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1 M2 M3 M4 M5 M6 M9|
 |ANYFCM7|[new](https://github.com/betaflight/bidircfg/blob/master/ANYFCM7.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/ANYFCM7-upgrade.cf)||M1 M2 M3 M4 M5 M7 M9 M10|
 |BETAFLIGHTF4|[new](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)| | M1 - M4 ok (tested Balint) |
 |CLRACINGF4|[new](https://github.com/betaflight/bidircfg/blob/master/CLRACINGF4.cf)|[upgrade](https://github.com/betaflight/bidircfg/blob/master/CLRACINGF4-upgrade.cf)| | M1-M4 ok|
