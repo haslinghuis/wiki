@@ -27,7 +27,6 @@
 
 # Setup and More
 
- - [Betaflight 4.0 Bidirectional Dshot & RPM Filter](Bidirectional-DSHOT-and-RPM-Filter) 
  - [Arming Sequence & Safety](Arming-Sequence-&-Safety)
  - [TBS Unify SmartAudio](Unify-Smartaudio)
  - [IRC Tramp](IRC-Tramp)
@@ -74,6 +73,7 @@
  - [D_Min](d_min)
  - [Integrated Yaw](Integrated-Yaw)
  - [VTX Tables](https://github.com/betaflight/betaflight/wiki/VTX-tables)
+ - [Betaflight 4.0 Bidirectional Dshot & RPM Filter](Bidirectional-DSHOT-and-RPM-Filter) 
  - [Tuning Dynamic Idle](https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle)
  - [FeedForward 2.0](Feed-Forward-2.0)
 
