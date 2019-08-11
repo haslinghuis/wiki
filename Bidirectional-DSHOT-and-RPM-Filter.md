@@ -2,7 +2,13 @@
 
 ## Introduction
 
-RPM based notch filtering results in far more effective removal of motor noise from the gyro data than ever before, with less delay.  The dynamic notch filter then doesn't need to be so wide, and is freed up to more effectively chase and eliminate other frame resonances at frequencies other than motor rpm.  Together they provide a much more effective solution for noise management and bent props than ever before.  In most cases, enabling rpm filtering will mean that the lowpass filters can be shifted higher, or in some cases turned off completely, further reducing delay and improving propwash.  This should only be done by experienced users after reading the [tuning guide](#Tuning).
+RPM based filtering gives much more effective removal of motor noise than ever before, with less delay.  
+
+Typically motors will be cooler and sound cleaner, bent prop tolerance much improved, and full throttle cleaner and faster.
+
+If the dynamic notch filter is kept active, it can be narrower, and is free to eliminate frame resonances at frequencies other than motor rpm. 
+
+On clean quads, some of the other lowpass filters can often either be shifted to higher frequencies, or removed, reducing filter delay and improving handling.  This should only be done by experienced users after reading the [tuning guide](#Tuning).
 
 [Bidirectional DSHOT](https://github.com/betaflight/betaflight/pull/7264) is a new feature in Betaflight 4.1 which lets the flight controller receive high frequency RPM telemetry for each motor on the ESC motor signal line. It does not require any additional wiring or an additional telemetry back-channel. Each DSHOT frame from the FC gets acknowledged by a frame from the ESC containing the current eRPM. The FC needs to know the motor pole count to convert to RPM.  
 
@@ -134,26 +140,141 @@ Dshot RPM Motor 3: 111
 ```
 **Note that the motors have to actually be spinning at the time you check with the `status` command for a non-zero RPM to be reported.**
 
-Now you're ready for your first test flight! Log to blackbox if you can. The snippet sets the debug_mode to rpm_filter which allows you to see the live rpm of your quad in your blackbox log.  For later logs, and to test filters for tuning, change this to `set debug_mode = GYRO_SCALED`
+Now you're ready for your first test flight! Log to blackbox if you can. The snippet sets the debug_mode to  `set debug_mode = GYRO_SCALED`, for noise analysis.  To see the live rpm of your quad in your blackbox log use `set debug_mode = RPM_FILTER'. 
+
+## Tuning
+
+The RPM filter will do the heavy lifting of removing nearly all motor noise without adding much latency. 
+
+However, general 'junk' noise from bearings, wind and turbulence will not be removed by the RPM filters.  Some  lowpass filtering will still be required to control those noise elements.  
+
+Frame resonances, which manifest as large fixed frequency noise lines, won't be removed by the RPM filters either; they are probably best managed by keeping the Dynamic Notch.  
+
+For existing builds that already fly well, don't change any filter settings for your first flights.  For builds that are already problematic, and for new builds, we recommend starting with the default 4.1 lowpass filter settings.  This snippet sets filters to 4.1 defaults:
+
+```
+set gyro_lowpass_type = PT1
+set gyro_lowpass_hz = 150
+set dyn_lpf_gyro_min_hz = 200
+set dyn_lpf_gyro_max_hz = 500
+set gyro_lowpass2_type = PT1
+set gyro_lowpass2_hz = 250
+
+set dterm_lowpass_type = PT1
+set dterm_lowpass_hz = 100
+set dyn_lpf_dterm_min_hz = 70
+set dyn_lpf_dterm_max_hz = 170
+set dterm_lowpass2_type = PT1
+set dterm_lowpass2_hz = 150
+```
+
+Once you have a clean flight and everything goes well, and assuming motors are cool and sound good, its possible that you could further reduce filter delay by either:
+- converting existing biquad filters, if any, to PT1s, 
+- lifting lowpass filter cutoff numbers to higher values, or 
+- by disabling the entire filter bank (setting its cutoff value to zero).  
+
+Each of these actions lets more noise through the filter bank to the PIDs and then to the motors.  
+
+## WARNING:  Removing entire lowpass filter blocks can result in hot or burnt out motors, or flyaways!
+
+Filters should only ever be changed one at a time, test hovering and then test flying after each individual change to verify that your motors are not getting too hot.
+
+Black box logging, before and after, and using PID Toolbox to look at the spectral graphs is useful to know which filters aren't needed, and to check that you haven't suddenly gained any massive noise spikes. 
+
+It's best to save a `diff all` listing of your starting filter settings before changing anything, so you can go back. 
+
+
+## Lifting lowpass filters after a successful test flight
+
+The following snippet shifts all 4.1 lowpass filters up by about 50%, and cuts delay by a couple of milliseconds:
+
+ ```
+set gyro_lowpass_type = PT1
+set gyro_lowpass_hz = 225
+set dyn_lpf_gyro_min_hz = 300
+set dyn_lpf_gyro_max_hz = 900
+set gyro_lowpass2_type = PT1
+set gyro_lowpass2_hz = 350
+
+set dterm_lowpass_type = PT1
+set dterm_lowpass_hz = 150
+set dyn_lpf_dterm_min_hz = 100
+set dyn_lpf_dterm_max_hz = 250
+set dterm_lowpass2_type = PT1
+set dterm_lowpass2_hz = 200
+```
+
+If you started with 4.1 default filters, this is quite a big step up.  Only do this if you are confident that the build is clean.  On first arming, if the quad makes a grinding noise or shows random tendencies to jump up on arming or during hover, that usually means you've gone up to high on the filters, or that you have too much D.  Don't fly it like that.
+
+The next step would be something like 1.75x defaults, and then even 2x defaults.  Only the very cleanest quads will be ok when filters are twice as high as normal, but delay is half normal, and that may help propwash significantly.   
+
+## Disabling low-pass filters completely
+
+To disable lowpass filters completely, without cooking your motors, you are going to need a mechanically sound build that doesn't have de-laminated arms, loose bolts, a bad gyro chip or noisy motor bearings. 
+
+Disabling filters have fairly substantial effects and should only be done by people familiar with filtering.  Generally it is safer to move filters up or down as a group.
+
+The following will disable the first gyro lowpass completely:
+```
+set gyro_lowpass_hz = 0
+set dyn_lpf_gyro_max_hz = 0
+```
+
+This will disable the second gyro lowpass completely:
+```
+set gyro_lowpass2_hz = 0
+```
+
+Disabling D filters completely is not recommended.  It is safer to shift them as a group to higher numbers.
+
+
+## Configuring the Dynamic Notch with RPM filtering
+
+The Dynamic Notch range is, by default, set to AUTO mode, and uses the value of dyn_lpf_gyro_max_hz to select the frequency range over which the dynamic notch will operate.  
+
+Because frame resonances usually happen in the LOW or MEDIUM dynamic notch range, it is best, when rpm filtering is used, to manually configure the Dynamic Notch manually one of those ranges.  If you know you have no frame resonances below 150hz, choosing MEDIUM will reduce delay and keep the dynamic notch higher.  
+
+If you want the dynamic notch to stay above a certain minimum value, because you know you have no resonances below that value, set the dynamic notch minimum frequency accordingly (just below the resonance that you are targeting).
+
+For example, this snippet would let the dynamic notch run between 90 to about 330hz with a narrow single notch:
+```
+set dyn_notch_range = low
+set dyn_notch_min_hz = 90
+set dyn_notch_q = 200
+set dyn_notch_width = 0
+```
+This snippet would let the dynamic notch range from 180 to about 550hz with a narrow single notch:
+```
+set dyn_notch_range = medium
+set dyn_notch_min_hz = 180
+set dyn_notch_q = 200
+set dyn_notch_width = 0
+```
+
+If the resonance line is very narrow, you can likely get away with the dynamic notch Q of 250.  Wider or more diffuse resonance bands may need a Q of 120-150.  
+
+It is always best to compare spectrums with dynamic filter on or off to check exactly what it is doing.
+
+It is possible to turn the dynamic notch filter off altogether on stiff resonance-free builds, but this should be done with caution, and is best tested by before and after logging confirms that it is not contributing meaningfully to the end result. 
 
 
 ## Advanced Topics
 
-If your board is supported the board snippet should get you up in the air with very effective default settings. Below is a description of more advanced topics which explains some of the setting in the config snippets.
+Below is a description of the settings in the config snippets.
 
 ### Loop times and DSHOT protocol
 
-Bidirectional DSHOT works with DSHOT 300, 600 and 1200, and also with Proshot 1000. 
-
-For practical purposes, DShot 300 works well at all PID loop rates.
+Bidirectional DSHOT works with DSHOT 300, 600 and 1200, and also with Proshot 1000. For practical purposes, DShot 600 works well at all PID loop rates.
 
 Remember that for each frame sent there will now be a frame coming back, and between input and output frames there is a period of 25us to switch the line, DMA, and timers. The loop time selection needs to be low enough that given the DSHOT protocol rate both frames + 50 us fit into one gyro loop iteration.
 
-Both bidirectional DSHOT and the RPM filter are fairly CPU intensive and it is very important for the loop rates to be exactly on spot so that the filters get tuned to the right frequencies. It is recommended to run at 4k/4k with DShot 300 initially. All DSHOT speeds should work at that loop rate.  
+Both bidirectional DSHOT and the RPM filter are fairly CPU intensive and it is very important for the loop rates to be exactly on spot so that the filters get tuned to the right frequencies. It is recommended to run at 4k/4k with DShot 600 for your initial test flight. All DSHOT speeds should work at that loop rate.  
 
-On F4, RPM telemetry costs about 3-4uS per motor per line direction change. So something around 24-32uS for the line direction switching both directions together. The RPM filter has 36 notch filters that get dynamically tuned at 1000Hz update frequency. So running at 8k/8k can get tight.
+On F4, RPM telemetry costs about 3-4uS per motor per line direction change. Something around 24-32uS is required for the line direction switching both directions together. The RPM filter has 36 notch filters that get dynamically tuned at 1000Hz update frequency. 
 
-First install the ESC firmware on your ESCs. Switch off any extended startup melody since that currently interferes with bidirectional DSHOT. The standard startup tones will work fine though.
+8k4k is good on most F405's; 8k8k is possible, but often needs overclocking. F411's will require over-clocking to run at 8k4k.  F7's run 8k8k without problems.
+
+You may need to switch off any extended startup melody, since that may interfere with bidirectional DSHOT. The standard startup tones are fine.
 
 ### DMA
 
@@ -228,122 +349,6 @@ In this case we have the Gyro/PID configured in 8k/8k and this line show us that
 
 There are two blackbox debug modes to verify the RPM filter: RPM_FILTER logs the frequency of each motor as reported by the ESC. DSHOT_RPM_TELEMETRY logs the unconverted eRPM.
 
-## Tuning
-
-The RPM filter will do the heavy lifting of removing nearly all motor noise without adding much latency. 
-
-However, general 'junk' noise from bearings, wind and turbulence will not be removed by the RPM filters;   lowpass filtering will still be required to control those noise elements.  
-
-Frame resonances, which manifest as large fixed frequency noise lines, won't be removed by the RPM filters either; they are probably best managed by keeping the Dynamic Notch.  
-
-The default filters in 4.1 are different from 4.0.  They have been designed to work well with RPM filtering with no changes, and should be used when first flying with the rpm filter.  Pilots trying out rpm filtering with 4.0x should set their filters to the 4.1 defaults when trying out rpm filtering using the snippet below, but we recommend starting rpm with 4.1 and a clean install.
-
-```
-set gyro_lowpass_type = PT1
-set gyro_lowpass_hz = 150
-set dyn_lpf_gyro_min_hz = 200
-set dyn_lpf_gyro_max_hz = 500
-set gyro_lowpass2_type = PT1
-set gyro_lowpass2_hz = 250
-
-set dterm_lowpass_type = PT1
-set dterm_lowpass_hz = 100
-set dyn_lpf_dterm_min_hz = 70
-set dyn_lpf_dterm_max_hz = 170
-set dterm_lowpass2_type = PT1
-set dterm_lowpass2_hz = 150
-```
-
-Filter delay can be reduced by:
-- converting biquad filters to PT1s, 
-- lifting the lowpass filter cutoff number to a higher value, or 
-- by disabling the entire filter bank (setting its cutoff value to zero).  
-
-Each of these actions lets more noise through the filter bank to the PIDs and then to the motors.  
-
-## WARNING:  Removing entire lowpass filter blocks can result in hot or burnt out motors, or flyaways!
-
-**Filters should only ever be changed one at a time, test hovering and then test flying after each individual change to verify that your motors are not getting too hot.**
-
-Black box logging, before and after, and using PID Toolbox to look at the spectral graphs is useful to know which filters aren't needed and to check that you haven't suddenly gained any massive noise spikes. 
-
-ALWAYS save a `diff all` listing of your starting filter settings before changing anything, so you can go back. 
-
-ALWAYS do your first test flight with the standard 4.1 filter settings!  The only exception to this rule is where  the current filter settings have been carefully tuned beforehand are known to be good.  
-
-Note that adding rpm filtering using a snippet *will not* change your exiting lowpass filter settings, and will not cause flyways of itself.  It will narrow the dynamic notch to focus it better on chasing frame resonances, but that of itself is likely not to be bad.
-
-## Lifting lowpass filters after a successful test flight
-
-If the test flights are positive - motors cool, no bad noises on arming, etc - you may be able to improve propwash by lifting filter cutoffs or disabling filters.
-
-My personal preference for reducing lowpass delay on clean builds is to simply move all 4.1 filters to higher values, keeping their relative values the same.  For instance, the following snippet shifts all 4.1 lowpass filters up by about 50%, and cuts delay by a couple of milliseconds:
-
- ```
-set gyro_lowpass_type = PT1
-set gyro_lowpass_hz = 225
-set dyn_lpf_gyro_min_hz = 300
-set dyn_lpf_gyro_max_hz = 900
-set gyro_lowpass2_type = PT1
-set gyro_lowpass2_hz = 350
-
-set dterm_lowpass_type = PT1
-set dterm_lowpass_hz = 150
-set dyn_lpf_dterm_min_hz = 100
-set dyn_lpf_dterm_max_hz = 250
-set dterm_lowpass2_type = PT1
-set dterm_lowpass2_hz = 200
-```
-
-I recommend the above as the first step to reduce filtering delay.  It is quite a big step up and should not be done unless you are sure the build is good.  On first arming, if the quad makes a grinding noise or shows random tendencies to jump up on arming or during hover, that usually means you've gone up to high (on D mostly).
-
-I do not recommend going higher unless you are an expert and have blackbox logging capabilities, or like living dangerously.  However the next step would be something like 1.75x defaults, and then even 2x defaults.  If the lowpass filters are set twice as high as defaults, you sure better have a really clean quad - but you'll have halved your lowpass filter delay.
-
-## Configuring the Dynamic Notch with RPM filtering
-
-The Dynamic Notch range is by default set to AUTO mode.  This uses the value of dyn_lpf_gyro_max_hz to choose the frequency range over which the dynamic notch will operate.  
-
-Because frame resonances usually happen in the LOW or MEDIUM dynamic notch range, it is best, when rpm filtering is used, to configure the Dynamic Notch manually into LOW range mode.  If you know you have no frame resonances below 150hz, choosing MEDIUM will reduce delay and keep the dynamic notch higher.  
-
-If you want the dynamic notch to stay above a certain minimum value, because you know you have no resonances below that value and want it to target something higher up, set the dynamic notch minimum frequency accordingly (just below the resonance that you are targeting)
-
-For example, this snippet would let the dynamic notch run between 90 to about 330hz with a narrow single notch:
-```
-set dyn_notch_range = low
-set dyn_notch_min_hz = 90
-set dyn_notch_q = 200
-set dyn_notch_width = 0
-```
-This snippet would let the dynamic notch range from 180 to about 550hz with a narrow single notch:
-```
-set dyn_notch_range = medium
-set dyn_notch_min_hz = 180
-set dyn_notch_q = 200
-set dyn_notch_width = 0
-```
-
-If the resonance line is very narrow, you can likely get away with the dynamic notch Q of 250.  Wider or more diffuse resonance bands may need a Q of 120-150.  
-
-It is always best to compare spectrums with dynamic filter on or off to check exactly what it is doing.
-
-It is possible to turn the dynamic notch filter off altogether on stiff resonance-free builds, but this should be done with caution, and is best tested by before and after logging confirms that it is not contributing meaningfully to the end result. 
-
-## Disabling low-pass filters completely
-
-To disable lowpass filters, without cooking your motors, you are going to need a mechanically sound build that doesn't have de-laminated arms, loose bolts, a bad gyro chip or noisy motor bearings. 
-
-Disabling filters have fairly substantial effects and should only be done by people familiar with filtering.  Generally it is safer to move filters up or down as a group.
-
-The following will disable the first gyro lowpass completely:
-```
-set gyro_lowpass_hz = 0
-set dyn_lpf_gyro_max_hz = 0
-```
-
-This will disable the second gyro lowpass completely:
-```
-set gyro_lowpass2_hz = 0
-```
 
 ## TPA
 
