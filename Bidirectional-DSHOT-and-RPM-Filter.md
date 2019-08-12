@@ -16,7 +16,7 @@ There are two underlying technologies:
 
 For RPM Filtering to work, the ESC must support the Bidirectional DShot protocol and Bidirectional DShot must be enabled in the CLI. 
 
-These two features are currently supported by betaflight 4.0 and 4.1 on both BLHeli_32 and BLHeli-S.
+These two features are currently supported by BetaFlight 4.0 and 4.1 on most flight controllers, and most modern BLHeli_32 and BLHeli-S ESCs.
 
 Here's a demo in flight. Quad has minimal filtering other than the rpm filter, handles very well and shows close to no prop wash: 
 https://youtu.be/jwFYaGHp91c, https://youtu.be/SoG245vmaLo
