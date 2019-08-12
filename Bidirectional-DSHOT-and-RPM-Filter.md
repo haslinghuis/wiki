@@ -39,7 +39,7 @@ To download the correct firmware for your ESC brand/model, right click on "Raw" 
 
 Remove any extended startup melody if you have configured one for the ESCs since that currently interferes with Bidirectional DSHOT. The standard startup tones will work fine.
 
-**For BLHeli-S ESCs**, go to [jlfight.net](https://jflight.net), check that your ESC is supported, purchase enough licences, and follow the install instructions (bottom left).  Then download the custom JESC BLHeli-S configurator, select your ESC, and flash the ESC with the correct hex.  For BetaFlight 4.1, use the version at the top of the list, and the version below that for BetaFlight 4.0.  Flash all four ESCs. 
+**For BLHeli-S ESCs**, go to [jlfight.net](https://jflight.net), check that your ESC and FC are supported, purchase enough licences, and follow the install instructions (download the custom JESC BLHeli-S configurator, select your ESC, and flash it with the correct hex).  For BetaFlight 4.1, use the version at the top of the list starting with '4.1...', and the version below that for BetaFlight 4.0.  Flash all four ESCs. 
 
 ## Betaflight Configuration
 
