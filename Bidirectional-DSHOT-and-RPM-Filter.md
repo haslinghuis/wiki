@@ -10,9 +10,9 @@ On clean quads, lowpass filter delay can usually be improved by moving cutoff fr
 
 There are two underlying technologies:
 
-[Bidirectional DSHOT](https://github.com/betaflight/betaflight/pull/7264), a new feature in Betaflight 4.x which lets the flight controller receive accurate RPM telemetry for each motor on the ESC motor signal line. No additional wiring or additional telemetry back-channel is needed. Each DSHOT frame from the FC gets acknowledged by a frame from the ESC containing the current eRPM. The FC uses the motor pole count to convert ERPM to RPM.  
+[**Bidirectional DSHOT**](https://github.com/betaflight/betaflight/pull/7264), a new feature in Betaflight 4.x which lets the flight controller receive accurate RPM telemetry for each motor on the ESC motor signal line. No additional wiring or additional telemetry back-channel is needed. Each DSHOT frame from the FC gets acknowledged by a frame from the ESC containing the current eRPM. The FC uses the motor pole count to convert ERPM to RPM.  
 
-[The RPM filter](https://github.com/betaflight/betaflight/pull/7271) is a bank of 36 notch filters on gyro and (optionally) on Dterm which use the RPM telemetry data to remove motor noise with surgical precision.  By default it runs 12 notch filters each on pitch, roll, and yaw, covering the first 3 harmonics of each motor's noise signature.
+[**RPM filtering**](https://github.com/betaflight/betaflight/pull/7271) is a bank of 36 notch filters on gyro and (optionally) on Dterm which use the RPM telemetry data to remove motor noise with surgical precision.  By default it runs 12 notch filters each on pitch, roll, and yaw, covering the first 3 harmonics of each motor's noise signature.
 
 For RPM Filtering to work, the ESC must support the Bidirectional DShot protocol, and Bidirectional DShot must be enabled in the CLI. 
 
