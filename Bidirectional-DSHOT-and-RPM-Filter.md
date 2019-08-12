@@ -153,6 +153,8 @@ Frame resonances, which manifest as large fixed frequency noise lines, won't be 
 For existing builds that already fly well, don't change any filter settings for your first flights.  For builds that are already problematic, and for new builds, we recommend starting with the default 4.1 lowpass filter settings.  This snippet loads 4.1 default filtering, which has delays of about 3.5ms at idle and 1.1ms on full throttle:
 
 ```
+# 4.1 default lowpass filter set
+
 set gyro_lowpass_type = PT1
 set gyro_lowpass_hz = 150
 set dyn_lpf_gyro_min_hz = 200
@@ -190,6 +192,8 @@ Lifting all filter values by an equal amount is probably the safest and most rel
 The following snippet shifts all 4.1 lowpass filters up by about 50%, reducing total delays to 2.3ms at idle and 0.9ms on full throttle:
 
  ```
+# 4.1 lowpass filter set shifted up 1.5x
+
 set gyro_lowpass_type = PT1
 set gyro_lowpass_hz = 225
 set dyn_lpf_gyro_min_hz = 300
@@ -210,6 +214,8 @@ If you started with 4.1 default filters, this is modest but significant change. 
 The next step would be 2x defaults.  Only the very cleanest quads will be ok when filters are twice as high as normal.  However filter delay is now half normal, and that may help propwash significantly.  Here are 2x 4.1 filter settings; their total latency is 1.7ms at idle and 0.65ms on full throttle:
 
 ```
+# 4.1 lowpass filter set shifted up 2x
+
 set gyro_lowpass_hz = 300
 set dyn_lpf_gyro_max_hz = 1000 set dyn_lpf_gyro_min_hz = 400
 set gyro_lowpass2_type = PT1
