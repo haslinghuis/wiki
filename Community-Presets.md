@@ -248,7 +248,7 @@ set dyn_lpf_dterm_min_hz = 0
 set dyn_lpf_dterm_max_hz = 0
 set dterm_lowpass_type = PT1
 set dterm_lowpass_hz = 0
-set dterm_lowpass2_type = PT1
+set dterm_lowpass2_type = BiQUAD
 set dterm_lowpass2_hz = 125
 
 #For RPM Filter: Without RPM leave at = 8 (default)
