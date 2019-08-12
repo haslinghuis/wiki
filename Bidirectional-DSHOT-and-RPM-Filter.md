@@ -2,17 +2,19 @@
 
 ## Introduction
 
-RPM based filtering gives much more effective removal of motor noise than ever before, with less delay.  
+RPM based filtering gives better motor noise than ever before.  Motors will be cooler, bent prop tolerance is much better, and full throttle sounds cleaner and often is faster.
 
-Typically motors will be cooler and sound cleaner, bent prop tolerance much improved, and full throttle cleaner and faster.
+If the dynamic notch filter is kept active, it can be narrower, reducing delay; also it gets freed up to eliminate frame resonances. 
 
-If the dynamic notch filter is kept active, it can be narrower, and is free to eliminate frame resonances at frequencies other than motor rpm. 
+On clean quads, some of the other lowpass filters can usually be shifted to higher frequencies, or removed, reducing filter delay and improving handling.  This should only be done by experienced users after reading the [tuning guide](#Tuning).
 
-On clean quads, some of the other lowpass filters can often either be shifted to higher frequencies, or removed, reducing filter delay and improving handling.  This should only be done by experienced users after reading the [tuning guide](#Tuning).
+There are two underlying technologies:
 
-[Bidirectional DSHOT](https://github.com/betaflight/betaflight/pull/7264) is a new feature in Betaflight 4.1 which lets the flight controller receive high frequency RPM telemetry for each motor on the ESC motor signal line. It does not require any additional wiring or an additional telemetry back-channel. Each DSHOT frame from the FC gets acknowledged by a frame from the ESC containing the current eRPM. The FC needs to know the motor pole count to convert to RPM.  
+[Bidirectional DSHOT](https://github.com/betaflight/betaflight/pull/7264), a new feature in Betaflight 4.x which lets the flight controller receive accurate RPM telemetry for each motor on the ESC motor signal line. No additional wiring or additional telemetry back-channel is needed. Each DSHOT frame from the FC gets acknowledged by a frame from the ESC containing the current eRPM. The FC uses the motor pole count to convert ERPM to RPM.  
 
-[The RPM filter](https://github.com/betaflight/betaflight/pull/7271) is a bank of 36 notch filters on gyro and Dterm which takes advantage of this high frequency RPM telemetry data to implement a motor harmonics filter which removes motor noise with surgical precision. By default configuration it runs 12 notch filters each on pitch, roll, and yaw, covering the first 3 harmonics of each motor's RPM for the gyro filter bank.
+[The RPM filter](https://github.com/betaflight/betaflight/pull/7271) is a bank of 36 notch filters on gyro and (optionally) on Dterm which use the RPM telemetry data to remove motor noise with surgical precision.  By default it runs 12 notch filters each on pitch, roll, and yaw, covering the first 3 harmonics of each motor's noise signature.
+
+For RPM Filtering to work, the ESC must support the Bidirectional DShot protocol, and Bidirectional DShot must be enabled in the CLI. 
 
 These two features are currently supported by betaflight 4.1 with BLHeli_32 ESCs that have been updated to the latest 'GCR' firmware and BLHeli-S ESCs that have been flashed using [JESC](https://jflight.net).
 
@@ -29,33 +31,31 @@ If the RPM Filter is enabled but one or more of the ESC's are not supplying vali
 
 ### Bidirectional DShot Firmware
 
-For RPM Filtering to work, the ESC must support the Bidirectional DShot protocol, and Bidirectional DShot must be enabled in the CLI.  
+The Bidirectional DShot protocol is different (and more robust) in BetaFlight 4.1 than BetaFlight 4.0.  We recommend using 4.1.  The ESC code must be correct for the version of Betaflight you are running. 
 
-The Bidirectional DShot protocol is different in 4.1 from 4.0.  In 4.1 a GCR encoding scheme is used for the return data.  It is important that the ESC code is correct for the version of Betaflight you are running. 
+**For BLHeli_32 ESCs**, the hex file is not available in the configurator, and must be downloaded separately and selected in the flashing interface. For BetaFlight 4.0.x, get the [BLHeli_32 32.6.4](https://github.com/bitdump/BLHeli/tree/master/BLHeli_32%20ARM/BLHeli_32%20Test%20code%20Rev32.6.4%20hex%20files) firmware.  For BetaFlight 4.1, get the more recent [32.6.6 firmware](https://github.com/bitdump/BLHeli/tree/master/BLHeli_32%20ARM/BLHeli_32%20Test%20code%20Rev32.6.4%20hex%20files/Rev32.6.6%20for%20inverted%20bidirectional%20dshot%20and%20GCR%20return%20data%20only). 
 
-For BLHeli_32, the hex file is not available in the configurator, and must be downloaded separately and selected in the flashing interface. BetaFlight 4.0.x requires the [BLHeli_32 32.6.4](https://github.com/bitdump/BLHeli/tree/master/BLHeli_32%20ARM/BLHeli_32%20Test%20code%20Rev32.6.4%20hex%20files) firmware. BetaFlight 4.1 requires the more recent [32.6.6 firmware](https://github.com/bitdump/BLHeli/tree/master/BLHeli_32%20ARM/BLHeli_32%20Test%20code%20Rev32.6.4%20hex%20files/Rev32.6.6%20for%20inverted%20bidirectional%20dshot%20and%20GCR%20return%20data%20only). 
-
-Download the correct firmware for your ESC brand/model by right clicking on "Raw" and choosing "Save As", and flash it onto **all four** ESCs. You will need to select the firmware file separately for each ESC as it will default to the most recent stable version of BLHeli.
+To download the correct firmware for your ESC brand/model, right click on "Raw" and choose "Save As".  Flash it onto **all four** ESCs. You will need to select the firmware file separately for each ESC as it will default to the most recent stable version of BLHeli.
 
 Remove any extended startup melody if you have configured one for the ESCs since that currently interferes with Bidirectional DSHOT. The standard startup tones will work fine.
 
-For JESC and 4.1, flash the latest GCR version to your BLHeli-S ESC/s using the JESC BLHeli configurator.
+**For BLHeli-S ESCs**, go to [jlfight.net](https://jflight.net), check that your ESC is supported, purchase enough licences, and follow the install instructions (bottom left).  Then download the custom JESC BLHeli-S configurator, select your ESC, and flash the ESC with the correct hex.  For BetaFlight 4.1, use the version at the top of the list, and the version below that for BetaFlight 4.0.  Flash all four ESCs. 
 
 ## Betaflight Configuration
 
 ### Motor Magnets
 
-The ESCs report eRPM, which needs to be converted to RPM using the number of magnets of the motors. These are found on the bell of the motor, not the stator magnets where the windings are located. Typical 5" motors have 14 magnets, so that is the default setting. Smaller motors have fewer magnets, often 12. Count them or look up the motor specs and configure using the following command in the CLI if you don't have 14 magnets:
+The ESCs report eRPM.  This must be converted to RPM using the number of magnets of the motors. The magnets to count are those on the bell of the motor. Do not count the stators where the windings are located. Typical 5" motors have 14 magnets, so that is the default setting. Smaller motors have fewer magnets, often 12. Count them or look up the motor specs.  If you don't have 14 magnets, use the following command in the CLI to set the correct number:
 
 ``set motor_poles=xx`` where xx is the number of magnets you counted.
 
 ### Config Snippet
 
-The easiest way to make the required changes in Betaflight is to copy and paste the relevant snippet, from the list below, into the CLI, and saving.
+The easiest way to enable Betaflight is to copy and paste a snippet from the list below into the CLI, and save.
 
 Don't be discouraged if your target isn't listed. Many targets will work. Use this [Default Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf), try it out and report back.
 
-Beware of issue https://github.com/betaflight/betaflight/issues/8019: a diff of the config after applying the snippet will currently not cleanly reproduce the config when applied to a clean install. To fix this take any ```dma pin``` lines in the snippet and reapply them after applying your diff.
+Beware of this issue https://github.com/betaflight/betaflight/issues/8019: a diff of the config after applying the snippet may not cleanly reproduce the config when applied to a clean install. To fix this take any ```dma pin``` lines in the snippet and reapply them after applying your diff.
 
 ### Snippets for supported targets
 
@@ -114,7 +114,7 @@ Please add additional verified configurations here.
 
 ### Config Verification
 
-Now your FC is set up for bidirectional dshot, let's verify that it works. To do so power cycle FC and ESC. Connect the lipo first to the ESC, then the USB cable.  Open the CLI and enter ``status``. For BF 4.1 builds use the command ``dshot_telemetry_info`` instead. You should now see bidirectional dshot statistics similar to this:
+Your FC is now set up for bidirectional dshot - let's verify that it works. To do so power cycle FC and ESC. Connect the lipo first to the ESC, then the USB cable.  Open the CLI and enter ``status`` for BetaFlight 4.0 and ``dshot_telemetry_info`` for BetaFlight 4.1. You should now see bidirectional dshot statistics similar to this:
 
 ```
 Dshot reads: 145267
@@ -148,9 +148,9 @@ The RPM filter will do the heavy lifting of removing nearly all motor noise with
 
 However, general 'junk' noise from bearings, wind and turbulence will not be removed by the RPM filters.  Some  lowpass filtering will still be required to control those noise elements.  
 
-Frame resonances, which manifest as large fixed frequency noise lines, won't be removed by the RPM filters either; they are probably best managed by keeping the Dynamic Notch.  
+Frame resonances, which manifest as large fixed frequency noise lines, won't be removed by the RPM filters either; they are best managed by keeping the Dynamic Notch active.  
 
-For existing builds that already fly well, don't change any filter settings for your first flights.  For builds that are already problematic, and for new builds, we recommend starting with the default 4.1 lowpass filter settings.  This snippet sets filters to 4.1 defaults:
+For existing builds that already fly well, don't change any filter settings for your first flights.  For builds that are already problematic, and for new builds, we recommend starting with the default 4.1 lowpass filter settings.  This snippet loads 4.1 default filtering, which has delays of about 3.5ms at idle and 1.1ms on full throttle:
 
 ```
 set gyro_lowpass_type = PT1
@@ -168,25 +168,26 @@ set dterm_lowpass2_type = PT1
 set dterm_lowpass2_hz = 150
 ```
 
-Once you have a clean flight and everything goes well, and assuming motors are cool and sound good, its possible that you could further reduce filter delay by either:
-- converting existing biquad filters, if any, to PT1s, 
-- lifting lowpass filter cutoff numbers to higher values, or 
-- by disabling the entire filter bank (setting its cutoff value to zero).  
+If you have a good flight with motors running cool and sounding good, you may well be able to reduce filter delay by reducing or removing some of the other filters.  You may be able to:
 
-Each of these actions lets more noise through the filter bank to the PIDs and then to the motors.  
+- convert existing biquad filters, if any, to PT1s, 
+- lift lowpass filter cutoff numbers to higher values, or 
+- disable an entire filter bank (by setting its cutoff value to zero).  
 
-## WARNING:  Removing entire lowpass filter blocks can result in hot or burnt out motors, or flyaways!
+Each of these actions lets more noise through the filter bank to the PIDs and then to the motors.   
 
-Filters should only ever be changed one at a time, test hovering and then test flying after each individual change to verify that your motors are not getting too hot.
+Filters should only ever be changed one at a time.  After each change, always do a test hover and and a short test flight.  Listen to the motors carefully, and land quickly to confirm that your motors aren't getting too hot.  Then repeat with a more solid flight, and again check motor temps on landing.
 
-Black box logging, before and after, and using PID Toolbox to look at the spectral graphs is useful to know which filters aren't needed, and to check that you haven't suddenly gained any massive noise spikes. 
+Black box logging, before and after, and using PID Toolbox to look at the spectral graphs is very useful.  Logging can help you decide which filters can be lifted, or aren't needed, and to check that you haven't suddenly gained too much extra noise after making a change. 
 
 It's best to save a `diff all` listing of your starting filter settings before changing anything, so you can go back. 
 
 
 ## Lifting lowpass filters after a successful test flight
 
-The following snippet shifts all 4.1 lowpass filters up by about 50%, and cuts delay by a couple of milliseconds:
+Lifting all filter values by an equal amount is probably the safest and most reliable way of reducing filter delay.  
+
+The following snippet shifts all 4.1 lowpass filters up by about 50%, reducing total delays to 2.3ms at idle and 0.9ms on full throttle:
 
  ```
 set gyro_lowpass_type = PT1
@@ -204,15 +205,28 @@ set dterm_lowpass2_type = PT1
 set dterm_lowpass2_hz = 200
 ```
 
-If you started with 4.1 default filters, this is quite a big step up.  Only do this if you are confident that the build is clean.  On first arming, if the quad makes a grinding noise or shows random tendencies to jump up on arming or during hover, that usually means you've gone up to high on the filters, or that you have too much D.  Don't fly it like that.
+If you started with 4.1 default filters, this is modest but significant change.  You should notice improved propwash handling. If, on first arming, the quad makes a grinding noise or makes strange noises and jumps up on arming or during hover, typically you've gone up to high on the filters, or you have too much D.  Don't fly it like that.
 
-The next step would be something like 1.75x defaults, and then even 2x defaults.  Only the very cleanest quads will be ok when filters are twice as high as normal, but delay is half normal, and that may help propwash significantly.   
+The next step would be 2x defaults.  Only the very cleanest quads will be ok when filters are twice as high as normal.  However filter delay is now half normal, and that may help propwash significantly.  Here are 2x 4.1 filter settings; their total latency is 1.7ms at idle and 0.65ms on full throttle:
+
+```
+set gyro_lowpass_hz = 300
+set dyn_lpf_gyro_max_hz = 1000 set dyn_lpf_gyro_min_hz = 400
+set gyro_lowpass2_type = PT1
+set gyro_lowpass2_hz = 500
+
+set dterm_lowpass_type = PT1
+set dterm_lowpass_hz = 200
+set dyn_lpf_dterm_max_hz = 340 set dyn_lpf_dterm_min_hz = 140
+set dterm_lowpass2_type = PT1
+set dterm_lowpass2_hz = 300 
+```  
 
 ## Disabling low-pass filters completely
 
 To disable lowpass filters completely, without cooking your motors, you are going to need a mechanically sound build that doesn't have de-laminated arms, loose bolts, a bad gyro chip or noisy motor bearings. 
 
-Disabling filters have fairly substantial effects and should only be done by people familiar with filtering.  Generally it is safer to move filters up or down as a group.
+Disabling filters have fairly substantial effects and should only be done by people familiar with filtering.  Generally it is safer to move filters up or down as a group, as described above.
 
 The following will disable the first gyro lowpass completely:
 ```
@@ -225,10 +239,12 @@ This will disable the second gyro lowpass completely:
 set gyro_lowpass2_hz = 0
 ```
 
-Disabling D filters completely is not recommended.  It is safer to shift them as a group to higher numbers.
+Disabling D filters completely is not recommended.  It then gets very easy to smoke your motors.  It is safer to shift D filters as a group to higher numbers.
 
 
 ## Configuring the Dynamic Notch with RPM filtering
+
+The rpm snippets re-configure the Dynamic Notch to the narrower single notch configuration, saving filter delay time.
 
 The Dynamic Notch range is, by default, set to AUTO mode, and uses the value of dyn_lpf_gyro_max_hz to select the frequency range over which the dynamic notch will operate.  
 
