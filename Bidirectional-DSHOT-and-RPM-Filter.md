@@ -10,15 +10,15 @@ On clean quads, lowpass filter delay can usually be improved by moving cutoff fr
 
 There are two underlying technologies:
 
-[**Bidirectional DSHOT**](https://github.com/betaflight/betaflight/pull/7264), a new feature in Betaflight 4.x which lets the flight controller receive accurate RPM telemetry for each motor on the ESC motor signal line. No additional wiring or additional telemetry back-channel is needed. Each DSHOT frame from the FC gets acknowledged by a frame from the ESC containing the current eRPM. The FC uses the motor pole count to convert ERPM to RPM.  
+[**Bidirectional DSHOT**](https://github.com/betaflight/betaflight/pull/7264), a new feature in Betaflight 4.x which lets the flight controller receive accurate RPM telemetry over each motor's ESC signal line. No additional wiring or additional telemetry back-channel is needed. Each DSHOT frame from the FC gets acknowledged by a frame from the ESC containing the current eRPM. The FC uses the motor pole count to convert ERPM to RPM.  
 
 [**RPM filtering**](https://github.com/betaflight/betaflight/pull/7271) is a bank of 36 notch filters on gyro and (optionally) on Dterm which use the RPM telemetry data to remove motor noise with surgical precision.  By default it runs 12 notch filters each on pitch, roll, and yaw, covering the first 3 harmonics of each motor's noise signature.
 
-For RPM Filtering to work, the ESC must support the Bidirectional DShot protocol, and Bidirectional DShot must be enabled in the CLI. 
+For RPM Filtering to work, the ESC must support the Bidirectional DShot protocol and Bidirectional DShot must be enabled in the CLI. 
 
-These two features are currently supported by betaflight 4.1 with BLHeli_32 ESCs that have been updated to the latest 'GCR' firmware and BLHeli-S ESCs that have been flashed using [JESC](https://jflight.net).
+These two features are currently supported by betaflight 4.1 with BLHeli_32 ESCs that have been updated to the latest BLHeli32 'GCR' firmware and BLHeli-S ESCs that have been flashed with JESC using the [JFlight ESC Configurator](https://jflight.net).
 
-Earlier versions for betaflight 4.0 required different ESC code.  The use of 4.1 and GCR code is strongly recommended. _See [References](#References)_
+Earlier versions for betaflight 4.0 require different ESC code.  The use of 4.1 and GCR code is strongly recommended. _See [References](#References)_
 
 Here's a demo in flight. Quad has minimal filtering other than the rpm filter, handles very well and shows close to no prop wash: 
 https://youtu.be/jwFYaGHp91c, https://youtu.be/SoG245vmaLo
