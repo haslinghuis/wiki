@@ -215,15 +215,17 @@ The next step would be 2x defaults.  Only the very cleanest quads will be ok whe
 # 4.1 lowpass filter set shifted up 2x
 
 set gyro_lowpass_hz = 300
-set dyn_lpf_gyro_max_hz = 1000 set dyn_lpf_gyro_min_hz = 400
+set dyn_lpf_gyro_max_hz = 1000
+set dyn_lpf_gyro_min_hz = 400
 set gyro_lowpass2_type = PT1
 set gyro_lowpass2_hz = 500
 
 set dterm_lowpass_type = PT1
 set dterm_lowpass_hz = 200
-set dyn_lpf_dterm_max_hz = 340 set dyn_lpf_dterm_min_hz = 140
+set dyn_lpf_dterm_max_hz = 340
+set dyn_lpf_dterm_min_hz = 140
 set dterm_lowpass2_type = PT1
-set dterm_lowpass2_hz = 300 
+set dterm_lowpass2_hz = 300
 ```  
 
 ## Disabling low-pass filters completely
