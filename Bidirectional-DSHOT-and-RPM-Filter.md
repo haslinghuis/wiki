@@ -138,7 +138,7 @@ Dshot RPM Motor 3: 111
 ```
 **Note that the motors have to actually be spinning at the time you check with the `status` command for a non-zero RPM to be reported.**
 
-Now you're ready for your first test flight! Log to blackbox if you can. The snippet sets the debug_mode to  `set debug_mode = GYRO_SCALED`, for noise analysis.  To see the live rpm of your quad in your blackbox log use `set debug_mode = RPM_FILTER'. 
+Now you're ready for your first test flight! Log to blackbox if you can. The snippet sets the debug_mode to  `set debug_mode = GYRO_SCALED`, for noise analysis.  To see the live rpm of your quad in your blackbox log use `set debug_mode = RPM_FILTER`. 
 
 ## Tuning
 
