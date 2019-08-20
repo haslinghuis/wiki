@@ -45,7 +45,7 @@ Remove any extended startup melody if you have configured one for the ESCs since
 
 The ESCs report eRPM.  This must be converted to RPM using the number of magnets of the motors. The magnets to count are those on the bell of the motor. Do not count the stators where the windings are located. Typical 5" motors have 14 magnets, so that is the default setting. Smaller motors have fewer magnets, often 12. Count them or look up the motor specs.  If you don't have 14 magnets, use the following command in the CLI to set the correct number:
 
-``set motor_poles=xx`` where xx is the number of magnets you counted.
+``set motor_poles = xx`` where xx is the number of magnets you counted.
 
 ### Config Snippet
 
@@ -260,17 +260,17 @@ If you want the dynamic notch to stay above a certain minimum value, because you
 
 For example, this snippet would let the dynamic notch run between 90 to about 330hz with a narrow single notch:
 ```
-set dyn_notch_range = low
-set dyn_notch_min_hz = 90
+set dyn_notch_range = LOW
+set dyn_notch_width_percent = 0
 set dyn_notch_q = 200
-set dyn_notch_width = 0
+set dyn_notch_min_hz = 90
 ```
 This snippet would let the dynamic notch range from 180 to about 550hz with a narrow single notch:
 ```
-set dyn_notch_range = medium
-set dyn_notch_min_hz = 180
+set dyn_notch_range = MEDIUM
+set dyn_notch_width_percent = 0
 set dyn_notch_q = 200
-set dyn_notch_width = 0
+set dyn_notch_min_hz = 180
 ```
 
 If the resonance line is very narrow, you can likely get away with the dynamic notch Q of 250.  Wider or more diffuse resonance bands may need a Q of 120-150.  
@@ -302,7 +302,7 @@ You may need to switch off any extended startup melody, since that may interfere
 
 The current implementation requires normal DMA to be used, not burst DMA. Turning burst DMA off may, of itself, not work with a given FC. You can try it out in advance:
 
-``set dshot_burst=off``
+``set dshot_burst = OFF``
 
 And test whether your quad still flies. If so proceed to the next step:
 
@@ -310,11 +310,11 @@ And test whether your quad still flies. If so proceed to the next step:
 
 Since the RPM filter works with very narrow notch filters, it's imperative that the gyro loop time does not vary and is exactly as specified. This used to require low loop rates and overclocking. A scheduler change has now been added, which allows consistent gyro rates even at higher loop rates. Bidirectional DSHOT requires enabling this feature:
 
-``set scheduler_optimize_rate=on``
+``set scheduler_optimize_rate = ON``
 
 ### Enabling Bidirectional Dshot
 
-``set dshot_bidir=on``
+``set dshot_bidir = ON``
 
 See if your motors still spin up. If so try detach the USB cable, connect a battery and reconnect USB. Now go to the CLI and type ``status``. You should see DSHOT telemetry being reported. The reported RPM should be zero for each motor and there should be few errors.
 
@@ -322,7 +322,7 @@ See if your motors still spin up. If so try detach the USB cable, connect a batt
 
 The ESCs report eRPM, which needs to be converted to RPM using the number of poles (magnets) of the motors. These are found on the bell of the motor, not the stator magnets where the windings are located. Typical 5" motors have 14 poles, so that is the default setting. Smaller motors have fewer poles, often 12. Count them or look up the motor specs and configure using:
 
-``set motor_poles=14``
+``set motor_poles = 14``
 
 ### Verifying consistent loop time
 
