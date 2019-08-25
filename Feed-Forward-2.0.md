@@ -81,7 +81,7 @@ Normal settings for ff_spread would be:
 
 - `set ff_spread = 18` for FrSky SBus (9ms packet intervals)
 - `set ff_spread = 14` for TBS/Futaba (150hz mode, 6.66 ms packet intervals)
-- `set ff_spread = 16` for FlySky (130Hz frame rate)
+- `set ff_spread = 16` for FlySky using iBus protocol (130Hz frame rate)
 - `set ff_spread = 40` for TBS 50hz mode / R9 (avoid such a high value unless for cinematic long-range)
 
 If the packets come in on-time, this code doesn't add delay. Of course if packets are missed, that is a delay, but that is on the TX air protocol or OpenTX and there is nothing Betafligh can do to address that.
