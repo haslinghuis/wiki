@@ -70,7 +70,7 @@ RPM_FILTER:
 * [2] = motor #3 RPM Notch center frequency
 * [3] = motor #4 RPM Notch center frequency
 
-DSHOT_RPM_TELEMETRY: (eRPM x motor poles = RPM)
+DSHOT_RPM_TELEMETRY: (eRPM x # motor poles = RPM)
 * [0] = motor #1 eRPM
 * [1] = motor #2 eRPM
 * [2] = motor #3 eRPM
