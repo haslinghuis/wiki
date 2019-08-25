@@ -70,11 +70,11 @@ RPM_FILTER:
 * [2] = motor #3 RPM Notch center frequency
 * [3] = motor #4 RPM Notch center frequency
 
-DSHOT_RPM_TELEMETRY:
-* [0] = motor #1 RPM
-* [1] = motor #2 RPM
-* [2] = motor #3 RPM
-* [3] = motor #4 RPM
+DSHOT_RPM_TELEMETRY: (eRPM x motor poles = RPM)
+* [0] = motor #1 eRPM
+* [1] = motor #2 eRPM
+* [2] = motor #3 eRPM
+* [3] = motor #4 eRPM
 
 ### RC COMMAND SMOOTHING (https://youtu.be/M50fKpvFjT8)
 
