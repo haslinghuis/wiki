@@ -39,7 +39,7 @@ Requires no additional components, wire your `PIN` to `OSD`, preferably with a `
 ## Stick Commands
 ![Camera Control Stick Commands](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/camera-control-stick-commands.png)
 
-Many cameras have an in built OSD name menu (example RunCam Eagle Pro 2) this OSD can be accessed via camera contol with the stick commands throttle down, pitch up.
+Many cameras have an OSD name menu (example RunCam Eagle Pro 2) this OSD can be accessed via camera contol with the stick commands throttle down, pitch up.
 
 ## Troubleshooting
 First of all, make sure `resource list` CLI command lists `camera_control` as allocated.
