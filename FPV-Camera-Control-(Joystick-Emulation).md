@@ -15,7 +15,7 @@ Most cameras up to date seem to adhere to the design and have the following resi
 * `set camera_control_ref_voltage = 330` - voltage (in 10 mV steps) measured across your camera's floating `OSD` and `GND` pins, usually 3V3, but not guaranteed, e.g. my RunCam Sky has 3V4, and some cameras have reportedly have as low as 3V1.
 * `set camera_control_key_delay = 180` - the duration of each key press (in ms presence at the `camera_control` pin, after consulting with RunCam it was set to 180 ms to accommodate most cameras, while some of them accept as low as 125 ms.
 * `set camera_control_internal_resistance = 470` - the internal resistance (in 100 Ω steps) of your camera, most HS1177 derivatives have 47 kΩ, but that's not guaranteed. You'll have to derive this value for your camera in case the default one doesn't work.
-
+* `camera_control_button_resistance = 450,270,150,68,0` - sets the emulated resistance for each button on the equivalent button keypad for the camera. The default values should work for most cameras but in some cases the manufacturer may have unusual values. if you have problems (like one button won't work) then measure the actual resistance generated in the keypad that came with the camera and adjust. The button value ordering is: `ENTER`, `LEFT`, `UP`, `RIGHT`, `DOWN`. **Added in Betaflight 4.1**.
 ## Modes of operation
 ### Hardware PWM
 Requires a 150-600 Ω resistor inline from your FC `PIN` to Camera `OSD`. Additional `GND` connection is advised.
@@ -65,6 +65,9 @@ You'll end up with a set of resistance and voltage values for each key. To find 
 `Rin = Rkey * (Vref / Vkey - 1) where key in (enter, left, up, right, down)`
 
 Calculate this value for a few keys as a sanity check, the resulting values should be roughly the same. The `Rin` you've arrived at is your `camera_control_internal_resistance` value, keep in mind it is measured in 100 Ω steps, hence divide your value by 100.
+
+### Keypad Button Resistance Values
+Most cameras use standard resistance values for the keypad buttons, but some can have unusual values. If you have a problem with most of the buttons working but one or two not, try measuring and adjusting the `camera_control_button_resistance` values (**added in Betaflight 4.1**).
 
 ## Example FC configurations
 
