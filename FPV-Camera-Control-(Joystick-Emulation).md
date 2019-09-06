@@ -39,7 +39,7 @@ Requires no additional components, wire your `PIN` to `OSD`, preferably with a `
 ## Stick Commands
 ![Camera Control Stick Commands](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/camera-control-stick-commands.png)
 
-Many cameras have an OSD name menu (example RunCam Eagle Pro 2) this OSD can be accessed via camera contol with the stick commands throttle down, pitch up.
+Some cameras have a secondary OSD menu (for example the RunCam Eagle Pro 2) that allows setting things like voltage monitor, timers, display name, etc. This menu can be accessed as well, but you'll need to determine the appropriate stick commands based on the manual provided with the camera. The stick position will be equivalent to whatever button sequence the camera requires. So for example if the camera requires holding "down" button to enter the menu, this would correspond to holding the pitch stick "down" while entering camera control with the normal left stick throttle centered and yaw right. The point is that the roll/pitch stick corresponds to the up/down/left/right buttons and the throttle centered/yaw right corresponds to the "enter" button on the camera's control keypad or joystick.
 
 ## Troubleshooting
 First of all, make sure `resource list` CLI command lists `camera_control` as allocated.
