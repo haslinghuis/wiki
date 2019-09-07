@@ -227,7 +227,7 @@ It is possible to turn the dynamic notch filter off altogether on stiff resonanc
 
 ### Timer Based Bidirectional Dshot
 
-If your FC supports it you can use out timer based bidirectional dshot implementation to lower the cpu load of bidirectional dshot a bit. Prior to 4.1 RC1 this was the only available implementation. Its downside is that it requires remapping of timers and DMA channels on some boards and does not work everywhere.
+If your FC supports it you can use our timer based bidirectional dshot implementation to lower the cpu load of bidirectional dshot a bit. Prior to 4.1 RC1 this was the only available implementation. Its downside is that it requires remapping of timers and DMA channels on some boards and does not work everywhere.
 
 Don't be discouraged if your target isn't listed. Many targets will work. Use this [Default Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf), try it out and report back.
 
