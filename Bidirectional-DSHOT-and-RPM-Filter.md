@@ -49,68 +49,9 @@ The ESCs report eRPM.  This must be converted to RPM using the number of magnets
 
 ### Config Snippet
 
-The easiest way to enable Betaflight is to copy and paste a snippet from the list below into the CLI, and save.
+The easiest way to enable Betaflight is to copy and paste a snippet from the list below into the CLI, and save. Starting in 4.1 RC1 this snippet is no longer FC specific. Just paste this [Snippet](https://github.com/betaflight/bidircfg/blob/master/BITBANG.cf). 
 
-Don't be discouraged if your target isn't listed. Many targets will work. Use this [Default Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf), try it out and report back.
-
-Beware of this issue https://github.com/betaflight/betaflight/issues/8019: a diff of the config after applying the snippet may not cleanly reproduce the config when applied to a clean install. To fix this take any ```dma pin``` lines in the snippet and reapply them after applying your diff.
-
-### Snippets for supported targets
-
-| Target | Install Snippet | Notes | Supported Motors|
-| --- | --- | --- | --- |
-| AG3XF4| [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  | M1 - M4 (tested Mister_M) |
-| AIKONF4|[Snippet](https://github.com/betaflight/bidircfg/blob/master/AIKONF4-upgrade.cf) |  | M1 - M4 (tested fujin) |
-| ALIENFLIGHTNGF7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/ALIENFLIGHTNGF7-upgrade.cf) | M3 doesn't work, use one of M5-9 instead. LED doesn't work with M1 | M1-M2, M4-M9 |
-|ALIENWHOOP|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)|| M1-M4 | 
-|ANYFCF7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1 M2 M3 M4 M5 M6 M9|
-|ANYFCM7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/ANYFCM7-upgrade.cf)||M1 M2 M3 M4 M5 M7 M9 M10|
-|BETAFLIGHTF4|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)| | M1 - M4 ok (tested Balint) |
-|CLRACINGF4|[Snippet](https://github.com/betaflight/bidircfg/blob/master/CLRACINGF4-upgrade.cf)| | M1-M4 ok|
-|CLRACINGF7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)|Motor 4 doesn't work. Use the LED pad instead|M1 M2 M3 M5|
-|CRAZYBEEF4DX|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)| | M1-M4 ok (tested Noctaro)| |
-|DALRCF4|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DALRCF4-upgrade.cf)||M1-M6 (tested QuadMcFly)|
-|DALRCF722DUAL|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DALRCF722DUAL-upgrade.cf)||M1-M6. But either M5 or M6|
-|DYSF4PRO|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 (tested BRadFPV)|
-|ELINF405|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 (tested elin-neo)|
-|ELINF722|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 (tested elin-neo)|
-|EXF722DUAL|[Snippet](https://github.com/betaflight/bidircfg/blob/master/EXF722DUAL-upgrade.cf)||M1-M8|
-|FLYWOOF7DUAL|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M6|
-|FORTINIF4|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4(tested QuadMcFly)|
-|FOXEERF722DUAL|[Snippet](https://github.com/betaflight/bidircfg/blob/master/FOXEERF722DUAL-upgrade.cf)||M1-M6|
-|FURYF4|[Snippet](https://github.com/betaflight/bidircfg/blob/master/FURYF4SD-upgrade.cf)||M1-M4, No LED support, Tested RawFPV|
-|FURYF7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4|
-|HAKRCF722|[Snippet](https://github.com/betaflight/bidircfg/blob/master/HAKRCF722-upgrade.cf)||M1-M6|
-|KAKUTEF4V2|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  ||M1-M4 tested|
-|KISSFCV2F7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/KISSFCV2F7-upgrade.cf)||M1-M6|
-|LUXF4OSD|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  ||M1-M4 tested (Mister_M)|
-|MAMBAF722|[Snippet](https://github.com/betaflight/bidircfg/blob/master/MAMBAF722-upgrade.cf)||M1-M4 tested (kc10kevin)|
-|MATEKF405|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 tested (Wudz_17)|
-|MATEKF722|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M8|
-|MATEKF722SE|[Snippet](https://github.com/betaflight/bidircfg/blob/master/MATEKF722SE-upgrade.cf)|M5 does not work|M1-M4, M6-M8|
-|MLTEMPF4|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 (tested RC2 monko760)|
-|NERO|[Snippet](https://github.com/betaflight/bidircfg/blob/master/NERO-upgrade.cf)||M1-M8|
-|NOX|[Snippet](https://github.com/betaflight/bidircfg/blob/master/NOX-upgrade.cf)||M1-M4|
-|NUCLEOF7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)|M4 does not work but can be replaced with M6|M1-M3,M6|
-|NUCLEOF722|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)|M4 does not work but can be replaced with M6|M1-M3,M6|
-|OMNIBUSF4|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 (tested omerco)|
-|OMNIBUSF4SD|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 (tested joe lucid)|
-|OMNIBUSF4FW|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)| | M1-M4 tested (skonk) |
-|OMNIBUSF7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/OMNIBUSF7-upgrade.cf)||M1-M4 (tested in RC2 IgguT)|
-|OMNINXTF7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4|
-|PYRODRONEF4|[Snippet](https://github.com/betaflight/bidircfg/blob/master/PYRODRONEF4-upgrade.cf)||M1-M4 (tested fujin)|
-|REVOLTOSD|[Snippet](https://github.com/betaflight/bidircfg/blob/master/REVOLT-upgrade.cf)||M1-M4 (tested JayBird)|
-|SPRACINGF7DUAL|[Snippet](https://github.com/betaflight/bidircfg/blob/master/SPRACINGF7DUAL-upgrade.cf)||M1-M10|
-|TMOTORF4||M4-M5 does not work but can be replaced with M6|M1-M3, M6|
-|YUPIF7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M6|
-
-Please add additional verified configurations here.
-
-### Unsupported targets
-
-| Target | Notes |
-| --- | --- |
-
+If you're running Betaflight 4.0 you need to setup a board specific snippet. See the [Timer Based Bidirectional Dshot](#timer-based-bidirectional-dshot).
 
 ### Config Verification
 
@@ -283,6 +224,70 @@ It is possible to turn the dynamic notch filter off altogether on stiff resonanc
 
 
 ## Advanced Topics
+
+### Timer Based Bidirectional Dshot
+
+If your FC supports it you can use out timer based bidirectional dshot implementation to lower the cpu load of bidirectional dshot a bit. Prior to 4.1 RC1 this was the only available implementation. Its downside is that it requires remapping of timers and DMA channels on some boards and does not work everywhere.
+
+Don't be discouraged if your target isn't listed. Many targets will work. Use this [Default Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT.cf), try it out and report back.
+
+Starting from 4.1 RC1 you need to disable the default dshot bitbang implementation using the command ``set dshot_bitbang=off``. Don't forget to set this back to ``auto`` if you want to switch back to dshot bitbang.
+
+### Snippets for supported targets
+
+| Target | Install Snippet | Notes | Supported Motors|
+| --- | --- | --- | --- |
+| AG3XF4| [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  | M1 - M4 (tested Mister_M) |
+| AIKONF4|[Snippet](https://github.com/betaflight/bidircfg/blob/master/AIKONF4-upgrade.cf) |  | M1 - M4 (tested fujin) |
+| ALIENFLIGHTNGF7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/ALIENFLIGHTNGF7-upgrade.cf) | M3 doesn't work, use one of M5-9 instead. LED doesn't work with M1 | M1-M2, M4-M9 |
+|ALIENWHOOP|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)|| M1-M4 | 
+|ANYFCF7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1 M2 M3 M4 M5 M6 M9|
+|ANYFCM7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/ANYFCM7-upgrade.cf)||M1 M2 M3 M4 M5 M7 M9 M10|
+|BETAFLIGHTF4|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)| | M1 - M4 ok (tested Balint) |
+|CLRACINGF4|[Snippet](https://github.com/betaflight/bidircfg/blob/master/CLRACINGF4-upgrade.cf)| | M1-M4 ok|
+|CLRACINGF7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)|Motor 4 doesn't work. Use the LED pad instead|M1 M2 M3 M5|
+|CRAZYBEEF4DX|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)| | M1-M4 ok (tested Noctaro)| |
+|DALRCF4|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DALRCF4-upgrade.cf)||M1-M6 (tested QuadMcFly)|
+|DALRCF722DUAL|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DALRCF722DUAL-upgrade.cf)||M1-M6. But either M5 or M6|
+|DYSF4PRO|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 (tested BRadFPV)|
+|ELINF405|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 (tested elin-neo)|
+|ELINF722|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 (tested elin-neo)|
+|EXF722DUAL|[Snippet](https://github.com/betaflight/bidircfg/blob/master/EXF722DUAL-upgrade.cf)||M1-M8|
+|FLYWOOF7DUAL|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M6|
+|FORTINIF4|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4(tested QuadMcFly)|
+|FOXEERF722DUAL|[Snippet](https://github.com/betaflight/bidircfg/blob/master/FOXEERF722DUAL-upgrade.cf)||M1-M6|
+|FURYF4|[Snippet](https://github.com/betaflight/bidircfg/blob/master/FURYF4SD-upgrade.cf)||M1-M4, No LED support, Tested RawFPV|
+|FURYF7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4|
+|HAKRCF722|[Snippet](https://github.com/betaflight/bidircfg/blob/master/HAKRCF722-upgrade.cf)||M1-M6|
+|KAKUTEF4V2|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  ||M1-M4 tested|
+|KISSFCV2F7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/KISSFCV2F7-upgrade.cf)||M1-M6|
+|LUXF4OSD|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  ||M1-M4 tested (Mister_M)|
+|MAMBAF722|[Snippet](https://github.com/betaflight/bidircfg/blob/master/MAMBAF722-upgrade.cf)||M1-M4 tested (kc10kevin)|
+|MATEKF405|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 tested (Wudz_17)|
+|MATEKF722|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M8|
+|MATEKF722SE|[Snippet](https://github.com/betaflight/bidircfg/blob/master/MATEKF722SE-upgrade.cf)|M5 does not work|M1-M4, M6-M8|
+|MLTEMPF4|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 (tested RC2 monko760)|
+|NERO|[Snippet](https://github.com/betaflight/bidircfg/blob/master/NERO-upgrade.cf)||M1-M8|
+|NOX|[Snippet](https://github.com/betaflight/bidircfg/blob/master/NOX-upgrade.cf)||M1-M4|
+|NUCLEOF7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)|M4 does not work but can be replaced with M6|M1-M3,M6|
+|NUCLEOF722|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)|M4 does not work but can be replaced with M6|M1-M3,M6|
+|OMNIBUSF4|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 (tested omerco)|
+|OMNIBUSF4SD|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4 (tested joe lucid)|
+|OMNIBUSF4FW|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)| | M1-M4 tested (skonk) |
+|OMNIBUSF7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/OMNIBUSF7-upgrade.cf)||M1-M4 (tested in RC2 IgguT)|
+|OMNINXTF7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4|
+|PYRODRONEF4|[Snippet](https://github.com/betaflight/bidircfg/blob/master/PYRODRONEF4-upgrade.cf)||M1-M4 (tested fujin)|
+|REVOLTOSD|[Snippet](https://github.com/betaflight/bidircfg/blob/master/REVOLT-upgrade.cf)||M1-M4 (tested JayBird)|
+|SPRACINGF7DUAL|[Snippet](https://github.com/betaflight/bidircfg/blob/master/SPRACINGF7DUAL-upgrade.cf)||M1-M10|
+|TMOTORF4||M4-M5 does not work but can be replaced with M6|M1-M3, M6|
+|YUPIF7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M6|
+
+Please add additional verified configurations here.
+
+### Unsupported targets
+
+| Target | Notes |
+| --- | --- |
 
 Below is a description of the settings in the config snippets.
 
