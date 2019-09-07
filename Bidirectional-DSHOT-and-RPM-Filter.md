@@ -41,7 +41,7 @@ Remove any extended startup melody if you have configured one for the ESCs since
 
 ## Betaflight Configuration
 
-### Motor Magnets
+### Motor Poles
 
 The ESCs report eRPM.  This must be converted to RPM using the number of magnets of the motors. The magnets to count are those on the bell of the motor. Do not count the stators where the windings are located. Typical 5" motors have 14 magnets, so that is the default setting. Smaller motors have fewer magnets, often 12. Count them or look up the motor specs.  If you don't have 14 magnets, use the following command in the CLI to set the correct number:
 
