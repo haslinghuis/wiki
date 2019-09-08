@@ -19,6 +19,7 @@
  - [Betaflight 4.0 CLI commands (work in progress)](Betaflight-4.0-CLI-commands-_Work-in-progress)
 # Tuning Tips
 
+ - [Betaflight 4.1](4.1-Tuning-Notes)
  - [Betaflight 4.0](4.0-Tuning-Notes)
  - [Betaflight 3.5](3.5-tuning-notes)
  - [Betaflight 3.4](Tuning-Tips-for-Betaflight-3.4)
