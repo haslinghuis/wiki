@@ -1,4 +1,6 @@
-Betaflight 4.1 brings us `Feed Forward 2.0` - a comprehensive set of updates to FeedForward.
+Betaflight 4.1 brings us `Feed Forward 2.0` - a comprehensive set of updates to FeedForward.  
+
+Note that `ff_spread` from the development versions has been changed to `set ff_interpolate_sp = AVERAGED`.  The time interval to spread is no longer required.
 
 ## What is FeedForward?
 
@@ -15,7 +17,7 @@ Too much FeedForward can cause:
 
 Since RC data comes into the flight controller in 'packets', we actually get a series of sudden steps coming in.  The derivative of an instant step is an infinitely high spike, which is basically useless.  Back in 3.4.0 we introduced 'filter' mode RC smoothing, where an 'input' lowpass filter rounded off those steps; the derivative now became a wider spike that we could use.  We then applied a 'derivative' lowpass over that spike, which smoothed it out into a kind of 'lump' of FF for each incoming step.  AUTO RC filtering adapts the smoothing filters dynamically to the apparent incoming RC step rate; manual setups can be fine-tuned to any desired degree of smoothness, at the cost of input delay.
 
-Currently erratic RC steps are a major problem.  OpenTx 2.3 is likely to improve this a bit for FrSky users, and TBS are introducing a 'locked 150hz mode' to improve on this.
+Currently erratic RC steps are a major problem.  OpenTx 2.3 improves on this a bit for FrSky users.  TBS are introducing a 'locked 150hz mode' that may be better.
 
 4.1 introduces several novel `ff_2.0` technologies that improve on these limitations.
 
@@ -32,7 +34,7 @@ Being the second derivative, `ff_boost` peaks really early in a move, the instan
 
 The acceleration component does exactly what we need to help overcome motor delay - pushes early, eases off mid-move, and actively slows down the motors at the end.  With the right amount of FF and ff_boost, a responsive quad can have nearly completely lag-free tracking of inputs and not get overshoot.  
 
-Typically `set ff_boost = 20` is about right for most quads.  Larger values may be used on low-authority quads or quads with motors that are slow to spool up.  More than 40 would be unusual.  
+Typically `set ff_boost = 15`, the default, is about right for most quads.  Larger values may be used on low-authority quads or quads with motors that are slow to spool up.  More than 40 would be unusual.  
 
 The strength of the boost is directly linked to the amount of FF set in the PIDs.  Think of ff_boost as a 'factor' that modulates the timing of how your FF gets applied to the motors.  More boost brings the FF on earlier. 
 
@@ -44,11 +46,11 @@ ff_boost can work without any other of the ff_2.0 features being active.
 
 This is a 'digital' way of calculating FF from each new RC 'step'.  It gives a cleaner feedforward trace than with the old 'filter' method, with less delay.  
 
-`set ff_interpolate_sp = ON` analyses each new incoming RC data packet on arrival, and the calculated change in setpoint is converted to an immediate step up in FF.  Each step up is held constant until the next RC data step arrives.  
+`set ff_interpolate_sp = ON` analyses each new incoming RC data packet, and the calculated change in setpoint is converted to an immediate step up in FF.  Each step up is held constant until the next RC data step arrives.  
 
-The sharp corner of the FF step can be smoothed according to the rc_smoothing_derivative lowpass filter frequency.  This is set dynamically by default in AUTO mode, but can be manually overriden if desired.  50hz is a good smoothing value for reliable 50hz signals, but a clean 50hz RC data signal is unusual; 20hz smoothes out most traces adequately; 10hz may be needed for very long range and cinematic quads where you get large steps and poor quality links and don't care so much about delay.
+The sharp corner of the FF step can be smoothed according to the rc_smoothing_derivative lowpass filter frequency.  This is set dynamically by default in AUTO mode, but can be manually overriden if desired.  120hz is a good smoothing value for a clean feed-forward trace.  20hz smoothes out traces with a fair bit of up and down; 10hz may be needed for very long range and cinematic quads where the large steps from 50hz mode and poor quality links can make the quad jerky in turns.  
 
-Dropped RC packets will normally cause sudden FF drops to zero.  ff_spread (see below) is intended to help manage this specific issue.  Alternatively, low rc_smoothing_derivative filtering will smooth the drops out a bit, at the cost of incoming RC delay.
+Dropped RC packets will normally cause sudden FF drops to zero.  `set ff_interpolate_sp = AVERAGE` is intended to help manage this specific issue.  Alternatively, a low rc_smoothing_derivative filtering value can smooth the drops out a bit, at the cost of incoming RC delay.
 
 
 ## ff_max_rate_limit
@@ -65,37 +67,18 @@ A major benefit is that it markedly reduces the need for the opposing motors to 
 
 The default value of 100 - `set ff_max_rate_limit = 100` is strong enough that most quads will slightly under-shoot at the  very start of the flip; this is intentional, because it better avoids spinning up the reversing pair of motors, and isn't visible in FPV or HD feeds.  A value of 115-120 will generate a more classical 'optimally damped' overshoot/pullback image, with slightly faster terminal response.  But the default of 100 is probably best, even for racing.
 
-## ff_spread 
+## ff_interpolate_sp = AVERAGED
 
 Since FF is calculated for each incoming RC step, we have a problem when a new step doesn't arrive as it should.  
 
 Usually this is caused by 'dropped packets', or when a TBS or R9 Rx switches out of 150hz mode to the slower 50hz mode.  Anytime this happens, FF would normally drop suddenly to zero; when the next valid data value comes in, a double-height step up occurs.  These zero/double-height pairs in the FF trace are very messy.
 
-ff_spread looks out for gaps in the RC data, and holds the previous FF value for a specified time.  
+In `AVERAGED` mode, the interpolation algorithm averages each two successive feed forward values.  In the case of a sudden drop to zero with a large subsequent step up, this is is changed to a smaller drop, a middle value, and a jump up.  Overall the steps are smaller.
 
-It should be enabled if logging shows your FF signal frequently dropping to zero as described above.  These are easy to see in logs but difficult to detect otherwise.  
+There is a downside to using `AVERAGED`.  If the pilot makes a fast input, then suddenly holds the sticks perfectly still, ff_spread will hold FF at the previous, high, value for the set time, rather than dropping to zero immediately as it should. This can cause an overshoot for the duration set by the extend value. It is most easily seen at the start of a flip when the sticks hit their physical limit, but can happen at other times.
 
-If the ff_spread time is set to twice the normal RC interval for your radio, the FF signal will no longer drop to zero if a single packet is missed.
+`AVERAGED` is most useful for long-range / cinematic quads with substantial RC smoothing.  
 
-Normal settings for ff_spread would be:
-
-- `set ff_spread = 18` for FrSky SBus (9ms packet intervals)
-- `set ff_spread = 14` for TBS/Futaba (150hz mode, 6.66 ms packet intervals)
-- `set ff_spread = 16` for FlySky using iBus protocol (130Hz frame rate)
-- `set ff_spread = 40` for TBS 50hz mode / R9 (avoid such a high value unless for cinematic long-range)
-
-If the packets come in on-time, this code doesn't add delay. Of course if packets are missed, that is a delay, but that is on the TX air protocol or OpenTX and there is nothing Betafligh can do to address that.
-
-There is a small downside.  If the pilot makes a fast input, then suddenly holds the sticks perfectly still, ff_spread will hold FF at the previous, high, value for the set time, rather than dropping to zero immediately as it should. This can cause an overshoot for the duration set by the extend value. It is most easily seen at the start of a flip when the sticks hit their physical limit, but can happen at other times.
-
-`ff_spread` is most useful for long-range / cinematic quads when associated with substantial RC smoothing.  
-
-For racers and general use the quality of the RC link depends mostly on how good your antennas are and how far you plan to fly.  Close-in racing with good antennas probably won't need this.
-
-## ff_lookahead_limit
-
-This experimental code performs a lookahead a bit like ff_max_rate_limit, but limits the feedforward element internally if, at the specified time in the future, P + FF would be larger than P would be at that future point in time.  This may improve overshoot in moves that otherwise would not hit the stick limit.  It has been included for testing purposes. 
-
-Kudos to JoeLucid for an awesome set of improvements.  Also ctzsnooze for the boost concept and the  gang for testing and validation.  Now we just need better RC links  :-)
+For racers and general use the quality of the RC link depends mostly on how good your antennas are and how far you plan to fly.  Close-in racing with good antennas, especially with Futaba and some Spectrum radios that have very consistent RC steps, can work best without averaging.
 
 For technical details and more info,check the [original pull request #8623](https://github.com/betaflight/betaflight/pull/8623)
