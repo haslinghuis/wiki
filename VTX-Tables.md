@@ -8,7 +8,7 @@
    * ***[SmartAudio 2.0 device](#SmartAudio-2.0-device)***<br>
    * ***[SmartAudio 2.1 device](#SmartAudio-2.1-device)***<br>
    * ***[rtc6705 device](#rtc6705)***<br>
-   * ***[EWRF 709tm3](#EWRF-709tm3)***<br>
+   * ***[EWRF E709tm3](#EWRF-E709tm3)***<br>
 3. **[Pitmode](#pitmode)**<br>
 4. **[VTX Button Usage](#vtx-button-usage)**<br>
 
@@ -286,7 +286,7 @@ vtxtable powervalues 0 1 2
 vtxtable powerlabels OFF MIN MAX
 ```
 
-#### EWRF 709tm3
+#### EWRF E709tm3
 ```
 #https://www.banggood.com/E709MT3-5_8G-40CH-25mW-200mW-600mW-Adjustable-AV-Transmitter-w-Mounting-Hole-for-Flight-Controller-p-1191064.html?cur_warehouse=CN
 #SmartAudio VTX
