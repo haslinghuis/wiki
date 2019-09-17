@@ -1,3 +1,18 @@
+### Table of Contents
+1. **[Setting up VTX Tables in CLI](#vtx-table)**<br>
+   * ***[Bands and Channels](#bands-and-channels)***<br>
+   * ***[Power levels](#Power-levels)***<br>
+2. **[Complete Examples](#Complete-Examples)**<br>
+   * ***[IRC Tramp device](#IRC-Tramp-device)***<br>
+   * ***[SmartAudio 1.0 device](#SmartAudio-1.0-device)***<br>
+   * ***[SmartAudio 2.0 device](#SmartAudio-2.0-device)***<br>
+   * ***[SmartAudio 2.1 device](#SmartAudio-2.1-device)***<br>
+   * ***[rtc6705 device](#rtc6705)***<br>
+   * ***[EWRF 709tm3](#EWRF-709tm3)***<br>
+3. **[Pitmode](#pitmode)**<br>
+4. **[VTX Button Usage](#vtx-button-usage)**<br>
+
+
 ## Setting up VTX Tables in CLI
 
 See https://github.com/betaflight/betaflight/blob/master/docs/VTX.md#vtx-table
