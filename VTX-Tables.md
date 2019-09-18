@@ -2,14 +2,6 @@
 
 See https://github.com/betaflight/betaflight/blob/master/docs/VTX.md#vtx-table
 
-## Pitmode
-
-Pitmode is separate from vtxTable. No power level should be created for pitmode.
-Pitmode can be controlled in a variety of ways including OSD, AUX switches and lua scripts.
-	
-Some videotransmitters have restrictions on its usage. For example, SmartAudio V1.0 and V2.0 devices can only enter pitmode on power-up.
-Betaflight can make the these devices leave pitmode, but not enter it.
-
 
 ## VTX Button usage
 	
