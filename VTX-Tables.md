@@ -1,6 +1,9 @@
 ## VTX Tables for Use in Configurator
 
-(Download the .json file, then use 'Load from file' in the 'Video Transmitter' tab to load it, **then click 'Save'** to save the VTX table on the flight controller.)
+Instructions for use:
+- right click on the file, 'Save link as';
+- in configurator, go to the 'Video Transmitter' tab, use 'Load from file' to load the file saved in the previous step;
+- **click 'Save'** to save the VTX table on the flight controller.
 
 |Region|Files|
 |-|-|
