@@ -245,7 +245,7 @@ Starting from 4.1 RC1 you need to disable the default dshot bitbang implementati
 |ANYFCM7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/ANYFCM7-upgrade.cf)||M1 M2 M3 M4 M5 M7 M9 M10|
 |BETAFLIGHTF4|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)| | M1 - M4 ok (tested Balint) |
 |CLRACINGF4|[Snippet](https://github.com/betaflight/bidircfg/blob/master/CLRACINGF4-upgrade.cf)| | M1-M4 ok|
-|CLRACINGF7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)|Motor 4 doesn't work. Use the LED pad instead|M1 M2 M3 M5|
+|CLRACINGF7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/CLRACINGF7-upgrade.cf)|Motor 4 doesn't work. Use the LED pad instead|M1 M2 M3 M5|
 |CRAZYBEEF4DX|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)| | M1-M4 ok (tested Noctaro)| |
 |CRAZYBEEF4FR|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)| | M1-M4 ok (tested joelucid)| |
 |DALRCF4|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DALRCF4-upgrade.cf)||M1-M6 (tested QuadMcFly)|
