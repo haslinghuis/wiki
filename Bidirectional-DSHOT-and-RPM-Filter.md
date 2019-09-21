@@ -281,6 +281,7 @@ Starting from 4.1 RC1 you need to disable the default dshot bitbang implementati
 |OMNINXTF7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M4|
 |PYRODRONEF4|[Snippet](https://github.com/betaflight/bidircfg/blob/master/PYRODRONEF4-upgrade.cf)||M1-M4 (tested fujin)|
 |REVOLTOSD|[Snippet](https://github.com/betaflight/bidircfg/blob/master/REVOLT-upgrade.cf)||M1-M4 (tested JayBird)|
+|SPEEDYBEEF4|[Snippet](https://github.com/betaflight/bidircfg/blob/master/SPEEDYBEEF4-upgrade.cf)||Flavoredcrayon|
 |SPRACINGF7DUAL|[Snippet](https://github.com/betaflight/bidircfg/blob/master/SPRACINGF7DUAL-upgrade.cf)||M1-M10|
 |TMOTORF4||M4-M5 does not work but can be replaced with M6|M1-M3, M6|
 |YUPIF7|[Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)||M1-M6|
