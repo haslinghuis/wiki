@@ -5,18 +5,18 @@ Instructions for use:
 - in configurator, go to the 'Video Transmitter' tab, use 'Load from file' to load the file saved in the previous step;
 - **click 'Save'** to save the VTX table on the flight controller.
 
-|Region|Files|
-|-|-|
-|USA|[IRC Tramp](resources/vtx_tables/vtx_table_irc_tramp_us.json)|
-| |[SmartAudio 1.0](resources/vtx_tables/vtx_table_smart_audio_1_0_us.json)|
-| |[SmartAudio 2.0](resources/vtx_tables/vtx_table_smart_audio_2_0_us.json)|
-| |[SmartAudio 2.1](resources/vtx_tables/vtx_table_smart_audio_2_1_us.json)|
-| |[RTC6705 (on board)](resources/vtx_tables/vtx_table_rtc6705_us.json)|
-|EU|[IRC Tramp](resources/vtx_tables/vtx_table_irc_tramp_eu.json)|
-| |[SmartAudio 1.0](resources/vtx_tables/vtx_table_smart_audio_1_0_eu.json)|
-| |[SmartAudio 2.0](resources/vtx_tables/vtx_table_smart_audio_2_0_eu.json)|
-| |[SmartAudio 2.1](resources/vtx_tables/vtx_table_smart_audio_2_1_eu.json)|
-| |[RTC6705 (on board)](resources/vtx_tables/vtx_table_rtc6705_eu.json)|
+|Region|File|Manufacturers / Models to Use this File with|
+|-|-|-|
+|USA|[IRC Tramp](resources/vtx_tables/vtx_table_irc_tramp_us.json)|IRC Tramp|
+|USA|[SmartAudio 1.0](resources/vtx_tables/vtx_table_smart_audio_1_0_us.json)|TBS|
+|USA|[SmartAudio 2.0](resources/vtx_tables/vtx_table_smart_audio_2_0_us.json)|TBS|
+|USA|[SmartAudio 2.1](resources/vtx_tables/vtx_table_smart_audio_2_1_us.json)|TBS|
+|USA|[RTC6705 (on board)](resources/vtx_tables/vtx_table_rtc6705_us.json)|Flight controllers with on-board VTX|
+|EU|[IRC Tramp](resources/vtx_tables/vtx_table_irc_tramp_eu.json)|IRC Tramp|
+|EU|[SmartAudio 1.0](resources/vtx_tables/vtx_table_smart_audio_1_0_eu.json)|TBS|
+|EU|[SmartAudio 2.0](resources/vtx_tables/vtx_table_smart_audio_2_0_eu.json)|TBS|
+|EU|[SmartAudio 2.1](resources/vtx_tables/vtx_table_smart_audio_2_1_eu.json)|TBS|
+|EU|[RTC6705 (on board)](resources/vtx_tables/vtx_table_rtc6705_eu.json)|Flight controllers with on-board VTX|
 
 
 ## Setting up VTX Tables in CLI
