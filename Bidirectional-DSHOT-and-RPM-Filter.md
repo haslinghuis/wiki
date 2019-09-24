@@ -207,7 +207,7 @@ The rpm snippets re-configure the Dynamic Notch to the narrower single notch con
 
 The Dynamic Notch range is, by default, set to AUTO mode, and uses the value of dyn_lpf_gyro_max_hz to select the frequency range over which the dynamic notch will operate.  
 
-Because frame resonances usually happen in the LOW or MEDIUM dynamic notch range, it is best, when rpm filtering is used, to manually configure the Dynamic Notch manually one of those ranges.  If you know you have no frame resonances below 150hz, choosing MEDIUM will reduce delay and keep the dynamic notch higher.  
+Because frame resonances usually happen in the LOW or MEDIUM dynamic notch range, it is best, when rpm filtering is used, to manually configure the Dynamic Notch on one of those ranges.  If you know you have no frame resonances below 150hz, choosing MEDIUM will reduce delay and keep the dynamic notch higher.  
 
 If you want the dynamic notch to stay above a certain minimum value, because you know you have no resonances below that value, set the dynamic notch minimum frequency accordingly (just below the resonance that you are targeting).
 
