@@ -107,7 +107,7 @@ For existing builds that already fly well, don't change any filter settings for 
 # 4.1 default lowpass filter set
 
 set gyro_lowpass_type = PT1
-set gyro_lowpass_hz = 150
+set gyro_lowpass_hz = 200
 set dyn_lpf_gyro_min_hz = 200
 set dyn_lpf_gyro_max_hz = 500
 set gyro_lowpass2_type = PT1
@@ -146,7 +146,7 @@ The following snippet shifts all 4.1 lowpass filters up by about 50%, reducing t
 # 4.1 lowpass filter set shifted up 1.5x
 
 set gyro_lowpass_type = PT1
-set gyro_lowpass_hz = 225
+set gyro_lowpass_hz = 300
 set dyn_lpf_gyro_min_hz = 300
 set dyn_lpf_gyro_max_hz = 900
 set gyro_lowpass2_type = PT1
@@ -167,7 +167,7 @@ The next step would be 2x defaults.  Only the very cleanest quads will be ok whe
 ```
 # 4.1 lowpass filter set shifted up 2x
 
-set gyro_lowpass_hz = 300
+set gyro_lowpass_hz = 400
 set dyn_lpf_gyro_max_hz = 1000
 set dyn_lpf_gyro_min_hz = 400
 set gyro_lowpass2_type = PT1
