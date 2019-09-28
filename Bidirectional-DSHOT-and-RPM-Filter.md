@@ -2,6 +2,8 @@
 
 - Bidirectional DSHOT and RPM Filter now available on BLHeli_S escs. [Get it here!](https://jflight.net)
 
+- Bidirectional DSHOT now fully supported in the just released version 32.7.0 of blheli32. You can flash from configurator without downloading hex files manually.
+
 - The following F411 based targets have risks of resource conflicts with LED or softserial in 4.1: MATEKF411, MATEKF411RX, CRAZYBEEF4[DX,FR,GS], MAMBAF411. If you use one of these targets and your quad does not arm or loses functionality after enabling bidirectional dshot switch to timer based dshot by entering these commands in the CLI:
 
 ```
