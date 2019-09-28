@@ -84,7 +84,7 @@ save
 
 A clean build is when a spectrograph of the RAW gyro noise trace (Debug_Mode=Gyro_Scaled) on a FULL & HARD flight looks like the below or better: <br/>
 <a href="https://github.com/spatzengr/UAVtech-Resources/blob/master/Gyro_Raw%20Noise%20Profiles/Clean/Nova%20on%20BF4.0.png" target="_blank"><img src="https://github.com/spatzengr/UAVtech-Resources/blob/master/Gyro_Raw%20Noise%20Profiles/Clean/Nova%20on%20BF4.0.png" width="250"></a><br/>
-"Better" means the spektrograph lines are lower or have more well defined peaks.  An imporatnt factor is the dip in raw motor vibrations ("noise") from 80 to 200hz.
+"Better" means the spektrograph lines are lower or have more well defined peaks.  An important factor is the dip in raw motor vibrations ("noise") from 80 to 200hz.
 
 ---
 #### Brushed \ Brushless Whoop Class
