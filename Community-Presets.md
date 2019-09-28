@@ -82,7 +82,8 @@ save
 **WARNING:  If your mechanical/electrical issues are not addressed (most of the time those are the issues folks have), the below settings may require heavier filtering and lower PID gains (the BF default).**  Heavier filtering and lower PID gains can provide for cooler motors, but also has worse flight performance.<br/><br/>
 </b>
 
-A clean build is when a spectrograph of the RAW gyro noise trace (Debug_Mode=Gyro_Scaled) on a FULL & HARD flight looks like the below or better: https://github.com/spatzengr/UAVtech-Resources/blob/master/Gyro_Raw%20Noise%20Profiles/Clean/Nova%20on%20BF4.0.png
+A clean build is when a spectrograph of the RAW gyro noise trace (Debug_Mode=Gyro_Scaled) on a FULL & HARD flight looks like the below or better: <br/>
+<a href="url" target="_blank"><img src="https://github.com/spatzengr/UAVtech-Resources/blob/master/Gyro_Raw%20Noise%20Profiles/Clean/Nova%20on%20BF4.0.png" width="500"></a>
 
 ---
 #### Brushed \ Brushless Whoop Class
