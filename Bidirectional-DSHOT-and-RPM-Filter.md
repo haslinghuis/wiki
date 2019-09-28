@@ -1,6 +1,6 @@
 ### Recent Announcements
 
-- Bidirectional DSHOT and RPM Filter now available on BLHeli_S escs. [Early Access here!](https://jflight.net)
+- Bidirectional DSHOT and RPM Filter now available on BLHeli_S escs. [Get it here!](https://jflight.net)
 
 - The following F411 based targets have risks of resource conflicts with LED or softserial in 4.1: MATEKF411, MATEKF411RX, CRAZYBEEF4[DX,FR,GS], MAMBAF411. If you use one of these targets and your quad does not arm or loses functionality after enabling bidirectional dshot switch to timer based dshot by entering these commands in the CLI:
 
@@ -26,7 +26,7 @@ There are two underlying technologies:
 
 For RPM Filtering to work, the ESC must support the Bidirectional DShot protocol and Bidirectional DShot must be enabled in the CLI. 
 
-These two features are currently supported by BetaFlight 4.0 and 4.1 on most flight controllers, and most modern BLHeli_32 and BLHeli-S ESCs.
+These two features are currently supported by BetaFlight 4.0 and 4.1 on most flight controllers, and most modern BLHeli_32 and BLHeli-S ESCs. Once 4.1 is released we will no longer provide support on 4.0.
 
 Here's a demo in flight. Quad has minimal filtering other than the rpm filter, handles very well and shows close to no prop wash: 
 https://youtu.be/jwFYaGHp91c, https://youtu.be/SoG245vmaLo
@@ -39,13 +39,9 @@ If the RPM Filter is enabled but one or more of the ESC's are not supplying vali
 
 ### Bidirectional DShot Firmware
 
-The Bidirectional DShot protocol is different (and more robust) in BetaFlight 4.1 than BetaFlight 4.0.  We recommend using 4.1.  The ESC code must be correct for the version of Betaflight you are running. 
+The Bidirectional DShot protocol is different (and more robust) in BetaFlight 4.1 than BetaFlight 4.0. The ESC code must be correct for the version of Betaflight you are running. 
 
-**For BLHeli_32 ESCs**, the hex file is not available in the configurator, and must be downloaded separately and selected in the flashing interface. For BetaFlight 4.0.x, get the [BLHeli_32 32.6.4](https://github.com/bitdump/BLHeli/tree/master/BLHeli_32%20ARM/BLHeli_32%20Test%20code%20Rev32.6.4%20hex%20files) firmware.  For BetaFlight 4.1, get the more recent [32.6.6 firmware](https://github.com/bitdump/BLHeli/tree/master/BLHeli_32%20ARM/BLHeli_32%20Test%20code%20Rev32.6.4%20hex%20files/Rev32.6.6%20for%20inverted%20bidirectional%20dshot%20and%20GCR%20return%20data%20only). 
-
-To download the correct firmware for your ESC brand/model, right click on "Raw" and choose "Save As".  Flash it onto **all four** ESCs. You will need to select the firmware file separately for each ESC as it will default to the most recent stable version of BLHeli.
-
-Remove any extended startup melody if you have configured one for the ESCs since that currently interferes with Bidirectional DSHOT. The standard startup tones will work fine.
+**For BLHeli_32 ESCs**, Bidirectional DShot is now a fully supported feature in version 32.7.0. Just upgrade using blheli32 configurator. Remove any extended startup melody if you have configured one for the ESCs since that currently interferes with Bidirectional DSHOT. The standard startup tones will work fine.
 
 **For BLHeli-S ESCs**, install Betaflight 4.1, go to [jflight.net](https://jflight.net), check that your ESC and FC are supported, purchase enough licences, and follow the install instructions - download the custom JESC BLHeli-S configurator, select your ESC, select the correct hex, click the blue 'flash all' button, then then flash the telemetry code over that by clicking 'flash all telemetry'.  Use the flash version at the top of the list.  JESC requires Betaflight 4.1.
 
