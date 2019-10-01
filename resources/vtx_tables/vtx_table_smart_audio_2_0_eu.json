@@ -62,6 +62,21 @@
                     0,
                     0
                 ]
+            },
+            {
+                "name": "IMD6",
+                "letter": "I",
+                "is_factory_band": false,
+                "frequencies": [
+                    5732,
+                    5765,
+                    5828,
+                    5840,
+                    5866,
+                    5740,
+                    0,
+                    0
+                ]
             }
         ],
         "powerlevels_list": [
