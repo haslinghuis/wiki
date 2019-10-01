@@ -15,6 +15,12 @@ DSHOT_RPM_ERRORS:
 * [2] = Motor #3:   "
 * [3] = Motor #4:   "
 
+SMARTAUDIO:
+* [0] = SmartAudio Version * 100 + Device Mode
+* [1] = Device Channel
+* [2] = Device Frequency
+* [3] = Device Power
+
 ### GYRO SIGNAL (https://youtu.be/A09sprstYqI)
 GYRO_RAW: (does have gyro's internal Digial Lowpass Filter (DLPF) applied)
 
