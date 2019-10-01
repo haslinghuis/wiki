@@ -5,7 +5,7 @@ Instructions for use:
 - in configurator, go to the 'Video Transmitter' tab, use 'Load from file' to load the file saved in the previous step;
 - **click 'Save'** to save the VTX table on the flight controller.
 
-For a quick video on how to determine your Smart Audio version: https://youtu.be/eaSmoOPk9KY?t=64
+For a quick video on how to determine your Smart Audio version: https://youtu.be/eaSmoOPk9KY?t=65
 
 |Region|File|Manufacturers / Models to Use this File with|
 |-|-|-|
