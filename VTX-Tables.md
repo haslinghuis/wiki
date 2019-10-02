@@ -7,18 +7,24 @@ Instructions for use:
 
 For a quick video on how to determine your Smart Audio version: https://youtu.be/eaSmoOPk9KY?t=65
 
-|Region|File|Manufacturers / Models to Use this File with|
-|-|-|-|
-|USA|[IRC Tramp](resources/vtx_tables/vtx_table_irc_tramp_us.json)|IRC Tramp|
-|USA|[SmartAudio 1.0](resources/vtx_tables/vtx_table_smart_audio_1_0_us.json)|TBS (SA 1.0 was only used the first generation TBS devices)|
-|USA|[SmartAudio 2.0](resources/vtx_tables/vtx_table_smart_audio_2_0_us.json)|TBS (used on most VTX that support SmartAudio)|
-|USA|[SmartAudio 2.1](resources/vtx_tables/vtx_table_smart_audio_2_1_us.json)|TBS (currently only applicable to latest TBS models like EVO or Pro32)|
-|USA|[RTC6705](resources/vtx_tables/vtx_table_rtc6705_us.json)|Flight controllers with on-board VTX|
-|EU|[IRC Tramp](resources/vtx_tables/vtx_table_irc_tramp_eu.json)|IRC Tramp|
-|EU|[SmartAudio 1.0](resources/vtx_tables/vtx_table_smart_audio_1_0_eu.json)|TBS (SA 1.0 was only used the first generation TBS devices)|
-|EU|[SmartAudio 2.0](resources/vtx_tables/vtx_table_smart_audio_2_0_eu.json)|TBS (used on most VTX that support SmartAudio)|
-|EU|[SmartAudio 2.1](resources/vtx_tables/vtx_table_smart_audio_2_1_eu.json)|TBS (currently only applicable to latest TBS models like EVO or Pro32)|
-|EU|[RTC6705](resources/vtx_tables/vtx_table_rtc6705_eu.json)|Flight controllers with on-board VTX|
+|Manufacturers / Models to Use this File with|File|
+|-|-|
+|**IRC Tramp Protocol:**||
+|IRC Tramp|[IRC Tramp (USA)](resources/vtx_tables/vtx_table_irc_tramp_us.json)|
+||[IRC Tramp (EU)](resources/vtx_tables/vtx_table_irc_tramp_eu.json)|
+|[MATEKSYS VTX-MINI](http://www.mateksys.com/?portfolio=vtx-mini#tab-id-6)|[VTX-MINI (INT)](http://www.mateksys.com//Downloads/VTX/MATEK_VTX-mini.json)|
+|||
+|**TBS SmartAudio Protocol:**||
+|TBS (SA 1.0 was only used the first generation TBS devices)|[SmartAudio 1.0 (USA)](resources/vtx_tables/vtx_table_smart_audio_1_0_us.json)|
+||[SmartAudio 1.0 (EU)](resources/vtx_tables/vtx_table_smart_audio_1_0_eu.json)|
+|TBS (used on most VTX that support SmartAudio)|[SmartAudio 2.0 (USA)](resources/vtx_tables/vtx_table_smart_audio_2_0_us.json)||
+||[SmartAudio 2.0 (EU)](resources/vtx_tables/vtx_table_smart_audio_2_0_eu.json)|
+|TBS (currently only applicable to latest TBS models like EVO or Pro32)|[SmartAudio 2.1 (USA)](resources/vtx_tables/vtx_table_smart_audio_2_1_us.json)|
+||[SmartAudio 2.1 (EU)](resources/vtx_tables/vtx_table_smart_audio_2_1_eu.json)|
+|||
+|**On-Board VTX:**||
+|Flight controllers with on-board VTX|[RTC6705 (USA)](resources/vtx_tables/vtx_table_rtc6705_us.json)|
+||[RTC6705 (EU)](resources/vtx_tables/vtx_table_rtc6705_eu.json)|
 
 
 ## Setting up VTX Tables in CLI
