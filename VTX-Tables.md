@@ -7,6 +7,14 @@ Instructions for use:
 
 For a quick video on how to determine your Smart Audio version: https://youtu.be/eaSmoOPk9KY?t=65
 
+Smart Audio Debug[0] key:
+100 = SA 1.0
+116 = SA 1.0 unlocked
+200 = SA 2.0
+216 = SA 2.0 unlocked
+300 = SA 2.1
+
+
 |Manufacturers / Models to Use this File with|File|
 |-|-|
 |**IRC Tramp Protocol:**||
