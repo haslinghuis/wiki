@@ -4,14 +4,6 @@
 
 - Bidirectional DSHOT now fully supported in the just released version 32.7.0 of blheli32. You can flash from configurator without downloading hex files manually.
 
-- The following F411 based targets have risks of resource conflicts with LED or softserial in 4.1: MATEKF411, MATEKF411RX, CRAZYBEEF4[DX,FR,GS], MAMBAF411. If you use one of these targets and your quad does not arm or loses functionality after enabling bidirectional dshot switch to timer based dshot by entering these commands in the CLI:
-
-```
-set dshot_bitbang=off
-set dshot_burst=off
-save
-```
-
 ## Introduction
 
 RPM based filtering gives better motor noise than ever before.  Motors will be cooler, bent prop tolerance is much better, and full throttle sounds cleaner and often is faster.
@@ -28,7 +20,7 @@ There are two underlying technologies:
 
 For RPM Filtering to work, the ESC must support the Bidirectional DShot protocol and Bidirectional DShot must be enabled in the CLI. 
 
-These two features are currently supported by BetaFlight 4.0 and 4.1 on most flight controllers, and most modern BLHeli_32 and BLHeli-S ESCs. Once 4.1 is released we will no longer provide support on 4.0.
+These two features are supported by BetaFlight 4.1 on all flight controllers, and most modern BLHeli_32 and BLHeli-S ESCs. Betaflight 4.0 is no longer supported.
 
 Here's a demo in flight. Quad has minimal filtering other than the rpm filter, handles very well and shows close to no prop wash: 
 https://youtu.be/jwFYaGHp91c, https://youtu.be/SoG245vmaLo
@@ -51,9 +43,7 @@ The Bidirectional DShot protocol is different (and more robust) in BetaFlight 4.
 
 ### Motor Poles
 
-When running 8k8k, choose Dshot600.  The ESCs report eRPM.  This must be converted to RPM using the number of magnets of the motors. The magnets to count are those on the bell of the motor. Do not count the stators where the windings are located. Typical 5" motors have 14 magnets, so that is the default setting. Smaller motors have fewer magnets, often 12. Count them or look up the motor specs.  If you don't have 14 magnets, use the following command in the CLI to set the correct number:
-
-``set motor_poles = xx`` where xx is the number of magnets you counted.
+When running 8k8k, choose Dshot600.  The ESCs report eRPM.  This must be converted to RPM using the number of magnets of the motors. The magnets to count are those on the bell of the motor. Do not count the stators where the windings are located. Typical 5" motors have 14 magnets, so that is the default setting. Smaller motors have fewer magnets, often 12. Count them or look up the motor specs.  If you don't have 14 magnets, change the number of magnets using Betaflight Configurator on the Configuration tab.
 
 ### DShot300 or DShot600?
 
@@ -62,39 +52,11 @@ For 8k8k setups, use DShot600. With 8k PID loops, Dshot300 will only update the 
 
 ### Config Snippet
 
-The easiest way to enable Betaflight is to copy and paste a snippet from the list below into the CLI, and save. Starting in 4.1 RC1 this snippet is no longer FC specific. Just paste this [Snippet](https://github.com/betaflight/bidircfg/blob/master/BITBANG.cf). 
-
-If you're running Betaflight 4.0 you need to setup a board specific snippet. See the [Timer Based Bidirectional Dshot](#timer-based-bidirectional-dshot).
+With 4.1 it's no longer necessary to install a snippet. Instead just use Betaflight Configurator and enable bidirectional dshot on the Configuration tab.
 
 ### Config Verification
 
-Your FC is now set up for bidirectional dshot - let's verify that it works. To do so power cycle FC and ESC. Connect the lipo first to the ESC, then the USB cable.  Open the CLI and enter ``status`` for BetaFlight 4.0 and ``dshot_telemetry_info`` for BetaFlight 4.1. You should now see bidirectional dshot statistics similar to this:
-
-```
-Dshot reads: 145267
-Dshot invalid pkts: 36
-Dshot irq micros: 5
-Dshot RPM Motor 0: 0
-Dshot RPM Motor 1: 0
-Dshot RPM Motor 2: 0
-Dshot RPM Motor 3: 0
-```
-The number of invalid packets should not exceed 1% of all Dshot reads. All motors should report an RPM of 0.
-
-Type ``exit`` to leave the CLI. Go to the motors tab, click the safety toggle, move the slider up, and let all motors spin very slowly. Go back to the CLI and repeat the ``status`` command. Now your output should look like this:
-
-```
-Dshot reads: 505108
-Dshot invalid pkts: 8
-Dshot irq micros: 4
-Dshot RPM Motor 0: 106
-Dshot RPM Motor 1: 112
-Dshot RPM Motor 2: 107
-Dshot RPM Motor 3: 111
-```
-**Note that the motors have to actually be spinning at the time you check with the `status` command for a non-zero RPM to be reported.**
-
-Now you're ready for your first test flight! Log to blackbox if you can. The snippet sets the debug_mode to  `set debug_mode = GYRO_SCALED`, for noise analysis.  To see the live rpm of your quad in your blackbox log use `set debug_mode = RPM_FILTER`. 
+Your FC is now set up for bidirectional dshot - let's verify that it works. To do so power cycle FC and ESC. Connect the lipo first to the ESC, then the USB cable. Now open the Motors tab in Betaflight Configurator. There should be no red line indicating significant errors on any motor. When you spin the motors you should see the reported rpm. The reported error percentage should not exceed 1%. All motors should report an RPM of unless spun.
 
 ## Tuning
 
@@ -102,7 +64,9 @@ The RPM filter will do the heavy lifting of removing nearly all motor noise with
 
 However, general 'junk' noise from bearings, wind and turbulence will not be removed by the RPM filters.  Some  lowpass filtering will still be required to control those noise elements.  
 
-Frame resonances, which manifest as large fixed frequency noise lines, won't be removed by the RPM filters either; they are best managed by keeping the Dynamic Notch active.  
+Frame resonances, which manifest as large fixed frequency noise lines, won't be removed by the RPM filters either; they are best managed by keeping the Dynamic Notch active.
+
+The Dynamic Notch needs to be reconfigured since it now no longer needs to eliminate motor noise. On the Filter Settings tab in Configurator set the Dynamic Notch Filter Range to Medium, the Dynamic Notch Width Percent to 0 and the Dynamic Notch Q to 250.
 
 For existing builds that already fly well, don't change any filter settings for your first flights.  For builds that are already problematic, and for new builds, we recommend starting with the default 4.1 lowpass filter settings.  This snippet loads 4.1 default filtering, which has delays of about 3.5ms at idle and 1.1ms on full throttle:
 
