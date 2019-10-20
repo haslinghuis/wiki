@@ -21,6 +21,7 @@ Smart Audio Debug[0] key:<br />
 |IRC Tramp|[IRC Tramp (USA)](resources/vtx_tables/vtx_table_irc_tramp_us.json)|
 ||[IRC Tramp (EU)](resources/vtx_tables/vtx_table_irc_tramp_eu.json)|
 |[MATEKSYS VTX-MINI](http://www.mateksys.com/?portfolio=vtx-mini#tab-id-6)|[VTX-MINI (INT)](http://www.mateksys.com//Downloads/VTX/MATEK_VTX-mini.json)|
+|[iFlight The Force Long Range](https://www.iflight-rc.com/index.php?route=product/product&path=24_75&product_id=732)|[Force LR (INT)](https://raw.githubusercontent.com/StillVoidingWarranties/Betaflight-VTX-Tables/master/BTFL_vtxtable_iFlight_Force_Long_Range_-_All.json)|
 |||
 |**TBS SmartAudio Protocol:**||
 |TBS (SA 1.0 was only used the first generation TBS devices)|[SmartAudio 1.0 (USA)](resources/vtx_tables/vtx_table_smart_audio_1_0_us.json)|
