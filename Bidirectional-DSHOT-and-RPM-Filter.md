@@ -1,5 +1,7 @@
 ### Recent Announcements
 
+- First EA of a custom BF 4.1 Performance Edition for F3 FCs available. [Get it here!](https://github.com/joelucid/betaflight/releases/tag/PP4_1_EA1)
+
 - Bidirectional DSHOT and RPM Filter now available on BLHeli_S escs. [Get it here!](https://jflight.net)
 
 - Bidirectional DSHOT now fully supported in the just released version 32.7.0 of blheli32. You can flash from configurator without downloading hex files manually.
