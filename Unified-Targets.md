@@ -1,13 +1,24 @@
 # Unified Targets for users
 * Determine the target to use. 
 
-Yes the chip says STM32F405 on it, but that does not describe the board.
+![Image that shows where to find the target name](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/betaflight/identify_target.png)
+
+The CLI is another method to get the target name.
+```
+# version
+# Betaflight / STM32F405 (S405) 4.1.0 Oct 16 2019 / 11:57:16 (c37a7c91a) MSP API: 1.42
+# manufacturer_id: HBRO   board_name: KAKUTEF4V2   custom defaults: YES
+```
+
+Yes the chip says STM32F405 on it, but that does not describe the board. Check the target name
+
+
 * Choose your target
 ```
 MATEKF411 (MTKS)  <-- Unified target
 MATEKF411 (Legacy)
 ```
-FAQ: What do these four letters mean? They refer to the manufacturer of the board. A list is available in  [Manufacterers.md](https://github.com/betaflight/unified-targets/blob/master/Manufacturers.md)
+**FAQ**: What do these four letters mean? They refer to the manufacturer of the board. The list is available in  [Manufacterers.md](https://github.com/betaflight/unified-targets/blob/master/Manufacturers.md)
 
 Tip: remember to save a backup of your config, like as a `diff`, *before* you flash a new version of betaflight.
 
