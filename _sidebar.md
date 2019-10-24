@@ -28,6 +28,7 @@
 
 # Setup and More
 
+ - [Serial-BlackBox-Logging](Serial-BlackBox-Logging)
  - [Arming Sequence & Safety](Arming-Sequence-&-Safety)
  - [TBS Unify SmartAudio](Unify-Smartaudio)
  - [IRC Tramp](IRC-Tramp)
