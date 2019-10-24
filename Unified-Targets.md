@@ -14,6 +14,8 @@ Suggesting Full Chip Erase is good idea when switching between versions, especia
 
 Connect to configurator, click on `Apply Custom Defaults` when prompted
 
+If you are having an issue with the unified target, try the legacy target for now, and file an issue on the [Issue Tracker](https://github.com/betaflight/betaflight/issues) if the unified target is missing anything that it should have. 
+
 Todo: which target for example?, also needs some images.
 
 # Tips for working with Unified targets
