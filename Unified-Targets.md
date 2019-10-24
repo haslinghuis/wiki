@@ -1,18 +1,20 @@
 # Unified Targets for users
+* Determine the target to use. 
 
-Choose your target
+Yes the chip says STM32F405 on it, but that does not describe the board.
+* Choose your target
 ```
 MATEKF411 (MTKS)  <-- Unified target
 MATEKF411 (Legacy)
 ```
-FAQ: What do these four letters mean? 
+FAQ: What do these four letters mean? They refer to the manufacturer of the board. A list is available in  [Manufacterers.md](https://github.com/betaflight/unified-targets/blob/master/Manufacturers.md)
 
-You could look up AIRB, MTKS, etc on [Manufacterers.md](https://github.com/betaflight/unified-targets/blob/master/Manufacturers.md)
+Tip: remember to save a backup of your config, like as a `diff`, *before* you flash a new version of betaflight.
 
-Suggesting Full Chip Erase is good idea when switching between versions, especially from like 4.0.6 to 4.1.0. 
-`Load Firmare [Online]` then `Flash Firmware`
+* `Load Firmware [Online]` then `Flash Firmware`
 
-Connect to configurator, click on `Apply Custom Defaults` when prompted
+* Connect to configurator, click on `Apply Custom Defaults` when prompted:
+![Picture of a notice that asks the user to apply custom defaults](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/betaflight/apply_custom_defaults_prompt.png)
 
 If you are having an issue with the unified target, try the legacy target for now, and file an issue on the [Issue Tracker](https://github.com/betaflight/betaflight/issues) if the unified target is missing anything that it should have. 
 
