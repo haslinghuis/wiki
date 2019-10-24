@@ -33,6 +33,8 @@ In the configurator load the `.config` file first, and then load the `betaflight
 
 `make_config_hex.sh` is a script in `src/utils` that can be used to combine a unified target configuration with a firmware image. The combined .hex may be useful to share with other users of the same flight controller. Users of the combined .hex will be prompted to `Apply Custom Defaults`, just like the regular flashing procedure.
 
-The `srec_cat` program is part of [srecord](http://srecord.sourceforge.net/), which is available in ubuntu under universe. Windows binaries to not seem available, but they do have [instructions](http://srecord.sourceforge.net/windows.html)
+The `srec_cat` program is part of [srecord](http://srecord.sourceforge.net/), which is available in ubuntu under universe. `apt install srecord`
+
+Windows binaries to not seem available, but they do have [instructions](http://srecord.sourceforge.net/windows.html)
 
 Take a look at [src/utils/make_config_hex.sh](https://github.com/betaflight/betaflight/blob/master/src/utils/make_config_hex.sh) for more information.
