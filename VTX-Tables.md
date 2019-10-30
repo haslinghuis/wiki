@@ -14,6 +14,7 @@ Smart Audio Debug[0] key:<br />
 216 = SA 2.0 unlocked<br />
 300 = SA 2.1
 
+**Update:** 30 Oct 2019: The SmartAudio tables for the EU had a bug that caused the F and R bands to have the wrong frequencies. They have been fixed, please re-install the updated tables.
 
 |Manufacturers / Models to Use this File with|File|
 |-|-|
