@@ -1,6 +1,6 @@
 ### Recent Announcements
 
-- First EA of a custom BF 4.1 Performance Edition for F3 FCs available. [Get it here!](https://github.com/joelucid/betaflight/releases/tag/PP4_1_EA1)
+- Latest EA of a custom BF 4.1 Performance Edition for F3 FCs available. [Get it here!](https://github.com/joelucid/betaflight/releases)
 
 - Bidirectional DSHOT and RPM Filter now available on BLHeli_S escs. [Get it here!](https://jflight.net)
 
