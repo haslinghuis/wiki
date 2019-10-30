@@ -34,6 +34,21 @@
                 ]
             },
             {
+                "name": "UNKNOWN",
+                "letter": "U",
+                "is_factory_band": true,
+                "frequencies": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            },
+            {
                 "name": "FATSHARK",
                 "letter": "F",
                 "is_factory_band": true,
