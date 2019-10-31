@@ -87,15 +87,15 @@ A clean build is when a spectrograph of the RAW gyro noise trace (Debug_Mode=Gyr
 "Better" means the spektrograph lines are lower or have more well defined peaks.  An important factor is the dip in raw motor vibrations ("noise") from 80 to 200hz.
 
 ---
-#### Brushed \ Brushless Whoop Class
+#### Brushed Whoop Class
 <details><summary>CLI Copy\Paste</summary>
 
 ```python
 #Filter Settings
 set gyro_lowpass_type = PT1
-set dyn_notch_min_hz = 150
-set dyn_lpf_gyro_min_hz = 150
-set dyn_lpf_gyro_max_hz = 750
+set dyn_notch_min_hz = 100
+set dyn_lpf_gyro_min_hz = 100
+set dyn_lpf_gyro_max_hz = 300
 set dyn_lpf_dterm_min_hz = 150
 set dyn_lpf_dterm_max_hz = 250
 set dterm_lowpass_type = BiQUAD
@@ -105,16 +105,23 @@ set dterm_lowpass2_hz = 0
 set vbat_pid_gain = ON
 set anti_gravity_gain = 5000
 
-set p_pitch = 33
-set i_pitch = 85
-set d_pitch = 35
+set p_pitch = 80
+set i_pitch = 25
+set d_pitch = 80
+set ff_pitch = 100
 
-set p_roll = 28
-set i_roll = 78
-set d_roll = 32
+set p_roll = 80
+set i_roll = 25
+set d_roll = 80
+set ff_roll = 100
 
-set d_min_pitch = 18
-set d_min_roll = 16
+set p_yaw = 90
+set i_yaw = 90
+set d_yaw = 0
+set ff_pitch = 100
+
+set d_min_pitch = 0
+set d_min_roll = 0
 set d_min_boost_gain = 30
 set d_min_advance = 0
 
@@ -126,7 +133,7 @@ set iterm_relax_cutoff = 10
 
 #TPA Settings (which is D-term only by default)
 set tpa_rate = 80
-set tpa_breakpoint = 1800
+set tpa_breakpoint = 1750
 save
 
 ```
