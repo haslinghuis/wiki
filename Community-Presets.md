@@ -94,9 +94,9 @@ A clean build is when a spectrograph of the RAW gyro noise trace (Debug_Mode=Gyr
 #Filter Settings
 set dyn_notch_min_hz = 100
 
-set gyro_lowpass_type = PT1
 set dyn_lpf_gyro_min_hz = 100
 set dyn_lpf_gyro_max_hz = 300
+set gyro_lowpass_type = PT1
 set gyro_lowpass_hz = 0
 set gyro_lowpass2_type = PT1
 set gyro_lowpass2_hz = 0
@@ -104,6 +104,8 @@ set gyro_lowpass2_hz = 0
 set dyn_lpf_dterm_min_hz = 70
 set dyn_lpf_dterm_max_hz = 170
 set dterm_lowpass_type = BiQUAD
+set dterm_lowpass_hz = 0
+set dterm_lowpass2_type = PT1
 set dterm_lowpass2_hz = 0
 
 #PID Gains Settings
