@@ -87,7 +87,7 @@ A clean build is when a spectrograph of the RAW gyro noise trace (Debug_Mode=Gyr
 "Better" means the spektrograph lines are lower or have more well defined peaks.  An important factor is the dip in raw motor vibrations ("noise") from 80 to 200hz.
 
 ---
-#### Brushed Whoop Class
+#### Brushless Whoop Class (based on Mobula 7)
 <details><summary>CLI Copy\Paste</summary>
 
 ```python
