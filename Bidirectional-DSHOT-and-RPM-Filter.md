@@ -68,7 +68,8 @@ However, general 'junk' noise from bearings, wind and turbulence will not be rem
 
 Frame resonances, which manifest as large fixed frequency noise lines, won't be removed by the RPM filters either; they are best managed by keeping the Dynamic Notch active.
 
-The Dynamic Notch needs to be reconfigured since it now no longer needs to eliminate motor noise. On the Filter Settings tab in Configurator set the Dynamic Notch Filter Range to Medium, the Dynamic Notch Width Percent to 0 and the Dynamic Notch Q to 250.
+The Dynamic Notch needs to be reconfigured since it now no longer needs to eliminate motor noise. On the Filter Settings tab in Configurator set the Dynamic Notch Filter Range to Medium, the Dynamic Notch Width Percent to 0 and the Dynamic Notch Q to 250. 
+![Filter settings picture](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/betaflight/RPMFILTER-dynamic_filter_4.1_settings.png)
 
 For existing builds that already fly well, don't change any filter settings for your first flights.  For builds that are already problematic, and for new builds, we recommend starting with the default 4.1 lowpass filter settings.  This snippet loads 4.1 default filtering, which has delays of about 3.5ms at idle and 1.1ms on full throttle:
 
