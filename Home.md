@@ -40,11 +40,9 @@ or
 After Flashing but before configuring do the CLI Dump then Copy/paste this into a Text file named with V#. Then on next update do this again to a new text file.  
 This allows you to check for differences by either manually compared the two text files or by using an Difference option in a text editor.  NotePad++ is one such editor with a good difference feature.
 
-- If not in this Wiki then it is probably not a feature new to BetaFlight and you need to look in the CleanFlight Docs.
+- If not in this Wiki please try the [docs](https://github.com/betaflight/betaflight/tree/master/docs) directory as another source for information. Note: includes some documentation from Cleanflight
 
 - All BASICs and alternate methods to config and flash are in the NAZE32 Manual here: http://www.abusemark.com/downloads/naze32_rev2.pdf  
-
-- New [Docs](https://github.com/martinbudden/betaflight/tree/master/docs) for BetaFlight 2.x. Note: These are NOT fully covering all Versions of BetaFlight, particularly the CLI commands. Always also read the Wiki Release Note pages for changes and then a "get" CLI command to check spelling and valid options.
 
 ## Introduction
 Betaflight is software that is open source and is available free of charge without warranty to all users.
