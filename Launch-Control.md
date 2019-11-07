@@ -53,6 +53,8 @@ Allows the pilot to optionally set an angle limit that will limit the forward pi
 
 If the warnings element is enabled then when Launch Control is active a `LAUNCH` indicator will be displayed. Also make sure that the Launch Control warning option is enabled (`osd_warn_launch_control = ON`). Additionally if the accelerometer is enabled the current pitch angle will be appended like `LAUNCH 25`.
 
+**Added in 4.2:** The OSD warning will start to blink when the throttle gets within 10% of the trigger percentage. Provides a visual indication that the throttle is close to triggering a launch.
+
 All of the Launch Control parameters can be adjusted in the OSD menus. They're under PROFILE -> MISC PP -> LAUNCH CONTROL.
 
 ## NOTES
