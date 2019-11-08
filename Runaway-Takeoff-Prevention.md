@@ -8,8 +8,6 @@ Runaway Takeoff Prevention is a safety feature designed to detect and auto-disar
 
 This feature is designed to only intervene and auto-disarm during a runaway event on first takeoff after powering up, and should have no impact on normal flight.  
 
-Please provide feedback or ask questions [in this RCGroups thread](https://www.rcgroups.com/forums/showthread.php?3034038-Runaway-Takeoff-Prevention-%28anti-taz%29-discussion-Betaflight-3-3).
-
 ## WARNING
 
 **While this feature is designed to prevent most types of runaway takeoff events, it cannot be guaranteed that all such occurrences will be prevented.  The wide range of hardware and variable circumstances mean that there may be cases where this feature may be unable to provide additional protection.  As always it is the pilot's responsibility to ensure their aircraft is configured properly and safe to fly.**
