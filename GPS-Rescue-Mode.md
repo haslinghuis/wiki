@@ -44,7 +44,27 @@ This is the maximum allowed tilt angle for your quad when coming home. This sett
 
 This is the distance, in meters, at which your quad will start descending towards home.
 
-### At this point you are ready to test Rescue Mode. 
+`set gps_rescue_ascend_rate = [number] (default is 500)` (added in betaflight 4.1)
+
+This is the vertical speed at which your quad will climb, espressed in centimeters for second 
+
+`set gps_rescue_descend_rate = [number] (default is 150)` (added in betaflight 4.1)
+
+This is the vertical speed at which your quad will descend, espressed in centimeters for second 
+
+`gps_rescue_throttle_min` and `gps_rescue_throttle_max` in betaflight 4.1 only limit the escursion of the the new pid controller(https://github.com/betaflight/betaflight/pull/8015)
+
+`gps_rescue_alt_mode = [MAX_ALT, FIXED_ALT, CURRECT_ALT]` (added in betaflight 4.1)
+
+now we can set the altitude of gps rescue
+
+**MAX_ALT** is the old setting, the altitude will be `gps_rescue_initial_alt`, or the maximum altitude recorded during flight +15m
+
+**FIXED_ALT**, the quad will always try to return to the height set (`gps_rescue_initial_alt`)
+
+**CURRENT_ALT**, the quad will return maintaining the readed altitude during the rescue activation
+### At this point you are ready to test Rescue Mode. (not suggested)
+
  Wait for your gps to get a good fix. 
  By default your quad will not arm if you have less than `gps_rescue_min_sats` (default is 8) satellites. 
 
