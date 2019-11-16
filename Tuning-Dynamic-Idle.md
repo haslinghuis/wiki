@@ -1,6 +1,6 @@
 ### Intro
 
-BF 4.1 contains a new feature for use with dshot rpm telemetry: dynamic idle. Its purpose is two-fold: allow better desync protection and make more braking torque available to the flight controller. It requires rpm telemetry, so either [JESC](https://jflight.net) on BLHeli_S hardware or BLHeli32.
+BF 4.1 contains a new feature for use with dshot rpm telemetry: dynamic idle. Its purpose is two-fold: allow better desync protection and make more braking torque available to the flight controller. It requires rpm telemetry, so either [JESC](https://jflight.net) on BLHeli_S hardware or BLHeli32. 3D mode is not supported and if the 3D feature is enabled then dynamic idle will be disabled.
 
 ### Desync Protection
 
