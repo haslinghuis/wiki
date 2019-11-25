@@ -72,6 +72,7 @@
  - [Supported Sensors](Supported-Sensors)
  - [Pinio and PinioBox](Pinio-and-PinioBox)
  - [Launch Control](Launch-Control)
+ - [Acro Trainer](Acro-Trainer)
  - [Paralyze](Paralyze-for-team-races)
  - [D_Min](d_min)
  - [Integrated Yaw](Integrated-Yaw)
