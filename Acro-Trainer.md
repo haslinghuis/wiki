@@ -21,9 +21,9 @@ Configuration parameters:
 To enable debugging:
 `set debug_mode = ACRO_TRAINER`
 
-debug(0) - Current angle
-debug(1) - The internal logic state
-debug(2) - Modified setpoint
-debug(3) - Projected angle based gyro rate and look-ahead period
+* debug(0) - Current angle
+* debug(1) - The internal logic state
+* debug(2) - Modified setpoint
+* debug(3) - Projected angle based gyro rate and look-ahead period
 
 Note that there are no changes to the functioning or calculations in the PID controller. This feature simply intercepts the pilot input on the roll and pitch axes and adjusts to prevent exceeding the configured angle limit.
