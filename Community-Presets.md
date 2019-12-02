@@ -544,10 +544,11 @@ set d_min_pitch = 0
 ## Pilot: CUDA KEER<br>
 #### [6" Floss 2.1 with Hyperlite 2207 1922kv race rig](https://github.com/cudakeer808/betaflight/wiki/floss-2.1-2207-1922-rpm_filter)<br>
 #### [5" Massive Droner with T-Motor F60pro II](https://github.com/cudakeer808/betaflight/wiki/Massive-Droner-2207-1750kv)
+<br/>
+<br/>
 ---
 
-<br/>
-<br/>
+
 ## Pilot: TehLlama <br>
 #### 6" Neutron-R with BrotherHobby R6 2207 Race Rig<br>
 ##### [Build Details](https://rotorbuilds.com/build/18676)
