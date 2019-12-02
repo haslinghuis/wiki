@@ -548,6 +548,48 @@ set d_min_pitch = 0
 
 <br/>
 <br/>
+## Pilot: TehLlama <br>
+#### 6" Neutron-R with BrotherHobby R6 2207 Race Rig<br>
+##### [Build Details](https://rotorbuilds.com/build/18676)
+
+<details><summary>CLI Copy\Paste</summary>
+
+```python
+# Filter Settings
+# CLI Filter Update from 12/2/19 Update
+
+#PID Gains Settings
+set vbat_pid_gain = ON
+set anti_gravity_gain = 3000
+set p_pitch = 58
+set i_pitch = 70
+set d_pitch = 38
+set f_pitch = 180
+set p_roll = 62
+set i_roll = 80
+set d_roll = 40
+set f_roll = 180
+set p_yaw = 70
+set i_yaw = 80
+set d_yaw = 0
+set f_yaw = 120
+set d_min_pitch = 24
+set d_min_roll = 27
+
+# This is my preferred, but unconventional iTermRelax Setup - relies on FF to push Yaw axis around
+set iterm_relax = RPY
+set iterm_relax_type = SETPOINT
+set iterm_relax_cutoff = 10
+
+# Rates - These are good novice racer rates
+# Max stick deflection values are 375°/375°/275° rates (R/P/Y)
+#  0.75 RC Rates // 0.55 YawRC // 0.6 SuperRates on All
+
+
+```
+</details>
+
+---
 <br/>
 
 ## REVERT 4.0.x DEFAULTS TO AN OLDER VERSION OF BETAFLIGHT DEFAULTS
@@ -752,4 +794,6 @@ set rc_smoothing_type = INTERPOLATION
 save
 
 ```
-</details>
+
+
+
