@@ -19,7 +19,7 @@ Output 8: TIM15 CH2
 ```
 
 Grand rule is that channels of a timer can not be assigned to different functions.
-If you have motors connected to Outputs 3 and 4, then TIM4 is locked to motor and can not be used for something else. This means that you can not use Output 5 and 6 for servos. (The exceptional case is when motors are controlled by legacy PWM protocol; in this case, motors and servos can be mixed on channels of the same timer.)
+If you have motors connected to Outputs 3 and 4, then TIM4 is locked to motor and can not be used for something else. This means that you can not use Output 5 and 6 for servos. (The exceptional case is when motors are controlled by legacy PWM protocol; in this case, motors and servos may be able to be mixed on channels of the same timer.  If this does not work for your board, see fixes below.)
 
 Options are
 (1) Output 1 & 2: Servos and Output 3~6: Motors
@@ -57,7 +57,10 @@ __Target/board maintainers, please add example entries that reflect mappings bas
 
 ---
 #### Example 1: NAZE32 "__Shift by 2__" style assignment
-If you have a NAZE32 already setup based on "__Shift Motor Outputs by 2__" rule, and it was working prior to v3.1, here is your assignment. (On F1 boards Servos output to motors #1 & 2 to avoid Timer conflicts)
+If you have a NAZE32 already setup based on "__Shift Motor Outputs by 2__" rule, and it was working prior to v3.1, here is your assignment.  
+
+**Note: **The default assignment uses motors 1-4 which will cause conflicts if you attempt to reassign servos to motors 5-6.  On F1 boards, assign the Servos output to motors #1 & 2 to avoid Timer conflicts and reassign Motors 1-4 to previous 3-6 pin assignments to prevent timer issues.
+
 ```
 resource motor 1 none
 resource motor 2 none
