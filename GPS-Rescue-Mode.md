@@ -60,10 +60,10 @@ now we can set the altitude of gps rescue
 
 **MAX_ALT** is the old setting, the altitude will be `gps_rescue_initial_alt`, or the maximum altitude recorded during flight +15m
 
-**FIXED_ALT**, the quad will always try to return to the height set (`gps_rescue_initial_alt`)
+**FIXED_ALT**, the quad will always try to return to the height set (`gps_rescue_initial_alt`) 
 
-**CURRENT_ALT**, the quad will return maintaining the readed altitude during the rescue activation
-### At this point you are ready to test Rescue Mode. (not suggested)
+**CURRENT_ALT**, the quad will return maintaining the readed altitude during the rescue activation (not suggested)
+### At this point you are ready to test Rescue Mode.
 
  Wait for your gps to get a good fix. 
  By default your quad will not arm if you have less than `gps_rescue_min_sats` (default is 8) satellites. 
