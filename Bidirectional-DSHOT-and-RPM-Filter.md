@@ -2,8 +2,8 @@
 
 - Latest EA of a custom BF 4.1 Performance Edition for F3 FCs available. [Get it here!](https://github.com/joelucid/betaflight/releases)
 
-- Bidirectional DSHOT and RPM Filter now available on BLHeli_S escs. [Get it here!](https://jflight.net)
-
+- Bidirectional DSHOT and RPM Filter for BLHeli_S escs. Paid but VERY cheap and worth it! 48khz version available for testing [Get it here!](https://jflight.net)
+- Bidirectional DSHOT and RPM Filter for BLHeli_S escs. Free [Get it here!](https://github.com/JazzMaverick/BLHeli/tree/JazzMaverick-patch-1)
 - Bidirectional DSHOT now fully supported in the just released version 32.7.0 of blheli32. You can flash from configurator without downloading hex files manually.
 
 ## Introduction
