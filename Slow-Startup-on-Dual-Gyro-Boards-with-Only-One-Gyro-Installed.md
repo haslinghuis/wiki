@@ -4,7 +4,7 @@ Set gyro_2_bustype = NONE
 ```
 Note: this tip only works with Dualgyro based boards with only one gyroscope installed.
 
-## Dual Gyro boards with one gyro examples
+## Examples of Dual Gyro boards with one gyro
 
 - AirbotF7
 - RacerstarF7
