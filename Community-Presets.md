@@ -6,6 +6,9 @@
 
 <br/><br/>
 
+# BF 4.1.X
+Betaflight 4.1 has the tuning sliders, someone should fill this out.
+
 # BF 4.0.X
 
 <br/>
