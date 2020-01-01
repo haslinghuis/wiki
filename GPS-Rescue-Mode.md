@@ -12,6 +12,7 @@ GPS Rescue is not a full "Return To Home" (RTH) function. It is not meant to be 
 * Accelerometer must be enabled, Rescue Mode needs it to keep the quad leveled.
 * Barometer is optional but recommended. We have tested with both on-board and external (i2c) units.
 * **This mode does not require a compass but will use one if available.**
+* **3D mode is not supported.** If you have the 3D feature enabled GPS Rescue will be disabled.
 
 # **DISCLAIMER**: 
 *  This is an experimental feature.
