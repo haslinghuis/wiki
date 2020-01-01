@@ -3,7 +3,7 @@ RCGroups Thread with links to OpenLogger and firmware:
 https://www.rcgroups.com/forums/showthread.php?2299805-Blackbox-flight-data-recorder-feature-for-Baseflight-Cleanflight 
 
 ### Black Box OpenLager
-This has an SPI interface for faster logging (same as when the SD card is intergrated onto an FC board).
+This has an SPI interface for faster logging (same as when the SD card is integrated onto an FC board).
 https://github.com/d-ronin/openlager/wiki   
 Available from: http://shop.myairbot.com/index.php/openlager.html   
 and: http://www.readytoflyquads.com/high-rate-f4-data-logger-openlager   
@@ -11,7 +11,7 @@ and: http://www.readytoflyquads.com/high-rate-f4-data-logger-openlager
 ### BlackBox Viewer
 The Latest Viewer and source is here:   
 https://github.com/betaflight/blackbox-log-viewer 
-For 3.4 logs, you can use http://andwho.sytes.net:8080/job/Borisb_Blackbox_Log_Viewer/ until oficial release comes by.
+For 3.4 logs, you can use http://andwho.sytes.net:8080/job/Borisb_Blackbox_Log_Viewer/ until official release comes by.
 
 ### Videos and tutorials
 Joshua Bardwell just started a new video series which he calls BlackBox 101:   
