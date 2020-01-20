@@ -22,7 +22,7 @@ SMARTAUDIO:
 * [3] = Device Power
 
 ### GYRO SIGNAL (https://youtu.be/A09sprstYqI)
-GYRO_RAW: (does have gyro's internal Digial Lowpass Filter (DLPF) applied)
+GYRO_RAW: (does have gyro's internal Digital Lowpass Filter (DLPF) applied)
 
 For use in seeing the unscaled gyro signal into the firmware for use in stack overflow detection (ICM gyros).
 * [0] = roll: gyro signal input to firmware **UN**scaled
@@ -30,9 +30,9 @@ For use in seeing the unscaled gyro signal into the firmware for use in stack ov
 * [2] = yaw: gyro signal input to firmware **UN**scaled
 * [3] = [empty]
 
-GYRO_SCALED: (does have gyro's internal Digial Lowpass Filter (DLPF) applied)
+GYRO_SCALED: (does have gyro's internal Digital Lowpass Filter (DLPF) applied)
 
-For use in seeing the "raw" noise from the gyro into the firmware for filter tunining.
+For use in seeing the "raw" noise from the gyro into the firmware for filter tuning.
 * [0] = roll: gyro signal input to firmware **scaled** into deg/sec
 * [1] = pitch: gyro signal input to firmware **scaled** into deg/sec
 * [2] = yaw: gyro signal input to firmware **scaled** into deg/sec
@@ -146,7 +146,7 @@ DUAL_GYRO_SCALED:
 * [2] = roll: RAW SCALED gyro #2 data (scaled to Deg/sec)
 * [3] = pitch: RAW SCALED gyro #2 data (scaled to Deg/sec)
 
-DAUL_GYRO_DIFF:
+DUAL_GYRO_DIFF:
 * [0] = roll: gyro #1 filter – gyro #2 filtered
 * [1] = pitch: gyro #1 filter – gyro #2 filtered
 * [2] = yaw: gyro #1 filter – gyro #2 filtered
