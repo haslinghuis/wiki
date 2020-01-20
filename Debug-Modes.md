@@ -32,7 +32,7 @@ For use in seeing the unscaled gyro signal into the firmware for use in stack ov
 
 GYRO_SCALED: (does have gyro's internal Digial Lowpass Filter (DLPF) applied)
 
-For use in seeing the "raw" noise from the gyro into the firmware for fitler tunining.
+For use in seeing the "raw" noise from the gyro into the firmware for filter tunining.
 * [0] = roll: gyro signal input to firmware **scaled** into deg/sec
 * [1] = pitch: gyro signal input to firmware **scaled** into deg/sec
 * [2] = yaw: gyro signal input to firmware **scaled** into deg/sec
