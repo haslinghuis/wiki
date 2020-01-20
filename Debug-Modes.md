@@ -135,16 +135,16 @@ D_MIN:
 
 ### SENSOR FUSION GYRO BOARDS:
 DUAL_GYRO_RAW:
-* [0] = roll: RAW gyro #1 data
-* [1] = pitch: RAW gyro #1 data
-* [2] = roll: RAW gyro #2 data
-* [3] = pitch: RAW gyro #2 data
+* [0] = roll: RAW gyro #1 data (NOT scaled to Deg/sec)
+* [1] = pitch: RAW gyro #1 data (NOT scaled to Deg/sec)
+* [2] = roll: RAW gyro #2 data (NOT scaled to Deg/sec)
+* [3] = pitch: RAW gyro #2 data (NOT scaled to Deg/sec)
 
-DUAL_GYRO:
-* [0] = roll: FILTERED gyro #1 data
-* [1] = pitch: FILTERED gyro #1 data
-* [2] = roll: FILTERED gyro #2 data
-* [3] = pitch: FILTERED gyro #2 data
+DUAL_GYRO_SCALED:
+* [0] = roll: RAW SCALED gyro #1 data (scaled to Deg/sec)
+* [1] = pitch: RAW SCALED gyro #1 data (scaled to Deg/sec)
+* [2] = roll: RAW SCALED gyro #2 data (scaled to Deg/sec)
+* [3] = pitch: RAW SCALED gyro #2 data (scaled to Deg/sec)
 
 DAUL_GYRO_DIFF:
 * [0] = roll: gyro #1 filter – gyro #2 filtered
