@@ -55,7 +55,7 @@ This is the vertical speed at which your quad will descend, espressed in centime
 
 `gps_rescue_throttle_min` and `gps_rescue_throttle_max` in betaflight 4.1 only limit the escursion of the the new pid controller(https://github.com/betaflight/betaflight/pull/8015)
 
-`gps_rescue_alt_mode = [MAX_ALT, FIXED_ALT, CURRECT_ALT]` (added in betaflight 4.1)
+`gps_rescue_alt_mode = [MAX_ALT, FIXED_ALT, CURRENT_ALT]` (added in betaflight 4.1)
 
 now we can set the altitude of gps rescue
 
