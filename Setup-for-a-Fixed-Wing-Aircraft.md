@@ -59,7 +59,7 @@ The new version of Betaflight allows for timer remapping, which may alleviate is
 
 `smix 3 0 3 100 0 0 100 0` //is this needed?  not sure
 
---lastly, the reassign the timer on b01
+--lastly, reassign the timer on b01
 
 `timer B01 AF1`
 
