@@ -52,8 +52,11 @@ The new version of Betaflight allows for timer remapping, which may alleviate is
 `smix reset`
 
 `smix 0 3 1 100 0 0 100 0` //
+
 `smix 1 2 0 100 0 0 100 0` //
+
 `smix 2 4 2 100 0 0 100 0` //
+
 `smix 3 0 3 100 0 0 100 0` //is this needed?  not sure
 
 --lastly, the reassign the timer on b01
