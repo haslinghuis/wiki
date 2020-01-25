@@ -24,6 +24,43 @@ Use the servos tab to reverse them if needed.
 Set the PWM frequency as separate from PID loop and set it to 50hz to make the servos work (you will lose all of the new ESC protocols but that's not as important on a plane).   
 The modes and mixes work fine for me as-is and I expect that everything else will be fine as well(like OSD). I just need to add FPV to it and get it up in the air! 
 
+#### A note from Maine_Guy 1-25-20
+The notes below did not help me in my quest to get my 4 channel micro F4 board running (although helpful).  Persistence, luck, and the latest build did.
+
+The new version of Betaflight allows for timer remapping, which may alleviate issues noted below with conflicts.
+
+--mixer is
+
+'mixer CUSTOMAIRPLANE
+
+--I kept motor 1 as originally assigned
+
+'resource MOTOR 1 B00
+
+--I reassigned motor outputs 2-4 to servos 
+
+'resource SERVO 1 A02
+'resource SERVO 2 A03
+'resource SERVO 3 B01
+
+--motor mix
+
+'mmix 0  1.000  0.000  0.000  0.000
+
+--servo mix (this one I found by trial and error - since the servo outputs don't seem to match - but it works!
+
+'smix reset
+'
+'smix 0 3 1 100 0 0 100 0
+'smix 1 2 0 100 0 0 100 0
+'smix 2 4 2 100 0 0 100 0
+'smix 3 0 3 100 0 0 100 0
+
+--lastly, the reassign the timer on b01
+
+'timer B01 AF1
+
+
 #### A Post by RCvehicleGuy:  
 Well I messed with trying to get betaflight to work with an airplane. It was clearly not intended to work.  
 What I wanted to do was use the resource command to put servos 1-4 on motor outputs 1-4 on my naze board and do a custom smix to assign stabilized roll, stabilized elevator, rc throttle, and stabilized rudder to the outputs respectively. Like a futaba radio. It sounds simple but for the life of me couldn't get it to work last night. I think something is broken somewhere, these possibilities haven't been tested I would think, seeing as betaflight is designed for acro-quad flying it really only gets tested on acro-quads.  
