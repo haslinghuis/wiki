@@ -31,34 +31,34 @@ The new version of Betaflight allows for timer remapping, which may alleviate is
 
 --mixer is
 
-'mixer CUSTOMAIRPLANE
+'mixer CUSTOMAIRPLANE'
 
 --I kept motor 1 as originally assigned
 
-'resource MOTOR 1 B00
+'resource MOTOR 1 B00'
 
 --I reassigned motor outputs 2-4 to servos 
 
-'resource SERVO 1 A02
-'resource SERVO 2 A03
-'resource SERVO 3 B01
+'resource SERVO 1 A02'
+'resource SERVO 2 A03'
+'resource SERVO 3 B01'
 
 --motor mix
 
-'mmix 0  1.000  0.000  0.000  0.000
+'mmix 0  1.000  0.000  0.000  0.000'
 
 --servo mix (this one I found by trial and error - since the servo outputs don't seem to match - but it works!
 
-'smix reset
-'
-'smix 0 3 1 100 0 0 100 0
-'smix 1 2 0 100 0 0 100 0
-'smix 2 4 2 100 0 0 100 0
-'smix 3 0 3 100 0 0 100 0
+'smix reset'
+''
+'smix 0 3 1 100 0 0 100 0'
+'smix 1 2 0 100 0 0 100 0'
+'smix 2 4 2 100 0 0 100 0'
+'smix 3 0 3 100 0 0 100 0'
 
 --lastly, the reassign the timer on b01
 
-'timer B01 AF1
+'timer B01 AF1'
 
 
 #### A Post by RCvehicleGuy:  
