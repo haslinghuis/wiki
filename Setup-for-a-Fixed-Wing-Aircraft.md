@@ -44,7 +44,9 @@ The new version of Betaflight allows for timer remapping, which may alleviate is
 --I reassigned motor outputs 2-4 to servos 
 
 `resource SERVO 1 A02`
+
 `resource SERVO 2 A03`
+
 `resource SERVO 3 B01`
 
 --motor mix
