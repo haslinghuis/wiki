@@ -24,6 +24,10 @@ Use the servos tab to reverse them if needed.
 Set the PWM frequency as separate from PID loop and set it to 50hz to make the servos work (you will lose all of the new ESC protocols but that's not as important on a plane).   
 The modes and mixes work fine for me as-is and I expect that everything else will be fine as well(like OSD). I just need to add FPV to it and get it up in the air! 
 
+
+***
+
+
 #### A note from Maine_Guy 1-25-20
 The notes below did not help me in my quest to get my 4 channel micro F4 board running (although helpful).  Persistence, luck, and the latest build did.
 
@@ -62,6 +66,9 @@ The new version of Betaflight allows for timer remapping, which may alleviate is
 --lastly, reassign the timer on b01
 
 `timer B01 AF1`
+
+
+***
 
 
 #### A Post by RCvehicleGuy:  
