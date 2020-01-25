@@ -27,7 +27,7 @@ The modes and mixes work fine for me as-is and I expect that everything else wil
 #### A note from Maine_Guy 1-25-20
 The notes below did not help me in my quest to get my 4 channel micro F4 board running (although helpful).  Persistence, luck, and the latest build did.
 
-The new version of Betaflight allows for timer remapping, which may alleviate issues noted below with conflicts.
+The new version of Betaflight allows for timer remapping, which may alleviate issues noted below with the timer conflicts.
 
 --mixer is
 
@@ -40,9 +40,7 @@ The new version of Betaflight allows for timer remapping, which may alleviate is
 --I reassigned motor outputs 2-4 to servos 
 
 `resource SERVO 1 A02`
-
 `resource SERVO 2 A03`
-
 `resource SERVO 3 B01`
 
 --motor mix
