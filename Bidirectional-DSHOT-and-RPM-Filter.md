@@ -46,10 +46,11 @@ The Bidirectional DShot protocol is different (and more robust) in BetaFlight 4.
 
 When running 8k8k, choose Dshot600.  The ESCs report eRPM.  This must be converted to RPM using the number of magnets of the motors. The magnets to count are those on the bell of the motor. Do not count the stators where the windings are located. Typical 5" motors have 14 magnets, so that is the default setting. Smaller motors have fewer magnets, often 12. Count them or look up the motor specs.  If you don't have 14 magnets, change the number of magnets using Betaflight Configurator on the Configuration tab.
 
-### DShot300 or DShot600?
+### DShot150, DShot300 or DShot600?
 
 For 4k PID loops, eg 8k4k or 4k4k, use Dshot 300 for greatest reliability.
 For 8k8k setups, use DShot600. With 8k PID loops, Dshot300 will only update the motors every second PID loop.
+On L ESCs (efm8bb1) DShot150 and a loop time of 2k2k is strongly recommended for highest performance.
 
 ### Config Snippet
 
