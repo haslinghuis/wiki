@@ -17,7 +17,7 @@ Frsky announcement: [here][9]
 
 | Receiver | Compatible ? | Firmware download page |
 | - | - | - |
-| FrSky RXSR | Yes | [here][8] |
+| FrSky R-XSR | Yes | [here][8] |
 | FrSky X4R | Yes | [here][10] |
 | FrSky X4R-SB | Yes | [here][11] |
 | FrSky XSR | Yes | [here][2] |
