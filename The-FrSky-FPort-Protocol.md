@@ -17,13 +17,13 @@ Frsky announcement: [here][9]
 
 | Receiver | Compatible ? | Firmware download page |
 | - | - | - |
-| FrSky RXSR | Yes (beta) | [here][8] |
-| FrSky X4R | Yes (beta) | [here][10] |
-| FrSky X4R-SB | Yes (beta) | [here][11] |
-| FrSky XSR | Yes (beta) | [here][2] |
-| FrSky XSR-M | Yes (beta) | [here][12] |
-| FrSky R9M Slim | Yes (beta) | [here][13] |
-| FrSky R9M Slim+ | Yes (beta) | [here][14] |
+| FrSky RXSR | Yes | [here][8] |
+| FrSky X4R | Yes | [here][10] |
+| FrSky X4R-SB | Yes | [here][11] |
+| FrSky XSR | Yes | [here][2] |
+| FrSky XSR-M | Yes | [here][12] |
+| FrSky R9M Slim | Yes | [here][13] |
+| FrSky R9M Slim+ | Yes | [here][14] |
 
 
 # Using FPort
