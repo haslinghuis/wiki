@@ -7,7 +7,7 @@ The lower the cutoff value the earlier I term accumulation is suppressed.
 * In setpoint mode this suppression is based on the speed of the change in setpoint.
 * In gyro mode this suppression is based on [TBD].
 
-In the following log trace demonstrate how different cutoff value affect I term relax (I value in green and setpoint in red). 
+The following log traces demonstrate how different cutoff value affect I term relax (I value in green and setpoint in red). 
 ![](https://user-images.githubusercontent.com/2025999/75109976-9a8f8900-5628-11ea-840c-eef16cfac4d4.png)
 
 Notice that when set to 15, this is shortly after the sticks stop moving, and just about the perfect time.
