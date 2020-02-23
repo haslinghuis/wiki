@@ -1,5 +1,3 @@
-# I Term Relax Explained
-
 I term relax aims to inhibit **I** during fast manoeuvres by preventing it to further accumulate. Simply put I term relax will keep **I** constant during fast manoeuvres. 
 
 I term is relax rely on setpoint or gyro (**iterm_relax_type**) to detect such manoeuvres and preventing I term to accumulate further.
