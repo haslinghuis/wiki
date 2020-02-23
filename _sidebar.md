@@ -80,7 +80,7 @@
  - [Bidirectional DSHOT & RPM Filter](Bidirectional-DSHOT-and-RPM-Filter) 
  - [Tuning Dynamic Idle](https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle)
  - [FeedForward 2.0](Feed-Forward-2.0)
- - [I Term Relax Explained](I Term Relax Explained)
+ - [I Term Relax Explained](https://github.com/betaflight/betaflight/wiki/I-Term-Relax-Explained)
 
 # Troubleshooting
 
