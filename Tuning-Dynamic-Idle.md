@@ -25,7 +25,24 @@ Clearly this allows to prevent low rpm desyncs without raising the dshot_idle_va
 
 ### Increased Braking Torque
 
-Dynamic idle internally uses a ``dshot_idle_value`` of ``1``, but adds a constant idle throttle to compensate and deliver the same idle rpm. This has a big advantage: now motors can be decelerated by the FC sending the minimum dshot motor value. Previously the FC would never send less than the ``dshot_idle_value``.
+Dynamic idle internally uses a ``dshot_idle_value`` of ``1``, but adds a constant idle throttle to compensate and deliver the same idle rpm. This has a big advantage: now motors can be decelerated by the FC sending the minimum dshot motor value. Previously the FC would never send less than the ``dshot_idle_value`` to the motors. If a stronger pid action was required the FC would add some throttle automatically to make it possible (that's air mode).
+
+Example without dynamic idle:
+
+- dshot idle value is 6%
+- throttle is at 0%
+- roll pid wants to increase left motors by 10% over right motors
+
+Airmode would set the left motors to 16% and the right motors to 6% in this case.
+
+Example with dynamic idle:
+
+- dshot idle value is 6%
+- motors are at 6000 rpm
+- idle_min_rpm is at 35, so 3500 rpm
+- roll pid wants to increase left motors by 10% over right motors
+
+In this case the mixer would set the left motors to 10% and the right motors to 0.01%. This stance would be maintained until the right motors approach 3500 rpm. At this point output to all motors would be increased evenly to maintain 3500 rpm for the slowest motor.
 
 In practical terms this means that noise or small pid action will no longer result in an rpm increase at idle. Instead for these small pid actions airmode won't need to raise throttle at all. The pids will just increase the speed of some motors above where they run ad ``dshot_idle_value`` and slow others down. That's a welcome change resulting in more hang time. 
 
@@ -33,5 +50,5 @@ Additionally during quick maneuvers the added 6% or so of braking torque will he
 
 ### Suggested Tuning
 
-Before you start ``set transient_throttle_limit=0`` since this idle noise avoidance mechanism is not needed with dynamic idle an actually hurts. Start out with ``idle_min_rpm = 14`` and ``dshot_idle_value = 1``. This means that your motors will sit at idle_min_rpm when idle. Fly around, do max rate rolls etc and check for desyncs, increasing ``idle_min_rpm`` as needed. Now increase dshot_idle_value to get the preferred trade-of between idle thrust and quad response.
+Before you start ``set transient_throttle_limit=0`` since this idle noise avoidance mechanism is not needed with dynamic idle and actually hurts. Start out with ``idle_min_rpm = 14`` and ``dshot_idle_value = 1``. This means that your motors will sit at idle_min_rpm when idle. Fly around, do max rate rolls etc and check for desyncs, increasing ``idle_min_rpm`` as needed. Now increase dshot_idle_value to get the preferred trade-of between idle thrust and quad response.
 
