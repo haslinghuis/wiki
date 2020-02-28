@@ -60,6 +60,9 @@ With 4.1 it's no longer necessary to install a snippet. Instead just use Betafli
 
 Your FC is now set up for bidirectional dshot - let's verify that it works. To do so power cycle FC and ESC. Connect the lipo first to the ESC, then the USB cable. Now open the Motors tab in Betaflight Configurator. There should be no red line indicating significant errors on any motor. When you spin the motors you should see the reported rpm. The reported error percentage should not exceed 1%. All motors should report an RPM of 0 unless spun.
 
+**Important:**
+If you connect your FC via USB cable without connecting your LIPO battery, then at the Motors tab in Betaflight Configurator you will notice an invalid indication "Error 100%" (E: 100%). Connect the LIPO and wait ESC to initialize, the indication will drop down to 0% (E: 0%). Disconnecting the battery will keep showing 0% errors afterwards.
+
 ## Tuning
 
 The RPM filter will do the heavy lifting of removing nearly all motor noise without adding much latency. 
