@@ -38,6 +38,7 @@ Airmode would set the left motors to 16% and the right motors to 6% in this case
 Example with dynamic idle:
 
 - dshot idle value is 6%
+- throttle is at 0%
 - motors are at 6000 rpm
 - idle_min_rpm is at 35, so 3500 rpm
 - roll pid wants to increase left motors by 10% over right motors
