@@ -4,25 +4,18 @@
 **New to Betaflight and just want to get started? See the [installation](Installing-Betaflight) section.**
 
 
-## News
-
-### Betaflight 4.1
-
-For Betaflight 4.0 we announced the advent of Unified Targets, and with them the capability to change all of the hardware resources on all (F4 and F7) targets. Unified Targets have been used successfully by testers since Betaflight 4.0 has been released, and users using the new bidirectional Dshot protocol have been using configurable resources to make this protocol work on their targets since then.
-
-But we were still not happy with the way that users had to use Unified Targets: The target specific hardware configuration had to be applied after the firmware was flashed, and re-applied every time the configuration was reset to defaults - we wanted to make the Unified Targets as easy to use as the existing 'legacy' targets are.
-
-We have figured out a way to make this work, and are currently working on implementing the required changes in the firmware and in Betaflight configurator, but it's taking longer than we'd anticipated to complete. To allow us to get the integration of Unified Targets completed, **we have shifted the release date for Betaflight 4.1 to 01 October 2019**. Until then we will keep doing monthly releases of Betaflight 4.0 with bugfixes and new / updated targets.
-
-To get the latest update from us, you can now also visit our webpage at https://betaflight.com/.
-
-
 ## Events
 
 | Date  | Event |
-| - | - |
-| 01 September 2019 | Start of feature freeze / Release Candidate window for Betaflight 4.1 |
-| 01 October 2019 | Planned [release](https://github.com/betaflight/betaflight/milestone/30) date for Betaflight 4.1 |
+￼| - | - |
+￼| 25 March 2020 | Deadline for pull request submission into 4.2 |
+￼| 1 April 2020 | Start of feature freeze / Release Candidate window for Betaflight 4.2 |
+￼| 1 May 2020 | Planned [release](https://github.com/betaflight/betaflight/milestone/38) date for Betaflight 4.2 |
+
+
+## News
+
+To get the latest update from us, you can now also visit our webpage at https://betaflight.com/.
 
 
 ## Merchandise:
