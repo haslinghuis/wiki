@@ -1,55 +1,26 @@
 ### Intro
 
-BF 4.1 contains a new feature for use with dshot rpm telemetry: dynamic idle. Its purpose is two-fold: allow better desync protection and make more braking torque available to the flight controller. It requires rpm telemetry, so either [JESC](https://jflight.net) on BLHeli_S hardware or BLHeli32. 3D mode is not supported and if the 3D feature is enabled then dynamic idle will be disabled.
+Dynamic Idle is a feature which allows the PID controller to utilize the ``dshot_idle_value`` parameter as an idle set point rather than floor value as it was traditionally implemented. That is, in the absence of PID correction ``dshot_idle_value`` serves as the set-point value that is input to the motors. From that set-point value the input can be raised or lowered by PID correction. This feature therefore increases the braking possible on decelerating motors and reduces the input needed for the accelerating motors. 
 
-### Desync Protection
+A new parameter, ``idle_min_rpm`` is introduced to provide an rpm based floor-value as a safety net against motor desync. By utilizing an rpm based value, the floor can be effectively set lower while still avoiding desyncs as it will stay consistent irrespective of air flow, i.e. it will not be driven lower by reverse flow conditions.
 
-The most difficult environment for an ESC to manage is when a lot of current flows in the motor windings at low rpm. The reason is that the ESC needs to detect motor position by measuring the induced voltage on the non powered winding. That voltage is proportional to rpm hence at lower speed it's more difficult to detect. And secondly there is some cross talk across windings that's proportional to the current in the active windings. That current scales with pwm duty cycle and prop load.
+This new approach has has become possible since the FC can now receive actual real time rpm information from the ESCs using bidirectional dshot and use this information to implement the ``idle_min_rpm`` floor. Dynamic Idle therefore requires bidirectional dshot. It is currently not supported when 3D mode is enabled.
 
-Specifically these conditions are worst when air flows from the back to the front of a motor (reverse flow) and when max power is requested from the motor at the same time. This happens for example at the end of a roll, where full power is requested of the motors that have been slowed down due to the high rotational speed of the quad which creates reverse flow.
+### Configuring Dynamic Idle
 
-We traditionally tune our dshot_idle_value to satisfy two goals: 
-- Low idle so we don't get much thrust at idle.
-- Enough idle so responsiveness is good (it takes a long time for props to speed up from very low rpm).
-- Enough idle so motors don't desync in reverse flow conditions.
+Dynamic Idle uses two main parameters: ``dshot_idle_value`` and ``idle_min_rpm``. Setting idle_min_rpm to any non-zero value enables Dynamic Idle.
 
-``dshot_idle_value`` is specified in percent * 100, so 500 is an idle throttle of 5% and puts 5% throttle to the motors when your throttle stick is at zero.
+``dshot_idle_value`` now has a slightly modified function: it specifies the throttle set point to be used when zero throttle input is provided. Due to the fact that the PIDs can lower and increase motor output at idle from this value it will often be necessary to slightly increase ``dshot_idle_value`` to arrive at the same idle rpm as without Dynamic Idle. If you have used air-mode on a 3 position arm switch you will know how switching air-mode on increases idle rpm a bit. This increase no longer exists with Dynamic Idle so it needs to be corrected for with a sightly higher ``dshot_idle_value``.
 
-Dynamic Idle introduces a second setting: ``idle_min_rpm`` which sets the minimum rpm that will be allowed for any motor. It's specified in ``rpm / 100``. So say you're flying ``2400kv`` motors on ``4s``, giving you ``~35520 rpm`` at max throttle. Say we want the min rpm to be similar to maybe 4% of max. That's 1420.8, so you would ``set idle_min_rpm = 14``. Some quads - esp. high rates LOS quads may need as much as ``28``. 
+The second parameter, ``idle_min_rpm``, specifies how low Dynamic Idle will allow rpm to get due to PIDs temporarily driving the motor input below ``dshot_idle_value`` or reverse air-flow conditions. From this it's clear that the value needs to be lower than the idle rpm caused by dshot_idle_value under normal circumstances. The lower the more latitude the PIDs have to slow down motors, but setting the value too low can cause responsiveness issues and motor desyncs. A good starting point for 5" quads is 20. Smaller quads can go higher. If you have responsiveness issues or motor desyncs increase the value. If your quad shows too much idle-thrust in reverse flow conditions which does not respond to decreasing ``dshot_idle_value`` then decrease ``idle_min_rpm``.
 
-Effectively your motors will idle at the higher one of (a) the motor speed caused by idle throttle and (b) ``idle_min_rpm``. ``dshot_idle_value`` is a static value, but ``idle_min_rpm`` results in a dynamic addition if one of the motors gets too slow. As the ``idle_min_rpm`` limit approaches the FC increases output equally to all motors to ensure that the minimum rpm constraint is satisfied. 
+Verify that the number you use is significantly lower than your normal idle rpm. One way to do this is by setting ``debug_mode`` to ``rpm_filter`` and logging the quad's rpm without Dynamic Idle. Convert the debug log numbers (in hz) to rpm by multiplying by 60 and divide by 100 to arrive at a number in ``idle_min_rpm units``. Your idle_min_rpm should be significantly below this number.
 
-This setting doesn't replace dshot_idle_value, but complements it. It should be set such that in normal conditions ``dshot_idle_value`` still determines how fast the motors spin. ``idle_min_rpm`` is merely the insurance policy that keeps motors spinning fast enough in reverse flow conditions.
+Alternatively you can use the motor's tab in BF Configurator to estimate idle rpm. Increase the sliders to reflect your ``dshot_idle_value`` - so say ``1055`` for ``5.5%`` dshot_idle_value. The rpm will now be displayed above the slider.
 
-Clearly this allows to prevent low rpm desyncs without raising the dshot_idle_value, so you may fly with less idle thrust. The exact balance between ``dshot_idle_value`` and ``idle_min_rpm`` will depend on craft, flying style and rates. Very high rates (say mine of 2000 deg/s) lead to dramatic currents at the end of a roll, so a higher idle_min_rpm may be necessary. A racer might prefer very good response and low rates - there a low ``idle_min_rpm`` and a high ``dshot_idle_value`` may be useful. Freestylers and LOS pilots will appreciate very low thrust at idle and might want to use less ``dshot_idle_value`` while using a bit more idle_min_rpm to avoid desyncs at high rates.
+``set_transient_throttle_limit`` should be turned off when using Dynamic Idle.
 
-### Increased Braking Torque
+Tuning Dynamic Idle
 
-Dynamic idle internally uses a ``dshot_idle_value`` of ``1``, but adds a constant idle throttle to compensate and deliver the same idle rpm. This has a big advantage: now motors can be decelerated by the FC sending the minimum dshot motor value. Previously the FC would never send less than the ``dshot_idle_value`` to the motors. If a stronger pid action was required the FC would add some throttle automatically to make it possible (that's air mode).
-
-Example without dynamic idle:
-
-- dshot idle value is 6%
-- throttle is at 0%
-- roll pid wants to increase left motors by 10% over right motors
-
-Airmode would set the left motors to 16% and the right motors to 6% in this case.
-
-Example with dynamic idle:
-
-- dshot idle value is 6%
-- throttle is at 0%
-- motors are at 6000 rpm
-- idle_min_rpm is at 35, so 3500 rpm
-- roll pid wants to increase left motors by 10% over right motors
-
-In this case the mixer would set the left motors to 10% and the right motors to 0.01%. This stance would be maintained until the right motors approach 3500 rpm. At this point output to all motors would be increased evenly to maintain 3500 rpm for the slowest motor.
-
-In practical terms this means that noise or small pid action will no longer result in an rpm increase at idle. Instead for these small pid actions airmode won't need to raise throttle at all. The pids will just increase the speed of some motors above where they run ad ``dshot_idle_value`` and slow others down. That's a welcome change resulting in more hang time. 
-
-Additionally during quick maneuvers the added 6% or so of braking torque will help the quad perform with more precision and lower average rpm. This will lower overshoot and make light weight quads less jumpy in airmode situations.
-
-### Suggested Tuning
-
-Before you start ``set transient_throttle_limit=0`` since this idle noise avoidance mechanism is not needed with dynamic idle and actually hurts. Start out with ``idle_min_rpm = 14`` and ``dshot_idle_value = 1``. This means that your motors will sit at idle_min_rpm when idle. Fly around, do max rate rolls etc and check for desyncs, increasing ``idle_min_rpm`` as needed. Now increase dshot_idle_value to get the preferred trade-of between idle thrust and quad response.
+The optimal exact balance between ``dshot_idle_value`` and ``idle_min_rpm`` will depend on craft, flying style and rates. Very high rates (say mine of 1800 deg/s) lead to dramatic currents at the end of a roll, so a higher ``idle_min_rpm`` may be necessary to avoid motor desyncs. A racer might prefer very good response and low rates - there a low ``idle_min_rpm`` and a high ``dshot_idle_value`` may be useful. Freestylers and LOS pilots will appreciate very low thrust at idle and might want to use less ``dshot_idle_value`` while using a bit more ``idle_min_rpm`` to avoid desyncs at high rates.
 
