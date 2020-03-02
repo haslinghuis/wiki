@@ -7,10 +7,10 @@
 ## Events
 
 | Date  | Event |
-￼| - | - |
-￼| 25 March 2020 | Deadline for pull request submission into 4.2 |
-￼| 1 April 2020 | Start of feature freeze / Release Candidate window for Betaflight 4.2 |
-￼| 1 May 2020 | Planned [release](https://github.com/betaflight/betaflight/milestone/38) date for Betaflight 4.2 |
+| - | - |
+| 25 March 2020 | Deadline for pull request submission into 4.2 |
+| 1 April 2020 | Start of feature freeze / Release Candidate window for Betaflight 4.2 |
+| 1 May 2020 | Planned [release](https://github.com/betaflight/betaflight/milestone/38) date for Betaflight 4.2 |
 
 
 ## News
