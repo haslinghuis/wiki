@@ -8,7 +8,7 @@ The lower the cutoff value the earlier I term accumulation is suppressed.
 * In gyro mode this suppression is based on [TBD].
 
 The following log traces demonstrate how different cutoff value affect I term relax (I value in green and setpoint in red). 
-![](https://user-images.githubusercontent.com/2025999/75109976-9a8f8900-5628-11ea-840c-eef16cfac4d4.png)
+![](https://user-images.githubusercontent.com/2025999/75752099-4bcca800-5d28-11ea-9ef3-9e43ac5314f9.png)
 
 
 ## Freestyle Tune
