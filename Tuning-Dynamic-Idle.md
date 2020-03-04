@@ -22,5 +22,5 @@ Alternatively you can use the motor's tab in BF Configurator to estimate idle rp
 
 ### Tuning Dynamic Idle
 
-The optimal exact balance between ``dshot_idle_value`` and ``idle_min_rpm`` will depend on craft, flying style and rates. Very high rates (say mine of 1800 deg/s) lead to dramatic currents at the end of a roll, so a higher ``idle_min_rpm`` may be necessary to avoid motor desyncs. A racer might prefer very good response and low rates - there a low ``idle_min_rpm`` and a high ``dshot_idle_value`` may be useful. Freestylers and LOS pilots will appreciate very low thrust at idle and might want to use less ``dshot_idle_value`` while using a bit more ``idle_min_rpm`` to avoid desyncs at high rates.
+The optimal exact balance between ``dshot_idle_value`` and ``idle_min_rpm`` will depend on craft, flying style and rates. Very high rates (say mine of 1800 deg/s) lead to dramatic currents at the end of a roll, so a higher ``idle_min_rpm`` may be necessary to avoid motor desyncs. A racer might prefer very good response and low rates - therefore a low ``idle_min_rpm`` and a high ``dshot_idle_value`` may be useful. Freestylers and LOS pilots will appreciate very low thrust at idle and might want to use less ``dshot_idle_value`` while using a bit more ``idle_min_rpm`` to avoid desyncs at high rates.
 
