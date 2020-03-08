@@ -2,7 +2,7 @@
 
 Dynamic Idle allows the PID controller to use ``dshot_idle_value`` as an idle set point instead of a floor value as previously implemented. In the absence of PID correction ``dshot_idle_value`` serves as the set-point value that is input to the motors. From that set-point value the input can be raised or lowered by PID correction. Dynamic Idle allows  increased braking on decelerating motors and reduces the input needed for the accelerating motors. 
 
-A new parameter, ``idle_min_rpm`` is introduced to provide an rpm based floor-value as a safety net against motor desync. By utilizing an rpm based value, the floor can be effectively set lower while still avoiding desyncs as it will stay consistent irrespective of air flow, i.e. it will not be driven lower by reverse flow conditions.
+A new parameter, ``idle_min_rpm`` is introduced to provide an rpm based floor-value as a safety net against motor desync. By utilizing an rpm based value, the floor can be set lower while still avoiding desyncs as it will stay consistent irrespective of air flow, i.e. it will not be driven lower by reverse flow conditions.
 
 This new approach has become possible since the FC can now receive actual real time rpm information from the ESCs using bidirectional dshot and use this information to implement the ``idle_min_rpm`` floor. Dynamic Idle therefore requires bidirectional dshot. It is currently not supported when 3D mode is enabled.
 
