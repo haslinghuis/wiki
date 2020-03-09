@@ -13,15 +13,18 @@ Dynamic Idle has two key parameters: ``dshot_idle_value`` and ``idle_min_rpm``. 
 ##### dshot_idle_value
 When Dynamic Idle is enabled the function of ``dshot_idle_value`` is modified: it now specifies the throttle set point to be used when zero throttle input is provided. It will often be necessary to slightly increase ``dshot_idle_value`` to achieve the same idle rpm as a quad that is not using Dynamic Idle because the PIDs can raise or lower motor output from the dshot_idle_value. If you have used air-mode on a 3-position arm switch you will know how switching on air-mode increases idle rpm a bit. When Dynamic idle is used this increase no longer occurs so ``dshot_idle_value`` needs to be adjusted slightly higher.
 
-??Is following sentence correct??
+??Is the following correct??  
 Units of ``dshot_idle_value`` are: percentage of maximum throttle X 100 (example 5.5% X 100 = 550)
+dshot_idle_value can be set in the Betaflight configurator configurations tab: Motor throttle idle value (percent) = 5.5
+or via cli e.g. set dshot_idle_value = 550  
 ??
 
 ##### idle_min_rpm
 ``idle_min_rpm`` specifies a floor value that motor rpm can fall to when PIDs temporarily driving the motor input below ``dshot_idle_value`` or due to reverse air-flow conditions. The value of ``idle_min_rpm`` should be set lower than ``dshot_idle_value`` under normal circumstances. Lower ``idle_min_rpm`` values give the PIDs more latitude to slow down motors, but setting the value too low can cause poor responsiveness and motor desyncs. A good starting point for 5" quads is 20. Smaller quads can go higher. If you have responsiveness issues or motor desyncs increase the value. If your quad shows too much idle-thrust in reverse flow conditions which does not respond to decreasing ``dshot_idle_value`` then decrease ``idle_min_rpm``. 
 
-??Is following sentence correct??
-Confusingly the units of ``idle_min_rpm`` are not rpm, they are: rpm / 100.
+??Is following sentence correct??  
+Confusingly the units of ``idle_min_rpm`` are not rpm, they are: rpm / 100.  
+idle_min_rpm is set in cli e.g. set idle_min_rpm = 20  
 ??
 
 
