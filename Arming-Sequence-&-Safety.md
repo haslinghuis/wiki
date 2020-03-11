@@ -72,7 +72,7 @@ This list *should* be kept up to date with the code in `master` (`armingDisableF
 <tr><td><code>RPMFILTER</code><sup>(2)</sup></td><td>Motor RPM-based filtering is not functioning</td><td></td><td></td><td></td><td>21</td><td>21</td><td>21</td><td>One or more ESC's are not supplying valid RPM telemetry.</td></tr>
 <tr><td><code>REBOOT_REQD</code></td><td>Reboot required</td><td></td><td></td><td></td><td></td><td>22</td><td>22</td><td>Reboot the flight controller for settings changes to take effect.</td></tr>
 <tr><td><code>DSHOT_BBANG</code></td><td>DSHOT Bitbang is not working</td><td></td><td></td><td></td><td></td><td>23</td><td>23</td><td>(3)</td></tr>
-<tr><td><code>ACC_CALIB</code></td><td>Accelerometer calibration required</td><td></td><td></td><td></td><td></td><td></td><td>24</td><td>Calibrate the accelerometer or disable features that use it</td></tr>
+<tr><td><code>NO_ACC_CAL</code></td><td>Accelerometer calibration required</td><td></td><td></td><td></td><td></td><td></td><td>24</td><td>Calibrate the accelerometer or disable features that use it</td></tr>
 <tr><td><code>ARMSWITCH</code></td><td>Arm switch is in an unsafe position</td><td>17</td><td>18</td><td>20</td><td>21</td><td>24</td><td>25</td><td>Toggle the arm switch to arm.</td></tr></table>
 
 (1) This may appear on the Betaflight OSD during flight, take it as a sign that your radio system is either faulty or you are flying at the edge of your range. Treat it the same you would an "RSSI critically low" warning.
