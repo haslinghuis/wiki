@@ -26,6 +26,7 @@ CYCLETIME:
 * [1] = The current CPU load in percent
 * [2] = The time since the previous motor update (uS)
 * [3] = The variance in the motor update interval vs. the target PID loop time (uS)
+
 note: with 4.2.x restructuring of the gyro/PID loops [2] & [3] are pointless since the motor updates are part of the PID task now.
 
 PIDLOOP:
