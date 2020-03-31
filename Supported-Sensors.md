@@ -16,8 +16,10 @@ This page is a _un_-complete list of supported sensors by betaflight. To be sure
 * MPU6000
 * MPU9250
 * BMI160
+* BMI270
 * ICM20649
 * ICM20689
+* ICM40625
 * L3GD20
 * ~L3G4200D~ Retiring (https://github.com/betaflight/betaflight/pull/5900)
 
