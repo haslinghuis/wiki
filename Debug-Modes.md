@@ -21,6 +21,14 @@ SMARTAUDIO:
 * [2] = Device Frequency
 * [3] = Device Power
 
+CYCLETIME:
+* [0] = Task Delta Time (uS)
+* [1] = Average System Load Percent (%)
+
+PIDLOOP:
+* [0] = 
+* [1] = 
+
 ### GYRO SIGNAL (https://youtu.be/A09sprstYqI)
 GYRO_RAW: (does have gyro's internal Digital Lowpass Filter (DLPF) applied)
 
