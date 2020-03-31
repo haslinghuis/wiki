@@ -22,8 +22,10 @@ SMARTAUDIO:
 * [3] = Device Power
 
 CYCLETIME:
-* [0] = Task Delta Time (uS)
+* [0] = Cycle Time (uS)
 * [1] = Average System Load Percent (%)
+* [2] = Motor Update time (uS)
+* [3] = Motor Deviation (uS)
 
 PIDLOOP:
 * [0] = 
