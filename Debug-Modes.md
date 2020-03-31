@@ -22,14 +22,17 @@ SMARTAUDIO:
 * [3] = Device Power
 
 CYCLETIME:
-* [0] = Cycle Time (uS)
-* [1] = Average System Load Percent (%)
-* [2] = Motor Update time (uS)
-* [3] = Motor Deviation (uS)
+* [0] = The time in microseconds since the PID task last ran
+* [1] = The current CPU load in percent
+* [2] = The time since the previous motor update (uS)
+* [3] = The variance in the motor update interval vs. the target PID loop time (uS)
+note: with 4.2.x restructuring of the gyro/PID loops [2] & [3] are pointless since the motor updates are part of the PID task now.
 
 PIDLOOP:
-* [0] = 
-* [1] = 
+* [0] The time the Gyro Task ran (Useless post BF 4.2.x)
+* [1] Time microseconds the PID calculations
+* [2] Time in microseconds for mixer, servos, motor update, dshot telemetry stats
+* [3] Time in microseconds the mag hold and blackbox processing logic
 
 ### GYRO SIGNAL (https://youtu.be/A09sprstYqI)
 GYRO_RAW: (does have gyro's internal Digital Lowpass Filter (DLPF) applied)
