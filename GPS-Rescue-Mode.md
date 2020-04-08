@@ -9,7 +9,7 @@ GPS Rescue is not a full "Return To Home" (RTH) function. It is not meant to be 
 # **REQUIREMENTS**
 
 * GPS is required. The recommended models are Ublox m8n variants. This has been tested with 18x18mm m8n units, the Beitian BN 880 and other similar models. 
-* Accelerometer must be enabled, Rescue Mode needs it to keep the quad leveled.
+* **Accelerometer must be enabled and properly calibrated**, Rescue Mode needs it to keep the quad leveled.
 * Barometer is optional but recommended. We have tested with both on-board and external (i2c) units.
 * **This mode does not require a compass but will use one if available.**
 * **3D mode is not supported.** If you have the 3D feature enabled GPS Rescue will be disabled.
@@ -20,6 +20,10 @@ GPS Rescue is not a full "Return To Home" (RTH) function. It is not meant to be 
 *  This documentation WILL change so check this page often.
 *  Unless stated otherwise, this documentation refers to the last stable release (currently BF4.0)
 *  If you plan on using this as a failsafe method you should ABSOLUTELY enable sanity checks!
+
+# PREREQUISITE:
+
+Before configuring or testing GPS Rescue, you must calibrate the accelerometer and ensure that angle mode works properly. Set up the "ANGLE" flight mode and test in flight to ensure that the craft self-levels and behaves normally. If the craft does not properly level then recalibrate the accelerometer and test again. GPS Rescue uses angle mode so if this is not working properly GPS Rescue will be unable to recover the craft and may cause it to fly in the wrong direction.
 
 # Setting up GPS Rescue
 
