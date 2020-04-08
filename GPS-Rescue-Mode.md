@@ -1,6 +1,6 @@
 # **WHAT THIS IS:**
 
-GPS Rescue Mode is intended to bring your quad back autonomously in case of an emergency such as loss of video or radio link. It is not meant to be a reliable Return to Home mode. Keep this in mind, and (other than for initial testing) only activate it to avoid losing your quad. In order to increase the probability of GPS Rescue's successful operation, please read this document and configure your system as best as possible for your particular environment and flying style.
+GPS Rescue Mode is intended to bring your quad back autonomously in case of an emergency such as loss of video or radio link. **The only purpose is to bring the quad back into range so you can retake control as soon as possible.** It is not meant to be a reliable Return to Home mode. Keep this in mind, and (other than for initial testing) only activate it to avoid losing your quad. In order to increase the probability of GPS Rescue's successful operation, please read this document and configure your system as best as possible for your particular environment and flying style.
 
 # **WHAT THIS IS NOT:**
 
