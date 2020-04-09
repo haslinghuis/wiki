@@ -3,6 +3,4 @@ For onboard flash chips, downloading this way is a lot faster than the 'legacy' 
 
 Mass storage device support is currently only available on F4 / F7 boards.
 
-Some limitations of the MacOS support for external storage devices mean that mass storage device support for onboard flash chips currently does not work on MacOS.
-
 To enable mass storage device support, the flight controller has to be rebooted into mass storage device mode by typing `msc` into the CLI and hitting enter. After this, normal operation of the flight controller will be stopped until it is rebooted by power cycling it.
