@@ -7,7 +7,7 @@ Betaflight-configurator font upload function via USB doesn't seem to work on som
 No matter how many times you upload the font, the OSD still display the default font.
 
 ## Resolution
-You need the battery to be **plugged in** so the function works properly (**PROPS REMOVED!**).
+You need the battery to be **plugged in** so the function works properly (**PROPS REMOVED!**). Plug the battery in **FIRST**, then connect to USB.
 
 ## Most probable Cause
 Some flight controller designed don't power the OSD chip properly (or at all) when connected only to USB. The OSD font is stored inside the OSD chip so it must be powered and communicating with the rest of the flight controller so that the font can be updated.
