@@ -89,7 +89,6 @@
  - [Failsafe](Failsafe-(Flight-Controller))
  - [OSD Font Upload Problem](OSD-Font-upload-problem)
  - [Why my board doesn't go into DFU? - DFU Hijacking](DFU-Hijacking)
- - [Slow Startup on Dual Gyro Boards with Only One Gyro Installed](https://github.com/betaflight/betaflight/wiki/Slow-Startup-on-Dual-Gyro-Boards-with-Only-One-Gyro-Installed)
 
 # Development
 
