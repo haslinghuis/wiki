@@ -51,9 +51,9 @@ Under all conditions, the dynamic idle minimum value becomes the effective minim
 
 `idle_min_rpm` is the key setting that enables Dynamic Idle.
 
-The ideal setting for `idle_min_rpm` is about 10% less less than the idle RPM as shown in the motors tab at idle.  So if you found your idle value to be say 2,200 rpm in the motors tab, then 20 would be a good `idle_min_rpm` setting to go with.
+The ideal setting for `idle_min_rpm` is about 10% less less than the RPM as shown in the motors tab at idle.  If your idle was 5%, you'd set the motor to 1050 in motors tab, and check the RPM there.  If it was, say 2,200 rpm, then you'd use 20 as your `idle_min_rpm`.
 
-A value of 20 corresponds to 2,000 RPM and is a reasonable starting value for most quads
+A value of 20 corresponds to 2,000 RPM and is a reasonable starting value for most quads.
 
 Smaller quads rev faster, and a higher `idle_min_rpm` value, eg 25, may be more appropriate for a 2.5".
 
