@@ -2,7 +2,7 @@
 
 Dynamic Idle improves how Betaflight controls the motors at the low end of the rpm range.
 
-By using RPM data to prevent any motor falling below a defined minimum RPM, the risk of desyncs can be minimised.  Additionally, dynamic idle improves PID controller performance at zero throttle by permitting stronger braking of motors that are in positive airflow conditions.  
+By using RPM data to prevent any motor falling below a defined minimum RPM, the risk of desyncs can be minimised.  This allows lower overall idle settings, increasing straight line braking and hang time.  Additionally, dynamic idle improves PID controller performance at zero throttle by permitting stronger braking of motors that are in positive airflow conditions.  
 
 NOTE 1:  Dynamic Idle requires [fully functional BiDirectional DShot telemetry](https://github.com/betaflight/betaflight/wiki/Bidirectional-DSHOT-and-RPM-Filter).  
 
