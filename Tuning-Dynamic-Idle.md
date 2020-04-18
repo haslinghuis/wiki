@@ -6,7 +6,7 @@ By using RPM data to prevent any motor falling below a defined minimum RPM, the 
 
 NOTE 1:  Dynamic Idle requires [fully functional BiDirectional DShot telemetry](https://github.com/betaflight/betaflight/wiki/Bidirectional-DSHOT-and-RPM-Filter).  
 
-NOTE 2: **Dynamic Idle is off by default**.  To enable it, set `idle_min_rpm` to a suitable value in the CLI.  20 is a suitable starting point.  Please read the tuning section, below.
+NOTE 2: **Dynamic Idle is off by default**.  To enable it, set `idle_min_rpm` to a suitable value in the CLI.  For typical 5" quadcopters 20 is a suitable starting point.  Please read the tuning section, below.
 
 NOTE 3: Dynamic Idle must not be used with 3D mode.
 
@@ -54,6 +54,7 @@ The ideal setting for `idle_min_rpm` is a bit less less than the RPM as shown in
 A value of 20 corresponds to 2,000 RPM and is a reasonable starting value for most quads.
 
 Smaller quads rev faster, and a higher `idle_min_rpm` value, eg 25, may be more appropriate for a 2.5".
+Similarly, larger quads can operate with lower 'idle_min_rpm' values, e.g. 14 may be more appropriate for 7" quads with larger motors.
 
 If you already are running a known good DShot idle value, start off with that, with an `idle_min_rpm` value set as described above.
 
