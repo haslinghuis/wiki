@@ -58,9 +58,12 @@ Similarly, larger quads can operate with lower `idle_min_rpm` values, e.g. 14 ma
 
 If you already are running a known good DShot idle value, start off with that, with an `idle_min_rpm` value set as described above.
 
-To calculate these values using the KV of motors and voltage of the battery, simply multiply the battery voltage, motor KV, and idle value to estimate the motor RPM.
+To estimate these values using the KV of motors and voltage of the battery, simply multiply the battery voltage, motor KV, and idle value to estimate the motor RPM.
+
 For conservative RPM values, use:  4.2V * S (Series) * K (Motor KV) * 0.0I (Idle - a known good dshot idle value)
 For a more aggressive tune, substitute 3.5V for the voltage calculation, as this is the lowest practical flying voltage - however these lower values are more likely to result in problems, it is recommended that users iteratively work towards these lower values.
+
+These estimates are helpful when testing for actual reported RPM values using the Motors tab - particularly to sanity check for motors that are not 14 pole configurations.
 
 #### Can I use dynamic up to improve turn responsiveness even more?
 
