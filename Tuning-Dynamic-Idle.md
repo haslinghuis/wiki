@@ -54,7 +54,7 @@ The ideal setting for `idle_min_rpm` is a bit less less than the RPM as shown in
 A value of 20 corresponds to 2,000 RPM and is a reasonable starting value for most quads.
 
 Smaller quads rev faster, and a higher `idle_min_rpm` value, eg 25, may be more appropriate for a 2.5".
-Similarly, larger quads can operate with lower 'idle_min_rpm' values, e.g. 14 may be more appropriate for 7" quads with larger motors.
+Similarly, larger quads can operate with lower `idle_min_rpm` values, e.g. 14 may be more appropriate for 7" quads with larger motors.
 
 If you already are running a known good DShot idle value, start off with that, with an `idle_min_rpm` value set as described above.
 
@@ -98,7 +98,7 @@ Second, we want strong turn performance at high speed.  Typically at high speed 
 
 Tuning for racing would be a bit like optimising hang time, with low idle values.  The downside of low idle values is that when motors are spinning slowly, they can be slower to spin up, so if you do make a mistake and do a zero throttle reversal, it will be uglier, perhaps.  
 
-For most racing setups, the higher inherent authority of the quad powertrain over the prop mass, higher tolerance for passive thrust at idle, and increased likelihood of entering negative angle of attack maneuvers from high speed all suggest that slightly higher dshot_idle_value and idle_min_rpm values are preferable (+0.5% and +200rpm respectively).
+For most racing setups, the higher inherent authority of the quad powertrain over the prop mass, higher tolerance for passive thrust at idle, and increased likelihood of entering negative angle of attack maneuvers from high speed all suggest that slightly higher `dshot_idle_value` and `idle_min_rpm` values are preferable (+0.5% and +200rpm respectively).
 
 
 ### The technical stuff
