@@ -17,7 +17,7 @@ NOTE 4: Transient throttle limit should be disabled while using Dynamic Idle (`s
 
 #### Let's first explain how idle is managed without dynamic idle.  
 
-Without dynamic idle, the lower limit of motor drive, under all conditions, is set by the `dshot_idle_value`. This defaults to 5.5%.   When throttle stick is at zero, the motors get sent 5.5% motor drive.  The PIDs cannot reduce motor drive above 5.5%, either. 
+Without dynamic idle, the lower limit of motor drive, under all conditions, is set by the `dshot_idle_value`. This defaults to 5.5%.   When throttle stick is at zero, the motors get sent 5.5% motor drive.  The PIDs cannot reduce motor drive below 5.5%, either. 
 
 When we decelerate suddenly, the motors may get airflow pushing up into the props from underneath.  This slows them down a lot, and they may either turn so slowly that they can't quickly start up again when needed, or stop spinning completely, or even spin backwards.  This can lead to poor handling or total loss of control (motor desync), usually at the end of fast flips or rolls.  To avoid these issues, the `dshot_idle_value` must be set relatively high.  This limits hang time and doesn't allow strong motor braking.
 
