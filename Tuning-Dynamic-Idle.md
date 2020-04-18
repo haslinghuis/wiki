@@ -58,6 +58,10 @@ Similarly, larger quads can operate with lower `idle_min_rpm` values, e.g. 14 ma
 
 If you already are running a known good DShot idle value, start off with that, with an `idle_min_rpm` value set as described above.
 
+To calculate these values using the KV of motors and voltage of the battery, simply multiply the battery voltage, motor KV, and idle value to estimate the motor RPM.
+For conservative RPM values, use:  4.2V * S (Series) * K (Motor KV) * 0.0I (Idle - a known good dshot idle value)
+For a more aggressive tune, substitute 3.5V for the voltage calculation, as this is the lowest practical flying voltage - however these lower values are more likely to result in problems, it is recommended that users iteratively work towards these lower values.
+
 #### Can I use dynamic up to improve turn responsiveness even more?
 
 Not really.  Most of the available benefits 'out of the box' once enabled.  Higher idle values will keep the motors spinning more quickly when we cut the throttle, and in drops, leading to more rapid spool up when needed, better zero throttle stability, and crisper flips - at the cost of less effective braking and a more floaty feel.   With the default DShot idle and an `idle_min_rpm` value configured as above, motor drive can fall to zero if the PIDs need it, so handling won't be a lot better if you increase idle further.  
