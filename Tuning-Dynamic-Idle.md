@@ -88,15 +88,17 @@ Note that if the rpm from `idle_min_rpm` is higher than that of DShot idle, hove
 
 #### I'm a race pilot
 
-Racers typically keep throttle on nearly all the time, so you might wonder why you'd bother with something that only influences idle behaviour.  
+Racers typically use low throttle much less of the time, so you might wonder why you'd bother with something that only influences idle behaviour.  
 
 There are two reasons.
 
-First, braking.  Sure we want to go fast, but we also want to slow down.  If we can set idle lower than usual, we can brake harder.  Dynamic idle lets us do that.  We can go full throttle, and when we cut throttle, we will bleed off speed more quickly, making the next turn easier.  We will also be able to drop into dive gates more aggressively on cutting throttle.  
+First, braking.  Sure we want to go fast, but we also want to slow down.  If we can set idle lower than usual, we can brake harder.  Dynamic idle lets us do that.  We can go full throttle, and when we cut throttle, we will bleed off speed more quickly, making the next turn easier.  We will also be able to drop into dive gates more aggressively on cutting throttle.  Properly tuned dynamic idle can retain more precise attitude control while minimizing any passive thrust from idle in negative angle of attack maneuvers.
 
-Second, we want strong turn performance at high speed.  Typically at high speed we have strong positive inflow. We can turn faster with dynamic idle active because under positive inflow conditions it can brake motors down to zero drive, helping turn in more quickly.  
+Second, we want strong turn performance at high speed.  Typically at high speed we have strong positive inflow. We can turn faster with dynamic idle active because under positive inflow conditions it can brake motors down to zero drive, helping turn in more quickly.  One race courses that involve high speed entries to maneuvers such as split-S or tight hairpins, these adjustments allow for more precise control and propwash management that allow for accurate rhythm-based turn entry and vertical maneuvers (e.g. repetitive dive/antigravity gates or inverted dive entries).
 
-Tuning for racing would be a bit like optimising hang time, with low idle values.  The downside of low idle values is that when motors are spinning slowly, they can be slower to spin up, so if you do make a mistake and do a zero throttle reversal, it will be uglier, perhaps.
+Tuning for racing would be a bit like optimising hang time, with low idle values.  The downside of low idle values is that when motors are spinning slowly, they can be slower to spin up, so if you do make a mistake and do a zero throttle reversal, it will be uglier, perhaps.  
+
+For most racing setups, the higher inherent authority of the quad powertrain over the prop mass, higher tolerance for passive thrust at idle, and increased likelihood of entering negative angle of attack maneuvers from high speed all suggest that slightly higher dshot_idle_value and idle_min_rpm values are preferable (+0.5% and +200rpm respectively).
 
 
 ### The technical stuff
