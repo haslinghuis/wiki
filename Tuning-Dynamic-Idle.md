@@ -10,7 +10,7 @@ NOTE 2: **Dynamic Idle is off by default**.  To enable it, set `idle_min_rpm` to
 
 NOTE 3: Dynamic Idle must not be used with 3D mode.
 
-NOTE 4: Transient throttle limit should be disabled while using Dynamic Idle (`set_transient_throttle_limit = 0`)
+NOTE 4: Transient throttle limit should be disabled while using Dynamic Idle (`set transient_throttle_limit = 0`)
 
 
 ### How does Dynamic Idle work?
