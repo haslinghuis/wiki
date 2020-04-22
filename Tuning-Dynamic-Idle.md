@@ -47,6 +47,8 @@ The dynamic idle minimum value becomes the effective minimum idle RPM, a kind of
 
 ### Tuning.
 
+_This tuning section is a draft, further testing is still required_
+
 `idle_min_rpm` is the key setting that enables Dynamic Idle.
 
 The ideal setting for `idle_min_rpm` is a bit less less than the RPM as shown in the motors tab at idle.  If your idle was 5%, you'd set the motor to 1050 in motors tab, and check the RPM there.  If it was, say 2,200 rpm, then you might use 20 as your `idle_min_rpm`.
