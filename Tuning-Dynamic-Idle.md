@@ -47,11 +47,9 @@ The dynamic idle minimum value becomes the effective minimum idle RPM, a kind of
 
 ### Tuning.
 
-_This tuning section is a draft, further testing is still required_
+`idle_min_rpm` is the key setting.  Default is zero.  It must be above zero to enable Dynamic Idle.
 
-`idle_min_rpm` is the key setting that enables Dynamic Idle.
-
-The ideal setting for `idle_min_rpm` is say 20% less less than the RPM as shown in the motors tab at idle.  If your DShot idle is 5%, you'd set the motor drive to 1050 in motors tab, and check the RPM there.  If it was, say 2,000 rpm, then you might use 16 or 17 as your `idle_min_rpm`.
+The ideal setting for `idle_min_rpm` is about 20% less less than the RPM shown in the motors tab at idle.  If your DShot idle is 5%, you'd set the motor drive to 1050 in motors tab, and check the RPM there.  If it was, say 2,000 rpm, then you might use 16 or 17 as your `idle_min_rpm`.
 
 A value of 20 corresponds to 2,000 RPM and is a reasonable starting value for most quads.
 
@@ -71,9 +69,13 @@ Most of the available benefits happen 'out of the box' once dynamic idle is enab
 
 #### I'm after lots of inverted hang time
 
-To get longer inverted hang time, go for the lowest possible values of both DShot idle percentage and `idle_min_rpm`.  Keep `idle_min_rpm` adjusted relative to DShot as described above (20% lower than the idle rpm).  Reduce both values, stepwise, going as low as you can with both, until either you get annoying instability with throttle chops, or desyncs.
+To get longer inverted hang time, go for the lowest possible values of both DShot idle percentage and `idle_min_rpm`.  Keep `idle_min_rpm` adjusted relative to DShot as described above (20% lower than the idle rpm).  
 
-For example, if you were running DShot idle of 5% and `idle_min_rpm` of 20 was 20% below the 2400 rpm you got at 5%, then you could try DShot idle of 4% and `idle_min_rpm` of 16.  If that was OK, then 3.5% and 14, even 3% and 12.  
+NOTE: both values must be reduced!  
+
+You can go as low as you like, until either you get annoying instability with throttle chops, or desyncs.
+
+If you were running DShot idle of 5% and `idle_min_rpm` of 20 was 20% below rpm at 5%, you could try DShot idle of 4% and `idle_min_rpm` of 16.  If that was OK, then 3.5% and 14, even 3% and 12.  
 
 When hard flip stops or throttle chops get ragged, or you start tumbling out of the sky under reverse airflow due to a desync, that's too low.  You can typically get well below the default DShot idle value.
 
@@ -105,9 +107,9 @@ First, braking.  Sure we want to go fast, but we also want to slow down.  If we 
 
 Second, turn performance high speed.  Typically at high speed we have strong positive inflow. We can turn faster with dynamic idle active because under positive inflow conditions it can brake motors down to zero drive, helping turn in more quickly.  
 
-For example, race courses that involve high speed entries to maneuvers such as split-S or tight hairpins, these adjustments allow for more consistent 'reverse throw' and improved control/propwash management that allow for accurate rhythm-based turn entry and vertical maneuvers (e.g. repetitive dive/antigravity gates or inverted dive entries).
+When flying race courses that involve high speed entries to maneuvers such as split-S or tight hairpins, dynamic idle may allow more consistent 'reverse throw' and improved control/propwash management, allowing more accurate rhythm-based turn entry and vertical maneuvers (e.g. repetitive dive/antigravity gates or inverted dive entries).
 
-Optimal dynamic idle for experienced racers, who keep throttle on most of the time, may be a bit like optimising hang time, with slightly low idle values improving turn authority.  Something like reducing your overall idle by 20%, maybe.  The downside of lower idle values is that if you do make a mistake and do a zero throttle reversal, it may be uglier.  
+Optimal dynamic idle for experienced racers, who keep throttle on most of the time, may be with slightly reduced idle values.  Something like your DShot idle reduced by 20%, and `idle_min_rpm` 20% below that, maybe.  The downside of lower idle values is that if you do make a mistake and do a zero throttle reversal, it may be uglier.  
 
 
 ### The technical stuff
