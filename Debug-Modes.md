@@ -21,6 +21,13 @@ SMARTAUDIO:
 * [2] = Device Frequency
 * [3] = Device Power
 
+DYN_IDLE:
+
+* [0] = motorRangeMinIncrease * 1000
+* [1] = targetRpsChangeRate (simple RPM error * idle_adjustment_speed)
+* [2] = error (amount of error to fix)
+* [3] = minRps (lowest current motor rpm, in revolutions per second)
+
 CYCLETIME:
 * [0] = The time in microseconds since the PID task last ran
 * [1] = The current CPU load in percent
