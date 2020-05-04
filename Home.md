@@ -73,23 +73,6 @@ https://chrome.google.com/webstore/detail/betaflight-configurator/kdaghagfopacdn
 
 *If you want to contribute to better development you can download the latest or any of the older BetaFlight configurator from:*
 *https://github.com/betaflight/betaflight-configurator*   
-*The following method also allows more than one Version of the configurator to be installed.*  
-
-*Instructions (the README.MD file in the download is NOT correct):*   
-*Note: these instruction work for Chrome version 59.0. Other versions and Chromium may have different Menus so Use the Help to learn how to install Extensions)*  
-
-*1. Clone the repo to any local directory or download source as zip, click the GREEN "Clone or download" button, Select "Download ZIP*  
-*2. Unzip on your PC, remember the location*  
-*3. Start Chromium or Google Chrome*  
-*4. Click the 3-dots on the far right of the URL bar*  
-*5. Select "More Tools" then "extensions*  
-*6. Check the "Developer mode" checkbox*  
-*7. Click on load unpacked extension and point it to the Betaflight Configurator directory (for example D:/betaflight-configurator)*    
-*Then you'll see the new configurator in your Chrome extensions.*  
-
-## Mobile Flight for iPhone and iPad  
-[thread: ](https://www.rcgroups.com/forums/showthread.php?2601895-Mobile-Flight-Configuration-and-ground-control-app-for-Cleanflight-on-iPhone)
-v2.0 is in Beta Testing- See post: https://www.rcgroups.com/forums/showpost.php?p=37815161&postcount=49332  
 
 ## BlackBox Viewer
 Viewer Releases are here:
