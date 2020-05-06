@@ -53,6 +53,9 @@ The ideal setting for `idle_min_rpm` is about 20% less less than the RPM shown i
 
 A value of 20 corresponds to 2,000 RPM and is a reasonable starting value for most quads.
 
+Note that if you have configured `motor_output_limit` (motor output scaling) you should compensate for this when using the configurator motors tab.
+e.g. If you are trying to determine the motor RPM for a `dshot_idle_value` of 5.5%, and have `motor_output_limit` set to 66%, the corresponding RC value in the motors tab would be (55 * 0.66) + 1000 = 1036
+
 Smaller quads rev faster, and a higher `idle_min_rpm` value, eg 25, may be more appropriate for a 2.5".
 
 Similarly, larger quads can be best with lower `idle_min_rpm` values, e.g. 14 may be more appropriate for 7" quads with larger motors.
