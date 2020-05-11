@@ -10,7 +10,7 @@ NOTE 2: **Dynamic Idle is off by default**.  To enable it, set `idle_min_rpm` to
 
 NOTE 3: Dynamic Idle must not be used with 3D mode.
 
-NOTE 4: Transient throttle limit should be disabled while using Dynamic Idle (`set transient_throttle_limit = 0`)
+NOTE 4: **Transient throttle limit should be disabled while using Dynamic Idle** (`set transient_throttle_limit = 0`)
 
 
 ### How does Dynamic Idle work?
@@ -45,15 +45,24 @@ These are the three key elements to dynamic idle:
 
 The dynamic idle minimum value becomes the effective minimum idle RPM, a kind of 'safety net' under which RPM should not fall.  
 
-### Tuning.
+## Setup and Tuning
 
-`idle_min_rpm` is the key setting.  Default is zero.  It must be above zero to enable Dynamic Idle.
+`idle_min_rpm` must be above zero to enable Dynamic Idle.
 
-The ideal setting for `idle_min_rpm` is about 20% less less than the RPM shown in the motors tab at idle.  If your DShot idle is 5%, you'd set the motor drive to 1050 in motors tab, and check the RPM there.  If it was, say 2,000 rpm, then you might use 16 or 17 as your `idle_min_rpm`.
+The ideal setting for `idle_min_rpm` is about 20% less less than the RPM shown in the motors tab at idle.  
 
-A value of 20 corresponds to 2,000 RPM and is a reasonable starting value for most quads.
+- Take props off !!
+- Check your Dshot Idle value in the configuration page of the configurator
+- Go to the motors tab
+- Re-check that you really did take props off !! :-)
+- Connect a Lipo at around 3.8 - 3.9V
+- Enable the motors with the switch
+- Use the master slider to adjust motor drive to your idle value, which is 10XX where XX is your idle value.
+- For example, if your Dshot Idle value is 5%, set the motor drive to 1050
+- check the RPM number under the bar graph, take two zeroes off, and take off 20%
+- For example, if the RPM was say 2,000, take two zeros off to 20, then take off 20% to get 16; set your DShot idle value to 16
 
-Note that if you have configured `motor_output_limit` (motor output scaling) you should compensate for this when using the configurator motors tab.
+Note that if you have configured `motor_output_limit` (motor output scaling), you should compensate for this when using the configurator motors tab.
 e.g. If you are trying to determine the motor RPM for a `dshot_idle_value` of 5.5%, and have `motor_output_limit` set to 66%, the corresponding RC value in the motors tab would be (55 * 0.66) + 1000 = 1036
 
 Smaller quads rev faster, and a higher `idle_min_rpm` value, eg 25, may be more appropriate for a 2.5".
