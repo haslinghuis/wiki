@@ -51,7 +51,7 @@ If it doesn't match, you are in the wrong folder. Use the Windows file manager t
 
 If you are missing a few folders, don't worry, we are going to solve that right now.
 
-First, enter `sudo apt install build-essential`. This is the package that will actually build Betaflight. Then, enter `make arm_sdk_install`.
+First, enter `sudo apt install build-essential`. This is the package that will actually build Betaflight. Then, enter `sudo make arm_sdk_install`.
 
 **UPDATE/NOTE:** Using **Ubuntu**, I had to run `sudo apt-get update` which installed a few updates, _prior to_ running `sudo apt install build-essential`. Without the updates, `sudo apt install build-essential` only produced 404 errors.
 
