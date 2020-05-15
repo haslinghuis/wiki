@@ -7,7 +7,7 @@
 
 * "DSHOT_TELEMETRY_INFO" - Shows the Dshot RPM bi-directional telemetry packet success for each ESC. (4.1+)
 
-* "RC_SMOOTHING_INFO" - Shows the detected RX frame rate.  This only works if the "Filter" RC signal smoothing type is selected in the Receiver tab.  The radio and RX need to be connected and powered up for the detected frame rate data to be valid.
+* "RC_SMOOTHING_INFO" - Shows the detected RX frame rate.  This only works if the "Filter" RC signal smoothing type is selected in the Receiver tab, and both "Input Cutoff Type" and "Derivative Cutoff Type" are set to "auto".  The radio and RX need to be connected and powered up for the detected frame rate data to be valid.
 
 DSHOT_RPM_ERRORS:
 * [0] = Motor #1: the per-motor invalid packet percentages in hundredths of a percent (so 123 is 1.23%)
