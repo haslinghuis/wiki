@@ -129,6 +129,13 @@ This camera has usually low reference voltage, at least no sample, running up a 
 set camera_control_internal_resistance = 470
 set camera_control_ref_voltage = 277
 ```
+### Caddx.us Turtle V2
+Based on the values measured with the procedure mentioned above. Found the button resistance values to be consistently above the default.
+```
+set camera_control_internal_resistance = 99
+set camera_control_ref_voltage = 300
+set camera_control_button_resistance = 460,280,160,78,10
+```
 
 **Please follow manufacturers guidelines from the bottom of this page to avoid such problems!**
 
