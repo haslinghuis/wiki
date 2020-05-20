@@ -545,6 +545,7 @@ set d_min_pitch = 0
 <br/>
 
 ## Pilot: CUDA KEER<br>
+#### [3" toothfairy with Emax RS1306b BF4.2](https://github.com/cudakeer808/betaflight/wiki/3%22-toothfairy-with-Emax-1306-4000kv-BF4.2)
 #### [Floss 2.1 hybrid with Hyperlite 2207 1922kv BF4.2 race rig](https://github.com/cudakeer808/betaflight/wiki/floss-2.1-2207-1922-BF4.2)
 #### [6" Floss 2.1 with Hyperlite 2207 1922kv BF4.0 race rig](https://github.com/cudakeer808/betaflight/wiki/floss-2.1-2207-1922-rpm_filter)<br>
 #### [5" Massive Droner with T-Motor F60pro II](https://github.com/cudakeer808/betaflight/wiki/Massive-Droner-2207-1750kv)
