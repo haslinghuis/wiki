@@ -23,7 +23,7 @@ Imagine we are in a flat drop, or have done a quick 180 degree reversal from hig
 
 If we want to quickly stop a fast roll move, we need to slow down the driving motors.  When we tell them to stop, they are moving quickly forward in the air.  They have strongly positive airflow which keeps them spinning faster than they need to be.  The PIDs would really like to send zero motor drive to them - maximal braking - but cannot send less than 5.5%, even though they are in no danger of stopping.  Because they can't be slowed down as much as they could, our ability to stop the turn is not as good as it could be.
 
-Finally, lets consider an inverted drop, with a yaw while inverted.  While dropping cleanly, the motors will be at 5.5% motor drive, pushing downwards.  Our is flowing into the props as we drop, and likely they are spinning faster than is needed.  We would like them to spin more slowly, or resist spinning harder, to improve 'hang time' - but we can't, because DShot idle is a high enough number to prevent desyncs.  Additionally, if we try to yaw while inverted, the PIDs can only make the motors go faster than idle, and speeding up the motors while inverted really limits hang time.  
+Finally, lets consider an inverted drop, with a yaw while inverted.  While dropping cleanly, the motors will be at 5.5% motor drive, pushing downwards.  Air is flowing into the props as we drop, and likely they are spinning faster than is needed.  We would like them to spin more slowly, or resist spinning harder, to improve 'hang time' - but we can't, because DShot idle is a high enough number to prevent desyncs.  Additionally, if we try to yaw while inverted, the PIDs can only make the motors go faster than idle, and speeding up the motors while inverted really limits hang time.  
 
 #### How does dynamic idle change things?
 
@@ -49,7 +49,7 @@ The dynamic idle minimum value becomes the effective minimum idle RPM, a kind of
 
 `idle_min_rpm` must be above zero to enable Dynamic Idle.
 
-The ideal setting for `idle_min_rpm` is about 20% less less than the RPM shown in the motors tab at idle.  
+The ideal setting for `idle_min_rpm` is about 20% less than the RPM shown in the motors tab at idle.  
 
 - Take props off !!
 - Check your Dshot Idle value in the configuration page of the configurator
