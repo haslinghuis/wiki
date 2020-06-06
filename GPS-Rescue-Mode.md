@@ -142,10 +142,12 @@ If GPS Rescue is mapped to a switch and/or set as a failsafe procedure, a minimu
 - GPS Rescue is still actively maintained/developed, so if you're not using the last stable Betaflight release, chances are you could hit a known issue. Please be sure to use the last stable release (currently 4.0).
 - GPS Rescue is not and will never be completely reliable, so it should never be used as the only recovery measure. Showing lat/lon GPS Coordinates on the OSD (and recording the flight with a DVR), logging the telemetry (including GPS coordinates) in the Radio TX or using an autonomous beeper are some measures that should be in place even before testing GPS Rescue.
 
+
 ### Common pitfalls for old versions
 - For Betaflight versions prior to 4.0, it's highly encouraged to enable Air Mode, and optionally to finetune failsafe Stage1 settings, as a workaround for the crash detection issue immediately after activating Rescue Mode. Basically, ensure your settings will avoid the quad to be free-falling when entering into Stage2.
 - When changing failsafe parameters with Betaflight Configurator 10.4 or lower, the failsafe procedure will be silently reset. Ensure that you set the failsafe procedure manually on CLI after saving modifications on the failsafe tab.
 - Every time the quad is armed, the home point is updated. Prior to BF 4.0, home point was updated on disarm but could be missed if switching rapidly. Best practice for launching in all versions is to arm, wait a few seconds until home point shows up in osd with 0 distance, and then start flying. Otherwise, disarm, wait a few seconds and repeat. Since Betaflight 4.0 you can use this cli command `set gps_set_home_point_once = ON` in this way only the first arm after the battery is connected will be used as home point.
+- If you're using Crossfire, make sure to configure the Failsafe parameter as "Cut" on your "CROSSFIRE RX" menu.
 
 ## Version History
 **Betaflight 4.0**
