@@ -1,3 +1,7 @@
+### Disclaimer:
+
+Software Serial is not recommended for RC control links and should not be used to connect serial receivers.
+
 ### Software Serial List of compatible pins
 
 Not for public viewing yet.
