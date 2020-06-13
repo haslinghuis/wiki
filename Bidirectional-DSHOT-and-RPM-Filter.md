@@ -1,6 +1,6 @@
 ### Recent Announcements
 
-- **WARNING!** - Avoid any unofficial beta BLHeli_S firmware versions from JazzMaverick labeled 16.8, 16.9, or later as they are incompatible with RPM Filtering. The author made undesirable changes that reduce the rate at which RPM telemetry data is supplied. As a result the RPM filtering will not track the motor vibrations well, resulting in poor filtering performance and possibly hotter motors. The original 16.73 version is recommended.
+- **WARNING!** - Avoid any unofficial beta BLHeli_S firmware versions from JazzMaverick labeled 16.8, 16.9, or later as they are incompatible with RPM Filtering. The author made undesirable changes that reduce the rate at which RPM telemetry data is supplied. As a result the RPM filtering will not track the motor vibrations well, resulting in poor filtering performance and possibly hotter motors. The 16.73 version is the only recommended version that properly supports RPM filtering.
 - Bidirectional DSHOT and RPM Filter for BLHeli_S escs. **Free Version**. Install the latest BLHeli Configurator and ****(choose firmware version 16.73)**** [Get it here!](https://github.com/blheli-configurator/blheli-configurator/releases/latest) 
 - Latest EA of a custom BF 4.1 Performance Edition for F3 FCs available. [Get it here!](https://github.com/joelucid/betaflight/releases)
 - JESC supports bidirectional DSHOT and RPM Filter on BLHeli_S escs. Free on L ESCs, Paid but VERY cheap and worth it on H ESCs! 48khz and 96khz PWM version available for testing [Get it here!](https://jflight.net)
