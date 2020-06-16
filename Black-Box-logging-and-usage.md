@@ -5,7 +5,7 @@ https://www.rcgroups.com/forums/showthread.php?2299805-Blackbox-flight-data-reco
 ### Black Box OpenLager
 This has an SPI interface for faster logging (same as when the SD card is integrated onto an FC board).
 https://github.com/d-ronin/openlager/wiki   
-Available from: http://shop.myairbot.com/index.php/openlager.html   
+Available from: https://store.myairbot.com/accessory/openlager.html   
 and: http://www.readytoflyquads.com/high-rate-f4-data-logger-openlager   
 
 ### BlackBox Viewer
