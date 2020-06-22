@@ -56,6 +56,7 @@ Just measure the voltage between OSD and GND pins on the camera while it is powe
 
 ### Internal Resistance
 Foxeer Monster, RunCam Micro Sparrow (and probably other cameras I haven't yet discovered) are known to require `camera_control_internal_resistance = 99`.
+RunCam Phoenix 2 Nano requires `camera_control_internal_resistance = 212`.
 
 To derive this value for an unknown camera, you'll need a multimeter and a suitable joystick. First set your multimeter to resistance measurement mode and measure the resistance of your OSD joystick while pressing individuals keys, write the values down somewhere, you'll need them later.
 
