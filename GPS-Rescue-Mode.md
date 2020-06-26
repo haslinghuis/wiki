@@ -154,6 +154,9 @@ If GPS Rescue is mapped to a switch and/or set as a failsafe procedure, a minimu
 - If you're using Crossfire, make sure to configure the Failsafe parameter as "Cut" on your "CROSSFIRE RX" menu.
 
 ## Version History
+**Betaflight 4.1**
+* When GPS Rescue is engaged after a Failsafe, use sticks to recover control (https://github.com/betaflight/betaflight/pull/7936)
+
 **Betaflight 4.0**
 * Prevent crash detection immediately after entering GPS Rescue mode (https://github.com/betaflight/betaflight/pull/7034)
 * Allow minimum distance to home to be configurable (https://github.com/betaflight/betaflight/pull/6404)
