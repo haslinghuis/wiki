@@ -16,7 +16,6 @@ Yes the chip says STM32F405 on it, but that does not describe the board. Check t
 * Choose your target
 ```
 MATEKF411 (MTKS)  <-- Unified target
-MATEKF411 (Legacy)
 ```
 **FAQ**: What do these four letters mean? They refer to the manufacturer of the board. The list is available in  [Manufacterers.md](https://github.com/betaflight/unified-targets/blob/master/Manufacturers.md)
 
