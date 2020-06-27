@@ -6,11 +6,12 @@
 The CLI is another method to get the target name.
 ```
 # version
-# Betaflight / STM32F405 (S405) 4.1.0 Oct 16 2019 / 11:57:16 (c37a7c91a) MSP API: 1.42
-# manufacturer_id: HBRO   board_name: KAKUTEF4V2   custom defaults: YES
+# Betaflight / STM32F411 (S411) 4.2.0 Jun 14 2020 / 03:04:43 (8f2d21460) MSP API: 1.43
+# config: manufacturer_id: MTKS, board_name: MATEKF411, version: be0c9205, date: 2020-01-15T19:44:32Z
+# board: manufacturer_id: MTKS, board_name: MATEKF411
 ```
 
-Yes the chip says STM32F405 on it, but that does not describe the board. Check the target name
+Yes the chip says STM32F411 on it, but that does not describe the board. Check the target name
 
 
 * Choose your target
