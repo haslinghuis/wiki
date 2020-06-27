@@ -11,16 +11,30 @@ The CLI is another method to get the target name.
 # board: manufacturer_id: MTKS, board_name: MATEKF411
 ```
 
-Yes the chip says STM32F411 on it, but that does not describe the board. Check the target name
-
+The MCU target is `STM32F411` and unified target config is `MATEKF411` as the board_name describes the board type config.
+The manufacturer is required to maintain a unified target configuration file.
 
 * Choose your target
 ```
-MATEKF411 (MTKS)  <-- Unified target
+MATEKF411 <-- Unified target
 ```
-**FAQ**: What do these four letters mean? They refer to the manufacturer of the board. The list is available in  [Manufacterers.md](https://github.com/betaflight/unified-targets/blob/master/Manufacturers.md)
+* After you hit load firmware on the Firmware Flasher tab you will get the following release info:
+
+```
+Target: MATEKF411
+Manufacturer ID: MTKS
+Version: 4.2.0
+Binary: betaflight_4.2.0_STM32F411.hex
+Date: 14-06-2020 08:40
+Unified Target: MTKS-MATEKF411.config
+Date: 2020-01-15T19:44:32Z
+```
+**FAQ**: 
+What is Manufacturer ID: `MTKS`
+What do these four letters mean? They refer to the manufacturer of the board. The list is available in  [Manufacterers.md](https://github.com/betaflight/unified-targets/blob/master/Manufacturers.md)
 
 Tip: remember to save a backup of your config, like as a `diff`, *before* you flash a new version of betaflight.
+**Please note** it is only save to import certain settings back. If unsure please start with a fresh configuration.
 
 * `Load Firmware [Online]` then `Flash Firmware`
 
