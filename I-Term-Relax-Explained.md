@@ -39,6 +39,11 @@ Such effect is even more prominent with gyro mode, since the I term locking is s
 
 ![](https://user-images.githubusercontent.com/2025999/75109705-25bb4f80-5626-11ea-925f-ad0f5fd54eb8.jpg)
 
+### How to fix this? 
+This can be fixed using the **INCREASING** modes of the Iterm Relax. The Iterm Relax can be configured in _RP, RPY, RP_INC_ and _RPY_INC modes_. The two modes that have the *_INC* in the name only lock the I accumulation from INCREASING, letting it to reduce if the I accumulation is not needed anymore.
+
+By default Betaflight uses the *RP* mode, so if you want to remove this accumulation you can change it to *RP_INC*.
+
 
 
 
