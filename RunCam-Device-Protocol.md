@@ -112,9 +112,10 @@ For the v1 you can still use [FPV Camera Control](FPV-Camera-Control-%28Joystick
 
 Beware that OSD control is disabled during recording.
 
-**Download:**
-CADDX  support: Turtle V2 can support RUNCAM protocol without flashing firmware
-Turtle V2 has two different versions of hardware. Flashing the firmware may cause the yellow screen to not work. If you need technical support, please go to CADDX official Facebook
+
+CADDX  support: Turtle V2 can support RUNCAM protocol without flashing firmware.
+
+Turtle V2 has two different versions of hardware. Flashing the firmware may cause the yellow screen to not work. If you need technical support, please go to CADDXFPV official Facebook
 
 #### Supported Features:
 ##### OSD Menu Control
