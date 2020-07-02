@@ -1,4 +1,4 @@
-Necessity for swapping/shifting/rotating motor positions rises from time to time. Before v3.1, we had to either use long wires between FC and ESC to retain the original mapping (which make the build messy) or use custom mmix to change how each motor contributes to attitude adjustment.
+Necessity for swapping/shifting/rotating motor positions rises from time to time. Before v3.1, we had to either use long wires between FC and ESC to retain the original mapping (which make the build messy) or use a custom mix to change how each motor contributes to attitude adjustment.
 
 With 3.1, we can easily modify motor mappings with `resource` CLI command. See [Betaflight resource mapping](Betaflight-resource-remapping) for descriptions of this command.
 
