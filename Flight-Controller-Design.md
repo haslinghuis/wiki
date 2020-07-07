@@ -5,6 +5,9 @@
 
 ### Open Source Designs
 
+#### ModdQuad F7
+https://www.moddquad.com/p/fc.html
+
 #### AlienFlight
 https://alienflight.com
 
