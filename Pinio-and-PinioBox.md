@@ -62,7 +62,7 @@ For permanent ID of boxes, the table below is based on `msp/msp_box.c`.
  | BOXHEADFREE | HEADFREE | 6 | |
  | BOXHEADADJ | HEADADJ | 7 | |
  | BOXCAMSTAB | CAMSTAB | 8 | |
- | BOXCAMTRIG | CAMTRIG | 9 |( removed) |
+ | BOXCAMTRIG | CAMTRIG | 9 | (removed) |
  | BOXGPSHOME | GPS HOME | 10 | (removed) |
  | BOXGPSHOLD | GPS HOLD | 11 | (removed) |
  | BOXPASSTHRU | PASSTHRU | 12 | |
