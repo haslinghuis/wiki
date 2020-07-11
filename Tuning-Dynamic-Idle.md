@@ -62,7 +62,7 @@ The ideal setting for `idle_min_rpm` is about 20% less than the RPM shown in the
 - check the RPM number under the bar graph, take two zeroes off, and take off 20% (or multiply by 0.8)
 - set your dynamic idle minimum RPM value to that number.
 
-For example, if the idle RPM at 1050 was say 2,000, take two zeros off to get 20, then take off 20% (or multiply by 0.8) to get 16; set your DShot idle value to 16.
+For example, if the idle RPM at 1050 was say 2,000, take two zeros off to get 20, then take off 20% (or multiply by 0.8) to get 16; set your dynamic idle minimum (`idle_min_rpm` in CLI) to 16.
 
 Always measure rpm properly using the motors tab.  Do not guess the numbers.  
 
