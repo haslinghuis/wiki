@@ -22,7 +22,7 @@ resource PINIO 4 D2
 [...]
 ```
 
-I/O configuration of each pin is specified by `pinio_config` CLI variable, which is a comma separated list/array of 8-bit values. MSB represents inversion, and remaining 7-bits specify I/O mode as defined in [drivers/pinio.h]([betaflight/pinio.h at master · betaflight/betaflight · GitHub](https://github.com/betaflight/betaflight/blob/master/src/main/drivers/pinio.h)) (Only push-pull output is defined for this PR).
+I/O configuration of each pin is specified by `pinio_config` CLI variable, which is a comma separated list/array of 8-bit values. MSB represents inversion, and remaining 7-bits specify I/O mode as defined in [drivers/pinio.h](https://github.com/betaflight/betaflight/blob/master/src/main/drivers/pinio.h) (Only push-pull output is defined for this PR).
 
 ```
 #define PINIO_CONFIG_OUT_INVERTED 0x80
@@ -61,7 +61,7 @@ With this assignment, PINIO #1 through #4 are associated with boxes as follow.
 | `3`     | `USER4`        | `43`         |
 | `4`     | Unused         | `-1`         |
 
-For permanent ID of boxes, the table below is based on `msp/msp_box.c`.
+For permanent ID of boxes, the table below is based on [msp/msp_box.c](https://github.com/betaflight/betaflight/blob/master/src/main/msp/msp_box.c).
 
 | Box                     | Description              | ID   | Notes     |
 | ----------------------- | ------------------------ |:----:| --------- |
@@ -126,7 +126,7 @@ Some inbuilt or external devices/modules come with a dedicated pin/wire to enabl
 
 Some flight controller targets come with PINIO(s) *preconfigured*, for example to switch the camera, the VTX supply voltage or an inbuilt Bluetooth device.
 
-Check the [unified target configuration]([unified-targets/configs/default at master · betaflight/unified-targets · GitHub](https://github.com/betaflight/unified-targets/tree/master/configs/default)) of **your** flight controller or use the `resource` command on the running board, to find any existing PINIOs  -- if any.
+Check the [unified target configuration](https://github.com/betaflight/unified-targets/tree/master/configs/default) of **your** flight controller or use the `resource` command on the running board, to find any existing PINIOs  -- if any.
 
 You may find something like `resource PINIO 1 B00` or `PINIO 1 B00`. This shows us, that there is already a PINIO with the index of `1` (PINIO #1).
 
