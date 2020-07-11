@@ -2,7 +2,7 @@
 
 ## Introduction
 
-On my yourney though hundreds of videos, tutorials and manuals (Bardwell, UAV Tech, JohnnyFPV, Mr. Steele, Le Drib, RotorRiot (sorry, for the missed ones) and wrote down their suggestions). This is the result of my notes. It should provide the least necessary but most compressed information to start tuning and setting your Quadcopter.
+On my journey, though hundreds of videos, tutorials and manuals (Bardwell, UAV Tech, JohnnyFPV, Mr. Steele, Le Drib, RotorRiot (sorry, for the missed ones) and wrote down their suggestions). This is the result of my notes. It should provide the least necessary but most compressed information to start tuning and setting your Quadcopter.
 In my case I use the widely spread `Taranis X7` remote control.
 
 I am a **freestyle pilot**, so keep in mind, that these settings are in this scope (more smooth, softer flight behaviour).
