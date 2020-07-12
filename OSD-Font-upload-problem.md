@@ -19,7 +19,7 @@ The following board/FC are known to have font upload problem
 | --- | --- | --- | --- | --- |
 | DAL RC F405 AIO | DALRCF405 | N/A | yes |  [dalrc](http://www.dalrc.cn/DALRC/plus/view.php?aid=186) |
 | DAL RC F722Dual | DALRCF722DUAL | N/A | yes | |
-| Speedy Bee F7 AOI | SPEEDYBEEF7 | N/A | yes | |
+| Speedy Bee F7 AIO | SPEEDYBEEF7 | N/A | yes | |
 | Diatone Mamba F405 Mini FC | FURYF4OSD | N/A | yes | [diatone](https://www.diatoneusa.com/store/p574/MAMBA_F405_Mini_Betaflight_Flight_Controller_F25_25A_2_4S_DSHOT600_FPV_Racing_Brushless_ESC.html) |
 
 
