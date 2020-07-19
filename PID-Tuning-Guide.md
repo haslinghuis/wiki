@@ -512,6 +512,7 @@ Reduces I accumulation on fast stick movements. It markedly reduces I bounce-bac
 Freestyle:
 - 10 Cutoff
 - Gyro
+
 Race:
 - 20 Cutoff
 - Setpoint
