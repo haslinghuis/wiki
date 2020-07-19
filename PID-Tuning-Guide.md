@@ -510,12 +510,12 @@ Reduces I accumulation on fast stick movements. It markedly reduces I bounce-bac
 - you feel it on racing type settings
 
 Freestyle:
-- 10 Cutoff
-- Gyro
+- Cutoff: 10 
+- Type: Gyro
 
 Race:
-- 20 Cutoff
-- Setpoint
+- Cutoff: 20
+- Type: Setpoint
 
 ## Integrated Yaw
 
