@@ -18,7 +18,7 @@ Where a function does not require an index (i.e. there is only 1 possible pin as
 
 As an example `resource` will show motors 1-8, but if your mixer is set to QuadX then only motors 1-4 will actually be used, if you change to Oct as the mixer (and reboot) then all 8 motors will be configured. 
 
-`resource list` will list all pins and their current assignments, including all those in use by system components and **not** configurable by the user. It will also list the currently active DMA utilisation. Note for any adjustments made a save and reboot is required in order for those changes to be visible here. Consider this command the output of the currently active state.
+`resource list` (or `resource show` in more recent versions of Betaflight) will list all pins and their current assignments, including all those in use by system components and **not** configurable by the user. It will also list the currently active DMA utilisation. Note for any adjustments made a save and reboot is required in order for those changes to be visible here. Consider this command the output of the currently active state.
 
 Note that the `save` command must be used after changing pin mapping via the CLI.
 
