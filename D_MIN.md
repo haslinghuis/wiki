@@ -1,21 +1,36 @@
-# D_MIN
+When Dmin enabled (via the switch in the Configurator PID page), you can set independent Dmin and Dmax values, to have different amounts of D depending on what the quad is doing at the time.
 
-D_MIN provides a way to have a lower level of D in normal flight and a higher level for quick manoeuvres that might cause overshoot, like flips and rolls.  It also brings D up during prop wash.  The high level is simply your usual D number.  The low level is the `d_min_xxx` value, which can be adjusted in the CLI or OSD.  
+This allows us to have a lower amount of D in normal flight - the Dmin value - and a higher level for quick manoeuvres that might cause overshoot, like flips or rolls, and during propwash type events.
 
-In the CLI, d_min settings are at the bottom of the list of profile values.
+When D_min is enabled, the normal D value is renamed as the Dmax value, and a Dmin column appears.  The Dmin value becomes the 'normal' value that is active in normal straight flight, and gentle turns.  Dmax becomes a 'high' value that is only active during quick moves or during propwash events.
 
-In the OSD, they are in the miscellaneous settings.
+Dmin values are, like D/Dmax values, saved per-profile.
 
-D_min allows the pilot to have D, and, as a result, sometimes more P, than previously, without the drawbacks of having higher D all the time.
+In the OSD, they are in the PID tuning settings.
 
 
-## Background and purpose.
+## Application
+
+D_min allows the pilot to have low D most of the time, leading to reduced D delay and cooler motors, while allowing more D and well controlled P during quick moves and propwash.
+
+Freestylers would typically set Dmin to close to the 'normal' or default D value,  and bring Dmax say 20-30% higher, to help control propwash and overshoot.
+
+Racers would typically leave the Dmin to Dmax proportion as per default.
+
+Cinematic HD pilots need high P and high D values all the time, so Dmin should be disabled.  7" or larger cinematic quads, will usually have least background wobble while cruising with a relatively high P, with Dmin off, with D about 10% higher than P, and with stronger overall D filtering (D filter sliders hard left).
+
+The primary driver to increase Dmin towards Dmax is gyro movement.  Stronger gyro movements, including propwash shaking, will trigger an increased in D.  
+
+A secondary element (Dmin advance) can optionally be added to boost D a bit earlier by driving it from setpoint.  
+
+
+## Background
 
 Lower than usual amounts of D in normal flight gives the following advantages:
 
 - less noise, cooler motors
 - cleaner motor traces at full throttle
-- improved ability to react quickly to fast inputs
+- faster gyro responses to quick inputs
 - D related oscillation or grinding on arming is less likely
 
 However, low D also has disadvantages:
@@ -23,6 +38,7 @@ However, low D also has disadvantages:
 - greater prop wash
 - greater overshoot and bounce-back
 - P oscillations around fast moves, due to lack of damping when P is high
+- low level slow oscillations in smooth forward flight
 
 The intent of d_min is to get the best of both worlds, i.e. low D when flying smoothly and during low rate turns, higher D when needed to dampen overshoots or deal with prop wash.
 
@@ -31,71 +47,84 @@ The intent of d_min is to get the best of both worlds, i.e. low D when flying sm
 
 Maybe.  
 
-If the quad flies well and doesn't have overshoot, doesn't oscillate, and doesn't have excessively warm motors, there may not be much benefit from adding d_min.  
+If the quad flies well, doesn't have overshoot, doesn't oscillate, doesn't have excessively warm motors, and doesn't have much propwash, there may not be much benefit from enabling d_min.
 
-However, with d_min, you may be able to lift P a bit higher, and lift peak D a bit higher - that may give tighter handling.
+If the quad has warm to hot motors, and in particular if it is a racer, Dmin at a value lower than usual D is typically very helpful, improving turn-in responsiveness, bent prop tolerance, and reducing motor heat.
+
+For freestyle purposes, if the quad is flying well and has cool motors, but has propwash, setting Dmin to your 'normal' D value and using Dmax as a 'boost' for propwash, by setting Dmax 20-40% higher than Dmin may help attenuate the propwash. 
+
+Sometimes quads that have an 'one the edge' tune, with relatively high P, will get noticeable and audible P oscillation during tight power-on turns.  Using Dmax as a D boost will give you more D at these times which can help control that P oscillation better, allowing higher overall P values.
 
 
 ## How do I disable d_min?
 
-D_min is disabled, for a given axis, when d_min = 0, or d_min is greater than D, on that axis.  The D value is then constant all the time.
+Switch it off in the Configurator.
+
+D_min can also be disabled, in the CLI, by setting d_min = 0, or if d_min is misconfigured to be greater than D.  
+
+When disabled, the users Dmax value becomes the D value, and D is constantly at that value, all the time.
 
 
 ## How should I set it up for my first flights?
 
-When pasting PIDs in, your normal D value will be retained, and the d_min values will be 20, 22 and 0 on roll, pitch and yaw.  
+The default Dmin values will be 23, 25 and 0 on roll, pitch and yaw.  These are good, safe, starting points, for most quads.  
 
-For first flights with d_min, I'd suggest increasing your normal D by about 10-20%, and setting the d_min values to about half that D value.
+For high-performance builds, and all new builds, the first flights should be done with the master P and D slider left a few clicks, just in case the PIDs are a bit high.
 
+When tuning P and D with Dmin active, be sure to appreciate that the Dmax value is active during the faster periods of flips and rolls, and the Dmin value is active during steady flight and for smaller moves. 
 
-## What are the defaults?
+Some people advocate tuning P and D with Dmin off.  The idea is to determine the P value that causes oscillation, and then the amount of D required to control it.
 
-The defaults are a guide only and will not suit all quads.
-
-They are D of 35/38 and d_min of 20/22 on roll/pitch respectively.  
-
+The pilot should first set D to about a third of P, push both upwards stepwise until P oscillation occurs, eg during tight fast turns, then back off both P and D until there is only a hint of P oscillation remaining.  Then D can be brought up to a value that controls it, which usually would be about a number close to or just below the P value.  Freestylers should use this value for Dmin.  They may then be able to drive P higher until P oscillations just re-occur, and use Dmax at a higher value to control it.  This should give optimal propwash handling as well.
 
 ## Will adding D_min improve prop wash handling?
 
-No.  D_Min is a way to have *less* D than usual.  Lower D typically means weaker propwash control.
+If the Dmin value is set to your optimal D value, and Dmax is set to a higher value, this is likely to improve propwash.  
 
-The d_min algorithm does detect and respond to propwash events by bringing D back up.  But not as strongly as we would like.  Typically D only gets up by about half way to the set D value.  To get the most out of d_min, it's important to increase your D value by 15-20%.  Usually, then, the propwash handling will be about the same as before.
+If the Dmin value is set below the optimal D value, to keep motors cool / make the quad more responsive / improve bent prop tolerance, eg for racing, then propwash will likely be worse.
 
-If propwash is your primary problem, and motors are cool, bring the d_min value up.  
+During propwash events, D typically climbs only about half-way to the Dmax value.  The 'sensitivity' of the Dmin code to propwash is affected by the `d_min_boost_gain` parameter.  Higher gains will push D up more quickly and more aggressively.  The default is conservative.  It can be set to 30-35 on most reasonable quads, and to 40-45 on really clean freestyle builds.
 
+If propwash is the primary problem, and motors are cool, bring the d_max value up, and the `d_min_boost_gain` up. 
 
-## I have huge propwash, deactivating d_Min is helping.
+For fine tuning of that kind, it's best to make a blackbox log with the debug mode set to D_MIN.  This will show the amount of D you're actually getting at different times in the flight.
 
-As suggested by @spatzengr (D_Boost) (AKA UAVTech) you can raise the value of D_Min and the standard value at the same time.  
-Here is an example:
-
-![](https://user-images.githubusercontent.com/25552059/56864158-24c97b00-698d-11e9-85ab-ddf741d9f8e0.PNG)
 
 ## Will adding d_min improve overshoot control?
 
-Yes.  The timing of the d_min boost effect typically improves overshoot even at the same D value.  
-
-With d_min active, it's possible to increase D and have cooler motors at the same time; that gives much more leeway for improved overshoot control by increasing D.
-
-D should be adjusted until you have optimal overshoot control, and d_min adjusted down for motor heat control.  
+Yes.  The timing of the d_min boost effect typically improves overshoot, since D will peaks around the time the gyro-detected turn rate is highest, which is when overshoot is most likely. 
 
 
 ## What about the 'd_min_advance' parameter?
 
-D_min_advance speeds up of onset of the boost effect.  This can be helpful if you have overshoot with very high rate flips on very responsive quads.
+`D_min_advance` speeds up of onset of the boost effect, by boosting D when setpoint changes (as well as when gyro changes).  Changes in setpoint happen immediately you move the sticks, before the quad starts to move, and before the gyro detects any change at all.
 
-Advance works by including a set point derived boost signal into the boost algorithm.  
+The default is 20, which is very little.
 
-With an advance of zero, the D boost won't start until the motors start to turn the quad, which will happen some time after the sticks are moved.  This allows FF and P to 'get started' on turning the quad early, and without any suppression by D, maximising initial turn responsiveness.  But for very responsive quads, a gyro derived boost signal can come on a bit too late.  Adding some advance will bring start boosting D as the sticks are moved, without waiting for the motors to spin.  
+Zero advance is best for racers, and probably for most quads.  
 
-The advance range is 0-200.  Default of 20 does very little except with very rapid stick inputs.  A value of 100 provides significant advance.  Advance that high should not be required except possibly in very responsive quads targeting maximum turn rates in excess of 1000 deg/s.  
+Stronger advance (up to 100, say) will push D up very early and that may improve overshoot control on some freestyle setups and in LOS quads that target extremely high maximum roll rates and are very susceptible to overshoot.
+
+Because strong advance adds delay, try to use the lowest value possible.  Always try it at zero, and if there is no apparent change in the handling of the quad, use zero.  
+
+With an advance of zero, the D boost won't start until the motors start to turn the quad, which will happen some time after the sticks are moved.  This allows FF and P to 'get started' on turning the quad early, and without any suppression by D, maximising initial turn responsiveness.  But for very responsive quads, a gyro derived boost signal can come on a bit too late.  Adding some advance will bring start boosting D as the sticks are moved, without waiting for the motors to spin.   
 
 
-## What about the 'd_min_gain' parameter?
+## What about the 'd_min_boost_gain' parameter?
 
-This is an advanced tuning parameter that determines how strongly D is boosted during quick stick inputs.  
+`d_min_boost_gain` determines how quickly, and strongly, D is boosted in response to flips and rolls and propwash.  
 
-The default value of 20 is ideal for the majority of quads.  Very clean quads can be OK with gain at 25.  If set higher again, the quad will not run at the minimum value much of the time, and will readily climb to the max D value.  That's actually not such a bad plan if propwash is your main concern, but its not ideal if you want a low min to control motor heat.
+The default value of 20 is safe for the majority of quads.  30-35 is a good value for a clean freestyle quad.  Some extremely noise free quads can be OK with gain at 40-45.  
+
+Dmin gain at the default of 20 is optimal for racers.  It  will keep D at the Dmin value most of the time, only coming up for stronger moves to prevent overshoot.  It will not help much for propwash like this but gives the racer all the responsiveness and overshoot control benefits.
+
+Dmin gain of 35 is good for freestyle generally.  Higher values to about 40-45 may be used on very clean quads but are best checked by logging with the debug set to D_MIN to check exactly what is happening.
+
+The ideal gain value should result in little or no boost in gentle forward flight but a quick and significant boost effect with propwash.
+
+Note that high Dmin gain  will make the Dmin boost come on whenever there is fast quad movement or shaking.  A bent prop, it will cause D to go to the Dmax value, and if Dmax is high, you will get a lot of D mediated motor heating.  Hence it is really important to not use high gain with high Dmax value unless the build is clean and shake-free.  
+
+High Dmin gains should only be used for really clean builds that won't be flown with bad props.  
 
 If the quad can be logged, the ideal gain value for general use is where the realtime D value in debugs 2 and 3 is wanting to rise up from the minimum value in normal flight all the time (not sitting exactly on the min value but going up a tiny bit at times), quickly rises to maximum D with flips and rolls, and rises to about half way up in propwash.
 
