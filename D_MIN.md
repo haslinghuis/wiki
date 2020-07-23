@@ -1,27 +1,37 @@
-When Dmin enabled (via the switch in the Configurator PID page), you can set independent Dmin and Dmax values, to have different amounts of D depending on what the quad is doing at the time.
+Dmin allows us to have different amounts of D depending on what the quad is doing at the time.
 
-This allows us to have a lower amount of D in normal flight - the Dmin value - and a higher level for quick manoeuvres that might cause overshoot, like flips or rolls, and during propwash type events.
+When enabled, we can have a lower amount of D in normal flight - the Dmin value - and a higher amount - the Dmax value - during quick manoeuvres like flips or rolls, and during propwash type events.
 
-When D_min is enabled, the normal D value is renamed as the Dmax value, and a Dmin column appears.  The Dmin value becomes the 'normal' value that is active in normal straight flight, and gentle turns.  Dmax becomes a 'high' value that is only active during quick moves or during propwash events.
+D_min is typically used to either:
+
+- reduce D in normal flight, to improve tolerance to bent props, keep motors cooler and to reduce response delay, the typical 'racer' scenario, or 
+
+- transiently boost D above normal to help control overshoot during flips and rolls and to improve propwash control.
+
+When D_min is enabled, via the switch in the configurator, the normal D value is renamed to the Dmax value, and a Dmin column appears.  The Dmin value becomes the 'normal' value that is active in normal straight flight, and gentle turns.  Dmax becomes a 'high' value that is only active transiently during quick moves or during propwash events.
 
 Dmin values are, like D/Dmax values, saved per-profile.
 
 In the OSD, they are in the PID tuning settings.
 
+The `d_min_boost_gain` CLI parameter controls the sensitivity of the boost effect.  Higher values push the quad more quickly towards Dmax.
+
 
 ## Application
 
-D_min allows the pilot to have low D most of the time, leading to reduced D delay and cooler motors, while allowing more D and well controlled P during quick moves and propwash.
+D_min allows the pilot to have low D most of the time, leading to reduced D delay, cooler motors, and faster stick responsiveness, while allowing more D when needed to provide stronger control overshoot during quick moves and propwash.
 
-Freestylers would typically set Dmin to close to the 'normal' or default D value,  and bring Dmax say 20-30% higher, to help control propwash and overshoot.
+Freestylers would typically set Dmin to close to the 'normal' or default D value, and set Dmax some 20-30% higher, to help control propwash and overshoot.
 
 Racers would typically leave the Dmin to Dmax proportion as per default.
 
-Cinematic HD pilots need high P and high D values all the time, so Dmin should be disabled.  7" or larger cinematic quads, will usually have least background wobble while cruising with a relatively high P, with Dmin off, with D about 10% higher than P, and with stronger overall D filtering (D filter sliders hard left).
+Cinematic HD pilots need high P and high D values all the time, so Dmin should to a high-normal value.  7" or larger cinematic quads will usually have least background cruising wobble with a relatively high D, typically Dmin about 10% higher than P. Dmax can then be higher again, but should be applied cautiously and only if required.  When using high D, you should always use stronger overall D filtering to control D noise (D filter sliders hard left).
 
-The primary driver to increase Dmin towards Dmax is gyro movement.  Stronger gyro movements, including propwash shaking, will trigger an increased in D.  
+Gyro movement itself is how the code knows to boost Dmin towards Dmax.  Stronger gyro movements, including flips and rolls, propwash shaking, and shaking from bent props, will trigger an increased in the amount of D being applied to the quad.  
 
-A secondary element (Dmin advance) can optionally be added to boost D a bit earlier by driving it from setpoint.  
+Dmin advance pushes D towards Dmax whenever setpoint changes quickly, and since setpoint changes happen earlier than gyro changes, this leads to an earlier lift in D towards Dmax.  This is not usually needed, except in quads targeting very high maximum roll rates that need a lot of D and can tolerate some delay.
+
+The `dmin_gain
 
 
 ## Background
@@ -49,11 +59,11 @@ Maybe.
 
 If the quad flies well, doesn't have overshoot, doesn't oscillate, doesn't have excessively warm motors, and doesn't have much propwash, there may not be much benefit from enabling d_min.
 
-If the quad has warm to hot motors, and in particular if it is a racer, Dmin at a value lower than usual D is typically very helpful, improving turn-in responsiveness, bent prop tolerance, and reducing motor heat.
+If the quad has warm to hot motors, and you hit things and sometimes need to fly with bent props, or if you are a racer, Dmin at a value lower than 'normal' D is typically very helpful, improving turn-in responsiveness, bent prop tolerance, and reducing motor heat.
 
-For freestyle purposes, if the quad is flying well and has cool motors, but has propwash, setting Dmin to your 'normal' D value and using Dmax as a 'boost' for propwash, by setting Dmax 20-40% higher than Dmin may help attenuate the propwash. 
+For freestyle purposes, if the quad is flying well and has cool motors, but has propwash, or some P wobble, setting Dmin to your 'normal' D value and using Dmax as a 'boost' for propwash, by setting Dmax 20-40% higher than Dmin, may help attenuate the propwash. 
 
-Sometimes quads that have an 'one the edge' tune, with relatively high P, will get noticeable and audible P oscillation during tight power-on turns.  Using Dmax as a D boost will give you more D at these times which can help control that P oscillation better, allowing higher overall P values.
+Sometimes quads that have an 'on the edge' tune, with relatively high P, will get noticeable, audible P oscillation during tight power-on turns.  Using Dmax as a D boost will give you more D at these times.  This can help control those kinds of P oscillation better, allowing higher overall P values.
 
 
 ## How do I disable d_min?
@@ -77,6 +87,7 @@ Some people advocate tuning P and D with Dmin off.  The idea is to determine the
 
 The pilot should first set D to about a third of P, push both upwards stepwise until P oscillation occurs, eg during tight fast turns, then back off both P and D until there is only a hint of P oscillation remaining.  Then D can be brought up to a value that controls it, which usually would be about a number close to or just below the P value.  Freestylers should use this value for Dmin.  They may then be able to drive P higher until P oscillations just re-occur, and use Dmax at a higher value to control it.  This should give optimal propwash handling as well.
 
+
 ## Will adding D_min improve prop wash handling?
 
 If the Dmin value is set to your optimal D value, and Dmax is set to a higher value, this is likely to improve propwash.  
@@ -92,7 +103,7 @@ For fine tuning of that kind, it's best to make a blackbox log with the debug mo
 
 ## Will adding d_min improve overshoot control?
 
-Yes.  The timing of the d_min boost effect typically improves overshoot, since D will peaks around the time the gyro-detected turn rate is highest, which is when overshoot is most likely. 
+Yes so long as it's overall effect is to give more D than you'd otherwise have had.  The increase in D from the d_min boost effect is timed to work at exactly the best time to help control overshoot.   
 
 
 ## What about the 'd_min_advance' parameter?
@@ -110,7 +121,7 @@ Because strong advance adds delay, try to use the lowest value possible.  Always
 With an advance of zero, the D boost won't start until the motors start to turn the quad, which will happen some time after the sticks are moved.  This allows FF and P to 'get started' on turning the quad early, and without any suppression by D, maximising initial turn responsiveness.  But for very responsive quads, a gyro derived boost signal can come on a bit too late.  Adding some advance will bring start boosting D as the sticks are moved, without waiting for the motors to spin.   
 
 
-## What about the 'd_min_boost_gain' parameter?
+## What about the `d_min_boost_gain` parameter?
 
 `d_min_boost_gain` determines how quickly, and strongly, D is boosted in response to flips and rolls and propwash.  
 
@@ -122,11 +133,11 @@ Dmin gain of 35 is good for freestyle generally.  Higher values to about 40-45 m
 
 The ideal gain value should result in little or no boost in gentle forward flight but a quick and significant boost effect with propwash.
 
-Note that high Dmin gain  will make the Dmin boost come on whenever there is fast quad movement or shaking.  A bent prop, it will cause D to go to the Dmax value, and if Dmax is high, you will get a lot of D mediated motor heating.  Hence it is really important to not use high gain with high Dmax value unless the build is clean and shake-free.  
+Note that high Dmin gain will make the Dmin boost come on whenever there is fast quad movement or shaking.  If set high, a bent prop, or any other shaking process, may cause D to go to the Dmax value, and you may then get a lot of D mediated motor heating.  Hence it is really important not to use high gain and high Dmax value unless the build is clean and shake-free.  
 
 High Dmin gains should only be used for really clean builds that won't be flown with bad props.  
 
-If the quad can be logged, the ideal gain value for general use is where the realtime D value in debugs 2 and 3 is wanting to rise up from the minimum value in normal flight all the time (not sitting exactly on the min value but going up a tiny bit at times), quickly rises to maximum D with flips and rolls, and rises to about half way up in propwash.
+If the quad can be logged, the ideal gain value for general use is where the realtime D value is at the minimum value in normal flight (not sitting exactly on the min value, but going up a tiny bit at times), and rising to about half way to max in propwash, and to Dmax with flips and rolls.  Logging is really helpful to properly optimise the gain value.
 
 
 ## How do I know what the actual value of D is that I'm getting during a flight?
@@ -138,24 +149,29 @@ If the quad can be logged, the ideal gain value for general use is where the rea
 Debug 2 shows D on roll, Debug 3 shows D on pitch.  Both are before TPA attenuation.  
 Debug 0 shows the gyro contribution, and Debug 1 the setpoint (advance) contribution, to the boosting effect.
 
-Note from @docteh: The debug OSD element in 4.0 and 4.1 shows debug 0 1 2 3 on one big line. You also need to have d_min enabled for values to show up here, as the element needs those values to show anything. This "debug2" stuff needs a bit of work.
+Note from @docteh: The debug OSD element in 4.0 and 4.1 shows debug 0 1 2 3 on one big line. You will only see values here if d_min is enabled.
 
-## How does d_min work?
+## What is the technology behind this?
   
-Propwash is characterised by gyro oscillations in the 20-60hz range. 
+Propwash is characterised by gyro oscillations in the 20-60hz range. Quick flips and turns are associated with larger gyro changes at frequencies in the 10-20hz range.  
 
-Quick flips and turns are associated with larger gyro changes at frequencies in the 10-20hz range.  
+The D_min code:
 
-By applying an 80hz biquad lowpass filter to the gyro signal, these events can be detected, and higher frequency noise ignored.  Both flips and propwash will increase the boost signal.
+- gets the differential of the gyro (its rate of change), 
+- applies an 80hz biquad lowpass filter (to reject high frequency D noise),
+- get its absolute value, then
+- smooths and delays that signal it using a 10hz lowpass filter
+- applies the user specified amount of gain to the smoothed signal
+- boosts D up to a threshold where Dmax is reached.
 
-Smoothing the absolute value of the filtered gyro signal through a 10Hz first order lowpass filter provides a way to smoothly and gently vary D when these events occur.  The 10hz lowpass delays the boost effect so that, the boost occurs more towards at the end of the input for a fast flip, rather than at the beginning.  This means the boost does not dampen the quad's initial responsiveness to commanded inputs.  
-
-The boost strength is modulated by the gain setting.  
+The short delay from the 10hz filter is good because the boost occurs more towards the end of  fast flip, rather than at the beginning.  Hence the boost does not dampen the quad's initial responsiveness to commanded inputs. 
 
 
 ## Does d_min add more CPU load?
 
-Yes, but only a tiny bit; one biquad filter and one PT1 filter, and some simple maths.  To find out how much extra CPU, temporarily set d_min to zero on all axes and re-check CPU use in the CLI.
+Yes, but only a tiny bit; one biquad filter and one PT1 filter, and some simple maths.  To find out how much extra CPU, temporarily set d_min to zero on all axes and re-check CPU use in the CLI.  
+
+Turning advance to zero reduces the amount of processing required.
 
 
 ## Is d_min available on all F3 targets?
