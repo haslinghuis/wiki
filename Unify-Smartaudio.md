@@ -2,13 +2,17 @@
 
 - 2017-02-12 Note on compatibility of SmartAudio V1 devices (Compatibility section)
 - 2018-07-19 Note on operational mode switching
+- 2020-07-25 Updated targets, removed broken link. Added link to latest revision of TBS SmartAudio documentation
+
+#### TBS SmartAudio
+Latest manual: https://www.team-blacksheep.com/tbs_smartaudio_rev09.pdf
 
 ## Setup
 
 #### From teralift's post in Boris' thread (modified a bit)
 
 - Targets  
-TBS SmartAudio is supported on all F3 and F4 targets (except for those with integrated VTX).
+TBS SmartAudio is supported on all F3, F4, F7 and H7 targets (except for those with integrated VTX).
 
 - Wiring  
 Just wire the SmartAudio wire to a free TX port, hardware UART or software serial.
@@ -45,9 +49,6 @@ The easiest is of course to get fc with OSD. That works absolutely flawless, but
 there is a separate betaflight repository with LUA scripts
 https://github.com/betaflight/betaflight-tx-lua-scripts
 
-Revised [LUA Scripts](https://github.com/codecae/betaflight-tx-lua-revised/) here:  
-
-
 I am thinking to add more howto videos to github locations. So those who are willing to make nice howto videos please post it in here.
 ## User's Responsibility
 
@@ -55,7 +56,7 @@ The SmartAudio support unlocks certain capabilities of a SmartAudio device, to p
 
 ## Compatibility
 
-- Both SmartAudio V1 and V2 devices are supported.
+- Both SmartAudio V1, V2 and newer devices are supported.
 
 - The SmartAudio V1 is NOT compatible with _some_ hardware UARTs (as of 2017-02-12). If you have trouble with V1 devices with hardware UARTs, please try the software serial (available in v3.1.6 patch release or later).
 
