@@ -538,6 +538,8 @@ I think the default value is pretty good from what I have seen from many setups 
 Allowed range: 0 - 50
 Note: Same command as "set roll_yaw_cam_mix_degrees" in V2.x. See the 2.x CLI coommand Wiki page for more ino and video links.  
 
+Note that in newer BF versions, you need to enable a flight mode for 'FPV ANGLE MIX' on the modes tab to make the mixing work. You can either define a switch to switch FPV cam angle mixing on and off OR you can set the full range of any switch to keep it permanently on.
+
 ### Removed from 3.1.3
 #### accum_threshold = 200
 #### set yaw_accum_threshold
