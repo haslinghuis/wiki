@@ -22,6 +22,8 @@ Here a good preview for this option: [https://youtu.be/gXeaINFpvow FPV camera ti
 
 Another video on this option: [https://www.youtube.com/watch?v=gEcWxHIH378 Betaflight Camera Uptilt Compensation]
 
+Note that in newer BF versions, you need to enable a flight mode for 'FPV ANGLE MIX' on the modes tab to make the mixing work. You can either define a switch to switch FPV cam angle mixing on and off OR you can set the full range of any switch to keep it permanently on.
+
 '''set gyro_lpf''' = 188HZ '' <br />
 <i>[OFF,188HZ,98HZ,42HZ,EXPERIMENTAL(2.5.0)]</i> See [[Gyro & Dterm filtering recommendations]] for more information.
 
