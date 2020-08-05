@@ -44,65 +44,10 @@ set debug_mode = GYRO_SCALED
 set iterm_relax = RPY
 #-This is a somewhat odd setting
 set vbat_pid_gain = OFF
-set vbat_pid
+set vbat_sag_compensation = 70
+set yaw_lowpass_hz = 100
 
-
-#// Copy-Pasted from Mark - Toddler Peed, will update more 8/4/2020
-#Filter Settings
-set dyn_notch_min_hz = 100
-
-set dyn_lpf_gyro_min_hz = 100
-set dyn_lpf_gyro_max_hz = 300
-set gyro_lowpass_type = PT1
-set gyro_lowpass_hz = 0
-set gyro_lowpass2_type = PT1
-set gyro_lowpass2_hz = 0
-
-set dyn_lpf_dterm_min_hz = 70
-set dyn_lpf_dterm_max_hz = 170
-set dterm_lowpass_type = BiQUAD
-set dterm_lowpass_hz = 0
-set dterm_lowpass2_type = PT1
-set dterm_lowpass2_hz = 0
-
-#PID Gains Settings
-set vbat_pid_gain = ON
-set anti_gravity_gain = 5000
-
-set p_pitch = 80
-set i_pitch = 25
-set d_pitch = 80
-set f_pitch = 100
-
-set p_roll = 80
-set i_roll = 25
-set d_roll = 80
-set f_roll = 100
-
-set p_yaw = 90
-set i_yaw = 90
-set d_yaw = 0
-set f_yaw = 100
-
-set d_min_pitch = 0
-set d_min_roll = 0
-set d_min_boost_gain = 30
-set d_min_advance = 0
-
-set pidsum_limit = 1000 #unleashes PID Sum to be 100% (not restricted to 50% by default)
-
-#Assumes Freestyle | For racing use "Setpoint" and cutoff = 20
-set iterm_relax_type = GYRO
-set iterm_relax_cutoff = 10
-
-#TPA Settings (which is D-term only by default)
-set tpa_rate = 80
-set tpa_breakpoint = 1750
-
-
-#Miscellaneous Setting
-
-#LlamaRates
+#LlamaRates - 360°/s on Roll/Pitch, 270°/s on Yaw
 set roll_rc_rate = 72
 set pitch_rc_rate = 72
 set yaw_rc_rate = 54
