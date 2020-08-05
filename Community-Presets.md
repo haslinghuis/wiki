@@ -30,6 +30,10 @@ Note: The D Ratio tuning slider in the 10.7 Configurator is different from previ
 Dynamic Notch Filter ranges are specified by minimum and maximum Hz - if you transport a tune from BF4.1.X to BF4.2, you will need to change the dyn_notch_max_hz value to an actual value in Hertz - recommend setting this value to dyn_notch_max_hz = 350 for most applications.
 
 <br/><br/>
+## Pilot: UAV Tech
+### Placeholder for updated BF.4.2 updates of below BF4.0.X tunes
+
+<br/><br/>
 ## Pilot: Tehllama
 
 ---
