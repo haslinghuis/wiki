@@ -3,8 +3,8 @@
 ### IMPORTANT: These settings are NOT provided or endorsed by the Betaflight project. They are examples that others have found helpful for their particular quad. THEY MAY NOT BE SUITABLE FOR YOUR QUAD! A better use might be to examine similar configurations to yours and get ideas on possible tuning directions rather than blindly copy/pasting someone else's settings. Always test carefully and safely.
 
 <p> To use, simply copy and paste the preset CLI commands into the Betaflight CLI tab.  After the paste, type "save" and hit [enter].  That will load the settings of the preset which you can see (mostly) through the GUI tabs.</p>
-
 <br/>
+
 # BF 4.2
 
 Betaflight 4.2 with configurator 10.7 introduces significant and helpful features for tuning, many of which are highly recommended.
