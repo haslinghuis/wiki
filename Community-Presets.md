@@ -292,43 +292,48 @@ set small_angle = 180
 set gyro_lowpass2_hz = 500
 set dyn_notch_width_percent = 0
 set dyn_notch_q = 333
-set dyn_notch_min_hz = 105
-set dyn_notch_max_hz = 375
+set dyn_notch_min_hz = 80
+set dyn_notch_max_hz = 270
 set dyn_lpf_gyro_min_hz = 400
 set dyn_lpf_gyro_max_hz = 1000
 
-#Configuration
+#Configuration - Racing, Mountain Surfing, Cinematic Cruising, and Chasing Fast Cars
 set dshot_bidir = ON
 set motor_pwm_protocol = DSHOT300
-set rc_smoothing_auto_smoothness = 8
+set rc_smoothing_auto_smoothness = 20
+set ff_interpolate_sp = AVERAGED_3
+set feedforward_transition = 25
 
 #Profile
 set dyn_lpf_dterm_min_hz = 91
 set dyn_lpf_dterm_max_hz = 221
 set dterm_lowpass2_hz = 150
 set iterm_rotation = ON
-set gyro_rpm_notch_q = 333
+set thrust_linear = 33
+set tpa_rate = 75
+set tpa_breakpoint = 1350
 set iterm_relax_type = SETPOINT
-set iterm_relax_cutoff = 12
-set p_pitch = 61
-set i_pitch = 72
-set d_pitch = 42
-set f_pitch = 190
-set p_roll = 57
-set i_roll = 68
-set d_roll = 39
-set f_roll = 180
-set p_yaw = 48
-set i_yaw = 72
-set f_yaw = 160
-set d_min_roll = 24
-set d_min_pitch = 26
+set iterm_relax_cutoff = 7
+set throttle_boost = 15
+set p_pitch = 72
+set i_pitch = 117
+set d_pitch = 72
+set f_pitch = 148
+set p_roll = 65
+set i_roll = 111
+set d_roll = 65
+set f_roll = 140
+set p_yaw = 70
+set i_yaw = 117
+set f_yaw = 140
+set d_min_roll = 43
+set d_min_pitch = 47
 set d_min_boost_gain = 44
 set d_min_advance = 100
-set dshot_idle_value = 420
-set idle_min_rpm = 18
+set dshot_idle_value = 399
+set idle_min_rpm = 12
 
-#LaunchControl_Preferred
+#LaunchControl_Preferred - Yes, I do actually use launch mode on my Long Range rigs
 set launch_control_mode = PITCHONLY
 set launch_trigger_allow_reset = OFF
 set launch_angle_limit = 60
@@ -337,6 +342,8 @@ save
 ```
 
 </details>
+<br/><br/>
+
 # BF 4.1.X
 Betaflight 4.1.X with configurator 10.6 
 
