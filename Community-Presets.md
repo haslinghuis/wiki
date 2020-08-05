@@ -4,7 +4,7 @@
 
 <p> To use, simply copy and paste the preset CLI commands into the Betaflight CLI tab.  After the paste, type "save" and hit [enter].  That will load the settings of the preset which you can see (mostly) through the GUI tabs.</p>
 
-<br/><br/>
+<br/>
 
 # BF 4.2
 
@@ -141,6 +141,7 @@ save
 
 </details>
 
+---
 
 #### 3" 1408 4100KV 4S on Gemfan 3052-3
 
@@ -206,6 +207,8 @@ save
 ```
 
 </details>
+
+---
 
 #### 5" Neutron-R Hybrid-SX :: 2150KV 6S // 2650KV 5S on Gemfan 51433/51466/51477
 Build Link: https://rotorbuilds.com/build/18676
@@ -274,6 +277,8 @@ save
 ```
 
 </details>
+
+---
 
 #### 7" 2408 1622KV 6S // 7" 2507 1500KV 6S // 7" 2408 1900KV 5S
 Build Link: https://rotorbuilds.com/build/21178
