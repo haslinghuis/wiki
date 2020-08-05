@@ -72,10 +72,10 @@ save
 
 </details>
 
----
+
 ### Racing Configurations - RotorBuild Description Links and CLI Copy/Paste Tunes
 #### 3" 1105 5500KV 3S on Gemfan 3016-3 (Diatone GTB-339) [F411 on DShot300]
-
+---
 <details><summary>CLI Copy/Paste</summary>
 
 ```python
