@@ -69,7 +69,9 @@ set launch_angle_limit = 60
 
 save
 ```
+
 </details>
+
 ---
 ### Racing Configurations - RotorBuild Description Links and CLI Copy/Paste Tunes
 #### 3" 1105 5500KV 3S on Gemfan 3016-3 (Diatone GTB-339) [F411 on DShot300]
@@ -207,6 +209,7 @@ save
 
 #### 5" Neutron-R Hybrid-SX :: 2150KV 6S // 2650KV 5S on Gemfan 51433/51466/51477
 Build Link: https://rotorbuilds.com/build/18676
+
 Build Link: https://rotorbuilds.com/build/21176
 
 <details><summary>CLI Copy/Paste</summary>
@@ -273,8 +276,9 @@ save
 </details>
 
 #### 7" 2408 1622KV 6S // 7" 2507 1500KV 6S // 7" 2408 1900KV 5S
-https://rotorbuilds.com/build/21178
-https://rotorbuilds.com/build/10199
+Build Link: https://rotorbuilds.com/build/21178
+
+Build Link: https://rotorbuilds.com/build/10199
 
 <details><summary>CLI Copy/Paste</summary>
 
