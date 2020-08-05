@@ -6,8 +6,141 @@
 
 <br/><br/>
 
+# BF 4.2.X
+
+Betaflight 4.2.X with configurator 10.7 introduces significant and helpful features for tuning, many of which are highly recommended.
+ - Tehllama
+
+These features include VBAT_Sag_Compensation, FF_Interpolation, fixed iTermRelax::Setpoint operation, 
+Existing features can also be leveraged to produce better performing and more robust tunes, including DMin/Boost Gain & Advance, TPA, and Thrust Linearization
+
+VBat Sag Compensation is a feature which aims to produce consistent motor response across the entire flyable voltage profile of a battery pack, and does this by slightly reducing peak motor outputs from the mixer at high voltage, and increases these values as battery sag comes into play.  This is a highly recommended feature, although if you rely on 'feeling sag' as an indicator to land shortly, or are concerned about damaging  batteries, particularly 6-Cell batteries on relatively efficient rigs, you can use values lower than 100 to receive most of the benefits, and also receive a small amount of extra initial 'punch' on fully charged batteries with values such as vbat_sag_comp = 70.
+
+Feed Forward (FF) Interpolation has been improved, which uses a trailing average of 2-4 radio control setpoint samples to set feed-forward input values (which are then multiplied by the FF Gains).  For noisier or less consistent RC signals (e.g. FrSky R9), using ff_interpolate_sp = 4 is a significant improvement, while more consistent signals (CRSFShot, AFHDS2A-IBUS, Futaba FASSTer) produce smooth enough traces to use ff_interpolate_sp = 2 (default) values with lower automatic RC_Smoothness values (around 8 is still stable enough for long range capable 7" craft).
+
+I Term Relax now works correctly on Setpoint mode at values below 20.  Particularly for large craft, lower values result in reduction or complete elimination of I-Term driven bounceback on flips and rolls.
+
+DMin/Boost tools such as the DMinGain and DMinAdvance can be leveraged to increase effective D gains during stick movements (dMin Advance mostly) and propwash (dMin Gain mostly).  Values of Gain = 44-55 and Advance values of 80-100 can result in much higher and more consistent D-Term response to damp P-term step responses, while still allowing for lower DMin values during normal flight that does not amplify higher frequency noise.
+
+Thrust_Linear is intended to linearize aspects of thrust delivery (which is typically a quadratic response to throttle position) in order to produce more consistent PID response across the range of throttle inputs.  In practical implementations, it is most frequently used as a way to increase PID gains at low throttle to compensate for lower authority craft (low voltage 65mm and 3" lightweight quadcopters, as well as 6-8" quadcopters on smaller motors can benefit from values of thrust_linear from 20-30 in order to remove low-RPM bobbles and instability.  Quite often, best results are achieved by simultaneously increasing the TPA (Throttle PID Attenuation - most practically this is a throttle-DTerm-attenuation factor at default) value, and moving the breakpoint higher (e.g. TPA = 0.72-0.78, TPA_Breakpoint = 1270-1420).  This combined effect allows for boosted PID response at low throttle values, but does not result in excessive motor heat from amplified D gains at high throttle.
+
+Preferred tuning methods can lean heavily on the Slider functionality in the 10.7 configurator, with many archetypes of copters being fairly quick to tune quickly with sliders based on quick information, following a standard procedure of determining the correct P:D gain ratio, incrementing the P&D Gains until oscillations or trilling sounds are observed (then reducing 1-2 clicks), then finally adjusting FeedForward through gain sliders and FeedForward Transition (which reduces effective feed forward gain from center point out to the specified value linearly) until desired stick feel is achieved.
+
+Note: The D Ratio tuning slider in the 10.7 Configurator is different from previous versions - moving the slider to the right increases D gains while leaving the P gains as-is.  Values of 1.3 on the P:D Ratio slider produce gains of P≈D, while 1.0 produces a P:D ratio where D gains are roughly 0.8x of P gains.
+
+Dynamic Notch Filter ranges are specified by minimum and maximum Hz - if you transport a tune from BF4.1.X to BF4.2, you will need to change the dyn_notch_max_hz value to an actual value in Hertz - recommend setting this value to dyn_notch_max_hz = 350.
+
+<br/><br/>
+## Pilot: Tehllama
+
+---
+#### Racing Snippets 
+##### 3" 1105 5500KV 3S, 3" 1408 4100KV 4S, 5" 2150KV 6S, 7" 2408 1622KV 6S
+<details><summary>CLI Copy\Paste</summary>
+
+```python
+#Settings for All Quadcopters
+set debug_mode = GYRO_SCALED
+set iterm_relax = RPY
+#-This is a somewhat odd setting
+set vbat_pid_gain = OFF
+set vbat_pid
+
+
+#// Copy-Pasted from Mark - Toddler Peed, will update more 8/4/2020
+#Filter Settings
+set dyn_notch_min_hz = 100
+
+set dyn_lpf_gyro_min_hz = 100
+set dyn_lpf_gyro_max_hz = 300
+set gyro_lowpass_type = PT1
+set gyro_lowpass_hz = 0
+set gyro_lowpass2_type = PT1
+set gyro_lowpass2_hz = 0
+
+set dyn_lpf_dterm_min_hz = 70
+set dyn_lpf_dterm_max_hz = 170
+set dterm_lowpass_type = BiQUAD
+set dterm_lowpass_hz = 0
+set dterm_lowpass2_type = PT1
+set dterm_lowpass2_hz = 0
+
+#PID Gains Settings
+set vbat_pid_gain = ON
+set anti_gravity_gain = 5000
+
+set p_pitch = 80
+set i_pitch = 25
+set d_pitch = 80
+set f_pitch = 100
+
+set p_roll = 80
+set i_roll = 25
+set d_roll = 80
+set f_roll = 100
+
+set p_yaw = 90
+set i_yaw = 90
+set d_yaw = 0
+set f_yaw = 100
+
+set d_min_pitch = 0
+set d_min_roll = 0
+set d_min_boost_gain = 30
+set d_min_advance = 0
+
+set pidsum_limit = 1000 #unleashes PID Sum to be 100% (not restricted to 50% by default)
+
+#Assumes Freestyle | For racing use "Setpoint" and cutoff = 20
+set iterm_relax_type = GYRO
+set iterm_relax_cutoff = 10
+
+#TPA Settings (which is D-term only by default)
+set tpa_rate = 80
+set tpa_breakpoint = 1750
+
+
+#Miscellaneous Setting
+
+#LlamaRates
+set roll_rc_rate = 72
+set pitch_rc_rate = 72
+set yaw_rc_rate = 54
+set roll_expo = 0
+set pitch_expo = 0
+set yaw_expo = 0
+set roll_srate = 60
+set pitch_srate = 60
+set yaw_srate = 60
+
+#LaunchControl_Preferred
+set launch_control_mode = PITCHONLY
+set launch_trigger_allow_reset = OFF
+set launch_angle_limit = 60
+
+save
+
+```
+</details>
+
 # BF 4.1.X
-Betaflight 4.1 has the tuning sliders, someone should fill this out.
+Betaflight 4.1.X with configurator 10.6 
+
+Note: the P:D Ratio slider in the 10.6 Configurator is reversed from the later releases - in 10.6 moving the slider to right increases P gains while decreasing D gains, which is not the behavior in the 10.7 Configurator.  A value of 0.8 on the PD Balance slider produce gains of P≈D, while 1.0 produces a P:D ratio where D gains are roughly 0.8x of P gains.
+
+There are added features, and a couple of noteworthy bugs present in 4.1.X.  
+
+Setup for enabling bidirectional DShot features (RPM filtering, dynamic idle) is simpler in BF4.1.X, as is configuring RC Smoothing using the configurator parameters.  With utilizing RPM Notch filters for attenuation of motor noise bands, changes in lowpass filtering (particularly dynamic lowpass filtering) are typically required in order to achieve the substantial improvements possible with RPM filtering.
+
+Feed Forward (FF) Interpolation has been introduced, which uses a trailing average of 2 radio control setpoint samples to set feed-forward input values (which are then multiplied by the FF Gains).  For noisier or less consistent RC signals (e.g. FrSky R9), using ff_interpolate_sp = averaged is an improvement, though BF4.2 and later allows for higher numbers of samples to be required (up to 4). 
+
+The I-Term Relax mode in Setpoint does not achieve any effective values below 20 - for larger craft where lower iTermRelax values are needed or tuning strategies that rely on removing I term involvement to tune P/D Ratios and gain, shift this to Gyro (in 4.2 and later, you can use Setpoint again).
+
+VBat PID Compensation is often helpful for tuning flights, and is a recommended setting when conducting blackbox logging, or if craft authority as battery voltage approaches sag points is important.  This has been effectively replaced by VBAT Sag compensation in BF4.2 releases.
+
+Preferred tuning methods can lean heavily on the Slider functionality in the 10.6 configurator, with many archetypes of copters being fairly quick to tune quickly with sliders based on quick information, following a standard procedure of determining the correct P:D gain ratio, incrementing the P&D Gains until oscillations or trilling sounds are observed (then reducing 1-2 clicks), then finally adjusting FeedForward through gain sliders and FeedForward Transition (which reduces effective feed forward gain from center point out to the specified value linearly) until desired stick feel is achieved.  
+
+Running higher Yaw P gains is entirely possible, although sliders do not allow this behavior - the defaults in BF4.2 (using the same effective PID gains) allow for running Yaw P Gains equal to Roll P gains, and works very well for most craft, so do not be concerned if during the tuning process higher Yaw P gains are required, you should proceed to increase those gains until matching Roll P gains without concerns.
 
 # BF 4.0.X
 
