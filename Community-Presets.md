@@ -6,9 +6,9 @@
 
 <br/><br/>
 
-# BF 4.2.X
+# BF 4.2
 
-Betaflight 4.2.X with configurator 10.7 introduces significant and helpful features for tuning, many of which are highly recommended.
+Betaflight 4.2 with configurator 10.7 introduces significant and helpful features for tuning, many of which are highly recommended.
 
 These features include VBat Sag Compensation, Feed Forward Interpolation, fixed I-Term Relax operation on Setpoint, and looptime improvements that allow for more stable filtering calculations. 
 Existing features can also be leveraged to produce better performing and more robust tunes, including DMin/Boost Gain & Advance, TPA, and Thrust Linearization
@@ -31,15 +31,17 @@ Dynamic Notch Filter ranges are specified by minimum and maximum Hz - if you tra
 
 <br/><br/>
 ## Pilot: UAV Tech
-### Placeholder for updated BF.4.2 updates of below BF4.0.X tunes
+##### Placeholder for updated BF.4.2 updates of below BF4.0.X tunes
 
 <br/><br/>
 ## Pilot: Tehllama
-About: Tehllama prefers a 'Responsive but loose' feel, set up for racing rates that achieves minimum step response latency and maximizes motor temperature overhead.  Don't expect the sharpest tune, but for racing setups these carry lots of margin for completing heats on butchered props.
-<details><summary>Tehllama's Universal CLI Settings Copy/Paste</summary>
+About: Tehllama prefers a 'Responsive but loose' feel, set up for racing rates that achieves minimum step response latency and maximizes motor temperature overhead.
+Not intended to be the sharpest tune, but for racing setups these carry lots of margin for completing heats on butchered props.
+
+<details><summary>Tehllama's Universal CLI Settings - Copy/Paste</summary>
 
 ```python
-#Settings for All Quadcopters
+# Settings for All Quadcopters
 set debug_mode = GYRO_SCALED
 set iterm_relax = RPY
 #-This is a somewhat odd setting
@@ -49,7 +51,7 @@ set yaw_lowpass_hz = 100
 set yaw_motors_reversed = ON
 set small_angle = 180
 
-#LlamaRates - 360°/s on Roll/Pitch, 270°/s on Yaw
+# LlamaRates - 360°/s on Roll/Pitch, 270°/s on Yaw
 set roll_rc_rate = 72
 set pitch_rc_rate = 72
 set yaw_rc_rate = 54
@@ -67,17 +69,15 @@ set launch_angle_limit = 60
 
 save
 ```
-
 </details>
-
 ---
-#### Racing Snippets 
-##### 3" 1105 5500KV 3S on Gemfan 3016-3 (Diatone GTB-339) [F411 on DShot300]
+### Racing Configurations - RotorBuild Description Links and CLI Copy/Paste Tunes
+#### 3" 1105 5500KV 3S on Gemfan 3016-3 (Diatone GTB-339) [F411 on DShot300]
 
 <details><summary>CLI Copy/Paste</summary>
 
 ```python
-#Settings for All Quadcopters - Motors Reversed
+# Settings for All Quadcopters - Motors Reversed
 set debug_mode = GYRO_SCALED
 set iterm_relax = RPY
 #-This is a somewhat odd setting
@@ -87,7 +87,7 @@ set yaw_lowpass_hz = 100
 set yaw_motors_reversed = ON
 set small_angle = 180
 
-#Filters
+# Filters
 set gyro_lowpass2_hz = 500
 set dyn_notch_width_percent = 0
 set dyn_notch_q = 250
@@ -96,12 +96,12 @@ set dyn_notch_max_hz = 333
 set dyn_lpf_gyro_min_hz = 400
 set dyn_lpf_gyro_max_hz = 1000
 
-#Configuration
+# Configuration - 1105/1106 Motors
 set dshot_bidir = ON
 set motor_pwm_protocol = DSHOT300
 set motor_poles = 12
 
-#Profile
+# Profile - Uses Thrust_Linear
 set dyn_lpf_dterm_min_hz = 112
 set dyn_lpf_dterm_max_hz = 272
 set dterm_lowpass2_hz = 240
@@ -129,7 +129,7 @@ set thrust_linear = 20
 set tpa_rate = 72
 set tpa_breakpoint = 1370
 
-#LaunchControl_Preferred
+# LaunchControl_Preferred
 set launch_control_mode = PITCHONLY
 set launch_trigger_allow_reset = OFF
 set launch_angle_limit = 60
@@ -140,14 +140,14 @@ save
 </details>
 
 
-##### 3" 1408 4100KV 4S on Gemfan 3052-3
+#### 3" 1408 4100KV 4S on Gemfan 3052-3
 
 Build Link: https://rotorbuilds.com/build/18675
 
 <details><summary>CLI Copy/Paste</summary>
 
 ```python
-#Settings for All Quadcopters - Motors Reversed
+# Settings for All Quadcopters - Motors Reversed
 set debug_mode = GYRO_SCALED
 set iterm_relax = RPY
 #-This is a somewhat odd setting
@@ -157,7 +157,7 @@ set yaw_lowpass_hz = 100
 set yaw_motors_reversed = ON
 set small_angle = 180
 
-#Filters
+# Filters
 set gyro_lowpass2_hz = 500
 set dyn_notch_width_percent = 0
 set dyn_notch_q = 250
@@ -166,12 +166,12 @@ set dyn_notch_max_hz = 333
 set dyn_lpf_gyro_min_hz = 400
 set dyn_lpf_gyro_max_hz = 1000
 
-#Configuration
+# Configuration - 1407/1408 Motors
 set dshot_bidir = ON
 set motor_pwm_protocol = DSHOT300
 set motor_poles = 12
 
-#Profile
+# Profile - Aggressive Props
 set dyn_lpf_dterm_min_hz = 112
 set dyn_lpf_dterm_max_hz = 272
 set dterm_lowpass2_hz = 240
@@ -195,7 +195,7 @@ set d_min_boost_gain = 44
 set d_min_advance = 100
 set idle_min_rpm = 22
 
-#LaunchControl_Preferred
+# LaunchControl_Preferred
 set launch_control_mode = PITCHONLY
 set launch_trigger_allow_reset = OFF
 set launch_angle_limit = 60
@@ -205,14 +205,14 @@ save
 
 </details>
 
-##### 5" Neutron-R Hybrid-SX :: 2150KV 6S // 2650KV 5S on Gemfan 51433/51466/51477
+#### 5" Neutron-R Hybrid-SX :: 2150KV 6S // 2650KV 5S on Gemfan 51433/51466/51477
 Build Link: https://rotorbuilds.com/build/18676
 Build Link: https://rotorbuilds.com/build/21176
 
 <details><summary>CLI Copy/Paste</summary>
 
 ```python
-#Settings for All Quadcopters - Motors Reversed
+# Settings for All Quadcopters - Motors Reversed
 set debug_mode = GYRO_SCALED
 set iterm_relax = RPY
 #-This is a somewhat odd setting
@@ -222,7 +222,7 @@ set yaw_lowpass_hz = 100
 set yaw_motors_reversed = ON
 set small_angle = 180
 
-#Filters
+# Filters - Conservative
 set gyro_lowpass2_hz = 500
 set dyn_notch_width_percent = 0
 set dyn_notch_q = 333
@@ -231,12 +231,12 @@ set dyn_notch_max_hz = 375
 set dyn_lpf_gyro_min_hz = 400
 set dyn_lpf_gyro_max_hz = 1000
 
-#Configuration
+# Configuration - FrSky D16 8Ch Modes, Minimum Latency
 set dshot_bidir = ON
 set motor_pwm_protocol = DSHOT300
 set rc_smoothing_auto_smoothness = 8
 
-#Profile
+# Profile - Conservative
 set dyn_lpf_dterm_min_hz = 91
 set dyn_lpf_dterm_max_hz = 221
 set dterm_lowpass2_hz = 150
@@ -262,7 +262,7 @@ set d_min_advance = 100
 set dshot_idle_value = 420
 set idle_min_rpm = 18
 
-#LaunchControl_Preferred
+# LaunchControl_Preferred
 set launch_control_mode = PITCHONLY
 set launch_trigger_allow_reset = OFF
 set launch_angle_limit = 60
@@ -271,14 +271,15 @@ save
 ```
 
 </details>
-##### 7" 2408 1622KV 6S // 7" 2507 1500KV 6S // 7" 2408 1900KV 5S
+
+#### 7" 2408 1622KV 6S // 7" 2507 1500KV 6S // 7" 2408 1900KV 5S
 https://rotorbuilds.com/build/21178
 https://rotorbuilds.com/build/10199
 
 <details><summary>CLI Copy/Paste</summary>
 
 ```python
-#Settings for All Quadcopters - Motors Reversed
+# Settings for All Quadcopters - Motors Reversed
 set debug_mode = GYRO_SCALED
 set iterm_relax = RPY
 #-This is a somewhat odd setting
@@ -288,7 +289,7 @@ set yaw_lowpass_hz = 100
 set yaw_motors_reversed = ON
 set small_angle = 180
 
-#Filters
+# Filters - 7" Biblade, 7" Triblade, F7 Folding Compatible
 set gyro_lowpass2_hz = 500
 set dyn_notch_width_percent = 0
 set dyn_notch_q = 333
@@ -297,14 +298,14 @@ set dyn_notch_max_hz = 270
 set dyn_lpf_gyro_min_hz = 400
 set dyn_lpf_gyro_max_hz = 1000
 
-#Configuration - Racing, Mountain Surfing, Cinematic Cruising, and Chasing Fast Cars
+# Configuration - Racing, Mountain Surfing, Cinematic Cruising, and Chasing Fast Cars
 set dshot_bidir = ON
 set motor_pwm_protocol = DSHOT300
 set rc_smoothing_auto_smoothness = 20
 set ff_interpolate_sp = AVERAGED_3
 set feedforward_transition = 25
 
-#Profile
+# Profile - Low-Throttle Smoothness Enhanced
 set dyn_lpf_dterm_min_hz = 91
 set dyn_lpf_dterm_max_hz = 221
 set dterm_lowpass2_hz = 150
@@ -333,7 +334,7 @@ set d_min_advance = 100
 set dshot_idle_value = 399
 set idle_min_rpm = 12
 
-#LaunchControl_Preferred - Yes, I do actually use launch mode on my Long Range rigs
+# LaunchControl_Preferred - Yes, I do actually use launch mode on my Long Range rigs
 set launch_control_mode = PITCHONLY
 set launch_trigger_allow_reset = OFF
 set launch_angle_limit = 60
