@@ -63,11 +63,14 @@ set launch_angle_limit = 60
 
 save
 ```
+
 </details>
+
 ---
 #### Racing Snippets 
 ##### 3" 1105 5500KV 3S, 3" 1408 4100KV 4S, 5" 2150KV 6S, 7" 2408 1622KV 6S
 <details><summary>CLI Copy\Paste</summary>
+```python
 
 
 
