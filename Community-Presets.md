@@ -423,6 +423,79 @@ save
 
 </details>
 
+<details><summary>Furadi 7" FR-7 NBD Infinity CLI Settings - Copy/Paste</summary>
+
+FR7 - 
+
+Frame files - https://www.thingiverse.com/thing:359...
+Print Files - https://www.thingiverse.com/thing:360...
+
+Newbeedrone Infinity Stack - https://tinyurl.com/ulqey7j
+Hyperlite 2408.5 1922kv - https://tinyurl.com/r7jkk3m
+Dynogy 6s 3700 65c - https://tinyurl.com/w5wmtf7
+HQ 7x4x3 - https://tinyurl.com/uvvdu96
+Lumenier AXII 2 LR - https://tinyurl.com/u9la6zg
+
+```python
+# DIFF for Furadi 5" NBD Infinity Build
+
+# master
+set gyro_lowpass2_hz = 500
+set dyn_notch_width_percent = 0
+set dyn_notch_q = 250
+set dyn_lpf_gyro_min_hz = 400
+set dyn_lpf_gyro_max_hz = 1000
+set dshot_bidir = ON
+
+# GPS Setup (Optional)
+set failsafe_procedure = GPS-RESCUE
+set yaw_motors_reversed = OFF
+set gps_provider = UBLOX
+set gps_sbas_mode = AUTO
+set gps_ublox_use_galileo = ON
+set gps_set_home_point_once = ON
+set gps_rescue_initial_alt = 60
+set gps_rescue_descent_dist = 120
+set gps_rescue_min_sats = 6
+set gps_rescue_allow_arming_without_fix = ON
+set gps_rescue_alt_mode = FIXED_ALT
+set yaw_deadband = 10
+set pid_process_denom = 2
+
+profile 0
+
+# profile 0
+set dyn_lpf_dterm_min_hz = 140
+set dyn_lpf_dterm_max_hz = 340
+set dterm_lowpass2_hz = 300
+set vbat_sag_compensation = 80
+set throttle_boost = 0
+set p_pitch = 77
+set i_pitch = 108
+set d_pitch = 58
+set f_pitch = 114
+set p_roll = 71
+set i_roll = 102
+set d_roll = 53
+set f_roll = 108
+set p_yaw = 76
+set i_yaw = 108
+set f_yaw = 108
+set d_min_roll = 35
+set d_min_pitch = 38
+set d_min_advance = 27
+
+# rateprofile 0 - Furadi Rates
+set rates_type = KISS
+set roll_rc_rate = 90
+set pitch_rc_rate = 90
+set yaw_rc_rate = 90
+set roll_srate = 77
+set pitch_srate = 75
+save
+```
+
+</details>
 
 <br/><br/>
 
