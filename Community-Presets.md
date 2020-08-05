@@ -5,7 +5,6 @@
 <p> To use, simply copy and paste the preset CLI commands into the Betaflight CLI tab.  After the paste, type "save" and hit [enter].  That will load the settings of the preset which you can see (mostly) through the GUI tabs.</p>
 
 <br/>
-
 # BF 4.2
 
 Betaflight 4.2 with configurator 10.7 introduces significant and helpful features for tuning, many of which are highly recommended.
@@ -25,7 +24,7 @@ Thrust_Linear is intended to linearize aspects of thrust delivery (which is typi
 
 Preferred tuning methods can lean heavily on the Slider functionality in the 10.7 configurator, with many archetypes of copters being fairly quick to tune quickly with sliders based on quick information, following a standard procedure of determining the correct P:D gain ratio, incrementing the P&D Gains until oscillations or trilling sounds are observed (then reducing 1-2 clicks), then finally adjusting FeedForward through gain sliders and FeedForward Transition (which reduces effective feed forward gain from center point out to the specified value linearly) until desired stick feel is achieved.
 
-Note: The D Ratio tuning slider in the 10.7 Configurator is different from previous versions - moving the slider to the right increases D gains while leaving the P gains as-is.  Values of 1.3 on the P:D Ratio slider produce gains of P≈D, while 1.0 produces a P:D ratio where D gains are roughly 0.8x of P gains.
+Note: The D Ratio tuning slider in the 10.7 Configurator is different from previous versions - moving the slider to the right increases D gains while leaving the P gains as-is.  Values of 1.2 on the P:D Balance slider produce gains of P≈D, while 1.0 produces a P:D ratio where D gains are roughly 0.8x of P gains.
 
 Dynamic Notch Filter ranges are specified by minimum and maximum Hz - if you transport a tune from BF4.1.X to BF4.2, you will need to change the dyn_notch_max_hz value to an actual value in Hertz - recommend setting this value to dyn_notch_max_hz = 350 for most applications.
 
