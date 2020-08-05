@@ -35,12 +35,7 @@ Dynamic Notch Filter ranges are specified by minimum and maximum Hz - if you tra
 
 <br/><br/>
 ## Pilot: Tehllama
-
----
-#### Racing Snippets 
-##### 3" 1105 5500KV 3S, 3" 1408 4100KV 4S, 5" 2150KV 6S, 7" 2408 1622KV 6S
-<details><summary>CLI Copy\Paste</summary>
-
+<details><summary>Tehllama's Universal CLI Settings Copy/Paste</summary></details>
 ```python
 #Settings for All Quadcopters
 set debug_mode = GYRO_SCALED
@@ -67,6 +62,12 @@ set launch_trigger_allow_reset = OFF
 set launch_angle_limit = 60
 
 save
+---
+#### Racing Snippets 
+##### 3" 1105 5500KV 3S, 3" 1408 4100KV 4S, 5" 2150KV 6S, 7" 2408 1622KV 6S
+<details><summary>CLI Copy\Paste</summary>
+
+
 
 ```
 </details>
