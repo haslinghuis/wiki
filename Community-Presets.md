@@ -9,9 +9,8 @@
 # BF 4.2.X
 
 Betaflight 4.2.X with configurator 10.7 introduces significant and helpful features for tuning, many of which are highly recommended.
- - Tehllama
 
-These features include VBAT_Sag_Compensation, FF_Interpolation, fixed iTermRelax::Setpoint operation, 
+These features include VBat Sag Compensation, Feed Forward Interpolation, fixed I-Term Relax operation on Setpoint, and looptime improvements that allow for more stable filtering calculations. 
 Existing features can also be leveraged to produce better performing and more robust tunes, including DMin/Boost Gain & Advance, TPA, and Thrust Linearization
 
 VBat Sag Compensation is a feature which aims to produce consistent motor response across the entire flyable voltage profile of a battery pack, and does this by slightly reducing peak motor outputs from the mixer at high voltage, and increases these values as battery sag comes into play.  This is a highly recommended feature, although if you rely on 'feeling sag' as an indicator to land shortly, or are concerned about damaging  batteries, particularly 6-Cell batteries on relatively efficient rigs, you can use values lower than 100 to receive most of the benefits, and also receive a small amount of extra initial 'punch' on fully charged batteries with values such as vbat_sag_comp = 70.
@@ -20,7 +19,7 @@ Feed Forward (FF) Interpolation has been improved, which uses a trailing average
 
 I Term Relax now works correctly on Setpoint mode at values below 20.  Particularly for large craft, lower values result in reduction or complete elimination of I-Term driven bounceback on flips and rolls.
 
-DMin/Boost tools such as the DMinGain and DMinAdvance can be leveraged to increase effective D gains during stick movements (dMin Advance mostly) and propwash (dMin Gain mostly).  Values of Gain = 44-55 and Advance values of 80-100 can result in much higher and more consistent D-Term response to damp P-term step responses, while still allowing for lower DMin values during normal flight that does not amplify higher frequency noise.
+DMin/Boost tools such as the DMin-Gain and DMin-Advance can be leveraged to increase effective D gains during stick movements (dMin Advance mostly) and propwash (dMin Gain mostly).  Values of Gain = 44-55 and Advance values of 80-100 can result in much higher and more consistent D-Term response to damp P-term step responses, while still allowing for lower DMin values during normal flight that does not amplify higher frequency noise.
 
 Thrust_Linear is intended to linearize aspects of thrust delivery (which is typically a quadratic response to throttle position) in order to produce more consistent PID response across the range of throttle inputs.  In practical implementations, it is most frequently used as a way to increase PID gains at low throttle to compensate for lower authority craft (low voltage 65mm and 3" lightweight quadcopters, as well as 6-8" quadcopters on smaller motors can benefit from values of thrust_linear from 20-30 in order to remove low-RPM bobbles and instability.  Quite often, best results are achieved by simultaneously increasing the TPA (Throttle PID Attenuation - most practically this is a throttle-DTerm-attenuation factor at default) value, and moving the breakpoint higher (e.g. TPA = 0.72-0.78, TPA_Breakpoint = 1270-1420).  This combined effect allows for boosted PID response at low throttle values, but does not result in excessive motor heat from amplified D gains at high throttle.
 
@@ -28,7 +27,7 @@ Preferred tuning methods can lean heavily on the Slider functionality in the 10.
 
 Note: The D Ratio tuning slider in the 10.7 Configurator is different from previous versions - moving the slider to the right increases D gains while leaving the P gains as-is.  Values of 1.3 on the P:D Ratio slider produce gains of P≈D, while 1.0 produces a P:D ratio where D gains are roughly 0.8x of P gains.
 
-Dynamic Notch Filter ranges are specified by minimum and maximum Hz - if you transport a tune from BF4.1.X to BF4.2, you will need to change the dyn_notch_max_hz value to an actual value in Hertz - recommend setting this value to dyn_notch_max_hz = 350.
+Dynamic Notch Filter ranges are specified by minimum and maximum Hz - if you transport a tune from BF4.1.X to BF4.2, you will need to change the dyn_notch_max_hz value to an actual value in Hertz - recommend setting this value to dyn_notch_max_hz = 350 for most applications.
 
 <br/><br/>
 ## Pilot: Tehllama
