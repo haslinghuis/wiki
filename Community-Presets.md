@@ -36,6 +36,7 @@ Dynamic Notch Filter ranges are specified by minimum and maximum Hz - if you tra
 <br/><br/>
 ## Pilot: Tehllama
 <details><summary>Tehllama's Universal CLI Settings Copy/Paste</summary>
+
 ```python
 #Settings for All Quadcopters
 set debug_mode = GYRO_SCALED
