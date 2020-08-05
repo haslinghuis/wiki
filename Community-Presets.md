@@ -352,6 +352,78 @@ save
 ```
 
 </details>
+
+<br/><br/>
+## Pilot: Furadi
+
+<details><summary>Furadi 5" NBD Infinity CLI Settings - Copy/Paste</summary>
+
+
+Quad - (not affiliate links) 
+
+- RR CL1 https://tinyurl.com/trq8dat
+- NBD Infinity 20x20 https://tinyurl.com/wgatgat
+- Hypetrain Vanover https://tinyurl.com/rdoaxpb
+- Caddx Vista https://tinyurl.com/rebl4xy
+- Hero Mount - https://tinyurl.com/ycblvodd
+- Pyrodrone 1100 6s - https://tinyurl.com/wtd7jph
+- Gemfan 51466 - https://tinyurl.com/ycjn76ag
+
+
+```python
+# DIFF for Furadi 5" NBD Infinity Build
+
+# name: INFINITY
+
+# master
+set gyro_lowpass2_hz = 500
+set dyn_notch_width_percent = 0
+set dyn_notch_q = 250
+set dyn_lpf_gyro_min_hz = 400
+set dyn_lpf_gyro_max_hz = 1000
+set dshot_bidir = ON
+set yaw_motors_reversed = OFF
+set yaw_deadband = 10
+
+profile 0
+
+# profile 0
+set dyn_lpf_dterm_min_hz = 140
+set dyn_lpf_dterm_max_hz = 340
+set dyn_lpf_dterm_curve_expo = 7
+set dterm_lowpass2_hz = 300
+set vbat_sag_compensation = 50
+set throttle_boost = 0
+set p_pitch = 90
+set i_pitch = 117
+set d_pitch = 60
+set f_pitch = 112
+set p_roll = 82
+set i_roll = 111
+set d_roll = 55
+set f_roll = 105
+set p_yaw = 88
+set i_yaw = 117
+set f_yaw = 105
+set d_min_roll = 36
+set d_min_pitch = 39
+set d_min_advance = 32
+
+rateprofile 0
+
+# rateprofile 0 - Furadi Rates
+set rates_type = KISS
+set roll_rc_rate = 90
+set pitch_rc_rate = 90
+set yaw_rc_rate = 90
+set roll_srate = 77
+set pitch_srate = 75
+save
+```
+
+</details>
+
+
 <br/><br/>
 
 # BF 4.1.X
