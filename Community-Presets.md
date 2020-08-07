@@ -437,7 +437,7 @@ HQ 7x4x3 - https://tinyurl.com/uvvdu96
 Lumenier AXII 2 LR - https://tinyurl.com/u9la6zg
 
 ```python
-# DIFF for Furadi 5" NBD Infinity Build
+# DIFF for Furadi 7" NBD Infinity Build
 
 # master
 set gyro_lowpass2_hz = 500
