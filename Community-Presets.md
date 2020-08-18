@@ -499,6 +499,82 @@ save
 
 <br/><br/>
 
+## Pilot: JJang FPV
+About: Responsive but Smooth feel, set up for 5" normal freestyle with Gopro, 4S battery - cinematic, juicy, etc. 
+Caution: You should calculate 'idle_min_rpm' about 70% of dshot_idle_rpm or start with '21'.
+
+<details><summary>5" 4S Normal Freestyle Quad CLI Settings - Copy/Paste</summary>
+
+```python
+set gyro_lowpass2_hz = 300
+set dyn_notch_width_percent = 0
+set dyn_notch_q = 250
+set dyn_notch_min_hz = 90
+set dyn_notch_max_hz = 515
+set dyn_lpf_gyro_min_hz = 240
+set dyn_lpf_gyro_max_hz = 600
+set min_check = 1020
+set max_check = 1995
+set rc_smoothing_auto_smoothness = 7
+set blackbox_device = NONE
+set min_throttle = 1020
+set dshot_idle_value = 500
+set dshot_bidir = ON
+set use_unsynced_pwm = OFF
+set motor_pwm_protocol = DSHOT300
+set deadband = 2
+set yaw_deadband = 2
+set pid_process_denom = 2
+set gyro_rpm_notch_q = 700
+set dyn_lpf_dterm_min_hz = 84
+set dyn_lpf_dterm_max_hz = 204
+set dyn_lpf_dterm_curve_expo = 7
+set dterm_lowpass2_hz = 180
+set vbat_sag_compensation = 100
+set pid_at_min_throttle = OFF
+set anti_gravity_gain = 3900
+set feedforward_transition = 40
+set iterm_relax_type = GYRO
+set iterm_relax_cutoff = 20
+set yaw_lowpass_hz = 100
+set throttle_boost = 7
+set throttle_boost_cutoff = 25
+set p_pitch = 65
+set i_pitch = 104
+set d_pitch = 58
+set f_pitch = 116
+set p_roll = 60
+set i_roll = 99
+set d_roll = 54
+set f_roll = 109
+set p_yaw = 69
+set i_yaw = 99
+set f_yaw = 109
+set d_min_roll = 35
+set d_min_pitch = 39
+set ff_interpolate_sp = AVERAGED_3
+set ff_spike_limit = 70
+set ff_smooth_factor = 40
+set idle_min_rpm = 21
+set roll_rc_rate = 120
+set pitch_rc_rate = 120
+set yaw_rc_rate = 175
+set roll_expo = 15
+set pitch_expo = 15
+set yaw_expo = 20
+set roll_srate = 72
+set pitch_srate = 75
+set yaw_srate = 41
+set tpa_rate = 70
+set tpa_breakpoint = 1150
+set throttle_limit_type = CLIP
+set throttle_limit_percent = 98
+'''
+
+</details>
+
+<br/><br/>
+
 # BF 4.1.X
 Betaflight 4.1.X with configurator 10.6 
 
