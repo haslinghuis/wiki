@@ -500,7 +500,7 @@ save
 <br/><br/>
 ## Pilot: JJang FPV
 About: 'Responsive but Smooth' feel, set up for 5" normal freestyle(cinematic, juicy and more) with Gopro 6/7/8, 4S battery. There is no propwash at all.
-<br/>Caution: You should calculate 'idle_min_rpm' about 70% of dshot_idle_rpm or start with '21'.
+<br/>Caution: You should activate 'Bidirectional Dshot' for rpm filter and adjust 'idle_min_rpm' about 70% of dshot_idle_rpm or start with '21'.
 
 <details><summary>JJang's PIDs: 5" 4S Normal Freestyle CLI Settings - Copy/Paste</summary>
 
