@@ -498,10 +498,9 @@ save
 </details>
 
 <br/><br/>
-
 ## Pilot: JJang FPV
 About: Responsive but Smooth feel, set up for 5" normal freestyle with Gopro, 4S battery - cinematic, juicy, etc. 
-Caution: You should calculate 'idle_min_rpm' about 70% of dshot_idle_rpm or start with '21'.
+<br/>Caution: You should calculate 'idle_min_rpm' about 70% of dshot_idle_rpm or start with '21'.
 
 <details><summary>5" 4S Normal Freestyle Quad CLI Settings - Copy/Paste</summary>
 
@@ -569,7 +568,9 @@ set tpa_rate = 70
 set tpa_breakpoint = 1150
 set throttle_limit_type = CLIP
 set throttle_limit_percent = 98
-'''
+
+save
+```
 
 </details>
 
