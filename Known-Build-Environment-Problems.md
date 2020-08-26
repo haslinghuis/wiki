@@ -17,12 +17,12 @@ Update 2/2017:  The Windows/Cygwin 'make' requests toolchain version 6.2.1, gcc-
 ## Running a 32-bit Tool chain on a 64-bit Linux system
 The arm-sdk installation done from the new "make arm_sdk_install" command will install a 32-bit variant of the tool chain. This may fail to execute on a 64-bit Linux system, bash will say "No such file or directory", if no support for 32-bit 386 program are installed. To install this:
 
-    sudo dpkg --add-architecture i386  
-    sudo apt-get update  
-    sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386  
+    $ sudo dpkg --add-architecture i386  
+    $ sudo apt-get update  
+    $ sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386  
 
 ## Linking Unit Tests may fail.
-When trying to build and run the unittests on Linux, you may encounter this problem:
+When trying to build and run the unittests on Linux or WSL, you may encounter this problem:
 
     linking ../../obj/test/alignsensor_unittest/alignsensor_unittest
     /usr/bin/ld: cannot find -lBlocksRuntime
@@ -31,3 +31,11 @@ When trying to build and run the unittests on Linux, you may encounter this prob
 Problem is a missing library, install it this way:
 
     $ sudo apt-get install libblocksruntime-dev
+
+## Compiling Unit Tests fails with errors
+On Windows Subsystem for Linux and Ubuntu 20.04 LTS make test will fail because we need to explicit use clang version 8. The solution:
+
+    $ sudo apt remove clang
+    $ sudo apt install clang-8
+    $ sudo update-alternatives --install /usr/bin/clang clang /usr/bin/clang-8 100
+    $ sudo update-alternatives --install /usr/bin/clang++ clang++ /usr/bin/clang++-8 100
