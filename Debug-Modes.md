@@ -181,7 +181,7 @@ DUAL_GYRO_COMBINED:  (programmer useful only)
 
 ### OSD Blackbox
 
-Using OSD `set debug` values are changed to be unique within 12 characters (from Betaflight 4.2.3):
+Setting `debug` values using CMS in OSD are changed to be unique within 12 characters (from Betaflight 4.2.3):
 
 ORIGINAL | SHORTENED
 -- | --
