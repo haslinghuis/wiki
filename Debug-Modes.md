@@ -179,4 +179,14 @@ DUAL_GYRO_COMBINED:  (programmer useful only)
 * [2] = pitch: filtered gyro (same as “gyro” trace)
 * [3] = [empty]
 
+### OSD Blackbox
 
+Using OSD `set debug` values are changed to be unique within 12 characters (from Betaflight 4.2.3):
+
+ORIGINAL | SHORTENED
+-- | --
+RANGEFINDER_QUALITY | RNGFNDR_QUALITY
+RC_SMOOTHING_RATE | RC_SMOOTH_RATE
+CRSF_LINK_STATISTICS_UPLINK | CRSF_LS_UPLINK
+CRSF_LINK_STATISTICS_PWR | CRSF_LS_PWR
+CRSF_LINK_STATISTICS_DOWN | CRSF_LS_DOWN
