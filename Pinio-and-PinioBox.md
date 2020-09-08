@@ -25,10 +25,18 @@ resource PINIO 4 D2
 I/O configuration of each pin is specified by `pinio_config` CLI variable, which is a comma separated list/array of 8-bit values. MSB represents inversion, and remaining 7-bits specify I/O mode as defined in [drivers/pinio.h](https://github.com/betaflight/betaflight/blob/master/src/main/drivers/pinio.h) (Only push-pull output is defined for this PR).
 
 ```
-#define PINIO_CONFIG_OUT_INVERTED 0x80
+#define PINIO_CONFIG_OUT_INVERTED 0x80 (128)
 #define PINIO_CONFIG_MODE_MASK    0x7F
 #define PINIO_CONFIG_MODE_OUT_PP  0x01
 ```
+
+PINIO CONFIG | HEX | DEC
+------------ | --- | ---
+PINIO_CONFIG_OUT_INVERTED | 0x80 | 128
+PINIO_CONFIG_MODE_MASK    | 0x7F | 127
+PINIO_CONFIG_MODE_OUT_PP  | 0x01 | 1
+
+`Note`: Values can be combined together
 
 Example of `pinio_config`
 
@@ -115,6 +123,9 @@ For permanent ID of boxes, the table below is based on [msp/msp_box.c](https://g
 | `BOXACROTRAINER`        | ACRO TRAINER             | `47` |           |
 | `BOXVTXCONTROLDISABLE`  | DISABLE VTX CONTROL      | `48` |           |
 | `BOXLAUNCHCONTROL`      | LAUNCH CONTROL           | `49` |           |
+| `BOXMSPOVERRIDE`        | MSP OVERRIDE             | `50` |           |
+
+`Note`: Value 255 is defined as BOXID_NONE which specifies the specified slot is not used.
 
 ## Examples
 
