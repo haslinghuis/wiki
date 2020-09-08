@@ -24,12 +24,6 @@ resource PINIO 4 D2
 
 I/O configuration of each pin is specified by `pinio_config` CLI variable, which is a comma separated list/array of 8-bit values. MSB represents inversion, and remaining 7-bits specify I/O mode as defined in [drivers/pinio.h](https://github.com/betaflight/betaflight/blob/master/src/main/drivers/pinio.h) (Only push-pull output is defined for this PR).
 
-```
-#define PINIO_CONFIG_OUT_INVERTED 0x80 (128)
-#define PINIO_CONFIG_MODE_MASK    0x7F
-#define PINIO_CONFIG_MODE_OUT_PP  0x01
-```
-
 PINIO CONFIG | HEX | DEC
 ------------ | --- | ---
 PINIO_CONFIG_OUT_INVERTED | 0x80 | 128
@@ -38,7 +32,7 @@ PINIO_CONFIG_MODE_OUT_PP  | 0x01 | 1
 
 `Note`: Values can be combined together
 
-Example of `pinio_config`
+#### Example of `pinio_config`
 
 ```
 set pinio_config = 1,129,1,1
