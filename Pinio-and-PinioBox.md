@@ -1,7 +1,7 @@
 ## Overview
 
-- PINIO is an abstraction of simple GPIO (General Purpose I/O) pin facility, and PINIOBox is a facility to associate boxes (modes) to PINIO.
-- Most targets are build to be capable of configuring up to four pins for the PINIO facility, which can then be controlled by the PINIOBox facility.
+- PINIO is an abstraction of simple GPIO (General Purpose I/O) pin facility, and PINIO BOX is a facility to associate boxes (modes) to PINIO.
+- Most targets are build to be capable of configuring up to four pins for the PINIO facility, which can then be controlled by the PINIO BOX facility.
 
 ## PINIO
 
@@ -22,17 +22,18 @@ resource PINIO 4 D2
 [...]
 ```
 
+## PINIO CONFIG
 I/O configuration of each pin is specified by `pinio_config` CLI variable, which is a comma separated list/array of 8-bit values. MSB represents inversion, and remaining 7-bits specify I/O mode as defined in [drivers/pinio.h](https://github.com/betaflight/betaflight/blob/master/src/main/drivers/pinio.h) (Only push-pull output is defined for this PR).
 
 PINIO CONFIG | HEX | DEC
------------- | --- | ---
+------------ | --- | ---:
 PINIO_CONFIG_OUT_INVERTED | 0x80 | 128
 PINIO_CONFIG_MODE_MASK    | 0x7F | 127
 PINIO_CONFIG_MODE_OUT_PP  | 0x01 | 1
 
 `Note`: Values can be combined together
 
-#### Example of `pinio_config`
+Example of `pinio_config`
 
 ```
 set pinio_config = 1,129,1,1
@@ -42,82 +43,82 @@ Sets Output-Push-Pull for PINIO #1, #3 and #4, and Inverted Output-Push-Pull for
 
 Default value is `1` (Output-Push-Pull).
 
-## PINIOBox
+## PINIO BOX
 
-CLI variable `pinio_box`, comma separated list of permanent ID of boxes, associate the boxes to corresponding PINIOs. Once associated, the boxes's activation status are reflected to the associated PINIOs (and then to pins). Since the PINIOBox facility has it's own capability of monitoring activation state of boxes, it operates independently from what boxes are meant for. (In other words, the PINIOBox **adds** PINIO capability to boxes.)
+CLI variable `pinio_box`, comma separated list of permanent ID of boxes, associate the boxes to corresponding PINIOs. Once associated, the boxes's activation status are reflected to the associated PINIOs (and then to pins). Since the PINIO BOX facility has it's own capability of monitoring activation state of boxes, it operates independently from what boxes are meant for. (In other words, the PINIO BOX **adds** PINIO capability to boxes.)
 
 Permanent IDs `40` through `43` are user defined boxes, which are activated and appear as USER1 through USER4 in the list of boxes at places such as Modes tab in configurator.
 
 Example of `pinio_box`
 
 ```
-set pinio_box = 0, 39, 43, -1
+set pinio_box = 0, 39, 43, 255
 ```
 
 With this assignment, PINIO #1 through #4 are associated with boxes as follow.
 
-| `PINIO` | Box            | Permanent ID |
-| ------- | -------------- | ------------:|
-| `1`     | `ARM`          | `0`          |
-| `2`     | `VTX PIT MODE` | `39`         |
-| `3`     | `USER4`        | `43`         |
-| `4`     | Unused         | `-1`         |
+`PINIO` | Description    | Permanent ID
+------- | -------------- | ------------:
+`1`     | `ARM`          | `0`
+`2`     | `VTX PIT MODE` | `39`
+`3`     | `USER4`        | `43`
+`4`     | `BOXID_NONE`   | `255`
 
 For permanent ID of boxes, the table below is based on [msp/msp_box.c](https://github.com/betaflight/betaflight/blob/master/src/main/msp/msp_box.c).
 
-| Box                     | Description              | ID   | Notes     |
-| ----------------------- | ------------------------ |:----:| --------- |
-| `BOXARM`                | ARM                      | `0`  |           |
-| `BOXANGLE`              | ANGLE                    | `1`  |           |
-| `BOXHORIZON`            | HORIZON                  | `2`  |           |
-| `BOXBARO`               | BARO                     | `3`  |           |
-| `BOXANTIGRAVITY`        | ANTI GRAVITY             | `4`  |           |
-| `BOXMAG`                | MAG                      | `5`  |           |
-| `BOXHEADFREE`           | HEADFREE                 | `6`  |           |
-| `BOXHEADADJ`            | HEADADJ                  | `7`  |           |
-| `BOXCAMSTAB`            | CAMSTAB                  | `8`  |           |
-| `BOXCAMTRIG`            | CAMTRIG                  | `9`  | (removed) |
-| `BOXGPSHOME`            | GPS HOME                 | `10` | (removed) |
-| `BOXGPSHOLD`            | GPS HOLD                 | `11` | (removed) |
-| `BOXPASSTHRU`           | PASSTHRU                 | `12` |           |
-| `BOXBEEPERON`           | BEEPER                   | `13` |           |
-| `BOXLEDMAX`             | LEDMAX                   | `14` | (removed) |
-| `BOXLEDLOW`             | LEDLOW                   | `15` |           |
-| `BOXLLIGHTS`            | LLIGHTS                  | `16` | (removed) |
-| `BOXCALIB`              | CALIB                    | `17` |           |
-| `BOXGOV`                | GOVERNOR                 | `18` | (removed) |
-| `BOXOSD`                | OSD DISABLE SW           | `19` |           |
-| `BOXTELEMETRY`          | TELEMETRY                | `20` |           |
-| `BOXGTUNE`              | GTUNE                    | `21` | (removed) |
-| `BOXRANGEFINDER`        | RANGEFINDER              | `22` | (removed) |
-| `BOXSERVO1`             | SERVO1                   | `23` |           |
-| `BOXSERVO2`             | SERVO2                   | `24` |           |
-| `BOXSERVO3`             | SERVO3                   | `25` |           |
-| `BOXBLACKBOX`           | BLACKBOX                 | `26` |           |
-| `BOXFAILSAFE`           | FAILSAFE                 | `27` |           |
-| `BOXAIRMODE`            | AIR MODE                 | `28` |           |
-| `BOX3D`                 | DISABLE / SWITCH 3D      | `29` |           |
-| `BOXFPVANGLEMIX`        | FPV ANGLE MIX            | `30` |           |
-| `BOXBLACKBOXERASE`      | BLACKBOX ERASE (>30s)    | `31` |           |
-| `BOXCAMERA1`            | CAMERA CONTROL 1         | `32` |           |
-| `BOXCAMERA2`            | CAMERA CONTROL 2         | `33` |           |
-| `BOXCAMERA3`            | CAMERA CONTROL 3         | `34` |           |
-| `BOXFLIPOVERAFTERCRASH` | FLIP OVER AFTER CRASH    | `35` |           |
-| `BOXPREARM`             | PREARM                   | `36` |           |
-| `BOXBEEPGPSCOUNT`       | BEEP GPS SATELLITE COUNT | `37` |           |
-| `BOX3DONASWITCH`        | 3D ON A SWITCH           | `38` | (removed) |
-| `BOXVTXPITMODE`         | VTX PIT MODE             | `39` |           |
-| `BOXUSER1`              | USER1                    | `40` |           |
-| `BOXUSER2`              | USER2                    | `41` |           |
-| `BOXUSER3`              | USER3                    | `42` |           |
-| `BOXUSER4`              | USER4                    | `43` |           |
-| `BOXPIDAUDIO`           | PID AUDIO                | `44` |           |
-| `BOXPARALYZE`           | PARALYZE                 | `45` |           |
-| `BOXGPSRESCUE`          | GPS RESCUE               | `46` |           |
-| `BOXACROTRAINER`        | ACRO TRAINER             | `47` |           |
-| `BOXVTXCONTROLDISABLE`  | DISABLE VTX CONTROL      | `48` |           |
-| `BOXLAUNCHCONTROL`      | LAUNCH CONTROL           | `49` |           |
-| `BOXMSPOVERRIDE`        | MSP OVERRIDE             | `50` |           |
+Box                     | Mode                     | ID   | Notes
+----------------------- | ------------------------ | ----:| ---------
+`BOXARM`                | ARM                      | `0`  |
+`BOXANGLE`              | ANGLE                    | `1`  |
+`BOXHORIZON`            | HORIZON                  | `2`  |
+`BOXBARO`               | BARO                     | `3`  |
+`BOXANTIGRAVITY`        | ANTI GRAVITY             | `4`  |
+`BOXMAG`                | MAG                      | `5`  |
+`BOXHEADFREE`           | HEADFREE                 | `6`  |
+`BOXHEADADJ`            | HEADADJ                  | `7`  |
+`BOXCAMSTAB`            | CAMSTAB                  | `8`  |
+`BOXCAMTRIG`            | CAMTRIG                  | `9`  | (removed)
+`BOXGPSHOME`            | GPS HOME                 | `10` | (removed)
+`BOXGPSHOLD`            | GPS HOLD                 | `11` | (removed)
+`BOXPASSTHRU`           | PASSTHRU                 | `12` |
+`BOXBEEPERON`           | BEEPER                   | `13` |
+`BOXLEDMAX`             | LEDMAX                   | `14` | (removed)
+`BOXLEDLOW`             | LEDLOW                   | `15` |
+`BOXLLIGHTS`            | LLIGHTS                  | `16` | (removed)
+`BOXCALIB`              | CALIB                    | `17` |
+`BOXGOV`                | GOVERNOR                 | `18` | (removed)
+`BOXOSD`                | OSD DISABLE SW           | `19` |
+`BOXTELEMETRY`          | TELEMETRY                | `20` |
+`BOXGTUNE`              | GTUNE                    | `21` | (removed)
+`BOXRANGEFINDER`        | RANGEFINDER              | `22` | (removed)
+`BOXSERVO1`             | SERVO1                   | `23` |
+`BOXSERVO2`             | SERVO2                   | `24` |
+`BOXSERVO3`             | SERVO3                   | `25` |
+`BOXBLACKBOX`           | BLACKBOX                 | `26` |
+`BOXFAILSAFE`           | FAILSAFE                 | `27` |
+`BOXAIRMODE`            | AIR MODE                 | `28` |
+`BOX3D`                 | DISABLE / SWITCH 3D      | `29` |
+`BOXFPVANGLEMIX`        | FPV ANGLE MIX            | `30` |
+`BOXBLACKBOXERASE`      | BLACKBOX ERASE (>30s)    | `31` |
+`BOXCAMERA1`            | CAMERA CONTROL 1         | `32` |
+`BOXCAMERA2`            | CAMERA CONTROL 2         | `33` |
+`BOXCAMERA3`            | CAMERA CONTROL 3         | `34` |
+`BOXFLIPOVERAFTERCRASH` | FLIP OVER AFTER CRASH    | `35` |
+`BOXPREARM`             | PREARM                   | `36` |
+`BOXBEEPGPSCOUNT`       | BEEP GPS SATELLITE COUNT | `37` |
+`BOX3DONASWITCH`        | 3D ON A SWITCH           | `38` | (removed)
+`BOXVTXPITMODE`         | VTX PIT MODE             | `39` |
+`BOXUSER1`              | USER1                    | `40` |
+`BOXUSER2`              | USER2                    | `41` |
+`BOXUSER3`              | USER3                    | `42` |
+`BOXUSER4`              | USER4                    | `43` |
+`BOXPIDAUDIO`           | PID AUDIO                | `44` |
+`BOXPARALYZE`           | PARALYZE                 | `45` |
+`BOXGPSRESCUE`          | GPS RESCUE               | `46` |
+`BOXACROTRAINER`        | ACRO TRAINER             | `47` |
+`BOXVTXCONTROLDISABLE`  | DISABLE VTX CONTROL      | `48` |
+`BOXLAUNCHCONTROL`      | LAUNCH CONTROL           | `49` |
+`BOXMSPOVERRIDE`        | MSP OVERRIDE             | `50` |
 
 `Note`: Value 255 is defined as BOXID_NONE which specifies the specified slot is not used.
 
@@ -129,7 +130,7 @@ Some inbuilt or external devices/modules come with a dedicated pin/wire to enabl
 
 ### Find already defined PINIO functions
 
-Some flight controller targets come with PINIO(s) *preconfigured*, for example to switch the camera, the VTX supply voltage or an inbuilt Bluetooth device.
+Some flight controller targets come with PINIOs *preconfigured*, for example to switch the camera, the VTX supply voltage or an inbuilt Bluetooth device.
 
 Check the [unified target configuration](https://github.com/betaflight/unified-targets/tree/master/configs/default) of **your** flight controller or use the `resource` command on the running board, to find any existing PINIOs  -- if any.
 
@@ -202,7 +203,7 @@ Array length: 4
 pinio_config set to 1,1,129,1
 
 # get pinio_box
-pinio_config = 40,41,255,255
+pinio_box = 40,41,255,255
 
 # set pinio_box = 40,41,0,255
 pinio_box set to 40,41,0,255
