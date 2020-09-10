@@ -58,7 +58,7 @@ The values (1-5) for vtx_band in CLI are:
 vtx_channel values are 1-8 for channel 1-8.
 
 ### Sources
-* [RocketCityFPV](http://www.rocketcityfpv.com/Motolab-TyphoonF4-FC-and-VTX-Combo_p_83.html)
+* [RocketCityFPV](http://www.rocketcityfpv.com/Motolab-TyphoonF4-Flight-Controller_p_77.html)
 * [DefianceRC](https://www.defiancerc.com/collections/flight-controller/products/motolab-typhoon-f4-flight-controller-vtx-combo)
 * [65Drones](https://www.65drones.com/products/motolab-typhoon-f4-flight-controller-and-typhoon-vtx)
 * [Multicopter Builders](https://multicopterbuilders.com/products/motolab-tempest-f4-flight-controller-fc)
