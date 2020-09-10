@@ -69,7 +69,7 @@ vtx_channel values are 1-8 for channel 1-8.
 The MLTYPHF4 target is included in Betaflight 3.2 and later releases.
 
 ### Pinout
-![](http://gdurl.com/l0JR)
+https://www.rcgroups.com/forums/showatt.php?attachmentid=10039116&d=1494799003
 
 ## Manufacturers and Distributors
 
