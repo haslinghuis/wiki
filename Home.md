@@ -60,6 +60,14 @@ Also check the Upgrading List to the Right for Release Notes and other Details o
 
 *If you want to contribute to better development you can download the latest beta build directly from:* *https://ci.betaflight.tech/job/Betaflight/lastBuild/artifact/obj/*
 
+Contributors create [pull requests](https://github.com/betaflight/betaflight/pulls), or PR's.  Pre-built hex files for the four main unified targets can be downloaded by:
+- scrolling to the bottom of the PR, 
+- at `All checks have passed`, click `Show all checks` at right,
+- at `Azure Pipelines` on left, click betaflight.betaflight, and then `View more details on Azure Pipelines` in small grey print,
+- at the bottom, under `Build`, click `1 Artefact`,
+- hover over the betaflight line, a three vertical dot dropdown appears at right, click on that and choose `Download artefacts`
+You should get a zip file containing hex files of the PR.
+
 You can find release planning here:   
 https://github.com/betaflight/betaflight/milestones
 
