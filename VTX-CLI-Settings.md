@@ -61,7 +61,7 @@ MHz), enter the CLI and input:\
 restart.  If it is successful then entering 'get vtx_freq' will show
 the current frequency value in MHz.\
  \
- Frequency table:\
+ **Frequency table:\
                                             Channel\
                   1       2       3       4       5       6      7       8\
  Band 1:  5865 5845 5825 5805 5785 5765 5745 5725  (A: Boscam A / TBS /
@@ -74,3 +74,21 @@ Fatshark)\
  \
  See [here for a 5.8GHz FPV "Visual" Frequency
 Chart](http://www.etheli.com/freq/FPV_5.8GHz_Freqs.jpg)
+
+** Change vtx power level using aux channel
+```
+vtx - vtx channels on switch
+	<index> <aux_channel> <vtx_band> <vtx_channel> <vtx_power> <start_range> <end_range>
+```
+For example the following will configure a 3-position switch on Aux3 to switch power levels 1/2/3.
+```
+vtx 0 2 0 0 1 900 1200
+vtx 1 2 0 0 2 1300 1700
+vtx 2 2 0 0 3 1800 2100
+```
+This can also be used to switch to specific band/channels based on a switch but since the band/channel in the example above are 0 it won't change channels - only power. See the help for the vtx command.
+
+And for the OSD element:
+
+Enable the vtx Channel element on the OSD tab to display vtx channel and power.
+
