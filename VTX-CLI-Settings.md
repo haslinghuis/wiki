@@ -75,7 +75,7 @@ Fatshark)\
  See [here for a 5.8GHz FPV "Visual" Frequency
 Chart](http://www.etheli.com/freq/FPV_5.8GHz_Freqs.jpg)
 
-**Change vtx power level using aux channel**
+### Change vtx power level using aux channel
 ```
 vtx - vtx channels on switch
 	<index> <aux_channel> <vtx_band> <vtx_channel> <vtx_power> <start_range> <end_range>
