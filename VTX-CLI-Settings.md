@@ -88,6 +88,8 @@ vtx 2 2 0 0 3 1800 2100
 ```
 This can also be used to switch to specific band/channels based on a switch but since the band/channel in the example above are 0 it won't change channels - only power. See the help for the vtx command.
 
+If Low Power Disarm is enabled, it will override changes made by the ```vtx``` command. 
+
 And for the OSD element:
 
 Enable the vtx Channel element on the OSD tab to display vtx channel and power.
