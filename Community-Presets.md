@@ -29,8 +29,73 @@ Note: The D Ratio tuning slider in the 10.7 Configurator is different from previ
 Dynamic Notch Filter ranges are specified by minimum and maximum Hz - if you transport a tune from BF4.1.X to BF4.2, you will need to change the dyn_notch_max_hz value to an actual value in Hertz - recommend setting this value to dyn_notch_max_hz = 350 for most applications.
 
 <br/><br/>
-## Pilot: UAV Tech
-##### Placeholder for updated BF.4.2 updates of below BF4.0.X tunes
+## Pilot: Krunked
+About: This is my base tune that i give everyone to try. slight adjustments might be needed but this works GREAT for 99% of pilots. you must be using the below highlighted esc settings and RPM filtering!! F7 = dshot600 8k8k, F4= dshot300 8k4k..  lots of people complain about 4.2 'wobbles' -- THRUST_LINEAR = 25 is what solves this with the right PD gain...  it BOOSTS the pid's at 0 throttle, giving low-end authority back, due to the loss of torque from 48khz.  but 48khz markedly flies better all around in all of my quads and in all of the people ive had use these settings.
+### 5inch quad base tune.  48khz, 23 timing, demag high, thrust_linear = 25
+<details><summary>Krunked's Universal CLI Settings 5inch - Copy/Paste</summary>
+
+```python
+# ESC SETTINGS
+# 48khz, 23 motor timing, demag high *this is important for this tune*
+
+#Settings for 5inch quads
+set feedforward_transition = 100 #this just makes FF attenuated across the stick, reducing its effect near center stick and being 100% engaged at full deflection
+set iterm_relax_cutoff = 10
+set ff_spike_limit = 55
+set ff_smooth_factor = 50
+set ff_boost = 0
+set vbat_sag_compensation = 100
+set anti_gravity_gain = 7000
+set iterm_windup = 30
+set pidsum_limit = 1000
+set thrust_linear = 25 # this is the golden setting for wobbles and 48khz
+set rc_smoothing_derivative_type = PT1
+set rc_smoothing_auto_smoothness = 20
+
+# PID settings for 5 inch quads 48khz 23 timing
+# sliders = 1.0 master, 1.3 pd balance, 1.2 pd gain, 1.5 stick response, DMIN OFF.
+set p_pitch = 55
+set d_pitch = 50
+set f_pitch = 143
+set p_roll = 50
+set d_roll = 46
+set f_roll = 135
+set p_yaw = 54
+set f_yaw = 135
+set d_min_roll = 0
+set d_min_pitch = 0
+
+#FILTER settings (these are safe for any quad, you can get more aggressive based on your gyro logs and noise profiles, but these are good to start)
+# set gyro_rpm_notch_q = 800 # use this if u want to reduce delay further, but only if you have noise free using 800.  
+set gyro_lowpass_hz = 300
+set gyro_lowpass2_hz = 0
+set dyn_notch_width_percent = 8 # feel free to use 0 here, if you don't have noise....  
+set dyn_notch_q = 200 # this can go to 250, if 250 is sufficient and crushing any resonance/peak noise bleeding around the rpm notches
+set dyn_notch_min_hz = 90
+set dyn_notch_max_hz = 450
+set dyn_lpf_gyro_min_hz = 0
+set dyn_lpf_dterm_min_hz = 105
+set dyn_lpf_dterm_max_hz = 225
+set dyn_lpf_dterm_curve_expo = 10 # this setting makes the dyn lpf on D shoot up must faster in the throttle range, reducing delay
+set dterm_lowpass2_hz = 250
+
+# krunked freestyle rates
+set rates_type = KISS
+set roll_rc_rate = 145
+set pitch_rc_rate = 145
+set yaw_rc_rate = 143
+set roll_expo = 22
+set pitch_expo = 22
+set yaw_expo = 18
+set roll_srate = 75
+set pitch_srate = 75
+set yaw_srate = 74
+
+save
+```
+
+</details>
+
 
 <br/><br/>
 ## Pilot: Tehllama
