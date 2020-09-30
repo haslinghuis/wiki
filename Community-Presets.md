@@ -30,7 +30,9 @@ Dynamic Notch Filter ranges are specified by minimum and maximum Hz - if you tra
 
 <br/><br/>
 ## Pilot: Krunked
-About: This is my base tune that i give everyone to try. slight adjustments might be needed but this works GREAT for 99% of pilots. you must be using the below highlighted esc settings and RPM filtering!! F7 = dshot600 8k8k, F4= dshot300 8k4k..  lots of people complain about 4.2 'wobbles' -- THRUST_LINEAR = 25 is what solves this with the right PD gain...  it BOOSTS the pid's at 0 throttle, giving low-end authority back, due to the loss of torque from 48khz.  but 48khz markedly flies better all around in all of my quads and in all of the people ive had use these settings.
+About: This is my base tune that i give everyone to try. slight adjustments might be needed but this works GREAT for 99% of pilots. you must be using the below highlighted esc settings and RPM filtering!! 
+F7 = DShot600 8k8k, F4= DShot300 8k4k..  
+Lots of people complain about 4.2 'wobbles' -- THRUST_LINEAR = 25 is what solves this with the right PD gain...  it BOOSTS the PIDs' at 0 throttle, giving low-end authority back, due to the loss of torque from 48khz.  but 48khz markedly flies better all around in all of my quads and in all of the people ive had use these settings.
 ### 5inch quad base tune.  48khz, 23 timing, demag high, thrust_linear = 25
 <details><summary>Krunked's Universal CLI Settings 5inch - Copy/Paste</summary>
 
@@ -144,6 +146,9 @@ save
 <details><summary>CLI Copy/Paste</summary>
 
 ```python
+
+# For these lightweight 3" Craft, 48kHz PWM, Bidirectional DShot, MedHigh/23° Timing, 0.25 Startup Power, and DemagComp=Low
+
 # Settings for All Quadcopters - Motors Reversed
 set debug_mode = GYRO_SCALED
 set iterm_relax = RPY
@@ -215,6 +220,9 @@ Build Link: https://rotorbuilds.com/build/18675
 <details><summary>CLI Copy/Paste</summary>
 
 ```python
+
+# For these lightweight 3" Craft, 48kHz PWM, Bidirectional DShot, MedHigh/23° Timing, 0.25 Startup Power, and DemagComp=Low
+
 # Settings for All Quadcopters - Motors Reversed
 set debug_mode = GYRO_SCALED
 set iterm_relax = RPY
@@ -283,6 +291,9 @@ Build Link: https://rotorbuilds.com/build/21176
 <details><summary>CLI Copy/Paste</summary>
 
 ```python
+
+# For racing 5" craft, preferred ESC settingss are 48kHz PWM, 23° Timing, 0.25 Rampup Power, DemagComp=Low
+
 # Settings for All Quadcopters - Motors Reversed
 set debug_mode = GYRO_SCALED
 set iterm_relax = RPY
@@ -353,6 +364,9 @@ Build Link: https://rotorbuilds.com/build/10199
 <details><summary>CLI Copy/Paste</summary>
 
 ```python
+
+# For these 7" Craft, I use 48kHz PWM, Med/19° Timing, 0.125 Startup Power, and DemagComp=Low
+
 # Settings for All Quadcopters - Motors Reversed
 set debug_mode = GYRO_SCALED
 set iterm_relax = RPY
@@ -377,14 +391,14 @@ set dshot_bidir = ON
 set motor_pwm_protocol = DSHOT300
 set rc_smoothing_auto_smoothness = 20
 set ff_interpolate_sp = AVERAGED_3
-set feedforward_transition = 25
+set feedforward_transition = 33
 
 # Profile - Low-Throttle Smoothness Enhanced
 set dyn_lpf_dterm_min_hz = 91
 set dyn_lpf_dterm_max_hz = 221
 set dterm_lowpass2_hz = 150
 set iterm_rotation = ON
-set thrust_linear = 33
+set thrust_linear = 33 # This is a fairly high thrust_linear value, but for lower authority (2408, 2507) this is what I've found works
 set tpa_rate = 75
 set tpa_breakpoint = 1350
 set iterm_relax_type = SETPOINT
