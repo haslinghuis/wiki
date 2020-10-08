@@ -40,18 +40,14 @@
 
  - [3D Setup](3D-Setup)
  - [Barometer Configuration for 3.2](Barometer-Configuration-(3.2))
- - [Bidirectional DSHOT & RPM Filter](Bidirectional-DSHOT-and-RPM-Filter)
  - [Buzzer Mute Mode](Buzzer-Mute-Mode)
  - [Changes to the LED_STRIP functionality in 3.2](LED-Strip-functionality)
- - [DSHOT ESC Protocol](DSHOT-ESC-Protocol)
- - [ESC Programming Pass-through](Betaflight-ESC-pass-through)
  - [GPS Rescue mode](GPS-rescue-mode)
  - [Launch Control](Launch-Control)
  - [LED_STRIP Setup](https://github.com/betaflight/betaflight/blob/master/docs/LedStrip.md)
  - [Mass Storage Device (MSC) Support](Mass-Storage-Device-(MSC)-Support)
  - [Paralyze](Paralyze-for-team-races)
  - [Pinio and PinioBox](Pinio-and-PinioBox)
- - [Remapping Motors](Remapping-Motors-with-Resource-Command-(3.1))
  - [Resource Remapping](Betaflight-resource-remapping)
  - [Runaway Takeoff Prevention](Runaway-Takeoff-Prevention)
  - [Single Wire Software Serial](Single-Wire-Software-Serial)
@@ -61,19 +57,6 @@
  - [Setup on a Fixed Wing Aircraft](Setup-for-a-Fixed-Wing-Aircraft)
  - [Supported Sensors](Supported-Sensors)
  - [Unified Targets and You](Unified-Targets)
-
-# Receiver / HID
-
- - [Acro Trainer](Acro-Trainer)
- - [Arming Sequence & Safety](Arming-Sequence-&-Safety)
- - [CHANNEL_FORWARDING for 3.1](CHANNEL_FORWARDING-for-3.1)
- - [ESC-Telemetry](ESC-Telemetry)
- - [FrSky SPI RX](https://github.com/betaflight/betaflight/blob/master/docs/FrSky%20SPI%20RX.md)
- - [FrSky FPort](The-FrSky-FPort-Protocol)
- - [Howto setup Spektrum Serial Receivers](Spektrum-Rx-setup)
- - [HID Joystick Support](HID-Joystick-Support)
- - [SBus and FPort problems when using OpenTX](SBus-FPort-and-RC-Smoothing-when-using-OpenTX)
- - [Spektrum + RC Smoothing Filter](Spektrum-and-RC-Smoothing-Filter)
 
 # Camera, VTX & OSD
 
@@ -86,6 +69,14 @@
  - [TBS Unify SmartAudio](Unify-Smartaudio)
  - [VTX CLI Settings](VTX-CLI-Settings)
  - [VTX Tables](https://github.com/betaflight/betaflight/wiki/VTX-tables)
+
+# Motors and ESC
+
+ - [Bidirectional DSHOT & RPM Filter](Bidirectional-DSHOT-and-RPM-Filter)
+ - [DSHOT ESC Protocol](DSHOT-ESC-Protocol)
+ - [ESC Programming Pass-through](Betaflight-ESC-pass-through)
+ - [ESC-Telemetry](ESC-Telemetry)
+ - [Remapping Motors](Remapping-Motors-with-Resource-Command-(3.1))
 
 # PID Tuning, Rates & Filters
 
@@ -101,6 +92,18 @@
  - [Soft Mounting & Noise Reduction](Soft-Mounting-and-Noise-Reduction)
  - [Tuning Dynamic Idle](https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle)
  - [Yaw Spin Recovery & Gyro Overflow Detect](Yaw-Spin-Recovery-and-Gyro-Overflow-Detect)
+
+# Receiver / HID
+
+ - [Acro Trainer](Acro-Trainer)
+ - [Arming Sequence & Safety](Arming-Sequence-&-Safety)
+ - [CHANNEL_FORWARDING for 3.1](CHANNEL_FORWARDING-for-3.1)
+ - [FrSky SPI RX](https://github.com/betaflight/betaflight/blob/master/docs/FrSky%20SPI%20RX.md)
+ - [FrSky FPort](The-FrSky-FPort-Protocol)
+ - [Howto setup Spektrum Serial Receivers](Spektrum-Rx-setup)
+ - [HID Joystick Support](HID-Joystick-Support)
+ - [SBus and FPort problems when using OpenTX](SBus-FPort-and-RC-Smoothing-when-using-OpenTX)
+ - [Spektrum + RC Smoothing Filter](Spektrum-and-RC-Smoothing-Filter)
 
 # Troubleshooting
 
