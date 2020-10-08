@@ -3,6 +3,7 @@
 # Getting Started
 
  - [Installation](Installing-Betaflight)
+ ---
  - [FAQ](Frequently-Asked-Questions)
  - [Flying Tips](Flying-Tips)
  - [PID Tuning Guide](PID-Tuning-Guide)
