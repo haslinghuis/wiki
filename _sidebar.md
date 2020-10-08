@@ -19,11 +19,8 @@
  - [BetaFlight 3.2](BetaFlight-3.2)
  - [BetaFlight 3.1](BetaFlight-V3.1.x)
  - [BetaFlight 3.0](BetaFlight-3.0.x)
- ---
- - [Betaflight 4.0 CLI commands (work in progress)](Betaflight-4.0-CLI-commands-_Work-in-progress)
- - [V2.x CLI Commands](Betaflight-specific-CLI-commands)  
 
-# Tuning Tips
+# Tuning Notes
 
  - [Betaflight 4.2](4.2-Tuning-Notes)
  - [Betaflight 4.1](4.1-Tuning-Notes)
@@ -33,6 +30,11 @@
  ---
  - [Community Presets (copy/paste)](Community-Presets)
  - [Debug Modes](Debug-Modes)
+
+# CLI Commands
+
+ - [Betaflight 4.0 CLI commands (work in progress)](Betaflight-4.0-CLI-commands-_Work-in-progress)
+ - [V2.x CLI Commands](Betaflight-specific-CLI-commands)  
 
 # Setup and More
 
