@@ -39,3 +39,5 @@ On Windows Subsystem for Linux and Ubuntu 20.04 LTS make test will fail because 
     $ sudo apt install clang-8
     $ sudo update-alternatives --install /usr/bin/clang clang /usr/bin/clang-8 100
     $ sudo update-alternatives --install /usr/bin/clang++ clang++ /usr/bin/clang++-8 100
+
+Please be aware if using clang for other projects you would have to change the used clang version accordingly.
