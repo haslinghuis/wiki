@@ -36,7 +36,7 @@
  - [Betaflight 4.0 CLI commands (work in progress)](Betaflight-4.0-CLI-commands-_Work-in-progress)
  - [V2.x CLI Commands](Betaflight-specific-CLI-commands)  
 
-# Setup and More
+# Configuration
 
  - [3D Setup](3D-Setup)
  - [Barometer Configuration for 3.2](Barometer-Configuration-(3.2))
