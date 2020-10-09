@@ -27,9 +27,10 @@
  - [Betaflight 4.0](4.0-Tuning-Notes)
  - [Betaflight 3.5](3.5-tuning-notes)
  - [Betaflight 3.4](Tuning-Tips-for-Betaflight-3.4)
- ---
+ 
+# Community Presets
+
  - [Community Presets (copy/paste)](Community-Presets)
- - [Debug Modes](Debug-Modes)
 
 # CLI Commands
 
@@ -110,6 +111,7 @@
 
 # Troubleshooting
 
+ - [Debug Modes](Debug-Modes)
  - [Failsafe](Failsafe-(Flight-Controller))
  - [Multicopter Spazzing Out?](Multirotor-Spazzing-Out%3F)
  - [OSD Font Upload Problem](OSD-Font-upload-problem)
