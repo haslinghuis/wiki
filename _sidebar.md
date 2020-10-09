@@ -50,9 +50,6 @@
  - [Pinio and PinioBox](Pinio-and-PinioBox)
  - [Resource Remapping](Betaflight-resource-remapping)
  - [Runaway Takeoff Prevention](Runaway-Takeoff-Prevention)
- - [Single Wire Software Serial](Single-Wire-Software-Serial)
- - [Serial Pass Through](Serial-Pass-Through)
- - [Serial-BlackBox-Logging for 4.x](Serial-BlackBox-Logging)
  - [Servos & SERVO_TILT for 3.1](Servos-&-SERVO_TILT-for-3.1)
  - [Setup on a Fixed Wing Aircraft](Setup-for-a-Fixed-Wing-Aircraft)
  - [Supported Sensors](Supported-Sensors)
@@ -104,6 +101,12 @@
  - [HID Joystick Support](HID-Joystick-Support)
  - [SBus and FPort problems when using OpenTX](SBus-FPort-and-RC-Smoothing-when-using-OpenTX)
  - [Spektrum + RC Smoothing Filter](Spektrum-and-RC-Smoothing-Filter)
+
+# Serial Communication
+
+ - [Single Wire Software Serial](Single-Wire-Software-Serial)
+ - [Serial Pass Through](Serial-Pass-Through)
+ - [Serial-BlackBox-Logging for 4.x](Serial-BlackBox-Logging)
 
 # Troubleshooting
 
