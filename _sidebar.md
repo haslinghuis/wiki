@@ -30,7 +30,7 @@
  
 # Community Presets
 
- - [Community Presets (copy/paste)](Community-Presets)
+ - [Community Presets](Community-Presets)
 
 # CLI Commands
 
