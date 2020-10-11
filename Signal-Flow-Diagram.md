@@ -1,0 +1,1 @@
+![Signal Flow Diagram](https://github.com/mrRobot62/betaflight_processing/blob/master/bf-4.2_processing-workflow.svg)
