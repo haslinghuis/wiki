@@ -87,6 +87,7 @@
  - [I Term Relax Explained](https://github.com/betaflight/betaflight/wiki/I-Term-Relax-Explained)
  - [Integrated Yaw](Integrated-Yaw)
  - [Rate Calculator](Rate-Calculator)
+ - [Signal Flow Diagram](Signal-Flow-Diagram)
  - [Soft Mounting & Noise Reduction](Soft-Mounting-and-Noise-Reduction)
  - [Tuning Dynamic Idle](https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle)
  - [Yaw Spin Recovery & Gyro Overflow Detect](Yaw-Spin-Recovery-and-Gyro-Overflow-Detect)
