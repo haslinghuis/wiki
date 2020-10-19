@@ -72,8 +72,8 @@ You can find release planning here:
 https://github.com/betaflight/betaflight/milestones
 
 ## Configuration Tool
-To configure Betaflight you should use the latest stable Betaflight-configurator GUI tool (Windows/OSX/Linux) that can be found in google chrome store:  
-https://chrome.google.com/webstore/detail/betaflight-configurator/kdaghagfopacdngbohiknlhcocjccjao
+To configure Betaflight you should use the latest stable Betaflight-configurator GUI tool (Windows/OSX/Linux) that can be found in the Betaflight Configurator repository:  
+https://github.com/betaflight/betaflight-configurator/releases
 
 *BETA TESTING*
 
