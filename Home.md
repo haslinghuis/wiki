@@ -77,8 +77,8 @@ https://github.com/betaflight/betaflight-configurator/releases
 
 *BETA TESTING*
 
-*If you want to contribute to better development you can download the latest or any of the older BetaFlight configurator from:*
-*https://github.com/betaflight/betaflight-configurator*   
+*If you want to contribute to better development you can download the latest beta build from:*
+*https://github.com/betaflight/betaflight-configurator-nightlies/releases*
 
 ## BlackBox Viewer
 Viewer Releases are here:
