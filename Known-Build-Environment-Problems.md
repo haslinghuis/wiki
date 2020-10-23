@@ -33,11 +33,8 @@ Problem is a missing library, install it this way:
     $ sudo apt-get install libblocksruntime-dev
 
 ## Compiling Unit Tests fails with errors
-On Windows Subsystem for Linux and Ubuntu 20.04 LTS make test will fail because we need to explicit use clang version 8. The solution:
+On Windows Subsystem for Linux and Ubuntu 20.04 LTS `make test` has been updated to work with clang version 7, 8 or 10.
+OS X should support clang 7, 10 and 12.
 
-    $ sudo apt remove clang
-    $ sudo apt install clang-8
-    $ sudo update-alternatives --install /usr/bin/clang clang /usr/bin/clang-8 100
-    $ sudo update-alternatives --install /usr/bin/clang++ clang++ /usr/bin/clang++-8 100
-
-Please be aware if using clang for other projects you would have to change the used clang version accordingly.
+    $ sudo apt update
+    $ sudo apt install clang
