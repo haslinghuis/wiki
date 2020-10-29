@@ -10,7 +10,7 @@ This Wiki is available in other languages: [简体中文](https://airfleetteam.g
 
 | Date  | Event |
 | - | - |
-| 14 June 2020 | Latest [release](https://github.com/betaflight/betaflight/releases/tag/4.2.0) of Betaflight 4.2 |
+| 20 Oct 2020 | Latest [release](https://github.com/betaflight/betaflight/releases/tag/4.2.4) of Betaflight 4.2 |
 
 ## News
 
