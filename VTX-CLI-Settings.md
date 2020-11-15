@@ -86,7 +86,9 @@ vtx 0 2 0 0 1 900 1200
 vtx 1 2 0 0 2 1300 1700
 vtx 2 2 0 0 3 1800 2100
 ```
-This can also be used to switch to specific band/channels based on a switch but since the band/channel in the example above are 0 it won't change channels - only power. See the help for the vtx command.
+Note that the aux channel value supplied to the `vtx` command is zero-based. This means 0 = Aux1, 1 = Aux2, and so on. So in the example `2` represents Aux3.
+
+This can also be used to switch to specific band/channels based on a switch but since the band/channel in the example above are 0 it won't change channels - only power. Whenever the `vtx_band`, `vtx_channel`, or `vtx_power` values are 0 it means to leave the current setting unchanged. See the help for the vtx command.
 
 If Low Power Disarm is enabled, it will override changes made by the ```vtx``` command. 
 
