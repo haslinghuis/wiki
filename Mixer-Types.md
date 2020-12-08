@@ -20,6 +20,7 @@ _Note: The above graph is the ideal scenario of dynamic mixer, but the actual re
 
 
 **Short summary of differences between mixers:**
+
 **LEGACY** tries to keep requested throttle position as long as possible, till the point where it cannot maintain current throttle position it will drastically start to change throttle to still get desired authority. That is also the reason of sharper transition.
 
 **LINEAR** will start changing throttle earlier in order to prevent these steep transitions at the end. In other words it smooths out the thrust increase/decrease for desired correction.
