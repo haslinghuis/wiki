@@ -1,5 +1,7 @@
 All graphs below are representing AIRMODE enabled scenarios. When AIRMODE is disabled, regular mixer clipping on low throttle range will happen.
 
+Added in this PR: https://github.com/betaflight/betaflight/pull/10370
+
 ### **Mixer type: LEGACY (Current mixer)**
 **set mixer_type = LEGACY**   <--- enabled by default
 
