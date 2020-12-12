@@ -18,6 +18,7 @@ Added in this PR: https://github.com/betaflight/betaflight/pull/10370
 **set mixer_type = DYNAMIC**   <--- to enable
 
 ![image](https://user-images.githubusercontent.com/10757508/100614211-120bea80-3316-11eb-8510-8d58d0c69c38.png)
+
 _Note: The above graph is the ideal scenario of dynamic mixer, but the actual result depends of PIDsum contribution from other axes. If only 1 axis asks for full authority the result will be exactly same like with LINEAR mixer. The optimal results are achieved, when multiple axes are requesting authority._
 
 
