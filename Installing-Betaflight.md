@@ -38,7 +38,7 @@ Make sure you have zadig if you're using Windows to enable the DFU driver. Instr
 1. Put device in DFU mode. If this is the first time to put Betaflight on you need to short the BL or BOOT pads (or press and hold the BOOT tactile button) while plugging the USB into the board.
 1. Open Zadig.
 1. Options > List All Devices
-1. Click on the drop bown box and click the device listed STM32 BOOTLOADER
+1. Click on the drop down box and click the device listed STM32 BOOTLOADER
 ![Zadig Screenshot](https://raw.githubusercontent.com/rs2k/raceflight/raceflight/docs/assets/images/zadig-dfu.png)
 1. In the box to the right of the green arrow, select WinUSB (v6.1.7600.16385)
 1. Click Install Driver
