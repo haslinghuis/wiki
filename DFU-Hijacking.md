@@ -23,3 +23,6 @@ Work arounds against DFU hijacking by chatty devices are as follow.
 3. Use half-duplex protocol and use TX pin to connect the chatty devices. Since the boot loader does not turn on half-duplex and only listens to RX pin, something received on TX pin does not induce the hijacking.
 
 4. Avoid connecting chatty devices to boot loader sensitive UART ports. The boot loader sensitive UART ports on F4 are PA10, PB11 and PC11. For CLRACINGF4 (and JBF4), UART1 (PA10) and UART3 (PB11) falls into this category. Well designed FCs avoids assigning default receiver port the boot loader sensitive pins.
+
+### Note:
+If none of the above solves the problem you need to look at your [udev](https://opensource.com/article/18/11/udev) rules.
