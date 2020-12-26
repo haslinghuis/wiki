@@ -11,8 +11,8 @@ Now you clone your fork to your development machine.
 
 Please configure this to have the correct author in your commits
 
-    git config --global user.name "Mark Haslinghuis"
-    git config --global user.email "mark@numloq.nl"
+    git config --global user.name "Your Name"
+    git config --global user.email "your@email.domain"
 
 If you omit to configure this you get a warning and have to use the following commands to rectify:
 
@@ -36,12 +36,12 @@ Commit your changes after making initial changes:
 
     git add .
     git commit -m "message"
-    git push origin featurex
+    git push origin branch
 
 ## Make more changes and commit on top of last commit
 
 	git commit --amend
-	git push --forward-with-lease origin featurex
+	git push --forward-with-lease origin branch
 
 ## Update master branch with upstream updates and update your fork
 
@@ -55,7 +55,7 @@ Commit your changes after making initial changes:
     git branch --set-upstream-to=upstream/master branch
     git pull --rebase
 
-If you look at the reflog you will see these lines:
+If you look at `git reflog --oneline` you will see these lines:
 
     shacode HEAD@{0}: rebase (finish): returning to refs/head/branch
     shacode HEAD@{1}: rebase (pick): your branch commit description
@@ -82,9 +82,8 @@ First try:
 
 If this fails, backup your changed files (maybe also could use git stash)
 
-    git branch your_branch
     git reset HEAD~ --hard
-    git checkout your branch
+    git checkout branch
 
 And restore your saved files (or use git stash pop)
 
