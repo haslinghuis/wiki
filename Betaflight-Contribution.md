@@ -67,11 +67,11 @@ If you look at `git reflog --oneline` you will see these lines:
 
 ## Recover from unwanted commit without push
 
-git reset HEAD^
+    git reset HEAD^
 
 ## If you want to completely remove the unstaged changes run
 
-git reset --hard HEAD
+    git reset --hard HEAD
 
 ## Unwanted commits in your latest push.
 
