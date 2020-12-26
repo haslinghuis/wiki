@@ -121,6 +121,7 @@
 
 # Development
 
+ - [Betaflight Contribution](Betaflight Contribution using Git)
  - [Building Betaflight on Windows, the Linux subsystem way](Building-Betaflight-on-Windows,-the-Linux-subsystem-way)
  - [Flight Controller Design Resources](Flight-Controller-Design)
  - [Hardware developers reference](Hardware-Reference)
