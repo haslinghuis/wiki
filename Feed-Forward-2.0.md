@@ -65,7 +65,12 @@ ff_max_rate_limit predictively identifies situations in which the sticks are lik
 
 A major benefit is that it markedly reduces the need for the opposing motors to spin up.  Flips become cleaner and more accurate than before, and climb on flipping under LOS conditions is much less. 
 
-The default value of 100 - `set ff_max_rate_limit = 100` is strong enough that most quads will slightly under-shoot at the  very start of the flip; this is intentional, because it better avoids spinning up the reversing pair of motors, and isn't visible in FPV or HD feeds.  A value of 115-120 will generate a more classical 'optimally damped' overshoot/pullback image, with slightly faster terminal response.  But the default of 100 is probably best, even for racing.
+The default value of 100 works well, and attempts to reach FF outputs of 0 as gyro values reach setpoint.
+Lower values result in feedforward influence tapering to 0 at a percentage of those values (e.g. at a value of 50, in a sustained flip, once gyro reaches half the setpoint value the feedforward term will taper to zero).  Higher values allow for feedforward to continue influencing the PID controller.  For higher authority craft this will cause overshoot, but for authority-limited craft these higher values can be very beneficial.
+ff_max_rate_limit is not active as the sticks return to centre.
+
+To determine ff_max_rate_limit and ff_boost works best, look at the start of a hard flip in BlackBox Explorer and see if there is any overshoot. If with ff_max_rate_limit = 100 there is still too much overshoot, first evaluate if Feedforward or P-term is driving overshoot at the time of interest.  If so, try ff_max_rate_limit = 95. If the overshoot is too well controlled, try 105 to 110. The range of adjustment is quite tight. 
+
 
 ## ff_interpolate_sp = AVERAGED
 
