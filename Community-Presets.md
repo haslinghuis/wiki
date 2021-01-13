@@ -609,7 +609,6 @@ set dyn_lpf_dterm_max_hz = 204
 set dyn_lpf_dterm_curve_expo = 7
 set dterm_lowpass2_hz = 180
 set vbat_sag_compensation = 100
-set pid_at_min_throttle = OFF
 set anti_gravity_gain = 3900
 set feedforward_transition = 40
 set iterm_relax_type = GYRO
