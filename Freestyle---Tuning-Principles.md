@@ -10,6 +10,8 @@ to keep up with.
 This guide aims to provide simple guiding principles and tune
 suggestions to make the best out of Betaflight for freestyle purposes.
 
+Note: before editing this guide consider discussing changes on the original [document](https://docs.google.com/document/d/1ki5_OdsD6xIo6t1pZLV04wH0uaplabWEtOenDJmnYX4). 
+
 ## Principles and Attributes
 
 Freestyle is mainly about the footage of a smooth and precise acrobatic
