@@ -1,5 +1,3 @@
-# Freestyle Tuning Principles
-
 ## Motivation
 
 Provide easy and simple guidelines to set-up Betaflight for freestyle.
