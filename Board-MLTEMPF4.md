@@ -67,4 +67,4 @@ _(add your name here if you help test or contribute code for this board)_
 
 ## Similar Targets
 
-[MotoLab Typhoon F4](Board---MLTYPHF4)
+[MLTYPHF4](https://github.com/betaflight/betaflight/wiki/Board-MLTYPHF4)
