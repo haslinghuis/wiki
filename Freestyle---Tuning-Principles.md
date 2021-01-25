@@ -1,3 +1,5 @@
+> Authors: Elia Palme, Daniel Appel, Arnold DusKing, Mark Spatz and co.
+
 # Motivation
 
 Provide easy and simple guidelines to set-up Betaflight for freestyle.
