@@ -1,4 +1,4 @@
-> Authors: Elia Palme, Daniel Appel, Arnold DusKing, Mark Spatz and co.
+> Authors: Elia Palme, Daniel Appel, Hugo Chiang(DusKing1), Mark Spatz and co.
 
 # Motivation
 
