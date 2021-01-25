@@ -51,7 +51,7 @@ The MLTEMPF4 target is included in Betaflight 3.2 and later releases.
 https://www.rcgroups.com/forums/showthread.php?2537379-MotoLab-Board-Setup-and-Troubleshooting
 
 ### Pinout Diagram
-![](http://gdurl.com/FlVd)
+![](https://static.rcgroups.net/forums/attachments/4/5/2/0/2/8/a14563873-224-TempestF4-PinOut.jpg)
 
 ## Manufacturers and Distributors
 
