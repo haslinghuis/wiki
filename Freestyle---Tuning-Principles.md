@@ -257,20 +257,20 @@ Via incremental tuning effort try minimizing Gyro LPF filtering (biggest drain o
 
 Lastly, try reducing the  D-term filtering, slider values up to 1.4 range, still attenuates most D_term noise very well but reduces phase latency.
 
-## BLHeli Settings
+## ESC Settings
 
-### PWM
+### PWM Frequency
 
-Increasing PWM frequency helps to run smoother motors, and can also
-provide greater throttle resolution especially at low values at the cost
-of losing some thrust. The higher the PWM Frequency the more smoothness,
-control, and throttle resolution you gain.
+Increasing PWM frequency helps to run smoother motors, 
+but as the PWM frequency increases, the PWM resolution is bound to decrease. 
+The higher the PWM Frequency the more smoothness,
+control, and the lower throttle resolution you gain.
 
 #### Suggested setting: values for a 5"
 
 |  |**Value**   | 
 | ------------- | ------------- | 
-| **PWM Frequency**    | 48kHz - 96kHz   |
+| **PWM Frequency**    | 48kHz - 96kHz or use Variable PWM Frequency   |
 
 
 ### Motor Timing
