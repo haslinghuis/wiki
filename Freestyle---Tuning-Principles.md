@@ -1,3 +1,7 @@
+# 
+# This is a work in progress and not a final document.
+#
+
 > Authors: Elia Palme, Daniel Appel, Hugo Chiang(DusKing1), Mark Spatz and co.
 
 # Motivation
