@@ -81,9 +81,6 @@ Note: This is not needed in BLHeli_S 16.43 and up since the PPM_MIN & MAX values
   
 **This means that when DSHOT is use NO ESC Calibration is required. Just Select DSHOT.**
 
-Even though Dshot doesn't use the min/max values in the ESC (BLHeli) **it is recommended** to do an ESC cal with one of the Analog Protocols (OneShot or MultiShot) on new and newly Flashed ESCs. This is easy to do with the BLHeli Suite's Motor Tab.
-Just select an analog protocol in ßF config and Save first. Then Use the BLHeli Pass-through to Flash and Cal the ESCs.
-
 #### Max ESC update speed supported by different dshot versions:  
 ##### WARNING: due to processor tasks, FC and/or ESC, the maximum update rate may not work-  
 ##### TEST without props and a Current Limiter.  
