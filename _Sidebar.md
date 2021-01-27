@@ -124,6 +124,7 @@
 
  - [Betaflight Contribution using Git](Betaflight-Contribution)
  - [Building Betaflight on Windows, the Linux subsystem way](Building-Betaflight-on-Windows,-the-Linux-subsystem-way)
+ - [Dshot explained in detail](Dshot)
  - [Flight Controller Design Resources](Flight-Controller-Design)
  - [Hardware developers reference](Hardware-Reference)
  - [Known Build Environment Problems](Known-Build-Environment-Problems)
