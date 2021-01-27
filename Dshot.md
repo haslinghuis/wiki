@@ -91,5 +91,5 @@ This 21 bit value is then sent uninverted at a bitrate of 5/4 * the dshot bitrat
 
 The esc needs to be ready after 40us + one dshot frame length to receive the next dshot packet.
 
-See https://en.wikipedia.org/wiki/Run-length_limited#GCR:_(0,2)_RLL for more details on the GCR encoding.
+See https://en.wikipedia.org/wiki/Run-length_limited#GCR:_(0,2)_RLL for more details on the GCR encoding.<br />
 See https://github.com/betaflight/betaflight/pull/8554
