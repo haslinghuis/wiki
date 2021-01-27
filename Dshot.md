@@ -69,7 +69,7 @@ e e e m m m m m m m m m
 The 9 bit value M needs to shifted left E times to get the period in micro seconds. This gives a range of 1 us to 65408 us. Which translates to a min e-frequency of 15.29 hz or for 14 pole motors 3.82 hz.
 
 This 16 bit value is then GCR encoded to a 20 bit value by applying the following map nibble-wise:
-
+```
 0 -> 19
 1 -> 1b
 2 -> 12
@@ -85,7 +85,8 @@ b -> 0b
 c -> 1e
 d -> 0d
 e -> 0e
-f -> 0f 
+f -> 0f
+```
 This creates a 20 bit value which has no more than two consecutive zeros. This value is mapped to a new 21 bit value by starting with a bit value of 0 and changing the bit value in the next bit if the current bit in the incoming value is a 1, but repeating the previous bit value otherwise. Example:
 
 1 0 1 1 1 0 0 1 1 0 would become 0 1 1 0 1 0 0 0 1 0 0.
