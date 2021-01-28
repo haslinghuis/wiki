@@ -101,8 +101,8 @@ save
 
 <br/><br/>
 ## Pilot: Tehllama
-About: Tehllama prefers a 'Responsive but loose' feel, set up for racing rates that achieves minimum step response latency and maximizes motor temperature overhead.
-Not intended to be the sharpest tune, but for racing setups these carry lots of margin for completing heats on butchered props.
+About: Tehllama prefers a racing feel, set up for racing rates that achieves minimum step response latency and maximizes motor temperature overhead.
+While a sharper tune is possible, for racing setups these carry lots of margin for completing heats on damaged props.
 
 <details><summary>Tehllama's Universal CLI Settings - Copy/Paste</summary>
 
