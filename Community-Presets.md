@@ -151,60 +151,100 @@ save
 
 # Settings for All Quadcopters - Motors Reversed
 set debug_mode = GYRO_SCALED
-set iterm_relax = RPY
-#-This is a somewhat odd setting
+set iterm_relax = RPY  
 set vbat_pid_gain = OFF
 set vbat_sag_compensation = 70
-set yaw_lowpass_hz = 100
+set yaw_lowpass_hz = 115
 set yaw_motors_reversed = ON
 set small_angle = 180
 
 # Filters
-set gyro_lowpass2_hz = 500
+set gyro_lowpass_hz = 275
+set gyro_lowpass2_hz = 425
 set dyn_notch_width_percent = 0
 set dyn_notch_q = 250
 set dyn_notch_min_hz = 115
-set dyn_notch_max_hz = 333
-set dyn_lpf_gyro_min_hz = 400
-set dyn_lpf_gyro_max_hz = 1000
+set dyn_notch_max_hz = 444
+set dyn_lpf_gyro_min_hz = 0
 
-# Configuration - 1105/1106 Motors
+# Configuration - 1105/1106/1204 Motors
 set dshot_bidir = ON
 set motor_pwm_protocol = DSHOT300
 set motor_poles = 12
+set dshot_idle_value = 475  # Dynamic Idle Set Below
 
-# Profile - Uses Thrust_Linear
-set dyn_lpf_dterm_min_hz = 112
-set dyn_lpf_dterm_max_hz = 272
-set dterm_lowpass2_hz = 240
-set iterm_rotation = ON
-set dyn_lpf_dterm_min_hz = 112
-set dyn_lpf_dterm_max_hz = 272
-set dterm_lowpass2_hz = 240
-set iterm_rotation = ON
-set p_pitch = 50
-set i_pitch = 81
-set d_pitch = 37
-set f_pitch = 171
-set p_roll = 45
-set i_roll = 77
-set d_roll = 34
-set f_roll = 162
-set p_yaw = 49
-set i_yaw = 81
-set f_yaw = 162
-set d_min_pitch = 24
-set d_min_boost_gain = 44
-set d_min_advance = 100
-set idle_min_rpm = 24
-set thrust_linear = 20
 set tpa_rate = 72
 set tpa_breakpoint = 1370
 
-# LaunchControl_Preferred
+# Profiles 3S and 2S - Uses Thrust_Linear
+set thrust_linear = 20
+profile 0
+# profile 0 - 3S for 450-550 mAh batteries
+set dyn_lpf_dterm_min_hz = 98
+set dyn_lpf_dterm_max_hz = 333
+set dterm_lowpass2_hz = 225
+set vbat_sag_compensation = 70
+set anti_gravity_gain = 4400
+set iterm_rotation = ON
+set iterm_relax = RPY
+set iterm_relax_cutoff = 33
+set yaw_lowpass_hz = 115
+set throttle_boost = 8
+set p_pitch = 51
+set i_pitch = 72
+set d_pitch = 44
+set f_pitch = 238
+set p_roll = 47
+set i_roll = 68
+set d_roll = 40
+set f_roll = 222
+set p_yaw = 50
+set i_yaw = 72
+set f_yaw = 222
+set d_min_roll = 28
+set d_min_pitch = 30
+set d_min_boost_gain = 33
+set d_min_advance = 0
+set auto_profile_cell_count = 3
 set launch_control_mode = PITCHONLY
 set launch_trigger_allow_reset = OFF
 set launch_angle_limit = 60
+set ff_max_rate_limit = 102
+set ff_smooth_factor = 33
+set ff_boost = 20
+set dyn_idle_min_rpm = 16
+
+profile 1
+# profile 1 - 2S for 450-650mAh batteries
+set dyn_lpf_dterm_min_hz = 98
+set dyn_lpf_dterm_max_hz = 288
+set dterm_lowpass2_hz = 240
+set anti_gravity_gain = 4400
+set iterm_rotation = ON
+set iterm_relax = RPY
+set iterm_relax_cutoff = 33
+set yaw_lowpass_hz = 115
+set throttle_boost = 10
+set p_pitch = 67
+set i_pitch = 81
+set d_pitch = 55
+set f_pitch = 238
+set p_roll = 60
+set i_roll = 77
+set d_roll = 50
+set f_roll = 222
+set p_yaw = 65
+set i_yaw = 81
+set f_yaw = 222
+set d_min_roll = 38
+set d_min_pitch = 35
+set d_min_boost_gain = 33
+set d_min_advance = 0
+set auto_profile_cell_count = 2
+set ff_max_rate_limit = 102
+set ff_smooth_factor = 33
+set ff_boost = 25
+set dyn_idle_min_rpm = 16
 
 save
 ```
@@ -226,10 +266,9 @@ Build Link: https://rotorbuilds.com/build/18675
 # Settings for All Quadcopters - Motors Reversed
 set debug_mode = GYRO_SCALED
 set iterm_relax = RPY
-#-This is a somewhat odd setting
 set vbat_pid_gain = OFF
 set vbat_sag_compensation = 70
-set yaw_lowpass_hz = 100
+set yaw_lowpass_hz = 115
 set yaw_motors_reversed = ON
 set small_angle = 180
 
@@ -243,38 +282,83 @@ set dyn_lpf_gyro_min_hz = 400
 set dyn_lpf_gyro_max_hz = 1000
 
 # Configuration - 1407/1408 Motors
+# Users of 1507 motors should verify by counting magnets
 set dshot_bidir = ON
 set motor_pwm_protocol = DSHOT300
 set motor_poles = 12
 
-# Profile - Aggressive Props
+# Profiles - Aggressive Props
+set thrust_linear = 20
+
+set gyro_rpm_notch_harmonics = 2
+set gyro_rpm_notch_q = 750
+
+
+profile 0
+# profile 0 - 3S 650-1000mAh batteries
 set dyn_lpf_dterm_min_hz = 112
 set dyn_lpf_dterm_max_hz = 272
 set dterm_lowpass2_hz = 240
+set vbat_sag_compensation = 88
+set anti_gravity_gain = 5000
 set iterm_rotation = ON
-set gyro_rpm_notch_q = 333
-set iterm_relax_cutoff = 15
-set p_pitch = 61
-set i_pitch = 72
-set d_pitch = 42
-set f_pitch = 152
-set p_roll = 57
-set i_roll = 68
-set d_roll = 39
-set f_roll = 144
-set p_yaw = 24
-set i_yaw = 72
-set f_yaw = 96
-set d_min_roll = 22
-set d_min_pitch = 25
-set d_min_boost_gain = 44
-set d_min_advance = 100
-set idle_min_rpm = 22
-
-# LaunchControl_Preferred
+set iterm_relax = RPY
+set iterm_relax_cutoff = 33
+set yaw_lowpass_hz = 111
+set throttle_boost = 10
+set p_pitch = 64
+set d_pitch = 56
+set f_pitch = 190
+set p_roll = 59
+set d_roll = 52
+set f_roll = 180
+set p_yaw = 63
+set f_yaw = 180
+set d_min_roll = 39
+set d_min_pitch = 42
+set d_min_boost_gain = 33
+set d_min_advance = 0
+set auto_profile_cell_count = 3
+# Launch Stand Mode
 set launch_control_mode = PITCHONLY
 set launch_trigger_allow_reset = OFF
 set launch_angle_limit = 60
+set ff_max_rate_limit = 102
+set ff_smooth_factor = 33
+set ff_boost = 22
+set dyn_idle_min_rpm = 16
+
+profile 1
+# profile 1 - 4S for 520-850mAh batteries
+set dyn_lpf_dterm_min_hz = 112
+set dyn_lpf_dterm_max_hz = 320
+set dyn_lpf_dterm_curve_expo = 8
+set dterm_lowpass2_hz = 240
+set vbat_sag_compensation = 70
+set anti_gravity_gain = 4400
+set iterm_rotation = ON
+set iterm_relax = RPY
+set iterm_relax_cutoff = 33
+set yaw_lowpass_hz = 111
+set i_pitch = 81
+set f_pitch = 190
+set p_roll = 41
+set i_roll = 77
+set f_roll = 180
+set i_yaw = 81
+set f_yaw = 180
+set d_min_roll = 25
+set d_min_pitch = 27
+set d_min_boost_gain = 33
+set d_min_advance = 0
+set auto_profile_cell_count = 4
+# Launch Stand Mode
+set launch_control_mode = PITCHONLY
+set launch_trigger_allow_reset = OFF
+set launch_angle_limit = 60
+set ff_max_rate_limit = 102
+set ff_smooth_factor = 33
+set dyn_idle_min_rpm = 16
 
 save
 ```
@@ -297,57 +381,130 @@ Build Link: https://rotorbuilds.com/build/21176
 # Settings for All Quadcopters - Motors Reversed
 set debug_mode = GYRO_SCALED
 set iterm_relax = RPY
-#-This is a somewhat odd setting
 set vbat_pid_gain = OFF
 set vbat_sag_compensation = 70
 set yaw_lowpass_hz = 100
 set yaw_motors_reversed = ON
 set small_angle = 180
 
-# Filters - Conservative
+# Filters - Aggressive
+set gyro_lowpass_hz = 222
 set gyro_lowpass2_hz = 500
 set dyn_notch_width_percent = 0
 set dyn_notch_q = 333
-set dyn_notch_min_hz = 105
-set dyn_notch_max_hz = 375
-set dyn_lpf_gyro_min_hz = 400
-set dyn_lpf_gyro_max_hz = 1000
+set dyn_notch_min_hz = 115
+set dyn_notch_max_hz = 444
+set dyn_lpf_gyro_min_hz = 0
 
-# Configuration - FrSky D16 8Ch Modes, Minimum Latency
+set dshot_idle_value = 440
 set dshot_bidir = ON
-set motor_pwm_protocol = DSHOT300
-set rc_smoothing_auto_smoothness = 8
 
-# Profile - Conservative
-set dyn_lpf_dterm_min_hz = 91
-set dyn_lpf_dterm_max_hz = 221
-set dterm_lowpass2_hz = 150
+# Profiles - Aggressive
+set gyro_rpm_notch_harmonics = 2
+set gyro_rpm_notch_q = 750
+
+# Default PID/Filter profile - 6S
+profile 0
+set auto_profile_cell_count = 6
+set dyn_lpf_dterm_min_hz = 105
+set dyn_lpf_dterm_max_hz = 288
+set dyn_lpf_dterm_curve_expo = 8
+set dterm_lowpass2_hz = 210
+set vbat_sag_compensation = 70
+set anti_gravity_gain = 5000
 set iterm_rotation = ON
-set gyro_rpm_notch_q = 333
-set iterm_relax_type = SETPOINT
-set iterm_relax_cutoff = 12
-set p_pitch = 61
+set iterm_relax = RPY
+set yaw_lowpass_hz = 105
+set p_pitch = 41
 set i_pitch = 72
-set d_pitch = 42
-set f_pitch = 190
-set p_roll = 57
+set d_pitch = 40
+set p_roll = 37
 set i_roll = 68
-set d_roll = 39
-set f_roll = 180
-set p_yaw = 48
+set d_roll = 37
+set p_yaw = 40
 set i_yaw = 72
-set f_yaw = 160
 set d_min_roll = 24
 set d_min_pitch = 26
-set d_min_boost_gain = 44
-set d_min_advance = 100
-set dshot_idle_value = 420
-set idle_min_rpm = 18
-
-# LaunchControl_Preferred
+set f_pitch = 190
+set f_roll = 180
+set f_yaw = 180
+set d_min_boost_gain = 33
+set d_min_advance = 0
+set ff_max_rate_limit = 102
+set ff_smooth_factor = 33
+set ff_boost = 15
+# Launch Stand Operations - First Arm Only
 set launch_control_mode = PITCHONLY
 set launch_trigger_allow_reset = OFF
 set launch_angle_limit = 60
+
+# Auto-Applies for 5S
+profile 1
+set auto_profile_cell_count = 5
+set dyn_lpf_dterm_min_hz = 105
+set dyn_lpf_dterm_max_hz = 266
+set dyn_lpf_dterm_curve_expo = 9
+set dterm_lowpass2_hz = 210
+set vbat_sag_compensation = 75
+set anti_gravity_gain = 5000
+set iterm_rotation = ON
+set iterm_relax = RPY
+set yaw_lowpass_hz = 105
+set i_pitch = 81
+set d_pitch = 45
+set p_roll = 41
+set i_roll = 77
+set d_roll = 41
+set i_yaw = 81
+set d_min_roll = 27
+set d_min_pitch = 30
+set f_pitch = 190
+set f_roll = 180
+set f_yaw = 180
+set d_min_boost_gain = 33
+set d_min_advance = 0
+set ff_max_rate_limit = 102
+set ff_smooth_factor = 33
+set ff_boost = 18
+# Launch Stand Operations - First Arm Only
+set launch_control_mode = PITCHONLY
+set launch_trigger_allow_reset = OFF
+set launch_angle_limit = 60
+
+# Auto-Applies for 4S
+profile 2
+set auto_profile_cell_count = 4
+set dyn_lpf_dterm_min_hz = 98
+set dyn_lpf_dterm_max_hz = 238
+set dyn_lpf_dterm_curve_expo = 10
+set dterm_lowpass2_hz = 210
+set vbat_sag_compensation = 80
+set anti_gravity_gain = 5000
+set iterm_rotation = ON
+set iterm_relax = RPY
+set yaw_lowpass_hz = 105
+set p_pitch = 55
+set d_pitch = 55
+set p_roll = 50
+set d_roll = 50
+set p_yaw = 54
+set d_min_roll = 33
+set d_min_pitch = 36
+set f_pitch = 190
+set f_roll = 180
+set f_yaw = 180
+set d_min_boost_gain = 33
+set d_min_advance = 0
+set ff_max_rate_limit = 102
+set ff_smooth_factor = 33
+set ff_boost = 21
+# Launch Stand Operations - First Arm Only
+set launch_control_mode = PITCHONLY
+set launch_trigger_allow_reset = OFF
+set launch_angle_limit = 60
+
+# restore default profile selection
+profile 0
 
 save
 ```
@@ -370,7 +527,6 @@ Build Link: https://rotorbuilds.com/build/10199
 # Settings for All Quadcopters - Motors Reversed
 set debug_mode = GYRO_SCALED
 set iterm_relax = RPY
-#-This is a somewhat odd setting
 set vbat_pid_gain = OFF
 set vbat_sag_compensation = 70
 set yaw_lowpass_hz = 100
