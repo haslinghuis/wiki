@@ -46,7 +46,7 @@ should optimize for:
 
 |   |  |
 | ------------- | ------------- |
-| **Attitude Hold**   | Attitude hold is the ability of the craft to keep it’s trajectory and behave as expected. A quadcopter with good attitude hold has low propwas, does not suffer from woubles or mid to high frequency vibrations and efficiently fights against external forces such as wind and gravity while tracking closely setpoint (stick inputs). Attitude provides **smoothness**.  |
+| **Attitude Hold**   | Attitude hold is the ability of the craft to keep it’s trajectory and behave as expected. A quadcopter with good attitude hold has low propwash, does not suffer from woubles or mid to high frequency vibrations and efficiently fights against external forces such as wind and gravity while tracking setpoint closely (follows stick inputs accurately). Attitude provides **smoothness**.  |
 | **Predictability**  | Predictability is the ability of the pilot to estimate how the craft will behave based on the environment conditions and the provided stick inputs. The more predictable is the quad behaving the more  **precision and confidence the pilot will gain**.  |
 | **Responsiveness**  | Responsiveness is the ability of the craft to track setpoint (stick inputs) as close as possible. A responsive quad has very **low latency and feels connected**.  |
 
