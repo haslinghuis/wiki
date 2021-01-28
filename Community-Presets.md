@@ -110,10 +110,8 @@ While a sharper tune is possible, for racing setups these carry lots of margin f
 # Settings for All Quadcopters
 set debug_mode = GYRO_SCALED
 set iterm_relax = RPY
-#-This is a somewhat odd setting
 set vbat_pid_gain = OFF
 set vbat_sag_compensation = 70
-set yaw_lowpass_hz = 100
 set yaw_motors_reversed = ON
 set small_angle = 180
 
@@ -154,8 +152,6 @@ set debug_mode = GYRO_SCALED
 set iterm_relax = RPY  
 set vbat_pid_gain = OFF
 set vbat_sag_compensation = 70
-set yaw_lowpass_hz = 115
-set yaw_motors_reversed = ON
 set small_angle = 180
 
 # Filters
@@ -268,8 +264,6 @@ set debug_mode = GYRO_SCALED
 set iterm_relax = RPY
 set vbat_pid_gain = OFF
 set vbat_sag_compensation = 70
-set yaw_lowpass_hz = 115
-set yaw_motors_reversed = ON
 set small_angle = 180
 
 # Filters
@@ -383,8 +377,6 @@ set debug_mode = GYRO_SCALED
 set iterm_relax = RPY
 set vbat_pid_gain = OFF
 set vbat_sag_compensation = 70
-set yaw_lowpass_hz = 100
-set yaw_motors_reversed = ON
 set small_angle = 180
 
 # Filters - Aggressive
@@ -395,7 +387,6 @@ set dyn_notch_q = 333
 set dyn_notch_min_hz = 115
 set dyn_notch_max_hz = 444
 set dyn_lpf_gyro_min_hz = 0
-
 set dshot_idle_value = 440
 set dshot_bidir = ON
 
