@@ -277,10 +277,9 @@ Lastly, try reducing the  D-term filtering, slider values up to 1.4 range, still
 
 ## PWM Frequency
 
-Increasing PWM frequency helps to run smoother motors, 
-but as the PWM frequency increases, the PWM resolution is bound to decrease. 
-The higher the PWM Frequency the more smoothness,
-control, and the lower throttle resolution you gain.
+Increasing PWM frequency helps to run smoother motors, and provide greater control at the cost of losing some thrust.
+
+> **Warning:** Increasing PWM frequency can introduce wobbles at zero or low throttle. Such undesired effect can be mitigated by increasing Thrust Linear or Dynamic Idle values.
 
 ### Suggested setting: values for a 5"
 
@@ -288,15 +287,9 @@ control, and the lower throttle resolution you gain.
 | ------------- | ------------- | 
 | **PWM Frequency**    | 48kHz - 96kHz or use Variable PWM Frequency   |
 
+### :bulb: Advanced Considerations 
+<details>
+  <summary>Click to expand!</summary>
+ Increasing PWM frequency helps to run smoother motors, but as the PWM frequency increases, the PWM resolution is bound to decrease. 
+</details>
 
-## Motor Timing
-
-By setting motor timing to higher value it is possible to regain some of
-the lost thrust due to running higher PWM Frequency.
-
-### Suggested setting: values for a 5"
-
-
-|  |**Value**   | 
-| ------------- | ------------- | 
-| **Motor Timing**    | 22 - 24   |
