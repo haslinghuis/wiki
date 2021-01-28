@@ -28,7 +28,7 @@ following principles in mind:
 
 1.  Optimized for smoothness over low latency and sharp control.
 
-> Freestyle pilots tend to prefer a smoother and "loser"
+> Freestyle pilots tend to prefer a smoother and "looser"
 > quad over an extremely reactive (brain reading feeling) one. Mainly
 > because it helps to smooth out micro correction and makes the footage
 > look more organic and fluid.
