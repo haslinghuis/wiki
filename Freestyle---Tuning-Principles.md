@@ -292,6 +292,6 @@ Increasing PWM frequency helps to run smoother motors, and provide greater contr
 ### :bulb: Advanced Considerations 
 <details>
   <summary>Click to expand!</summary>
- Increasing PWM frequency helps to run smoother motors, but as the PWM frequency increases, the PWM resolution is bound to decrease. 
+ Increasing PWM frequency tends to result in smoother running motors and may mitigate issues with aliasing that results in some mid-throttle oscillations, however higher PWM frequencies have downside. As the PWM frequency increases, the PWM resolution is bound to decrease, and depending on ESC deadtime required in switching, lower throttle responsiveness may also be reduced. 
 </details>
 
