@@ -59,7 +59,9 @@ smoothly and consistently.
 Therefore it is advised to compromise on responsiveness to keep the
 quad behaving in a predictive and consistent manner
 
-# Betaflight Tune 
+# Betaflight Tune
+
+**Important note:** the suggested tuning values are intended for a typical 5" setup either 6S with [1600 to 1800] KV motors or 4S with  [2400-2600] KV motors. 
 
 ## VBat Sag Compensation
 
