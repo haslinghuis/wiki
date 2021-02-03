@@ -203,6 +203,15 @@ Lower rate and higher breakpoint will increase consistency but
 eventually introduce oscillations, carefully tune the settings to
 minimize the impact of TPA while avoiding oscillations.
 
+## Thrust Linear
+
+If a unusually large TPA is required to avoid high-throttle oscillations whilst good performance is observed at low and mid throttle then consider reducing TPA and employing thrust_linear. Thrust linearization is designed to account for situations where a linear throttle input produces an exponential throttle output. This can happen on builds which fall outside of the normal power/weight ratio.  In these cases thrust_linear can be used to PID boost response at low throttle and dampen PID response at high throttle. 
+
+thrust_linear defaults to 0. If you experience oscillations which TPA cannot sufficiently correct then thrust_linear is a good next step.
+
+Because thrust_linear will boost PID response at low throttle the master PID values should be reduced one or two notches on the slider before introducing thrust_linear. 
+Set thrust_linear initially at a value around 25 and then increase in increments of 5 whilst observing the effect on high-throttle oscillations.
+
 ## I term relax and iterm_windup 
 
 I term relax aims to inhibit I during fast manoeuvres by preventing it
