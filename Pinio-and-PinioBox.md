@@ -252,7 +252,7 @@ Resource is freed
 Resource is set to B03
 
 # get pinio_box
-pinio_config = 255,255,255,255
+pinio_box = 255,255,255,255
 
 # set pinio_box = 40,255,255,255
 pinio_box set to 40,255,255,255
