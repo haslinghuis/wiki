@@ -1,15 +1,18 @@
-# Quadcopter and Betaflight cheat sheet
+# Quadcopter and Betaflight cheat sheet （四旋翼 & Betaflight 备忘录）
 
-## Introduction
+## Introduction（简介）
 
 On my journey, though hundreds of videos, tutorials and manuals (Bardwell, UAV Tech, JohnnyFPV, Mr. Steele, Le Drib, RotorRiot (sorry, for the missed ones) and wrote down their suggestions). This is the result of my notes. It should provide the least necessary but most compressed information to start tuning and setting your Quadcopter.
 In my case I use the widely spread `Taranis X7` remote control.
 
 I am a **freestyle pilot**, so keep in mind, that these settings are in this scope (more smooth, softer flight behaviour).
+在我的旅途中，虽然有数百个视频、教程和手册（Bardwell、UAV Tech、JohnnyFPV、Steele先生、Le Drib、RotorRiot（很抱歉，错过了这些），并写下了他们的建议）。这是我笔记的结果。它应该提供最少必要但最压缩的信息来开始调整和设置你的四架直升机。在我的情况下，我使用广泛分布的塔拉尼斯X7遥控器。
 
-# Remote Control (Taranis X7)
+我是一个自由式飞行员，所以请记住，这些设置在这个范围内（更平稳，更柔和的飞行行为）。
 
-## Channel Mapping
+# Remote Control 遥控器 (Taranis X7)
+
+## Channel Mapping （通道映射）
 
 `TAER Throttle/Aileron(Roll)/Elevator(Pit)/Rudder(Yaw)`
 `TRPY`
@@ -26,15 +29,15 @@ I am a **freestyle pilot**, so keep in mind, that these settings are in this sco
 
 ## Default startoff settings
 
-* **Gyro update** freq 8k
-* **PID Loop freq** 8k sampling
-* **Airmode** ALWAYS ON
-* **Antigravity** gain ON
-* **Dynamic Filter** ON
-* **Filter** (turn notch filters off)
-* **PID:** Add "your" rates as a reference
-* **Blackbox:** 2-4k sampling
-* **Bardwell's starting rates (mostly 5" copters):**
+* **Gyro update（加速度计更新频率）** 8k
+* **PID Loop freq（PID循环频率）** 8k sampling（8k 采样）
+* **Airmode（空中模式）** ALWAYS ON（始终打开）
+* **Antigravity（反重力增益）** ON（打开）
+* **Dynamic Filter（动态过滤器）** ON（打开）
+* **Filter（滤波器）** (turn notch filters off)（关闭陷波滤波器）
+* **PID:** Add "your" rates as a reference（添加“您的”数值作为参考）
+* **Blackbox（黑匣子）:** 2-4k sampling（2-4k 采样）
+* **Bardwell's starting rates （起始值）(mostly 5" copters 主要是5寸机):**
 
 |       |  P  |  I  |  D  |  FF  | RC   |  SR  | RCexpo |
 |-------|-----|-----|-----|------|------|------|--------|
@@ -42,37 +45,42 @@ I am a **freestyle pilot**, so keep in mind, that these settings are in this sco
 | Pitch |  50 | 50  | 27  |  100 | 1.55 | 0.73 | 0.3    |
 | yawD  |  65 | 45  | 0   |  100 | 1.0  | 0.73 | 0.3    |
 
-# Batteries / Lipo values
+# Batteries / Lipo values（电池参数）
 
 Here are some suggested ranges based on tests.
+以下是一些基于测试的建议范围。
+For your radio:（对于遥控器）
 
-For your radio:
+| Cells（电芯数量）  | 容量（mAh） | Volt（电压）    | Desc（备注）                                                                            |
+|-------------------|-------------|----------------|--------------------------------------------------------------------------------------------|
+| *NiMh* 6 cells    | 800mAh      | 7 to 8 volts   | About 1 hour remaining at 7 volts, 4 hours at 8 volts. （7V时能用1小时，8V时能用4小时）      |
+| *NiMh* 6 cells    | 2400mAh     | 7 to 8 volts   | About 2 hour remaining at 7 volts, 12.5 hours at 8 volts. （7V时能用2小时，8V时能用12.5小时）|
+| *Lipo* 3 cell     | 800mAh      | 11 to 12 volts | About 1 hour remaining at 11 volts, 6 hours at 12 volts. （11V时能用1小时，12V时能用6小时）  |
 
-| Cells          | mAh     | Volt           | Desc                                                     |
-|----------------|---------|----------------|----------------------------------------------------------|
-| *NiMh* 6 cells | 800mAh  | 7 to 8 volts   | About 1 hour remaining at 7 volts, 4 hours at 8 volts.   |
-| *NiMh* 6 cells | 2400mAh | 7 to 8 volts   | About 2 hour remaining at 7 volts 12.5 hours at 8 volts. |
-| *Lipo* 3 cell  | 800mAh  | 11 to 12 volts | About 1 hour remaining at 11 volts, 6 hours at 12 volts. |
+## Under Load（负载）
 
-## Under Load
+***The voltage of a discharged LiPo cell is 3.00V, and discharging below this will definitely damage the cell.
+一节锂电池电芯的放电电压最小是3.00V，低于这个电压放电肯定会损坏电芯。
+***
 
-***The voltage of a discharged LiPo cell is 3.00V, and discharging below this will definitely damage the cell.***
+| Cells | min（最小值）   | average（平均值） | max（最大值）   | Desc（备注） |
+|-------|----------------|-------------------|----------------|--------------|
+| 1     | 3.2V - 3.3V    | 3.7V              | 4.2V           |              |
+| 2     | 6.4V - 6.6V    | 7.4V              | 8.4V           |              |
+| 3     | 9.6V - 9.9V    | 11.1V             | 12.6V          |              |
+| 4     | 12.8V - 13.2V  | 14.8V             | 16.8V          |              |
+| 5     | 16.0V - 16.5V  | 18.5V             | 21.0V          |              |
+| 6     | 19.2V -  19.8V | 22.2V             | 25.2V          |              |
 
-| Cells | min            | average | max   | Desc |
-|-------|----------------|---------|-------|------|
-| 1     | 3,2V - 3,3V    | 3,7V    | 4,2V  |      |
-| 2     | 6,4V - 6,6V    | 7,4V    | 8,4V  |      |
-| 3     | 9,6V - 9,9V    | 11.1V   | 12,6V |      |
-| 4     | 12,8V - 13,2V  | 14,8V   | 16,8V |      |
-| 5     | 16,0V - 16,5V  | 18,5V   | 21,0V |      |
-| 6     | 19,2V -  19,8V | 22,2V   | 25,2V |      |
-
-## C (constantly discharge)
+## C (constantly discharge)电池C数（连续放电能力）
 
 ``2600mAh (2.6Ah) and a C rating of 55C
-55 * 2.6 = max constant output, which is 143A.``
+55 * 2.6 = max constant output, which is 143A.
+对于2600mAh 55C的电池，计算公式：55 * 2.6 = 143A，故该电池持续放电的最大电流是143A。
+``
 
-``5C / 1300mAh == 5x 1,3 == 5,6A``
+``5C 1300mAh: 5 * 1.3 = 5.6A
+``
 
 ## Cell capacity / percentage
 
