@@ -51,7 +51,7 @@ For your radio:
 | Cells          | mAh     | Volt           | Desc                                                     |
 |----------------|---------|----------------|----------------------------------------------------------|
 | *NiMh* 6 cells | 800mAh  | 7 to 8 volts   | About 1 hour remaining at 7 volts, 4 hours at 8 volts.   |
-| *NiMh* 6 cells | 2400mAh | 7 to 8 volts   | About 2 hour remaining at 7 volts 12.5 hours at 8 volts. |
+| *NiMh* 6 cells | 2400mAh | 7 to 8 volts   | About 2 hour remaining at 7 volts, 12.5 hours at 8 volts. |
 | *Lipo* 3 cell  | 800mAh  | 11 to 12 volts | About 1 hour remaining at 11 volts, 6 hours at 12 volts. |
 
 ## Under Load
