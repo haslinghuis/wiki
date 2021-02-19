@@ -14,12 +14,12 @@ I am a **freestyle pilot**, so keep in mind, that these settings are in this sco
 `TAER Throttle/Aileron(Roll)/Elevator(Pit)/Rudder(Yaw)`
 `TRPY`
 
-| Short | Name     | Heli     | Plane    | German      | Channel |
-|-------|----------|----------|----------|-------------|---------|
-| A     | Ailerons | Roll     | Roll     | Querruder   | CH1     |
-| E     | Elevator | Pitch    | Nick     | Höhenruder  | CH2     |
-| T     | Throttle | Throttle | Throttle | Gas         | CH3     |
-| R     | Rudder   | Yaw      | Gear     | Seitenruder | CH4     |
+| Short | Name     | Heli     | Plane    | German      | Chinese  | Channel |
+|-------|----------|----------|----------|-------------|----------|---------|
+| A     | Ailerons | Roll     | Roll     | Querruder   | 横滚     | CH1     |
+| E     | Elevator | Pitch    | Nick     | Höhenruder  | 俯仰     | CH2     |
+| T     | Throttle | Throttle | Throttle | Gas         | 油门     | CH3     |
+| R     | Rudder   | Yaw      | Gear     | Seitenruder | 偏航     | CH4     |
 
 
 # Betaflight
