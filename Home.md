@@ -3,7 +3,7 @@
 
 **New to Betaflight and just want to get started? See the [installation](Installing-Betaflight) section.**
 
-This Wiki is available in other languages: [简体中文](https://airfleetteam.gitbook.io/bf-wiki-chinese/)
+This Wiki is available in other languages: [简体中文](https://pitronic.gitbook.io/betaflight/)
 
 
 ## Events
