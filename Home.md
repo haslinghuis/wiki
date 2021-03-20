@@ -10,7 +10,7 @@ This Wiki is available in other languages: [简体中文](https://pitronic.gitbo
 
 | Date  | Event |
 | - | - |
-| 17 Feb 2021 | Latest [release](https://github.com/betaflight/betaflight/releases/latest) of Betaflight 4.2 |
+| 15 Feb 2021 | Latest [release](https://github.com/betaflight/betaflight/releases/latest) of Betaflight 4.2 |
 
 ## News
 
