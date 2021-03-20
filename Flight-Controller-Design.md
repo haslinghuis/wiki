@@ -5,6 +5,9 @@
 
 ### Open Source Designs
 
+#### FENIX F405
+https://easyeda.com/jyesmith/fenix-f405
+
 #### ModdQuad F7
 https://www.moddquad.com/p/fc.html
 
