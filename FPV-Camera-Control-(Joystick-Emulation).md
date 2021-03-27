@@ -117,6 +117,8 @@ if voltage is V_up:
 
 It results in the camera getting stuck in an infinite loop, **even the OSD timer stops counting**, as the FC can never output `Vmax ~= 3.4`.
 
+Foxeer Predator v4 Mini measured internal resistance 47kΩ, reference voltage 3.27V, OSD joystick button resistances are standard (on the top of this article)
+
 ### Caddx.us Micro Turbo S1
 Works perfectly on the default settings, no capacitor required.
 ```
