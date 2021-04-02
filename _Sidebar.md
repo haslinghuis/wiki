@@ -197,6 +197,7 @@
  - [LUMBAF3](Board---LUMBAF3)
  - [LUX_RACE](Board---LUX_RACE)
  - [MATEK F405](matek-f405)
+ - [MATEKF411](MATEKF411)
  - [MATEKSYS F722-STD](Mateksys-F722-STD)
  - [MICROSCISKY](Board---MICROSCISKY)
  - [MIDELIC F3](Board-Midelic-F3)
