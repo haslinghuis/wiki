@@ -6,7 +6,7 @@ By using RPM data to prevent any motor falling below a defined minimum RPM, the 
 
 NOTE 1:  Dynamic Idle requires [fully functional BiDirectional DShot telemetry](https://github.com/betaflight/betaflight/wiki/Bidirectional-DSHOT-and-RPM-Filter).  
 
-NOTE 2: **Dynamic Idle is off by default**.  To enable it, set `idle_min_rpm` to a suitable value in the CLI.  For typical 5" quadcopters 20 is a suitable starting point.  Please read the tuning section, below.
+NOTE 2: **Dynamic Idle is off by default**.  To enable it, set `dyn_idle_min_rpm` to a suitable value in the CLI.  For typical 5" quadcopters 20 is a suitable starting point.  Please read the tuning section, below.
 
 NOTE 3: Dynamic Idle must not be used with 3D mode.
 
@@ -37,7 +37,7 @@ Under strongly positive inflow conditions, where the motors will be spinning fas
 
 These are the three key elements to dynamic idle:
 
-1.  We get the actual motor RPM via bidirectional DShot telemetry, and use this to prevent any motor falling below the set `idle_min_rpm` value.  
+1.  We get the actual motor RPM via bidirectional DShot telemetry, and use this to prevent any motor falling below the set `dyn_idle_min_rpm` value.  
 
 2.  We allow the PIDs to send motor drive to zero, provided that RPM is OK
 
@@ -47,9 +47,9 @@ The dynamic idle minimum value becomes the effective minimum idle RPM, a kind of
 
 ## Setup - enabling dynamic idle
 
-`idle_min_rpm` must be above zero to enable Dynamic Idle.
+`dyn_idle_min_rpm` must be above zero to enable Dynamic Idle.
 
-The ideal setting for `idle_min_rpm` is about 20% less than the RPM shown in the motors tab at idle.  
+The ideal setting for `dyn_idle_min_rpm` is about 20% less than the RPM shown in the motors tab at idle.  
 
 - Take props off !!
 - Check your Dshot Idle value in the configuration page of the configurator
@@ -62,7 +62,7 @@ The ideal setting for `idle_min_rpm` is about 20% less than the RPM shown in the
 - check the RPM number under the bar graph, take two zeroes off, and take off 20% (or multiply by 0.8)
 - set your dynamic idle minimum RPM value to that number.
 
-For example, if the idle RPM at 1050 was say 2,000, take two zeros off to get 20, then take off 20% (or multiply by 0.8) to get 16; set your dynamic idle minimum (`idle_min_rpm` in CLI) to 16.
+For example, if the idle RPM at 1050 was say 2,000, take two zeros off to get 20, then take off 20% (or multiply by 0.8) to get 16; set your dynamic idle minimum (`dyn_idle_min_rpm` in CLI) to 16.
 
 Always measure rpm properly using the motors tab.  Do not guess the numbers.  
 
@@ -70,9 +70,9 @@ You may arm with the Tx in the motors tab (after setting the enable switch) to c
 
 Note that after configuring the minimum idle RPM as above, the actual idle rpm in the motors tab does not change.  
 
-If you already are running a known good DShot idle value, start off with that, and set the `idle_min_rpm` value set 20% lower as described above.  
+If you already are running a known good DShot idle value, start off with that, and set the `dyn_idle_min_rpm` value set 20% lower as described above.  
 
-**NOTE: If you want to change your overall idle value, you must change your DShot `Motor Idle Throttle Value`, and then re-adjust your `idle_min_rpm` value, as above.**
+**NOTE: If you want to change your overall idle value, you must change your DShot `Motor Idle Throttle Value`, and then re-adjust your `dyn_idle_min_rpm` value, as above.**
 
 There is no need to change anything if you enable `motor_output_limit` at less than 100, since it does not change the idle rpm, attenuating motor drive above the idle value only.
 
@@ -94,13 +94,13 @@ High authority quads often fly best with idle values around 4-4.5%.
 
 #### I'm after lots of inverted hang time
 
-To get longer inverted hang time, go for the lowest possible values of both DShot idle percentage and `idle_min_rpm`.  Keep `idle_min_rpm` adjusted relative to DShot as described above (20% lower than the idle rpm).  
+To get longer inverted hang time, go for the lowest possible values of both DShot idle percentage and `dyn_idle_min_rpm`.  Keep `dyn_idle_min_rpm` adjusted relative to DShot as described above (20% lower than the idle rpm).  
 
 REMEMBER: both values must be reduced!  
 
 You can go as low as you like, eventually you will get annoying instability with throttle chops, or desyncs.
 
-If you were running DShot idle of 5% and `idle_min_rpm` of 20 was 20% below rpm at 5%, you could try DShot idle of 4% and `idle_min_rpm` of 16.  If that was OK, then 3.5% and 14, even 3% and 12. 
+If you were running DShot idle of 5% and `dyn_idle_min_rpm` of 20 was 20% below rpm at 5%, you could try DShot idle of 4% and `dyn_idle_min_rpm` of 16.  If that was OK, then 3.5% and 14, even 3% and 12. 
 
 When hard flip stops or throttle chops get ragged, or you start tumbling out of the sky under reverse airflow due to a desync, that's too low.  You can typically get well below the default DShot idle value.  
 
@@ -120,7 +120,7 @@ When targeting very high maximum turn rates - 1800 deg/s for example - desyncs c
 
 For maximum acrobatic and hang performance in a high power to weight LOS quad, the goal would be the lowest idle values that didn't cause desyncs or other adverse effects like excessively slow startup after flips.  
 
-Note that if the rpm from `idle_min_rpm` is higher than that of DShot idle, hovers may not be smooth, since the dynamic idle controller may hunt around a little, but desyncs are less likely.  
+Note that if the rpm from `dyn_idle_min_rpm` is higher than that of DShot idle, hovers may not be smooth, since the dynamic idle controller may hunt around a little, but desyncs are less likely.  
 
 #### I'm a race pilot
 
@@ -136,7 +136,7 @@ Second, turn performance high speed.  Typically at high speed we have strong pos
 
 When flying race courses that involve high speed entries to maneuvers such as split-S or tight hairpins, dynamic idle may allow more consistent 'reverse throw' and improved control/propwash management, allowing more accurate rhythm-based turn entry and vertical maneuvers (e.g. repetitive dive/antigravity gates or inverted dive entries).
 
-Optimal dynamic idle for experienced racers, who keep throttle on most of the time, may be with slightly reduced idle values.  Something like your DShot idle reduced to say 4 - 4.5%, and `idle_min_rpm` 20% below that, maybe.  The downside of lower idle values is that if you do make a mistake and do a zero throttle reversal, it may be uglier.  
+Optimal dynamic idle for experienced racers, who keep throttle on most of the time, may be with slightly reduced idle values.  Something like your DShot idle reduced to say 4 - 4.5%, and `dyn_idle_min_rpm` 20% below that, maybe.  The downside of lower idle values is that if you do make a mistake and do a zero throttle reversal, it may be uglier.  
 
 
 ### The technical stuff
