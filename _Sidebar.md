@@ -56,6 +56,7 @@
  - [Setup on a Fixed Wing Aircraft](Setup-for-a-Fixed-Wing-Aircraft)
  - [Supported Sensors](Supported-Sensors)
  - [Unified Targets and You](Unified-Targets)
+ - [Current Sensor Calibration](Current-Sensor-Calibration)
 
 # Camera, VTX & OSD
 
