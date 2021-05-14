@@ -22,30 +22,31 @@ _(Fill in hardware specs and add any not listed)_
   - build_in filterd 7.86v BEC FOR video tx (800mw MAX)and camera
 
 ### Features
-  -CL_RACING F4 AIO borad has 
-  -onboard BEC  
-  -LC filter for camera and vtx. 
-  -All pads design no through hole pin header.
-  -Betaflight OSD build in.
-  -Current sensor
-  -Build in Sbus inverter
-  -120A Continues current rated PDB. 160A burst for 10s
+  - CL_RACING F4 AIO borad has 
+  - onboard BEC  
+  - LC filter for camera and vtx. 
+  - All pads design no through hole pin header.
+  - Betaflight OSD build in.
+  - Current sensor
+  - Build in Sbus inverter
+  - 120A Continues current rated PDB. 160A burst for 10s
 
 ## Manufacturers and Distributors
 
-   -www.clrpowered.com (website under construction at this moment)
+   - www.clrpowered.com (website under construction at this moment)
 
 ## Designers
 
-  -bnn1044
+  - bnn1044
 
 ## Maintainers
 
-   -bnn1044
+   - bnn1044
 
 ## Similar Targets
-  -99% identical to OmnibusF4SD, Same input and output, but in PDB style motor layout
-  -Function and features are the same as OmnibusF4SD, added more uarts and sepreate PPM from the uart
+  - 99% identical to OmnibusF4SD, Same input and output, but in PDB style motor layout
+  - Function and features are the same as OmnibusF4SD, added more uarts and sepreate PPM from the uart
+
 ## Variants
 
 ## Other Resources
