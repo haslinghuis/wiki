@@ -26,7 +26,9 @@ DYN_IDLE:
 * [0] = motorRangeMinIncrease * 1000
 * [1] = targetRpsChangeRate (simple RPM error * idle_adjustment_speed)
 * [2] = error (amount of error to fix)
-* [3] = minRps (lowest current motor rpm, in revolutions per second)
+* [3] = minRps (lowest current motor rpm, in revolutions per second * 10)
+
+So, for example, a minRps value of 500 corresponds to 50.0 * 60 = 3000rpm
 
 CYCLETIME:
 * [0] = The time in microseconds since the PID task last ran
