@@ -97,7 +97,12 @@ And restore your saved files (or use git stash pop)
 
 ## See changes in particular file
 
-    git log -- src/main/cms/cms` .c 
+    git log -- src/main/cms/cms` .c
+
+## Quickly testing a PR
+
+    git fetch upstream pull/2500/head:2500
+    git checkout 2500
 
 ## Bisection
 
