@@ -118,6 +118,7 @@ Note the number of commits in your PR.
 - Save and close the editor again.
 - Important: If you’ve already pushed commits to origin, and then squash them locally, you will have to force the push to your branch.
 
+
     git push origin brancheName --force
 
 ## Bisection
