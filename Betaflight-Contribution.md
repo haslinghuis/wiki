@@ -104,6 +104,22 @@ And restore your saved files (or use git stash pop)
     git fetch upstream pull/2500/head:2500
     git checkout 2500
 
+## Squash your commits
+
+From the project folder you can use somethink like: https://www.scraggo.com/how-to-squash-commits.
+Note the number of commits in your PR.
+
+    git rebase -i HEAD~17
+
+- You should see a list of commits, each commit starting with the word “pick”.
+- Make sure the topmost, first commit says “pick” and change the rest below from “pick” to “squash”. This will squash each commit into the previous commit, which will continue until every commit is squashed into the first commit.
+- Save and close the editor.
+- It will give you the opportunity to change the commit message. What you see is a single message containing all of the commit messages. Edit these as you wish.
+- Save and close the editor again.
+- Important: If you’ve already pushed commits to origin, and then squash them locally, you will have to force the push to your branch.
+
+    git push origin brancheName --force
+
 ## Bisection
 
 Do bisection:
