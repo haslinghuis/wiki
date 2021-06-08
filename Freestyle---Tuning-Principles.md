@@ -95,7 +95,7 @@ PID are at the core of a quad tuning, with PID tuning we can achieve a
 good quadcopter attitude.
 
 D is the most important PID term to achieve smooth flying, D helps to
-minimize prop was as well as dumpening any quads movement. Freestyle
+minimize propwash as well as dampening any quads movement. Freestyle
 quads tend to use higher D gains.
 
 To counterbalance a higher than usual D gain P needs to be increased as
