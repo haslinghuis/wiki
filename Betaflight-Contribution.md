@@ -38,6 +38,8 @@ Commit your changes after making initial changes:
     git commit -m "message"
     git push origin branch
 
+Note: you either need to do `commit -am` or specify the files.
+
 ## Make more changes and commit on top of last commit
 
 	git commit --amend
@@ -54,6 +56,9 @@ Commit your changes after making initial changes:
     git checkout branch
     git branch --set-upstream-to=upstream/master branch
     git pull --rebase
+or
+    git pull upstream master
+    switch to the branch I want to rebase and use git rebase -i master
 
 If you look at `git reflog --oneline` you will see these lines:
 
@@ -64,6 +69,8 @@ If you look at `git reflog --oneline` you will see these lines:
 ## Unstage file from working area
 
 	git restore --staged <file> to unstage a file from working area.
+or
+        git checkout --<filename>
 
 ## Recover from unwanted commit without push
 
