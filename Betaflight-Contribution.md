@@ -110,6 +110,11 @@ And restore your saved files (or use git stash pop)
 
     git log -- src/main/cms/cms` .c
 
+## Checkout work on another machine
+
+    git checkout origin/branchname
+    git switch -c branchname
+
 ## Quickly testing a PR
 
     git fetch upstream pull/2500/head:2500
