@@ -24,7 +24,6 @@ This page is a _un_-complete list of supported sensors by betaflight. To be sure
 * ICM40625
 * L3GD20
 * LSM6DSO(LSM6DSOX)
-* ~L3G4200D~ Retiring (https://github.com/betaflight/betaflight/pull/5900)
 
 ## Barometer
 * BMP085
