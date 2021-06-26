@@ -17,10 +17,13 @@ This page is a _un_-complete list of supported sensors by betaflight. To be sure
 * MPU9250
 * BMI160
 * BMI270
+* ICM20601
+* ICM20602
 * ICM20649
 * ICM20689
 * ICM40625
 * L3GD20
+* LSM6DSO(LSM6DSOX)
 * ~L3G4200D~ Retiring (https://github.com/betaflight/betaflight/pull/5900)
 
 ## Barometer
@@ -30,6 +33,7 @@ This page is a _un_-complete list of supported sensors by betaflight. To be sure
 * BMP388
 * QMP6988
 * MS5611
+* DSP310
 
 ## Range Finder
 * HCSR04
