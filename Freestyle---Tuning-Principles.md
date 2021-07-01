@@ -196,7 +196,7 @@ around mid throttle .**
 
 |  | **Rate**  |  **Breakpoint**  |
 | ------------- | ------------- | ------------- |
-| **TPA**  |  40-50  | 1600- 1750 |
+| **TPA**  |  0.40-0.50  | 1600- 1750 |
 
 
 Lower rate and higher breakpoint will increase consistency but
