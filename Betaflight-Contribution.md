@@ -3,7 +3,9 @@
 Contributing to Betaflight involves preparing your development environment and making a fork of the repository and working with Git.
 Look in https://github.com/betaflight/betaflight/tree/master/docs/development for installation notes for your environment.
 This document gives some instructions how to handle Git. First make a fork of the repository you want to work on from the github website.
-Now you clone your fork to your development machine.
+Please contribute to this article to help others make git easier to use.
+
+## Clone your fork to your development machine.
 
     git clone https://github.com/yourname/betaflight.git
 
@@ -137,6 +139,14 @@ Note the number of commits in your PR.
 Finally update with:
 
     git push origin brancheName --force
+
+# Advanced
+
+## How to sign your commits with PGP
+
+See docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification/generating-a-new-gpg-key
+
+When using commit just add the -S flag to verify the commit and enter the passphrase you have chosen before.
 
 ## Bisection
 
