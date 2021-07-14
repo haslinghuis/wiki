@@ -144,7 +144,7 @@ Finally update with:
 
 ## How to sign your commits with PGP
 
-See docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification/generating-a-new-gpg-key
+See https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification/generating-a-new-gpg-key
 
 When using commit just add the -S flag to verify the commit and enter the passphrase you have chosen before.
 
