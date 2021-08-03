@@ -64,7 +64,7 @@ With this assignment, PINIO #1 through #4 are associated with boxes as follow.
 `3`     | `USER4`        | `43`
 `4`     | `BOXID_NONE`   | `255`
 
-For permanent ID of boxes, the table below is based on [msp/msp_box.c](https://github.com/betaflight/betaflight/blob/master/src/main/msp/msp_box.c).
+For permanent ID of boxes (or AUX modes), the table below is based on [msp/msp_box.c](https://github.com/betaflight/betaflight/blob/master/src/main/msp/msp_box.c).
 
 Box                     | Mode                     | ID   | Notes
 ----------------------- | ------------------------ | ----:| ---------
