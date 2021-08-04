@@ -28,6 +28,8 @@ Smart Audio Debug[0] key:<br />
 ||[IRC Tramp (EU)](https://runcamfcfiles.s3-us-west-2.amazonaws.com/vtxtable/betaflight/TX200U/runcam_tx200u_vtx_table_irc_tramp_eu.json)|
 |[RunCam TX100](https://shop.runcam.com/runcam-tx100-nano/)|[IRC Tramp (USA)](https://runcamfcfiles.s3-us-west-2.amazonaws.com/vtxtable/betaflight/TX100/runcam_tx100_vtx_table_irc_tramp_us.json)|
 ||[IRC Tramp (EU)](https://runcamfcfiles.s3-us-west-2.amazonaws.com/vtxtable/betaflight/TX100/runcam_tx100_vtx_table_irc_tramp_eu.json)|
+|[Speedy Bee TX800](https://www.speedybee.com/tx500/)|[IRC Tramp (USA)](https://speedybee.s3.amazonaws.com/vtxtable/betaflight/TX800/SpeedyBee-TX800(USA).json)|
+||[IRC Tramp (EU)](https://speedybee.s3.amazonaws.com/vtxtable/betaflight/TX800/SpeedyBee-TX800(EU).json)|
 |[Speedy Bee TX500](https://www.speedybee.com/tx500/)|[IRC Tramp (USA)](https://speedybee.s3.amazonaws.com/vtxtable/betaflight/TX500/speedybee_tx500_vtx_table_irc_tramp_us.json)|
 ||[IRC Tramp (EU)](https://speedybee.s3.amazonaws.com/vtxtable/betaflight/TX500/speedybee_tx500_vtx_table_irc_tramp_eu.json)|
 |**TBS SmartAudio Protocol:**||
