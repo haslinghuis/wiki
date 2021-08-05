@@ -45,13 +45,13 @@ Note: you either need to do `commit -am` or specify the files.
 ## Make more changes and commit on top of last commit
 
 	git commit --amend
-	git push --forward-with-lease origin branch
+	git push origin +branch
 
 ## Update master branch with upstream updates and update your fork
 
     git checkout master
     git pull --rebase upstream master
-    git push -f origin master
+    git push origin +master
 
 ## Update your local branch with upstream changes 
 
@@ -91,7 +91,7 @@ or
 First try:
 
     git rebase -i origin/branch~2 branch
-    git push --force-with-lease origin branch
+    git push origin +branch
 
 If this fails, backup your changed files (maybe also could use git stash)
 
@@ -102,7 +102,7 @@ And restore your saved files (or use git stash pop)
 
     git add .
     git commit -m "Make new commit"
-    git push -f origin your_branch
+    git push origin +your_branch
 
 ## See general changes
 
@@ -138,7 +138,7 @@ Note the number of commits in your PR.
 
 Finally update with:
 
-    git push origin brancheName --force
+    git push origin +brancheName
 
 # Advanced
 
