@@ -102,7 +102,7 @@ And restore your saved files (or use git stash pop)
 
     git add .
     git commit -m "Make new commit"
-    git push origin +your_branch
+    git push origin +branch
 
 ## See general changes
 
@@ -114,8 +114,8 @@ And restore your saved files (or use git stash pop)
 
 ## Checkout work on another machine
 
-    git checkout origin/branchname
-    git switch -c branchname
+    git checkout origin/branch
+    git switch -c branch
 
 ## Quickly testing a PR
 
@@ -138,7 +138,7 @@ Note the number of commits in your PR.
 
 Finally update with:
 
-    git push origin +brancheName
+    git push origin +branch
 
 # Advanced
 
