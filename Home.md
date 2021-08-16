@@ -58,15 +58,20 @@ Also check the Upgrading List to the Right for Release Notes and other Details o
 
 *BETA TESTING (WARNING)*
 
-*If you want to contribute to better development you can download the latest beta build directly from:* *https://ci.betaflight.tech/job/Betaflight/lastBuild/artifact/obj/*
+*If you want to contribute to better development you can download and test the latest nightly beta builds directly from:* *https://ci.betaflight.tech/job/Betaflight/lastBuild/artifact/obj/*
 
-Contributors create [pull requests](https://github.com/betaflight/betaflight/pulls), or PR's.  Pre-built hex files for the four main unified targets can be downloaded by:
-- scrolling to the bottom of the PR, 
-- at `All checks have passed`, click `Show all checks` at right,
-- at `Azure Pipelines` on left, click betaflight.betaflight, and then `View more details on Azure Pipelines` in small grey print,
-- at the bottom, under `Build`, click `1 Artefact`,
-- hover over the betaflight line, a three vertical dot dropdown appears at right, click on that and choose `Download artefacts`
-You should get a zip file containing hex files of the PR.
+Contributors create [pull requests](https://github.com/betaflight/betaflight/pulls), or PR's, when proposing a change to the code.  
+
+Pre-built hex files for every pull request are available for testing.  The Betaflight download includes hex files for the four main unified targets; Configurator and BlackBox downloads include applications for Windows, Mac and Linux.  This is how you get them:
+
+- scroll to the bottom of the PR. 
+- at `All checks have passed` line, click `Show all checks` to the right,
+- in the `Release Release` line, click `Details`, to the right,
+- under `Release Release succeeded`, click `0 errors / 0 warnings`,
+- In the Stages / Build section, at the bottom, click on ’artifact’.  For Betaflight PR's, click `1 artefact`, for Configurator PR's click ‘4 artefacts’.
+- A new window opens; hover over the download line. A three vertical dot dropdown appears at right, choose `Download artefacts`.
+
+This should download a zip file containing hex files of the PR.
 
 You can find release planning here:   
 https://github.com/betaflight/betaflight/milestones
