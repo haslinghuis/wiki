@@ -60,9 +60,10 @@ Also check the Upgrading List to the Right for Release Notes and other Details o
 
 *If you want to contribute to better development you can download and test the latest nightly beta builds directly from:* *https://ci.betaflight.tech/job/Betaflight/lastBuild/artifact/obj/*
 
-Contributors create [pull requests](https://github.com/betaflight/betaflight/pulls), or PR's, when proposing a change to the code.  
+## Pull Requests
+When proposing a change to the code, whether a bug fix or an improvement, create a [pull request](https://github.com/betaflight/betaflight/pulls), or 'PR', using Github.  PR's are carefully checked and tested before being merged.  You can contribute greatly to the development by testing PR's and providing feedback on the PR.
 
-Pre-built hex files for every pull request are available for testing.  The Betaflight download includes hex files for the four main unified targets; Configurator and BlackBox downloads include applications for Windows, Mac and Linux.  This is how you get them:
+Pre-built hex files for every pull request are available for testing.  The Betaflight download includes hex files for the four main unified targets; Configurator and BlackBox downloads include applications for Windows, Mac and Linux.
 
 - scroll to the bottom of the PR. 
 - at `All checks have passed` line, click `Show all checks` to the right,
@@ -84,6 +85,8 @@ https://github.com/betaflight/betaflight-configurator/releases
 
 *If you want to contribute to better development you can download the latest beta build from:*
 *https://github.com/betaflight/betaflight-configurator-nightlies/releases*
+
+We really appreciate testing of beta code, including pull requests. Make a Github account and give us your feedback!
 
 ## BlackBox Viewer
 Viewer Releases are here:
