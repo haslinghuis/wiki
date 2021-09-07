@@ -140,6 +140,22 @@ Finally update with:
 
     git push origin +branch
 
+## Commit to a PR from another contributor
+
+Sometimes you want to make changes to an existing PR.
+Before doing so please ask permission from the contributor.
+In the example please substitute the CONTRIBUTOR, BETAFLIGHT_PROJECT and BRANCH:
+
+    git remote add https://github.com/CONTRIBUTOR/BETAFLIGHT_PROJECT.git
+    git remote -v
+    git checkout --track -b BRANCH CONTRIBUTOR/BRANCH
+
+The original author now can pull the changes to the local branch with:
+
+    git fetch origin BRANCH:BRANCH --update-head-ok
+
+Now you can make more changes and commit again. (This should just work with git pull - have to check this)    
+
 # Advanced
 
 ## How to sign your commits with PGP
