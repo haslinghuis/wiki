@@ -34,6 +34,7 @@ In VSCode, create a launch.json file with this configuration:
     ]
 }
 `
+<br/><br/>
 Then you should be able to debug betaflight configurator.
 
 
