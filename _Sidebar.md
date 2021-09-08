@@ -135,6 +135,7 @@
  - [Known Build Environment Problems](Known-Build-Environment-Problems)
  - [Mac OS X Hex File Development](Mac-OS-X-Hex-File-Development)
  - [SWD debug port connection conflicts](SWD-debug-port-connection-conflicts.)
+ - [Debug Betaflight with Visual Studio Code](https://github.com/betaflight/betaflight/wiki/How-to-debug-Betaflight-configurator-with-Visual-Studio-Code)
 
 # Boards
 
