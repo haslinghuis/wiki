@@ -5,7 +5,7 @@ Run Betaflight in debug mode (launch: yarn gulp debug)
 
 In VSCode, create a launch.json file with this configuration:
 <br/><br/>
-`
+```JSON
 {  
     "version": "0.2.0",
     "configurations": [  
@@ -33,7 +33,7 @@ In VSCode, create a launch.json file with this configuration:
         }            
     ]
 }
-`
+```
 <br/><br/>
 Then you should be able to debug betaflight configurator.
 
