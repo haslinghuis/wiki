@@ -23,6 +23,7 @@
 
 # Tuning Notes
 
+ - [Betaflight 4.3 draft](4.3-Tuning-Notes)
  - [Betaflight 4.2](4.2-Tuning-Notes)
  - [Betaflight 4.1](4.1-Tuning-Notes)
  - [Betaflight 4.0](4.0-Tuning-Notes)
