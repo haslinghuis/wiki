@@ -87,18 +87,3 @@ There is a downside to using `AVERAGED`.  If the pilot makes a fast input, then 
 For racers and general use the quality of the RC link depends mostly on how good your antennas are and how far you plan to fly.  Close-in racing with good antennas, especially with Futaba and some Spectrum radios that have very consistent RC steps, can work best without averaging.
 
 For technical details and more info,check the [original pull request #8623](https://github.com/betaflight/betaflight/pull/8623)
-
-
-# Disable ADC filter
-
-It's very important to disable the ADC filter on your OpenTX based transmitter.
-The instructions provided are for a Frsky Taranis X9D+ pre 2019 model:
-
-* Turn on your radio.
-* Hold Menu to access Global Settings.
-* Click the Page button 5 times to go to page 6 (HARDWARE).
-* Scroll down and select ADC filter.
-* Click Enter to disable the ADC filter as it's enabled by default.
-* Click Exit (twice) to return to the startup screen.
-
-See also: [OpenTX ADC Filter: Disabling for Smoother Sticks](https://youtu.be/ESr2H_EZ89Q)
