@@ -1,40 +1,100 @@
-It is possible to debug Betaflight configurator with Visual Studio Code which is a more friendly environment the DevTools. 
-This procedure has been tested only for Windows 10. 
+It is possible to debug Betaflight configurator with Visual Studio Code which is a more friendly environment than DevTools. 
+This procedure has been tested only for Windows 10.
 
-Run Betaflight in debug mode (launch: yarn gulp debug)
+In VSCode, create a launch.json file (in .vscode folder) with this configuration:
+<br/>
 
-In VSCode, create a launch.json file with this configuration:
-<br/><br/>
 ```JSON
-{  
+{
     "version": "0.2.0",
-    "configurations": [  
-          {
+    "configurations": [
+        {
             "name": "Launch Betaflight",
             "type": "nwjs",
             "request": "launch",
-            "runtimeExecutable": "TO BE REPLACED BY THE PATH TO BETA FLIGHT DEBUG MODE",
+            "runtimeExecutable": "${workspaceRoot}/debug/betaflight-configurator/win64/betaflight-configurator.exe",
             "runtimeArgs": [
                 "${workspaceRoot}",
                 "--remote-debugging-port=9222"
             ],
             "port": 9222,
             "nwjsVersion": "any",
-            "webRoot":"TO BE REPLACED BY THE PATH TO BETA FLIGHT DEBUG MODE"
+            "webRoot":"${workspaceRoot}/src",
+            "preLaunchTask": "build and copy package.json",
+            "postDebugTask": "delete package.json",
         },
         {
             "type": "nwjs",
             "request": "attach",
             "name": "Attach to Betaflight",
             "port": 9222,
-            "webRoot":"TO BE REPLACED BY THE PATH TO BETA FLIGHT DEBUG MODE/js",
+            "webRoot":"${workspaceRoot}/src/js",
             "verbose":true,
             "reloadAfterAttached": true
-        }            
+        }
     ]
 }
 ```
-<br/><br/>
-Then you should be able to debug betaflight configurator.
+<br/>
+Create tasks.json file in .vscode folder with the following content:
+<br/>
 
+```JSON
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "delete package.json",
+            "type": "shell",
+            "command": "rm .\\src\\package.json",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "showReuseMessage": false
+            }
+        },
+        {
+            "label": "build debug no start",
+            "type": "shell",
+            "command": "yarn gulp debug-no-start; copy -Path package.json -Destination .\\src\\package.json -Force",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "showReuseMessage": false
+            }
+        },
+        {
+            "label": "copy package.json",
+            "type": "shell",
+            "command": "copy -Path package.json -Destination .\\src\\package.json -Force",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "showReuseMessage": false
+            }
+        },
+        {
+            "label": "build and copy package.json",
+            "dependsOn": [
+                "build debug no start",
+                "copy package.json"
+            ],
+            "presentation": {
+                "showReuseMessage": false
+            }
+        }
+    ]
+}
+```
 
+<br/>
+Press F5 in Visual Studio Code, enjoy debuggin right in your code.
