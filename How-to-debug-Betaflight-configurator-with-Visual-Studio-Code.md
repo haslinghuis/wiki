@@ -1,6 +1,9 @@
 It is possible to debug Betaflight configurator with Visual Studio Code which is a more friendly environment than DevTools. 
 This procedure has been tested only for Windows 10.
 
+Make sure you use Configurator 10.8 + after this PR is merged:
+https://github.com/betaflight/betaflight-configurator/pull/2607
+
 In VSCode, create a launch.json file (in .vscode folder) with this configuration:
 <br/>
 
@@ -97,4 +100,4 @@ Create tasks.json file in .vscode folder with the following content:
 ```
 
 <br/>
-Press F5 in Visual Studio Code, enjoy debuggin right in your code.
+Press F5 in Visual Studio Code, enjoy debugging right in your code.
