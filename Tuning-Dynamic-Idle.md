@@ -2,7 +2,9 @@
 
 Dynamic Idle improves how Betaflight controls the motors at the low end of the rpm range.
 
-By using RPM data to prevent any motor falling below a defined minimum RPM, the risk of desyncs can be minimised.  This allows lower overall idle settings, increasing straight line braking and hang time.  Additionally, dynamic idle improves PID controller performance at zero throttle by permitting stronger braking of motors that are in positive airflow conditions.  
+It requires and ESC that supports Bidirectional DShot telemetry - ie, an ESC that can send RPM data to the flight controller.  
+
+By using this RPM data, the flight controller can dynamically alter motor drive to prevent any motor falling below a set minimum RPM.  This improves handling and reduces the risk of desyncs.  It also allows lower fixed idle settings, which improves straight line braking and hang time.  Additionally, dynamic idle improves PID controller performance at zero throttle by permitting stronger braking of motors that are in positive airflow conditions.  
 
 NOTE 1:  Dynamic Idle requires [fully functional BiDirectional DShot telemetry](https://github.com/betaflight/betaflight/wiki/Bidirectional-DSHOT-and-RPM-Filter).  
 
@@ -17,9 +19,9 @@ NOTE 4: **Transient throttle limit should be disabled while using Dynamic Idle**
 
 #### Let's first explain how idle is managed without dynamic idle.  
 
-Without dynamic idle, the lower limit of motor drive, under all conditions, is set by the `dshot_idle_value`. This defaults to 5.5%.   When throttle stick is at zero, the motors get 5.5% motor drive.  The PIDs cannot reduce motor drive below 5.5%, either. 
+Without dynamic idle, the lower limit of motor drive, under all conditions, is set by the `dshot_idle_value`. This defaults to 5.5%.   When throttle stick is at zero, the motors always get 5.5% motor drive.  The PIDs cannot reduce motor drive below 5.5%, either. 
 
-Imagine we are in a flat drop, or have done a quick 180 degree reversal from high forward speed.  In both these situations, airflow is pushing up into the props from below the quad (negative inflow).  This can slow them down a lot.  They may either turn so slowly that they can't start quickly when needed, or stop spinning completely, or even spin backwards.  This can lead to poor handling or total loss of control (motor desync), often most obvious at the end of fast flips or rolls.  To avoid these issues, we usually need to set the `dshot_idle_value` relatively high.  This limits inverted hang time, makes the quad more floaty, and doesn't allow strong motor braking.
+Imagine we are in a flat drop, or have done a quick 180 degree reversal from high forward speed.  In both these situations, airflow is pushing up into the props from below the quad (negative inflow).  This can slow them down a lot.  They may either turn so slowly that they can't start quickly when needed, or stop spinning completely, or even spin backwards.  This can lead to poor handling or total loss of control (motor desync), often most obvious at the end of fast flips or rolls.  To avoid these issues, we usually need to set the `dshot_idle_value` relatively high.  Because the motors are always getting a relatively high drive signal, even when it isn't really needed, we get a limit on our inverted hang time, the quad can be floaty, and we don't get such strong motor braking as we need when stopping flips and making quick moves, or when chopping throttle.
 
 If we want to quickly stop a fast roll move, we need to slow down the driving motors.  When we tell them to stop, they are moving quickly forward in the air.  They have strongly positive airflow which keeps them spinning faster than they need to be.  The PIDs would really like to send zero motor drive to them - maximal braking - but cannot send less than 5.5%, even though they are in no danger of stopping.  Because they can't be slowed down as much as they could, our ability to stop the turn is not as good as it could be.
 
@@ -140,6 +142,8 @@ Optimal dynamic idle for experienced racers, who keep throttle on most of the ti
 
 
 ### The technical stuff
+
+When we first arm, until Airmode is activated, Dynamic Idle is constrained to a fixed 4% maximum increase in motor drive, for safety reasons.  If we have set DShot idle to a very low value, like 1%, we may see a slightly lower, and very stable, RPM before Airmode activates - a value which may be less than our configured minimum RPM.  Once Airmode is active, Dynamic Idle becomes fully effective, that is removed, and the RPM should not fall below the target RPM while in flight.   
 
 Dynamic idle adjustments are not instantaneous.  The correction factor uses a special PID controller where the adjustment is proportional to the difference between the needed and actual motor accelerations.  Feedback delays have some potential for instability when extreme values are used.  
 
