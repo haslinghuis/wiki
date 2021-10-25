@@ -1,5 +1,7 @@
 Welcome to the Betaflight firmware-presets wiki!
 
-Quick start guide on how to add your presets to Betafligt:
+Please find the full description here:
+https://github.com/betaflight/firmware-presets#firmware-presets
 
-Preset Authors: Quick Start
+Quick start guide on how to add your presets to Betafligt:
+[Quick-Start-for-Preset-Authors](Quick-Start-for-Preset-Authors)
