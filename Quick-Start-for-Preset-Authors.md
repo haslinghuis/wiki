@@ -4,3 +4,5 @@ You will need:
 1. Github Account and basic Github understanding
 2. Installed [Git](https://git-scm.com/downloads) and/or [GitHub Desktop](https://desktop.github.com/)
 3. Installed [node.js](https://nodejs.org/en/download/)
+
+....
