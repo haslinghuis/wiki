@@ -29,6 +29,10 @@
  - [Betaflight 4.0](4.0-Tuning-Notes)
  - [Betaflight 3.5](3.5-tuning-notes)
  - [Betaflight 3.4](Tuning-Tips-for-Betaflight-3.4)
+
+# Presets in BF 4.3
+
+ - [Presets in BF 4.3](Presets in BF 4.3)
  
 # Community Presets
 
