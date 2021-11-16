@@ -19,7 +19,7 @@ set serialrx_halfduplex=ON
 
 5) Hit Save.
 
-6) On the REVOLT V2 you also need to jumper the RX1 and TX1 pads to get receiver working. [Take a look here.](https://drive.google.com/open?id=0B5fFGD7QYC-lVFBkT0dLV3Y2ekZId0RWTFV2ci1FWVNFNTlJ)
+6) On the REVOLT V2 you also need to jumper the RX1 and TX1 pads to get receiver working. [Take a look here.](https://drive.google.com/file/d/0B5fFGD7QYC-lVFBkT0dLV3Y2ekZId0RWTFV2ci1FWVNFNTlJ/view?usp=sharing&resourcekey=0-zYWN4zV_ZKSK-V4xl_J6Ow)
 
 Enjoy 
 
