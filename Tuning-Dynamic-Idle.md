@@ -2,13 +2,13 @@
 
 Dynamic Idle improves how Betaflight controls the motors at the low end of the rpm range.
 
-It requires and ESC that supports Bidirectional DShot telemetry - ie, an ESC that can send RPM data to the flight controller.  
+It requires an ESC that supports Bidirectional DShot telemetry - ie, an ESC that can send RPM data to the flight controller.  
 
-By using this RPM data, the flight controller can dynamically alter motor drive to prevent any motor falling below a set minimum RPM.  This improves handling and reduces the risk of desyncs.  It also allows lower fixed idle settings, which improves straight line braking and hang time.  Additionally, dynamic idle improves PID controller performance at zero throttle by permitting stronger braking of motors that are in positive airflow conditions.  
+Using this RPM data, the flight controller can dynamically alter motor drive to prevent any motor falling below a set minimum RPM.  This improves handling and reduces the risk of desyncs.  It also allows lower fixed idle settings, which improves straight line braking and hang time.  Additionally, dynamic idle improves PID controller performance at zero throttle by permitting stronger braking of motors that are in positive airflow conditions.  
 
 NOTE 1:  Dynamic Idle requires [fully functional BiDirectional DShot telemetry](https://github.com/betaflight/betaflight/wiki/Bidirectional-DSHOT-and-RPM-Filter).  
 
-NOTE 2: **Dynamic Idle is off by default**.  To enable it, set `dyn_idle_min_rpm` to a suitable value in the CLI.  For typical 5" quadcopters 20 is a suitable starting point.  Please read the tuning section, below.
+NOTE 2: **Dynamic Idle is off by default**.  To enable it, enable DShot Telemetry, and set `dyn_idle_min_rpm` to a suitable value in the CLI.  For typical 5" quadcopters 30-40 (3000-4000 RPM) is a suitable starting point.  Please read the tuning section, below.
 
 NOTE 3: Dynamic Idle must not be used with 3D mode.
 
@@ -21,7 +21,9 @@ NOTE 4: **Transient throttle limit should be disabled while using Dynamic Idle**
 
 Without dynamic idle, the lower limit of motor drive, under all conditions, is set by the `dshot_idle_value`. This defaults to 5.5%.   When throttle stick is at zero, the motors always get 5.5% motor drive.  The PIDs cannot reduce motor drive below 5.5%, either. 
 
-Imagine we are in a flat drop, or have done a quick 180 degree reversal from high forward speed.  In both these situations, airflow is pushing up into the props from below the quad (negative inflow).  This can slow them down a lot.  They may either turn so slowly that they can't start quickly when needed, or stop spinning completely, or even spin backwards.  This can lead to poor handling or total loss of control (motor desync), often most obvious at the end of fast flips or rolls.  To avoid these issues, we usually need to set the `dshot_idle_value` relatively high.  Because the motors are always getting a relatively high drive signal, even when it isn't really needed, we get a limit on our inverted hang time, the quad can be floaty, and we don't get such strong motor braking as we need when stopping flips and making quick moves, or when chopping throttle.
+Imagine we are in a flat drop, or have done a quick 180 degree reversal from high forward speed.  In both these situations, airflow is pushing into the props from below the quad (negative inflow).  This can slow them down a lot.  They may either turn so slowly that they can't start quickly when needed, or stop spinning completely, or even spin backwards.  This can lead to poor handling or total loss of control (motor desync), often most obvious at the end of fast flips or rolls.  To avoid these issues, we usually need to set the `dshot_idle_value` relatively high.  
+
+Also, because the motors are always getting a relatively high drive signal, even when it isn't really needed, we get a limit on our inverted hang time, the quad can be floaty, and we don't get such strong motor braking as we need when stopping flips and making quick moves, or when chopping throttle.
 
 If we want to quickly stop a fast roll move, we need to slow down the driving motors.  When we tell them to stop, they are moving quickly forward in the air.  They have strongly positive airflow which keeps them spinning faster than they need to be.  The PIDs would really like to send zero motor drive to them - maximal braking - but cannot send less than 5.5%, even though they are in no danger of stopping.  Because they can't be slowed down as much as they could, our ability to stop the turn is not as good as it could be.
 
@@ -37,55 +39,49 @@ Because the motors won't slow down as much under strong reverse airflow conditio
 
 Under strongly positive inflow conditions, where the motors will be spinning faster than expected, they can now be braked much harder, since the PIDs can send as little as zero drive to slow them down, instead of the mandatory 5.5%.  This is beneficial when quickly stopping a fast flip or roll, or when performing tricks during inverted drops.  
 
-These are the three key elements to dynamic idle:
+These are the three key elements to dynamic idle for 4.2, but only the first two are relevant in 4.3:
 
 1.  We get the actual motor RPM via bidirectional DShot telemetry, and use this to prevent any motor falling below the set `dyn_idle_min_rpm` value.  
 
 2.  We allow the PIDs to send motor drive to zero, provided that RPM is OK
 
-3.  The `dshot_idle_value` becomes our minimum throttle value.
+3.  In 4.2, the `dshot_idle_value` becomes our minimum throttle value.  In 4.3, the `dshot_idle_value` is ignored.
 
-The dynamic idle minimum value becomes the effective minimum idle RPM, a kind of 'safety net' under which RPM should not fall.  
 
 ## Setup - enabling dynamic idle
 
-`dyn_idle_min_rpm` must be above zero to enable Dynamic Idle.
+- Enable DShot Telemetry
+- set `dyn_idle_min_rpm` above zero, eg between 30 and 40, to enable Dynamic Idle.
 
-The ideal setting for `dyn_idle_min_rpm` is about 20% less than the RPM shown in the motors tab at idle.  
+In Betaflight 4.3, that's all you need to do.  
+4.3 users should follow the instructions in the 4.3 tuning guide, and not the instructions below.
+
+In 4.2, the Dynamic Idle control code was not so effective, and the following (complicated) setup procedure was recommended:
 
 - Take props off !!
-- Check your Dshot Idle value in the configuration page of the configurator
+- Set your normal Dshot Idle value in the configuration page of the configurator
 - Go to the motors tab
 - Re-check that you really did take props off !! :-)
 - Connect a Lipo at around 3.8 - 3.9V
-- Enable the motors with the switch
-- Use the master slider to adjust motor drive to your idle value, which is 10XX where XX is your idle value.
-- For example, if your Dshot Idle value is 5%, set the motor drive to 1050
-- check the RPM number under the bar graph, take two zeroes off, and take off 20% (or multiply by 0.8)
-- set your dynamic idle minimum RPM value to that number.
+- Enable the motors
+- Use the master slider to adjust motor drive; for example, if your Dshot Idle value is 5%, set the motor drive to 1050
+- read the RPM you get at this idle.
+- set your dynamic idle minimum RPM value to something a bit below the idle RPM.  Note that 20 means 2000 RPM.
 
-For example, if the idle RPM at 1050 was say 2,000, take two zeros off to get 20, then take off 20% (or multiply by 0.8) to get 16; set your dynamic idle minimum (`dyn_idle_min_rpm` in CLI) to 16.
+For example, if the idle RPM at 1050 was say 2,000, take two zeros off to get 20, then take off 20% to get 16; set your dynamic idle minimum (`dyn_idle_min_rpm` in CLI) to 16.
 
-Always measure rpm properly using the motors tab.  Do not guess the numbers.  
-
-You may arm with the Tx in the motors tab (after setting the enable switch) to check that the idle RPM in real world is about the same as it is when running directly from the motors tab slider.  You may notice that noise from the motors will cause some variability, but the RPM numbers should be about the same.  Don't lift the throttle at all after arming!
-
-Note that after configuring the minimum idle RPM as above, the actual idle rpm in the motors tab does not change.  
+This setting method puts a kind of throttle up value of 5.5% above a minimum rpm which acts as a lower 'back-stop'.
 
 If you already are running a known good DShot idle value, start off with that, and set the `dyn_idle_min_rpm` value set 20% lower as described above.  
-
-**NOTE: If you want to change your overall idle value, you must change your DShot `Motor Idle Throttle Value`, and then re-adjust your `dyn_idle_min_rpm` value, as above.**
-
-There is no need to change anything if you enable `motor_output_limit` at less than 100, since it does not change the idle rpm, attenuating motor drive above the idle value only.
 
 
 ## Tuning
 
-Most of the benefits of dynamic idle happen 'out of the box' as soon as dynamic idle is enabled at the correct rpm value.  Turn responsiveness, drop stability and hang time should improve immediately.
+Most of the benefits of dynamic idle happen 'out of the box' as soon as dynamic idle is enabled at the correct rpm value.  Turn responsiveness, drop stability, and desync reduction should improve immediately.
 
-Higher idle values (both increased together) will keep the motors spinning more quickly when the throttle is cut, or in strongly positive inflow states.  This will lead to more rapid spool up when needed, better zero throttle stability, and crisper flips - at the cost of less effective braking and a more 'floaty' feel, and reduced inverted hang time.   
+Higher minimum RPM values - 30-40 - with lower DShot Idle percent values will keep the motors spinning more quickly when the throttle is cut, or in strongly positive inflow states.  This will lead to more rapid spool up when needed, better zero throttle stability, and crisper flips - at the cost of less effective braking and a more 'floaty' feel, and reduced inverted hang time.   
 
-Lower idle values (both reduced together) will lead to improved inverted hang time, at the cost of reduced stability when chopping throttle hard after a punch, when blipping up from idle, and any time you are at idle, eg mid-flip, flat drops, etc.  Because the motors will idle more slowly, they may have difficulty re-starting after being commanded to idle, eg at the end of a flip, causing instability and bounce back.  
+Lower idle values (both reduced together) will lead to improved inverted hang time, at the cost of greater risk of de-sync, reduced stability when chopping throttle hard after a punch, when blipping up from idle, and any time you are at idle, eg mid-flip, flat drops, etc.  Because the motors will idle more slowly, they may have difficulty re-starting after being commanded to idle, eg at the end of a flip, causing instability and bounce back.  
 
 Every quad is different, and the purpose we put them to varies a great deal.  Unless your requirements or build are unusual, the default idle value is usually quite good.  
 
@@ -94,7 +90,7 @@ Low authority quads (larger props, weaker motors, ducted cine quads, endurance q
 High authority quads often fly best with idle values around 4-4.5%.
 
 
-#### I'm after lots of inverted hang time
+#### I'm after lots of inverted hang time in 4.2
 
 To get longer inverted hang time, go for the lowest possible values of both DShot idle percentage and `dyn_idle_min_rpm`.  Keep `dyn_idle_min_rpm` adjusted relative to DShot as described above (20% lower than the idle rpm).  
 
@@ -111,7 +107,7 @@ Really low idle settings may maximise inverted time but will adversely affect st
 
 #### Is this useful for whoops?
 
-Yes, for sure.  Whoops have low authority at idle that is often improved significantly with the combination of Thrust Linear and Dynamic Idle.  
+Yes, for sure.  4.3 is better.  Whoops have low authority at idle that is often improved significantly with the combination of Thrust Linear and Dynamic Idle.  
 
 Whoops may require higher than default idle values to keep their motors spinning reliably.
 
@@ -126,7 +122,7 @@ Note that if the rpm from `dyn_idle_min_rpm` is higher than that of DShot idle, 
 
 #### I'm a race pilot
 
-At present we have no hard data on how best to configure dynamic idle for racing.
+Mostly a high minimum RPM of 3500 - 4000 works best.  The DSHot Idle value can be set low, eg 2-3%
 
 Racers typically use low throttle very little of the time, so you might wonder why you'd bother with something that only influences idle behaviour.  
 
