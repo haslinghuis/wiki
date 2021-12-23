@@ -193,6 +193,8 @@ DUAL_GYRO_COMBINED:  (programmer useful only)
 * [2] = pitch: filtered gyro (same as “gyro” trace)
 * [3] = [empty]
 
+### ExpressLRS SPI Receiver 
+
 DEBUG_RX_EXPRESSLRS_PHASELOCK (ExpressLRS software based PPL)
 * [0] = rawOffsetUs: instantaneous phase offset measured by last timer tick 
 * [1] = offsetUs: filtered offset value used in software PLL
