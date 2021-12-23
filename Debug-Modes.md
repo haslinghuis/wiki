@@ -44,6 +44,18 @@ PIDLOOP:
 * [2] Time in microseconds for mixer, servos, motor update, dshot telemetry stats
 * [3] Time in microseconds the mag hold and blackbox processing logic
 
+DEBUG_SCHEDULER_DETERMINISM: Requires USE_LATE_TASK_STATISTICS to be defined so not present on F411
+* [0] - Gyro task start cycle time in 10th of a us
+* [1] - ID of late task
+* [2] - Amount task is late in 10th of a us
+* [3] - Gyro lock skew in clock cycles
+
+DEBUG_TIMING_ACCURACY: Requires USE_LATE_TASK_STATISTICS to be defined so not present on F411
+* [0] - % CPU busy
+* [1] - Tasks late in last second
+* [2] - Total lateness in last second in 10ths us
+* [3] - Total tasks run in last second
+
 ### GYRO SIGNAL (https://youtu.be/A09sprstYqI)
 GYRO_RAW: (does have gyro's internal Digital Lowpass Filter (DLPF) applied)
 
