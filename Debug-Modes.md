@@ -187,6 +187,24 @@ DUAL_GYRO_COMBINED:  (programmer useful only)
 * [2] = pitch: filtered gyro (same as “gyro” trace)
 * [3] = [empty]
 
+DUAL_GYRO_COMBINED:  (programmer useful only)
+* [0] = [empty]
+* [1] = roll: filtered gyro (same as “gyro” trace)
+* [2] = pitch: filtered gyro (same as “gyro” trace)
+* [3] = [empty]
+
+DEBUG_RX_EXPRESSLRS_PHASELOCK (ExpressLRS software based PPL)
+* [0] = rawOffsetUs: instantaneous phase offset measured by last timer tick 
+* [1] = offsetUs: filtered offset value used in software PLL
+* [2] = frequencyOffsetTicks: frequency offset (in timer ticks) between ELRS transmitter and RX
+* [3] = phaseShiftUs: current instantaneous phase shift value that will applied next timer tick
+
+DEBUG_RX_EXPRESSLRS_SPI (ExpressLRS SPI RX)
+* [0] = lostConnectionCounter: counts the number of times the connection has been lost since startup
+* [1] = rssiFiltered: current low-pass filtered RSSI value reported from sx1280/sx127x
+* [2] = snr: current SNR reported by sx1280/sx127s
+* [3] = uplinkLQ: uplink link quality percentage 
+
 ### Debug 
 
 | DEBUG TYPE |
@@ -256,3 +274,5 @@ DUAL_GYRO_COMBINED:  (programmer useful only)
 | DEBUG_D_LPF |
 | DEBUG_VTX_TRAMP |
 | DEBUG_GHST |
+| DEBUG_RX_EXPRESSLRS_SPI |
+| DEBUG_RX_EXPRESSLRS_PHASELOCK |
