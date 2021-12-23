@@ -88,10 +88,10 @@ FFT_FREQ:
 * [3] = gyroDebugAxis: pre-dyn notch (post lowpass and RPM filter) gyro data
 
 FFT:
-* [0] = pre-dyn notch gyro roll data
-* [1] = gyro roll data only filtered with the dynamic notch
-* [2] = resampled and bandpass filtered data used for FFT
-* [3] = weighted center Index of the FFT-bins * 100. This is used to calculate the center frequency
+* [0] = gyroDebugAxis: pre-dyn notch gyro data
+* [1] = gyroDebugAxis: post-dyn notch gyro data
+* [2] = gyroDebugAxis: downsampled data used for FFT
+* [3] = [empty]
 
 FFT_TIME:
 * [0] = currently active calculation step
