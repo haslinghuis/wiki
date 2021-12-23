@@ -41,3 +41,7 @@ OS X should support clang 7, 10 or 12. Install `clang` on Ubuntu (or Ubuntu usin
 
     $ sudo apt update
     $ sudo apt install clang
+
+## GLIBC issues on Alpine
+
+Please see: [Apline wiki](https://wiki.alpinelinux.org/wiki/Running_glibc_programs)
