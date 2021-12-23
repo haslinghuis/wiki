@@ -85,10 +85,10 @@ FFT_FREQ:
 * [0] = gyroDebugAxis: notch 1 center frequency
 * [1] = gyroDebugAxis: notch 2 center frequency
 * [2] = gyroDebugAxis: notch 3 center frequency
-* [3] = gyroDebugAxis: pre-dyn notch (post lowpass and RPM filter) gyro data
+* [3] = gyroDebugAxis: pre-dyn notch gyro data (post lowpass and RPM filter)
 
 FFT:
-* [0] = gyroDebugAxis: pre-dyn notch gyro data
+* [0] = gyroDebugAxis: pre-dyn notch gyro data (post lowpass and RPM filter)
 * [1] = gyroDebugAxis: post-dyn notch gyro data
 * [2] = gyroDebugAxis: downsampled data used for FFT
 * [3] = [empty]
@@ -96,7 +96,7 @@ FFT:
 FFT_TIME:
 * [0] = currently active calculation step
 * [1] = duration of this step
-* [2] = duration of additional steps
+* [2] = [empty]
 * [3] = [empty]
 
 RPM_FILTER:
