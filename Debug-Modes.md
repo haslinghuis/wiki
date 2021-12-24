@@ -11,19 +11,48 @@
 
 * "get DEBUG_MODE"  - Shows the current debug mode and all available debug modes.
 
+***
+
 ### DEBUG MODES
+
+### PIDs
+
+D_MIN:
+* [0] = gyro factor (percent, scaled by `d_min_gain`)
+* [1] = setpoint factor (percent, scaled by `d_min_advance`). The larger of _gyro_ and _setpoint_ factors takes effect.
+* [2] = roll: active D-term gain
+* [3] = pitch: active D-term gain
+
+ITERM_RELAX: (https://youtu.be/QfiGTG5LfCk)
+* [0] = highpass filter to detect large setpoint changes
+* [1] = relax factor (percent, only used in `SETPOINT` mode)
+* [2] = relaxed I-term Error
+* [3] = absolute control axis error [roll]
+
+ANTI_GRAVITY: I and P boost during rapid throttle changes
+* [0] = simple I gain factor from high-pass throttle (* 1000)
+* [1] = final I gain factor (includes a delayed smoothed lowpass element (* 1000)
+* [2] = P gain factor (* 1000) [roll]
+* [3] = P gain factor (* 1000) [pitch]
+
+FEEDFORWARD_LIMIT (FF_LIMIT): Cuts back on Feedforward when sticks rapidly approach max rate
+* [0] = Limit factor [roll]
+* [1] = Limit factor [pitch]
+* [2] = Limited feedforward [roll]
+* [3] = Not used
+
+FEEDFORWARD (4.3): 
+* [0] = Interpolated Setpoint [roll]
+* [1] = Setpoint delta, smoothed [pitch]
+* [2] = Boost factor, smoothed [roll]
+* [3] = RC Command delta [roll] (us]
+
 
 DSHOT_RPM_ERRORS:
 * [0] = Motor #1: the per-motor invalid packet percentages in hundredths of a percent (so 123 is 1.23%)
 * [1] = Motor #2:   "
 * [2] = Motor #3:   "
 * [3] = Motor #4:   "
-
-SMARTAUDIO:
-* [0] = SmartAudio Version * 100 + Device Mode
-* [1] = Device Channel
-* [2] = Device Frequency
-* [3] = Device Power
 
 DYN_IDLE:
 
@@ -166,18 +195,6 @@ FF_THUMB (Absolute Control Correction):
 * [2] = FF after max deflection
 * [3] = projected max rate due to stick extrapolation
 
-ITERM_RELAX: (https://youtu.be/QfiGTG5LfCk)
-* [0] = highpass filter to detect large setpoint changes
-* [1] = relax factor (percent, only used in `SETPOINT` mode)
-* [2] = relaxed I-term Error
-* [3] = absolute control axis error [roll]
-
-D_MIN:
-* [0] = gyro factor (percent, scaled by `d_min_gain`)
-* [1] = setpoint factor (percent, scaled by `d_min_advance`). The larger of _gyro_ and _setpoint_ factors takes effect.
-* [2] = roll: active D-term gain
-* [3] = pitch: active D-term gain
-
 ### SENSOR FUSION GYRO BOARDS:
 DUAL_GYRO_RAW:
 * [0] = roll: RAW gyro #1 data (NOT scaled to Deg/sec)
@@ -209,7 +226,39 @@ DUAL_GYRO_COMBINED:  (programmer useful only)
 * [2] = pitch: filtered gyro (same as “gyro” trace)
 * [3] = [empty]
 
-### ExpressLRS SPI Receiver 
+### VTX
+
+SMARTAUDIO:
+* [0] = SmartAudio Version * 100 + Device Mode
+* [1] = Device Channel
+* [2] = Device Frequency
+* [3] = Device Power
+
+TRAMP
+* [0] = Status
+* [1] = Reply Code
+* [2] = Pit Mode
+* [3] = Retry Count
+
+### RX
+
+SBUS (FrSky SBUS)
+* [0] = Frame flags
+* [1] = State Flags
+* [2] = Frame Time
+* [3] = not used
+
+FPORT (FrSky FPORT)
+* [0] = Frame Interval
+* [1] = Frame Errors
+* [2] = Last Error
+* [3] = Telemetry Interval
+
+GHST (Ghost)
+* [0] = CRC Error Count
+* [1] = RSSI
+* [2] = Link Quality
+* [3] = Unknown Frame count
 
 DEBUG_RX_EXPRESSLRS_PHASELOCK (ExpressLRS software based PPL)
 * [0] = rawOffsetUs: instantaneous phase offset measured by last timer tick 
