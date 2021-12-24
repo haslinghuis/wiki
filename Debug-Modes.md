@@ -288,11 +288,35 @@ GHST (Ghost)
 * [2] = Link Quality
 * [3] = Unknown Frame count
 
-RX_FRSKY_SPI (FrSky SPI software based Rx)
-* [0] = Looptime 
-* [1] = Packet
-* [2] = Missing Packets
-* [3] = State
+CRSF_LINK_STATISTICS_UPLINK
+* [0] = Uplink RSSI 1
+* [1] = Uplink RSSI 2
+* [2] = Uplink Link Quality
+* [3] = RF Mode
+
+CRSF_LINK_STATISTICS_UPLINK
+* [0] = Uplink RSSI 1
+* [1] = Uplink RSSI 2
+* [2] = Uplink Link Quality
+* [3] = RF Mode
+
+CRSF_LINK_STATISTICS_PWR
+* [0] = Antenna 
+* [1] = SNR
+* [2] = Tx Power
+* [3] = not used
+
+CRSF_LINK_STATISTICS_DOWN
+* [0] = Downlink RSSI 
+* [1] = Downlink LQ
+* [2] = Downlink SNR
+* [3] = not used
+
+RX_SFHSS_SPI (FrSky SPI software based Rx)
+* [0] = Data State 
+* [1] = Missing Frame
+* [2] = Offset Max
+* [3] = Offset Min
 
 RX_EXPRESSLRS_PHASELOCK (ExpressLRS software based PPL)
 * [0] = rawOffsetUs: instantaneous phase offset measured by last timer tick 
@@ -332,6 +356,7 @@ Not all debug options are available in some firmware builds.
 | DEBUG_RX_SFHSS_SPI |
 | DEBUG_GYRO_RAW |
 | DEBUG_DUAL_GYRO_RAW |
+| DEBUG_DUAL_GYRO_COMBINED |
 | DEBUG_DUAL_GYRO_DIFF |
 | DEBUG_MAX7456_SIGNAL |
 | DEBUG_MAX7456_SPICLOCK |
@@ -376,5 +401,7 @@ Not all debug options are available in some firmware builds.
 | DEBUG_D_LPF |
 | DEBUG_VTX_TRAMP |
 | DEBUG_GHST |
+| SCHEDULER_DETERMINISM |
+| TIMING_ACCURACY |
 | DEBUG_RX_EXPRESSLRS_SPI |
 | DEBUG_RX_EXPRESSLRS_PHASELOCK |
