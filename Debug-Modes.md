@@ -1,4 +1,4 @@
-### INFORMATION COMMANDS
+### CLI INFORMATION COMMANDS
 * "VERSION" - Shows the current firmware loaded and the last github code commit [ie: "(9f67a584b)"] for the specific build of the firmware.
 
 * "STATUS" - Shows various information about the quad setup such as ROM space available for firmware, gyro type, detected voltage, etc...
@@ -8,6 +8,10 @@
 * "DSHOT_TELEMETRY_INFO" - Shows the Dshot RPM bi-directional telemetry packet success for each ESC. (4.1+)
 
 * "RC_SMOOTHING_INFO" - Shows the detected RX frame rate.  This only works if the "Filter" RC signal smoothing type is selected in the Receiver tab, and both "Input Cutoff Type" and "Derivative Cutoff Type" are set to "auto".  The radio and RX need to be connected and powered up for the detected frame rate data to be valid.
+
+* "get DEBUG_MODE"  - Shows the current debug mode and all available debug modes.
+
+### DEBUG MODES
 
 DSHOT_RPM_ERRORS:
 * [0] = Motor #1: the per-motor invalid packet percentages in hundredths of a percent (so 123 is 1.23%)
