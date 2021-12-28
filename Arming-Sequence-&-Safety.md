@@ -50,7 +50,7 @@ This list *should* be kept up to date with the code in `master` (`armingDisableF
 <tr><th>3.2</th><th>3.3</th><th>3.4/3.5</th><th>4.0</th><th>4.1</th><th>4.2+</th></tr>
 <tr><td><code>NOGYRO</code></td><td>A gyro was not detected</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>You may have a hardware failure, if a previous firmware version works then it may be a firmware issue. Or you might have flashed a wrong target.</td></tr>
 <tr><td><code>FAILSAFE</code></td><td>Failsafe is active</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>Rectify the failure condition and try again.</td></tr>
-<tr><td><code>RXLOSS</code><sup>(1)</sup></td><td>No valid receiver signal is detected</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>Your receiver is either faulty or has no link to the transmitter.</td></tr>
+<tr><td><code>RXLOSS</code><sup>(1)</sup> or <code>RX_FAILSAFE</code></td><td>No valid receiver signal is detected</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>Your receiver is either faulty or has no link to the transmitter.</td></tr>
 <tr><td><code>BADRX</code><sup>(1)</sup></td><td>Your receiver has just recovered from receiver failsafe but the arm switch is on</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>Switch the arm switch off.</td></tr>
 <tr><td><code>BOXFAILSAFE</code></td><td>The 'FAILSAFE' switch was activated</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>See <code>FAILSAFE</code></td></tr>
 <tr><td><code>RUNAWAY</code></td><td>Runway Takeoff Prevention has been triggered</td><td> </td><td>6</td><td>6</td><td>6</td><td>6</td><td>6</td><td>Disarm to clear this condition.</td></tr>
