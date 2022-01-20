@@ -110,9 +110,9 @@ FEEDFORWARD_LIMIT (FF_LIMIT): Cuts back on Feedforward when sticks rapidly appro
 
 FEEDFORWARD (4.3): 
 * [0] = Interpolated Setpoint [roll]
-* [1] = Setpoint delta, smoothed [pitch]
+* [1] = Setpoint delta, smoothed [roll]
 * [2] = Boost factor, smoothed [roll]
-* [3] = RC Command delta [roll] (us]
+* [3] = RC Command delta [roll] (us)
 
 FF_INTERPOLATED (4.2): 
 * [0] = Setpoint Delta [roll]
