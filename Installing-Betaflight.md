@@ -73,6 +73,10 @@ Linux does not know the concept of product specific 'device drivers', so no driv
 
 Linux requires udev rules to allow write access to USB devices for users.  If you are not familiar with udev rules don’t worry, we will walk you through the process in the proceeding steps using the command line interface (CLI).
 
+Note: you might need to install libatomic:
+
+    $ sudo apt install libatomic1
+
 #### Step 0:
 Without next commant configurator will not launch on at least ubuntu 20.04 and higher
 
