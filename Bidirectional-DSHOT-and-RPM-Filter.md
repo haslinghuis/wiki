@@ -26,7 +26,7 @@ On clean quads, lowpass filter delay can usually be improved by moving cutoff fr
 
 For RPM Filtering to work, the ESC must support the Bidirectional DShot protocol and Bidirectional DShot must be enabled in the CLI. 
 
-These two features are supported by BetaFlight 4.1 on all flight controllers, and most modern BLHeli_32 and BLHeli-S ESCs. Betaflight 4.0 is no longer supported.
+These two features are supported by BetaFlight 4.1 and higher on all flight controllers, and most modern BLHeli_32 and BLHeli-S ESCs. Betaflight 4.0 is no longer supported.
 
 Here's a demo in flight. Quad has minimal filtering other than the rpm filter, handles very well and shows close to no prop wash: 
 https://youtu.be/jwFYaGHp91c, https://youtu.be/SoG245vmaLo
