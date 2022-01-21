@@ -1,17 +1,22 @@
 ### Recent Announcements
 
-- **WARNING!** - Avoid any unofficial beta BLHeli_S firmware versions from JazzMaverick **after 16.73** as they are incompatible with RPM Filtering. The author made undesirable changes that reduce the rate at which RPM telemetry data is supplied. As a result the RPM filtering will not track the motor vibrations well, resulting in poor filtering performance and possibly hotter motors. The 16.73 version is the only recommended version that properly supports RPM filtering.
-- Latest EA of a custom BF 4.1 Performance Edition for F3 FCs available. [Get it here!](https://github.com/joelucid/betaflight/releases)
-- JESC supports bidirectional DSHOT and RPM Filter on BLHeli_S escs. Free on L ESCs, Paid but VERY cheap and worth it on H ESCs! 48khz and 96khz PWM version available for testing [Get it here!](https://jflight.net)
-- Bidirectional DSHOT now fully supported in the just released version 32.7.0 of blheli32. You can flash from configurator without downloading hex files manually.
+- [Bluejay](https://github.com/mathiasvr/bluejay) is a new, free, well-supported BlHeli-S firmware that supports DShot telemetry, with a range of options.
+- [https://esc-configurator.com](https://esc-configurator.com) is an online ESC configurator that can flash BlHeli-S and Bluejay to BLHeli-S ESCs, and AM32 to BlHeli-32 ESCs.
+- JazzMaverick is another free BlHeli-S firmware option. **WARNING!** Some JazzMaverick BLHeli_S firmware versions do not work well.  The 16.73 version is OK, and properly supports RPM filtering.  Versions 16.74 though 16.8 may be problematic and are best avoided.  16.9 appears to be OK.  
+- [JESC](https://jflight.net) was the first ESC firmware to support RPM filtering on BLHeli_S escs.  It was written by the JoeLucid, who wrote the DShot telemetry code that underpins all bidirectional DShot functionality, such as Dynamic Idle and RPM Filtering.  JESC is free on L ESCs, but payment is required for H ESCs. 48khz and 96khz PWM versions are available.
+- Bidirectional DSHOT is fully supported in 32.7.0 and higher versions of blheli32.  AM32 can also be flashed (but not readily un-flashed) on BlHeli-32 ESCs. 
 
 ## Introduction
 
-RPM based filtering gives better motor noise than ever before.  Motors will be cooler, bent prop tolerance is much better, and full throttle sounds cleaner and often is faster.
+Bidirectional DShot Telemetry allows the ESC to report RPM data back to the flight controller over the same single wire that we use to control the ESC.
 
-If the dynamic notch filter is kept active, it can be narrower, reducing delay; also it gets freed up to eliminate frame resonances. 
+When the Flight Controller knows the RPM of each motor, it can set notch filters at exactly the right frequency to remove that noise.  We can also use that RPM information to dynamically control idle RPM, and prevent it dropping too low.  This is the Dynamic Idle feature, which gives better protection against ESC desync than conventional idle.
 
-On clean quads, lowpass filter delay can usually be improved by moving cutoff frequencies higher or disabling some gyro filtering.  This should be done carefully, after reading the [tuning guide](#Tuning).
+RPM based filtering gives better control over motor RPM related noise than was possible previously.  Motors are cooler, bent prop tolerance is better, and full throttle sounds cleaner and often is faster.
+
+With RPM filtering, the dynamic notch filter can be narrower, reducing delay, and since it doesn't need to track motor rpm related noise, is now better at eliminating frame resonances.  Configurator automatically makes these adjustments when RPM filtering is enabled or disabled.
+
+On clean quads, lowpass filter delay can usually be improved by moving cutoff frequencies higher or disabling some gyro filtering once RPM filtering is enabled.  This should be done carefully, after reading the [tuning guide](#Tuning).
 
 There are two underlying technologies:
 
@@ -36,7 +41,7 @@ If the RPM Filter is enabled but one or more of the ESC's are not supplying vali
 
 The Bidirectional DShot protocol is different (and more robust) in BetaFlight 4.1 than BetaFlight 4.0. The ESC code must be correct for the version of Betaflight you are running. 
 
-**For BLHeli_32 ESCs**, Bidirectional DShot is now a fully supported feature in version 32.7.0. Just upgrade using blheli32 configurator.
+**For BLHeli_32 ESCs**, Bidirectional DShot is now a fully supported feature in version 32.7.0. Just upgrade using blheli32 configurator.  AM32 also fully supports 
 
 **For BLHeli-S ESCs**, various options exist.
 
@@ -44,19 +49,20 @@ The Bidirectional DShot protocol is different (and more robust) in BetaFlight 4.
 |---|---|---|
 | JFlight | Paid | https://jflight.net/ |
 | JazzMaverick | Free | https://github.com/JazzMaverick/BLHeli/tree/JazzMaverick-patch-1/BLHeli_S%20SiLabs | 
-| BlueJay | Free | https://github.com/mathiasvr/bluejay |
+| BlueJay | Free | https://github.com/mathiasvr/bluejay using https://esc-configurator.com|
 
 **JFlight**
 
-Install Betaflight 4.1, go to [jflight.net](https://jflight.net), check that your ESC and FC are supported, purchase enough licences, and follow the install instructions - download the custom JESC BLHeli-S configurator, select your ESC, select the correct hex, click the blue 'flash all' button, then then flash the telemetry code over that by clicking 'flash all telemetry'.  Use the flash version at the top of the list.  JESC requires Betaflight 4.1.
+This is the original BlHeli-S RPM firmware, from the developer of the underlying RPM filtering and DShot telemetry code.  Install Betaflight 4.1, go to [jflight.net](https://jflight.net), check that your ESC and FC are supported, purchase enough licences, and follow the install instructions - download the custom JESC BLHeli-S configurator, select your ESC, select the correct hex, click the blue 'flash all' button, then then flash the telemetry code over that by clicking 'flash all telemetry'.  Use the flash version at the top of the list.  JESC requires Betaflight 4.1.
 
 **JazzMaverick** 
 
-Install Betaflight 4.1, go to [JazzMaverick](https://github.com/JazzMaverick/BLHeli/tree/JazzMaverick-patch-1/BLHeli_S%20SiLabs)'s code on github. Flash as usual with the conventional [Configurator](https://github.com/blheli-configurator/blheli-configurator/releases). Take a look wich version you have to flash correctly. As it's been discussed in RCGrpup thread, the community recommend to stick with 16.73 version. Other version past 16.73 are too much experimental.
+The current build is 16.9, often referred to as [BlHeli-M](https://www.rcgroups.com/forums/showthread.php?3621257-BLHeli_M-Maverick-version).  The easiest way to flash 16.9 is with Asizon's Configurator.
+For earlier versions, go to [JazzMaverick](https://github.com/JazzMaverick/BLHeli/tree/JazzMaverick-patch-1/BLHeli_S%20SiLabs)'s code on github. Flash as usual with the conventional [BlHeli-S Configurator](https://github.com/blheli-configurator/blheli-configurator/releases). Take a look wich version you have to flash correctly. Use either version 16.73 or 16.9.
 
 **BlueJay**
 
-BlueJay provides a custom configurator (https://github.com/mathiasvr/bluejay-configurator/releases) which allows flashing the ESC firmware via the flight controller. The firmware supports both L and H type ESCs and has been tested on various ESC models.
+BlueJay by Mathias, a Betaflight developer, is a more recent RPM-aware BlHeli-S firmware.  It is easily flashed with an elegant [online flashing tool](https://esc-configurator.com), or a custom configurator (https://github.com/mathiasvr/bluejay-configurator/releases). The firmware supports both L and H type ESCs, with a range of options, and has been tested on various ESC models.
 
 ## Betaflight Configuration
 
