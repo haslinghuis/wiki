@@ -18,7 +18,7 @@ With RPM filtering, the dynamic notch filter can be narrower, reducing delay, an
 
 On clean quads, lowpass filter delay can usually be improved by moving cutoff frequencies higher or disabling some gyro filtering once RPM filtering is enabled.  This should be done carefully, after reading the [tuning guide](#Tuning).
 
-There are two underlying technologies:
+## Underlying technology:
 
 [**Bidirectional DSHOT**](https://github.com/betaflight/betaflight/pull/7264), a new feature in Betaflight 4.x which lets the flight controller receive accurate RPM telemetry over each motor's ESC signal line. No additional wiring or additional telemetry back-channel is needed. Each DSHOT frame from the FC gets acknowledged by a frame from the ESC containing the current eRPM. The FC uses the motor pole count to convert ERPM to RPM.  
 
