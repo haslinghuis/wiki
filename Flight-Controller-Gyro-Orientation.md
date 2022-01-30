@@ -8,7 +8,7 @@ The FC firmware NEEDS to know how the FC axes are oriented with respect to the f
 
 It is important to note that there is a sequence of so-called Euler angles (axes of rotation in space, perpendicular to each other) for board/gyro alignment: yaw-pitch-roll
 
-Assuming that the board alignment is in the usual yaw roll pitch euler angles parametrization (R = RzRyRx) you actually have to think in the inverse transform (R' = (Rz*Ry*Rx)' = Rx'*Ry'*Rz') to obtain the Gyro Offset angles to enter into Betaflight Configurator.
+Assuming that the board alignment is in the usual yaw roll pitch euler angles parametrization (R = RzRyRx) you actually have to think in the inverse transform R' = (Rz*Ry*Rx)' = Rx'*Ry'*Rz' to obtain the Gyro Offset angles to enter into Betaflight Configurator.
 
 Here we have to think how to rotate the frame so that the frame is oriented like the flight controller in the following order:
 
