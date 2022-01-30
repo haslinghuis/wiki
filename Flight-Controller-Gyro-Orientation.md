@@ -12,7 +12,8 @@ Assuming that the board alignment is in the usual yaw roll pitch euler angles pa
 
 Here we have to think how to rotate the frame so that the frame is oriented like the flight controller in the following order:
 
-rotate the frame around z-axis (yaw)
-rotate the already yawed frame around y-axis (pitch)
-rotate the already yawed and pitched frame around x-axis (roll)
+- rotate the frame around z-axis (yaw)
+- rotate the already yawed frame around y-axis (pitch)
+- rotate the already yawed and pitched frame around x-axis (roll)
+
 After determining these 3 correction angles needed to rotate the frame into the FC alignment, the values for yaw, pitch and roll can be entered into the respective fields for Gyro Offset in Betaflight Configurator.
