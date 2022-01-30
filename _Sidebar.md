@@ -47,7 +47,6 @@
 
  - [3D Setup](3D-Setup)
  - [Barometer Configuration for 3.2](Barometer-Configuration-(3.2))
- - [Flight Controller Orientation](Flight-Controller-Orientation)
  - [Buzzer Mute Mode](Buzzer-Mute-Mode)
  - [Changes to the LED_STRIP functionality in 3.2](LED-Strip-functionality)
  - [Flight Controller / Gyro Orientation](Flight-Controller-Gyro-Orientation)
