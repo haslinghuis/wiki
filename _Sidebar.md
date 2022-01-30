@@ -50,6 +50,7 @@
  - [Flight Controller Orientation](Flight-Controller-Orientation)
  - [Buzzer Mute Mode](Buzzer-Mute-Mode)
  - [Changes to the LED_STRIP functionality in 3.2](LED-Strip-functionality)
+ - [Flight Controller / Gyro Orientation](Flight-Controller-Gyro-Orientation)
  - [GPS Rescue mode](GPS-rescue-mode)
  - [Launch Control](Launch-Control)
  - [LED_STRIP Setup](https://github.com/betaflight/betaflight/blob/master/docs/LedStrip.md)
