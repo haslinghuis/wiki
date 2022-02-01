@@ -101,7 +101,7 @@
  - [Yaw Spin Recovery & Gyro Overflow Detect](Yaw-Spin-Recovery-and-Gyro-Overflow-Detect)
  - [Mixer types](Mixer-Types)
 
-# Presets
+# Parameter Groups
 
  - [Parameter Group ID's](Parameter-Group-ID's)
 
