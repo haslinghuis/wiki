@@ -2,7 +2,7 @@
 
 Using Betaflight Configurator, select the Firmware Flasher tab and select what firmware to flash in one of two different ways, online or local firmware.
   1. Load online firmware.   
-Select Target and Version in the upper left corner. Press "Load Firmwar {Online]", lower right part of the screen. 
+Select Target and Version in the upper left corner. Press "Load Firmware [Online]", lower right part of the screen. 
   2. Load local firmware.   
  Press the "Load firmware [Local]" button, you can now browse to the folder you have the local Betaflight firmware file. Select the correct firmware hex-file matching your Flight Controller. 
 ![](https://user-images.githubusercontent.com/25552059/43810531-307d9cc8-9a86-11e8-9e2c-55cbfe386258.png)
@@ -78,7 +78,7 @@ Note: you might need to install libatomic:
     $ sudo apt install libatomic1
 
 #### Step 0:
-Without next commant configurator will not launch on at least ubuntu 20.04 and higher
+Without next command the configurator will not launch on at least ubuntu 20.04 and higher
 
     $ sudo usermod -a -G plugdev $USER
 
