@@ -12,4 +12,4 @@ To debug your process use the configurator and simply start with:
 2. pitch the yawed, reset z axis, check
 3. roll the yawed and pitched, reset z axis, check
 
-https://github.com/betaflight/betaflight/wiki/Flight-Controller-Orientation
+https://www.geogebra.org/m/sj5aeucn
