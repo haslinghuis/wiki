@@ -5,12 +5,12 @@ For the alignment process we actually have to think in the inverse transform R^T
 You can use the following link to figure out your board alignment angles: https://www.geogebra.org/3d/sj5aeucn
 
 For the alignment process think of a frame mounted to your quad and a frame mounted to your flight controller. The question than then needs to be answered is how to rotate the quads frame (x pointing forward, y left, z upwards) so that the quads frame is aligned to the flight controller frame (x pointing forward on your flight controller (mind the arrow), y to the left, z upwards). Now:
-1. Yaw the flight controller frame around its z axis
+1. Yaw the quad frame around its z axis
 2. Pitch the already yawed frame around its y axis
 3. Roll the already yawed and pitched frame around its x axis
 
 To test your alignment process use only the fc pointing towards your monitor and the the Setup-page of the configurator and simply start with:
-1. Yaw the fc, hit Reset Z axis, check the visualization of the quad, if ok proceed
+1. Yaw the fc, hit Reset Z axis, check the visualisation of the quad, if ok proceed
 2. Pitch the yawed fc, reset Z axis, check, if ok proceed
 3. Roll the yawed and pitched fc, reset Z axis, check, if ok proceed
 4. Double check!
