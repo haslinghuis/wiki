@@ -1,6 +1,6 @@
 The internal rotation convention bf uses to represent the flight controller orientation is R = Rz(-Yaw) * Ry(-Pitch) * Rx(-Roll). On one hand R describes how the flight controller with respect to the origin of the quads is rotated. On the other hand R descripes the transformation of sensor readings of the flight controller as they were measured with a flight controller aligned with the quads frame (arrow pointing forward / x axis).
 
-For the alignment process we actually have to think in the inverse transform R^T = Rx^T(-Roll) * Ry^T(-Pitch) *  Rz^T(-Yaw). So we yaw first, then pitch the yawed frame and finally roll the yawed and pitched frame. Due to the minus sign positiv angle direction is descibed by the left hand rule, e.g. to yaw positive you grab the z axis with your left hand and rotate towards the direction of your fingers.
+For the alignment process we actually have to think in the inverse transform R^T = Rx^T(-Roll) * Ry^T(-Pitch) *  Rz^T(-Yaw). So we yaw first, then pitch the yawed frame and finally roll the yawed and pitched frame. Due to the minus sign positiv angle direction is described by the left hand rule, e.g. to yaw positive you grab the z axis with your left hand and rotate towards the direction of your fingers.
 
 You can use the following link to figure out your board alignment angles: https://www.geogebra.org/3d/sj5aeucn
 
