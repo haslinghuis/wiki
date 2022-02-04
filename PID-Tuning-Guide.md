@@ -206,7 +206,7 @@ D Min provides a way to have a lower level of D in normal flight and a higher le
 __If you try to explore errors in a Blackbox Tool, set FF (FeedForward) to zero (disable it)!__
  
 ```
-P -> Higher makes Quad more sharp (oszillates if too high or low)
+P -> Higher makes Quad more sharp (oscillates if too high or low)
 I -> High Makes the quad more digital / mechanical (measures errors) holds the attitude better if raised
 D -> High values dampes the P (works against P, flattens the curve) D-term relates on the gyro measurements
 ```
@@ -358,13 +358,15 @@ If you have use Dynamic Filter on, then (UAV Tech suggests) turn off Gyro Notch 
 
 Most often noisier than other axis
 
-# Oszillations
+# Oscillations
 
 - Regular to the fixed freqzency = P-term issue
 - Randomly / irregular Vibration could be D-term (amplifies noise) 
-- Props (punch throttle) oszillation higher frequency
+- Props (punch throttle) oscillation higher frequency
 
 # Propwash
+Prop wash happens when changing speed or if you suddenly accelerate from a dead stop. 
+These sudden movements cause the prop's spin to create turbulence, causing instability while steering..
 
 - change ratio between P/D
 - Lower P and Raise De (raise d makes motors hotter)
