@@ -95,7 +95,8 @@ voltage chart vs remaining capacity.
 
 # PID
 
-https://github.com/bw1129/PIDtoolbox/raw/master/images/PID_Compensation_Animated.gif *see toolbox below
+![PID animation](https://github.com/bw1129/PIDtoolbox/raw/master/images/PID_Compensation_Animated.gif) 
+
 
  - **P** = The present (proportional)
  - **I** = The Past (integral)
@@ -553,16 +554,16 @@ Anti Gravity boosts the I term when fast throttle changes are detected. Higher g
 
 # TPA (Throttle PID Attenuation)
 
-TPA is a setting to reduce the effectiveness of P gain as throttle increases.
+TPA is a setting to reduce the effectiveness of PD gains as throttle increases(only D-term by default).
 
 TPA basically allows an aggressively tuned multi-rotor (one that feels very locked in) to reduce its PID gains when throttle is applied beyond the TPA threshold/breakpoint in order to eliminate fast oscillations
 
-Is decreasing the PIDs on specific position
-(Only acts on D-term by default)
+- tpa_mode: PD/D (Only acts on D-term by default)
+- tpa_rate: TPA 0.6 means 60% PIDs decrease on full throttle
+- tpa_breakpoint: TPA breakpoint 1250(12.5%) - throttle value at wich TPA starts to work
 
-- TPA 0.10 (percentage throttle)
-- TPA 0.5 (50% throttle, decreasing PIDs) (0.65)
-- TPA breakpoint 1650 (midpoint) (1250) == 12.5%
+![TPA](https://user-images.githubusercontent.com/15355893/165534786-978e3129-04e6-4943-9be0-bcc79ed3d622.png)
+
 
 Better propwash (before move D gain up, move TPA up)
 
