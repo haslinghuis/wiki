@@ -560,7 +560,7 @@ TPA basically allows an aggressively tuned multi-rotor (one that feels very lock
 
 - tpa_mode: PD/D (Only acts on D-term by default)
 - tpa_rate: TPA 0.6 means 60% PIDs decrease on full throttle
-- tpa_breakpoint: TPA breakpoint 1250(12.5%) - throttle value at wich TPA starts to work
+- tpa_breakpoint: TPA breakpoint 1250(25%) - throttle value at wich TPA starts to work
 
 ![TPA](https://user-images.githubusercontent.com/15355893/165534786-978e3129-04e6-4943-9be0-bcc79ed3d622.png)
 
