@@ -24,7 +24,7 @@ To get the latest update from us, you can now also visit our webpage at https://
 ## Wiki Tips:   
 - Searching the Wiki-  
 Type in URL bar of the Web Browser:   
-"site:github.com/betaflight/betaflight/wiki PT1" (wiki search for term 'PT1')  
+"site:github-wiki-see.page/m/betaflight/betaflight/wiki PT1" (wiki search for term 'PT1' with a third-party service as [GitHub does not permit native indexing of Wiki pages](https://github.com/github/feedback/discussions/4992))  
 or   
 "site:github.com/betaflight/betaflight PT1" (broader search for term 'PT1')   
 
