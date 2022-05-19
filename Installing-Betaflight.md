@@ -24,7 +24,7 @@ It is an type 2 FC, but it is lacking the 2.1 USB-DFU interface as it is an STM3
 ## Native USB based flight controllers - type 2
 Note that this is for those controllers that are *not* using a hardware serial bridge - e.g. FTDI or SiLabs CP210x.
 
-Driver issues can be fixed using this handy tool: [https://impulserc.blob.core.windows.net/utilities/ImpulseRC_Driver_Fixer.zip](https://github.com/qingfengmu/FreeRTOS/releases/download/V10.4.1/ImpulseRC_Driver_Fixer.zip)
+Driver issues can be fixed using this handy tool: https://impulserc.blob.core.windows.net/utilities/ImpulseRC_Driver_Fixer.exe
 
 It requires .net framework v4.5. Available here: https://www.microsoft.com/en-au/download/details.aspx?id=30653
 
@@ -34,7 +34,7 @@ If you are having trouble connecting to your flight controller:
 ### DFU flashing under Windows - USB DFU:
 Make sure you have zadig if you're using Windows to enable the DFU driver. Instructions:
 
-1. Download Zadig: [http://zadig.akeo.ie/zadig-2.7.zip](https://github.com/qingfengmu/FreeRTOS/releases/download/V10.4.1/zadig-2.7.zip)
+1. Download Zadig: http://zadig.akeo.ie/
 1. Put device in DFU mode. If this is the first time to put Betaflight on you need to short the BL or BOOT pads (or press and hold the BOOT tactile button) while plugging the USB into the board.
 1. Open Zadig.
 1. Options > List All Devices
