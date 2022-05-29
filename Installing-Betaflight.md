@@ -34,7 +34,7 @@ If you are having trouble connecting to your flight controller:
 ### DFU flashing under Windows - USB DFU:
 Make sure you have zadig if you're using Windows to enable the DFU driver. Instructions:
 
-1. Download Zadig: [http://zadig.akeo.ie/zadig-2.7.zip](https://github.com/qingfengmu/FreeRTOS/releases/download/V10.4.1/zadig-2.7.zip)
+1. Download Zadig: [http://zadig.akeo.ie/zadig-2.7.zip](https://github.com/pbatard/libwdi/releases/download/v1.4.1/zadig-2.7.exe)
 1. Put device in DFU mode. If this is the first time to put Betaflight on you need to short the BL or BOOT pads (or press and hold the BOOT tactile button) while plugging the USB into the board.
 1. Open Zadig.
 1. Options > List All Devices
