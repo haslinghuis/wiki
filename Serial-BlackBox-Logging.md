@@ -8,6 +8,6 @@ See https://github.com/betaflight/betaflight/issues/9043#issuecomment-544333986 
 
 ### Additional info from the future (Betaflight 4.3):
 
-We can now [disable blackbox headers](https://github.com/betaflight/betaflight/pull/9726) to save logging overhead. This can make OpenLog work again because it doesn't need to handle as much data. We have presets to disable blackbox headers.
+We can now [disable blackbox headers](https://github.com/betaflight/betaflight/pull/9726) to save logging overhead. This can make OpenLog work again because it doesn't need to handle as much data. We have presets to disable blackbox headers (see the [blackbox_disable](https://github.com/betaflight/firmware-presets/blob/master/presets/4.3/other/blackbox_disable.txt) preset).
 
 Try it and see if slower loggers will work again with less data to log!
