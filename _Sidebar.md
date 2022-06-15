@@ -11,6 +11,7 @@
 
 # Release Notes
 
+ - [Betaflight 4.3](https://github.com/betaflight/betaflight/blob/master/docs/Release%20Notes/Betaflight%204.3%20Release%20Notes.md)
  - [Betaflight 4.2](https://github.com/betaflight/betaflight/blob/master/docs/Release%20Notes/Betaflight%204.2%20Release%20Notes.md)
  - [Betaflight 4.1](https://github.com/betaflight/betaflight/blob/master/docs/Release%20Notes/Betaflight%204.1%20Release%20Notes.md)
  - [Betaflight 4.0](https://github.com/betaflight/betaflight/blob/master/docs/Release%20Notes/Betaflight%204.0%20Release%20Notes.md)
