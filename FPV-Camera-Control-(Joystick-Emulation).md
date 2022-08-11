@@ -11,25 +11,91 @@ Most cameras up to date seem to adhere to the design and have the following resi
 
 ## Setting up
 * `resource camera_control PIN` -  allows you to designate a `PIN` for camera control functionality. The list of suitable pins depends on the way you're going to wire your camera to the FC.
-* `set camera_control_mode = hardware_pwm` - mode of operation, `software_pwm` is the least restrictive in terms of available PIN selection, but it requires both a resistor and a capacitor to work properly; `hardware_pwm` is almost guaranteed to work with just a resistor given you can spare a timer for it; `dac` (not yet implemented) is supported on the very few FCs that have a DAC pin broken out and unoccupied by other functions, it works by direct connection to the camera.
+* `set camera_control_mode = hardware_pwm` - mode of operation, `software_pwm` is the least restrictive in terms of available PIN selection, but it requires both a resistor and a capacitor to work properly; `hardware_pwm` is almost guaranteed to work with just a resistor given you can spare a timer for it; `dac` (not yet implemented) is going to be supported on the very few FCs that have a DAC pin broken out and unoccupied by other functions, and is going to work by direct connection to the camera once implemented.
 * `set camera_control_ref_voltage = 330` - voltage (in 10 mV steps) measured across your camera's floating `OSD` and `GND` pins, usually 3V3, but not guaranteed, e.g. my RunCam Sky has 3V4, and some cameras have reportedly have as low as 3V1.
 * `set camera_control_key_delay = 180` - the duration of each key press (in ms presence at the `camera_control` pin, after consulting with RunCam it was set to 180 ms to accommodate most cameras, while some of them accept as low as 125 ms.
 * `set camera_control_internal_resistance = 470` - the internal resistance (in 100 Ω steps) of your camera, most HS1177 derivatives have 47 kΩ, but that's not guaranteed. You'll have to derive this value for your camera in case the default one doesn't work.
 * `camera_control_button_resistance = 450,270,150,68,0` - sets the emulated resistance for each button on the equivalent button keypad for the camera. The default values should work for most cameras but in some cases the manufacturer may have unusual values. if you have problems (like one button won't work) then measure the actual resistance generated in the keypad that came with the camera and adjust. The button value ordering is: `ENTER`, `LEFT`, `UP`, `RIGHT`, `DOWN`. **Added in Betaflight 4.1**.
 ## Modes of operation
 ### Hardware PWM
-Requires a 150-600 Ω resistor inline from your FC `PIN` to Camera `OSD`. Additional `GND` connection is advised.
+Requires a 150-600 Ω resistor inline from your FC `PIN` to Camera `OSD`. This is built into some  Additional `GND` connection is advised.
 
 Assumes that the camera (or FC) has sufficient capacitance at OSD pin (look at `Tips for hardware designers` section). If you camera is not working, try adding a capacitor between camera `OSD` and `GND`.
 #### How do I select a suitable `PIN`?
-@todo
+A pin with a hardware timer output is required to use the hardware PWM mode. Some FCs have a dedicated `CC` pin, which is preferable, as it usually already has the resistor in series, otherwise LED strip output or unused motor outputs (M5/M6) are a fairly safe bet. To check if a pin has a timer output, first find out what pin on the microcontroller the FC pin is wired to. This can be done using the `resource` command, example:
+```
+# resource
+resource BEEPER 1 D02
+resource MOTOR 1 B04
+resource MOTOR 2 B00
+resource MOTOR 3 B05
+resource MOTOR 4 B01
+resource MOTOR 5 D12
+resource MOTOR 6 D13
+resource MOTOR 7 C08
+resource MOTOR 8 C09
+...
+resource SERIAL_RX 4 A01
+```
+
+In this case, if you for example wanted to use the unused M5 output on a quadcopter, the pin to use is `D12`. Check if the pin has a timer using the `timer` command:
+```
+# timer
+timer A08 AF1
+# pin A08: TIM1 CH1 (AF1)
+timer B03 AF1
+# pin B03: TIM2 CH2 (AF1)
+timer B00 AF2
+# pin B00: TIM3 CH3 (AF2)
+timer B01 AF2
+# pin B01: TIM3 CH4 (AF2)
+timer B04 AF2
+# pin B04: TIM3 CH1 (AF2)
+timer B05 AF2
+# pin B05: TIM3 CH2 (AF2)
+timer D12 AF2
+# pin D12: TIM4 CH1 (AF2)
+timer D13 AF2
+# pin D13: TIM4 CH2 (AF2)
+timer C08 AF3
+# pin C08: TIM8 CH3 (AF3)
+timer C09 AF3
+# pin C09: TIM8 CH4 (AF3)
+```
+
+We have a timer (`TIM4`) which is not used for anything else (the other pin, `D13`, is the M6 output, which we're not using).
+
+Unmap the motor output pin, map the camera pin:
+
+```
+resource MOTOR 5 none
+resource CAMERA_CONTROL 1 D12
+```
+
+And that's it, your pin should now be configured.
+
+In case you want to use a pin that doesn't have a timer set up by default, you can check the available timers by using the `timer` command again. In this example, let's check if we can remap the rx pin from serial 4, which is on `A01` in this example. As it wasn't listed in the list of configured timers, let's see if the pin can function as a timer output using `timer a01 list`:
+```
+# timer a01 list
+# AF1: TIM2 CH2
+# AF2: TIM5 CH2
+```
+In this case, `TIM2` is already in use for pin `B03`, but `TIM5` isn't in use anywhere. Enable the AF (alternate function) using `timer A01 AF2`, and you should be able to remap the pins.
+
+```
+timer A01 AF2
+resource SERIAL_RX 4 none
+resource CAMERA_CONTROL 1 A01
+```
 
 ### Software PWM
 Requires a 150-600 Ω resistor and a 1-10 µF capacitor, forming an RC-filter. Resistor goes from `PIN` to `OSD`, while the capacitor should be connected between `OSD` and `GND`.
 @todo draw a schematic
 
 ### DAC
-Requires no additional components, wire your `PIN` to `OSD`, preferably with a `GND` connection as well.
+(Does not work, not implemented yet!)
+
+Will require no additional components, wire your `PIN` to `OSD`, preferably with a `GND` connection as well.
 
 ## Accessibility
 * RC Stick Commands
