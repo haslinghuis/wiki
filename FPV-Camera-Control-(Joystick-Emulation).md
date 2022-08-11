@@ -90,7 +90,8 @@ resource CAMERA_CONTROL 1 A01
 
 ### Software PWM
 Requires a 150-600 Ω resistor and a 1-10 µF capacitor, forming an RC-filter. Resistor goes from `PIN` to `OSD`, while the capacitor should be connected between `OSD` and `GND`.
-@todo draw a schematic
+
+![Resistor and capacitor schematic](https://raw.githubusercontent.com/wiki/betaflight/betaflight/images/camera-control-software-pwm.svg)
 
 ### DAC
 (Does not work, not implemented yet!)
