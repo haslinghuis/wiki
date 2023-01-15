@@ -1,9 +1,0 @@
-Let me begin with, as far as my knowledge of drones and flying and RC's and all that goes with it,.. I have no Idea whatsoever what Im doing, how to do it,  or if Im even doing anything! I just liked the thing and  one day, after two years of going back and forth over getting this drone or not, I finally stepped up, Soon as I bought it, I immediately hit cancel, but the purchase went through regardless; and because I tried to cancel the order, even though I paid for a 2 day delivery, took a month for the drone to arrive.
-
- Finally,  on Thursday, last week I got it! I spent that whole day boggled as to why I couldn't get in the air. When my girlfriend suggested that I might have the wings placed incorrectly, I thought she was joking, all the wings looked identical. But after she showed me several videos of my bad wing placement, took her advice and changed my wings, and it flew!. Goggles worked too, I'm on my way!
-
-I got the drone in the air, not for very long and not very stable either, so I watched more videos hoping to gain some knowledge. On YouTube I heard many talking about this CLEAR FLIGHT website and another one BETA FLIGHT. Im interested, I go to the web site plug in my drone and I hit  something;... Don't know what and Don't know how, but now the drone won't respond, just incessantly beebs!  It doesn't register on my Fs-I6;  and on both of those web sites now, it reeds Im Dis Armed! and in a fail safe mode. I have ZERO idea what I did!
-
- I called a drone shop, 100 bucks to diagnosis, I just spent $400 getting the drone! I think that kinda bites but I really wanna get back in the air, Can anyone help me out? Again I have the Arris 250 and a FlySky Fsi6 radio, How do I get them to talk again and Yes; I was given a bind unit;  but I have no Idea what to insert it in to bind my radio! 
-
-Thank you for your time,  I've been wasting the past 11 of mine trying to get back in the air, with no luck, .UGH!! Thank you in advance!
